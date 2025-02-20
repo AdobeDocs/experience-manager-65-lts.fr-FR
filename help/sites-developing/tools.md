@@ -1,0 +1,65 @@
+---
+title: Outils de test et de suivi
+description: AEM fournit un framework pour le test de l’interface utilisateur des composants et un mécanisme pour le test et le débogage des composants
+contentOwner: Guillaume Carlino
+products: SG_EXPERIENCEMANAGER/6.5/SITES
+topic-tags: testing
+content-type: reference
+docset: aem65
+solution: Experience Manager, Experience Manager Sites
+feature: Developing
+role: Developer
+source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 100%
+
+---
+
+# Outils de test et de suivi{#testing-and-tracking-tools}
+
+## Tests {#testing}
+
+AEM fournit :
+
+* [Un framework pour tester l’interface utilisateur des composants](/help/sites-developing/hobbes.md).
+* [Un mécanisme de test et de débogage des composants](/help/sites-developing/developer-mode.md).
+
+Voici deux outils de test Open Source :
+
+**Selenium**
+
+Selenium est utilisé pour le test des fonctions dans un navigateur avec un utilisateur ou une utilisatrice par activité. Il enregistre les étapes de test (clics) sous la forme de tables HTML ou de classes Java™.
+
+Pour plus d’informations, consultez [https://www.selenium.dev/](https://www.selenium.dev/).
+
+**JMeter**
+
+JMeter sert à effectuer le suivi des demandes et peut être utilisé pour les tests fonctionnels, de performances et de stress.
+
+Pour plus d’informations, consultez [https://jmeter.apache.org/](https://jmeter.apache.org/).
+
+Il existe également de nombreux outils propriétaires pour automatiser les tests et gérer les plans de test.
+
+### Suivi {#tracking}
+
+Les outils suivants sont facilement accessibles. Cependant, la disponibilité des données pour tous les membres de l’équipe du projet, partenaires et clientèle, constitue toujours une question clé.
+
+**Bugzilla**
+
+Un système de suivi des bogues qui peut être configuré selon vos besoins.
+
+**Feuilles de calcul**
+
+Bien qu’il ne s’agisse pas spécifiquement d’un outil de suivi des bogues, les feuilles de calcul sont souvent *utilisées* à cette fin, car elles sont faciles à comprendre et la plupart des utilisateurs et utilisatrices connaissent leurs fonctionnalités.
+
+Si ces feuilles de calcul sont utilisées pour le suivi :
+
+* Elles doivent être simples.
+* Le nombre de feuilles de calcul doit être limité au minimum.
+* Elles doivent être mises à jour régulièrement.
+* Une seule copie principale doit être conservée et tout le monde doit savoir où elle se trouve.
+* Elles doivent être accessibles à tous les membres du projet.
+* Si la sécurité constitue un point sensible (dans les grandes entreprises, en général) et qu’un accès commun n’est pas envisageable, les copies peuvent être distribuées tant que tout le monde comprend que ces feuilles de calcul sont des copies et qu’elles ne peuvent pas être mises à jour.
+
+Pour rappel, il existe de nombreux outils propriétaires pour effectuer le suivi des bogues et des fonctionnalités demandées.
