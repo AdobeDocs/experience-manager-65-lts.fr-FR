@@ -10,10 +10,10 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6a06ad15782b5cff7978547d005aaa312a837647
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 100%
+source-wordcount: '833'
+ht-degree: 98%
 
 ---
 
@@ -114,7 +114,7 @@ La topologie utilisée pour cette section est constituée d’un cluster de cré
 
 ![mongo-secondaries](assets/mongo-secondaries.jpg)
 
-1. Créez de nouvelles instances de création 6.5, connectées à votre instance Mongo mise à niveau.
+1. Créez de nouvelles instances d’auteur 6.5.2025, connectées à l’instance Mongo mise à niveau.
 
 1. Recréez les nœuds MongoDB qui ont été supprimés du cluster.
 

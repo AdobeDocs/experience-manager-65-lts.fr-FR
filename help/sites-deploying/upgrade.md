@@ -9,28 +9,37 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 956da2542a958ee6548ede63a7e564f5a4705552
+source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '317'
+ht-degree: 29%
 
 ---
 
-# Mise à niveau vers Adobe Experience Manager (AEM) 6.5 {#upgrading-to-aem}
+# Mise à niveau vers Adobe Experience Manager (AEM) 6.5 LTS {#upgrading-to-aem}
+
+>[!NOTE]
+>La mise à niveau vers AEM 6.5 LTS est prise en charge à partir des 6 derniers Service Packs.
 
 Cette section décrit la mise à niveau d’une installation AEM vers AEM 6.5 :
 
-* [Planification de la mise à niveau](/help/sites-deploying/upgrade-planning.md)
-* [Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs](/help/sites-deploying/pattern-detector.md)
-* [Rétrocompatibilité dans AEM 6.5](/help/sites-deploying/backward-compatibility.md)
-  <!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
-* [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md)
-* [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md)
-* [Tâches de maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
-* [Exécution d’une mise à niveau statique](/help/sites-deploying/in-place-upgrade.md)
-* [Vérifications et dépannage après une mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
-* [Mises à niveau possibles](/help/sites-deploying/sustainable-upgrades.md)
-* [Migration différée du contenu](/help/sites-deploying/lazy-content-migration.md)
+<!-- Alexandru: drafting for now 
+
+* [Planning Your Upgrade](/help/sites-deploying/upgrade-planning.md)
+* [Assessing the Upgrade Complexity with Pattern Detector](/help/sites-deploying/pattern-detector.md)
+* [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md)
+  This was drafted before: * [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+
+<!--
+* [Upgrade Procedure](/help/sites-deploying/upgrade-procedure.md)
+* [Upgrading Code and Customizations](/help/sites-deploying/upgrading-code-and-customizations.md)
+* [Pre-Upgrade Maintenance Tasks](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
+* [Performing an In-Place Upgrade](/help/sites-deploying/in-place-upgrade.md)
+* [Post Upgrade Checks and Troubleshooting](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
+* [Sustainable Upgrades](/help/sites-deploying/sustainable-upgrades.md)
+* [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md)
+
+-->
 
 Pour une référence conviviale aux instances d’AEM incluses dans ces procédures, les termes suivants sont utilisés tout au long de ces articles :
 
@@ -39,44 +48,33 @@ Pour une référence conviviale aux instances d’AEM incluses dans ces procédu
 
 ## Qu’est-ce qui a changé ? {#what-has-changed}
 
+### Mises à jour {#updates}
+
 Voici les principales modifications à souligner au cours des dernières versions d’AEM :
 
-AEM 6.0 a introduit le nouveau référentiel Jackrabbit Oak. Les gestionnaires de persistance ont été remplacés par des [micro noyaux](/help/sites-deploying/platform.md#contentbody_title_4). À partir de la version 6.1, CRX2 n’est plus pris en charge. Un outil de migration appelé crx2oak doit être exécuté pour migrer les référentiels CRX2 à partir des instances 5.6.1. Pour plus d’informations, voir [Utilisation de l’outil de migration CRX2OAK](/help/sites-deploying/using-crx2oak.md).
+1. La couche Foundation a été mise à niveau pour prendre en charge Java 17 (qui comprend des couches open source de lots d’Apache Sling, Apache Felix et Apache Jackrabbit Oak)
 
-Si vous utilisez Assets Insights et que vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.2, les ressources doivent être migrées et doivent posséder des ID générés via un bean JMX. Pour les tests internes d’Adobe, 125 000 ressources ont été migrées en 1 heure dans un environnement TarMK, mais les résultats peuvent varier.
+1. Le package jar AEM 6.5 LTS prend désormais en charge les spécifications 5 des API de servlet Jarkarta et le package war peut être déployé sur les conteneurs de servlet mettant en œuvre les spécifications 5/6 des API de servlet Jakarta
 
-La version 6.3 a introduit un nouveau format `SegmentNodeStore`, qui est la base de cette implémentation de TarMK. Si vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.3, une migration du référentiel est nécessaire dans le cadre de la mise à niveau, ce qui implique des interruptions du système.
+1. Le package de l’uber-jar LTS AEM 6.5 a été modifié. Pour plus d’informations, consultez [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md).
 
-L’équipe d&#39;ingénierie d’Adobe estime la durée du processus à environ 20 minutes. La réindexation n’est pas nécessaire. En outre, une nouvelle version de l’outil crx2oak a été publiée pour fonctionner avec le nouveau format de référentiel.
+### Fonctionnalités/artefacts hérités supprimés {#removed-legacy-features-artifacts}
 
-**Cette migration n’est pas nécessaire dans le cas d’une mise à niveau d’AEM 6.3 vers AEM 6.5.**
+Les solutions héritées suivantes ont été supprimées d’AEM 6.5 LTS. Pour plus d’informations, reportez-vous à à déterminer : lien vers les notes de mise à jour et [ Liste des lots obsolètes désinstallés après la mise à niveau](/help/sites-deploying/obsolete-bundles.md)
 
-Les tâches de maintenance précédant la mise à niveau ont été optimisées pour prendre en charge l’automatisation.
+1. Social
+1. Commerce
+1. Screens
+1. We-retail
+1. Intégration de la recherche et de la promotion
 
-Les options d’utilisation de ligne de commande de l’outil crx2oak ont été modifiées pour favoriser l’automatisation et prendre en charge d’autres chemins de mise à niveau.
+**Artefacts supprimés**
 
-Les contrôles après la mise à niveau ont également été optimisés pour favoriser l’automatisation.
+1. CRX-explorer
+1. Crx2oak
+1. Google guava (supprimé en raison de vulnérabilités de sécurité)
+1. Analyseur Android (supprimé en raison de failles de sécurité)
+1. jdom (`org.apache.servicemix.bundles.jdom`) (supprimé en raison de failles de sécurité)
+1. `com.github.jknack.handlebars` (supprimé en raison de vulnérabilités de sécurité)
 
-La récupération périodique de l’espace mémoire des révisions et la récupération de l’espace mémoire du magasin de données sont désormais des tâches de maintenance de base qui doivent être exécutées régulièrement. Avec l’introduction d’AEM 6.3, Adobe prend en charge et recommande le nettoyage des révisions en ligne. Voir [Nettoyage des révisions](/help/sites-deploying/revision-cleanup.md) pour plus d’informations sur la configuration de ces tâches.
-
-AEM a récemment introduit un [outil de détection des motifs](/help/sites-deploying/pattern-detector.md) qui permet d’évaluer la complexité de la mise à niveau lorsque vous commencez à planifier cette opération. AEM 6.5 met également l’accent sur la [rétrocompatibilité](/help/sites-deploying/backward-compatibility.md) (ou compatibilité descendante) des fonctionnalités. Pour finir, les bonnes pratiques pour les [mises à niveau durables](/help/sites-deploying/sustainable-upgrades.md) sont également ajoutées.
-
-Pour plus d’informations sur ce qui a changé dans les versions d’AEM récentes, consultez les notes de mise à jour complètes :
-
-* [Dernières notes de mise à jour d’Adobe Experience Manager 6.5 Service Pack](/help/release-notes/release-notes.md)
-
-## Vue d’ensemble de la mise à niveau {#upgrade-overview}
-
-La mise à niveau d’AEM est un processus en plusieurs étapes, parfois sur plusieurs mois. La composition suivante a été fournie sous la forme d’une vue d’ensemble des éléments inclus dans un projet de mise à niveau et du contenu inclus dans cette documentation :
-
-![screen_shot_2018-03-30at80708am](assets/screen_shot_2018-03-30at80708am.png)
-
-## Flux de mise à niveau {#upgrade-overview-1}
-
-Le diagramme ci-dessous capture le flux global recommandé pour mettre en évidence l’approche de mise à niveau. Notez la référence aux nouvelles fonctionnalités introduites par Adobe. La mise à niveau doit commencer par le détecteur de modèles (voir [Évaluation de la complexité de la mise à niveau à l’aide du détecteur de modèles](/help/sites-deploying/pattern-detector.md)) qui vous permet de déterminer la voie à emprunter pour la compatibilité avec AEM 6.4 sur la base des modèles du rapport généré.
-
-Dans la version 6.5, nous avons mis un point d’honneur à ce que toutes les fonctionnalités soient rétrocompatibles. Cependant, si vous constatez des problèmes de rétrocompatibilité, le mode de compatibilité vous permet de différer temporairement le développement, de sorte que votre code personnalisé reste compatible avec la version 6.5. Cette approche vous dispense des activités de développement immédiatement après la mise à niveau (voir [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
-
-Enfin, dans le cadre de votre cycle de développement 6.5, les fonctionnalités ajoutées sous Mises à niveau possibles (voir [Mises à niveau possibles](/help/sites-deploying/sustainable-upgrades.md)) vous aident à suivre les bonnes pratiques afin de rendre les prochaines mises à niveau encore plus simples et transparentes.
-
-![6_4_upgrade_overviewflowchart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
+Le LTS AEM 6.5 met l’accent sur la rétrocompatibilité des fonctionnalités et est fourni avec un outil d’analyse. Consultez [Évaluation de la complexité de la mise à niveau à l’aide d’AEM Analyzer](/help/sites-deploying/pattern-detector.md) pour évaluer la complexité lorsque vous commencez à planifier la mise à niveau. Pour plus d’informations sur les autres modifications apportées, consultez les notes de mise à jour complètes ici. À déterminer : lien vers les notes de mise à jour d’AEM 6.5 LTS.
