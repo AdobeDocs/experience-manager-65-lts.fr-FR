@@ -6,9 +6,9 @@ topic-tags: deploying
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: ca0c67e1ffdd04e35eccfe13234933bc1efa4d8c
+source-git-commit: ee0a8865faf594253139e89d4e6ea20a1cb27f62
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1532'
 ht-degree: 97%
 
 ---
@@ -153,7 +153,7 @@ Loading quickstart properties: default
 Loading quickstart properties: instance
 Setting properties from filename '/Users/Desktop/AEM/<jar-name>.jar'
 --------------------------------------------------------------------------------
-Adobe Experience Manager Quickstart (build 20241127)                            
+Adobe Experience Manager Quickstart (build 20250226)                            
 --------------------------------------------------------------------------------
 Usage:                                                                          
  Use these options on the Quickstart command line.                              
@@ -182,9 +182,9 @@ Usage:
          Force forking the JVM if running on a console, using recommended       
          default memory settings for the forked JVM.                            
 -forkargs <args> [<args> ...]
-         Additional arguments for the forked JVM, defaults to '-Xmx1024m        
-         -XX:MaxPermSize=256m '.  Use -- to specify values starting with -,     
-         example: '-forkargs -- -server'                                        
+         Additional arguments for the forked JVM, defaults to '-Xmx1024m '.     
+         Use -- to specify values starting with -, example: '-forkargs --       
+         -server'                                                               
 -a (--interface) <interface>
          Optional IP address (interface) to bind to                             
 -pt <string>
@@ -214,7 +214,7 @@ Usage:
   Options for executing Quickstart extensions:
                                                                                 
     -xargs <arg> [<arg> ...]
-         Construct an arguments list for a Quickstart extension (for example, -xargs -- 
+         Construct an arguments list for a Quickstart extension (e.g. -xargs -- 
          -arg1 val1 -arg2 val2).                                                
 --------------------------------------------------------------------------------
 Quickstart filename options                                                     
@@ -251,7 +251,7 @@ The license.properties file
 Log files
 --------------------------------------------------------------------------------
   Once Quickstart has been unpacked and started, log files can be found under   
-  /Users/aemdocs/CQInstallationKits/AEM-65150-L8/crx-quickstart/logs.           
+  /Users/Desktop/AEM/crx-quickstart/logs.               
 --------------------------------------------------------------------------------
 ```
 
@@ -330,7 +330,7 @@ Une fois la gestion de contenu AEM démarrée, vous pouvez également accéder 
 Pour ouvrir CRXDE Lite, vous pouvez sélectionner **CRXDE Lite** dans l’écran de bienvenue ou utiliser le navigateur pour accéder à
 
 ```
- https://<<i>host</i>>:<<i>port</i>>/crx/de/index.jsp
+ https://<host>:<port>/crx/de/index.jsp
 ```
 
 Par exemple :
@@ -354,12 +354,6 @@ ou pour la page Lots
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
 Voir [Configuration OSGi à l’aide de la console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) pour plus de détails.
-
-## Résolution des problèmes {#troubleshooting}
-
-Pour plus d’informations sur les problèmes qui peuvent se produire lors de l’installation, voir :
-
-* [Résolution des problèmes](/help/sites-deploying/troubleshooting.md)
 
 ## Désinstaller Adobe Experience Manager {#uninstalling-adobe-experience-manager}
 
