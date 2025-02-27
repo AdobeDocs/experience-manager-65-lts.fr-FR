@@ -9,9 +9,9 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 1a942dc471cde14fa3b811b31e54644e199f8738
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1759'
 ht-degree: 100%
 
 ---
@@ -43,7 +43,6 @@ Une fois que vous serez à l’aise avec ces principes fondamentaux, vous pourre
 * [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md)
 * [Installation autonome personnalisée](/help/sites-deploying/custom-standalone-install.md)
 * [Installation du serveur d’applications](/help/sites-deploying/application-server-install.md)
-* [Résolution des problèmes](/help/sites-deploying/troubleshooting.md)
 * [Début et arrêt d’AEM à partir de la ligne de commande](/help/sites-deploying/command-line-start-and-stop.md)
 * [Configuration](/help/sites-deploying/configuring.md)
 * [Mise à niveau vers AEM 6.5](/help/sites-deploying/upgrade.md)
@@ -295,7 +294,6 @@ La section ci-dessus devrait vous donner une bonne compréhension des principes 
 * [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md)
 * [Installation autonome personnalisée](/help/sites-deploying/custom-standalone-install.md)
 * [Installation du serveur d’applications](/help/sites-deploying/application-server-install.md)
-* [Résolution des problèmes](/help/sites-deploying/troubleshooting.md)
 * [Début et arrêt d’AEM à partir de la ligne de commande](/help/sites-deploying/command-line-start-and-stop.md)
 * [Configuration](/help/sites-deploying/configuring.md)
 * [Mise à niveau vers AEM 6.5](/help/sites-deploying/upgrade.md)

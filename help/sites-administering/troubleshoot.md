@@ -9,9 +9,9 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '484'
 ht-degree: 100%
 
 ---
@@ -61,13 +61,6 @@ Le tableau suivant présente une vue d’ensemble des problèmes que l’adminis
  </tbody>
 </table>
 
-## Problèmes d’installation {#installation-issues}
-
-Consultez la section [Problèmes d’installation courants](/help/sites-deploying/troubleshooting.md#common-installation-issues) pour obtenir plus d’informations sur les scénarios de dépannage suivants :
-
-* Lorsque vous double-cliquez sur le fichier Quickstart jar, rien ne se produit ou le fichier s’ouvre dans un autre programme (tel que le gestionnaire d’archives).
-* Les applications s’exécutant sur CRX renvoient des erreurs de mémoire insuffisante.
-* Après avoir double-cliqué sur Quickstart AEM, l’écran d’accueil d’AEM ne s’affiche pas dans le navigateur.
 
 ## Méthodes pour dépanner les analyses {#methods-for-troubleshooting-analysis}
 
