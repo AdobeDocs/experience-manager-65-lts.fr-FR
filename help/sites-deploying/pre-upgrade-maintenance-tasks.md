@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 108e1b3d840287e3d694242d934d0fbe4606801c
+source-git-commit: 2eb9307f37098ee9f57ba9383600f74a5e3b2501
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1187'
 ht-degree: 83%
 
 ---
@@ -26,7 +26,6 @@ Avant de commencer la mise à niveau, il est important d’effectuer ces tâches
 * [Génération du fichier quickstart.properties](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
 * [Configuration de la purge du workflow et du journal d’audit](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
 * [Installation, configuration et exécution des tâches précédant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
-* [Désactivation des modules de connexion personnalisés](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-login-modules)
 * [Suppression des mises à jour du répertoire /install](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#remove-updates-install-directory)
 * [Arrêt de toutes les instances Cold Standby](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#stop-tarmk-coldstandby-instance)
 * [Désactivation des tâches planifiées personnalisées](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-scheduled-jobs)
@@ -146,6 +145,10 @@ Désactivez toutes les tâches OSGi planifiées incluses dans le code de votre a
 >Cette étape n’est nécessaire que pour les installations TarMK.
 
 Si vous utilisez TarMK, vous devez exécuter le nettoyage des révisions hors ligne avant la mise à niveau. Cela permet à l’étape de migration du référentiel et aux tâches de mise à niveau suivantes de s’exécuter beaucoup plus rapidement et de garantir que le nettoyage des révisions en ligne peut s’exécuter correctement une fois la mise à niveau terminée. Pour plus d’informations sur l’exécution du nettoyage des révisions hors ligne, reportez-vous à la section [Exécution du nettoyage des révisions hors ligne](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
+
+## Exécution de la récupération de l’espace mémoire du magasin de données {#execute-datastore-garbage-collection}
+
+Après avoir exécuté le nettoyage des révisions sur les instances CRX3, vous devez exécuter la récupération de l’espace mémoire du magasin de données pour supprimer tous les objets blob non référencés dans le magasin de données. Pour obtenir des instructions, consultez la documentation sur la [récupération de l’espace mémoire du magasin de données](/help/sites-administering/data-store-garbage-collection.md).
 
 ## Rotation des fichiers journaux {#rotate-log-files}
 
