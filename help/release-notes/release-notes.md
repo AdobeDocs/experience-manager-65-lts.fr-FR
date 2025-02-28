@@ -1,9 +1,9 @@
 ---
 title: Notes de mise à jour actuelles de Adobe Experience Manager 6.5 LTS
 description: Voici les notes de mise à jour actuelles de Adobe Experience Manager 6.5 LTS.
-source-git-commit: 54f3f3019dcceda4307160aa2126c37835f6626e
+source-git-commit: 6a69d4e143c54b22127a1e1ff3546898fcdd0b2d
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '796'
 ht-degree: 40%
 
 ---
@@ -59,7 +59,6 @@ Recherchez la matrice complète des plateformes prises en charge, y compris le n
 >
 >Il est recommandé d’utiliser Java™ 17 avec AEM 6.5 LTS.
 
-
 ## Fonctionnalités obsolètes et supprimées {#deprecated-and-removed-features}
 
 Adobe étudie constamment les fonctionnalités du produit de façon à les réinventer au fil du temps ou à remplacer les fonctions plus anciennes par des variantes plus modernes, pour améliorer la valeur client globale, le tout en faisant toujours attention à la compatibilité ascendante.
@@ -92,6 +91,7 @@ Cette section répertorie les fonctionnalités qui ont été supprimées d’AEM
 | Screens | Screens n’est pas pris en charge. | Aucun remplacement disponible. | 6,5 LTS GA |
 | Ressources | `dam-pim` et `dam-rating` ne sont pas pris en charge, car les lots dépendent des réseaux sociaux. | Aucun remplacement disponible. | 6,5 LTS GA |
 | Ressources | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` a été supprimé. | Utilisez l’autre `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` d’api qui a été ajouté. | 6,5 LTS GA |
+| Portail | AEM Portal Director n’est pas pris en charge. | Aucun remplacement disponible. | 6,5 LTS GA |
 | Granite | Le lot `com.adobe.granite.socketio` est supprimé. | Aucun remplacement disponible. | 6,5 LTS GA |
 | Granite | `com.adobe.granite.crx-explorer` n’est pas pris en charge. | Aucun remplacement disponible. | 6,5 LTS GA |
 | Granite | `crx2oak` n’est pas pris en charge. | Sélectionnez la version appropriée de [oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6,5 LTS GA |
@@ -104,7 +104,6 @@ Cette section répertorie les fonctionnalités qui ont été supprimées d’AEM
 | Open Source | `javax.mail` packages sont exportés à partir du lot `com.sun.javax.mail`. | Aucune modification n’est requise. | 6,5 LTS GA |
 | Open Source | Les packages `org.apache.jackrabbit.api` sont désormais exportés à partir du lot `org.apache.jackrabbit.oak-jackrabbit-api` . | Aucune modification n’est requise. | 6,5 LTS GA |
 | Open Source | `com.github.jknack.handlebars` n’est pas pris en charge | Choisir la [version](https://mvnrepository.com/artifact/com.github.jknack/handlebars) appropriée | 6,5 LTS GA |
-
 
 ## Sites web restreints{#restricted-sites}
 
