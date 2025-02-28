@@ -1,20 +1,20 @@
 ---
 cloud: Experience Cloud
 product: Adobe Experience Manager
-sub-product: Adobe Experience Manager 6.5
+sub-product: Adobe Experience Manager 6.5 LTS
 solution-title: Experience Cloud
-user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
+user-guide-description: Utilisez la documentation LTS de Adobe Experience Manager 6.5 pour en savoir plus sur son fonctionnement et sur ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
-user-guide-title: AEM 6.5
-source-git-commit: 1d306a12ebff41e5f31e5b7fbe8086cd2e657500
+user-guide-title: AEM 6.5 LTS
+source-git-commit: 4a13ad21a3ea4ce6a1db9dac459b2b9ffd0d27c3
 workflow-type: tm+mt
-source-wordcount: '7019'
-ht-degree: 99%
+source-wordcount: '7020'
+ht-degree: 98%
 
 ---
 
 
-# Documentation d’Adobe Experience Manager 6.5 {#content}
+# Documentation LTS de Adobe Experience Manager 6.5 {#content}
 
 + Notes de mise à jour {#release-notes}
    + [Notes de mise à jour](/help/release-notes/release-notes.md)
@@ -44,7 +44,7 @@ ht-degree: 99%
    + [Traitement des demandes RGPD pour AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md)
    + [Affichage principal de la gestion des autorisations](/help/sites-administering/touch-ui-principal-view.md)
    + [Filtre de disposition du contenu](/help/sites-administering/content-disposition-filter.md)
-   + [Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5](/help/sites-administering/cug-mapping.md)
+   + [Mappage de groupe d’utilisateurs personnalisé](/help/sites-administering/cug-mapping.md)
    + [Prise en charge des cookies Same Site](/help/sites-administering/same-site-cookie-support.md)
    + [Obsolescence des informations d’identification JWT dans Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [Configurer des intégrations IMS pour AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
@@ -1424,7 +1424,7 @@ ht-degree: 99%
       + Présentation de la plateforme AEM {#introduction}
          + [Présentation de la plateforme AEM](/help/sites-deploying/platform.md)
          + [Exigences techniques](/help/sites-deploying/technical-requirements.md)
-         + [Éléments de stockage dans AEM 6,5](/help/sites-deploying/storage-elements-in-aem-6.md)
+         + [Éléments de stockage dans AEM](/help/sites-deploying/storage-elements-in-aem-6.md)
          + [AEM avec MongoDB](/help/sites-deploying/aem-with-mongodb.md)
       + Déploiement d’AEM {#deploying}
          + [Déploiement et maintenance](/help/sites-deploying/deploy.md)
@@ -1436,7 +1436,7 @@ ht-degree: 99%
          + [Nettoyage de révision](/help/sites-deploying/revision-cleanup.md)
          + [Requêtes et indexation Oak](/help/sites-deploying/queries-and-indexing.md)
          + [Exécution d’AEM avec TarMK Cold Standby](/help/sites-deploying/tarmk-cold-standby.md)
-         + [Prise en charge RDBMS dans AEM 6.5](/help/sites-deploying/rdbms-support-in-aem.md)
+         + [Prise en charge RDBMS dans AEM](/help/sites-deploying/rdbms-support-in-aem.md)
          + [Indexation par l’intermédiaire du fichier Jar d’Oak-run](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
          + [Indexation du fichier Oak-run.jar – Scénarios d’utilisation](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Dépannage des index Oak](/help/sites-deploying/troubleshooting-oak-indexes.md)
@@ -1462,11 +1462,11 @@ ht-degree: 99%
          + [Guide de performances des ressources](/help/sites-deploying/assets-performance-sizing.md)
          + [Articles sur la procédure de configuration](/help/sites-deploying/ht-deploy.md)
          + [Configuration de la console web](/help/sites-deploying/configuring-web-console.md)
-      + Mise à niveau vers AEM 6.5 {#upgrading}
-         + [Mise à niveau vers AEM 6.5](/help/sites-deploying/upgrade.md)
+      + Mise à niveau vers AEM 6.5 LTS {#upgrading}
+         + [Mise à niveau vers AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
          + [Planification de la mise à niveau](/help/sites-deploying/upgrade-planning.md)
          + [Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs](/help/sites-deploying/pattern-detector.md)
-         + [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md)
+         + [Rétrocompatibilité dans AEM 6.5 LTS](/help/sites-deploying/backward-compatibility.md)
          + [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md)
          + [Exécution d’une mise à niveau statique](/help/sites-deploying/in-place-upgrade.md)
          + [Utilisation de la réindexation hors ligne pour réduire les temps d’arrêt pendant une mise à niveau](/help/sites-deploying/upgrade-offline-reindexing.md)
