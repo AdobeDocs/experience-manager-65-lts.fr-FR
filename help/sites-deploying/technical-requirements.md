@@ -5,9 +5,9 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 055e99ec1c202acacae1be55b48e828f2634b0f4
+source-git-commit: e77dfbdbe5d540590f7552ddd07f5f7b10f7b41e
 workflow-type: tm+mt
-source-wordcount: '3291'
+source-wordcount: '3044'
 ht-degree: 96%
 
 ---
@@ -129,14 +129,6 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 >
 >Pour plus d’informations, consultez la page [MongoDB pour Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 
->[!NOTE]
->
->Les bases de données relationnelles prises en charge, telles que répertoriées ci-dessus, sont des logiciels tiers qui ne sont pas inclus dans le package de licence d’AEM.
->
->Pour exécuter AEM 6.5 avec une base de données relationnelle prise en charge, un contrat d’assistance distinct auprès d’un fournisseur de base de données est requis. L’assistance clientèle Adobe propose son aide pour les problèmes admissibles liés à l’utilisation des bases de données relationnelles avec AEM 6.5.
->
->**La plupart des bases de données relationnelles sont actuellement prises en charge au niveau R sur AEM 6.5, qui comprend des critères et un programme de prise en charge, comme indiqué dans la description du niveau R ci-dessus.**
-
 ### Moteurs de servlet/serveurs d’applications {#servlet-engines-application-servers}
 
 Adobe Experience Manager peut s’exécuter en tant que serveur autonome (fichier JAR de démarrage rapide) ou en tant qu’application web dans un serveur d’applications tiers (fichier WAR).
@@ -146,10 +138,9 @@ La version minimale requise de l’API de servlet est la servlet 3.1. En outre, 
 | Plateforme | Niveau de prise en charge |
 |---|---|
 | **Moteur de servlet intégré à démarrage rapide (Jetty 11.0.x)** | A : pris en charge |
-| IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) avec Web Profile 24.0.0.7 et IBM® Sumeru open JRE® 17 | R : prise en charge restreinte des nouveaux contrats `[2]` |
-| Apache Tomcat 10.1.x | R : prise en charge restreinte des nouveaux contrats `[2]` |
+| IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) avec Web Profile 24.0.0.7 et IBM® Sumeru open JRE® 17 | R : prise en charge restreinte des nouveaux contrats `[1]` |
+| Apache Tomcat 11.0.x | R : prise en charge restreinte des nouveaux contrats `[1]` |
 
-1. Recommandé pour les déploiements avec AEM Forms.
 1. Avec les déploiements d’AEM 6.5 sur les serveurs d’applications, la prise en charge limitée sera activée. Les clientes et clients existant(e)s peuvent effectuer une mise à niveau vers AEM 6.5 et continuer à utiliser des serveurs d’applications. Pour les nouveaux clients et nouvelles clientes, des critères et un programme de prise en charge sont inclus, comme indiqué dans la description du niveau R ci-dessus.
 
 ### Systèmes d’exploitation de serveur {#server-operating-systems}
@@ -174,21 +165,6 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
    >* zlib.x86-64 (1.2.7-17)
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
-
-1. Les déploiements en exploitation Microsoft® Windows sont pris en charge pour les clients et clientes effectuant une mise à niveau vers la version 6.5 et pour une utilisation en dehors de l’environnement d’exploitation. Les nouveaux déploiements sont à la demande pour AEM Sites et Assets.
-1. AEM Forms est pris en charge sur Microsoft® Window Server sans les restrictions de niveau de prise en charge R.
-1. AEM Forms a supprimé la prise en charge de Microsoft® Windows Server 2016.
-
->[!NOTE]
->
->Si vous installez AEM Forms 6.5, assurez-vous d’avoir installé le redistribuable Microsoft® Visual C++ 32 bits suivant.
->
->* Redistribuable Microsoft® Visual C++ 2008
->* Redistribuable Microsoft® Visual C++ 2010
->* Redistribuable Microsoft® Visual C++ 2012
->* Microsoft® Visual C++ 2013 redistribuable
->* Microsoft® Visual C++ 2019 (VC14.28 ou version ultérieure) redistribuable
-
 
 ### Environnements virtuels et de cloud computing {#virtual-cloud-computing-environments}
 
@@ -296,18 +272,6 @@ L’interface utilisateur d’AEM est optimisée pour les grands écrans (géné
 ### Navigateurs pris en charge pour les sites web {#supported-browsers-for-websites}
 
 En règle générale, la prise en charge des navigateurs pour les sites web rendus par AEM Sites dépend de l’implémentation des modèles de page d’AEM, de la conception et de la sortie des composants, et relève donc de celui ou celle qui met en œuvre ces parties.
-
-### Clients et clientes WebDAV {#webdav-clients}
-
-**Microsoft® Windows 7 et versions ultérieures**
-
-Lors de la connexion avec Microsoft® Windows 7 et les versions ultérieures à une instance AEM non sécurisée avec SSL, l’authentification de base sur un réseau non sécurisé doit être activée sous Windows. Cela nécessite une modification du registre Windows du WebClient :
-
-1. Recherchez la sous-clé de registre :
-
-   * HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
-
-1. Ajoutez l’entrée de registre BasicAuthLevel à cette sous-clé à l’aide d’une valeur de 2 ou plus.
 
 ## Remarques supplémentaires sur Platform {#additional-platform-notes}
 
