@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation LTS de Adobe Experience Manager 6.5 pour en savoir plus sur son fonctionnement et sur ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 4a13ad21a3ea4ce6a1db9dac459b2b9ffd0d27c3
+source-git-commit: fe361e43288ad0242faa1d82af086aee9fc7804b
 workflow-type: tm+mt
-source-wordcount: '7020'
+source-wordcount: '7044'
 ht-degree: 98%
 
 ---
@@ -1472,12 +1472,15 @@ ht-degree: 98%
          + [Utilisation de la réindexation hors ligne pour réduire les temps d’arrêt pendant une mise à niveau](/help/sites-deploying/upgrade-offline-reindexing.md)
          + [Migration différée du contenu](/help/sites-deploying/lazy-content-migration.md)
          + [Utilisation de l’outil de migration CRX2Oak](/help/sites-deploying/using-crx2oak.md)
+         + [Migration de contenu LTS d’AEM 6.5 vers AEM 6.5 à l’aide de la mise à niveau Oak](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md)
          + [Tâches de maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
          + [Vérifications et dépannage après une mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
          + [Mise à niveau des formulaires de recherche personnalisée](/help/sites-deploying/upgrading-custom-search-forms.md)
          + [Mises à niveau possibles](/help/sites-deploying/sustainable-upgrades.md)
          + [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md)
          + [Procédure de mise à niveau pour les installations de serveur d’applications](/help/sites-deploying/app-server-upgrade.md)
+         + [Procédure de mise à niveau pour les installations de serveur d’applications (WLP)](/help/sites-deploying/app-server-upgrade-wlp.md)
+         + [Étapes de mise à niveau pour les installations de serveur d’applications (Tomcat)](/help/sites-deploying/app-server-upgrade-tomcat.md)
          + [Liste des lots obsolètes désinstallés après la mise à niveau](/help/sites-deploying/obsolete-bundles.md)
       + Bonnes pratiques {#practices}
          + [Bonnes pratiques de déploiement](/help/sites-deploying/best-practices.md)
