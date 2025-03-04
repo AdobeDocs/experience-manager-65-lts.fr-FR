@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6a06ad15782b5cff7978547d005aaa312a837647
+source-git-commit: ae78421de75518894f3996829e554acd9003a6d1
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '820'
 ht-degree: 98%
 
 ---
@@ -100,7 +100,6 @@ La topologie utilisée pour cette section est constituée d’un cluster de cré
 1. Redémarrez l’instance de création principale pour vous assurer qu’elle redémarre correctement.
 1. Désactivez les agents de réplication sur l’instance de création principale.
 1. Exécutez les [tâches de maintenance préalables à la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) sur l’instance de création principale.
-1. Si nécessaire, mettez à niveau MongoDB vers la version 3.2 sur l’instance principale Mongo avec WiredTiger.
 
 ### Exécution de la mise à niveau {#Upgrade-execution-1}
 
@@ -114,7 +113,7 @@ La topologie utilisée pour cette section est constituée d’un cluster de cré
 
 ![mongo-secondaries](assets/mongo-secondaries.jpg)
 
-1. Créez de nouvelles instances d’auteur 6.5.2025, connectées à l’instance Mongo mise à niveau.
+1. Créez de nouvelles instances d’auteur LTS AEM 6.5, connectées à l’instance Mongo mise à niveau.
 
 1. Recréez les nœuds MongoDB qui ont été supprimés du cluster.
 
