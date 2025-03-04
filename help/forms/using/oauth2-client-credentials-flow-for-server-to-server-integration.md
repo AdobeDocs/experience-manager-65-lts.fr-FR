@@ -4,7 +4,7 @@ description: Procédure d’intégration de Salesforce avec AEM Forms à l’ai
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 99%
@@ -69,4 +69,4 @@ Avant de définir la communication entre une application Salesforce et un enviro
 1. Cliquez sur **[!UICONTROL Tester la connexion]**.
 1. Si la connexion est établie, cliquez sur le bouton **[!UICONTROL Créer]**.
 
-Vous pouvez désormais [créer le modèle de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/form-data-model/create-form-data-models.html?lang=en) pour intégrer la source de données configurée à vos formulaires adaptatifs.
+Vous pouvez désormais [créer le modèle de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/form-data-model/create-form-data-models.html?lang=en) pour intégrer la source de données configurée à vos formulaires adaptatifs.

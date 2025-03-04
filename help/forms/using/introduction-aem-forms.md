@@ -8,7 +8,7 @@ docset: aem65
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 99%
@@ -36,7 +36,7 @@ AEM Forms offre des outils de gestion de formulaires qui vous permettent non seu
 
 >[!NOTE]
 >
->La fonctionnalité de formulaires adaptatifs, disponible dans [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/deploying/deploy.html), est conçue à des fins d’exploration et d’évaluation uniquement. Pour une utilisation à des fins de production, il est essentiel d’obtenir une licence valide pour AEM Forms, car la fonctionnalité de formulaires adaptatifs nécessite une licence appropriée.
+>La fonctionnalité de formulaires adaptatifs, disponible dans [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/deploy.html), est conçue à des fins d’exploration et d’évaluation uniquement. Pour une utilisation à des fins de production, il est essentiel d’obtenir une licence valide pour AEM Forms, car la fonctionnalité de formulaires adaptatifs nécessite une licence appropriée.
 
 ![Fonctionnalités d’AEM Forms](do-not-localize/4th-draft-updated.gif)
 
@@ -117,7 +117,7 @@ Des documents personnalisés tels que des reçus, des kits de bienvenue et des i
 * Environnement de création de correspondance avec prise en charge des modèles, des blocs de contenu, des règles métier, etc.
 * Conversion et assemblage de documents
 * Prise en charge de la remise de documents par lots ou à la demande via plusieurs canaux, notamment le web, la messagerie et le papier
-* Pistes d’audit avec historique des modifications
+* Journaux d’audit avec historique des modifications
 * Prise en charge des signatures numériques pour garantir l’intégrité du contenu et l’identité du ou de la signataire
 * Module complémentaire de sécurité des documents pour AEM Forms comprenant le chiffrement, les politiques d’utilisation, le suivi et l’audit
 

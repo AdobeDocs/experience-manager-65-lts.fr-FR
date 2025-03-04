@@ -6,7 +6,7 @@ role: Architect, Leader
 feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 99%
@@ -93,6 +93,6 @@ Notez que vous ne pouvez pas utiliser de balises intelligentes, de lien [!DNL As
 
 >[!MORELIKETHIS]
 >
->* [Fonctionnalités de gestion des ressources numériques dans  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/home.html)
+>* [Fonctionnalités de gestion des ressources numériques dans  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/home.html)
 >* Description du produit [[!DNL Experience Manager]  6.5 Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)
 >* Description du produit [[!DNL Experience Manager]  6.5 on-premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html)

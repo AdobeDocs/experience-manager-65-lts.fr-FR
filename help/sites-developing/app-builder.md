@@ -4,7 +4,7 @@ description: Extension d’ [!DNL Adobe Experience Manager]  6.5 à l’aide d�
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 99%
@@ -29,7 +29,7 @@ Depuis l’été 2020, le créateur d’applications est disponible pour les cl
 
 >[!NOTE]
 >
->Pour les clientes et clients AEM as a Cloud Service qui souhaitent utiliser le créateur d’applications, accédez à [Extension d’Adobe Experience Manager as a Cloud Service à l’aide du créateur d’applications d’Adobe Developer](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/extending-aem/app-builder.html).
+>Pour les clientes et clients AEM as a Cloud Service qui souhaitent utiliser le créateur d’applications, accédez à [Extension d’Adobe Experience Manager as a Cloud Service à l’aide du créateur d’applications d’Adobe Developer](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/app-builder.html).
 
 ## Architecture {#architecture}
 

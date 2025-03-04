@@ -8,7 +8,7 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1939'
 ht-degree: 99%
@@ -80,7 +80,7 @@ La personnalisation d’un thème fait référence au processus de modification 
 
 * Installation de la dernière version d’[Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven est un outil d’automatisation de création couramment utilisé dans les projets Java™. L’installation de la dernière version vous garantit les dépendances nécessaires à la personnalisation du thème.
 
-* Découvrez comment créer une [bibliothèque cliente dans Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/introduction/clientlibs.html). AEM fournit des bibliothèques clientes qui vous permettent de stocker le code côté client dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client ou à la cliente.
+* Découvrez comment créer une [bibliothèque cliente dans Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/clientlibs.html). AEM fournit des bibliothèques clientes qui vous permettent de stocker le code côté client dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client ou à la cliente.
 
 * Installez un éditeur de texte brut. Par exemple, Microsoft® Visual Studio Code. L’utilisation d’un éditeur de texte brut tel que Microsoft® Visual Studio Code fournit un environnement convivial pour la création et la modification de fichiers de thème.
 

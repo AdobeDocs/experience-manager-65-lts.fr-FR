@@ -4,7 +4,7 @@ description: Configurer l’authentification OAuth2 pour les protocoles de serve
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 99%
@@ -150,7 +150,7 @@ Maintenant, configurez le service de messagerie sur le dernier serveur JEE en vo
 
    >[!NOTE]
    >
-   > Pour en savoir plus sur les notifications de tâche, [cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   > Pour en savoir plus sur les notifications de tâche, [cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## Pour configurer le point d’entrée de l’e-mail, {#configure_email_endpoint}
 
@@ -164,7 +164,7 @@ Maintenant, configurez le service de messagerie sur le dernier serveur JEE en vo
 
    >[!NOTE]
    >
-   > Pour plus d’informations sur la configuration des points d’entrée d’e-mail, cliquez sur [Configuration d’un point d’entrée d’e-mail](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-email-endpoints.html).
+   > Pour plus d’informations sur la configuration des points d’entrée d’e-mail, cliquez sur [Configuration d’un point d’entrée d’e-mail](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html).
 
 ## Résolution des problèmes {#troubleshooting}
 

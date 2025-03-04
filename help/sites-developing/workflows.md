@@ -8,7 +8,7 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: eff477824f2d1e5dfe5417835e8ced4b7eb85a0f
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 99%
@@ -39,7 +39,7 @@ Les principaux aspects sont abordés ci-dessous, tandis que les pages suivantes 
 >
 >* la participation aux workflows, consultez [Utilisation des workflows](/help/sites-authoring/workflows.md) ;
 >* l’administration des processus et des instances de processus, consultez [Administration des workflows](/help/sites-administering/workflows.md).
->* Pour un article complet de la communauté, consultez [Modification des ressources numériques à l’aide des workflows d’Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/assets-workflow.html)
+>* Pour un article complet de la communauté, consultez [Modification des ressources numériques à l’aide des workflows d’Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html)
 >* Consultez le [webinaire Demandez aux experts d’AEM relatif aux workflows](https://communities.adobeconnect.com/p5s33iburd54/) (en anglais).
 >* Les modifications apportées aux emplacements des informations, voir [Bonnes pratiques relatives aux workflows - Emplacements](/help/sites-developing/workflows-best-practices.md#locations).
 >

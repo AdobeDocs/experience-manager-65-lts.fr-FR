@@ -4,7 +4,7 @@ description: Apprenez à créer des formulaires professionnels, interactifs et r
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 9bb44a58e919fd038c83cab89620256501137bef
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 99%
@@ -42,7 +42,7 @@ Le site Web fonctionne sous Adobe Experience Manager (AEM) et utilise AEM [!DNL 
 
 ### Prérequis {#prerequisite}
 
-* Configurez une [instance de création AEM](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs).
+* Configurez une [instance de création AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs).
 * Installez le [module complémentaire AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) sur une instance de création.
 * Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du tutoriel sont basés sur la base de données [!DNL MySQL] et utilisent le [pilote de base de données MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html) d’[!DNL Oracle's].
 

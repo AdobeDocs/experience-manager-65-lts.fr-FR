@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 238ff31ed4e5e833a14cb64e3eae75377038a857
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '3059'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ Pour configurer Experience Manager Assets pour l’utiliser avec Asset Link, 
 
 1. Pour mapper des utilisateurs sous licence Creative Cloud à des utilisateurs d’Experience Manager, gérez le [contrôle d’accès utilisateur](#user-access).
 
-1. Créez l’[index de requête personnalisé](#create-custom-index), configurez les [Rendus FPO](/help/assets/configure-fpo-renditions.md) pour InDesign, configurez l’[intégration d’Adobe Stock](/help/assets/aem-assets-adobe-stock.md) et configurez la [recherche visuelle ou par analogie](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/search-assets.html#configvisualsearch).
+1. Créez l’[index de requête personnalisé](#create-custom-index), configurez les [Rendus FPO](/help/assets/configure-fpo-renditions.md) pour InDesign, configurez l’[intégration d’Adobe Stock](/help/assets/aem-assets-adobe-stock.md) et configurez la [recherche visuelle ou par analogie](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch).
 
 ## Conditions préalables et prise en charge de différentes fonctionnalités {#prerequisites}
 
@@ -85,7 +85,7 @@ Pour configurer manuellement Experience Manager :
 
    Pour ajouter chaque `Client ID`, cliquez sur `+`. Cliquez sur **[!UICONTROL Enregistrer]** après l’ajout de tous les identifiants.
 
-1. Dans la configuration du **[!UICONTROL fournisseur et application OAuth Granite Adobe]**, inspectez les instances du **[!UICONTROL fournisseur et application OAuth Granite Adobe]** existantes. Si vous localisez une instance avec `Config ID` défini comme `ims`, utilisez-le pour les instructions de cette procédure. Sinon, cliquez sur `+` pour créer une instance de configuration. Définissez les valeurs de propriété suivantes, puis cliquez sur **[!UICONTROL Enregistrer]**.
+1. Dans la configuration du **[!UICONTROL fournisseur et de l’application OAuth Adobe Granite]**, inspectez les instances du **[!UICONTROL fournisseur et de l’application OAuth Adobe Granite]**. Si vous localisez une instance avec `Config ID` défini comme `ims`, utilisez-le pour les instructions de cette procédure. Sinon, cliquez sur `+` pour créer une instance de configuration. Définissez les valeurs de propriété suivantes, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
    * [!UICONTROL ID client] : ne pas modifier
    * [!UICONTROL Secret client] : ne pas modifier
@@ -121,7 +121,7 @@ Une configuration supplémentaire n’est requise que si vous utilisez différen
 
 >[!NOTE]
 >
->* Le correctif pour les profils métier est fourni dans Experience Manager 6.5.11.0.
+>* Le correctif pour les profils métier est fourni dans Experience Manager 6.5.11.0.
 >* La configuration existante continue de fonctionner si vous utilisez la même organisation Adobe IMS avec Experience Manager et CCE.
 
 
@@ -130,7 +130,7 @@ Une configuration supplémentaire n’est requise que si vous utilisez différen
 1. Une instance d’Experience Manager en cours d’exécution avec l’authentification du porteur configurée pour AAL
 1. Installez le package suivant (pack de services 11) sur votre instance Experience Manager 6.5.
 
-   [Télécharger Experience Manager 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
+   [Télécharger Experience Manager 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
 
 1. Contactez le [!UICONTROL service clientèle] pour obtenir l’identifiant client et la clé secrète pour l’authentification du porteur de votre organisation IMS.
 
@@ -242,7 +242,7 @@ Dans Experience Manager 6.4 et Experience Manager 6.5, les administrateurs p
 
 Cette configuration est utile pour les utilisateurs et les spécialistes du marketing du secteur, par exemple pour créer un workflow personnalisé sur des dossiers spécifiques. Disons que toutes les ressources de la séance photo d’une agence peuvent recevoir un filigrane ou que toutes les ressources téléchargées par un programme de travail indépendant peuvent être traitées pour créer des rendus spécifiques.
 
-Pour plus d’informations et pour la configuration d’Experience Manager, consultez [Exécution automatique du workflow sur les ressources](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets).
+Pour plus d’informations et pour la configuration d’Experience Manager, consultez [Exécution automatique du workflow sur les ressources](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets).
 
 
 ## Création d’un index personnalisé dans les versions Experience Manager 6.4.x {#create-custom-index}
@@ -260,7 +260,7 @@ Experience Manager contient des index utilisés pour l’interrogation. Créez 
 
 ## Configuration de la recherche visuelle ou par analogie {#configure-visual-similarity-search}
 
-La fonctionnalité de recherche visuelle vous permet de rechercher des ressources visuellement similaires dans le référentiel AEM Assets à l’aide du panneau Adobe Asset Link. Cette fonctionnalité est disponible dans la version 6.5.0 ou une version ultérieure et seules les ressources indexées sont recherchées. Pour plus d’informations, consultez [Comment configurer la recherche visuelle](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/search-assets.html#configvisualsearch).
+La fonctionnalité de recherche visuelle vous permet de rechercher des ressources visuellement similaires dans le référentiel AEM Assets à l’aide du panneau Adobe Asset Link. Cette fonctionnalité est disponible dans la version 6.5.0 ou une version ultérieure et seules les ressources indexées sont recherchées. Pour plus d’informations, consultez [Comment configurer la recherche visuelle](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch).
 
 ## Génération de rendus pour placement uniquement pour Adobe InDesign {#fpo-renditions}
 

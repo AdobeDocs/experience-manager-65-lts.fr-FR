@@ -10,7 +10,7 @@ tagskeywords: querybuilder
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2033'
 ht-degree: 99%
@@ -31,7 +31,7 @@ L’API REST permet d’accéder aux mêmes fonctionnalités via HTTP avec les r
 
 >[!NOTE]
 >
->L’API QueryBuilder est créée à l’aide de l’API JCR. Vous pouvez également interroger le JCR Adobe Experience Manager en utilisant l’API JCR depuis un lot OSGi. Pour plus d’informations, voir [Adobe Experience Manager à l’aide de l’API JCR](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/platform/access-jcr.html).
+>L’API QueryBuilder est créée à l’aide de l’API JCR. Vous pouvez également interroger le JCR Adobe Experience Manager en utilisant l’API JCR depuis un lot OSGi. Pour plus d’informations, voir [Adobe Experience Manager à l’aide de l’API JCR](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/access-jcr.html).
 
 ## Session Gem {#gem-session}
 

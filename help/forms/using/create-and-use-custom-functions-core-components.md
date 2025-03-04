@@ -5,7 +5,7 @@ keywords: Ajoutez une fonction personnalisée, utilisez une fonction personnalis
 content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '3385'
 ht-degree: 99%
@@ -571,7 +571,7 @@ Prévisualisons le formulaire pour observer comment les fonctions personnalisée
 
 >[!NOTE]
 >
-> Vous pouvez vous référer au dossier de [fonctions personnalisées](/help/forms/using/assets/customfunctions.zip) suivant. Téléchargez et installez ce dossier dans votre instance AEM à l’aide du [Gestionnaire de modules](https://experienceleague.adobe.com/en/docs/experience-manager-65-2025/content/sites/administering/contentmanagement/package-manager).
+> Vous pouvez vous référer au dossier de [fonctions personnalisées](/help/forms/using/assets/customfunctions.zip) suivant. Téléchargez et installez ce dossier dans votre instance AEM à l’aide du [Gestionnaire de modules](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
 
 ### Prise en charge des fonctions asynchrones dans les fonctions personnalisées {#support-of-async-functions}
 

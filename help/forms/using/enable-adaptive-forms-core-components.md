@@ -5,7 +5,7 @@ keywords: Activer les composants principaux, Composants principaux des formulair
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 8efb1eb0b4a69cf59fa5853aa335dbf3d6061185
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 98%
@@ -31,7 +31,7 @@ Cet article fournit des instructions détaillées sur la configuration et le dé
 
 Avant d’activer les composants principaux des formulaires adaptatifs dans un environnement AEM Forms 6.5 :
 
-* [Mise à niveau vers AEM 6.5 Forms Service Pack 16 (6.5.16.0) ou version ultérieure](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html).
+* [Mise à niveau vers AEM 6.5 Forms Service Pack 16 (6.5.16.0) ou version ultérieure](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html).
 
 * Installez la dernière version d’[Apache Maven](https://maven.apache.org/download.cgi).
 
@@ -130,7 +130,7 @@ Pour créer un projet d’archétype AEM 41 ou [version ultérieure](https://gi
 
    Une fois le projet d’archétype AEM créé, un package AEM est généré. Vous trouverez le package dans le [Dossier du projet d’archétype AEM]\all\target\[appid].all-[version].zip
 
-1. Utilisez le [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65-2025/administering/contentmanagement/package-manager.html?lang=en) pour déployer le package [Dossier du projet d’archétype AEM]\all\target\[appid].all-[version].zip sur toutes les instances de création et de publication.
+1. Utilisez le [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en) pour déployer le package [Dossier du projet d’archétype AEM]\all\target\[appid].all-[version].zip sur toutes les instances de création et de publication.
 
 >[!NOTE]
 >

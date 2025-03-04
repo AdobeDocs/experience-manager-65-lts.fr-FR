@@ -9,7 +9,7 @@ docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '3219'
 ht-degree: 99%
@@ -23,7 +23,7 @@ Grâce à Document Security, seuls les utilisateurs et utilisatrices autorisés
 * Les fichiers Adobe PDF
 * Les fichiers Microsoft® Word, Excel et PowerPoint
 
-Pour plus d’informations sur la façon dont les politiques protègent les types de fichiers pris en charge, consultez la section [Informations complémentaires sur Document Security](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/use-document-security/document-security-offerings.html?lang=en).
+Pour plus d’informations sur la façon dont les politiques protègent les types de fichiers pris en charge, consultez la section [Informations complémentaires sur Document Security](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/use-document-security/document-security-offerings.html?lang=en).
 
 Avec Document Security, vous pouvez facilement créer, stocker et appliquer des paramètres de confidentialité prédéfinis à vos documents. Pour empêcher toute diffusion incontrôlée d’informations, vous pouvez également vérifier et contrôler la façon dont les destinataires et destinatrices utilisent les documents que vous leur avez distribués.
 
