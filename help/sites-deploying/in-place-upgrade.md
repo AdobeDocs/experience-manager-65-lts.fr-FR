@@ -5,10 +5,10 @@ topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
+source-git-commit: c3df47efd4b13dcd8061e5cdac32a75fbf36df4b
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 52%
+source-wordcount: '538'
+ht-degree: 47%
 
 ---
 
@@ -16,23 +16,27 @@ ht-degree: 52%
 
 >[!NOTE]
 >
->Cette page décrit la procédure de mise à niveau pour AEM 6.5 LTS. Si vous disposez d’une installation déployée sur un serveur d’applications, voir [Procédure de mise à niveau pour les installations de serveur d’applications](/help/sites-deploying/app-server-upgrade.md).
+>Cette page décrit la procédure de mise à niveau sur place pour AEM 6.5 LTS. Si vous disposez d’une installation déployée sur un serveur d’applications, voir [Procédure de mise à niveau pour les installations de serveur d’applications](/help/sites-deploying/app-server-upgrade.md).
 
 ## Étapes préalables à la mise à niveau {#pre-upgrade-steps}
 
-Avant d’exécuter votre mise à niveau, plusieurs étapes doivent être réalisées. Voir [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) et [Tâches de maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) pour plus d’informations. Assurez-vous également que votre système répond à la configuration requise pour AEM 6.5 LTS. Pour plus d’informations, consultez la section sur la portée et les exigences de la mise à niveau de la section [Planification de la mise à niveau](/help/sites-deploying/upgrade-planning.md) et découvrez comment Analyzer peut vous aider à estimer la complexité de votre mise à niveau.
+Avant d’exécuter votre mise à niveau, plusieurs étapes doivent être réalisées. Voir [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) et [Tâches de maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) pour plus d’informations. En outre, assurez-vous que votre système répond à la [configuration requise pour AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md), consultez les [considérations relatives à la planification de la mise à niveau](/help/sites-deploying/upgrade-planning.md) et sur la manière dont [Analyzer](/help/sites-deploying/pattern-detector.md) peut vous aider à estimer la complexité.
 
 <!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Conditions préalables à la migration {#migration-prerequisites}
 
-* **Version Java minimale requise :** Assurez-vous qu’Oracle JRE 17 est installé sur votre système.
+* **Version Java minimale requise :** Vérifiez qu’Oracle Java™ 17 est installé sur votre système.
 
 ## Préparation du fichier jar de démarrage rapide AEM {#prep-quickstart-file}
 
+1. Téléchargez le nouveau fichier JAR LTS d’AEM 6.5
+
+1. [Détermination de la commande de démarrage de mise à niveau appropriée](/help/sites-deploying/in-place-upgrade.md#determining-the-correct-upgrade-start-command-determining-the-correct-upgrade-start-command)
+
 1. Arrêter l’instance si elle est en cours d’exécution
 
-1. Téléchargez le nouveau fichier JAR LTS d’AEM 6.5 et utilisez-le pour remplacer l’ancien en dehors du dossier `crx-quickstart`
+1. Utilisez le nouveau fichier jar LTS AEM 6.5 pour remplacer l’ancien en dehors du dossier `crx-quickstart`
 
 1. Effectuez une sauvegarde du fichier `sling.properties` (généralement présent dans le `crx-quickstart/conf/`), puis supprimez-le
 
@@ -175,7 +179,7 @@ Démarrez à présent l’instance AEM à l’aide de la nouvelle commande déte
 
 >[!NOTE]
 >
->La prise en charge de certains arguments Java 8/11 a été supprimée dans Java 17. Consultez les considérations relatives aux arguments Java pour AEM 6.5 LTS (stub de lien).
+>](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) La prise en charge de certains arguments Java 8/11 a été supprimée dans Java 17, consultez les [documents Oracle Java™ 17 et les [considérations relatives aux arguments Java&amp;trade pour AEM 6.5 LTS](https://git.corp.adobe.com/AdobeDocs/experience-manager-65-lts.en/blob/main/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
 
 Pour exécuter la mise à niveau, il est important de démarrer AEM à l’aide du fichier jar pour afficher l’instance.
 
@@ -193,10 +197,10 @@ Notez que le démarrage d’AEM à partir du script de démarrage ne lance pas l
    /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.5.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
-1. Modifiez la commande en remplaçant le chemin d’accès dans le fichier JAR existant (`crx-quickstart/app/aem-quickstart*.jar` dans ce cas) par le nouveau fichier JAR qui est un frère du dossier `crx-quickstart`. Avec la commande précédente comme exemple, la commande serait la suivante :
+1. Modifiez la commande en remplaçant le chemin d’accès dans le fichier jar existant ( `crx-quickstart/app/aem-quickstart*.jar` dans ce cas) par le nouveau fichier jar LTS d’AEM 6.5 qui est un frère du dossier `crx-quickstart`. Avec la commande précédente comme exemple, la commande serait la suivante :
 
    ```shell
-   /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.6.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar <AEM-6.5-LTS.jar> -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
    Cela permet de s’assurer que tous les paramètres de mémoire appropriés, les modes d’exécution personnalisés et d’autres paramètres d’environnement sont appliqués pour la mise à niveau. Une fois la mise à niveau terminée, l’instance peut être lancée à partir du script de démarrage lors des prochains lancements.
