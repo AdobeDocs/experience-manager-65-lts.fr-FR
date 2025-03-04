@@ -9,10 +9,10 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ee5f1f68f6f961ba0a18296eaf198ebe8671b226
+source-git-commit: 09b297721b08ef428f1ac8a26fec38d5a8bd34fd
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 92%
+source-wordcount: '1200'
+ht-degree: 80%
 
 ---
 
@@ -20,28 +20,24 @@ ht-degree: 92%
 
 ## Vérifications après mise à niveau {#post-upgrade-checks}
 
-Après la [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md), les activités suivantes doivent être exécutées pour finaliser la mise à niveau. On suppose qu’AEM a été démarré avec le fichier jar 6.5.2025 et que la base de code mise à niveau a été déployée.
+Après la [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md), les activités suivantes doivent être exécutées pour finaliser la mise à niveau. On suppose qu’AEM a été démarré avec le jar LTS AEM 6.5 et que la base de code mise à niveau a été déployée.
 
-* [Vérification des journaux pour la réussite de la mise à niveau](#main-pars-header-290365562)
+* [Vérification des journaux pour la réussite de la mise à niveau](#verify-logs-for-upgrade-success)
 
-* [Vérification des lots OSGi](#main-pars-header-1637350649)
+* [Vérification des lots OSGi](#verify-osgi-bundles)
 
-* [Vérifier la version d’Oak](#main-pars-header-1293049773)
+* [Vérifier la version d’Oak](#verify-oak-version)
 
-* [Inspection de dossier PreUpgradeBackup](#main-pars-header-988995987)
+* [Validation initiale des pages](#initial-validation-of-pages)
 
-* [Validation initiale des pages](#main-pars-header-20827371)
-* [Application de packs de service AEM](#main-pars-header-215142387)
+* [Vérification des configurations de maintenance planifiées](#verify-scheduled-maintenance-configurations)
 
-* [Migration des fonctionnalités AEM](#main-pars-header-1434457709)
+* [Activation des agents de réplication](#enable-replication-agents)
 
-* [Vérification des configurations de maintenance planifiées](#main-pars-header-1552730183)
+* [Activation des tâches planifiées personnalisées](#enable-custom-scheduled-jobs)
 
-* [Activation des agents de réplication](#main-pars-header-823243751)
+* [Exécution du plan de test](#execute-test-plan)
 
-* [Activation des tâches planifiées personnalisées](#main-pars-header-244535083)
-
-* [Exécution du plan de test](#main-pars-header-1167972233)
 
 ### Vérification des journaux pour la réussite de la mise à niveau {#verify-logs-for-upgrade-success}
 
@@ -53,7 +49,7 @@ L’objectif principal de cette fonctionnalité est de réduire la nécessité d
 
 Plus précisément, il garantit ce qui suit :
 
-* les échecs de mise à niveau détectés par la structure de mise à niveau sont centralisés dans un seul rapport de mise à niveau ;
+* Les échecs de mise à niveau détectés par la structure de mise à niveau sont centralisés dans un rapport de mise à niveau unique.
 * le rapport de mise à niveau comprend des indicateurs sur l’intervention manuelle nécessaire.
 
 Pour cela, les modifications ont été apportées à la façon dont les journaux sont générés dans le fichier `upgrade.log`.
@@ -68,7 +64,7 @@ Accédez à la console OSGi `/system/console/bundles` et vérifiez si des lots n
 
 ### Vérifier la version d’Oak {#verify-oak-version}
 
-Après la mise à niveau, vous devez constater qu’Oak a été mis à jour vers la version **1.68.0**. Pour vérifier la version d’Oak, accédez à la console OSGi et examinez la version associée aux lots Oak : Oak Core, Oak Commons, Oak Segment Tar.
+Après la mise à niveau, vous devriez constater qu’Oak a été mis à jour vers la version **1.68.1-B002**. Pour vérifier la version d’Oak, accédez à la console OSGi et examinez la version associée aux lots Oak : Oak Core, Oak Commons, Oak Segment Tar.
 
 ### Validation initiale des pages {#initial-validation-of-pages}
 
@@ -88,10 +84,6 @@ Si vous utilisez un magasin de données basé sur les fichiers, assurez-vous que
 
 Si vous utilisez MongoMK ou le nouveau format de segment TarMK, assurez-vous que la tâche de nettoyage de révision est activée et ajoutée à la liste de maintenance quotidienne. Les instructions sont décrites sous [Nettoyage des révisions](/help/sites-deploying/revision-cleanup.md).
 
-### Exécution du plan de test {#execute-test-plan}
-
-Exécutez le plan de test détaillé tel que défini dans [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) dans la section **Procédure de test**.
-
 ### Activation des agents de réplication {#enable-replication-agents}
 
 Une fois que l’environnement de publication a été entièrement mis à niveau et validé, activez les agents de réplication dans l’environnement de création. Vérifiez que les agents sont en mesure de se connecter aux instances de publication respectives. Voir [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md) pour plus d’informations sur l’ordre des événements.
@@ -100,19 +92,21 @@ Une fois que l’environnement de publication a été entièrement mis à niveau
 
 À ce stade, toutes les tâches planifiées faisant partie de la base de code peuvent être activées.
 
-## Analyser les problèmes liés à la mise à niveau {#analyzing-issues-with-upgrade}
+### Exécution du plan de test {#execute-test-plan}
 
-Cette section présente certains scénarios de problèmes auxquels vous pourriez être confronté lors de la procédure de mise à niveau vers AEM 6.5.2025.
+Exécutez le plan de test détaillé comme défini dans [Mise à niveau du code et des personnalisations dans la section **Procédure de test**](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure).
 
-Ces scénarios doivent vous permettre de déterminer la cause principale des problèmes liés à la mise à niveau et à identifier les problèmes spécifiques au projet ou au produit.
+## Analyser les problèmes liés à la mise à niveau {#analyzing-issues-with-the-upgrade}
 
-### Échec de la mise à jour des packages et des lots  {#packages-and-bundles-fail-to-update-}
+Cette section présente certains scénarios de problèmes auxquels vous pourriez être confronté lors de la procédure de mise à niveau vers AEM 6.5 LTS.
+
+### Échec de la mise à jour des packages et des lots  {#packages-and-bundles-fail-to-update}
 
 Si l’installation des packages échoue pendant la mise à niveau, les lots qu’ils contiennent ne seront pas mis à jour non plus. Cette catégorie de problèmes est due à une mauvaise configuration du magasin de données. Ils apparaissent également sous la forme de messages **ERROR** (erreur) et **WARN** (avertissement) dans error.log. Étant donné que dans la plupart de ces cas, la connexion par défaut peut ne pas fonctionner, vous pouvez utiliser CRXDE directement pour inspecter et trouver les problèmes de configuration.
 
 ### La mise à niveau n’a pas été exécutée. {#the-upgrade-did-not-run}
 
-Avant de commencer les étapes de préparation, veillez à exécuter d’abord l’instance **source** en l’exécutant avec la commande Java™ -jar aem-quickstart.jar. Cela est nécessaire pour s’assurer que le fichier quickstart.properties est généré correctement. S’il est manquant, la mise à niveau ne fonctionnera pas. Vous pouvez également vérifier si le fichier est présent en regardant sous `crx-quickstart/conf` dans le dossier d’installation de l’instance source. En outre, lorsque vous démarrez AEM pour lancer la mise à niveau, celui-ci doit être exécuté avec la commande Java™ -jar aem-quickstart.jar. Le démarrage à partir d’un script de démarrage ne démarre pas AEM en mode de mise à niveau.
+Avant de commencer les étapes de préparation, veillez à exécuter d&#39;abord l&#39;instance **source** en l&#39;exécutant avec la commande `java -jar aem-quickstart.jar`. Cela est nécessaire pour s’assurer que le fichier quickstart.properties est généré correctement. S’il est manquant, la mise à niveau ne fonctionnera pas. Vous pouvez également vérifier si le fichier est présent en regardant sous `crx-quickstart/conf` dans le dossier d’installation de l’instance source. En outre, lors du démarrage d’AEM pour lancer la mise à niveau, celle-ci doit être exécutée avec la commande `java -jar <aem-quickstart-6.5-LTS.jar>`. Le démarrage à partir d’un script de démarrage ne démarre pas AEM en mode de mise à niveau.
 
 ### Certains lots AEM ne passent pas à l’état actif. {#some-aem-bundles-are-not-switching-to-the-active-state}
 
@@ -120,13 +114,13 @@ Si des lots ne démarrent pas, recherchez des dépendances insatisfaites.
 
 Si ce problème est présent mais qu’il est dû à un échec de l’installation du package qui a entraîné la non-mise à niveau des lots, ils seront considérés comme incompatibles pour la nouvelle version. Pour plus d’informations sur la manière de résoudre ce problème, voir **Échec de la mise à jour des packages et des lots** ci-dessus.
 
-Il est également recommandé de comparer la liste des lots d’une instance AEM 6.5.2025 neuve avec celle de l’instance mise à niveau afin de détecter les lots qui n’ont pas été mis à niveau. Cela permettra de réduire le champ des recherches dans le fichier `error.log`.
+Il est également recommandé de comparer la liste des lots d’une instance LTS AEM 6.5 neuve avec celle de l’instance mise à niveau afin de détecter les lots qui n’ont pas été mis à niveau. Cela permettra de réduire le champ des recherches dans le fichier `error.log`.
 
 ### Les lots personnalisés ne passent pas à l’état actif {#custom-bundles-not-switching-to-the-active-state}
 
-Si vos lots personnalisés ne passent pas à l’état actif, il est très probable qu’une partie du code omette d’importer l’API de modification. Cela entraîne le plus souvent des dépendances non satisfaites.
+Si vos lots personnalisés ne passent pas à l’état actif, il est probable qu’une partie du code ne procède pas à l’importation de l’API modifiée. Cela entraîne le plus souvent des dépendances non satisfaites.
 
-Il est également préférable de vérifier si la modification qui a causé le problème était nécessaire et de l’annuler si ce n’est pas le cas. Vérifiez également si la nouvelle version du package d’exportation est plus élevée que nécessaire, à l’aide du contrôle de version sémantique strict.
+Il est également préférable de vérifier si la modification à l’origine du problème était nécessaire et de revenir en arrière si ce n’est pas le cas. Vérifiez également si la nouvelle version du package d’exportation est plus élevée que nécessaire, à l’aide du contrôle de version sémantique strict.
 
 ### Analyse des journaux error.log et upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
@@ -150,4 +144,4 @@ Dans de rares cas, des erreurs peuvent également se trouver dans les messages A
 
 ### Contacter le support technique d’Adobe {#contacting-adobe-support}
 
-Si vous avez suivi les conseils de cette page et que vous rencontrez toujours des problèmes, contactez l’assistance d’Adobe. Pour fournir le plus d’informations possible à l’ingénieur ou l’ingénieure de l’équipe d’assistance qui travaille sur votre incident, incluez le fichier upgrade.log de votre mise à niveau.
+Si vous avez suivi les conseils de cette page et que vous rencontrez toujours des problèmes, contactez l’assistance d’Adobe. Pour fournir autant d’informations que possible à l’ingénieur du support qui travaille sur votre cas, veillez à inclure les fichiers `error.log` et `upgrade.log` de votre mise à niveau.
