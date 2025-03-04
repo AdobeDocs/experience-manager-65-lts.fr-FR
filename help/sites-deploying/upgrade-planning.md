@@ -9,10 +9,10 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
+source-git-commit: ac803ef9ac38380d7ce7fdf4490c428fd0039688
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 64%
+source-wordcount: '1188'
+ht-degree: 61%
 
 ---
 
@@ -30,7 +30,7 @@ Le processus de mise à niveau d’AEM nécessite une gestion attentive des phas
 >
 >La mise à niveau vers AEM 6.5 LTS est prise en charge à partir des 6 derniers Service Packs
 
-Il est important de vous assurer que vous exécutez un système d’exploitation pris en charge, le runtime Java™, httpd et la version de Dispatcher. Pour plus d’informations, consultez le lien à déterminer : vers les exigences techniques d’AEM 6.5 LTS. La mise à niveau de ces composants doit être prise en compte dans votre plan de mise à niveau et doit avoir lieu avant la mise à niveau d’AEM.
+Il est important de vous assurer que vous exécutez un système d’exploitation pris en charge, le runtime Java™, httpd et la version de Dispatcher. Pour plus d’informations, consultez la section [Exigences techniques pour AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md). La mise à niveau de ces composants doit être prise en compte dans votre plan de mise à niveau et doit avoir lieu avant la mise à niveau d’AEM.
 
 <!-- Alexandru: drafting for now
 
@@ -106,15 +106,15 @@ New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/rel
 
 ### Création d’un plan de tests {#creating-a-test-plan}
 
-La mise en œuvre d’AEM par chaque client ou cliente est unique et a été personnalisée pour répondre aux besoins de l’entreprise. Par conséquent, il est important de déterminer toutes les personnalisations qui ont été apportées au système afin qu’elles puissent être incluses dans un plan de tests. Ce plan de tests alimente le processus d’assurance qualité qu’Adobe exécute sur l’instance mise à niveau.
+La mise en œuvre d’AEM par chaque client ou cliente est unique et a été personnalisée pour répondre aux besoins de l’entreprise. Par conséquent, il est important de déterminer toutes les personnalisations qui ont été apportées au système afin qu’elles puissent être incluses dans un plan de test.
 
 L’environnement de production exact doit être dupliqué et les tests doivent y être effectués après la mise à niveau afin de s’assurer que toutes les applications et le code personnalisé s’exécutent toujours selon vos besoins. Réglez toutes vos personnalisations et exécutez les tests de performances, de chargement et de sécurité. Lors de l’organisation de votre plan de tests, veillez à couvrir toutes les personnalisations apportées au système en plus des interfaces utilisateur et des workflows prêts à l’emploi utilisés dans vos opérations quotidiennes. Il peut s’agir de services et servlets OSGI personnalisés, d’intégrations à Adobe Experience Cloud, d’intégrations à des tiers par le biais de connecteurs pour AEM, d’intégrations tierces personnalisées, de composants et de modèles personnalisés, de recouvrements de l’interface utilisateur personnalisés dans AEM et de workflows personnalisés. En outre, les requêtes personnalisées doivent toujours être testées pour s’assurer que leurs index continuent à fonctionner efficacement après la mise à niveau.
 
 ### Évaluation de la complexité de la mise à niveau {#assessing-upgrade-complexity}
 
-En raison de la grande variété dans la quantité et la nature des personnalisations que la clientèle d’Adobe applique à ses environnements AEM, il est important de prendre le temps de déterminer le niveau d’effort global attendu lors de votre mise à niveau. Analyzer pour AEM peut vous aider à évaluer la complexité de la mise à niveau.
+En raison de la grande variété dans la quantité et la nature des personnalisations que la clientèle d’Adobe applique à ses environnements AEM, il est important de prendre le temps de déterminer le niveau d’effort global attendu lors de votre mise à niveau. [AEM Analyzer pour AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) peut vous aider à évaluer la complexité de la mise à niveau.
 
-Le LTS AEM Analyer pour AEM 6.5 doit vous donner une estimation assez précise de ce à quoi vous devez vous attendre la plupart du temps lors d’une mise à niveau. Cependant, pour les personnalisations et déploiements plus complexes comportant des modifications incompatibles, vous pouvez mettre à niveau une instance de développement vers AEM 6.5 LTS conformément aux instructions de la section [Exécution d’une mise à niveau statique](/help/sites-deploying/in-place-upgrade.md). Une fois l’opération terminée, effectuez un test de vérification de haut niveau dans cet environnement. L’objectif de cet exercice n’est pas de terminer l’inventaire exhaustif des cas de test et de produire un inventaire formel des défauts, mais de nous donner une estimation approximative de la quantité de travail qui sera nécessaire pour mettre à niveau le code pour la compatibilité LTS 6.5. Associé à l’analyseur AEM et aux modifications architecturales qui ont été déterminées dans la section précédente, un devis approximatif peut être fourni à l’équipe de gestion de projet pour planifier la mise à niveau.
+L’[AEM Analyer pour AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) devrait vous donner une estimation assez précise de ce à quoi vous devez vous attendre la plupart du temps lors d’une mise à niveau. Cependant, pour les personnalisations et déploiements plus complexes comportant des modifications incompatibles, vous pouvez mettre à niveau une instance de développement vers AEM 6.5 LTS conformément aux instructions de la section [Exécution d’une mise à niveau statique](/help/sites-deploying/in-place-upgrade.md). Une fois l’opération terminée, effectuez un test de vérification de haut niveau dans cet environnement. L’objectif de cet exercice n’est pas de terminer l’inventaire exhaustif des cas de test et de produire un inventaire formel des défauts, mais de nous donner une estimation approximative de la quantité de travail qui sera nécessaire pour mettre à niveau le code pour la compatibilité LTS d’AEM 6.5. Associé à l’[AEM analyzer](/help/sites-deploying/pattern-detector.md) et aux modifications architecturales déterminées dans la section précédente, il est possible de fournir une estimation approximative à l’équipe de gestion de projet pour planifier la mise à niveau.
 
 ### Création du runbook de mise à niveau et de restauration {#building-the-upgrade-and-rollback-runbook}
 
@@ -128,7 +128,7 @@ Adobe vous présente les procédures de restauration et de mise à niveau dans l
 
 ### Développement d’un plan de mise à niveau {#developing-an-upgrade-plan}
 
-Les résultats des exercices précédents peuvent être utilisés pour créer un plan de mise à niveau couvrant les délais prévus pour vos efforts de test ou de développement, votre formation et l’exécution réelle de la mise à niveau.
+Les résultats des exercices précédents peuvent être utilisés pour créer un plan de mise à niveau couvrant les délais prévus pour vos efforts de test ou de développement, et l’exécution réelle de la mise à niveau.
 
 <!--Alexandru: drafting for now
 
