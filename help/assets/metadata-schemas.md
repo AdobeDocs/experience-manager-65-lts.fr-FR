@@ -1,16 +1,15 @@
 ---
 title: Les schémas de métadonnées définissent la disposition de la page des propriétés de métadonnées.
 description: Le schéma de métadonnées définit la disposition de la page des propriétés et les propriétés de métadonnées affichées pour les ressources. Découvrez comment créer un schéma de métadonnées personnalisé, modifier un schéma de métadonnées et appliquer un schéma de métadonnées à des ressources.
-contentOwner: AG
 mini-toc-levels: 1
 role: User,Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: c62ad80108619063025772cd991848a3f7d76be8
 workflow-type: tm+mt
-source-wordcount: '3595'
-ht-degree: 100%
+source-wordcount: '3607'
+ht-degree: 98%
 
 ---
 
@@ -89,21 +88,21 @@ Vous pouvez modifier un formulaire de schéma de métadonnées existant ou nouve
 L’onglet **[!UICONTROL Créer le formulaire]** répertorie les éléments de formulaire que vous utilisez dans votre formulaire de schéma. L’onglet **[!UICONTROL Paramètres]** contient les attributs de chaque élément sélectionné dans l’onglet **[!UICONTROL Créer le formulaire]**. Le tableau suivant répertorie les éléments de formulaire disponibles dans l’onglet **[!UICONTROL Créer le formulaire]** :
 
 | Nom du composant | Description |
-| -------------------------------- | ----------------------------------------------------------------------------------- |
-| [!UICONTROL En-tête de section] | Permet d’ajouter un en-tête de section pour une liste de composants communs. |
-| [!UICONTROL Une seule ligne de texte] | Permet d’ajouter une propriété d’une seule ligne de texte. Il est stocké sous la forme d’une chaîne. |
-| [!UICONTROL Texte à plusieurs valeurs] | Permet d’ajouter une propriété de texte à plusieurs valeurs. Il est stocké sous forme de tableau de chaînes. |
-| [!UICONTROL Nombre] | Permet d’ajouter un composant de nombre. |
-| [!UICONTROL Date] | Permet d’ajouter un composant de date. |
-| [!UICONTROL Liste déroulante] | Permet d’ajouter une liste déroulante. |
-| [!UICONTROL Balises standard] | Permet d’ajouter une balise. |
-| [!UICONTROL Balises intelligentes] | Ajoutez ce composant pour augmenter les capacités de recherche en ajoutant automatiquement des balises de métadonnées. |
-| [!UICONTROL Champ masqué] | Permet d’ajouter un champ masqué. Il est envoyé en tant que paramètre POST lorsque la ressource est enregistrée. |
-| [!UICONTROL Ressource référencée par] | Ajoutez ce composant pour afficher la liste des ressources référencées par la ressource. |
-| [!UICONTROL Référencement des ressources] | Ajoutez ce composant pour afficher la liste des ressources qui référencent la ressource. |
-| [!UICONTROL Références du produit] | Ajoutez ce composant pour afficher la liste des produits liés à la ressource. |
-| [!UICONTROL Évaluation des ressources] | Ajoutez ce composant afin d’afficher des options pour évaluer la ressource. |
-| [!UICONTROL Métadonnées contextuelles] | Ajoutez ce composant pour contrôler l’affichage des autres onglets de métadonnées dans la page de propriétés des ressources. |
+|----|----|
+| **[!UICONTROL En-tête de section]** | Permet d’ajouter un en-tête de section pour une liste de composants communs. |
+| **[!UICONTROL Une seule ligne de texte]** | Permet d’ajouter une propriété d’une seule ligne de texte. Il est stocké sous la forme d’une chaîne. |
+| **[!UICONTROL Texte à plusieurs valeurs]** | Permet d’ajouter une propriété de texte à plusieurs valeurs. Il est stocké sous la forme d’une table de chaînes. |
+| **[!UICONTROL Nombre]** | Permet d’ajouter un composant de nombre. |
+| **[!UICONTROL Date]** | Permet d’ajouter un composant de date. |
+| **[!UICONTROL Liste déroulante]** | Permet d’ajouter une liste déroulante. |
+| **[!UICONTROL Balises standard]** | Permet d’ajouter une balise. Il se peut que les administrateurs doivent modifier la valeur du chemin d’accès. Par exemple, `/etc/tags/mac/<tenant_id>/<custom_tag_namespace>`, s’il publie le formulaire de schéma de métadonnées à partir de Experience Manager Assets, où le chemin d’accès n’inclut pas les informations du client, telles que `/etc/tags/<custom_tag_namespace>`. |
+| **[!UICONTROL Balises intelligentes]** | Balises détectées automatiquement si vous avez acheté et configuré le module complémentaire des balises intelligentes Experience Manager Assets. |
+| **[!UICONTROL Champ masqué]** | Permet d’ajouter un champ masqué. Il est envoyé en tant que paramètre POST lorsque la ressource est enregistrée. |
+| **[!UICONTROL Ressource référencée par]** | Ajoutez ce composant pour afficher la liste des ressources référencées par la ressource. |
+| **[!UICONTROL Référencement des ressources]** | Ajoutez ce composant pour afficher la liste des ressources qui référencent la ressource. |
+| **[!UICONTROL Métadonnées contextuelles]** | Ajoutez ce composant pour contrôler l’affichage des autres onglets de métadonnées dans la page Propriétés des ressources. |
+
+<!--| **[!UICONTROL Asset Rating]** |  Average rating of an asset added from Experience Manager Assets before it is published to Brand Portal. |-->
 
 #### Modification du composant de métadonnées {#edit-the-metadata-component}
 
