@@ -8,7 +8,7 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 34693070f2fcb5b468c72118cd5d5fc26d6d9dd0
+source-git-commit: 5b31b74b89334efcae647c216d2ae2be35545b22
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 15%
@@ -17,7 +17,7 @@ ht-degree: 15%
 
 # Liste des lots obsolètes désinstallés après la mise à niveau{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
-Lors de la mise à niveau vers AEM 6.5.2025, les lots suivants seront automatiquement désinstallés, en fonction de la version du pack de services AEM 6.5 à partir de laquelle la mise à niveau a été effectuée :
+Lors de la mise à niveau vers AEM 6.5 LTS, les lots suivants seront automatiquement désinstallés, en fonction de la version du pack de services AEM 6.5 à partir de laquelle la mise à niveau a été effectuée :
 
 * com.adobe.cq.social.cq-social-activitystreams
 * com.adobe.cq.social.cq-social-as-provider
@@ -95,7 +95,7 @@ Lors de la mise à niveau vers AEM 6.5.2025, les lots suivants seront automatiqu
 * org.apache.jackrabbit.oak-solr-osgi
 * com.adobe.cq.cq-searchpromote-integration
 
-Les lots suivants ne sont pas inclus dans une nouvelle instance AEM 6.5.2025. Après la mise à niveau, il se peut que ces lots soient inactifs. Ils peuvent être supprimés manuellement :
+Les lots suivants ne sont pas inclus dans une nouvelle instance AEM 6.5 LTS. Après la mise à niveau, il se peut que ces lots soient inactifs. Ils peuvent être supprimés manuellement :
 
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
