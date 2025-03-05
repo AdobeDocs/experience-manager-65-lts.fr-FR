@@ -5,9 +5,9 @@ topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: c3df47efd4b13dcd8061e5cdac32a75fbf36df4b
+source-git-commit: 67bd9b29ccc525111710a397cca5de1c961486ac
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 47%
 
 ---
@@ -179,7 +179,7 @@ Démarrez à présent l’instance AEM à l’aide de la nouvelle commande déte
 
 >[!NOTE]
 >
->](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) La prise en charge de certains arguments Java 8/11 a été supprimée dans Java 17, consultez les [documents Oracle Java™ 17 et les [considérations relatives aux arguments Java&amp;trade pour AEM 6.5 LTS](https://git.corp.adobe.com/AdobeDocs/experience-manager-65-lts.en/blob/main/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
+>](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) La prise en charge de certains arguments Java 8/11 a été supprimée dans Java 17, consultez les [documents Oracle Java™ 17 et les [considérations relatives aux arguments Java&amp;trade pour AEM 6.5 LTS](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
 
 Pour exécuter la mise à niveau, il est important de démarrer AEM à l’aide du fichier jar pour afficher l’instance.
 

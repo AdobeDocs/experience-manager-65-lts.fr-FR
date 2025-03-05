@@ -9,10 +9,10 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2eb9307f37098ee9f57ba9383600f74a5e3b2501
+source-git-commit: b7304709729915dbcc27533caf88b61cd5657a2c
 workflow-type: tm+mt
-source-wordcount: '1187'
-ht-degree: 83%
+source-wordcount: '1117'
+ht-degree: 81%
 
 ---
 
@@ -32,17 +32,15 @@ Avant de commencer la mise à niveau, il est important d’effectuer ces tâches
 * [Exécution d’un nettoyage des révisions hors ligne](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-offline-revision-cleanup)
 * [Exécution de la récupération de l’espace mémoire du magasin de données](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-datastore-garbage-collection)
 * [Mise à niveau du schéma de base de données si nécessaire](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#upgradethedatabaseschemaifneeded)
-* [Suppression des utilisateurs susceptibles d’entraver la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#delete-users-that-might-hinder-the-upgrade)
-
 * [Rotation des fichiers journaux](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#rotate-log-files)
 
 ## Définitions d’index {#index-definitions}
 
-Assurez-vous d’avoir installé au minimum les définitions d’index requises publiées avec les Service Packs AEM 6.5 fournis avec le Service Pack 22 d’AEM (pour plus d’informations, consultez les [notes de mise à jour du Service Pack AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/release-notes/release-notes)).
+Assurez-vous d’avoir installé les définitions d’index requises publiées avec les pack de services AEM 6.5 fournis jusqu’au pack de services 22 d’AEM au minimum. (Pour plus d’informations](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/release-notes/release-notes) consultez les notes de mise à jour du pack de services AEM 6.5 [).
 
 ## Vérification de la disponibilité de l’espace disque nécessaire {#ensure-sufficient-disk-space}
 
-Lors de l’exécution de la mise à niveau, en plus des activités de mise à niveau de contenu et de code, une migration du référentiel doit être effectuée. La migration crée une copie du référentiel au nouveau format de segment Tar. Par conséquent, vous avez besoin de suffisamment d’espace disque pour conserver une seconde version potentiellement plus grande de votre référentiel.
+Lors de l’exécution de la mise à niveau, assurez-vous que l’espace disque est suffisant.
 
 ## Sauvegarde complète d’AEM {#fully-back-up-aem}
 
@@ -56,7 +54,6 @@ Lors du démarrage d’AEM depuis le fichier jar, un fichier `quickstart.propert
 
 Les tâches `WorkflowPurgeTask` et `com.day.cq.audit.impl.AuditLogMaintenanceTask` nécessitent des configurations OSGi distinctes et ne fonctionneront pas sans celles-ci. Si elles échouent lors de l’exécution de la tâche avant la mise à niveau, des configurations manquantes en sont la raison la plus probable. Par conséquent, veillez à ajouter des configurations OSGi pour ces tâches ou à les supprimer complètement de la liste des tâches d’optimisation avant la mise à niveau si vous ne souhaitez pas les exécuter. Vous trouverez la documentation relative à la configuration des tâches de purge des workflows dans la section [Administration des instances de workflow](/help/sites-administering/workflows-administering.md) et la configuration de la tâche de maintenance du journal d’audit dans la section [Maintenance du journal d’audit dans AEM 6](/help/sites-administering/operations-audit-log.md).
 
-Pour la purge des workflows et des journaux d’audit sur CQ 5.6, ainsi que pour la purge des journaux d’audit sur AEM 6.0, reportez-vous à la section [Purge des workflows et des nœuds d’audit](https://helpx.adobe.com/fr/experience-manager/kb/howtopurgewf.html).
 
 ## Installation, configuration et exécution des tâches précédant la mise à niveau {#install-configure-run-pre-upgrade-tasks}
 
@@ -144,7 +141,7 @@ Désactivez toutes les tâches OSGi planifiées incluses dans le code de votre a
 >
 >Cette étape n’est nécessaire que pour les installations TarMK.
 
-Si vous utilisez TarMK, vous devez exécuter le nettoyage des révisions hors ligne avant la mise à niveau. Cela permet à l’étape de migration du référentiel et aux tâches de mise à niveau suivantes de s’exécuter beaucoup plus rapidement et de garantir que le nettoyage des révisions en ligne peut s’exécuter correctement une fois la mise à niveau terminée. Pour plus d’informations sur l’exécution du nettoyage des révisions hors ligne, reportez-vous à la section [Exécution du nettoyage des révisions hors ligne](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
+Si vous utilisez TarMK, vous devez exécuter le nettoyage des révisions hors ligne avant la mise à niveau. Cela permet à l’étape de migration du référentiel et aux tâches de mise à niveau suivantes de s’exécuter beaucoup plus rapidement et de garantir que le nettoyage des révisions en ligne peut s’exécuter correctement une fois la mise à niveau terminée. Pour plus d’informations sur l’exécution du nettoyage des révisions hors ligne, reportez-vous à la section [Exécution du nettoyage des révisions hors ligne](/help/sites-deploying/revision-cleanup.md#revision-cleanuprevision-cleanup).
 
 ## Exécution de la récupération de l’espace mémoire du magasin de données {#execute-datastore-garbage-collection}
 
