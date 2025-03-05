@@ -9,7 +9,7 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 598d6eecbdd3887c41a36a14daa215e2e8e6e09a
+source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 34%
@@ -52,4 +52,4 @@ Pour une référence conviviale aux instances d’AEM incluses dans ces procédu
 
 La couche Foundation prend désormais en charge Java 17, en incorporant les derniers lots open source d’Apache Sling, Felix et Jackrabbit Oak. En outre, le packaging de l’uber-jar AEM 6.5 LTS a changé. En outre, quelques fonctionnalités héritées ont été supprimées d’AEM 6.5 LTS. Pour plus d’informations, consultez les sections [Notes de mise à jour](/help/release-notes/release-notes.md#whats-new-what-s-new) et [Liste des lots obsolètes désinstallés après la mise à niveau](/help/sites-deploying/obsolete-bundles.md)
 
-Le LTS AEM 6.5 met l’accent sur la rétrocompatibilité des fonctionnalités et est fourni avec un outil d’analyse. Consultez [Évaluation de la complexité de la mise à niveau à l’aide d’AEM Analyzer](/help/sites-deploying/pattern-detector.md) pour évaluer la complexité lorsque vous commencez à [planifier la mise à niveau](/help/sites-deploying/upgrade-planning.md).
+Le LTS AEM 6.5 met l’accent sur la rétrocompatibilité des fonctionnalités et est fourni avec un outil d’analyse. Consultez [Évaluation de la complexité de la mise à niveau à l’aide d’AEM Analyzer](/help/sites-deploying/aem-analyzer.md) pour évaluer la complexité lorsque vous commencez à [planifier la mise à niveau](/help/sites-deploying/upgrade-planning.md).

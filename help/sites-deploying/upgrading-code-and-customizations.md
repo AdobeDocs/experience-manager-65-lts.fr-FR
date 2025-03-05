@@ -10,10 +10,10 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 3d4e458e4c96c547b94c08d100271ca6cf96f707
+source-git-commit: da061097fd57135bde149b41a12ab78cad5761d6
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 51%
+source-wordcount: '1012'
+ht-degree: 52%
 
 ---
 
@@ -26,11 +26,11 @@ Lors de la planification d’une mise à niveau, les aspects suivants d’une mi
 
 ## Présentation {#overview}
 
-1. **AEM Analyzer** - Exécutez AEM Analyzer comme défini sur la page [Évaluation de la complexité de la mise à niveau avec AEM Analyzer](/help/sites-deploying/pattern-detector.md). Vous obtenez un rapport AEM Analyzer qui contient plus de détails sur les zones qui doivent être traitées en plus des API/lots indisponibles dans la version cible d’AEM. Le rapport AEM Analyzer vous donne une indication des incompatibilités éventuelles de votre code. S’il n’en existe pas, votre déploiement est compatible avec AEM 6.5 LTS. Vous pouvez toujours choisir d’effectuer un nouveau développement pour utiliser AEM 6.5 LTS, mais vous n’en avez pas besoin uniquement pour maintenir la compatibilité.
-1. **Développement de la base de code pour LTS 6.5**- Créez une branche ou un référentiel dédié à la base de code pour la version AEM cible. Utilisez les informations de la compatibilité avant la mise à niveau pour prévoir les zones de code à mettre à jour.
-1. **Compilation avec 6.5 LTS Uber jar**- Mettez à jour les POM de base de code pour pointer vers AEM 6.5 LTS Uber jar et compilez le code en fonction de celui-ci.
-1. **Déployer dans un environnement LTS 6.5** - Une instance LTS 6.5 d’AEM (auteur + publication) nette doit être configurée dans un environnement Dev/QA. La base de code à jour et un échantillon représentatif de contenu (de l’exploitation actuelle) doivent être déployés.
-1. **Validation du contrôle qualité et correction des bogues** - Le contrôle qualité doit valider l’application sur les instances d’auteur et de publication du LTS AEM 6.5. Tous les bugs détectés doivent être corrigés et intégrés dans la base de code LTS d’AEM 6.5. Répétez le cycle de développement jusqu’à ce que tous les bugs soient corrigés.
+1. **AEM Analyzer** - Exécutez l’analyseur AEM comme décrit dans la planification de la mise à niveau et dans les détails sur la page [Évaluation de la complexité de la mise à niveau avec AEM Analyzer](/help/sites-deploying/aem-analyzer.md). Vous obtenez un rapport AEM Analyzer qui contient plus de détails sur les zones qui doivent être traitées en plus des API/lots indisponibles dans la version cible d’AEM. Le rapport AEM Analyzer vous donne une indication des incompatibilités éventuelles de votre code. S’il n’en existe pas, votre déploiement est déjà compatible avec 6.5 LTS. Vous pouvez toujours choisir d’effectuer un nouveau développement pour utiliser la fonctionnalité LTS 6.5, mais vous n’en avez pas besoin uniquement pour maintenir la compatibilité.
+1. **Développement de la base de code pour LTS 6.5**- Créez une branche ou un référentiel dédié à la base de code pour la version cible. Utilisez les informations de la compatibilité avant la mise à niveau pour prévoir les zones de code à mettre à jour.
+1. **Compilation avec 6.5 LTS Uber jar**- Mettez à jour les POM de la base de code pour pointer vers 6.5.2025 Uber jar et compilez le code par rapport à celui-ci.
+1. **Déploiement vers l’environnement LTS 6.5** - Une instance AEM 6.5 LTS (auteur + publication) nette doit être conservée dans un environnement Dev/QA. La base de code à jour et un échantillon représentatif de contenu (de l’exploitation actuelle) doivent être déployés.
+1. **Validation du contrôle qualité et correction des bogues** - Le contrôle qualité doit valider l’application sur les instances d’auteur et de publication de la version 6.5.2025. Tous les bugs détectés doivent être corrigés et intégrés dans la base de code 6.5 LTS. Répétez le cycle de développement jusqu’à ce que tous les bugs soient corrigés.
 
 Avant de procéder à la mise à niveau, vous devez disposer d’une base de code d’application stable qui a été minutieusement testée par rapport à AEM 6.5 LTS.
 

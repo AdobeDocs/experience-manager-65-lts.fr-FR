@@ -9,7 +9,7 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ac803ef9ac38380d7ce7fdf4490c428fd0039688
+source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 61%
@@ -112,9 +112,9 @@ L’environnement de production exact doit être dupliqué et les tests doivent 
 
 ### Évaluation de la complexité de la mise à niveau {#assessing-upgrade-complexity}
 
-En raison de la grande variété dans la quantité et la nature des personnalisations que la clientèle d’Adobe applique à ses environnements AEM, il est important de prendre le temps de déterminer le niveau d’effort global attendu lors de votre mise à niveau. [AEM Analyzer pour AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) peut vous aider à évaluer la complexité de la mise à niveau.
+En raison de la grande variété dans la quantité et la nature des personnalisations que la clientèle d’Adobe applique à ses environnements AEM, il est important de prendre le temps de déterminer le niveau d’effort global attendu lors de votre mise à niveau. [AEM Analyzer pour AEM 6.5 LTS](/help/sites-deploying/aem-analyzer.md) peut vous aider à évaluer la complexité de la mise à niveau.
 
-L’[AEM Analyer pour AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) devrait vous donner une estimation assez précise de ce à quoi vous devez vous attendre la plupart du temps lors d’une mise à niveau. Cependant, pour les personnalisations et déploiements plus complexes comportant des modifications incompatibles, vous pouvez mettre à niveau une instance de développement vers AEM 6.5 LTS conformément aux instructions de la section [Exécution d’une mise à niveau statique](/help/sites-deploying/in-place-upgrade.md). Une fois l’opération terminée, effectuez un test de vérification de haut niveau dans cet environnement. L’objectif de cet exercice n’est pas de terminer l’inventaire exhaustif des cas de test et de produire un inventaire formel des défauts, mais de nous donner une estimation approximative de la quantité de travail qui sera nécessaire pour mettre à niveau le code pour la compatibilité LTS d’AEM 6.5. Associé à l’[AEM analyzer](/help/sites-deploying/pattern-detector.md) et aux modifications architecturales déterminées dans la section précédente, il est possible de fournir une estimation approximative à l’équipe de gestion de projet pour planifier la mise à niveau.
+L’[AEM Analyer pour AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) devrait vous donner une estimation assez précise de ce à quoi vous devez vous attendre la plupart du temps lors d’une mise à niveau. Cependant, pour les personnalisations et déploiements plus complexes comportant des modifications incompatibles, vous pouvez mettre à niveau une instance de développement vers AEM 6.5 LTS conformément aux instructions de la section [Exécution d’une mise à niveau statique](/help/sites-deploying/in-place-upgrade.md). Une fois l’opération terminée, effectuez un test de vérification de haut niveau dans cet environnement. L’objectif de cet exercice n’est pas de terminer l’inventaire exhaustif des cas de test et de produire un inventaire formel des défauts, mais de nous donner une estimation approximative de la quantité de travail qui sera nécessaire pour mettre à niveau le code pour la compatibilité LTS d’AEM 6.5. Associé à [AEM Analyzer](/help/sites-deploying/aem-analyzer.md) et aux modifications architecturales déterminées dans la section précédente, il est possible de fournir une estimation grossière à l’équipe de gestion de projet pour planifier la mise à niveau.
 
 ### Création du runbook de mise à niveau et de restauration {#building-the-upgrade-and-rollback-runbook}
 
