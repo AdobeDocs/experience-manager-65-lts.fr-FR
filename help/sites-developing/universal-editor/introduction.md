@@ -3,9 +3,9 @@ title: Éditeur universel
 description: Découvrez la flexibilité de l’éditeur universel et comment il peut vous aider à alimenter vos expériences découplées à l’aide d’AEM 6.5.
 feature: Developing
 role: Developer
-source-git-commit: 229fdd9f17bdeb1c4cc1a1ba064d285169dc1cbc
+source-git-commit: 1f4024310858c6973681c079439ae82834cf716f
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1264'
 ht-degree: 1%
 
 ---
@@ -33,6 +33,18 @@ L’éditeur universel est un service qui fonctionne en tandem avec AEM pour cr�
 * Le service d’éditeur universel, qui s’exécute sur le même hôte que le Dispatcher, réécrit les modifications dans l’instance d’auteur AEM.
 
 ![Flux de création à l’aide de l’éditeur universel](assets/author-flow.png)
+
+## Conditions requises {#requirements}
+
+L’éditeur universel est pris en charge par :
+
+* AEM 6.5 LTS
+   * L’hébergement sur site et AMS est pris en charge.
+* [AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (pack de services 21 ou 22 plus un pack de fonctionnalités)
+   * L’hébergement sur site et AMS est pris en charge.
+* [AEM as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (version `2023.8.13099` ou ultérieure)
+
+Ce document se concentre sur la prise en charge LTS d’AEM 6.5 de l’éditeur universel.
 
 ## Configuration {#setup}
 
