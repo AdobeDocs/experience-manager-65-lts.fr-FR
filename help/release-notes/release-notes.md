@@ -2,9 +2,9 @@
 title: Notes de mise à jour actuelles de Adobe Experience Manager 6.5 LTS
 description: Voici les notes de mise à jour actuelles de Adobe Experience Manager 6.5 LTS.
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 9bbd7acd498a1a0614db246f9d1326a62c199806
+source-git-commit: f9fefb530e9cdcced664bede2e11556ab0345876
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '795'
 ht-degree: 40%
 
 ---
@@ -27,7 +27,7 @@ Vous en trouverez un aperçu dans la liste ci-dessous, puis des détails complet
 
 ### [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
-La plateforme du LTS [!DNL Adobe Experience Manager] 6.5 repose sur les versions mises à jour du framework OSGi (Apache Sling et Apache Felix) et du référentiel de contenu Java™ : Apache Jackrabbit Oak 1.68.0.
+La plateforme du LTS [!DNL Adobe Experience Manager] 6.5 s’appuie sur les versions mises à jour du framework OSGi (Apache Sling et Apache Felix) et du référentiel de contenu Java™ : Apache Jackrabbit Oak 1.68.x.
 
 Le démarrage rapide utilise Eclipse Jetty 11.0.x comme moteur de servlet.
 

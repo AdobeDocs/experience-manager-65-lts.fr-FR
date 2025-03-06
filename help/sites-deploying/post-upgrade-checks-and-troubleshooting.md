@@ -10,7 +10,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8b3d8d0f-10f7-4736-881d-8f1f21c69182
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a037dc7cbb13abfeb8a7289baded50d3d788cbf6
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 80%
@@ -65,7 +65,7 @@ Accédez à la console OSGi `/system/console/bundles` et vérifiez si des lots n
 
 ### Vérifier la version d’Oak {#verify-oak-version}
 
-Après la mise à niveau, vous devriez constater qu’Oak a été mis à jour vers la version **1.68.1-B002**. Pour vérifier la version d’Oak, accédez à la console OSGi et examinez la version associée aux lots Oak : Oak Core, Oak Commons, Oak Segment Tar.
+Après la mise à niveau, vous devriez voir que la version d’Oak a été mise à jour vers **1.68.x**. Pour vérifier la version d’Oak, accédez à la console OSGi et examinez la version associée aux lots Oak : Oak Core, Oak Commons, Oak Segment Tar.
 
 ### Validation initiale des pages {#initial-validation-of-pages}
 
