@@ -6,13 +6,13 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2645745a83477509bac81cb5e122eabc44db3961
+exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 22%
 
 ---
-
 
 # Évaluation de la complexité de la mise à niveau à l’aide d’AEM Analyzer {#assessing-the-upgrade-complexity-with-the-aem-analyzer}
 
@@ -235,8 +235,3 @@ Le délai d’expiration restant pour le rapport AEM Analyzer s’affiche sur le
 
 * Parfois, l’opération de suppression peut afficher la notification : *« Certains chemins n’ont pas été supprimés avec succès. Vérifiez les journaux et réessayez.* ». Cependant, si les chemins d’accès ont été réellement supprimés, vous pouvez ignorer ce message en toute sécurité
 * De même, l’opération du package peut échouer avec l’erreur : *« Erreur lors de l’exécution de l’opération souhaitée, vérifiez les journaux et réessayez.* ». Cela est probablement dû à l’expiration de la session. Dans ce cas, il est recommandé de réessayer l’opération pour résoudre le problème.
-
-
-
-
-

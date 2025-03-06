@@ -8,7 +8,8 @@ docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 5d0ba475-06be-47fd-8ea2-9160c2d86b07
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1030'
 ht-degree: 100%
@@ -30,7 +31,7 @@ Suivez les liens de cette section pour trouver des informations de sécurité sp
 Lorsque vous sécurisez votre système d’exploitation, veillez à implémenter soigneusement les mesures indiquées par le revendeur de votre système d’exploitation, parmi lesquelles :
 
 * Définir et contrôler les utilisateurs et utilisatrices, les rôles et les privilèges
-* Surveiller les journaux et les journaux d’audit
+* Surveiller les logs et les journaux d’audit
 * Supprimer les services et applications inutiles
 * Sauvegarder des fichiers
 

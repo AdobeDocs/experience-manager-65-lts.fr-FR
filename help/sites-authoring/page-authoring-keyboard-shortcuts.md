@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 33b531c0-8fda-4649-bad1-d28c58a160e0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 100%
@@ -47,7 +48,7 @@ Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d
 
 >[!NOTE]
 >
->Les raccourcis clavier de l’éditeur sont toujours actifs, même si les [raccourcis de la console ont été désactivés](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+Les raccourcis clavier de l’éditeur sont toujours actifs, même si les [raccourcis de la console ont été désactivés](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## Touches de modification spécifiques aux systèmes d’exploitation {#os-specific-modifier-keys}
 

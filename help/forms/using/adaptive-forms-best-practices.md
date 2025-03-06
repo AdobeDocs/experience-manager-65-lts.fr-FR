@@ -6,7 +6,8 @@ topic-tags: author
 feature: Adaptive Forms,Foundation Components,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: b87629fa-85a9-4024-963a-4761bc093e62
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '5538'
 ht-degree: 99%
@@ -416,6 +417,3 @@ Les **fonctions personnalisées** offrent un avantage notable par rapport à l�
 * **Processus de développement efficace :**
    * La modularité permet aux développeurs et développeuses de se consacrer aux fonctionnalités spécifiques.
    * Réduit la charge des développeurs et développeuses en réduisant la complexité de l’ensemble de la base de code pour un processus de développement plus efficace.
-
-
-

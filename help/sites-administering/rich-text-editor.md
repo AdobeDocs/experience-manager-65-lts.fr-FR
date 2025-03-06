@@ -5,7 +5,8 @@ contentOwner: AG
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+exl-id: 5511817e-dcf8-463d-8e62-cbbef64ad162
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2817'
 ht-degree: 99%
@@ -384,4 +385,3 @@ Vérifiez également que le code de mise en œuvre multichamp et la structure de
 **La configuration disponible pour les administrateurs n’est pas accessible aux auteurs**.
 
 Si les mises à jour de configuration de l’interface apparaissent pour les comptes des administrateurs mais pas pour les auteurs, vérifiez que le nœud de configuration n’est pas nommé `config`. Utilisez la [`configPath`propriété](/help/sites-developing/components-basics.md#cq-inplaceediting).
-

@@ -9,7 +9,8 @@ feature: Dynamic Media Classic
 role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 728db3fc315f1e7830d2133c63d096e4f616e9f8
+exl-id: 80ffa496-880a-4638-bf78-1aab0c052983
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2844'
 ht-degree: 100%
@@ -329,7 +330,7 @@ Par défaut, Experience Manager recherche le dossier sélectionné et tous les 
 >* Dans l’interface utilisateur classique, vous pouvez rechercher des éléments **Flash** et **FXG**. Le filtrage de ces types n’est actuellement pas pris en charge par l’interface utilisateur optimisée pour les écrans tactiles.
 >
 >* Lors de la recherche de vidéos, vous recherchez un seul rendu. Les résultats retournent le rendu d’origine (uniquement en &amp;ast;.mp4) et le rendu codé.
->* La recherche d’une visionneuse de vidéos adaptatives s’étend au dossier et à tous les sous-dossiers mais uniquement si vous avez ajouté un mot-clé à la recherche. Si vous n’avez pas ajouté de mot-clé, Experience Manager ne recherche pas les sous-dossiers.
+* La recherche d’une visionneuse de vidéos adaptatives s’étend au dossier et à tous les sous-dossiers mais uniquement si vous avez ajouté un mot-clé à la recherche. Si vous n’avez pas ajouté de mot-clé, Experience Manager ne recherche pas les sous-dossiers.
 >
 
 **[!UICONTROL Statut de publication]** - Vous pouvez filtrer les ressources selon le statut de publication : **[!UICONTROL Dépublié]** ou **[!UICONTROL Publié]**. Si vous ne sélectionnez aucun **[!UICONTROL statut de publication]**, Experience Manager recherche par défaut tous les statuts de publication.

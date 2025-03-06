@@ -6,7 +6,8 @@ contentOwner: Rick Brough
 solution: Experience Manager, Experience Manager Assets
 role: User, Admin
 feature: Collaboration,Dynamic Media Classic
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ee098fae-cc6f-4c6e-8475-1737134543df
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 100%
@@ -160,4 +161,3 @@ Dans cette newsletter unique archivée, vous trouverez des ressources précieuse
    * Pour vous aider à développer votre stratégie de média enrichi, découvrez les séries de webinaires à la demande d’Adobe.
    * Découvrez les principaux cas d’utilisation des médias riches et les solutions d’Adobe dans ce domaine.
    * ...et bien plus encore !
-

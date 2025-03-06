@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 role: User, Admin
 feature: Configuration
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2e03224f-b4eb-4bf5-aba9-a6cc292c96c2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 100%
@@ -41,5 +42,3 @@ Voir aussi les rubriques suivantes :
 >**Si vous effectuez une mise à niveau :**
 >
 >* Après la mise en service d’Experience Manager, toutes les ressources que vous chargez sont automatiquement activées pour Dynamic Media (à moins que cela n’ait été explicitement désactivé par votre administrateur système). Si vous utilisez une instance d’Experience Manager mise à niveau et que Dynamic Media est un nouveau concept pour vous, vous devrez peut-être retraiter vos ressources pour les rendre compatibles avec Dynamic Media.
-
-

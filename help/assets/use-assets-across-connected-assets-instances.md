@@ -7,7 +7,8 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 61a1c41a-7aec-4ffb-b622-905b3ca62c1b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3909'
 ht-degree: 100%
@@ -368,4 +369,3 @@ Pour résoudre les erreurs courantes, procédez comme suit :
   ![Échec de l’extraction des références distantes de la ressource](assets/reference-report-failure.png)
 
 * Si les cookies ne sont pas envoyés du serveur Sites au serveur Assets dans Google Chrome, c’est parce que la connexion aux ressources ne s’effectue pas par HTTPS. Si vous n’utilisez pas HTTPS sur l’instance Assets, l’en-tête `SameSite=None` ne peut pas être ajoutée à la réponse après l’authentification sur le serveur Assets.
-

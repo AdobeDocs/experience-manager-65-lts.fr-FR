@@ -4,7 +4,8 @@ description: Designer est disponible sous la forme d’un programme autonome et 
 role: Admin, User, Developer
 feature: Forms Designer,Designer
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: 526bbc59-62c3-4e6d-a938-e368d07fe6b0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 77%
@@ -118,4 +119,3 @@ Si vous utilisez un programme d’installation autonome pour AEM Forms Designe
       1. Ouvrez Designer, accédez à l’aide, cliquez sur À propos de Designer et vous verrez les informations sur la version de Designer ainsi que les informations sur les bits. Par exemple, vous voyez qu’il est écrit 64 bits en bas de la version comme indiqué ici :
          `6.5.21.20240522.1.161 | 64 bit`
       1. Ouvrez Designer, une icône de marque s’affiche en haut à gauche et contient des informations 64 bits avec le nom du produit.
-

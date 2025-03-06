@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 2a406ca2870e241539819ae62c6a14904ee71211
+exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1528'
 ht-degree: 100%
@@ -166,4 +167,3 @@ Divers composants sont fournis avec AEM en vue de la personnalisation. Certains 
 | Déconnexion | Indique l’utilisateur est actuellement connecté et fournit un lien pour se déconnecter. |
 | Nuage de balises | Un nuage de balises pour représenter graphiquement une sélection de balises dans votre site web. |
 | Teaser | Un élément de contenu (habituellement une image) affiché sur une page principale pour « inciter » les utilisateurs à accéder au contenu sous-jacent. |
-

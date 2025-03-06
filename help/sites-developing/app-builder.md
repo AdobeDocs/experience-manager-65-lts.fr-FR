@@ -4,7 +4,8 @@ description: Extension d’ [!DNL Adobe Experience Manager]  6.5 à l’aide d�
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: f9b3df58-c94b-4143-aeec-85ff031bac2e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 99%
@@ -64,4 +65,3 @@ L’App Builder fournit des vidéos et de la documentation à l’intention des
 Prêts à développer ? Adobe propose de nombreux exemples d’applications pour vous aider à démarrer rapidement :
 
 * [Laboratoires de code du créateur d’applications sur le site web d’Adobe Developer](https://developer.adobe.com/app-builder/docs/resources/)
-
