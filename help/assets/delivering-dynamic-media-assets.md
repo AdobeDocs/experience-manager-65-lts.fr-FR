@@ -1,18 +1,13 @@
 ---
 title: Diffusion de ressources Dynamic Media
 description: Découvrez comment diffuser des ressources Dynamic Media, telles que des vidéos et des images, sur vos pages web.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
 role: User, Admin
 feature: Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: b91173b4-f1d1-4aad-97d2-782bc8aeaeab
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 47b82956b41c3f78bed5ae220c7e993ce29e0385
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '313'
 ht-degree: 100%
 
 ---
@@ -42,9 +37,7 @@ Pour plus d’informations, reportez-vous aux rubriques suivantes :
 * [Liaison d’URL à votre application Web](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Diffusion d’images optimisées pour un site réactif](/help/assets/responsive-site.md)
 * [Diffusion de contenu HTTP2](/help/assets/http2.md)
-* [Invalidation de votre cache de réseau CDN au moyen de Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [Utilisation de jeux de règles de transformation d’URL](/help/assets/using-rulesets-to-transform-urls.md)
-
 
 ## Diffusion de ressources Dynamic Media via HTTP/2 {#http-delivery-of-dynamic-media-assets}
 

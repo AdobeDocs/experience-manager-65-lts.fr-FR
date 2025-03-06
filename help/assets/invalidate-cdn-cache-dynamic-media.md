@@ -9,10 +9,10 @@ role: User, Admin
 feature: CDN Cache
 solution: Experience Manager, Experience Manager Assets
 exl-id: bce11a49-bbbe-4dda-8144-7f135bb666d9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '1372'
-ht-degree: 100%
+source-wordcount: '1277'
+ht-degree: 99%
 
 ---
 
@@ -21,18 +21,11 @@ ht-degree: 100%
 Les ressources Dynamic Media sont mises en cache par le réseau de diffusion de contenu (CDN) pour une diffusion rapide à vos clients. Cependant, lorsque vous apportez des mises à jour à ces ressources, vous souhaiterez peut-être que ces modifications prennent effet immédiatement sur votre site web. La purge ou l’invalidation du cache du réseau CDN vous permet de mettre rapidement à jour les ressources distribuées par Dynamic Media. Au lieu d’attendre que le cache arrive à expiration à l’aide d’une valeur TTL (durée de vie, dix heures par défaut), vous pouvez envoyer une requête depuis l’interface utilisateur de Dynamic Media pour que le cache arrive à expiration en quelques minutes.
 
 
-
->[!IMPORTANT]
->
->Les étapes suivantes s’appliquent uniquement à Dynamic Media en mode Scene7 dans le pack de services 6 d’Adobe Experience Manager 6.5 (Experience Manager 6.5.6) ou version ultérieure. Cette fonctionnalité nécessite l’utilisation du réseau CDN prêt à l’emploi fourni avec Adobe Experience Manager - Dynamic Media. Aucun autre réseau CDN personnalisé n’est pris en charge avec cette fonctionnalité.<br>Si vous utilisez Dynamic Media dans le pack de services 5 d’Experience Manager 6.5 (Experience Manager 6.5.5) ou version antérieure, suivez les étapes décrites dans la section [Invalidation du cache CDN via Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md).
-
-<!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
-
 **Pour invalider le contenu mis en cache du réseau de diffusion de contenu pour les ressources Dynamic Media :**
 
 *Partie 1 de 2 : création d’un modèle d’invalidation du réseau CDN*
 
-1. Dans Experience Manager 6.5.6 ou une version ultérieure, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Invalidation du réseau CDN]**.
+1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Invalidation du réseau de diffusion de contenu]**.
 
    ![Fonction de validation du réseau CDN](/help/assets/assets-dm/cdn-invalidation-template2.png)
 

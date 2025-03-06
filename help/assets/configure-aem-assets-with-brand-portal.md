@@ -10,10 +10,10 @@ role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 22a2428d-3ebd-4368-983e-d140f99de2dd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 97%
+source-wordcount: '675'
+ht-degree: 89%
 
 ---
 
@@ -68,11 +68,11 @@ Pour configurer AEM Assets avec Brand Portal, vous devez disposer des élémen
 
 [Télécharger et installer le dernier pack de services AEM](#servicepack)
 
-### Télécharger et installer AEM 6.5 {#aemquickstart}
+### Télécharger et installer AEM 6.5 LTS {#aemquickstart}
 
-Il est recommandé d’utiliser AEM 6.5 pour configurer une instance de création AEM. Si vous ne l’avez pas, téléchargez-le à partir des emplacements suivants :
+Il est recommandé de disposer d’AEM 6.5 LTS pour configurer une instance d’auteur AEM. Si vous ne l’avez pas, téléchargez-le à partir des emplacements suivants :
 
-* Si vous êtes déjà client ou cliente AEM, téléchargez AEM 6.5 sur le [site web Adobe Licensing](https://licensing.adobe.com).
+* Si vous êtes déjà client AEM, téléchargez AEM 6.5 LTS sur le site Web [Licences Adobe](https://licensing.adobe.com).
 
 * Si vous êtes un ou une partenaire Adobe, utilisez le [programme de formation des partenaires Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) pour demander AEM 6.5.
 
@@ -80,7 +80,7 @@ Après avoir téléchargé AEM, consultez la page [Déploiement et maintenance](
 
 ### Télécharger et installer le dernier pack de services AEM {#servicepack}
 
-Pour obtenir des instructions détaillées, reportez-vous à la section [Notes de mise à jour du pack de services AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html).
+Pour obtenir des instructions détaillées, consultez les [Notes de mise à jour actuelles du pack de services LTS d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html).
 
 **Contactez le service clientèle d’Adobe** si vous ne trouvez pas le dernier package ou le pack de services AEM.
 

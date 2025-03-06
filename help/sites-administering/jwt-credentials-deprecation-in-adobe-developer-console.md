@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: 7b6b02fd-fcb2-45ae-a239-e0c68de2bcbb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 100%
+source-wordcount: '352'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ Les sections ci-dessous répertorient les scénarios où les clientes et clients
 
 **Action** : migrez votre configuration, car AEM prend désormais en charge les informations d’identification OAuth.
 
-**Versions d’AEM pertinentes** : Adobe Managed Services (pack de services 21 et versions ultérieures).
+**Versions d’AEM appropriées** : Adobe Managed Services.
 
 Les clientes et clients AEM utilisent AEM pour configurer des intégrations à de nombreuses autres solutions Adobe. Par exemple, Adobe Target, Adobe Analytics et d’autres.
 
@@ -44,6 +44,6 @@ Voir [Configurer des intégrations IMS pour AEM](/help/sites-administering/setti
 
 **Action** : confirmez quand celles-ci peuvent être migrées des informations d’identification JWT vers les informations d’identification OAuth.
 
-**Versions d’AEM pertinentes** : Adobe Managed Services (pack de services 21 et versions ultérieures).
+**Versions d’AEM appropriées** : Adobe Managed Services.
 
 Les clientes et clients créent des projets Adobe Developer Console pour pouvoir appeler les [API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). Les informations d’identification du projet Adobe Developer doivent être migrées vers le type OAuth serveur à serveur avant que les informations d’identification JWT obsolètes n’expirent en janvier 2025.

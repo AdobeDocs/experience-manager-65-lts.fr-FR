@@ -1,18 +1,14 @@
 ---
 title: Générer un document d’enregistrement pour les formulaires adaptatifs
 description: Vous explique comment générer un modèle de document d’enregistrement (DE) pour les formulaires adaptatifs.
-content-type: reference
-topic-tags: adaptive_forms, develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4307'
-ht-degree: 99%
+source-wordcount: '4283'
+ht-degree: 100%
 
 ---
 
@@ -31,11 +27,6 @@ ht-degree: 99%
 Après l’envoi d’un formulaire, vos clients veulent généralement conserver un enregistrement, sous forme imprimée ou de document, des informations qu’ils ont intégrées au formulaire pour s’y reporter ultérieurement. On parle ici de document d’enregistrement.
 
 Cet article explique comment générer un document d’enregistrement pour les formulaires adaptatifs ou un fragment de formulaire adaptatif.
-
->[!NOTE]
->
-> La prise en charge de la personnalisation de vos fragments de formulaire adaptatif et de ses champs dans l’éditeur de formulaires adaptatifs a été introduite avec le pack de services 19 (6.5.19.0) d’AEM 6.5 Forms.
-
 
 >[!NOTE]
 >

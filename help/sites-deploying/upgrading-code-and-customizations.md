@@ -11,7 +11,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 52%
@@ -29,9 +29,9 @@ Lors de la planification d’une mise à niveau, les aspects suivants d’une mi
 
 1. **AEM Analyzer** - Exécutez l’analyseur AEM comme décrit dans la planification de la mise à niveau et dans les détails sur la page [Évaluation de la complexité de la mise à niveau avec AEM Analyzer](/help/sites-deploying/aem-analyzer.md). Vous obtenez un rapport AEM Analyzer qui contient plus de détails sur les zones qui doivent être traitées en plus des API/lots indisponibles dans la version cible d’AEM. Le rapport AEM Analyzer vous donne une indication des incompatibilités éventuelles de votre code. S’il n’en existe pas, votre déploiement est déjà compatible avec 6.5 LTS. Vous pouvez toujours choisir d’effectuer un nouveau développement pour utiliser la fonctionnalité LTS 6.5, mais vous n’en avez pas besoin uniquement pour maintenir la compatibilité.
 1. **Développement de la base de code pour LTS 6.5**- Créez une branche ou un référentiel dédié à la base de code pour la version cible. Utilisez les informations de la compatibilité avant la mise à niveau pour prévoir les zones de code à mettre à jour.
-1. **Compilation avec 6.5 LTS Uber jar**- Mettez à jour les POM de la base de code pour pointer vers 6.5.2025 Uber jar et compilez le code par rapport à celui-ci.
+1. **Compilation avec 6.5 LTS Uber jar**- Mettez à jour les POM de la base de code pour pointer vers 6.5 LTS Uber jar et compilez le code en fonction de celui-ci.
 1. **Déploiement vers l’environnement LTS 6.5** - Une instance AEM 6.5 LTS (auteur + publication) nette doit être conservée dans un environnement Dev/QA. La base de code à jour et un échantillon représentatif de contenu (de l’exploitation actuelle) doivent être déployés.
-1. **Validation du contrôle qualité et correction des bogues** - Le contrôle qualité doit valider l’application sur les instances d’auteur et de publication de la version 6.5.2025. Tous les bugs détectés doivent être corrigés et intégrés dans la base de code 6.5 LTS. Répétez le cycle de développement jusqu’à ce que tous les bugs soient corrigés.
+1. **Validation du contrôle qualité et correction des bogues** - Le contrôle qualité doit valider l’application sur les instances de création et de publication d’ 6.5 LTS . Tous les bugs détectés doivent être corrigés et intégrés dans la base de code 6.5 LTS. Répétez le cycle de développement jusqu’à ce que tous les bugs soient corrigés.
 
 Avant de procéder à la mise à niveau, vous devez disposer d’une base de code d’application stable qui a été minutieusement testée par rapport à AEM 6.5 LTS.
 
