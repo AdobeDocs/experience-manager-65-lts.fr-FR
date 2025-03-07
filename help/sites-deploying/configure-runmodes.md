@@ -1,18 +1,14 @@
 ---
 title: Modes d’exécution
 description: Découvrez comment ajuster votre instance d’AEM à des fins spécifiques à l’aide des modes d’exécution.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3370d62eafb9339a9f9c638f3fb2e2ce0f14d9ec
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 100%
+source-wordcount: '679'
+ht-degree: 96%
 
 ---
 
@@ -38,18 +34,14 @@ Les modes d’exécution d’installation sont fournis prêts à l’emploi :
 
 * `author`
 * `publish`
-* `samplecontent`
-* `nosamplecontent`
 
 Voici deux paires de modes d’exécution qui sont mutuellement exclusifs. Par exemple, vous pouvez :
 
 * définir le mode `author` ou `publish`, mais pas les deux en même temps ;
 
-* combiner le mode `author` au mode `samplecontent` ou `nosamplecontent` (mais pas aux deux).
-
 >[!CAUTION]
 >
->Lors de l’utilisation de l’un des modes d’exécution ci-dessus (auteur, publication, samplecontent, nosamplecontent), la valeur utilisée au moment de l’installation définit le mode d’exécution pour la *durée de vie complète* de cette installation.
+>Lors de l’utilisation de l’un des modes d’exécution ci-dessus (création, publication), la valeur utilisée au moment de l’installation définit le mode d’exécution pour la *durée de vie complète* de cette installation.
 >
 >Vous *ne pouvez pas* modifier ces modes d’exécution après l’installation.
 
@@ -68,16 +60,6 @@ Vous pouvez également créer vos propres modes d’exécution personnalisés. I
 * le cas échéant.
 
 Les modes d’exécution personnalisés peuvent également être sélectionnés à chaque démarrage.
-
-## Utiliser samplecontent et nosamplecontent {#using-samplecontent-and-nosamplecontent}
-
-Ces modes permettent de contrôler l’utilisation d’un exemple de contenu. L’exemple de contenu est défini avant la création du démarrage rapide et peut inclure des packages, des configurations, etc :
-
-* Le mode d’exécution `samplecontent` (mode par défaut) installe ce contenu.
-
-* Le mode d’exécution `nosamplecontent` n’installe pas l’exemple de contenu.
-
-Le mode d’exécution nosamplecontent est conçu pour les installations de production.
 
 ## Définir des propriétés de configuration pour un mode d’exécution {#defining-configuration-properties-for-a-run-mode}
 

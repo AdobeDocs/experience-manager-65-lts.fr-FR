@@ -5,7 +5,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 2a5d9026-49bc-4766-bcbe-38d834c14f72
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 82af7ee5b3665dcc33b47e05c8580e9981728888
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 17%
@@ -22,7 +22,7 @@ ht-degree: 17%
 
 Avant d’exécuter votre mise à niveau, plusieurs étapes doivent être réalisées. Voir [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) et [Tâches de maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) pour plus d’informations. Assurez-vous également que votre système répond à la [configuration requise pour AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md).
 
-Cochez [ Planification de la mise à niveau ](/help/sites-deploying/upgrade-planning.md) et comment l’[AEM Analyzer](/help/sites-deploying/pattern-detector.md) peut vous aider à estimer la complexité de la mise à niveau d’AEM.
+Cochez [ Planification de la mise à niveau ](/help/sites-deploying/upgrade-planning.md) et comment l’[AEM Analyzer](/help/sites-deploying/aem-analyzer.md) peut vous aider à estimer la complexité de la mise à niveau d’AEM.
 
 ### Conditions préalables à la migration {#migration-prerequisites}
 
@@ -82,7 +82,7 @@ Cochez [ Planification de la mise à niveau ](/help/sites-deploying/upgrade-plan
    java -version
    ```
 
-1. Vérifiez les paramètres de démarrage du serveur AEM et assurez-vous de mettre à jour les paramètres en fonction de vos besoins. Voir [Considérations relatives à Java 17](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations) pour plus d’informations
+1. Vérifiez les paramètres de démarrage du serveur AEM et assurez-vous de mettre à jour les paramètres en fonction de vos besoins. Voir [Considérations relatives à Java 17](/help/sites-deploying/custom-standalone-install.md#java-considerations) pour plus d’informations.
 1. Téléchargez le nouveau fichier war LTS 6.5 et copiez-le dans le dossier dropins situé à l’adresse : `/<path-to-aem-server>/dropins/`
 1. Démarrez l’instance AEM : vous pouvez généralement le faire à l’aide de la commande suivante :
 

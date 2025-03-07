@@ -2,14 +2,13 @@
 title: Évaluation de la complexité de la mise à niveau à l’aide d’AEM Analyzer
 description: Découvrez comment utiliser AEM Analyzer pour évaluer la complexité de votre mise à niveau.
 topic-tags: upgrading
-content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6b846e456466492f4be2c1e5a1f6b3913ae4dab4
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2069'
 ht-degree: 22%
 
 ---
@@ -34,17 +33,17 @@ Le rapport Analyseur LTS d’AEM 6.5 comprend les catégories suivantes :
 * Fonctionnalités d’AEM 6.5 supprimées par une nouvelle fonctionnalité ou qui ne sont actuellement pas prises en charge sur AEM 6.5 LTS
 * Suppression de l’utilisation de l’API Java et Java
 
-Des informations supplémentaires sur les catégories, ainsi que sur les implications et solutions possibles associées à ces catégories, sont fournies via des liens depuis le rapport de l’analyseur LTS d’AEM 6.5 .
+Des informations supplémentaires sur les catégories, ainsi que sur les implications et solutions possibles associées à ces catégories, sont fournies via des liens depuis le rapport de l’analyseur LTS d’AEM 6.5.
 
 ## Disponibilité {#analyzer-availability}
 
-Il est possible de télécharger AEM Analyzer sous la forme d’un fichier zip à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?lang=fr). Vous pouvez installer le package par le biais du [Gestionnaire de packages](/help/sites-administering/package-manager.md) sur votre instance AEM source.
+Il est possible de télécharger AEM Analyzer sous la forme d’un fichier zip à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html). Vous pouvez installer le package par le biais du [Gestionnaire de packages](/help/sites-administering/package-manager.md) sur votre instance AEM source.
 
 ## Points importants concernant l’utilisation d’AEM Analyzer {#important-considerations-for-using-aem-analyzer}
 
 Consultez la section ci-dessous pour comprendre les points importants à prendre en compte pour exécuter l’analyseur AEM :
 
-* Le rapport Analyzer est créé à l’aide de la sortie de l’AEM [Outil de détection des motifs](/help/sites-deploying/pattern-detector.md). La version de l’outil de détection des motifs utilisée par Analyzer est incluse dans le package d’installation d’AEM Analyzer
+* Le rapport de l’analyseur est créé à l’aide de la sortie de l’outil AEM Pattern Detector. La version de l’outil de détection des motifs utilisée par Analyzer est incluse dans le package d’installation d’AEM Analyzer
 * AEM Analyzer ne peut être exécuté que par l’utilisateur **administrateur** ou un utilisateur du groupe **administrateurs**
 * Analyzer est pris en charge sur les instances AEM avec version 6.5 et ultérieure.
 

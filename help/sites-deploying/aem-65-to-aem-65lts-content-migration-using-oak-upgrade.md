@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8c4ffb0e-b4dc-4a81-ac43-723754cbc0de
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9bf502146a309cd0d91f2aaa1778d5b550d424a8
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -87,3 +87,5 @@ Le moyen le plus simple de résoudre ce problème consiste à spécifier le maga
 L’avertissement peut également être ignoré, mais dans ce cas, le référentiel est entièrement réindexé au premier démarrage. Le processus peut être long, surtout pour les grandes instances. Le référentiel ne sera pas utilisable tant que le processus de réindexation n’aura pas été terminé. Utilisez l’option `--skip-checkpoints` pour supprimer l’avertissement.
 
 Vous pouvez également réindexer hors ligne le référentiel avant de démarrer AEM à l’aide de la [réindexation hors ligne](/help/sites-deploying/upgrade-offline-reindexing.md) pour éviter une réindexation complète au premier démarrage.
+
+Pour plus d’informations sur l’outil oak-upgrade et son utilisation avancée, reportez-vous à la [documentation officielle](https://jackrabbit.apache.org/oak/docs/migration.html).
