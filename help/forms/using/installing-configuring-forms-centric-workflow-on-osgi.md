@@ -7,10 +7,10 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,AEM Forms on OSGi
 exl-id: 4b316ade-4431-41fc-bb8a-7262a17fb456
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1624'
-ht-degree: 99%
+source-wordcount: '1551'
+ht-degree: 98%
 
 ---
 
@@ -28,9 +28,7 @@ AEM Forms est une plateforme d’entreprise performante. Le workflow basé sur 
 
 >[!NOTE]
 >
->Avec le processus basé sur l’utilisation de Forms sur OSGi, vous pouvez rapidement créer et déployer des processus pour différentes tâches sur la pile OSGi, sans avoir à installer la fonctionnalité Process Management complète sur la pile JEE. Regardez une [comparaison](capabilities-osgi-jee-workflows.md) des workflows AEM basés sur lʼutilisation de Forms sur OSGi et la gestion des processus sur JEE pour découvrir les différences et les similitudes entre les fonctionnalités.
->
->Après la comparaison, si vous choisissez d’installer la fonctionnalité de gestion des processus sur la pile JEE, consultez la section [Installation ou mise à niveau d’AEM Forms sur JEE](/help/forms/using/introduction-aem-forms.md) pour obtenir des informations détaillées sur l’installation et la configuration de la pile JEE et des fonctionnalités de gestion des processus.
+>Avec le processus basé sur l’utilisation de Forms sur OSGi, vous pouvez rapidement créer et déployer des processus pour diverses tâches sur la pile OSGi<!--, without having to install the full-fledged Process Management capability on JEE stack-->.<!-- See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities.--><!--After the comparison, If you choose to install the Process Management capability on JEE stack, see [Install or Upgrade AEM Forms on JEE](/help/forms/using/introduction-aem-forms.md) for detailed information about installing and configuring JEE stack and the Process Management capabilities.-->
 
 ## Topologie de déploiement {#deployment-topology}
 

@@ -8,11 +8,13 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: 755df7e2-3603-4c0d-ad07-ec6f27de8c64
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -26,7 +28,7 @@ Process Reporting fournit un ensemble de rapports d’usine qui vous permettent
 
 En outre, Process Reporting fournit une interface permettant d’exécuter des requêtes ad hoc et d’intégrer des vues de rapports personnalisées dans son interface utilisateur.
 
-Pour obtenir la liste des navigateurs pris en charge, voir [Plateformes prises en charge par AEM Forms](/help/forms/using/aem-forms-jee-supported-platforms.md).
+Pour obtenir la liste des navigateurs pris en charge, voir [Plateformes prises en charge par AEM Forms](/help/sites-deploying/technical-requirements.md)
 
 Process Reporting est construit sur des modules qui permettent de :
 

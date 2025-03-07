@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 9cc83733-630a-4846-bd9e-72fd76a3286d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 99%
+source-wordcount: '2337'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 99%
 
 ## Présentation {#overview}
 
-L’application AEM Forms permet de synchroniser des formulaires adaptatifs, des formulaires mobiles et des ensembles de formulaires sur des périphériques mobiles, en fonction de votre serveur. Vous pouvez définir des processus en tant que [Processus spécifiques à Forms on OSGi](/help/forms/using/aem-forms-workflow.md) ou Processus Forms on JEE. Par exemple, vous dirigez un établissement bancaire et utilisez AEM Forms pour gérer les demandes et les communications de vos clientes et clients. Vos clientes et clients remplissent un formulaire et l’envoient pour vérification. Si vous activez le formulaire pour les périphériques mobiles, vos clientes et clients peuvent remplir le formulaire dans l’application AEM Forms. Vous pouvez également gérer le workflow de vérification en activant le formulaire de vérification pour les périphériques mobiles. Votre agent ou agente de terrain peut apporter un appareil mobile au client ou à la cliente, vérifier les détails et envoyer le formulaire. L’application AEM Forms se synchronise avec le serveur AEM Forms et récupère les formulaires activés pour les périphériques mobiles. Si l’application est hors ligne, elle enregistre les données localement.
+L’application AEM Forms permet de synchroniser des formulaires adaptatifs, des formulaires mobiles et des ensembles de formulaires sur des périphériques mobiles, en fonction de votre serveur. Vous pouvez définir des workflows centrés sur [Forms sur OSGi](/help/forms/using/aem-forms-workflow.md) <!--or Forms workflows on JEE-->. Par exemple, vous dirigez un établissement bancaire et utilisez AEM Forms pour gérer les demandes et les communications de vos clientes et clients. Vos clientes et clients remplissent un formulaire et l’envoient pour vérification. Si vous activez le formulaire pour les périphériques mobiles, vos clientes et clients peuvent remplir le formulaire dans l’application AEM Forms. Vous pouvez également gérer le workflow de vérification en activant le formulaire de vérification pour les périphériques mobiles. Votre agent ou agente de terrain peut apporter un appareil mobile au client ou à la cliente, vérifier les détails et envoyer le formulaire. L’application AEM Forms se synchronise avec le serveur AEM Forms et récupère les formulaires activés pour les périphériques mobiles. Si l’application est hors ligne, elle enregistre les données localement.
 
 Le code source de l’application AEM Forms est accessible via la Distribution de logiciels. Le package du code source dans Distribution de logiciels est disponible sous : `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
@@ -61,9 +61,13 @@ Pour synchroniser votre formulaire dans l’application AEM Forms :
 
 Une fois le formulaire publié, l’application se synchronise avec le serveur et récupère le formulaire. Pour synchroniser plusieurs formulaires, dans l’instance de création, sélectionnez plusieurs formulaires dans le gestionnaire de formulaires et appuyez sur **[!UICONTROL Synchroniser avec l’application AEM Forms]**.
 
-## Prise en charge des appareils mobiles {#mobile-device-support}
+<!--
 
-Se reporter à [Application AEM Forms (précédemment Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+## Mobile device support {#mobile-device-support}
+
+See [AEM Forms app (previously known as Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+
+-->
 
 ## Principales fonctionnalités de l’application AEM Forms {#key-features-of-aem-forms-app}
 
@@ -71,7 +75,7 @@ Se reporter à [Application AEM Forms (précédemment Mobile Workspace)](/help/f
 
 Vous pouvez synchroniser votre application avec le serveur AEM Forms et travailler sur des formulaires sur votre périphérique mobile.
 
-Avec le serveur AEM Forms Workflow, un formulaire peut être associé à un point de départ dans un processus Workbench et une demande de boîte de réception AEM. Une demande de boîte de réception AEM peut être associée à un formulaire adaptatif. Un point de départ peut être associé à un formulaire adaptatif, à un formulaire HTML5 ou à un ensemble de formulaires. Un point de départ peut être envoyé en tant que tâche ou la tâche peut être enregistrée en tant que brouillon. Pour plus d’informations sur les différences entre une demande depuis la boîte de réception AEM et un point de départ voir [Actions et fonctionnalités des processus AEM basés sur l’utilisation de Forms on OSGi et des processus AEM Forms JEE](capabilities-osgi-jee-workflows.md).
+Avec le serveur AEM Forms Workflow, un formulaire peut être associé à un point de départ dans un processus Workbench et une demande de boîte de réception AEM. Une demande de boîte de réception AEM peut être associée à un formulaire adaptatif. Un point de départ peut être associé à un formulaire adaptatif, à un formulaire HTML5 ou à un ensemble de formulaires. Un point de départ peut être envoyé en tant que tâche ou la tâche peut être enregistrée en tant que brouillon. <!--For more information on differences between an AEM Inbox application and a startpoint see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 Avec un serveur AEM Forms sans AEM Forms Workflow, un formulaire dont la synchronisation est activée dans l’application est généré dans l’application AEM Forms. Les formulaires sont disponibles dans l’onglet formulaires de l’application et peuvent être envoyés ou enregistrés en tant que brouillon. Les formulaires adaptatifs et les formulaires mobiles sont pris en charge dans l’application.
 
@@ -122,7 +126,7 @@ Reportez-vous à [Utiliser la fonction d’enregistrement automatique dans l’a
 
 ## Différences entre les fonctionnalités de la boîte de réception AEM et l’application AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Deux des moyens principaux de lancer un workflow basé sur l’utilisation de Forms sont la [boîte de réception AEM](/help/forms/using/manage-applications-inbox.md) et l’application AEM Forms. Les fonctionnalités de la boîte de réception AEM et de l’application AEM Forms sont cependant différentes. La boîte de réception AEM fonctionne uniquement avec des [workflows basés sur l’utilisation de Forms](/help/forms/using/aem-forms-workflow.md) tandis que l’application AEM Forms fonctionne à la fois avec des workflows basés sur l’utilisation de Forms ainsi qu’avec la gestion des processus. Pour plus d’informations sur les différences entre les fonctionnalités de l’application AEM Forms et de la boîte de réception AEM, voir [Actions et fonctionnalités des workflows AEM basés sur l’utilisation de Forms on OSGi et des workflows AEM Forms on JEE](capabilities-osgi-jee-workflows.md).
+Deux des moyens principaux de lancer un workflow basé sur l’utilisation de Forms sont la [boîte de réception AEM](/help/forms/using/manage-applications-inbox.md) et l’application AEM Forms. Les fonctionnalités de la boîte de réception AEM et de l’application AEM Forms sont cependant différentes. La boîte de réception AEM fonctionne uniquement avec des [workflows centrés sur Forms](/help/forms/using/aem-forms-workflow.md) tandis que l’application AEM Forms fonctionne avec des workflows et une gestion des processus centrés sur Forms. <!--For more information on differences between AEM Inbox and AEM Forms app capabilities, see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 ## Formulaires pris en charge {#supported-forms}
 

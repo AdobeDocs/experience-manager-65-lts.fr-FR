@@ -9,10 +9,10 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 8ddfc767-08a5-4045-86a7-97150e028a14
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 100%
+source-wordcount: '346'
+ht-degree: 96%
 
 ---
 
@@ -59,10 +59,12 @@ Le tableau suivant répertorie tous les types de persistance pris en charge avec
 
 TarMK est conçu pour les performances, tandis que MongoMK et RDBMK sont conçus pour l’évolutivité. Adobe recommande vivement d’utiliser TarMK comme technologie de persistance par défaut pour tous les scénarios de déploiement AEM Forms, pour les instances de création et de publication, sauf dans les cas d’utilisation décrits dans la section [Choisir Mongo ou un micronoyau de base de données relationnelle plutôt que TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
 
-Pour obtenir la liste des micronoyaux pris en charge, consultez les articles [Exigences techniques d’AEM Forms sur OSGi](/help/sites-deploying/technical-requirements.md) et [Combinaisons de plateformes prises en charge par AEM Forms sur JEE](/help/forms/using/aem-forms-jee-supported-platforms.md).
+Pour obtenir la liste des micro-noyaux pris en charge, voir [Exigences techniques d’AEM Forms sur OSGi](/help/sites-deploying/technical-requirements.md) <!--or [AEM Forms on JEE supported platform combinations](/help/forms/using/aem-forms-jee-supported-platforms.md) articles-->.
 
 ## Choisir Mongo ou un micronoyau de base de données relationnelle plutôt que TarMK {#choosing-mongo-or-a-relational-database-microkernel-over-tarmk}
 
 Un environnement AEM Forms évolutif (organisé en clusters) est un ensemble de deux instances de création actives ou plus, configurées horizontalement. Vous pouvez choisir d’exécuter plusieurs instances de création si un seul serveur prenant en charge toutes les activités de création simultanées n’est plus durable.
 
-Seuls les types de persistance MongoMK et RDBMK sont pris en charge pour un environnement AEM Forms sur JEE évolutif (organisé en clusters). Le nombre de serveurs ou la taille de l’environnement évolutif varie pour chaque installation. Pour obtenir une liste des considérations et des exemples, consultez les articles [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md) et [Topologies d’architecture et de déploiement pour AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md). Vous pouvez également contacter l’assistance AEM Forms pour obtenir des informations détaillées sur la planification de la capacité d’AEM Forms avec RDBMK et TarMK.
+<!--Only MongoMK and RDBMK persistence type are supported for a scalable (clustered) AEM Forms on JEE environment.-->
+
+Le nombre de serveurs ou la taille de l’environnement évolutif varie pour chaque installation. Pour obtenir une liste des considérations et des exemples, consultez les articles [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md) et [Topologies d’architecture et de déploiement pour AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md). Vous pouvez également contacter l’assistance AEM Forms pour obtenir des informations détaillées sur la planification de la capacité d’AEM Forms avec RDBMK et TarMK.

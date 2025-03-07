@@ -1,45 +1,25 @@
 ---
-title: Mise à niveau vers AEM 6.5 Forms on OSGi
-description: Vous pouvez effectuer une mise à niveau directe à partir d’AEM 6.1 Forms, AEM 6.2 Forms et LiveCycle ES4 SP1 vers AEM 6.3 Forms.
+title: Mise à niveau vers AEM 6.5 Forms LTS on OSGi
+description: Vous pouvez effectuer une mise à niveau directe d’AEM 6.5.22.0 Forms vers AEM 6.5 Forms LTS.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.3/FORMS
-topic-tags: installing
-geptopics: SG_AEMFORMS/categories/jee
-role: Admin,User
+role: Admin, User
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms,AEM Forms on OSGi, AEM Forms Upgrade
+feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 99%
+source-wordcount: '853'
+ht-degree: 81%
 
 ---
 
-# Mise à niveau vers AEM 6.5 Forms on OSGi {#upgrade-to-aem-forms-osgi}
+# Mise à niveau vers AEM 6.5 Forms LTS on OSGi {#upgrade-to-aem-forms-osgi}
 
-Vous pouvez effectuer une mise à niveau directe à partir d’AEM 6.3 Forms ou AEM 6.4 Forms vers AEM 6.5 Forms.
+Pour [mettre à niveau d’AEM 6.5 vers AEM 6.5 LTS](/help/sites-deploying/upgrade.md), effectuez la mise à niveau vers AEM 6.5.22.0 Forms ou une version ultérieure. Une mise à niveau directe d’AEM 6.5.22.0 vers AEM 6.5 Forms LTS est prise en charge.
 
-Le chemin de mise à niveau direct d’**AEM 6.0 Forms, AEM 6.1 Forms** et **AEM 6.2 Forms** vers AEM 6.5 Forms n’est pas disponible. Effectuez une [mise à niveau intermédiaire vers AEM 6.2 Forms](https://helpx.adobe.com/fr/experience-manager/6-2/forms/using/upgrade.html), [AEM 6.3 Forms](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/upgrade.html) ou [AEM 6.4 Forms](/help/forms/using/upgrade.md), puis effectuez une mise à niveau d’AEM 6.3 Forms ou AEM 6.4 Forms vers AEM 6.5 Forms.
+Si vous utilisez AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms, AEM 6.3 Forms, AEM 6.4 Forms ou AEM 6.5 Forms, aucune mise à niveau directe vers AEM 6.5 Forms LTS n’est disponible. Pour obtenir des chemins de mise à niveau détaillés, consultez la documentation [Chemins de mise à niveau](/help/forms/using/upgrade.md).
 
-Effectuez les étapes suivantes pour mettre à niveau AEM 6.3 Forms ou AEM 6.4 Forms vers AEM 6.5 Forms :
-
-1. Mettez à niveau l’instance AEM existante vers AEM 6.5. Les étapes sont énumérées ci-dessous :
-
-   1. Installez le dernier Service Pack et les derniers correctifs pour AEM 6.3 Forms ou AEM 6.4 Forms. Pour plus d’informations, voir [AEM Sustenance Hub](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
-   1. Préparez l’instance source pour la mise à niveau. Pour obtenir des instructions détaillées, reportez-vous à l’article [Mise à niveau vers AEM 6.5](/help/sites-deploying/upgrade.md).
-   1. Téléchargez [AEM 6.5 QuickStart](/help/sites-deploying/deploy.md#getting%20the%20software).
-   1. **(Installations Unix/Linux uniquement)** Si vous utilisez UNIX ou Linux en tant que système d’exploitation sous-jacent, ouvrez la fenêtre de terminal, accédez au dossier contenant crx-quickstart et exécutez la commande suivante :
-
-      `chmod -R 755 ../crx-quickstart`
-
-   1. Mettez à niveau votre instance AEM vers AEM 6.5. Pour obtenir des instructions étape par étape, voir [Mettre à niveau vers AEM 6.5](/help/sites-deploying/upgrade.md).
-
-      Avant de passer aux étapes suivantes, attendez que le journal &lt;crx-repository>/error.log contiennent les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED.
-
-      >[!NOTE]
-      >
-      >Une fois le serveur en marche, quelques lots AEM Forms conservent l’état d’installation. Le nombre de lots peut varier pour chaque installation. Vous pouvez ignorer sans risque l’état de ces lots. Les lots sont répertoriés à l’adresse https://&#39;[serveur]:[port]&#39;/system/console/.
+Après la mise à niveau vers le pack de services AEM Forms 6.5.22.0, procédez comme suit pour effectuer la mise à niveau vers AEM 6.5 LTS Forms :
 
 1. Installation du package complémentaire AEM Forms. Suivez les étapes ci-dessous :
 
@@ -49,20 +29,25 @@ Effectuez les étapes suivantes pour mettre à niveau AEM 6.3 Forms ou AEM 6.
       1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.
       1. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
    1. Sélectionnez le nom de package applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les conditions du CLUF]**, puis sélectionnez **[!UICONTROL Télécharger]**.
+   1. Ouvrez [Package Manager](/help/sites-administering/package-manager.md) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
    1. Ouvrez [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
    1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
-      Vous pouvez également télécharger le package via le lien direct répertorié dans l’article [Versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
+      Vous pouvez également télécharger le package via le lien direct répertorié dans l’article [Versions d’AEM Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
-      >[!NOTE]
-      >
-      >Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **N’arrêtez pas le serveur immédiatement.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d’apparaître dans le fichier &lt;crx-repository>/error.log et que le journal soit stable. Notez également que quelques packages peuvent rester à l’état installé. Vous pouvez ignorer sans risque l’état de ces packages.
+      Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **N’arrêtez pas le serveur immédiatement.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d’apparaître dans le fichier &lt;crx-repository>/error.log et que le journal soit stable. Notez également que quelques packages peuvent rester à l’état installé. Vous pouvez ignorer sans risque l’état de ces packages.
+
+
+      **Redémarrez l’instance AEM avec les paramètres de ligne de commande JVM supplémentaires suivants** :
+      `--add-opens java.base/java.util=ALL-UNNAMED --add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED`
+
+      Si le serveur est démarré via un script ou un service, mettez-le à jour en conséquence afin d’inclure les éléments ci-dessus, de sorte qu’ils soient également efficaces après les redémarrages suivants.
 
 1. Redémarrez l’instance AEM.
 
    >[!NOTE]
    >
-   Il est recommandé d’utiliser la commande « Ctrl+C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+   > Il est recommandé d’utiliser la commande « Ctrl+C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 1. Exécutez les activités postérieures à l’installation.
 
@@ -108,3 +93,7 @@ Effectuez les étapes suivantes pour mettre à niveau AEM 6.3 Forms ou AEM 6.
       * `https://'[server]:[port]'/crx/packmgr`
       * `https://'[server]:[port]'/crx/de`
       * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
+
+   >[!NOTE]
+   >
+   >Dans AEM 6.4 Forms, la structure du référentiel crx a changé. Après la mise à niveau d’AEM 6.3 Forms vers AEM 6.5 Forms, utilisez les chemins d’accès modifiés pour la personnalisation que vous créez à nouveau. Pour la liste complète des chemins modifiés, voir [Restructuration du référentiel des formulaires dans AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).

@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 7ec29926-a5f6-4080-a981-597f9632f6e8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 100%
+source-wordcount: '1544'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ Outre les options permettant de créer des formulaires, des documents et des res
 
 ### Formulaires et documents  {#forms-documents}
 
-Formulaires et documents fournit des options pour créer une communication interactive, un formulaire adaptatif, un fragment de formulaire adaptatif et un jeu de formulaires. Exclusivement pour AEM [!DNL Forms] on JEE, Formulaires et documents propose une option permettant d’importer des fichiers du stockage local et de synchroniser les ressources AEM [!DNL Forms] avec Workbench.
+Forms &amp; Documents fournit des options pour créer une communication interactive, un formulaire adaptatif, un fragment de formulaire adaptatif et un jeu de formulaires. <!--Only for AEM [!DNL Forms] on JEE, Forms & Documents provides an option to import files from local storage and sync AEM [!DNL Forms] assets with Workbench.-->
 
 Le bouton Créer est le point de départ du processus de création ou de chargement d’une ressource AEM [!DNL Forms]. Il permet de créer : 
 

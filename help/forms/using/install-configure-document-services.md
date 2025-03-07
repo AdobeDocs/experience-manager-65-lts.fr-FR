@@ -6,7 +6,7 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '5660'
 ht-degree: 99%
@@ -74,8 +74,8 @@ Avant de commencer à installer et à configurer les services de document AEM F
 
 * Les logiciels client requis pour que PDF Generator effectue la conversion sous Microsoft® Windows et Linux® sont installés :
 
-   * **Microsoft® Windows** : installez [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) ou [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator).
-   * **Linux®** : installez [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p).
+   * **Microsoft® Windows** : installez **Microsoft® Office** ou **Apache OpenOffice**.
+   * **Linux®** : installez **Apache OpenOffice**.
 
 >[!NOTE]
 >
@@ -654,7 +654,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 +++ Adobe Acrobat
 
-* Assurez-vous que seules les [versions prises en charge](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft® Office (32 bits) et d’Adobe Acrobat sont installées et que les boîtes de dialogue d’ouverture sont annulées.
+* Assurez-vous que seules les [versions prises en charge](/help/sites-deploying/technical-requirements.md) de Microsoft® Office (32 bits) et d’Adobe Acrobat sont installées et que les boîtes de dialogue d’ouverture sont annulées.
 * Assurez-vous que le service de mise à jour d’Adobe Acrobat est désactivé.
 * Assurez-vous que le fichier de commandes [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) a été exécuté avec les privilèges d’administrateur.
 * Assurez-vous qu’un utilisateur ou qu’une utilisatrice de PDF Generator est ajouté(e) à l’interface utilisateur de configuration du PDF.
@@ -667,7 +667,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 **Microsoft® Windows**
 
-* Assurez-vous que la [version 32 bits prise en charge ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
+* Assurez-vous que la [version 32 bits prise en charge ](/help/sites-deploying/technical-requirements.md) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
 * Assurez-vous qu’un utilisateur ou qu’une utilisatrice de PDF Generator est ajouté(e) à l’interface utilisateur de configuration du PDF.
 * Assurez-vous que l’utilisateur ou l’utilisatrice de PDF Generator est membre du groupe d’administrateurs et que le privilège [Remplacer un jeton de niveau processus](#grant-the-replace-a-process-level-token-privilege) est défini pour l’utilisateur ou l’utilisatrice.
 * Assurez-vous que l’utilisateur ou l’utilisatrice est configuré(e) dans l’interface utilisateur de PDF Generator et qu’il ou elle effectue les actions suivantes :
@@ -681,7 +681,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 **Linux®**
 
-* Installez la [version prise en charge](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) d’OpenOffice. AEM Forms prend en charge les versions 32 bits et 64 bits. Après l’installation, ouvrez toutes les applications OpenOffice, annulez toutes les fenêtres de boîte de dialogue et fermez les applications. Rouvrez les applications et assurez-vous qu’aucune boîte de dialogue ne s’affiche lors de l’ouverture d’une application OpenOffice.
+* Installez la version prise en charge d’OpenOffice. AEM Forms prend en charge les versions 32 bits et 64 bits. Après l’installation, ouvrez toutes les applications OpenOffice, annulez toutes les fenêtres de boîte de dialogue et fermez les applications. Rouvrez les applications et assurez-vous qu’aucune boîte de dialogue ne s’affiche lors de l’ouverture d’une application OpenOffice.
 
 * Créez une variable d’environnement `OpenOffice_PATH` et définissez-la pour qu’elle pointe vers l’installation OpenOffice définie dans la [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) ou le profil dt (arborescence des appareils).
 * En cas de problèmes lors de l’installation d’OpenOffice, assurez-vous que les [bibliothèques 32 bits](#extrarequirements) requises pour l’installation d’OpenOffice sont disponibles.
