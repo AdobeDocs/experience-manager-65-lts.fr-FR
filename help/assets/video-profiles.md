@@ -11,26 +11,26 @@ role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 exl-id: b7ee16db-fde2-4d06-b06c-945b6d876f8d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '3770'
-ht-degree: 100%
+source-wordcount: '3711'
+ht-degree: 80%
 
 ---
 
 # Profils vidéo {#video-profiles}
 
-Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage possible. Lorsque vous codez vos vidéos sources originales à l’aide du profil de codage vidéo adaptatif, au cours de la lecture, le lecteur vidéo ajuste automatiquement la qualité du flux vidéo en fonction de la vitesse de la connexion Internet de vos clients. Cette action est connue sous le nom de diffusion en continu à débit adaptatif.
+Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage possible. Lorsque vous codez vos vidéos sources originales à l’aide du profil de codage de vidéo adaptative, le lecteur vidéo optimise la qualité de lecture. Il ajuste automatiquement le flux vidéo en fonction de la vitesse de connexion Internet de vos clients. Cette action est connue sous le nom de diffusion en continu à débit adaptatif.
 
 Voici d’autres facteurs qui déterminent la qualité des vidéos :
 
 * **Résolution de la vidéo source originale chargée**
 
-  Si la vidéo MP4 a été enregistrée à une résolution moins élevée, telle que 240p ou 360p, elle ne peut pas être diffusée en haute définition en continu.
+  Si la vidéo MP4 est enregistrée à une résolution inférieure, par exemple 240p ou 360p, elle ne peut pas être diffusée en continu en haute définition.
 
 * **Taille du lecteur vidéo**
 
-  Par défaut, la largeur du profil de codage de vidéo adaptative est définie sur « Auto ». Encore une fois, lors de la lecture, la meilleure qualité est utilisée en fonction de la taille du lecteur.
+  Par défaut, la largeur du profil de codage de vidéo adaptative est définie sur « Auto ». Lors de la lecture, le lecteur vidéo sélectionne automatiquement la meilleure qualité en fonction de sa taille.
 
 Voir [Bonnes pratiques en matière de codage vidéo](/help/assets/video.md#best-practices-for-encoding-videos).
 
@@ -40,7 +40,7 @@ Consultez également la section [Bonnes pratiques pour organiser vos ressources 
 >
 >Pour générer les métadonnées d’une vidéo et les miniatures associées, la vidéo doit passer par le processus de codage dans Dynamic Media. Dans Adobe Experience Manager, le workflow **[!UICONTROL Vidéo de codage de Dynamic Media]** code la vidéo si vous avez activé Dynamic Media et configuré des services cloud vidéo. Ce workflow capture l’historique de traitement des workflows et les informations d’échec. Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Si vous avez activé Dynamic Media et configuré les services cloud vidéo, le workflow **[!UICONTROL Vidéo d’encodage Dynamic Media]** prend automatiquement effet lorsque vous chargez une vidéo. (Si vous n’utilisez pas Dynamic Media, le workflow **[!UICONTROL Ressource de mise à jour DAM]** prend effet.)
 >
->Les métadonnées sont utiles lorsque vous recherchez des ressources. Les miniatures sont des images vidéo statiques qui sont générées lors du codage. Elles sont requises par le système Experience Manager et utilisées dans l’interface utilisateur pour vous aider à identifier visuellement des vidéos dans la vue Cartes, dans la vue Résultats de recherche et dans la vue Liste des ressources. Vous pouvez consulter les miniatures générées en sélectionnant l’icône Rendus (palette de peintre) d’une vidéo codée.
+>Les métadonnées sont utiles lorsque vous recherchez des ressources. Les miniatures sont des images vidéo statiques qui sont générées lors du codage. Le système Experience Manager en a besoin et les utilise dans l’interface utilisateur pour vous aider à identifier visuellement des vidéos dans la vue Cartes, dans la vue Résultats de recherche et dans la vue Liste des ressources. Vous pouvez consulter les miniatures générées en sélectionnant l’icône Rendus (palette de peintre) d’une vidéo codée.
 
 Une fois le profil vidéo créé, vous l’appliquez à un ou à plusieurs dossiers. Consultez la section [Application d’un profil vidéo à des dossiers](#applying-a-video-profile-to-folders).
 
@@ -99,7 +99,7 @@ Le tableau ci-après identifie les profils de codage recommandés pour la diffus
 
 ## À propos de l’utilisation du recadrage intelligent dans les profils vidéo {#about-smart-crop-video}
 
-Le recadrage intelligent pour la vidéo (une fonctionnalité en option dans les profils vidéo) est un outil qui tire parti de la puissance de l’intelligence artificielle d’Adobe Sensei. Il détecte et recadre automatiquement le point focal dans toute vidéo adaptative ou progressive que vous avez chargée, quelle que soit sa taille.
+Le recadrage intelligent pour la vidéo (une fonctionnalité en option dans les profils vidéo) est un outil qui tire parti de la puissance de l’intelligence artificielle d’Adobe Sensei. Il détecte et recadre automatiquement le point focal dans toute vidéo adaptative ou progressive que vous avez chargée, quelle que soit sa taille.
 
 Les formats vidéo pris en charge par le recadrage intelligent sont MP4, MKV, MOV, AVI, FLV et WMV.
 
@@ -109,7 +109,7 @@ La taille maximale de fichier vidéo prise en charge par le recadrage intelligen
 * 30 images par seconde (i/s)
 * Taille de fichier de 300 Mo
 
-Adobe Sensei est limité à 9 000 images. C’est-à-dire cinq minutes à 30 i/s. Si votre vidéo présente une fréquence d’images supérieure, la durée de vidéo maximale prise en charge diminue. Par exemple, une vidéo de 60 i/s doit durer deux minutes et demie pour être prise en charge par Adobe Sensei et par le recadrage intelligent.
+Adobe Sensei est limité à 9 000 images. C’est-à-dire cinq minutes à 30 i/s. Si votre vidéo présente une fréquence d’images supérieure, la durée de vidéo maximale prise en charge diminue. Par exemple, Adobe Sensei et le recadrage intelligent prennent en charge une vidéo de 60 i/s uniquement si elle dure au moins deux minutes et demie.
 
 ![Recadrage intelligent de vidéo](assets/smart-crop-video.png)
 
@@ -117,7 +117,7 @@ Adobe Sensei est limité à 9 000 images. C’est-à-dire cinq minutes à 30 
 >
 >Pour que le recadrage intelligent de vidéo fonctionne, vous devez inclure au moins un paramètre prédéfini de codage vidéo dans votre profil vidéo.
 
-Pour utiliser le recadrage intelligent de vidéo, vous créez un profil de codage de vidéo adaptative ou progressive. Dans votre profil, utilisez l’outil **[!UICONTROL Smart Crop Ratio]** pour sélectionner des proportions prédéfinies. Par exemple, après avoir défini vos paramètres prédéfinis de codage vidéo, vous pouvez ajouter une définition « Paysage mobile » avec des proportions de 16x9 et une définition « Portrait mobile » avec un format de 9x16. Les autres proportions ou rapports de recadrage que vous pouvez choisir sont 1×1, 4×3 et 4×5.
+Pour utiliser un recadrage intelligent pour la vidéo, vous devez créer un profil de codage vidéo adaptatif ou progressif. Dans votre profil, utilisez l’outil **[!UICONTROL Smart Crop Ratio]** pour sélectionner des proportions prédéfinies. Par exemple, après avoir défini vos paramètres prédéfinis de codage vidéo, vous pouvez ajouter une définition de « Paysage mobile » avec un format de 16 × 9. Vous pouvez également ajouter une définition de « Portrait mobile » avec un format de 9 × 16. Les autres proportions ou rapports de recadrage que vous pouvez choisir sont 1 × 1, 4 × 3 et 4 × 5.
 
 ![Modification d’un profil de codage vidéo avec le recadrage intelligent](assets/edit-smart-crop-video2.png)
 
@@ -137,7 +137,7 @@ Cependant, si ce profil prédéfini ne répond pas à vos besoins, vous pouvez c
 
 Lorsque vous créez le profil de codage vidéo, vous remarquerez que la plupart des options de codage sont préremplies avec les paramètres par défaut recommandés pour vous aider. Cependant, si vous sélectionnez une valeur autre que la valeur par défaut recommandée, la qualité vidéo risque d’être médiocre pendant la lecture et vous risquez de rencontrer d’autres problèmes de performances.
 
-Pour tous les paramètres prédéfinis de codage vidéo MP4 H.264 du profil, les valeurs suivantes sont donc validées pour s’assurer qu’elles sont identiques dans chaque paramètre de codage individuel prédéfini, rendant possible la diffusion en continu à débit adaptatif :
+Ainsi, pour activer la diffusion en continu à débit adaptatif, le système valide certaines valeurs pour tous les paramètres prédéfinis de codage vidéo MP4 H.264 dans le profil. Les valeurs suivantes doivent rester cohérentes entre les paramètres prédéfinis de codage individuels au sein du profil :
 
 * Codec du format vidéo - MP4 H.264 (.mp4)
 * Codec audio
@@ -148,7 +148,7 @@ Pour tous les paramètres prédéfinis de codage vidéo MP4 H.264 du profil, l
 * Profil H264
 * Taux d’échantillonnage audio
 
-Si les valeurs ne sont pas les mêmes, vous pouvez continuer à créer le profil tel quel. La diffusion en continu à débit adaptatif n’est cependant pas possible. Au lieu de cela, les utilisateurs obtiennent une diffusion en continu à débit unique. Il est recommandé de modifier les paramètres de codage pour utiliser les mêmes valeurs dans les paramètres prédéfinis individuels de codage du profil. (L’éditeur de profil vidéo/paramètre prédéfini applique la parité des paramètres de codage de vidéo adaptative si l’option **[!UICONTROL Coder pour la diffusion en continu adaptative]** est activée.)
+Si les valeurs ne sont pas les mêmes, vous pouvez continuer à créer le profil tel quel. La diffusion en continu à débit adaptatif n’est cependant pas possible. Au lieu de cela, les utilisateurs obtiennent une diffusion en continu à débit unique. Adobe vous recommande de modifier les paramètres de codage pour utiliser les mêmes valeurs dans les paramètres prédéfinis de codage individuels du profil. (L’éditeur de profil vidéo/paramètre prédéfini applique la parité des paramètres de codage de vidéo adaptative si l’option **[!UICONTROL Coder pour la diffusion en continu adaptative]** est activée.)
 
 Voir aussi [Création d’un profil de codage vidéo pour la diffusion en continu progressive](#creating-a-video-encoding-profile-for-progressive-streaming).
 
@@ -164,9 +164,9 @@ Pour définir des paramètres de traitement avancés pour d’autres types de re
 1. Saisissez un nom et une description pour le profil.
 1. Sur la page Créer/Modifier des paramètres prédéfinis de codage vidéo, sélectionnez **[!UICONTROL Ajouter un paramètre prédéfini de codage vidéo]**.
 1. Définissez les options audio et vidéo dans l’onglet **[!UICONTROL De base]**.
-Sélectionnez l’icône d’information en regard de chaque option pour accéder à des descriptions supplémentaires ou des paramètres recommandés en fonction du codec vidéo sélectionné.
-1. Dans la section Taille de la vidéo, assurez-vous que la case **[!UICONTROL Conserver les proportions]** est cochée.
-1. Définissez la résolution de l’image vidéo en pixels. Utilisez la valeur **[!UICONTROL Auto]** pour la mettre automatiquement à l’échelle en fonction des proportions de la source (rapport largeur/hauteur). Par exemple, Auto x 480 ou 640 x Auto.
+Sélectionnez l’icône d’information à côté de chaque option. Vous pouvez en savoir plus sur les descriptions ou les paramètres recommandés en fonction du codec vidéo choisi.
+1. Sous l’en-tête Taille de la vidéo , assurez-vous que l’option **[!UICONTROL Conserver les proportions]** est cochée.
+1. Définissez la résolution de l’image vidéo en pixels. Utilisez la valeur **[!UICONTROL Auto]** pour mettre automatiquement à l’échelle le rapport L/H de la source (rapport largeur/hauteur). Par exemple, Auto × 480 ou 640 × Auto.
 
 1. Utilisez l’une des méthodes suivantes :
 
@@ -216,18 +216,18 @@ Pour définir des paramètres de traitement avancés pour d’autres types de re
 1. Saisissez un nom et une description pour le profil.
 1. Sur la page Créer/Modifier des paramètres prédéfinis de codage vidéo, sélectionnez **[!UICONTROL Ajouter un paramètre prédéfini de codage vidéo]**.
 1. Définissez les options audio et vidéo dans l’onglet **[!UICONTROL De base]**.
-Sélectionnez l’icône d’information en regard de chaque option pour accéder à des descriptions supplémentaires ou des paramètres recommandés en fonction du codec vidéo sélectionné.
+Sélectionnez l’icône d’information en regard de chaque option. Vous pouvez en savoir plus sur les descriptions supplémentaires ou les paramètres recommandés en fonction du codec vidéo sélectionné.
 1. (Facultatif) Dans la section Taille de la vidéo, désélectionnez la case **[!UICONTROL Conserver les proportions]**.
 1. Procédez comme suit :
    * Dans le champ **[!UICONTROL Largeur]**, saisissez **[!UICONTROL auto]**.
    * Dans le champ **[!UICONTROL Hauteur]**, saisissez une valeur en pixels.
-Pour visualiser plus facilement la taille de la vidéo, sélectionnez l’icône d’informations de hauteur pour ouvrir la page **[!UICONTROL Calcul de la taille]**. Utilisez la page **[!UICONTROL Calcul de la taille]** pour définir les dimensions de votre choix pour la vidéo (encadré bleu). Lorsque vous avez terminé, dans le coin supérieur droit de la boîte de dialogue, sélectionnez **[!UICONTROL X]**.
+Pour visualiser plus facilement la taille de la vidéo, sélectionnez l’icône d’informations de hauteur pour ouvrir la page **[!UICONTROL Calcul de la taille]**. Utilisez la page **[!UICONTROL Calcul de la taille]** pour définir les dimensions vidéo de votre choix (encadré bleu). Lorsque vous avez terminé, dans le coin supérieur droit de la boîte de dialogue, sélectionnez **[!UICONTROL X]**.
 1. (Facultatif) Effectuez l’une des opérations suivantes :
 
    * Sélectionnez l’onglet **[!UICONTROL Avancé]** et assurez-vous que la case **[!UICONTROL Utiliser les valeurs par défaut]** est sélectionnée (recommandé).
 
    * Désélectionnez la case **[!UICONTROL Utiliser les valeurs par défaut]** et spécifiez les paramètres vidéo et audio de votre choix.
-Sélectionnez l’icône d’information en regard de chaque option pour accéder à des descriptions supplémentaires ou des paramètres recommandés en fonction du codec vidéo sélectionné.
+Sélectionnez l’icône d’information en regard de chaque option. Vous pouvez en savoir plus sur les descriptions supplémentaires ou les paramètres recommandés en fonction du codec vidéo sélectionné.
 
 1. Dans le coin supérieur droit de la page, sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le paramètre prédéfini.
 1. Utilisez l’une des méthodes suivantes :
@@ -252,7 +252,7 @@ Vous pouvez maintenant appliquer le profil aux dossiers contenant des vidéos. V
 
 ## Utilisation de paramètres de codage vidéo personnalisés {#using-custom-added-video-encoding-parameters}
 
-Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de paramètres de codage vidéo avancés qui ne figurent pas dans l’interface utilisateur lors de la création ou de la modification d’un profil vidéo dans Experience Manager. Ajoutez un ou plusieurs paramètres avancés, tels que minBitrate et maxBitrate, dans votre profil existant.
+Vous pouvez modifier un profil de codage vidéo existant pour accéder aux paramètres de codage vidéo avancés. Ces paramètres ne sont pas disponibles dans l’interface utilisateur lors de la création ou de la modification d’un profil vidéo dans Experience Manager. Ajoutez un ou plusieurs paramètres avancés, tels que minBitrate et maxBitrate, dans votre profil existant.
 
 **Pour utiliser des paramètres de codage vidéo personnalisés, procédez comme suit** :
 
@@ -281,9 +281,9 @@ Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de par
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>Nombre cible d’images entre les images clés. Calculez cette valeur afin que vous puissiez générer une image clé toutes les 2 à 10 secondes. Par exemple, à 30 images par seconde, l’intervalle d’images clé doit être compris entre 60 et 300.<br /> <br /> Les intervalles d’images clé moindres améliorent le comportement de recherche de flux et de changement de flux pour les codages vidéo adaptatifs et peuvent également améliorer la qualité des vidéos avec beaucoup de mouvement. Cependant, puisque les images clés augmentent la taille du fichier, un intervalle d’images clés moindre entraîne généralement une qualité de vidéo globalement moins bonne à un débit donné.</td>
+   <td>Nombre cible d’images entre les images clés. Calculez cette valeur afin que vous puissiez générer une image clé toutes les 2 à 10 secondes. Par exemple, à 30 images par seconde, l’intervalle d’images clé doit être compris entre 60 et 300.<br /> <br /> Les intervalles d’images clés inférieurs améliorent le comportement de recherche de flux et de changement de flux pour les codages vidéo adaptatifs et peuvent également améliorer la qualité des vidéos à mouvement élevé. Cependant, puisque les images clés augmentent la taille du fichier, un intervalle d’images clés moindre entraîne généralement une qualité de vidéo globalement moins bonne à un débit donné.</td>
    <td><code>String</code></td>
-   <td><p>Numéro positif.</p> <p>La valeur par défaut est 300.</p> <p>La valeur recommandée pour DASH ou HLS est comprise entre 60 et 90. (DASH doit d’abord être activé sur votre compte si vous souhaitez l’utiliser pour vos vidéos. Voir <a href="/help/assets/video.md#enable-dash">Activer DASH sur votre compte</a>.)</p> </td>
+   <td><p>Numéro positif.</p> <p>La valeur par défaut est 300.</p> <p>La valeur recommandée pour DASH ou HLS est comprise entre 60 et 90.</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -301,7 +301,7 @@ Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de par
    <td><code>audioBitrateCustom</code></td>
    <td>Définissez la valeur sur <code>true</code> afin de forcer un débit constant pour le flux audio, si le codec audio le permet.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>La valeur par défaut est <code>false</code>.</p> <p>La valeur recommandée pour DASH ou HLS est <code>false</code>. (DASH doit d’abord être activé sur votre compte si vous souhaitez l’utiliser pour vos vidéos. Voir <a href="/help/assets/video.md#enable-dash">Activer DASH sur votre compte</a>.)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>La valeur par défaut est <code>false</code>.</p> <p>La valeur recommandée pour DASH ou HLS est <code>false</code>.</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -336,7 +336,7 @@ Pour définir des paramètres de traitement avancés pour d’autres types de re
 Sélectionnez l’icône d’information pour obtenir une description de la diffusion en continu à débit adaptatif. (Si vous modifiez un profil de vidéo progressive, ne cochez pas cette case.)
 1. Sous le titre Paramètres prédéfinis de codage vidéo, ajoutez, modifiez ou supprimez des paramètres prédéfinis de codage vidéo qui constituent le profil.
 
-   Sélectionnez l’icône d’information en regard de chaque option des onglets **[!UICONTROL De base]** et **[!UICONTROL Avancé]** pour accéder à des descriptions supplémentaires ou à des paramètres recommandés en fonction du codec vidéo sélectionné.
+   Sélectionnez l’icône d’information en regard de chaque option des onglets **[!UICONTROL De base]** et **[!UICONTROL Avancé]**. Vous pouvez en savoir plus sur les descriptions supplémentaires ou les paramètres recommandés en fonction du codec vidéo sélectionné.
 
 1. Dans le coin supérieur droit de la page, sélectionnez **[!UICONTROL Enregistrer]**.
 
@@ -351,7 +351,7 @@ Sélectionnez l’icône d’information pour obtenir une description de la diff
     Dans le mode hybride de Dynamic Media, si un paramètre prédéfini vidéo WebM fait partie du profil vidéo, l’option **[!UICONTROL Coder pour la diffusion en continu adaptative]** n’est pas disponible, car tous les paramètres prédéfinis doivent être des paramètres MP4.
 1. Sous le titre Paramètres prédéfinis de codage vidéo, ajoutez, modifiez ou supprimez des paramètres prédéfinis de codage vidéo qui constituent le profil.
 
-   Sélectionnez l’icône d’information en regard de chaque option dans les onglets De base et Avancé pour obtenir les paramètres recommandés et leurs descriptions.
+   Sélectionnez l’icône d’information en regard de chaque option dans les onglets De base et Avancé . Vous pouvez en savoir plus sur les paramètres recommandés et leurs descriptions.
 
 1. Dans le coin supérieur droit de la page, sélectionnez **[!UICONTROL Enregistrer]**.
 
@@ -368,7 +368,7 @@ Lorsque vous affectez un profil de vidéo à un dossier, tous les sous-dossiers 
 
 Si vous avez affecté un profil vidéo différent à un dossier, le nouveau profil remplace le précédent. Les ressources du dossier précédent restent inchangées. Le nouveau profil sera appliqué aux ressources ajoutées ultérieurement au dossier.
 
-Les dossiers auxquels un profil est affecté sont indiqués dans l’interface utilisateur par le nom du profil apparaissant dans le nom de la carte.
+L’interface utilisateur affiche le nom du profil dans le nom de la carte pour indiquer les dossiers auxquels un profil est affecté.
 
 ![chlimage_1-517](assets/chlimage_1-517.png)
 
@@ -380,22 +380,23 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 Vous pouvez appliquer un profil vidéo à un dossier depuis le menu **[!UICONTROL Outils]** ou, si vous vous trouvez dans le dossier, depuis **[!UICONTROL Propriétés]**. Cette section décrit comment appliquer des profils vidéo aux dossiers de deux manières.
 
-Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
+L’interface utilisateur affiche le nom du profil dans le nom de la carte pour indiquer les dossiers auxquels un profil est affecté.
 
-Voir aussi [Retraitement des ressources dans un dossier après avoir modifié son profil de traitement](processing-profiles.md#reprocessing-assets).
+Consultez également la section [Retraitement des ressources dans un dossier après avoir modifié son profil de traitement](processing-profiles.md#reprocessing-assets).
 
 #### Application d’un profil vidéo à des dossiers à l’aide de l’interface utilisateur Profils {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
 1. Sélectionnez le logo Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo]**.
 1. Sélectionnez le profil vidéo à appliquer à un ou plusieurs dossiers.
-1. Sélectionnez **[!UICONTROL Appliquer le profil au(x) dossier(s)]** et sélectionnez le ou les dossiers que vous voulez voir recevoir les ressources récemment chargées, puis sélectionnez **[!UICONTROL Appliquer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier en **[!UICONTROL mode Carte]**.
-Vous pouvez [surveiller la progression d’une tâche de traitement de profil vidéo](#monitoring-the-progress-of-an-encoding-job).
+1. Sélectionnez **[!UICONTROL Appliquer le profil au(x) dossier(s]** et sélectionnez le ou les dossiers que vous souhaitez utiliser pour recevoir les ressources récemment chargées, puis sélectionnez **[!UICONTROL Appliquer]**. L’interface utilisateur affiche le nom du profil dans le nom de la carte pour indiquer les dossiers auxquels un profil est affecté.
+
+   Vous pouvez [surveiller la progression d’une tâche de traitement de profil vidéo](#monitoring-the-progress-of-an-encoding-job).
 
 #### Application d’un profil vidéo à des dossiers à partir des Propriétés {#applying-video-profiles-to-folders-from-properties}
 
 1. Sélectionnez le logo Experience Manager et accédez à **[!UICONTROL Assets]**, puis au dossier auquel vous souhaitez appliquer un profil vidéo.
 1. Dans le dossier, sélectionnez la coche pour la sélectionner, puis **[!UICONTROL Propriétés]**.
-1. Sélectionnez l’onglet **[!UICONTROL Profils vidéo]**, sélectionnez le profil dans le menu déroulant, puis sélectionnez **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
+1. Sélectionnez l’onglet **[!UICONTROL Profils vidéo]**, sélectionnez le profil dans le menu déroulant, puis sélectionnez **[!UICONTROL Enregistrer et fermer]**. L’interface utilisateur affiche le nom du profil dans le nom de la carte pour indiquer les dossiers auxquels un profil est affecté.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 Vous pouvez [surveiller la progression d’une tâche de traitement de profil vidéo](#monitoring-the-progress-of-an-encoding-job).
@@ -423,13 +424,13 @@ Vous pouvez également consulter le fichier `error.log` pour contrôler la progr
 
 Lorsque vous supprimez un profil vidéo d’un dossier, les sous-dossiers héritent automatiquement de la suppression du profil de leur dossier parent. Cependant, le traitement des fichiers qui s’est produit dans les dossiers reste intact.
 
-Vous pouvez supprimer un profil vidéo d’un dossier à partir du menu **[!UICONTROL Outils]** ou, si vous êtes dans le dossier, à partir de **[!UICONTROL Paramètres du dossier]**. Cette section explique comment supprimer des profils vidéo des dossiers de deux manières différentes.
+Vous pouvez supprimer un profil vidéo d’un dossier depuis le menu **[!UICONTROL Outils]** ou, si vous vous trouvez dans le dossier, depuis **[!UICONTROL Paramètres du dossier]**. Cette section décrit comment supprimer des profils vidéo des dossiers dans les deux sens.
 
 ### Suppression d’un profil vidéo dans des dossiers à l’aide de l’interface utilisateur Profils {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
 1. Sélectionnez le logo Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo]**.
 1. Sélectionnez le profil vidéo à supprimer d’un ou de plusieurs dossiers.
-1. Sélectionnez **[!UICONTROL Supprimer le profil du ou des dossiers]** et sélectionnez le ou les dossiers desquels vous souhaitez supprimer le profil, puis sélectionnez **[!UICONTROL Supprimer]**.
+1. Sélectionnez **[!UICONTROL Supprimer le profil du ou des dossiers]** puis sélectionnez le ou les dossiers desquels vous souhaitez supprimer le profil. Sélectionnez ensuite **[!UICONTROL Supprimer]**.
 
    Le fait que le nom du profil n’apparaît plus sous celui du dossier indique que le profil vidéo n’est plus appliqué à un dossier.
 
@@ -437,4 +438,4 @@ Vous pouvez supprimer un profil vidéo d’un dossier à partir du menu **[!UICO
 
 1. Sélectionnez le logo Experience Manager et accédez à **[!UICONTROL Assets]**, puis au dossier duquel vous souhaitez supprimer un profil vidéo.
 1. Dans le dossier, sélectionnez la case à cocher pour l’activer, puis sélectionnez **[!UICONTROL Propriétés]**.
-1. Sélectionnez l’onglet **[!UICONTROL Profils vidéo]**, choisissez **[!UICONTROL Aucun]** dans le menu déroulant, puis sélectionnez **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
+1. Sélectionnez l’onglet **[!UICONTROL Profils vidéo]**, choisissez **[!UICONTROL Aucun]** dans le menu déroulant, puis sélectionnez **[!UICONTROL Enregistrer et fermer]**. L’interface utilisateur affiche le nom du profil dans le nom de la carte pour indiquer les dossiers auxquels un profil est affecté.
