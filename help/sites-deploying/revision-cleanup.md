@@ -9,10 +9,10 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 114a77bc-0b7e-49ce-bca1-e5195b4884dc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3cbc2ddd4ff448278e678d1a73c4ee7ba3af56f4
 workflow-type: tm+mt
-source-wordcount: '5696'
-ht-degree: 100%
+source-wordcount: '5139'
+ht-degree: 98%
 
 ---
 
@@ -78,18 +78,15 @@ Il est donc recommandé d’opter pour une taille de disque au moins deux à tro
 
 ## Modes de compression complète et partielle  {#full-and-tail-compaction-modes}
 
-**AEM 6.5** s’accompagne de **deux nouveaux modes** pour la phase de **compression** du processus de nettoyage des révisions en ligne :
+**AEM 6.5 LTS** dispose de **deux modes** pour la phase **compression** du processus de nettoyage des révisions en ligne :
 
-* Le mode **Compression complète** réécrit tous les segments et fichiers tar dans l’ensemble du référentiel. La phase de nettoyage suivante peut donc libérer la quantité maximale d’espace mémoire dans le référentiel. Étant donné que la compression complète affecte l’ensemble du référentiel, une quantité de ressources système et un temps considérables sont nécessaires pour son exécution. La compression complète correspond à la phase de compression dans AEM 6.3.
+* Le mode **Compression complète** réécrit tous les segments et fichiers tar dans l’ensemble du référentiel. La phase de nettoyage suivante peut donc libérer la quantité maximale d’espace mémoire dans le référentiel. Étant donné que la compression complète affecte l’ensemble du référentiel, elle nécessite une quantité considérable de ressources système et un temps considérable.
 * Le mode **Compression des révisions les plus récentes** ne réécrit que les segments et fichiers tar les plus récents dans le référentiel. Les segments et les fichiers tar les plus récents sont ceux qui ont été ajoutés depuis la dernière exécution de compression complète ou partielle. La phase de nettoyage suivante ne peut donc que libérer l’espace mémoire dans la partie récente du référentiel. Étant donné que la compression partielle ne concerne qu’une partie du référentiel, elle consomme beaucoup moins de ressources système qu’une compression complète et se révèle bien plus rapide.
 
 Ces modes de compression constituent un compromis entre efficacité et consommation des ressources : bien que la compression partielle soit moins efficace, elle a également moins d’impact sur le fonctionnement normal du système. En revanche, la compression complète est plus efficace, mais a davantage de répercussions sur les opérations normales du système.
 
-AEM 6.5 s’enrichit également d’un mécanisme de déduplication du contenu plus efficace au cours de la compression, ce qui a pour effet de réduire l’empreinte du référentiel sur le disque.
+AEM 6.5 LTS dispose d’un mécanisme efficace de déduplication du contenu lors de la compression, ce qui réduit encore l’empreinte du référentiel sur le disque.
 
-Les deux graphiques ci-dessous présentent les résultats des tests réalisés en laboratoire interne. Ils illustrent la réduction des délais d’exécution moyens et de l’empreinte moyenne sur le disque dans AEM 6.5 par rapport à AEM 6.3 :
-
-![onrc-duration-6_4vs63](assets/onrc-duration-6_4vs63.png) ![segmentstore-6_4vs63](assets/segmentstore-6_4vs63.png)
 
 ### Configuration de la compression complète et partielle {#how-to-configure-full-and-tail-compaction}
 
@@ -108,7 +105,7 @@ Considérez également que :
 Lors de l’utilisation des nouveaux modes de compression, gardez à l’esprit les points suivants :
 
 * Vous pouvez surveiller l’activité d’entrée/sortie (E/S), par exemple : opérations d’E/S, processeur en attente d’E/S, taille de la file d’attente de validation. Cela permet de déterminer si le système devient lié aux E/S et nécessite une mise à niveau.
-* La tâche `RevisionCleanupTaskHealthCheck` indique le statut d’intégrité global du nettoyage des révisions en ligne. Le fonctionnement est le même que dans AEM 6.3 et ne fait pas la distinction entre compression complète et partielle.
+* La `RevisionCleanupTaskHealthCheck` indique le statut d’intégrité global du nettoyage des révisions en ligne.
 * Les messages du journal contiennent des informations pertinentes sur les modes de compression. Par exemple, lorsque le nettoyage des révisions en ligne démarre, les messages de journal correspondants indiquent le mode de compression. De plus, dans certains cas, le système rétablit la compression complète lorsqu’une compression partielle était prévue. Les messages du journal indiquent cette modification. Les exemples de journaux ci-dessous indiquent le mode de compression et comment passer de la compression complète à la compression partielle :
 
 ```
@@ -123,83 +120,6 @@ Dans certains cas, l’alternance entre le modes de compression complète et par
 **Il est recommandé d’opter pour une taille de disque au moins deux à trois fois supérieure à celle estimée initialement pour le référentiel.**
 
 ## Foire aux questions sur le nettoyage des révisions en ligne {#online-revision-cleanup-frequently-asked-questions}
-
-### Remarques concernant la mise à niveau AEM 6.5 {#aem-upgrade-considerations}
-
-<table style="table-layout:auto">
- <tbody>
-  <tr>
-   <td>Questions </td>
-   <td>Réponses</td>
-  </tr>
-  <tr>
-   <td>De quoi dois-je tenir compte lorsque j’effectue une mise à niveau vers AEM 6.5 ?</td>
-   <td><p>Le format de persistance de TarMK change avec AEM 6.5. Ces modifications ne nécessitent aucune étape de migration proactive. Les référentiels existants font l’objet d’une migration progressive, un processus totalement transparent. Le processus de migration est lancé la première fois qu’AEM 6.5 (ou les outils associés) accède au référentiel.</p> <p><strong>Une fois que la migration vers le format de persistance AEM 6.5 a été lancée, le référentiel ne peut plus revenir au format de persistance AEM 6.3 précédent.</strong></p> </td>
-  </tr>
- </tbody>
-</table>
-
-### Migration vers Oak Segment Tar {#migrating-to-oak-segment-tar}
-
-<table style="table-layout:auto">
- <tbody>
-  <tr>
-   <td><strong>Questions</strong></td>
-   <td><strong>Réponses</strong></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Pourquoi dois-je faire migrer le référentiel ?</strong></td>
-   <td><p>Dans AEM 6.3, des modifications au niveau du format de stockage étaient nécessaires, notamment pour améliorer les performances et l’efficacité du nettoyage des révisions en ligne. Ces modifications ne sont pas rétrocompatibles et les référentiels créés avec l’ancien segment Oak (AEM 6.2 et versions antérieures) doivent être migrés.</p> <p>Autres avantages liés à la modification du format de stockage :</p>
-    <ul>
-     <li>Amélioration de l’évolutivité (taille du segment optimisée).</li>
-     <li><a href="/help/sites-administering/data-store-garbage-collection.md" target="_blank">Récupération de l’espace mémoire du magasin de données</a> plus rapide.<br /> </li>
-     <li>Travail de base pour les améliorations futures.</li>
-    </ul> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Le format Tar précédent est-il toujours pris en charge ?</strong></td>
-   <td>Seul le nouveau Oak Segment Tar est pris en charge dans AEM 6.3 ou les versions ultérieures.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>La migration du contenu est-elle toujours obligatoire ?</strong></td>
-   <td>Oui. À moins de commencer avec une nouvelle instance, vous devrez toujours migrer le contenu.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Puis-je effectuer la mise à niveau vers 6.3 ou une version ultérieure et effectuer la migration plus tard (par exemple, en utilisant une autre fenêtre de maintenance) ?</strong></td>
-   <td>Non, comme nous l’avons expliqué ci-dessus, la migration du contenu est obligatoire.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Les temps d’interruption peuvent-ils être évités durant la migration ?</strong></td>
-   <td>Non. Il s’agit d’une opération unique qui ne peut pas être effectuée sur une instance en cours d’exécution.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Que se passe-t-il si j’exécute accidentellement le mauvais format de référentiel ?</strong></td>
-   <td>Si vous essayez d’exécuter le module oak-segment sur un référentiel oak-segment-tar (ou inversement), le démarrage échoue avec une <em>IllegalStateException</em>, avec le message « Format de segment non valide ». Il n’y aura aucune corruption de données.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Une réindexation des index de recherche est-elle nécessaire ?</strong></td>
-   <td>Non. La migration de oak-segment vers oak-segment-tar introduit des modifications dans le format du conteneur. Les données contenues ne sont pas affectées et ne sont pas modifiées.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Comment calculer au mieux l’espace disque attendu pendant et après la migration ?</strong></td>
-   <td>La migration équivaut à recréer le magasin de segments dans le nouveau format. Vous pouvez l’utiliser pour estimer l’espace disque supplémentaire nécessaire lors de la migration. Après la migration, l’ancien magasin de segments peut être supprimé pour libérer de l’espace.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Comment estimer au mieux la durée de la migration ?</strong></td>
-   <td>Les performances de la migration peuvent être sensiblement améliorées si un <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup">nettoyage des révisions hors ligne</a> est exécuté en amont. Nous conseillons à tous les clients de l’exécuter en tant que conditions préalables à la mise à niveau. En règle générale, la durée de la migration doit être similaire à celle de la tâche de nettoyage des révisions hors ligne, en supposant que cette dernière ait été effectuée avant la migration.</td>
-   <td> </td>
-  </tr>
- </tbody>
-</table>
 
 ### Exécution du nettoyage des révisions en ligne {#running-online-revision-cleanup}
 
@@ -243,11 +163,6 @@ Dans certains cas, l’alternance entre le modes de compression complète et par
   <tr>
    <td><strong>L’auteur et la publication ont-ils des fenêtres de nettoyage des révisions en ligne différentes ?</strong></td>
    <td>Cela dépend des heures de travail et des modèles de trafic de la présence en ligne du client. Les fenêtres de maintenance doivent être configurées en dehors des heures d’exploitation majeures pour garantir un nettoyage efficace. S’il existe plusieurs instances de publication AEM (ferme TarMK), les fenêtres de maintenance pour le nettoyage des révisions en ligne doivent être fragmentées.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Existe-t-il des conditions préalables pour exécuter le nettoyage des révisions en ligne ?</strong></td>
-   <td><p>Le nettoyage des révisions en ligne est disponible uniquement avec AEM 6.3 et les versions ultérieures. De plus, si vous utilisez une ancienne version d’AEM, vous devrez effectuer une migration vers le nouvel <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Oak Segment Tar</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>

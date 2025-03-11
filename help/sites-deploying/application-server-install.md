@@ -1,5 +1,5 @@
 ---
-title: Installer un serveur d’applications
+title: Installation d’un serveur d’applications
 description: Découvrez comment installer Adobe Experience Manager avec un serveur d’applications.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d716571f490fe4bf3b7e58ea2ca85bbe6703ec0d
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 100%
+source-wordcount: '850'
+ht-degree: 99%
 
 ---
 
@@ -28,15 +28,13 @@ Cette section vous explique comment installer Adobe Experience Manager (AEM) a
 La procédure d’installation est décrite pour les serveurs d’applications suivants :
 
 * [WebSphere](#websphere)
-* [JBoss](#jboss-eap)
-* [Oracle WebLogic 12.1.3/12.2](#oracle-weblogic)
-* [Tomcat 8/8.5](#tomcat)
+* [Tomcat 11.0.x](#tomcat)
 
 Pour plus d’informations sur l’installation d’applications Web, sur les configurations serveur et sur le démarrage et l’arrêt du serveur, consultez la documentation du serveur d’applications approprié.
 
->[!NOTE]
+<!-- >[!NOTE]
 >
->Si vous utilisez Dynamic Media dans un déploiement WAR, consultez la [documentation de Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
+>If you are using Dynamic Media in a WAR deployment, see [Dynamic Media documentation](/help/assets/config-dynamic.md#enabling-dynamic-media). -->
 
 ## Description générale {#general-description}
 
@@ -49,7 +47,7 @@ Lors du déploiement, les événements suivants se produisent par défaut :
 * Le mode d’exécution est `author`.
 * L’instance (référentiel, environnement Felix OSGI, bundles, etc.) est installée dans `${user.dir}/crx-quickstart`, et `${user.dir}` correspond au répertoire de travail actuel. Ce chemin d’accès à crx-quickstart s’appelle `sling.home`.
 
-* La racine de contexte est le nom du fichier WAR, par exemple `aem-6`.
+* La racine de contexte est le nom du fichier WAR, par exemple `aem-65-lts`.
 
 #### Configuration {#configuration}
 
@@ -95,7 +93,7 @@ Pour vérifier si tout est installé, vous pouvez :
 
 ## Procédures d’installation des serveurs d’applications {#application-servers-installation-procedures}
 
-### WebSphere® 8.5 {#websphere}
+### WebSphere® 24.0.0.7 {#websphere}
 
 Avant de procéder à un déploiement, lisez la [Description générale](#general-description) ci-dessus.
 
@@ -124,66 +122,7 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
 
 * Démarrer l’application web AEM
 
-#### JBoss® EAP 6.3.0/6.4.0 {#jboss-eap}
-
-Avant de procéder à un déploiement, lisez la [Description générale](#general-description) ci-dessus.
-
-**Préparation du serveur JBoss®**
-
-Définissez les arguments de mémoire dans votre fichier de configuration (par exemple, `standalone.conf`).
-
-* JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
-
-Si vous utilisez le scanner de déploiement pour installer l’application web AEM, il peut être judicieux d’augmenter le `deployment-timeout,`. Pour ce faire, définissez un attribut `deployment-timeout` dans le fichier xml de votre instance (par exemple, `configuration/standalone.xml)`) :
-
-```xml
-<subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
-            <deployment-scanner path="deployments" relative-to="jboss.server.base.dir" scan-interval="5000" deployment-timeout="1000"/>
-</subsystem>
-```
-
-**Déploiement de l’application Web AEM**
-
-* Chargez l’application web AEM dans votre console d’administration JBoss®.
-
-* Activez l’application Web AEM.
-
-#### Oracle WebLogic 12.1.3/12.2 {#oracle-weblogic}
-
-Avant de procéder à un déploiement, lisez la [Description générale](#general-description) ci-dessus.
-
-Cette opération utilise une disposition de serveur simple avec uniquement un serveur d’administration.
-
-**Préparation du serveur WebLogic**
-
-* Dans le fichier `${myDomain}/config/config.xml`, ajoutez ce qui suit à la section security-configuration :
-
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>`Pour en connaître la position exacte (vous pouvez, par défaut, le positionner à la fin de la section), rendez-vous à l’adresse [https://xmlns.oracle.com/Weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/Weblogic/domain/1.0/domain.xsd).
-
-* Augmentez les paramètres mémoire de la machine virtuelle :
-
-   * Ouvrez `${myDomain}/bin/setDomainEnv.cmd` (soit .sh), recherchez WLS_MEM_ARGS set, par exemple set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`.
-   * Redémarrez WebLogic Server.
-
-* Créez un dossier de packages dans `${myDomain}`. Placez-y un dossier cq et, à l’intérieur de celui-ci, un dossier Plan.
-
-**Déploiement de l’application Web AEM**
-
-* Téléchargez le fichier war AEM.
-* Placez le fichier war AEM dans le dossier ${myDomain}/packages/cq.
-* Au besoin, effectuez vos configurations dans le fichier `WEB-INF/web.xml` (voir ci-dessus, sous Description générale).
-
-   * Décompresser le fichier `WEB-INF/web.xml`.
-   * Définissez le paramètre sling.run.modes sur « publication ».
-   * Supprimez les marques de commentaire du paramètre sling.home initial et définissez ce chemin d’accès en fonction de vos besoins (voir la Description générale).
-   * Recompressez le fichier Web.xml.
-
-* Déployez le fichier WAR AEM en tant qu’application (pour les autres paramètres, utilisez les paramètres par défaut).
-* L’installation peut prendre du temps...
-* Vérifiez que l’installation est terminée comme indiqué ci-dessus dans la section Description générale (par exemple, en suivant le fichier error.log).
-* Vous pouvez modifier la racine du contexte dans l’onglet Configuration de l’application Web dans la `/console` WebLogic.
-
-#### Tomcat 8/8.5 {#tomcat}
+#### Tomcat 11.0.x {#tomcat}
 
 Avant de procéder à un déploiement, lisez la [Description générale](#general-description) ci-dessus.
 

@@ -3,7 +3,6 @@ title: Style des composants principaux Adobe Experience Manager CIF
 description: Découvrez comment mettre en forme les composants principaux Adobe Experience Manager CIF. Ce tutoriel explique comment les bibliothèques côté client (clientlibs) sont utilisées afin de déployer et de gérer le code CSS et JavaScript pour une implémentation d’Adobe Experience Manager (AEM) Commerce. Il explique également comment le module ui.frontend et un projet webpack sont intégrés dans le processus de création de bout en bout.
 sub-product: Commerce
 topics: Development
-version: Cloud Service
 doc-type: tutorial
 feature: Commerce Integration Framework
 kt: 3456
@@ -11,7 +10,7 @@ thumbnail: 3456-style-cif.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 92689d52-6485-4cd5-a04f-4738096a0dba
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d571dc696e42bae873cd58f2e7f321bd3002f42e
 workflow-type: tm+mt
 source-wordcount: '2338'
 ht-degree: 100%
