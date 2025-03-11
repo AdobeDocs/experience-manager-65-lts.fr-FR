@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 57302061656ebf37a49041753dd5eb34e7ba22ef
+source-git-commit: 6a94b2e2e1d387401bf11810c46d371c538407f9
 workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 93%
@@ -118,7 +118,7 @@ Alors que les instances de production sont généralement exécutées sur des or
 
 Pour se familiariser avec AEM et développer sur AEM, il est courant d’utiliser une instance installée sur un ordinateur local exécutant Apple OS X ou les versions de bureau de Microsoft® Windows ou Linux®.
 
-Côté client, AEM fonctionne avec tous les navigateurs modernes (**Microsoft® Edge**, **Chrome **51+** **, **Firefox **47+, **Safari** 8+), sur les systèmes d’exploitation de bureau et de tablette. Pour plus d’informations, consultez [Plateformes client prises en charge](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
+Côté client, AEM fonctionne avec tous les navigateurs modernes (**Microsoft® Edge**, **Chrome 51+**, **Firefox 47+**, **Safari 8+**) sur les systèmes d’exploitation de bureau et de tablette. Pour plus d’informations, consultez [Plateformes client prises en charge](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
 
 ### Obtention du logiciel {#getting-the-software}
 
@@ -265,6 +265,7 @@ AEM démarre et redirige automatiquement le navigateur web vers la page adéquat
 `https://localhost:4502/`
 
 ![écran de connexion](assets/screen_shot_2019-04-08at83533am.png)
+
 <!-- 
 After you are logged in, you have access to AEM. For more information, depending on your role, see the following:
 
