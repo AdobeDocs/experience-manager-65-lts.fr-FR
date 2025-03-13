@@ -1,20 +1,20 @@
 ---
-title: Guide de l’utilisateur pour l’administration dans AEM 6.5
-description: Découvrez comment administrer AEM 6.5. Ces guides portent sur les fonctionnalités du site, les opérations de déploiement, les fonctionnalités de sécurité, la personnalisation, l’intégration, etc.
+title: Guide de l’utilisateur pour l’administration d’AEM 6.5 LTS
+description: Découvrez comment administrer AEM 6.5 LTS. Ces guides couvrent les fonctionnalités du site, les opérations de déploiement, les fonctionnalités de sécurité, la personnalisation, l’intégration, etc.
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 1ef575fc-5fc4-43ca-978e-911118dad438
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3db401e19e0d819760acb3b470d0beda2c16dc5d
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 100%
+source-wordcount: '67'
+ht-degree: 25%
 
 ---
 
-# Guide de l’utilisateur pour l’administration dans AEM 6.5
+# Guide de l’utilisateur pour l’administration d’AEM 6.5 LTS
 
-Découvrez comment administrer AEM 6.5. Ces guides portent sur les fonctionnalités du site, les opérations de déploiement, les fonctionnalités de sécurité, la personnalisation, l’intégration, etc.
+Découvrez comment administrer AEM 6.5 LTS. Ces guides couvrent les fonctionnalités du site, les opérations de déploiement, les fonctionnalités de sécurité, la personnalisation, l’intégration, etc.
 
 ## Articles clés d’administration
 
