@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: e51842b5-fa91-42d2-a490-5a7e867dada7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '733'
+ht-degree: 92%
 
 ---
 
@@ -40,10 +40,10 @@ Actuellement, il existe deux implémentations de stockage de nœud disponibles d
 
 Par défaut, AEM 6 utilise le stockage Tar pour stocker les nœuds et les fichiers binaires à l’aide des options de configuration par défaut. Vous pouvez configurer manuellement ses paramètres de stockage en procédant comme suit :
 
-1. Téléchargez le fichier jar de démarrage rapide d’AEM 6 et placez-le dans un nouveau dossier.
+1. Téléchargez le fichier jar de démarrage rapide LTS d’AEM 6.5 et placez-le dans un nouveau dossier.
 1. Décompressez AEM comme suit :
 
-   `java -jar cq-quickstart-6.jar -unpack`
+   `java -jar <aem-65-lts>.jar -unpack`
 
 1. Créez un dossier nommé `crx-quickstart\install` dans le répertoire d’installation.
 
@@ -60,12 +60,12 @@ Par défaut, AEM 6 utilise le stockage Tar pour stocker les nœuds et les fichi
 
 #### Exécution d’une instance AEM nouvellement installée avec le stockage Mongo {#running-a-freshly-installed-aem-instance-with-mongo-storage}
 
-AEM 6 peut être configuré pour s’exécuter avec le stockage MongoDB en suivant la procédure ci-dessous :
+Le LTS AEM 6.5 peut être configuré pour s’exécuter avec le stockage MongoDB en suivant la procédure ci-dessous :
 
-1. Téléchargez le fichier jar de démarrage rapide d’AEM 6 et placez-le dans un nouveau dossier.
+1. Téléchargez le fichier jar de démarrage rapide LTS d’AEM 6.5 et placez-le dans un nouveau dossier.
 1. Décompressez AEM en exécutant la commande suivante :
 
-   `java -jar cq-quickstart-6.jar -unpack`
+   `java -jar <aem-65-lts>.jar -unpack`
 
 1. Assurez-vous que MongoDB est installé et qu’une instance de `mongod` est en cours d’exécution. Pour plus d’informations, reportez-vous à la section [Configuration de MongoDB](https://docs.mongodb.org/manual/installation/).
 1. Créez un dossier nommé `crx-quickstart\install` dans le répertoire d’installation.
@@ -83,10 +83,10 @@ AEM 6 peut être configuré pour s’exécuter avec le stockage MongoDB en suiv
 
 1. Créez un fichier de configuration avec le PID du magasin de données que vous souhaitez utiliser et modifiez le fichier pour définir les options de configuration. Pour plus d’informations, consultez [Configuration des magasins de nœuds et des entrepôts de données](/help/sites-deploying/data-store-config.md).
 
-1. Démarrez le jar AEM 6 avec une sauvegarde du stockage MongoDB en exécutant :
+1. Démarrez le jar LTS AEM 6.5 avec un serveur principal de stockage MongoDB en exécutant :
 
    ```shell
-   java -jar cq-quickstart-6.jar -r crx3,crx3mongo
+   java -jar <aem-65-lts>.jar -r crx3,crx3mongo
    ```
 
    Où le mode d’exécution principal est **`-r`**, l’exemple commence avec la prise en charge de MongoDB.
