@@ -1,6 +1,6 @@
 ---
 title: Présentation d’ [!DNL Adobe Experience Manager Assets]
-description: Créez, gérez, traitez et distribuez des ressources numériques dans Experience Manager. Ces guides décrivent les bonnes pratiques, les fonctionnalités d’accessibilité et la manière d’utiliser les ressources LTS AEM 6.5.
+description: Créez, gérez, traitez et distribuez des ressources numériques dans Experience Manager. Ces guides décrivent les bonnes pratiques, les fonctionnalités d’accessibilité et la manière d’utiliser les ressources AEM 6.5 LTS.
 hide: true
 feature: Asset Management
 role: Leader, Architect, User
@@ -9,7 +9,7 @@ exl-id: 2f2eb576-4924-4314-b348-c4b290a57fe3
 source-git-commit: aafd340d9ef03f9bf12ed23aad5eb03dc055af38
 workflow-type: tm+mt
 source-wordcount: '902'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

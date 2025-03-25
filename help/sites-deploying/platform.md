@@ -1,6 +1,6 @@
 ---
 title: Présentation de la plateforme AEM
-description: Découvrez la plateforme AEM et ses composants les plus importants, notamment l’installation et le déploiement de Adobe Experience Manager 6.5 LTS, ainsi que son architecture, notamment le déploiement cloud d’Adobe Managed Services.
+description: Découvrez la plateforme AEM et ses composants les plus importants, notamment l’installation et le déploiement d’Adobe Experience Manager 6.5 LTS et son architecture, y compris le déploiement cloud Adobe Managed Services.
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Architect
@@ -10,7 +10,7 @@ exl-id: c9ea613d-f1d1-49be-bd52-95d489442f46
 source-git-commit: 4666e698b05510e2ed90995f7e7098e7f8d860da
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
