@@ -12,10 +12,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: eb6903d0a34e9f9e90eaeee3ca6a89d1a2622dd0
 workflow-type: tm+mt
 source-wordcount: '2672'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -68,7 +68,7 @@ Le flux de données est conçu pour détecter et gérer automatiquement les prob
 
 #### Performance {#performance}
 
-L’activation de TarMK Cold Standby sur l’instance principale n’a pratiquement aucun impact mesurable sur les performances. La consommation supplémentaire du processeur est faible et le disque dur supplémentaire et les E/S réseau ne devraient pas entraîner de problèmes de performances.
+L’activation de TarMK Cold Standby sur l’instance principale n’a pratiquement aucun impact mesurable sur les performances. La consommation supplémentaire de CPU est faible et l’E/S du disque dur et du réseau supplémentaire ne devrait pas produire de problèmes de performances.
 
 Sur l’instance de secours, vous pouvez vous attendre à une consommation élevée du processeur lors du processus de synchronisation. Comme la procédure n’est pas multithread, elle ne peut pas être accélérée en utilisant plusieurs cœurs. Si aucune donnée n’est modifiée ou transférée, il n’existe aucune activité mesurable. La vitesse de connexion varie en fonction de l’environnement matériel et réseau, mais elle ne dépend pas de la taille du référentiel ou de l’utilisation du protocole SSL. Gardez ce point à l’esprit lorsque vous estimez le temps nécessaire à une synchronisation initiale ou lorsque de nombreuses données ont été modifiées entre-temps sur le nœud principal.
 
