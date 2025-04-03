@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 3ef72c05-1301-402e-94ce-49fbaf26fb98
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: aff6c41e13293a1c83eca226354f5c16cff18d99
 workflow-type: tm+mt
-source-wordcount: '2149'
-ht-degree: 99%
+source-wordcount: '2147'
+ht-degree: 98%
 
 ---
 
@@ -83,7 +83,7 @@ Procédez comme suit pour définir le nœud dans les dossiers source de votre pa
 
 ## Configurer le service de notification par e-mail de workflow {#configuring-the-workflow-email-notification-service}
 
-Lorsque vous recevez des notifications électroniques de workflow, l’adresse électronique De et le préfixe URL hôte sont définis sur les valeurs par défaut. Vous pouvez modifier ces valeurs en configurant le **service de notification électronique de workflow Day CQ** dans la console Web. Si vous le faites, il est recommandé de conserver la modification dans le référentiel.
+Lorsque vous recevez des notifications électroniques de workflow, l’adresse électronique De et le préfixe URL hôte sont définis sur les valeurs par défaut. Vous pouvez modifier ces valeurs en configurant le **service de notification électronique de workflow Day CQ** dans la console Web. Si vous le faites, vous devez conserver la modification dans le référentiel.
 
 La configuration par défaut se présente comme suit dans la console web :
 
