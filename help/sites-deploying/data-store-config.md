@@ -1,5 +1,5 @@
 ---
-title: Configurer les magasins de nœuds et les entrepôts de données dans AEM 6
+title: Configuration des magasins de nœuds et des entrepôts de données dans AEM 6.5 LTS
 description: Découvrez comment configurer les magasins de nœuds et de données et comment effectuer la récupération de l’espace mémoire.
 content-type: reference
 topic-tags: deploying
@@ -10,14 +10,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '3461'
-ht-degree: 100%
+source-wordcount: '3330'
+ht-degree: 94%
 
 ---
 
-# Configurer les magasins de nœuds et les entrepôts de données dans AEM 6 {#configuring-node-stores-and-data-stores-in-aem}
+# Configuration des magasins de nœuds et des entrepôts de données dans AEM 6.5 LTS{#configuring-node-stores-and-data-stores-in-aem}
 
 ## Présentation {#introduction}
 
@@ -46,19 +46,10 @@ Pour configurer les magasins de nœuds et de données, procédez comme suit :
 
 ## Configurations des magasins de nœuds {#node-store-configurations}
 
->[!CAUTION]
->
->Les nouvelles versions d’Oak utilisent un nouveau modèle de dénomination et un nouveau format pour les fichiers de configuration OSGi. Le nouveau modèle de dénomination nécessite que le fichier de configuration soit nommé **.config**. Le nouveau format nécessite que les valeurs soient saisies. Pour plus d’informations, voir le [modèle d’approvisionnement Apache Sling et Apache SlingStart : format de configuration par défaut](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
->
->Si vous effectuez une mise à niveau à partir d’une version plus ancienne d’Oak, veillez d’abord à sauvegarder le dossier `crx-quickstart/install`. Après la mise à niveau, restaurez les contenus du dossier à l’installation mise à niveau, puis modifiez l’extension des fichiers de configuration de **.cfg** en **.config**.
-
 ### Magasin de nœuds de segments {#segment-node-store}
 
-Le magasin de nœuds de segments est la base de l’implémentation de TarMK d’Adobe dans AEM6. Il utilise le PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` pour la configuration.
+Le magasin de nœuds de segment est la base de l’implémentation de TarMK d’Adobe dans AEM 6.5 LTS. Celui-ci utilise le PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` pour la configuration.
 
->[!CAUTION]
->
->Le PID de la boutique de nœuds de segment a été remplacé par `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` de AEM 6 à `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` dans AEM 6.3. Veillez à effectuer les ajustements de configuration nécessaires pour refléter cette modification.
 
 Vous pouvez configurer les options suivantes :
 
@@ -86,9 +77,9 @@ Le magasin de nœuds de document est la base de l’implémentation d’AEM Mong
 
 * `mongouri` : [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) requis pour se connecter à la base donnée Mongo. La valeur par défaut est de `mongodb://localhost:27017`.
 
-* `db` : nom de la base de données Mongo. La valeur par défaut est **Oak**. ``. However, new AEM 6 installations use **aem-author** `` comme nom de la base de données par défaut.
+* `db` : nom de la base de données Mongo. La valeur par défaut est **aem-author**.
 
-* `cache` : taille du cache, en Mo. Elle est distribuée entre différents caches utilisés dans DocumentNodeStore. La valeur par défaut est `256`.
+* `cache` : taille du cache en Mo. Elle est distribuée entre différents caches utilisés dans DocumentNodeStore. La valeur par défaut est `256`.
 
 * `changesSize` : taille en Mo de la collection limitée utilisée dans Mongo pour la mise en cache de la sortie diff. La valeur par défaut est `256`.
 
@@ -143,9 +134,9 @@ AEM peut être configuré pour stocker des donnés dans le service Simple Stora
 
 >[!NOTE]
 >
->AEM 6.5 prend en charge le stockage de données dans Amazon S3, mais la prise en charge n’est pas étendue au stockage de données dans d’autres plateformes, dont les fournisseurs peuvent avoir leurs propres implémentations des API Amazon S3.
+>AEM 6.5 LTS prend en charge le stockage de données dans Amazon S3, mais cette prise en charge n’est pas étendue au stockage de données sur d’autres plateformes, dont les fournisseurs peuvent avoir leurs propres mises en œuvre des API S3 d’Amazon.
 
-Pour activer la fonctionnalité du magasin de données S3, un pack de fonctionnalités contenant le connecteur du magasin de données S3 doit être téléchargé et installé. Accédez au [référentiel Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/), puis téléchargez la dernière version des versions 1.10.x du pack de fonctionnalités (par exemple, com.adobe.granite.oak.s3connector-1.10.0.zip). En outre, vous devez également télécharger et installer le dernier pack de services AEM, comme indiqué à la page [Notes de mise à jour d’AEM 6.5](/help/release-notes/release-notes.md).
+Pour activer la fonctionnalité du magasin de données S3, un pack de fonctionnalités contenant le connecteur du magasin de données S3 doit être téléchargé et installé. Accédez au [Référentiel Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) puis téléchargez la dernière version des versions 1.60.x du pack de fonctionnalités (par exemple, com.adobe.granite.oak.s3connector-1.60.2.zip). En outre, vous devez télécharger et installer le dernier pack de services AEM, comme indiqué à la page Notes de mise à jour d’[AEM 6.5 LTS](/help/release-notes/release-notes.md).
 
 >[!NOTE]
 >
@@ -189,9 +180,9 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 1. Modifiez le fichier et ajoutez les options de configuration requises par votre configuration.
 1. Démarrez AEM.
 
-## Mise à nouveau vers une nouvelle version du connecteur S3 1.10.x {#upgrading-to-a-new-version-of-the-s-connector}
+## Mise à niveau vers une nouvelle version du connecteur S3 1.60.x {#upgrading-to-a-new-version-of-the-s-connector}
 
-Si vous devez effectuer une mise à niveau vers une nouvelle version du connecteur S3 1.10.x (par exemple, de la version 1.10.0 vers la version 1.10.4), procédez comme suit :
+Pour effectuer la mise à niveau vers une nouvelle version du connecteur S3 1.60.x, procédez comme suit :
 
 1. Désactivez l’instance AEM.
 
@@ -205,7 +196,7 @@ Si vous devez effectuer une mise à niveau vers une nouvelle version du connecte
    >
    >Les noms de fichier présentés ci-dessus sont utilisés à titre d’illustration uniquement.
 
-1. Téléchargez la dernière version du pack de fonctionnalités 1.10.x à partir du [référentiel Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
+1. Téléchargez la dernière version du pack de fonctionnalités 1.60.x à partir de la [Distribution logicielle.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/s3-connector/6-5-lts/com.adobe.granite.oak.s3connector-1.60.2.zip)
 1. Décompressez le contenu dans un dossier séparé, puis accédez à `jcr_root/libs/system/install/15`.
 1. Copiez les fichiers jar dans le dossier d’installation AEM **&lt;aem-install>**/crx-quickstart/install/15.
 1. Démarrez AEM et vérifiez les fonctionnalités du connecteur.
@@ -413,7 +404,7 @@ Pour configurer la réplication sans binaires avec S3, les étapes suivantes son
 
 AEM peut être configuré pour stocker des données dans le service de stockage Azure de Microsoft®. Celui-ci utilise le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` pour la configuration.
 
-Pour activer la fonctionnalité du magasin de données Azure, un pack de fonctionnalités contenant le connecteur Azure doit être téléchargé et installé. Accédez au [référentiel Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/), puis téléchargez la dernière version des versions 1.6.x du pack de fonctionnalités (par exemple, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+Pour activer la fonctionnalité du magasin de données Azure, un pack de fonctionnalités contenant le connecteur Azure doit être téléchargé et installé. Accédez à la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip) et téléchargez la dernière version des versions 1.9.x du pack de fonctionnalités (par exemple, com.adobe.granite.oak.azureblobconnector-1.9.16.zip).
 
 >[!NOTE]
 >

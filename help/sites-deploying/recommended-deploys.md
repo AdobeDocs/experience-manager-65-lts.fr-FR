@@ -12,10 +12,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 9baa4111-831a-4b68-9ce5-82aeeb06e07f
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: d0e6fe09ddafabd5da06d53a69b85adad295e415
 workflow-type: tm+mt
-source-wordcount: '1485'
-ht-degree: 100%
+source-wordcount: '1493'
+ht-degree: 99%
 
 ---
 
@@ -96,6 +96,10 @@ Les avantages :
 * Basculement
 
 ### Cluster Oak avec basculement MongoMK pour une haute disponibilité dans un seul centre de données {#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter}
+
+>[!NOTE]
+>
+>La version minimale prise en charge de Mongo est Mongo 6.
 
 Cette approche implique que plusieurs instances Oak accèdent à un ensemble de réplications MongoDB dans un data center, créant ainsi un cluster actif-actif pour l’environnement de création AEM. Les ensembles de réplications de MongoDB sont utilisés pour fournir un haut niveau de disponibilité et de redondance en cas de panne de matériel ou de réseau.
 

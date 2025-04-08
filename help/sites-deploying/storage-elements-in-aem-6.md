@@ -1,6 +1,6 @@
 ---
-title: Éléments de stockage dans AEM 6.5
-description: Découvrez les implémentations de stockage de nœud disponibles dans AEM 6.5 et comment gérer le référentiel.
+title: Éléments de stockage dans AEM 6.5 LTS
+description: Découvrez les implémentations de stockage de nœud disponibles dans AEM 6.5 LTS et comment gérer le référentiel.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -10,35 +10,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: e51842b5-fa91-42d2-a490-5a7e867dada7
-source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 92%
+source-wordcount: '712'
+ht-degree: 75%
 
 ---
 
-# Éléments de stockage dans AEM 6.5{#storage-elements-in-aem}
+# Éléments de stockage dans AEM 6.5 LTS{#storage-elements-in-aem}
 
 Cet article traite des sujets suivants :
 
-* [Présentation du stockage dans AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
+* [Présentation du stockage dans AEM 6.5 LTS](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
 * [Maintenance du référentiel](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)
 
-## Présentation du stockage dans AEM 6 {#overview-of-storage-in-aem}
+## Présentation du stockage dans AEM 6.5 LTS {#overview-of-storage-in-aem}
 
-L’une des modifications les plus importantes d’AEM 6 concerne les innovations au niveau du référentiel.
+Les innovations au niveau du référentiel constituent l’une des modifications les plus importantes du LTS d’AEM 6.5.
 
-Actuellement, il existe deux implémentations de stockage de nœud disponibles dans AEM 6 : le stockage Tar et le stockage MongoDB.
+Actuellement, il existe deux implémentations de stockage de nœud disponibles dans AEM 6.5 LTS : le stockage Tar et le stockage MongoDB.
 
 ### Stockage Tar {#tar-storage}
 
 #### Exécution d’une toute nouvelle instance AEM installée avec un stockage tar {#running-a-freshly-installed-aem-instance-with-tar-storage}
 
->[!CAUTION]
->
->Le PID du magasin de nœuds de segment a été changé, en remplaçant org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService dans les versions précédentes d’AEM 6 par org.apache.jackrabbit.oak.segment.SegmentNodeStoreService dans AEM 6.3. Assurez-vous que les réglages de configuration nécessaires sont effectués afin que les modifications soient répercutées.
-
-Par défaut, AEM 6 utilise le stockage Tar pour stocker les nœuds et les fichiers binaires à l’aide des options de configuration par défaut. Vous pouvez configurer manuellement ses paramètres de stockage en procédant comme suit :
+Par défaut, le LTS d’AEM 6.5 utilise le stockage Tar pour stocker les nœuds et les fichiers binaires à l’aide des options de configuration par défaut. Vous pouvez configurer manuellement ses paramètres de stockage en procédant comme suit :
 
 1. Téléchargez le fichier jar de démarrage rapide LTS d’AEM 6.5 et placez-le dans un nouveau dossier.
 1. Décompressez AEM comme suit :
@@ -47,7 +43,7 @@ Par défaut, AEM 6 utilise le stockage Tar pour stocker les nœuds et les fichi
 
 1. Créez un dossier nommé `crx-quickstart\install` dans le répertoire d’installation.
 
-1. Créez un fichier nommé `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` dans le dossier nouvellement créé.
+1. Créez un fichier nommé `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` dans le dossier nouvellement créé.
 
 1. Modifiez le fichier et définissez les options de configuration. Les options suivantes sont disponibles pour le magasin de nœuds de segment, qui est la base de l’implémentation du stockage Tar d’AEM :
 
@@ -57,6 +53,10 @@ Par défaut, AEM 6 utilise le stockage Tar pour stocker les nœuds et les fichi
 1. Démarrez AEM.
 
 ### Stockage Mongo {#mongo-storage}
+
+>[!NOTE]
+>
+>La version minimale prise en charge de Mongo est Mongo 6.
 
 #### Exécution d’une instance AEM nouvellement installée avec le stockage Mongo {#running-a-freshly-installed-aem-instance-with-mongo-storage}
 
@@ -71,12 +71,12 @@ Le LTS AEM 6.5 peut être configuré pour s’exécuter avec le stockage MongoDB
 1. Créez un dossier nommé `crx-quickstart\install` dans le répertoire d’installation.
 1. Configurez le magasin de nœuds en créant un fichier de configuration avec le nom de la configuration que vous souhaitez utiliser dans le répertoire `crx-quickstart\install`.
 
-   Le magasin de nœuds de document (qui sert de base à l’implémentation du stockage MongoDB d’AEM) utilise un fichier nommé `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`.
+   Le magasin de nœuds de document (qui sert de base à l’implémentation du stockage MongoDB d’AEM) utilise un fichier nommé `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`.
 
 1. Modifiez le fichier et définissez vos options de configuration. Les options suivantes sont disponibles :
 
    * `mongouri` : [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) requis pour se connecter à la base de données Mongo. La valeur par défaut est de `mongodb://localhost:27017`.
-   * `db` : nom de la base de données Mongo. Par défaut, les nouvelles installations d’AEM 6 utilisent **aem-author** comme nom de la base de données.
+   * `db` : nom de la base de données Mongo. Par défaut, les nouvelles installations LTS d’AEM 6.5 utilisent **aem-author** comme nom de la base de données.
    * `cache` : taille du cache en Mo. Cette taille de cache est répartie entre les différents caches utilisés dans DocumentNodeStore. La valeur par défaut est 256.
    * `changesSize` : taille en Mo de la collection limitée utilisée dans Mongo pour la mise en cache de la sortie diff. La valeur par défaut est 256.
    * `customBlobStore` : valeur booléenne indiquant qu’un magasin de données personnalisé est utilisé. La valeur par défaut est false.

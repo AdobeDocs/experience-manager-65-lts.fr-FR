@@ -12,14 +12,18 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: b87199e70b4fefc345c86eabbe89054d4b240e95
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '6217'
-ht-degree: 99%
+source-wordcount: '5965'
+ht-degree: 98%
 
 ---
 
 # Adobe Experience Manager avec MongoDB{#aem-with-mongodb}
+
+>[!NOTE]
+>
+>La version minimale prise en charge de Mongo est Mongo 6.
 
 Cet article vise à améliorer les connaissances sur les tâches et les considérations nécessaires pour déployer AEM (Adobe Experience Manager) avec MongoDB.
 
@@ -74,8 +78,6 @@ Pour obtenir un débit de lecture et d’écriture optimal sans avoir à effectu
 
 ### Mémoire RAM {#ram}
 
-Les versions 2.6 et 3.0 de MongoDB qui utilisent le moteur de stockage MMAP nécessitent que le jeu de travail de la base de données et ses index correspondent à la mémoire RAM.
-
 Une mémoire RAM insuffisante entraîne une dégradation importante des performances. La taille du jeu de travail et celle de la base de données dépendent largement de l’application. Bien que certaines estimations puissent être faites, le moyen le plus fiable de déterminer la quantité de RAM requise est de créer l’application AEM et de la tester en termes de charge.
 
 Pour faciliter le processus de test de charge, le ratio suivant entre le jeu de travail et la taille totale de la base de données peut être supposé :
@@ -85,11 +87,9 @@ Pour faciliter le processus de test de charge, le ratio suivant entre le jeu de 
 
 Ces ratios signifient que, pour les déploiements sur SSD, 200 Go de RAM sont nécessaires pour une base de données de 2 To.
 
-Bien que les mêmes limites s’appliquent au moteur de stockage WiredTiger dans MongoDB 3.0, la corrélation entre le jeu de travail, la RAM et les erreurs de page n’est pas si forte. WiredTiger n’utilise pas le mappage de mémoire de la même manière que le moteur de stockage MMAP.
-
 >[!NOTE]
 >
->Adobe recommande d’utiliser le moteur de stockage WiredTiger pour les déploiements d’AEM 6.1 qui utilisent MongoDB 3.0.
+>Adobe recommande d’utiliser le moteur de stockage WiredTiger pour les déploiements LTS d’AEM 6.5 qui utilisent MongoDB 6 ou une version ultérieure.
 
 ### Magasin de données {#data-store}
 
@@ -235,8 +235,6 @@ Il est recommandé d’activer une configuration de cache persistante pour les d
 
 ### Prise en charge du système d’exploitation {#operating-system-support}
 
-MongoDB 2.6 utilise un moteur de stockage mappé en mémoire sensible à certains aspects de la gestion au niveau du système d’exploitation entre la mémoire RAM et le disque. Les performances de requête et de lecture de l’instance MongoDB reposent sur la possibilité d’éviter ou d’éliminer les opérations d’E/S lentes, souvent appelées erreurs de page. Ces erreurs de page s’appliquent en particulier au processus `mongod`. Ne confondez pas cela avec les erreurs de page au niveau du système d’exploitation.
-
 Pour un fonctionnement rapide, la base de données MongoDB ne doit accéder qu’aux données déjà dans la RAM. Les données auxquelles elle doit accéder sont composées d’index et de données. Cette collection d’index et de données est appelée « jeu de travail ». Lorsque le jeu de travail est plus volumineux que la RAM disponible, MongoDB doit paginer ces données à partir du disque, ce qui entraîne un coût d’E/S et évince d’autres données déjà en mémoire. Si cette éviction entraîne le rechargement des données à partir du disque, les erreurs de page dominent et les performances se dégradent. Lorsque le jeu de travail est dynamique et variable, d’autres erreurs de page sont générées pour prendre en charge les opérations.
 
 MongoDB s’exécute sur plusieurs systèmes d’exploitation, notamment un large éventail de versions Linux®, Windows et macOS. Voir [https://docs.mongodb.com/manual/installation/#supported-platforms](https://docs.mongodb.com/manual/installation/#supported-platforms) pour plus d’informations. Selon le choix de votre système d’exploitation, MongoDB propose différentes recommandations au niveau du système d’exploitation. Ces dernières sont documentées à l’adresse [https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration](https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration) et résumées ici pour plus de commodité.
@@ -246,7 +244,6 @@ MongoDB s’exécute sur plusieurs systèmes d’exploitation, notamment un larg
 * Désactivez les paramètres Transparent Huge Pages et défragmentez. Voir [Paramètres Transparent Huge Pages](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) pour plus d’informations.
 * [Réglez les paramètres de lecture anticipée](https://docs.mongodb.com/manual/administration/production-notes/#readahead) sur les périphériques qui stockent vos fichiers de base de données afin que vous puissiez les adapter à votre cas d’utilisation.
 
-   * Pour le moteur de stockage MMAPv1, si votre jeu de travail est plus volumineux que la RAM disponible et que le modèle d’accès aux documents est aléatoire, envisagez de réduire la lecture anticipée à 32 ou 16. Évaluez différents paramètres afin de trouver une valeur optimale qui optimise la mémoire résidente et réduit le nombre d’erreurs de page.
    * Pour le moteur de stockage WiredTiger, définissez la lecture anticipée sur 0, quel que soit le type de support de stockage (tournant, SSD, etc.). En règle générale, utilisez le paramètre de lecture anticipée recommandé à moins que les tests ne présentent un avantage mesurable, répétable et fiable dans une valeur de lecture anticipée plus élevée. La [prise en charge professionnelle de MongoDB](https://docs.mongodb.com/manual/administration/production-notes/#readahead) peut fournir des conseils sur les configurations de lecture anticipée non nulles.
 
 * Désactivez l’outil optimisé si vous exécutez RHEL 7/CentOS 7 dans un environnement virtuel.
@@ -358,11 +355,13 @@ Pour ajuster la taille du cache interne de WiredTiger, voir [storage.wiredTiger.
 
 ### NUMA {#numa}
 
-Le NUMA (Non Uniform Memory Access) permet à un noyau de gérer la façon dont la mémoire est mappée aux cœurs du processeur. Bien que l’accès à la mémoire puisse être potentiellement plus rapide pour les cœurs grâce à un accès aux données requises, le NUMA interfère avec MMAP en introduisant une latence supplémentaire, car les lectures ne peuvent pas être prédites. Par conséquent, le NUMA doit être désactivé pour le processus `mongod` sur tous les systèmes d’exploitation performants.
+Le NUMA (Non Uniform Memory Access) permet à un noyau de gérer la façon dont la mémoire est mappée aux cœurs du processeur.
 
 Essentiellement, dans une architecture NUMA, la mémoire est connectée aux processeurs et les processeurs sont connectés à un bus. Dans une architecture SMP ou UMA, la mémoire est connectée au bus et partagée par les processeurs. Lorsqu’un thread alloue de la mémoire sur un processeur NUMA, il l’alloue selon une politique. Par défaut, la mémoire est allouée au processeur local du thread, sauf s’il n’y a pas de processeur libre. Dans ce cas, il utilise la mémoire d’un processeur libre à un coût plus élevé. Une fois allouée, la mémoire ne passe pas d’un processeur à l’autre. L’allocation est effectuée par une politique héritée du thread parent, c’est-à-dire le thread qui a démarré le processus.
 
-Dans de nombreuses bases de données qui considèrent l’ordinateur comme une architecture de mémoire multi-cœurs uniforme, ce scénario entraîne d’abord le remplissage du processeur initial et ensuite le remplissage du processeur secondaire. C’est particulièrement vrai si un thread central est responsable de l’allocation des tampons mémoire. La solution consiste à modifier la politique NUMA du thread principal utilisé pour lancer le processus `mongod` en exécutant la commande suivante :
+L’exécution de MongoDB sur un système avec un accès non uniforme à la mémoire (NUMA) peut entraîner un certain nombre de problèmes opérationnels, notamment des performances lentes pendant certaines périodes, l’impossibilité d’utiliser toute la RAM disponible et une utilisation élevée des processus système.
+
+La solution consiste à modifier la politique NUMA du thread principal utilisé pour lancer le processus `mongod` en exécutant la commande suivante :
 
 ```shell
 numactl --interleaved=all <mongod> -f config
@@ -676,10 +675,6 @@ Pour obtenir des informations génériques sur les performances de MongoDB, voir
 MongoMK prend en charge l’utilisation simultanée de plusieurs instances d’AEM avec une seule base de données, mais ne prend pas en charge les installations simultanées.
 
 Pour contourner ce problème, assurez-vous d’exécuter l’installation avec une seule personne membre et d’ajouter les autres à la fin de l’installation.
-
-### Longueur du nom de page {#page-name-length}
-
-Si AEM est exécuté sur un déploiement de gestionnaire de persistance MongoMK[, les noms de page sont limités à 150 caractères.](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
 >
