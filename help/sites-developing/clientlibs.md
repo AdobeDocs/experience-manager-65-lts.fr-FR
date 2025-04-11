@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 exl-id: cafc7120-114e-487a-8b81-9c695318731e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a061c19dcb883b94ee61be21459c46e21eaf696a
 workflow-type: tm+mt
 source-wordcount: '2791'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -145,7 +145,7 @@ Une ressource statique n’est accessible que par le biais du proxy, si elle ré
 
 Par exemple :
 
-* Vous avez une bibliothèque cliente dans `/apps/myproject/clientlibs/foo`.
+* Vous avez une bibliothèque cliente dans `/apps/myprojects/clientlibs/foo`.
 * Vous avez une image statique dans `/apps/myprojects/clientlibs/foo/resources/icon.png`.
 
 Vous pouvez définir la propriété `allowProxy` sur `foo` sur true.
