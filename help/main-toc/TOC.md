@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation LTS de Adobe Experience Manager 6.5 pour en savoir plus sur son fonctionnement et sur ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5 LTS
-source-git-commit: bec8386db59691ae2d0346afc0cbd48fbc4890de
+source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
 workflow-type: tm+mt
-source-wordcount: '6800'
-ht-degree: 93%
+source-wordcount: '6797'
+ht-degree: 94%
 
 ---
 
@@ -300,7 +300,7 @@ ht-degree: 93%
       + [Aperçu de ressources Dynamic Media](/help/assets/previewing-assets.md)
       + [Ajout de ressources Dynamic Media à des pages](/help/assets/adding-dynamic-media-assets-to-pages.md)
       + [Ajout de fonctionnalités Dynamic Media Classic à des pages](/help/assets/scene7.md)
-      + [Intégration de la visionneuse de vidéos ou d’images Dynamic dans une page web](/help/assets/embed-code.md)
+      + [Incorporation de la visionneuse de vidéos ou d’images Dynamic dans une page web](/help/assets/embed-code.md)
       + [Liaison d’URL à votre application web](/help/assets/linking-urls-to-yourwebapplication.md)
       + [Utilisation de jeux de règles de transformation d’URL](/help/assets/using-rulesets-to-transform-urls.md)
       + [Publication de ressources Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md)
@@ -1090,7 +1090,7 @@ ht-degree: 93%
    + [Présentation et vue d’ensemble](/help/commerce/cif/introduction.md)
    + [Modifications notables apportées à AEM Content and Commerce](/help/commerce/cif/changes.md)
    + Intégrations {#integrations}
-      + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
+      + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
       + [Solution commerciale tierce](/help/commerce/cif/integrating/third-party.md)
    + AEM Storefront {#storefront}
       + [Prise en main](/help/commerce/cif/getting-started.md)
@@ -1238,7 +1238,7 @@ ht-degree: 93%
                + [Comment assembler l’ensemble](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/put-it-all-together.html)
                + [Comment mettre en ligne votre application découplée](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html)
                + [Facultatif – Comment créer des applications sur une seule page (SPA) avec AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html)
-            + Parcours d’architecture de contenu découplé {#architect}
+            + Parcours d’architecte de contenu découplé {#architect}
                + [Présentation du parcours d’architecture de contenu découplé AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html)
                + [Modélisation de contenu pour le découplage avec AEM – Introduction](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html)
                + [En savoir plus sur les bases de la modélisation de contenu pour le découplage avec AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html)
@@ -1432,7 +1432,6 @@ ht-degree: 93%
          + [Optimisation des performances](/help/sites-deploying/configuring-performance.md)
          + [Guide de performances des ressources](/help/sites-deploying/assets-performance-sizing.md)
          + [Articles sur la procédure de configuration](/help/sites-deploying/ht-deploy.md)
-         + [Configuration de la console web](/help/sites-deploying/configuring-web-console.md)
       + Mise à niveau vers AEM 6.5 LTS {#upgrading}
          + [Mise à niveau vers AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
          + [Planification de la mise à niveau](/help/sites-deploying/upgrade-planning.md)

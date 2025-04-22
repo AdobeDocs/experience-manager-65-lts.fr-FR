@@ -11,10 +11,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c0b285b7-3b20-4412-88b8-04de4a703f42
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
 workflow-type: tm+mt
-source-wordcount: '2318'
-ht-degree: 99%
+source-wordcount: '2323'
+ht-degree: 98%
 
 ---
 
@@ -80,9 +80,9 @@ Pour chaque instance de cluster, vous pouvez voir plusieurs propriétés liées 
 * Rubriques de traitement pour lesquelles l’instance est enregistrée pour le déchargement.
 * Rubriques de traitement que l’instance traite.
 
-1. À l’aide de l’interface utilisateur tactile, appuyez sur l’onglet Outils. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
-1. Dans la zone Opérations Granite, cliquez sur Navigateur de déchargement.
-1. Dans le panneau de navigation, cliquez sur Navigateur de topologies.
+1. À l’aide de l’interface utilisateur tactile, appuyez sur l’onglet Outils. ([http://localhost:4502/aem/start.html](http://localhost:4502/aem/start.html))
+1. Pour afficher le déchargement, cliquez sur la mosaïque Déchargement dans la section Déploiement .
+1. Pour afficher la topologie, cliquez sur Mosaïque Topologie dans la section Déploiement .
 
    Les clusters qui participent à la topologie s’affichent.
 
@@ -100,7 +100,7 @@ Vous pouvez également utiliser la console web pour afficher les informations su
 Utilisez la procédure suivante pour ouvrir la page de gestion des topologies de la console web :
 
 1. Ouvrez la console web dans votre navigateur. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
-1. Cliquez sur Principal > Gestion de la topologie.
+1. Cliquez sur Sling > Gestion des topologies.
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
