@@ -12,10 +12,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '1224'
-ht-degree: 100%
+source-wordcount: '1221'
+ht-degree: 96%
 
 ---
 
@@ -33,8 +33,7 @@ Il existe plusieurs raisons pour lesquelles la réplication échoue. Cet article
 
 **Les réplications sont-elles déclenchées en cliquant sur le bouton d’activation ? Dans le cas CONTRAIRE, procédez comme suit :**
 
-1. Accédez à /crx/explorer et connectez-vous en tant qu’administrateur.
-1. Ouvrez l’explorateur de contenu.
+1. Accédez à /crx/de/index.jsp et connectez-vous en tant qu’administrateur.
 1. Vérifiez si un nœud /bin/replicate ou /bin/replicate.json existe. Si le nœud existe, supprimez-le et enregistrez.
 
 **Les réplications sont-elles mises en file d’attente dans les files d’attente de l’agent de réplication ?**
@@ -76,12 +75,12 @@ Vérifiez si c’est le cas en vous rendant sur /etc/replication/agents.author.h
 Il est parfois utile de définir tous les journaux de réplication pour qu’ils soient ajoutés dans un fichier journal distinct au niveau DEBUG. Pour ce faire :
 
 1. Accédez à https://host:port/system/console/configMgr et connectez-vous en tant qu’administrateur.
-1. Identifiez la fabrique Enregistreur de connexion Sling Apache et créez une instance en cliquant sur le bouton **+** à droite de la configuration de la fabrique. Cela crée un nouvel enregistreur de journal.
+1. Recherchez la configuration de l’enregistreur de journalisation Apache Sling et créez une instance en cliquant sur le bouton **+** à droite de la configuration d’usine. Cela crée un nouvel enregistreur de journal.
 1. Définissez la configuration comme suit :
 
    * Niveau de connexion : DÉBOGUER
-   * Chemin du fichier journal : logs/replication.log
-   * Catégories : com.day.cq.replication
+   * Fichier journal : logs/replication.log
+   * Enregistreur : com.day.cq.replication
 
 1. Si vous pensez que le problème est lié de quelque manière que ce soit à sling eventing/jobs, vous pouvez également ajouter ce package Java™ sous categories:org.apache.sling.event.
 

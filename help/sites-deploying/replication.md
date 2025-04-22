@@ -12,10 +12,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '3286'
-ht-degree: 100%
+source-wordcount: '3287'
+ht-degree: 99%
 
 ---
 
@@ -60,18 +60,26 @@ La réplication inverse utilise un agent dans l’environnement de publication q
 
 ### Réplication prête à l’emploi {#replication-out-of-the-box}
 
-Le site web we-retail, inclus dans une installation AEM standard, peut être utilisé pour illustrer la réplication.
+Créez une page en suivant [Création et organisation des pages](/help/sites-authoring/managing-pages.md).
 
 Pour suivre cet exemple et utiliser les agents de réplication par défaut, vous devez [installer AEM](/help/sites-deploying/deploy.md) avec :
 
+
 * l’environnement de création sur le port `4502` ;
 * l’environnement de publication sur le port `4503`.
+
+Cette réplication est effectuée à partir de l’environnement de création par :
+
+* **Agent par défaut (publication)**
+Cet agent reproduit le contenu vers l’instance de publication par défaut.
+Les détails (configuration et journaux) sont accessibles à partir de la console Outils de l’environnement de création ; ou :
+  `http://localhost:4502/etc/replication/agents.author/publish.html`.
 
 >[!NOTE]
 >
 >Activés par défaut :
 >
->* Agents sur l’instance de création : agent par défaut (publication)
+>* Agents sur l’auteur : agent par défaut (publication), si ce n’est pas le cas, assurez-vous de l’activer avant de continuer.
 >
 >Désactivés par défaut (à partir de AEM 6.1) :
 >
@@ -84,19 +92,13 @@ Pour suivre cet exemple et utiliser les agents de réplication par défaut, vous
 #### Réplication (création vers publication) {#replication-author-to-publish}
 
 1. Ouvrez la page d’assistance dans l’environnement de création.
-   **https://localhost:4502/content/we-retail/us/en/experience.html** `<pi>`
+   **https://localhost:4502/content/site1/test.html** `<pi>`
 1. Modifiez la page afin de pouvoir ajouter du nouveau texte.
 1. **Activez la page** pour pouvoir publier les modifications.
 1. Ouvrez la page d’assistance dans l’environnement de publication :
-   **https://localhost:4503/content/we-retail/us/en/experience.html**
+   **https://localhost:4503/content/site1/test.html**
 1. Vous pouvez désormais voir les modifications que vous avez apportées sur l’instance de création.
 
-Cette réplication est effectuée à partir de l’environnement de création par :
-
-* **Agent par défaut (publication)**
-Cet agent reproduit le contenu vers l’instance de publication par défaut.
-Les détails (configuration et journaux) sont accessibles à partir de la console Outils de l’environnement de création ; ou :
-  `https://localhost:4502/etc/replication/agents.author/publish.html`.
 
 #### Agents de réplication – Prêts à l’emploi {#replication-agents-out-of-the-box}
 
@@ -108,7 +110,7 @@ Utilisé pour effectuer une réplication de l’instance de création vers l’i
 * Le Dispatcher Flush
 Utilisé pour gérer le cache du Dispatcher. Consultez la section [Invalidation du cache du Dispatcher depuis l’environnement de création](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=fr#invalidating-dispatcher-cache-from-the-authoring-environment) et [Invalidation du cache du Dispatcher depuis l’instance de publication](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=fr#invalidating-dispatcher-cache-from-a-publishing-instance) pour plus d’informations.
 
-* [Réplication inverse](#reverse-replication-publish-to-author)
+* [Réplication inverse](#configuring-reverse-replication)
 Utilisée pour effectuer une réplication de l’instance de publication vers l’instance de création. La réplication inverse n’est pas utilisée pour les fonctionnalités de communautés, telles que les forums, les blogs et les commentaires. Elle est désactivée, puisque la boîte d’envoi n’est pas activée. L’utilisation de la réplication inverse nécessite une configuration personnalisée.
 
 * L’agent statique
