@@ -12,10 +12,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: d3356f5f-f80f-4ce0-b4e2-3ee927208ab1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 100%
+source-wordcount: '3247'
+ht-degree: 98%
 
 ---
 
@@ -36,10 +36,6 @@ Les paramètres de configuration OSGi suivants (répertoriés en fonction de l�
 >La configuration nécessaire varie d’un projet à l’autre.
 >
 >Voir la console Web pour connaître les valeurs utilisées et des informations détaillées sur les paramètres.
-
->[!NOTE]
->
->L’outil de comparaison des configurations OSGi, faisant partie des [Outils AEM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=fr), peut être utilisé pour répertorier les configurations OSGi par défaut.
 
 >[!NOTE]
 >
@@ -81,7 +77,7 @@ L’**Enregistreur de données de demandes personnalisables Apache Sling** conf
 
 Voir [Journalisation AEM](/help/sites-deploying/configure-logging.md) et [Journalisation Sling](https://sling.apache.org/documentation/development/logging.html).
 
-Le **Pool de threads d’événement Apache Sling** configure les éléments suivants :
+Le **Pool de threads Apache Sling** configure les éléments suivants :
 
 * La **Taille minimale du pool** et la **Taille max. du pool**, les taille du pool utilisées pour contenir les threads d’événement.
 
@@ -102,7 +98,7 @@ Ne désactivez pas JSON.
 >
 >Ce paramètre est automatiquement configuré pour les instances d’exploitation si vous exécutez AEM en [mode Prêt pour l’exploitation](/help/sites-administering/production-ready.md).
 
-Le **Gestionnaire JavaScript Apache Sling** configure les paramètres de compilation des fichiers .java en tant que scripts (servlets).
+Le **Gestionnaire de script Java Apache Sling** configure les paramètres de compilation des fichiers .java en tant que scripts (servlets).
 
 Certains paramètres peuvent affecter les performances. Désactivez ces paramètres si possible, en particulier pour une instance d’exploitation.
 
@@ -118,9 +114,9 @@ Certains paramètres peuvent affecter les performances. Désactivez ces paramèt
 
 * **Chemin de recherche** : la liste des chemins d’accès recherchés par jcrinstall pour l’installation des ressources, ainsi qu’un nombre indiquant le facteur de pondération pour ce chemin.
 
-Le **Gestionnaire d’événements de tâche Apache Sling** configure les paramètres qui gèrent la planification des tâches :
+**Configuration de la file d’attente Apache Sling** configurez les paramètres qui gèrent la planification des tâches :
 
-* **Intervalle de reprise**, **Nombre maximal de reprises**, **Nombre maximal de tâches en parallèle**, **Accepter le temps d’attente**, entre autres.
+* **Intervalle de reprise**, **Nombre maximal de reprises**, **Nombre maximal de tâches en parallèle** entre autres.
 
 * La modification de ces paramètres peut améliorer les performances dans des scénarios comportant un grand nombre de tâches ; par exemple, une utilisation intensive de la gestion des ressources numériques et des workflows AEM.
 * Les valeurs spécifiques à votre scénario doivent être établies à l’aide de tests.
@@ -177,7 +173,7 @@ Le **Servlet principal Apache Sling** configure :
 
 * le **Nombre d’appels par demande** et la **Profondeur de récursion** pour protéger votre système contre la récursivité infinie et les appels excessifs de script.
 
-Le **Service de type MIME Apache Sling** configure :
+Le **Service de type MIME Apache Sling Commons** configure les éléments suivants :
 
 * **Types MIME** : pour ajouter les types requis par votre projet dans le système. Cela permet d’effectuer une requête `GET` sur un fichier pour définir l’en-tête du type de contenu approprié pour lier le type de fichier et l’application.
 
@@ -239,23 +235,11 @@ Plusieurs paramètres peuvent être définis, notamment :
 * Les **chemins d’exécution** : ils répertorient les chemins d’accès à rechercher pour les scripts exécutables. En configurant des chemins spécifiques, vous pouvez limiter les scripts à exécuter. Si vous ne configurez aucun chemin, le chemin par défaut est utilisé (`/` = root). Cela permet d’exécuter de tous les scripts.
 Si la valeur configurée du chemin se termine par une barre oblique, la recherche concerne l’arborescence entière. En l’absence de barre oblique, le script n’est exécuté que s’il s’agit d’une correspondance exacte.
 
-* **Utilisateur du script** : cette propriété facultative peut spécifier le compte d’utilisateur du référentiel utilisé pour lire les scripts. Si vous ne spécifiez aucun compte, l’utilisateur `admin` est utilisé par défaut.
-
 * **Extensions par défaut** : la liste des extensions adoptant le comportement par défaut. Le dernier segment de chemin du type de ressource peut être utilisé comme nom du script.
 
 **Configuration du proxy de composants HTTP Apache** : il s’agit de la configuration de proxy pour tout le code utilisant le client HTTP Apache, utilisée lorsque du code HTTP est créé. Par exemple, lors de la réplication.
 
 Lors de la création d’une configuration, ne modifiez pas la configuration d’usine. Créez plutôt une configuration d’usine pour ce composant à l’aide du gestionnaire de configuration disponible à l’adresse suivante : **https://localhost:4502/system/console/configMgr/**. La configuration du proxy est disponible à l’adresse **org.apache.http.proxyconfigurator.**
-
->[!NOTE]
->
->Dans AEM 6.0 et les versions antérieures, le proxy était configuré dans le client HTTP Day Commons. À partir d’AEM 6.1 et les versions ultérieures, la configuration proxy a été déplacée vers « Configuration proxy des composants HTTP Apache » au lieu de la configuration « Client HTTP Day Commons ».
-
-L’**Antispam Day CQ** configure le service anti-spam (Akismet) utilisé. Pour bénéficier de cette fonctionnalité, vous devez indiquer les informations suivantes :
-
-* **Fournisseur**
-* **Clé API**
-* **URL enregistrée**
 
 **Gestionnaire de bibliothèques HTML Adobe Granite** : configurez-le pour contrôler la gestion des bibliothèques clientes (css ou js), par exemple, la manière dont la structure sous-jacente est vue.
 
@@ -281,7 +265,7 @@ L’**Antispam Day CQ** configure le service anti-spam (Akismet) utilisé. Pour
 >
 >Ce paramètre est automatiquement configuré pour les instances d’exploitation si vous exécutez AEM en [mode Prêt pour l’exploitation](/help/sites-administering/production-ready.md).
 
-**Gestionnaire d’authentification de l’en-tête HTTP Day CQ** Paramètres à l’échelle du système pour la méthode d’authentification de base de la requête HTTP.
+**Gestionnaire d’authentification d’en-tête HTTP Adobe Granite** paramètres à l’échelle du système pour la méthode d’authentification de base de la requête HTTP.
 
 Lors de l’utilisation de [groupes d’utilisateurs fermés](/help/sites-administering/cug.md), vous pouvez configurer, entre autres, les éléments suivants :
 
@@ -378,7 +362,7 @@ Les autres modes sont accessibles depuis le sidekick. Vous pouvez également uti
 >
 >Ce paramètre est automatiquement configuré pour les instances d’exploitation si vous exécutez AEM en [mode Prêt pour l’exploitation](/help/sites-administering/production-ready.md).
 
-Le **Configurateur de vérification de lien de gestion de contenu web Day CQ** configure les éléments suivants :
+Le **Vérificateur de lien de gestion de contenu web Day CQ** configure les éléments suivants :
 
 * La **liste des configurations de réécriture** pour spécifier une liste d’emplacements pour les configurations de vérificateur de lien basé sur le contenu. Les configurations peuvent être basées sur le mode d’exécution. Ce fait est important pour faire la distinction entre les environnements de création et de publication, car les paramètres du vérificateur de liens peuvent différer.
 
@@ -428,7 +412,7 @@ Consultez la section [Purge des version](/help/sites-deploying/version-purging.m
 
 Le **Service de notification par e-mail des workflows Day CQ** configure les paramètres d’e-mail pour les notifications envoyées par un workflow.
 
-**Usine d’analyseur de HTML de réécriture CQ**
+**Usine d’analyseur d’HTML Adobe AEM Rewriter**
 
 Contrôle l’analyseur de HTML pour le module de réécriture CQ.
 

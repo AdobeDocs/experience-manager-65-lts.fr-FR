@@ -11,10 +11,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3bf3ba2e-f5f2-428a-a1fc-36f885350f6b
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 100%
+source-wordcount: '1900'
+ht-degree: 97%
 
 ---
 
@@ -174,9 +174,6 @@ Comme le même paramètre de configuration peut être situé à plusieurs endroi
 * filtre selon le nom du service ;
 * filtre selon le mode d’exécution.
 
->[!NOTE]
->
->Lisez également [comment définir une configuration basée sur un référentiel pour une instance spécifique uniquement](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=fr).
 
 ### Ajouter une nouvelle configuration au référentiel {#adding-a-new-configuration-to-the-repository}
 
@@ -186,9 +183,9 @@ Pour ajouter une configuration au référentiel, vous devez connaître les infor
 
 1. L’**identité persistante** (PID) du service.
 
-   Référencez le champ **Configurations** dans la console Web. Le nom est indiqué entre parenthèses après le nom du lot (ou dans les **Informations de configuration** vers le bas de la page).
+   Référencez les **Configurations** dans la console web. Le nom s’affiche dans les **Informations de configuration** vers le bas de la page.
 
-   Par exemple, créez un nœud `com.day.cq.wcm.core.impl.VersionManagerImpl.` pour configurer le **Gestionnaire de versions de gestion de contenu Web d’AEM**.
+   Par exemple, `com.day.cq.wcm.core.impl.VersionManagerImpl.` configurer le **gestionnaire de versions de gestion de contenu Web d’AEM**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
@@ -237,13 +234,13 @@ Pour ajouter réellement la nouvelle configuration au référentiel :
 
    >[!NOTE]
    >
-   >Lors de la configuration d’usine, ajoutez `-<identifier>` au nom.
+   >Lors de la configuration d’usine, ajoutez `~<identifier>` au nom.
    >
-   >Comme dans : `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
+   >Comme dans : `org.apache.sling.commons.log.LogManager.factory.config~<identifier>`
    >
    >Où `<identifier>` est remplacé par du texte libre que vous devez entrer pour l’instance (vous ne pouvez pas omettre cette information) ; par exemple :
    >
-   >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   >`org.apache.sling.commons.log.LogManager.factory.config~MINE`
 
 1. Pour chaque paramètre à configurer, créez une propriété sur ce nœud :
 
@@ -309,23 +306,7 @@ La configuration comportant le nombre le plus élevé de modes d’exécution co
 
 ### Configurations standard {#standard-configurations}
 
-La liste suivante présente une petite sélection des configurations disponibles (dans une installation standard) dans le référentiel :
-
-* Auteur - Filtre de gestion de contenu Web d’AEM :
-
-  `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
-
-* Publication - Filtre de gestion de contenu Web d’AEM :
-
-  `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
-
-* Publication - Statistiques de page de gestion de contenu Web d’AEM :
-
-  `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
-
->[!NOTE]
->
->Comme ces configurations se trouvent dans `/libs`, elles ne doivent pas être modifiées directement, mais copiées dans votre zone d’application (`/apps`) avant d’être personnalisées.
+Si une configuration standard réside dans `/libs`, elle ne doit pas être modifiée directement, mais copiée dans votre zone d’application ( `/apps`) avant d’être personnalisée.
 
 Pour répertorier tous les nœuds de configuration de votre instance, utilisez la fonctionnalité **Requête** de CRXDE Lite pour envoyer la requête SQL suivante :
 
