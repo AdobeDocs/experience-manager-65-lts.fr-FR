@@ -11,18 +11,16 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '6470'
-ht-degree: 99%
+source-wordcount: '5052'
+ht-degree: 100%
 
 ---
 
 # Optimiser les performances {#performance-optimization}
 
 >[!NOTE]
->
->Pour obtenir des instructions générales sur les performances, consultez la page [Conseils relatifs aux performance](/help/sites-deploying/performance-guidelines.md).
 >
 >Pour plus d’informations sur le dépannage et la résolution des problèmes de performances, voir également l’[arborescence de la performance](/help/sites-deploying/performance-tree.md).
 >
@@ -203,10 +201,6 @@ Certaines règles doivent être prises en compte lors de l’optimisation des pe
 
 Certains aspects d’AEM (et/ou du référentiel sous-jacent) peuvent être configurés pour optimiser la performance. Vous trouverez ci-dessous des possibilités et des suggestions. Vous devez vous assurer d’utiliser la fonctionnalité en question avant d’y apporter des modifications.
 
->[!NOTE]
->
->Voir [Optimisation des performances](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html).
-
 ### Indexation de recherche {#search-indexing}
 
 À compter d’AEM 6.0, Adobe Experience Manager utilise une architecture de référentiel Oak.
@@ -224,6 +218,7 @@ Par exemple, lorsque des images (ou des ressources de gestion des actifs numéri
 
 Le moteur de workflow utilise les files d’attente de tâches Apache Sling pour gérer et planifier le traitement des éléments de travail. Les services de file d’attente de tâches suivants ont été créés par défaut à partir de la fabrique de services Configuration des files d’attente des tâches Apache Sling pour le traitement des tâches de workflow :
 
+<!-- TODO: Change the reference to 6.5 LTS javadocs -->
 * File d’attente des workflows Granite : la plupart des étapes de workflow, telles que celles qui traitent les ressources de gestion des ressources numériques, utilisent le service File d’attente des workflows Granite.
 * File d’attente des tâches de processus externe des workflows Granite : ce service est utilisé pour les étapes de workflow spéciales et externes qui servent généralement à contacter un système externe et à interroger les résultats. Par exemple, le processus d’extraction de médias InDesign est implémenté en tant que processus externe. Le moteur de workflow utilise la file d’attente externe pour traiter l’interrogation. (Voir [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
@@ -462,7 +457,6 @@ Une sélection d’outils est disponible pour vous aider dans la génération de
 
 * [JMeter](https://jmeter.apache.org/)
 * [Load Runner](https://www.microfocus.com/fr-fr/portfolio/performance-engineering/overview)
-* [InfraRED](https://www.infraredsoftware.com/)
 * [Profil interactif Java™](https://jiprof.sourceforge.net/)
 
 Après l’optimisation, testez à nouveau pour confirmer l’impact.
@@ -642,87 +636,3 @@ Pour vous assurer que les fichiers sont correctement mis en cache, suivez ces in
 
 * Assurez-vous que les fichiers ont toujours l’extension appropriée.
 * Évitez les scripts génériques de diffusion de fichiers avec une URL de type : `download.jsp?file=2214`. Pour utiliser des URL contenant la spécification de fichier, réécrivez le script. Dans l’exemple précédent, cette réécriture est `download.2214.pdf`.
-
-## Performances des sauvegardes {#backup-performance}
-
-Cette section présente une série de points de référence utilisés pour évaluer les performances des sauvegardes AEM et les effets de l’activité de sauvegarde sur les performances des applications. Les sauvegardes AEM présentent une charge importante sur le système pendant leur exécution. Adobe mesure cet impact, ainsi que les effets des paramètres de délai de sauvegarde qui tentent de moduler ces conséquences. L’objectif est de fournir des données de référence sur les performances attendues des sauvegardes dans des configurations et des quantités de données de production réalistes, tout en fournissant des conseils sur la manière d’estimer les temps de sauvegarde pour les systèmes planifiés.
-
-### Environnement de référence {#reference-environment}
-
-#### Système physique {#physical-system}
-
-Les résultats signalés dans ce document ont été obtenus à partir de références exécutées dans un environnement de référence avec la configuration ci-après. Cette configuration se rapproche d’un environnement de production type d’un centre de données :
-
-* HP ProLiant DL380 G6, 8 processeurs x 2,533 GHz
-* Disques SCSI connectés en série de 300 Go, 10 000 tr/min
-* Contrôleur RAID matériel ; 8 disques dans une baie RAID 0+5
-* Image VMware CPU x 2 Intel Xeon® E5540 @ 2,53 GHz
-* Red Hat® Linux® 2.6.18-194.el5 ; Java™ 1.6.0_29
-* Instance de création unique
-
-Le sous-système de disque sur ce serveur est rapide et représentatif d’une configuration RAID haute performance qui peut être utilisée dans un serveur de production. Les performances de sauvegarde peuvent être sensibles aux performances du disque et les résultats de cet environnement reflètent les performances sur une configuration RAID rapide. L’image VMWare est configurée pour avoir un seul gros volume de disque qui réside physiquement dans le stockage du disque local, sur la baie RAID.
-
-La configuration AEM place le référentiel et le magasin de données sur le même volume logique, avec tous les autres logiciels du système d’exploitation et d’AEM. Le répertoire cible des sauvegardes se trouve également sur ce système de fichiers logique.
-
-#### Volumes de données {#data-volumes}
-
-Le tableau ci-après illustre la taille des volumes de données utilisés dans les repères de sauvegarde. Le contenu de base initial est d’abord installé, puis des quantités de données connues supplémentaires sont ajoutées pour augmenter la taille du contenu sauvegardé. Des sauvegardes sont créées à des incréments spécifiques afin de représenter une augmentation importante du contenu, ainsi que du volume qui peut être produit en un jour. La distribution du contenu (pages, images, balises) repose essentiellement sur une composition réaliste des ressources de production. Les pages, images et balises sont limitées à 800 pages enfants au maximum. Chaque page comprend des composants titre, Flash, texte/image, vidéo, diaporama, formulaire, tableau, cloud et carrousel. Les images sont chargées à partir d’un pool de 400 fichiers uniques de 37 Ko à 594 Ko.
-
-| Contenu | Nœuds | Pages | Images | Balises |
-|---|---|---|---|---|
-| Installation de base | 69 610 | 562 | 256 | 237 |
-| Petit contenu pour une sauvegarde progressive |  | +100 | +2 | +2 |
-| Contenu volumineux pour une sauvegarde complète |  | +10 000 | +100 | +100 |
-
-L’essai comparatif de sauvegarde est réitéré avec des jeux de contenu supplémentaires ajoutés à chaque itération.
-
-#### Scénarios de référence {#benchmark-scenarios}
-
-Les références de sauvegarde couvrent deux scénarios principaux : des sauvegardes sont effectuées lorsque le système est soumis à une charge d’application importante d’une part et lorsque le système est inactif d’autre part. Selon la recommandation générale, les sauvegardes doivent être effectuées lorsqu’AEM est aussi inactif que possible. Pourtant, il existe des situations où il est nécessaire que la sauvegarde soit exécutée quand le système est en charge.
-
-* **Statut inactif** - Les sauvegardes sont effectuées sans autre activité sur AEM.
-* **En charge** - Les sauvegardes sont effectuées lorsque le système est soumis à une charge inférieure à 80 % provenant de processus en ligne. Variation du délai de sauvegarde pour déterminer l’impact sur la charge.
-
-La durée des sauvegardes et la taille des sauvegardes qui en résultent sont obtenues à partir des journaux du serveur AEM. Il est généralement recommandé de planifier des sauvegardes pendant des périodes d’interruption lorsqu’AEM est inactif, par exemple au milieu de la nuit. Ce scénario illustre l’approche recommandée.
-
-La charge est composée des ressources suivantes : les pages créées, les pages supprimées, les parcours et les requêtes. Les parcours et requêtes de page ont le plus gros impact sur la charge. L’ajout et la suppression d’un nombre trop élevé de pages augmentent continuellement la taille de l’espace de travail et empêchent les sauvegardes de se terminer. Le script utilise une charge composée de 75 % de parcours de page, 24 % de requêtes et 1 % de pages créées (niveau unique sans sous-pages imbriquées). La moyenne maximale de transactions par seconde sur un système inactif est atteinte avec quatre threads simultanés. Cette approche est utilisée lors des tests de sauvegarde en situation de charge.
-
-L’impact de la charge sur les performances de sauvegarde peut être calculé par la différence de performance avec et sans la charge de l’application. Pour déterminer l’impact de la sauvegarde sur le débit de l’application, comparez le débit du scénario en transactions par heure avec et sans sauvegarde simultanée en cours, tout en utilisant différents paramètres de « délai de sauvegarde ».
-
-* **Paramètre de délai** : dans le cadre des scénarios, différents paramètres de délai de sauvegarde ont été utilisés (valeurs de 10 millisecondes, par défaut, 1 milliseconde et 0 milliseconde) afin d’évaluer l’impact de ce paramètre sur les performances des sauvegardes.
-* **Type de sauvegarde** : toutes les sauvegardes étaient des sauvegardes externes du référentiel effectuées dans un répertoire de sauvegarde sans créer d’archive zip, sauf dans le cas de comparaisons où la commande tar a été appliquée directement. Étant donné que les sauvegardes incrémentielles ne peuvent pas être créées dans un fichier zip ou si la sauvegarde complète antérieure est un fichier zip, la méthode du répertoire de sauvegarde est la plus souvent utilisée dans des situations de exploitation.
-
-### Résumé des résultats {#summary-of-results}
-
-#### Durée et débit de sauvegarde {#backup-time-and-throughput}
-
-Ces références montrent que les temps de sauvegarde sont le produit du type de sauvegarde et de la quantité de données. Le graphique suivant montre le temps nécessaire à la sauvegarde dans la configuration de sauvegarde par défaut, en fonction du nombre total de pages.
-
-![chlimage_1-81](assets/chlimage_1-81.png)
-
-Les durées des sauvegardes sur une instance inactive sont relativement constantes, avec une moyenne de 0,608 Mo/s, qu’il s’agisse de sauvegardes complètes ou incrémentielles (voir le tableau ci-dessous). La durée de sauvegarde est simplement fonction de la quantité de données sauvegardées. Le temps nécessaire pour effectuer une sauvegarde complète augmente nettement avec le nombre total de pages. La durée nécessaire à la sauvegarde incrémentielle augmente également avec le nombre total de pages, mais à un taux beaucoup plus faible. La durée d’une sauvegarde incrémentielle est beaucoup plus courte, car il y a moins de données à sauvegarder.
-
-La taille de la sauvegarde produite est le principal facteur déterminant du temps nécessaire pour effectuer une sauvegarde. Le graphique ci-après montre l’évolution de la durée en fonction de la taille de la sauvegarde finale.
-
-![chlimage_1-82](assets/chlimage_1-82.png)
-
-Ce graphique montre que les sauvegardes incrémentielles et complètes suivent une équation simple, où la taille influe sur la durée et inversement, qu’Adobe peut mesurer en tant que débit. Les durées de sauvegarde sur une instance inactive sont assez constantes, avec une moyenne de 0,61 Mo par seconde, qu’il s’agisse de sauvegardes complètes ou incrémentielles dans l’environnement de référence.
-
-#### Délai de sauvegarde {#backup-delay}
-
-Le paramètre de délai de sauvegarde permet de limiter l’impact des sauvegardes sur les charges de travail de production. Le paramètre spécifie un temps d’attente en millisecondes, qui est intercalé entre chaque fichier dans l’opération de sauvegarde. L’impact global dépend notamment de la taille des fichiers concernés. La mesure des performances de sauvegarde en Mo/s offre un moyen simple de comparer les effets du délai sur la sauvegarde.
-
-* L’exécution d’une sauvegarde en même temps que la charge régulière de l’application a un impact négatif sur le débit de la charge régulière.
-* L’impact peut être faible, en deçà de 5 %, ou important, avec une baisse de débit de 75 %. Tout dépend de l’application.
-* La sauvegarde ne constitue pas une charge contraignante pour le processeur. De ce fait, les charges de travail de exploitation consommatrices de ressources de processeur sont moins affectées par la sauvegarde que celles plus gourmandes en E/S.
-
-![chlimage_1-83](assets/chlimage_1-83.png)
-
-À titre de comparaison, voici le débit obtenu à l’aide d’une sauvegarde du système de fichiers (« tar ») pour sauvegarder les mêmes fichiers de référentiel. Les performances du tar sont comparables, mais légèrement supérieures à la sauvegarde avec un délai défini sur zéro. La spécification d’un paramètre de délai, aussi faible soit-il, réduit le débit de sauvegarde à peau de chagrin. Le délai par défaut de 10 millisecondes confirme cette tendance. Si des sauvegardes peuvent être planifiées lorsque l’application est peu sollicitée ou est inactive, réduisez le délai sous la valeur par défaut pour permettre une sauvegarde plus rapide.
-
-L’impact réel du débit de l’application lors d’une sauvegarde en cours dépend de la configuration de l’application et de l’infrastructure. Avant toute définition de valeur de délai, une analyse empirique de l’application s’impose. Le cas échéant, choisissez une valeur aussi faible que possible, de sorte que les sauvegardes puissent être rapidement effectuées. Comme le choix de la valeur de délai influe peu ou prou sur le débit de l’application, indiquez une valeur de délai qui permet de réduire au maximum les durées de sauvegarde. L’impact global des sauvegardes est ainsi atténué autant que possible. Une sauvegarde qui se termine en huit heures, avec en contrepartie une réduction du débit de 20 %, risque d’avoir un impact global plus important qu’une sauvegarde de deux heures avec une réduction du débit de 30 %.
-
-### Références {#references}
-
-* [Administration - Sauvegarder et restaurer](/help/sites-administering/backup-and-restore.md)
-* [Gestion – Capacité et volume](/help/managing/best-practices-further-reference.md#capacity-and-volume)
