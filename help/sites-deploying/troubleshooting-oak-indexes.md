@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1375'
 ht-degree: 100%
 
 ---
@@ -52,10 +52,6 @@ En cas d’arrêt forcé, AEM suspend l’indexation asynchrone pendant 30 minu
 1. Patientez environ 45 minutes pour qu’AEM reprenne les opérations d’indexation asynchrones normales.
 
 ## Pool de threads surchargé {#thread-pool-overloaded}
-
->[!NOTE]
->
->Pour AEM 6.1, assurez-vous que le [CFP 11 AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) est installé.
 
 Dans des circonstances exceptionnelles, le pool de threads utilisé pour gérer l’indexation asynchrone peut être surchargé. Pour isoler le processus d’indexation, vous pouvez configurer un pool de threads afin d’éviter qu’une autre tâche d’AEM interfère avec la capacité d’indexer du contenu en temps voulu d’Oak. Dans ce cas, procédez comme suit :
 

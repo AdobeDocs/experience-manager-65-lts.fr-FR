@@ -10,10 +10,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: a6344463-7796-4ee3-8b2e-b3bfd2aec99a
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Oak-run prend en charge tous les cas d’utilisation d’indexation sur la ligne de commande sans avoir à opérer au niveau JMX. Les avantages de l’approche oak-run sont les suivants :
 
-1. Elle constitue un nouvel ensemble d’outils d’indexation pour AEM 6.4.
+1. Il s’agit d’un nouveau jeu d’outils d’indexation depuis AEM 6.4
 1. Elle réduit la durée de réindexation, ce qui a un effet bénéfique sur les délais de réindexation des référentiels de grande taille.
 1. Elle réduit la consommation des ressources au cours de la réindexation dans AEM, ce qui se traduit par de meilleures performances du système pour d’autres activités AEM.
 1. Oak-run fournit une prise en charge hors-bande : si les conditions d’exploitation ne vous permettent pas d’exécuter une réindexation sur les instances d’exploitation, un environnement cloné peut être utilisé à cette fin afin d’éviter un impact critique sur les performances.
@@ -64,7 +64,7 @@ Ce diagramme illustre une arborescence de décision concernant l’utilisation d
 
 ### Pré-extraction de texte pour SegmentNodeStore et DocumentNodeStore {#textpre-extraction}
 
-La [pré-extraction de texte](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (fonctionnalité d’AEM 6.3) peut être utilisée pour réduire le temps de réindexation. La pré-extraction de texte peut être utilisée avec toutes les approches de réindexation.
+La [pré-extraction de texte](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (une fonctionnalité qui existe depuis AEM 6.3) peut être utilisée pour réduire le temps de réindexation. La pré-extraction de texte peut être utilisée avec toutes les approches de réindexation.
 
 En fonction de l’approche d’indexation du fichier `oak-run.jar`, diverses étapes sont effectuées de part et d’autre de l’étape « Procéder à la réindexation » dans le diagramme ci-dessous.
 

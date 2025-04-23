@@ -11,10 +11,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: a7a8a20a-e513-43df-80b7-1e6daf957f20
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
 source-wordcount: '1380'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ Oak-run prend en charge tous les scénarios d’indexation sur la ligne de comma
 
 Les principaux avantages liés à l’utilisation de la commande d’index oak-run.jar pour la gestion des index Oak sont les suivants :
 
-1. La commande d’index Oak-run fournit un nouvel ensemble d’outils d’indexation pour AEM 6.4.
+1. La commande d’index Oak-run fournit un nouveau jeu d’outils d’indexation depuis AEM 6.4.
 1. Oak-run diminue le temps de réindexation, ce qui réduit le délai de réindexation sur des référentiels plus volumineux.
 1. Oak-run réduit la consommation de ressources lors de la réindexation dans AEM, ce qui entraîne de meilleures performances globales du système.
 1. Oak-run fournit une réindexation hors bande, prenant en charge les situations dans lesquelles la production doit être disponible et ne peut pas tolérer la maintenance ou les temps d&#39;arrêt autrement nécessaires à la réindexation.
