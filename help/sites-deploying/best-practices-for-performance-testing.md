@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1762'
 ht-degree: 99%
 
 ---
@@ -63,7 +63,6 @@ De nombreux outils de test de performance sont proposés sur le marché. Lors de
 
 * **Load Runner** est un produit de test de charge de qualité professionnelle. Une version d’évaluation gratuite est disponible. Vous trouverez plus d’informations à l’adresse [https://www.microfocus.com/fr-fr/portfolio/performance-engineering/overview](https://www.microfocus.com/fr-fr/portfolio/performance-engineering/overview)
 
-* Des outils de test de chargement de site web tels que [Vercara](https://vercara.com/website-performance-management) peuvent également être utilisés.
 * Lors du test de sites web mobiles ou réactifs, un ensemble distinct d’outils doit être utilisé. Ils fonctionnent en limitant la bande passante du réseau, en simulant des connexions mobiles plus lentes comme la 3G ou EDGE. Parmi les outils les plus utilisés, on peut citer :
 
    * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** : fournit une interface utilisateur facile à utiliser et fonctionne à un niveau relativement bas sur la pile de mise en réseau. Prend en charge OS X et iOS.
@@ -108,21 +107,18 @@ Sur les systèmes disposant de serveurs principaux MongoDB, AEM fournit plusieur
 
 * Le MBean **Statistiques de cache consolidées**. Il est accessible directement depuis :
 
-`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
+`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DConsolidated+Cache+statistics%2Ctype%3DConsolidatedCacheStats`
 
 Pour le cache nommé **Document-Diff**, le taux d’accès doit être supérieur à `.90`. Si le taux d’accès se retrouve en dessous de 90 %, il est probable que vous deviez modifier la configuration `DocumentNodeStoreService`. La prise en charge du produit Adobe peut recommander des paramètres optimaux pour votre environnement.
 
 * MBean **Oak Repository Statistics**. Il est accessible directement depuis :
 
-`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
+`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DOak+Repository+Statistics%2Ctype%3DRepositoryStats`
 
 La section **ObservationQueueMaxLength** indique le nombre d’événements dans la file d’attente d’observation d’Oak au cours des dernières heures, minutes, secondes et semaines. Recherchez le plus grand nombre d’événements dans la section « Par heure ». Comparez ce nombre au paramètre `oak.observation.queue-length`. Si le nombre le plus élevé affiché pour la file d’attente d’observation dépasse la valeur du paramètre `queue-length` :
 
-1. Créez un fichier nommé `com.adobe.granite.repository.impl.SlingRepositoryManager.cfg` contenant le paramètre `oak.observation.queue‐length=50000`.
+1. Créez un fichier nommé `com.adobe.granite.repository.impl.SlingRepositoryManager.config` contenant le paramètre `oak.observation.queue‐length=50000`.
 1. Placez-le sous le dossier /crx-­‐quickstart/install.
-
->[!NOTE]
->Voir [AEM 6.x | Conseils d’optimisation de la performance](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html)
 
 Le paramètre par défaut est 10 000, mais la plupart des déploiements doivent l’augmenter jusqu’à 20 000 ou 50 000.
 
@@ -150,10 +146,9 @@ Après l’exécution des tests de performance sur l’instance de création, to
 * Recherchez des erreurs ou des avertissements dans le journal des erreurs. Pour plus d’informations, consultez la section [Journalisation](/help/sites-deploying/configure-logging.md).
 * Surveillez les ressources matérielles du système telles que l’utilisation de la mémoire et de l’UC, les E/S de disque ou les E/S réseau. Ces ressources sont souvent à l’origine de goulots d’étranglement au niveau des performances.
 * Optimisez l’architecture des pages et la manière dont elles sont traitées afin de minimiser l’utilisation des paramètres d’URL pour permettre une mise en cache aussi complète que possible.
-* Consultez la documentation sur l’[Optimisation des performances](/help/sites-deploying/configuring-performance.md) et les [Conseils sur l’optimisation des performances](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html).
-
+* Consultez la documentation [Optimisation des performances](/help/sites-deploying/configuring-performance.md).
 * Si des problèmes surviennent lors de la modification de certaines pages ou certains composants sur les instances de création, utilisez le mode Développeur de l’IU tactile pour inspecter la page en question. Vous obtenez ainsi une répartition de chaque zone de contenu de la page et leur temps de chargement.
-* Minimisez tous les JS et CSS sur le site. Voir cet [article de blog](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
+* Minimisez tous les JS et CSS du site.
 * Éliminez les CSS et JS intégrés des composants. Ils doivent être inclus et minimisés avec les bibliothèques côté client afin de minimiser le nombre de requêtes requises pour effectuer le rendu de la page.
 * Pour examiner les requêtes du serveur et identifier celles qui prennent le plus de temps, utilisez les outils du navigateur tels que l’onglet Réseau de Chrome.
 

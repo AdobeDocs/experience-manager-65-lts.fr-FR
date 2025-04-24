@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e9b26de3-6e14-4187-8f25-6e56ee3092a7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '611'
 ht-degree: 100%
 
 ---
@@ -100,10 +100,6 @@ Lors de la migration, tenez compte des différences majeures suivantes entre l�
 </table>
 
 En d’autres termes, la migration d’une section de votre interface utilisateur, à partir de l’interface utilisateur classique vers l’interface utilisateur tactile, correspond au portage d’un *Widget ExtJS* vers un *Composant Sling*. Pour plus de facilité, l’interface utilisateur tactile est basée sur le framework de l’interface utilisateur Granite, qui fournit déjà certains composants Sling pour l’interface utilisateur (appelés composants de l’interface utilisateur Granite).
-
-Avant de commencer, vérifiez le statut et les recommandations associées :
-
-* [Recommandations relatives aux interfaces utilisateur pour les client(e)s](/help/sites-deploying/ui-recommendations.md)
 
 Les principes fondamentaux du développement de l’IU tactile fournissent une base solide :
 

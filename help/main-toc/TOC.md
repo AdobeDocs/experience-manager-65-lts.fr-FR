@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation LTS de Adobe Experience Manager 6.5 pour en savoir plus sur son fonctionnement et sur ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5 LTS
-source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '6795'
+source-wordcount: '6790'
 ht-degree: 94%
 
 ---
@@ -1457,7 +1457,6 @@ ht-degree: 94%
          + [Arborescence de la performance](/help/sites-deploying/performance-tree.md)
          + [Bonnes pratiques pour les tests de performance](/help/sites-deploying/best-practices-for-performance-testing.md)
          + [Bonnes pratiques relatives aux requêtes et à l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
-         + [Recommandations d’interfaces utilisateur aux clients](/help/sites-deploying/ui-recommendations.md)
          + [Performance et évolutivité](/help/sites-deploying/performance.md)
    + Fluid Experiences {#fluid-experiences}
       + [Liste des fonctionnalités](/help/fluid-experiences/feature-list.md)

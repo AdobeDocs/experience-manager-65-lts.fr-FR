@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4834'
 ht-degree: 100%
 
 ---
@@ -51,8 +51,6 @@ Avant toute discussion sérieuse sur le développement de composants, vous devez
   L’[interface utilisateur standard](/help/sites-developing/touch-ui-concepts.md) repose sur l’expérience utilisateur unifiée d’Adobe Experience Cloud, et utilise les technologies sous-jacentes de l’[IU Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) et de l’[IU Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **IU classique**
 Interface utilisateur basée sur la technologie ExtJS introduite avec CQ 6.4.
-
-Voir [Recommandations de l’interface utilisateur pour les clientes et clients](/help/sites-deploying/ui-recommendations.md) pour plus d’informations.
 
 Les composants peuvent être implémentés de manière à prendre en charge l’IU tactile, l’IU classique ou les deux. Si vous étudiez une instance standard, vous pouvez également remarquer la présence de composants prêts à l’emploi qui ont été conçus à l’origine pour l’IU classique ou l’IU tactile, ou les deux.
 

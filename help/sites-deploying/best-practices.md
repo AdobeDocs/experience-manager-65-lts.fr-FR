@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4f830ee9-e0e3-48df-b67d-709258cb1991
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '374'
 ht-degree: 100%
 
 ---
@@ -72,10 +72,6 @@ Les documents spécifiques sont décrits et associés dans les tableaux qui suiv
 
 ## Interface utilisateur {#ui}
 
-Les bonnes pratiques relatives à l’interface utilisateur sont présentées ici :
-
-[Recommandations d’interfaces utilisateur aux clients](/help/sites-deploying/ui-recommendations.md)
-
 AEM dispose actuellement de deux interfaces utilisateur : l’IU classique et l’IU optimisée pour les écrans tactiles, et ce, dans la même version. Les clients doivent donc décider laquelle utiliser lors de la mise en œuvre du projet. Ce document est destiné à vous aider à faire le bon choix.
 
 ## Performances {#performance}
@@ -92,7 +88,7 @@ Les bonnes pratiques relatives aux performances sont répertoriées ici :
   <tr>
    <td>Utilisation de Dispatcher avec un CDN</td>
    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr#using-dispatcher-with-a-cdn">Utilisation de Dispatcher avec un CDN</a></td>
-   <td>Un réseau de distribution de contenu (CDN), par exemple Akamai Edge Delivery ou Amazon Cloud Front, distribue du contenu à partir d’un emplacement proche de l’utilisateur final.</td>
+   <td>Un réseau de diffusion de contenu (CDN), par exemple Akamai Edge Delivery ou Amazon Cloud Front, distribue du contenu à partir d’un emplacement proche de l’utilisateur final.</td>
   </tr>
   <tr>
    <td>Optimisation des performances</td>

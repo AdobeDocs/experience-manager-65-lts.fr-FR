@@ -11,10 +11,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c83fcf96-cc45-40a0-9a50-c60406096de1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 100%
+source-wordcount: '1075'
+ht-degree: 98%
 
 ---
 
@@ -154,7 +154,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer quelle en
   <tr>
    <td><strong>Étape 19</strong></td>
    <td>Processeur à 100 %</td>
-   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr</a></td>
+   <td>Voir <a href="/help/sites-deploying/monitoring-and-maintaining.md#cpu-at">CPU à 100 %</a></td>
   </tr>
   <tr>
    <td><strong>Étape 20</strong></td>
@@ -288,7 +288,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer quelle en
   <tr>
    <td><strong>Étapes 45<br /> et 47</strong><br /> </td>
    <td>Utilisation du HTTP/2</td>
-   <td>Voir la session Gem des étapes 37, 38 et 39. En outre, consultez <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">cet article</a> de forum sur la prise en charge du HTTP/2<br />. </td>
+   <td>Voir la session Gem pour les étapes 37, 38 et 39.<br /> </td>
   </tr>
   <tr>
    <td><strong>Étape 49</strong></td>
