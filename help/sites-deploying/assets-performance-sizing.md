@@ -11,10 +11,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 49225f9f-d09e-4ab6-9e29-b47ba41e8889
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: d9bb95b41f065ced60ceef6eb6f2c08ebf115d2d
 workflow-type: tm+mt
 source-wordcount: '1213'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -75,9 +75,9 @@ La légende suivante décrit les zones présentant un risque pour les performanc
 
 **Système de fichiers temporaires** Un système de fichiers local lent peut entraîner des problèmes de performances dans les interactions, en particulier pour les recherches, car les index de recherche sont stockés sur le disque local. Cela peut, par ailleurs, entraîner des problèmes de traitement des ressources en cas d’utilisation du processus de ligne de commande.
 
-**Outil de recherche de la gestion des ressources numériques** Les problèmes de performances interactive, souvent rencontrés lors des recherches, sont dus à une utilisation élevée du processeur en raison de nombreux utilisateurs simultanés ou d’autres processus utilisant le processeur sur la même instance. Passer de machines virtuelles à des machines dédiées et s’assurer qu’aucun autre service ne s’exécute sur l’ordinateur peut contribuer à améliorer les performances. Si une charge élevée de l’UC est due au traitement des ressources et à de nombreux utilisateurs et utilisatrices simultanés, Day recommande d’ajouter des nœuds de cluster supplémentaires.
+**Outil de recherche de la gestion des ressources numériques** Les problèmes de performances interactive, souvent rencontrés lors des recherches, sont dus à une utilisation élevée du processeur en raison de nombreux utilisateurs simultanés ou d’autres processus utilisant le processeur sur la même instance. Passer de machines virtuelles à des machines dédiées et s’assurer qu’aucun autre service ne s’exécute sur l’ordinateur peut contribuer à améliorer les performances. Si une charge CPU élevée est due au traitement des ressources et à de nombreux utilisateurs simultanés, Adobe recommande d’ajouter des nœuds de cluster supplémentaires.
 
-**Processus de gestion des ressources numériques AEM** Les workflows dont l’exécution est longue pendant l’intégration des ressources entraînent des problèmes de performances du traitement des ressources. Selon le type de ressources qui sont en cours de traitement, cela peut indiquer une surutilisation de l’UC. Day recommande de réduire le nombre d’autres processus s’exécutant sur le système et d’augmenter le nombre d’UC disponibles en ajoutant des nœuds de cluster.
+**Processus de gestion des ressources numériques AEM** Les workflows dont l’exécution est longue pendant l’intégration des ressources entraînent des problèmes de performances du traitement des ressources. Selon le type de ressources qui sont en cours de traitement, cela peut indiquer une surutilisation de l’UC. Adobe recommande de réduire le nombre d’autres processus exécutés sur le système et d’augmenter le nombre de processeurs disponibles en ajoutant des nœuds de cluster.
 
 **Connectivité aux NAS** Une mauvaise connectivité réseau aux périphériques NAS (Network Attached Storage, stockage réseau) entraîne des problèmes de performances des interactions, car l’accès à de nouveaux nœuds pendant le traitement des ressources est ralenti en raison de la latence du réseau. En outre, un débit réseau lent altère le débit, mais aussi les performances de traitement des ressources, car le chargement et l’enregistrement des rendus sont ralentis.
 
