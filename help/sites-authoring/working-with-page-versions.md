@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 438d383aa7a08334d9977411fd37395f89133834
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 98%
+source-wordcount: '1567'
+ht-degree: 95%
 
 ---
 
@@ -21,6 +21,13 @@ Le contrôle de version permet de créer un « instantané » d’une page à 
    * pour annuler une modification que vous avez apportée à la page.
 * Comparer la version actuelle d’une page à une version précédente :
    * pour mettre en évidence des différences dans le texte et les images.
+
+>[!NOTE]
+>
+>Seul le contenu est versionné dans le référentiel AEM. Les ressources dynamiques telles que le code, le CSS et le JavaScript ne sont pas versionnées.
+>
+>* Lors de l’affichage des versions, le contenu est affiché avec le code, le CSS et le JavaScript actuels du référentiel.
+>* Lors de la restauration de versions, seul le contenu est restauré et le code, CSS et JavaScript actuels du référentiel lui sont appliqués.
 
 ## Création d’une version {#creating-a-new-version}
 
