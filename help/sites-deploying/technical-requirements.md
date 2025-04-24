@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: e337b682a0ee2b35940671991bd82b30d9d50128
 workflow-type: tm+mt
-source-wordcount: '3064'
-ht-degree: 95%
+source-wordcount: '2961'
+ht-degree: 94%
 
 ---
 
@@ -153,13 +153,14 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 | **Linux®, basé sur la distribution Red Hat®** | A : prise en charge de : `[1]` `[2]` |
 | Linux, en fonction de la distribution Debian, incluse Ubuntu  | A : pris en charge `[1]` |
 | Linux, en fonction de la distribution SUSE® | A : prise en charge de `[1]` |
+| Microsoft® Windows Server 2022 | R : pris en charge |
 
 1. Noyau Linux® 5. x et 6. x inclut les dérivés de la distribution Red Hat®, notamment Red Hat® Enterprise Linux®, CentOS, Oracle Linux® et Amazon Linux®.
 1. Distribution Linux® prise en charge par Adobe Managed Services.
 
    >[!NOTE]
    >
-   >Pour les serveurs basés sur Linux (piles OSGI et JEE), le module complémentaire AEM Forms nécessite des dépendances d’exécution telles que :
+   >Pour les serveurs Linux, le module complémentaire AEM Forms nécessite des dépendances d’exécution telles que :
    >* glibc.x86_64 (2.17-196)
    >* libX11.x86_64 (1.6.7-4)
    >* zlib.x86-64 (1.2.7-17)
@@ -386,15 +387,7 @@ Pour Windows x86 :
    <td>XPS, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF et DWF</td>
   </tr>
   <tr>
-   <td>Dernière version (obsolète) <a href="https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html">Suivi classique Acrobat 2017</a></td>
-   <td>XPS, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF et DWF</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office 2019</td>
-   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF et TXT</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Office 2016 (obsolète)</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF et TXT</td>
   </tr>
   <tr>
@@ -402,29 +395,13 @@ Pour Windows x86 :
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016 (obsolète)<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Publisher 2019<br /> </td>
    <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2016 (obsolète)<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Project 2016 (obsolète)<br /> </td>
-   <td>MPP</td>
   </tr>
   <tr>
    <td>OpenOffice 4.1.10</td>
    <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF et TXT</td>
   </tr>
-  <tr>
-   <td>OpenOffice 4.1.2 (obsolète)</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF et TXT</td>
-  </tr>  
  </tbody>
 </table>
 
@@ -461,7 +438,7 @@ Pour Windows x86 :
 * Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
 * Droits d’administration pour l’installation de Designer
 * Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 32 bits pour AEM Forms Designer 32 bits
-* Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) 64 bits pour AEM Forms Designer 64 bits (pour les piles OSGI et JEE)
+* Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) runtime 64 bits pour AEM Forms Designer 64 bits
 
 [Installer et configurer AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)
 
