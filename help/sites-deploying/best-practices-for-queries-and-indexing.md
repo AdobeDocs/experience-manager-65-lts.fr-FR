@@ -8,13 +8,11 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-hide: true
-hidefromtoc: true
 exl-id: 3ffa7c80-ce59-41cf-bb50-c6caf77d9baa
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 09f3d38e9f9c7f882d8b03dcf86db68cb8885a08
 workflow-type: tm+mt
-source-wordcount: '4520'
-ht-degree: 100%
+source-wordcount: '4196'
+ht-degree: 98%
 
 ---
 
@@ -145,7 +143,7 @@ Les valeurs recommandées sont les suivantes :
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-Dans AEM 6.3, les deux paramètres ci-dessus sont préconfigurés et prêts à l’emploi, et peuvent être conservés dans les paramètres OSGi QueryEngineSettings.
+À partir d’AEM 6.3, les deux paramètres ci-dessus sont préconfigurés, prêts à l’emploi, et peuvent être conservés via les paramètres OSGi QueryEngineSettings.
 
 Plus d’informations disponibles sous : [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
@@ -168,20 +166,6 @@ Les index Lucene ont été introduits dans Oak 1.0.9 et proposent de puissantes
 * Étant asynchrones, les index Lucene ne peuvent pas imposer des contraintes d’unicité. Si leur utilisation est un impératif, un index de propriété doit être créé.
 
 En règle générale, il est recommandé d’utiliser les index Lucene à moins qu’il ne soit absolument nécessaire d’utiliser les index de propriété afin de bénéficier de performances et de flexibilité accrues.
-
-### Indexation Solr {#solr-indexing}
-
-AEM prend également en charge l’indexation Solr par défaut. L’outil prend en charge la recherche de texte intégral, mais aussi tout type de requête JCR. Solr doit être pris en compte lorsque les instances AEM n’ont pas la capacité du processeur pour gérer le nombre de demandes requises dans les déploiements intensifs en recherche, tels que les sites web pilotés par la recherche avec un grand nombre d’utilisateurs et d’utilisatrices en même temps. Alternativement, Solr peut être implémenté dans une approche basée sur un robot d’exploration pour tirer parti de certaines des fonctionnalités les plus avancées de la plateforme.
-
-Les index Solr peuvent être configurés pour être exécutés de manière intégrée sur le serveur AEM pour les environnements de développement ou peuvent être déchargés sur une instance distante afin d’améliorer l’évolutivité de la recherche dans les environnements de production et d’évaluation. Bien que la recherche de déchargement améliore l’évolutivité, elle introduit également une latence et elle n’est pour cette raison pas recommandée sauf si nécessaire. Pour plus d’informations sur la configuration de l’intégration Solr et sur la création d’index Solr, voir [Documentation sur l’indexation et les requêtes Oak](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
-
->[!NOTE]
->
->En adoptant l’approche de recherche Solr intégrée, il est possible de décharger l’indexation sur un serveur Solr. Si les fonctionnalités plus avancées du serveur Solr sont utilisées selon une approche de robot d’exploration, un travail de configuration supplémentaire est nécessaire.
-
-L’inconvénient de cette méthode est que, bien que les requêtes AEM respectent par défaut les listes de contrôle d’accès et masquent ainsi les résultats auxquels les utilisateurs et utilisatrices n’ont pas accès, l’externalisation de la recherche sur un serveur Solr ne prend pas en charge cette fonctionnalité. Si la recherche doit être externalisée de cette manière, une attention particulière doit être accordée à ce que les personnes utilisatrices ne reçoivent pas de résultats qu’elles ne devraient pas voir.
-
-Les cas d’utilisation potentiels où cette méthode peut être appropriée sont les cas où les données de recherche provenant de plusieurs sources peuvent nécessiter un regroupement. Prenons l’exemple d’un site hébergé sur AEM et d’un second site hébergé sur une plateforme tierce. Solr peut être configuré pour analyser le contenu des deux sites et le stocker dans un index agrégé. Cela permet des recherches intersite.
 
 ### Observations relatives à la conception {#design-considerations}
 
@@ -216,7 +200,7 @@ Lors de la suppression d’un index sur une instance MongoDB, le coût de suppre
 
 ### Aide-mémoire sur les requêtes JCR {#jcrquerycheatsheet}
 
-Pour prendre en charge la création de requêtes JCR et de définitions d’index efficaces, l’[Aide-mémoire sur les requêtes JCR](assets/JCR_query_cheatsheet-v1.1.pdf) peut être téléchargé et utilisé comme référence pendant le développement. Il contient des exemples de requêtes pour QueryBuilder, XPath et SQL-2, couvrant plusieurs scénarios qui se comportent différemment en termes de performances des requêtes. Il fournit également des recommandations sur la version ou la personnalisation d’index Oak. Le contenu de cet aide-mémoire s’applique à AEM 6.5 et à AEM as a Cloud Service.
+Pour prendre en charge la création de requêtes JCR et de définitions d’index efficaces, l’[Aide-mémoire sur les requêtes JCR](assets/JCR_query_cheatsheet-v1.1.pdf) peut être téléchargé et utilisé comme référence pendant le développement. Il contient des exemples de requêtes pour QueryBuilder, XPath et SQL-2, couvrant plusieurs scénarios qui se comportent différemment en termes de performances des requêtes. Il fournit également des recommandations sur la version ou la personnalisation d’index Oak. Le contenu de cet aide-mémoire s’applique à AEM 6.5, AEM 6.5 LTS et AEM as a Cloud Service.
 
 ## Réindexation {#re-indexing}
 
@@ -380,7 +364,7 @@ Problèmes possibles et solutions :
 
 >[!NOTE]
 >
->Dans AEM 6.5, la méthode [oak-run.jar constitue la SEULE méthode prise en charge](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) pour effectuer une réindexation sur des référentiels MongoMK ou RDBMK.
+>Dans AEM 6.5 LTS, la méthode [oak-run.jar est la SEULE méthode prise en charge](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) pour effectuer une réindexation sur des référentiels MongoMK ou RDBMK.
 
 #### Réindexation des index de propriété {#re-indexing-property-indexes}
 
