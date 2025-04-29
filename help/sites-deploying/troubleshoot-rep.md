@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
+source-git-commit: 262b73813a0e1ccb9c45a4e099461d4dd8eccd00
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '927'
 ht-degree: 96%
 
 ---
@@ -59,16 +59,6 @@ Vérifiez si c’est le cas en vous rendant sur /etc/replication/agents.author.h
    1. Dans la boîte de dialogue « Requête », saisissez cette requête : /jcr:root/var/eventing/jobs//element(, slingevent:Job) order by @slingevent:created&#42;
    1. Cliquez sur « Rechercher ».
    1. Dans les résultats, les éléments principaux sont les dernières tâches d’événement Sling. Cliquez sur chacune d’elles et recherchez les réplications bloquées qui correspondent à ce qui apparaît en haut de la file d’attente.
-
-1. Il se peut qu’il y ait un problème avec les files d’attente de tâche de framework d’événement Sling. Essayez de redémarrer le lot org.apache.sling.event dans le répertoire /system/console.
-1. Il se peut que le traitement des tâches soit désactivé. Vous pouvez vérifier cela sous la console Felix dans l’onglet Sling Eventing. Vérifiez s’il s’affiche « Apache Sling Eventing (JOB PROCESSING IS DISABLED!) ».
-
-   * Si c’est le cas, cochez le gestionnaire d’événements de tâche Apache Sling sous l’onglet Configuration dans la console Felix. Il se peut que la case du traitement des tâches activé ne soit pas cochée. Si cette option est cochée et qu’elle affiche toujours que le traitement des tâches est désactivé, vérifiez s’il existe un recouvrement sous /apps/system/config qui désactive le traitement des tâches. Essayez de créer un nœud osgi:config pour jobmanager.enabled avec une valeur booléenne égale à true et vérifiez à nouveau si l’activation a commencé et qu’il n’y a plus de tâches dans la file d’attente.
-
-1. Il se peut également que la configuration DefaultJobManager se trouve dans un état incohérent. Cela peut se produire lorsqu’une personne modifie manuellement la configuration du gestionnaire d’événements de tâche Apache Sling via la console OSGiconsole (par exemple, désactivez et réactivez la propriété de traitement de tâche activé et enregistrez la configuration).
-
-   * À ce stade, la configuration DefaultJobManager stockée à l’adresse crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config se trouve dans un état incohérent. Et même si la propriété de gestionnaire d’événements de tâche Apache Sling indique que le traitement de tâche activé est coché, lorsque l’on accède à l’onglet Sling Eventing, le message - JOB PROCESSING IS DISABLED s’affiche et la réplication ne fonctionne pas.
-   * Pour résoudre ce problème, accédez à la page de configuration de la console OSGi et supprimez la configuration de gestionnaire d’événements de tâche Apache Sling. Redémarrez ensuite le nœud maître du cluster afin de rétablir un état cohérent de la configuration. Cela devrait résoudre le problème et permettre à la réplication de refonctionner.
 
 **Créer un replication.log**
 

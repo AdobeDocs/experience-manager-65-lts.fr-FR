@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
+source-git-commit: 262b73813a0e1ccb9c45a4e099461d4dd8eccd00
 workflow-type: tm+mt
-source-wordcount: '3287'
+source-wordcount: '3270'
 ht-degree: 99%
 
 ---
@@ -347,8 +347,6 @@ Ces paramètres permettent de définir des déclencheurs pour la réplication au
   Si cette option est cochée, l’agent ne force pas la création de versions différentes des pages activées.
 
 ## Configuration des agents de réplication {#configuring-your-replication-agents}
-
-Pour plus d’informations sur la connexion des agents de réplication à l’instance de publication à l’aide de MSSL, voir [Réplication à l’aide de SSL mutuel](/help/sites-deploying/mssl-replication.md).
 
 ### Configuration des agents de réplication depuis l’environnement de création {#configuring-your-replication-agents-from-the-author-environment}
 
