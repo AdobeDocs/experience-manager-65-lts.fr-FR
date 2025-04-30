@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7d6e3662-f541-4755-b2a6-b35724dd8932
-source-git-commit: c23ab1f6cb5b96c35df3644780abcc9a0c5a6324
+source-git-commit: afbaff634a0bc25f04e2ba4320c719d82db58c9b
 workflow-type: tm+mt
-source-wordcount: '2343'
-ht-degree: 98%
+source-wordcount: '2310'
+ht-degree: 100%
 
 ---
 
@@ -105,13 +105,6 @@ Une sélection de types de données est disponible pour la définition de votre 
    * Ajoutez un ou plusieurs champs d’une seule ligne de texte ; il est possible de définir la longueur maximale.
 * **Plusieurs lignes de texte**
    * Zone de texte pouvant contenir du texte enrichi, du texte brut ou du texte Markdown.
-
-     >[!NOTE]
-     >
-     Pour des raisons de performances, il n’est pas recommandé d’avoir plus de dix champs de texte enrichi dans un modèle.
-     >
-     Si nécessaire, il est recommandé d’utiliser des [fragments de contenu imbriqués](#fragment-reference-nested-fragments) pour répartir la charge.
-
 * **Nombre**
    * Ajoutez un ou plusieurs champs numériques
 * **Booléen**
