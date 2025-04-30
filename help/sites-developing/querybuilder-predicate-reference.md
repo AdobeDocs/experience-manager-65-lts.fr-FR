@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2313'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -269,7 +269,7 @@ Prend en charge l’extraction des facettes et fournit deux compartiments pour l
 
 ### memberOf {#memberof}
 
-Recherche les éléments membres d’une [collection de ressources Sling](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) spécifique.
+Recherche les éléments membres d’une [collection de ressources Sling](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) spécifique.
 
 Il s’agit d’un prédicat de type filtrage seul qui ne peut pas utiliser d’index de recherche. Ne prend pas en charge l’extraction de facettes.
 

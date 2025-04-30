@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 2a94ea8d-2919-4f30-be31-ce559493805d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ Ils peuvent être utilisés de différentes manières pour étendre vos consoles
 >
 >* Utiliser et créer des [clientlibs](/help/sites-developing/clientlibs.md).
 >* Utiliser et créer des [recouvrements](/help/sites-developing/overlays.md).
->* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+>* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
 >
 
 
@@ -64,7 +64,7 @@ Par exemple, les emplacements suivants dans la structure `/libs` risquent d’ê
 
 >[!NOTE]
 >
->Consultez l’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html) pour découvrir d’autres conseils et outils.
+>Consultez l’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://helpx.adobe.com/fr/experience-manager/kb/troubleshooting-aem-touchui-issues.html) pour découvrir d’autres conseils et outils.
 
 ## Personnaliser l’affichage par défaut d’une console {#customizing-the-default-view-for-a-console}
 
@@ -150,7 +150,7 @@ Pour personnaliser les colonnes dans la vue Liste :
 
 1. Facultatif :
 
-   * Si vous souhaitez connecter des données supplémentaires, vous devez écrire un [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) avec une
+   * Si vous souhaitez connecter des données supplémentaires, vous devez écrire un [PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) avec une
      `pageInfoProviderType`.
 
    Par exemple, consultez la classe/le lot joint (à partir de GitHub) ci-dessous.

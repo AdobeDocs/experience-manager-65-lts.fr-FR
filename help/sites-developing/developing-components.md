@@ -11,10 +11,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3200'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -110,13 +110,13 @@ La [configuration du comportement de modification d’un composant](/help/sites-
 
 ## Configurer le comportement de prévisualisation {#configuring-the-preview-behavior}
 
-Le cookie [Mode Gestion de contenu Web](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) est défini lors du passage en mode **Aperçu** même lorsque la page n’est pas rafraîchie.
+Le cookie [Mode Gestion de contenu Web](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html) est défini lors du passage en mode **Aperçu** même lorsque la page n’est pas rafraîchie.
 
 Pour les composants dont le rendu est sensible au Mode Gestion de contenu Web, ils doivent être définis de manière à s’actualiser eux-mêmes, puis s’appuyer sur la valeur du cookie.
 
 >[!NOTE]
 >
->Dans l’IU tactile, seules les valeurs `EDIT` et `PREVIEW` sont utilisées pour le cookie [Mode Gestion de contenu Web](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html).
+>Dans l’IU tactile, seules les valeurs `EDIT` et `PREVIEW` sont utilisées pour le cookie [Mode Gestion de contenu Web](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html).
 
 ## Créer et configurer une boîte de dialogue {#creating-and-configuring-a-dialog}
 

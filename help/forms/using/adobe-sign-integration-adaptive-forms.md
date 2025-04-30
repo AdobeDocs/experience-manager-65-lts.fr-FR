@@ -9,7 +9,7 @@ feature: Adaptive Forms,Foundation Components,Acrobat Sign
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: fdf95738-3075-43d6-9d51-64c83cf0f0b7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '2071'
 ht-degree: 99%
@@ -42,7 +42,7 @@ Vous avez besoin des éléments suivants pour intégrer [!DNL Adobe Sign] à AEM
 
 * Un compte de développeur [Adobe Sign actif.](https://acrobat.adobe.com/fr/fr/why-adobe/developer-form.html)
 * Un serveur AEM [SSL](/help/sites-administering/ssl-by-default.md).[!DNL Forms]
-* Une [application API Adobe Sign](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
+* Une [application API Adobe Sign](https://developer.adobe.com/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * Les informations d’identification (ID client et clé secrète client) de l’application API [!DNL Adobe Sign].
 * Lors de la reconfiguration, supprimez la configuration [!DNL Adobe Sign] à partir des instances de création et de publication.
 * Une [crypto-clé identique](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed) pour les instances d’auteur et de publication.
@@ -112,7 +112,7 @@ Une fois les conditions préalables en place, procédez comme suit pour configur
    * widget_write
    * workflow_read
 
-   Pour obtenir des informations détaillées sur la configuration des paramètres OAuth pour une application [!DNL Adobe Sign] et l’obtention des clés, voir [Configurer les paramètres oAuth pour l’application](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) dans la documentation du développeur.
+   Pour obtenir des informations détaillées sur la configuration des paramètres OAuth pour une application [!DNL Adobe Sign] et l’obtention des clés, voir [Configurer les paramètres oAuth pour l’application](https://developer.adobe.com/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) dans la documentation du développeur.
 
    ![Configuration OAuth](assets/oauthconfig_new.png)
 

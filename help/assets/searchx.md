@@ -6,7 +6,7 @@ role: Developer
 feature: Search
 solution: Experience Manager, Experience Manager Assets
 exl-id: 92efe52b-8fa5-4006-bd68-2472b4ba04f6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 100%
@@ -52,7 +52,7 @@ Vous pouvez ajouter des onglets de recherche supplémentaires en les configurant
 
 En plus d’utiliser des prédicats préexistants, l’équipe de développement [!DNL Experience Manager] peut créer ses propres prédicats à l’aide de l’[API Query Builder](/help/sites-developing/querybuilder-api.md).
 
-La création de prédicats personnalisés nécessite des connaissances de base sur la [structure des widgets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
+La création de prédicats personnalisés nécessite des connaissances de base sur la [structure des widgets](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html).
 
 La bonne pratique consiste à copier un prédicat existant et à l’ajuster. Les exemples de prédicats se trouvent dans **/libs/cq/search/components/predicates**.
 

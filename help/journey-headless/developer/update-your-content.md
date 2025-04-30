@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 exl-id: 322f08c7-f13a-473f-8c59-1050b2e6c2f5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -257,7 +257,7 @@ L’utilisation peut varier selon que vous utilisez un environnement d’auteur 
 
 >[!NOTE]
 >
->Pour plus d’informations, voir la Référence d’API. En particulier, [API Adobe Experience Manager Assets – Fragments de contenu](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
+>Pour plus d’informations, voir la Référence d’API. En particulier, [API Adobe Experience Manager Assets – Fragments de contenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
 
 ### Lecture/Diffusion {#read-delivery}
 
@@ -327,7 +327,7 @@ Poursuivez votre parcours dans AEM découplé en consultant le document [Comment
 * [API HTTP Assets](/help/assets/mac-api-assets.md)
 * [API REST de fragments de contenu](/help/assets/assets-api-content-fragments.md)
    * [Référence d’API](/help/assets/assets-api-content-fragments.md#api-reference)
-* [API Adobe Experience Manager Assets – Fragments de contenu](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [API Adobe Experience Manager Assets – Fragments de contenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
 * [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 * [CORS/AEM expliqué](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)

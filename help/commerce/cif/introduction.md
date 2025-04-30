@@ -6,7 +6,7 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 88be03c6-2342-4441-836d-f13b8cdfd629
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 100%
@@ -67,7 +67,7 @@ CIF est conçu vous permettre d’innover en continu grâce à un module complé
 
 ### Intégrations
 
-Connectez votre réseau (une solution de commerce, par exemple) à Experience Cloud à l’aide d’[Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), un PaaS sans serveur basé sur micro-service, et de l’[implémentation de référence de CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
+Connectez votre réseau (une solution de commerce, par exemple) à Experience Cloud à l’aide d’[Adobe I/O Runtime](https://developer.adobe.com/apis/experienceplatform/runtime.html?lang=fr), un PaaS sans serveur basé sur micro-service, et de l’[implémentation de référence de CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
 ## Modèles et bonnes pratiques éprouvés
 

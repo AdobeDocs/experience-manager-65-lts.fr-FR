@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Tagging
 role: Developer
 exl-id: 15f30571-7129-402c-98be-270a142c4cbb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2452'
 ht-degree: 100%
@@ -38,7 +38,7 @@ La variable globale déclare également la [bibliothèque Sling](/help/sites-dev
 
 ### &lt;ui:includeClientLib> {#ui-includeclientlib}
 
-La balise `<ui:includeClientLib>` inclut une bibliothèque cliente HTML AEM qui peut être de type js, css ou thème. Pour plusieurs inclusions de types différents (js et css, par exemple), cette balise doit être utilisée plusieurs fois dans le fichier JSP. Cette balise est une enveloppe dite de commodité (convenience wrapper) utilisée autour de l’interface de service ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
+La balise `<ui:includeClientLib>` inclut une bibliothèque cliente HTML AEM qui peut être de type js, css ou thème. Pour plusieurs inclusions de types différents (js et css, par exemple), cette balise doit être utilisée plusieurs fois dans le fichier JSP. Cette balise est une enveloppe dite de commodité (convenience wrapper) utilisée autour de l’interface de service ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
 
 Elle présente les attributs suivants :
 

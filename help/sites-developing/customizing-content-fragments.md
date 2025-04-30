@@ -8,10 +8,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments
 role: Developer
 exl-id: 705bffea-ef70-40b5-81d8-b130d3908073
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '2687'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -243,7 +243,7 @@ Les fragments de contenu peuvent être intégrés aux éléments suivants :
 
 Vous pouvez utiliser l’API côté serveur pour accéder à vos fragments de contenu, voir :
 
-[com.adobe.cq.dam.cfm](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
+[com.adobe.cq.dam.cfm](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
 
 >[!CAUTION]
 >
@@ -253,7 +253,7 @@ Vous pouvez utiliser l’API côté serveur pour accéder à vos fragments de co
 
 Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
-* **Modèle de fragment** ([FragmentTemplate](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
+* **Modèle de fragment** ([FragmentTemplate](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
   Utilisez `FragmentTemplate.createFragment()` pour créer un fragment.
 
@@ -296,7 +296,7 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
       * Obtention des informations de base (nom, titre et description)
 
-* **Fragment de contenu** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Fragment de contenu** ([ContentFragment](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html?lang=fr))
 
   Cette interface vous permet d’utiliser un fragment de contenu de façon abstraite.
 
@@ -328,7 +328,7 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
   Les interfaces qui représentent les éléments principaux d’un fragment sont les suivantes :
 
-   * **Élément de contenu** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Élément de contenu** ([ContentElement](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Obtention des informations de base (nom, titre et description)
       * Obtenir/définir du contenu
@@ -342,7 +342,7 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
       * Raccourci pour résoudre les variations (application d’une logique de secours supplémentaire spécifique à l’implémentation si la variation spécifiée n’est pas disponible pour un élément)
 
-   * **Variation de contenu** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **Variation de contenu** ([ContentVariation](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Obtention des informations de base (nom, titre et description)
       * Obtenir/définir du contenu
