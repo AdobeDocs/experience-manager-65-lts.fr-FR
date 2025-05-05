@@ -151,6 +151,7 @@ Pour personnaliser les colonnes dans la vue Liste :
 1. Facultatif :
 
    * Si vous souhaitez connecter des données supplémentaires, vous devez écrire un [PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) avec une
+
      `pageInfoProviderType`.
 
    Par exemple, consultez la classe/le lot joint (à partir de GitHub) ci-dessous.

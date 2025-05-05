@@ -104,9 +104,11 @@ Les paramètres définis par un utilisateur ou une utilisatrice, ou un administr
 * Lors de la création de pages :
 
    * le recours à l’éditeur classique est forcé lors de l’accès à la page à l’aide de `cf#` dans l’URL. Par exemple :
+
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * Le recours à l’éditeur tactile est forcé lors de l’utilisation de `/editor.html` dans l’URL ou lors de l’utilisation d’un appareil tactile. Par exemple :
+
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Tout recours forcé à un certain éditeur est temporaire et valide uniquement pour la session en cours.

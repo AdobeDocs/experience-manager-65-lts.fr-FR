@@ -52,6 +52,7 @@ Voici quelques conseils généraux sur la construction de vos URL pour l’optim
    * Lors de l’utilisation de sélecteurs sur une page, les sélecteurs qui fournissent une valeur sémantique sont recommandés.
    * Si une personne ne peut pas lire votre URL, un moteur de recherche ne le peut pas non plus.
    * Par exemple :
+
      `mybrand.com/products/product-detail.product-category.product-name.html`
 est préférable à `mybrand.com/products/product-detail.1234.html`
 
@@ -256,6 +257,7 @@ Cependant, il existe également un moyen plus simple de gérer ce problème :
    À l’aide de la console web (par exemple, localhost:4502/system/console/configMgr), vous pouvez configurer le résolveur de ressources Sling :
 
    * **Apache Sling Resource Resolver Factory**
+
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    Il est conseillé d’établir les mappages requis pour raccourcir les URL sous la forme d’expressions régulières, puis de définir ces configurations sous un nœud OsgiConfignode, `config.publish`, qui est inclus dans votre version.
