@@ -9,8 +9,8 @@ role: User, Developer
 exl-id: 0860f059-d599-4f87-9611-e7fe1c6bc059
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2005'
-ht-degree: 100%
+source-wordcount: '2001'
+ht-degree: 97%
 
 ---
 
@@ -63,7 +63,7 @@ Dans l’onglet Réglages de base, vous pouvez configurer les propriétés suiva
 * **Axe Y > Utiliser la fonction** : spécifie la fonction statistique à utiliser pour calculer les valeurs sur l’axe Y. Dans l’exemple, le montant dépensé dans chaque catégorie est ajouté et la valeur calculée est tracée sur l’axe Y. Par conséquent, sélectionnez Somme dans la liste déroulante Utiliser la fonction. Pour plus d&#39;informations sur les fonctions, voir la section Utiliser les fonctions dans le graphique.
 * **Position de la légende** : spécifie la position de la légende par rapport au graphique. Les options disponibles sont Droite, Gauche, Haut et Bas.
 * **Afficher une légende** : affiche une légende pour le graphique lorsque l’option est activée.
-* **Info-bulle** : spécifie le format dans lequel l’info-bulle s’affiche lorsque vous pointez sur un point de données du graphique. La valeur par défaut est **\${x}(\${y})**. En fonction du type de graphique, lorsque vous passez le curseur sur un point, une barre ou une tranche du graphique, les variables **\${x}** et **\${y}** sont remplacées de manière dynamique par les valeurs correspondantes sur l’axe X et l’axe Y et elles s’affichent dans l’info-bulle. Comme illustré dans l’exemple ci-dessous, l’info-bulle s’affiche sous la forme **Retail Stores (5870)** lorsque vous pointez sur la colonne Retails Stores (revendeurs). Pour désactiver l’info-bulle, laissez le champ Info-bulle vide. Cette option ne s’applique pas aux graphiques linéaires ni en aires.
+* **Info-bulle** : spécifie le format dans lequel l’info-bulle s’affiche lorsque vous pointez sur un point de données du graphique. La valeur par défaut est **\${x}(\${y})**. En fonction du type de graphique, lorsque vous pointez la souris sur un point, une barre ou une tranche du graphique, les variables **\${x}** et **\${y}** sont remplacées de manière dynamique par les valeurs correspondantes sur l’axe X et l’axe Y et elles s’affichent dans l’info-bulle. Comme illustré dans l’exemple ci-dessous, l’info-bulle s’affiche sous la forme **Retail Stores (5870)** lorsque vous pointez sur la colonne Retails Stores (revendeurs). Pour désactiver l’info-bulle, laissez le champ Info-bulle vide. Cette option ne s’applique pas aux graphiques linéaires ni en aires.
 * **Configurations spécifiques au graphique** : en plus des configurations courantes, la configuration spécifique au graphique suivante est disponible :
 * **Rayon interne** : disponible pour les graphiques en anneau pour indiquer le rayon (en pixels) du cercle intérieur dans le graphique.
 * **Couleur de la ligne** : disponible pour les graphiques linéaires, linéaires et à points, ou en aires pour spécifier la valeur hexadécimale de la couleur de la ligne dans le graphique.

@@ -8,7 +8,7 @@ exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
 source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
 source-wordcount: '10487'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,6 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
    * Prévisualisez et publiez des ressources vidéo
 
       * Affichez la vidéo source et les rendus codés de la vidéo avec les miniatures associées :
-
         [Prévisualisation de vidéos](managing-video-assets.md#upload-and-preview-video-assets) ou [Prévisualisation de ressources](previewing-assets.md)
         [Affichage des rendus vidéo](video-renditions.md)
         [Gestion des rendus vidéo](manage-assets.md#managing-renditions)
@@ -76,11 +75,9 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
    * Utilisation des métadonnées vidéo
 
       * Affichez les propriétés d’un rendu vidéo codé telles que la fréquence d’image, le débit vidéo et audio et le codec :
-
         [Affichage des propriétés de rendu vidéo](video-renditions.md)
 
       * Modifiez les propriétés vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisées :
-
         [Modification des propriétés vidéo](manage-assets.md#editing-properties)
 
       * [Gestion des métadonnées des ressources numériques](metadata.md)
@@ -105,11 +102,9 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
    * Si vous utilisez un système de gestion de contenu web tiers, vous pouvez lier ou incorporer des vidéos dans vos pages web.
 
       * Intégrez une vidéo à l’aide d’une URL :
-
         [Liaison d’URL à votre application web](linking-urls-to-yourwebapplication.md).
 
       * Intégrez une vidéo à l’aide du code intégré dans la page web :
-
         [Incorporation de la visionneuse de vidéos dans une page web](embed-code.md).
 
    * [Génération de rapports vidéo](#viewing-video-reports).
@@ -134,7 +129,7 @@ La logique utilisée par un lecteur vidéo pour déterminer la vidéo codée à 
 
 Pour obtenir des informations techniques détaillées sur l’algorithme, consultez la page [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
 
-Pour la gestion des visionneuses de vidéos adaptatives et uniques, les fonctions suivantes sont prises en charge :
+Pour la gestion des visionneuses de vidéos à débit adaptatif et uniques, les fonctions suivantes sont prises en charge :
 
 * Chargez des vidéos dans divers formats pris en charge et codez-les au format MP4 H.264 pour les lire sur plusieurs écrans. Vous pouvez utiliser des paramètres prédéfinis de vidéo adaptative, des paramètres prédéfinis de codage vidéo unique ou personnaliser votre propre codage pour contrôler la qualité et la taille de la vidéo.
 
@@ -799,7 +794,7 @@ Les légendes permettent également une plus grande accessibilité pour les pers
 
 Consultez également la section [Accessibilité dans Dynamic Media](/help/assets/accessibility-dm.md).
 
-Dynamic Media convertit les fichiers de légende au format JSON (JavaScript Object Notation). Cette conversion signifie que vous pouvez intégrer le texte JSON dans une page web sous forme de transcription masquée complète de la vidéo. Les moteurs de recherche peuvent ensuite analyser et indexer le contenu pour permettre de trouver plus facilement les vidéos et fournir aux clients et clientes des informations supplémentaires sur le contenu des vidéos.
+Dynamic Media convertit les fichiers de légende au format JSON (JavaScript Object Notation). Cette conversion signifie que vous pouvez incorporer le texte JSON dans une page web sous forme de transcription masquée complète de la vidéo. Les moteurs de recherche peuvent ensuite analyser et indexer le contenu pour permettre de trouver plus facilement les vidéos et fournir aux clients et clientes des informations supplémentaires sur le contenu des vidéos.
 
 Voir [Diffuser du contenu statique (sans image)](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) pour plus d’informations sur l’utilisation de la fonction JSON dans une URL.
 
@@ -920,7 +915,7 @@ Reportez-vous à la section [WebVTT : The web video text tracks format](https:/
        <li>Accédez à la ressource vidéo <i>publiée</i> à associer au fichier de chapitres que vous avez chargé. N’oubliez pas que les URL ne peuvent être copiées qu’<i>après</i> la <i>publication</i> des ressources. Voir <a href="/help/assets/publishing-dynamicmedia-assets.md">Publication de ressources</a>.</li>
        <li>Dans le menu déroulant, cliquez sur <strong>Visionneuses</strong>.</li>
        <li>Dans le rail de gauche, sélectionnez le nom du paramètre prédéfini de la visionneuse de vidéos. Un aperçu de la vidéo s’ouvre dans une page distincte.</li>
-       <li>En bas du rail gauche, cliquez sur <strong>Intégrer</strong>.</li>
+       <li>En bas du rail gauche, cliquez sur <strong>Incorporer</strong>.</li>
        <li>Dans la boîte de dialogue Code intégré, sélectionnez et copiez le code entier dans le Presse-papiers, puis collez-le dans un simple éditeur de texte.</li>
        <li>Ajoutez le code intégré de la vidéo avec la syntaxe suivante pour l’associer à l’URL copiée dans votre fichier de chapitres :<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
        </ol> </td>

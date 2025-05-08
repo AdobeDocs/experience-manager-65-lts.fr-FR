@@ -412,12 +412,12 @@ Effectuez les étapes suivantes pour créer [une bibliothèque cliente](/help/si
 
    * **[!UICONTROL Option multiple :]** Activé 
 
-1. Accédez à `/libs/fd/af/runtime/clientlibs/guideRuntime` et ajoutez la valeur `fp.validation` à la propriété embed.
+1. Accédez à `/libs/fd/af/runtime/clientlibs/guideRuntime` et ajoutez la valeur `fp.validation` à la propriété d’incorporation.
 
-1. Accédez à /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA et ajoutez la valeur `fp.validation` à la propriété embed.
+1. Accédez à /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA et ajoutez la valeur `fp.validation` à la propriété d’incorporation.
 
    >[!NOTE]
    >
-   >Si vous utilisez des bibliothèques client personnalisées au lieu des bibliothèques client guideRuntime et guideRuntimeWithXfa, utilisez le nom de catégorie pour intégrer la bibliothèque client créée dans cette procédure à vos bibliothèques personnalisées chargées lors de l’exécution.
+   >Si vous utilisez des bibliothèques clientes personnalisées au lieu des bibliothèques clientes guideRuntime et guideRuntimeWithXfa, utilisez le nom de catégorie pour incorporer la bibliothèque cliente créée dans cette procédure dans vos bibliothèques personnalisées chargées lors de l’exécution.
 
 1. Cliquez sur **[!UICONTROL Enregistrer tout.]** Désormais, lorsque le nom de fichier contient plus de 150 caractères (extension comprise), un message s’affiche.

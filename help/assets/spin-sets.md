@@ -77,7 +77,7 @@ Pour démarrer rapidement, procédez comme suit :
 
 1. [Publiez une visionneuse à 360°](/help/assets/publishing-dynamicmedia-assets.md).
 
-   La publication d’une visionneuse à 360° active la chaîne d’URL et d’incorporation. Vous devez, en outre, [publier le paramètre prédéfini de la visionneuse](/help/assets/managing-viewer-presets.md).
+   La publication d’une visionneuse à 360° active la chaîne d’URL et Embed. Vous devez, en outre, [publier le paramètre prédéfini de la visionneuse](/help/assets/managing-viewer-presets.md).
 
 1. [Liez des URL à votre application web](/help/assets/linking-urls-to-yourwebapplication.md) ou [incorporez la vidéo ou la visionneuse d’images](/help/assets/embed-code.md).
 
@@ -85,7 +85,7 @@ Pour démarrer rapidement, procédez comme suit :
 
    Sélectionnez la visionneuse à 360° puis, dans le menu déroulant du rail gauche, sélectionnez **[!UICONTROL Visionneuses]**.
 
-   Voir [Liaison d’une visionneuse à 360° à une page web](/help/assets/linking-urls-to-yourwebapplication.md) et [Intégration d’une visionneuse de vidéo ou d’images](/help/assets/embed-code.md).
+   Voir [Liaison d’une visionneuse à 360° à une page web](/help/assets/linking-urls-to-yourwebapplication.md) et [Incorporation de la visionneuse de vidéos ou d’images](/help/assets/embed-code.md).
 
 Si nécessaire, vous pouvez [modifier une visionneuse à 360°](#editing-spin-sets). Vous pouvez, en outre, afficher et modifier les [propriétés de la visionneuse à 360°](/help/assets/manage-assets.md#editing-properties).
 

@@ -9,8 +9,8 @@ role: Admin, User, Developer
 exl-id: 64d4ef01-ee33-4c8b-977f-0c9b31755820
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 100%
+source-wordcount: '870'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ Vous pouvez utiliser des métadonnées dans un modèle d’e-mail pour remplir d
 
 ![Modèle d’e-mail par défaut](assets/default_email_template_metadata_new.png)
 
-Les métadonnées sont stockées dans des paires clé-valeur. Vous pouvez spécifier la clé dans le modèle d’e-mail et la clé est remplacée par une valeur au moment de l’exécution (lorsqu’une notification par e-mail est générée). Par exemple, dans l’exemple de code ci-dessous, la clé est « $ {workitem_title} ». Elle est remplacée par la valeur « Demande-Prêt » à l’exécution.
+Les métadonnées sont stockées dans des paires clé-valeur. Vous pouvez spécifier la clé dans le modèle d’e-mail et la clé est remplacée par une valeur au moment de l’exécution (lorsqu’une notification par e-mail est générée). Par exemple, dans l’exemple de code ci-dessous, la clé est « $ {workitem_title} ». Elle est remplacée par la valeur « Demande-Prêt » à l’exécution.
 
 ```html
 subject=Task Assigned - ${workitem_title}

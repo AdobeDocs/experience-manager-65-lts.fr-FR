@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: b73b3adc-e12c-47a8-9342-6214128b72ff
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3842'
-ht-degree: 100%
+source-wordcount: '3836'
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Un dictionnaire de données est une représentation indépendante des métadonn�
 
 Le dictionnaire de données est composé d&#39;éléments de trois types : simple, composite et de collection. Les DDE simples sont des éléments primitifs tels que des chaînes, des nombres, des dates et des valeurs booléennes qui contiennent des informations telles qu’un nom de ville. Un DDE composite contient d’autres éléments de dictionnaire de données qui peuvent être de type primitif, composite ou de collection. Par exemple, une adresse, qui se compose d’un nom de rue, d’une ville, d’une province, d’un pays et d’un code postal. Une collection est une liste de DDE simples ou composites similaires. Par exemple, un client ou une cliente avec plusieurs emplacements différents ou des adresses de facturation et de livraison différentes.
 
-Correspondence Management utilise des données principales, client ou destinataire stockées conformément à la structure du dictionnaire de données pour créer des correspondances destinées à différents utilisateurs et utilisatrices. Par exemple, un document peut être créé avec des noms conviviaux, tels que « Cher/chère {Prénom} » ou « M. {Nom} ».
+Correspondence Management utilise des données principales, client ou destinataire stockées conformément à la structure du dictionnaire de données pour créer des correspondances destinées à différents utilisateurs et utilisatrices. Par exemple, un document peut être créé avec des noms conviviaux, tels que « Cher {First Name} », « Monsieur {Last Name} ».
 
 En règle générale, les utilisateurs et utilisatrices professionnelles n’ont pas besoin de connaître les représentations de métadonnées telles que le schéma XSD (schéma XML) et les classes Java. Cependant, ils ont le plus souvent besoin de l’accès à ces structures de données et à leurs attributs dans le but de créer des solutions.
 
@@ -342,7 +342,7 @@ Le tableau suivant décrit les attributs communs associés à un DDE :
 
 Un dictionnaire de données peut également inclure des éléments calculés. Un élément calculé de dictionnaire de données est toujours associé à une expression. Cette expression est évaluée pour obtenir la valeur d’un élément de dictionnaire de données au moment de l’exécution. Une valeur de DDE calculée est une fonction d’autres valeurs ou littéraux de DDE. Par défaut, les expressions EL (Expression Language) JSP sont prises en charge. Les expressions EL utilisent les caractères ${ } et les expressions valides peuvent inclure des littéraux, des opérateurs, des variables (références d’élément de dictionnaire de données) et des appels de fonction. Tout en faisant référence à un élément de dictionnaire de données dans l’expression, le nom de référence de DDE est utilisé. Le chemin d’accès est unique pour chaque élément de dictionnaire de données au sein d’un dictionnaire de données.
 
-Un DDE calculé de type PersonfullName peut être associé à une expression de concaténation EL telle que ${PersonFirstName} ${PersonLastName}.
+Un PersonFullName DDE calculé peut être associé à une expression de concaténation EL telle que ${PersonFirstName} ${PersonLastName}.
 
 ## Mappage de type de données entre XSD et le dictionnaire de données {#data-type-mapping-between-xsd-and-data-dictionary-br}
 
@@ -420,7 +420,7 @@ Une fois que vous avez créé un dictionnaire de données, vous pouvez le télé
 
 ## Internationalisation des métadonnées {#internationalization-of-meta-data}
 
-Lorsque vous souhaitez envoyer la même lettre dans différentes langues à votre clientèle, vous pouvez localiser le nom, la description et les valeurs d’énumération du dictionnaire de données et des Éléments du dictionnaire de données.
+Lorsque vous souhaitez envoyer la même lettre dans différentes langues à votre clientèle, vous pouvez localiser le nom d’affichage, la description et les valeurs d’énumération du dictionnaire de données et des Éléments du dictionnaire de données.
 
 ### Localisation du dictionnaire de données {#localize-data-dictionary}
 

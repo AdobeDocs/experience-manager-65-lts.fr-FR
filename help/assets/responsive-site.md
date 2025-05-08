@@ -22,7 +22,7 @@ Utilisez la fonctionnalité de code réactif lorsque vous souhaitez partager le 
 
 Cette fonction a un sens si votre site web se trouve sur un composant WCM tiers. Cependant, si votre site web se trouve plutôt sur Adobe Experience Manager, un serveur d’images hors site effectue le rendu de l’image et le communique à la page web.
 
-Consultez également la section [Intégration de la visionneuse de vidéos à une page web](embed-code.md).
+Voir aussi [Incorporation de la visionneuse de vidéos dans une page web](embed-code.md).
 
 Consultez également la section [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
@@ -46,8 +46,8 @@ Consultez également la section [Liaison d’URL à une application web](linking
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
-1. Dans la boîte de dialogue **[!UICONTROL Intégrer une image réactive]**, sélectionnez et copiez le texte du code réactif et collez-le dans votre site web pour accéder au fichier réactif.
-1. Modifiez les points d’arrêt par défaut dans le code incorporé pour qu’ils correspondent aux points d’arrêt du site web réactif directement dans le code. Testez en outre les différentes résolutions d’image diffusées à différents points d’arrêt d’une page.
+1. Dans la boîte de dialogue **[!UICONTROL Incorporer une image réactive]**, sélectionnez et copiez le texte du code réactif et collez-le dans votre site web pour accéder au fichier réactif.
+1. Modifiez les points d’arrêt par défaut dans le code intégré pour qu’ils correspondent aux points d’arrêt du site web réactif directement dans le code. Testez en outre les différentes résolutions d’image diffusées à différents points d’arrêt d’une page.
 
 ## Utilisation du protocole HTTP/2 pour diffuser vos ressources Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 

@@ -306,7 +306,7 @@ Dans la plupart des cas, les services de rendu de Guides par défaut suffisent p
 Les opérations de Guide Utilities vous permettent d’ajouter les tâches de rendu de Guide suivantes à un processus :
 
 * Déterminer si des données sont disponibles pour renseigner le Guide
-* Intégrer les données du Guide ou les convertir en lien
+* Incorporer les données du Guide ou les convertir en lien
 * Convertir le contenu référencé en URL accessibles en externe
 * Remplacer des valeurs dans un document HTML ou autre wrapper, ou les convertir en URL accessibles en externe
 * Définir l’emplacement d’envoi

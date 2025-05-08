@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 3eb9c0e3-950e-4dd5-a4c9-2d8f486ea3cf
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 100%
+source-wordcount: '1239'
+ht-degree: 95%
 
 ---
 
@@ -90,7 +90,7 @@ Pour inclure une entrée répétable, configurez l’attribut **data-repeatable*
 
 *Dans l’exemple présenté, deux éléments Div se trouvent en haut du modèle personnalisé. La première, avec la classe CSS « __FP_boxes-container », fonctionne comme un élément conteneur pour les formulaires répertoriés. Le second, avec la classe CSS « __FP_boxes », est un modèle pour les entités de base, dans ce cas un formulaire. L’attribut **data-repeatable**qui figure dans l’élément Div a la valeur **true**.*
 
-Chaque espace réservé possède un jeu de métadonnées prêtes à l’emploi exclusif. Pour afficher des métadonnées personnalisées à un emplacement spécifique du formulaire, ajoutez la **propriété ${metadata_prop}** à cet emplacement.
+Chaque espace réservé possède un jeu de métadonnées prêtes à l’emploi exclusif. Pour afficher des métadonnées personnalisées à un emplacement spécifique du formulaire, ajoutez la propriété **${metadata_prop} à cet emplacement**
 
 *Dans cet exemple, la propriété des métadonnées est utilisée dans plusieurs instances. Elle est utilisée par exemple de façon adéquate dans **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**et **path**.*
 
@@ -150,9 +150,9 @@ Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur d
 
 *Remarque :*
 
-1. Pour l’option de suppression de la section Brouillons sous le composant Brouillons et envois, nommez la classe CSS « __FP_deleteDraft ». En outre, incluez l’attribut « draftID » avec la valeur **${draftID}**, qui correspond à l’ID du brouillon correspondant.
+1. Pour l’option de suppression de la section Brouillons sous le composant Brouillons et envois, nommez la classe CSS « __FP_deleteDraft ». En outre, incluez l’attribut « draftID » avec la valeur **${draftID}**, qui correspond à l’ID du brouillon correspondant.
 
-1. Lors de la création de liens pour ouvrir les brouillons et les envois, vous pouvez spécifier **${path}.html** en tant que valeur de l’attribut **href** pour la balise d’ancrage.
+1. Lors de la création de liens pour ouvrir les brouillons et les envois, vous pouvez spécifier **${path}.html** comme valeur de l’attribut **href** pour la balise d’ancrage.
 
 ![Nœud Drafts and Submission](assets/raw-image-with-index.png)
 

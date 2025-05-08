@@ -171,7 +171,7 @@ Si un utilisateur ou une utilisatrice ne disposant pas des autorisations AEM For
 * Solution Correspondence Management
 * Espace de travail AEM Forms
 
-  ***Remarque &#x200B;** : Flex Workspace est obsolète pour la version d’AEM Forms.*
+  ***Remarque ** : Flex Workspace est obsolète pour la version d’AEM Forms.*
 
 * gestionnaire de formulaires
 * Rapports de workflow

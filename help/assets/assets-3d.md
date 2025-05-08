@@ -292,4 +292,4 @@ Utilisez les deux méthodes suivantes pour publier des ressources 3D Dynamic M
 
 * **[!UICONTROL Incorporer]** : utilisez l’option **[!UICONTROL Incorporer]** si vous souhaitez afficher une ressource 3D Dynamic Media incorporée dans une page web à l’aide de la visionneuse Dimensionnel. Vous copiez le code intégré dans le presse-papiers pour pouvoir le coller dans vos pages web. Vous ne pouvez pas modifier le code dans la boîte de dialogue **[!UICONTROL Incorporer]**.
 
-  Voir [Intégration de la visionneuse de vidéos ou d’images Dynamic Media, ou de la visionneuse Dimensionnel dans une page web](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).
+  Voir [Incorporation de la visionneuse de vidéos ou d’images Dynamic Media, ou de la visionneuse dimensionnelle dans une page web](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).

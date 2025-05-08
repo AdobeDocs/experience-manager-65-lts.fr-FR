@@ -158,7 +158,7 @@ Le fragment de formulaire adaptatif est inséré par référence dans le formula
 
 Vous pouvez choisir d’incorporer un fragment de formulaire adaptatif dans un formulaire adaptatif en cliquant sur le bouton **Inclure la ressource : &lt;&lt;*Nom du fragment*>** dans la barre d’outils du panneau du fragment ajouté, comme illustré dans l’exemple ci-dessous.
 
-![Inclusion d’un fragment dans un formulaire adaptatif](assets/embed-fragment.png)
+![Incorporation d’un fragment dans un formulaire adaptatif](assets/embed-fragment.png)
 
 >[!NOTE]
 >

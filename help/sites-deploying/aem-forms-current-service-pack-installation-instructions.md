@@ -9,7 +9,7 @@ hidefromtoc: true
 source-git-commit: f9fc041002a82f5f934800674733ca555074d34e
 workflow-type: tm+mt
 source-wordcount: '1713'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -39,7 +39,7 @@ Le pack de services Adobe Experience Manager (AEM) Forms comprend de nouvelles f
 
 >[!NOTE]
 >
-> * Adobe publie un programme d’installation complet tous les six Packs de services. Le pack de services 18 (6.5.18.0) d’AEM 6.5 Forms est le dernier programme d’installation complet de JEE. Le programme d’installation complet prend en charge les nouvelles plateformes, tandis que le programme d’installation du Pack de services normal inclut de nouvelles fonctionnalités, des correctifs de bug et des améliorations générales. Si vous effectuez une nouvelle installation ou envisagez d’utiliser les derniers logiciels pour votre environnement AEM 6.5 Forms on JEE, Adobe recommande d’utiliser le programme d’installation complet d’AEM 6.5.18.0 Forms on JEE sorti le 31 août 2023 au lieu du programme d’installation d’AEM 6.5 Forms, sorti le 8 avril 2019, ou du programme d’installation d’AEM 6.5.12.0 Forms, sorti le 3 mars 2022. Après avoir utilisé le programme d’installation complet, installez le dernier pack de services.
+> * Adobe publie un programme d’installation complet tous les six Packs de services. Le pack de services 18 d’AEM Forms 6.5 (6.5.18.0) est le dernier programme d’installation complet. Le programme d’installation complet prend en charge les nouvelles plateformes, tandis que le programme d’installation du pack de services normal inclut de nouvelles fonctionnalités, des correctifs de bug et des améliorations générales. Si vous effectuez une nouvelle installation ou envisagez d’utiliser les derniers logiciels pour votre environnement AEM 6.5 Forms on JEE, Adobe recommande d’utiliser le programme d’installation complet d’AEM 6.5.18.0 Forms on JEE sorti le 31 août 2023 au lieu du programme d’installation d’AEM 6.5 Forms, sorti le 8 avril 2019 ou du programme d’installation d’AEM 6.5.12.0 sorti le 3 mars 2022. Après avoir utilisé le programme d’installation complet, installez le dernier pack de services.
 > * Les fonctionnalités d’AEM Forms, telles que les formulaires adaptatifs, disponibles dans [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=fr), sont uniquement destinées à des fins d’exploration et d’évaluation. Pour une utilisation en production, il est essentiel d’obtenir une licence valide pour AEM Forms.
 
 <!--
@@ -118,7 +118,7 @@ Accédez au répertoire approprié puis, à partir du shell, saisissez `./aem65_
 
    * Désélectionnez l’option **Démarrer le Configuration Manager** avant de cliquer sur **[!UICONTROL Terminé]**. Exécutez **Configuration Manager** en utilisant le fichier **ConfigurationManager.bat** situé dans `[aem-forms root]\configurationManager\bin`.
 
-   * Vous pouvez aussi désélectionner l’option **Démarrer Configuration Manager** avant de cliquer sur **[!UICONTROL Terminé]**. Avant d’exécuter **Configuration Manager** à l’aide de **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez *`<AEMForms_Install_Dir>\configurationManager\bin`* répertoire et remplacez les fichiers **ConfigurationManager.lax** et **ConfigurationManager_IPV6.lax** par les derniers [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) et [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax), recherchez et remplacez **axis-1.4.1.1.jar** par **axis-1.4.1.2.jar** dans ces deux fichiers.
+   * Vous pouvez aussi désélectionner l’option **Démarrer Configuration Manager** avant de cliquer sur **[!UICONTROL Terminé]**. Avant d’exécuter **Configuration Manager** à l’aide de **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez au répertoire *`<AEMForms_Install_Dir>\configurationManager\bin`* et remplacez **ConfigurationManager.lax** et **ConfigurationManager_IPV6.lax** par la dernière version des fichiers [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) et [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax). Recherchez et remplacez **axis-1.4.1.1.jar** par **axis-1.4.1.2.jar** dans ces deux fichiers.
 
      >[!NOTE]
      >
@@ -281,4 +281,4 @@ Vous pouvez utiliser deux méthodes différentes pour installer automatiquement 
 
 * Vérifiez toute activité dans les journaux du moniteur (error.log) une fois l’installation terminée quelle que soit l’activité. Patientez quelques minutes jusqu’à ce qu’il n’y ait plus aucune activité dans les journaux. Redémarrez l’instance AEM.
 
-* Au cas où vous obtiendriez une erreur **service-unavailable** après l’installation du pack de services AEM Forms 6.5.15.0 ou ultérieur, [installez le fragment de servlet et le bundle](/help/forms/using/aem-service-pack-installation-solution.md) pour corriger l’erreur.
+* Au cas où vous obtiendriez une **erreur service-unavailable** après l’installation du pack de services AEM Forms 6.5.15.0 ou ultérieur, [installez le fragment de servlet et l’offre groupée](/help/forms/using/aem-service-pack-installation-solution.md) pour corriger l’erreur.

@@ -285,7 +285,6 @@ Vous pouvez stocker des données de widget dans la payload du workflow ou dans l
 * **Stockage des données avec le payload**
 
    * Pour stocker des données de widget en tant que propriété du payload de workflow, utilisez le format suivant pour la propriété de nom du nœud de widget :
-
      `./jcr:content/nodename`
 
    * Les données sont stockées dans la propriété `nodename` du nœud de payload. Si le nœud ne contient pas cette propriété, la propriété est créée.
@@ -294,7 +293,6 @@ Vous pouvez stocker des données de widget dans la payload du workflow ou dans l
 * **Stockage des données avec l’élément de travail**
 
    * Pour stocker des données de widget en tant que propriété de métadonnées d’élément de travail, utilisez le format suivant pour la valeur de la propriété de nom :
-
      `nodename`
 
    * Les données sont stockées dans la propriété `nodename` des `metadata` de l’élément de travail. Les données sont conservées si la boîte de dialogue est ensuite utilisée avec la même payload.

@@ -24,7 +24,7 @@ Pour qu’un transcodage correct se produise, un administrateur installe FFmpeg 
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Composant intégré](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=fr).
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant Incorporer des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=fr).
 
 >[!CAUTION]
 >

@@ -215,7 +215,7 @@ Si le ND est spécifié comme identifiant unique, il n’est pas nécessaire de 
 >
 >Pour activer le contrôle VLV, configurez Sun One. Voir [Configurer User Management pour utiliser Virtual List View (VLV)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
 
-**Nom de champ de tri :** si vous avez sélectionné Activer le contrôle VLV (Virtual List View), indiquez le nom de l’attribut utilisé pour trier l’index. Il s’agit du nom de l’attribut spécifié lors de la création d’un index pour VLV sur le serveur d’annuaire.
+**Nom du champ de tri :** si vous avez sélectionné Activer le contrôle VLV (Virtual List View), indiquez le nom de l’attribut utilisé pour trier l’index. Il s’agit du nom de l’attribut spécifié lors de la création d’un index pour VLV sur le serveur d’annuaire.
 
 >[!NOTE]
 >

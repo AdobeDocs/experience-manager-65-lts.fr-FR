@@ -118,7 +118,7 @@ Le tableau suivant explique les cas d’utilisation de chaque composant :
 
 >[!NOTE]
 >
->Prêt à l’emploi, le composant vidéo Dynamic Media Classic utilise le profil vidéo universel. Vous pouvez toutefois obtenir le lecteur vidéo HTML5 pour l’utiliser avec Experience Manager. Dans Dynamic Media Classic, copiez le code incorporé du lecteur vidéo HTML5 prêt à l’emploi et placez-le dans votre page Experience Manager.
+>Prêt à l’emploi, le composant vidéo Dynamic Media Classic utilise le profil vidéo universel. Vous pouvez toutefois obtenir le lecteur vidéo HTML5 pour l’utiliser avec Experience Manager. Dans Dynamic Media Classic, copiez le code intégré du lecteur vidéo HTML5 prêt à l’emploi et placez-le dans votre page Experience Manager.
 >
 
 ## Composant vidéo Experience Manager {#aem-video-component}

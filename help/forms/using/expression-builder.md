@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: aed65a14-2b4f-45ac-8b20-fdb08b3c9038
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 100%
+source-wordcount: '781'
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ Les opérateurs pouvant être utilisés dans les expressions sont disponibles da
 Voici quelques exemples d’EL JSP couramment utilisés que vous pouvez utiliser dans votre solution Correspondence Management :
 
 * Pour ajouter deux nombres : ${number1 + number2}
-* Pour concaténer deux chaînes : ${str1} ${str2}
+* Pour concaténer deux chaînes : ${str1} ${str2}
 * Pour comparer deux nombres : ${age &lt; 18}
 
 Vous trouverez plus d’informations dans [Spécification de l’EL JSP](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). Le gestionnaire d’expression côté client ne prend pas en charge certaines variables et fonctions de la spécification de l’EL JSP, plus précisément :

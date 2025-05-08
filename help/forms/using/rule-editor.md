@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 2c0a5185-7759-447a-b4c6-36feaa4a23d3
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6607'
-ht-degree: 100%
+source-wordcount: '6606'
+ht-degree: 99%
 
 ---
 
@@ -607,8 +607,8 @@ Affiche les paramètres utilisés par la fonction. Une fonction peut comporter p
 * Syntaxe
 **Type de retour** : `@return {type}`
 Autrement, vous pouvez utiliser `@returns {type}`.
-Ajoute des informations sur la fonction, comme son objectif.
-{type} représente le type de valeur renvoyée de la fonction. Les types de valeur renvoyée autorisés sont les suivants :
+Ajoute des informations sur la fonction, telles que son objectif.
+  {type} représente le type de retour de la fonction. Les types de valeur renvoyée autorisés sont les suivants :
 
    1. chaîne
    1. nombre

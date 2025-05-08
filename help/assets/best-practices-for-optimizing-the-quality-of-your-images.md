@@ -12,7 +12,7 @@ exl-id: 30038003-e307-46d1-b5f9-624d98a672a7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1497'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -88,7 +88,7 @@ Augmentez graduellement la valeur de 1,75 à 4. Si l’accentuation ne vous conv
 
 Laissez le paramètre monochrome sur 0.
 
-### Bonnes pratiques relatives à la compression JPEG (`&qlt=`) {#best-practices-for-jpeg-compression-qlt}
+### Recommandations relatives à la compression JPEG (`&qlt=`) {#best-practices-for-jpeg-compression-qlt}
 
 * Ce paramètre contrôle la qualité du codage des JPG. Une valeur élevée produit une image de meilleure qualité, mais un fichier plus volumineux ; en revanche, une valeur faible signifie une image de qualité inférieure mais un fichier plus petit. La plage de ce paramètre est 0 à 100.
 * Pour optimiser la qualité, ne définissez pas la valeur du paramètre sur 100. La différence entre un paramètre de 90, 95 et 100 est presque imperceptible, mais 100 augmente inutilement la taille du fichier image. En conséquence, pour optimiser la qualité, mais éviter que les fichiers image deviennent trop volumineux, définissez `qlt= value` sur 90 ou 95.
@@ -101,7 +101,7 @@ Laissez le paramètre monochrome sur 0.
 
 La bonne pratique pour la compression JPG consiste à utiliser `&qlt=85,0`.
 
-## Bonnes pratiques relatives au dimensionnement JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
+## Bonnes pratiques relatives au dimensionnement de JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
 Le paramètre jpegSize est utile pour garantir qu’une image n’excède pas une certaine taille pour sa diffusion sur les appareils dont la mémoire est limitée.
 

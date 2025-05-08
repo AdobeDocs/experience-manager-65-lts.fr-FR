@@ -26,7 +26,7 @@ JavaScript est le langage d’expression des formulaires adaptatifs. Toutes les 
 ## Recommandations relatives à l’écriture d’expressions {#best-practices-for-writing-expressions}
 
 * Lors de l’écriture d’expressions, pour accéder aux champs et aux panneaux, vous pouvez utiliser le nom du champ ou du panneau. Pour accéder à la valeur d’un champ, utilisez la propriété de la valeur. Par exemple, `field1.value`
-* Utilisez des noms uniques pour les champs et les panneaux du formulaire. Cela permet d’éviter tout conflit possible avec les noms de champs utilisés lors de l’écriture d’expressions.
+* Utilisez des noms uniques pour les champs et les panneaux du formulaire. Cela permet d’éviter tout conflit possible avec les noms de champ utilisés lors de l’écriture d’expressions.
 * Lors de la création d’expressions multilignes, utilisez un point-virgule à la fin d’une instruction.
 
 ## Recommandations relatives aux expressions impliquant un panneau de répétition {#best-practices-for-expressions-involving-repeating-panel}
@@ -35,7 +35,7 @@ Les panneaux de répétition sont des instances d’un panneau qui sont ajoutée
 
 * Pour créer un panneau de répétition, dans la boîte de dialogue du panneau, ouvrez les paramètres, puis paramétrez la valeur du champ de nombre maximal sur un chiffre supérieur à 1.
 * La valeur du nombre minimum des paramètres de répétition du panneau peut être un ou plusieurs, mais ne peut pas être supérieure à la valeur du nombre maximal.
-* Lorsqu’une expression fait référence à un champ de panneau répétable, les noms de champs dans l’expression sont résolus par rapport à l’élément de répétition le plus proche.
+* Lorsqu’une expression fait référence à un champ de panneau répétable, les noms de champ dans l’expression sont résolus par rapport à l’élément de répétition le plus proche.
 * Les formulaires adaptatifs fournissent quelques fonctions spéciales pour simplifier le calcul des panneaux répétables comme la somme, le compte, le minimum, le maximum, le filtre, etc. Pour obtenir la liste complète des fonctionnalités, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html).
 * Les API pour manipuler les instances d’un panneau de répétition sont :
 

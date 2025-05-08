@@ -11,8 +11,8 @@ role: Developer
 exl-id: 26cc4d84-ed76-44c7-a4e9-73ed48009568
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4913'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -405,7 +405,7 @@ Configure les détails de connexion au service JSONP que cet objet utilise. Vous
 
 * **serviceConfig :** objet qui contient les propriétés ci-dessous :
 
-   * host : (chaîne). Nom ou adresse IP du serveur.
+   * host : (chaîne). Nom ou adresse IP du serveur.
    * jsonp : (booléen). Une valeur true indique que le service est un service JSONP, false dans le cas contraire. Si la valeur est true, l’objet {callback: &quot;ContextHub.Callbacks.*Object.name*} est ajouté à l’objet service.params.
    * params : (objet) paramètres d’URL représentés sous forme de propriétés d’objet. Les noms des paramètres correspondent aux noms de propriétés et leurs valeurs aux valeurs des propriétés.
    * path : (chaîne). Chemin d’accès au service.
@@ -434,7 +434,7 @@ Récupère l’objet de service pour cet objet ContextHub.Store.JSONPStore. L’
 
 Un objet possédant les propriétés suivantes :
 
-* **host :** (chaîne) nom de serveur ou adresse IP.
+* **host :** (chaîne) nom de serveur ou adresse IP.
 * **jsonp :** (booléen). Une valeur true indique que le service est un service JSONP, false dans le cas contraire. Si la valeur est true, l’objet {callback: &quot;ContextHub.Callbacks.*Object.name*} est ajouté à l’objet service.params.
 
 * **params :** (objet) paramètres d’URL représentés sous forme de propriétés d’objet. Les noms des paramètres correspondent aux noms de propriétés et leurs valeurs aux valeurs des propriétés.
@@ -472,7 +472,7 @@ initialise l’objet ContextHub.Store.JSONPStore.
    * persistence : objet ContextHub.Utils.Persistence pour ce magasin. Par défaut, la persistance de la mémoire est utilisée (objet JavaScript).
    * service : (objet)
 
-      * host : (chaîne). Nom ou adresse IP du serveur.
+      * host : (chaîne). Nom ou adresse IP du serveur.
       * jsonp : (booléen). Une valeur true indique que le service est un service JSONP, false dans le cas contraire. Si la valeur est true, l’objet `{callback: "ContextHub.Callbacks.*Object.name*}` est ajouté à `service.params`.
       * params : (objet) paramètres d’URL représentés sous forme de propriétés d’objet. Les noms et les valeurs des paramètres sont ceux des propriétés de l’objet, respectivement.
       * path : (chaîne). Chemin d’accès au service.

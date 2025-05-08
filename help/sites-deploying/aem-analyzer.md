@@ -37,7 +37,7 @@ Des informations supplémentaires sur les catégories, ainsi que sur les implica
 
 ## Disponibilité {#analyzer-availability}
 
-Il est possible de télécharger AEM Analyzer sous la forme d’un fichier zip à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html). Vous pouvez installer le package par le biais du [Gestionnaire de packages](/help/sites-administering/package-manager.md) sur votre instance AEM source.
+Il est possible de télécharger AEM Analyzer sous la forme d’un fichier zip à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Vous pouvez installer le package par le biais du [Gestionnaire de packages](/help/sites-administering/package-manager.md) sur votre instance AEM source.
 
 ## Points importants concernant l’utilisation d’AEM Analyzer {#important-considerations-for-using-aem-analyzer}
 
@@ -102,7 +102,7 @@ Le format du rapport est le suivant :
 
 >[!NOTE]
 >
->Pour en savoir plus sur chaque catégorie de résultat, consultez [Catégories du détecteur de motifs](https://experienceleague.adobe.com/fr/docs/experience-manager-pattern-detection/table-of-contents/aso).
+>Pour en savoir plus sur chaque catégorie de résultat, consultez [Catégories du détecteur de motifs](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso).
 
 Pour comprendre les niveaux d’importance, suivez le tableau ci-dessous :
 

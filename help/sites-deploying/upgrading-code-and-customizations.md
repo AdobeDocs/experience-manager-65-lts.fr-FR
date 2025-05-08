@@ -37,7 +37,7 @@ Avant de procéder à la mise à niveau, vous devez disposer d’une base de cod
 
 ## Mise à niveau de la base de code {#upgrade-code-base}
 
-### Création d’une branche dédiée pour le code LTS 6.5 dans le de contrôle de version {#create-a-dedicated-branch-for-6.5-lts-code-in-version-control}
+### Création d’une branche dédiée pour le code LTS 6.5 dans le contrôle de version {#create-a-dedicated-branch-for-6.5-lts-code-in-version-control}
 
 Tout le code et toutes les configurations nécessaires pour votre mise en oeuvre d’AEM doivent être gérés à l’aide d’une forme de gestion de versions. Une branche dédiée à la gestion de versions doit être créée pour gérer les modifications nécessaires pour la base de code dans la version cible d’AEM. Les tests itératifs de la base de code par rapport à la version cible d’AEM et les correctifs de bugs ultérieurs sont gérés dans cette branche.
 

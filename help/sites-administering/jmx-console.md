@@ -12,8 +12,8 @@ role: Admin
 exl-id: c5907a0b-031f-4e3a-8a5c-5daf31eb71fc
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4830'
-ht-degree: 100%
+source-wordcount: '4826'
+ht-degree: 99%
 
 ---
 
@@ -691,7 +691,7 @@ Surveillez les services pour chaque agent de réplication. Lorsque vous créez u
 * **Domaine** : com.adobe.granite.replication
 * **Type** : agent
 * **Nom** : aucune valeur
-* **Propriétés** : {id=&quot;*Name*&quot;}, où *Name* est la valeur de la propriété Name de l’agent.
+* **Properties:** {id="*Name*"}, où *Name* est la valeur de la propriété Name de l’agent.
 
 ### Attributs {#attributes-3}
 

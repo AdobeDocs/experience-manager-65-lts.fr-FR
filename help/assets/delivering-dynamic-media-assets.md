@@ -32,7 +32,7 @@ Avec Dynamic Media, vous disposez de plusieurs options :
 Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 * [Ajout de ressources Dynamic Media aux pages Web](/help/assets/adding-dynamic-media-assets-to-pages.md)
-* [Intégration de la visionneuse de vidéos ou d’images dans une page Web](/help/assets/embed-code.md)
+* [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md)
 * [Activation de la protection de lien dynamique dans Dynamic Media](/help/assets/hotlink-protection.md)
 * [Liaison d’URL à votre application Web](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Diffusion d’images optimisées pour un site réactif](/help/assets/responsive-site.md)
@@ -41,6 +41,6 @@ Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 ## Diffusion de ressources Dynamic Media via HTTP/2 {#http-delivery-of-dynamic-media-assets}
 
-Experience Manager prend à présent en charge la diffusion de tout le contenu Dynamic Media (images et vidéo) sur HTTP/2. En d’autres termes, une URL publiée ou un code incorporé pour l’image ou la vidéo peut être intégré à toute application qui accepte une ressource hébergée. Cette ressource publiée est ensuite diffusée au moyen du protocole HTTP/2. Cette méthode de distribution améliore la communication entre les navigateurs et les serveurs, ce qui permet d’améliorer les temps de réponse et de chargement de toutes vos ressources Dynamic Media.
+Experience Manager prend à présent en charge la diffusion de tout le contenu Dynamic Media (images et vidéo) sur HTTP/2. En d’autres termes, une URL publiée ou un code intégré pour l’image ou la vidéo peut être intégré à toute application qui accepte une ressource hébergée. Cette ressource publiée est ensuite diffusée au moyen du protocole HTTP/2. Cette méthode de distribution améliore la communication entre les navigateurs et les serveurs, ce qui permet d’améliorer les temps de réponse et de chargement de toutes vos ressources Dynamic Media.
 
 Pour en savoir plus, consultez la [Foire aux questions sur la diffusion HTTP/2 du contenu](/help/sites-administering/scene7-http2faq.md).

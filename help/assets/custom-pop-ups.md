@@ -83,7 +83,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
    Le lecteur utilise un gestionnaire appelé `QuickViewActive`.
 
    **Exemple**
-Supposons que vous utilisiez le code d’intégration suivant dans votre page Web pour une image interactive :
+Supposons que vous utilisiez le code intégré suivant dans votre page web pour une image interactive :
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -91,7 +91,7 @@ Supposons que vous utilisiez le code d’intégration suivant dans votre page We
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **En utilisant l’exemple de code d’intégration ci-dessus, vous obtenez le code suivant :**
+   **En utilisant l’exemple de code intégré ci-dessus, vous obtenez le code suivant :**
 
    ```xml
    s7interactiveimageviewer.setHandlers({
@@ -111,13 +111,13 @@ Supposons que vous utilisiez le code d’intégration suivant dans votre page We
 
 1. Configurez le gestionnaire `quickViewActivate`.
 
-   Le gestionnaire `quickViewActivate` contrôle les aperçus rapides dans la visionneuse. Le gestionnaire contient les appels de la liste de variables et de fonctions utilisables avec l’aperçu rapide. Le code d’intégration fournit une correspondance pour l’ensemble de variables de SKU dans l’aperçu rapide, ainsi qu’un exemple d’appel de fonction `loadQuickView`.
+   Le gestionnaire `quickViewActivate` contrôle les aperçus rapides dans la visionneuse. Le gestionnaire contient les appels de la liste de variables et de fonctions utilisables avec l’aperçu rapide. Le code intégré fournit une correspondance pour l’ensemble de variables de SKU dans l’aperçu rapide, ainsi qu’un exemple d’appel de fonction `loadQuickView`.
 
    **Correspondance de variables** Mappez les variables utilisables dans votre page web avec la valeur de SKU et les variables génériques dans l’aperçu rapide :
 
    `var *variable1*= inData.*quickviewVariable*`
 
-   Le code d’intégration fourni comporte un exemple de mise en correspondance pour la variable SKU :
+   Le code intégré fourni comporte un exemple de mise en correspondance pour la variable SKU :
 
    `var sku=inData.sku`
 
@@ -263,4 +263,4 @@ Cet exemple utilise la visionneuse d’images interactives.
 
    `s7interactiveimageviewer.init()`
 
-   Après avoir intégré la visionneuse dans votre page hôte, assurez-vous que l’instance de la visionneuse est créée et que les gestionnaires sont chargés avant l’appel de celle-ci à l’aide de `init()`.
+   Après avoir incorporé la visionneuse dans votre page hôte, assurez-vous que l’instance de la visionneuse est créée et que les gestionnaires sont chargés avant l’appel de celle-ci à l’aide de `init()`.

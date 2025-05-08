@@ -46,7 +46,7 @@ Pour toute personnalisation, créez une structure de dossiers parallèle, comme 
 
 La branche `/apps` (structure de dossiers) :
 
-* Garantit que vos fichiers sont sûrs en cas de mise à jour du système. En cas de mise à niveau d’un pack de fonctionnalités ou d’un correctif, la branche `/libs` est mise à jour et si vous hébergez vos modifications dans la branche `/libs`, elles sont écrasées.
+* Garantit que vos fichiers sont sûrs en cas de mise à jour du système. Dans le cas d’une mise à niveau, d’un pack de fonctionnalités ou d’un correctif, la branche `/libs` est mise à jour et si vous hébergez vos modifications dans la branche `/libs`, elles sont écrasées.
 * Vous aide à ne pas toucher au système/à la branche actuels, que vous pouvez ébranler par erreur si vous utilisez les emplacements par défaut pour enregistrer les fichiers personnalisés.
 * Permet à vos ressources d’obtenir une priorité plus élevée lorsqu’AEM recherche des ressources. AEM est configuré pour rechercher une ressource d’abord dans la branche `/apps` puis dans la branche `/libs`. Ce mécanisme signifie que le système utilise votre recouvrement (et les personnalisations qui y sont définies).
 

@@ -44,7 +44,7 @@ Au plus haut niveau, vous devez maîtriser les concepts suivants :
 * les cookies de navigateur
 * et d’autres concepts de développement web modernes
 
-La pile technologique d’Adobe Experience Manager est basée sur le conteneur OSGI [Apache Felix](https://felix.apache.org/documentation/index.html) avec le framework web [Apache Sling](https://sling.apache.org/index.html). Elle intègre un référentiel de contenu Java™ ([JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)) basé sur [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html). Vous devez vous familiariser avec ces projets particuliers, ainsi qu’avec tous les autres composants open source (par exemple, Apache Lucene) utilisés dans le domaine où vous avez l’intention d’apporter une contribution.
+La pile technologique d’Adobe Experience Manager est basée sur le conteneur OSGI [Apache Felix](https://felix.apache.org/documentation/index.html) avec le framework web [Apache Sling](https://sling.apache.org/index.html). Elle incorpore un référentiel de contenu Java™ ([JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)) basé sur [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html). Vous devez vous familiariser avec ces projets particuliers, ainsi qu’avec tous les autres composants open source (par exemple, Apache Lucene) utilisés dans le domaine où vous avez l’intention d’apporter une contribution.
 
 ## Connaissances internes {#tribal-knowledge}
 

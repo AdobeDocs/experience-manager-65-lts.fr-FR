@@ -1,6 +1,6 @@
 ---
-title: Incorporation de la visionneuse de vidéos ou d’images ou de la visionneuse dimensionnelle Dynamic Media dans une page Web
-description: Découvrez comment intégrer des images 3D, des images ou des vidéos Dynamic Media dans une page Web.
+title: Incorporation de la visionneuse de vidéos ou d’images Dynamic Media, ou de la visionneuse dimensionnelle dans une page web
+description: Découvrez comment incorporer des images 3D, des images ou des vidéos Dynamic Media dans une page web.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -16,9 +16,9 @@ ht-degree: 100%
 
 ---
 
-# Intégration de la visionneuse de vidéos ou d’images Dynamic Media, ou de la visionneuse dimensionnelle dans une page web {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Incorporation de la visionneuse de vidéos ou d’images Dynamic Media, ou de la visionneuse dimensionnelle dans une page web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
-Utilisez la fonction **[!UICONTROL Code incorporé]** lorsque vous souhaitez lire une vidéo ou afficher une ressource incorporée dans une page web. Vous copiez le code incorporé dans le Presse-papiers afin de le coller dans vos pages web. Vous ne pouvez pas modifier le code dans la boîte de dialogue **[!UICONTROL Code incorporé]**.
+Utilisez la fonction **[!UICONTROL Code intégré]** lorsque vous souhaitez lire une vidéo ou afficher une ressource incorporée dans une page web. Vous copiez le code intégré dans le Presse-papiers afin de le coller dans vos pages web. Vous ne pouvez pas modifier le code dans la boîte de dialogue **[!UICONTROL Code intégré]**.
 
 Vous devez incorporer les URL uniquement si vous *n’utilisez pas* Adobe Experience Manager comme outil de gestion de contenu web. Dans le cas contraire, [vous pouvez ajouter les ressources directement à votre page](adding-dynamic-media-assets-to-pages.md).
 
@@ -28,7 +28,7 @@ Consultez [Diffusion d’images optimisées pour un site réactif](responsive-si
 
 >[!NOTE]
 >
->Vous ne pouvez pas copier le code d’intégration tant que la ressource sélectionnée n’a pas été publiée. En outre, vous devez également publier le paramètre de visionneuse prédéfini ou le paramètre d’image prédéfini.
+>Vous ne pouvez pas copier le code intégré tant que la ressource sélectionnée n’a pas été publiée. En outre, vous devez également publier le paramètre de visionneuse prédéfini ou le paramètre d’image prédéfini.
 >
 >Consultez la section [Publication de ressources](publishing-dynamicmedia-assets.md).
 >
@@ -38,9 +38,9 @@ Consultez [Diffusion d’images optimisées pour un site réactif](responsive-si
 
 **Pour incorporer la visionneuse de vidéos ou d’images ou la visionneuse dimensionnelle Dynamic Media dans une page Web :**
 
-1. Accédez à la ressource vidéo ou d’image *publiée* dont vous souhaitez copier le code incorporé.
+1. Accédez à la ressource vidéo ou d’image *publiée* dont vous souhaitez copier le code intégré.
 
-   N’oubliez pas que le code incorporé n’est disponible à la copie *qu’après* la première *publication* des ressources. En outre, le paramètre de visionneuse prédéfini ou le paramètre d’image prédéfini doit également être publié.
+   N’oubliez pas que le code intégré n’est disponible à la copie qu’*après* la première *publication* des ressources. En outre, le paramètre de visionneuse prédéfini ou le paramètre d’image prédéfini doit également être publié.
 
    Consultez la section [Publication de ressources](publishing-dynamicmedia-assets.md).
 
@@ -50,7 +50,7 @@ Consultez [Diffusion d’images optimisées pour un site réactif](responsive-si
 
 1. Dans le rail de gauche, sélectionnez le menu déroulant et sélectionnez ensuite **[!UICONTROL Visionneuses]**.
 1. Dans le rail de gauche, sélectionnez un nom de paramètre prédéfini de la visionneuse. Le paramètre de visionneuse prédéfini est appliqué à la ressource.
-1. Sélectionnez **[!UICONTROL Intégrer]**.
+1. Sélectionnez **[!UICONTROL Incorporer]**.
 1. Dans la boîte de dialogue **[!UICONTROL Code intégré]**, copiez l’ensemble du code dans le Presse-papiers, puis sélectionnez **[!UICONTROL Fermer]**.
 1. Collez le code intégré dans vos pages web.
 

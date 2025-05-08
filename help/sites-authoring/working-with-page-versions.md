@@ -8,7 +8,7 @@ exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
 source-git-commit: 438d383aa7a08334d9977411fd37395f89133834
 workflow-type: tm+mt
 source-wordcount: '1567'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,10 +24,10 @@ Le contrôle de version permet de créer un « instantané » d’une page à 
 
 >[!NOTE]
 >
->Seul le contenu est versionné dans le référentiel AEM. Les ressources dynamiques telles que le code, le CSS et le JavaScript ne sont pas versionnées.
+>Seul le contenu est versionné dans le référentiel AEM. Les ressources dynamiques telles que le code, la feuille de style CSS et le code JavaScript ne sont pas versionnées.
 >
->* Lors de l’affichage des versions, le contenu est affiché avec le code, le CSS et le JavaScript actuels du référentiel.
->* Lors de la restauration de versions, seul le contenu est restauré et le code, CSS et JavaScript actuels du référentiel lui sont appliqués.
+>* Lors de l’affichage des versions, le contenu est affiché avec le code, la feuille de style CSS et le code JavaScript actuels du référentiel.
+>* Lors de la restauration de versions, seul le contenu est restauré et le code, la feuille de style CSS et le code JavaScript actuels du référentiel lui sont appliqués.
 
 ## Création d’une version {#creating-a-new-version}
 
@@ -203,7 +203,7 @@ La fonction de distorsion du temps Timewarp permet de simuler l’état *publié
 
 >[!TIP]
 >
->[Timewarp peut également être utilisé avec les lancements pour prévisualiser les futurs](/help/sites-authoring/launches.md) lors de l’exécution d’AEM 6.5.10.0 ou version ultérieure.
+>[La fonction de distorsion du temps peut également être utilisée avec les lancements pour prévisualiser les futurs ](/help/sites-authoring/launches.md) lors de l’exécution d’AEM 6.5.10.0 ou version ultérieure.
 
 La création de contenu est un processus continu et collaboratif. Le but de Timewarp est de permettre aux auteurs et aux autrices de suivre le site web publié au fil du temps, pour les aider à comprendre les changements du contenu. Cette fonctionnalité utilise les versions de page pour déterminer l’état de l’environnement de publication :
 

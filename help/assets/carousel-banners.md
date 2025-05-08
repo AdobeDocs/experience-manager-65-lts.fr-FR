@@ -79,7 +79,7 @@ Pour vous familiariser rapidement avec les bannières de carrousel :
 
 1. [Publiez les bannières de carrousel](#publishing-carousel-banners).
 
-   Vous publiez un ensemble de carrousel comme vous le feriez pour d’autres ressources. Dans Ressources, accédez à l’ensemble de carrousel, sélectionnez-le et sélectionnez **[!UICONTROL Publier]**. La publication d’un ensemble de carrousel active l’URL et la chaîne intégrée.
+   Vous publiez un ensemble de carrousel comme vous le feriez pour d’autres ressources. Dans Ressources, accédez à l’ensemble de carrousel, sélectionnez-le et sélectionnez **[!UICONTROL Publier]**. La publication d’un ensemble de carrousel active la chaîne URL et Embed.
 
 1. Utilisez l’une des méthodes suivantes :
 
@@ -293,7 +293,6 @@ Consultez également la section [Ajout de zones cliquables](/help/assets/image-m
    * Sélectionnez **[!UICONTROL Lien hypertexte]**.
 
       * Si vous êtes client Experience Manager Sites, sélectionnez l’icône Sélecteur de site (dossier) pour accéder à une URL.
-
         >[!NOTE]
         >
         >La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
@@ -423,7 +422,7 @@ Cependant, si vous êtes un client Experience Manager Assets autonome, vous po
 1. Copiez le code intégré de l’ensemble de carrousel.
 Consultez [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
 
-1. Ajoutez le code incorporé que vous avez copié à partir d’Experience Manager Assets sur votre page web.
+1. Ajoutez le code intégré que vous avez copié à partir d’Experience Manager Assets sur votre page web.
 Le code intégré copié est réactif et soit donc s’adapter automatiquement à la zone d’incorporation de la page.
 
 ## Intégration de la bannière de carrousel à un aperçu rapide existant {#integrating-the-carousel-banner-with-an-existing-quickview}

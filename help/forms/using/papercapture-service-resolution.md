@@ -10,7 +10,7 @@ exl-id: de3cd0ad-0b18-4d9a-8c6b-72cc16149cfc
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 90%
 
 ## Problème
 
-Après la mise à niveau vers le pack de services 6.5.21.0 d’AEM Forms, le service `PaperCapture` ne parvient pas à effectuer des opérations OCR (reconnaissance optique de caractères) sur les fichiers PDF. Le service ne génère pas de sortie sous la forme d’un PDF ou d’un fichier journal.
+Après la mise à niveau vers le pack de services AEM Forms 6.5.21.0, le service `PaperCapture` ne parvient pas à effectuer d’opérations OCR (reconnaissance optique de caractères) sur les PDF. Le service ne génère pas de sortie sous la forme d’un PDF ou d’un fichier journal.
 
 ## Application
 
@@ -32,10 +32,8 @@ Cette solution s’applique aux éléments suivants :
 1. Extrayez et copiez le contenu du dossier téléchargé.
 1. Accédez aux chemins d’accès ci-dessous pour les serveurs d’applications correspondants :
    * **jboss** :
-
      `..\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\PaperCaptureSvc`
    * **weblogic** :
-
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
    * **websphere** :\
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`

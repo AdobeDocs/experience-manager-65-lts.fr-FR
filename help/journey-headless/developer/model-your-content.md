@@ -194,7 +194,7 @@ AEM fournit les types de données suivants pour que vous puissiez modéliser vot
 
 ### Références et contenu imbriqué {#references-nested-content}
 
-Deux types de données fournissent des références au contenu en dehors d’un fragment spécifique :
+Deux types de données fournissent des références au contenu en dehors d’un fragment spécifique :
 
 * **Référence de contenu**
 Il s’agit d’une référence simple à tout autre contenu de n’importe quel type.
@@ -255,7 +255,7 @@ Après avoir sélectionné le modèle approprié, un fragment de contenu est ouv
 
 >[!NOTE]
 >
->Voir Ressources supplémentaires – Utilisation de fragments de contenu.
+>Consultez Ressources supplémentaires – Utilisation de fragments de contenu.
 
 ## Prise en main de quelques exemples {#getting-started-examples}
 

@@ -12,8 +12,8 @@ role: Admin
 exl-id: 448715f1-ccec-4fb8-92d7-b7458cf9e6d4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6081'
-ht-degree: 99%
+source-wordcount: '6067'
+ht-degree: 98%
 
 ---
 
@@ -154,7 +154,7 @@ Pour prendre en charge les déploiements automatisés et la configuration, le po
 
 Au démarrage, la propriété système **com.day.cq.po rtet.config** est lue pour détecter l’environnement actif. En règle générale, la valeur de cette propriété est du type **dev**, **prod**, **test** et ainsi de suite. Si aucun environnement n’est défini, aucune configuration n’est lue.
 
-Si un environnement est défini, le système cherche un fichier config dans le chemin d’accès aux classes sous **&#x200B; &#x200B;**&#x200B;com/day/cq/portlet/{env}.config&#x200B;**, où &#x200B;** env **&#x200B; est remplacé par la valeur actuelle pour l’environnement. Ce fichier doit répertorier tous les fichiers de configuration pour cet environnement. Ces fichiers sont recherchés par rapport à l’emplacement du fichier .config. Par exemple, si le fichier contient une ligne `my.service.xml,`, ce fichier est lu à partir du chemin d’accès aux classes sous `com/day/cq/portlet/my.service.config.`. Le nom du fichier est composé de l’identifiant de persistance du service, suivi de &#x200B;**.config&#x200B;**. Dans l’exemple précédent, l’ID de persistance est &#x200B;** my.service**. Le format du fichier de configuration est le format utilisé par le programme d’installation OSGi Apache Sling.
+Si un environnement est défini, un fichier config est recherché dans le chemin d’accès aux classes sous* ***com/day/cq/portlet/{env}.config** où **env** est remplacé par la valeur réelle pour l’environnement. Ce fichier doit répertorier tous les fichiers de configuration pour cet environnement. Ces fichiers sont recherchés par rapport à l’emplacement du fichier .config. Par exemple, si le fichier contient une ligne `my.service.xml,`, ce fichier est lu à partir du chemin d’accès aux classes sous `com/day/cq/portlet/my.service.config.`. Le nom du fichier est composé de l’identifiant de persistance du service, suivi de **.config**. Dans l’exemple précédent, l’ID de persistance est **my.service**. Le format du fichier de configuration est le format utilisé par le programme d’installation OSGi Apache Sling.
 
 Cela signifie qu’un fichier .config correspondant doit être ajouté pour chaque environnement. Une configuration qui doit être appliquée à tous les environnements doit être indiquée dans tous ces fichiers. Si un seul environnement est concerné, elle est simplement indiquée dans ce fichier. Ce mécanisme garantit un contrôle total sur la configuration lue dans un environnement spécifié.
 
@@ -215,7 +215,7 @@ Pour configurer un agent de réplication pour le portail :
    ![screen_shot_2012-02-15at42515pm](assets/screen_shot_2012-02-15at42515pm.png)
 
 1. Dans la boîte de dialogue **Méthode HTTP**, saisissez **GET**.
-1. Dans le champ **En-têtes HTTP**, cliquez sur **+** pour ajouter une nouvelle entrée, puis saisissez **Chemin d’accès : {path}**.
+1. Dans le champ **En-têtes HTTP**, cliquez sur **+** pour ajouter une nouvelle entrée et saisissez **Chemin d’accès :{path}**.
 1. Si nécessaire, cliquez sur l’onglet **Proxy** et saisissez les informations du serveur proxy dans l’agent.
 1. Pour enregistrer les modifications, cliquez sur **OK**.
 1. Pour tester la connexion, cliquez sur le lien **Tester la connexion**. Un message du journal s’affiche et indique si le test de réplication a réussi. Par exemple :
@@ -508,7 +508,7 @@ Dans le HTML, vous pouvez utiliser les espaces réservés suivants, qui sont rem
 | {id} | Identifiant CSS du bouton. |
 | {url} | URL de la cible du bouton. |
 | {text} | Libellé du bouton. |
-| {onclick} | Fonction JavaScript **onclick** (contient {url}). |
+| {onclick} | Fonction JavaScript **onclick** (contient des {url}). |
 
 Exemple de fichier button.html :
 

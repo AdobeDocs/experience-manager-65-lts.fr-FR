@@ -12,8 +12,8 @@ role: Developer
 exl-id: efa4b828-0807-40ac-81a0-1090cac9a257
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2969'
-ht-degree: 100%
+source-wordcount: '2967'
+ht-degree: 99%
 
 ---
 
@@ -324,7 +324,7 @@ Le format de la balise est le suivant :
 Votre magasin de sessions a besoin d’une méthode de « moteur de rendu » qui est appelée chaque fois que le rendu du composant doit être effectué. La fonction de rendu est appelée avec deux paramètres :
 
 * @param {String} store
-Magasin dont le rendu doit être effectué.
+Magasin à rendre.
 * @param {String} divId
 Identifiant du div dans lequel le rendu du magasin doit être effectué.
 

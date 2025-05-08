@@ -193,7 +193,7 @@ Utilisez des sous-titres non intégrés chaque fois que cela est possible, car l
 
 Pour les sous-titres non intégrés, créez et fournissez un fichier de sous-titrage synchronisé dans un format approprié ([SMIL](https://www.w3.org/AudioVideo/), par exemple) avec le fichier vidéo. Ce guide ne décrit pas la procédure à suivre pour ce faire, mais vous trouverez des liens vers des tutoriels dans [En savoir plus – Sous-titres (pré-enregistrés) (1.2.2)](#more-information-captions-prerecorded). Pensez à inclure une note avisant les utilisateurs que des sous-titres sont disponibles pour la vidéo, ou à activer la fonctionnalité de sous-titres.
 
-Si vous devez utiliser des sous-titres intégrés, incorporez le texte à la piste vidéo. Pour ce faire, utilisez des applications de montage vidéo qui permettent de superposer du texte sur la vidéo.
+Si vous devez utiliser des sous-titres intégrés, incorporez le texte dans la piste vidéo. Pour ce faire, utilisez des applications de montage vidéo qui permettent de superposer du texte sur la vidéo.
 
 #### En savoir plus – Sous-titres (pré-enregistrés) (1.2.2) {#more-information-captions-prerecorded}
 

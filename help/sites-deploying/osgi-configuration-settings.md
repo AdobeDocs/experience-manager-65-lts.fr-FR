@@ -147,7 +147,7 @@ La **Configuration de l’enregistreur de journaux Apache Sling (configuration 
 
 * Le **Niveau de journal**, le **Fichier journal** et le **Format de message** pour définir les détails du fichier journal et des messages.
 
-* L’**Enregistreur** pour définir la catégorie ; par exemple, uniquement le journal pour com.day.cq.
+*  L’**Enregistreur** pour définir la catégorie ; par exemple, uniquement le journal pour com.day.cq.
 
 * En utilisant la **Configurations d’usine**, un certain nombre de configurations supplémentaires peuvent être ajoutées pour répondre aux différents niveaux de journal et catégories nécessaires.
 * Ces configurations sont utiles lors du développement. Par exemple, pour consigner des messages TRACE pour un service spécifique dans un fichier journal spécifique.

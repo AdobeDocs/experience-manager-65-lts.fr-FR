@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 2d2b3fb7-80f7-4b55-84c5-c10a03d2a4e1
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2621'
-ht-degree: 100%
+source-wordcount: '2619'
+ht-degree: 99%
 
 ---
 
@@ -268,7 +268,7 @@ Pour ce faire, spécifiez les propriétés suivantes :
 * **[!UICONTROL Type de graphique]** : sélectionnez **[!UICONTROL Anneau]** dans la liste déroulante.
 * **[!UICONTROL Objets de modèle de données]** : sélectionnez les propriétés des objets de modèle de données pour créer des liaisons de données pour l’axe X (Type de dépense) et l’axe Y (Montant de la transaction).
 * **[!UICONTROL Rayon interne]** : définissez la valeur du rayon interne sur 150 pour indiquer le rayon (en pixels) du cercle intérieur dans le graphique.
-* **[!UICONTROL Info-bulle]** : utilisez le format par défaut ${x}(${y}) pour afficher l’info-bulle. L’info-bulle s’affiche comme suit : type de dépense (montant de la transaction). Exemple : « Debit for Bitcoin(10000) ».
+* **[!UICONTROL Info-bulle]** - Utilisez le format par défaut ${x}(${y}) pour afficher l’info-bulle. L’info-bulle s’affiche comme suit : type de dépense (montant de la transaction). Exemple : « Debit for Bitcoin(10000) ».
 
 ![Graphique en anneau dans le canal web d’une communication interactive](assets/sample_chart_web_new.png)
 

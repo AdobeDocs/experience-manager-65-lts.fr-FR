@@ -297,7 +297,7 @@ Les options relatives aux polices permettent de définir les polices à incorpor
 >
 >Lorsque vous combinez des fichiers PDF avec le même sous-ensemble de polices, PDF Generator tente de combiner les sous-ensembles de polices.
 
-**Intégrer toutes les polices :** intègre toutes les polices utilisées dans le fichier. L’incorporation des polices est nécessaire à la conformité avec la norme PDF/X.
+**Incorporer toutes les polices** : incorpore toutes les polices utilisées dans le fichier. L’incorporation des polices est nécessaire à la conformité avec la norme PDF/X.
 
 **Jeux partiels de polices incorporées lorsque le pourcentage de caractères utilisés est inférieur à :** si vous sélectionnez cette option, indiquez un pourcentage seuil pour intégrer uniquement un sous-ensemble de polices. Par exemple, si le seuil est de 35 et que moins de 35 % des caractères sont utilisés, PDF Generator incorpore uniquement ces caractères. Seules les polices avec des bits d’autorisation appropriés sont incorporées.
 

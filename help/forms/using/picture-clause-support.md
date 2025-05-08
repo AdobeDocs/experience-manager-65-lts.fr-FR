@@ -12,8 +12,8 @@ role: Admin, User, Developer
 exl-id: 21afdc66-0b27-4c73-9cb4-1efd5c0aefae
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 100%
+source-wordcount: '644'
+ht-degree: 98%
 
 ---
 
@@ -207,7 +207,7 @@ Expressions prises en charge pour la clause d’image numérique dans les **form
 
 Les formulaires HTML5 prennent en charge les expressions de clause de texte d’image suivantes :
 
-* text{text Picture clause symbols}
+* texte{text Picture clause symbols}
 
 | **Symbole** | **Interprétation** |
 |---|---|

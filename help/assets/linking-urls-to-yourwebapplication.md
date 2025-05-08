@@ -28,7 +28,7 @@ Pour placer ces chaînes URL dans vos pages et applications web, copiez-les depu
 >
 >Les chaînes URL ne sont disponibles que pour les rendus dynamiques de ressources. Elles ne sont actuellement pas disponibles pour les ressources statiques qui se trouvent dans DAM et non sur le serveur Dynamic Media. Le bouton URL ne s’affiche pas pour les rendus statiques.
 
-Consultez également la section [Intégration de la visionneuse de vidéos ou d’images dans une page web](embed-code.md).
+Consultez également la section [Incorporation de la visionneuse de vidéos ou d’images dans une page web](embed-code.md).
 
 Consultez également la section [Liaison d’URL YouTube à une application web](video.md).
 

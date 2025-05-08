@@ -1,6 +1,6 @@
 ---
 title: Hébergement de deux instances d’espace de travail AEM Forms sur un serveur
-description: Comment les administrateurs et administratrices LC peuvent-ils personnaliser HTML WS pour héberger deux instances sur un seul serveur accessible via différentes URL ?
+description: Comment les équipes d’administration LC peuvent-elles personnaliser HTML WS pour héberger deux instances sur un seul serveur accessible via différentes URL ?
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: d8853a0d-1597-473a-b5e6-057f62f84f74
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

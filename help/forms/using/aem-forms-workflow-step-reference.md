@@ -19,7 +19,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html) |
 | AEM 6.5 | Cet article |
 
 Vous utilisez des modèles de processus pour convertir une logique métier en processus répétitif automatisé. Un modèle permet de définir et d’exécuter une série d’étapes. Vous pouvez également définir des propriétés de modèle pour déterminer, par exemple, si le processus est transitoire ou s’il utilise plusieurs ressources. Vous pouvez [inclure diverses étapes d’un processus AEM dans un modèle pour appliquer la logique métier](/help/sites-developing/workflows-models.md#extending-aem).
@@ -159,8 +159,8 @@ L’étape Envoyer un courrier électronique utilise le service de messagerie Da
 * **Littéral** : utilisez cette option lorsque vous connaissez la valeur exacte à spécifier. Par exemple, [example@example.com](mailto:example@example.com).
 
 * **Métadonnées de workflow :** utilisez cette option lorsque la valeur à utiliser est enregistrée dans une propriété de métadonnées de workflow. Après avoir sélectionné l’option, saisissez le nom de la propriété de métadonnées dans la zone de texte vide sous l’option Métadonnées de workflow. Par exemple, emailAddress.
-* **URL de la ressource :** utilisez cette option pour inclure un lien web d’une communication interactive à l’e-mail. Après avoir sélectionné cette option, recherchez et sélectionnez la communication interactive à inclure. La ressource peut se trouver sur le serveur de création ou de publication.
-* **Image :** utilisez cette option pour inclure une image à l’e-mail. Après avoir sélectionné cette option, recherchez et sélectionnez l’image. L’option image est uniquement disponible pour les balises d’image (&lt;img src=&quot;&#42;&quot;/>) disponibles dans le modèle d’e-mail.
+* **URL de la ressource** : utilisez cette option pour incorporer un lien web d’une communication interactive dans l’e-mail. Après avoir sélectionné cette option, recherchez et sélectionnez la communication interactive à incorporer. La ressource peut se trouver sur le serveur de création ou de publication.
+* **Image :** utilisez cette option pour incorporer une image dans l’e-mail. Après avoir sélectionné cette option, recherchez et sélectionnez l’image. L’option image est uniquement disponible pour les balises d’image (&lt;img src=&quot;&#42;&quot;/>) disponibles dans le modèle d’e-mail.
 
 **Adresse e-mail du destinataire/expéditeur** : sélectionnez l’option **Littéral** pour spécifier manuellement une adresse e-mail ou sélectionnez l’option **Récupérer à partir des métadonnées de processus** pour récupérer l’adresse e-mail d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **Récupérez à partir des métadonnées de processus**. Sélectionnez l’option **Variable** pour récupérer l’adresse électronique à partir de la valeur stockée dans une variable de type de données Chaîne.
 

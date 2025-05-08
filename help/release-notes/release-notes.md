@@ -8,7 +8,7 @@ exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 0afd255ec5c9d3db37f2f059782b35052761b1cf
 workflow-type: tm+mt
 source-wordcount: '801'
-ht-degree: 41%
+ht-degree: 48%
 
 ---
 
@@ -81,7 +81,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 
 | Domaine | Fonctionnalité | Remplacement | Version (SP) |
 |---|---|---|---|
-| Sites | [Éditeur SPA](/help/sites-developing/spa-overview.md) | Les éditeurs recommandés pour la gestion du contenu découplé dans AEM sont les suivants : <br>- [Éditeur universel](/help/sites-developing/universal-editor/introduction.md) pour la modification visuelle.<br>- [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md) pour la modification basée sur les formulaires. | 6,5 LTS GA |
+| Sites | [Éditeur SPA](/help/sites-developing/spa-overview.md) | Les éditeurs recommandés pour la gestion du contenu découplé dans AEM sont les suivants : <br>- [Éditeur universel](/help/sites-developing/universal-editor/introduction.md) pour la modification visuelle.<br>- [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md) pour la modification basée sur les formulaires. | 6.5 LTS (disponibilité générale) |
 
 ### Fonctionnalités supprimées {#removed-features}
 
@@ -89,24 +89,24 @@ Cette section répertorie les fonctionnalités qui ont été supprimées d’AEM
 
 | Domaine | Fonctionnalité | Remplacement | Version (SP) |
 |--- |--- |--- |--- |
-| Commerce | AEM CIF Classic n’est pas pris en charge. | Vous devez migrer vers [AEM CIF](/help/commerce/cif/migration.md). | 6,5 LTS GA |
-| Solutions | Social/Communities n’est pas pris en charge. | Aucun remplacement disponible. | 6,5 LTS GA |
-| Screens | Screens n’est pas pris en charge. | Aucun remplacement disponible. | 6,5 LTS GA |
-| Ressources | `dam-pim` et `dam-rating` ne sont pas pris en charge, car les lots dépendent des réseaux sociaux. | Aucun remplacement disponible. | 6,5 LTS GA |
-| Ressources | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` a été supprimé. | Utilisez l’autre `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` d’api qui a été ajouté. | 6,5 LTS GA |
-| Portail | AEM Portal Director n’est pas pris en charge. | Aucun remplacement disponible. | 6,5 LTS GA |
-| Granite | Le lot `com.adobe.granite.socketio` est supprimé. | Aucun remplacement disponible. | 6,5 LTS GA |
-| Granite | `com.adobe.granite.crx-explorer` n’est pas pris en charge. | Aucun remplacement disponible. | 6,5 LTS GA |
-| Granite | `crx2oak` n’est pas pris en charge. | Sélectionnez la version appropriée de [oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6,5 LTS GA |
-| Adobe | `com.adobe.cq.cq-searchpromote-integration` n’est pas pris en charge. | Aucun remplacement disponible. | 6,5 LTS GA |
-| Goyave | Toutes les dépendances guava sont désormais supprimées dans AEM. Par conséquent, le lot `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` ne fait pas partie d’AEM. | Les clients peuvent ajouter de la goyave eux-mêmes s’ils en dépendent ou remplacer le code goyave par des collections java ou d’autres alternatives si possible. | 6,5 LTS GA |
-| We.Retail | L’exemple de site We-retail n’est pas pris en charge. | Aucun remplacement disponible. | 6,5 LTS GA |
-| Open Source | `oak-solr-osgi` lot n’est pas pris en charge. | Aucun remplacement disponible. | 6,5 LTS GA |
-| Open Source | `org.apache.servicemix.bundles.abdera-parser`, `org.apache.servicemix.bundles.jdom` et `org.apache.sling.atom.taglib` ne sont pas pris en charge. | Aucun remplacement disponible. | 6,5 LTS GA |
-| Open Source | Les packages `org.apache.commons.io` sont désormais exportés depuis `org.apache.commons.commons-io`. | Aucune modification n’est requise. | 6,5 LTS GA |
-| Open Source | `javax.mail` packages sont exportés à partir du lot `com.sun.javax.mail`. | Aucune modification n’est requise. | 6,5 LTS GA |
-| Open Source | Les packages `org.apache.jackrabbit.api` sont désormais exportés à partir du lot `org.apache.jackrabbit.oak-jackrabbit-api` . | Aucune modification n’est requise. | 6,5 LTS GA |
-| Open Source | `com.github.jknack.handlebars` n’est pas pris en charge | Choisir la [version](https://mvnrepository.com/artifact/com.github.jknack/handlebars) appropriée | 6,5 LTS GA |
+| Commerce | AEM CIF Classic n’est pas pris en charge. | Vous devez migrer vers [AEM CIF](/help/commerce/cif/migration.md). | 6.5 LTS (disponibilité générale) |
+| Solutions | Social/Communities n’est pas pris en charge. | Aucun remplacement disponible. | 6.5 LTS (disponibilité générale) |
+| Screens | Screens n’est pas pris en charge. | Aucun remplacement disponible. | 6.5 LTS (disponibilité générale) |
+| Ressources | `dam-pim` et `dam-rating` ne sont pas pris en charge, car les lots dépendent des réseaux sociaux. | Aucun remplacement disponible. | 6.5 LTS (disponibilité générale) |
+| Ressources | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` a été supprimé. | Utilisez l’autre `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` d’api qui a été ajouté. | 6.5 LTS (disponibilité générale) |
+| Portail | AEM Portal Director n’est pas pris en charge. | Aucun remplacement disponible. | 6.5 LTS (disponibilité générale) |
+| Granite | Le lot `com.adobe.granite.socketio` est supprimé. | Aucun remplacement disponible. | 6.5 LTS (disponibilité générale) |
+| Granite | `com.adobe.granite.crx-explorer` n’est pas pris en charge. | Aucun remplacement disponible. | 6.5 LTS (disponibilité générale) |
+| Granite | `crx2oak` n’est pas pris en charge. | Sélectionnez la version appropriée de [oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6.5 LTS (disponibilité générale) |
+| Adobe | `com.adobe.cq.cq-searchpromote-integration` n’est pas pris en charge. | Aucun remplacement disponible. | 6.5 LTS (disponibilité générale) |
+| Goyave | Toutes les dépendances guava sont désormais supprimées dans AEM. Par conséquent, le lot `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` ne fait pas partie d’AEM. | Les clients peuvent ajouter de la goyave eux-mêmes s’ils en dépendent ou remplacer le code goyave par des collections java ou d’autres alternatives si possible. | 6.5 LTS (disponibilité générale) |
+| We.Retail | L’exemple de site We-retail n’est pas pris en charge. | Aucun remplacement disponible. | 6.5 LTS (disponibilité générale) |
+| Open Source | `oak-solr-osgi` lot n’est pas pris en charge. | Aucun remplacement disponible. | 6.5 LTS (disponibilité générale) |
+| Open Source | `org.apache.servicemix.bundles.abdera-parser`, `org.apache.servicemix.bundles.jdom` et `org.apache.sling.atom.taglib` ne sont pas pris en charge. | Aucun remplacement disponible. | 6.5 LTS (disponibilité générale) |
+| Open Source | Les packages `org.apache.commons.io` sont désormais exportés depuis `org.apache.commons.commons-io`. | Aucune modification n’est requise. | 6.5 LTS (disponibilité générale) |
+| Open Source | `javax.mail` packages sont exportés à partir du lot `com.sun.javax.mail`. | Aucune modification n’est requise. | 6.5 LTS (disponibilité générale) |
+| Open Source | Les packages `org.apache.jackrabbit.api` sont désormais exportés à partir du lot `org.apache.jackrabbit.oak-jackrabbit-api` . | Aucune modification n’est requise. | 6.5 LTS (disponibilité générale) |
+| Open Source | `com.github.jknack.handlebars` n’est pas pris en charge | Choisir la [version](https://mvnrepository.com/artifact/com.github.jknack/handlebars) appropriée | 6.5 LTS (disponibilité générale) |
 
 ## Sites web restreints{#restricted-sites}
 

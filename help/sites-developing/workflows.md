@@ -70,7 +70,7 @@ Chaque étape exécute une tâche discrète. Il existe différents types d’ét
 * Processus (script, appel de méthode Java™) : ces étapes sont exécutées automatiquement par le système. Un script ECMA ou une classe Java™ implémente l’étape. Les services peuvent être développés pour écouter les événements de workflow spéciaux et exécuter des tâches en fonction de la logique commerciale.
 * Conteneur (sous-workflow) : ce type d’étape lance un autre modèle de workflow.
 * Division/jointure OU : utilisez la logique pour décider quelle étape exécuter ensuite dans le workflow.
-* Division/jointure ET : permet l’exécution simultanée de plusieurs étapes.
+* Jointure/division ET : permet l’exécution simultanée de plusieurs étapes.
 
 Toutes les étapes partagent les propriétés suivantes : alertes `Autoadvance` et `Timeout` (scriptable).
 

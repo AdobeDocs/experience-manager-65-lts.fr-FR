@@ -167,7 +167,7 @@ See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/
 **Suivi des visionneuses Dynamic Media à l’aide du code intégré :**
 
 1. Préparez une page web sur laquelle vous voulez incorporer une visionneuse Dynamic Media.
-1. Obtenez le code incorporé pour la bibliothèque Experience Platform Tags en vous connectant d’abord à Experience Platform Tags (consultez [Configurer Experience Platform Tags](#configuring-adobe-launch-for-the-integration)).
+1. Obtenez le code intégré pour la bibliothèque Experience Platform Tags en vous connectant d’abord à Experience Platform Tags (consultez [Configurer Experience Platform Tags](#configuring-adobe-launch-for-the-integration)).
 1. Sélectionnez **[!UICONTROL Propriété]**, puis l’onglet **[!UICONTROL Environnements]**.
 1. Sélectionnez le niveau Environnement correspondant à l’environnement de la page web. Ensuite, dans la colonne **[!UICONTROL Installer]**, sélectionnez l’icône en forme de boîte.
 1. Dans la boîte de dialogue **[!UICONTROL Instructions d’installation web]**, copiez le code intégré complet de la bibliothèque Experience Platform Tags, ainsi que les balises `<script/>` qui l’entourent.

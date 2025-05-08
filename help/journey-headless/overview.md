@@ -8,7 +8,7 @@ exl-id: 77f797c8-d8ed-42ea-ad5f-988d976e0ce5
 source-git-commit: 7e1d05c2c6bda15632d49aaecfd931238ae25e79
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -49,6 +49,6 @@ Un parcours de documentation est disponible pour chaque sujet suivant lié au d�
 | [Parcours de développement découplé](/help/journey-headless/developer/overview.md) | Découvrez les technologies découplées, ce qu’elles apportent à l’expérience utilisateur, comment AEM prend en charge les modèles découplés et comment mettre en œuvre votre propre projet de développement découplé, de A à Z. | Développeurs |
 | [Parcours de traduction découplée](/help/journey-headless/translation/overview.md) | Découvrez les technologies découplées, leur utilisation pour votre projet et comment créer et mettre à jour des projets de traduction dans AEM, de A à Z. | Spécialistes de la traduction |
 | [Parcours d’architecture découplée](/help/journey-headless/architect/overview.md) | Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement découplé. | Architectes |
-| [Parcours de création découplée](/help/journey-headless/author/overview.md) | Faites vos premiers pas avec cette introduction sur les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager as a Cloud Service, et découvrez comment créer du contenu pour votre projet. | Créateurs et auteurs de contenu |
+| [Parcours de création découplée](/help/journey-headless/author/overview.md) | Faites vos premiers pas avec cette introduction sur les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager as a Cloud Service et découvrez comment créer du contenu pour votre projet. | Créateurs et auteurs de contenu |
 
 Tenez-vous informés des [prochains parcours couvrant les spécificités des rôles supplémentaires.](/help/journey-documentation/home.md#journeys)

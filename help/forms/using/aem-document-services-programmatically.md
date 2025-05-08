@@ -3175,7 +3175,7 @@ public class ClearSignatureField {
 
 ### Obtention d’un champ de signature avec certification {#getting-certifying-signature-field}
 
-Vous pouvez récupérer les noms de tous les champs de signature d’un document PDF que vous souhaitez signer ou certifier. Si vous n’avez pas la certitude de connaître de connaître les noms de champ de signature d’un document PDF ou si vous souhaitez vérifier leurs noms, vous pouvez programmer leur récupération. Le service Signature renvoie le nom qualifié complet du champ de signature, tel que `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+Vous pouvez récupérer les noms de tous les champs de signature d’un document PDF que vous souhaitez signer ou certifier. Si vous n’avez pas la certitude de connaître les noms de champ de signature d’un document PDF ou si vous souhaitez vérifier leurs noms, vous pouvez programmer leur récupération. Le service Signature renvoie le nom qualifié complet du champ de signature, tel que `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Syntaxe** : `getCertifyingSignatureField(Document inDoc, UnlockOptions unlockOptions)`
 
@@ -3294,7 +3294,7 @@ public class GetCertifyingSignatureField {
 
 ### Obtention du type de chiffrement PDF {#getting-pdf-encryption-type}
 
-Vous pouvez récupérer les noms de tous les champs de signature d’un document PDF que vous souhaitez signer ou certifier. Si vous n’avez pas la certitude de connaître de connaître les noms de champ de signature d’un document PDF ou si vous souhaitez vérifier leurs noms, vous pouvez programmer leur récupération. Le service Signature renvoie le nom qualifié complet du champ de signature, tel que `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+Vous pouvez récupérer les noms de tous les champs de signature d’un document PDF que vous souhaitez signer ou certifier. Si vous n’avez pas la certitude de connaître les noms de champ de signature d’un document PDF ou si vous souhaitez vérifier leurs noms, vous pouvez programmer leur récupération. Le service Signature renvoie le nom qualifié complet du champ de signature, tel que `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Syntaxe** : `void getPDFEncryption(Document inDoc)`
 

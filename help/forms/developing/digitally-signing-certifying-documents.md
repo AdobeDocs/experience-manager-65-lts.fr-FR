@@ -215,9 +215,9 @@ Pour ajouter un champ de signature à l’aide de l’API Signature (service web
 
 [Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Récupérer des noms des champs de signature {#retrieving-signature-field-names}
+## Récupérer des noms de champ de signature {#retrieving-signature-field-names}
 
-Vous pouvez récupérer les noms de tous les champs de signature d’un document PDF que vous souhaitez signer ou certifier. Si vous n’avez pas la certitude de connaître de connaître les noms de champ de signature d’un document PDF ou si vous souhaitez vérifier leurs noms, vous pouvez programmer leur récupération. Le service Signature renvoie le nom qualifié complet du champ de signature, tel que `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+Vous pouvez récupérer les noms de tous les champs de signature d’un document PDF que vous souhaitez signer ou certifier. Si vous n’avez pas la certitude de connaître les noms de champ de signature d’un document PDF ou si vous souhaitez vérifier leurs noms, vous pouvez programmer leur récupération. Le service Signature renvoie le nom qualifié complet du champ de signature, tel que `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 >[!NOTE]
 >
@@ -288,16 +288,16 @@ Récupérez les noms des champs de signature à l’aide de l’API Signature (J
    * Créez un objet `java.io.FileInputStream` qui représente le document PDF contenant les champs de signature en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du document PDF.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
 
-1. Récupérer des noms de champs de signature
+1. Récupérer des noms des champs de signature
 
    * Récupérez les noms des champs de signature en appelant la méthode `getSignatureFieldList` de l’objet `SignatureServiceClient` et en transmettant l’objet `com.adobe.idp.Document` qui contient le document PDF avec les champs de signature. Cette méthode renvoie un objet `java.util.List`, dont chaque élément contient un objet `PDFSignatureField`. Grâce à cet objet, vous pouvez obtenir des informations supplémentaires sur un champ de signature, par exemple s’il est visible.
    * Effectuez une itération dans l’objet `java.util.List` pour déterminer s’il existe des noms de champ de signature. Pour chaque champ de signature du document PDF, vous pouvez obtenir un objet `PDFSignatureField`. Pour obtenir le nom du champ de signature, appelez la méthode `getName` de l’objet `PDFSignatureField`. Cette méthode renvoie une valeur de chaîne indiquant le nom du champ de signature.
 
 **Voir également**
 
-[Récupérer des noms des champs de signature](digitally-signing-certifying-documents.md#retrieving-signature-field-names)
+[Récupérer des noms de champ de signature](digitally-signing-certifying-documents.md#retrieving-signature-field-names)
 
-[Didacticiel de mise en route (mode SOAP) : récupération des noms de champ de signature à l’aide de l’API Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
+[Tutoriel de mise en route (mode SOAP) : récupération des noms de champ de signature à l’aide de l’API Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -336,14 +336,14 @@ Récupérez les noms des champs de signature à l’aide de l’API de signature
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en affectant le contenu du tableau d’octets à son champ `MTOM`.
 
-1. Récupérer des noms de champs de signature
+1. Récupérer des noms des champs de signature
 
    * Récupérez les noms des champs de signature en appelant la méthode `getSignatureFieldList` de l’objet `SignatureServiceClient` et en transmettant l’objet `BLOB` qui contient le document PDF avec les champs de signature. Cette méthode renvoie un objet de collection `MyArrayOfPDFSignatureField` dans lequel chaque élément contient un objet `PDFSignatureField`.
    * Effectuez une itération sur l’objet `MyArrayOfPDFSignatureField` pour déterminer s’il existe des noms de champ de signature. Pour chaque champ de signature du document PDF, vous pouvez obtenir un objet `PDFSignatureField`. Pour obtenir le nom du champ de signature, appelez la méthode `getName` de l’objet `PDFSignatureField`. Cette méthode renvoie une valeur de chaîne indiquant le nom du champ de signature.
 
 **Voir également**
 
-[Récupérer des noms des champs de signature](digitally-signing-certifying-documents.md#retrieving-signature-field-names)
+[Récupérer des noms de champ de signature](digitally-signing-certifying-documents.md#retrieving-signature-field-names)
 
 [Appeler AEM Forms en utilisant MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
@@ -699,7 +699,7 @@ Une fois que le service Signature a signé numériquement le document PDF, vous
 
 [Ajouter des champs de signature](digitally-signing-certifying-documents.md#adding-signature-fields)
 
-[Récupérer des noms des champs de signature](digitally-signing-certifying-documents.md#retrieving-signature-field-names)
+[Récupérer des noms de champ de signature](digitally-signing-certifying-documents.md#retrieving-signature-field-names)
 
 ### Signer numériquement des documents PDF à l’aide de l’API Java {#digitally-sign-pdf-documents-using-the-java-api}
 

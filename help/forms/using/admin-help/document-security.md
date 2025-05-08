@@ -176,7 +176,7 @@ Les étapes du diagramme sont les suivantes :
 
 1. Le ou la propriétaire du document sécurise le document à partir d’une application cliente prise en charge avec une politique qui autorise l’utilisation en ligne.
 1. Document Security crée une licence de document ainsi que des clés de document, et chiffre la politique. La licence de document, la politique chiffrée et la clé du document sont renvoyées à l’application cliente.
-1. Le document est chiffré avec la clé du document et cette dernière est abandonnée. Le document intègre alors la licence et la politique. Ces tâches sont effectuées dans l’application cliente prise en charge.
+1. Le document est chiffré avec la clé du document et cette dernière est abandonnée. Le document incorpore alors la licence et la politique. Ces tâches sont effectuées dans l’application cliente prise en charge.
 
 Lorsque vous appliquez une politique à un document, les informations contenues dans le document, dont les fichiers (texte, audio ou vidéo) enregistrés dans le document PDF, sont protégées par les paramètres de confidentialité spécifiés dans la politique. Document Security génère une licence et des informations de chiffrement qui sont ensuite intégrées dans le document. Lorsque vous distribuez le document, Document Security peut authentifier les destinataires et destinatrices qui tentent d’ouvrir le document et autoriser l’accès en fonction des privilèges spécifiés dans la politique.
 

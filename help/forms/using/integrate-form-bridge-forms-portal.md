@@ -22,7 +22,7 @@ FormBridge est une API Forms Bridge d&#39;HTML5 qui vous permet d’interagir av
 
 Vous pouvez utiliser l’API FormBridge pour obtenir ou définir des valeurs de champs de formulaire à partir de la page HTML et envoyer le formulaire. Par exemple, vous pouvez utiliser l’API pour créer une expérience semblable à un assistant.
 
-Une application HTML existante peut utiliser l’API FormBridge pour interagir avec un formulaire et l’intégrer à la page HTML. Vous pouvez utiliser les étapes suivantes pour définir la valeur d’un champ à l’aide de l’API Form Bridge.
+Une application HTML existante peut utiliser l’API FormBridge pour interagir avec un formulaire et l’incorporer dans la page HTML. Vous pouvez utiliser les étapes suivantes pour définir la valeur d’un champ à l’aide de l’API Form Bridge.
 
 ## Intégration de formulaires HTML5 à une page web {#integrating-html-forms-to-a-web-page}
 
@@ -80,10 +80,10 @@ Une application HTML existante peut utiliser l’API FormBridge pour interagir a
    >La balise &lt;div id=&quot;rightdiv&quot;> à la **ligne 18** contient le snippet HTML du formulaire XFA.
    >
    >
-   >La page comprend deux conteneurs : **gauche** et **droit**. Le conteneur de droite contient le formulaire. Le conteneur de gauche possède deux champs de saisie et une partie de la page HTML externe.
+   La page comprend deux conteneurs : **gauche** et **droit**. Le conteneur de droite contient le formulaire. Le conteneur de gauche possède deux champs de saisie et une partie de la page HTML externe.
    >
    >
-   >La capture d’écran suivante montre comment le formulaire s’affiche dans un navigateur.
+   La capture d’écran suivante montre comment le formulaire s’affiche dans un navigateur.
 
    ![Portail](assets/portal.jpg)
 

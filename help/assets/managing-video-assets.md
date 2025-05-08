@@ -75,7 +75,7 @@ Pour configurer une limite de taille de fichier supérieure, procédez comme sui
 
 ## Publication de ressources vidéo {#publish-video-assets}
 
-Après la publication, vous pouvez inclure les ressources vidéo dans une page web sous la forme d’une URL ou les intégrer directement. Pour plus d’informations, voir [Publication de ressources Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md).
+Après la publication, vous pouvez inclure les ressources vidéo dans une page web sous la forme d’une URL ou les incorporer directement. Pour plus d’informations, voir [Publication de ressources Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md).
 
 ## Publication de vidéos sur YouTube {#publishing-videos-to-youtube}
 

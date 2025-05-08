@@ -5,26 +5,26 @@ sub-product: Adobe Experience Manager 6.5 LTS
 solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation LTS de Adobe Experience Manager 6.5 pour en savoir plus sur son fonctionnement et sur ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
-user-guide-title: AEM 6.5 LTS
+user-guide-title: AEM 6.5 LTS
 role: user
 hide: true
 source-git-commit: 96d94c843d1912abd91577b3373e38bd9fd9ed6c
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
 
 # Documentation sur l’interface utilisateur Adobe Experience Manager Classic {#classic-ui}
 
-+ Présentation de la création dans l’interface utilisateur classique {#introduction}
++ Présentation de la création dans l’interface d’utilisation classique {#introduction}
    + [Premières étapes pour les auteurs](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)
    + [Création dans l’IU classique](/help/sites-classic-ui-authoring/classicui.md)
    + [Utilisation de l’environnement de création](/help/sites-classic-ui-authoring/author-env.md)
    + [Manipulation de base](/help/sites-classic-ui-authoring/author-env-basic-handling.md)
    + [Configuration de l’environnement du compte](/help/sites-classic-ui-authoring/author-env-user-props.md)
-   + [Choix de l’interface utilisateur](/help/sites-classic-ui-authoring/author-env-select-ui.md)
+   + [Choix de votre interface d’utilisation](/help/sites-classic-ui-authoring/author-env-select-ui.md)
    + [Rechercher](/help/sites-classic-ui-authoring/author-env-search.md)
    + [Votre boîte de réception](/help/sites-classic-ui-authoring/author-env-inbox.md)
    + [Raccourcis clavier pour les consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)
@@ -71,13 +71,13 @@ ht-degree: 88%
    + [Utilisation de Marketing Campaign Manager](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
    + [Création d’une page de destination efficace pour une newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
    + [Gestion des abonnements](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
-+ Adobe Campaign {#campaign}
++ Adobe Campaign {#campaign}
    + [Utilisation d’Adobe Campaign 6.1 et d’Adobe Campaign Standard](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md)
    + [Utilisation d’Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac.md)
    + [Composants d’Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
    + [Ciblage d’un élément Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
    + [Création de formulaires Adobe Campaign dans AEM](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)
-+ Création de ressources dans l’interface utilisateur classique {#assets}
++ Création de ressources dans l’interface d’utilisation classique {#assets}
    + [Utilisation des ressources](/help/sites-classic-ui-authoring/classicui-assets.md)
    + [Diffusion de ressources Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
    + [Ajout de ressources Dynamic Media aux pages](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)

@@ -180,7 +180,7 @@ Démarrez à présent l’instance AEM à l’aide de la nouvelle commande déte
 
 >[!NOTE]
 >
->[&#128279;](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) La prise en charge de certains arguments Java 8/11 a été supprimée dans Java 17, consultez les documents Oracle Java™ 17 et les [considérations relatives aux arguments Java&amp;trade pour AEM 6.5 LTS](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
+>](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) La prise en charge de certains arguments Java 8/11 a été supprimée dans Java 17, consultez les [documents Oracle Java™ 17 et les [considérations relatives aux arguments Java&amp;trade pour AEM 6.5 LTS](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
 
 Pour exécuter la mise à niveau, il est important de démarrer AEM à l’aide du fichier jar pour afficher l’instance.
 
