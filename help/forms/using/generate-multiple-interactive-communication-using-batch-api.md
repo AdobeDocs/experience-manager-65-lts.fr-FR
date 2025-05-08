@@ -87,7 +87,7 @@ Pour créer une communication interactive à partir d’enregistrements sauvegar
    1. Spécifiez le **[!UICONTROL Nom]** et le **[!UICONTROL Chemin dʼaccès]** physique du dossier. Par exemple, `c:\batchprocessing`.
    1. Sélectionnez lʼoption **[!UICONTROL Service]** dans le champ **[!UICONTROL Traiter le fichier avec]**.
    1. Sélectionnez le service **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** dans le champ **[!UICONTROL Nom du service]**.
-   1. Spécifiez un **[!UICONTROL Modèle de fichier de sortie]**. Par exemple, le [modèle](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) %F/ indique que le dossier de contrôle peut trouver des fichiers d’entrée dans un sous-dossier du dossier de contrôle\entrée.
+   1. Spécifiez un **[!UICONTROL Modèle de fichier de sortie]**. Par exemple, le [modèle](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=fr#about-file-patterns) %F/ indique que le dossier de contrôle peut trouver des fichiers d’entrée dans un sous-dossier du dossier de contrôle\entrée.
 1. Configurer les paramètres avancés
    1. Ouvrez l’onglet **[!UICONTROL Avancé]** et ajoutez les propriétés personnalisées suivantes :
 
@@ -147,7 +147,7 @@ Vous combinez des données (enregistrements) enregistrées dans une source de do
    1. Spécifiez le **[!UICONTROL Nom]** et le **[!UICONTROL Chemin dʼaccès]** physique du dossier. Par exemple, `c:\batchprocessing`.
    1. Sélectionnez lʼoption **[!UICONTROL Service]** dans le champ **[!UICONTROL Traiter le fichier avec]**.
    1. Sélectionnez le service **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** dans le champ **[!UICONTROL Nom du service]**.
-   1. Spécifiez un **[!UICONTROL Modèle de fichier de sortie]**. Par exemple, le [modèle](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) %F/ indique que le dossier de contrôle peut trouver des fichiers d’entrée dans un sous-dossier du dossier de contrôle\entrée.
+   1. Spécifiez un **[!UICONTROL Modèle de fichier de sortie]**. Par exemple, le [modèle](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=fr#about-file-patterns) %F/ indique que le dossier de contrôle peut trouver des fichiers d’entrée dans un sous-dossier du dossier de contrôle\entrée.
 1. Configurer les paramètres avancés
    1. Ouvrez l’onglet **[!UICONTROL Avancé]** et ajoutez les propriétés personnalisées suivantes :
 
@@ -363,4 +363,4 @@ Outre l’enregistrement des données sur le système de fichiers, vous pouvez s
 
 >[!NOTE]
 >
->Seul le protocole CRX est activé par défaut. Pour activer d’autres protocoles pris en charge, consultez [Configurer le service de préremplissage à l’aide de Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).
+>Seul le protocole CRX est activé par défaut. Pour activer d’autres protocoles pris en charge, consultez [Configurer le service de préremplissage à l’aide de Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=fr).

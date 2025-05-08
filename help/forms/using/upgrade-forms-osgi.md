@@ -93,4 +93,4 @@ Après la mise à niveau vers le pack de services AEM Forms 6.5.22.0, procédez 
 
    >[!NOTE]
    >
-   >Dans AEM 6.4 Forms, la structure du référentiel crx a changé. Après la mise à niveau d’AEM 6.3 Forms vers AEM 6.5 Forms, utilisez les chemins d’accès modifiés pour la personnalisation que vous créez à nouveau. Pour la liste complète des chemins modifiés, voir [Restructuration du référentiel des formulaires dans AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
+   >Dans AEM 6.4 Forms, la structure du référentiel crx a changé. Après la mise à niveau d’AEM 6.3 Forms vers AEM 6.5 Forms, utilisez les chemins d’accès modifiés pour la personnalisation que vous créez à nouveau. Pour la liste complète des chemins modifiés, voir [Restructuration du référentiel des formulaires dans AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).

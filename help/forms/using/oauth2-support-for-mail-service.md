@@ -153,7 +153,7 @@ Maintenant, configurez le service de messagerie sur le dernier serveur JEE en vo
 
    >[!NOTE]
    >
-   > Pour en savoir plus sur les notifications de tâche, [cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   > Pour en savoir plus sur les notifications de tâche, [cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=fr#create-an-email-endpoint-for-the-complete-task-service).
 
 ## Pour configurer le point d’entrée de l’e-mail, {#configure_email_endpoint}
 
@@ -167,7 +167,7 @@ Maintenant, configurez le service de messagerie sur le dernier serveur JEE en vo
 
    >[!NOTE]
    >
-   > Pour plus d’informations sur la configuration des points d’entrée d’e-mail, cliquez sur [Configuration d’un point d’entrée d’e-mail](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html).
+   > Pour plus d’informations sur la configuration des points d’entrée d’e-mail, cliquez sur [Configuration d’un point d’entrée d’e-mail](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=fr).
 
 ## Résolution des problèmes {#troubleshooting}
 

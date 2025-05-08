@@ -102,7 +102,7 @@ Le format du rapport est le suivant :
 
 >[!NOTE]
 >
->Pour en savoir plus sur chaque catégorie de résultat, consultez [Catégories du détecteur de motifs](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso).
+>Pour en savoir plus sur chaque catégorie de résultat, consultez [Catégories du détecteur de motifs](https://experienceleague.adobe.com/fr/docs/experience-manager-pattern-detection/table-of-contents/aso).
 
 Pour comprendre les niveaux d’importance, suivez le tableau ci-dessous :
 
