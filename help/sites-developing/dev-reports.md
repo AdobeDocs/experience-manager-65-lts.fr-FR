@@ -753,7 +753,7 @@ Lorsqu’il est trouvé, le motif spécifié (qui est défini sous la forme d’
 
 * [formateurs de type de données](#preprocessing-data-type-formatters)
 
-  Convertissent une valeur numérique en chaîne relative ; par exemple, la valeur `` représentant un décalage horaire de 1 heure sera résolue dans une chaîne telle que `1:24PM (1 hour ago)`.
+  Convertissent une valeur numérique en chaîne relative ; par exemple, la valeur &grave;&grave; représentant un décalage horaire de 1 heure sera résolue dans une chaîne telle que `1:24PM (1 hour ago)`.
 
 Par exemple :
 

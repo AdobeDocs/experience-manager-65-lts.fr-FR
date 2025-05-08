@@ -293,6 +293,7 @@ Consultez également la section [Ajout de zones cliquables](/help/assets/image-m
    * Sélectionnez **[!UICONTROL Lien hypertexte]**.
 
       * Si vous êtes client Experience Manager Sites, sélectionnez l’icône Sélecteur de site (dossier) pour accéder à une URL.
+
         >[!NOTE]
         >
         >La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.

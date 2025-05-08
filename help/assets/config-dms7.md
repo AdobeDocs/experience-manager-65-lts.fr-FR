@@ -115,6 +115,7 @@ Consultez [Installer le Pack de fonctionnalités 18912 pour la migration de res
 1. Une fois la connexion établie, définissez les options suivantes. Les en-têtes avec un astérisque (*) sont obligatoires :
 
    * **[!UICONTROL Entreprise]** : nom du compte Dynamic Media.
+
      >[!IMPORTANT]
      >
      >Une seule configuration Dynamic Media dans Services cloud est prise en charge sur une instance d’Experience Manager, n’ajoutez pas plusieurs configurations. Plusieurs configurations Dynamic Media sur une instance d’Experience Manager ne sont _pas_ prises en charge ni recommandées par Adobe.
@@ -262,7 +263,7 @@ Si vous avez l’intention d’utiliser cette fonction, tenez compte des conditi
 
 **Pour configurer Dynamic Media en mode Scene7 pour le chargement de ressources de plus de 2 Go :**
 
-1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils**[!UICONTROL  > ]**Général**[!UICONTROL  > ]**CRXDE Lite]**.
+1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils**&#x200B;[!UICONTROL &#x200B; > &#x200B;]&#x200B;**Général**&#x200B;[!UICONTROL &#x200B; > &#x200B;]&#x200B;**CRXDE Lite]**.
 
 1. Dans la fenêtre du CRXDE Lite, effectuez l’une des opérations suivantes :
 
@@ -372,7 +373,7 @@ Consultez [Chargement de ressources](/help/assets/manage-assets.md#uploading-ass
 
 **Pour modifier des types MIME pour les formats pris en charge :**
 
-1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils**[!UICONTROL  > ]**Général**[!UICONTROL  > ]**CRXDE Lite]**.
+1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils**&#x200B;[!UICONTROL &#x200B; > &#x200B;]&#x200B;**Général**&#x200B;[!UICONTROL &#x200B; > &#x200B;]&#x200B;**CRXDE Lite]**.
 1. Dans le rail de gauche, accédez à ce qui suit :
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -503,7 +504,7 @@ Vous pouvez utiliser la méthode de champ de formulaire pour définir un paramè
 
    Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne possédez pas ces informations, contactez le service clientèle d’Adobe.
 
-1. Dans la barre de navigation située en haut de la page, accédez à **[!UICONTROL Configuration**[!UICONTROL  > ]**Configuration de l’application]** > **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]** > **[!UICONTROL Paramètre prédéfini d’ensemble par lot]**.
+1. Dans la barre de navigation située en haut de la page, accédez à **[!UICONTROL Configuration**&#x200B;[!UICONTROL > &#x200B;]&#x200B;**Configuration de l’application]** > **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]** > **[!UICONTROL Paramètre prédéfini d’ensemble par lot]**.
 
    L’option **[!UICONTROL Afficher le formulaire]**, indiquée dans le coin supérieur droit de la page Détails, correspond à la vue par défaut.
 
@@ -559,7 +560,7 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 
    Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne possédez pas ces informations, contactez le service clientèle d’Adobe.
 
-1. Dans la barre de navigation située en haut de la page, accédez à **[!UICONTROL Configuration**[!UICONTROL  > ]**Configuration de l’application]** > **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]** > **[!UICONTROL Paramètre prédéfini d’ensemble par lot]**.
+1. Dans la barre de navigation située en haut de la page, accédez à **[!UICONTROL Configuration**&#x200B;[!UICONTROL > &#x200B;]&#x200B;**Configuration de l’application]** > **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]** > **[!UICONTROL Paramètre prédéfini d’ensemble par lot]**.
 
    L’option **[!UICONTROL Afficher le formulaire]**, indiquée dans le coin supérieur droit de la page Détails, correspond à la vue par défaut.
 

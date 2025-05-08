@@ -111,7 +111,7 @@ Nous utilisons les définitions de teaser suivantes :
 
 Ensuite, si nous appliquons ceci à un visiteur ou à une visiteuse où :
 
-* **S1**, **S2 et **S6** sont résolus avec succès ;
+* **S1**, **S2 et &#x200B;** S6** sont résolus avec succès ;
 
 * la balise **marketing** a trois accès ;
 * la balise **entreprise** a six accès.
