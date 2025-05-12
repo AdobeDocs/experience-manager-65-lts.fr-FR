@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ebc34847-dc3d-41ed-b0d6-f004c3debcd9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '198'
 ht-degree: 34%
 
 ---
@@ -51,6 +51,6 @@ Pour une référence conviviale aux instances d’AEM incluses dans ces procédu
 
 ### Mises à jour {#updates}
 
-La couche Foundation prend désormais en charge Java 17, en incorporant les derniers lots open source d’Apache Sling, Felix et Jackrabbit Oak. En outre, le packaging de l’uber-jar AEM 6.5 LTS a changé. En outre, quelques fonctionnalités héritées ont été supprimées d’AEM 6.5 LTS. Pour plus d’informations, consultez les sections [Notes de mise à jour](/help/release-notes/release-notes.md#whats-new-what-s-new) et [Liste des lots obsolètes désinstallés après la mise à niveau](/help/sites-deploying/obsolete-bundles.md)
+La couche Foundation prend désormais en charge Java 17 et Java 21, en incorporant les derniers lots open source d’Apache Sling, Felix et Jackrabbit Oak. En outre, le packaging de l’uber-jar AEM 6.5 LTS a changé. En outre, quelques fonctionnalités héritées ont été supprimées d’AEM 6.5 LTS. Pour plus d’informations, consultez les sections [Notes de mise à jour](/help/release-notes/release-notes.md#whats-new-what-s-new) et [Liste des lots obsolètes désinstallés après la mise à niveau](/help/sites-deploying/obsolete-bundles.md)
 
 Le LTS AEM 6.5 met l’accent sur la rétrocompatibilité des fonctionnalités et est fourni avec un outil d’analyse. Consultez [Évaluation de la complexité de la mise à niveau à l’aide d’AEM Analyzer](/help/sites-deploying/aem-analyzer.md) pour évaluer la complexité lorsque vous commencez à [planifier la mise à niveau](/help/sites-deploying/upgrade-planning.md).

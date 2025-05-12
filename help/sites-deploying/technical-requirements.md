@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 3e7947935e9632ff6f5a68c2104896e01f52a3ed
+source-git-commit: 296810c9fda3a0aa093154562884bd5c0c482d44
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '2980'
 ht-degree: 94%
 
 ---
@@ -91,10 +91,12 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 | **Plateforme** | **Niveau de prise en charge** | **Lien** |
 |---|---|---|
 | Oracle Java™ SE 17 JDK | A : prise en charge de `[1]` |
+| Oracle Java™ SE 21 JDK | A : prise en charge de `[1]` |
 | Machine virtuelle IBM® Semeru J9 - build 17.0.13.0 | A : prise en charge de `[2]` |
+| Machine virtuelle IBM® Semeru J9 - build 21.0.6.0 | A : prise en charge de `[2]` |
 
 1. Oracle est passé à un modèle de « support à long terme » (LTS) pour les produits Oracle Java™ SE. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14 et Java™ 15m Java™ 16 sont des versions non-LTS fournies par Oracle (voir la [feuille de route de la prise en charge d’Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe assure uniquement la prise en charge des versions LTS de Java™. La prise en charge et la distribution du JDK Oracle Java™ SE, y compris toutes les mises à jour de maintenance des versions LTS après la fin des mises à niveau publiques, sont directement prises en charge par Adobe pour tous les clients et clientes AEM utilisant la technologie Oracle Java™ SE. Consultez la [Politique de prise en charge Java™ pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Cette version prend en charge Oracle Java™ 17.**
+   **Cette version prend en charge Oracle Java™ 17 et Oracle Java™ 21.**
 
 1. IBM® JRE est pris en charge uniquement avec le serveur d’applications WebSphere®.
 
@@ -139,7 +141,7 @@ La version minimale requise de l’API de servlet est la servlet 3.1. En outre, 
 | Plateforme | Niveau de prise en charge |
 |---|---|
 | **Moteur de servlet intégré à démarrage rapide (Jetty 11.0.x)** | A : pris en charge |
-| IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) avec Web Profile 24.0.0.7 et IBM® Sumeru open JRE® 17 | R : prise en charge restreinte des nouveaux contrats `[1]` |
+| IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) avec Web Profile 24.0.0.7 et IBM® Sumeru open JRE® 17/21 | R : prise en charge restreinte des nouveaux contrats `[1]` |
 | Apache Tomcat 11.0.x | R : prise en charge restreinte des nouveaux contrats `[1]` |
 
 1. Avec les déploiements d’AEM 6.5 sur les serveurs d’applications, la prise en charge limitée sera activée. Les clientes et clients existant(e)s peuvent effectuer une mise à niveau vers AEM 6.5 et continuer à utiliser des serveurs d’applications. Pour les nouveaux clients et nouvelles clientes, des critères et un programme de prise en charge sont inclus, comme indiqué dans la description du niveau R ci-dessus.

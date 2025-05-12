@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0afd255ec5c9d3db37f2f059782b35052761b1cf
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 48%
+source-wordcount: '805'
+ht-degree: 45%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 48%
 
 ## Nouveautés {#what-s-new}
 
-[!DNL Adobe Experience Manager] 6.5 LTS est une mise à niveau de la base de code d’[!DNL Adobe Experience Manager] 6.5. Cette version comporte de nouvelles fonctionnalités améliorées, des correctifs clés de bugs signalés par des clients ou des clientes, des améliorations prioritaires demandées par les clients et les clientes et des correctifs de bugs généraux destinés à améliorer la stabilité du produit. Elle comprend également les versions du pack de services [!DNL Adobe Experience Manager] 6.5 jusqu’au SP22.
+[!DNL Adobe Experience Manager] 6.5 LTS est une mise à niveau de la base de code d’[!DNL Adobe Experience Manager] 6.5. Il fournit des correctifs clés pour les clients, des améliorations prioritaires pour les clients et des correctifs généraux orientés vers la stabilisation du produit. Elle comprend également les versions du pack de services [!DNL Adobe Experience Manager] 6.5 jusqu’au SP22.
 
 Vous en trouverez un aperçu dans la liste ci-dessous, puis des détails complets dans les pages suivantes.
 
@@ -36,9 +36,9 @@ Le démarrage rapide utilise Eclipse Jetty 11.0.x comme moteur de servlet.
 
 #### Prise en charge de Java™  {#java-support}
 
-* Prise en charge de Java™ 17.
+* Prise en charge de Java™ 17 et Java™ 21.
 * Pour des performances optimales, remplacez les valeurs par défaut du CPG par d’autres valeurs. Pour plus d’informations, consultez la section [Installation et mise à jour](/help/sites-deploying/custom-standalone-install.md).
-* Les mises à jour de maintenance Java™ 17 sont distribuées par Adobe pour que les clients puissent les utiliser dans les projets liés à AEM, lorsqu’elles ne sont pas disponibles publiquement depuis Oracle.
+* Les mises à jour de maintenance Java™ 17 et Java™ 21 sont distribuées par Adobe pour que les clients puissent les utiliser dans les projets liés à AEM, lorsqu’elles ne sont pas disponibles publiquement depuis Oracle.
 
 #### Package Uberjar {#uber-jar-packaging}
 
@@ -60,7 +60,7 @@ Recherchez la matrice complète des plateformes prises en charge, y compris le n
 
 >[!NOTE]
 >
->Il est recommandé d’utiliser Java™ 17 avec AEM 6.5 LTS.
+>Il est recommandé d’utiliser Java™ 17/Java™ 21 avec AEM 6.5 LTS.
 
 ## Fonctionnalités obsolètes et supprimées {#deprecated-and-removed-features}
 

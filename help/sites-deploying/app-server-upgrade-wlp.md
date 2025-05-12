@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 2a5d9026-49bc-4766-bcbe-38d834c14f72
-source-git-commit: 82af7ee5b3665dcc33b47e05c8580e9981728888
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '499'
 ht-degree: 17%
 
 ---
@@ -26,7 +26,7 @@ Cochez [ Planification de la mise à niveau ](/help/sites-deploying/upgrade-plan
 
 ### Conditions préalables à la migration {#migration-prerequisites}
 
-* **Version Java minimale requise** : assurez-vous d’avoir installé IBM® Sumeru JRE 17 sur votre serveur WLP.
+* **Version Java minimale requise** : assurez-vous d’avoir installé IBM® Sumeru JRE 17/21 sur votre serveur WLP.
 
 ### Exécuter la mise à niveau {#performing-the-upgrade}
 
@@ -76,13 +76,13 @@ Cochez [ Planification de la mise à niveau ](/help/sites-deploying/upgrade-plan
 
 1. Effectuez une sauvegarde du fichier `sling.properties` (généralement présent dans `crx-quickstart/conf/`) et supprimez-le
 1. Remplacez la version du servlet par **6.0** dans le fichier `server.xml`
-1. Installez Java 17 et assurez-vous qu’il est correctement installé en exécutant :
+1. Installez Java 17/Java 21 et assurez-vous qu’il est correctement installé en exécutant :
 
    ```shell
    java -version
    ```
 
-1. Vérifiez les paramètres de démarrage du serveur AEM et assurez-vous de mettre à jour les paramètres en fonction de vos besoins. Voir [Considérations relatives à Java 17](/help/sites-deploying/custom-standalone-install.md#java-considerations) pour plus d’informations.
+1. Vérifiez les paramètres de démarrage du serveur AEM et assurez-vous de mettre à jour les paramètres en fonction de vos besoins. Pour plus d’informations, consultez les Considérations relatives à [Java 17/Java 21](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 1. Téléchargez le nouveau fichier war LTS 6.5 et copiez-le dans le dossier dropins situé à l’adresse : `/<path-to-aem-server>/dropins/`
 1. Démarrez l’instance AEM : vous pouvez généralement le faire à l’aide de la commande suivante :
 
