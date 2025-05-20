@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+source-git-commit: 8f6d152ceeae12cdadd0096e114584ce2a63a2ac
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 45%
+source-wordcount: '927'
+ht-degree: 40%
 
 ---
 
@@ -107,6 +107,24 @@ Cette section répertorie les fonctionnalités qui ont été supprimées d’AEM
 | Open Source | `javax.mail` packages sont exportés à partir du lot `com.sun.javax.mail`. | Aucune modification n’est requise. | 6.5 LTS (disponibilité générale) |
 | Open Source | Les packages `org.apache.jackrabbit.api` sont désormais exportés à partir du lot `org.apache.jackrabbit.oak-jackrabbit-api` . | Aucune modification n’est requise. | 6.5 LTS (disponibilité générale) |
 | Open Source | `com.github.jknack.handlebars` n’est pas pris en charge | Choisir la [version](https://mvnrepository.com/artifact/com.github.jknack/handlebars) appropriée | 6.5 LTS (disponibilité générale) |
+
+## Problèmes connus {#known-issues}
+
+### Échec de connexion à Dispatcher avec la fonction SSL uniquement {#ssl-only-feature}
+
+Lors de l’activation de la fonctionnalité SSL uniquement dans les déploiements AEM, il existe un problème connu qui affecte la connectivité entre le Dispatcher et les instances AEM. Une fois cette fonctionnalité activée, les contrôles d’intégrité peuvent échouer et la communication entre le Dispatcher et les instances AEM peut être interrompue.
+
+**Impact:**
+* Échec des contrôles d’intégrité avec les codes de réponse HTTP 500
+* Trafic rompu entre les instances du Dispatcher et d’AEM
+* Le contenu ne peut pas être correctement diffusé via le Dispatcher
+
+**Environnements affectés :**
+* Déploiements d’AEM avec les configurations du dispatcher
+* Systèmes sur lesquels la fonction SSL uniquement a été activée
+
+**Solution :**
+Si vous rencontrez ce problème, contactez le service clientèle d’Adobe. Un correctif [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.0.zip) est disponible pour résoudre ce problème. N’essayez pas d’activer les fonctionnalités SSL uniquement avant d’avoir appliqué le correctif nécessaire.
 
 ## Sites web restreints{#restricted-sites}
 
