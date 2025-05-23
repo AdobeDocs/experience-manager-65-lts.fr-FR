@@ -1,14 +1,14 @@
 ---
 title: Notes de mise à jour actuelles de Adobe Experience Manager 6.5 LTS
-description: Voici les notes de mise à jour actuelles d’Adobe Experience Manager 6.5 LTS.
+description: Recherchez les informations de mise à jour actuelles pour Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 8f6d152ceeae12cdadd0096e114584ce2a63a2ac
+source-git-commit: abba652bb5d7eb9b5f902ce99c07f2186e313173
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 40%
+source-wordcount: '1016'
+ht-degree: 30%
 
 ---
 
@@ -32,13 +32,13 @@ Vous en trouverez un aperçu dans la liste ci-dessous, puis des détails complet
 
 La plateforme du LTS [!DNL Adobe Experience Manager] 6.5 s’appuie sur les versions mises à jour du framework OSGi (Apache Sling et Apache Felix) et du référentiel de contenu Java™ : Apache Jackrabbit Oak 1.68.x.
 
-Le démarrage rapide utilise Eclipse Jetty 11.0.x comme moteur de servlet.
+Eclipse Jetty 11.0.x est utilisé comme moteur de servlet pour Quickstart.
 
 #### Prise en charge de Java™  {#java-support}
 
 * Prise en charge de Java™ 17 et Java™ 21.
 * Pour des performances optimales, remplacez les valeurs par défaut du CPG par d’autres valeurs. Pour plus d’informations, consultez la section [Installation et mise à jour](/help/sites-deploying/custom-standalone-install.md).
-* Les mises à jour de maintenance Java™ 17 et Java™ 21 sont distribuées par Adobe pour que les clients puissent les utiliser dans les projets liés à AEM, lorsqu’elles ne sont pas disponibles publiquement depuis Oracle.
+* Adobe distribue des mises à jour de maintenance Java™ 17 et Java™ 21 pour l’utilisation par les clients dans les projets liés à AEM, lorsqu’elles ne sont pas disponibles publiquement depuis Oracle.
 
 #### Package Uberjar {#uber-jar-packaging}
 
@@ -64,18 +64,19 @@ Recherchez la matrice complète des plateformes prises en charge, y compris le n
 
 ## Fonctionnalités obsolètes et supprimées {#deprecated-and-removed-features}
 
-Adobe étudie constamment les fonctionnalités du produit de façon à les réinventer au fil du temps ou à remplacer les fonctions plus anciennes par des variantes plus modernes, pour améliorer la valeur client globale, le tout en faisant toujours attention à la compatibilité ascendante.
+Adobe examine continuellement les fonctionnalités du produit afin d’améliorer la valeur client en modernisant ou en remplaçant les anciennes fonctionnalités. Ces modifications sont effectuées avec une attention particulière portée à la rétrocompatibilité.
 
 Pour communiquer la suppression ou le remplacement imminent(e) de fonctionnalités d’Adobe Experience Manager (AEM), les règles suivantes s’appliquent :
 
 1. L’annonce de la suppression arrive en premier. Bien qu’elles soient obsolètes, les fonctionnalités sont toujours disponibles, mais ne sont pas améliorées.
-1. La suppression des fonctionnalités obsolètes se produit au plus tôt dans la version majeure suivante. La date précise de suppression sera annoncée plus tard.
+1. La suppression des fonctionnalités obsolètes se produit au plus tôt dans la version majeure suivante. La date cible réelle de suppression est prévue pour une annonce ultérieure.
 
 Ce processus donne aux clients au moins un cycle de version pour adapter leur implémentation à une nouvelle version ou à un produit de remplacement pour une fonctionnalité obsolète, avant que la suppression ne soit effective.
 
 ### Fonctionnalités obsolètes {#deprecated-features}
 
-Cette section répertorie les fonctionnalités qui ont été marquées comme obsolètes par AEM 6.5 LTS. En règle générale, les fonctionnalités dont la suppression est prévue dans une version ultérieure sont d’abord définies comme obsolètes, et une alternative est fournie.
+Cette section répertorie les fonctionnalités qu’Adobe a abandonnées dans AEM 6.5 LTS. En règle générale, Adobe rend les fonctionnalités obsolètes avant de les supprimer dans une version ultérieure et fournit une alternative.
+
 
 Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionnalité dans leur déploiement actuel et de prévoir la modification de leur mise en œuvre de façon à utiliser l’alternative proposée.
 
@@ -89,9 +90,9 @@ Cette section répertorie les fonctionnalités qui ont été supprimées d’AEM
 
 | Domaine | Fonctionnalité | Remplacement | Version (SP) |
 |--- |--- |--- |--- |
-| Commerce | AEM CIF Classic n’est pas pris en charge. | Vous devez migrer vers [AEM CIF](/help/commerce/cif/migration.md). | 6.5 LTS (disponibilité générale) |
+| Commerce | AEM CIF Classic n’est pas pris en charge. | Migration vers [AEM CIF](/help/commerce/cif/migration.md). | 6.5 LTS (disponibilité générale) |
 | Solutions | Social/Communities n’est pas pris en charge. | Aucun remplacement disponible. | 6.5 LTS (disponibilité générale) |
-| Screens | Screens n’est pas pris en charge. | Aucun remplacement disponible. | 6.5 LTS (disponibilité générale) |
+| Screens | Screens ne sont pas pris en charge. | Aucun remplacement disponible. | 6.5 LTS (disponibilité générale) |
 | Ressources | `dam-pim` et `dam-rating` ne sont pas pris en charge, car les lots dépendent des réseaux sociaux. | Aucun remplacement disponible. | 6.5 LTS (disponibilité générale) |
 | Ressources | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` a été supprimé. | Utilisez l’autre `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` d’api qui a été ajouté. | 6.5 LTS (disponibilité générale) |
 | Portail | AEM Portal Director n’est pas pris en charge. | Aucun remplacement disponible. | 6.5 LTS (disponibilité générale) |
@@ -106,21 +107,38 @@ Cette section répertorie les fonctionnalités qui ont été supprimées d’AEM
 | Open Source | Les packages `org.apache.commons.io` sont désormais exportés depuis `org.apache.commons.commons-io`. | Aucune modification n’est requise. | 6.5 LTS (disponibilité générale) |
 | Open Source | `javax.mail` packages sont exportés à partir du lot `com.sun.javax.mail`. | Aucune modification n’est requise. | 6.5 LTS (disponibilité générale) |
 | Open Source | Les packages `org.apache.jackrabbit.api` sont désormais exportés à partir du lot `org.apache.jackrabbit.oak-jackrabbit-api` . | Aucune modification n’est requise. | 6.5 LTS (disponibilité générale) |
-| Open Source | `com.github.jknack.handlebars` n’est pas pris en charge | Choisir la [version](https://mvnrepository.com/artifact/com.github.jknack/handlebars) appropriée | 6.5 LTS (disponibilité générale) |
+| Open Source | `com.github.jknack.handlebars` n’est pas pris en charge | Sélectionnez la [version](https://mvnrepository.com/artifact/com.github.jknack/handlebars) appropriée. | 6.5 LTS (disponibilité générale) |
 
 ## Problèmes connus {#known-issues}
 
+### Problème avec le lot de scripts JSP dans AEM 6.5.21-6.5.23 et AEM 6.5 LTS GA**
+
+AEM 6.5.21, 6.5.22, 6.5.23 et AEM 6.5 LTS GA sont fournis avec le lot `org.apache.sling.scripting.jsp:2.6.0`, qui contient un problème connu. Le problème se produit généralement sous une charge élevée lorsque l’instance AEM gère de nombreuses requêtes simultanées.
+
+Lorsque ce problème se produit, l’une des exceptions suivantes peut apparaître dans les journaux d’erreurs avec des références à `org.apache.sling.scripting.jsp:2.6.0` :
+
+* `java.io.IOException: classFile.delete() failed`
+* `java.io.IOException: tmpFile.renameTo(classFile) failed`
+* `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
+* `java.io.FileNotFoundException`
+
+Lorsque cette erreur se produit, la seule méthode de récupération consiste à redémarrer l’instance AEM.
+
+Contactez le service clientèle d’Adobe et référencez cette note de mise à jour pour obtenir une résolution.
+
 ### Échec de connexion à Dispatcher avec la fonction SSL uniquement {#ssl-only-feature}
 
-Lors de l’activation de la fonctionnalité SSL uniquement dans les déploiements AEM, il existe un problème connu qui affecte la connectivité entre le Dispatcher et les instances AEM. Une fois cette fonctionnalité activée, les contrôles d’intégrité peuvent échouer et la communication entre le Dispatcher et les instances AEM peut être interrompue.
+Lors de l’activation de la fonction SSL uniquement dans les déploiements AEM, un problème connu affecte la connectivité entre les instances Dispatcher et AEM. Une fois cette fonctionnalité activée, les contrôles d’intégrité peuvent échouer et la communication entre les instances Dispatcher et AEM peut être interrompue.
 
 **Impact:**
+
 * Échec des contrôles d’intégrité avec les codes de réponse HTTP 500
-* Trafic rompu entre les instances du Dispatcher et d’AEM
-* Le contenu ne peut pas être correctement diffusé via le Dispatcher
+* Trafic rompu entre les instances Dispatcher et AEM
+* Le contenu ne peut pas être correctement diffusé via Dispatcher
 
 **Environnements affectés :**
-* Déploiements d’AEM avec les configurations du dispatcher
+
+* Déploiements d’AEM avec les configurations Dispatcher
 * Systèmes sur lesquels la fonction SSL uniquement a été activée
 
 **Solution :**
