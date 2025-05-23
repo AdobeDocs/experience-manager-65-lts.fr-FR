@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: abba652bb5d7eb9b5f902ce99c07f2186e313173
+source-git-commit: 02b9f90dc9ef504f04a9b1f692358089d4626094
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 30%
@@ -111,7 +111,7 @@ Cette section répertorie les fonctionnalités qui ont été supprimées d’AEM
 
 ## Problèmes connus {#known-issues}
 
-### Problème avec le lot de scripts JSP dans AEM 6.5.21-6.5.23 et AEM 6.5 LTS GA**
+### Problème avec le lot de scripts JSP dans AEM 6.5.21-6.5.23 et AEM 6.5 LTS GA
 
 AEM 6.5.21, 6.5.22, 6.5.23 et AEM 6.5 LTS GA sont fournis avec le lot `org.apache.sling.scripting.jsp:2.6.0`, qui contient un problème connu. Le problème se produit généralement sous une charge élevée lorsque l’instance AEM gère de nombreuses requêtes simultanées.
 
