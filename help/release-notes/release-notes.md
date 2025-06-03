@@ -1,6 +1,6 @@
 ---
 title: Notes de mise à jour actuelles de Adobe Experience Manager 6.5 LTS
-description: Recherchez les informations de mise à jour actuelles pour Adobe Experience Manager 6.5 LTS.
+description: Recherchez les informations de mise à jour actuelles pour Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
@@ -8,7 +8,7 @@ exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 02b9f90dc9ef504f04a9b1f692358089d4626094
 workflow-type: tm+mt
 source-wordcount: '1016'
-ht-degree: 30%
+ht-degree: 31%
 
 ---
 
