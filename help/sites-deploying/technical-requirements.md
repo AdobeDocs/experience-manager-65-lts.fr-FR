@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 296810c9fda3a0aa093154562884bd5c0c482d44
+source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2981'
 ht-degree: 94%
 
 ---
@@ -142,7 +142,7 @@ La version minimale requise de l’API de servlet est la servlet 3.1. En outre, 
 |---|---|
 | **Moteur de servlet intégré à démarrage rapide (Jetty 11.0.x)** | A : pris en charge |
 | IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) avec Web Profile 24.0.0.7 et IBM® Sumeru open JRE® 17/21 | R : prise en charge restreinte des nouveaux contrats `[1]` |
-| Apache Tomcat 11.0.x | R : prise en charge restreinte des nouveaux contrats `[1]` |
+| Apache Tomcat 10.0.x/10.1.x | R : prise en charge restreinte des nouveaux contrats `[1]` |
 
 1. Avec les déploiements d’AEM 6.5 sur les serveurs d’applications, la prise en charge limitée sera activée. Les clientes et clients existant(e)s peuvent effectuer une mise à niveau vers AEM 6.5 et continuer à utiliser des serveurs d’applications. Pour les nouveaux clients et nouvelles clientes, des critères et un programme de prise en charge sont inclus, comme indiqué dans la description du niveau R ci-dessus.
 
