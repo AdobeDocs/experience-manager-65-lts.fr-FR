@@ -10,10 +10,10 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 7584fa1c544f9dd499b4007a9158e25b783f620c
 workflow-type: tm+mt
-source-wordcount: '2577'
-ht-degree: 97%
+source-wordcount: '2594'
+ht-degree: 96%
 
 ---
 
@@ -211,6 +211,10 @@ Le seul document qui contient les deux termes est 200, comme dans l’exemple ci
 | --- | --- | --- |
 
 Lorsque plusieurs entrées sont trouvées, elles sont triées par score.
+
+>[!NOTE]
+>
+>Le mécanisme de recherche décrit dans cette section utilise l’indexation Lucene, et non une correspondance partielle comme la commande Linux `grep`.
 
 ### Index de propriété Lucene {#the-lucene-property-index}
 
