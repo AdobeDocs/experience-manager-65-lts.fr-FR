@@ -1,19 +1,19 @@
 ---
 title: Éditeur universel
-description: Découvrez la flexibilité de l’éditeur universel et comment il peut vous aider à alimenter vos expériences découplées à l’aide d’AEM 6.5.
+description: Découvrez la flexibilité de l’éditeur universel et comment il peut vous aider à alimenter vos expériences découplées à l’aide d’AEM 6.5 LTS.
 feature: Developing
 role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
-source-git-commit: 3f6d0791968ad3017256dcd5ecea617bc7c8ed83
+source-git-commit: 1529d3309a07aecaab29198f30e752ad00c53fab
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1192'
 ht-degree: 2%
 
 ---
 
 # Éditeur universel {#universal-editor}
 
-Découvrez la flexibilité de l’éditeur universel et comment il peut vous aider à alimenter vos expériences découplées à l’aide d’AEM 6.5.
+Découvrez la flexibilité de l’éditeur universel et comment il peut vous aider à alimenter vos expériences découplées à l’aide d’AEM 6.5 LTS.
 
 ## Vue d’ensemble {#overview}
 
@@ -28,7 +28,7 @@ Veuillez consulter la [documentation d’AEM as a Cloud Service sur l’éditeur
 
 L’éditeur universel est un service qui fonctionne en tandem avec AEM pour créer du contenu en mode découplé.
 
-* L’éditeur universel est hébergé sur `https://experience.adobe.com/#/aem/editor/canvas` et peut modifier les pages rendues par AEM 6.5.
+* L’éditeur universel est hébergé sur `https://experience.adobe.com/#/aem/editor/canvas` et peut modifier les pages rendues par AEM 6.5 LTS.
 * La page AEM est lue par l’éditeur universel via le Dispatcher à partir de l’instance d’auteur AEM.
 * Le service d’éditeur universel, qui s’exécute sur le même hôte que le Dispatcher, réécrit les modifications dans l’instance d’auteur AEM.
 
@@ -40,15 +40,18 @@ L’éditeur universel est pris en charge par :
 
 * AEM 6.5 LTS GA
    * L’hébergement sur site et AMS est pris en charge.
-* [AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (pack de services 21 ou 22 plus un pack de fonctionnalités ou version ultérieure)
+* [AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
    * L’hébergement sur site et AMS est pris en charge.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (version `2023.8.13099` ou ultérieure)
 
-Ce document se concentre sur la prise en charge LTS d’AEM 6.5 de l’éditeur universel.
+Ce document se concentre sur la prise en charge LTS d’AEM 6.5 de l’éditeur universel. Pour utiliser l’éditeur universel avec AEM 6.5 LTS, vous avez besoin des éléments suivants :
+
+* AEM 6.5 LTS GA
+* Dispatcher correctement configuré
 
 ## Configuration {#setup}
 
-Pour tester l’éditeur universel, vous devez effectuer les opérations suivantes :
+Pour utiliser l’éditeur universel, vous devez effectuer les opérations suivantes :
 
 1. [Configurez les services sur votre instance de création AEM.](#configure-aem)
 1. [Configurez un service d’éditeur universel local.](#set-up-ue)
@@ -134,7 +137,7 @@ Une fois AEM mis à jour et configuré, vous pouvez configurer un service d’é
 1. Installez Node.js version >=20.
 1. Téléchargez et décompressez le dernier service d’éditeur universel à partir de [Distribution logicielle](https://experienceleague.adobe.com/r/docs/experience-cloud/software-distribution/home).
 1. Configurez le service d’éditeur universel via des variables d’environnement ou un fichier `.env`.
-   * [Voir la documentation sur l’éditeur universel d’AEM as a Cloud Service pour plus d’informations.](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
+   * [Voir la documentation sur l’éditeur universel d’AEM as a Cloud Service pour plus d’informations.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * Notez que vous devrez peut-être utiliser l’option `UES_MAPPING` si une réécriture IP interne est requise.
 1. Exécutez `universal-editor-service.cjs`.
 
@@ -153,7 +156,7 @@ Avec AEM configuré et un service d’éditeur universel local en cours d’exé
 
    >[!NOTE]
    >
-   >Le port par défaut est le port 8080. Si vous avez modifié ce paramètre à l’aide du paramètre `UES_PORT` dans [votre fichier `.env`,](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) vous devez ajuster la valeur du port ici en conséquence.
+   >Le port par défaut est le port 8080. Si vous avez modifié ce paramètre à l’aide du paramètre `UES_PORT` dans [votre fichier `.env`,](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) vous devez ajuster la valeur du port ici en conséquence.
 
 1. Redémarrez Apache.
 
@@ -161,9 +164,9 @@ Avec AEM configuré et un service d’éditeur universel local en cours d’exé
 
 Avec AEM mis à jour et un service d’éditeur universel local en cours d’exécution, vous pouvez commencer à modifier le contenu découplé à l’aide de l’éditeur universel.
 
-Cependant, votre application doit être instrumentée pour tirer parti de l’éditeur universel. Cela implique d’inclure des balises méta pour indiquer à l’éditeur comment et où conserver le contenu. Les détails de cette instrumentation sont disponibles dans la [documentation de l’éditeur universel pour AEM as a Cloud Service.](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page).
+Cependant, votre application doit être instrumentée pour tirer parti de l’éditeur universel. Cela implique d’inclure des balises méta pour indiquer à l’éditeur comment et où conserver le contenu. Les détails de cette instrumentation sont disponibles dans la [documentation de l’éditeur universel pour AEM as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page).
 
-Notez que lorsque vous suivez la documentation pour l’éditeur universel avec AEM as a Cloud Service, les modifications ci-dessous s’appliquent lors de son utilisation avec AEM 6.5.
+Notez que lorsque vous suivez la documentation pour l’éditeur universel avec AEM as a Cloud Service, les modifications ci-dessous s’appliquent lors de son utilisation avec AEM 6.5 LTS.
 
 * Le protocole dans la balise meta doit être `aem65` au lieu de `aem`.
 
@@ -181,12 +184,12 @@ Notez que lorsque vous suivez la documentation pour l’éditeur universel avec 
 
 >[!TIP]
 >
->Pour obtenir un guide complet destiné aux développeurs et développeuses qui commencent à utiliser l’éditeur universel, consultez le document [Présentation de l’éditeur universel pour les développeurs et développeuses AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) dans la documentation d’AEM as a Cloud Service, tout en gardant à l’esprit les modifications nécessaires pour la prise en charge d’AEM 6.5, comme mentionné dans cette section.
+>Pour obtenir un guide complet destiné aux développeurs et développeuses qui commencent à utiliser l’éditeur universel, consultez le document [Présentation de l’éditeur universel pour les développeurs et développeuses AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) dans la documentation d’AEM as a Cloud Service, tout en gardant à l’esprit les modifications nécessaires pour la prise en charge d’AEM 6.5 LTS, comme mentionné dans cette section.
 
-## Différences entre AEM 6.5 et AEM as a Cloud Service {#differences}
+## Différences entre AEM 6.5 LTS et AEM as a Cloud Service {#differences}
 
-L’éditeur universel d’AEM 6.5 fonctionne globalement de la même manière que dans AEM as a Cloud Service, y compris pour l’interface utilisateur et une grande partie de la configuration. Il y a cependant des différences à noter.
+L’éditeur universel dans AEM 6.5 LTS fonctionne globalement de la même manière que dans AEM as a Cloud Service, y compris pour l’interface utilisateur et une grande partie de la configuration. Il y a cependant des différences à noter.
 
-* L’éditeur universel d’ 6.5 prend uniquement en charge le cas d’utilisation découplé.
-* La configuration de l’éditeur universel varie légèrement pour 6.5 ([comme décrit](#setup) dans le document actuel).
-* L’éditeur universel dans la version 6.5 utilise un sélecteur de ressources et un sélecteur de fragments de contenu différents d’AEM as a Cloud Service.
+* L’éditeur universel d’ 6.5 LTS prend uniquement en charge le cas d’utilisation découplé.
+* La configuration de l’éditeur universel varie légèrement pour 6.5 LTS ([comme décrit](#setup) dans le document actuel).
+* L’éditeur universel dans LTS 6.5 utilise un sélecteur de ressources et un sélecteur de fragments de contenu différents d’AEM as a Cloud Service.
