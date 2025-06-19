@@ -303,9 +303,11 @@ Si l’identifiant Sling d’une instance de publication correspond à l’ident
    * recherchez et supprimez le fichier nommé *sling.id.file*
 
       * par exemple, sur un système Linux® :
+
         `rm -i $(find . -type f -name sling.id.file)`
 
       * par exemple, sur un système Windows :
+
         `use windows explorer and search for *sling.id.file*`
 
 1. démarrez l’instance de publication
