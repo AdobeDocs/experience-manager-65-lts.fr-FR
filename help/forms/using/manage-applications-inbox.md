@@ -136,7 +136,7 @@ Une personne propriétaire de modèle de workflow ne peut pas afficher des élé
      | allowExplicitSharing | allowExplicitSharing | BOOLÉEN |
 
 
-   * Déployez les index par le biais d’un package AEM. Vous pouvez utiliser un projet [AEM Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using) pour créer un package AEM déployable. Utilisez l’exemple de code suivant pour ajouter des index à un projet AEM Archetype :
+   * Déployez les index par le biais d’un package AEM. Vous pouvez utiliser un projet [AEM Archetype](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/using) pour créer un package AEM déployable. Utilisez l’exemple de code suivant pour ajouter des index à un projet AEM Archetype :
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
