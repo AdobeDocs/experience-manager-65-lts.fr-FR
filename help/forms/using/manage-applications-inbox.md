@@ -1,18 +1,14 @@
 ---
-title: Gestion des applications et des tâches Forms dans la boîte de réception AEM
+title: Gérer des applications et des tâches Forms dans la boîte de réception AEM
 description: La boîte de réception AEM vous permet de lancer des workflows basés sur l’utilisation de Forms via l’envoi d’applications et de tâches de gestion.
-contentOwner: vishgupt
-topic-tags: document_services, publish
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 5454ee3d-45fb-4ed2-b2f2-1fa9e2460759
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 99%
+source-wordcount: '1066'
+ht-degree: 98%
 
 ---
 
@@ -140,7 +136,7 @@ Une personne propriétaire de modèle de workflow ne peut pas afficher des élé
      | allowExplicitSharing | allowExplicitSharing | BOOLÉEN |
 
 
-   * Déployez les index par le biais d’un package AEM. Vous pouvez utiliser un projet [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=fr) pour créer un package AEM déployable. Utilisez l’exemple de code suivant pour ajouter des index à un projet AEM Archetype :
+   * Déployez les index par le biais d’un package AEM. Vous pouvez utiliser un projet [AEM Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using) pour créer un package AEM déployable. Utilisez l’exemple de code suivant pour ajouter des index à un projet AEM Archetype :
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -150,8 +146,6 @@ Une personne propriétaire de modèle de workflow ne peut pas afficher des élé
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [Créez un index de propriétés et définissez-le sur Vrai](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html#the-property-index).
+1. [Créez un index de propriétés et définissez-le sur Vrai](/help/sites-deploying/queries-and-indexing.md#the-property-index).
 
-1. Après avoir configuré des index dans CRX DE ou procédé au déploiement via un package, [réindexez le référentiel](https://helpx.adobe.com/fr/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
-
-https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html
+1. Après avoir configuré des index dans CRX DE ou procédé au déploiement via un package, réindexez le référentiel.
