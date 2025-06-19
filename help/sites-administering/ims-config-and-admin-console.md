@@ -9,7 +9,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 63f42a35-fbd5-4b1b-bba1-1bdcfd23dd33
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '1601'
 ht-degree: 98%
@@ -104,7 +104,7 @@ Lorsque la synchronisation des utilisateurs et des utilisatrices s’exécute, e
 
 Cet outil permet à l’administration système de mapper les groupes d’utilisateurs et d’utilisatrices dans le répertoire du client ou de la cliente avec la configuration de produits et les groupes d’utilisateurs et d’utilisatrices dans l’[!DNL Admin Console]. La nouvelle version de l’outil de synchronisation des utilisateurs et des utilisatrices permet également la création dynamique de groupes d’utilisateurs et d’utilisatrices dans l’[!DNL Admin Console].
 
-Pour configurer la synchronisation des utilisateurs, l’organisation doit créer un ensemble d’informations d’identification de la même manière qu’avec l’[[!DNL User Management] API](https://developer.adobe.com/apis/cloudplatform/usermanagement/docs/setup.html).
+Pour configurer la synchronisation des utilisateurs, l’organisation doit créer un ensemble d’informations d’identification de la même manière qu’avec l’[[!DNL User Management] API](https://adobe-apiplatform.github.io/user-sync.py/en/success-guide/identify_server.html).
 
 ![image2018-9-23_13-36-56](assets/image2018-9-23_13-36-56.png)
 

@@ -10,7 +10,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '2224'
 ht-degree: 99%
@@ -33,7 +33,7 @@ Depuis AEM 6.1, lorsque la synchronisation des utilisateurs et des utilisatrice
 
 ## Distribution Sling {#sling-distribution}
 
-Les données utilisateur, avec leurs [ACL](/help/sites-administering/security.md), sont stockées dans le [cœur Oak](/help/sites-deploying/platform.md), la couche située en dessous du JCR Oak, et sont accessibles via l’[API Oak](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-tree.html). Du fait de mises à jour peu fréquentes, il est judicieux que les données utilisateur soient synchronisées avec d’autres instances de publication à l’aide de la [Distribution de contenu Sling](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md).
+Les données utilisateur, avec leurs [ACL](/help/sites-administering/security.md), sont stockées dans le [cœur Oak](/help/sites-deploying/platform.md), la couche située en dessous du JCR Oak, et sont accessibles via l’[API Oak](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-summary.html). Du fait de mises à jour peu fréquentes, il est judicieux que les données utilisateur soient synchronisées avec d’autres instances de publication à l’aide de la [Distribution de contenu Sling](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md).
 
 Les avantages de la synchronisation des utilisateurs à l’aide de la distribution Sling par rapport à la réplication traditionnelle sont les suivants :
 
@@ -77,7 +77,7 @@ Une fois la synchronisation des utilisateurs et des utilisatrices activée, seul
 
 * [Mises à jour de la plateforme AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr)
 
-### 1. Agent de distribution Apache Sling - Fabrique d’agents de synchronisation {#apache-sling-distribution-agent-sync-agents-factory}
+### &#x200B;1. Agent de distribution Apache Sling - Fabrique d’agents de synchronisation {#apache-sling-distribution-agent-sync-agents-factory}
 
 **Activer la synchronisation des utilisateurs et utilisatrices**
 
@@ -98,7 +98,7 @@ Vérifiez `name` : **`socialpubsync`**
 
 ![Agent de distribution Apache Sling](assets/chlimage_1-20.png)
 
-### 2. Créez l’utilisateur ou l’utilisatrice autorisé(e) {#createauthuser}
+### &#x200B;2. Créez l’utilisateur ou l’utilisatrice autorisé(e) {#createauthuser}
 
 **Configurer les autorisations**
 
@@ -152,7 +152,7 @@ Voir également
 * [Gestion des droits d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Section de résolution des incidents [Modification de l’exception d’opération pendant le traitement de la réponse](#modify-operation-exception-during-response-processing)
 
-### 3. Distribution Granite d’Adobe - Prestataire secret de transport de mot de passe chiffré {#adobegraniteencpasswrd}
+### &#x200B;3. Distribution Granite d’Adobe - Prestataire secret de transport de mot de passe chiffré {#adobegraniteencpasswrd}
 
 **Configurer les autorisations**
 
@@ -175,7 +175,7 @@ Vérifiez `property name` : **`socialpubsync-publishUser`**
 
 ![Prestataire secret de transport de mot de passe chiffré](assets/chlimage_1-22.png)
 
-### 4. Agent de distribution Apache Sling - Fabrique d’agents de file d’attente {#apache-sling-distribution-agent-queue-agents-factory}
+### &#x200B;4. Agent de distribution Apache Sling - Fabrique d’agents de file d’attente {#apache-sling-distribution-agent-queue-agents-factory}
 
 **Activer la synchronisation des utilisateurs et utilisatrices**
 
@@ -198,7 +198,7 @@ Vérifiez `Name` : `socialpubsync-reverse`
 
 ![Fabrique d’agents de file d’attente](assets/chlimage_1-23.png)
 
-### 5. Synchronisation Adobe Social - Fabrique d’observateurs diff. {#diffobserver}
+### &#x200B;5. Synchronisation Adobe Social - Fabrique d’observateurs diff. {#diffobserver}
 
 **Activez la synchronisation des groupes**
 
@@ -220,7 +220,7 @@ Vérifiez `Name` : `socialpubsync-reverse`
 
 ![Fabrique d’observateurs diff](assets/screen-shot_2019-05-24at090809.png)
 
-### 6. Déclencheur de distribution Apache Sling - Fabrique de déclencheurs planifiés {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### &#x200B;6. Déclencheur de distribution Apache Sling - Fabrique de déclencheurs planifiés {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 **(Optionnel) modifiez l’intervalle d’interrogation**
 
@@ -248,7 +248,7 @@ Par défaut, l’instance de création interroge les modifications toutes les 30
 
 La configuration par défaut couvre une instance de publication unique. Puisque l’objectif de l’activation de la synchronisation des utilisateurs et des utilisatrices est de synchroniser plusieurs instances de publication (par exemple, pour une ferme de publication), les instances de publication supplémentaires doivent être ajoutées à la fabrique d’agents de synchronisation.
 
-### 7. Agent de distribution Apache Sling - Fabrique d’agents de synchronisation {#apache-sling-distribution-agent-sync-agents-factory-1}
+### &#x200B;7. Agent de distribution Apache Sling - Fabrique d’agents de synchronisation {#apache-sling-distribution-agent-sync-agents-factory-1}
 
 **Ajoutez des instances de publication :**
 
@@ -280,7 +280,7 @@ Il doit exister un point d’entrée de l’importateur pour chaque instance de 
 
 * sélectionnez `Save`
 
-### 8. Identifiant Sling unique {#unique-sling-id}
+### &#x200B;8. Identifiant Sling unique {#unique-sling-id}
 
 >[!CAUTION]
 >
@@ -303,11 +303,9 @@ Si l’identifiant Sling d’une instance de publication correspond à l’ident
    * recherchez et supprimez le fichier nommé *sling.id.file*
 
       * par exemple, sur un système Linux® :
-
         `rm -i $(find . -type f -name sling.id.file)`
 
       * par exemple, sur un système Windows :
-
         `use windows explorer and search for *sling.id.file*`
 
 1. démarrez l’instance de publication

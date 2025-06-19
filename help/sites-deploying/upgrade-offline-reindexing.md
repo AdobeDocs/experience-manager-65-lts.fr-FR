@@ -9,10 +9,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0001c874-7468-4750-a377-03156674f4b9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 99%
+source-wordcount: '1305'
+ht-degree: 100%
 
 ---
 
@@ -180,7 +180,7 @@ Il est recommandé de cloner le système d’exploitation et de créer l’index
 
 ### Préparation d’un runbook et exécution de tests {#prepare-a-runbook-and-trial-run}
 
-Il est recommandé de préparer un [runbook](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) et d’effectuer quelques tests avant d’exécuter la mise à niveau en exploitation.
+Il est recommandé de préparer un [runbook](/help/sites-deploying/upgrade-planning.md#building-the-upgrade-and-rollback-runbook) et d’effectuer quelques tests avant d’exécuter la mise à niveau en exploitation.
 
 ### Mode Traversée de documents avec l’indexation hors ligne {#doc-traversal-mode-with-offline-indexing}
 

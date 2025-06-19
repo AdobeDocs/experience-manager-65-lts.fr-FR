@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2981'
+source-wordcount: '2960'
 ht-degree: 94%
 
 ---
@@ -450,8 +450,7 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 * **Systèmes d’exploitation :**
 
-   * Linux® (32 bits, prise en charge des applications 32 bits sur les systèmes 64 bits). Pour les étapes d’installation des bibliothèques clientes 32 bits, consultez la section [Activer l’écriture différée et l’extraction XMP sous Red Hat® Linux® 64 bits](https://helpx.adobe.com/fr/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
-
+   * Linux® (prise en charge des applications 32 bits et 32 bits sur les systèmes 64 bits).
    * Windows Server
    * macOS X (64 bits)
 

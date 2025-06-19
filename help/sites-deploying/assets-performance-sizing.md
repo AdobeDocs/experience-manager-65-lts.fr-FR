@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 49225f9f-d09e-4ab6-9e29-b47ba41e8889
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1205'
 ht-degree: 96%
 
 ---
@@ -105,7 +105,3 @@ Jusqu’à présent, les ajustements de performances suivants ont été utilisé
 
 * Génération sélective de rendus : générez uniquement les rendus dont vous avez besoin en ajoutant des conditions au workflow de traitement des ressources, de sorte que les rendus plus coûteux ne soient générés que pour certaines ressources.
 * Magasin de données partagé entre instances : lorsque l’espace disque est faible, cela peut considérablement réduire la quantité d’espace disque nécessaire au prix d’efforts de configuration plus importants et de la perte du nettoyage automatique du magasin de données.
-
-## Informations complémentaires {#further-reading}
-
-* [Analyse des processus lents et bloqués](https://helpx.adobe.com/fr/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)

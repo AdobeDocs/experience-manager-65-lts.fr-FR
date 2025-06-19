@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e82d97c2-c26a-48df-9210-47dc017c68c8
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3226'
 ht-degree: 99%
 
 ---
@@ -188,7 +188,7 @@ La **Division OU** crée une division dans le workflow, après laquelle une seul
 
 >[!NOTE]
 >
->Voir [Étape de la division OU](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
+>Voir [Étape de la division OU](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable)
 
 ![Branchement à l’aide de la division OU](assets/variables_orsplit_new.png)
 
@@ -285,7 +285,6 @@ Vous pouvez stocker des données de widget dans la payload du workflow ou dans l
 * **Stockage des données avec le payload**
 
    * Pour stocker des données de widget en tant que propriété du payload de workflow, utilisez le format suivant pour la propriété de nom du nœud de widget :
-
      `./jcr:content/nodename`
 
    * Les données sont stockées dans la propriété `nodename` du nœud de payload. Si le nœud ne contient pas cette propriété, la propriété est créée.
@@ -294,7 +293,6 @@ Vous pouvez stocker des données de widget dans la payload du workflow ou dans l
 * **Stockage des données avec l’élément de travail**
 
    * Pour stocker des données de widget en tant que propriété de métadonnées d’élément de travail, utilisez le format suivant pour la valeur de la propriété de nom :
-
      `nodename`
 
    * Les données sont stockées dans la propriété `nodename` des `metadata` de l’élément de travail. Les données sont conservées si la boîte de dialogue est ensuite utilisée avec la même payload.

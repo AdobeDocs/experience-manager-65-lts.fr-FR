@@ -1,18 +1,14 @@
 ---
 title: Concepts de configuration de base
 description: Découvrez comment configurer Adobe Experience Manager en fonction de vos besoins.
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 338ea82e-c248-4118-9d42-e268d6396e65
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2093'
-ht-degree: 100%
+source-wordcount: '2085'
+ht-degree: 98%
 
 ---
 
@@ -145,7 +141,7 @@ Le mappage de ressources permet de définir des redirections, des URL de redirec
 
 Par exemple, vous pouvez utiliser ces mappages pour :
 
-* faire précéder toutes les requêtes de `/content` afin que la structure interne soit masquée pour les visiteurs de votre site web ;
+* faire précéder toutes les demandes de `/content` afin que la structure interne soit masquée pour les visiteurs de votre site web ;
 * définir une redirection afin que toutes les requêtes en direction de la page `/content/en/gateway` de votre site Web soient redirigées vers `https://gbiv.com/`.
 
 Pour plus d’informations, consultez [Mappage de ressources](/help/sites-deploying/resource-mapping.md).
@@ -184,7 +180,7 @@ Consultez [Dispatcher](https://experienceleague.adobe.com/docs/experience-manage
 
 ### Configuration d’AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
-Grâce à AEM Doc Services et AEM Doc Security, nous pouvons désormais appeler les services de document de LiveCycle pour effectuer le rendu d’un formulaire XFA, convertir un document au format PDF et protéger un document à l’aide d’une politique. Voir [AEM LiveCycle Connector](https://helpx.adobe.com/fr/livecycle/help/aem/aem-livecycle-connector.html) pour plus de détails.
+Grâce à AEM Doc Services et AEM Doc Security, AEM peut désormais appeler les services de document de LiveCycle pour effectuer le rendu d’un formulaire XFA, convertir un document au format PDF et protéger un document à l’aide d’une politique.
 
 ### Déchargement des tâches et administration de la topologie {#job-offloading-and-topology-administration}
 
