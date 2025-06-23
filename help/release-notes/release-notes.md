@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 2a83d6d4f25a866eacd87d6e2a4318b99c158ea0
+source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 31%
+source-wordcount: '1019'
+ht-degree: 34%
 
 ---
 
@@ -53,6 +53,10 @@ Eclipse Jetty 11.0.x est utilisé comme moteur de servlet pour Quickstart.
 Pour connaître les exigences de configuration, consultez les [instructions d’installation](/help/sites-deploying/custom-standalone-install.md).
 
 Pour obtenir des instructions détaillées, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
+
+>[!NOTE]
+>
+> Pour les nouvelles installations d’AEM 6.5 LTS, les définitions d’index doivent être installées séparément. Pour plus d’informations, reportez-vous [ci](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
 
 ## Plateformes prises en charge {#supported-platforms}
 
@@ -115,7 +119,7 @@ Cette section répertorie les fonctionnalités qui ont été supprimées d’AEM
 
 AEM 6.5.21, 6.5.22, 6.5.23 et AEM 6.5 LTS GA sont fournis avec le lot `org.apache.sling.scripting.jsp:2.6.0`, qui contient un problème connu. Le problème se produit généralement sous une charge élevée lorsque l’instance AEM gère de nombreuses requêtes simultanées.
 
-Lorsque ce problème se produit, l’une des exceptions suivantes peut apparaître dans les journaux d’erreurs avec des références à `org.apache.sling.scripting.jsp:2.6.0` :
+Lorsque ce problème se produit, l’une des exceptions suivantes peut apparaître dans les journaux d’erreurs avec des références à `org.apache.sling.scripting.jsp:2.6.0` :
 
 * `java.io.IOException: classFile.delete() failed`
 * `java.io.IOException: tmpFile.renameTo(classFile) failed`

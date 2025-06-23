@@ -7,10 +7,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: dc92f670e7025f9490abbcecff4b485af331bd6d
+source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 95%
+source-wordcount: '1542'
+ht-degree: 94%
 
 ---
 
@@ -314,6 +314,10 @@ Bien qu’il existe de nombreuses possibilités de configuration de la gestion d
 
 * Consultez la [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) pour obtenir les tâches requises permettant de garantir que votre système reste sécurisé.
 * Consultez la liste des utilisateurs, des utilisatrices et des groupes par défaut installés avec la gestion de contenu web AEM. Vérifiez si vous souhaitez effectuer des actions sur d’autres comptes - voir [Sécurité et administration des utilisateurs et utilisatrices](/help/sites-administering/security.md) pour plus de détails.
+
+>[!NOTE]
+>
+> Pour les nouvelles installations d’AEM 6.5 LTS, les définitions d’index doivent être installées séparément. Pour plus d’informations, reportez-vous [ci](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
 
 ## Accès à CRXDE Lite et à la console web {#accessing-crxde-lite-and-the-web-console}
 

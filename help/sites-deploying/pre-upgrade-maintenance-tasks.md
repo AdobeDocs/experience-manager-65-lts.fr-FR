@@ -10,10 +10,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 81%
+source-wordcount: '1110'
+ht-degree: 82%
 
 ---
 
@@ -37,7 +37,7 @@ Avant de commencer la mise à niveau, il est important d’effectuer ces tâches
 
 ## Définitions d’index {#index-definitions}
 
-Assurez-vous d’avoir installé les définitions d’index requises publiées avec les pack de services AEM 6.5 fournis jusqu’au pack de services 22 d’AEM au minimum. (Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/release-notes/release-notes) consultez les notes de mise à jour du pack de services AEM 6.5 ).
+Assurez-vous d’avoir installé les définitions d’index requises publiées avec le dernier pack de services AEM 6.5. (Pour plus d’informations](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/release-notes/release-notes) consultez les notes de mise à jour du pack de services AEM 6.5 [).
 
 ## Vérification de la disponibilité de l’espace disque nécessaire {#ensure-sufficient-disk-space}
 
