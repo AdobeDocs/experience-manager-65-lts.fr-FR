@@ -2,16 +2,11 @@
 title: Intégration de visionneuses Dynamic Media à Adobe Analytics et Experience Platform Tags
 description: Découvrez-en plus sur l’extension Visionneuses Dynamic Media pour Experience Platform Tags et les visionneuses Dynamic Media 5.13. Elle permet aux clients d’Adobe Analytics et aux utilisateurs d’Experience Platform Tags d’utiliser des événements et des données spécifiques aux visionneuses dans leur configuration Experience Platform Tags.
 mini-toc-levels: 3
-contentOwner: Rick Brough
-topic-tags: dynamic-media
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-content-type: reference
-docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 solution: Experience Manager, Experience Manager Assets
 exl-id: 3aea14f7-052d-4f23-b65d-e648623146e7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e38c229bd535ae6f2b058058b1a595cd9b4ddcdc
 workflow-type: tm+mt
 source-wordcount: '6663'
 ht-degree: 100%
@@ -36,7 +31,7 @@ Pour en savoir plus sur les extensions d’Adobe ou les extensions tierces, voir
 
 * L’intégration Experience Platform Tags pour les visionneuses Dynamic Media ne fonctionne pas dans le nœud d’auteur d’Experience Manager. Vous ne pouvez pas afficher de suivi à partir d’une page WCM tant qu’elle n’est pas publiée.
 * L’intégration Experience Platform Tags pour les visionneuses Dynamic Media n’est pas prise en charge pour le mode de fonctionnement « pop-up », où l’URL de la visionneuse est obtenue à l’aide du bouton URL de la page de détails de la ressource.
-* L’intégration Experience Platform Tags ne peut pas être utilisée simultanément avec l’intégration des visionneuses Analytics héritées (au moyen du paramètre `config2=`).
+* L’intégration Experience Platform Tags ne peut pas être utilisée simultanément avec l’intégration des visionneuses Analytics héritées (via le paramètre `config2=`).
 * La prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans la section [Présentation du suivi](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=fr). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments et des erreurs n’est pas pris en charge.
 * La configuration de la durée de stockage n’est pas prise en charge pour les éléments de données à l’aide de l’extension *Visionneuses Dynamic Media*. La durée de stockage doit être définie sur **[!UICONTROL Aucune]**.
 
@@ -436,7 +431,7 @@ Une fois Adobe Analytics configuré, les éléments suivants sont configurés p
 * Les variables Analytics sont disponibles pour recevoir les données de suivi.
 * Les rapports sont disponibles pour afficher les données collectées dans Adobe Analytics.
 
-Voir aussi le [Guide de mise en œuvre d’Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr).
+Consultez également le [Guide de mise en œuvre d’Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr).
 
 **Pour configurer Adobe Analytics en vue de l’intégration** :
 
@@ -508,7 +503,7 @@ Une fois les balises Experience Platform configurées, les éléments suivants 
 
 1. Commencez par accéder à Experience Platform Tags à partir de la [page d’accueil](https://experience.adobe.com/#/home) d’Experience Cloud. Dans la barre de menus, sélectionnez l’icône **[!UICONTROL Solutions]** (un tableau de trois points par trois) près du coin supérieur droit de la page, puis sélectionnez **[!UICONTROL Balises]**.
 
-   Vous pouvez également [ouvrir Experience Platform Tags directement](https://launch.adobe.com/).
+   Vous pouvez également [ouvrir Experience Platform Tags directement](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/home).
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
@@ -597,7 +592,7 @@ Voir [Configuration de l’extension Visionneuses Dynamic Media](#configuring-t
 
 Pour apporter des modifications à la configuration d’Experience Platform Tags (y compris la configuration de la propriété, des extensions, des règles et des éléments de données), vous devez *publier* ces modifications. La publication dans Experience Platform Tags est effectuée à partir de l’onglet Publication sous la configuration des propriétés.
 
-Experience Platform Tags peut comporter plusieurs environnements de développement, un environnement d’évaluation et un environnement de production. Par défaut, la configuration cloud d’Experience Platform Tags dans Experience Manager pointe le nœud d’auteur Experience Manager vers l’environnement d’évaluation de Platform Tags. Le nœud de publication d’Experience Manager pointe vers l’environnement de production d’Experience Platform Tags. Cette disposition signifie qu’avec les paramètres par défaut d’Experience Manager, il est nécessaire de publier la bibliothèque Experience Platform Tags dans l’environnement d’évaluation. Cela vous permet de l’utiliser dans l’auteur Experience Manager. Vous pouvez ensuite le publier dans l’environnement de production afin de pouvoir l’utiliser dans la publication Experience Manager.
+Experience Platform Tags peut comporter plusieurs environnements de développement, un environnement d’évaluation et un environnement de production. Par défaut, la configuration cloud d’Experience Platform Tags dans Experience Manager pointe le nœud d’auteur Experience Manager vers l’environnement d’évaluation de Platform Tags. Le nœud de publication d’Experience Manager pointe vers l’environnement de production d’Experience Platform Tags. Cette disposition signifie qu’avec les paramètres par défaut d’Experience Manager, il est nécessaire de publier la bibliothèque Experience Platform Tags dans l’environnement d’évaluation. Cela vous permet de l’utiliser dans l’auteur Experience Manager. Vous pouvez ensuite la publier dans l’environnement de production afin de pouvoir l’utiliser dans l’instance de publication Experience Manager.
 
 Consultez [Environnements](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=fr) pour plus d’informations sur les environnements Experience Platform Tags.
 

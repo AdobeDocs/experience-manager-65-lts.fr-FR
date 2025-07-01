@@ -2,18 +2,14 @@
 title: Comment créer un formulaire adaptatif ?
 description: Découvrez comment créer un formulaire adaptatif à l’aide de [!DNL Experience Manager Forms]. Les formulaires adaptatifs sont des formulaires HTML5 réactifs qui rationalisent la collecte et le traitement des informations. Découvrez comment créer un formulaire adaptatif basé sur un modèle de données de formulaire et un schéma XML ou JSON.
 Keywords: create adaptive form core component, create core component based adaptive form, creare adaptive form
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-contentOwner: Khushwant Singh
-topic-tags: Adaptive Forms
-docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: eb857ab1-ab1b-4c77-af3b-4507f53a8241
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 254366c95c1aa1e3f5ba01441741a8dc1cfed42c
 workflow-type: tm+mt
-source-wordcount: '1794'
-ht-degree: 99%
+source-wordcount: '1793'
+ht-degree: 100%
 
 ---
 
@@ -57,12 +53,12 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=fr) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## Créer un formulaire adaptatif {#create-an-adaptive-form}
 
-1. Connectez-vous à votre [instance de création AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/deploy.html?lang=en#author-and-publish-installs) locale.
+1. Connectez-vous à votre [instance de création AEM](/help/sites-deploying/deploy.md#author-and-publish-installs) locale.
 
 1. Entrez vos informations d’identification dans la page de connexion d’Experience Manager. Une fois connecté, dans le coin supérieur gauche, sélectionnez **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents.]**.
 

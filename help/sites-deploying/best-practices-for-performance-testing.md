@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 4087a6f44bd87e3f841feb09220a9ea34ec1dc1c
 workflow-type: tm+mt
-source-wordcount: '1762'
-ht-degree: 99%
+source-wordcount: '1765'
+ht-degree: 98%
 
 ---
 
@@ -59,7 +59,7 @@ De nombreux outils de test de performance sont proposés sur le marché. Lors de
 * AEM fournit des outils prêts à l’emploi pour identifier rapidement les requêtes, demandes et messages d’erreur problématiques. Pour plus d’informations, voir la section [Outils de diagnostic](/help/sites-administering/operations-dashboard.md#diagnosis-tools) de la documentation du tableau de bord des opérations.
 * Apache fournit un produit appelé **JMeter** qui peut être utilisé pour les tests de performance et de chargement, ainsi que pour le comportement fonctionnel. Il s’agit d’un logiciel open source et gratuit, mais il dispose d’un plus petit ensemble de fonctionnalités que les produits d’entreprise et d’une courbe d’apprentissage plus difficile. JMeter est disponible sur le site web d’Apache à l’adresse [https://jmeter.apache.org/](https://jmeter.apache.org/).
 
-* **Load Runner** est un produit de test de charge de qualité professionnelle. Une version d’évaluation gratuite est disponible. Vous trouverez plus d’informations à l’adresse [https://www.microfocus.com/fr-fr/portfolio/performance-engineering/overview](https://www.microfocus.com/fr-fr/portfolio/performance-engineering/overview)
+* **Load Runner** est un produit de test de charge de qualité professionnelle. Une version d’évaluation gratuite est disponible. Vous trouverez plus d’informations à l’adresse [Ingénierie des performances professionnelle OpenText](https://www.opentext.com/products/professional-performance-engineering).
 
 * Lors du test de sites web mobiles ou réactifs, un ensemble distinct d’outils doit être utilisé. Ils fonctionnent en limitant la bande passante du réseau, en simulant des connexions mobiles plus lentes comme la 3G ou EDGE. Parmi les outils les plus utilisés, on peut citer :
 

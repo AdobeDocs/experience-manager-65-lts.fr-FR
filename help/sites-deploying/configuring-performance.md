@@ -9,9 +9,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 2fcdc5df5a4b901c177d8e4158663c6b09793146
 workflow-type: tm+mt
-source-wordcount: '5052'
+source-wordcount: '5054'
 ht-degree: 99%
 
 ---
@@ -425,7 +425,7 @@ Lors de la conception de ces tests, il faut se rappeler que tous les scénarios 
 
 | Scénario d’erreur | Type d’erreur | Nombre d’utilisateurs | T/s (attendu) | T/s (testé) | Description |
 |---|---|---|---|---|---|
-| Surcharge des composants de recherche | Recherche sur un caractère générique (astérisque) | 10 | 1 |  | Seul les &ast;&ast;&ast; sont recherchées. |
+| Surcharge des composants de recherche | Recherche sur un caractère générique (astérisque) | 10 | 1 |  | Seul les &amp;ast;&amp;ast;&amp;ast; sont recherchées. |
 |   | Mot de fin | 20 | 2 |  | Recherche d’un mot de fin. |
 |   | Chaîne vide | 10 | 1 |  | Recherche d’une chaîne vide. |
 |   | Caractères spéciaux | 10 | 1 |  | Recherche de caractères spéciaux. |
@@ -454,7 +454,7 @@ Toutes les optimisations effectuées doivent être testées pour s’assurer :
 Une sélection d’outils est disponible pour vous aider dans la génération de la charge, la surveillance des performances et l’analyse des résultats. Voici quelques-uns de ces outils :
 
 * [JMeter](https://jmeter.apache.org/)
-* [Load Runner](https://www.microfocus.com/fr-fr/portfolio/performance-engineering/overview)
+* [Ingénierie de performance professionnelle OpenText](https://www.opentext.com/products/professional-performance-engineering).
 * [Profil interactif Java™](https://jiprof.sourceforge.net/)
 
 Après l’optimisation, testez à nouveau pour confirmer l’impact.

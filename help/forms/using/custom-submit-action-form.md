@@ -1,18 +1,14 @@
 ---
 title: Créer une action Envoyer personnalisée pour les formulaires adaptatifs
 description: AEM Forms permettent de créer une action Envoyer personnalisée pour les formulaires adaptatifs. Cet article décrit la procédure à suivre pour ajouter une action Envoyer personnalisée pour les formulaires adaptatifs.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: customization
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
 exl-id: dc3bd697-5b1a-4efe-9554-c6aa1575c1c0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 98097c29b1b9cfb436f9431e8b7dca6e6a58634a
 workflow-type: tm+mt
-source-wordcount: '1542'
-ht-degree: 100%
+source-wordcount: '1543'
+ht-degree: 99%
 
 ---
 
@@ -106,7 +102,7 @@ Une action Envoyer est un sling:Folder qui contient les éléments suivants :
 
 ## Création d’une action Envoyer personnalisée {#creating-a-custom-submit-action}
 
-Procédez comme suit pour créer une action Envoyer personnalisée qui enregistre les données dans le référentiel CRX et envoie ensuite un e-mail. Le formulaire adaptatif contient l’action d’envoi prête à l’emploi Stocker le contenu (obsolète), qui permet d’enregistrer les données dans le référentiel CRX. En outre, CQ fournit une API de [messagerie](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) qui peut être utilisée pour envoyer des e-mails. Avant d’utiliser l’API de messagerie, vous devez [configurer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr&amp;wcmmode=disabled) le service Day CQ Mail via la console système. Vous pouvez réutiliser l’action Stocker le contenu (obsolète) pour stocker les données dans le référentiel. L’action Stocker le contenu (obsolète) se trouve à l’emplacement /libs/fd/af/components/guidesubmittype/store dans le référentiel CRX.
+Procédez comme suit pour créer une action Envoyer personnalisée qui enregistre les données dans le référentiel CRX et envoie ensuite un e-mail. Le formulaire adaptatif contient l’action d’envoi prête à l’emploi Stocker le contenu (obsolète), qui permet d’enregistrer les données dans le référentiel CRX. En outre, CQ fournit une API de [messagerie](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) qui peut être utilisée pour envoyer des e-mails. Avant d’utiliser l’API de messagerie, vous devez [configurer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr&wcmmode=disabled) le service Day CQ Mail via la console système. Vous pouvez réutiliser l’action Stocker le contenu (obsolète) pour stocker les données dans le référentiel. L’action Stocker le contenu (obsolète) se trouve à l’emplacement /libs/fd/af/components/guidesubmittype/store dans le référentiel CRX.
 
 1. Connectez-vous à CRXDE Lite en accédant à https://&lt;server>:&lt;port>/crx/de/index.jsp. Créez un nœud avec la propriété sling:Folder et le nom store_and_mail dans le dossier /apps/custom_submit_action. Créez le dossier custom_submit_action, le cas échéant.
 
@@ -142,7 +138,7 @@ Procédez comme suit pour créer une action Envoyer personnalisée qui enregistr
 
    Ajoutez le script post.POST.jsp à votre action. (/apps/custom_submit_action/store_and_mail/).
 
-   Exécutez l’action Stocker prête à l’emploi (script post.POST.jsp). Utilisez l’API [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)&#x200B;(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) que le CQ fournit dans votre code pour exécuter l’action Stocker. Ajoutez le code suivant à votre fichier JSP :
+   Exécutez l’action Stocker prête à l’emploi (script post.POST.jsp). Utilisez l’API [FormsHelper.runAction](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String,java.lang.String,org.apache.sling.api.resource.Resource,org.apache.sling.api.SlingHttpServletRequest,org.apache.sling.api.SlingHttpServletResponse))&#x200B;(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) que le CQ fournit dans votre code pour exécuter l’action Stocker. Ajoutez le code suivant à votre fichier JSP :
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
@@ -152,7 +148,7 @@ Procédez comme suit pour créer une action Envoyer personnalisée qui enregistr
 
    `String mailTo = properties.get("mailTo");`
 
-   Utilisez enfin l’API de messagerie CQ pour envoyer l’e-mail. Utilisez la classe [SimpleEmail](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) pour créer l’objet Email comme illustré ci-dessous :
+   Utilisez enfin l’API de messagerie CQ pour envoyer l’e-mail. Utilisez la classe [SimpleEmail](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/commons/mail/SimpleEmail.html) pour créer l’objet Email comme illustré ci-dessous :
 
    >[!NOTE]
    >

@@ -1,18 +1,13 @@
 ---
 title: Composants Adobe Experience Manager - Principes de base
 description: Lorsque vous commencez à développer de nouveaux composants, vous devez comprendre les principes de base de leur structure et de leur configuration.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: components
-content-type: reference
-legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
-source-git-commit: 013c9155817811913963ca514f7a6369b338d487
+source-git-commit: a0fe5bbfe93719641118521c6861bcb2cca76d60
 workflow-type: tm+mt
-source-wordcount: '4834'
+source-wordcount: '4819'
 ht-degree: 100%
 
 ---
@@ -312,7 +307,7 @@ Un composant est un nœud de type `cq:Component` et possède les propriétés et
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>Si elle est définie, cette propriété sert d’ID de cellule. Pour plus d’informations, voir l’article de la base de connaissances <a href="https://helpx.adobe.com/fr/experience-manager/kb/DesigneCellId.html">Comment sont générés les identifiants des cellules de conception ?</a>.<br /> </td>
+   <td>Si elle est définie, cette propriété sert d’ID de cellule.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>

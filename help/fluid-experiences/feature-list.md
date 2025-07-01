@@ -6,10 +6,10 @@ feature: Authoring
 solution: Experience Manager Sites,Experience Manager Assets
 role: Admin
 exl-id: 9bb1ff8b-5fcb-44df-8c45-2306e127410d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6e6e04a2532f812596f00557b5d3dc4dccdab66d
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 99%
+source-wordcount: '267'
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 
 Adobe Experience Manager Fluid Experiences s’inspire des puissants ensembles de fonctionnalités d’AEM Sites, d’AEM Dynamic Media et d’AEM Assets pour fournir une solution robuste de diffusion de contenu découplée.
 
-AEM Fluid Experiences se différencie d’AEM classique en ce qu’il ne traite que les cas d’utilisation de diffusion découplée. La performance de création et de diffusion de contenu et l’efficacité de la prise en charge par AEM des cas d’utilisation hybrides sont assurées par les solutions [complètes AEM Sites, Assets et Dynamic Media.](https://experienceleague.adobe.com/docs/experience-manager-65-lts/user-guide/home.html)
+AEM Fluid Experiences se différencie d’AEM classique en ce qu’il ne traite que les cas d’utilisation de diffusion découplée. La performance de création et de diffusion de contenu et l’efficacité de la prise en charge par AEM des cas d’utilisation hybrides sont assurées par les solutions complètes AEM Sites, Assets et Dynamic Media.
 
 Les tableaux suivants définissent les fonctionnalités d’AEM Fluid Experiences et renvoient vers la documentation d’assistance appropriée.
 

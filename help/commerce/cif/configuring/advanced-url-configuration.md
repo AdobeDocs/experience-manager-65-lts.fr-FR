@@ -11,9 +11,9 @@ thumbnail: 34350.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 5f6171f8-20ca-4c31-a99f-a5bc07a63baf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e4cf6ae3392cef2ffd7e8fff3226b50c95f5a248
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '803'
 ht-degree: 99%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->L’optimisation pour les moteurs de recherche est devenue une préoccupation essentielle pour de nombreux spécialistes du marketing. En conséquence, les questions d’optimisation du moteur de recherche doivent être traitées pour de nombreux projets AEM. Consultez les [Bonnes pratiques de gestion des URL et d’optimisation du moteur de recherche](https://experienceleague.adobe.com/docs/experience-manager-65-lts/managing/managing-further-reference/seo-and-url-management.html) pour plus d’informations.
+>L’optimisation pour les moteurs de recherche est devenue une préoccupation essentielle pour de nombreux spécialistes du marketing. En conséquence, les questions d’optimisation du moteur de recherche doivent être traitées pour de nombreux projets AEM. Consultez les [Bonnes pratiques de gestion des URL et d’optimisation du moteur de recherche](/help/managing/seo-and-url-management.md) pour plus d’informations.
 
 Les [composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components) offrent des configurations avancées pour personnaliser les URL des pages de produits et de catégories. De nombreuses mises en œuvre personnalisent ces URL à des fins d’optimisation pour les moteurs de recherche (SEO). La vidéo suivante explique comment configurer le `UrlProvider` service et les fonctionnalités du [mappage Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) pour personnaliser les URL des pages de produits et de catégories.
 
->[!VIDEO](https://video.tv.adobe.com/v/38579/?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## Configuration {#configuration}
 
@@ -110,5 +110,5 @@ Le projet de [magasin de référence Venia](https://github.com/adobe/aem-cif-gui
 ## Ressources supplémentaires
 
 * [Magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia)
-* [Mappage des ressources AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/resource-mapping.html)
+* [Mappage des ressources AEM](/help/sites-deploying/resource-mapping.md)
 * [Mappages Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

@@ -2,17 +2,14 @@
 title: Comment créer ou personnaliser des thèmes de formulaire adaptatif ?
 description: Découvrez comment créer ou personnaliser des thèmes pour les composants principaux des formulaires adaptatifs à l’aide des spécifications BEM.
 keywords: créer un thème de composants principaux de formulaires adaptatifs, créer un thème, personnaliser le thème, charger un nouveau thème, utiliser un thème dans les formulaires, supprimer un thème, créer un thème dans les formulaires AEM 6.5
-contentOwner: Khushwant Singh
-topic-tags: Adaptive Forms
-docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7eddd03e7b1256f2f2b54bdd92672d5a1e4440d1
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 99%
+source-wordcount: '1938'
+ht-degree: 100%
 
 ---
 
@@ -81,7 +78,7 @@ La personnalisation d’un thème fait référence au processus de modification 
 
 * Installation de la dernière version d’[Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven est un outil d’automatisation de création couramment utilisé dans les projets Java™. L’installation de la dernière version vous garantit les dépendances nécessaires à la personnalisation du thème.
 
-* Découvrez comment créer une [bibliothèque cliente dans Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/clientlibs.html). AEM fournit des bibliothèques clientes qui vous permettent de stocker le code côté client dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client ou à la cliente.
+* Découvrez comment créer une [bibliothèque cliente dans Adobe Experience Manager](/help/sites-developing/clientlibs.md). AEM fournit des bibliothèques clientes qui vous permettent de stocker le code côté client dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client ou à la cliente.
 
 * Installez un éditeur de texte brut. Par exemple, Microsoft® Visual Studio Code. L’utilisation d’un éditeur de texte brut tel que Microsoft® Visual Studio Code fournit un environnement convivial pour la création et la modification de fichiers de thème.
 
@@ -190,7 +187,7 @@ Vous avez également la possibilité de personnaliser la police, la couleur, la 
 >
 > Lorsqu’un style est défini au niveau du thème et du composant, le style défini au niveau du composant est prioritaire.
 
-#### 3. Préparer le thème pour le déploiement {#generate-the-clientlib}
+#### &#x200B;3. Préparer le thème pour le déploiement {#generate-the-clientlib}
 
 Pour déployer un thème sur une instance AEM, il doit être converti en bibliothèque cliente. Pour convertir le thème en bibliothèque cliente, procédez comme suit :
 
@@ -215,7 +212,7 @@ Pour déployer un thème sur une instance AEM, il doit être converti en bibliot
 
    ![Emplacement des bibliothèque clientes](/help/forms/using/assets/adaptiveform.theme.easel.png)
 
-#### 4. Déployer le thème sur un environnement local {#deploy-the-theme-on-a-local-environment}
+#### &#x200B;4. Déployer le thème sur un environnement local {#deploy-the-theme-on-a-local-environment}
 
 Pour déployer le thème dans votre environnement de développement ou de test local, procédez comme suit :
 
@@ -266,7 +263,7 @@ An Adaptive Form with the selected theme is created.
 The selected theme is applied to the Adaptive Form. 
 -->
 
-#### 5. Déployer un thème sur votre environnement de production {#deploy-theme}
+#### &#x200B;5. Déployer un thème sur votre environnement de production {#deploy-theme}
 
 Une fois que vous avez testé le thème sur votre environnement de développement local, vous pouvez continuer à le déployer sur vos environnements de production, y compris les instances de création et de publication. Pour déployer le thème sur vos environnements de production, procédez comme suit :
 

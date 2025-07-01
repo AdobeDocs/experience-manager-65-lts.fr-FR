@@ -1,15 +1,14 @@
 ---
 title: Intégration d’ [!DNL Assets]  à  [!DNL InDesign Server]
 description: Découvrez comment intégrer  [!DNL Adobe Experience Manager Assets]  à  [!DNL Adobe InDesign Server].
-contentOwner: AG
 role: Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: f0db5ec6-45ea-418e-ae5f-e6e307a40a38
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 8489976fbcee595ee8230c530597523e7cd0f6b7
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 100%
+source-wordcount: '1548'
+ht-degree: 98%
 
 ---
 
@@ -21,11 +20,11 @@ ht-degree: 100%
 * Le programme de traitement du proxy définit et gère une tâche spécifique.
 Il peut couvrir une grande variété de tâches ; par exemple l’utilisation d’[!DNL InDesign Server] pour traiter les fichiers.
 
-Pour charger intégralement des fichiers créés avec [!DNL Adobe InDesign] vers [!DNL Experience Manager Assets], un proxy est utilisé. Cette méthode utilise un programme de traitement du proxy pour communiquer avec [!DNL Adobe InDesign Server], qui exécute des [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) afin d’extraire des métadonnées et de générer divers rendus pour [!DNL Experience Manager Assets]. Le programme de traitement du proxy permet une communication bidirectionnelle entre [!DNL InDesign Server] et les instances [!DNL Experience Manager] dans une configuration cloud.
+Pour charger intégralement des fichiers créés avec [!DNL Adobe InDesign] vers [!DNL Experience Manager Assets], un proxy est utilisé. Cette méthode utilise un programme de traitement du proxy pour communiquer avec [!DNL Adobe InDesign Server], qui exécute des [scripts](https://helpx.adobe.com/indesign/using/scripting.html) afin d’extraire des métadonnées et de générer divers rendus pour [!DNL Experience Manager Assets]. Le programme de traitement du proxy permet une communication bidirectionnelle entre [!DNL InDesign Server] et les instances [!DNL Experience Manager] dans une configuration cloud.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] est proposé sous la forme de deux offres distinctes. L’application de bureau [Adobe InDesign](https://www.adobe.com/fr/products/indesign.html) utilisée pour concevoir des dispositions pour la distribution papier et numérique. [Adobe InDesign Server](https://www.adobe.com/fr/products/indesignserver.html) vous permet de créer des documents de façon automatisée, et par programmation, sur la base de vos dispositions créées avec [!DNL InDesign]. Il fonctionne comme un service offrant une interface à son moteur [ExtendScript](https://www.adobe.com/devnet/indesign/documentation.html#idscripting). Les scripts sont écrits dans [!DNL ExtendScript], qui est similaire à [!DNL JavaScript]. Pour plus d’informations sur les scripts [!DNL InDesign], rendez-vous à l’adresse [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] est proposé sous la forme de deux offres distinctes. L’application de bureau [Adobe InDesign](https://www.adobe.com/fr/products/indesign.html) utilisée pour concevoir des dispositions pour la distribution papier et numérique. [Adobe InDesign Server](https://www.adobe.com/fr/products/indesignserver.html) vous permet de créer des documents de façon automatisée, et par programmation, sur la base de vos dispositions créées avec [!DNL InDesign]. Il fonctionne comme un service offrant une interface à son moteur [ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html). Les scripts sont écrits en [!DNL ExtendScript], qui est similaire à [!DNL JavaScript].
 
 ## Fonctionnement de l’extraction {#how-the-extraction-works}
 
@@ -50,7 +49,7 @@ Ce script de commande permet d’effectuer les opérations suivantes :
 
    >[!NOTE]
    >
-   >IDML est un format XML qui effectue le rendu de tout le contenu du fichier [!DNL InDesign]. Il est stocké sous la forme d’un package compressé au format [ZIP](https://www.techterms.com/definition/zip). Pour plus d’informations, consultez les [Formats d’échange d’InDesigns INX et IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
+   >IDML est un format XML qui effectue le rendu de tout le contenu du fichier [!DNL InDesign]. Il est stocké sous la forme d’un package compressé au format [ZIP](https://www.techterms.com/definition/zip). Pour plus d’informations, consultez les [Formats d’échange d’InDesigns INX et IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&seqNum=8).
 
    >[!CAUTION]
    >

@@ -10,9 +10,9 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 17d1976e-96bd-4f8a-8be5-ea208c5ba93f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 0588e3590da69cdf49c61abc0a422093d04f5c41
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2352'
 ht-degree: 98%
 
 ---
@@ -187,7 +187,7 @@ Avant d’utiliser un gestionnaire d’erreurs personnalisé dans des formulaire
 
 ## Ajouter un gestionnaire d’erreurs à l’aide de l’éditeur de règles {#add-error-handler-using-rule-editor}
 
-En utilisant l’action [Appeler un service de l’éditeur de règles](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke), vous définissez le critère de validation en fonction de la source de données que vous utilisez avec le formulaire adaptatif. Par exemple, si vous utilisez des services web RESTful comme source de données, vous pouvez définir les critères de validation dans un fichier de définition Swagger. En utilisant les fonctions de gestionnaire d’erreurs et l’éditeur de règles dans les formulaires adaptatifs, vous pouvez contrôler et personnaliser efficacement la gestion des erreurs. Vous définissez les conditions à l’aide de l’éditeur de règles et configurez les actions à effectuer lorsque la règle est déclenchée. Un formulaire adaptatif valide les entrées que vous fournissez dans les champs en fonction de critères de validation prédéfinis. Si les valeurs d’entrée ne répondent pas aux critères de validation, les messages d’erreur s’affichent au niveau du champ dans un formulaire adaptatif.
+En utilisant l’action [Appeler un service de l’éditeur de règles](/help/forms/using/rule-editor.md#invoke), vous définissez le critère de validation en fonction de la source de données que vous utilisez avec le formulaire adaptatif. Par exemple, si vous utilisez des services web RESTful comme source de données, vous pouvez définir les critères de validation dans un fichier de définition Swagger. En utilisant les fonctions de gestionnaire d’erreurs et l’éditeur de règles dans les formulaires adaptatifs, vous pouvez contrôler et personnaliser efficacement la gestion des erreurs. Vous définissez les conditions à l’aide de l’éditeur de règles et configurez les actions à effectuer lorsque la règle est déclenchée. Un formulaire adaptatif valide les entrées que vous fournissez dans les champs en fonction de critères de validation prédéfinis. Si les valeurs d’entrée ne répondent pas aux critères de validation, les messages d’erreur s’affichent au niveau du champ dans un formulaire adaptatif.
 
 >[!NOTE]
 >
@@ -203,7 +203,7 @@ L’éditeur de règles vous permet d’effectuer les opérations suivantes :
 ### Ajouter la fonction de gestionnaire d’erreurs par défaut {#add-default-errror-handler}
 
 Un gestionnaire d’erreurs par défaut est pris en charge pour afficher les messages d’erreur sur les champs si la réponse d’erreur se trouve dans le schéma standard ou dans un échec de validation côté serveur.
-Pour comprendre comment créer et utiliser un gestionnaire d’erreurs par défaut à l’aide de l’action [Appeler un service de l’éditeur de règles](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke), prenons un exemple de formulaire adaptatif simple à deux champs, **Identifiant de l’animal domestique** et **Nom de l’animal domestique** et utilisons un gestionnaire d’erreurs standard sur le champ **Identifiant de l’animal domestique** pour vérifier les différentes erreurs renvoyées par le point d’entrée REST configuré pour appeler un service externe, par exemple, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Pour ajouter un gestionnaire d’erreur par défaut à l’aide de l’action Appeler un service de l’éditeur de règles, procéder comme suit :
+Pour comprendre comment créer et utiliser un gestionnaire d’erreurs par défaut à l’aide de l’action [Appeler un service de l’éditeur de règles](/help/forms/using/rule-editor.md#invoke), prenons un exemple de formulaire adaptatif simple à deux champs, **Identifiant de l’animal domestique** et **Nom de l’animal domestique** et utilisons un gestionnaire d’erreurs standard sur le champ **Identifiant de l’animal domestique** pour vérifier les différentes erreurs renvoyées par le point d’entrée REST configuré pour appeler un service externe, par exemple, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Pour ajouter un gestionnaire d’erreur par défaut à l’aide de l’action Appeler un service de l’éditeur de règles, procéder comme suit :
 
 1. Ouvrez un formulaire adaptatif en mode création, sélectionnez un composant de formulaire et sélectionnez **[!UICONTROL Éditeur de règles]** pour ouvrir ce dernier.
 1. Sélectionnez **[!UICONTROL Créer]**.
@@ -232,7 +232,7 @@ Outre les actions mentionnées, les gestionnaires d’erreurs personnalisés peu
 
 Le gestionnaire d’erreurs personnalisé est une fonction (bibliothèque cliente) conçue pour répondre aux erreurs renvoyées par un service externe et fournir une réponse personnalisée aux utilisateurs finaux et utilisatrices finales. Toute bibliothèque cliente avec annotation `@errorHandler` est considérée comme une fonction de gestionnaire d’erreurs personnalisé. Cette annotation permet d’identifier la fonction de gestionnaire d’erreurs spécifiée dans le fichier `.js`.
 
-Pour comprendre comment créer et utiliser un gestionnaire d’erreurs personnalisé à l’aide de l’action [Service Invoke de l’éditeur de règles](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke), prenons un exemple de formulaire adaptatif avec deux champs, **Identifiant de l’animal** et **Nom de l’animal** et utilisons un gestionnaire d’erreurs personnalisé pour le champ **Identifiant de l’animal** afin de vérifier les différentes erreurs renvoyées par le point d’entrée REST configuré pour appeler un service externe, par exemple `200 - OK`,`404 - Not Found`, `400 - Bad Request`.
+Pour comprendre comment créer et utiliser un gestionnaire d’erreurs personnalisé à l’aide de l’action [Service Invoke de l’éditeur de règles](/help/forms/using/rule-editor.md#invoke), prenons un exemple de formulaire adaptatif avec deux champs, **Identifiant de l’animal** et **Nom de l’animal** et utilisons un gestionnaire d’erreurs personnalisé pour le champ **Identifiant de l’animal** afin de vérifier les différentes erreurs renvoyées par le point d’entrée REST configuré pour appeler un service externe, par exemple `200 - OK`,`404 - Not Found`, `400 - Bad Request`.
 
 Pour ajouter et utiliser un gestionnaire d’erreurs personnalisé dans un formulaire adaptatif, procédez comme suit :
 

@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: c033a676eb746befd43803d1ae00c564890cb945
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2422'
 ht-degree: 99%
 
 ---
@@ -30,10 +30,6 @@ Cette page vous aide à optimiser les fonctionnalités de Multi Site Manager 
 >[!NOTE]
 >
 >Cette page doit être lue conjointement avec [Réutilisation de contenu : Multi Site Manager](/help/sites-administering/msm.md).
->
->Les sections suivantes de la section de restructuration des référentiels d’AEM Sites peuvent également vous intéresser :
->* [Configurations de plans directeurs de Multi Site Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
->* [Configurations du déploiement de Multi Site Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >
@@ -208,15 +204,12 @@ La nouvelle configuration de déploiement est alors disponible pour vous lors de
 
 1. Ajoutez les propriétés suivantes à ce nœud :
    * **Nom** : `jcr:title`
-
      **Type** : `String`
      **Valeur** : titre d’identification qui apparaîtra dans l’interface utilisateur.
    * **Nom** : `jcr:description`
-
      **Type** : `String`
      **Valeur** : une description facultative.
    * **Nom** : `cq:trigger`
-
      **Type** : `String`
      **Valeur** : le [Déclencheur de déploiement](/help/sites-administering/msm-sync.md#rollout-triggers) à utiliser. Faites un choix parmi les éléments suivants :
       * `rollout`
@@ -689,7 +682,6 @@ La propriété de boîte de dialogue détermine si une propriété de page est s
       * **Type** : `String`
 
       * **Valeur** : contient le nom de la propriété considérée (et est comparable à la valeur de la propriété `name`. Par exemple,
-
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Lorsque `cq-msm-lockable` a été défini, la rupture/le verrouillage de la chaîne interagit avec le MSM de la façon suivante :

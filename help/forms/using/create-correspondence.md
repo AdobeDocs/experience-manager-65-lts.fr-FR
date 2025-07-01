@@ -8,10 +8,10 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
 workflow-type: tm+mt
-source-wordcount: '3832'
-ht-degree: 100%
+source-wordcount: '3805'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## Création de correspondance dans l’interface utilisateur de création de correspondance {#create-correspondence-in-the-create-correspondence-user-interface}
 
-Après la création d’un [modèle de lettre dans Correspondence Management](../../forms/using/create-letter.md), l’utilisateur / agent / expert en assurance final peut ouvrir la lettre dans l’interface utilisateur Création de correspondance et créer une correspondance en saisissant des données, en installant du contenu et en gérant les pièces jointes. Enfin, l’expert ou l’experte en assurance ou l’agent peut gérer le contenu en mode aperçu et envoyer la lettre.
+Après la création d’un [modèle de lettre dans Correspondence Management](/help/forms/using/create-letter.md), l’utilisateur / agent / expert en assurance final peut ouvrir la lettre dans l’interface utilisateur Création de correspondance et créer une correspondance en saisissant des données, en installant du contenu et en gérant les pièces jointes. Enfin, l’expert ou l’experte en assurance ou l’agent peut gérer le contenu en mode aperçu et envoyer la lettre.
 
 ### Prévisualisation d’une correspondance {#preview-a-correspondence}
 
@@ -51,13 +51,13 @@ Sélectionnez la lettre à prévisualiser en procédant comme suit :
 
 1. L’aperçu HTML de la lettre (aperçu de formulaires mobiles) s’ouvre sur l’onglet Données actif par défaut.
 
-   Pour plus d’informations sur les formulaires mobiles et les fonctionnalités qu’ils prennent en charge, consultez [Différences de caractéristiques entre les formulaires pour périphériques mobiles et les formulaires PDF](https://helpx.adobe.com/fr/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
+   Pour plus d’informations sur les formulaires mobiles et les fonctionnalités qu’ils prennent en charge, consultez [Différences de caractéristiques entre les formulaires pour périphériques mobiles et les formulaires PDF](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
    Il existe trois onglets : données, contenu et pièces jointes. S’il n’existe pas d’éléments de données (variables d’espace réservé et champs de mise en page), la lettre s’ouvre alors directement dans l’onglet Contenu. L’onglet Pièces jointes est disponible uniquement lorsque des pièces jointes sont présentes ou que l’accès à la bibliothèque est activé.
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur le basculement entre le mode de rendu HTML et PDF de la prévisualisation de lettre, voir [Modifier le mode de rendu de lettre](#changerenditionmode). Pour plus d’informations sur la prise en charge des PDF dans Correspondence Management et AEM, voir [Discontinuation des plug-ins de navigateur NPAPI et son impact](https://helpx.adobe.com/fr/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
+   >Pour plus d’informations sur le basculement entre le mode de rendu HTML et PDF de la prévisualisation de lettre, voir [Modifier le mode de rendu de lettre](#changerenditionmode). Pour plus d’informations sur la prise en charge de PDF dans Correspondence Management et AEM, voir [Discontinuation des plug-ins du navigateur NPAPI et son impact](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 ### Saisir des données {#enterdata}
 
@@ -111,17 +111,13 @@ Dans l’onglet Contenu, gérez le contenu tel que les fragments de document et 
 
    >[!NOTE]
    >
-   >Toutefois, la mise en forme du texte collé présente certaines [restrictions](https://helpx.adobe.com/fr/aem-forms/kb/cm-copy-paste-text-limitations.html).
+   >Toutefois, la mise en forme du texte collé présente certaines limites.
 
    Vous pouvez mettre le texte et les nombres en retrait dans votre lettre à l’aide de la touche de tabulation. Par exemple, vous pouvez utiliser la touche de tabulation pour aligner plusieurs colonnes de texte d’une liste dans un format tabulaire.
 
    ![tabspaces](assets/tabspaces.png)
 
    Exemple : vous pouvez utiliser la touche de tabulation pour aligner plusieurs colonnes de texte sous forme de tableau.
-
-   >[!NOTE]
-   >
-   >Pour plus d’informations sur la configuration de l’espacement des tabulations pour vos modules de texte et lettres, voir la section [Informations supplémentaires sur l’utilisation de l’espacement des tabulations pour l’agencement du texte](https://helpx.adobe.com/fr/aem-forms/kb/cm-tab-spacing-limitations.html).
 
 1. Si nécessaire, insérez des caractères spéciaux dans la correspondance. Vous pouvez, par exemple, utiliser la palette des caractères spéciaux pour insérer les caractères suivants :
 
@@ -375,7 +371,7 @@ Pour plus d’informations sur la prise en charge des scripts dans des formulair
 
 Par défaut, l’interface utilisateur Création de correspondance utilise des formulaires HTML ou des formulaires mobiles pour rendre l’aperçu d’une lettre. L’aperçu des formulaires mobiles n’a aucun problème de rendu dans un navigateur, car il utilise le module externe natif du navigateur et ne requiert aucun module externe supplémentaire. Vous pouvez changer le mode de prévisualisation d’une lettre en PDF. Toutefois, les contraintes de navigateur peuvent créer des problèmes pour les différentes fonctionnalités de l’aperçu au format PDF interactif de la lettre.
 
-Pour plus d’informations sur la compatibilité des navigateurs avec la prévisualisation de lettre, référez-vous à [Discontinuation des plug-ins du navigateur NPAPI et son impact](https://helpx.adobe.com/fr/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+Pour plus d’informations sur la compatibilité des navigateurs avec la prévisualisation de lettre, référez-vous à [Discontinuation des plug-ins du navigateur NPAPI et son impact](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 Pour changer le mode d’aperçu de la lettre, effectuez les étapes suivantes :
 
