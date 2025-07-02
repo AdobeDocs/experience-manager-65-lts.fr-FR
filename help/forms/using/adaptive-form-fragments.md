@@ -91,6 +91,7 @@ En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire 
 1. Dans la boîte de dialogue de création de fragment, spécifiez les informations suivantes :
 
    * **Nom** : nom du fragment. La valeur par défaut est le nom de l’élément du panneau. Ce champ est obligatoire.
+
      >[!NOTE]
      >
      >Assurez-vous de spécifier un nom unique pour le fragment. S’il existe un autre fragment portant le même nom, la création du fragment échoue.
