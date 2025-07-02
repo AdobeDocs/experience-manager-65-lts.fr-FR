@@ -1,19 +1,16 @@
 ---
 title: Résumé des nouvelles fonctionnalités | AEM 6.5 Forms
 description: Dernières fonctionnalités et améliorations apportées aux formulaires et documents AEM, la solution de gestion de l’expérience numérique la plus avancée au monde.
-topic-tags: introduction
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Release Information
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 4db457d2-fefb-410d-8e74-58147f52bbd3
-source-git-commit: 4ce7de628810e13f96361c0b253ef12850985ade
+source-git-commit: 2e291acfc412bbddf215357f57fffbc662bbbd30
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 90%
+source-wordcount: '613'
+ht-degree: 91%
 
 ---
 
@@ -67,10 +64,7 @@ Cette version comprend également des correctifs pour plus de 20 problèmes sig
 
 ## Installer le Pack de services
 
-Le Pack de services apporte de nouvelles fonctionnalités et des correctifs de bugs pour AEM Forms on JEE et AEM Forms on OSGi. Les instructions d’installation ont été modifiées par rapport aux Service Packs précédents. Pour obtenir des instructions d’installation, consultez les [instructions d’installation du pack de services AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
-
-
-
+Le Pack de services apporte de nouvelles fonctionnalités et des correctifs de bugs pour AEM Forms on JEE et AEM Forms on OSGi. Les instructions d’installation ont été modifiées par rapport aux Service Packs précédents.
 
 <!-- 
 ## Transaction Reports {#transaction-reports}
@@ -131,7 +125,7 @@ There are several improvements in the Web channel layout auto-generated using th
 
 ### Use Adobe Sign's cloud-based digital signatures in Adaptive Forms {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
 
-[Cloud-based digital signatures](https://helpx.adobe.com/fr/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures.
+[Cloud-based digital signatures](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures.
 
 #### Embed an Adaptive Form or Interactive Communication in AEM Sites Single Page Applications {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
 

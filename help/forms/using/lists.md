@@ -1,17 +1,14 @@
 ---
 title: Fragments de document dans AEM
 description: Dans Correspondence Management, les fragments de document (texte, liste, conditions et fragments de disposition, par exemple) permettent de former les composants statiques, dynamiques et répétables de la correspondance client.
-topic-tags: correspondence-management
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ece49f03-e711-439f-9c2d-6308fe2998ae
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4f2374a48687d39f7d365e09d9055edf583e2c20
 workflow-type: tm+mt
-source-wordcount: '6905'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -91,10 +88,6 @@ La solution Correspondence Management prend en charge deux types d’éléments
    Vous pouvez directement copier et coller le texte du document MS Word dans un module de texte modifiable. La mise en forme, telle que la liste à puces, la police et la couleur du texte, est conservée dans le module de texte.
 
    ![pastetexttextmodule](assets/pastetexttextmodule.png)
-
-   >[!NOTE]
-   >
-   >Toutefois, la mise en forme du texte collé présente certaines [restrictions](https://helpx.adobe.com/fr/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
 1. Si nécessaire, insérez des caractères spéciaux dans le fragment de document. Vous pouvez, par exemple, utiliser la palette des caractères spéciaux pour insérer les caractères suivants :
 

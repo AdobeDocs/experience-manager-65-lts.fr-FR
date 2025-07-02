@@ -1,17 +1,14 @@
 ---
 title: Textes dans les communications interactives
 description: 'Créer et modifier des fragments de document texte à utiliser dans les communications interactives : le texte est l’un des quatre types de fragments de document utilisés pour créer des communications interactives. Les trois autres sont des fragments de conditions, de listes et de disposition.'
-topic-tags: interactive-communications
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: ca18b9f4-9d06-4b15-81dd-68a6821e2e3e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6db207b08535c063e41b333054561036481e8db9
 workflow-type: tm+mt
-source-wordcount: '2474'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -238,10 +235,6 @@ Vous pouvez copier et coller un ou plusieurs paragraphes de texte dans un fragme
 Vous pouvez directement copier et coller le texte à partir du document Microsoft® Word vers un fragment de texte modifiable. La mise en forme, telle que la liste à puces, la police et la couleur du texte, est conservée dans le fragment de texte.
 
 ![pastetexteditablemodule-1](assets/pastetexteditablemodule-1.png)
-
->[!NOTE]
->
->Toutefois, la mise en forme du texte collé présente certaines [restrictions](https://helpx.adobe.com/fr/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
 ## Insérer des caractères spéciaux dans le texte {#special}
 

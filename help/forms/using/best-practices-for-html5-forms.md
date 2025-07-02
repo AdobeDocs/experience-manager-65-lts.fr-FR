@@ -1,19 +1,14 @@
 ---
 title: Recommandations relatives aux formulaires HTML5
 description: Modifiez vos formulaires HTML5 basés sur XFA pour optimiser les performances.
-contentOwner: khsingh
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: hTML5_forms
-content-type: reference
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 7f66832f-c9d1-43e1-b3a4-a25ea9a8a224
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7a52531c6c9c1c81ab563fd85f67ba4b7f81d318
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -76,7 +71,6 @@ Les formulaires Adobe Experience Manager (AEM) peuvent vous aider à transfor
 * [Meilleures pratiques d’administration dans AEM ](/help/sites-administering/administer-best-practices.md)
 * [Meilleures pratiques pour le développement de solutions](/help/sites-developing/best-practices.md)
 * [Meilleures pratiques pour travailler avec les formulaires adaptatifs](/help/forms/using/adaptive-forms-best-practices.md)
-* [Le serveur AEM Forms n’incorpore pas de polices à un formulaire PDF dynamique](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-server-does-not-embed-fonts-to-dynamic-pdf-form.html)
 
 ## Carte de référence rapide {#quick-reference-card}
 

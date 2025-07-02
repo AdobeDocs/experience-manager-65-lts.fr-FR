@@ -1,20 +1,16 @@
 ---
 title: Rapports personnalisés dans Process Reporting
 description: Vous pouvez créer des rapports personnalisés et les ajouter à l’interface utilisateur de Process Reporting d’AEM Forms sur JEE.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: process-reporting
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5670fede-4567-445e-8eeb-84349405db0e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 7e7c9f2414504ade45d6695641e08108afed0bd2
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 100%
+source-wordcount: '835'
+ht-degree: 97%
 
 ---
 
@@ -26,8 +22,8 @@ Vous pouvez utiliser l’interface REST de QueryBuilder ou créer un service OSG
 
 Avant d’ajouter un rapport personnalisé, procédez comme suit :
 
-1. Les données utilisées dans les rapports personnalisés doivent être disponibles dans Process Reporting. Pour garantir la disponibilité des données, planifiez une tâche cron ou utilisez l’option de **[Synchronisation](https://helpx.adobe.com/fr/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** disponible dans l’interface utilisateur de Process Reporting.
-1. La requête URL (qui encapsule la requête souhaitée) doit renvoyer un objet de résultat de requête approprié. Pour créer une requête, vous pouvez utiliser l’interface REST de [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=fr) pour créer un service OSGi à l’aide de l’API QueryBuilder. Vous pouvez créer des requêtes dynamiques ou statiques.
+1. Les données utilisées dans les rapports personnalisés doivent être disponibles dans Process Reporting. Pour garantir la disponibilité des données, planifiez une tâche cron ou utilisez l’option **Synchronisation** dans l’interface utilisateur de Process Reporting.
+1. La requête URL (qui encapsule la requête souhaitée) doit renvoyer un objet de résultat de requête approprié. Pour créer une requête, vous pouvez utiliser l’interface REST de [QueryBuilder](/help/sites-developing/querybuilder-api.md) pour créer un service OSGi à l’aide de l’API QueryBuilder. Vous pouvez créer des requêtes dynamiques ou statiques.
 
 1. Créez une interface utilisateur personnalisée pour afficher les résultats. Vous pouvez créer une interface utilisateur autonome ou intégrer le résultat à l’interface utilisateur de Process Reporting existante.
 

@@ -1,19 +1,14 @@
 ---
 title: Activer AEM pour rechercher des documents PDF protégés par la sécurité des documents
 description: Découvrez comment activer la recherche AEM native pour effectuer une recherche de texte intégral sur des documents PDF protégés par DRM.
-contentOwner: khsingh
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ad86398d-0dc9-4168-b409-4d231b8d586b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 757c26274b39f5fb37a090f320493abd1af44c42
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 100%
+source-wordcount: '709'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +23,7 @@ La recherche AEM permet de rechercher et de localiser des ressources AEM et d�
 
 * Si vous utilisez AEM Forms sur OSGi :
 
-   * Installez le [package de l’indexeur de Document Security AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) sur le serveur AEM Forms.
+   * Installez le [package de l’indexeur de Document Security AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) sur le serveur AEM Forms.
 
    * Vérifiez qu’un serveur AEM Forms on JEE est opérationnel et que la sécurité des documents est installée sur le serveur AEM Forms on JEE approprié. Le serveur AEM Forms on JEE est nécessaire pour indexer le document protégé.
 
@@ -66,7 +61,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour créer une connexion s
 
 #### Configurer le groupe de SDK client Adobe LiveCycle à l’aide de l’authentification mutuelle {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
-1. Activez l’authentification mutuelle pour AEM Forms on JEE. Pour plus d’informations, voir [CAC et authentification mutuelle](https://helpx.adobe.com/fr/livecycle/kb/cac-mutual-authentication.html).
+1. Activez l’authentification mutuelle pour AEM Forms sur JEE.
 1. Ouvrez la console Web AEM. L’URL est la suivante : https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Recherchez et ouvrez le **bundle Adobe LiveCycle Client SDK**. Spécifiez la valeur des propriétés suivantes :
 
