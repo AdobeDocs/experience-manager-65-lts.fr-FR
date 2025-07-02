@@ -2,17 +2,14 @@
 title: Récupération des données AEM Forms
 description: Ce document décrit les étapes nécessaires à la récupération des données AEM Forms.
 contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 6345edda-cdc6-4e13-ade6-2dd6de9d9616
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f7adcbe7700d0ea9cbd18eb0b59bcd76f56e8cc5
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 97%
+source-wordcount: '1117'
+ht-degree: 95%
 
 ---
 
@@ -98,7 +95,7 @@ Si un nœud unique d’un cluster multinœud a échoué et si les nœuds restant
 
    * **Autonome**
 
-     *Restaurez les instances d’auteur et de publication* : si une catastrophe se produit, vous pouvez restaurer le référentiel à l’état de la dernière sauvegarde en effectuant les étapes décrites dans le document [Sauvegarde et de restauration.](https://helpx.adobe.com/fr/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
+     *Restaurez les instances d’auteur et de publication* : si une catastrophe se produit, vous pouvez restaurer le référentiel à l’état de la dernière sauvegarde en effectuant les étapes décrites dans [Sauvegarde et restauration](/help/sites-administering/backup-and-restore.md).
 
      La restauration complète du nœud de création vérifie également la restauration des données du gestionnaire Forms et de l’espace de travail AEM Forms.
 

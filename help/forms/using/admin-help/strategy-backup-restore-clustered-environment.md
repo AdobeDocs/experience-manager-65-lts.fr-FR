@@ -1,19 +1,15 @@
 ---
 title: Stratégie de sauvegarde et de restauration dans un environnement organisé en grappes
 description: Si votre déploiement d’AEM Forms stocke les données personnalisées supplémentaires dans une base de données différente, vous devez mettre en place une stratégie de sauvegarde pour ces données veillant à ce qu’elles soient synchronisées avec les données AEM Forms.
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 1b7e0c532ab46346059de01cee4a1adecf3a0a13
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1391'
 ht-degree: 100%
 
 ---
@@ -53,7 +49,7 @@ Cette rubrique présente les stratégies suivantes pour sauvegarder tout environ
    1. Sauvegardez tous les fichiers de tout nœud secondaire du cluster, notamment les sous-répertoires.
    1. Sauvegardez l’identifiant du référentiel/système de chaque nœud de la grappe séparément.
 
-   Pour obtenir des instructions détaillées, voir [Sauvegarde et restauration](https://helpx.adobe.com/fr/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   Pour obtenir des instructions détaillées, voir [Sauvegarde et restauration](/help/sites-administering/backup-and-restore.md).
 
 1. Sauvegardez toutes les autres données, telles que les polices du client ou de la cliente.
 1. Redémarrez le cluster.
@@ -72,7 +68,7 @@ Cette rubrique présente les stratégies suivantes pour sauvegarder tout environ
    1. Sauvegardez tous les fichiers de tout nœud secondaire du cluster, notamment les sous-répertoires.
    1. Sauvegardez le fichier repository/system.id de chaque nœud de la grappe séparément.
 
-   Pour obtenir des instructions détaillées, voir [Sauvegarde et restauration](https://helpx.adobe.com/fr/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   Pour obtenir des instructions détaillées, voir [Sauvegarde et restauration](/help/sites-administering/backup-and-restore.md).
 
 1. Sauvegardez toutes les autres données, telles que les polices du client ou de la cliente.
 1. Redémarrez le cluster.
@@ -178,15 +174,15 @@ En cas de panne de l’ensemble du cluster en raison de problèmes tels que le c
 
 ## Sauvegarde et restauration du nœud d’éditeur de la solution Correspondence Management {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-Le nœud d’éditeur ne dispose pas d’une relation maître-esclave dans un environnement organisé en grappes. Vous pouvez sauvegarder n’importe quel nœud de l’éditeur en suivant la procédure de [Sauvegarde et restauration](https://helpx.adobe.com/fr/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+Le nœud d’éditeur ne dispose pas d’une relation maître-esclave dans un environnement organisé en grappes. Vous pouvez sauvegarder n’importe quel nœud de l’éditeur en suivant la procédure de [Sauvegarde et restauration](/help/sites-administering/backup-and-restore.md).
 
 ### Récupérer un seul nœud de l’éditeur {#recover-a-single-publisher-node}
 
 1. Arrêtez le nœud à récupérer et n’effectuez aucune opération de publication tant que le nœud n’a pas redémarré.
-1. Restaurez le nœud de publication en suivant la procédure de [Restauration de la sauvegarde](https://helpx.adobe.com/fr/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Restaurez le nœud de publication en suivant la procédure de [Restauration de la sauvegarde](/help/sites-administering/backup-and-restore.md).
 
 ### Récupérer un cluster {#recover-a-cluster}
 
 1. Arrêtez le cluster.
-1. Restaurez le nœud de publication en suivant la procédure de [Restauration de la sauvegarde](https://helpx.adobe.com/fr/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Restaurez le nœud de publication en suivant la procédure de [Restauration de la sauvegarde](/help/sites-administering/backup-and-restore.md).
 1. Démarrez le nœud principal, puis le nœud secondaire du cluster de création.

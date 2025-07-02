@@ -1,18 +1,16 @@
 ---
 title: Ajout et configuration d’utilisateurs et d’utilisatrices
 description: Les paramètres User Management dans la console d’administration vous permettent de créer ou supprimer des utilisateurs ou des utilisatrices et de configurer d’autres paramètres utilisateur.
-contentOwner: admin
-geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: b3f8e1d6-3e6e-4b2c-8528-3346bbda3396
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9dcdf84b70a3b0ea6fb332cd2cf8ccf1d4476489
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 99%
+source-wordcount: '1713'
+ht-degree: 100%
 
 ---
 
@@ -41,10 +39,6 @@ Lorsque vous créez des utilisateurs pu des utilisatrices, vous pouvez les ajout
 
 1. (Facultatif) Pour affecter des rôles à l’utilisateur, cliquez sur **[!UICONTROL Rechercher des rôles]**, cochez les cases en regard des rôles à affecter, puis cliquez sur **[!UICONTROL OK]**.
 1. Cliquez sur **[!UICONTROL Finish]** (Terminer).
-
-   >[!NOTE]
-   >
-   >Si vous rencontrez tout problème de connexion avec l’utilisateur ou l’utilisatrice, consultez [L’utilisateur AEM Forms on JEE ne parvient pas à se connecter à partir d’AEM Forms on OSGi](https://helpx.adobe.com/fr/aem-forms/kb/AEM-users-fails-to-login.html).
 
 ## Paramètres utilisateur {#user-settings}
 
@@ -171,11 +165,11 @@ Si un utilisateur ou une utilisatrice ne disposant pas des autorisations AEM For
 * Solution Correspondence Management
 * Espace de travail AEM Forms
 
-  ***Remarque &#x200B;** : Flex Workspace est obsolète pour la version d’AEM Forms.*
+  ***Remarque ** : Flex Workspace est obsolète pour la version d’AEM Forms.*
 
 * gestionnaire de formulaires
 * Rapports de workflow
 
 CQ fournit un mécanisme pour remplacer le jsp du gestionnaire 404 par défaut.
 
-Pour plus d’informations sur la personnalisation de la page de gestion des erreurs, reportez-vous à la rubrique [Personnalisation des pages affichées par le gestionnaire d’erreur](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html?lang=en) dans la documentation d’Adobe Experience Manager.
+Pour plus d’informations sur la personnalisation de la page de gestion des erreurs, reportez-vous à la rubrique [Personnalisation des pages affichées par le gestionnaire d’erreur](/help/sites-developing/customizing-errorhandler-pages.md) dans la documentation d’Adobe Experience Manager.

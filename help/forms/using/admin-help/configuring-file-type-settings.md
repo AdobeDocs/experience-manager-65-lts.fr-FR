@@ -10,10 +10,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9d4681c0b184cc7769a8da20a4c50d420e1137c7
 workflow-type: tm+mt
-source-wordcount: '6200'
-ht-degree: 100%
+source-wordcount: '6185'
+ht-degree: 99%
 
 ---
 
@@ -88,7 +88,7 @@ Vous pouvez créer ou modifier un paramètre de type de fichier pour définir la
 
 1. Après avoir renseigné toutes les sections, cliquez sur **[!UICONTROL Enregistrer]** ou **[!UICONTROL Enregistrer sous]** puis saisissez le nom du paramètre.
 
-Il est possible de personnaliser la prise en charge de divers types de fichier (voir « [Ajout de formats de fichier natifs pris en charge](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html) » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_lc_programming_11_fr)).
+La prise en charge de divers types de fichiers peut être personnalisée.
 
 ## Modifier les paramètres par défaut {#change-the-default-settings}
 

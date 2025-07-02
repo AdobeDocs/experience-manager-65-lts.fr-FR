@@ -1,16 +1,15 @@
 ---
 title: Formats de fichiers et types MIME pris en charge
 description: Formats de fichiers et types MIME pris en charge par  [!DNL Assets]  et  [!DNL Dynamic Media] , et les fonctionnalités prises en charge pour chaque format.
-contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e48f7950-1b6e-4896-8abc-523552e42ed9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2a328b703d691a23ca46a4171624a4184a8392dd
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1554'
 ht-degree: 100%
 
 ---
@@ -285,7 +284,7 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 | PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/image-sets.md), [Supports variés](/help/assets/mixed-media-sets.md) et [360°](/help/assets/spin-sets.md) |
 | PSD ‡ | ✓ | − | − | − | − | − |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/image-sets.md), [Supports variés](/help/assets/mixed-media-sets.md) et [360°](/help/assets/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/image-sets.md), [Supports variés](/help/assets/mixed-media-sets.md) et [Rotation](/help/assets/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
 
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
@@ -301,8 +300,6 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 ## Dynamic Media - Formats d’images matricielles non prises en charge {#unsupported-image-formats-dynamic-media}
 
 La liste suivante décrit les sous-types de formats de fichiers d’images matricielles *non* pris en charge dans Dynamic Media.
-
-Consultez aussi l’article [Détecter les formats de fichiers non pris en charge pour Dynamic Media](https://helpx.adobe.com/fr/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html) de la base de connaissances.
 
 * Fichiers PNG dont la taille de bloc IDAT est supérieure à 100 Mo.
 * Fichiers PSB.

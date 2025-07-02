@@ -1,15 +1,14 @@
 ---
 title: Écriture différée XMP sur les rendus
 description: Découvrez comment la fonction d’écriture différée XMP propage les modifications de métadonnées d’une ressource à toutes les versions de la ressource ou seulement à certaines d’entre elles.
-contentOwner: AG
 role: User, Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e3972784-9ded-4da8-b90c-ec2da9c3297a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 863ec2b6d8a6e22705c2f48a4f7bbb76fa34f7c7
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '780'
 ht-degree: 100%
 
 ---
@@ -19,7 +18,7 @@ ht-degree: 100%
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=fr) |
-| AEM 6.5 | Cet article |
+| AEM 6.5 LTS | Cet article |
 
 Cette fonction d’écriture différée XMP dans [!DNL Adobe Experience Manager Assets] reproduit les modifications de métadonnées apportées aux rendus de la ressource d’origine. Lorsque vous modifiez les métadonnées d’une ressource à partir d’Assets ou lors du chargement de la ressource, les modifications sont initialement stockées dans le nœud des métadonnées de la hiérarchie des ressources.
 
@@ -69,8 +68,6 @@ Pour que la fonctionnalité d’écriture différée XMP propage les métadonné
 Les modifications apportées aux métadonnées sont propagées aux rendus thumbnail.140.100.png et thumbnail.319.319.png de la ressource uniquement.
 
 >[!NOTE]
->
->Si vous rencontrez des problèmes liés à l’écriture différée XMP sous Linux 64 bits, consultez la section [Activation de l’écriture différée XMP sous Red Hat Linux 64 bits](https://helpx.adobe.com/fr/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 >
 >Pour connaître les plateformes prises en charge, consultez les [Conditions préalables à l’écriture différée des métadonnées XMP](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 

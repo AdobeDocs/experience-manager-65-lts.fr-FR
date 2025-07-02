@@ -1,16 +1,15 @@
 ---
-title: Recherche d’images et de ressources numériques dans [!DNL Adobe Experience Manager]
+title: Rechercher des images et des ressources numériques dans  [!DNL Adobe Experience Manager]
 description: Découvrez comment rechercher les ressources souhaitées dans [!DNL Adobe Experience Manager] à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
-contentOwner: AG
 mini-toc-levels: 1
 feature: Search, Metadata
 role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: df4b8b9c80734917569c40d01ea5789e16bfb4e3
 workflow-type: tm+mt
-source-wordcount: '5650'
+source-wordcount: '5645'
 ht-degree: 100%
 
 ---
@@ -20,7 +19,7 @@ ht-degree: 100%
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=fr) |
-| AEM 6.5 | Cet article |
+| AEM 6.5 LTS | Cet article |
 
 [!DNL Adobe Experience Manager Assets] fournit des méthodes robustes de découverte de ressources qui vous aident à atteindre une vitesse de contenu plus élevée. Vos équipes peuvent réduire les délais de mise sur le marché grâce à une expérience de recherche intelligente et transparente, aux fonctionnalités prêtes à l’emploi et aux méthodes personnalisées. La recherche de ressources est essentielle pour l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs et spécialistes marketing ou pour l’administration par les administrateurs DAM. Les recherches simples, avancées et personnalisées que vous pouvez effectuer via l’interface utilisateur [!DNL Assets] ou d’autres applications et surfaces permettent de répondre à ces cas d’utilisation.
 
@@ -69,7 +68,7 @@ Vous pouvez découvrir plus rapidement les ressources souhaitées à partir de l
 
 Vous pouvez exécuter des recherches de mots-clés à partir du champ Omni-recherche. La recherche de mots-clés n’est pas sensible à la casse et il s’agit d’une recherche en texte intégral (dans les champs de métadonnées courants). Si plusieurs mots-clés sont utilisés, `AND` est l’opérateur par défaut entre les mots-clés.
 
-Les résultats sont triés par pertinence, en commençant par les correspondances les plus proches. Pour plusieurs mots-clés, les ressources qui contiennent les deux termes dans leurs métadonnées génèrent des résultats plus pertinents. Dans les métadonnées, les mots-clés qui apparaissent sous forme de balises intelligentes sont classés plus haut que les mots-clés qui apparaissent dans d’autres champs de métadonnées. [!DNL Experience Manager] permet de donner plus de poids à un terme de recherche particulier. Il est également possible d’[améliorer le classement](#searchrank) de quelques ressources ciblées pour des termes de recherche spécifiques.
+Les résultats sont triés par pertinence, en commençant par les correspondances les plus proches. Pour plusieurs mots-clés, les ressources qui contiennent les deux termes dans leurs métadonnées génèrent des résultats plus pertinents. Dans les métadonnées, les mots-clés qui apparaissent sous forme de balises intelligentes sont classés plus haut que les mots-clés qui apparaissent dans d’autres champs de métadonnées. [!DNL Experience Manager] permet de donner plus de poids à un terme de recherche particulier. Il est également possible d’[améliorer le classement](#searchrank) de quelques ressources ciblées pour des termes de recherche spécifiques.
 
 Pour rechercher rapidement les ressources appropriées, l’interface riche fournit des mécanismes de filtrage, de tri et de sélection. Vous pouvez filtrer les résultats selon plusieurs critères et afficher le nombre de ressources recherchées pour différents filtres. Vous pouvez également réexécuter la recherche en modifiant la requête dans le champ Omni-recherche. Lorsque vous modifiez les termes ou filtres de recherche, les autres filtres restent appliqués pour préserver le contexte de la recherche.
 
@@ -102,7 +101,7 @@ Lorsque vous commencez à saisir un mot-clé, [!DNL Experience Manager] suggère
 * Titre de la ressource. (mappage avec `jcr:content/metadata/dc:title`)
 * Description de la ressource. (mappage avec `jcr:content/metadata/dc:description`)
 * Titre dans le référentiel JCR. La valeur peut être mappée au titre de la ressource. (mappage avec `jcr:content/jcr:title`)
-* Description dans le référentiel JCR. La valeur peut être mappée à la description de la ressource. (mappage avec `jcr:content/jcr:description`)
+* Description dans le référentiel JCR. La valeur peut être mappée à la description de la ressource. (mappage vers `jcr:content/jcr:description`)
 
 Pour recevoir des suggestions pour plusieurs mots-clés de recherche, continuez à saisir tous les mots-clés sans sélectionner de suggestion pour un seul mot-clé.
 
@@ -126,7 +125,7 @@ Vous pouvez améliorer la pertinence des mots-clés pour des ressources particul
 
 Vous pouvez l’utiliser à votre avantage en améliorant le classement de certaines ressources dans les résultats de recherche du mot-clé ciblé. Voir la vidéo d’exemple ci-dessous. Pour plus d’informations, voir [Recherche dans [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3410336/?quality=6&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Vidéo : Découvrez comment les résultats de recherche sont classés et comment le classement peut être influencé.*
 
@@ -152,7 +151,7 @@ Pour rechercher des images visuellement similaires à une image sélectionnée p
 
 ### Images Adobe Stock {#adobe-stock}
 
-Dans l’interface utilisateur d’[!DNL Experience Manager], les utilisateurs peuvent rechercher des [ressources Adobe Stock](/help/assets/aem-assets-adobe-stock.md) et obtenir des licences pour les ressources requises. Ajoutez `Location: Adobe Stock` dans la barre Omni-recherche. Vous pouvez également utiliser le panneau Filtres pour trouver toutes les ressources qui sont ou non sous licence, ou effectuer des recherches dans une ressource spécifique à l’aide du numéro de fichier Adobe Stock.
+Dans l’interface utilisateur d’[!DNL Experience Manager], les utilisateurs peuvent rechercher des [ressources Adobe Stock](/help/assets/aem-assets-adobe-stock.md) et obtenir des licences pour les ressources requises. Ajoutez `Location: Adobe Stock` dans la barre OmniSearch. Vous pouvez également utiliser le panneau Filtres pour trouver toutes les ressources qui sont ou non sous licence, ou effectuer des recherches dans une ressource spécifique à l’aide du numéro de fichier Adobe Stock.
 
 ### Ressources Dynamic Media {#dmassets}
 
@@ -221,7 +220,7 @@ Les utilisateurs métiers et les spécialistes marketing utilisent Brand Portal
 
 ### Rechercher des images [!DNL Adobe Stock]  {#adobe-stock1}
 
-Dans l’interface utilisateur d’[!DNL Experience Manager], les utilisateurs peuvent rechercher des ressources Adobe Stock et obtenir des licences pour les ressources requises. Ajoutez `Location: Adobe Stock` dans le champ Omni-recherche. Vous pouvez également utiliser le panneau **[!UICONTROL Filtres]** pour trouver toutes les ressources qui sont ou non sous licence, ou effectuer des recherches dans une ressource spécifique à l’aide du numéro de fichier Adobe Stock. Voir la section [Gestion des images [!DNL Adobe Stock] dans [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Dans l’interface utilisateur d’[!DNL Experience Manager], les utilisateurs peuvent rechercher des ressources Adobe Stock et obtenir des licences pour les ressources requises. Ajoutez `Location: Adobe Stock` dans le champ OmniSearch. Vous pouvez également utiliser le panneau **[!UICONTROL Filtres]** pour trouver toutes les ressources qui sont ou non sous licence, ou effectuer des recherches dans une ressource spécifique à l’aide du numéro de fichier Adobe Stock. Consultez la section [Gestion des images  [!DNL Adobe Stock] dans  [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
 ### Recherche de [!DNL Dynamic Media] ressources {#dynamic-media}
 
@@ -317,7 +316,7 @@ Utilisez des guillemets doubles autour des mots-clés pour rechercher des ressou
 
 *Figure : Exemple d’utilisation d’un caractère générique (astérisque) dans la recherche de ressources.*
 
-**Recherche avec un caractère générique (point d’interrogation)** : pour élargir la recherche, utilisez un ou plusieurs caractères « ? » pour correspondre au nombre exact de caractères. Par exemple, dans l’illustration suivante :
+**Recherche avec un caractère générique (point d’interrogation)** : pour élargir la recherche, utilisez un ou plusieurs caractères « ? ». pour correspondre au nombre exact de caractères. Par exemple, dans l’illustration suivante :
 
 * la requête `run???` ne correspond à aucune ressource ;
 
@@ -387,7 +386,7 @@ Pour accélérer la découverte, [!DNL Experience Manager Assets] propose des fa
 
 Vous pouvez configurer [!DNL Experience Manager] pour extraire le texte des ressources lorsque les utilisateurs chargent des ressources, telles que des fichiers PSD ou PDF. [!DNL Experience Manager] indexe le texte extrait et aide les utilisateurs à rechercher ces ressources en fonction du texte extrait. Consultez la section [Chargement de ressources](/help/assets/manage-assets.md#uploading-assets).
 
-Si l’extraction de texte consomme trop de ressources pour votre déploiement, pensez à [désactiver l’extraction de texte](https://helpx.adobe.com/fr/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html).
+Si l’extraction de texte consomme trop de ressources pour votre déploiement, pensez à désactiver l’extraction de texte.
 
 ### Prédicats personnalisés pour filtrer les résultats de la recherche {#custompredicates}
 
@@ -493,5 +492,4 @@ Liez et dissociez les ressources qui s’affichent dans les résultats de recher
 >[!MORELIKETHIS]
 >
 >* Guide de mise en œuvre des recherches[[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr)
->* [Configuration avancée pour améliorer les résultats de recherche](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr)
->* [Configuration de la recherche de traduction intelligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html?lang=fr)
+>* [Configuration avancée pour améliorer les résultats de recherche](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/search-and-discovery/search-boost)

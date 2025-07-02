@@ -1,21 +1,16 @@
 ---
 title: Qu’est-ce que Document Security ?
 description: Découvrez comment vous pouvez facilement créer, stocker et appliquer des paramètres de confidentialité prédéfinis et répartir vos informations en toute sécurité à l’aide de Document Security.
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5e7fe85e-3c7f-4a37-8f65-5c0ad4bbd66c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 32da9c3f13cb1eba130e96e03ab97617d18e1486
 workflow-type: tm+mt
-source-wordcount: '3219'
-ht-degree: 99%
+source-wordcount: '3218'
+ht-degree: 100%
 
 ---
 
@@ -26,7 +21,7 @@ Grâce à Document Security, seuls les utilisateurs et utilisatrices autorisés
 * Les fichiers Adobe PDF
 * Les fichiers Microsoft® Word, Excel et PowerPoint
 
-Pour plus d’informations sur la façon dont les politiques protègent les types de fichiers pris en charge, consultez la section [Informations complémentaires sur Document Security](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/use-document-security/document-security-offerings.html?lang=en).
+Pour plus d’informations sur la façon dont les politiques protègent les types de fichiers pris en charge, consultez la section [Informations complémentaires sur Document Security](/help/forms/using/document-security-offerings.md).
 
 Avec Document Security, vous pouvez facilement créer, stocker et appliquer des paramètres de confidentialité prédéfinis à vos documents. Pour empêcher toute diffusion incontrôlée d’informations, vous pouvez également vérifier et contrôler la façon dont les destinataires et destinatrices utilisent les documents que vous leur avez distribués.
 

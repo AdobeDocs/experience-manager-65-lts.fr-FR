@@ -1,19 +1,15 @@
 ---
 title: Signer numériquement et certifier des documents
 description: Utilisez le service Signature pour ajouter et supprimer des champs de signature numérique à un document PDF, récupérer les noms des champs de signature d’un document PDF, modifier les champs de signature, signer numériquement des documents PDF, certifier des documents PDF, valider les signatures numériques d’un document PDF, valider toutes les signatures numériques d’un document PDF et supprimer une signature numérique d’un champ de signature.
-contentOwner: admin
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: operations
 role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 30ed51ad-4f69-41eb-9fca-d29d644aa4ba
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9a11887b6bb8446772e5a41246da1023f40ce507
 workflow-type: tm+mt
-source-wordcount: '16917'
+source-wordcount: '16909'
 ht-degree: 99%
 
 ---
@@ -403,9 +399,9 @@ Pour modifier un champ de signature, affectez des valeurs à son dictionnaire de
 Les valeurs du dictionnaire de valeurs de départ suivantes peuvent être définies :
 
 * **Vérification des révisions** : cette option indique si la vérification de révocation est effectuée lorsqu’une signature est appliquée au champ de signature.
-* **Options de certificat** : cette option attribue des valeurs au dictionnaire de valeurs de départ du certificat. Avant de spécifier des options de certificat, il est recommandé de vous familiariser avec un dictionnaire de valeur de départ du certificat. (Voir [Référence PDF](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf).)
+* **Options de certificat** : cette option attribue des valeurs au dictionnaire de valeurs de départ du certificat. Avant de spécifier des options de certificat, il est recommandé de vous familiariser avec un dictionnaire de valeur de départ du certificat.
 * **Options de prétraitement** : Cette option attribue des algorithmes de prétraitement utilisés pour la signature. Les valeurs valides sont SHA1, SHA256, SHA384, SHA512 et RIPEMD160.
-* **Filtre** : cette option indique le filtre utilisé pour le champ de signature. Par exemple, vous pouvez utiliser le filtre Adobe.PPKLite. (Voir [Référence PDF](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf).)
+* **Filtre** : cette option indique le filtre utilisé pour le champ de signature. Par exemple, vous pouvez utiliser le filtre Adobe.PPKLite.
 * **Options d’indicateur** : cette option indique les valeurs d’indicateur associées à ce champ de signature. Une valeur définie sur 1 signifie qu’un signataire doit utiliser uniquement les valeurs spécifiées pour l’entrée. Une valeur définie sur 0 signifie que d’autres valeurs sont permises. Voici les positions Bit :
 
    * **1 (Filtre) :** gestionnaire de signatures à utiliser pour signer le champ de signature

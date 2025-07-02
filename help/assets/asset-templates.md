@@ -1,14 +1,13 @@
 ---
 title: Modèles de ressources
 description: Découvrez les modèles de ressources dans  [!DNL Adobe Experience Manager Assets]  et comment les utiliser pour créer des dérivés marketing.
-contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: 8584d5ea-6ef2-4e81-8b18-5aa2d4226ea6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9ed889c74a886e1b41c379dac77bb570ef5c2c39
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1557'
 ht-degree: 100%
 
 ---
@@ -126,8 +125,6 @@ Vous pouvez modifier un dérivé immédiatement après sa création. Vous pouvez
    >
    >* Incorporez les images lorsque vous créez les modèles [!DNL InDesign] (reportez-vous à la section [À propos des liens et des objets graphiques incorporés](https://helpx.adobe.com/fr/indesign/using/graphics-links.html)).
    >* Montez [!DNL Experience Manager] sur votre système de fichiers local, puis mappez les icônes manquantes avec les ressources existantes dans [!DNL Experience Manager].
-   >
-   >Pour plus d’informations sur l’utilisation des documents [!DNL InDesign], reportez-vous à la section [Bonnes pratiques relatives à l’utilisation des documents InDesign dans Experience Manager](https://helpx.adobe.com/fr/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Pour générer un rendu PDF pour la brochure, sélectionnez l’option Acrobat dans la boîte de dialogue, puis cliquez sur **[!UICONTROL Continuer]**.
 1. Le dérivé est créé dans le dossier de départ. Pour afficher les rendus, ouvrez l’élément et choisissez **[!UICONTROL Rendus]** de la liste GlobalNav.
