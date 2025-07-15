@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
-source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
+source-git-commit: 3d0353f207aeaf39198ba55dc37cc4194f25133d
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '278'
 ht-degree: 1%
 
 ---
@@ -37,3 +37,7 @@ Pour garantir une transition en douceur, il est recommandé de :
 * Utilisez l’outil [AEM Analyzer](/help/sites-deploying/aem-analyzer.md) pour évaluer la complexité de la mise à niveau.
 * Planifiez et allouez suffisamment de temps et de ressources pour le processus de mise à niveau.
 * Participez aux sessions d’assistance et d’activation d’Adobe pour obtenir des conseils et de l’aide.
+
+## La synchronisation des utilisateurs est-elle prise en charge dans AEM 6.5 LTS ?
+
+Oui, la synchronisation des utilisateurs est prise en charge dans AEM 6.5 LTS.
