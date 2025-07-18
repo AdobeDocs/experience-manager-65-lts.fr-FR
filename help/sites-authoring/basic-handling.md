@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '2918'
-ht-degree: 100%
+source-wordcount: '2919'
+ht-degree: 98%
 
 ---
 
@@ -556,15 +556,16 @@ Ces fonctionnalités sont accessibles par le biais du chevron en regard du champ
 
 ### Références {#references}
 
-Les **références** affichent toutes les connexions avec la ressource sélectionnée. Par exemple, dans la console **Sites**, les [références](/help/sites-authoring/author-environment-tools.md#showingpagereferences) des pages affichent :
+**Références** affiche les connexions à la ressource sélectionnée. Par exemple, dans la console **Sites**, les [références](/help/sites-authoring/author-environment-tools.md#showingpagereferences) des pages affichent :
 
+* [Plans directeurs](/help/sites-administering/msm.md)
 * [Lancements](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live Copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [Copies de langue](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Références du contenu :
 
-   * liens d’autres pages vers la page sélectionnée
-   * contenu emprunté et/ou prêté à la page sélectionnée par le composant Référence
+   * Liens directs depuis d’autres pages vers la page sélectionnée
+   * Contenu emprunté, prêté à, ou les deux, à la page sélectionnée par le composant Référence
 
 ![bh-28](assets/bh-28.png)
 

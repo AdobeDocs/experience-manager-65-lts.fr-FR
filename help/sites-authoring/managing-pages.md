@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '2416'
-ht-degree: 99%
+source-wordcount: '2476'
+ht-degree: 96%
 
 ---
 
@@ -326,7 +326,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
    L’assistant de déplacement de page s’ouvre alors.
 
-1. À l’étape **Renommer** de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
+1. L’étape **Renommer** de l’assistant vous fournit **Informations** à propos de la page, y compris la date de création, le chemin d’accès et le nombre de références directes. À partir de là, vous pouvez :
 
    * Spécifiez le nom à attribuer à la page après son déplacement et cliquez sur **Suivant** pour poursuivre.
 
@@ -365,7 +365,8 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
    >[!NOTE]
    >
-   >Si la page n’est ni liée ni référencée, cette étape ne sera pas disponible.
+   >* Si la page n’est ni liée ni référencée, cette étape ne sera pas disponible.
+   >* Cette étape répertorie les références directes et indirectes. Cette valeur peut être différente de la valeur indiquée à l’étape **Renommer** de l’assistant, ainsi que des références indiquées par le rail Références, qui indiquent toutes deux des références directes uniquement pour des raisons de performances.
 
    ![caop-09](assets/caop-09.png)
 
