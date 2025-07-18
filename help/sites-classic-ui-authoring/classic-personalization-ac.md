@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 4a659a56-ba49-4bfa-8fc2-e0d033f27809
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 100%
+source-wordcount: '126'
+ht-degree: 96%
 
 ---
 
@@ -35,5 +35,5 @@ Vous devez avoir préalablement [intégré AEM à Adobe Campaign](/help/sites-a
 
 En outre, si vous souhaitez personnaliser vos intégrations, consultez les rubriques suivantes :
 
-* [Création d’extensions personnalisées](/help/sites-developing/extending-campaign-extensions.md)
-* [Création de mappages de formulaires personnalisés](/help/sites-developing/extending-campaign-form-mapping.md)
+* [Extensions Adobe Campaign personnalisées](/help/sites-developing/extending-campaign-extensions.md)
+* [Créer des mappages de formulaires personnalisés](/help/sites-developing/extending-campaign-form-mapping.md)
