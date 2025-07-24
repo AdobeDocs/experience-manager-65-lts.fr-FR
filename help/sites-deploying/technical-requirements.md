@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: d69e5dccb5583ad310a52128e4bd534fc90cd186
+source-git-commit: 925a53bbf8a8ec28a8b3e5000bf83437ab18f513
 workflow-type: tm+mt
 source-wordcount: '2970'
 ht-degree: 94%
@@ -111,9 +111,9 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 | Stockage de binaires dans des fichiers TAR sur le système de fichiers `[1]` | Binaires | Z : Non pris en charge pour la production |
 | Amazon S3 | Binaires | A : pris en charge |
 | Stockage d’objets blob Microsoft® Azure. | Binaires | A : pris en charge |
-| MongoDB Enterprise 8.0 | Référentiel | A : pris en charge `[3, 4]` |
-| MongoDB Enterprise 7.0 | Référentiel | A : pris en charge `[3, 4]` |
-| MongoDB Enterprise 6.0 | Référentiel | A : pris en charge `[3, 4]` |
+| MongoDB Enterprise 8.0 | Référentiel | A : pris en charge `[2, 3]` |
+| MongoDB Enterprise 7.0 | Référentiel | A : pris en charge `[2, 3]` |
+| MongoDB Enterprise 6.0 | Référentiel | A : pris en charge `[2, 3]` |
 | **Apache Lucene (démarrage rapide intégré)** | Service de recherche | A : pris en charge |
 
 1. Le système de fichiers comprend le stockage de bloc compatible avec POSIX. Cela inclut la technologie de stockage réseau. Gardez à l’esprit que les performances du système de fichiers peuvent varier et avoir une incidence sur les performances globales. Chargez la version test d’AEM avec le système de fichiers réseau/distant.
