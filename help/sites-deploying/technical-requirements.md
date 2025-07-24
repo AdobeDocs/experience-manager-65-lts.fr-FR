@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: d69e5dccb5583ad310a52128e4bd534fc90cd186
 workflow-type: tm+mt
-source-wordcount: '2960'
+source-wordcount: '2970'
 ht-degree: 94%
 
 ---
@@ -111,7 +111,9 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 | Stockage de binaires dans des fichiers TAR sur le système de fichiers `[1]` | Binaires | Z : Non pris en charge pour la production |
 | Amazon S3 | Binaires | A : pris en charge |
 | Stockage d’objets blob Microsoft® Azure. | Binaires | A : pris en charge |
-| MongoDB Enterprise 6.0 et 7.0 | Référentiel | A : pris en charge `[3, 4]` |
+| MongoDB Enterprise 8.0 | Référentiel | A : pris en charge `[3, 4]` |
+| MongoDB Enterprise 7.0 | Référentiel | A : pris en charge `[3, 4]` |
+| MongoDB Enterprise 6.0 | Référentiel | A : pris en charge `[3, 4]` |
 | **Apache Lucene (démarrage rapide intégré)** | Service de recherche | A : pris en charge |
 
 1. Le système de fichiers comprend le stockage de bloc compatible avec POSIX. Cela inclut la technologie de stockage réseau. Gardez à l’esprit que les performances du système de fichiers peuvent varier et avoir une incidence sur les performances globales. Chargez la version test d’AEM avec le système de fichiers réseau/distant.
@@ -158,7 +160,7 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 | Microsoft® Windows Server 2022 | R : pris en charge |
 
 1. Noyau Linux® 5. x et 6. x inclut les dérivés de la distribution Red Hat®, notamment Red Hat® Enterprise Linux®, CentOS, Oracle Linux® et Amazon Linux®.
-1. Distribution Linux® prise en charge par Adobe Managed Services.
+1. Distribution Linux® prise en charge par Adobe Managed Services.
 
    >[!NOTE]
    >
@@ -450,7 +452,7 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 * **Systèmes d’exploitation :**
 
-   * Linux® (prise en charge des applications 32 bits et 32 bits sur les systèmes 64 bits).
+   * Linux® (32 bits, prise en charge des applications 32 bits sur les systèmes 64 bits).
    * Windows Server
    * macOS X (64 bits)
 
