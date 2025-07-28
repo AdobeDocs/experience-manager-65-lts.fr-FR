@@ -7,10 +7,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
+source-git-commit: 90e63ad3be32b7ce551c5e3579c722ef75d97f95
 workflow-type: tm+mt
-source-wordcount: '1542'
-ht-degree: 94%
+source-wordcount: '1564'
+ht-degree: 93%
 
 ---
 
@@ -48,10 +48,16 @@ Les différentes règles suivantes s’appliquent lorsque vous renommez le fichi
 
 Si vous exécutez Oracle Java 17 ou Java 21, des commutateurs supplémentaires doivent être ajoutés à votre ligne de commande lors du démarrage d’AEM.
 
-Vous trouverez ci-dessous un exemple de ce à quoi les paramètres JVM supplémentaires doivent ressembler lors du démarrage d’AEM sur Java 17/Java 21 :
+* Vous trouverez ci-dessous un exemple de ce à quoi les paramètres JVM supplémentaires doivent ressembler lors du démarrage d’AEM sur Java 17/Java 21 :
 
 ```shell
 -XX:+UseG1GC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.lang=org.apache.sling.commons.threads -Djdk.util.zip.disableZip64ExtraFieldValidation=true
+```
+
+* [Forms uniquement ] Voici un exemple pour vous assurer qu’AEM Forms fonctionne correctement avec Java 17/Java21. Incluez les paramètres JVM supplémentaires suivants :
+
+```shell
+--add-opens=java.base/java.util=ALL-UNNAMED -add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
 ```
 
 ## Modes d’exécution {#run-modes}
