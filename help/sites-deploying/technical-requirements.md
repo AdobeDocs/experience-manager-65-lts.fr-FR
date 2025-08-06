@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 925a53bbf8a8ec28a8b3e5000bf83437ab18f513
+source-git-commit: 2534fb5af913603b69597e7be713156b427a1094
 workflow-type: tm+mt
-source-wordcount: '2970'
-ht-degree: 94%
+source-wordcount: '3239'
+ht-degree: 92%
 
 ---
 
@@ -376,9 +376,46 @@ Pour Windows x86 :
 * 10.9.x et versions ultérieures
 * Pris en charge uniquement à des fins d’évaluation et de démonstration
 
-### Conditions requises pour AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
+### Considérations relatives à PDF Generator {#software-support-for-pdf-generator}
 
-### Prise en charge logicielle de PDF Generator {#software-support-for-pdf-generator}
+<table>
+ <tbody>
+  <tr>
+   <th><p><strong>Produit</strong></p> </th>
+   <th><p><strong>Formats pris en charge pour la conversion en PDF</strong></p> </th>
+  </tr>
+  <tr>
+   <td>Dernière version d’<a href="https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a></td>
+   <td>XPS, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML et HTM</td>
+  </tr>
+
+<tr>
+   <td>Licences Microsoft® Office 2021 Professional Plus, de vente au détail et en volume</td>
+   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF et TXT</td>
+  </tr>
+  <tr>
+   <td>
+    <strong>OpenOffice 4.1.15</strong>   </td>
+   <td>
+    ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF et TXT<br>
+
+</td>
+  </tr>
+ </tbody>
+</table>
+
+>[!NOTE]
+>
+>* PDF Generator ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
+>* PDF Generator nécessite Adobe Acrobat Pro DC (32 bits) pour effectuer la conversion.
+>* PDF Generator prend uniquement en charge la version 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
+>* Si une installation Microsoft® Office est désactivée ou n’a pas de licence pour une raison quelconque, par exemple si une installation sous licence en volume ne parvient pas à localiser un hôte KMS dans un délai spécifié, les conversions peuvent échouer jusqu’à ce que l’installation reçoive une nouvelle licence et soit réactivée.
+>* PDF Generator ne prend pas en charge Microsoft® Office 365.
+>* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux®.
+>* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont uniquement prises en charge sous Windows.
+>* Une version d’Acrobat est fournie avec AEM Forms pour activer la fonctionnalité PDF Generator. La version groupée ne doit être accessible par programmation qu’avec AEM Forms, pendant la durée de la licence AEM Forms, pour une utilisation avec AEM Forms PDF Generator uniquement. Pour plus d’informations, voir la description du produit AEM Forms correspondant à votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
+>* Le service PDF Generator ne prend pas en charge Microsoft® Windows 11.
+
 
 <table>
  <tbody>
