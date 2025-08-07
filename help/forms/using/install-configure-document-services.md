@@ -6,10 +6,10 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: 2534fb5af913603b69597e7be713156b427a1094
+source-git-commit: 29b6cd70a59e3a90cd081ba09c98bd015a7426fc
 workflow-type: tm+mt
-source-wordcount: '10213'
-ht-degree: 56%
+source-wordcount: '10247'
+ht-degree: 55%
 
 ---
 
@@ -242,6 +242,12 @@ Le processus d’installation d’Adobe Acrobat Pro DC pour l’installation de 
 
 * **Type de licence** : licence de vente au détail ou en volume
 * **Type de déploiement** : utilisateur unique ou utilisateurs multiples
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469669)
+
+>[!NOTE]
+>
+>La vidéo présente le processus d’installation d’une configuration Licence de vente au détail - Utilisateur unique. Pour les autres scénarios de déploiement (vente au détail - utilisateurs multiples, licence en volume - utilisateur unique ou licence en volume - utilisateurs multiples), reportez-vous aux instructions spécifiques de l’étape 9 dans les onglets correspondants ci-dessous pour garantir le démarrage correct du serveur et l’activation de la licence pour votre type de déploiement.
 
 Chaque onglet contient des instructions personnalisées optimisées pour votre configuration spécifique, ce qui vous permet d’éviter les problèmes de configuration et d’assurer une conformité de licence appropriée.
 
@@ -692,7 +698,7 @@ Après avoir désinstallé la version précédente, vous devez télécharger et 
 Une fois tous les processus terminés, effectuez un test d’action rapide pour confirmer que l’installation est valide :
 
 1. Utilisez le Bureau à distance (RDP) pour vous connecter au serveur et démarrer le serveur AEM Forms à l’aide des services .
-2. Utilisez le Bureau à distance (RDP) pour vous connecter au serveur et démarrer le serveur AEM Forms à l’aide des services Windows. Une fois le serveur en cours d’exécution, ne fermez pas simplement la fenêtre RDP. Au lieu de cela, déconnectez-vous en déconnectant l’utilisateur, de sorte que la session se termine correctement pendant que le service continue à s’exécuter en arrière-plan.
+2. Une fois le serveur en cours d’exécution, ne fermez pas simplement la fenêtre RDP. Au lieu de cela, déconnectez-vous en déconnectant l’utilisateur, de sorte que la session se termine correctement pendant que le service continue à s’exécuter en arrière-plan.
 
 ###### Étape 10 : tester le service PDF Generator
 
@@ -1450,7 +1456,6 @@ Expiration de la licence d’Adobe Acrobat installée sur AEM Forms Server
          adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=&lt;Absolute path to prov.xml>]
          
          ```
-
      
    * Sérialisez en volume le module (resérialisez l’installation existante à l’aide du fichier prov.xml et du nouveau numéro de série) : exécutez la commande suivante à partir du dossier d’installation PRTK en tant qu’administrateur pour sérialiser et activer les modules déployés sur les ordinateurs clients :
 
@@ -1458,8 +1463,8 @@ Expiration de la licence d’Adobe Acrobat installée sur AEM Forms Server
          adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
          
          ```
-
-     * Pour les installations à grande échelle, utilisez [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) pour supprimer les versions précédentes de Reader et Acrobat. Personnalisez le programme d’installation et déployez-le sur tous les ordinateurs de votre organisation.
+     
+* Pour les installations à grande échelle, utilisez [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) pour supprimer les versions précédentes de Reader et Acrobat. Personnalisez le programme d’installation et déployez-le sur tous les ordinateurs de votre organisation.
 
 +++
 
