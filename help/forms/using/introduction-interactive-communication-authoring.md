@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 595f8d31-f297-48be-8ead-f171a60891b8
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 100%
+source-wordcount: '1307'
+ht-degree: 98%
 
 ---
 
@@ -122,7 +122,7 @@ K. **Regrouper les objets dans le panneau :** permet de regrouper les composant
 
 L. **Ajouter un panneau enfant** (pour les panneaux uniquement) : permet d’ajouter un panneau enfant au panneau.
 
-M. **Ajouter une barre d’outils de panneau** (pour les panneaux uniquement) : permet d’ajouter la barre dʼoutils du composant Panneau. Vous pouvez ensuite effectuer d’autres actions sur la barre d’outils.
+M : **Barre d’outils Ajouter un panneau** (pour les panneaux uniquement):Lets vous ajoutez la barre d’outils pour le composant Panneau. Vous pouvez ensuite effectuer d’autres actions sur la barre d’outils.
 
 En outre, lʼoption **Remplacer** de la barre d’outils vous permet de remplacer le composant existant par un autre. L’option n’est pas disponible pour le composant Panneau.
 

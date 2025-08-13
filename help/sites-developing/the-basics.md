@@ -11,8 +11,8 @@ role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3251'
-ht-degree: 99%
+source-wordcount: '3237'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ La norme Java™ Content Repository (JCR), [JSR 283](https://developer.adobe.
 
 La spécification est gérée par Adobe Research (Suisse) AG.
 
-Le package [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&ast; est utilisé pour l’accès direct et la manipulation du contenu du référentiel.
+Le package [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&amp;ast; est utilisé pour l’accès direct et la manipulation du contenu du référentiel.
 
 ## Experience Server (CRX) et Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -174,7 +174,7 @@ En reprenant l’exemple ci-dessus, si `sling:resourceType` est `hr/jobs` alors 
 
 * Les requêtes GET/HEAD et les URL se terminant par .htmp (types de requête par défaut, format par défaut)
 
-  Le script sera /apps/hr/jobs/jobs.esp ; la dernière section de sling:resourceType forme le nom du fichier.
+  Le script est /apps/hr/jobs/jobs.esp ; la dernière section du sling:resourceType forme le nom du fichier.
 
 * Requêtes POST (tous les types de requête, à l’exclusion des GET/HEAD, le nom de la méthode doit être en majuscules)
 
@@ -196,7 +196,7 @@ En reprenant l’exemple ci-dessus, si `sling:resourceType` est `hr/jobs` alors 
 
   Le script est `/apps/hr/jobs/jobs.print.esp` ; le sélecteur est ajouté au nom du script.
 
-* Si aucun sling:resourceType n’a été défini :
+* Si aucun sling n:resourceTypeest défini, alors :
 
    * le chemin d’accès au contenu est utilisé pour rechercher un script correspondant (si ResourceTypeProvider basé sur un chemin est actif) ;
 
@@ -279,21 +279,21 @@ Si vous appelez la représentation (le script) directement, vous masquez la ress
 * Le traitement automatique des méthodes HTTP autres que GET, notamment :
 
    * les méthodes POST, PUT, DELETE qui sont gérées avec une implémentation par défaut de Sling ;
-   * le script `POST.jsp` dans votre emplacement sling:resourceType.
+   * le script `POST.jsp` dans votre emplacement sling:resourceType
 
 * L’architecture de votre code perd de son intégrité et de sa structure qui sont primordiales dans les développements à grande échelle.
 
 ### API Sling {#sling-api}
 
-Elle utilise le package API Sling org.apache.sling.&ast; et les bibliothèques de balises.
+Elle utilise le package API Sling org.apache.sling.&amp;ast; et les bibliothèques de balises.
 
-### Référencement d’éléments existants avec sling:include {#referencing-existing-elements-using-sling-include}
+### Référencement d’éléments existants à l’aide de sling:include {#referencing-existing-elements-using-sling-include}
 
 En dernier lieu, il faut considérer la nécessité de référencer les éléments existants dans les scripts.
 
 Des scripts plus complexes (agrégation de scripts) doivent accéder à plusieurs ressources (navigation, barre latérale, pied de page, éléments d’une liste, par exemple) en ajoutant la *ressource*.
 
-Pour ce faire, utilisez la commande sling:include(&quot;/&lt;chemin>/&lt;ressource>&quot;). Cela permet d’inclure de façon efficace la définition de la ressource référencée, comme dans l’instruction suivante qui fait référence à une définition existante pour le rendu des images :
+Pour ce faire, utilisez la commande sling:include(« /&lt;chemin>/&lt;ressource> »). Cela permet d’inclure de façon efficace la définition de la ressource référencée, comme dans l’instruction suivante qui fait référence à une définition existante pour le rendu des images :
 
 ```xml
 %><sling:include resourceType="geometrixx/components/image/img"/><%
@@ -342,7 +342,7 @@ Pour plus d’informations sur la manipulation des objets Élément, reportez-vo
 
 Les nœuds définissent la structure du contenu et leurs propriétés stockent le contenu réel et les métadonnées.
 
-Les nœuds de contenu pilotent le rendu. Sling récupère le nœud de contenu de la requête entrante. La propriété sling:resourceType de ce nœud pointe vers le composant de rendu Sling à utiliser.
+Les nœuds de contenu pilotent le rendu. Sling récupère le nœud de contenu de la requête entrante. La propriété sling :resourceType de ce nœud pointe vers le composant de rendu Sling à utiliser.
 
 Un nœud, qui est un nom JCR, est également appelé « ressource » dans l’environnement Sling.
 
@@ -385,7 +385,7 @@ Il définit le composant de page utilisé pour afficher la page et le contenu pa
 
 **Page** Une page est une « instance » d’un modèle.
 
-Une page comporte un nœud de hiérarchie de type cq:Page et un nœud de contenu de type cq:PageContent. La propriété sling:resourceType du nœud de contenu pointe vers le composant Page utilisé pour le rendu de la page.
+Une page comporte un nœud de hiérarchie de type cq:Page et un nœud de contenu de type cq:PageContent. La propriété sling :resourceType du nœud de contenu pointe vers le composant de page utilisé pour le rendu de la page.
 
 Par exemple, pour obtenir le nom de la page active, vous pouvez utiliser le code suivant dans votre script :
 

@@ -11,8 +11,8 @@ role: Developer
 exl-id: 15f30571-7129-402c-98be-270a142c4cbb
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '2452'
-ht-degree: 100%
+source-wordcount: '2441'
+ht-degree: 99%
 
 ---
 
@@ -162,17 +162,17 @@ La balise `<cq:setContentBundle>` crée un contexte de localisation i18n et le s
 
 Elle présente les attributs suivants :
 
-**language** - La langue du paramètre régional pour lequel le lot de ressources doit être récupéré.
+**Language** : langue des paramètres régionaux pour lesquels le lot de ressources doit être récupéré.
 
-**source** - Source préconisée du paramètre régional. Les valeurs définies peuvent être les suivantes :
+**Source** : source préconisée des paramètres régionaux. Les valeurs définies peuvent être les suivantes :
 
-* **static** - Le paramètre régional provient de l’attribut `language`, s’il est disponible ; dans le cas contraire, il provient du paramètre régional par défaut du serveur.
+* **Static** : les paramètres régionaux proviennent de l’attribut `language`, s’il est disponible ; dans le cas contraire, ils proviennent des paramètres régionaux par défaut du serveur.
 
-* **page** - Le paramètre régional est issu de la langue de la page ou de la ressource en cours, si elle est disponible, sinon de l’attribut `language` ou bien du paramètre régional par défaut du serveur.
+* **Page** : les paramètres régionaux sont issus de la langue de la page ou de la ressource en cours, si elle est disponible, sinon de l’attribut `language` ou bien des paramètres régionaux par défaut du serveur.
 
-* **request** - Le paramètre régional provient du paramètre régional de la requête (`request.getLocale()`).
+* **Request** : les paramètres régionaux proviennent des paramètres régionaux de la requête (`request.getLocale()`).
 
-* **auto** - Le paramètre régional provient de l’attribut `language`, s’il est disponible, sinon de la page ou de la ressource en cours, si elle est disponible ; si elle ne l’est pas, il est extrait de la requête.
+* **Auto** : les paramètres régionaux proviennent de l’attribut `language`, s’il est disponible, sinon de la page ou de la ressource en cours, si elle est disponible ; si elle ne l’est pas, ils sont extraits de la requête.
 
 Si l’attribut `source` n’est pas défini :
 
@@ -183,7 +183,7 @@ Si l’attribut `source` n’est pas défini :
 Le « lot de contenu » peut simplement être utilisé par des balises `<fmt:message>` JSTL standard. La recherche des messages par clés est double :
 
 1. Tout d’abord, les propriétés JCR de la ressource sous-jacente qui est rendue sont recherchées pour les traductions. Vous pouvez ainsi définir une boîte de dialogue de composant simple pour modifier ces valeurs.
-1. Si le nœud ne contient pas de propriété dont le nom correspond exactement à celui de la clé, la solution de secours consiste à charger un lot de ressources à partir de la requête sling (`SlingHttpServletRequest.getResourceBundle(Locale)`). La langue ou le paramètre régional de ce lot est défini par les attributs de langue et source de la balise `<cq:setContentBundle>`.
+1. Si le nœud ne contient pas de propriété dont le nom correspond exactement à celui de la clé, la solution de secours consiste à charger un lot de ressources à partir de la requête sling (`SlingHttpServletRequest.getResourceBundle(Locale)`). La langue ou les paramètres régionaux de ce lot sont définis par les attributs de langue et source de la balise `<cq:setContentBundle>`.
 
 La balise `<cq:setContentBundle>` peut être utilisée comme suit dans un script jsp :
 
@@ -321,7 +321,7 @@ La balise `<cq:defineObjects>` expose les objets de script suivants, utilisés r
 
 * Objet de style actuel de la cellule en cours (interface com.day.cq.wcm.api.designer.Style).
 
-**designer**
+**concepteur**
 
 * Objet designer utilisé pour accéder aux informations de conception (interface com.day.cq.wcm.api.designer.Designer).
 

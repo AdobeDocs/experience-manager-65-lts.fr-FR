@@ -322,7 +322,7 @@ Lorsque vous avez configuré les paramètres d’annuaire et créé les entrées
 
    *sun one server directory* `\shared\bin>ldapsearch -h`*hostname* `-p`*port no* `-s base -b "" objectclass=*`
 
-   Une sortie du type de celle des données fournies à titre d’exemple est générée :
+   Une sortie telle que les données d’exemple suivantes est générée :
 
    ```shell
     D:\tools\ldap\sun\shared\bin>ldapsearch.exe -h localhost -p 55850 -s base -b "" objectclass=*

@@ -168,7 +168,7 @@ Restituez un formulaire au client à l’aide de l’API Forms (Web Service) :
    * Un objet `java.util.HashMap` qui stocke les pièces jointes. Il sʼagit dʼun paramètre facultatif. Vous pouvez indiquer `null` si vous ne souhaitez pas joindre de fichier au formulaire.
    * Objet `com.adobe.idp.services.holders.BLOBHolder` vide qui est rempli par la méthode. Ce paramètre est utilisé pour stocker le formulaire PDF rendu.
    * Objet `javax.xml.rpc.holders.LongHolder` vide qui est rempli par la méthode. (Cet argument permet de stocker le nombre de pages du formulaire).
-   * Un objet `javax.xml.rpc.holders.StringHolder` vide qui est renseigné par la méthode. (Cet argument permet de stocker la valeur du paramètre régional).
+   * Un objet `javax.xml.rpc.holders.StringHolder` vide qui est renseigné par la méthode. (Cet argument permet de stocker la valeur des paramètres régionaux).
    * Un objet `com.adobe.idp.services.holders.FormsResultHolder` vide qui contiendra les résultats de cette opération.
 
    La méthode `renderPDFForm` renseigne l’objet `com.adobe.idp.services.holders.FormsResultHolder` qui est transmis en tant que dernière valeur d’argument avec un flux de données de formulaire qui doit être écrit dans le navigateur web client.

@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 8d0271c0-a795-4ff6-a2ae-72329f05a401
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 100%
+source-wordcount: '668'
+ht-degree: 96%
 
 ---
 
@@ -39,7 +39,7 @@ Un système de gestion de contenu (CMS) découplé est :
 
 En termes de création de fragments de contenu dans AEM, cela signifie que :
 
-* Vous pouvez utiliser des fragments de contenu pour créer du contenu qui n’est pas principalement destiné à être publié directement (1:1) sur des pages formatées.
+* Vous pouvez utiliser les fragments de contenu pour créer du contenu qui n’est pas principalement destiné à être publié directement (1:1) sur des pages formatées.
 
 * Le contenu de vos fragments de contenu sera structuré d’une manière prédéterminée, selon les modèles de fragments de contenu. Cela simplifie l’accès à vos applications qui poursuivront le traitement de votre contenu.
 

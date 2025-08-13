@@ -12,8 +12,8 @@ role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2224'
-ht-degree: 99%
+source-wordcount: '2240'
+ht-degree: 95%
 
 ---
 
@@ -109,7 +109,7 @@ L’utilisateur ou l’utilisatrice autorisé(e) intervient à l’étape 3 pou
    * connexion avec droits d’administrateur
    * accédez à la [console de sécurité](/help/sites-administering/security.md)
 
-      * Par exemple, [https://localhost:4503/useradmin](https://localhost:4503/useradmin)
+      * par exemple, [https://localhost:4503/useradmin](https://localhost:4503/useradmin)
 
    * créer un utilisateur ou une utilisatrice
 
@@ -131,7 +131,7 @@ L’utilisateur ou l’utilisatrice autorisé(e) intervient à l’étape 3 pou
 
 * accédez à CRXDE Lite
 
-   * Par exemple, [https://localhost:4503/crx/de](https://localhost:4503/crx/de)
+   * par exemple, [https://localhost:4503/crx/de](https://localhost:4503/crx/de)
 
 * sélectionnez le nœud `/home`
 * dans le volet de droite, sélectionnez l’onglet `Access Control`
@@ -267,13 +267,13 @@ Vérifiez `Name` : `socialpubsync`
 ![Fabrique d’agents de synchronisation](assets/chlimage_1-25.png)
 
 * **Points d’entrée de l’exportateur**
-Il doit exister un point d’entrée de l’exportateur pour chaque instance de publication. Par exemple, s’il existe 2 instances de publication, localhost:4503 et 4504, il doit y avoir deux entrées :
+Il doit exister un point d’entrée de l’exportateur pour chaque instance de publication. Par exemple, s’il existe deux instances de publication, localhost:4503 et 4504, il doit y avoir deux entrées :
 
    * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
    * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
 * **Points d’entrée de l’importateur**
-Il doit exister un point d’entrée de l’importateur pour chaque instance de publication. Par exemple, s’il existe 2 instances de publication, localhost:4503 et 4504, il doit y avoir deux entrées :
+Il doit exister un point d’entrée de l’importateur pour chaque instance de publication. Par exemple, s’il existe deux instances de publication, localhost:4503 et 4504, il doit y avoir deux entrées :
 
    * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
    * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
@@ -303,11 +303,9 @@ Si l’identifiant Sling d’une instance de publication correspond à l’ident
    * recherchez et supprimez le fichier nommé *sling.id.file*
 
       * par exemple, sur un système Linux® :
-
         `rm -i $(find . -type f -name sling.id.file)`
 
       * par exemple, sur un système Windows :
-
         `use windows explorer and search for *sling.id.file*`
 
 1. démarrez l’instance de publication
@@ -339,7 +337,7 @@ Pour que les mises à jour soient correctement synchronisées, il est nécessair
 
 * gestion des politiques :
 
-   * pour remplacer les nœuds rep:policy existants par de nouveaux nœuds, ajoutez un troisième filtre de package :
+   * pour remplacer les nœuds rep:policy existants par de nouveaux nœuds, ajoutez un troisième filtre de package :
 
       * `/home/users|+.*/rep:policy`
 
@@ -461,7 +459,7 @@ L’utilisateur autorisé doit être fait membre du groupe utilisateurs **`admin
 
 La personne utilisatrice autorisée doit avoir explicitement les autorisations et la restriction suivantes sur les instances de publication :
 
-| **path** | **jcr:all** | **rep:glob** |
+| **Chemin.** | **jcr:all** | **rep:glob** |
 |---|---|---|
 | /home | X | &#42;/activities/&#42; |
 | /home/users | X | &#42;/activities/&#42; |
@@ -469,7 +467,7 @@ La personne utilisatrice autorisée doit avoir explicitement les autorisations e
 
 En tant que membre du groupe d’`administrators`, la personne utilisatrice autorisée doit disposer des autorisations suivantes sur toutes les instances de publication :
 
-| **path** | **jcr:all** | **jcr:read** | **rep:write** |
+| **Chemin.** | **jcr:all** | **jcr:read** | **rep:write** |
 |---|---|---|---|
 | /etc/packages/sling/distribution |  |  | X |
 | /libs/sling/distribution |  | X |  |

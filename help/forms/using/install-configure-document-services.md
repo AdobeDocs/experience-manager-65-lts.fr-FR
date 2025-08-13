@@ -1337,7 +1337,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 +++
 
-+++OpenOffice
++++OpenOffice 
 
 **Microsoft® Windows**
 
@@ -1362,7 +1362,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 +++
 
-Problèmes de conversion HTML vers PDF
++++Problèmes de conversion d’HTML vers PDF
 
 * Assurez-vous que les répertoires de polices sont ajoutés dans l’interface utilisateur de configuration de PDF Generator.
 
@@ -1423,7 +1423,7 @@ Problèmes de conversion HTML vers PDF
 
 +++
 
-Échec des tests d’automatisation
++++Échec des tests d’automatisation
 
 * Pour Microsoft® Office et OpenOffice, effectuez au moins une conversion manuellement (pour chaque utilisateur ou utilisatrice) afin de garantir qu’aucune boîte de dialogue ne s’affiche pendant la conversion. Si une boîte de dialogue apparaît, fermez-la. Aucune boîte de dialogue de ce type ne doit apparaître lors de la conversion automatisée.
 
@@ -1431,7 +1431,7 @@ Problèmes de conversion HTML vers PDF
 
 +++
 
-Plusieurs échecs de conversion d’utilisateur ou d’utilisatrice
++++Plusieurs échecs de conversion d’utilisateurs
 
 * Vérifiez les journaux du serveur pour vérifier si la conversion échoue pour un utilisateur ou une utilisatrice en particulier(l’explorateur de processus peut vous aider à vérifier l’exécution du processus pour différents utilisateurs et utilisatrices).
 
@@ -1445,7 +1445,7 @@ Plusieurs échecs de conversion d’utilisateur ou d’utilisatrice
 
 +++
 
-Expiration de la licence d’Adobe Acrobat installée sur AEM Forms Server
++++Expiration de la licence d’Adobe Acrobat installé sur le serveur AEM Forms
 
 * Si vous disposez d’une licence Adobe Acrobat existante qui a expiré, [téléchargez la dernière version d’Adobe Application Manager](https://helpx.adobe.com/fr/creative-suite/kb/aam-troubleshoot-download-install.html), et migrez votre numéro de série. Avant la [migration de votre numéro de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
@@ -1456,7 +1456,6 @@ Expiration de la licence d’Adobe Acrobat installée sur AEM Forms Server
          adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=&lt;Absolute path to prov.xml>]
          
          ```
-
      
    * Sérialisez en volume le module (resérialisez l’installation existante à l’aide du fichier prov.xml et du nouveau numéro de série) : exécutez la commande suivante à partir du dossier d’installation PRTK en tant qu’administrateur pour sérialiser et activer les modules déployés sur les ordinateurs clients :
 
@@ -1464,8 +1463,8 @@ Expiration de la licence d’Adobe Acrobat installée sur AEM Forms Server
          adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
          
          ```
-
-     * Pour les installations à grande échelle, utilisez [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) pour supprimer les versions précédentes de Reader et Acrobat. Personnalisez le programme d’installation et déployez-le sur tous les ordinateurs de votre organisation.
+     
+* Pour les installations à grande échelle, utilisez [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) pour supprimer les versions précédentes de Reader et Acrobat. Personnalisez le programme d’installation et déployez-le sur tous les ordinateurs de votre organisation.
 
 +++
 

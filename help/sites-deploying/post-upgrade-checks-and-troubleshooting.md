@@ -75,7 +75,7 @@ Effectuez une validation initiale sur plusieurs pages dans AEM. En cas de mise �
 
 #### Activer la récupération de l’espace mémoire du magasin de données {#enable-data-store-garbage-collection}
 
-Si vous utilisez un magasin de données basé sur les fichiers, assurez-vous que la tâche de nettoyage de l’espace mémoire du magasin de données est activée et ajoutée à la liste de maintenance hebdomadaire. Les instructions sont décrites sous [Nettoyage des révisions](/help/sites-administering/data-store-garbage-collection.md).
+Si vous utilisez un magasin de données basé sur les fichiers, assurez-vous que la tâche de récupération de l’espace mémoire du magasin de données est activée et ajoutée à la liste de maintenance hebdomadaire. Les instructions sont décrites sous [Nettoyage des révisions](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >

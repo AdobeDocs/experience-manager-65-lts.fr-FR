@@ -31,7 +31,7 @@ AEM Forms prend en charge les solutions CAPTCHA suivantes :
 
 Le Captcha Turnstile de Cloudflare est une mesure de sécurité qui vise à protéger les formulaires et les sites contre les robots automatisés, les attaques malveillantes, les spams et le trafic automatisé indésirable. Il affiche une case à cocher lors de l’envoi de formulaires, ce qui permet de vérifier que l’action est effectuée par de vraies personnes, avant l’envoi effectif.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440942?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440940/)
 
 ### Conditions préalables à l’intégration de l’environnement AEM Forms avec le Captcha Turnstile {#prerequisite}
 
@@ -56,10 +56,8 @@ Pour intégrer AEM Forms au service Turnstile, procédez comme suit :
 
 1. Configurez vos services cloud :
    1. Sur votre instance d’auteur AEM, accédez à ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** et cliquez sur **[!UICONTROL Tourniquet]**.
-
       ![Tourniquet dans Cloud Services](assets/turnstile-in-ui.png)
    1. Sélectionnez un conteneur de configuration, créé ou mis à jour, comme décrit dans la section précédente. Cliquez sur **[!UICONTROL Créer]**.
-
       ![Tourniquet de configuration](assets/config-hcaptcha.png)
    1. Spécifiez **[!UICONTROL Type de widget]** comme géré, non interactif ou invisible.
    1. Fournissez d’autres détails tels que **[!UICONTROL Titre]**, **[!UICONTROL Nom]**.
@@ -96,7 +94,6 @@ Pour intégrer AEM Forms au service Turnstile, procédez comme suit :
    * **[!UICONTROL Message de validation] :** fournissez un message de validation pour valider le Captcha lors de l’envoi du formulaire ou d’une action de l’utilisateur.
    * **[!UICONTROL Service Captcha] :** sélectionnez le service CAPTCHA pour l’envoi du formulaire, puis sélectionnez Tourniquet®.
    * **[!UICONTROL Paramètres de configuration] :** sélectionnez la configuration cloud configurée pour le tourniquet®.
-
      >[!NOTE]
      >Plusieurs configurations cloud peuvent être définies dans votre environnement dans un but similaire. Donc, choisissez le service avec soin. Si aucun service n’est répertorié, voir [Connecter votre environnement AEM Forms à Turnstile](#connect-your-forms-environment-with-turnstile-service) pour savoir comment créer un Cloud Service qui connecte votre environnement AEM Forms à ce service.
 

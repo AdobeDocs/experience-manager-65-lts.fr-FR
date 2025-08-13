@@ -14,8 +14,8 @@ hidefromtoc: true
 exl-id: 071781e8-990d-4d01-b46e-be1c57bdbe3a
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 100%
+source-wordcount: '1834'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ De même, si l’utilisateur sélectionne des données canadiennes, le formulair
 
 Cette section utilise des fichiers d’exemple qui peuvent se trouver à l’emplacement suivant :
 
-&lt;*Répertoire d’installation de Forms Designe*>/Exemples/Forms/Bon de commande/Fragments de formulaire
+&lt;*Répertoire d’installation de Forms Designer*>/Samples/Forms/Purchase Order/Form Fragments
 
 où &lt;*répertoire d’installation*> est le chemin d’installation. Pour les besoins de l’application cliente, le fichier Purchase Order Dynamic.xdp a été copié à partir de cet emplacement d’installation et déployé vers une application Forms nommée *Applications/FormsApplication*. Le fichier Purchase Order Dynamic.xdp est placé dans un dossier nommé FormsFolder. De même, les fragments sont placés dans un dossier nommé Fragments, comme illustré ci-dessous.
 
@@ -61,7 +61,7 @@ où &lt;*répertoire d’installation*> est le chemin d’installation. Pour les
 
 Pour accéder à la conception de formulaire Purchase Order Dynamic.xdp, spécifiez `Applications/FormsApplication/1.0/FormsFolder/Purchase Order Dynamic.xdp` comme nom du formulaire (premier paramètre transmis à la méthode `renderPDFForm`) et `repository:///` comme valeur de l’URI racine du contenu.
 
-Les fichiers de données XML utilisés par l’application web ont été déplacés du dossier Data vers `C:\Adobe` (système de fichiers appartenant au serveur d’applications J2EE qui héberge AEM Forms). Les noms de fichier sont Bon de commande *Canada.xml* et Bon de commande *US.xml*.
+Les fichiers de données XML utilisés par l’application web ont été déplacés du dossier Data vers `C:\Adobe` (système de fichiers appartenant au serveur d’applications J2EE qui héberge AEM Forms). Les noms de fichier sont Purchase Order *Canada.xml* et Purchase Order *US.xml*.
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ Pour plus d’informations sur l’emplacement de ces fichiers JAR, consultez la
 
 **Pour créer un projet web :**
 
-1. Démarrez Eclipse et sélectionnez **Fichier** > **Nouveau projet**.
+1. Démarrez Eclipse et cliquez sur **Fichier** > **Nouveau projet**.
 1. Dans la boîte de dialogue **Nouveau projet**, sélectionnez **Web** > **Projet web dynamique**.
 1. Entrez `FragmentsWebApplication` comme nom de projet, puis cliquez sur **Terminer**.
 

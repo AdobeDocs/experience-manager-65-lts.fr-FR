@@ -11,8 +11,8 @@ role: Developer
 exl-id: c835a110-89cf-4857-9ee0-c0ad781a66ae
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 99%
+source-wordcount: '866'
+ht-degree: 95%
 
 ---
 
@@ -150,9 +150,9 @@ La recherche de balises et l’obtention de la liste des balises fonctionnent co
 
 ## Balises dans différentes langues {#tags-in-different-languages}
 
-Comme le décrit la documentation relative à la gestion des balises, dans la section [Gestion des balises dans différentes langues](/help/sites-administering/tags.md#managing-tags-in-different-languages), une balise `title` peut être définie dans différentes langues. Une propriété sensible à la langue est ensuite ajoutée au nœud de la balise. Cette propriété a le format `jcr:title.<locale>`, par ex. `jcr:title.fr` pour la traduction en français. `<locale>` doit être une chaîne en langue locale ISO en minuscules et utiliser « _ » au lieu de « - », par exemple : `de_ch`.
+Comme le décrit la documentation relative à la gestion des balises, dans la section [Gestion des balises dans différentes langues](/help/sites-administering/tags.md#managing-tags-in-different-languages), une balise `title` peut être définie dans différentes langues. Une propriété sensible à la langue est ensuite ajoutée au nœud de la balise. Cette propriété a le format `jcr:title.<locale>`, par ex. `jcr:title.fr` pour la traduction en français. `<locale>` doit être une chaîne de paramètres régionaux ISO en minuscules et utiliser « _ » au lieu de « - », par exemple : `de_ch`.
 
-Lorsque la balise **Animals** est ajoutée à la page **Produits**, la valeur `stockphotography:animals` est ajoutée à la propriété `cq:tags` du nœud /content/geometrixx/fr/products/jcr:content. La traduction est référencée à partir du nœud de balise.
+Lorsque la balise **Animals** est ajoutée à la page **Products**, la valeur `stockphotography:animals` est ajoutée à la propriété `cq:tags` du nœud /content/geometrixx/fr/products/jcr:content. La traduction est référencée à partir du nœud de balise.
 
 L’API côté serveur dispose de méthodes liées à `title` localisées :
 
@@ -180,7 +180,7 @@ Dans AEM, la langue peut être identifiée à partir de la langue de la page ou 
 
    * `slingRequest.getLocale()`
 
-`currentPage` et `slingRequest` sont disponibles dans un JSP via la balise [&lt;cq:definedObjects>](/help/sites-developing/taglib.md).
+Les `currentPage` et `slingRequest` sont disponibles dans un JSP via la balise [&lt;cq:definedObjects>](/help/sites-developing/taglib.md) .
 
 Pour le balisage, la localisation dépend du contexte, car la balise `titles` peut être affichée dans la langue de la page, dans la langue de l’utilisateur ou de l’utilisatrice ou dans toute autre langue.
 
@@ -190,7 +190,7 @@ La procédure suivante décrit comment ajouter une langue (par exemple, finnois)
 
 1. Dans **CRXDE**, modifiez la propriété multi-valeur `languages` du nœud `/content/cq:tags`.
 
-1. Ajoutez `fi_fi` (code langue pour le finnois) et enregistrez les modifications.
+1. Ajoutez `fi_fi` (paramètres régionaux pour le finnois) et enregistrez les modifications.
 
 La nouvelle langue (finnois) est désormais disponible dans la boîte de dialogue des propriétés de la page et dans la boîte de dialogue **Modifier la balise** lors de la modification d’une balise dans la console **Balisage**.
 

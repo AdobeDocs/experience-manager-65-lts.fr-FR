@@ -628,7 +628,7 @@ Appliquez une politique à un document PDF à l’aide de l’API Document Secu
       * Une valeur de chaîne qui spécifie le nom de la politique.
       * Une valeur de chaîne représentant le nom du domaine User Manager de l’utilisateur qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être une valeur null (si ce paramètre est null, la valeur de paramètre suivante doit être null).
       * Une valeur de chaîne représentant le nom canonique de l’utilisateur User Manager qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être `null` (si ce paramètre est null, la valeur du paramètre précédent doit être `null`).
-      * Une valeur `com.adobe.livecycle.rightsmanagement.Locale` représentant le paramètre régional utilisé pour sélectionner le modèle MS Office. Cette valeur de paramètre est facultative et n’est pas utilisée pour les documents PDF. Pour protéger un document PDF, indiquez `null`.
+      * Une valeur `com.adobe.livecycle.rightsmanagement.Locale` représentant les paramètres régionaux utilisés pour sélectionner le modèle MS Office. Cette valeur de paramètre est facultative et n’est pas utilisée pour les documents PDF. Pour protéger un document PDF, indiquez `null`.
 
      La méthode `protectDocument` renvoie un objet `RMSecureDocumentResult` contenant le document PDF protégé par une politique.
 
@@ -695,7 +695,7 @@ Pour appliquer une politique à un document PDF à l’aide de l’API Document�
    * Une valeur de chaîne qui spécifie le nom de la politique.
    * Une valeur de chaîne représentant le nom du domaine User Manager de l’utilisateur qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être définie sur null (si ce paramètre est défini sur null, la valeur du paramètre suivant doit être `null`).
    * Une valeur de chaîne représentant le nom canonique de l’utilisateur User Manager qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être définie sur null (si ce paramètre est défini sur null, la valeur du paramètre précédent doit être `null`).
-   * Une valeur `RMLocale` spécifiant la valeur du paramètre régional (par exemple, `RMLocale.en`).
+   * Une valeur `RMLocale` spécifiant la valeur des paramètres régionaux (par exemple, `RMLocale.en`).
    * Un paramètre de sortie de chaîne utilisé pour stocker la valeur de l’identifiant de politique.
    * Un paramètre de sortie de chaîne utilisé pour stocker la valeur de l’identifiant protégée par une politique.
    * Un paramètre de sortie de chaîne utilisé pour stocker le type MIME (par exemple, `application/pdf`).
@@ -2028,7 +2028,7 @@ Appliquez une politique à un document Word à l’aide de l’API Document Secu
       * Une valeur de chaîne qui spécifie le nom de la politique.
       * Une valeur de chaîne représentant le nom du domaine User Manager de l’utilisateur qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être une valeur null (si ce paramètre est null, la valeur de paramètre suivante doit être null).
       * Une valeur de chaîne représentant le nom canonique de l’utilisateur User Manager qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être `null` (si ce paramètre est `null`, alors la valeur du paramètre précédent doit être `null`).
-      * `com.adobe.livecycle.rightsmanagement.Locale` représentant le paramètre régional utilisé pour sélectionner le modèle MS Office. Cette valeur de paramètre est facultative et vous pouvez spécifier `null`.
+      * Une valeur `com.adobe.livecycle.rightsmanagement.Locale` représentant les paramètres régionaux utilisés pour sélectionner le modèle MS Office. Cette valeur de paramètre est facultative et vous pouvez spécifier `null`.
 
      La méthode `protectDocument` renvoie un objet `RMSecureDocumentResult` contenant le document Word protégé par une politique.
 
@@ -2088,7 +2088,7 @@ Appliquez une politique à un document Word à l’aide de l’API Document Secu
    * Une valeur de chaîne qui spécifie le nom de la politique.
    * Une valeur de chaîne représentant le nom du domaine User Manager de l’utilisateur qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être définie sur null (si ce paramètre est défini sur null, la valeur du paramètre suivant doit être `null`).
    * Une valeur de chaîne représentant le nom canonique de l’utilisateur User Manager qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être définie sur null (si ce paramètre est défini sur null, la valeur du paramètre précédent doit être `null`).
-   * Une valeur `RMLocale` spécifiant la valeur du paramètre régional (par exemple, `RMLocale.en`).
+   * Une valeur `RMLocale` spécifiant la valeur des paramètres régionaux (par exemple, `RMLocale.en`).
    * Un paramètre de sortie de chaîne utilisé pour stocker la valeur de l’identifiant de politique.
    * Un paramètre de sortie de chaîne utilisé pour stocker la valeur de l’identifiant protégée par une politique.
    * Paramètre de sortie de chaîne utilisé pour stocker le type MIME (par exemple `application/doc`).

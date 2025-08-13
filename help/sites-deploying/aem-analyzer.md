@@ -8,7 +8,7 @@ role: Admin
 exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
 source-git-commit: 6b846e456466492f4be2c1e5a1f6b3913ae4dab4
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2071'
 ht-degree: 22%
 
 ---
@@ -102,7 +102,7 @@ Le format du rapport est le suivant :
 
 >[!NOTE]
 >
->Pour en savoir plus sur chaque catégorie de résultat, consultez [Catégories du détecteur de motifs](https://experienceleague.adobe.com/fr/docs/experience-manager-pattern-detection/table-of-contents/aso).
+>Pour en savoir plus sur chaque catégorie de résultat, consultez [Catégories du détecteur de motifs](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso).
 
 Pour comprendre les niveaux d’importance, suivez le tableau ci-dessous :
 

@@ -49,7 +49,7 @@ En guise de petite introduction, les règlements relatifs à la confidentialité
 
 * Entités commerciales (CCPA) et/ou Contrôleurs de données (RGPD)
 
-* Prestataires (CCPA) et/ou Responsables du traitement des données (GDPR)
+* Prestataires (CCPA) et/ou Responsables du traitement des données (RGPD)
 
 Les principales dispositions de ces règlements sont les suivantes :
 
@@ -109,7 +109,7 @@ Pour plus d’informations, consultez les sections suivantes :
 
 * [Adobe Target – Présentation de la confidentialité](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=fr)
 
-* [Processus relatif à la confidentialité des données Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=fr)
+* [Processus relatif à la confidentialité des données Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
 
 ## AEM Forms {#aem-forms}
 

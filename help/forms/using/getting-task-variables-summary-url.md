@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: 1cd2aae7-306f-4f7a-b4d2-e8c64827c09a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 100%
+source-wordcount: '429'
+ht-degree: 95%
 
 ---
 
@@ -68,7 +68,7 @@ Dans cet exemple d’orchestration, un employé envoie un formulaire de demande 
 
       Les clés de cette carte doivent être les mêmes que celles définies dans votre moteur de rendu HTML à l&#39;étape précédente.
 
-      Ajoutez également une clé **sling:resourceType** avec une valeur **Employees/PtoApplication** dans la carte.
+      Ajoutez également une clé **sling:resourceType** avec la valeur **Employees/PtoApplication** dans le mappage.
 
    1. Utilisez le sous-processus **storeContent** du service **ContentRepositoryConnector** dans le processus **create PTO summary**. Ce sous-processus crée un nœud CRX.
 
@@ -76,7 +76,7 @@ Dans cet exemple d’orchestration, un employé envoie un formulaire de demande 
 
       * **Chemin d’accès au dossier** : le chemin du dossier dans lequel le nouveau nœud CRX est créé. Définissez le chemin comme **/content**.
       * **Nom de nœud** : affectez la variable d’entrée nodeName à ce champ. Il s’agit d’une chaîne de nom de nœud unique.
-      * **Type de nœud :** définissez le type comme **nt:unstructured**. La sortie de ce processus est nodePath. Le nodePath est le chemin CRX du nœud que vous venez de créer. Le ndoePath serait la sortie finale du processus de résumé **create PTO**.
+      * **Type de nœud** : définissez le type comme **nt:unstructured**. La sortie de ce processus est nodePath. Le nodePath est le chemin CRX du nœud que vous venez de créer. Le ndoePath serait la sortie finale du processus de résumé **create PTO**.
 
    1. Transmettez les données du formulaire soumis (**employeeName**, **employeeID**, **ptoReason** et **totalDays**) comme entrée dans le nouveau processus **create PTO summary**. Prenez la sortie comme **ptoSummaryNodePath**.
 

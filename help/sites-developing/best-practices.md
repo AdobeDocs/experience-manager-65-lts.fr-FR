@@ -89,4 +89,4 @@ Le langage de modèle HTML (HTL) est un nouveau système de modèle HTML, introd
 >[!NOTE]
 >
 >Le didacticiel en plusieurs parties peut être intéressant pour la configuration d’un nouveau projet AEM, en détaillant les principaux composants, les modèles modifiables, les bibliothèques clientes et le développement de composants :
->[Prise en main du développement AEM Sites – Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)
+>>[Prise en main du développement AEM Sites – Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)

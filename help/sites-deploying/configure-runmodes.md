@@ -103,8 +103,8 @@ Ces dossiers sont de type `nt:folder` et doivent contenir le lot approprié.
 Si vous avez défini des configurations pour plusieurs modes d’exécution, vous devez définir celui qui doit être utilisé au démarrage. Il existe plusieurs méthodes pour spécifier le mode d’exécution à utiliser. L’ordre de résolution est le suivant :
 
 1. [Propriétés système (](#using-a-system-property-in-the-start-script)
-1. [&#128279;](#using-the-sling-properties-file)
-1. [&#128279;](#using-the-r-option)
+1. [](#using-the-sling-properties-file)
+1. [](#using-the-r-option)
 1. [Détection du nom de fichier](#filename-detection-renaming-the-jar-file)
 
 Lorsque vous utilisez un serveur d’application, vous pouvez également [définir le mode d’exécution dans web.xml](#defining-the-run-mode-in-web-xml-with-application-server).
@@ -123,7 +123,7 @@ Vous pouvez utiliser le fichier `sling.properties` pour définir le mode d’ex�
 
 ### Utilisation de l’option -r {#using-the-r-option}
 
-Un mode d’exécution personnalisé peut être activé à l’aide de l’option `-r` lors du lancement du démarrage rapide. Par exemple, utilisez la commande ci-dessous pour lancer une instance AEM avec le mode d’exécution défini sur dev. &grave;&grave;
+Un mode d’exécution personnalisé peut être activé à l’aide de l’option `-r` lors du lancement du démarrage rapide. Par exemple, utilisez la commande ci-dessous pour lancer une instance AEM avec le mode d’exécution défini sur dev. ``
 
 ```shell
 java -jar cq-56-p4545.jar -r dev

@@ -12,8 +12,8 @@ role: Developer
 exl-id: 5d1c2c73-c457-49dc-b519-eba5ad9d5722
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 99%
+source-wordcount: '1624'
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Pour baliser le contenu et utiliser l’infrastructure de balisage AEM, procéde
 * Le `NodeType` du nœud de contenu balisé doit inclure le mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
 * Le [`TagID`](#tagid) est ajouté à la propriété [`cq:tags`](#tagged-content-cq-tags-property) du nœud de contenu et est résolu sur un nœud de type ` [cq:Tag](#tags-cq-tag-node-type)`.
 
-## Balises : type de nœud cq:Tag  {#tags-cq-tag-node-type}
+## Balises : type de nœud cq:Tag  {#tags-cq-tag-node-type}
 
 La déclaration d’une balise est capturée dans le référentiel dans un nœud de type `cq:Tag`.
 
@@ -128,7 +128,7 @@ Une pratique habituelle est la suivante :
 * Accorder aux utilisateurs/auteurs l’accès en lecture à tous les espaces de noms qu’ils doivent être autorisés à lire (presque tous).
 * Accorder aux utilisateurs et utilisatrices/auteurs et autrices l’accès en écriture aux espaces de noms dont ils doivent être en mesure de définir librement les balises (add_node sous `/content/cq:tags/some_namespace`).
 
-## Contenu pouvant être balisé : mixin cq:Taggable {#taggable-content-cq-taggable-mixin}
+## Contenu pouvant être balisé : mixin cq:Taggable {#taggable-content-cq-taggable-mixin}
 
 Pour que les développeurs et développeuses d’application associent le balisage à un type de contenu, l’enregistrement du nœud ([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html)) doit inclure le mixin `cq:Taggable` ou `cq:OwnerTaggable`.
 
@@ -163,7 +163,7 @@ Les définitions essentielles relatives aux types de nœud inclus dans AEM sont 
     mixin
 ```
 
-## Contenu balisé : propriété cq:tags {#tagged-content-cq-tags-property}
+## Contenu balisé : propriété cq:tags {#tagged-content-cq-tags-property}
 
 La propriété `cq:tags` est un tableau de `String` utilisé pour stocker un ou plusieurs ID de balise lorsque les auteurs et autrices ou les visiteurs et visiteuses du site les appliquent au contenu. La propriété n’a de sens que lorsqu’elle est ajoutée à un nœud qui est défini avec le mixin `[cq:Taggable](#taggable-content-cq-taggable-mixin)`.
 

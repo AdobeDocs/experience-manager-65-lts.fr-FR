@@ -7,8 +7,8 @@ role: Developer
 exl-id: 9a953caa-47d3-4e06-a27d-2a0c3fc72597
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 100%
+source-wordcount: '1577'
+ht-degree: 99%
 
 ---
 
@@ -1618,11 +1618,11 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de requête pour plusieurs fragments de contenu d’un paramètre régional donné {#sample-wknd-multiple-fragments-given-locale}
+### Exemple de requête pour plusieurs fragments de contenu d’un ensemble de paramètres régionaux donné {#sample-wknd-multiple-fragments-given-locale}
 
 Cette requête interroge :
 
-* à la recherche de fragments de contenu de type `article` dans le paramètre régional `fr`
+* à la recherche de fragments de contenu de type `article` dans les paramètres régionaux `fr`
 
 **Exemple de requête**
 
@@ -1738,10 +1738,10 @@ Les fragments suivants sont utilisés pour le modèle approprié.
 
 | Nom | Pays | Population | Catégories |
 |--- |--- |--- |--- |
-| Bâle | Suisse | 172258 | city:emea |
+| Bâle | Suisse | 172258 | ville :emea |
 | Berlin | Allemagne | 3669491 | city:capital<br>city:emea |
 | Bucarest | Roumanie | 1821000 |  city:capital<br>city:emea |
 | San Francisco |  États-Unis |  883306 |  city:beach<br>city:na |
-| San Jose |  États-Unis |  102635 |  city:na |
-| Stuttgart |  Allemagne |  634830 |  city:emea |
+| San Jose |  États-Unis |  102635 |  ville :na |
+| Stuttgart |  Allemagne |  634830 |  ville :emea |
 |  Zurich |  Suisse |  415367 |  city:capital<br>city:emea |

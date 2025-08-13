@@ -11,8 +11,8 @@ role: Admin,Architect,Data Architect,Developer,Leader
 exl-id: 4a7d8228-101a-47bd-9bcf-d521a69d87a0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 100%
+source-wordcount: '317'
+ht-degree: 95%
 
 ---
 
@@ -51,6 +51,6 @@ Pour réussir la diffusion d’un projet de qualité élevée, vous devez rempli
 
    >[!NOTE]
    >
-   >Il n’existe pas de relation directe 1:1 entre les documents requis et les éléments livrables.
+   >Il n’existe pas de relation directe 1:1 entre les différents documents requis et les éléments livrables.
 
 1. En fonction des statuts des **[Documents requis](/help/managing/best-practices.md#required-documents)** et **[Éléments livrables](/help/managing/best-practices.md#deliverables)**, les feuilles de travail **[Pulsation du projet](/help/managing/best-practices.md#project-heartbeat-dashboard)** et **[Statut par rôle](/help/managing/best-practices.md#status-by-role)** sont automatiquement mises à jour afin de vous donner une indication à jour de la progression et de l’intégrité de votre projet.

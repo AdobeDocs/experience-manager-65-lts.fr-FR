@@ -11,8 +11,8 @@ role: Admin
 exl-id: c86f66b3-6471-4fb6-81d6-3c0a4dcbe200
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 100%
+source-wordcount: '1008'
+ht-degree: 97%
 
 ---
 
@@ -189,7 +189,7 @@ Les données traitées par les workflows sont stockées dans l’enregistrement 
 
 Au niveau du modèle de workflow, un indicateur est fourni pour indiquer que le modèle (et ses instances d’exécution) dispose d’un enregistrement externe des métadonnées. Les variables de workflow ne sont pas conservées dans JCR pour les instances de workflow des modèles marqués pour le stockage externe.
 
-La propriété *userMetadataPersistenceEnabled* sera stockée dans le *nœud jcr:content* du modèle de workflow. Cet indicateur sera conservé dans les métadonnées de workflow sous le nom *cq:userMetaDataCustomPersistenceEnabled*.
+La propriété *userMetadataPersistenceEnabled* est stockée sur le nœud *jcr:content* du modèle de workflow. Cet indicateur est conservé dans les métadonnées de workflow sous la forme *cq:userMetaDataCustomPersistenceEnabled*.
 
 L’illustration ci-dessous montre comment définir l’indicateur dans un workflow.
 

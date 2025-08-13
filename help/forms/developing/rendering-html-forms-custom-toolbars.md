@@ -303,7 +303,7 @@ Effectuez le rendu d’un formulaire HTML contenant une barre d’outils personn
    * Un objet `com.adobe.idp.services.holders.BLOBHolder` vide, renseigné par la méthode `renderHTMLForm`. La valeur de ce paramètre enregistre le formulaire rendu.
    * Un objet `com.adobe.idp.services.holders.BLOBHolder` vide, renseigné par la méthode `renderHTMLForm`. Ce paramètre stocke les données XML de sortie.
    * Un objet `javax.xml.rpc.holders.LongHolder` vide, renseigné par la méthode `renderHTMLForm`. Cet argument stocke le nombre de pages du formulaire.
-   * Un objet `javax.xml.rpc.holders.StringHolder` vide, renseigné par la méthode `renderHTMLForm`. Cet argument stocke la valeur du paramètre régional.
+   * Un objet `javax.xml.rpc.holders.StringHolder` vide, renseigné par la méthode `renderHTMLForm`. Cet argument stocke la valeur des paramètres régionaux.
    * Un objet `javax.xml.rpc.holders.StringHolder` vide, renseigné par la méthode `renderHTMLForm`. Cet argument stocke la valeur de rendu HTML utilisée.
    * Un objet `com.adobe.idp.services.holders.FormsResultHolder` vide qui contiendra les résultats de cette opération.
 

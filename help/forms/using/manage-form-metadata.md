@@ -11,8 +11,8 @@ feature: Adaptive Forms
 exl-id: 712590c6-2348-4c0d-93b9-686e6478ca03
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 100%
+source-wordcount: '1964'
+ht-degree: 99%
 
 ---
 
@@ -299,7 +299,7 @@ AEM Forms exposent les schémas de métadonnées des types de formulaires pris e
 
       >[!NOTE]
       >
-      >Ne modifiez pas le préfixe « ./jcr:content/metadata/ » car il définit le chemin où la propriété est stockée.
+      >Ne modifiez pas le préfixe « ./jcr:content/metadata/’, car il définit le chemin d’accès où la propriété est stockée.
       >
       >En outre, le nom de la propriété doit être unique pour éviter d’écrire des valeurs pour plusieurs propriétés au même emplacement dans le référentiel. Il est donc recommandé de modifier la valeur « default ».
 

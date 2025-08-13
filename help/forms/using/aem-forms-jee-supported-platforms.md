@@ -85,7 +85,7 @@ Adobe recommande ces configurations et fournit une prise en charge totale ou res
 | Niveau de prise en charge | Description |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | E : Fonctionnement supposé | Il est prévu que la configuration fonctionne normalement et nous n’avons reçu aucun rapport faisant état de problèmes. |
-| Z : Non pris en charge | La configuration n’est pas prise en charge. Adobe ne fait aucune déclaration indiquant si la configuration fonctionne et ne la prend pas en charge. |
+| Z : non pris en charge | La configuration n’est pas prise en charge. Adobe ne fait aucune déclaration indiquant si la configuration fonctionne et ne la prend pas en charge. |
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
   </tr>
   <tr> 
    <td><p>Oracle Java™ SE 11 (64 bits) <sup> [8] </sup> </p>  </td>
-   <td><p>A : Pris en charge</p> </td>
+   <td><p>A : pris en charge</p> </td>
    <td><p>Versions et mises à jour mineures </p> </td>
   </tr>
   <tr>
@@ -123,22 +123,22 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 8 64 bits</td>
-   <td>Z : Non pris en charge</td>
+   <td>Z : non pris en charge</td>
    <td><p> </p> </td>
   </tr>
   <tr>
    <td>Oracle Java™ SE 8 (64 bits)</td>
-   <td>A : Pris en charge</td>
+   <td>A : pris en charge</td>
    <td>Versions et mises à jour mineures</td>
   </tr>
   <tr>
    <td>IBM® J9 Virtual Machine (version 2.9, JRE 1.8.0) IBM® JDK SR6-FP26<br /> </td>
-   <td>A : Pris en charge</td>
+   <td>A : pris en charge</td>
    <td>Versions et mises à jour mineures</td>
   </tr>
   <tr>
    <td>IBM® JAVA1.8.0_291(version 8.0.6.30)<br /> </td>
-   <td>A : Pris en charge</td>
+   <td>A : pris en charge</td>
    <td>Versions et mises à jour mineures</td>
   </tr>
  </tbody>
@@ -224,7 +224,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
   <tr>
    <td>MySQL</td>
    <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar (version 5.1.44)</p> </td>
-   <td><p>Fourni avec l’installation d’AEM Forms on JEE.</p> </td>
+   <td><p>Fourni avec l’installation d’AEM Forms on JEE.</p> </td>
   </tr>
   <tr>
    <td>Microsoft® SQL Server <br /> </td>
@@ -250,17 +250,17 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
   </tr>
   <tr>
    <td>Oracle WebLogic Server 12.2.1 (12c R2) (obsolète) <sup>[9]</sup></td>
-   <td>A : Pris en charge</td>
+   <td>A : pris en charge</td>
    <td>Pack de services et mises à jour critiques</td>
   </tr>
   <tr>
    <td>Oracle WebLogic Server 14c <sup>[9]</sup></td>
-   <td>A : Pris en charge</td>
+   <td>A : pris en charge</td>
    <td>Pack de services et mises à jour critiques</td>
   </tr>
   <tr>
    <td>IBM® WebSphere® Application Server 9.0.0.10 <sup>[1] [4]</sup><br /> </td>
-   <td>A : Pris en charge</td>
+   <td>A : pris en charge</td>
    <td>Pack de services et mises à jour critiques</td>
   </tr>
   <tr>
@@ -288,27 +288,27 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
   </tr>
    <tr>
    <td>Microsoft® Windows Server 2019 (64 bits) (obsolète)</td>
-   <td>A : Pris en charge</td>
+   <td>A : pris en charge</td>
    <td>Service Packs et mises à jour critiques</td>
   </tr>
      <tr>
    <td>Microsoft® Windows Server 2022 (64 bits)</td>
-   <td>A : Pris en charge</td>
+   <td>A : pris en charge</td>
    <td>Service Packs et mises à jour critiques</td>
   </tr>
   <tr>
    <td>Ubuntu 20.04</td>
-   <td>A : Pris en charge</td>
+   <td>A : pris en charge</td>
    <td>Service Packs et mises à jour critiques</td>
   </tr>
   <tr>
    <td><p>Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bits)</p> </td>
-   <td><p>A : Pris en charge</p> </td>
+   <td><p>A : pris en charge</p> </td>
    <td><p>Révisions mineures, mises à jour cumulatives et mises à jour critiques</p> </td>
   </tr>
   <tr>
    <td><p>Red Hat® Enterprise Linux® 7 (Kernel 3.x) (64 bits) (obsolète)</td>
-   <td><p>A : Pris en charge</p> </td>
+   <td><p>A : pris en charge</p> </td>
    <td><p>Révisions mineures, mises à jour cumulatives et mises à jour critiques</p> </td>
   </tr>
   <tr>
@@ -318,7 +318,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
   </tr>
   <tr>
    <td>Oracle Linux® 7 Mise à jour 3 (64 bits)</td>
-   <td>A : Pris en charge</td>
+   <td>A : pris en charge</td>
    <td>Packs de services, correctifs cumulatifs et mises à jour de sécurité critiques</td>
   </tr>
   <tr>
@@ -627,7 +627,7 @@ Pour des conditions requises supplémentaires, voir :
   </tr>
   <tr>
    <td><p>Microsoft® Edge (Evergreen)</p> </td>
-   <td><p>A : Pris en charge</p> </td>
+   <td><p>A : pris en charge</p> </td>
    <td><p>Packs de services et mises à jour critiques</p> </td>
   </tr>
   <tr>
@@ -642,12 +642,12 @@ Pour des conditions requises supplémentaires, voir :
   </tr>
   <tr>
    <td><p>Google Chrome (Evergreen)</p> </td>
-   <td><p>A : Pris en charge</p> </td>
+   <td><p>A : pris en charge</p> </td>
    <td>Toutes les mises à jour</td>
   </tr>
   <tr>
    <td>Apple Safari sous macOS</td>
-   <td>A : Pris en charge</td>
+   <td>A : pris en charge</td>
    <td>Toutes les mises à jour</td>
   </tr>
  </tbody>
@@ -716,7 +716,7 @@ AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs
 
 ## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
-La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65_fr](https://adobe.com/go/learn_aemforms_documentation_65_fr).
+La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_fr).
 
 Les plateformes de référence de fournisseurs tiers d’AEM Forms on JEE indiquent le niveau de correctif de l’infrastructure de fournisseur tiers en cours au moment du développement et de la publication d’AEM Forms on JEE, et forment le niveau minimum de correctif/pack de services de l’infrastructure prise en charge par cette version d’AEM Forms on JEE.
 
@@ -744,7 +744,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -827,7 +827,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016

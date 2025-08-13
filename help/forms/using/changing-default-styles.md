@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: dad8b6d4-a2d9-4913-a5bc-02cb6ad38b11
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '365'
+ht-degree: 99%
 
 ---
 
@@ -50,7 +50,7 @@ Les deux images qui suivent montrent la différence entre les styles par défaut
 
    1. Recherchez la ligne suivante dans la page du rendu :
 
-      &lt;cq:includeClientLib categories=&quot;xfaforms.profile&quot; />
+      &lt;cq:includeClientLib categories=« xfaforms.profile » />
 
    1. Insérez les éléments suivants sous la ligne ci-dessus pour inclure la feuille de style :
 

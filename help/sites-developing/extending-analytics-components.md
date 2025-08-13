@@ -11,8 +11,8 @@ role: Developer
 exl-id: 94bdf379-d10f-4dd3-b250-f2d1a3e4c251
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1244'
-ht-degree: 100%
+source-wordcount: '1251'
+ht-degree: 97%
 
 ---
 
@@ -173,25 +173,25 @@ Configurez le composant topnav et modifiez le fichier JSP pour définir les év�
 
 1. Ajoutez la propriété suivante au nœud Analytics pour nommer l’événement de suivi :
 
-   * Nom : cq:trackevents
+   * Nom : cq:trackevents
    * Type : chaîne
    * Valeur : topnavClick
 
 1. Ajoutez la propriété suivante au nœud Analytics afin de pouvoir nommer les variables de données :
 
-   * Nom : cq:trackvars
+   * Nom : cq:trackvars
    * Type : chaîne
    * Valeur : topnavTarget,topnavLocation
 
 1. Ajoutez la propriété suivante au nœud Analytics pour nommer le composant pour Sidekick :
 
-   * Nom : cq:componentName
+   * Nom : cq:componentName
    * Type : chaîne
    * Valeur : topnav (suivi)
 
 1. Ajoutez la propriété suivante au nœud Analytics pour nommer le groupe de composants pour Sidekick :
 
-   * Nom : cq:componentGroup
+   * Nom : cq:componentGroup
    * Type : chaîne
    * Valeur : Général
 
@@ -363,7 +363,7 @@ Le nœud `analytics` du composant doit exposer les noms des variables à l’aid
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-Le module eCommerce fournit plusieurs composants qui génèrent des données de variable s.products. Par exemple, le composant `submitorder` ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) génère du code JavaScript semblable à l’exemple suivant :
+Le module eCommerce fournit plusieurs composants qui génèrent des données de variable s.products. Par exemple, le composant `submitorder` ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) génère un JavaScript similaire à l’exemple suivant :
 
 ```
 <script type="text/javascript">

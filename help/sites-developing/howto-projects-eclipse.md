@@ -11,8 +11,8 @@ role: Developer
 exl-id: 951e436c-adf4-4277-895f-383aaef17940
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 100%
+source-wordcount: '432'
+ht-degree: 98%
 
 ---
 
@@ -54,7 +54,7 @@ Ensuite, configurez le projet en utilisant Maven comme décrit dans la rubrique 
 Eclipse peut également fournir une assistance sur l’utilisation de JSP, par exemple :
 
 * Remplissage automatique des bibliothèques de balises
-* Prise en compte par Eclipse des objets définis par &lt;cq:defineObjects /> et &lt;sling:defineObjects />
+* Prise en compte d’Eclipse des objets définis par &lt;cq:defineObjects /> et &lt;sling:defineObjects />
 
 Pour que cela fonctionne :
 

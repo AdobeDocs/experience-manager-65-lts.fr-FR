@@ -8,7 +8,7 @@ exl-id: e095b7d4-b1b4-4070-9264-b23ea2c677f5
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '791'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -74,7 +74,7 @@ Pour afficher l’état des opérations asynchrones en détail, accédez à la p
 
 ## Purge des tâches terminées {#purging-completed-jobs}
 
-AEM exécute une tâche de purge quotidienne à 1 h du matin afin de supprimer les tâches asynchrones terminées depuis plus d’un jour.
+AEM exécute une tâche de purge tous les jours à 01:00 afin de supprimer les tâches asynchrones terminées depuis plus d’un jour.
 
 Vous pouvez modifier la planification de la tâche de purge et la durée pendant laquelle les détails des tâches terminées sont conservés avant d’être supprimées. Vous pouvez également configurer le nombre maximal de tâches terminées pour lesquelles des détails sont conservés à tout moment.
 

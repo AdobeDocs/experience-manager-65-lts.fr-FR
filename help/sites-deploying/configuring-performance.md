@@ -11,7 +11,7 @@ role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
 source-git-commit: 2fcdc5df5a4b901c177d8e4158663c6b09793146
 workflow-type: tm+mt
-source-wordcount: '5054'
+source-wordcount: '5053'
 ht-degree: 99%
 
 ---
@@ -228,7 +228,7 @@ Configurez ces services pour limiter le nombre maximal de workflows en cours d�
 
 #### Configuration dans le référentiel {#configuration-in-the-repo}
 
-Si vous configurez les services [à l’aide d’un nœud sling:OsgiConfig](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), vous devez trouver le PID des services existants, par exemple : org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Vous pouvez détecter le PID à l’aide de la console web.
+Si vous configurez les services [à l’aide d’un nœud sling:OsgiConfig ](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), vous devez trouver le PID des services existants, par exemple : org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Vous pouvez détecter le PID à l’aide de la console web.
 
 Configurez la propriété nommée `queue.maxparallel`.
 
@@ -425,7 +425,7 @@ Lors de la conception de ces tests, il faut se rappeler que tous les scénarios 
 
 | Scénario d’erreur | Type d’erreur | Nombre d’utilisateurs | T/s (attendu) | T/s (testé) | Description |
 |---|---|---|---|---|---|
-| Surcharge des composants de recherche | Recherche sur un caractère générique (astérisque) | 10 | 1 |  | Seul les &ast;&ast;&ast; sont recherchées. |
+| Surcharge des composants de recherche | Recherche sur un caractère générique (astérisque) | 10 | 1 |  | Seul les &amp;ast;&amp;ast;&amp;ast; sont recherchées. |
 |   | Mot de fin | 20 | 2 |  | Recherche d’un mot de fin. |
 |   | Chaîne vide | 10 | 1 |  | Recherche d’une chaîne vide. |
 |   | Caractères spéciaux | 10 | 1 |  | Recherche de caractères spéciaux. |

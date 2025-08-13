@@ -30,7 +30,7 @@ Cette caractéristique permet d’empêcher les autres utilisateurs d’écraser
 ## Extraction de ressources {#checking-out-assets}
 
 1. Dans l’interface utilisateur d’[!DNL Assets], sélectionnez la ressource que vous souhaitez extraire. Vous pouvez également sélectionner plusieurs ressources à extraire.
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Extraction]**. L’option **[!UICONTROL Extraction]** passe en **[!UICONTROL Archivage]**.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Extraction]**. L’option **[!UICONTROL Extraction]** devient **[!UICONTROL Archivage]**.
 Pour vérifier si d’autres utilisateurs peuvent modifier la ressource que vous avez extraite, connectez-vous comme un utilisateur différent. Un symbole représentant un verrou s’affiche sur la miniature de la ressource que vous avez extraite.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)

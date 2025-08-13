@@ -11,7 +11,7 @@ role: Admin
 exl-id: 3ffa7c80-ce59-41cf-bb50-c6caf77d9baa
 source-git-commit: 09f3d38e9f9c7f882d8b03dcf86db68cb8885a08
 workflow-type: tm+mt
-source-wordcount: '4196'
+source-wordcount: '4202'
 ht-degree: 98%
 
 ---
@@ -126,7 +126,7 @@ Cela permet d’éviter les requêtes gourmandes en ressources (c’est-à-dire 
 
 #### **Après le déploiement** {#post-deployment}
 
-* Surveillez les journaux à la recherche de requêtes déclenchant une traversée de nœuds importante ou une consommation élevée de mémoire de tas : &grave;&grave;
+* Surveillez les journaux à la recherche de requêtes déclenchant une traversée de nœuds importante ou une consommation élevée de mémoire de tas : ``
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * Optimisez la requête pour réduire le nombre de nœuds parcourus.
@@ -318,7 +318,7 @@ Problèmes possibles et solutions :
 
    * Effectuez une vérification du référentiel de traversée ; par exemple :
 
-     [http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
+     [http://localhost:4502/system/console/repositorycheck ](http://localhost:4502/system/console/repositorycheck)
 
      La traversée du référentiel détermine si d’autres fichiers binaires (à part les fichiers lucene) sont manquants.
 
@@ -428,7 +428,7 @@ Si AEM fonctionne normalement, par exemple en chargeant des ressources via l’I
 
    * La configuration OSGi de pré-extraction de texte nécessite un chemin d’accès au système de fichiers vers les fichiers texte extraits. Ils doivent donc être accessibles directement à partir de l’instance AEM (lecteur local ou montage de partage de fichiers).
 
-#### Comment pré-extraire du texte {#how-to-perform-text-pre-extraction}
+#### Comment procéder à la pré-extraction du texte ? {#how-to-perform-text-pre-extraction}
 
 >[!NOTE]
 >

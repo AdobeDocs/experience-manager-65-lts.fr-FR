@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
 source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1853'
 ht-degree: 99%
 
 ---
@@ -150,7 +150,7 @@ Le fichier ACMExtensionsMessages.properties comprend des libellés et des messag
 
    Le fichier ACMExtensionsMessages.properties est copié dans le dossier de paramètres régionaux.
 
-1. Pour localiser les libellés de l’action/du bouton personnalisé(e) nouvellement ajouté(e), créez le fichier ACMExtensionsMessages.properties correspondant au paramètre régional approprié dans `/apps/fd/cm/config/defaultApp/locale/`.
+1. Pour localiser les libellés de l’action/du bouton personnalisé(e) nouvellement ajouté(e), créez le fichier ACMExtensionsMessages.properties correspondant aux paramètres régionaux appropriés dans `/apps/fd/cm/config/defaultApp/locale/`.
 
    Par exemple, pour localiser l’action/le bouton personnalisé(e) créé(e) dans cet article, créez un fichier nommé ACMExtensionsMessages_fr.properties avec l’entrée suivante :
 
@@ -415,7 +415,7 @@ Pour plus d’informations, voir [Connexion d’AEM Forms à Adobe LiveCycle](
 
 1. Indiquez les paramètres suivants dans le fichier de configuration :
 
-   * **crx.serverUrl**=https:/host:port/[context path]/[AEM URL]
+   * **crx.serverUrl**=https:/host:port/[context path]/[URL AEM]
    * **crx.username**= nom d’utilisateur Experience Manager
    * **crx.password**= mot de passe Experience Manager
    * **crx.appRoot**=/content/apps/cm

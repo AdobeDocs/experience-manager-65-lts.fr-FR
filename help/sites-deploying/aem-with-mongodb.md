@@ -12,7 +12,7 @@ role: Admin
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '5965'
+source-wordcount: '5964'
 ht-degree: 98%
 
 ---
@@ -80,8 +80,8 @@ Une mémoire RAM insuffisante entraîne une dégradation importante des performa
 
 Pour faciliter le processus de test de charge, le ratio suivant entre le jeu de travail et la taille totale de la base de données peut être supposé :
 
-* 1:10 pour un stockage sur SSD
-* 1:3 pour un stockage sur disque dur
+* 1:10 pour le stockage sur SSD
+* 1:3 pour le stockage sur disque dur
 
 Ces ratios signifient que, pour les déploiements sur SSD, 200 Go de RAM sont nécessaires pour une base de données de 2 To.
 

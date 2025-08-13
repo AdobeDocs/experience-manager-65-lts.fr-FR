@@ -13,8 +13,8 @@ hidefromtoc: true
 exl-id: ba02f9b1-209e-42f2-b1df-2ed64fc9fdbc
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 100%
+source-wordcount: '1715'
+ht-degree: 98%
 
 ---
 
@@ -157,7 +157,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 Pour que l’authentification SPNEGO fonctionne, l’ordinateur client doit faire partie du domaine dans lequel le compte d’utilisateur ou d’utilisatrice est créé. Vous devez également configurer le navigateur client pour autoriser l’authentification SPNEGO. De plus, le site qui nécessite une authentification SPNEGO doit être un site de confiance.
 
-Si vous accédez au serveur au moyen du nom de l’ordinateur, par exemple https://lcserver:8080, aucun paramètre n’est nécessaire pour Internet Explorer. Si vous saisissez une URL qui ne contient aucun point (« . »), Internet Explorer traite le site comme un site intranet local. Si vous utilisez un nom qualifié complet pour le site, celui-ci doit être ajouté en tant que site de confiance.
+Si vous accédez au serveur en utilisant le nom de l’ordinateur, par exemple https://lcserver:8080, aucun paramètre n’est requis pour Internet Explorer. Si vous saisissez une URL qui ne contient aucun point (« . »), Internet Explorer traite le site comme un site intranet local. Si vous utilisez un nom qualifié complet pour le site, celui-ci doit être ajouté en tant que site de confiance.
 
 **Configurer Internet Explorer 6.x**
 
@@ -171,7 +171,7 @@ Si vous accédez au serveur au moyen du nom de l’ordinateur, par exemple https
 
 1. Dans la zone d’URL du navigateur, saisissez `about:config`.
 
-   La boîte de dialogue about:config - Mozilla Firefox s’ouvre.
+   La boîte de dialogue about:config - Mozilla Firefox s’affiche.
 
 1. Dans la zone Filtre, saisissez `negotiate`
 1. Dans la liste qui s’affiche, cliquez sur network.negotiate-auth.trusted-uri, puis saisissez l’une des commandes suivantes selon votre environnement :

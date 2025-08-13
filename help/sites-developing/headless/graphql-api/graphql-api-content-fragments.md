@@ -358,7 +358,7 @@ Vous pouvez afficher tous les types GraphQL de métadonnées si vous affichez le
 >[!NOTE]
 >
 >**Différence entre les métadonnées normales et les métadonnées de tableau**
->Gardez à l’esprit que `StringMetadata` et `StringArrayMetadata` se rapportent tous deux à ce qui est stocké dans le référentiel et non à la façon dont vous les récupérez.
+>>Gardez à l’esprit que `StringMetadata` et `StringArrayMetadata` se rapportent tous deux à ce qui est stocké dans le référentiel et non à la façon dont vous les récupérez.
 >
 >Par exemple, en appelant le champ `stringMetadata` , vous recevez un tableau de toutes les métadonnées stockées dans le référentiel sous la frome d’un `String`. Et si vous appelez `stringArrayMetadata`, vous recevez un tableau de toutes les métadonnées stockées dans le référentiel sous la forme d’un `String[]`.
 
@@ -896,7 +896,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
    * Pour le contenu :
 
       * `_locale` : pour afficher la langue ; basé sur Language Manager
-         * Voir [Exemple de requête pour plusieurs fragments de contenu d’un paramètre régional donné](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-given-locale)
+         * Voir [Exemple de requête pour plusieurs fragments de contenu d’un ensemble de paramètres régionaux donné](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-given-locale)
 
       * `_metadata` : pour afficher les métadonnées de votre fragment
          * Voir [Modèle de recherche de métadonnées – Répertorier les métadonnées des prix intitulés GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb)

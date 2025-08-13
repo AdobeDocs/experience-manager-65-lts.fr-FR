@@ -37,13 +37,13 @@ Ce tutoriel fournit un cadre de bout en bout pour la création d’un formulaire
 
 Commençons par aborder un cas d’utilisation :
 
-Un site web propose une gamme de produits pour une clientèle diverse. La clientèle parcourt le portail, sélectionne et commande les produits. Chaque personne crée un compte et fournit des adresses de livraison et de facturation. Une cliente existante, Sara Rose, cherche à ajouter son adresse de livraison sur le site web. Le site Web fournit un formulaire en ligne pour ajouter et mettre à jour les adresses de livraison.
+Un site web propose une gamme de produits pour une clientèle diverse. La clientèle parcourt le portail, sélectionne et commande les produits. Chaque personne crée un compte et fournit des adresses d’expédition et de facturation. Une cliente existante, Sara Rose, cherche à ajouter son adresse d’expédition sur le site web. Le site web fournit un formulaire en ligne pour ajouter et mettre à jour les adresses d’expédition.
 
 Le site Web fonctionne sous Adobe Experience Manager (AEM) et utilise AEM [!DNL Forms] pour la capture et le traitement des données. Le formulaire d’ajout et de mise à jour d’adresse est un formulaire adaptatif. Le site web stocke les détails du client ou de la cliente dans une base de données. Il utilise le formulaire d’ajout et de mise à jour d’adresse pour récupérer et afficher les adresses disponibles. Il utilise également le formulaire adaptatif pour accepter les adresses mises à jour et les nouvelles adresses.
 
 ### Prérequis {#prerequisite}
 
-* Configurez une [instance de création AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html?lang=fr#author-and-publish-installs).
+* Configurez une [instance de création AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs).
 * Installez le [module complémentaire AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) sur une instance de création.
 * Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du tutoriel sont basés sur la base de données [!DNL MySQL] et utilisent le [pilote de base de données MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html) d’[!DNL Oracle's].
 
@@ -59,7 +59,7 @@ Les formulaires adaptatifs sont de nouvelle génération, attrayants, réactifs,
 
 Objectifs :
 
-* Créer un formulaire adaptatif permettant à une personne cliente d’ajouter une adresse de livraison.
+* Créer un formulaire adaptatif permettant à un client ou une cliente d’ajouter une adresse d’expédition.
 * Mettre en forme les champs d’un formulaire adaptatif pour afficher et accepter les informations d’une personne cliente.
 * Créer une action d’envoi pour envoyer un e-mail contenant du contenu de formulaire.
 * Prévisualiser et envoyer un formulaire adaptatif.

@@ -10,7 +10,7 @@ role: Developer,Leader
 exl-id: 3f3437fb-1fff-4703-a50d-28da89b0a856
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3523'
+source-wordcount: '3522'
 ht-degree: 99%
 
 ---
@@ -52,7 +52,6 @@ Voici quelques conseils généraux sur la construction de vos URL pour l’optim
    * Lors de l’utilisation de sélecteurs sur une page, les sélecteurs qui fournissent une valeur sémantique sont recommandés.
    * Si une personne ne peut pas lire votre URL, un moteur de recherche ne le peut pas non plus.
    * Par exemple :
-
      `mybrand.com/products/product-detail.product-category.product-name.html`
 est préférable à `mybrand.com/products/product-detail.1234.html`
 
@@ -197,7 +196,7 @@ Vous pouvez afficher les noms de pages localisés pour les utilisateurs de conte
 * il serait préférable que l’URL soit :
   `www.mydomain.com/es/casa.html`.
 
-La difficulté en matière de localisation du nom d’une page réside dans le fait que plusieurs outils de localisation disponibles sur la plateforme AEM nécessitent que les noms de cette page correspondent dans toutes les langues pour que le contenu reste synchronisé.
+La difficulté en matière de localisation du nom d’une page réside dans le fait que plusieurs outils de localisation disponibles sur la plateforme AEM nécessitent que les noms de cette page correspondent dans tous les paramètres régionaux pour que le contenu reste synchronisé.
 
 La propriété `sling:alias` permet de pallier cette difficulté. `sling:alias` peut être ajouté comme propriété à n’importe quelle ressource pour donner un nom d’alias à la ressource. Dans l’exemple précédent, vous auriez :
 
@@ -254,10 +253,9 @@ Cependant, il existe également un moyen plus simple de gérer ce problème :
 
 1. **Règles SlingResourceResolver**
 
-   À l’aide de la console web (par exemple, localhost:4502/system/console/configMgr), vous pouvez configurer le résolveur de ressources Sling :
+   À l’aide de la console web (par exemple, localhost:4502/system/console/configMgr), vous pouvez configurer le résolveur de ressource Sling :
 
    * **Apache Sling Resource Resolver Factory**
-
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    Il est conseillé d’établir les mappages requis pour raccourcir les URL sous la forme d’expressions régulières, puis de définir ces configurations sous un nœud OsgiConfignode, `config.publish`, qui est inclus dans votre version.

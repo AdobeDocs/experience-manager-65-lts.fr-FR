@@ -11,8 +11,8 @@ role: Admin
 exl-id: e085b4f2-b5f1-4036-bbd5-b719b4ac0c1a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 100%
+source-wordcount: '2663'
+ht-degree: 98%
 
 ---
 
@@ -290,14 +290,14 @@ Dans l’exemple précédent, `/content/we-retail/language-masters/en` est le si
 >
 >Les graphiques et les descriptions de cette section représentent des instantanés de Live Copies potentielles. Ils ne sont pas exhaustifs, mais offrent un aperçu mettant en évidence les caractéristiques spécifiques.
 
-Lorsque vous créez initialement une Live Copy, les pages sources sélectionnées sont reflétées sur une base 1:1 dans la Live Copy. Par la suite, de nouvelles ressources (pages et/ou paragraphes) peuvent également être créées directement dans la Live Copy. Il est donc utile d’être conscient de ces variations et de savoir comment elles affectent la synchronisation. Les compositions possibles sont les suivantes :
+Lorsque vous créez initialement une Live Copy, les pages source sélectionnées sont reflétées sur une base 1:1 dans la Live Copy. Par la suite, de nouvelles ressources (pages et/ou paragraphes) peuvent également être créées directement dans la Live Copy. Il est donc utile d’être conscient de ces variations et de savoir comment elles affectent la synchronisation. Les compositions possibles sont les suivantes :
 
 * [Live Copy avec des pages autres que Live Copy](#live-copy-with-non-live-copy-pages)
 * [Live Copies imbriquées](#nested-live-copies)
 
 La forme de base de la Live Copy comprend les éléments suivants :
 
-* Les pages Live Copy qui reflètent les pages sources sélectionnées sur une base 1:1.
+* Pages Live Copy qui reflètent les pages source sélectionnées sur une base :1.
 * Une définition de configuration.
 * Une relation en direct définie pour chaque ressource :
 

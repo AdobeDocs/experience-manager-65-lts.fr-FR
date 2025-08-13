@@ -64,11 +64,11 @@ Formation destinée au personnel qui produira (créera) du contenu pour la solut
 
 ### Examen de certification AEM {#aem-certification-exam}
 
-Assurez-vous que les personnes appropriées sont enregistrées pour passer les [examens de certification](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) pertinents.
+Assurez-vous que les personnes appropriées sont enregistrées pour passer les [examens de certification](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) pertinents.
 
 ### Certifié(e) AEM {#aem-certified}
 
-Assurez-vous que la personne appropriée a réussi les [examens de certification](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) pertinents.
+Assurez-vous que la personne appropriée a réussi les [examens de certification](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) pertinents.
 
 ### Formation technique AEM {#aem-technical-training}
 

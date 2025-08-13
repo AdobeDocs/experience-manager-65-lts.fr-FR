@@ -12,8 +12,8 @@ role: Developer
 exl-id: 7831c056-86f8-41c1-bc45-5e9829bc54bc
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2981'
-ht-degree: 100%
+source-wordcount: '2980'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ Dans ce document, nous partons du principe que vous êtes déjà rompu à la cr�
 >[!NOTE]
 >
 >Le tutoriel suivant peut également s’avérer intéressant pour configurer un modèle de page modifiable dans un nouveau projet :
->[Prise en main d’AEM Sites Partie 2 - Création d’une page et d’un modèle de base](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=fr)
+>>[Prise en main d’AEM Sites Partie 2 - Création d’une page et d’un modèle de base](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=fr)
 
 ## Création d’un modèle {#creating-a-new-template}
 

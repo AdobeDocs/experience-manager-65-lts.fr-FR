@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: 8f52ec13-80a9-4b28-824f-0f09fb988529
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 100%
+source-wordcount: '1830'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ Effectuez les étapes suivantes pour créer un dossier de contrôle :
    * **Traiter les fichiers avec** : te type de processus à démarrer. Vous pouvez spécifier le workflow, le script, ou le service.
    * **Nom du service/Chemin du script/Chemin du workflow** : le comportement du champ est basé sur la valeur spécifiée pour le champ **Traiter les fichiers avec**. Vous pouvez spécifier les valeurs suivantes :
 
-      * Pour un workflow, indiquez le modèle de workflow à exécuter. Par exemple, /etc/workflow/models/&lt;nom_workflow>/jcr:content/model.
+      * Pour un workflow, indiquez le modèle de workflow à exécuter. Par exemple, /etc/workflow/models/&lt;nom_workflow>/jcr:content/model
       * Pour un script, précisez le chemin JCR du script à exécuter. Par exemple, /etc/watchfolder/test/testScript.ecma.
       * Pour le service, spécifiez le filtre utilisé pour localiser un service OSGi. Le service est enregistré comme une implémentation de l’interface de com.adobe.aemfd.watchfolder.service.api.ContentProcessor. Par exemple, le code suivant est une implémentation personnalisée de l’interface ContentProcessor avec une propriété personnalisée (foo=bar).
 

@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 7a0d5502-8e1a-4396-a517-ea3767e228c2
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1581'
-ht-degree: 100%
+source-wordcount: '1582'
+ht-degree: 99%
 
 ---
 
@@ -133,7 +133,7 @@ Vous pouvez exécuter le workflow de balisage périodiquement ou en fonction des
 
 Vous pouvez activer le service de contenu dynamique de façon à ce qu’il balise périodiquement les ressources au sein d’un dossier. Ouvrez la page de propriétés du dossier de ressources, sélectionnez **[!UICONTROL Activer les balises intelligentes]** sous l’onglet **[!UICONTROL Détails]** et enregistrez les modifications.
 
-Lorsque cette option est sélectionnée pour un dossier, le service de contenu dynamique balise automatiquement les ressources au sein du dossier. Par défaut, le workflow de balisage s’exécute chaque jour à minuit.
+Lorsque cette option est sélectionnée pour un dossier, le service de contenu dynamique balise automatiquement les ressources au sein du dossier. Par défaut, le workflow de balisage s’exécute tous les jours à 12 :00.
 
 ### Balisage à la demande {#on-demand-tagging}
 

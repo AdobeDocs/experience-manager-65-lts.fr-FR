@@ -11,8 +11,8 @@ role: Admin
 exl-id: 893d04cb-3a71-4400-9ca4-62ad46aacfdd
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 100%
+source-wordcount: '1740'
+ht-degree: 99%
 
 ---
 
@@ -189,7 +189,7 @@ Pour ajouter un mappage de votre service avec les utilisateurs ou utilisatrices 
 
 1. Installez le bundle et assurez-vous que la configuration d’usine a été installée. Vous pouvez le faire en procédant comme suit :
 
-   * Accédez à la console web à l’adresse *https://serverhost:serveraddress/system/console/configMgr*.
+   * Accédez à la console web à l’adresse *https://serverhost:serveraddress/system/console/configMgr*
    * Recherchez **Amendement du service de mappage des utilisateurs de service Apache Sling**.
    * Cliquez sur le lien pour vérifier si la configuration appropriée est en place.
 

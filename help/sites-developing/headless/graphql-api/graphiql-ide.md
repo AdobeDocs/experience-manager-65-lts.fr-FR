@@ -7,8 +7,8 @@ role: Developer
 exl-id: 81d47a8f-569a-4a7c-ba07-6f6c9258547c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 100%
+source-wordcount: '782'
+ht-degree: 97%
 
 ---
 
@@ -139,7 +139,7 @@ Une fois que vous avez sélectionné votre [requête persistante](/help/sites-de
 
 >[!NOTE]
 >
->La définition du paramètre `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} du cache de la requête persistante a une valeur par défaut de 2 heures (7 200 secondes).
+>La définition du `Time To Live` de cache de la requête persistante {« cache-control »:« parameter »:value} a une valeur par défaut de 2 heures (7 200 secondes).
 
 ## Copie de l’URL pour accéder directement à la requête {#copy-url}
 

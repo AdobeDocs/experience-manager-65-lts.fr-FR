@@ -12,8 +12,8 @@ role: User,Admin,Architect,Developer
 exl-id: 18c32ec9-9f6d-4c6e-9790-dc911baa1d75
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 100%
+source-wordcount: '1096'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
    >
    >Si un site contient des racines de langue sous le niveau supérieur, les pages et les branches d’un lancement doivent se trouver sous une racine de langue commune.
    >
-   >Si vous essayez de créer un lancement avec une page parent ou enfant dans le chemin source, il échoue et renvoie l’erreur « La destination existe déjà à l’emplacement : chemin d’accès à la page ».
+   >Si vous essayez de créer un lancement avec une page parent ou enfant dans le chemin d’accès source, il échoue et renvoie l’erreur « La destination existe déjà à l’:path dans la page ».
 
 1. Pour chaque entrée, vous pouvez indiquer si :
 

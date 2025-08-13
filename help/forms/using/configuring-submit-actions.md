@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: a5aff5dd-912d-49ee-94e8-38cdbc396e5b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2593'
 ht-degree: 99%
 
 ---
@@ -53,7 +53,7 @@ Les actions d’envoi par défaut disponibles avec les formulaires adaptatifs so
 >[!NOTE]
 >
 >Vérifiez que le dossier [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM
->pas. Le répertoire est nécessaire pour stocker temporairement des pièces jointes. Si le fichier n’existe pas, créez-le.
+>>pas. Le répertoire est nécessaire pour stocker temporairement des pièces jointes. Si le fichier n’existe pas, créez-le.
 
 >[!CAUTION]
 >
@@ -85,7 +85,7 @@ Utilisez l’action **Envoyer vers le point d’entrée REST** pour transmettre 
 
 Pour publier des données sur un serveur interne, indiquez le chemin de la ressource. Les données sont publiées avec le chemin de la ressource. Par exemple, /content/restEndPoint. Pour ces requêtes de publication, les informations d’authentification de la requête d’envoi sont utilisées.
 
-Pour publier des données sur un serveur externe, indiquez une URL. Le format de l’URL est le suivant : https://host:port/path_to_rest_end_point. Assurez-vous de configurer le chemin pour que la requête POST soit traitée anonymement.
+Pour publier des données sur un serveur externe, indiquez une URL. Le format de l’URL est https://host:port/path_to_rest_end_point. Assurez-vous de configurer le chemin pour que la requête POST soit traitée anonymement.
 
 ![Mappage pour la transmission des valeurs de champs sous forme de paramètres de page de remerciement](assets/post-enabled-actionconfig.png)
 
@@ -173,7 +173,7 @@ Une fois la configuration réussie, utilisez l’action d’envoi [Appeler un fl
 
 >[!NOTE]
 >
->La fonctionnalité Envoyer à Microsoft® Liste SharePoint a été introduite avec le pack de services 19 (6.5.19.0) d’AEM 6.5 Forms.
+> La fonctionnalité Envoyer à Microsoft® Liste SharePoint a été introduite avec le pack de services 19 (6.5.19.0) d’AEM 6.5 Forms.
 
 L’action d’envoi **[!UICONTROL Envoyer à SharePoint]** connecte un formulaire adaptatif à un stockage Microsoft® SharePoint. Vous pouvez envoyer le fichier de données de formulaire, les pièces jointes ou le document d’enregistrement au stockage Microsoft® SharePoint connecté.
 
@@ -199,7 +199,7 @@ Pour connecter AEM Forms à votre liste Microsoft® SharePoint :
 
      >[!NOTE]
      >
-     >Le champ du **secret client** est obligatoire ou facultatif selon la configuration de votre application Azure Active Directory. Si votre application est configurée pour utiliser un secret client, vous devez l’indiquer.
+     > Le champ du **secret client** est obligatoire ou facultatif selon la configuration de votre application Azure Active Directory. Si votre application est configurée pour utiliser un secret client, vous devez l’indiquer.
 
 1. Cliquez sur **[!UICONTROL Connecter]**. Lors d’une connexion réussie, le message `Connection Successful` s’affiche.
 1. Sélectionnez **[!UICONTROL Site SharePoint]** et **[!UICONTROL Liste SharePoint]** dans la liste déroulante.
@@ -218,16 +218,16 @@ Lorsque vous soumettez le formulaire, les données sont enregistrées dans le st
 
 >[!NOTE]
 >
->Dans la liste Microsoft® SharePoint, les types de colonnes suivants ne sont pas pris en charge :
->* Colonne image
->* Colonne métadonnées
->* Colonne personne
->* Colonne données externes
+> Dans la liste Microsoft® SharePoint, les types de colonnes suivants ne sont pas pris en charge :
+> * Colonne image
+> * Colonne métadonnées
+> * Colonne personne
+> * Colonne données externes
 
 
 >[!NOTE]
 >
->Pour définir les valeurs d’une configuration, [générez des configurations OSGi à l’aide du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#generating-osgi-configurations-using-the-aem-sdk-quickstart) et [déployez la configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#deployment-process) sur votre instance de Cloud Service.
+> Pour définir les valeurs d’une configuration, [générez des configurations OSGi à l’aide du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#generating-osgi-configurations-using-the-aem-sdk-quickstart) et [déployez la configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#deployment-process) sur votre instance de Cloud Service.
 
 ## Revalidation côté serveur dans un formulaire adaptatif {#server-side-revalidation-in-adaptive-form}
 

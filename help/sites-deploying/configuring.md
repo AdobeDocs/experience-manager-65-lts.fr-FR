@@ -8,7 +8,7 @@ exl-id: 338ea82e-c248-4118-9d42-e268d6396e65
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '2085'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -180,7 +180,7 @@ Consultez [Dispatcher](https://experienceleague.adobe.com/docs/experience-manage
 
 ### Configuration d’AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
-Grâce à AEM Doc Services et AEM Doc Security, AEM peut désormais appeler les services de document de LiveCycle pour effectuer le rendu d’un formulaire XFA, convertir un document au format PDF et protéger un document à l’aide d’une politique.
+Grâce à AEM Doc Services et AEM Doc Security, AEM peut désormais appeler les services de document de LiveCycle pour effectuer le rendu d’un formulaire XFA, convertir un document au format PDF et protéger un document à l’aide d’une politique.
 
 ### Déchargement des tâches et administration de la topologie {#job-offloading-and-topology-administration}
 

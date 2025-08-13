@@ -34,7 +34,7 @@ ht-degree: 100%
 
 1. Cliquez sur **[!UICONTROL Authentifier]**.
 1. Une fois qu’[!DNL Experience Manager] a authentifié vos identifiants, dans la liste **[!UICONTROL Suite de rapports]**, sélectionnez une suite de rapports [!DNL Adobe Analytics] à partir de laquelle la fonction Statistiques sur les ressources doit récupérer les données. Cliquez sur **[!UICONTROL Ajouter]**.
-1. Une fois qu’[!DNL Experience Manager] a configuré votre suite de rapports, appuyez sur **[!UICONTROL Terminé]**.
+1. Une fois qu’[!DNL Experience Manager] a configuré votre suite de rapports, cliquez sur **[!UICONTROL Terminé]**.
 
 ## Suivi de page {#page-tracker}
 

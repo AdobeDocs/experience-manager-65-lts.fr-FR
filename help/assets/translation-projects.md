@@ -174,7 +174,7 @@ Si vous utilisez cette option, un projet de traduction est créé pour l’ensem
 
 1. Dans l’interface utilisateur d’[!DNL Assets], sélectionnez le dossier source auquel vous avez ajouté une ressource.
 1. Ouvrez le volet **[!UICONTROL Références]** et cliquez sur **[!UICONTROL Copies de langue]** sous **[!UICONTROL Copies]** pour afficher la liste des copies de langue.
-1. Cochez la case située avant **[!UICONTROL Copies de langue]**, puis sélectionnez le dossier cible correspondant au paramètre régional approprié.
+1. Cochez la case située avant **[!UICONTROL Copies de langue]**, puis sélectionnez le dossier cible correspondant aux paramètres régionaux appropriés.
 
    ![sélectionner la copie de langue](assets/lang-copy1.png)
 

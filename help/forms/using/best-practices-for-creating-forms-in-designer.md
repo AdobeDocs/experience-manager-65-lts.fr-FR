@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: 0f9d0b66-d6e4-475a-8727-c1de1a1e1bb0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '11687'
-ht-degree: 100%
+source-wordcount: '11685'
+ht-degree: 99%
 
 ---
 
@@ -75,7 +75,7 @@ Pour implémenter cette structure sous-jacente à l’aide de LiveCycle Designer
 
 Pour créer un formulaire accessible, vous devez configurer les propriétés du formulaire de sorte que LiveCycle Designer génère des informations d’accessibilité lors de l’enregistrement de la conception de formulaire en tant que fichier PDF :
 1. Sélectionnez Fichier > Propriétés du formulaire.
-1. Sélectionnez l’onglet Enregistrer les options et, dans la zone PDF, assurez-vous que l’option Générer les informations d’accessibilité (balises) pour Acrobat est sélectionnée.
+1. Cliquez sur l’onglet Enregistrer les options et, dans la zone PDF, assurez-vous que l’option Générer les informations d’accessibilité (balises) pour Acrobat est sélectionnée.
 1. Cliquez sur OK.
 
 Dans LiveCycle Designer, cette option est sélectionnée par défaut.
@@ -511,8 +511,8 @@ Recommandations pour l’utilisation des couleurs :
    * 2.2 Assurez-vous que les combinaisons de couleurs de premier plan et d’arrière-plan offrent un contraste suffisant lorsqu’elles sont affichées par une personne ayant un déficit visuel basé sur les couleurs ou sur un écran noir et blanc. [Priorité 2 pour les images, Priorité 3 pour le texte] (P2).
 * WCAG 2.0
    * 1.4.1 Utilisation de la couleur : la couleur n’est pas utilisée comme seul moyen visuel de transmettre des informations, d’indiquer une action, de demander une réponse ou de distinguer un élément visuel. (Niveau A)
-   * 1.4.3 Contraste (minimum) : la présentation visuelle du texte et des images du texte présente un rapport de contraste d’au moins 4,5:1, sauf dans les cas suivants : (Niveau AAA)
-   * 1.4.6 Contraste (amélioré) : la présentation visuelle du texte et des images du texte présente un rapport de contraste d’au moins 7:1, sauf dans les cas suivants : (Niveau AAA)
+   * 1.4.3 Contraste (minimum) : La présentation visuelle du texte et des images du texte a un rapport de contraste d&#39;au moins 4,5:1, sauf dans les cas suivants : (niveau AA)
+   * 1.4.6 Contraste (amélioré) : La présentation visuelle du texte et des images du texte a un rapport de contraste d&#39;au moins 7:1, sauf dans les cas suivants : (niveau AAA)
 
 
 ## Fourniture de cellules d’en-tête pour les tableaux{#provide-heading-cells}
@@ -715,11 +715,11 @@ Le contenu du formulaire est lu par les technologies d’assistance qui utilisen
 
 Si le texte (ou le texte secondaire) de vos formulaires est présenté dans plusieurs langues, vous devez identifier les zones de votre formulaire dans lesquelles un changement est effectué d’une langue à l’autre.
 
-Dans LiveCycle Designer, la définition de la langue principale est effectuée en définissant la propriété Paramètre régional du formulaire et la propriété Paramètre régional du sous-formulaire de niveau supérieur. Pour identifier les modifications apportées à la langue principale, modifiez la propriété Paramètre régional de tout objet qui utilise une langue autre que la langue du formulaire.
+Dans LiveCycle Designer, la définition de la langue principale est effectuée en définissant la propriété Paramètre régional du formulaire et la propriété Paramètre régional du sous-formulaire de niveau supérieur. Pour identifier les modifications apportées à la langue principale, modifiez la propriété Paramètres régionaux de tout objet qui utilise une langue autre que la langue du formulaire.
 
-Pour définir la propriété Paramètre régional d’un formulaire, procédez comme suit :
+Pour définir la propriété Paramètres régionaux d’un formulaire, procédez comme suit :
 1. Choisissez Fichier > Propriétés du formulaire, puis sélectionnez l’onglet Par défaut.
-2. Sélectionnez la langue appropriée pour le paramètre régional du formulaire (voir l’illustration 17).
+2. Sélectionnez la langue appropriée pour les paramètres régionaux du formulaire (voir l’illustration 17).
 3. Cliquez sur OK.
 
 ![Modification des paramètres régionaux du formulaire dans la boîte de dialogue Propriétés du formulaire](/help/forms/using/assets/image-17.png)
@@ -729,7 +729,7 @@ Illustration 17 : **modification des paramètres régionaux du formulaire dans
 Pour définir la propriété Paramètre régional du sous-formulaire de niveau supérieur ou d’un objet nécessitant une autre langue, procédez comme suit :
 1. Sélectionnez le sous-formulaire ou l’objet de niveau supérieur dans la vue de conception.
 1. Pour afficher la palette Objet, choisissez Fenêtre > Objet.
-1. Dans la palette Objet, sélectionnez l’onglet Champ, puis, dans la liste Paramètre régional, sélectionnez la langue à utiliser pour l’objet (voir l’illustration 18). Lorsque vous appliquez des paramètres régionaux différents à des objets, gardez à l’esprit que les objets situés dans les tableaux et les sous-formulaires reçoivent automatiquement les mêmes paramètres régionaux que le tableau et l’objet de sous-formulaire.
+1. Dans la palette Objet, sélectionnez l’onglet Champ, puis, dans la liste Paramètres régionaux, sélectionnez la langue à utiliser pour l’objet (voir l’illustration 18). Lorsque vous appliquez des paramètres régionaux différents à des objets, gardez à l’esprit que les objets situés dans les tableaux et les sous-formulaires reçoivent automatiquement les mêmes paramètres régionaux que le tableau et l’objet de sous-formulaire.
 
 ![Modification des paramètres régionaux d’un objet](/help/forms/using/assets/image-18.png)
 

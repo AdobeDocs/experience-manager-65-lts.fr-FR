@@ -12,8 +12,8 @@ role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
 source-git-commit: c033a676eb746befd43803d1ae00c564890cb945
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 99%
+source-wordcount: '2430'
+ht-degree: 98%
 
 ---
 
@@ -204,15 +204,12 @@ La nouvelle configuration de déploiement est alors disponible pour vous lors de
 
 1. Ajoutez les propriétés suivantes à ce nœud :
    * **Nom** : `jcr:title`
-
      **Type** : `String`
      **Valeur** : titre d’identification qui apparaîtra dans l’interface utilisateur.
    * **Nom** : `jcr:description`
-
      **Type** : `String`
      **Valeur** : une description facultative.
    * **Nom** : `cq:trigger`
-
      **Type** : `String`
      **Valeur** : le [Déclencheur de déploiement](/help/sites-administering/msm-sync.md#rollout-triggers) à utiliser. Faites un choix parmi les éléments suivants :
       * `rollout`
@@ -551,13 +548,13 @@ Créez la configuration de déploiement du MSM qui utilise la `LiveActionFactory
 
    * **Titre** : exemple de configuration de déploiement
    * **Nom** : examplerolloutconfig
-   * **cq:trigger** : `publish`
+   * **cq:trigger** : `publish`
 
 ### Ajout de la LiveAction à l’exemple de configuration de déploiement {#add-the-live-action-to-the-example-rollout-configuration}
 
 Paramétrez la configuration de déploiement que vous avez créée dans la procédure précédente afin qu’elle utilise la classe `ExampleLiveActionFactory`.
 
-1. Ouvrez CRXDE Lite, par exemple[https://localhost:4502/crx/de](https://localhost:4502/crx/de).
+1. Ouvrez CRXDE Lite, par exemple [https://localhost:4502/crx/de](https://localhost:4502/crx/de).
 1. Créez le nœud correspondant sous `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content` :
 
    * **Nom** : `exampleLiveAction`
@@ -635,7 +632,7 @@ La liste des langues est stockée sous le nœud `/libs/wcm/core/resources/langua
 
 Pour modifier les langues :
 
-1. Ouvrez CRXDE Lite dans votre navigateur Web, par exemple [https://localhost:4502/crx/de](https://localhost:4502/crx/de).
+1. Ouvrez CRXDE Lite dans votre navigateur web, par exemple [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
 1. Sélectionnez le dossier `/apps` et cliquez sur **Créer**, puis sur **Créer un dossier.**
 
    Nommez le nouveau dossier `wcm`.
@@ -685,7 +682,6 @@ La propriété de boîte de dialogue détermine si une propriété de page est s
       * **Type** : `String`
 
       * **Valeur** : contient le nom de la propriété considérée (et est comparable à la valeur de la propriété `name`. Par exemple,
-
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Lorsque `cq-msm-lockable` a été défini, la rupture/le verrouillage de la chaîne interagit avec le MSM de la façon suivante :

@@ -566,7 +566,7 @@ Pour appliquer un thème à un formulaire adaptatif :
 
 Pour appliquer un thème à une communication interactive :
 
-1. Ouvrez votre communication interactive en mode d’édition. Pour ouvrir une communication interactive en mode d’édition, sélectionnez un formulaire, puis appuyez sur **Ouvrir**.
+1. Ouvrez votre communication interactive en mode d’édition. Pour ouvrir une communication interactive en mode d’édition, sélectionnez un formulaire, puis cliquez sur **Ouvrir**.
 1. En mode d’édition, sélectionnez un composant, puis cliquez sur ![field-level](assets/field-level.png) > **Conteneur de documents**, puis sélectionnez ![cmppr](assets/cmppr.png).
 
    Vous pouvez modifier les propriétés de votre formulaire dans la barre latérale.

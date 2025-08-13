@@ -7,8 +7,8 @@ role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
 source-git-commit: a0fe5bbfe93719641118521c6861bcb2cca76d60
 workflow-type: tm+mt
-source-wordcount: '4819'
-ht-degree: 100%
+source-wordcount: '4805'
+ht-degree: 98%
 
 ---
 
@@ -184,7 +184,7 @@ La définition d’un composant peut être décomposée comme suit :
 
    * `cq:editConfig (cq:EditConfig)` - Définit les propriétés de modification du composant et permet au composant d’apparaître dans le navigateur de composants ou le sidekick.
 
-     Remarque : si le composant possède une boîte de dialogue, elle apparaît automatiquement dans le navigateur de composants ou le sidekick, même si le cq:editConfig n’existe pas.
+     Remarque : si le composant possède une boîte de dialogue, elle s’affiche automatiquement dans l’explorateur de composants ou dans Sidekick, même si le cq:editConfig n’existe pas.
 
    * `cq:childEditConfig (cq:EditConfig)` – Contrôle les aspects de l’IU de création pour les composants enfants qui ne définissent pas leur propre `cq:editConfig`.
    * Interface utilisateur optimisée pour les écrans tactiles :
@@ -565,7 +565,7 @@ Le comportement de modification d’un composant est configuré en ajoutant un n
       * Les cibles de dépôt multiples sont uniquement disponibles dans l’IU classique.
       * Dans l’IU tactile, une seule cible est autorisée.
 
-   * `cq:actionConfigs` (type de nœud `nt:unstructured`) : définit une liste de nouvelles actions ajoutées à la liste cq:actions.
+   * `cq:actionConfigs` (type de nœud `nt:unstructured`) : définit une liste de nouvelles actions ajoutées à la liste cq:actions.
    * `cq:formParameters` (type de nœud `nt:unstructured`) : définit des paramètres supplémentaires qui sont ajoutés au formulaire de la boîte de dialogue.
    * `cq:inplaceEditing` (type de nœud `cq:InplaceEditingConfig`) : définit une configuration de modification en place pour le composant.
    * `cq:listeners` (type de nœud `cq:EditListenersConfig`) : définit ce qui se passe avant ou après une action sur le composant.

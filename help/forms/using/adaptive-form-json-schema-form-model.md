@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Forms
 exl-id: 8d2781e7-732e-42e4-b18b-e6d9ceaa7abe
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1844'
-ht-degree: 100%
+source-wordcount: '1842'
+ht-degree: 98%
 
 ---
 
@@ -343,7 +343,7 @@ L’exemple ci-dessus définit un enregistrement client dans lequel chaque clien
 
 ## Préconfiguration des champs dans la définition du schéma JSON {#pre-configuring-fields-in-json-schema-definition}
 
-Vous pouvez utiliser la propriété **aem:afProperties** pour préconfigurer le champ de schéma JSON pour mapper vers un composant de formulaire adaptatif personnalisé. Un exemple est répertorié ci-dessous :
+Vous pouvez utiliser la propriété **aem:afProperties** pour préconfigurer le champ de schéma JSON et le faire correspondre à un composant de formulaire adaptatif personnalisé. Un exemple est répertorié ci-dessous :
 
 ```json
 {
@@ -367,7 +367,7 @@ Vous pouvez utiliser la propriété **aem:afProperties** pour préconfigurer le 
 
 JavaScript est le langage d’expression des formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Vous pouvez préconfigurer les objets de formulaire pour [évaluer une expression](adaptive-form-expressions.md) sur un événement de formulaire.
 
-Utilisez la propriété aem:afproperties pour préconfigurer les expressions ou scripts de formulaires adaptatifs pour les composants de ces formulaires. Par exemple, lorsque l’événement initialize est déclenché, le code ci-dessous définit la valeur du champ téléphonique et imprime une valeur dans le journal :
+Utilisez la propriété aem:afproperties pour préconfigurer des expressions ou des scripts de formulaire adaptatif pour les composants de formulaire adaptatif. Par exemple, lorsque l’événement initialize est déclenché, le code ci-dessous définit la valeur du champ téléphonique et imprime une valeur dans le journal :
 
 ```json
 "telephone": {

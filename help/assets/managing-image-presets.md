@@ -14,7 +14,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 1ffc31e1-9e47-40fe-93b8-cd6ef96e0674
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3792'
+source-wordcount: '3794'
 ht-degree: 99%
 
 ---
@@ -226,7 +226,7 @@ Les paramètres d’image prédéfinis que vous créez sont disponibles sous la 
 
 **Augmentez ou réduisez le nombre de paramètres prédéfinis d’image Dynamic Media affichés :**
 
-1. Accédez à CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. Accédez à CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Accédez au nœud de liste des paramètres d’image prédéfinis à l’adresse `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
 
    ![increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
@@ -397,7 +397,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
      <li><strong>Appliquer à</strong> : détermine si l’accentuation s’applique à chaque couleur ou à la luminosité.</li>
     </ul>
     <div>
-      L’accentuation est décrite dans <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/sharpening_images.pdf?lang=fr">Accentuation des images</a>.
+      L’accentuation est décrite dans <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/sharpening_images.pdf">Accentuation des images</a>.
     </div> </td>
   </tr>
   <tr>

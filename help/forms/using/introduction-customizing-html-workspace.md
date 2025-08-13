@@ -220,7 +220,7 @@ Il est principalement destiné aux personnalisations, car il permet de générer
          * router.js
 
       * libs/ws: pdf.html et pluginPing.pdf sont utilisés pour le chargement des formulaires PDF dans l’espace de travail AEM Forms et WSNextAdapter.swf est utilisé pour charger des formulaires SWF et des guides dans l’espace de travail AEM Forms.
-      * locales :
+      * paramètres régionaux :
 
          * de-DE : contient le fichier translation.json pour l’allemand.
          * en-US : contient le fichier translation.json pour l’anglais.
@@ -272,8 +272,8 @@ Ce package peut être créé à l’aide des trois profils décrits ci-dessous.
 
    * ws  contient les fichiers pluginPing.pdf, pdf.html et WSNextAdapter.swf.
 
-* Locale : contient le fichier .content.xml.
-* locales :
+* Paramètres régionaux : contient le fichier .content.xml.
+* paramètres régionaux :
 
    * de-DE : contient le fichier translation.json pour l’allemand.
    * en-US : contient le fichier translation.json pour l’anglais.
@@ -317,8 +317,8 @@ Ce package peut être créé à l’aide des trois profils décrits ci-dessous.
 
    * ws  contient les fichiers pluginPing.pdf, pdf.html et WSNextAdapter.swf.
 
-* Locale : contient le fichier .content.xml.
-* locales :
+* Paramètres régionaux : contient le fichier .content.xml.
+* paramètres régionaux :
 
    * de-DE : contient le fichier translation.json pour l’allemand.
    * en-US : contient le fichier translation.json pour l’anglais.
@@ -366,8 +366,8 @@ mvn clean -P Dev install on client-pkg
 
    * ws  contient les fichiers pluginPing.pdf, pdf.html et WSNextAdapter.swf.
 
-* Locale : contient le fichier .content.xml.
-* locales :
+* Paramètres régionaux : contient le fichier .content.xml.
+* paramètres régionaux :
 
    * de-DE : contient le fichier translation.json pour l’allemand.
    * en-US : contient le fichier translation.json pour l’anglais.

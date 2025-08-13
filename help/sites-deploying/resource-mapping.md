@@ -13,7 +13,7 @@ exl-id: 90558227-c2c2-4130-9031-03efda5b1d94
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Le mappage de ressources permet de définir des redirections, des URL de redirec
 
 Par exemple, vous pouvez utiliser ces mappages pour :
 
-* faire précéder toutes les requêtes de `/content` afin que la structure interne soit masquée pour les visiteurs de votre site web ;
+* faire précéder toutes les demandes de `/content` afin que la structure interne soit masquée pour les visiteurs de votre site web ;
 * définir une redirection afin que toutes les requêtes en direction de la page `/content/en/gateway` de votre site Web soient redirigées vers `https://gbiv.com/`.
 
 Un mappage HTTP possible consiste à préfixer toutes les demandes à `localhost:4503` avec le répertoire `/content`. Un mappage de ce type peut être utilisé pour masquer la structure interne vis-à-vis des visiteurs du site web, car il rend :
@@ -95,7 +95,7 @@ Il s’agit de la structure utilisée lors de la définition des mappages pour l
 
 #### Configuration d’une redirection interne vers /content {#configuring-an-internal-redirect-to-content}
 
-Pour créer le mappage qui préfixe toute demande de https://localhost:4503/ avec `/content` :
+Pour créer le mappage qui préfixe toute demande de https://localhost:4503/ avec `/content` :
 
 1. À l’aide de CRXDE, accédez à `/etc/map/http`.
 

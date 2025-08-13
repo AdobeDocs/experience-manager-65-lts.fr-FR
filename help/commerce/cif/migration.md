@@ -18,7 +18,7 @@ Ce guide permet d’identifier les zones à mettre à jour pour la migration du 
 
 ## Module complémentaire CIF
 
-Le module complémentaire CIF est disponible via le [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?fulltext=commerce*&amp;2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aaem%2F6-5&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=16). Il est compatible et fournit les mêmes fonctionnalités que le module complémentaire CIF pour Experience Manager as a Cloud Service.
+Le module complémentaire CIF est disponible via le [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?fulltext=commerce*&2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&2_group.propertyvalues.operation=equals&2_group.propertyvalues.0_values=target-version%3Aaem%2F6-5&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=16). Il est compatible et fournit les mêmes fonctionnalités que le module complémentaire CIF pour Experience Manager as a Cloud Service.
 
 Consultez la section [Prise en main d’AEM Content and Commerce](getting-started.md).
 

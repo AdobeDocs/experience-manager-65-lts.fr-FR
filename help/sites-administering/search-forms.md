@@ -332,10 +332,10 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
 >[!NOTE]
 >
 >* Les prédicats de recherche courants sont définis dans :
->  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>  >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >* Les prédicats de recherche liés uniquement à siteadmin (IU classique) se trouvent sous :
->  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
+>  >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * Ils sont obsolètes et disponibles uniquement à des fins de rétrocompatibilité.
 >
 >Ces informations sont proposées à titre de référence uniquement. Ne modifiez pas `/libs`.

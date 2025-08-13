@@ -142,7 +142,7 @@ Correctif officiel
 
 Extension ou installation officielle AEM
 
-![Module officiel d’installation ou d’extension d’AEM ](assets/official-installation.png)
+![Miniature officielle d’extension ou d’installation d’AEM](assets/official-installation.png)
 
 Pack de services officiel
 
@@ -494,9 +494,9 @@ Avant l’installation de votre package, le Gestionnaire de packages crée autom
 >[!CAUTION]
 >
 >* Si vous installez des ressources numériques, vous devez :
->  Tout d’abord, désactivez WorkflowLauncher.
->  Utilisez l’option du menu Composants de la console OSGi pour le désactiver.
->  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>  >  Tout d’abord, désactivez WorkflowLauncher.
+>  >  Utilisez l’option du menu Composants de la console OSGi pour le désactiver.
+>  >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
 >* Ensuite, une fois l’installation terminée, réactivez WorkflowLauncher.
 >
 >La désactivation de WorkflowLauncher garantit que le framework de l’importateur de ressources ne manipule pas (involontairement) les ressources lors de l’installation.

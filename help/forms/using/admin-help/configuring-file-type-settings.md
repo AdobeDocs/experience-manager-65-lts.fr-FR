@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
 source-git-commit: 9d4681c0b184cc7769a8da20a4c50d420e1137c7
 workflow-type: tm+mt
-source-wordcount: '6185'
-ht-degree: 99%
+source-wordcount: '6180'
+ht-degree: 98%
 
 ---
 
@@ -128,7 +128,7 @@ Les options suivantes permettent de déterminer comment les fichiers image sont 
 
 **Utiliser la reconnaissance optique des caractères :** définit si l’OCR (reconnaissance optique de caractères) doit être appliquée au fichier PDF. Un logiciel d’OCR vous permet de rechercher, corriger et copier du texte dans un fichier PDF.
 
-***Remarque &#x200B;** : la fonction OCR pour les fichiers PDF (PDF indexables) est uniquement prise en charge sous Microsoft Windows.*
+***Remarque ** : la fonction OCR pour les fichiers PDF (PDF indexables) est uniquement prise en charge sous Microsoft Windows.*
 
 **Langue principale de reconnaissance optique des caractères :** définit la langue à utiliser par le moteur de reconnaissance optique des caractères pour identifier les caractères.
 
@@ -261,17 +261,17 @@ Pour plus d’informations sur l’accès à ce paramètre, voir [Créer ou modi
 
    >[!NOTE]
    >
-   >*Pour désincorporer des polices dont les jeux partiels sont incorporés dans le document, ajoutez un signe + avant le nom de la police. Par exemple : « +Helvetica ».*
+   >*Pour désincorporer des polices dont les sous-ensembles sont incorporés dans le document, ajoutez un signe + avant le nom de la police. Par exemple : « +Helvetica ».*
 
-1. Pour incorporer uniquement les jeux partiels utilisés des polices incorporées, sélectionnez **Créer des jeux partiels de toutes les polices incorporées**.
-
-   >[!NOTE]
-   >
-   >*Si vous utilisez cette option en association avec **Désincorporer certaines polices**, les polices figurant dans la liste **Ajouter des polices à désincorporer**&#x200B;sont tout de même désincorporées en totalité.*
+1. Pour incorporer uniquement les sous-ensembles utilisés des polices incorporées, sélectionnez **Créer des sous-ensembles de toutes les polices incorporées**.
 
    >[!NOTE]
    >
-   >*La création de jeux partiels de police permet d’incorporer uniquement une portion d’une police. Un jeu partiel de police ne contient que les caractères utilisés dans le document concerné.*
+   >*Si vous utilisez cette option en association avec **Désincorporer certaines polices**, les polices figurant dans la liste **Ajouter des polices à désincorporer**sont tout de même désincorporées en totalité.*
+
+   >[!NOTE]
+   >
+   >*La création de jeux partiels de police permet d’incorporer uniquement une portion d’une police. Un sous-ensemble de polices ne contient que les caractères utilisés dans le document concerné.*
 
 ### Transparence {#transparency}
 
@@ -418,7 +418,7 @@ Ces options déterminent le mode de conversion des fichiers Microsoft Excel. Po
 
 **Extensions de nom de fichier** : permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est de `xls,xlsx`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
 
-**Créer un fichier compatible avec le format PDF/A-1a** : rend obligatoire l’utilisation du paramètre PDF/A-1b:2005 RVB Adobe PDF.
+**Créer un fichier compatible avec PDF/A-1a** : rend obligatoire l’utilisation du paramètre PDF/A-1b:2005 RGB Adobe PDF.
 
 **Ajouter des signets à Adobe PDF** : permet de convertir des noms de feuille de calcul Excel en signets. Cette option est sélectionnée par défaut.
 
@@ -472,7 +472,7 @@ Ces options permettent de déterminer comment les fichiers Microsoft PowerPoint
 
 **[!UICONTROL Convertir les diapositives masquées en pages PDF]** : permet de convertir les diapositives masquées.
 
-**[!UICONTROL Créer un fichier compatible avec le format PDF/A-1a]** : rend obligatoire l’utilisation du paramètre PDF/A-1b:2005 RVB Adobe PDF. Un certain nombre de fonctions de PowerPoint ne sont pas converties lorsque vous créez un fichier PDF. Si une transition PowerPoint ne possède pas d’équivalent dans Acrobat, elle est remplacée par une transition similaire. Si plusieurs effets d’animation se trouvent sur la même diapositive, un seul effet est utilisé. Les transitions de page et les puces volantes sont converties.
+**[!UICONTROL Créer un fichier compatible avec PDF/A-1a]** : rend obligatoire l’utilisation du paramètre PDF/A-1b:2005 RGB Adobe PDF. Un certain nombre de fonctions de PowerPoint ne sont pas converties lorsque vous créez un fichier PDF. Si une transition PowerPoint ne possède pas d’équivalent dans Acrobat, elle est remplacée par une transition similaire. Si plusieurs effets d’animation se trouvent sur la même diapositive, un seul effet est utilisé. Les transitions de page et les puces volantes sont converties.
 
 ## Paramètres de Microsoft Project (Windows uniquement) {#microsoft-project-settings-windows-only}
 
@@ -482,7 +482,7 @@ Ces options déterminent le mode de conversion des fichiers Microsoft Project. 
 
 1. **[!UICONTROL Convertir les informations sur le document]** : permet d’ajouter des informations sur le document depuis la boîte de dialogue Propriétés du fichier source, y compris le titre, l’objet, l’auteur, les mots-clés, le responsable, la société, la catégorie et les commentaires. Cette option est sélectionnée par défaut.
 1. **[!UICONTROL Joindre le fichier source au fichier Adobe PDF]** : permet d’ajouter le fichier source au fichier PDF sous forme de pièce jointe. 
-1. **[!UICONTROL Créer un fichier compatible avec le format PDF/A-1a]** : rend obligatoire l’utilisation du paramètre PDF/A-1b:2005 RVB Adobe PDF.
+1. **[!UICONTROL Créer un fichier compatible avec PDF/A-1a]** : rend obligatoire l’utilisation du paramètre PDF/A-1b:2005 RGB Adobe PDF.
 1. **[!UICONTROL Exécuter automatiquement les macros :]** exécute les macros dans le document Microsoft Project (par exemple, une macro qui insère l’heure actuelle) avant de le convertir.
 
 ## Paramètres de Microsoft Word (Windows uniquement) {#microsoft-word-settings-windows-only}
@@ -503,7 +503,7 @@ Ces options déterminent le mode de conversion des fichiers Microsoft Word. Pou
 
 **[!UICONTROL Activer l’accessibilité et la redistribution avec un fichier Adobe PDF balisé]** : permet d’incorporer les balises dans le fichier PDF. Cette option est sélectionnée par défaut.
 
-**[!UICONTROL Créer un fichier compatible avec le format PDF/A-1a]** : cette option permet de rendre obligatoire l’utilisation du paramètre PDF/A-1b:2005 RVB Adobe PDF.
+**[!UICONTROL Créer un fichier compatible avec PDF/A-1a]** : cette option permet de rendre obligatoire l’utilisation du paramètre PDF/A-1b:2005 RGB Adobe PDF.
 
 **[!UICONTROL Exécuter automatiquement les macros]** : exécute les macros du document Word (par exemple une macro qui insère l’heure actuelle) avant de le convertir.
 
@@ -545,7 +545,7 @@ Si un nom de style Microsoft Word comporte des virgules (,) ou des signes égal 
 
 **Ouvrir le panneau Calques lors de l’affichage dans Adobe Acrobat** : si les calques Visio ne sont pas aplatis, permet d’ouvrir une fenêtre dans laquelle vous pouvez préciser les calques qui sont conservés dans le fichier PDF lorsqu’ils sont ouverts dans Acrobat. Cette option est sélectionnée par défaut.
 
-**Créer un fichier conforme à la norme PDF/A-1b** : rend obligatoire l’utilisation du paramètre Adobe PDF PDF/A-1b:2005 (RVB).
+**Créer un fichier compatible avec PDF/A-1b** : rend obligatoire l’utilisation du paramètre Adobe PDF PDF/A-1b:2005 (RGB).
 
 **Convertir les commentaires en commentaires Adobe PDF** : permet de convertir les notes Visio en commentaires PDF.
 

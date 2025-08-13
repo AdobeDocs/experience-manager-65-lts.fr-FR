@@ -11,8 +11,8 @@ role: Developer
 exl-id: a18b1bc9-72a3-4836-a755-db586e56cf89
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 100%
+source-wordcount: '1089'
+ht-degree: 97%
 
 ---
 
@@ -120,7 +120,7 @@ L’API JavaScript vous permet de localiser des chaînes sur le client. Comme po
 
 Le [dossier de bibliothèques clientes](/help/sites-developing/clientlibs.md) `granite.utils` fournit l’API JavaScript. Pour utiliser l’API, vous devez inclure ce dossier sur votre page. Les fonctions de localisation utilisent l’espace de noms `Granite.I18n`.
 
-Avant de présenter les chaînes localisées, vous devez définir les paramètres régionaux à l’aide de la fonction `Granite.I18n.setLocale`. Pour cette fonction, le code de langue du paramètre régional doit être défini comme argument :
+Avant de présenter les chaînes localisées, vous devez définir les paramètres régionaux à l’aide de la fonction `Granite.I18n.setLocale`. Pour cette fonction, le code de langue des paramètres régionaux doit être défini comme argument :
 
 ```
 Granite.I18n.setLocale("fr");
@@ -169,7 +169,7 @@ Comme pour les [indicateurs de traduction dans l’API Java™](#using-translati
 
 `${prop}_commentI18n`
 
-Par exemple, un nœud `cq:page` comprend la propriété jcr:title en cours de localisation. L’indicateur est fourni comme valeur de la propriété nommée jcr:title_commentI18n.
+Par exemple, un nœud de `cq:page` inclut la propriété jcr:title en cours de localisation. L’indice est fourni comme valeur de la propriété nommée jcr:title_commentI18n.
 
 ### Tester la couverture d’internationalisation {#testing-internationalization-coverage}
 

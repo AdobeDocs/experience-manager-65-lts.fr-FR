@@ -11,8 +11,8 @@ role: Admin
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 100%
+source-wordcount: '1402'
+ht-degree: 88%
 
 ---
 
@@ -30,7 +30,7 @@ Voir [Bonnes pratiques relatives aux requêtes et à l’indexation](/help/sites
 
 L’indexation lente de la détection initiale nécessite de parcourir les MBeans JMX `IndexStats`. Sur l’instance AEM affectée, procédez comme suit :
 
-1. Ouvrez la console web, cliquez sur l’onglet JMX ou rendez-vous sur https://&lt;host>:&lt;port>/system/console/jmx (par exemple, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
+1. Ouvrez la console web et cliquez sur l’onglet JMX ou rendez-vous sur https://&lt;hôte>:&lt;port>/system/console/jmx (par exemple, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
 1. Accédez aux MBeans `IndexStats`.
 1. Ouvrez le MBeans `IndexStats` pour « `async` » et « `fulltext-async` ».
 
@@ -55,7 +55,7 @@ Dans des circonstances exceptionnelles, le pool de threads utilisé pour gérer 
 
 1. Définissez un nouveau pool de threads isolé à utiliser par le planificateur Apache Sling pour l’indexation asynchrone :
 
-   * Sur l’instance affectée, accédez à la console web AEM OSGi > Configuration > Planificateur Apache Sling ou rendez-vous sur https://&lt;hôte>:&lt;port>/system/console/configMgr (par exemple, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)).
+   * Sur l’instance AEM affectée, accédez à la console web AEM OSGi > Configuration > Planificateur Apache Sling ou rendez-vous sur https://&lt;hôte>:&lt;port>/system/console/configMgr (par exemple, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)).
    * Ajoutez une entrée au champ « Pools de threads autorisés » avec la valeur « oak ».
    * Pour enregistrer les modifications, cliquez sur **Enregistrer** en bas à droite.
 
@@ -63,7 +63,7 @@ Dans des circonstances exceptionnelles, le pool de threads utilisé pour gérer 
 
 1. Vérifiez que le nouveau pool de threads du planificateur Apache Sling est enregistré et s’affiche dans la console web Statut du planificateur Apache Sling.
 
-   * Accédez à la console web AEM OSGi > Statut > Planificateur Sling ou rendez-vous sur https://&lt;hôte>:&lt;port>/system/console/status-slingscheduler (par exemple, [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler)).
+   * Accédez à la console web AEM OSGi > Statut > Planificateur Sling ou rendez-vous sur https://&lt;hôte>:&lt;port>/system/console/status-slingscheduler (par exemple, [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler)).
    * Vérifiez que les entrées de pool suivantes existent :
 
       * ApacheSlingoak
@@ -112,19 +112,19 @@ Pour identifier et corriger un processus de réindexation bloqué, procédez com
 
       * Accédez à le console web OSGi AEM > Principal > JMX > IndexStat > async
 
-        ou rendez-vous sur [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats).
+        ou rendez-vous sur [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
 
    * Utilisez le [mode console de oak-run.jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) pour collecter les informations de ce qui se trouve sous le nœud *`/:async`*.
    * Collectez une liste des points de contrôle du référentiel à l’aide du MBean `CheckpointManager` :
 
       * Console web OSGi AEM > Principal > JMX > CheckpointManager > listCheckpoints()
 
-        ou rendez-vous sur [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager).
+        ou rendez-vous sur [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
 
 1. Après la collecte de toutes les informations décrites à l’étape 1, redémarrez AEM.
 
    * Le redémarrage d’AEM peut résoudre le problème dans le cas d’une charge simultanée élevée (débordement de la file d’attente d’observation ou situation similaire).
-   * Si un redémarrage ne permet pas de résoudre le problème, signalez-le à l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=General&amp;lang=fr&amp;support-tab=home#support) et fournissez toutes les informations collectées lors de l’étape 1.
+   * Si un redémarrage ne permet pas de résoudre le problème, signalez-le à l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=General&lang=fr&support-tab=home#support) et fournissez toutes les informations collectées lors de l’étape 1.
 
 ## Abandon sécurisé de la réindexation asynchrone {#safely-aborting-asynchronous-re-indexing}
 
@@ -137,7 +137,7 @@ Pour annuler la réindexation en toute sécurité, procédez comme suit :
 
 1. Identifiez le MBean IndexStats qui contrôle la piste de réindexation qui doit être arrêtée.
 
-   * Accédez au MBean IndexStats approprié via la console JMX en accédant à la console web OSGi d’AEM > Principal > JMX ou à https://&lt;host>:&lt;port>/system/console/jmx (par exemple, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
+   * Accédez au MBean IndexStats approprié via la console JMX en accédant à la console web OSGi AEM > Principal > JMX ou à https://&lt;hôte>:&lt;port>/system/console/jmx (par exemple, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
    * Ouvrez le MBean IndexStats basé sur la piste de réindexation que vous souhaitez arrêter (`async`, `async-reindex` ou `fulltext-async`).
 
       * Pour identifier la piste appropriée et donc l’instance MBean IndexStats, regardez la propriété « async » des index Oak. La propriété « async » contient le nom de piste `async`, `async-reindex` ou `fulltext-async`.

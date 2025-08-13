@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: 9df608f8-cdd0-4820-aab1-eab9fd70f961
 source-git-commit: 547d7866346fb148cb66f546d8a2e1141f69f563
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 100%
+source-wordcount: '1796'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Vous pouvez changer la propriété en procédant comme suit :
 
 1. Ouvrez CRXDE Lite en accédant à `https://server:port/crx/de/index.jsp`.
 1. Accédez à l’emplacement du nœud qui doit être ajusté, comme indiqué dans la liste de [formulaires de recherche personnalisée](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) ci-dessous.
-1. Cliquez sur le nœud. Dans le volet des propriétés de droite, cliquez sur la propriété **sling:resourceType** et modifiez-la.
+1. Cliquez sur le nœud. Dans le volet de droite des propriétés, cliquez sur la propriété **sling:resourceType** et modifiez-la.
 1. Enfin, enregistrez les modifications en appuyant sur le bouton **Enregistrer tout**.
 
 ## Liste des formulaires de recherche personnalisés {#list-of-custom-search-forms}

@@ -12,8 +12,8 @@ role: Admin
 exl-id: 1121af36-b07a-4e8d-a60b-6c5b91e56f82
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3442'
-ht-degree: 99%
+source-wordcount: '3432'
+ht-degree: 96%
 
 ---
 
@@ -323,9 +323,9 @@ Le formulaire de piste est utilisé pour collecter des informations sur le profi
 **Fonctionnalités prises en charge**
 
 * Champs de prospect prédéfinis : les boutons Prénom, Nom, Adresse, Fonction, À propos de, ID utilisateur, ID d’e-mail et Envoyer sont disponibles dans le Sidekick. Il vous suffit de faire glisser le composant requis dans votre formulaire de prospect.
-* Grâce à ces composants, l’auteur peut concevoir un formulaire de prospect autonome. Ces champs correspondent à ceux du formulaire de prospect. Dans une application ZIP importée ou autonome, l’utilisateur ou utilisatrice peut ajouter des champs à l’aide des champs de formulaire de prospect cq:form ou cta, les nommer et les concevoir en fonction des besoins.
+* Grâce à ces composants, l’auteur peut concevoir un formulaire de prospect autonome. Ces champs correspondent à ceux du formulaire de prospect. Dans une application ZIP importée ou autonome, l’utilisateur peut ajouter des champs à l’aide des champs de formulaire de prospect cq:form ou cta, les nommer et les concevoir en fonction des besoins.
 * Mappez les champs de formulaire de prospect à l’aide de noms prédéfinis spécifiques du formulaire de prospect CTA ; par exemple, firstName pour first-name dans le formulaire de prospect, etc.
-* Les champs qui ne sont pas mappés sur un formulaire de prospect le sont sur des composants cq:form : texte, case d’option, case à cocher, liste déroulante, masqué, mot de passe.
+* Les champs qui ne sont pas mappés à des composants de formulaire de prospect sont mappés à des composants cq:form (texte, case d’option, case à cocher, liste déroulante, masqué, mot de passe).
 * L’utilisateur ou l’utilisatrice peut fournir le titre à l’aide de la balise « label » et indiquer le style en utilisant l’attribut de style « class » (disponible uniquement pour les composants du formulaire de prospect CTA).
 * La page de remerciements et la liste d’abonnements peuvent être fournies sous forme de paramètre masqué du formulaire (présent dans le fichier index.htm) ou être ajoutées ou modifiées dans la barre de modification de « Début du formulaire de prospect ».
 
@@ -335,7 +335,7 @@ Le formulaire de piste est utilisé pour collecter des informations sur le profi
 
 * Des contraintes (telles qu’« Obligatoire ») peuvent être fournies à partir de la configuration de modification de chaque composant.
 
-Balise HTML permettant d’inclure le composant « lien graphique » dans le fichier ZIP importé. Ici, « firstName » est mappé sur le firstName du formulaire de prospect, etc., à l’exception des cases à cocher : ces deux cases à cocher sont mappées sur le composant déroulant cq:form.
+Balise HTML permettant d’inclure le composant « lien graphique » dans le fichier ZIP importé. Ici, « firstName » est mappé sur le prospect de firstName, etc., à l’exception des cases à cocher - ces deux cases à cocher sont mappées au composant de liste déroulante cq:form.
 
 ```xml
 <div id="cqcanvas">
@@ -419,11 +419,11 @@ En plus de spécifier si les composants importés sont des composants AEM modifi
 
 ### Définition des propriétés de page en extrayant les métadonnées définies dans le HTML importé {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
 
-Les métadonnées suivantes déclarées dans l’en-tête du HTML importé doivent être extraites et conservées par l’importateur de conception en tant que propriété « jcr:description » :
+Les métadonnées suivantes déclarées dans l’en-tête de l’HTML importée doivent être extraites et conservées par l’importateur de conception en tant que propriété « jcr :description » :
 
 * &lt;meta name=&quot;description&quot; content=&quot;&quot;>
 
-L’attribut Lang défini dans la balise HTML doit être extrait et conservé par l’importateur de conception en tant que propriété « jcr:language ».
+L’importateur de conception extrait et conserve l’attribut Lang défini dans la balise HTML en tant que propriété « jcr :language »
 
 * &lt;html lang=&quot;en&quot;>
 
@@ -470,7 +470,7 @@ L’utilisation de sélecteurs CSS similaires aux suivants n’est pas recommand
 En effet, des éléments HTML supplémentaires tels que les balises &lt;div> sont ajoutés au fichier Html généré après l’import.
 
 * Les scripts reposant sur une structure similaire à ci-dessus ne sont pas non plus recommandés pour une utilisation avec des éléments marqués pour conversion en composants AEM.
-* Il est déconseillé d’utiliser des styles sur les balises de mise en forme pour la conversion d’un composant, comme &lt;div data-cq-component=&quot;&ast;&quot;>.
+* Il est déconseillé d’utiliser des styles sur les balises de mise en forme pour la conversion d’un composant, comme &lt;div data-cq-component=&quot;&amp;ast;&quot;>.
 * La disposition de conception doit suivre les bonnes pratiques relatives au modèle HTML5 Boilerplate. Pour en savoir plus, consultez [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configuration de modules OSGI {#configuring-osgi-modules}
@@ -527,11 +527,11 @@ Le tableau ci-dessous décrit brièvement les propriétés :
 >[!NOTE]
 >
 >**Limites actuelles du préprocesseur de saisie de page de destination :**
->Si vous devez apporter des modifications au modèle de recherche, lorsque vous ouvrez l’éditeur de propriétés Felix, vous devez ajouter manuellement des barres obliques inversées pour utiliser les métacaractères regex. Si vous n’ajoutez pas manuellement de barre oblique inverse, la regex est considérée comme non valide et ne remplacera pas l’ancienne.
+>>Si vous devez apporter des modifications au modèle de recherche, lorsque vous ouvrez l’éditeur de propriétés Felix, vous devez ajouter manuellement des barres obliques inversées pour utiliser les métacaractères regex. Si vous n’ajoutez pas manuellement de barre oblique inverse, la regex est considérée comme non valide et ne remplacera pas l’ancienne.
 >
 >Par exemple, si la configuration par défaut est
 >
->&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >Et vous devez remplacer `CQ_DESIGN_PATH` par `VIPURL` dans le modèle de recherche, qui doit se présenter comme suit :
 >

@@ -11,7 +11,7 @@ role: Admin
 exl-id: 114a77bc-0b7e-49ce-bca1-e5195b4884dc
 source-git-commit: 3cbc2ddd4ff448278e678d1a73c4ee7ba3af56f4
 workflow-type: tm+mt
-source-wordcount: '5139'
+source-wordcount: '5142'
 ht-degree: 98%
 
 ---
@@ -52,7 +52,7 @@ Le nettoyage des révisions en ligne est configuré par défaut pour s’exécut
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
-1. Saisissez les valeurs souhaitées (répétition, heure de début, heure de fin) et cliquez sur **Enregistrer**.
+1. Saisissez les valeurs souhaitées (récurrence, heure de début, heure de fin) et cliquez sur **Enregistrer**.
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -212,7 +212,7 @@ Dans certains cas, l’alternance entre le modes de compression complète et par
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Pourquoi le nettoyage de la mémoire est-il ignoré ?</strong></td>
+   <td><strong>Pourquoi la récupération de l’espace mémoire est-elle ignorée ?</strong></td>
    <td><p>Le nettoyage des révisions repose sur une phase d’estimation pour décider s’il y a suffisamment d’espace mémoire à libérer. L’estimateur compare la taille actuelle à la taille du référentiel après sa dernière compression. Si la taille dépasse le delta configuré, le nettoyage s’exécute. La taille du delta est définie sur 1 Go. Cela signifie que si la taille du référentiel n’a pas augmenté de 1 Go depuis le dernier nettoyage, la nouvelle itération du nettoyage des révisions est ignorée. </p> <p>Vous trouverez, ci-dessous, des entrées de journaux pertinentes pour la phase d’estimation :</p>
     <ul>
      <li>Revision GC runs: <em>Size delta is N% or N/N (N/N bytes), so running compaction</em></li>
@@ -407,9 +407,9 @@ Dans certains cas, l’alternance entre le modes de compression complète et par
    <td><strong>Qu’est-ce qui cause l’enregistrement des instances <code>SegmentNotFoundException</code> dans le fichier <code>error.log</code> et comment puis-je les récupérer ?</strong></td>
    <td><p>Un <code>SegmentNotFoundException</code> est enregistré par TarMK lorsqu’il tente d’accéder à une unité de stockage (un segment) qu’il ne peut pas localiser. Trois scénarios peuvent provoquer ce problème :</p>
     <ol>
-     <li>Une application qui contourne les mécanismes d’accès recommandés (tels que Sling et l’API JCR) et utilise une API/SPI de niveau inférieur pour accéder au référentiel, puis dépasse la durée de conservation d’un segment. En d’autres termes, elle conserve une référence à une entité plus longue que la durée de conservation autorisée par le nettoyage des révisions en ligne (24 heures par défaut). Ce cas est transitoire et ne conduit pas à la corruption des données. Pour effectuer une restauration, l’outil exécuté par Oak doit être utilisé pour confirmer la nature transitoire de l’exception (la vérification exécutée par Oak ne doit signaler aucune erreur). Pour cela, cette instance doit être déconnectée et relancée plus tard.</li>
+     <li>Une application qui contourne les mécanismes d’accès recommandés (tels que Sling et l’API JCR) et utilise une API/SPI de niveau inférieur pour accéder au référentiel, puis dépasse la durée de conservation d’un segment. En d’autres termes, elle conserve une référence à une entité plus longue que la durée de conservation autorisée par le nettoyage des révisions en ligne (24 heures par défaut). Ce cas est transitoire et ne conduit pas à la corruption des données. Pour effectuer une restauration, l’outil exécuté par Oak doit être utilisé pour confirmer la nature transitoire de l’exception (la vérification exécutée par Oak ne doit signaler aucune erreur). Pour cela, cette instance doit être déconnectée et redémarrée plus tard.</li>
      <li>Un événement externe a provoqué la corruption des données sur le disque. Il peut s’agir d’une défaillance du disque, d’un manque d’espace disque ou d’une modification accidentelle des fichiers de données requis. Dans ce cas, l’instance doit être mise hors ligne et réparée à l’aide de la vérification oak-run. Pour plus d’informations sur la façon de procéder à la vérification exécutée par Oak, lisez la <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">documentation Apache</a> suivante.</li>
-     <li>Traitez toutes les autres occurrences via l’<a href="https://experienceleague.adobe.com/fr?support-solution=General&amp;lang=fr&amp;support-tab=home#support" target="_blank">Assistance clientèle Adobe</a>.</li>
+     <li>Traitez toutes les autres occurrences via l’<a href="https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr&amp;support-tab=home#support" target="_blank">Assistance clientèle Adobe</a>.</li>
     </ol> </td>
    <td> </td>
   </tr>
@@ -555,9 +555,9 @@ java -Dupdate.limit=10000 -Dcompaction-progress-log=150000 -Dlogback.configurati
 
 Outre les méthodes présentées ci-dessus, vous pouvez déclencher le mécanisme de nettoyage des révisions à l’aide de la console JMX comme suit :
 
-1. Ouvrez la console JMX en accédant à [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx).
+1. Ouvrez la console JMX en accédant à [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)
 1. Cliquez sur le MBean **RevisionGarbageCollection**.
-1. Dans la fenêtre suivante, cliquez sur **startRevisionGC()**, puis sur **Appeler** pour démarrer la tâche de nettoyage de la mémoire.
+1. Dans la fenêtre suivante, cliquez sur **startRevisionGC()**, puis sur **Appeler** pour démarrer la tâche de récupération de l’espace mémoire.
 
 ### FAQ sur le nettoyage des révisions hors ligne {#offline-revision-cleanup-frequently-asked-questions}
 

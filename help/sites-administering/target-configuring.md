@@ -7,8 +7,8 @@ role: Admin
 exl-id: 55f100b2-625a-4d0e-b8bb-011c7e3e3580
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2125'
-ht-degree: 100%
+source-wordcount: '2139'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ L’[assistant de souscription](/help/sites-administering/opt-in.md) qui [intèg
 Vous pouvez également configurer Adobe Target pour utiliser Adobe Target en tant que source de création de rapports lors du ciblage de contenu en configurant la configuration d’Analytics Cloud A4T.
 
 Pour trouver la configuration et le framework de cloud, accédez à **Services cloud** via **Outils** > **Déploiement** > **Cloud**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
-Sous Adobe Target, cliquez ou appuyez sur **Afficher les configurations**.
+Sous Adobe Target, cliquez sur **Afficher les configurations**.
 
 ### Propriétés de configuration de Target configurée {#provisioned-target-configuration-properties}
 
@@ -52,7 +52,7 @@ Les valeurs de propriété suivantes sont utilisées dans la configuration cloud
 >* Meilleures options d’implémentation pour les applications d’une seule page
 >* AT.js contient les composants qui étaient inclus dans target.js. Il n’y a donc plus d’appel à target.
 
-<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=fr -->
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### Propriétés de cadre Target configurées {#provisioned-target-framework-properties}
 
@@ -115,7 +115,7 @@ Intégration manuelle avec Adobe Target au lieu d’utiliser l’assistant d’
 >
 >Vous pouvez sélectionner AT.js ou mbox.js dans le menu déroulant **Bibliothèque cliente**.
 
-<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=fr -->
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### Création d’une configuration du cloud Target {#creating-a-target-cloud-configuration}
 
@@ -175,7 +175,7 @@ Pour créer une configuration cloud Target dans AEM, procédez come suit :
    >
    >Le ciblage précis implique que cette configuration du service cloud attend le chargement du contexte avant de charger le contenu. Par conséquent, en termes de performances, un ciblage précis peut créer un délai de quelques millisecondes avant le chargement du contenu.
    >
-   >Le ciblage précis est toujours activé sur l’instance de création. Toutefois, sur l’instance de publication, vous pouvez choisir de le désactiver en désactivant la coche en regard de Ciblage précis dans la configuration du service cloud (**http://localhost:4502/etc/cloudservices.html**). Vous pouvez également activer et désactiver le ciblage précis pour chaque composant, quel que soit votre paramètre dans la configuration du service cloud.
+   >Le ciblage précis est toujours activé sur l’instance de création. Cependant, sur l’instance de publication, vous pouvez choisir de le désactiver en désactivant la coche en regard de Ciblage précis dans la configuration du service cloud (**http://localhost:4502/etc/cloudservices.html**). Vous pouvez également activer et désactiver le ciblage précis pour chaque composant, quel que soit votre paramètre dans la configuration du service cloud.
    >
    >Si vous avez ***déjà*** créé les composants ciblés et si vous modifiez ce paramètre, vos modifications n’affectent pas ces composants. Modifiez directement ces composants.
 
@@ -220,7 +220,7 @@ La structure est créée. Pour répliquer le framework sur l’instance de publi
 
 ### Association d’activités à la configuration cloud Target  {#associating-activities-with-the-target-cloud-configuration}
 
-Associez vos [activités AEM](/help/sites-authoring/activitylib.md) à la configuration de cloud Target afin de refléter les activités dans [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=fr&=lang=fr).
+Associez vos [activités AEM](/help/sites-authoring/activitylib.md) à la configuration de cloud Target afin de refléter les activités dans [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?=lang=fr).
 
 >[!NOTE]
 >

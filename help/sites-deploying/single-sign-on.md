@@ -86,7 +86,7 @@ Pour configurer l’authentification unique pour une instance AEM, vous devez co
 >* IIS
 >
 >Dans `disp_iis.ini`, définissez les éléments suivants :
->(Voir [Installation de Dispatcher avec Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=fr#microsoft-internet-information-server) pour en savoir plus.)
+>>(Voir [Installation de Dispatcher avec Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=fr#microsoft-internet-information-server) pour en savoir plus.)
 >
 >* `servervariables=1` (transmet des variables de serveur IIS comme en-têtes de requête à une instance distante)
 >* `replaceauthorization=1` (remplace n’importe quel en-tête appelé « Authorization » autre que l’en-tête « De base » par son « De base » équivalent)

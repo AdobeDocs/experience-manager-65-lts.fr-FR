@@ -78,7 +78,7 @@ Vous pouvez rechercher des ressources en utilisant l’un des états suivants :
 
 ### Type de ressource {#asset-type}
 
-Vous pouvez choisir un grand nombre de types de ressources. La recherche renvoie tous les types de ressources sélectionnés réunis.
+Vous pouvez choisir un grand nombre de types de ressources. La recherche renvoie l’union de tous les types de ressources sélectionnés.
 
 <table>
  <tbody>

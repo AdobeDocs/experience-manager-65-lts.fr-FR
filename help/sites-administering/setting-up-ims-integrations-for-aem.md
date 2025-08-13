@@ -42,7 +42,7 @@ Les intégrations utilisent une intégration IMS configurée avec S2S OAuth.
 
 Dans un premier temps, vous devez configurer les informations d’identification OAuth dans Adobe Developer Console.
 
-Pour plus de détails sur la façon d’effectuer cette configuration, consultez la documentation de la Developer Console, en fonction de vos besoins :
+Pour plus de détails sur la façon d’effectuer cette configuration, consultez la documentation de Developer Console, en fonction de vos besoins :
 
 * Vue d’ensemble :
 

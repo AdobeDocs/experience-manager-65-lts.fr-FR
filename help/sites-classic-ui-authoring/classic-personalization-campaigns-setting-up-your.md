@@ -153,7 +153,7 @@ Si vous disposez d’expériences existantes, vous pouvez ajouter un point de co
 >[!NOTE]
 >
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (gestion des prospects).
->Il est conseillé d’utiliser [Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
+>>Il est conseillé d’utiliser [Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
 
 Dans AEM MCM, vous pouvez organiser et ajouter des prospects en les saisissant manuellement ou en important une liste séparée par des virgules. par exemple, une liste de diffusion. Pour générer des prospects, il existe d’autres méthodes comme les abonnements aux newsletters ou aux communautés (s’ils sont configurés de la sorte, ils peuvent déclencher un workflow pour renseigner les prospects).
 
@@ -301,7 +301,7 @@ Pour supprimer des prospects existants dans le MCM, cochez la case en regard du
 >[!NOTE]
 >
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (gestion des listes).
->Il est recommandé d’utiliser [Adobe Campaign et l’intégration dans AEM](/help/sites-administering/campaign.md).
+>>Il est recommandé d’utiliser [Adobe Campaign et l’intégration dans AEM](/help/sites-administering/campaign.md).
 
 Les listes vous permettent d’organiser vos prospects en groupes. Avec les listes, vous pouvez cibler vos campagnes marketing sur un groupe de personnes sélectionné. Vous pouvez par exemple envoyer une newsletter ciblée à une liste. Les listes sont visibles dans le MCM, soit dans le tableau de bord, soit en cliquant sur **Listes**. Tous deux vous fournissent le nom de la liste et le nombre de membres.
 

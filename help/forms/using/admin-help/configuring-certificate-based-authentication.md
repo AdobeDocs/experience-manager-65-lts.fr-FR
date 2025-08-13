@@ -14,7 +14,7 @@ exl-id: 56603735-959e-4460-b642-bba63fa20c02
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '730'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -83,7 +83,7 @@ Lorsque vous testez un certificat, User Management charge les vérifications de 
 
      Ordre personnalisé : $2 $1 (renvoyer le deuxième groupe, concaténé au premier groupe, capturé par un espace blanc)
 
-   * Pour extraire « apink@sampleorg.com » de « smtp:apink@sampleorg.com »
+   * Pour extraire « apink@sampleorg.com » de « smtp:apink@sampleorg.com »
 
      **Regex :** smtp:(.&amp;ast;)
 

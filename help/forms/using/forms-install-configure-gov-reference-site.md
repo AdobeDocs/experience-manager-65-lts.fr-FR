@@ -9,8 +9,8 @@ role: Admin, User, Developer
 exl-id: 9c05a71b-70fa-4470-afdf-823fd5da5ad1
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '4533'
-ht-degree: 100%
+source-wordcount: '4532'
+ht-degree: 99%
 
 ---
 
@@ -653,7 +653,7 @@ Le service Automated Forms Conversion comprend quelques [bonnes pratiques, modè
 
 1. Générez le formulaire avec Générer les formulaires adaptatifs sans liaison de données activée si vous souhaitez lier le formulaire à un FDM après la conversion.
 
-1. Assurez-vous que jcr:read est activé pour toutes les autorisations du dossier de modèles. Autrement, l’utilisateur ou l’utilisatrice du service ne pourra pas lire le modèle à partir du référentiel et la conversion échouera.
+1. Assurez-vous que jcr:read est activé pour toutes les autorisations du dossier de modèles. Autrement, l’utilisateur du service ne pourra pas lire le modèle à partir du référentiel et la conversion échouera.
 
 ## Personnalisations des packages de démonstration {#demo-package-customizations}
 

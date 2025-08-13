@@ -8,8 +8,8 @@ role: Admin
 exl-id: ab876224-22bd-4fd7-b609-bd5703715932
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 99%
+source-wordcount: '1133'
+ht-degree: 97%
 
 ---
 
@@ -189,7 +189,7 @@ Dans l’interface utilisateur, vous pouvez cocher/décocher **Hériter** dans l
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans l’onglet **Propriétés**.
 
-**updateDestinationLanguage** Cet attribut est utilisé pour les propriétés qui n’ont pas de texte mais qui comportent des codes de langue (par exemple, jcr:language). L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées pour traduction.
+**updateDestinationLanguage** Cet attribut est utilisé pour les propriétés qui n’ont pas de texte, mais qui comportent des codes de langue (par exemple, jcr:language. L’utilisateur ou l’utilisatrice ne traduit pas le texte, mais les paramètres régionaux de langue de la source vers la cible. Ces propriétés ne sont pas envoyées pour traduction.
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans l’onglet **Propriétés**, mais pour les propriétés spécifiques ayant comme valeur des codes de langue.
 

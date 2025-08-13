@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## Prérequis {#prerequisites}
 
-* [Créer des lots OSGi](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk)
+* [Créer des lots OSGi](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&CID=RedirectAEMCommunityKautuk)
 * [Développement de composants AEM](/help/sites-developing/components.md)
 * [Création de formulaires adaptatifs](../../forms/using/creating-adaptive-form.md)
 * [Création d’un formulaire adaptatif](../../forms/using/introduction-forms-authoring.md)

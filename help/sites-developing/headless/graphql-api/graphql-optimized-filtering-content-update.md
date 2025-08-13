@@ -7,8 +7,8 @@ role: Admin,Architect,Data Architect,Developer
 exl-id: 40211033-7084-4117-a3e2-73e504283266
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 95%
+source-wordcount: '250'
+ht-degree: 94%
 
 ---
 
@@ -34,8 +34,8 @@ Pour exécuter la procédure, procédez comme suit :
 
 1. Dans la boîte de dialogue, définissez les deux paramètres de la manière suivante :
 
-   * **ContentFragmentMigration:Enabled** : `1`
-   * **ContentFragmentMigration:Enforce** : `1`
+   * **ContentFragmentMigration:Enabled** : `1`
+   * **ContentFragmentMigration:Enforce** : `1`
 
 1. **Enregistrer** les spécifications - la procédure de mise à jour démarre.
 
@@ -45,8 +45,8 @@ Pour exécuter la procédure, procédez comme suit :
 
    Dans la boîte de dialogue de la **Configuration de la tâche de migration de fragments de contenu**, définissez ces deux paramètres comme suit :
 
-   * **ContentFragmentMigration:Enabled** : `0`
-   * **ContentFragmentMigration:Enforce** : `0`
+   * **ContentFragmentMigration:Enabled** : `0`
+   * **ContentFragmentMigration:Enforce** : `0`
 
 ## Limites {#limitations}
 

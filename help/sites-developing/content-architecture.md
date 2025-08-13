@@ -11,8 +11,8 @@ role: Developer
 exl-id: eb47f730-ac26-47a0-9bd7-3b7e94c79ecd
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 100%
+source-wordcount: '416'
+ht-degree: 92%
 
 ---
 
@@ -46,7 +46,7 @@ Les servlets doivent être définis en fonction des types de ressource plutôt q
 
 ### Évitez de définir de nouveaux types de nœud {#avoid-defining-new-node-types}
 
-Les types de nœud fonctionnent à un niveau inférieur du calque d’infrastructure. Il est, en outre, possible de répondre à la plupart des exigences en utilisant une propriété sling:resourceType affectée à un type de nœud nt:unstructured, oak:Unstructured, sling:Folder ou cq:Page. Les types de nœud correspondent au schéma dans le référentiel. Changer de type de nœud peut s’avérer coûteux à terme.
+Les types de nœud fonctionnent à un niveau inférieur du calque d’infrastructure et la plupart des exigences peuvent être satisfaites en utilisant un type de nœud sling:resourceType affecté à un type de nœud nt:unstructured, oak:Unstructured, sling:Folder ou cq:Page. Les types de nœud correspondent au schéma dans le référentiel. Changer de type de nœud peut s’avérer coûteux à terme.
 
 ### Respect des conventions de nommage dans le JCR {#adhere-to-naming-conventions-in-the-jcr}
 

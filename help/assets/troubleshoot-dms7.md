@@ -13,8 +13,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 469495f2-b6d3-490d-a5df-ffa07b30cc1e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 100%
+source-wordcount: '1396'
+ht-degree: 97%
 
 ---
 
@@ -54,7 +54,7 @@ Vous pouvez passer en revue les propriétés de ressource suivantes dans CRXDE 
 
 ### Journalisation de la synchronisation {#synchronization-logging}
 
-Les erreurs et problèmes de synchronisation sont consignés dans le fichier `error.log` (répertoire de serveur Experience Manager `/crx-quickstart/logs/`). La journalisation est suffisante pour déterminer la cause de la plupart des problèmes. Vous pouvez toutefois augmenter le niveau de journalisation sur DEBUG sur le package `com.adobe.cq.dam.ips` via la console Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) pour collecter davantage d’informations.
+Les erreurs et problèmes de synchronisation sont consignés dans le fichier `error.log` (répertoire de serveur Experience Manager `/crx-quickstart/logs/`). La journalisation est suffisante pour déterminer la cause de la plupart des problèmes. Vous pouvez toutefois augmenter le niveau de journalisation sur DEBUG sur le package `com.adobe.cq.dam.ips` via la console Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) pour collecter davantage d’informations.
 
 ### Déplacement, copie et suppression {#move-copy-delete}
 

@@ -234,8 +234,8 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
 | dataType | Chaîne représentant le type de données du champ (entier/décimal). |
 | leadDigits | Nombre maximal de chiffres autorisés dans la partie entière du nombre décimal. |
 | fracDigits | Nombre maximal de chiffres autorisés dans la partie décimale du nombre décimal. |
-| zero | Chaîne représentant zéro selon la langue du champ. |
-| decimal | Chaîne représentant les décimales selon la langue du champ. |
+| zero | Chaîne représentant zéro dans les paramètres régionaux du champ. |
+| decimal | Chaîne représentant les décimales dans les paramètres régionaux du champ. |
 
 ### CheckButton : RadioButton, CheckBox {#checkbutton-radiobutton-checkbox}
 

@@ -36,7 +36,7 @@ Une application HTML existante peut utiliser l’API FormBridge pour interagir a
 
 1. **Modifier un profil HTML**
 
-   Ajoutez l’exécution de XFA, la bibliothèque XFA locale et l’extrait de formulaire XFA en HTML dans le rendu du profil, concevez votre page Web et placez le formulaire dans la page Web.
+   Ajoutez l’exécution de XFA, la bibliothèque de paramètres régionaux XFA et l’extrait de formulaire XFA en HTML dans le rendu du profil, concevez votre page web et placez le formulaire dans la page web.
 
    Par exemple, utilisez l’extrait de code suivant, pour créer une application avec deux champs de saisie et un formulaire pour démontrer l’interaction entre le formulaire et une application externe.
 

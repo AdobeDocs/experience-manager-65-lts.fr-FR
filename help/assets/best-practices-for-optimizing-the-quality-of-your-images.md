@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 30038003-e307-46d1-b5f9-624d98a672a7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1497'
-ht-degree: 98%
+source-wordcount: '1495'
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Experience Manager inclut plus de 100 commandes de diffusion d’images D
 
 * JPG ou PNG sont les meilleurs choix pour diffuser des images de bonne qualité avec une taille et un poids gérables.
 * Si aucune commande de format n’est fournie dans l’URL, la diffusion d’images Dynamic Media est configurée par défaut sur JPG pour la diffusion.
-* Le format JPG se compresse à un ratio de 10:1 et produit généralement des fichiers image de plus petite taille. Le format PNG compresse selon un ratio d’environ 2:1, sauf dans certains cas, par exemple lorsque les images comportent un arrière-plan blanc. En règle générale, les fichiers PNG sont cependant plus volumineux que les fichiers JPG.
+* JPG compresse à un rapport de 10 :1 et produit généralement des tailles de fichier image plus petites. Le format PNG compresse à un rapport d’environ 2 :1, sauf dans certains cas, par exemple lorsque les images contiennent un arrière-plan blanc. En règle générale, les fichiers PNG sont cependant plus volumineux que les fichiers JPG.
 * Le format JPG utilise la compression avec perte, ce qui signifie que les éléments d’image (pixels) sont supprimés pendant la compression. Le format PNG, en revanche, utilise une compression sans perte.
 * Le format JPG compresse souvent les images photographiques avec une meilleure fidélité que les images synthétiques aux contours et au contraste nets.
 * Si vos images contiennent de la transparence, utilisez le format PNG, car le format JPG ne prend pas en charge la transparence.
@@ -120,7 +120,7 @@ Cette combinaison de paramètres produit d’excellents résultats dans la plupa
 
 Si l’image nécessite davantage d’optimisation, ajustez progressivement les paramètres d’accentuation (masquage flou) en commençant par un rayon défini sur 0,2 ou 0,3. Ensuite, augmentez graduellement la quantité de 1,75 à un maximum de 4 (équivalent à 400 % dans Photoshop). Vérifiez que le résultat souhaité est obtenu.
 
-Si les résultats de l’accentuation ne sont toujours pas satisfaisants, augmentez le rayon par incréments décimaux. Pour chaque incrément décimal, relancez la quantité à 1,75 et augmentez-la progressivement à 4. Répétez cette procédure jusqu’à obtenir le résultat souhaité. Bien que les valeurs ci-dessus soient une approche validée par les studios de création, n’oubliez pas que vous pouvez commencer par d’autres valeurs et suivre d’autres stratégies. Que les résultats vous conviennent ou non est une question subjective, par conséquent l&#39;expérimentation structurée est la clé.
+Si les résultats de l’accentuation ne sont toujours pas satisfaisants, augmentez le rayon par incréments décimaux. Pour chaque incrément décimal, redémarrez la quantité à 1,75 et augmentez-la progressivement à 4. Répétez cette procédure jusqu’à obtenir le résultat souhaité. Bien que les valeurs ci-dessus soient une approche validée par les studios de création, n’oubliez pas que vous pouvez commencer par d’autres valeurs et suivre d’autres stratégies. Que les résultats vous conviennent ou non est une question subjective, par conséquent l&#39;expérimentation structurée est la clé.
 
 Au fur et à mesure que vous testez votre résultat, les suggestions générales suivantes peuvent être utiles pour continuer à optimiser votre workflow :
 

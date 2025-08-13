@@ -64,4 +64,4 @@ Outils facilitant la création de projets :
 >[!NOTE]
 >
 >Le tutoriel suivant peut s’avérer intéressant pour démarrer un nouveau projet AEM :
->[Prise en main d’AEM Sites - Partie 1 - Configuration du projet](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)
+>>[Prise en main d’AEM Sites - Partie 1 - Configuration du projet](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)

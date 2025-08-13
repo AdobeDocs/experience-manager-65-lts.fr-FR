@@ -8,8 +8,8 @@ role: Admin
 exl-id: f185c622-1681-4221-a082-cac71d6b510b
 source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4381'
-ht-degree: 100%
+source-wordcount: '4379'
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Par défaut, les modules externes `format`, `link`, `list`, `justify` et `contro
       * un nœud de configuration alternatif : `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
 
-   * Ils sont du type : **jcr:primaryType** `cq:Widget`
+   * Sont de type : **jcr:primaryType** `cq:Widget`
    * Ils possèdent tous deux les propriétés suivantes :
 
       * **Nom** `name`
@@ -167,7 +167,7 @@ Vous pouvez utiliser les propriétés suivantes pour `htmlPasteRules`.
 | `allowBlockTags` | Chaîne | Définit la liste des balises block autorisées. Voici quelques balises block possibles : <ul> <li>titres (h1, h2, h3)</li> <li>paragraphes (p)</li> <li>listes (ol, ul)</li> <li>tableaux (table)</li> </ul> |
 | `fallbackBlockTag` | Chaîne | Définit la balise block utilisée pour tout bloc contenant une balise block ne figurant pas dans `allowBlockTags`. En général, `p` suffit. |
 | table | nt:unstructured | Définit le comportement lors du collage de tableaux. Ce nœud doit comporter la propriété `allow` (de type Boolean) pour définir s’il est autorisé de coller des tableaux. Si « allow » est défini sur `false`, vous devez spécifier la propriété `ignoreMode` (de type String) pour définir comment le contenu du tableau collé est géré. Les valeurs valides pour `ignoreMode` sont les suivantes : <ul> <li>`remove` : supprime le contenu du tableau.</li> <li>`paragraph` : transforme les cellules de tableau en paragraphes.</li> </ul> |
-| list | nt:unstructured | Définit le comportement lors du collage de listes. Doit comporter la propriété `allow` (de type Boolean) pour définir s’il est autorisé de coller des listes. Si `allow` est défini sur `false`, vous devez spécifier la propriété `ignoreMode` (de type String) pour définir comment gérer le contenu d’une liste collée. Les valeurs valides pour `ignoreMode` sont les suivantes : <ul><li> `remove` : supprime le contenu de la liste.</li> <li>`paragraph` : transforme les éléments de la liste en paragraphes.</li> </ul> |
+| liste | nt:unstructured | Définit le comportement lors du collage de listes. Doit comporter la propriété `allow` (de type Boolean) pour définir s’il est autorisé de coller des listes. Si `allow` est défini sur `false`, vous devez spécifier la propriété `ignoreMode` (de type String) pour définir comment gérer le contenu d’une liste collée. Les valeurs valides pour `ignoreMode` sont les suivantes : <ul><li> `remove` : supprime le contenu de la liste.</li> <li>`paragraph` : transforme les éléments de la liste en paragraphes.</li> </ul> |
 
 Voici un exemple de structure `htmlPasteRules` valide.
 
@@ -455,12 +455,10 @@ Dans CRXDE, une fois la propriété enregistrée, le caractère représenté s�
 1. Sous ce nœud (nommé en fonction de votre plage de caractères spéciaux), ajoutez les deux propriétés suivantes :
 
    * **Nom** `rangeStart`
-
      **Type** `Long`
      **Valeur** Représentation [Unicode](https://unicode.org/) (décimale) du premier caractère de la plage
 
    * **Nom** `rangeEnd`
-
      **Type** `Long`
      **Valeur** Représentation [Unicode](https://unicode.org/) (décimale) du dernier caractère de la plage
 
@@ -500,8 +498,8 @@ Les styles sont généralement appliqués au texte, mais un ensemble distinct de
    >* **Type** `String[]`
    >
    >* **Valeurs** Un ou deux des éléments ci-dessous, au besoin :
-   >* `table` pour permettre de modifier les propriétés du tableau, dont les styles.
-   >* `cellprops` pour permettre de modifier les propriétés des cellules, dont les styles.
+   >   * `table` pour permettre de modifier les propriétés du tableau, dont les styles.
+   >   * `cellprops` pour permettre de modifier les propriétés des cellules, dont les styles.
 
 1. Définissez l’emplacement des feuilles de style CSS afin de pouvoir y faire référence. Voir [Spécification de l’emplacement de votre feuille de style](#locationofstylesheet), car cela revient à définir les [styles de texte](#textstyles). L’emplacement peut être défini si vous avez défini d’autres styles.
 1. Sous le nœud `table`, créez les nœuds suivants (au besoin) :
@@ -572,7 +570,7 @@ Une installation d’AEM standard inclut les dictionnaires pour l’anglais amé
 1. Effectuez l’une des opérations suivantes pour trouver un dictionnaire de votre choix de langue :
 
    * Recherchez le dictionnaire de votre choix de langue. Sur la page du dictionnaire, localisez le lien vers la source originale ou la page Web de l’auteur. Localisez les fichiers de dictionnaire pour v2.x sur une telle page.
-   * Recherchez des fichiers de dictionnaire v2.x à l’adresse [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
+   * Recherchez des fichiers de dictionnaire v2.x dans [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
 
 1. Téléchargez l’archive avec les définitions d’orthographe. Extrayez le contenu de l’archive dans votre système de fichiers.
 

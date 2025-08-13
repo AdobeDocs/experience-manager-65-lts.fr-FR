@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1902'
-ht-degree: 99%
+source-wordcount: '1901'
+ht-degree: 98%
 
 ---
 
@@ -344,7 +344,7 @@ Retourné lorsque :
   L’exemple suivant répertorie les scénarios courants lorsque cet état d’erreur est renvoyé, ainsi que le message d’erreur (à espacement fixe) généré :
 
    * Le dossier parent n’existe pas (lors de la création d’un fragment de contenu via `POST`)
-   * Aucun modèle de fragment de contenu n’est fourni (cq:model est manquant) ou ne peut être lu (en raison d’un chemin d’accès non valide ou d’un problème d’autorisation) ou il n’existe aucun modèle de fragment valide :
+   * Aucun modèle de fragment de contenu n’est fourni (cq:model est manquant), ne peut pas être lu (en raison d’un chemin d’accès non valide ou d’un problème d’autorisation) ou il n’existe aucun modèle de fragment valide :
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`

@@ -36,7 +36,7 @@ Un modèle de données de formulaire est une extension du schéma JSON que vous 
 
 * [Créer des formulaires adaptatifs et des fragments](#create-af)
 * [Créer des communications interactives et des blocs de construction, comme des fragments de texte, de liste et de condition](#create-ic)
-* [Prévisualiser des communications interactives avec exemples de données](#preview-ic)
+* [Prévisualiser des communications interactives avec données d’exemple](#preview-ic)
 * [Préremplir des formulaires adaptatifs et des communications interactives](#prefill)
 * [Écrire les données de formulaires adaptatifs envoyés dans les sources de données](#write-af)
 * [Appeler les services à l’aide des règles de formulaire adaptatif](#invoke-services)
@@ -89,7 +89,7 @@ Pour en savoir plus, voir:
 
 [Fragments de liste](/help/forms/using/lists.md)
 
-## Aperçu avec des exemples de données {#preview-ic}
+## Aperçu avec des données d’exemple {#preview-ic}
 
 L’éditeur de modèle de données de formulaire vous permet de générer et de modifier des données d’exemple pour les objets de modèle de données dans le modèle de données de formulaire. Vous pouvez utiliser ces données pour prévisualiser et tester les communications interactives et les formulaires adaptatifs. Générez les données d’exemple avant la prévisualisation, comme décrit dans la section [Utilisation d’un modèle de données du formulaire](../../forms/using/work-with-form-data-model.md#sample).
 
@@ -99,7 +99,7 @@ Pour prévisualiser une communication interactive avec des données d’exemple 
 1. Sélectionnez une communication interactive et sélectionnez **[!UICONTROL Aperçu]** dans la barre d’outils pour sélectionner **[!UICONTROL Canal web]**, **[!UICONTROL Canal d’impression]** ou **[!UICONTROL Les deux canaux]** pour prévisualiser la communication interactive.
 1. Dans la boîte de dialogue Aperçu du [*canal*], assurez-vous d’avoir sélectionné **[!UICONTROL Tester les données du modèle de données de formulaire]** et sélectionnez **[!UICONTROL Aperçu]**.
 
-La communication interactive s’ouvre avec des exemples de données préremplies.
+La communication interactive s’ouvre avec des données d’exemple préremplies.
 
 ![web-preview](assets/web-preview.png)
 

@@ -12,8 +12,8 @@ role: Admin
 exl-id: 448715f1-ccec-4fb8-92d7-b7458cf9e6d4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6067'
-ht-degree: 98%
+source-wordcount: '6065'
+ht-degree: 97%
 
 ---
 
@@ -389,7 +389,7 @@ Pour afficher la page d’administration du site web ou modifier une page du por
    </LoginModule>
    ```
 
-1. Dans la console de configuration OSGi, située par défaut à l’adresse https://localhost:4502/system/console/configMgr, sélectionnez **Gestionnaire d’authentification par code personnel CQ** dans le menu déroulant.
+1. Dans la console de configuration OSGi, située par défaut à l’adresse https://localhost:4502/system/console/configMgr, sélectionnez **Gestionnaire d’authentification par code personnel CQ** dans le menu déroulant.
 1. Modifiez le paramètre **Chemin d’accès racine de l’URL** pour qu’il contienne la valeur unique **/**.
 
 ### Autorisations {#privileges}
@@ -398,9 +398,9 @@ Certaines fonctions du portlet sont protégées par des autorisations. L’utili
 
 * « toolbar » : il s’agit du privilège général d’afficher/utiliser la barre d’outils dans le portlet.
 * « prefs » : si l’utilisateur ou l’utilisatrice dispose de ce privilège, il lui est possible de voir/modifier les préférences du portlet.
-* &quot;cq-author:edit&quot; : avec ce privilège, l’utilisateur ou l’utilisatrice a le droit d’appeler la vue de modification du contenu.
-* &quot;cq-author:preview&quot; : avec ce privilège, l’utilisateur ou l’utilisatrice a le droit de voir l’aperçu.
-* « cq-author:siteadmin » : avec ce privilège, l’utilisateur ou l’utilisatrice peut ouvrir le siteadmin dans AEM.
+* « cq-author:edit » : avec ce privilège, l’utilisateur est autorisé à appeler la vue d’édition du contenu.
+* « cq-author:preview » : avec ce privilège, l’utilisateur est autorisé à voir l’aperçu.
+* « cq-author:siteadmin » : avec ce privilège, l’utilisateur est autorisé à ouvrir le siteadmin dans AEM.
 
 La meilleure approche pour gérer les autorisations consiste à utiliser les rôles du portail et d’affecter des rôles à ces droits. Cette opération peut être effectuée par le biais d’une configuration OSGi. La configuration « Day Portal Director Privilege Manager » peut être configurée avec un ensemble de rôles pour chaque autorisation. Si l’utilisateur ou l’utilisatrice possède l’un des rôles, il ou elle dispose du privilège correspondant.
 
@@ -730,7 +730,7 @@ Utilisez le composant Portail pour ajouter une fenêtre du portlet à votre page
 
 Pour accéder au contenu fourni par AEM WCM, le serveur du portail peut disposer d’AEM Portal Director Portlet. Pour ce faire, installez, configurez et ajoutez le portlet à la page du portail à l’aide des étapes fournies dans cette section.
 
-Par défaut, le portlet se connecte à l’instance de publication sur localhost 4503 et l’instance de création sur locahost 4502. Ces valeurs peuvent être modifiées lors du déploiement du portlet. Portal Director est disponible sous forme de contenu dans le référentiel, sous /libs/portal/directory. Téléchargez le fichier war de l’application avant de l’utiliser.
+Par défaut, le portlet se connecte à l’instance de publication sur localhost:4503 et à l’instance de création sur localhost:4502. Ces valeurs peuvent être modifiées lors du déploiement du portlet. Portal Director est disponible sous forme de contenu dans le référentiel, sous /libs/portal/directory. Téléchargez le fichier war de l’application avant de l’utiliser.
 
 ### Téléchargement du fichier WAR {#downloading-the-war-file}
 

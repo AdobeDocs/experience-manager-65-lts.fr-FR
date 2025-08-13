@@ -12,8 +12,8 @@ role: User
 exl-id: 92f4946d-1f49-4286-a51e-84b2a46a6b8a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 100%
+source-wordcount: '602'
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ Pour créer une page de destination efficace pour une newsletter, vous devez eff
 >[!NOTE]
 >
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (Gestion des prospects et des listes).
->Il est conseillé d’utiliser [Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
+>>Il est conseillé d’utiliser [Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
 
 ## Créer une liste pour la newsletter {#creating-a-list-for-the-newsletter}
 
@@ -49,7 +49,7 @@ Pour créer votre propre formulaire de newsletter, reportez-vous aux information
 
 Les champs masqués de l’exemple suivant fournissent le minimum d’informations (e-mail). De plus, vous pourrez ajouter d’autres champs ultérieurement, mais cela aura une incidence sur le taux de conversion.
 
-L’exemple suivant est un formulaire créé à l’adresse URL https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html.
+L’exemple suivant est un formulaire créé à l’adresse https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html.
 
 1. Créez le formulaire.
 

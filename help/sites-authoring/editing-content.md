@@ -59,7 +59,7 @@ La barre d’outils permet d’accéder à de nombreuses options. Selon votre co
 
 * **Émulateur**
 
-  Fait basculer la [barre d’outils de l’émulateur](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate) utilisée pour émuler l’aspect de la page sur un autre appareil. Cette option est automatiquement basculée en mode de mise en page.
+  Fait basculer la [barre d’outils de l’émulateur](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate) utilisée pour émuler l’aspect de la page sur un autre appareil. Cette option passe automatiquement en mode de mise en page.
 
   ![Émulateur](do-not-localize/screen_shot_2018-03-22at111442.png)
 

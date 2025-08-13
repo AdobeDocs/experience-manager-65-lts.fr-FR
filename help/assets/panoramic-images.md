@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 18458c49-ab84-4d49-95b5-52922fba1365
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 100%
+source-wordcount: '577'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ Pour que la visionneuse d’images panoramiques fonctionne correctement au sein 
 1. Sur la même page de publication Image Server, recherchez l’en-tête **[!UICONTROL Attributs de requête]**.
 1. Sous l’en-tête Attributs de requête, recherchez **[!UICONTROL Limite de taille de l’image de réponse]**. Ensuite, dans les champs Largeur et Hauteur associés, augmentez la taille maximale autorisée pour les images panoramiques.
 
-   Dynamic Media Classic est limité à 25 000 000 pixels. La taille maximale autorisée pour les images avec un rapport d’aspect de 2:1 est de 7 000 x 3 500. Toutefois, pour des écrans d’ordinateurs de bureau habituels, une taille de 4 096 x 2 048 pixels suffit.
+   Dynamic Media Classic est limité à 25 000 000 pixels. La taille maximale autorisée pour les images avec un format de 2 :1 est de 7 000 x 3 500. Toutefois, pour des écrans d’ordinateurs de bureau habituels, une taille de 4 096 x 2 048 pixels suffit.
 
    >[!NOTE]
    >

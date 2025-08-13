@@ -77,7 +77,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
  <tbody>
   <tr>
    <td><p>1</p></td>
-   <td><p>Un utilisateur achète des articles dans une boutique en ligne. </p></td>
+   <td><p>Un utilisateur ou une utilisatrice achète des articles dans une boutique en ligne. </p></td>
   </tr>
   <tr>
    <td><p>2</p></td>
@@ -89,7 +89,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
   </tr>
   <tr>
    <td><p>4</p></td>
-   <td><p>Le formulaire de bon de commande est rendu au navigateur web client. </p></td>
+   <td><p>Le formulaire de bon de commande est affiché dans le navigateur web client. </p></td>
   </tr>
  </tbody>
 </table>
@@ -375,7 +375,7 @@ Pour préremplir un formulaire avec une disposition fluide à l’aide de l’AP
    * Un objet `java.util.HashMap` qui stocke les pièces jointes. Il sʼagit dʼun paramètre facultatif. Vous pouvez indiquer `null` si vous ne souhaitez pas joindre de fichier au formulaire.
    * Un objet `com.adobe.idp.services.holders.BLOBHolder` vide qui est renseigné par la méthode. Il permet de stocker le formulaire PDF rendu.
    * Un objet `javax.xml.rpc.holders.LongHolder` vide qui est renseigné par la méthode. (Cet argument permet de stocker le nombre de pages du formulaire).
-   * Un objet `javax.xml.rpc.holders.StringHolder` vide qui est renseigné par la méthode. (Cet argument permet de stocker la valeur du paramètre régional).
+   * Un objet `javax.xml.rpc.holders.StringHolder` vide qui est renseigné par la méthode. (Cet argument permet de stocker la valeur des paramètres régionaux).
    * Un objet `com.adobe.idp.services.holders.FormsResultHolder` vide qui contiendra les résultats de cette opération.
 
    La méthode `renderPDFForm` renseigne l’objet `com.adobe.idp.services.holders.FormsResultHolder` qui est transmis en tant que dernière valeur d’argument avec un flux de données de formulaire qui doit être écrit dans le navigateur web client.

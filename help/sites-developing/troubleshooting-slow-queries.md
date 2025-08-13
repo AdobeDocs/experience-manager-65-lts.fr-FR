@@ -11,8 +11,8 @@ role: Developer
 exl-id: 42ad741e-49d6-4acb-a45c-0a6750f6fdbb
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2237'
-ht-degree: 100%
+source-wordcount: '2228'
+ht-degree: 95%
 
 ---
 
@@ -74,7 +74,7 @@ Expliquez toutes les requêtes et assurez-vous qu’elles se résolvent sur un i
 
 Avant d’ajouter la règle d’index cq:tags
 
-* **Règle d’index cq:tags**
+* **cq:tags Règle d’index**
 
    * N’existe pas par défaut
 
@@ -94,7 +94,7 @@ Cette requête est résolue sur l’index `cqPageLucene`. Cependant, étant donn
 
 Après avoir ajouté la règle d’index cq:tags
 
-* **Règle d’index cq:tags**
+* **cq:tags Règle d’index**
 
   ```js
   /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
@@ -120,7 +120,7 @@ Lors de l’exécution d’une requête avec la restriction `jcr:content/cq:tags
 
 Plus de restrictions de requête réduisent les ensembles de résultats éligibles et améliorent encore l’optimisation des requêtes.
 
-De même, en l’absence de règle d’index supplémentaire pour la propriété `cq:tags`, même une requête en texte intégral avec une restriction définie sur `cq:tags` s’avérerait peu performante, dans la mesure où les résultats de l’index renverraient toutes les correspondances en texte intégral. La restriction définie sur cq:tags serait filtrée par la suite.
+De même, en l’absence de règle d’index supplémentaire pour la propriété `cq:tags`, même une requête en texte intégral avec une restriction définie sur `cq:tags` s’avérerait peu performante, dans la mesure où les résultats de l’index renverraient toutes les correspondances en texte intégral. La restriction définie sur cq:tags est filtrée par la suite.
 
 Une autre cause de filtrage post-index est le manque de prise en compte des listes de contrôle d’accès pendant le développement. Veillez à ce que la requête ne renvoie pas des chemins susceptibles d’être inaccessibles à l’utilisateur ou l’utilisatrice. Pour ce faire, vous pouvez améliorer la structure du contenu et fournir une restriction de chemin d’accès appropriée sur la requête.
 
@@ -225,7 +225,7 @@ L’exemple suivant utilise Query Builder étant donné qu’il s’agit du lan
    * Un autre nœud hérite de `nt:hierarchyNode` (par exemple, `dam:Asset`) ce qui augmente inutilement l’ensemble des résultats potentiels.
    * Il n’existe aucun index fourni par AEM pour `nt:hierarchyNode`, car il y en a un qui est fourni pour `cq:Page`.
 
-  Le fait de définir `type=cq:Page` limite cette requête aux seuls nœuds `cq:Page` et résout la requête sur l’index cqPageLucene d’AEM, ce qui limite les résultats à un sous-ensemble de nœuds (uniquement les nœuds cq:Page) dans AEM.
+  La définition de `type=cq:Page` limite cette requête aux seuls nœuds `cq:Page` et résout la requête sur AEM cqPageLucene, ce qui limite les résultats à un sous-ensemble de nœuds (uniquement les nœuds cq:Page) dans AEM.
 
 1. Vous pouvez également ajuster la ou les restrictions de propriété, de sorte que la requête soit résolue sur un index de propriété existant.
 
@@ -290,7 +290,7 @@ L’exemple suivant utilise Query Builder étant donné qu’il s’agit du lan
   fulltext.relPath=jcr:content/contentType
   ```
 
-  L’évaluation de la condition LIKE est lente car aucun index ne peut être utilisé si le texte commence par un caractère générique (&quot;%...’). La condition jcr:contains autorise un index en texte intégral et est, de ce fait, à privilégier. Pour cela, l’index de propriété Lucene doit présenter indexRule pour `jcr:content/contentType` avec `analayzed=true`.
+  L’évaluation de la condition LIKE est lente car aucun index ne peut être utilisé si le texte commence par un caractère générique (&quot;%...’). La condition jcr:contains permet d’utiliser un index de texte intégral et est donc préférable. Pour cela, l’index de propriété Lucene doit présenter indexRule pour `jcr:content/contentType` avec `analayzed=true`.
 
   L’utilisation de fonctions de requêtes telles que `fn:lowercase(..)` peut rendre l’optimisation plus difficile, car il n’existe pas d’équivalents plus rapides (hormis des configurations d’analyseur d’index plus complexes et moins discrètes). Il est préférable d’identifier d’autres restrictions d’étendue afin d’améliorer les performances globales de la requête, ce qui nécessite que les fonctions fonctionnent sur le plus petit ensemble de résultats potentiels possible.
 
@@ -364,7 +364,7 @@ L’exemple suivant utilise Query Builder étant donné qu’il s’agit du lan
 1. Fusionnez manuellement la définition générée dans l’index de propriété Lucene qui existe de manière additive. Veillez à ne pas supprimer les configurations existantes, car elles peuvent être utilisées pour répondre à d’autres requêtes.
 
    1. Recherchez l’index de propriété Lucene existant qui couvre cq:Page (à l’aide du gestionnaire d’index). Dans ce cas, `/oak:index/cqPageLucene`.
-   1. Identifiez le delta de configuration entre la définition d’index optimisée (étape 4) et l’index existant (/oak:index/cqPageLucene), et ajoutez les configurations manquantes de l’index optimisé à la définition de l’index existant.
+   1. Identifiez les différences de configuration entre la définition d’index optimisée (étape #4) et l’index existant (/oak:index/cqPageLucene) et ajoutez les configurations manquantes de l’index optimisé à la définition d’index existante.
    1. Selon les bonnes pratiques de réindexation AEM, une actualisation ou une réindexation est ordonnée, si le contenu existant peut être affecté par cette modification de configuration d’index.
 
 ## Création d’un index {#create-a-new-index}

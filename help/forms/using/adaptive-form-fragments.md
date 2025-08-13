@@ -31,7 +31,7 @@ Les formulaires adaptatifs incluent un mécanisme pratique pour créer un segmen
 
 >[!NOTE]
 >
-> Vous pouvez facilement personnaliser votre expérience de fragment pour les utilisateurs et utilisatrices qui utilisent la [boîte de dialogue de configuration et la boîte de dialogue de conception d’un composant Fragment de formulaire](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
+> Vous pouvez facilement personnaliser votre expérience de fragment pour les utilisateurs et utilisatrices qui utilisent la [boîte de dialogue de configuration et la boîte de dialogue de conception d’un composant Fragment de formulaire](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
 
 ## Création d’un fragment {#create-a-fragment}
 
@@ -91,7 +91,6 @@ En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire 
 1. Dans la boîte de dialogue de création de fragment, spécifiez les informations suivantes :
 
    * **Nom** : nom du fragment. La valeur par défaut est le nom de l’élément du panneau. Ce champ est obligatoire.
-
      >[!NOTE]
      >
      >Assurez-vous de spécifier un nom unique pour le fragment. S’il existe un autre fragment portant le même nom, la création du fragment échoue.

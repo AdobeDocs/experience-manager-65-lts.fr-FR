@@ -82,7 +82,7 @@ Utilisez ce mode de mise en cache dans des environnements de production hautemen
 Vous pouvez vider le contenu du cache à tout moment. Après la réinitialisation du cache, la premiè requête est plus lente pour chaque formulaire, car le service Forms effectue un rendu complet et crée un nouveau contenu de cache.
 
 1. Dans Administration Console, cliquez sur Services > Forms.
-1. Dans les Paramètres de contrôle du cache de Forms, sélectionnez Réinitialiser le cache.
+1. Dans les Paramètres de contrôle du cache de Forms, cliquez sur Réinitialiser le cache.
 
 ## Configuration des paramètres du cache {#configuring-cache-settings}
 

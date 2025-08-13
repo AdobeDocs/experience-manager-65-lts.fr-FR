@@ -19,7 +19,7 @@ ht-degree: 99%
 
 # Bannières de carrousel{#carousel-banners}
 
-Les bannières de carrousel permettent aux spécialistes du marketing de générer des interactions en créant facilement du contenu promotionnel interactif et rotatif et en le diffusant sur n&#39;importe quel écran.
+Les bannières de carrousel permettent aux responsables marketing d’améliorer le taux de conversion en créant facilement du contenu promotionnel interactif et rotatif, et en le diffusant sur n’importe quel écran.
 
 La création et la modification du contenu présenté dans les bannières promotionnelles peuvent prendre beaucoup de temps, limitant votre capacité à publier rapidement du nouveau contenu ou à le rendre plus ciblé. Les bannières de carrousel vous permettent de créer ou de modifier rapidement des bannières rotatives. Vous pouvez ajouter de l’interactivité, par exemple des zones réactives liées au détail d’un produit ou à des ressources connexes, puis les diffuser sur n’importe quel écran, ce qui vous permet d’apporter plus rapidement du nouveau contenu promotionnel au marché.
 
@@ -39,7 +39,7 @@ Dans cet exemple, un utilisateur a tapé ou cliqué sur une zone cliquable et a 
 
 ## Vidéo sur la création de bannières de carrousel {#watch-how-carousel-banners-are-created}
 
-Regardez une présentation sur [la manière dont les bannières de carrousel sont créées](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 minutes et 33 secondes). Vous apprendrez également à prévisualiser, modifier et diffuser des bannières de carrousel.
+Regardez une présentation sur [la manière dont les bannières de carrousel sont créées](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner) (10 minutes et 33 secondes). Vous apprendrez également à prévisualiser, modifier et diffuser des bannières de carrousel.
 
 >[!NOTE]
 >
@@ -293,7 +293,6 @@ Consultez également la section [Ajout de zones cliquables](/help/assets/image-m
    * Sélectionnez **[!UICONTROL Lien hypertexte]**.
 
       * Si vous êtes client Experience Manager Sites, sélectionnez l’icône Sélecteur de site (dossier) pour accéder à une URL.
-
         >[!NOTE]
         >
         >La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.

@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 3081dedf-ba92-4205-af67-930524719e60
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 100%
+source-wordcount: '684'
+ht-degree: 92%
 
 ---
 
@@ -58,19 +58,19 @@ Vous pouvez également remplacer la fonction personnalisée par défaut de mani�
 
       **Nom :** JohnDoe (ou le nom de votre fichier de signature de l’agent).
 
-      **Type :** nt:file
+      **Type:** nt:file
 
       Sous le dossier `cmUserRoot`, un nouveau dossier intitulé `JohnDoe` (ou le nom que vous avez attribué à l’étape précédente) est créé.
 
    1. Cliquez sur le nouveau dossier que vous avez créé (ici`JohnDoe` ). L’explorateur de contenu affiche le contenu du dossier en grisé.
 
-   1. Cliquez deux fois sur la propriété **jcr:content**, définissez le type **nt:resource**, puis cliquez sur la coche verte pour enregistrer cette entrée.
+   1. Double-cliquez sur la propriété **jcr:content**, définissez son type sur **nt:resource**, puis cliquez sur la coche verte pour enregistrer l’entrée.
 
-      Si la propriété n’est pas disponible, vous devez d’abord créer une propriété avec le nom jcr:content.
+      Si la propriété n’est pas présente, créez d’abord une propriété nommée jcr:content.
 
       ![propriété jcr:content](assets/3_jcrcontentntresource.png)
 
-      Parmi les sous-propriétés de jcr:content se trouve jcr:data, qui est grisé. Double-cliquez sur jcr:data. La propriété devient modifiable et le bouton Choisir un fichier apparaît dans l’entrée. Cliquez sur **Choisir un fichier** et sélectionnez le fichier image que vous souhaitez utiliser comme logo. Le fichier image n’a pas besoin d’extension.
+      Parmi les sous-propriétés de jcr:content figure jcr:data, qui est grisé. Double-cliquez sur jcr:data. La propriété devient modifiable et le bouton Choisir un fichier apparaît dans l’entrée. Cliquez sur **Choisir un fichier** et sélectionnez le fichier image que vous souhaitez utiliser comme logo. Le fichier image n’a pas besoin d’extension.
 
       ![Données JCR](assets/5_jcrdata.png)
 

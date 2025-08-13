@@ -8,7 +8,7 @@ exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
 source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
 source-wordcount: '2476'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -326,7 +326,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
    L’assistant de déplacement de page s’ouvre alors.
 
-1. L’étape **Renommer** de l’assistant vous fournit **Informations** à propos de la page, y compris la date de création, le chemin d’accès et le nombre de références directes. À partir de là, vous pouvez :
+1. L’étape **Renommer** de l’assistant vous fournit des **informations** à propos de la page, y compris la date de création, le chemin d’accès et le nombre de références directes. À partir de là, vous pouvez :
 
    * Spécifiez le nom à attribuer à la page après son déplacement et cliquez sur **Suivant** pour poursuivre.
 
@@ -366,7 +366,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
    >[!NOTE]
    >
    >* Si la page n’est ni liée ni référencée, cette étape ne sera pas disponible.
-   >* Cette étape répertorie les références directes et indirectes. Cette valeur peut être différente de la valeur indiquée à l’étape **Renommer** de l’assistant, ainsi que des références indiquées par le rail Références, qui indiquent toutes deux des références directes uniquement pour des raisons de performances.
+   >* Cette étape répertorie les références directes et indirectes. Cette valeur peut être différente de la valeur indiquée à l’étape **Renommer** de l’assistant, ainsi que des références indiquées par le rail Références, qui constituent toutes deux des références directes uniquement pour des raisons de performances.
 
    ![caop-09](assets/caop-09.png)
 
@@ -398,7 +398,7 @@ Pour consulter le statut des tâches asynchrones, accédez au tableau de bord [*
 
 >[!NOTE]
 >
->Le traitement asynchrone des déplacements de page nécessite AEM 6.5.3.0 ou une version ultérieure.
+>Pour le traitement asynchrone des déplacements de page, vous avez besoin d’AEM 6.5.3.0 ou ultérieure.
 
 ### Suppression d’une page {#deleting-a-page}
 

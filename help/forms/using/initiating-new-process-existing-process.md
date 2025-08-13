@@ -12,7 +12,7 @@ exl-id: 4a2a06c2-a4fa-463c-9375-bebda426a14c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Vous pouvez lancer un nouveau processus à l’aide des données d’un processus existant. La nécessité d’initier un nouveau processus à partir des données de processus existantes survient lorsque nous devons fréquemment utiliser le même formulaire avec peu de modifications de contenu, comme les formulaires pour congés payés. Cette fonctionnalité permet aux utilisateurs et utilisatrices de gagner du temps et de faire des efforts, en particulier lorsque le processus a un long formulaire à remplir.
 
-Voici les étapes pour lancer un nouveau processus à partir des données de processus existantes :
+Vous trouverez ci-dessous les étapes pour lancer un nouveau processus à partir des données de processus existantes:-
 
 1. Effectuez l’une des actions suivantes :
 

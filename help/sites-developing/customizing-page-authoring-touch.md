@@ -11,8 +11,8 @@ role: Developer
 exl-id: 8d53072b-826d-4ff4-843b-09204fb5a455
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 99%
+source-wordcount: '1263'
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Experience Manager (AEM) fournit divers mécanismes pour vous permettre
 
 * Recouvrements
 
-  Les recouvrements sont basés sur les définitions de nœuds et vous permettent de recouvrir les fonctionnalités standard (dans `/libs`) avec vos propres fonctionnalités personnalisées (dans `/apps`). Lors de la création d’un recouvrement, il n’est pas nécessaire de disposer d’une copie 1:1 de l’original, car [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) autorise l’héritage.
+  Les recouvrements sont basés sur les définitions de nœuds et vous permettent de recouvrir les fonctionnalités standard (dans `/libs`) avec vos propres fonctionnalités personnalisées (dans `/apps`). Lors de la création d’un recouvrement:1 une copie 1 de l’original n’est pas nécessaire, car la fusion de ressources [sling](/help/sites-developing/sling-resource-merger.md) permet l’héritage.
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Il est possible de les utiliser de différentes manières pour étendre la fonct
 
 >[!CAUTION]
 >
->**&#x200B;**&#x200B;** Ne modifiez rien dans le chemin d’accès `/libs`.
+>****** Ne modifiez rien dans le chemin d’accès `/libs`.
 >
 >Cela est dû au fait que le contenu de `/libs` sera écrasé lors de la prochaine mise à niveau de votre instance (et éventuellement lors de l’application d’un correctif ou d’un pack de fonctionnalités).
 >
@@ -193,7 +193,7 @@ Pour mettre en œuvre un nouvel éditeur statique (au sein de votre bibliothèqu
 >[!NOTE]
 >
 >Pour obtenir un exemple, reportez-vous à :
->`/libs/cq/gui/components/authoring/editors/clientlibs/core/js/editors/editorExample.js`
+>>`/libs/cq/gui/components/authoring/editors/clientlibs/core/js/editors/editorExample.js`
 
 1. Implémentez les éléments suivants :
 

@@ -30,7 +30,7 @@ Le service de traduction automatique traduit directement le contenu de vos formu
 1. Dans l’interface utilisateur AEM Forms, sélectionnez un formulaire, puis l’option **Ajouter un dictionnaire**.
 1. Dans l’écran **Ajouter un dictionnaire au projet de traduction**, sélectionnez l’option **Créer un nouveau projet de traduction** ou **Ajouter à un projet de traduction existant**.
 1. Dans le champ **Titre du projet**, indiquez le titre, par exemple `Government Reference Site - German locale.`
-1. Dans le champ **Langues cibles**, spécifiez un paramètre régional (par exemple `German(de)`), puis cliquez sur **Terminé**. Vous pouvez spécifier plusieurs paramètres régionaux. Le formulaire est traduit dans tous les paramètres régionaux spécifiés dans le champ **Langues cibles**.
+1. Dans le champ **Langues cibles**, spécifiez des paramètres régionaux (par exemple `German(de)`), puis cliquez sur **Terminé**. Vous pouvez spécifier plusieurs paramètres régionaux. Le formulaire est traduit dans tous les paramètres régionaux spécifiés dans le champ **Langues cibles**.
 1. Dans la boîte de dialogue Dictionnaire ajouté, cliquez sur **Ouvrir des projets**. Sur l’écran Projets, ouvrez le nouveau projet.
 1. Cliquez sur les **points de suspension** en bas de la mosaïque **Résumé de traduction**. L’écran Résumé de traduction s’affiche.
 1. Cliquez sur l’icône **Modifier** en haut de l’écran **Résumé de traduction**. Ouvrez l’onglet **Traduction** et sélectionnez Traduction automatique sur l’écran **Méthode de traduction**. Sélectionnez le **fournisseur de traduction** approprié et la **configuration de cloud**. Cliquez sur l’icône **Terminé** en haut de l’écran.
@@ -57,7 +57,7 @@ Le service de traduction automatique traduit directement le contenu de vos formu
 
 Avec la traduction humaine, le contenu est envoyé à un prestataire de traduction et traduit par des traducteurs et des traductrices professionnels. Une fois la traduction terminée, le contenu traduit est renvoyé et importé dans AEM. Lorsque votre fournisseur de traduction est intégré à AEM, le contenu est automatiquement transféré entre AEM et le fournisseur de traduction.
 
-Pour la traduction, un dictionnaire contenant les fichiers au format XLIFF est partagé avec les traducteurs et les traductrices professionnels. Le dictionnaire contient un fichier XLIFF distinct pour chaque langue. Chaque fichier XLIFF contient du texte visible par les utilisateurs finaux, ainsi que des espaces réservés pour le texte localisé correspondant.
+Pour la traduction, un dictionnaire contenant les fichiers au format XLIFF est partagé avec les traducteurs et les traductrices professionnels. Le dictionnaire contient un fichier XLIFF distinct pour chaque ensemble de paramètres régionaux. Chaque fichier XLIFF contient du texte visible par les utilisateurs finaux, ainsi que des espaces réservés pour le texte localisé correspondant.
 
 Pour localiser un formulaire et son document d’enregistrement à l’aide de traducteurs et traductrices humains, procédez comme suit :
 

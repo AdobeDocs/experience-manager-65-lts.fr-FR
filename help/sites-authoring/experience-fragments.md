@@ -7,8 +7,8 @@ role: User
 exl-id: 97736093-021a-4487-8818-c0e3f1e2b4e5
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1505'
-ht-degree: 100%
+source-wordcount: '1512'
+ht-degree: 99%
 
 ---
 
@@ -64,7 +64,7 @@ Les fragments d’expérience doivent être utilisés :
 * Lorsque vous avez recours au commerce omnicanal.
 
    * Partage de contenu commercial sur les canaux des [réseaux sociaux](/help/sites-developing/experience-fragments.md#social-variations) à grande échelle
-   * Conversion des points de contact en points de transaction
+   * Rendre les points de contact transactionnels
 
 ## Organisation des fragments d’expérience {#organizing-your-experience-fragments}
 
@@ -256,7 +256,7 @@ Vous pouvez désormais utiliser votre fragment d’expérience lors de la créat
    >
    >La page doit être basée sur un modèle modifiable.
 
-   Par exemple : [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
+   Par exemple : [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
 1. Créez une instance du composant Fragment d’expérience. Pour ce faire, faites glisser le composant sur le système de paragraphes de la page depuis l’explorateur de composants :
 

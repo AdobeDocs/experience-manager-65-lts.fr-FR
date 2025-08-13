@@ -11,8 +11,8 @@ role: Developer
 exl-id: 6a32bd9d-268d-4d03-b495-47ec6660c138
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1610'
-ht-degree: 100%
+source-wordcount: '1611'
+ht-degree: 99%
 
 ---
 
@@ -273,7 +273,7 @@ Suivez la procédure ci-après pour créer le dossier de bibliothèque cliente d
 
    * Nom : nom de votre dossier de bibliothèque cliente, par exemple, mes-modules-externes
 
-   * Type : cq:ClientLibraryFolder
+   * Type : cq:ClientLibraryFolder
 
 1. Sélectionnez le dossier de bibliothèque cliente que vous avez créé et utilisez la barre de propriétés en bas à droite pour ajouter la propriété suivante :
 

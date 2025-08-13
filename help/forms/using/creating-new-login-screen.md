@@ -41,7 +41,7 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
 
    1. Supprimez le contenu du dossier `/apps/livecycle/core/components/login`.
 
-### Ajout d’un nouveau paramètre régional {#adding-a-new-locale}
+### Ajout de nouveaux paramètres régionaux {#adding-a-new-locale}
 
 1. Copiez le dossier `i18n`
 
@@ -52,13 +52,13 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
 
 1. Sur le dossier `en`, procédez comme suit :
 
-   1. Donnez au dossier le nom du paramètre régional que vous souhaitez prendre en charge. Par exemple, `ar`.
+   1. Donnez au dossier le nom de l’ensemble de paramètres régionaux que vous souhaitez prendre en charge. Par exemple, `ar`.
 
    1. Modifiez la valeur de la propriété `jcr:language` en `ar` (pour le dossier `ar`).
 
    >[!NOTE]
    >
-   >Si le paramètre régional est une combinaison de code langue-pays, tel que `ar-DZ`, modifiez le nom du dossier et la valeur de la propriété en `ar-DZ`.
+   >Si les paramètres régionaux sont une combinaison de code langue-pays, comme `ar-DZ`, modifiez le nom du dossier et la valeur de la propriété en `ar-DZ`.
 
 1. Copier `login.jsp` :
 
@@ -67,7 +67,7 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
 
 1. Modifiez le fragment de code suivant pour `/apps/livecycle/core/components/login/login.jsp` :
 
-***Le paramètre régional est un code de langue***
+***Les paramètres régionaux sont un code de langue***
 
 ```jsp
 String browserLocale = "en";
@@ -179,7 +179,7 @@ String browserLocale = "en";
     }
 ```
 
-***Pour modifier le paramètre régional par défaut***.
+***Pour modifier les paramètres régionaux par défaut***.
 
 ```jsp
    String browserLocale = "en";
@@ -198,7 +198,7 @@ String browserLocale = "en";
    * de `/libs/livecycle/core/components/login`
    * vers `/apps/livecycle/core/components/login`
 
-1. Modifiez la valeur de la propriété `sling:message` du nœud (sous le dossier du code du paramètre régional souhaité) pour laquelle vous souhaitez modifier le texte. La traduction est effectuée via la clé mentionnée dans la valeur de la propriété `sling:key` du nœud.
+1. Modifiez la valeur de la propriété `sling:message` du nœud (sous le dossier du code des paramètres régionaux souhaité) pour laquelle vous souhaitez modifier le texte. La traduction est effectuée via la clé mentionnée dans la valeur de la propriété `sling:key` du nœud.
 
 1. Pour ajouter une nouvelle paire clé-valeur, effectuez les opérations suivantes : Vérifiez un exemple dans la capture d’écran qui suit.
 

@@ -788,7 +788,7 @@ Voici un exemple de règle imbriquée qui affiche un message concernant l’éli
 
 ![complexexpression](assets/complexexpression.png)
 
-Vous pouvez également faire glisser et déposer des conditions dans une règle pour la modifier. Appuyez et passez le curseur sur la poignée (![handle](assets/handle.png)) avant une condition. Une fois le pointeur affiché sous forme de main comme illustré ci-dessous, faites glisser la condition et déposez-la n’importe où dans la règle. La structure de la règle change.
+Vous pouvez également faire glisser et déposer des conditions dans une règle pour la modifier. Appuyez et passez le curseur sur la poignée (![handle](assets/handle.png)) avant une condition. Une fois le pointeur affiché sous forme de main, comme illustré ci-dessous, faites glisser la condition et déposez-la n’importe où dans la règle. La structure de la règle change.
 
 ![glisser-déposer](assets/drag-and-drop.png)
 
@@ -862,7 +862,7 @@ Règle dans l’éditeur de code
 
 ### Utilisation d’une sortie de fonction dans une règle {#using-a-function-output-in-a-rule}
 
-Dans un formulaire de bon de commande, vous avez le tableau suivant, dans lequel les utilisateurs et les utilisatrices rempliront leurs commandes. Dans ce tableau :
+Dans un formulaire de bon de commande, vous avez le tableau suivant, dans lequel les utilisateurs et utilisatrices rempliront leurs commandes. Dans ce tableau :
 
 * La première ligne est répétable, de sorte que les utilisateurs et utilisatrices puissent commander plusieurs produits et spécifier différentes quantités. Son nom d’élément est `Row1`.
 * Le titre de la cellule dans la colonne Quantité de produit de la ligne répétable est Quantité. Le nom de l’élément pour cette cellule est `productquantity`.
@@ -886,7 +886,7 @@ Règle dans l’éditeur de code
 
 ### Validation d’une valeur de champ à l’aide d’une expression {#validating-a-field-value-using-expression}
 
-Dans le formulaire de bon de commande décrit dans l’exemple précédent, vous souhaitez empêcher l’utilisateur de commander plus d’une quantité d’un produit dont le prix est supérieur à 10 000. Pour ce faire, vous pouvez rédiger pour une règle Valider comme illustré ci-dessous.
+Dans le formulaire de bon de commande décrit dans l’exemple précédent, vous souhaitez empêcher la commande de plus d’une certaine quantité d’un produit dont le prix est supérieur à 10 000. Pour ce faire, vous pouvez rédiger pour une règle Valider comme illustré ci-dessous.
 
 ![example-validate](assets/example-validate.png)
 

@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 434a081a-f9e4-4a0d-8468-55b4ab5a6287
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1155'
-ht-degree: 100%
+source-wordcount: '1154'
+ht-degree: 99%
 
 ---
 
@@ -147,7 +147,7 @@ Pour ajouter des colonnes personnalisées à ces rapports, procédez comme suit�
 
 1. Ajoutez le chemin de la propriété sous le nœud `jcr:content` dans CRXDE à l’aide du sélecteur de chemin de propriété. Vous pouvez également saisir le chemin d’accès dans le champ de chemin d’accès à la propriété.
 
-   ![Faites correspondre le chemin de la propriété des chemins dans jcr:content](assets/property_picker.png)
+   ![Mappez le chemin de propriété à partir des chemins dans jcr:content](assets/property_picker.png)
 
    Pour ajouter d’autres colonnes personnalisées, cliquez sur **[!UICONTROL Ajouter]** et répétez les étapes 5 et 6.
 

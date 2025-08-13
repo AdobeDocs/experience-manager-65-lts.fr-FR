@@ -12,8 +12,8 @@ role: Admin, Developer
 exl-id: 92689d52-6485-4cd5-a04f-4738096a0dba
 source-git-commit: d571dc696e42bae873cd58f2e7f321bd3002f42e
 workflow-type: tm+mt
-source-wordcount: '2338'
-ht-degree: 100%
+source-wordcount: '2377'
+ht-degree: 93%
 
 ---
 
@@ -58,11 +58,11 @@ Nous clonons le [projet Venia](https://github.com/adobe/aem-cif-guides-venia) pu
 
 1. Ajoutez les configurations OSGi nécessaires pour connecter votre instance AEM à une instance Adobe Commerce ou ajoutez les configurations au projet nouvellement créé.
 
-1. À ce stade, vous devriez disposer d’une version fonctionnelle d’un storefront connecté à une instance Adobe Commerce. Accédez à la page `US` > `Home` à l’adresse suivante : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. À ce stade, vous devriez disposer d’une version fonctionnelle d’un storefront connecté à une instance Adobe Commerce. Accédez à la page `US` > `Home` sur : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
    Vous devriez voir que le storefront utilise actuellement le thème Venia. En développant le menu principal du storefront, vous devriez voir différentes catégories indiquant que la connexion à Adobe Commerce fonctionne.
 
-   ![Storefont configuré avec le thème Venia](../assets/style-cif-component/venia-store-configured.png)
+   ![Point de vente digital configuré avec le thème Venia](../assets/style-cif-component/venia-store-configured.png)
 
 ## Bibliothèques client et module ui.frontend {#introduction-to-client-libraries}
 
@@ -204,7 +204,7 @@ Apportez ensuite une légère modification au style du teaser pour voir comment 
 
 Maintenant que les mises à jour du code ont été déployées, ajoutez une nouvelle instance du composant Teaser de produit à la page d’accueil du site à l’aide des outils de création d’AEM. Nous pouvons ainsi afficher les styles mis à jour.
 
-1. Ouvrez un nouvel onglet de navigateur et accédez à la **page d’accueil** du site : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Ouvrez un nouvel onglet du navigateur et accédez à la **Page d’accueil** du site : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
 1. Développez l’outil de recherche de ressources (rail latéral) en mode **Modifier**. Faites basculer le filtre Ressources sur **Produits**.
 
@@ -220,7 +220,7 @@ Maintenant que les mises à jour du code ont été déployées, ajoutez une nouv
 
 Vérifiez ensuite l’inclusion des bibliothèques clientes sur la page.
 
-1. Accédez à la **page d’accueil** du site : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)
+1. Accédez à la **Page d’accueil** du site : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
 1. Sélectionnez le menu **Informations sur la page**, puis cliquez sur **Afficher comme publié(e)** :
 
@@ -256,7 +256,7 @@ Vérifiez ensuite l’inclusion des bibliothèques clientes sur la page.
 
 Il existe plusieurs options pour inclure une bibliothèque côté client. Examinez ensuite comment le projet généré inclut les bibliothèques `clientlib-site` par le biais de [modèles de page](/help/sites-developing/templates.md).
 
-1. Accédez à la **page d’accueil** du site dans l’éditeur AEM : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Accédez à la **Page d’accueil** du site dans l’éditeur AEM : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
 1. Sélectionnez le menu **Informations sur la page**, puis cliquez sur **Éditer le modèle** :
 
@@ -291,7 +291,7 @@ Dans l’exercice précédent, nous avons apporté une mise à jour à un fichie
 
 Le serveur webpack-dev-server crée des proxys des images et d’une partie du code CSS/JavaScript provenant de l’instance locale d’AEM, mais permet au développeur de modifier les styles et le code JavaScript dans le module `ui.frontend`.
 
-1. Dans le navigateur, accédez à la **page d’accueil** et à **Afficher comme publié(e)** : [http://localhost:4502/content/venia/us/en.html?wcmmode=disabled](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled).
+1. Dans le navigateur, accédez à la page **Accueil** et à **Afficher comme publié** : [http://localhost:4502/content/venia/us/en.html?wcmmode=disabled](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled).
 
 1. Affichez la source de la page et la **copie** du code HTML brut de la page.
 
@@ -325,13 +325,13 @@ Le serveur webpack-dev-server crée des proxys des images et d’une partie du c
    $ npm start
    ```
 
-   Vous démarrez ainsi le serveur webpack-dev-server sur [http://localhost:8080/](http://localhost:8080/).
+   Cela démarre le webpack-dev-server sur [http://localhost:8080/](http://localhost:8080/).
 
    >[!CAUTION]
    >
    >Si vous obtenez une erreur liée à Sass, arrêtez le serveur, exécutez la commande `npm rebuild node-sass` et répétez les étapes ci-dessus. Cela peut se produire si vous disposez d’une version de `npm` et de `node` différentes de celles spécifiées dans le projet `aem-cif-guides-venia/pom.xml`.
 
-1. Accédez au dossier [http://localhost:8080/](http://localhost:8080/) dans un nouvel onglet avec le même navigateur qu’une instance d’AEM connectée. Vous devriez voir la page d’accueil Venia via le serveur webpack-dev-server :
+1. Accédez à [http://localhost:8080/](http://localhost:8080/) dans un nouvel onglet avec le même navigateur qu’une instance AEM connectée. Vous devriez voir la page d’accueil Venia via le serveur webpack-dev-server :
 
    ![Serveur de développement webpack sur le port 80](../assets/style-cif-component/webpack-dev-server-port80.png)
 
@@ -450,7 +450,7 @@ Revenez à l’IDE et au projet généré.
 
 Une fois que le code du projet a été déployé dans AEM, les modifications apportées au teaser de produit devraient être visibles.
 
-1. Revenez à votre navigateur et actualisez la page d’accueil : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html). Vous devriez constater que les styles de teaser de produit mis à jour ont été appliqués.
+1. Revenez à votre navigateur et actualisez la page d’accueil : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html). Vous devriez constater que les styles de teaser de produit mis à jour ont été appliqués.
 
    ![Style de teaser de produit mis à jour](../assets/style-cif-component/product-teaser-new-style.png)
 
@@ -460,7 +460,7 @@ Une fois que le code du projet a été déployé dans AEM, les modifications app
 
 ## Résolution des problèmes {#troubleshooting}
 
-Vous pouvez vérifier dans [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) que le fichier CSS mis à jour a été déployé : [http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
+Vous pouvez vérifier dans [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) que le fichier CSS mis à jour a été déployé : [http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
 
 Lors du déploiement de nouveaux fichiers CSS et/ou JavaScript, il est également important de s’assurer que le navigateur ne diffuse pas de fichiers obsolètes. Vous pouvez éliminer ce problème en vidant le cache du navigateur ou en lançant une nouvelle session du navigateur.
 

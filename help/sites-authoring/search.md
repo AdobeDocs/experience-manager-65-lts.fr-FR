@@ -45,7 +45,7 @@ Avec le rail de recherche, vous pouvez effectuer les opérations suivantes :
 
 Pour rechercher et filtrer vos ressources :
 
-1. Ouvrez **Rechercher** (avec la loupe dans la barre d’outils) et saisissez le terme à rechercher. Des suggestions sont faites et peuvent être sélectionnées :
+1. Ouvrez **Rechercher** (avec la loupe dans la barre d’outils) et saisissez le terme de recherche. Des suggestions sont faites et peuvent être sélectionnées :
 
    ![s-01](assets/s-01.png)
 

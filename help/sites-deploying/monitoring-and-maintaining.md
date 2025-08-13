@@ -12,8 +12,8 @@ role: Admin
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '5601'
-ht-degree: 99%
+source-wordcount: '5607'
+ht-degree: 98%
 
 ---
 
@@ -437,7 +437,7 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
    >
    >| `'.'yyyy-MM` | Rotation au début de chaque mois |
    >|---|---|
-   >| `'.'yyyy-ww` | Rotation le premier jour de la semaine (dépend du paramètre régional) |
+   >| `'.'yyyy-ww` | Rotation le premier jour de la semaine (dépend des paramètres régionaux) |
    >| `'.'yyyy-MM-dd` | Rotation à minuit chaque jour |
    >| `'.'yyyy-MM-dd-a` | Rotation à minuit et midi chaque jour |
    >| `'.'yyyy-MM-dd-HH` | Rotation au début de chaque heure |
@@ -878,7 +878,7 @@ Les informations sur le trafic de requêtes (nombre de requêtes pendant une pé
 
 * des différences significatives dans l’activité (c’est-à-dire la distinction entre « de nombreuses requêtes » et « une faible activité »
 * lorsqu’une instance n’est pas utilisée
-* tout redémarrage (les compteurs sont réinitialisés sur 0)
+* tout redémarrage (compteurs réinitialisés sur 0)
 
 Pour automatiser la collecte des informations, vous pouvez également installer un RequestFilter afin d’incrémenter un compteur pour chaque requête. Plusieurs compteurs peuvent être utilisés pour différentes périodes.
 
@@ -1064,7 +1064,7 @@ Voici une liste de suggestions des éléments à vérifier si vous commencez à 
 >
 >Consultez les articles suivants pour plus d’informations :
 >
->* [Images mémoire de threads](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=fr)
+>* [Images mémoire de threads](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-17452)
 >* [Analyse des problèmes de mémoire](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=fr)
 >* [Analyse à l’aide du profileur intégré](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=fr)
 >

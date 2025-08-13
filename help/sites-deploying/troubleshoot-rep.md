@@ -13,7 +13,7 @@ exl-id: 015def31-c7de-42b3-8218-1284afcb6921
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 96%
+ht-degree: 90%
 
 ---
 
@@ -54,7 +54,7 @@ Vérifiez si c’est le cas en vous rendant sur /etc/replication/agents.author.h
    1. Cliquez sur « Outils » dans le menu supérieur.
    1. Cliquez sur le bouton de loupe.
    1. Sélectionnez « XPath » comme type.
-   1. Dans la boîte de dialogue « Requête », saisissez cette requête : /jcr:root/var/eventing/jobs//element(, slingevent:Job) order by @slingevent:created&#42;
+   1. Dans la zone « Requête », saisissez cette requête /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job) order by @slingevent:created
    1. Cliquez sur « Rechercher ».
    1. Dans les résultats, les éléments principaux sont les dernières tâches d’événement Sling. Cliquez sur chacune d’elles et recherchez les réplications bloquées qui correspondent à ce qui apparaît en haut de la file d’attente.
 
@@ -70,7 +70,7 @@ Il est parfois utile de définir tous les journaux de réplication pour qu’ils
    * Fichier journal : logs/replication.log
    * Enregistreur : com.day.cq.replication
 
-1. Si vous pensez que le problème est lié de quelque manière que ce soit à sling eventing/jobs, vous pouvez également ajouter ce package Java™ sous categories:org.apache.sling.event.
+1. Si vous pensez que le problème est lié aux tâches/événements Sling de quelque manière que ce soit, vous pouvez également ajouter ce package Java™ sous categories:org.apache.sling.event
 
 ## Suspension de la file d’attente de l’agent de réplication  {#pausing-replication-agent-queue}
 

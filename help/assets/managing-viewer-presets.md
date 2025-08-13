@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: bb860b28-19ee-4b1c-b420-3f61528156f0
 source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '4396'
+source-wordcount: '4398'
 ht-degree: 79%
 
 ---
@@ -39,7 +39,7 @@ Cette section décrit comment créer, modifier et gérer les paramètres prédé
 
 Toutes les visionneuses prêtes à l’emploi prennent en charge l’accessibilité clavier.
 
-Voir aussi [Accessibilité clavier et navigation](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility).
+Voir aussi [Accessibilité clavier et navigation](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility).
 
 ## Gestion des paramètres prédéfinis de visionneuse {#managing-viewer-presets-1}
 
@@ -55,12 +55,12 @@ Vous pouvez ajouter, modifier, supprimer, publier, dépublier et prévisualiser 
 
 Chaque page web a des besoins différents. Par exemple, vous souhaitez parfois qu‘une page web fournisse un lien qui ouvre la visionneuse HTML5 dans une fenêtre de navigateur distincte. Dans d’autres cas, vous aurez besoin d’incorporer directement la visionneuse HTML5 sur la page d’hébergement. Si c’est le cas, la page web aura une mise en page statique. Autrement, elle peut être « réactive » et son affichage peut être différent en fonction de l’appareil ou de la taille des fenêtres du navigateur. Pour répondre à ces besoins, toutes les visionneuses prédéfinies HTML5 fournies avec Dynamic Media sont compatibles à la fois avec les pages web statiques et réactives.
 
-Consultez la [Bibliothèque d’images réactive](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library) pour plus d’informations sur l’intégration de visionneuses réactives à vos pages web.
+Consultez la [Bibliothèque d’images réactive](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library) pour plus d’informations sur l’intégration de visionneuses réactives à vos pages web.
 
 >[!NOTE]
 >
 >Publiez toutes les visionneuses prêtes à l’emploi avant de les utiliser pour la première fois.
->Consultez la section [Publication de paramètres prédéfinis de visionneuse].(#publishing-viewer-presets)
+>>Consultez la section [Publication de paramètres prédéfinis de visionneuse].(#publishing-viewer-presets)
 
 ### Compatibilité du système de paramètres prédéfinis de la visionneuse {#viewer-preset-system-compatibility}
 
@@ -154,7 +154,7 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
 
 Le tableau suivant identifie tous les paramètres prédéfinis de visionneuse prêts à l’emploi fournis avec Dynamic Media.
 
-Consultez aussi les [Démonstrations en direct](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
+Consultez aussi les [Démonstrations en direct](https://landing.adobe.com/fr/na/dynamic-media/ctir-2755/live-demos.html).
 
 Pour en savoir plus sur les versions de navigateur web et de système d’exploitation compatibles avec les visionneuses, consultez les notes de mise à jour des visionneuses.
 
@@ -163,10 +163,10 @@ Voir « Notes de mise à jour sur les visionneuses » dans la table des matiè
 >[!NOTE]
 >
 >Tous les paramètres prédéfinis de visionneuse prêts à l’emploi de Dynamic Media sont déjà activés mais vous devez les publier.
->Voir [Publication de paramètres de visionneuse prédéfinis](#publishing-viewer-presets).
+>>Voir [Publication de paramètres de visionneuse prédéfinis](#publishing-viewer-presets).
 >
 >Tous les nouveaux paramètres prédéfinis de visionneuse que vous créez et ajoutez doivent être activés *et* publiés.
->Voir [Activation ou désactivation des paramètres prédéfinis de visionneuse](#activating-or-deactivating-viewer-presets) et [Publication de paramètres prédéfinis de visionneuse](#publishing-viewer-presets).
+>>Voir [Activation ou désactivation des paramètres prédéfinis de visionneuse](#activating-or-deactivating-viewer-presets) et [Publication de paramètres prédéfinis de visionneuse](#publishing-viewer-presets).
 
 <table>
  <tbody>
@@ -391,7 +391,7 @@ Experience Manager affiche une grande variété de paramètres prédéfinis de v
 
 **Augmentez le nombre de paramètres prédéfinis de visionneuse qui s’affichent :**
 
-1. Accédez à CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. Accédez à CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Accédez au nœud de liste des paramètres prédéfinis de visionneuse à l’emplacement suivant :
 
    `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
@@ -440,13 +440,13 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
 
      L’éditeur visuel vous permet de voir l’effet d’une propriété spécifique sur un style. Définissez ou ajustez une propriété pour voir quel effet elle a sur la visionneuse instantanément à l’aide de l’exemple situé à gauche de l’éditeur.
 
-     Les propriétés de style CSS de chaque type de paramètre prédéfini de visionneuse sont décrites dans la rubrique d’aide Personnalisation de la visionneuse *`<viewer name>`* dans le [Guide de référence des visionneuses](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources). Par exemple, si vous créez un paramètre prédéfini de visionneuse de type `Mixed_Media`, consultez [Personnalisation des visionneuses de médias mixtes](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer) pour une liste et une description de chaque propriété.
+     Les propriétés de style CSS de chaque type de paramètre prédéfini de visionneuse sont décrites dans la rubrique d’aide Personnalisation de la visionneuse *`<viewer name>`* dans le [Guide de référence des visionneuses](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources). Par exemple, si vous créez un paramètre prédéfini de visionneuse de type `Mixed_Media`, consultez [Personnalisation des visionneuses de médias mixtes](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer) pour une liste et une description de chaque propriété.
 
    * Si vous avez défini des paramètres de style dans un fichier CSS distinct, vous pouvez charger le fichier CSS dans AEM Assets. Sélectionnez **[!UICONTROL Importer CSS]** dans le menu déroulant **[!UICONTROL Type sélectionné]**. Si nécessaire, faites défiler l’éditeur visuel vers le haut pour trouver le fichier CSS chargé et l’associer au paramètre prédéfini de visionneuse.
 
      Lorsque vous importez un fichier CSS, l’éditeur visuel vérifie que le CSS utilise des marqueurs de visionneuse adaptés. Si vous créez par exemple une visionneuse de zoom, toutes les règles CSS que vous importez doivent être définies à l’aide de son nom de classe de visionneuse `.s7mixedmediaviewer` défini sur un élément de visionneuse parent.
 
-     Vous pouvez importer des CSS arbitraires créés manuellement, à condition qu’ils définissent correctement les marqueurs CSS d’une visionneuse donnée. (Les marqueurs CSS sont décrits dans l’une des rubriques d’aide « Personnalisation des *&lt;nom de la visionneuse>* » du [ Guide de référence des visionneuses](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources). Par exemple, si vous souhaitez en savoir plus sur les marqueurs CSS de la visionneuse Zoom, voir [Personnalisation de la visionneuse Zoom](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer).) Il se peut toutefois que l’éditeur visuel ne comprenne pas certaines valeurs CSS. Dans de tels cas, l’éditeur visuel tente d’ignorer les erreurs de sorte que le code CSS continue à fonctionner.
+     Vous pouvez importer des CSS arbitraires créés manuellement, à condition qu’ils définissent correctement les marqueurs CSS d’une visionneuse donnée. (Les marqueurs CSS sont décrits dans l’une des rubriques d’aide « Personnalisation des *&lt;nom de la visionneuse>* » du [ Guide de référence des visionneuses](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources). Par exemple, si vous souhaitez en savoir plus sur les marqueurs CSS de la visionneuse Zoom, voir [Personnalisation de la visionneuse Zoom](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer).) Il se peut toutefois que l’éditeur visuel ne comprenne pas certaines valeurs CSS. Dans de tels cas, l’éditeur visuel tente d’ignorer les erreurs de sorte que le code CSS continue à fonctionner.
 
    >[!NOTE]
    >
@@ -472,7 +472,7 @@ Par exemple, pour le type *VideoPlayer*, sous **[!UICONTROL Modificateurs]** > 
 
    De nombreux composants de l’éditeur visuel disposent d’une description détaillée. Ces descriptions s’affichent dans des zones bleues lorsque vous développez un composant pour afficher ses paramètres associés.
 
-   Certains types de visionneuses comportent des composants qui vous permettent de spécifier des commandes de diffusion d’images dans un champ de texte **[!UICONTROL Commande IS]**. Pour obtenir la liste des commandes que vous pouvez utiliser, voir le [Guide de référence de l’API IS](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home).
+   Certains types de visionneuses comportent des composants qui vous permettent de spécifier des commandes de diffusion d’images dans un champ de texte **[!UICONTROL Commande IS]**. Pour obtenir la liste des commandes que vous pouvez utiliser, voir le [Guide de référence de l’API IS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home).
 
    >[!NOTE]
    >
@@ -559,9 +559,9 @@ Les paramètres prédéfinis de visionneuse disponibles dans l’interface utili
 **Pour activer ou désactiver les paramètres prédéfinis de visionneuse :**
 
 1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez le logo Experience Manager. Ensuite, dans le rail de gauche, sélectionnez **[!UICONTROL Outils]** (icône de marteau) > **[!UICONTROL Assets]** > **[!UICONTROL Paramètres prédéfinis de la visionneuse]**.
-1. Dans la page Paramètre prédéfini de la visionneuse, sous l’en-tête de colonne **[!UICONTROL État]**, sélectionnez le curseur pour activer ou désactiver un paramètre de visionneuse prédéfini.
+1. Dans la page Paramètre prédéfini de la visionneuse, sous l’en-tête de colonne **[!UICONTROL État]**, sélectionnez le bouton (bascule) pour activer ou désactiver un paramètre de visionneuse prédéfini.
 
-   Le curseur des paramètres de visionneuse prédéfinis activés se situe à droite, dans une boîte bleue ; le curseur des paramètres de visionneuse prédéfinis désactivés se situe à gauche, dans une boîte gris clair.
+   Le bouton (bascule) des paramètres de visionneuse prédéfinis activés se situe à droite, dans une boîte bleue ; le bouton (bascule) des paramètres de visionneuse prédéfinis désactivés se situe à gauche, dans une boîte gris clair.
 
 ## Publication de paramètres prédéfinis de visionneuse {#publishing-viewer-presets}
 

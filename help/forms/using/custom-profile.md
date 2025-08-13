@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 1f7c1213-4100-45d2-8083-531ff8d413e0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '654'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Un profil est un nœud de ressources dans [Apache Sling](https://sling.apache.org/). Il représente une version personnalisée du service de rendu HTML5 forms. Vous pouvez utiliser le service de rendu HTML5 Forms pour personnaliser l’apparence, le comportement et les interactions de HTML5 Forms. Un nœud de profil existe dans le dossier `/content` du référentiel JCR. Vous pouvez mettre le nœud directement sous le dossier `/content` ou tout autre sous-dossier du dossier `/content`.
 
-Le nœud de profil présente la propriété **sling:resourceSuperType** et la valeur par défaut est **xfaforms/profile**.  Le script de génération du nœud figure dans le dossier /libs/xfaforms/profile.
+Le nœud de profil possède la propriété **sling:resourceSuperType** et la valeur par défaut est **xfaforms/profile**.  Le script de génération du nœud figure dans le dossier /libs/xfaforms/profile.
 
 Les scripts Sling sont des scripts JSP. Ces scripts JSP servent de conteneurs pour rassembler le code HTML du formulaire demandé et les artefacts JS/CSS requis. Ces scripts Sling sont également appelés des **scripts de rendu de profil**. Le rendu de profil appelle le service Forms OSGi afin de générer le formulaire demandé.
 
@@ -64,7 +64,7 @@ Pour créer un profil personnalisé, procédez comme suit :
 
 1. Copiez le paramètre par défaut du nœud et collez le nœud dans un autre dossier(*/content/profiles*) intitulé *hrform*.
 
-1. Sélectionnez le nouveau nœud, *hrform*, puis ajoutez une propriété de chaîne : *sling:resourceType* avec la valeur : *hrform/demo*.
+1. Sélectionnez le nouveau nœud, *hrform*, puis ajoutez une propriété de chaîne : *sling:resourceType* avec la valeur : *hrform/demo*.
 
 1. Cliquez sur Enregistrer tout dans le menu de la barre d’outils pour enregistrer les modifications.
 

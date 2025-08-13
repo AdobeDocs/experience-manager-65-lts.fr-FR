@@ -1,6 +1,6 @@
 ---
 title: Prise en charge des clauses d’image pour HTML5 forms
-description: HTML5 forms prend en charge les clauses d’image XFA pour afficher la valeur et la valeur formatée de la date, du texte et des synboles numériques.
+description: Les formulaires HTML5 prennent en charge les clauses d’image XFA pour afficher la valeur et la valeur formatée de la date, du texte et des symboles numériques.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 # Prise en charge des clauses d’image pour HTML5 forms {#picture-clause-support-for-html-forms}
 
-HTML5 forms prend en charge les clauses d’image XFA pour afficher la valeur et la valeur formatée de la date, du texte et des synboles numériques. Les expressions de clause d’image suivantes sont prises en charge :
+Les formulaires HTML5 prennent en charge les clauses d’image XFA pour afficher la valeur et la valeur formatée de la date, du texte et des symboles numériques. Les expressions de clause d’image suivantes sont prises en charge :
 
 * category(locale){picture-clause} | category(locale){picture-clause} | category(locale){picture-clause}
 * category.subcategory{}

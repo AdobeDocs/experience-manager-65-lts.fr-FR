@@ -12,8 +12,8 @@ role: Developer
 exl-id: efa4b828-0807-40ac-81a0-1090cac9a257
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2967'
-ht-degree: 99%
+source-wordcount: '2973'
+ht-degree: 97%
 
 ---
 
@@ -302,7 +302,7 @@ Le composant de magasin de contexte `/libs/cq/personalization/components/context
 
 Pour effectuer le rendu des données de magasin à l’aide d’un composant genericstore, vous devez effectuer les opérations suivantes :
 
-* Ajouter la balise personalization:storeRendererTag au script JSP du composant pour identifier le nom du magasin de sessions.
+* Ajoutez la balise de personnalisation :storeRendererTag au script JSP du composant pour identifier le nom du magasin de sessions.
 * Implémenter une méthode de rendu sur la classe d’un magasin de sessions.
 
 #### Identification du magasin de sessions genericstore {#identifying-the-genericstore-session-store}
@@ -490,9 +490,9 @@ Dans cet exemple, vous créez un composant de magasin de contexte qui récupère
 
 Créez une application CQ et ajoutez le composant geoloc.
 
-1. Ouvrez CRXDE Lite dans votre navigateur Web ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. Ouvrez CRXDE Lite dans votre navigateur web ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Cliquez avec le bouton droit de la souris sur le dossier `/apps`, puis cliquez sur Créer > Créer un dossier. Indiquez le nom `myapp`, puis cliquez sur OK.
-1. De même, sous `myapp`, créez un dossier nommé `contextstores`. &grave;&grave;
+1. De même, sous `myapp`, créez un dossier nommé `contextstores`. ``
 1. Cliquez avec le bouton droit de la souris sur le dossier `/apps/myapp/contextstores`, puis sélectionnez Créer > Créer un composant. Spécifiez les valeurs de propriété suivantes, puis cliquez sur Suivant :
 
    * Libellé : geoloc
@@ -513,12 +513,12 @@ Le composant de magasin de contexte nécessite une boîte de dialogue Modifier. 
 
    * store
    * properties
-   * thumbnail
+   * miniature
 
 1. Cliquez avec le bouton droit sur le nœud `/apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items` et cliquez sur Créer > Créer un nœud. Saisissez les valeurs de propriété ci-dessous, puis cliquez sur OK :
 
    * Nom : static
-   * Type : cq:Widget
+   * Type : cq:Widget
 
 1. Ajoutez les propriétés suivantes au nœud :
 
@@ -595,7 +595,7 @@ Ajoutez le code au fichier JSP du composant geoloc pour retourner les données d
 
 Ajoutez le composant de lieu de stockage à ClientContext afin qu’il soit initialisé au chargement de la page.
 
-1. Ouvrez la page d’accueil de Geometrixx Outdoors sur l’instance de création ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Ouvrez la page d’accueil de Geometrixx Outdoors sur l’instance de création ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Appuyez sur Ctrl+Alt+C (Windows) ou Ctrl+Option+C (Mac) pour ouvrir le contexte client.
 1. Cliquez sur l’icône de modification en haut de ClientContext pour ouvrir ClientContext Designer.
 

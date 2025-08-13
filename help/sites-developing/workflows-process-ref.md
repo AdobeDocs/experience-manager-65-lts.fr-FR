@@ -11,8 +11,8 @@ role: Developer
 exl-id: 20fd27e2-0eb7-4fab-a56a-f83816947579
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 100%
+source-wordcount: '1071'
+ht-degree: 98%
 
 ---
 
@@ -208,7 +208,7 @@ Verrouille la payload du workflow.
 L’étape n’a aucun effet dans les cas suivants :
 
 * Le payload est déjà verrouillé.
-* Le nœud de payload ne comporte pas de contenu enfant jcr:content.
+* Le nœud de payload ne contient pas de nœud enfant jcr:content
 
 ### UnlockProcess {#unlockprocess}
 
@@ -223,7 +223,7 @@ Déverrouille la payload du workflow.
 L’étape n’a aucun effet dans les cas suivants :
 
 * Le payload est déjà déverrouillé.
-* Le nœud de payload ne comporte pas de contenu enfant jcr:content.
+* Le nœud de payload ne contient pas de nœud enfant jcr:content
 
 ## Processus de contrôle de version {#versioning-processes}
 

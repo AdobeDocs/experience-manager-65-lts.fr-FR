@@ -1,5 +1,5 @@
 ---
-title: Composant Separator dans les formulaires adaptatifs
+title: Composant Séparateur dans les formulaires adaptatifs
 description: Vous pouvez utiliser le composant séparateur pour isoler visuellement les sections d’un formulaire.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ---
 
-# Composant Separator dans les formulaires adaptatifs{#separator-component-in-adaptive-forms}
+# Composant Séparateur dans les formulaires adaptatifs{#separator-component-in-adaptive-forms}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une approche plus ancienne de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 

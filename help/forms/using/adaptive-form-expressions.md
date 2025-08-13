@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: 7192ee1d-dc3f-4d90-919f-6329b434e18b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2781'
-ht-degree: 100%
+source-wordcount: '2780'
+ht-degree: 99%
 
 ---
 
@@ -278,7 +278,7 @@ Comme mentionné ci-dessus, les formulaires adaptatifs permettent à l’auteur 
 Exécutez les étapes suivantes pour créer un modèle personnalisé destiné à un type de champ spécifique et pour le réutiliser avec d’autres champs du même type :
 
 1. Accédez à CRXDE Lite sur votre instance de création.
-1. Créez un dossier pour conserver vos modèles personnalisés. Sous le répertoire /apps , créez un nœud de type sling:folder. Par exemple, créez un nœud appelé `customPatterns`. Sous ce nœud, créez un autre nœud du type `nt:unstructed` et appelez-le `textboxpatterns`. Ce nœud contient les différents modèles personnalisés que vous souhaitez ajouter.
+1. Créez un dossier pour conserver vos modèles personnalisés. Dans le répertoire /apps, créez un nœud de type sling:folder. Par exemple, créez un nœud appelé `customPatterns`. Sous ce nœud, créez un autre nœud du type `nt:unstructed` et appelez-le `textboxpatterns`. Ce nœud contient les différents modèles personnalisés que vous souhaitez ajouter.
 1. Ouvrez l’onglet Propriétés du nœud créé. Par exemple, ouvrez l’onglet Propriétés de `textboxpatterns`. Ajoutez la propriété `guideComponentType` à ce nœud et définissez sa valeur sur *fd/af/components/formatter/guideTextBox*.
 
 1. La valeur de cette propriété dépend du champ pour lequel vous souhaitez définir les modèles. Pour un champ numérique, la valeur de la propriété `guideComponentType` est *fd/af/components/formatter/guideNumericBox*. La valeur du champ de sélecteur de date est *fd/af/components/formatter/guideDatepicker*.

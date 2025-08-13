@@ -10,8 +10,8 @@ role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '3330'
-ht-degree: 94%
+source-wordcount: '3337'
+ht-degree: 93%
 
 ---
 
@@ -295,7 +295,7 @@ Vous pouvez utiliser le fichier de configuration avec les options présentées c
 
 Quand la mise à niveau est effectuée à partir d’une mise en œuvre de cache plus ancienne (avant Oak 1.6), la structure du répertoire du cache du système de fichiers local est différente. Dans l’ancienne structure de cache, les fichiers téléchargés et chargés étaient placés directement sous le chemin d’accès au cache. La nouvelle structure permet d’isoler les chargements des téléchargements afin de les stocker dans deux répertoires nommés `upload` et `download` dans le chemin du cache. Le processus de mise à niveau doit être transparent et tout chargement en attente doit être planifié. De plus, les fichiers précédemment chargés dans le cache seront placés dans le cache lors de l’initialisation.
 
-Il est également possible de mettre le cache à niveau hors ligne à l’aide de la commande oak-run `datastorecacheupgrade`. Pour plus d’informations sur l’exécution de la commande, consultez le fichier [lisez-moi](https://svn.apache.org/repos/asf/jackrabbit/oak/trunk/oak-run/README.md) du module oak-run.
+Il est également possible de mettre le cache à niveau hors ligne à l’aide de la commande oak-run `datastorecacheupgrade`. Pour plus d’informations sur l’exécution de la commande, consultez le fichier [lisez-moi](https://svn.apache.org/repos/asf/jackrabbit/oak/trunk/oak-run/README.md ) du module oak-run.
 
 Le cache est soumis à une limite de taille qui peut être configurée à l’aide du paramètre cacheSize.
 
@@ -318,7 +318,7 @@ Les chargements ayant échoué (en raison d’une interruption du réseau, par e
 Pour configurer la réplication sans binaires avec S3, les étapes suivantes sont requises :
 
 1. Installez les instances de création et de publication et assurez-vous qu’elles sont correctement démarrées.
-1. Accédez aux paramètres de l’agent de réplication, en ouvrant une page sur *https://localhost:4502/etc/replication/agents.author/publish.html*.
+1. Accédez aux paramètres de l’agent de réplication en ouvrant une page sur *https://localhost:4502/etc/replication/agents.author/publish.html*.
 1. Appuyez sur le bouton **Modifier** dans la section **Paramètres**.
 1. Modifiez l’option **Type de sérialisation** en **Sans fichier binaire**.
 
@@ -436,7 +436,7 @@ Vous pouvez utiliser le fichier de configuration avec les options suivantes :
 * azureSas=&quot;&quot; : dans la version 1.6.3 du connecteur, la signature d’accès partagé Azure (SAS) est pris en charge. **Si les informations d’identification SAS et de stockage figurent dans le fichier de configuration, SAS a la priorité.** Pour plus d’informations sur SAS, consultez la [documentation officielle](https://learn.microsoft.com/fr-fr/azure/storage/common/storage-sas-overview). Assurez-vous que le caractère ’=’ est placé dans une séquence d’échappement telle que ’\=’.
 
 * azureBlobEndpoint=&quot;&quot; : point d’entrée Blob Azure. Par exemple, https://&lt;storage-account>.blob.core.windows.net.
-* accessKey=&quot;&quot; : nom du compte de stockage. Pour plus d’informations sur les informations d’identification de l’authentification Microsoft® Azure, reportez-vous à la [documentation officielle](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
+* accessKey=&quot;&quot; : nom du compte de stockage. Pour plus d’informations sur les informations d’identification de l’authentification Microsoft® Azure, reportez-vous à la [documentation officielle](https://learn.microsoft.com/fr-fr/azure/storage/common/storage-account-create).
 
 * secretKey=&quot;&quot; : clé d’accès au stockage. Assurez-vous que le caractère ’=’ est placé dans une séquence d’échappement telle que ’\=’.
 * container=&quot;&quot; : nom du conteneur de stockage d’objets blob Microsoft® Azure. Le conteneur est le regroupement d’un ensemble d’objets blob. Pour plus d’informations, consultez la [documentation officielle](https://learn.microsoft.com/fr-fr/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
@@ -465,13 +465,13 @@ accessKey="ASDASDERFAERAER"
 secretKey="28932hfjlkwdo8fufsdfas\=\="
 ```
 
-## Nettoyage de la mémoire du magasin de données  {#data-store-garbage-collection}
+## Récupération de l’espace mémoire du magasin de données  {#data-store-garbage-collection}
 
-Le processus de nettoyage de la mémoire du magasin de données est utilisé pour supprimer tous les fichiers inutilisés dans le magasin de données en vue de libérer de l’espace disque.
+Le processus de récupération de l’espace mémoire du magasin de données est utilisé pour supprimer tous les fichiers inutilisés dans le magasin de données en vue de libérer de l’espace disque.
 
-Vous pouvez exécuter le nettoyage de la mémoire du magasin de données en :
+Vous pouvez exécuter la récupération de l’espace mémoire du magasin de données en :
 
-1. En accédant à la console JMX qui se trouve à l’adresse *https://&lt;serveraddress:port>/system/console/jmx*
+1. Accédez à la console JMX à l’adresse *https://&lt;serveraddress:port>/system/console/jmx*
 1. Recherche de **RepositoryManagement.** Une fois que vous avez trouvé le gestionnaire de référentiel MBean, cliquez dessus pour afficher les options disponibles.
 1. Faites défiler la page jusqu’à la fin, puis cliquez sur le lien **startDataStoreGC(boolean markOnly)**.
 1. Dans la boîte de dialogue suivante, saisissez `false` pour le paramètre `markOnly`, puis cliquez sur **Invoquer** :
@@ -486,20 +486,20 @@ Vous pouvez exécuter le nettoyage de la mémoire du magasin de données en :
 
 >[!NOTE]
 >
->Lorsque la récupération de l’espace mémoire est effectuée dans une configuration de magasin de données partagé ou en cluster (avec Mongo ou Segment Tar), le journal peut afficher des avertissements sur l’impossibilité de supprimer certains ID de blob. Les ID de blob supprimés au cours d’une récupération de l’espace mémoire antérieure sont à nouveau référencés de manière incorrecte par d’autres nœuds partagés ou en cluster qui n’ont pas d’informations sur les suppressions des ID. Lorsque le nettoyage est effectué, un avertissement est donc enregistré dans le journal après une tentative de suppression d’un ID qui avait déjà été supprimé lors du précédent nettoyage. Ce comportement n’a toutefois aucune incidence sur les performances ou la fonctionnalité.
+>Lorsque la récupération de l’espace mémoire est effectuée dans une configuration de magasin de données partagé ou en cluster (avec Mongo ou Segment Tar), le journal peut afficher des avertissements sur l’impossibilité de supprimer certains ID de blob. Les ID de blob supprimés au cours d’une récupération de l’espace mémoire antérieure sont à nouveau référencés de manière incorrecte par d’autres nœuds partagés ou en cluster qui n’ont pas d’informations sur les suppressions des ID. Lorsque la récupération de l’espace mémoire est effectuée, un avertissement est donc enregistré dans le journal après une tentative de suppression d’un ID qui avait déjà été supprimé lors du cycle précédent. Ce comportement n’a toutefois aucune incidence sur les performances ou la fonctionnalité.
 
 >[!NOTE]
 >
->Si vous utilisez une configuration de magasin de données partagée et que le nettoyage de la mémoire du magasin de données est désactivé, l’exécution de la tâche de nettoyage du binaire Lucene peut soudainement augmenter l’espace disque utilisé. Envisagez de désactiver BlobTracker sur toutes les instances de création et de publication en procédant comme suit :
+>Si vous utilisez une configuration de magasin de données partagée et que la récupération de l’espace mémoire du magasin de données est désactivée, l’exécution de la tâche de nettoyage du binaire Lucene peut soudainement augmenter l’espace disque utilisé. Envisagez de désactiver BlobTracker sur toutes les instances de création et de publication en procédant comme suit :
 >
 >1. Désactivez l’instance AEM.
 >2. Ajoutez le paramètre `blobTrackSnapshotIntervalInSecs=L"0"` dans le fichier `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`. Ce paramètre nécessite Oak 1.12.0, 1.10.2 ou une version ultérieure.
 >3. Redémarrez l’instance AEM.
 
-Avec des versions plus récentes d’AEM, le nettoyage de la mémoire du magasin de données peut également être effectué sur des magasins de données partagés par plusieurs référentiels. Pour pouvoir exécuter la récupération de l’espace mémoire dumagasin de données sur un magasin de données partagé, procédez comme suit :
+Avec des versions plus récentes d’AEM, la récupération de l’espace mémoire du magasin de données peut également être effectuée sur des magasins de données partagés par plusieurs référentiels. Pour pouvoir exécuter la récupération de l’espace mémoire dumagasin de données sur un magasin de données partagé, procédez comme suit :
 
-1. Vérifiez que les tâches de maintenance configurées pour le nettoyage de la mémoire du magasin de données sont désactivées sur toutes les instances de référentiel partageant le magasin de données.
-1. Exécutez les étapes mentionnées dans [Nettoyage de la mémoire binaire](/help/sites-deploying/data-store-config.md#data-store-garbage-collection) sur **toutes** les instances de référentiel partageant le magasin de données. Veillez toutefois à saisir `true` pour le paramètre `markOnly` avant de cliquer sur le bouton Invoquer :
+1. Vérifiez que les tâches de maintenance configurées pour la récupération de l’espace mémoire du magasin de données sont désactivées sur toutes les instances de référentiel partageant le magasin de données.
+1. Exécutez les étapes mentionnées dans [Récupération de l’espace mémoire binaire](/help/sites-deploying/data-store-config.md#data-store-garbage-collection) sur **toutes** les instances de référentiel partageant le magasin de données. Veillez toutefois à saisir `true` pour le paramètre `markOnly` avant de cliquer sur le bouton Invoquer :
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 

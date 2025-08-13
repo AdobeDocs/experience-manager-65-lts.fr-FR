@@ -36,6 +36,6 @@ Modifiez les paramètres de base de données. Le paramètre le plus important es
 
 >[!NOTE]
 >
->Ce paramètre n’affecte pas la gestion des transactions, car il ne fait que modifier la longueur de relecture du fichier journal qui doit être effectuée au démarrage.
+>Ce paramètre n’affecte pas le comportement transactionnel, car il ne fait que modifier la longueur de relecture du fichier journal qui doit être effectuée au démarrage.
 
 Augmentez autant que possible l’espace alloué au journal et au fichier de données, pour qu’il soit supérieur à la base de données initiale. Essayez de calculer la croissance de la base de données sur une année. Dans l’idéal, le fichier journal et le fichier de données se trouvent dans un espace contigu de manière à ce que les données ne soient pas fragmentées sur tout le disque.

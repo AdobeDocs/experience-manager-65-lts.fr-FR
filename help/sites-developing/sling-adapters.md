@@ -338,7 +338,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 
 #### Sécurité {#security}
 
-**Authorizable**, **User et &#x200B;** Group** s’adaptent à :
+**Authorizable**, **User et **Group** s’adaptent à :
 
 | [Node](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Renvoie le nœud racine utilisateur/groupe. |
 |---|---|

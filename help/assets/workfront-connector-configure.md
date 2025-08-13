@@ -8,8 +8,8 @@ solution: Experience Manager, Workfront
 exl-id: 810be820-b577-4035-9fda-3d919361c58c
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 100%
+source-wordcount: '1696'
+ht-degree: 99%
 
 ---
 

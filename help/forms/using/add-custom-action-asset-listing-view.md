@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: a27c4469-6430-4a68-ba2c-7fb0ddebb263
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 100%
+source-wordcount: '1329'
+ht-degree: 98%
 
 ---
 
@@ -62,7 +62,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisate
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin :** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
+      **Chemin :** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
       **Emplacement :** /apps/
 
@@ -82,7 +82,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisate
 
       **Nom :** downloadFlatPDF (ou le nom que vous souhaitez donner à cette propriété).
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Cliquez sur le nœud que vous avez créé (ici downloadFlatPDF). CRX affiche les propriétés du nœud.
 
@@ -254,7 +254,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisate
 
       **Nom :** letterpdfdownloader (ou le nom que vous souhaitez donner à cette propriété - doit être unique. Si vous utilisez ici un autre nom, spécifiez le même dans la variable ACTION_URL du fichier formaction.js).
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Cliquez sur le nouveau nœud que vous avez créé (ici downloadFlatPDF). CRX affiche les propriétés du nœud.
 

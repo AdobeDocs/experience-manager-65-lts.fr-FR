@@ -13,8 +13,8 @@ hidefromtoc: true
 exl-id: 23fab14d-3658-4fd3-88c1-fc71f1ac0400
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '1901'
-ht-degree: 100%
+source-wordcount: '1912'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ Par exemple, un rappel de tâche est configuré pour se produire trois jours ouv
 
 >[!NOTE]
 >
->Lors du calcul des dates et heures à l’aide de calendriers professionnels, AEM Forms utilise la date et l’heure du serveur sur lequel il s’exécute et ne s’adapte pas à la différence entre les fuseaux horaires. Par exemple, si un rappel de tâche est planifié à 10 h 00 sur un serveur s’exécutant à Londres, mais que l’utilisateur ou l’utilisatrice recevant le rappel est à New York City, il ou elle recevra le rappel à 5 h 00 (heure locale).
+>Lors du calcul des dates et heures à l’aide de calendriers professionnels, AEM Forms utilise la date et l’heure du serveur sur lequel il s’exécute et ne s’adapte pas à la différence entre les fuseaux horaires. Par exemple, si un rappel de tâche est planifié pour se produire à 10 :00 sur un serveur exécuté à Londres, mais que l’utilisateur recevant le rappel se trouve à New York, il recevra le rappel à 5 :00 heure locale.
 
 ## Utiliser le calendrier professionnel par défaut {#using-the-default-business-calendar}
 
@@ -79,7 +79,7 @@ Si votre organisation comprend différents groupes d’utilisateurs et utilisatr
 
    Si vous sélectionnez cette option, un événement qui se produit avant la plage horaire définie est déplacé au début de la plage horaire et un événement qui se produit après est déplacé à l’heure de début du prochain jour ouvré.
 
-   Par exemple, supposons qu’une personne soit affectée à une tâche à 2 h le mardi et que le rappel de cette tâche soit défini sur deux jours ouvrés. Sans les heures de bureau, le rappel a lieu à 2 h le jeudi. Si les heures de bureau sont définies de 8 h à 17 h, le rappel est déplacé à 8 h le jeudi. Sans les heures de bureau, si un rappel est créé pour 18 h le mardi, il aura lieu après les heures de bureau le jeudi. Si les heures de bureau sont définies de 8 h à 17 h, le rappel aura lieu à 8 h le vendredi.
+   Supposons, par exemple, qu’une tâche soit affectée un mardi à 2:00 heures et que le rappel de cette tâche soit défini sur deux jours ouvrables. Sans les heures de bureau, le rappel se produirait à 2:00 le jeudi. Si les heures de bureau sont définies de 8 :00 à 17 :00, le rappel est envoyé à 8 :00 le jeudi. Sans les heures de bureau, si un événement de rappel a été créé à 18 :00 le mardi, le rappel se produit après les heures de bureau le jeudi. Les heures d’ouverture étant définies de 8 :00 à 17 :00, le rappel se produirait le vendredi à 8 :00.
 
 1. Dans le calendrier de gauche, double-cliquez sur un autre jour non ouvré, comme congés. Vous ne pouvez pas sélectionner de jours sur des périodes antérieures. Les jours non ouvrés sélectionnés apparaissent dans une liste sur la droite et la date s’affiche deux fois sur une seule ligne. Sélectionnez la date sur la gauche pour pouvoir taper le nom ou la description du jour non ouvré.
 

@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: a74c52bc-f639-4fc2-90e5-bac24fbb9ade
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 100%
+source-wordcount: '668'
+ht-degree: 96%
 
 ---
 
@@ -69,8 +69,8 @@ L’éditeur de ressources utilise le sélecteur de formulaire, qui permet de mo
 
 Par exemple :
 
-* Page de formulaire simple : [http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
-* Ressource chargée dans la page de formulaire : [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
+* Page au format brut : [http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
+* Ressource chargée dans la page de formulaire : [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
 
 Les exemples de gestionnaires dans `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) procèdent ainsi :
 

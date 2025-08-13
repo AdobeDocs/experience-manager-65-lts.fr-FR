@@ -185,7 +185,7 @@ Transmettez un document obtenu à partir de Content Services (obsolète) en util
    * Un objet `URLSpec` qui contient des valeurs URI. Cette valeur est un paramètre facultatif. Vous pouvez spécifier `null`.
    * Un objet `Map` qui stocke les pièces jointes. Cette valeur est un paramètre facultatif. Vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
    * Un paramètre de sortie long qui est utilisé pour stocker le nombre de pages.
-   * Un paramètre de sortie de chaîne qui est utilisé pour stocker la valeur du paramètre régional.
+   * Un paramètre de sortie de chaîne qui est utilisé pour stocker la valeur des paramètres régionaux.
    * Un paramètre de sortie `FormsResult` qui est utilisé pour stocker le formulaire PDF interactif `.`.
 
    La méthode `renderPDFForm2` renvoie un objet `FormsResult` qui contient le formulaire PDF interactif.

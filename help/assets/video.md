@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
 source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '10487'
-ht-degree: 100%
+source-wordcount: '10480'
+ht-degree: 99%
 
 ---
 
@@ -295,8 +295,8 @@ Le tableau ci-dessous décrit la taille recommandée, le format et le débit min
 | Taille | Format | Débit minimal |
 |--- |--- |--- |
 | 1 024 × 768 | 4:3 | 4 500 Kbit/s pour la plupart des vidéos. |
-| 1 280 × 720 | 16:9 | 3 000 à 6 000 Kbit/s, selon la quantité de mouvement dans la vidéo. |
-| 1 920 × 1 080 | 16:9 | 6 000 à 8 000 kbit/s, selon la quantité de mouvement dans la vidéo. |
+| 1 280 × 720 | 16 :9 | 3 000 à 6 000 Kbit/s, selon la quantité de mouvement dans la vidéo. |
+| 1 920 × 1 080 | 16 :9 | 6 000 à 8 000 kbit/s, selon la quantité de mouvement dans la vidéo. |
 
 ### Obtention des métadonnées d’un fichier {#obtaining-a-file-s-metadata}
 
@@ -320,10 +320,10 @@ Le tableau suivant décrit comment les résultats de la formule se traduisent pa
 |--- |--- |
 | 1,33 | 4:3 |
 | 0,75 | 3:4 |
-| 1,78 | 16:9 |
+| 1,78 | 16 :9 |
 | 0,56 | 9:16 |
 
-Par exemple, une vidéo qui a une largeur de 1 440 pour une hauteur de 1 080 a un format de 1 440/1 080, soit 1,33. Dans ce cas, vous choisissez un paramètre prédéfini de codage vidéo avec un format de 4:3 pour le codage du fichier vidéo.
+Par exemple, une vidéo d’une largeur de 1 440 × d’une hauteur de 1 080 a un format de 1 440/1 080, soit 1,33. Dans ce cas, vous choisissez un paramètre prédéfini de codage vidéo avec un format de 4:3 pour coder le fichier vidéo.
 
 ### Débit binaire {#bitrate}
 
@@ -447,7 +447,7 @@ Pour que les rapports vidéo fonctionnent correctement, un identifiant de suite 
 
 **Pour afficher un rapport vidéo, procédez comme suit :**
 
-1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez le logo Experience Manager, puis, dans le rail de gauche, sélectionnez **[!UICONTROL Outils]** (icône de marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports vidéo]**.
+1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez le logo Experience Manager, puis, dans le rail de gauche, cliquez sur **[!UICONTROL Outils]** (icône de marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports vidéo]**.
 1. Dans la page Rapport vidéo, effectuez l’une des opérations suivantes :
 
    * Dans le coin supérieur droit, sélectionnez l’icône **Actualiser le rapport vidéo**.
@@ -544,7 +544,7 @@ Voici quelques-uns des cas d’utilisation à prendre en compte pour l’ajout d
 
 Tous les [formats vidéo pris en charge par Dynamic Media](/help/assets/assets-formats.md) et toutes les visionneuses de vidéos Dynamic Media, à l’exception de Dynamic Media *Video_360* sont pris en charge pour une utilisation avec plusieurs sous-titres et pistes audio.
 
-La fonctionnalité de prise en charge de plusieurs sous-titres et pistes audio est disponible pour votre compte Dynamic Media avec une fonctionnalité d’activation qui peut être activée par le service clientèle d’Adobe.
+La fonctionnalité de prise en charge de plusieurs sous-titres et pistes audio est disponible pour votre compte Dynamic Media au moyen d’un bouton (bascule) qui doit être activé par l’Assistance Client d’Adobe.
 
 ### Ajouter plusieurs sous-titres et pistes audio à votre vidéo {#add-msma}
 
@@ -711,7 +711,7 @@ Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-m
 **Pour prévisualiser une vidéo comportant plusieurs sous-titres et pistes audio, procédez comme suit :**
 
 1. Dans **[!UICONTROL Ressources]**, accédez à une vidéo existante à laquelle vous avez ajouté plusieurs sous-titres et pistes audio.
-1. Sélectionnez la ressource vidéo afin de pouvoir l’ouvrir en mode aperçu.
+1. Cliquez sur la ressource vidéo afin de pouvoir l’ouvrir en mode aperçu.
 1. Dans la page d’aperçu, dans le coin supérieur gauche de la page, sélectionnez la liste déroulante, puis sélectionnez **[!UICONTROL Visionneuses]**.
 
    ![Liste déroulante présentant l’option Visionneuses.](assets-dm/msma-selectviewers.png)
@@ -902,7 +902,7 @@ Reportez-vous à la section [WebVTT : The web video text tracks format](https:/
        <ol>
        <li>Accédez à la ressource vidéo <i>publiée</i> à associer au fichier de chapitres que vous avez chargé. N’oubliez pas que les URL ne peuvent être copiées qu’<i>après</i> la <i>publication</i> des ressources. Voir <a href="/help/assets/publishing-dynamicmedia-assets.md">Publication de ressources</a>.</li>
        <li>Dans le menu déroulant, cliquez sur <strong>Visionneuses</strong>.</li>
-       <li>Dans le rail de gauche, sélectionnez le nom du paramètre prédéfini de la visionneuse de vidéos. Un aperçu de la vidéo s’ouvre dans une page distincte.</li>
+       <li>Dans le rail de gauche, cliquez sur le nom du paramètre prédéfini de la visionneuse de vidéos. Un aperçu de la vidéo s’ouvre dans une page distincte.</li>
        <li>Dans le rail de gauche, dans la partie inférieure, cliquez sur <strong>URL</strong>.</li>
        <li>Dans la boîte de dialogue URL, sélectionnez l’URL et copiez-la dans le Presse-papiers, puis collez-la dans un simple éditeur de texte.</li>
        <li>Ajoutez l’URL copiée de la vidéo avec la syntaxe suivante pour l’associer à l’URL copiée dans votre fichier de chapitres :<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
@@ -914,7 +914,7 @@ Reportez-vous à la section [WebVTT : The web video text tracks format](https:/
        <ol>
        <li>Accédez à la ressource vidéo <i>publiée</i> à associer au fichier de chapitres que vous avez chargé. N’oubliez pas que les URL ne peuvent être copiées qu’<i>après</i> la <i>publication</i> des ressources. Voir <a href="/help/assets/publishing-dynamicmedia-assets.md">Publication de ressources</a>.</li>
        <li>Dans le menu déroulant, cliquez sur <strong>Visionneuses</strong>.</li>
-       <li>Dans le rail de gauche, sélectionnez le nom du paramètre prédéfini de la visionneuse de vidéos. Un aperçu de la vidéo s’ouvre dans une page distincte.</li>
+       <li>Dans le rail de gauche, cliquez sur le nom du paramètre prédéfini de la visionneuse de vidéos. Un aperçu de la vidéo s’ouvre dans une page distincte.</li>
        <li>En bas du rail gauche, cliquez sur <strong>Incorporer</strong>.</li>
        <li>Dans la boîte de dialogue Code intégré, sélectionnez et copiez le code entier dans le Presse-papiers, puis collez-le dans un simple éditeur de texte.</li>
        <li>Ajoutez le code intégré de la vidéo avec la syntaxe suivante pour l’associer à l’URL copiée dans votre fichier de chapitres :<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
@@ -1116,7 +1116,7 @@ Voici un exemple de l’API ci-dessus utilisant des servlets écrits dans la sp�
 
 >[!TAB Ajouter une dépendance dans pom.xml]
 
-+++**Ajouter une dépendance dans pom.xml**
++++**Ajouter une dépendance dans pom.xml** 
 
 ```java
 dependency> 
@@ -1131,7 +1131,7 @@ dependency>
 
 >[!TAB Exemple de servlet]
 
-+++**Exemple de servlet**
++++**Exemple de servlet** 
 
 ```java
 @Component
@@ -1210,7 +1210,7 @@ public class ManifestServlet extends HttpServlet {
 
 >[!TAB Classe de réponse pour le servlet]
 
-+++**Classe de réponse pour le servlet**
++++**Classe de réponse pour le servlet** 
 
 ```java
 public class ManifestUrl extends VideoResponse { 
@@ -1240,7 +1240,7 @@ public abstract class VideoResponse {
 
 >[!TAB Fichier des constantes référencé dans le servlet]
 
-+++**Fichier des constantes référencé dans le servlet**
++++**Fichier des constantes référencé dans le servlet** 
 
 ```java
 public final class Constants { 
@@ -1259,7 +1259,7 @@ public final class Constants {
 
 >[!TAB ServletContext]
 
-+++**ServletContext**
++++**ServletContext** 
 
 Montez le servlet ci-dessus à l’aide d’un `servletContext`. Voici un exemple de `servletContext`.
 

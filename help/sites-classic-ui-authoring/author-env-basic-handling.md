@@ -131,15 +131,15 @@ La console **Sites web** répertorie vos pages de contenu dans une arborescence 
 >Sur le nœud siteadmin :
 >
 >définissez la valeur de la propriété :
->`treeAutoExpandMax`
->Sur :
->`/apps/wcm/core/content/siteadmin`
+>>`treeAutoExpandMax`
+>>Sur :
+>>`/apps/wcm/core/content/siteadmin`
 >
 >ou globalement dans le thème :
->définissez la valeur de :
->`TREE_AUTOEXPAND_MAX`
->dans :
->`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
+>>définissez la valeur de :
+>>`TREE_AUTOEXPAND_MAX`
+>>dans :
+>>`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
 >Voir [SiteAdmin dans l’API Widget CQ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) pour plus d’informations.
 

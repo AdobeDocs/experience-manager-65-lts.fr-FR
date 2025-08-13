@@ -43,7 +43,7 @@ Deux méthodes permettent d’identifier les paramètres régionaux du formulair
 Pour remplacer la langue du navigateur des utilisateurs et des utilisatrices, vous pouvez transmettre le paramètre de requête `afAcceptLang` afin de forcer les paramètres régionaux. Par exemple, l’URL ci-dessous a forcé le rendu du formulaire dans les paramètres régionaux japonais :
      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-   * La langue du navigateur défini pour l’utilisateur, qui est spécifiée dans la demande par le biais de l’en-tête `Accept-Language`.
+   * Les paramètres régionaux du navigateur définis pour l’utilisateur ou l’utilisatrice, qui sont spécifiés dans la demande à l’aide de l’en-tête `Accept-Language`.
 
    * Paramètre de langue de l’utilisateur spécifié dans AEM.
 
@@ -52,23 +52,23 @@ Pour remplacer la langue du navigateur des utilisateurs et des utilisatrices, vo
       * Recherchez et ouvrez la configuration **[!UICONTROL du canal Web du formulaire adaptatif et de la communication interactive]**.
       * Modifiez le statut de l’option **[!UICONTROL Utiliser les paramètres régionaux du navigateur]** et **[!UICONTROL enregistrez]** la configuration.
 
-Une fois que le paramètre régional est identifié, le formulaire adaptatif sélectionne le dictionnaire qui lui est spécifique. Si le dictionnaire spécifique au formulaire pour les paramètres régionaux nécessaires est introuvable, il utilise le dictionnaire de la langue dans laquelle le formulaire adaptatif a été créé.
+Une fois que les paramètres régionaux sont identifiés, le formulaire adaptatif sélectionne le dictionnaire qui lui est spécifique. Si le dictionnaire spécifique au formulaire pour les paramètres régionaux nécessaires est introuvable, il utilise le dictionnaire de la langue dans laquelle le formulaire adaptatif a été créé.
 
 En l’absence d’informations sur les paramètres régionaux, le formulaire adaptatif est distribué dans la langue d’origine du formulaire. La langue d’origine est la langue utilisée lors du développement du formulaire adaptatif.
 
-S’il n’existe pas de bibliothèque cliente pour les paramètre régional nécessaire, il cherche une bibliothèque cliente correspondant au code de langue présent dans le paramètre régional. Par exemple, si le paramètre régional demandé est `en_ZA` (anglais d’Afrique du Sud) et qu’il n’existe pas de bibliothèque cliente correspondant à `en_ZA`, le formulaire adaptatif utilise la bibliothèque cliente correspondant à langue `en` (anglais), si elle existe. Toutefois, si aucune de ces bibliothèques n’existe, le formulaire adaptatif utilise le dictionnaire correspondant au paramètre régional `en`.
+S’il n’existe pas de bibliothèque cliente pour les paramètres régionaux nécessaires, il cherche une bibliothèque cliente correspondant au code de langue présent dans les paramètres régionaux. Par exemple, si les paramètres régionaux demandés sont `en_ZA` (anglais d’Afrique du Sud) et qu’il n’existe pas de bibliothèque cliente correspondant à `en_ZA`, le formulaire adaptatif utilise la bibliothèque cliente correspondant à langue `en` (anglais), si elle existe. Toutefois, si aucune de ces bibliothèques n’existe, le formulaire adaptatif utilise le dictionnaire correspondant aux paramètres régionaux `en`.
 
 ## Ajoutez la localisation pour les paramètres régionaux non pris en charge {#add-localization-support-for-non-supported-locales}
 
 AEM Forms prend actuellement en charge la localisation du contenu des formulaires adaptatifs vers l’anglais (en), l’espagnol (es), le français (fr), l’italien (it), l’allemand (de), le japonais (ja), le portugais du Brésil (pt-BR), le chinois (zh-CN), le chinois de Taïwan (zh-TW) et le coréen (ko-KR).
 
-Pour ajouter un nouveau paramètre régional lors de l’exécution des formulaires adaptatifs :
+Pour ajouter de nouveaux paramètres régionaux lors de l’exécution des formulaires adaptatifs :
 
 1. [Ajouter des paramètres régionaux au service GuideLocalizationService](../../forms/using/supporting-new-language-localization.md#p-add-a-locale-to-the-guide-localization-service-br-p)
 
 1. [Ajouter une bibliothèque XFA cliente pour des paramètres régionaux](../../forms/using/supporting-new-language-localization.md#p-add-xfa-client-library-for-a-locale-br-p)
 
-1. [Ajouter la bibliothèque cliente de formulaires adaptatifs pour un paramètre régional](../../forms/using/supporting-new-language-localization.md#p-add-adaptive-form-client-library-for-a-locale-br-p)
+1. [Ajouter la bibliothèque cliente de formulaires adaptatifs pour des paramètres régionaux](../../forms/using/supporting-new-language-localization.md#p-add-adaptive-form-client-library-for-a-locale-br-p)
 1. [Ajouter la prise en charge des paramètres régionaux pour la langue du dictionnaire](../../forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
 1. [Redémarrer le serveur](../../forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
 
@@ -94,7 +94,7 @@ I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js
 ```
 
-### Ajouter la bibliothèque cliente de formulaires adaptatifs pour un paramètre régional {#add-adaptive-form-client-library-for-a-locale-br}
+### Ajouter la bibliothèque cliente de formulaires adaptatifs pour des paramètres régionaux {#add-adaptive-form-client-library-for-a-locale-br}
 
 Créez un nœud de type `cq:ClientLibraryFolder` sous `etc/<folderHierarchy>`, avec la catégorie `guides.I18N.<locale>` et les dépendances `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` et `guide.common`.
 

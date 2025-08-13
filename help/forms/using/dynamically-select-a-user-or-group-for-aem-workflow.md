@@ -9,8 +9,8 @@ feature: Adaptive Forms,Document Services
 exl-id: b3b3567f-df0a-4a24-849c-dcc0b745de63
 source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 100%
+source-wordcount: '870'
+ht-degree: 97%
 
 ---
 
@@ -38,9 +38,9 @@ ECMAScript est un langage de script. Il est utilisé pour les applications de sc
 
 1. Ajoutez le nom d’affichage du script. Ce nom s’affiche dans les étapes du workflow. Pour spécifier le nom :
 
-   1. Développez le nœud du script, cliquez avec le bouton droit de la souris sur **[!UICONTROL jcr:content]**, puis cliquez sur **[!UICONTROL Mixins]**.
+   1. Développez le nœud du script, cliquez avec le bouton droit sur le nœud **[!UICONTROL jcr:content]**, puis cliquez sur **[!UICONTROL Mixins]**.
    1. Ajoutez la propriété `mix:title` dans la boîte de dialogue Modifier les mixins et cliquez sur **OK**.
-   1. Ajoutez la propriété suivante au nœud de script jcr:content :
+   1. Ajoutez la propriété suivante au nœud de script jcr:content :
 
       | Nom | Type | Valeur |
       |--- |--- |--- |

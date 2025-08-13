@@ -132,7 +132,7 @@ Vérifiez les paramètres suivants :
    * Dossiers de langues
 
 1. Si l’un des fichiers ou dossiers ci-dessus n’existe pas, réinstallez le package **adobe-lc-forms-runtime-pkg-&lt;version>.zip**.
-1. Accédez au dossier portant le même nom que le nom du paramètre régional et vérifiez son contenu. Le dossier doit contenir les fichiers suivants :
+1. Accédez au dossier portant le même nom que le nom des paramètres régionaux et vérifiez son contenu. Le dossier doit contenir les fichiers suivants :
 
    * I18N.js
    * js.txt

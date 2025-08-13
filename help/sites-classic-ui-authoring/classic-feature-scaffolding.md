@@ -12,8 +12,8 @@ role: User
 exl-id: 281d8bd3-d6f2-42f8-8d77-b138f0ea5aae
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 100%
+source-wordcount: '1417'
+ht-degree: 98%
 
 ---
 
@@ -155,7 +155,7 @@ Ces deux indications montrent que le composant ne peut pas être modifié, tant 
 >
 >Cela peut être comparé aux [composants hérités lors de la modification du contenu de la page](/help/sites-authoring/editing-content.md#inheritedcomponentsclassicui).
 
-Cliquez sur le verrou ou sur l’icône d’image pour rompre l’héritage :
+Cliquez sur le cadenas ou sur l’icône d’image pour rompre l’héritage :
 
 * Le symbole se transforme en cadenas ouvert.
 * Une fois déverrouillé, vous pouvez modifier le contenu.

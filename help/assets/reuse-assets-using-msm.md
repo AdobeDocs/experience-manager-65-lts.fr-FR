@@ -72,7 +72,7 @@ Vous pouvez créer des Live Copies d’une ressource ou d’un dossier à la foi
 
 Pour créer des Live Copies à l’aide de la première méthode, procédez comme suit :
 
-1. Sélectionnez des ressources ou des dossiers sources. **[!UICONTROL Créer]** > **[!UICONTROL Live Copy]**.
+1. Sélectionnez des ressources ou des dossiers sources. Dans la barre d’outils, cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Live Copy]**.
 
    ![Création d’une Live Copy depuis l’interface d’[!DNL Experience Manager]](assets/create_lc1.png)
 

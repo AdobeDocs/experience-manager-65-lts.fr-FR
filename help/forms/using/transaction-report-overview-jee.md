@@ -31,7 +31,7 @@ Par défaut, l’enregistrement des transactions est désactivé. Pour activer l
 1. Accédez à `/adminui` sur votre instance AEM Forms sur JEE, par exemple `http://10.14.18.10:8080/adminui`.
 1. Connectez-vous en tant qu’**administrateur ou administratrice**.
 1. Accédez à **Paramètres** > **Paramètres de Core System** > **Configurations**.
-1. Cochez la case pour **Activer la création de rapports de transactions** et **Enregistrer** les paramètres.
+1. Cochez la case pour **Activer la création de rapports de transactions**, puis cliquez sur **Enregistrer** pour enregistrer les paramètres.
 
    ![sample-transaction-report-jee](assets/enable-transaction-jee.png)
 

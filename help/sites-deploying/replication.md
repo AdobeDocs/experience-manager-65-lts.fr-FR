@@ -12,8 +12,8 @@ role: Admin
 exl-id: b840d970-9365-4df3-8467-e34abd940074
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '3270'
-ht-degree: 99%
+source-wordcount: '3276'
+ht-degree: 98%
 
 ---
 
@@ -85,7 +85,7 @@ Les détails (configuration et journaux) sont accessibles à partir de la consol
 >* Agents sur l’instance de publication : réplication inverse (boîte d’envoi)
 >
 >Pour vérifier le statut de l’agent ou de la file d’attente, utilisez la console **Outils**.
->Consultez la section [Surveillance de vos agents de réplication](#monitoring-your-replication-agents).
+>>Consultez la section [Surveillance de vos agents de réplication](#monitoring-your-replication-agents).
 
 #### Réplication (création vers publication) {#replication-author-to-publish}
 
@@ -425,7 +425,6 @@ Pour configurer la réplication du contenu pour une instance de publication supp
    * Dans l’onglet **Transfert** :
 
       * Entrez l’URI requis pour la nouvelle instance de publication ; par exemple,
-
         `https://localhost:4504/bin/receive`.
 
       * Saisissez le compte d’utilisateur ou d’utilisatrice spécifique au site utilisé pour la réplication.
@@ -469,7 +468,6 @@ Les agents par défaut sont inclus dans l’installation. Toutefois, une configu
    * Dans l’onglet **Transfert** :
 
       * Entrez l’URI requis pour la nouvelle instance de publication ; par exemple,
-
         `https://localhost:80/dispatcher/invalidate.cache`.
 
       * Saisissez le compte d’utilisateur ou d’utilisatrice spécifique au site utilisé pour la réplication.

@@ -47,7 +47,7 @@ Vous pouvez créer une collection contenant des [références statiques](#creati
 Vous pouvez créer une collection avec des références statiques, par exemple une collection avec des références à des ressources, des dossiers, des collections, des visionneuses à 360° et des visionneuses d’images.
 
 1. Accédez à la console **[!UICONTROL Collections]**.
-1. **[!UICONTROL Créer]**.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Créer]**.
 1. Sur la page **[!UICONTROL Créer une collection]**, saisissez un titre et une description facultative de la collection.
 1. Ajoutez des membres à la collection et affectez les autorisations appropriées. Vous pouvez également sélectionner **[!UICONTROL Collection publique]** pour permettre à tous les utilisateurs d’accéder à la collection.
 

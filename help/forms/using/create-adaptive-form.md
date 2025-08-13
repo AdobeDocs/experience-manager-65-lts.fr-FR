@@ -7,8 +7,8 @@ role: Admin, User, Developer
 exl-id: 87e03ff2-1324-42bd-b4da-54a0c17ce98e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 100%
+source-wordcount: '1336'
+ht-degree: 92%
 
 ---
 
@@ -24,7 +24,7 @@ Les formulaires adaptatifs sont des formulaires dynamiques et réactifs de nouve
 
 Il est plus facile de créer et de gérer des formulaires en suivant un processus approprié. Dans cet article, vous apprenez à :
 
-* [Créer un formulaire adaptatif permettant à un client d’ajouter une adresse de livraison](/help/forms/using/create-adaptive-form.md#step-create-the-adaptive-form)
+* [Créer un formulaire adaptatif permettant à un client ou une cliente d’ajouter une adresse d’expédition](/help/forms/using/create-adaptive-form.md#step-create-the-adaptive-form)
 
 * [Disposition des champs d’un formulaire adaptatif pour afficher et accepter les informations d’un client](/help/forms/using/create-adaptive-form.md#step-add-header-and-footer)
 
@@ -170,8 +170,8 @@ Les étapes suivantes vous permettent de configurer les actions d’envoi dʼe-m
    |--- |--- |
    | Origine | `donotreply@weretail.com` |
    | To | `${customer_Email}` |
-   | Objet | Accusé de réception : vous avez ajouté l’adresse de livraison sur le site web de We.Retail. |
-   | Modèle d’e-mail | Bonjour `${customer_Name}`, l’adresse suivante est ajoutée comme adresse de livraison pour votre compte : <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}` et `${customer_ZIPCode}`<br>. Cordialement, We.Retail |
+   | Objet | Accusé de réception : vous avez ajouté l’adresse d’expédition sur le site web de We.Retail. |
+   | Modèle d’e-mail | Bonjour `${customer_Name}`, l’adresse suivante est ajoutée comme adresse d’expédition pour votre compte : <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}` et `${customer_ZIPCode}`<br>. Cordialement, We.Retail |
    | Inclure les pièces jointes | Activé |
 
    Votre formulaire est prêt. Vous pouvez à présent prévisualiser le formulaire et tester la fonctionnalité. Si vous avez utilisé le nom mentionné dans le tutoriel et avez accédé au formulaire sur la machine qui exécute le serveur AEM [!DNL Forms], le formulaire est disponible à l’adresse [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).
@@ -182,8 +182,8 @@ Vous pouvez utiliser l’option **[!UICONTROL Aperçu]** pour évaluer l’appar
 
 Les formulaires adaptatifs permettent également d’émuler l’expérience d’un formulaire pour différents appareils. Par exemple, pour iPhone, iPad et appareils de bureau. Vous pouvez utiliser les options **[!UICONTROL Prévisualisation]** et **[!UICONTROL Gestionnaire de]** ![l’émulateur](assets/ruler.png) conjointement pour prévisualiser un formulaire pour les appareils dotés de tailles d’écran différentes.
 
-1. Sélectionnez l’option **[!UICONTROL Aperçu]** sur le côté droit de l’éditeur de formulaires. Le formulaire s’ouvre en mode aperçu. Si vous avez utilisé le nom mentionné dans le didacticiel, l’URL de l’aperçu du formulaire est [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
+1. Sélectionnez l’option **[!UICONTROL Aperçu]** sur le côté droit de l’éditeur de formulaires. Le formulaire s’ouvre en mode aperçu. Si vous avez utilisé le nom mentionné dans le tutoriel, l’URL de l’aperçu du formulaire est [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
 1. Utilisez ![gestionnaire](assets/ruler.png) pour visualiser l’apparence du formulaire sur différents appareils.
 1. Remplissez les champs du formulaire, puis sélectionnez **[!UICONTROL Envoyer]**. Le formulaire est envoyé et vous êtes redirigé(e) vers la **page de remerciement** par défaut. Vous pouvez également spécifier une page de remerciement personnalisée. Pour plus de détails, voir [Configuration de la page de redirection](/help/forms/using/configuring-redirect-page.md).
 
-Le formulaire adaptatif pour l’ajout d’une adresse est prêt. Si vous avez utilisé le nom mentionné dans le tutoriel et avez accédé au formulaire sur la machine qui exécute le serveur AEM Forms, le formulaire est alors disponible à l’adresse [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).
+Le formulaire adaptatif pour l’ajout d’une adresse est prêt. Si vous avez utilisé le nom mentionné dans le tutoriel et avez accédé au formulaire sur la machine qui exécute le serveur AEM Forms, le formulaire est disponible à l’adresse [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).

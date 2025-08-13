@@ -38,7 +38,7 @@ Dans AEM, la console Projets permet d’accéder à vos projets et de les gérer
 
 La console Projets est similaire aux autres consoles d’AEM. Elle permet d’agir sur des projets individuels et d’ajuster l’affichage des projets.
 
-### Activation et désactivation de mode {#modes}
+### Activation et désactivation du mode {#modes}
 
 Vous pouvez utiliser le sélecteur de rail pour passer d’un mode console à un autre.
 
@@ -62,7 +62,7 @@ Vous pouvez utiliser le sélecteur d’affichage pour passer de l’affichage de
 
 ### Filtrer votre vue {#filter}
 
-Vous pouvez utiliser le filtre pour afficher tous les projets ou uniquement ceux qui sont actifs.
+Vous pouvez utiliser le filtre pour basculer entre tous les projets et uniquement ceux qui sont actifs.
 
 ![Filtrer](assets/projects-filter.png)
 

@@ -11,8 +11,8 @@ role: Admin, Developer
 exl-id: 25442753-8309-452b-881a-d33ab159d5b2
 source-git-commit: d571dc696e42bae873cd58f2e7f321bd3002f42e
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 100%
+source-wordcount: '562'
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ En outre, les propriétés de champ de boîte de dialogue standard telles que `n
 >[!CAUTION]
 >
 >Le composant `cifproductfield` nécessite la bibliothèque cliente `cif.shell.picker` Pour ajouter une bibliothèque cliente à une boîte de dialogue, vous pouvez utiliser la propriété extraClientlibs.
->[!CAUTION]
+>>[!CAUTION]
 >
 >À compter de la version 2.0.0 des composants principaux CIF, la prise en charge de `id` a été supprimée et remplacée par `uid`. Adobe recommande d’utiliser `sku` ou `slug` comme identifiant de produit. Adobe continue à prendre en charge `id` uniquement pour les projets utilisant les composants principaux CIF version 1.x.
 
@@ -58,7 +58,7 @@ Vous trouverez un exemple complet de `cifproductfield` dans le projet [Composant
 
 Le sélecteur de catégories peut également être utilisé dans une boîte de dialogue de composant de la même manière que le sélecteur de produits.
 
-Le fragment de code suivant peut être utilisé dans une configuration cq:dialog :
+Le fragment de code suivant peut être utilisé dans une configuration cq:dialog :
 
 ```xml
 <category jcr:primaryType="nt:unstructured" 
@@ -78,7 +78,7 @@ En outre, les propriétés de champ de boîte de dialogue standard telles que `n
 >[!CAUTION]
 >
 >Comme le composant `cifproductfield`, le composant `cifcategoryfield` nécessite également la bibliothèque clif `cif.shell.picker` Pour ajouter une bibliothèque cliente à une boîte de dialogue, vous pouvez utiliser la propriété `extraClientlibs`. Consultez la section [Personnalisation des boîtes de dialogue](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=fr#customizing-dialogs) dans la documentation sur les composants principaux AEM.
->[!CAUTION]
+>>[!CAUTION]
 >
 >À compter de la version 2.0.0 des composants principaux CIF, la prise en charge de `id` a été supprimée et remplacée par `uid`. Adobe recommande d’utiliser `uid` ou `urlPath` comme identifiant de catégorie. Adobe continue à prendre en charge `id` et `idAndUrlPath` uniquement pour les projets utilisant les composants principaux CIF version 1.x.
 

@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: be7c294c-149b-4825-8376-573f9e2987e2
 source-git-commit: 1cedead501597fb655c2c7b87336b29cbf048294
 workflow-type: tm+mt
-source-wordcount: '1895'
-ht-degree: 98%
+source-wordcount: '1896'
+ht-degree: 97%
 
 ---
 
@@ -222,7 +222,7 @@ Vous pouvez activer le service de contenu dynamique afin qu’il s’entraîne p
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Lorsque cette option est sélectionnée pour un dossier, [!DNL Experience Manager] exécute automatiquement un workflow d’entraînement afin d’entraîner le service de contenu dynamique sur les ressources du dossier et leurs balises. Par défaut, le workflow d’entraînement s’exécute toutes les semaines à 00 h 30 le samedi.
+Lorsque cette option est sélectionnée pour un dossier, [!DNL Experience Manager] exécute automatiquement un workflow d’entraînement afin d’entraîner le service de contenu dynamique sur les ressources du dossier et leurs balises. Par défaut, le workflow d’entraînement s’exécute de manière hebdomadaire le samedi à 12 :30.
 
 ### Entraînement à la demande {#on-demand-training}
 

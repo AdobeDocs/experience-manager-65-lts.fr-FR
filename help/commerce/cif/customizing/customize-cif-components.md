@@ -7,8 +7,8 @@ role: Admin, Developer
 exl-id: e8f2a771-b2e3-4f3e-85a0-480f783fc313
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 100%
+source-wordcount: '2328'
+ht-degree: 96%
 
 ---
 
@@ -55,17 +55,17 @@ Nous clonons le [projet Venia](https://github.com/adobe/aem-cif-guides-venia) pu
 
 1. Ajoutez les configurations OSGi nécessaires pour connecter votre instance AEM à une instance Adobe Commerce ou ajoutez les configurations au projet nouvellement créé.
 
-1. À ce stade, vous devriez disposer d’une version fonctionnelle d’un storefront connecté à une instance Adobe Commerce. Accédez à la page `US` > `Home` à l’adresse suivante : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. À ce stade, vous devriez disposer d’une version fonctionnelle d’un storefront connecté à une instance Adobe Commerce. Accédez à la page `US` > `Home` sur : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
    Vous devriez voir que le storefront utilise actuellement le thème Venia. En développant le menu principal du storefront, vous devriez voir différentes catégories indiquant que la connexion à Adobe Commerce fonctionne.
 
-   ![Storefont configuré avec le thème Venia](../assets/customize-cif-components/venia-store-configured.png)
+   ![Point de vente digital configuré avec le thème Venia](../assets/customize-cif-components/venia-store-configured.png)
 
 ## Création du teaser de produit {#author-product-teaser}
 
 Le composant teaser Produit va être étendu tout au long de ce tutoriel. Dans un premier temps, ajoutez une nouvelle instance du teaser de produit à la page d’accueil pour comprendre les fonctionnalités de base.
 
-1. Accédez à la **page d’accueil** du site : [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
+1. Accédez à la **Page d’accueil** du site : [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
 2. Insérez un nouveau composant **Teaser de produit** dans le conteneur de disposition principal de la page.
 
@@ -395,7 +395,7 @@ Dans ce cas, vous devez générer une bannière au-dessus du teaser pour indique
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. Ouvrez une nouvelle fenêtre de navigateur et accédez à AEM et à la **Console OSGi** > **Statut** > **Modèles Sling** : [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
+1. Ouvrez une nouvelle fenêtre de navigateur et accédez à AEM et à la **console OSGi** > **Statut** > **Modèles Sling** : [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels).
 
 1. Recherchez `MyProductTeaserImpl` ; une ligne semblable à la suivante devrait apparaître :
 
@@ -405,7 +405,7 @@ Dans ce cas, vous devez générer une bannière au-dessus du teaser pour indique
 
    Cette ligne indique que le modèle Sling a été correctement déployé et mappé sur le composant approprié.
 
-1. Actualisez la **page d’accueil Venia** à l’adresse [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) où le teaser de produit a été ajouté.
+1. Actualisez la page d’accueil **Venia** à l’adresse [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) où le teaser de produit a été ajouté.
 
    ![Message Écologique affiché](../assets/customize-cif-components/eco-friendly-text-displayed.png)
 
@@ -474,7 +474,7 @@ Dans ce cas, vous devez générer une bannière au-dessus du teaser pour indique
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. Actualisez la **page d’accueil Venia** à l’adresse [http://localhost:4502/editor.html/content/venia?lang=fr.html](http://localhost:4502/editor.html/content/venia/us/en.html) où le teaser Produit a été ajouté.
+1. Actualisez la page d’accueil **Venia** à l’adresse [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) où le teaser de produit a été ajouté.
 
    ![Mise en œuvre finale du badge Écologique](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 

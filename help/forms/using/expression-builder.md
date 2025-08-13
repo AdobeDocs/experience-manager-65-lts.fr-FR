@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: aed65a14-2b4f-45ac-8b20-fdb08b3c9038
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 99%
+source-wordcount: '780'
+ht-degree: 96%
 
 ---
 
@@ -79,7 +79,7 @@ Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonct
 1. Déclarez les méthodes sur l’interface A et annotez-les au moyen de l’annotation @ServiceMethod (com.adobe.exm.expeval.ServiceMethod). Expression Manager ignore les méthodes non annotées. L’annotation ServiceMethod présente les attributs facultatifs suivants, qui peuvent également être définis :
 
    1. **Activé** : indique si cette méthode est activée. Expression Manager ignore les méthodes désactivées.
-   1. **familyId** : indique la famille (groupe) de méthodes. Si l’attribut est vide, Expression Manager considère que la méthode appartient à la famille par défaut. Il n’y a aucun registre de familles (à l’exception de celui par défaut) d’où sont sélectionnées les fonctions. Expression Manager crée le registre de façon dynamique en prenant en compte l’ensemble des ID de famille spécifiés par toutes les fonctions exportées par les différents lots. Assurez-vous que l’ID indiqué ici est raisonnablement lisible, puisqu’il s’affiche également dans l’interface utilisateur de création d’expression.
+   1. **familyId** : indique la famille (groupe) de méthodes. Si l’attribut est vide, Expression Manager considère que la méthode appartient à la famille par défaut. Il n’y a aucun registre de familles (à l’exception de celui par défaut) d’où sont sélectionnées les fonctions. Expression Manager crée le registre de façon dynamique en utilisant une union de tous les ID de famille spécifiés par toutes les fonctions exportées par les différents lots. Assurez-vous que l’ID indiqué ici est raisonnablement lisible, puisqu’il s’affiche également dans l’interface utilisateur de création d’expression.
    1. **displayName** : nom intelligible de la fonction. Ce nom apparaît dans l’interface utilisateur de création. Si l’attribut est vide, Expression Manager crée un nom par défaut à l’aide du préfixe et du nom local de la fonction.
    1. **Description** : description détaillée de la fonction. Cette description apparaît dans l’interface utilisateur de création. Si l’attribut est vide, Expression Manager crée une description par défaut à l’aide du préfixe et du nom local de la fonction.
 
@@ -126,7 +126,7 @@ Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonct
   @org.apache.felix.scr.annotations.Property(name = "exm.service", boolValue = true)})
 ```
 
-L’entrée exm.service=true indique à Expression Manager que le service contient des fonctions distantes dont il peut se servir dans les expressions. La valeur &lt;service_id> doit être un identifiant Java valide (contenant uniquement des caractères alphanumériques ainsi que les symboles _ et $). Cette valeur, précédée du mot-clé REMOTE_, forme le préfixe utilisé au sein des expressions. Par exemple, une interface avec une méthode annotée bar() et un ID de service foo dans les propriétés de service peuvent être référencés dans les expressions à l’aide de la chaîne REMOTE_foo:bar().
+L’entrée exm.service=true indique à Expression Manager que le service contient des fonctions distantes dont il peut se servir dans les expressions. La valeur &lt;service_id> doit être un identifiant Java valide (contenant uniquement des caractères alphanumériques ainsi que les symboles _ et $). Cette valeur, précédée du mot-clé REMOTE_, forme le préfixe utilisé au sein des expressions. Par exemple, une interface avec une barre de méthode annotée() et l&#39;ID de service foo dans les propriétés de service, peut être référencée dans des expressions utilisant REMOTE_foo:bar().
 
 ```java
 package mergeandfuse.com;

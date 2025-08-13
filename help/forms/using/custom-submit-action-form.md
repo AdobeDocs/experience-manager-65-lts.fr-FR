@@ -7,8 +7,8 @@ feature: Adaptive Forms,Foundation Components,Form Data Model
 exl-id: dc3bd697-5b1a-4efe-9554-c6aa1575c1c0
 source-git-commit: 98097c29b1b9cfb436f9431e8b7dca6e6a58634a
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 99%
+source-wordcount: '1535'
+ht-degree: 93%
 
 ---
 
@@ -89,7 +89,7 @@ Si l’action ne fournit pas de chemin de transfert, la servlet Submit redirige 
 
 ## Action Envoyer {#submit-action}
 
-Une action Envoyer est un sling:Folder qui contient les éléments suivants :
+Une action Envoyer est un sling:Folder qui comprend les éléments suivants :
 
 * **addfields.jsp** : ce script fournit les champs d’action ajoutés au fichier HTML lors du rendu. Utilisez ce script pour ajouter les paramètres d’entrée masqués requis lors de l’envoi dans le script post.POST.jsp.
 * **dialog.xml** : ce script est similaire à la boîte de dialogue du composant CQ. Il fournit des informations de configuration que l’auteur personnalise. Les champs s’affichent sous l’onglet « Actions Envoyer » de la boîte de dialogue Modifier le formulaire adaptatif lorsque vous sélectionnez l’action Envoyer.
@@ -116,7 +116,7 @@ Procédez comme suit pour créer une action Envoyer personnalisée qui enregistr
 
 1. **Fournissez des champs de configuration pour demander à l’auteur la configuration des e-mails.**
 
-   Le formulaire adaptatif contient également une action E-mail qui permet d’envoyer des e-mails aux utilisateurs et utilisatrices. Personnalisez cette action selon vos besoins. Accédez à /libs/fd/af/components/guidesubmittype/email/dialog. Copiez les nœuds dans le nœud cq:dialog au nœud cq:dialog de votre action Envoyer (/apps/custom_submit_action/store_and_email/dialog).
+   Le formulaire adaptatif contient également une action E-mail qui permet d’envoyer des e-mails aux utilisateurs et utilisatrices. Personnalisez cette action selon vos besoins. Accédez à /libs/fd/af/components/guidesubmittype/email/dialog. Copiez les nœuds du nœud cq:dialog dans le nœud cq:dialog de votre action Envoyer (/apps/custom_submit_action/store_and_email/dialog).
 
    ![Personnalisation de l’action d’e-mail](assets/step3.png)
 
@@ -128,7 +128,7 @@ Procédez comme suit pour créer une action Envoyer personnalisée qui enregistr
 
    * **guideDataModel** de type **chaîne** et valeur **xfa, xsd, de base**.
 
-   * **jcr:description** de type **chaîne** et de valeur **Store and Email Action**
+   * **jcr:description** de type **chaîne** et de valeur **action de magasin et d’e-mail**
 
 1. Ouvrez un formulaire adaptatif. Cliquez sur le bouton **Modifier** en regard de **Démarrer** pour ouvrir la boîte de dialogue **Modifier** du conteneur de formulaires adaptatifs. La nouvelle action s’affiche sous l’onglet **Actions Envoyer**. La sélection de l’action **Store and Email** affiche la configuration ajoutée au nœud dialog.
 

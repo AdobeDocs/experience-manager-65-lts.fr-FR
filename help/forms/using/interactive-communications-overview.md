@@ -84,7 +84,7 @@ La communication interactive est l’approche par défaut et recommandée pour c
    <td>Impression</td>
   </tr>
   <tr>
-   <td>Schema</td>
+   <td>Schéma</td>
    <td>Modèle de données de formulaire </td>
    <td>Dictionnaire de données </td>
   </tr>

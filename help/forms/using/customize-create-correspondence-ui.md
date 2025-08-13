@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 31fad2a6-f6e8-4d9c-a2b2-6749635fcf9b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 100%
+source-wordcount: '1090'
+ht-degree: 91%
 
 ---
 
@@ -127,7 +127,7 @@ Suivez les étapes ci-dessous pour télécharger le fichier du logo personnalis�
 
 1. Cliquez sur **Enregistrer tout**.
 
-   Dans le nouveau fichier que vous avez créé (ici CustomLogo.png), la propriété jcr:content s’affiche.
+   Sous le nouveau fichier que vous avez créé (ici CustomLogo.png), la propriété jcr:content s’affiche.
 
 1. Cliquez sur jcr:content dans la structure de dossiers.
 
@@ -137,11 +137,11 @@ Suivez les étapes ci-dessous pour télécharger le fichier du logo personnalis�
 
 1. Double-cliquez sur la propriété **jcr:data**.
 
-   La boîte de dialogue Edit jcr:data s’affiche.
+   La boîte de dialogue Modifier jcr:data s’affiche.
 
-   Cliquez maintenant sur le dossier newlogo.png, puis double-cliquez sur jcr:content (option dim) et définissez le type nt:resource. Dans le cas contraire, créer une propriété du nom de jcr:content.
+   Cliquez maintenant sur le dossier newlogo.png, puis double-cliquez sur jcr:content (option dim) et définissez le type nt:resource. S’il n’est pas présent, créez une propriété nommée jcr:content.
 
-1. Dans la boîte de dialogue Edit jcr:data, cliquez sur **Parcourir** et sélectionnez le fichier image que vous souhaitez utiliser comme logo (ici, CustomLogo.png).
+1. Dans la boîte de dialogue Modifier jcr:data, cliquez sur **Parcourir** et sélectionnez le fichier image que vous souhaitez utiliser comme logo (ici, CustomLogo.png).
 
    Les formats de fichiers image pris en charge le sont selon le navigateur utilisé pour accéder à AEM Forms. Tous les navigateurs prennent en charge les formats JPEG, GIF et PNG. Pour en savoir plus, reportez-vous à la documentation du navigateur sur les formats d’image pris en charge.
 
@@ -166,7 +166,7 @@ Effectuez les étapes suivantes pour créer la feuille de style pour le rendu du
 
    1. Faites un clic droit sur le dossier **css** et sélectionnez **Créer > Créer un fichier**.
    1. Dans la boîte de dialogue Nouveau fichier, indiquez le nom du CSS comme `customcss.css`(vous ne pouvez pas utiliser de nom différent), puis cliquez sur **OK**.
-   1. Ajoutez le code suivant dans le fichier CSS que vous venez de créer. Dans la partie content:url du code, indiquez le nom de l’image que vous avez téléchargée dans le dossier imgs dans CRXDE.
+   1. Ajoutez le code suivant dans le fichier CSS que vous venez de créer. Dans la partie contenu:url dans le code, indiquez le nom de l’image que vous avez chargée dans le dossier imgs dans CRXDE.
 
       ```css
       .logo, .logo:after {

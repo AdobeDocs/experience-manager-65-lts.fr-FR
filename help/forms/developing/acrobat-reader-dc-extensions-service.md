@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: a8ec523c-b304-41ba-9980-8ba84e076c7d
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 100%
+source-wordcount: '302'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Les didacticiels de mise en route suivants sont disponibles pour le service Extensions Acrobat Reader DC.
 
-[Didacticiel de mise en route (mode SOAP) : appliquer des droits d’utilisation à l’aide de l’API Java](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[Démarrage rapide (mode SOAP)](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [Suppression des droits d’utilisation des documents PDF](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
@@ -33,7 +33,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fort
 >
 >Les tutoriels de démarrage rapide dans la programmation avec AEM Forms sont basés sur le système d’exploitation Forms Server. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Didacticiel de mise en route (mode SOAP) : appliquer des droits d’utilisation à l’aide de l’API Java {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
+## Démarrage rapide (mode SOAP):Applying droits d’utilisation à l’aide de l’API Java {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
 Lʼexemple de code Java suivant applique des droits dʼutilisation à un document PDF nommé *Loan.pdf*. Le document PDF dont les droits sont activés est enregistré en tant que fichier PDF nommé *LoanUsageRights.pdf*. Les droits d’utilisation suivants sont appliqués à ce document PDF : `enabledComments`, `enabledFormFillIn` et `enabledDigitalSignatures`. (Consultez la section [Application de droits d’utilisation aux documents PDF](/help/forms/developing/assigning-usage-rights.md).)
 

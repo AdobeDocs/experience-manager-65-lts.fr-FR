@@ -42,7 +42,7 @@ Lors de la conception de la structure du contenu d’un site et du schéma des m
 
 Dans l’environnement de développement de contenu, les auteurs peuvent appliquer des balises en accédant aux propriétés de la page et en entrant une ou plusieurs balises dans le champ **Balises/Mots-clés**.
 
-Pour appliquer les [balises prédéfinies](/help/sites-administering/tags.md), dans la fenêtre **Propriétés de la page**, utilisez le menu déroulant du champ `Tags/Keywords` pour effectuer une sélection dans la liste des balises autorisées pour la page. L’onglet **Balises standard** est l’espace de noms par défaut, ce qui signifie qu’il n’y a pas de chaîne `namespace-string:` préfixée à la taxonomie.
+Pour appliquer les [balises prédéfinies](/help/sites-administering/tags.md), dans la fenêtre **Propriétés de la page**, utilisez le menu déroulant du champ `Tags/Keywords` pour effectuer une sélection dans la liste des balises autorisées pour la page. L’onglet **Balises standard** est l’espace de noms par défaut, ce qui signifie que le préfixe `namespace-string:` n’est pas ajouté à la taxonomie.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 

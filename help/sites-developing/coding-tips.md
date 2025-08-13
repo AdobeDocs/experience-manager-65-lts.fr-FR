@@ -11,8 +11,8 @@ role: Developer
 exl-id: e431a240-45a2-4222-b854-32b90e5cd100
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 100%
+source-wordcount: '856'
+ht-degree: 98%
 
 ---
 
@@ -79,7 +79,7 @@ Toutes les chaînes qui ne sont pas fournies par un auteur ou une autrice doiven
 
 ### Placez les chemins d’accès aux ressources dans une séquence d’échappement pour plus de sécurité. {#escape-resource-paths-for-safety}
 
-Bien que les chemins du JCR ne doivent pas contenir d’espaces, leur présence n’altère pas le fonctionnement du code. Jackrabbit fournit une classe utilitaire Text avec les méthodes *escape()* et *escapePath ()*. Pour les pages JSP, l’IU de Granite expose une fonction *granite:encodeURIPath () EL*.
+Bien que les chemins du JCR ne doivent pas contenir d’espaces, leur présence n’altère pas le fonctionnement du code. Jackrabbit fournit une classe utilitaire Text avec les méthodes *escape()* et *escapePath ()*. Pour les pages JSP, l’interface utilisateur de Granite expose une fonction *granite:encodeURIPath() EL*.
 
 ### Utiliser l’API XSS et/ou HTL pour se protéger contre les attaques de script entre sites {#use-the-xss-api-and-or-htl-to-protect-against-cross-site-scripting-attacks}
 

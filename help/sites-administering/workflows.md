@@ -12,7 +12,7 @@ exl-id: 330f5cc5-1af4-4777-b386-b0755e6781df
 source-git-commit: d37df3dc09122909adbb62ede6634939af105e06
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Lorsqu’un modèle de workflow est démarré (exécuté), une instance de workf
 
 >[!CAUTION]
 >
->Les étapes exécutées sont celles définies par le modèle de workflow *au moment où l’instance est générée*. Voir [Développement et extension des workflows - Modèles](/help/sites-developing/workflows.md#model) pour plus d’informations.
+>Les étapes exécutées sont celles définies par le modèle de workflow *au moment où l’instance est générée*. Pour plus d’informations, consultez [Développement et extension de workflows - Modèles](/help/sites-developing/workflows.md#model).
 
 Les instances de workflows progressent selon le cycle de vie suivant :
 

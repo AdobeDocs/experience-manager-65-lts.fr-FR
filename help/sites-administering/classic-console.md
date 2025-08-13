@@ -12,8 +12,8 @@ role: Admin
 exl-id: 4d4c96ea-b7dd-49b9-86b5-2507e7518ba4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 100%
+source-wordcount: '892'
+ht-degree: 99%
 
 ---
 
@@ -29,7 +29,8 @@ Pour accéder à la console de balisage de l’interface utilisateur classique 
 
 * en mode de création
 * connectez-vous avec des droits d’administration ;
-* Accédez à la console par exemple, [https://localhost:4502/tagging](https://localhost:4502/tagging).
+* accédez à la console
+par exemple, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
 ![Fenêtre de la console classique](assets/managing_tags_usingthetagasministrationconsole.png)
 

@@ -8,7 +8,7 @@ exl-id: 7d6e3662-f541-4755-b2a6-b35724dd8932
 source-git-commit: 6fccb80857b22ce0ab72f987afc9ce34d66bea54
 workflow-type: tm+mt
 source-wordcount: '2339'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ Une sélection de types de données est disponible pour la définition de votre 
 
      >[!NOTE]
      >
-     >Pour des raisons de performances, il n’est pas recommandé d’avoir plus de dix champs de texte enrichi dans un modèle.
+     >Pour des raisons de performances, il n’est pas recommandé d’avoir plus de dix champs de texte enrichi dans un modèle.
      >
      >Si nécessaire, il est recommandé d’utiliser des [fragments de contenu imbriqués](#fragment-reference-nested-fragments).
 
@@ -237,13 +237,13 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 
 >[!NOTE]
 >
->AEM dispose d’une protection récurrente pour :
+>AEM dispose d’une protection de récurrence pour :
 >
 >* Références du contenu
->Cela empêche l’utilisateur d’ajouter une référence au fragment actif. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
+>  >  Cela empêche l’utilisateur d’ajouter une référence au fragment actif. Cette approche peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
 >
->* Références de fragments dans GraphQL
->Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
+>* Références de fragment dans GraphQL
+>  >  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
 
 ### Référence de contenu {#content-reference}
 
@@ -311,9 +311,9 @@ Indique un chemin racine pour tout fragment référencé.
 
 >[!NOTE]
 >
->Un mécanisme de protection contre les répétitions est en place. Il interdit à l’utilisateur de sélectionner le fragment de contenu actif dans la référence au fragment. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
+>Un mécanisme de protection de récurrence est en place. Il interdit à l’utilisateur de sélectionner le fragment de contenu actif dans la référence au fragment. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
 >
->Il existe également une protection contre les répétitions pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent mutuellement, elle renvoie la valeur « null ».
+>Il existe également une protection de récurrence pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent mutuellement, elle renvoie la valeur « null ».
 
 ## Activation ou désactivation d’un modèle de fragment de contenu {#enabling-disabling-a-content-fragment-model}
 

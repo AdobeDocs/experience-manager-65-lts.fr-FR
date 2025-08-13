@@ -12,8 +12,8 @@ role: User,Admin,Architect,Developer
 exl-id: a0ddb246-64eb-493c-9950-9b7ecb32e555
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4643'
-ht-degree: 100%
+source-wordcount: '4650'
+ht-degree: 99%
 
 ---
 
@@ -107,7 +107,7 @@ Lors de la création d’un modèle modifiable :
 
 * Utilisez la console **Modèles**. Cette option est disponible dans la section **Général** de la console **Outils**.
 
-   * Ou directement à l’adresse : [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+   * Ou directement à : [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Si besoin, vous pouvez [créer un dossier pour les modèles](#creating-a-template-folder-admin).
 * [Créez un modèle](#creatinganewtemplateauthor), initialement vide.

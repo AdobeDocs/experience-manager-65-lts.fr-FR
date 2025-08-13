@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: d2cb447c-69d6-4659-a29e-02af22b543fd
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1639'
-ht-degree: 100%
+source-wordcount: '1638'
+ht-degree: 99%
 
 ---
 
@@ -131,7 +131,7 @@ Agents de réplication
 Décompte du nombre de sessions
 
 * MBean : `org.apache.jackrabbit.oak:id=7,name="OakRepository Statistics",type="RepositoryStats"`
-* URL : */system/console/jmx/org.apache.jackrabbit.oak:id=7,name=&quot;OakRepository Statistics&quot;,type*=&quot;RepositoryStats&quot;
+* URL : */system/console/jmx/org.apache.jackrabbit.oak:id=7,name=« OakRepository Statistics »,type*=« RepositoryStats »
 * Instances : tous les serveurs
 * Seuil d’alarme : lorsque les sessions ouvertes dépassent la ligne de base de plus de 50 %.
 * Définition de l’alarme : les sessions peuvent être ouvertes par le biais d’un fragment de code et ne jamais se fermer. Cela peut se produire lentement au fil du temps et entraîner des fuites de mémoire dans le système. Le nombre de sessions doit fluctuer sur un système, mais il ne doit pas augmenter de manière continue.

@@ -12,8 +12,8 @@ role: Admin
 exl-id: 3fd6a54b-9220-4bb2-9625-4f459c4d3aa8
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '839'
+ht-degree: 97%
 
 ---
 
@@ -236,7 +236,7 @@ Vous pouvez envoyer au servlet une chaîne de certificats en répétant le param
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-Une fois la commande exécutée, vérifiez que tous les certificats ont été ajoutés au KeyStore. Vérifiez les entrées du **fichier de stockage de clés** à partir de :
+Une fois la commande exécutée, vérifiez que tous les certificats ont été ajoutés au KeyStore. Vérifiez les entrées **Keystore** à partir de :
 [http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)
 
 ### Activer une connexion TLS 1.3 {#enabling-tls-connection}

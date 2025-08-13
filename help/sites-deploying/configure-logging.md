@@ -40,7 +40,7 @@ La [configuration de la journalisation Apache Sling](/help/sites-deploying/osgi
 * la rotation de version (soit une taille maximale, soit un intervalle de temps)
 * le format à utiliser lors de l’écriture des messages du journal
 
-## Enregistreurs et rédacteurs pour les services individuels {#loggers-and-writers-for-individual-services}
+## Paramètres de journalisation et d’écriture pour les services individuels {#loggers-and-writers-for-individual-services}
 
 En plus des paramètres de journalisation globale, AEM vous permet de configurer des paramètres spécifiques pour un service individuel :
 

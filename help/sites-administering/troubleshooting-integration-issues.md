@@ -11,8 +11,8 @@ role: Admin
 exl-id: 72293e17-bf29-4b3c-81b4-cd8372694a0d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 100%
+source-wordcount: '1073'
+ht-degree: 97%
 
 ---
 
@@ -100,7 +100,7 @@ Pour résoudre ce problème, procédez comme suit :
 * Republiez les configurations trouvées dans `/etc/cloudservices/dynamictagmanagement`.
 * Vérifiez les listes de contrôle d’accès sur `/etc/cloudservices`. Les listes de contrôle d’accès (ACL) doivent être les suivantes :
 
-   * allow; jcr:read; webservice-support-service-servicelibfinder
+   * allow; jcr:read; webservice-support-servicelibfinder
    * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults/`&amp;ast;
    * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults`
    * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public/`&amp;ast;

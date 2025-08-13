@@ -12,8 +12,8 @@ role: Admin
 exl-id: e95f382b-ae89-46d5-b109-ea3257b6b046
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 100%
+source-wordcount: '468'
+ht-degree: 92%
 
 ---
 
@@ -91,7 +91,7 @@ Service permettant de configurer la liste d’exclusion des principaux qui ne do
 
   Il est possible de réaliser une implémentation CugExclude personnalisée en cas de besoins spécifiques.
 
-* Composant OSGI implémentant LoginPathProvider, qui expose un chemin de connexion correspondant à LoginSelectorHandler. Il comporte une référence obligatoire à RequirementHandler, qui est utilisé pour enregistrer l’observateur qui écoute les modifications des exigences d’authentification stockées dans le contenu par le biais du type de Mixin granite:AuthenticationRequired.
+* Composant OSGI implémentant LoginPathProvider, qui expose un chemin de connexion correspondant à LoginSelectorHandler. Il comporte une référence obligatoire à RequirementHandler, qui est utilisé pour enregistrer l’observateur qui écoute les modifications des exigences d’authentification stockées dans le contenu au moyen du type de mixin granite:AuthenticationRequired.
 * Composant OSGI implémentant RequirementHandler qui informe SlingAuthenticator des modifications apportées à authrequirements.
 
   Comme la politique de configuration pour ce composant est obligatoire, elle n’est activée que si un ensemble de chemins pris en charge est spécifié.

@@ -12,8 +12,8 @@ role: Admin
 exl-id: 6dd29f1c-3769-469c-8b8a-464f9ac00b15
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2781'
+ht-degree: 99%
 
 ---
 
@@ -366,7 +366,7 @@ Pour générer le rapport, vous pouvez spécifier les éléments suivants :
 
   Facultatif ; valeur par défaut : non renseigné
 
-* **Exécuter quotidiennement à (hh:mm) :**
+* **Exécuter quotidiennement à (hh:mm)**
 
   Spécifier l’heure à laquelle le rapport doit être exécuté automatiquement tous les jours.
 

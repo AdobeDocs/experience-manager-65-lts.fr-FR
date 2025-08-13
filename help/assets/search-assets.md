@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
 source-git-commit: df4b8b9c80734917569c40d01ea5789e16bfb4e3
 workflow-type: tm+mt
-source-wordcount: '5645'
-ht-degree: 100%
+source-wordcount: '5635'
+ht-degree: 99%
 
 ---
 
@@ -125,7 +125,7 @@ Vous pouvez améliorer la pertinence des mots-clés pour des ressources particul
 
 Vous pouvez l’utiliser à votre avantage en améliorant le classement de certaines ressources dans les résultats de recherche du mot-clé ciblé. Voir la vidéo d’exemple ci-dessous. Pour plus d’informations, voir [Recherche dans [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3410336/?quality=6&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Vidéo : Découvrez comment les résultats de recherche sont classés et comment le classement peut être influencé.*
 
@@ -163,27 +163,27 @@ Vous pouvez rechercher des ressources numériques en fonction des valeurs exacte
 
 | Champ de métadonnées | Valeur et utilisation des facettes |
 |---|---|
-| Titre | title:John |
-| Créateur | creator:John |
-| Emplacement | location:NA |
+| Titre | titre :John |
+| Créateur | créateur :John |
+| Emplacement | emplacement :NA |
 | Description | description:&quot;Sample Image&quot; |
 | Outil créateur | creatortool:&quot;Adobe Photoshop&quot; |
 | Détenteur de copyright | copyrightowner:&quot;Adobe Systems&quot; |
-| Contributeur | contributor:John |
+| Contributeur | contributeur :John |
 | Conditions d’utilisation | usageterms:&quot;CopyRights Reserved&quot; |
-| Créé | created:AAAA-MM-JJTHH |
-| Date d’expiration | expires:AAAA-MM-JJTHH |
-| Heure d’activation | ontime:AAAA-MM-JJTHH |
-| Heure de désactivation | offtime:AAAA-MM-JJTHH |
+| Créé | a créé :YYYY-MM-DDTHH |
+| Date d’expiration | expire:YYYY-MM-DDTHH |
+| Heure d’activation | ontime:YYYY-MM-DDTHH |
+| Heure de désactivation | hors temps:YYYY-MM-DDTHH |
 | Plage de temps (expiration : dateontime,offtime) | champ de facette : lowerbound..upperbound |
 | Chemin | /content/dam/&lt;nom_dossier> |
 | Titre du PDF | pdftitle:&quot;Adobe Document&quot; |
 | Objet | subject:&quot;Training&quot; |
 | Balises | tags:&quot;Location And Travel&quot; |
 | Type | type:&quot;image\png&quot; |
-| Largeur de l’image | width:lowerbound..upperbound |
-| Hauteur de l’image | height:lowerbound..upperbound |
-| Personne | person:John |
+| Largeur de l’image | largeur:lowerbound..upperbound |
+| Hauteur de l’image | hauteur:lowerbound..upperbound |
+| Personne | personne :John |
 
 Les propriétés `path`, `limit`, `size` et `orderby` ne peuvent pas être combinées à l’aide de l’opérateur `OR` avec une autre propriété.
 
@@ -248,7 +248,7 @@ Transmettez les paramètres de requête suivants dans une URL pour démarrer le 
 
 | Nom | Valeurs | Exemple | Objectif |
 |---|---|---|---|
-| suffixe de la ressource (B) | Chemin du dossier comme suffixe de ressource dans l’URL : [https://localhost:4502/aem/assetpicker.html/&lt;chemin_dossier>](https://localhost:4502/aem/assetpicker.html) | Pour démarrer le sélecteur de ressources avec un dossier particulier sélectionné, par exemple, le dossier `/content/dam/we-retail/en/activities`, l’URL doit se présentée comme suit : `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Si vous avez besoin de sélectionner un dossier en particulier au démarrage du sélecteur de ressources, vous pouvez l’indiquer comme suffixe de ressource. |
+| suffixe de la ressource (B) | Chemin du dossier comme suffixe de la ressource dans l’URL : [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Pour démarrer le sélecteur de ressources avec un dossier particulier sélectionné, par exemple, le dossier `/content/dam/we-retail/en/activities`, l’URL doit se présentée comme suit : `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Si vous avez besoin de sélectionner un dossier en particulier au démarrage du sélecteur de ressources, vous pouvez l’indiquer comme suffixe de ressource. |
 | `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | En mode multiple, vous pouvez sélectionner plusieurs ressources simultanément à l’aide du sélecteur de ressources. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Utilisez ces paramètres pour ouvrir le sélecteur de ressources en tant que boîte de dialogue Granite. Cette option ne peut être appliquée qu’au démarrage du sélecteur de ressources via le champ Chemin de Granite, en la configurant comme URL pickerSrc. |
 | `root` | &lt;chemin_dossier> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Utilisez cette option pour spécifier le dossier racine du sélecteur de ressources. Dans ce cas, le sélecteur de ressources vous permet de sélectionner uniquement les ressources enfants (directes/indirectes) sous le dossier racine. |

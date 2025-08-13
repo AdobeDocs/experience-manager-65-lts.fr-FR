@@ -11,8 +11,8 @@ feature: Adaptive Forms
 exl-id: 8ad3afd6-e1c6-4f21-bb0f-4d97ef50710e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 100%
+source-wordcount: '240'
+ht-degree: 89%
 
 ---
 
@@ -44,7 +44,7 @@ Vous trouverez ci-dessous les étapes de configuration des **[!UICONTROL Paramè
 
 1. Ajoutez les informations suivantes dans les champs respectifs :
 
-   **[!UICONTROL URL du serveur de traitement]** : le serveur de traitement est le serveur sur lequel les formulaires ou le workflow AEM doivent être déclenchés. Elle peut être identique à l’URL de l’instance de création AEM ou de l’autre URL du serveur (à savoir https://localhost:port/).
+   **[!UICONTROL URL du serveur de traitement]** : le serveur de traitement est le serveur sur lequel les formulaires ou le workflow AEM doivent être déclenchés. Il peut s’agir de l’URL de l’instance d’auteur AEM ou de l’autre URL du serveur (c’est-à-dire https://localhost:port/).
 
    **[!UICONTROL Nom d’utilisateur du serveur de traitement]** : nom d’utilisateur de l’utilisateur du workflow [basé sur l’URL du serveur utilisé].
 

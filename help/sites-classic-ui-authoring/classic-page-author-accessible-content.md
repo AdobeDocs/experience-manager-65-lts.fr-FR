@@ -12,8 +12,8 @@ role: User
 exl-id: 1ea2f849-ef36-47bf-ac3a-49d1984efca5
 source-git-commit: 7d1ab7984bc890aa4f079357061f44784a3bd1fe
 workflow-type: tm+mt
-source-wordcount: '9057'
-ht-degree: 99%
+source-wordcount: '9050'
+ht-degree: 98%
 
 ---
 
@@ -312,7 +312,7 @@ Les détails exacts de la création de vidéos avec description audio ne sont pa
 
 * [Compréhension du critère de réussite 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html) :
 * [Comment remplir le critère de réussite 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://helpx.adobe.com/fr/premiere-pro/using/whats-new.html)
+* [Adobe Encore CS5](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
 
 ### Sous-titres (en direct) (1.2.4)    {#captions-live}
 
@@ -328,9 +328,9 @@ Ce critère de réussite est identique aux [Sous-titres (pré-enregistrés)](#ca
 
 Suivez les instructions de la section [Sous-titres (pré-enregistrés)](#captions-pre-recorded) ci-dessus. Toutefois, en raison de la nature du média (en direct), les sous-titres doivent être créés aussi rapidement que possible, en fonction de ce qui se passe dans la vidéo. Par conséquent, vous devez envisager d’utiliser des outils de sous-titrage en temps réel ou de transcription audio en texte.
 
-Les instructions détaillées sortent du cadre de ce document, mais la ressource suivante fournit des informations utiles :
+Des instructions détaillées dépassent le cadre de ce document, mais la ressource suivante fournit des informations utiles :
 
-* [WebAIM : Real Time Captioning (sous-titrage en temps réel ; en anglais)](https://webaim.org/techniques/captions/realtime)
+* [WebAIM : Real Time Captioning (sous-titrage en temps réel)](https://webaim.org/techniques/captions/realtime)
 
 #### En savoir plus – Sous-titres (en direct) (1.2.4)  {#more-information-captions-live}
 
@@ -599,15 +599,15 @@ Si vous utilisez la couleur comme vecteur d’information, vous devez fournir un
 
 * [Compréhension du critère de réussite 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 * [Comment remplir le critère de réussite 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [Conseils pour obtenir un rapport de contraste de 3:1, avec une liste de couleurs adaptées au Web](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [Conseils pour obtenir un rapport de contraste de 3:1, avec une liste de couleurs adaptées au Web](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 
 ### Contraste (minimum) (1.4.3) {#contrast-minimum}
 
 * Critère de réussite 1.4.3
 * Niveau AA
-* Contraste (minimum) : la présentation visuelle du texte et des images du texte présente un rapport de contraste d’au moins 4,5:1, sauf dans les cas suivants :
+* Contraste (minimum) : la présentation visuelle du texte et des images du texte a un rapport de contraste d’au moins 4,5:1, à l’exception des éléments suivants :
 
-   * Texte grand format : le texte à grande échelle et les images de texte à grande échelle ont un rapport de contraste d’au moins 3:1.
+   * Texte grand format : le texte à grande échelle et les images de texte à grande échelle ont un rapport de contraste d’au moins 3 :1.
    * Texte décoratif : aucune exigence de contraste pour le texte ou le texte sous forme d’image intégré à un composant d’interface utilisateur inactif. Il s’agit d’un élément purement décoratif, invisible de tous ou intégré à une partie d’une image contenant un autre contenu significatif.
    * Logotypes : aucune exigence de contraste pour le texte faisant partie d’un logo ou d’un nom de marque.
 
@@ -626,9 +626,9 @@ Les personnes avec certaines déficiences visuelles peuvent ne pas être en mesu
 
 Veillez à ce que le texte soit suffisamment contrasté par rapport à son arrière-plan. Les rapports de contraste dépendent de la taille et du style du texte en question :
 
-* Pour le texte de moins de 18 points (ou 14 points en gras), le rapport de contraste entre le texte/les images de texte et l’arrière-plan doit être d’au moins 4.5:1.
-* Pour un texte d’au moins 18 points (ou 14 points en gras), le rapport de contraste doit être d’au moins 3:1.
-* Si un arrière-plan a un motif, l’arrière-plan autour du texte doit être ombré, de sorte que le rapport de 4.5:1 ou 3:1 soit préservé.
+* Pour un texte dont la taille est inférieure à 18 points (ou 14 points en gras), le rapport de contraste entre le texte/les images du texte et l’arrière-plan doit être d’au moins 4,5 :1.
+* Pour un texte d’au moins 18 points (ou 14 points en gras), le rapport de contraste doit être d’au moins 3:1.
+* Si un arrière-plan est répété, l’arrière-plan autour de tout texte doit être ombré de sorte que le rapport de 4,5:1 ou 3:1 soit conservé.
 
 Pour vérifier les rapports de contraste, utilisez un outil de contraste des couleurs, tel que l’[analyseur de contraste des couleurs du groupe Paciello](https://www.paciellogroup.com/resources/contrast-analyser.html) ou le [vérificateur de contraste des couleurs WebAIM](https://webaim.org/resources/contrastchecker/). Ces outils vous permettent de vérifier des paires de couleurs et de signaler tout problème de contraste.
 

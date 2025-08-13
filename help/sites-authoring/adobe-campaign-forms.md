@@ -12,7 +12,7 @@ exl-id: 6a72ba56-8222-4853-adc6-ee8f3d395d9d
 source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
 source-wordcount: '1280'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Tout d’abord, vérifiez que la connexion entre les instances de création et d
 
 >[!NOTE]
 >
->Assurez-vous que la propriété **acMapping** sur le nœud **jcr:content** de la page est définie sur **mapRecipient** ou **profile** lorsque vous utilisez respectivement Adobe Campaign Classic ou Adobe Campaign Standard
+>Vérifiez que la propriété **acMapping** sur le nœud **jcr:content** de la page est définie sur **mapRecipient** ou **profile**, lorsque vous utilisez respectivement Adobe Campaign Classic ou Adobe Campaign Standard.
 >
 
 1. Dans AEM, dans Sites, naviguez jusqu’à l’emplacement où vous souhaitez créer une page.
@@ -78,7 +78,7 @@ Les formulaires dédiés à Adobe Campaign comportent des composants spécifiqu
 
 >[!NOTE]
 >
->Si le modèle souhaité n’est pas disponible, voir [Rendre un modèle disponible.](/help/sites-authoring/campaign.md)
+>Si le modèle souhaité n’est pas disponible, consultez [Rendre un modèle disponible](/help/sites-authoring/campaign.md).
 
 Cette section présente uniquement les liens spécifiques à Adobe Campaign. Pour plus d’informations sur l’utilisation des formulaires dans Adobe Experience Manager, consultez [Composants en mode création](/help/sites-authoring/default-components-foundation.md).
 

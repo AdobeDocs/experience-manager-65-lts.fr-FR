@@ -11,8 +11,8 @@ role: Developer
 exl-id: 3ce50030-86c7-4291-98fa-0cc9cb63f45c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 100%
+source-wordcount: '1831'
+ht-degree: 98%
 
 ---
 
@@ -529,7 +529,7 @@ Le servlet de requête fonctionne comme suit : il reçoit une requête GQL et l
 
 Dans le cas du composant Liste de produits, les deux paramètres envoyés au servlet de requête sont les suivants :
 
-* Requête : « path: /content/geometrixx/en/customers/jcr:content/par/productlist Cube »
+* requête : « path:/content/geometrixx/en/customers/jcr:content/par/productlist Cube »
 * Cols : « Selection,ProductId,ProductName,Color,CatalogCode,SellingSku »
 
 Et le flux JSON est renvoyé comme suit :
@@ -563,7 +563,7 @@ Chaque propriété mise à jour est envoyée au servlet au format suivant :
 
 * Nom du paramètre : &lt;chemin jcr>/&lt;nom de propriété>
 
-  Exemple : /content/geometrixx/fr/products/jcr:content/par/productlist/1258674859000/SellingSku
+  Exemple : /content/geometrixx/fr/products/jcr:content/par/productlist/1258674859000/SellingSku
 
 * Valeur : &lt;valeur>
 

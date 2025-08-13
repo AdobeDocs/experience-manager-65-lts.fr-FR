@@ -8,8 +8,8 @@ feature: Adaptive Forms
 exl-id: 636f7b61-549e-45c7-ab21-94bb90db2b22
 source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 91%
+source-wordcount: '1697'
+ht-degree: 90%
 
 ---
 
@@ -48,7 +48,7 @@ En raison de changements [liés à la rétrocompatibilité](/help/sites-deployin
 
 Pour les ressources de Correspondence Management :
 
-* Pour les ressources importées de la plateforme précédente, une propriété est ajoutée : **fd:version=1.0**.
+* Pour les ressources importées de la plateforme précédente, une propriété est ajoutée : **fd:version=1.0**.
 * Depuis AEM 6.1 Forms, les commentaires ne sont pas disponibles hors champ. Les commentaires ajoutés précédemment sont disponibles dans les actifs mais ne sont pas automatiquement affichés sur l’interface. Vous devez personnaliser la propriété extendedProperties dans l’interface utilisateur d’AEM Forms pour rendre les commentaires visibles.
 * Dans certaines versions précédentes, telles que LiveCycle ES4, le texte était modifié à l’aide de Flex RichTextEditor, mais depuis AEM 6.1 Forms, c’est l’éditeur de HTML qui est utilisé. En raison de ce rendu et de l’aspect des polices, les tailles et les marges des polices peuvent différer des versions précédentes de l’interface utilisateur de création. Toutefois, l’aspect des lettres est identique lors du rendu.
 * Les listes dans les modules de texte sont améliorées et le rendu est désormais différent. Il peut y avoir des différences visuelles. Adobe vous recommande d’afficher et de vérifier les lettres lorsque vous utilisez des listes dans des modules de texte.

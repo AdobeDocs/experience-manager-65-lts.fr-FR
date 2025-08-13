@@ -13,8 +13,8 @@ hidefromtoc: true
 exl-id: 1ac45713-4eca-4def-a030-c7bc3fcdf4c7
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 100%
+source-wordcount: '407'
+ht-degree: 91%
 
 ---
 
@@ -34,9 +34,9 @@ Les démarrages rapides (SOAP) pour l’API Java™ suivants sont disponibles po
 
 [Démarrage rapide (mode SOAP) : obtenir le statut des applications à l’aide de Java.](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[Démarrage rapide (mode SOAP) : prévisualiser l’archive AEM Forms et des applications ultérieures à l’aide de Java.](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[Démarrage rapide (mode SOAP)](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : supprimer l’archive de l’application AEM Forms à l’aide de Java.](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
+[Démarrage rapide (mode SOAP)](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
 Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée dʼAEM Forms et le mode de connexion doit être défini sur SOAP.
 
@@ -644,7 +644,7 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : prévisualiser l’archive d’applications LiveCycle ES2 et versions ultérieures à l’aide de l’API Java™. {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
+## Démarrage rapide (mode SOAP):Previewing l’archive d’applications LiveCycle ES2 et versions ultérieures à l’aide de l’API Java™ {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
 L’exemple de code Java™ suivant est destiné à prévisualiser AEM Forms et l’archive d’applications ultérieures à l’aide de l’API Java™.
 
@@ -723,7 +723,7 @@ public class PreviewLCA_SOAP {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : supprimer l’archive de l’application à l’aide de l’API Java™. {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
+## Démarrage rapide (mode SOAP) :Deleting l’archive d’applications à l’aide de l’API Java™ {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
 
 L’exemple de code Java™ suivant sert à supprimer une archive d’application.
 

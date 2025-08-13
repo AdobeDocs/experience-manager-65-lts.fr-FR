@@ -12,8 +12,8 @@ role: Admin
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
 source-git-commit: 7584fa1c544f9dd499b4007a9158e25b783f620c
 workflow-type: tm+mt
-source-wordcount: '2594'
-ht-degree: 96%
+source-wordcount: '2587'
+ht-degree: 94%
 
 ---
 
@@ -70,7 +70,7 @@ Ensuite, chaque index est consulté pour estimer le coût de la requête. Une fo
 
 Si une réindexation s’avère nécessaire dans des référentiels volumineux, en particulier lorsque vous utilisez MongoDB et des index en texte intégral, pensez à recourir à la pré-extraction de texte, ainsi qu’à utiliser la commande oak-run pour générer l’index initial et procéder à la réindexation.
 
-Les index sont configurés en tant que nœuds dans le référentiel sous le nœud **Oak:index**.
+Les index sont configurés en tant que nœuds dans le référentiel, sous le nœud **Oak:index**.
 
 Le type du nœud d’index doit être **oak:QueryIndexDefinition.** Plusieurs options de configuration sont disponibles pour chaque indexeur en tant que propriétés de nœud. Pour plus d’informations, voir les détails de configuration pour chaque type d’indexeur ci-dessous.
 
@@ -79,8 +79,8 @@ Le type du nœud d’index doit être **oak:QueryIndexDefinition.** Plusieurs op
 L’index de propriété s’avère utile pour les requêtes qui ont des contraintes de propriété, mais qui ne sont pas en texte intégral. Il peut être configuré en suivant la procédure ci-dessous :
 
 1. Ouvrez CRXDE en accédant à `http://localhost:4502/crx/de/index.jsp`.
-1. Créez un nœud sous **oak:index**.
-1. Nommez le nœud **PropertyIndex**, puis définissez le type de nœud sur **oak:QueryIndexDefinition**.
+1. Créez un nœud sous **oak:index**
+1. Nommez le nœud **PropertyIndex** et définissez le type de nœud sur **oak:QueryIndexDefinition**
 1. Définissez les propriétés suivantes pour le nouveau nœud :
 
    * **Type :**  `property` (de type String)
@@ -94,7 +94,7 @@ L’index de propriété comporte les options de configuration suivantes :
 
 * La propriété **type** spécifie le type d’index. Dans ce cas, il doit être défini sur **property**.
 
-* La propriété **propertyNames** indique la liste des propriétés qui seront stockées dans l’index. En cas d’absence, le nom du nœud est utilisé comme valeur de référence de nom de propriété. Dans cet exemple, la propriété **jcr:uuid** dont la tâche est d’exposer l’identifiant unique (UUID) de son nœud est ajouté à l’index.
+* La propriété **propertyNames** indique la liste des propriétés qui seront stockées dans l’index. En cas d’absence, le nom du nœud est utilisé comme valeur de référence de nom de propriété. Dans cet exemple, la propriété **jcr:uuid** dont la tâche est de présenter l’identifiant unique (UUID) de son nœud est ajoutée à l’index.
 
 * L’indicateur **unique**, qui, défini sur **true**, ajoute une limite d’unicité à l’index de propriété.
 
@@ -118,7 +118,7 @@ Si aucun index de recherche en texte intégral n’est configuré, les requêtes
 Vous pouvez configurer un index de recherche en texte intégral Lucene en suivant la procédure ci-dessous :
 
 1. Ouvrez CRXDE et créez un nœud sous **oak:index**.
-1. Nommez le nœud **LuceneIndex** et définissez le type de nœud sur **oak:QueryIndexDefinition**.
+1. Nommez le nœud **LuceneIndex** et définissez le type de nœud sur **oak:QueryIndexDefinition**
 1. Ajoutez les propriétés suivantes au nœud :
 
    * **type :**  `lucene` (de type String)

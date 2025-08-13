@@ -11,8 +11,8 @@ role: Developer
 exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '5177'
-ht-degree: 99%
+source-wordcount: '5166'
+ht-degree: 96%
 
 ---
 
@@ -48,9 +48,9 @@ Pour les rapports standard fournis avec AEM :
 >La notation suivante est utilisée dans les exemples et définitions ci-dessous :
 >
 >* Chaque ligne définit un nœud ou une propriété où :
->  `N:<name> [<nodeType>]`  : décrit un nœud portant le nom `<*name*>` et le type de nœud `<*nodeType*>`*.*
->  `P:<name> [<propertyType]`  : décrit une propriété avec le nom `<*name*>` et un type de propriété `<*propertyType*>`.
->  `P:<name> = <value>`  : décrit une propriété `<name>` qui doit être définie sur la valeur de `<value>`.
+>  >  `N:<name> [<nodeType>]`  : décrit un nœud portant le nom `<*name*>` et le type de nœud `<*nodeType*>`*.*
+>  >  `P:<name> [<propertyType]`  : décrit une propriété avec le nom `<*name*>` et un type de propriété `<*propertyType*>`.
+>  >  `P:<name> = <value>`  : décrit une propriété `<name>` qui doit être définie sur la valeur de `<value>`.
 >
 >* La mise en retrait indique les dépendances hiérarchiques entre les nœuds.
 >* Le caractère | entre des éléments indique une liste d’éléments possibles, comme des types ou des noms. Par exemple, `String|String[]` signifie que la propriété peut être String ou String[].
@@ -122,7 +122,7 @@ La requête :
 
      Ils sont imposés pour générer le jeu de résultats (initial). Il incluent, par exemple, les restrictions concernant les types de nœuds ou les contraintes de propriété.
 
-**Le point clé ici est que chaque nœud unique renvoyé dans le jeu de résultats de la requête est utilisé pour générer une seule ligne sur le rapport (relation 1:1, par conséquent).**
+**Le point clé ici est que chaque nœud unique renvoyé dans le jeu de résultats de la requête est utilisé pour générer une seule ligne sur le rapport (donc une relation 1:1).**
 
 Le développeur ou la développeuse doit s’assurer que la requête définie pour un rapport renvoie un jeu de nœuds approprié pour ce rapport. Cependant, le nœud lui-même n’a pas besoin de contenir toutes les informations requises, elles peuvent également être dérivées des nœuds parents et/ou enfants. Par exemple, la requête utilisée pour le [Rapport utilisateur](/help/sites-administering/reporting.md#user-report) sélectionne des nœuds en fonction de leur type (dans ce cas : `rep:user`). Toutefois, la plupart des colonnes de ce rapport ne prélèvent pas directement leurs données de ces nœuds, mais des nœuds enfants `profile`.
 
@@ -138,7 +138,7 @@ Cela permet d’effectuer les opérations suivantes :
 
 * Résoudre les valeurs extraites : cela peut être réalisé de différentes manières.
 
-  Par exemple, des chemins d’accès peuvent être mappés sur un titre (comme dans le contenu plus lisible de la propriété *jcr:title* correspondante).
+  Par exemple, des chemins d’accès peuvent être mappés à un titre (comme dans le contenu plus lisible de la propriété *jcr:title* correspondante).
 
 * Application de filtres à différents points.
 * Création de valeurs composites, si nécessaire.
@@ -530,7 +530,7 @@ N:definitions
 
   L’extracteur de valeur correspondant (qui contrôle ici) :
 
-   * vérifie si une propriété jcr:lastModified est disponible et, si tel est le cas, l’utilise.
+   * Vérifie s’il existe une propriété jcr:lastModified disponible et, le cas échéant, l’utilise.
    * Si aucune propriété jcr:lastModified n’est disponible, le contenu de jcr:created est utilisé à la place.
 
 * `subPath`
@@ -636,7 +636,7 @@ N:definitions
 
       * `propertyName` (facultatif)
 
-        Définit le nom de la propriété qui doit être utilisée pour résoudre la valeur. Si elle n’est pas spécifiée, la valeur par défaut de *jcr:title* (titre de la page) est utilisée ; pour le programme de résolution `page`, cela signifie que le chemin est d’abord résolu sur le chemin d’accès de la page, puis sur le titre de la page.
+        Définit le nom de la propriété qui doit être utilisée pour résoudre la valeur. Si elle n’est pas spécifiée, la valeur par défaut de *jcr:title* (titre de la page) est utilisée ; pour le programme de résolution de `page`, cela signifie que le chemin est d’abord résolu sur le chemin d’accès de la page, puis sur le titre de la page.
 
    * `path`
 
@@ -693,7 +693,7 @@ N:data
 
 **Page**
 
-Résout une valeur de chemin d’accès sur la propriété jcr:description sur le nœud jcr:content (enfant) de la page correspondante.
+résout une valeur de chemin d’accès sur la propriété jcr:description sur le nœud jcr:content (enfant) de la page correspondante.
 
 Consultez `/libs/cq/reporting/components/compreport/pagecol/definitions/data`.
 
@@ -753,7 +753,7 @@ Lorsqu’il est trouvé, le motif spécifié (qui est défini sous la forme d’
 
 * [formateurs de type de données](#preprocessing-data-type-formatters)
 
-  Convertissent une valeur numérique en chaîne relative ; par exemple, la valeur &grave;&grave; représentant un décalage horaire de 1 heure sera résolue dans une chaîne telle que `1:24PM (1 hour ago)`.
+  Convertissent une valeur numérique en chaîne relative ; par exemple, la valeur `` représentant un décalage horaire de 1 heure sera résolue dans une chaîne telle que `1:24PM (1 hour ago)`.
 
 Par exemple :
 
@@ -816,7 +816,7 @@ Actuellement, les formateurs de type de données disponibles sont les suivants 
 
    * `duration`
 
-     La durée correspond à l’intervalle entre deux dates définies. Par exemple, le début et la fin d’une action de workflow qui a duré 1 heure, lancée le 13/02/2011 à 11 h 23, pour se terminer une heure plus tard, le 13/02/2011 à 12 h 23.
+     La durée correspond à l’intervalle entre deux dates définies. Par exemple, le début et la fin d’une action de workflow qui a duré une heure, commençant le 2/13/11 11:23h et se terminant une heure plus tard, le 2/13/11 12:23h.
 
      Il convertit une valeur numérique (interprétée en millisecondes) en chaîne de durée ; par exemple, `30000` est formaté comme * `30s`.*
 
@@ -1298,7 +1298,7 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
 
    >[!NOTE]
    >
-   >Dans cet exemple, il n’existe aucune définition de `N:data` ni de `P:clientFilter`. Cela est dû au fait que la valeur reçue du serveur est renvoyée sur une base 1:1 ; ce qui est le comportement par défaut.
+   >Dans cet exemple, il n’existe aucune définition de `N:data` ni de `P:clientFilter`. En effet, la valeur reçue du serveur est renvoyée sur une base 1:1, ce qui est le comportement par défaut.
    >
    >Il s’agit de la même chose que les définitions :
    >
@@ -1390,7 +1390,7 @@ Il est possible de les consulter à l’aide du menu Configuration de la console
 ### Service de base (configuration des rapports Day CQ) {#basic-service-day-cq-reporting-configuration}
 
 * **Fuseau horaire** définit le fuseau horaire pour lequel les données historiques sont créées. Cela permet de s’assurer que le graphique historique affiche les mêmes données pour chaque utilisateur ou utilisatrice dans le monde entier.
-* L’option **Paramètres régionaux** définit les paramètres régionaux à utiliser conjointement avec le **Fuseau horaire** pour les données historiques. Le paramètre régional permet de déterminer certains paramètres du calendrier spécifiques à un paramètre régional (par exemple, si le premier jour de la semaine est un dimanche ou un lundi).
+* L’option **Paramètres régionaux** définit les paramètres régionaux à utiliser conjointement avec le **Fuseau horaire** pour les données historiques. Les paramètres régionaux permettent de déterminer certains paramètres du calendrier spécifiques à des paramètres régionaux (par exemple, si le premier jour de la semaine est un dimanche ou un lundi).
 
 * **Chemin de l’instantané** définit le chemin racine où sont stockés les instantanés des graphiques historiques.
 * **Chemin d’accès aux rapports** définit le chemin d’accès à l’emplacement des rapports. Cela est utilisé par le service d’instantanés pour déterminer les rapports pour lesquels des instantanés doivent être créés.

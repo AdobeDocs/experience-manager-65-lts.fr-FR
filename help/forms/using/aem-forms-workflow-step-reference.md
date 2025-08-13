@@ -16,7 +16,7 @@ ht-degree: 99%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference) |
 | AEM 6.5 | Cet article |
 
 Vous utilisez des modèles de processus pour convertir une logique métier en processus répétitif automatisé. Un modèle permet de définir et d’exécuter une série d’étapes. Vous pouvez également définir des propriétés de modèle pour déterminer, par exemple, si le processus est transitoire ou s’il utilise plusieurs ressources. Vous pouvez [inclure diverses étapes d’un processus AEM dans un modèle pour appliquer la logique métier](/help/sites-developing/workflows-models.md#extending-aem).
@@ -104,7 +104,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **Modèle d’e-mail HTML** : sélectionnez le modèle de l’e-mail de notification. Pour modifier un modèle, modifiez le fichier situé à l’emplacement /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt dans le référentiel CRX.
 * **Autoriser la délégation à :** la boîte de réception AEM permet à la personne connectée de déléguer le workflow affecté à un autre utilisateur ou à une autre utilisatrice. Vous pouvez déléguer au sein du même groupe ou à l’utilisateur ou l’utilisatrice du workflow d’un autre groupe. Si la tâche est affectée à un seul utilisateur ou une seule utilisatrice et que la fonction **Autoriser la délégation aux membres du groupe désigné** est sélectionnée, alors il n’est pas possible de déléguer la tâche à un autre utilisateur ou une autre utilisatrice ou un autre groupe.
 * **Paramètres de partage :** la boîte de réception AEM propose des options permettant de partager une ou toutes les tâches de la boîte de réception avec d’autres utilisateurs :
-   * Lorsque l’option **Autoriser les personnes désignées à partager explicitement dans la boîte de réception** est sélectionnée, la personne peut sélectionner la tâche dans la boîte de réception AEM et la partager avec un autre utilisateur ou une autre utilisatrice d’AEM.
+   * Lorsque l’option **Autoriser les personnes désignées à partager explicitement dans la boîte de réception** est sélectionnée, la personne peut cliquer sur la tâche dans la boîte de réception AEM et la partager avec un autre utilisateur ou une autre utilisatrice d’AEM.
    * Lorsque l’option **Autoriser les personnes désignées à partager via le partage de boîte de réception** est sélectionnée et que les utilisateurs partagent leurs éléments de boîte de réception ou permettent à d’autres utilisateurs d’accéder à leurs éléments de boîte de réception, seules les tâches dont l’option mentionnée précédemment est activée sont partagées avec d’autres utilisateurs.
 
 * **Actions et actions par défaut :** les actions Prêt à l’emploi, Envoyer, Enregistrer et Réinitialiser sont disponibles. Par défaut, toutes les actions par défaut sont activées.
@@ -186,7 +186,7 @@ Si vous spécifiez le chemin d’accès d’un dossier (des pièces jointes, par
 
 **Enregistrer Chemin d’accès du document d’enregistrement généré :** spécifier l’emplacement pour conserver un fichier de document d’enregistrement. Vous pouvez remplacer le dossier de payload, placer le document d’enregistrement à un emplacement du répertoire de payload ou stocker le document d’enregistrement dans une variable de type de données Document.
 
-**Paramètre régional** : spécifiez la langue du document d’enregistrement. Sélectionnez **Littéral** pour sélectionner le paramètre régional dans une liste déroulante ou **Variable** pour récupérer le paramètre régional à partir de la valeur stockée dans une variable de type de données Chaîne. Vous devez définir le code du paramètre régional lors du stockage de la valeur du paramètre régional dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
+**Paramètres régionaux** : spécifiez la langue du document d’enregistrement. Sélectionnez **Littéral** pour sélectionner les paramètres régionaux dans une liste déroulante ou **Variable** pour récupérer les paramètres régionaux à partir de la valeur stockée dans une variable de type de données Chaîne. Vous devez définir le code des paramètres régionaux lors du stockage de la valeur du paramètre régional dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
 
 ## Étape Invoquer le service de modèle de données de formulaire {#invoke-form-data-model-service-step}
 
@@ -279,7 +279,7 @@ L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer de
 
 * **Nom du contrat :** indiquez le titre du contrat. Le nom du contrat devient une partie de l’objet et du corps de l’e-mail envoyé aux signataires. Vous pouvez soit stocker le nom dans une variable de type de données Chaîne, soit sélectionner **Littéral** pour l’ajouter manuellement.
 
-* **Paramètre régional :** spécifiez la langue pour les options de messagerie et de vérification. Vous pouvez stocker le paramètre régional dans une variable de type de données Chaîne ou sélectionner **Littéral** pour choisir le paramètre régional dans la liste des options disponibles. Vous devez définir le code du paramètre régional lors du stockage de la valeur du paramètre régional dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
+* **Paramètres régionaux** : spécifiez la langue pour les options d’e-mail et de vérification. Vous pouvez stocker les paramètres régionaux dans une variable de type de données Chaîne ou sélectionner **Littéral** pour choisir les paramètres régionaux dans la liste des options disponibles. Vous devez définir le code des paramètres régionaux lors du stockage de la valeur du paramètre régional dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
 
 * **Configuration cloud Adobe Sign** : sélectionnez une configuration cloud Adobe Sign. Si vous n’avez pas configuré Adobe Sign pour AEM Forms, voir [Intégrer Adobe Sign à AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
@@ -456,11 +456,11 @@ L’opération Générer une sortie imprimée présente les propriétés suivant
 
 * **[!UICONTROL Sélectionner un fichier XCI à l’aide de]** : les fichiers XCI sont utilisés pour décrire les polices et les autres propriétés utilisées pour les éléments de conception de formulaire. Vous pouvez conserver un fichier XCI relatif à la payload, à un chemin d’accès absolu ou à l’aide d’une variable de type de données Document.
 
-* **[!UICONTROL Locale]** : définit la langue utilisée pour générer le document PDF. Si vous fournissez une valeur littérale, sélectionnez une langue dans la liste ou l’une de ces valeurs :
-   * **Utiliser le serveur par défaut** : (par défaut) utilisez le paramètre Paramètre régional qui est configuré sur le serveur AEM Forms. Le paramètre Paramètre régional est configuré à l’aide de la console d’administration. (Voir l’[aide de Designer](https://www.adobe.com/go/learn_aemforms_designer_65_fr).)
+* **[!UICONTROL Paramètres régionaux]** : définit la langue utilisée pour générer le document PDF. Si vous fournissez une valeur littérale, sélectionnez une langue dans la liste ou l’une de ces valeurs :
+   * **Utiliser le serveur par défaut** : (par défaut) utilisez les paramètres régionaux qui sont configurés sur le serveur AEM Forms. Les paramètres régionaux sont configurés à l’aide de la console d’administration. (Voir l’[aide de Designer](https://www.adobe.com/go/learn_aemforms_designer_65_fr).)
 
    * **Pour utiliser une valeur personnalisée** : 
-saisissez le code de paramètre régional dans la zone littérale ou sélectionnez une variable de chaîne contenant le code de paramètre régional. Pour obtenir une liste complète des codes des paramètres régionaux pris en charge, voir https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+saisissez le code des paramètres régionaux dans la zone littérale ou sélectionnez une variable de chaîne contenant le code des paramètres régionaux. Pour obtenir une liste complète des codes des paramètres régionaux pris en charge, voir https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Copies]** : une valeur entière qui spécifie le nombre de copies à générer pour la sortie. La valeur par défaut est 1.
 

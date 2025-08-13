@@ -9,8 +9,8 @@ role: Admin, User, Developer
 exl-id: 64d4ef01-ee33-4c8b-977f-0c9b31755820
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 98%
+source-wordcount: '867'
+ht-degree: 96%
 
 ---
 
@@ -184,8 +184,8 @@ Vous pouvez également utiliser des métadonnées personnalisées dans une notif
 
    Si vous ne spécifiez pas le titre, le champ Métadonnées personnalisées affiche le chemin d’accès complet au fichier ECMAScript. Pour définir un titre significatif pour le script, procédez comme suit :
 
-   1. Développez le nœud du script, cliquez avec le bouton droit de la souris sur **[!UICONTROL jcr:content]**, puis cliquez sur **[!UICONTROL Mixins]**.
-   1. Saisissez mix:title dans la boîte de dialogue Modifier les mixins, puis cliquez sur **+**.
+   1. Développez le nœud du script, cliquez avec le bouton droit sur le nœud **[!UICONTROL jcr:content]**, puis cliquez sur **[!UICONTROL Mixins]**.
+   1. Saisissez mix:title dans la boîte de dialogue Modifier les mixins , puis cliquez sur **+**.
    1. Ajoutez une propriété avec les valeurs suivantes.
 
       | Nom | jcr:title |

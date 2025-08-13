@@ -72,9 +72,9 @@ Vous pouvez tirer pleinement parti de cette fonctionnalité en utilisant les opt
 
 Assurez-vous que les [composants principaux des formulaires adaptatifs sont activés pour votre environnement](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=fr).
 
-+++
++++ 
 
-+++  Ajout de bibliothèques clientes de formulaires adaptatifs à la page AEM Sites et aux composants de page de fragment d’expérience
++++  Ajout de bibliothèques clientes de formulaires adaptatifs à la page AEM Sites et aux composants de page de fragment d’expérience 
 
 Pour activer la fonctionnalité complète du composant Conteneur de formulaires adaptatifs, ajoutez les bibliothèques clientes Customheaderlibs et Customfooterlibs à votre page AEM Sites à l’aide du pipeline de déploiement. Pour ajouter les bibliothèques :
 
@@ -118,7 +118,7 @@ Pour activer la fonctionnalité complète du composant Conteneur de formulaires 
 
 1. Répétez les étapes ci-dessus pour toutes les instances de création et de publication dans votre environnement.
 
-+++
++++ 
 
 +++ Activation du Conteneur de formulaires adaptatifs
 

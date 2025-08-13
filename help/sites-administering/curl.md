@@ -290,9 +290,9 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 Pour plus d’informations, consultez [Activation de CRXDE Lite dans AEM](/help/sites-administering/enabling-crxde-lite.md).
 
-### Nettoyage de la mémoire du magasin de données {#data-store-garbage-collection}
+### Récupération de l’espace mémoire du magasin de données {#data-store-garbage-collection}
 
-Pour plus d’informations, consultez [Nettoyage de la mémoire de magasin de données](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection).
+Pour plus d’informations, consultez [Récupération de l’espace mémoire du magasin de données](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection).
 
 ### Intégration d’Analytics à Target {#analytics-and-target-integration}
 

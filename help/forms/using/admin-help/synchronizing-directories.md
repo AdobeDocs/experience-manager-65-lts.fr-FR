@@ -14,7 +14,7 @@ exl-id: 8bb1dd68-51ec-4458-9ff8-bfe6fb0b67fd
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '1027'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -93,7 +93,7 @@ Vous pouvez configurer User Management de manière à ce qu’il vérifie pério
 1. Planifiez la synchronisation :
 
    * Pour activer une synchronisation automatique quotidienne, sélectionnez Se produit sous Planificateur. Sélectionnez Quotidiennement dans la liste, puis saisissez l’heure au format 24 heures dans la zone correspondante. Lorsque vous enregistrez vos paramètres, cette valeur est convertie en une expression cron qui s’affiche dans la zone Expression Cron.
-   * Pour planifier la synchronisation un jour donné de la semaine ou du mois, ou au cours d’un mois donné, sélectionnez Expression Cron et saisissez l’expression appropriée dans la zone. Par exemple, synchronisez à 13 h 30 le dernier vendredi du mois.
+   * Pour planifier la synchronisation un jour donné de la semaine ou du mois, ou au cours d’un mois donné, sélectionnez Expression Cron et saisissez l’expression appropriée dans la zone. Par exemple, effectuez une synchronisation à 1:30 du matin le dernier vendredi du mois.
 
 L’utilisation de l’expression cron est basée sur le système de planification des tâches open source Quartz, version 1.4.0.
 

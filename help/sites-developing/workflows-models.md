@@ -12,8 +12,8 @@ role: Developer
 exl-id: 7822a108-f128-4ccf-bd9f-348f0c2688da
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2462'
-ht-degree: 100%
+source-wordcount: '2464'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Cette étape est configurée pour affecter un élément de travail à l’initia
 
 Pour créer un workflow avec l’éditeur, procédez comme suit :
 
-1. Ouvrez la console **Modèles de workflow** via **Outils**, **Workflow**, **Modèles**, ou, par exemple : [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow).
+1. Ouvrez la console **Modèles de workflow** via **Outils**, **Workflow**, **Modèles** ou, par exemple : [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow).
 1. Sélectionnez **Créer**, puis **Créer un modèle**.
 1. La boîte de dialogue **Ajouter un modèle de workflow** s’ouvre. Saisissez le **Titre** et le **Nom** (facultatif) avant de sélectionner **Terminé**.
 1. Le nouveau modèle est répertorié dans la console **Modèles de workflow**.

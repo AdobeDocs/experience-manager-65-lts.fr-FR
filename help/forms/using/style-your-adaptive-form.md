@@ -8,8 +8,8 @@ role: Admin, User, Developer
 exl-id: 5b3beaa6-ca0a-454e-85ee-c3653dd423fe
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 100%
+source-wordcount: '2058'
+ht-degree: 98%
 
 ---
 
@@ -126,7 +126,7 @@ Dans ce tutoriel, vous allez appliquer un style aux en-têtes et aux pieds de pa
 
 L’en-tête et le pied-de-page donnent un aspect cohérent et distinctif à un formulaire adaptatif. En règle générale, l’en-tête contient le logo et le nom de l’organisation, le pied-de-page contient des informations de copyright, lesquelles restent identiques dans plusieurs formulaires d’une organisation. Pour appliquer un style à l’en-tête et au pied-de-page du formulaire adaptatif shipping-address-add-update-form :
 
-1. Accédez à l’option **[!UICONTROL En-tête]** > **[!UICONTROL Texte]** dans le panneau Sélecteurs. Le panneau Sélecteurs se trouve à gauche de l’éditeur de thèmes. Si le panneau n’est pas visible, sélectionnez le panneau latéral Activer/désactiver ![toggle-side-panel](assets/toggle-side-panel.png).
+1. Accédez à l’option **[!UICONTROL En-tête]** > **[!UICONTROL Texte]** dans le panneau Sélecteurs. Le panneau Sélecteurs se trouve à gauche de l’éditeur de thèmes. Si le panneau n’est pas visible, sélectionnez ![toggle-side-panel](assets/toggle-side-panel.png) Activer/désactiver le panneau latéral.
 
 1. Définissez les propriétés suivantes dans l’accordéon **[!UICONTROL Texte]** et sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -175,7 +175,7 @@ L’en-tête et le pied-de-page donnent un aspect cohérent et distinctif à un 
 
 ### Application d’un style au composant de capture de données et application d’un arrière-plan au formulaire adaptatif {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
-Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capturer des données. Par exemple, zone de texte et zone numérique. Vous pouvez fournir un style identique à tous les composants de capture de données ou un style distinct à chaque composant. Dans ce didacticiel, un style identique est appliqué aux zones numériques (ID client, Code postal) et aux zones de texte (ID client, Nom, Adresse de livraison, État, Adresse électronique). Pour appliquer un style aux composants de capture de données :
+Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capturer des données. Par exemple, zone de texte et zone numérique. Vous pouvez fournir un style identique à tous les composants de capture de données ou un style distinct à chaque composant. Dans ce tutoriel, un style identique est appliqué aux zones numériques (ID client, Code postal) et aux zones de texte (ID client, Nom, Adresse d’expédition, État, E-mail). Pour appliquer un style aux composants de capture de données :
 
 1. Sélectionnez le champ **[!UICONTROL ID client]**, puis l’option **[!UICONTROL Widget de champ]**. Définissez les propriétés suivantes et sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 

@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 632ecead-f57d-4b43-8a3d-f2b0b8fe1115
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '7164'
-ht-degree: 100%
+source-wordcount: '7160'
+ht-degree: 99%
 
 ---
 
@@ -66,7 +66,7 @@ Vous pouvez configurer les propriétés suivantes d’un dossier de contrôle.
 * **inputProcessorType (chaîne)** : type du processus à démarrer. Vous pouvez spécifier le workflow, le script, ou le service. Il s’agit d’une propriété obligatoire.
 * **inputProcessorId (chaîne)** : le comportement de la propriété inputProcessorId repose sur la valeur spécifiée pour la propriété inputProcessorType. Il s’agit d’une propriété obligatoire. La liste suivante détaille toutes les valeurs possibles de la propriété inputProcessorType et de la condition requise correspondante pour la propriété inputProcessorType :
 
-   * Pour le workflow, spécifiez le modèle de workflow à exécuter. Par exemple, /etc/workflow/models/&lt;nom_workflow>/jcr:content/model.
+   * Pour le workflow, spécifiez le modèle de workflow à exécuter. Par exemple, /etc/workflow/models/&lt;nom_workflow>/jcr:content/model
    * Pour le script, spécifiez le chemin JCR du script à exécuter. Par exemple, /etc/fd/watchfolder/test/testScript.ecma.
    * Pour le service, spécifiez le filtre utilisé pour localiser un service OSGi. Le service est enregistré comme une implémentation de l’interface de com.adobe.aemfd.watchfolder.service.api.ContentProcessor.
 
@@ -297,7 +297,7 @@ Si vous souhaitez placer des scripts à un emplacement personnalisé, il est pro
 1. Créez un utilisateur système par programmation ou par l’intermédiaire de la console https://&#39;[server]:[port]&#39;/crx/explorer. Vous pouvez également utiliser une personne utilisatrice système existante. Ici, il est important de travailler avec des personnes utilisatrices système plutôt qu’avec des personnes utilisatrices normales.
 1. Fournissez des autorisations de lecture à la personne utilisatrice système existante ou qui vient d’être créée pour l’emplacement personnalisé dans lequel les scripts sont stockés. Vous pouvez disposer de plusieurs emplacements personnalisés. Indiquez au moins des autorisations de lecture pour tous les emplacements personnalisés.
 1. Dans la console de configuration Felix (/system/console/configMgr), recherchez le mappage de la personne utilisatrice de service pour les dossiers de contrôle. Ce mappage ressemble à « Mapping: adobe-aemds-core-watch-folder=... »
-1. Cliquez sur le mappage. Pour l’entrée « adobe-aemds-core-watch-folder:scripts=fd-service », remplacez fd-service par l’ID de l’utilisateur système personnalisé. Cliquez sur Enregistrer.
+1. Cliquez sur le mappage. Pour l’entrée « adobe-aemds-core-watch-folder:scripts=fd-service », remplacez fd-service par l’ID de l’utilisateur système personnalisé. Cliquez sur Enregistrer.
 
 Vous pouvez désormais utiliser l’emplacement personnalisé configuré pour enregistrer les scripts.
 
@@ -663,7 +663,7 @@ ECMAScript utilise l’API createPDF de PDF Generator pour convertir des docume
 
 1. Ouvrez CRXDE Lite dans une fenêtre du navigateur. https://&#39;[server]:[port]&#39;/crx/de/
 
-1. Accédez au dossier /etc/fd/watchfolder/config/ et créez un nœud de type nt:unstructured.
+1. Accédez au dossier /etc/fd/watchfolder/config/ et créez un nœud de type nt:unstructured.
 
    ![configure-the-watched-folder-pdf](assets/configure-the-watched-folder-pdf.png)
 
@@ -672,7 +672,7 @@ ECMAScript utilise l’API createPDF de PDF Generator pour convertir des docume
    * folderPath (chaîne) : chemin du dossier à analyser à des intervalles de temps définis. Ce dossier doit être un emplacement partagé avec tous les serveurs disposant d’un accès complet au serveur.
 inputProcessorType (chaîne) : le type du processus à démarrer. Dans ce didacticiel, spécifiez le workflow.
 
-   * inputProcessorId (chaîne) : le comportement de la propriété inputProcessorId repose sur la valeur spécifiée pour la propriété inputProcessorType. Dans cet exemple, la valeur de la propriété inputProcessorType est un workflow. Ainsi, pour la propriété inputProcessorId, spécifiez le chemin suivant du workflow PDFG : /etc/workflow/models/pdfg/jcr:content/model
+   * inputProcessorId (chaîne) : le comportement de la propriété inputProcessorId repose sur la valeur spécifiée pour la propriété inputProcessorType. Dans cet exemple, la valeur de la propriété inputProcessorType est un workflow. Ainsi, pour la propriété inputProcessorId, spécifiez le chemin d’accès suivant du workflow PDFG : /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern (chaîne) : modèle du fichier de sortie. Vous pouvez spécifier un modèle de dossier ou de fichier. Si un modèle de dossier est spécifié, les fichiers de sortie portent des noms comme décrit dans les workflows. Si un modèle de fichier est spécifié, les fichiers de sortie portent des noms comme décrit dans le modèle de fichier.
 

@@ -210,7 +210,7 @@ Gérez un formulaire envoyé à l’aide de l’API Forms (Java) :
 1. Récupérer les données de formulaire
 
    * Pour récupérer les données de formulaire publiées sur un servlet Java, créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en appelant la méthode `getInputStream` de l’objet `javax.servlet.http.HttpServletResponse` depuis l’intérieur du constructeur.
-   * Créez un objet `RenderOptionsSpec` en utilisant son constructeur. Définissez la valeur du paramètre régional en appelant la méthode `setLocale` de l’objet `RenderOptionsSpec` et en transmettant d’une valeur de chaîne spécifiant la valeur du paramètre régional.
+   * Créez un objet `RenderOptionsSpec` en utilisant son constructeur. Définissez la valeur des paramètres régionaux en appelant la méthode `setLocale` de l’objet `RenderOptionsSpec` et en transmettant une valeur de chaîne qui spécifie la valeur des paramètres régionaux.
 
    >[!NOTE]
    >
@@ -286,7 +286,7 @@ Gérez un formulaire envoyé en utilisant l’API des formulaires (service Web)�
    * Copiez le contenu de l’objet `java.io.InputStream` dans l’objet `java.io.ByteArrayOutputStream`.
    * Créez un tableau d’octets en appelant la méthode `toByteArray` de l’objet `java.io.ByteArrayOutputStream`.
    * Renseignez l’objet `BLOB` en appelant sa méthode `setBinaryData` et en transmettant le tableau d’octets comme argument.
-   * Créez un objet `RenderOptionsSpec` en utilisant son constructeur. Définissez la valeur du paramètre régional en appelant la méthode `setLocale` de l’objet `RenderOptionsSpec` et en transmettant une valeur de chaîne qui spécifie la valeur du paramètre régional.
+   * Créez un objet `RenderOptionsSpec` en utilisant son constructeur. Définissez la valeur des paramètres régionaux en appelant la méthode `setLocale` de l’objet `RenderOptionsSpec` et en transmettant une valeur de chaîne qui spécifie la valeur des paramètres régionaux.
    * Appelez la méthode `processFormSubmission` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
       * Objet `BLOB` contenant les données de formulaire.

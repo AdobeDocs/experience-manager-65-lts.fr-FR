@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 003ca1f1-5653-4b6c-a63f-ad5196adf3f2
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 100%
+source-wordcount: '691'
+ht-degree: 99%
 
 ---
 
@@ -52,7 +52,7 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont de
 
    * Types MIME : `application/pdf` ou `application/postscript`
    * Commandes : `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
-   * Ajoutez les tailles des miniatures : 319:319, 140:100, 48:48. Ajoutez une configuration de miniature personnalisée, si nécessaire.
+   * Ajoutez les tailles des miniatures : 319:319, 140:100, 48:48. Ajoutez une configuration de miniature personnalisée, si nécessaire.
 
    Les arguments de ligne de commande de la commande `PDFRasterizer` peuvent inclure les éléments suivants :
 

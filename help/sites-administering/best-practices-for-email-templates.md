@@ -14,7 +14,7 @@ index: false
 source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
 source-wordcount: '1072'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -41,13 +41,13 @@ Utilisez ces bonnes pratiques lors de la création de votre propre newsletter.
 >
 >`/content/campaigns/teasers/en/campaign-promotion-global`
 >
->Vous devez vous assurer qu’elle se trouve sous une page `master`
+>Vous devez vous assurer qu’elle se trouve sous une page `master`.
 >
 >`/content/campaigns/teasers/master/en/campaign-promotion-global`
 
 >[!NOTE]
 >
->Lors de la création d’un modèle de courrier pour Adobe Campaign, vous devez inclure la propriété **acMapping** avec la valeur **mapRecipient** dans le nœud **jcr:content** du modèle. Sinon, vous ne pouvez pas sélectionner le modèle Adobe Campaign dans **Propriétés de la page** d’Experience Manager (le champ est désactivé).
+>Lors de la création d’un modèle d’e-mail pour Adobe Campaign, vous devez inclure la propriété **acMapping** avec la valeur **mapRecipient** dans le nœud **jcr:content** du modèle. Sinon, vous ne pouvez pas sélectionner le modèle Adobe Campaign dans **Propriétés de la page** d’Experience Manager (le champ est désactivé).
 
 ## Composant du modèle/de la page {#template-page-component}
 

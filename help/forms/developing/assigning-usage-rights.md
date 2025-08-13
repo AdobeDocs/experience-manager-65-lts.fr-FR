@@ -13,8 +13,8 @@ hidefromtoc: true
 exl-id: d8027b43-10c7-435c-8fb5-059508966d42
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '3897'
-ht-degree: 100%
+source-wordcount: '3890'
+ht-degree: 99%
 
 ---
 
@@ -148,7 +148,7 @@ Appliquez des droits d’utilisation à un document PDF à l’aide de l’API d
 
 [Appliquer des droits d’utilisation aux documents PDF](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-[Didacticiel de mise en route (mode SOAP) : appliquer des droits d’utilisation à l’aide de l’API Java](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[Démarrage rapide (mode SOAP)](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

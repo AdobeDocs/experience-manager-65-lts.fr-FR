@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: 12f99159-d252-44a5-8daa-938640360445
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 100%
+source-wordcount: '1547'
+ht-degree: 97%
 
 ---
 
@@ -44,7 +44,7 @@ Le modèle de données de formulaire se présentera comme ceci :
 
 Avant de commencer, vérifiez que vous disposez des éléments suivants :
 
-* Base de données [!DNL MySQL] avec des exemples de données comme indiqué dans la section Conditions préalables de [Création de votre premier formulaire adaptatif](../../forms/using/create-your-first-adaptive-form.md)
+* Base de données [!DNL MySQL] avec des données d’exemple comme indiqué dans la section Conditions préalables de [Création de votre premier formulaire adaptatif](../../forms/using/create-your-first-adaptive-form.md)
 * Bundle OSGi pour le pilote JDBC [!DNL MySQL], comme expliqué dans la section [Regrouper le pilote de base de données JDBC](/help/sites-developing/jdbc.md#bundling-the-jdbc-database-driver)
 * Formulaire adaptatif, comme expliqué dans le tout premier didacticiel de mise en route [Créer un formulaire adaptatif](/help/forms/using/create-adaptive-form.md).
 
@@ -65,7 +65,7 @@ Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
 
 1. Configurez la base de données [!DNL MySQL] comme source de données :
 
-   1. Accédez à la console web d’AEM à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+   1. Accédez à la console web AEM à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
    1. Recherchez la configuration **Apache Sling Connection Pooled DataSource**. Sélectionnez pour ouvrir la configuration en mode édition.
    1. Dans la boîte de dialogue de configuration, indiquez ce qui suit :
 
@@ -83,7 +83,7 @@ Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
 
       >[!NOTE]
       >
-      >AEM Forms ne prend pas en charge l’authentification NT pour [!DNL MySQL]. Accédez à la console web d’AEM à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) et recherchez « Source de données mise en pool de la connexion Apache Sling ». Pour la propriété « URI de connexion JDBC », définissez la valeur de « integratedSecurity » sur False et utilisez le nom d’utilisateur et le mot de passe créés pour vous connecter à la base de données [!DNL MySQL].
+      >AEM Forms ne prend pas en charge l’authentification NT pour [!DNL MySQL]. Accédez à la console web AEM à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) et recherchez « Apache Sling Connection Pooled Datasource ». Pour la propriété « URI de connexion JDBC », définissez la valeur de « integratedSecurity » sur False et utilisez le nom d’utilisateur et le mot de passe créés pour vous connecter à la base de données [!DNL MySQL].
 
       * **Test lors de l’emprunt :** activez l’option **[!UICONTROL Test lors de l’emprunt.]**
       * **Test lors du renvoi :** activez l’option **[!UICONTROL Test lors du renvoi.]**
@@ -154,7 +154,7 @@ Pour configurer un modèle de données de formulaire, procédez comme suit :
 1. Configurez les services de lecture et d’écriture pour le modèle de données de formulaire.
 
    1. Sélectionnez l’objet de modèle de données **customerdetails**, puis **[!UICONTROL Modifier les propriétés]**.
-   1. Sélectionnez **[!UICONTROL get]** dans la liste déroulante Service de lecture. L’argument **id** qui est la clé principale de l’objet de modèle de données customerdetails est ajouté automatiquement. Sélectionnez ![aem_6_3_edit](assets/aem_6_3_edit.png) et configurez l’argument comme suit.
+   1. Sélectionnez **[!UICONTROL get]** dans la liste déroulante Service de lecture. L’argument **id** qui est la clé primaire de l’objet de modèle de données customerdetails est ajouté automatiquement. Sélectionnez ![aem_6_3_edit](assets/aem_6_3_edit.png) et configurez l’argument comme suit.
 
       ![read-default](assets/read-default.png)
 
@@ -180,7 +180,7 @@ Pour configurer un modèle de données de formulaire, procédez comme suit :
       * **Titre** : indiquez le titre du service. Par exemple : récupérer l’adresse d’expédition.
       * **Description** : spécifiez la description contenant le fonctionnement détaillé du service. Par exemple :
 
-        Ce service récupère l’adresse de livraison et les autres détails du client ou de la cliente dans la base de données [!DNL MySQL].
+        Ce service récupère l’adresse d’expédition et les autres détails du client ou de la cliente dans la base de données [!DNL MySQL].
 
       * **Objet de modèle de sortie** : sélectionnez le schéma contenant les données du client. Par exemple :
 
@@ -200,7 +200,7 @@ Pour configurer un modèle de données de formulaire, procédez comme suit :
       * **Titre** : indiquez le titre du service. Par exemple, Mettre à jour l’adresse d’expédition.
       * **Description** : indiquez la description contenant le fonctionnement détaillé du service. Par exemple :
 
-        Ce service met à jour l’adresse de livraison et les champs associés dans la base de données MySQL.
+        Ce service met à jour l’adresse d’expédition et les champs associés dans la base de données MySQL.
 
       * **Objet de modèle d’entrée** : sélectionnez le schéma contenant les données du client. Par exemple :
 

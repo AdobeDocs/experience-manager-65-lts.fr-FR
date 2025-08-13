@@ -298,7 +298,7 @@ Vous pouvez également sélectionner un modèle de formulaire lorsque vous crée
 
 Lors de la génération d’un document d’enregistrement, vous pouvez modifier les informations d’mage de marque pour le document d’enregistrement sous l’onglet Document d’enregistrement. L’onglet Document d’enregistrement inclut des options telles que le logo, l’apparence, la mise en page, l’en-tête et le pied de page, la clause de non-responsabilité et si vous souhaitez inclure des options de case à cocher et de bouton radio désélectionnées.
 
-Pour localiser les informations d’image de marque que vous saisissez dans l’onglet Document d’enregistrement, assurez-vous que le paramètre régional du navigateur est défini correctement. Pour personnaliser les informations d’mage graphique du document d’enregistrement, procédez comme suit :
+Pour localiser les informations d’image de marque que vous saisissez dans l’onglet Document d’enregistrement, assurez-vous que les paramètres régionaux du navigateur sont définis correctement. Pour personnaliser les informations d’mage graphique du document d’enregistrement, procédez comme suit :
 
 1. Sélectionnez un panneau (panneau racine) dans le document d’enregistrement, puis ![Configurer](assets/configure.png).
 1. Sélectionnez ![dortab](/help/forms/using/assets/dortab.png). L’onglet Document d’enregistrement s’affiche.
@@ -471,7 +471,7 @@ Gardez à l’esprit les points et restrictions suivants lorsque vous utilisez u
 * Les modèles de document d’enregistrement ne prennent pas en charge le texte enrichi. Par conséquent, tout texte enrichi dans le formulaire adaptatif statique ou dans les informations renseignées par l’utilisateur ou l’utilisatrice est remplacé par du texte brut dans le document d’enregistrement.
 * Les fragments de document contenus dans un formulaire adaptatif n’apparaissent pas dans le document d’enregistrement. Les fragments de formulaire adaptatif sont toutefois pris en charge.
 * La liaison de contenu dans le document de l’enregistrement généré pour le formulaire adaptatif de schéma XML n’est pas prise en charge.
-* La version localisée du document d’enregistrement est créée sur demande pour un paramètre régional lorsque l’utilisateur ou l’utilisatrice demande le rendu du document d’enregistrement. La localisation du document d’enregistrement est effectuée en même temps que la localisation du formulaire adaptatif. Pour plus d’informations sur la localisation du document d’enregistrement et des formulaires adaptatifs, voir [Utilisation de processus de traduction AEM pour la localisation des formulaires adaptatifs et du document d’enregistrement](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
+* La version localisée du document d’enregistrement est créée sur demande pour des paramètres régionaux lorsque l’utilisateur ou l’utilisatrice demande le rendu du document d’enregistrement. La localisation du document d’enregistrement est effectuée en même temps que la localisation du formulaire adaptatif. Pour plus d’informations sur la localisation du document d’enregistrement et des formulaires adaptatifs, voir [Utilisation de processus de traduction AEM pour la localisation des formulaires adaptatifs et du document d’enregistrement](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
 
 ## Utiliser un fichier XCI personnalisé
 
@@ -487,7 +487,7 @@ Un fichier XCI permet de définir différentes propriétés d’un document. <!-
 | config/present/pdf/scriptModel | Contrôle si des informations spécifiques à XFA sont incluses dans le document PDF de sortie. |
 | config/present/common/data/adjustData | Contrôle si l’application XFA ajuste les données après la fusion. |
 | config/present/pdf/renderPolicy | Contrôle si la génération du contenu de la page est effectuée sur le serveur ou différée au client. |
-| config/present/common/locale | Spécifie le paramètre régional par défaut utilisé dans le document de sortie. |
+| config/present/common/locale | Spécifie les paramètres régionaux par défaut utilisés dans le document de sortie. |
 | config/present/destination | Lorsque contenu par un élément présent, indique le format de sortie. Lorsqu’il est contenu par un élément openAction, spécifie l’action à effectuer lors de l’ouverture du document dans un client interactif. |
 | config/present/output/type | Spécifie le type de compression à appliquer à un fichier ou le type de sortie à produire. |
 | config/present/common/temp/uri | Spécifie l’URI du formulaire. |

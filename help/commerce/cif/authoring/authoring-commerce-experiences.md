@@ -7,8 +7,8 @@ role: Admin, Developer
 exl-id: b749ec33-9a78-41d5-889f-73dbdb33ceed
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 100%
+source-wordcount: '710'
+ht-degree: 97%
 
 ---
 
@@ -80,7 +80,7 @@ Cela crée un espace réservé pour un lien qui est remplacé par un lien réel 
 
 ### Accès au contenu des produits associés {#associated-content}
 
-Si l’éditeur universel reconnaît des produits 1:n sur une page, le panneau latéral affiche automatiquement l’onglet « Contenu commercial associé ». Cet onglet permet aux auteurs d’accéder rapidement au contenu AEM qui a été balisé avec le produit (voir [enrichir les données de produit avec le contenu AEM associé](./enrich-product-associated-content.md) pour plus d’informations). Cet onglet propose des listes déroulantes pour filtrer les types de contenu et les produits spécifiques si plusieurs produits se trouvent sur la page. L’utilisation du contenu fonctionne de manière identique à l’utilisation du contenu de l’onglet « Ressources ».
+Si l’éditeur universel reconnaît 1 :n produits sur une page, le panneau latéral affiche automatiquement l’onglet « Contenu Commerce associé ». Cet onglet permet aux auteurs d’accéder rapidement au contenu AEM qui a été balisé avec le produit (voir [enrichir les données de produit avec le contenu AEM associé](./enrich-product-associated-content.md) pour plus d’informations). Cet onglet propose des listes déroulantes pour filtrer les types de contenu et les produits spécifiques si plusieurs produits se trouvent sur la page. L’utilisation du contenu fonctionne de manière identique à l’utilisation du contenu de l’onglet « Ressources ».
 
 ![Panneau latéral des données du produit](/help/commerce/cif/assets/authoring/associated-commerce-content-tab.png)
 

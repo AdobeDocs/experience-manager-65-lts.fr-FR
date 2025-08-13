@@ -8,8 +8,8 @@ role: Admin
 exl-id: 5511817e-dcf8-463d-8e62-cbbef64ad162
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2817'
-ht-degree: 99%
+source-wordcount: '2816'
+ht-degree: 98%
 
 ---
 
@@ -145,7 +145,7 @@ Le tableau suivant répertorie les plug-ins actuels et présente les information
 
 Configurez les propriétés suivantes qui s’appliquent uniquement au mode de modification dans la boîte de dialogue dans l’IU tactile :
 
-* `useFixedInlineToolbar` : configurez cette propriété booléenne définie sur le nœud d’éditeur de texte enrichi (une avec sling:resourceType=`cq/gui/components/authoring/dialog/richtext`) sur `True` pour que la barre d’outils de l’éditeur de texte enrichi reste fixe au lieu d’être flottante.
+* `useFixedInlineToolbar` : définissez cette propriété booléenne définie sur le nœud de l’éditeur de texte enrichi (une avec sling:resourceType= `cq/gui/components/authoring/dialog/richtext`) sur `True` pour que la barre d’outils de l’éditeur de texte enrichi soit fixe au lieu de flottante.
 
    Lorsque cette propriété est définie sur true, la modification en texte démarre par défaut sur l’événement « foundation-contentloaded ».
 

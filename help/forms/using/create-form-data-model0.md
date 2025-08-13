@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: ecbfe24e-7662-48a7-9b46-37949f59050e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2684'
-ht-degree: 100%
+source-wordcount: '2688'
+ht-degree: 95%
 
 ---
 
@@ -45,13 +45,13 @@ Le modèle de données de formulaire se présente comme ceci :
 
 Avant de commencer, vérifiez que vous disposez des éléments suivants :
 
-* Base de données MySQL avec des exemples de données comme indiqué dans la section [Configurer la base de données](../../forms/using/create-form-data-model0.md#step-set-up-the-database).
+* Base de données MySQL avec des données d’exemple comme indiqué dans la section [Configurer la base de données](../../forms/using/create-form-data-model0.md#step-set-up-the-database).
 * Lot OSGi pour le pilote JDBC MySQL, comme expliqué dans la section [Regrouper le pilote de base de données JDBC](https://helpx.adobe.com/fr/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver).
 
 ## Étape 1 : Configurer la base de données {#step-set-up-the-database}
 
 Une base de données est essentielle pour créer une communication interactive. Ce didacticiel utilise une base de données pour afficher le modèle de données de formulaire et les fonctionnalités de persistance des communications interactives. Configurez une base de données comprenant les tableaux des clients, des factures et des appels.
- L’image suivante présente des exemples de données pour le tableau des clients :
+L’image suivante présente des données d’exemple pour le tableau des clients :
 
 ![sample_data_cust](assets/sample_data_cust.png)
 
@@ -113,7 +113,7 @@ Le tableau des **factures** comprend les informations sur la facturation, telles
 
 ## Étape 2 : Configurer la base de données MySQL comme source de données {#step-configure-mysql-database-as-data-source}
 
-Vous pouvez configurer différents types de sources de données pour créer un modèle de données de formulaire. Pour ce tutoriel, vous allez configurer la base de données MySQL qui est configurée et remplie avec des exemples de données. Pour plus d’informations sur les autres sources de données prises en charge et sur leur configuration, reportez-vous à la section [Intégration de données d’AEM Forms](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/data-integration.html).
+Vous pouvez configurer différents types de sources de données pour créer un modèle de données de formulaire. Pour ce tutoriel, vous allez configurer la base de données MySQL qui est configurée et remplie avec des données d’exemple. Pour plus d’informations sur les autres sources de données prises en charge et sur leur configuration, reportez-vous à la section [Intégration de données d’AEM Forms](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/data-integration.html).
 
 Procédez comme suit pour configurer votre base de données MySQL :
 
@@ -126,7 +126,7 @@ Procédez comme suit pour configurer votre base de données MySQL :
 
 1. Configurez la base de données MySQL comme source de données :
 
-   1. Accédez à la console web d’AEM à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+   1. Accédez à la console web AEM à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
    1. Recherchez la configuration **Apache Sling Connection Pooled DataSource**. Sélectionnez pour ouvrir la configuration en mode édition.
    1. Dans la boîte de dialogue de configuration, indiquez ce qui suit :
 
@@ -253,8 +253,8 @@ En fonction du cas d’utilisation, créez les associations suivantes entre les 
 
 | Association | Objets de modèle de données |
 |---|---|
-| 1:n | client ou cliente:appels (plusieurs appels peuvent être associés à un client ou une cliente dans une facture mensuelle). |
-| 1:1 | client ou cliente:factures (une facture est associée à un client ou une cliente pour un mois donné). |
+| 1:n | client :calls (plusieurs appels peuvent être associés à un client dans une facture mensuelle) |
+| 1:1 | client :bills (une facture est associée à un client pour un mois donné) |
 
 Procédez comme suit pour créer des associations entre objets de modèle de données :
 
@@ -290,11 +290,11 @@ Plusieurs enregistrements d’appels sont disponibles dans le tableau des appels
 
    ![Ajouter une association d’arguments](assets/add_argument_association_new.png)
 
-1. Sélectionnez **Terminé** pour créer une association 1:n entre les objets de modèle de données customers et calls.
+1. Sélectionnez **Terminé** pour créer une association 1:n entre les objets de modèle de données customer et calls.
 
    Une fois que vous avez créé une association entre les objets de modèle de données customer et calls, créez une association 1:1 entre les objets de modèle de données customer et bills.
 
-1. Cochez la case en haut d’un objet de modèle de données **customer** pour le sélectionner et sélectionnez **Ajouter une association**. Le volet des propriétés **Ajouter une association** s’ouvre.
+1. Cochez la case en haut d’un objet de modèle de données **du client ou de la cliente** pour le sélectionner et choisissez **Ajouter une association**. Le volet des propriétés **Ajouter une association** s’ouvre.
 1. Dans le panneau **Ajouter une association** :
 
    * Spécifiez un titre pour l’association. Ce champ est facultatif.
@@ -302,7 +302,7 @@ Plusieurs enregistrements d’appels sont disponibles dans le tableau des appels
 
    * Sélectionnez **factures** dans la liste déroulante **Objet de modèle**.
 
-   * Sélectionnez **get** dans la liste déroulante **Service.** La propriété **billplan**, qui est la clé principale du tableau des factures, est déjà disponible dans la section **Arguments**.
+   * Sélectionnez **get** dans la liste déroulante **Service.** La propriété **billplan**, qui est la clé primaire du tableau des factures, est déjà disponible dans la section **Arguments**.
  Les objets de modèle de données bills et customer sont respectivement liés à l’aide des propriétés billplan (factures) et customerplan (client). Créez une liaison entre ces propriétés pour récupérer les détails du plan pour touts les clientes et clients disponibles dans la base de données MySQL.
 
    * Sélectionnez **client ou cliente** dans la liste déroulante **Liaison à**.
@@ -401,6 +401,6 @@ Procédez comme suit pour générer, modifier et enregistrer des données d’ex
 
 1. Sur la page de modèle de données de formulaire, cliquez sur **Modifier les données dʼexemple**. Cela génère et affiche les exemples de données dans la fenêtre Modifier les exemples de données.
 
-   ![Modifier les exemples de données](assets/edit_sample_data_new.png)
+   ![Modifier les données d’exemple](assets/edit_sample_data_new.png)
 
 1. Dans la fenêtre **Modifier les données d’exemple**, modifiez les données selon les besoins puis sélectionnez **Enregistrer**. Fermez la fenêtre.

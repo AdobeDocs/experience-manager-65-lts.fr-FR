@@ -13,7 +13,7 @@ exl-id: 802130c3-9cb8-46b7-98c2-fd9e83d18ec3
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ L’image mémoire des threads consiste en une liste de toutes les unités d’e
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Pour plus d’informations, consultez la section [Comment utiliser les images mémoire des threads d’une machine virtuelle Java (JVM)](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=fr).
+Pour plus d’informations, consultez la section [Comment utiliser les images mémoire des threads d’une machine virtuelle Java (JVM)](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-17452).
 
 ### Contrôle des sessions JCR non fermées {#checking-for-unclosed-jcr-sessions}
 

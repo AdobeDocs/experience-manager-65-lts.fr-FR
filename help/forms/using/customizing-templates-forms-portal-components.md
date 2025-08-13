@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 3eb9c0e3-950e-4dd5-a4c9-2d8f486ea3cf
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1239'
-ht-degree: 95%
+source-wordcount: '1235'
+ht-degree: 92%
 
 ---
 
@@ -50,10 +50,10 @@ Procédez comme suit pour créer un modèle personnalisé pour divers composants
 
    >[!NOTE]
    >
-   >Remarque : le titre peut être différent du nom du nœud sling:Folder que vous avez créé.
+   >Le titre peut être différent du nom du nœud sling:Folder que vous avez créé.
 
    L’image ci-après illustre la configuration pour le composant Recherche et énumérateur.
-   ![Création d’un nœud sling:Folder](assets/1.png)
+   ![Création d’un sling:Folder](assets/1.png)
 
 1. Créez un fichier template.html dans ce dossier afin qu’il puisse servir de modèle personnalisé.
 1. Créez le modèle personnalisé et utilisez des métadonnées personnalisées comme décrit ci-dessous.
@@ -88,11 +88,11 @@ Le portail Formulaires fournit une syntaxe permettant aux espaces réservés d�
 
 Pour inclure une entrée répétable, configurez l’attribut **data-repeatable** sur **true**.
 
-*Dans l’exemple présenté, deux éléments Div se trouvent en haut du modèle personnalisé. La première, avec la classe CSS « __FP_boxes-container », fonctionne comme un élément conteneur pour les formulaires répertoriés. Le second, avec la classe CSS « __FP_boxes », est un modèle pour les entités de base, dans ce cas un formulaire. L’attribut **data-repeatable**&#x200B;qui figure dans l’élément Div a la valeur **true**.*
+*Dans l’exemple présenté, deux éléments Div se trouvent en haut du modèle personnalisé. La première, avec la classe CSS « __FP_boxes-container », fonctionne comme un élément conteneur pour les formulaires répertoriés. Le second, avec la classe CSS « __FP_boxes », est un modèle pour les entités de base, dans ce cas un formulaire. L’attribut **data-repeatable**qui figure dans l’élément Div a la valeur **true**.*
 
 Chaque espace réservé possède un jeu de métadonnées prêtes à l’emploi exclusif. Pour afficher des métadonnées personnalisées à un emplacement spécifique du formulaire, ajoutez la propriété **${metadata_prop} à cet emplacement**
 
-*Dans cet exemple, la propriété des métadonnées est utilisée dans plusieurs instances. Elle est utilisée par exemple de façon adéquate dans **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**&#x200B;et **path**.*
+*Dans cet exemple, la propriété des métadonnées est utilisée dans plusieurs instances. Elle est utilisée par exemple de façon adéquate dans **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**et **path**.*
 
 ## Métadonnées prêtes à l’emploi {#out-of-the-box-metadata}
 

@@ -184,7 +184,7 @@ Pour ajouter des utilisateurs à l’aide de l’API Directory Manager Service
 
    >[!NOTE]
    >
-   >Appelez une méthode qui appartient à l’objet `UserImpl` pour définir d’autres valeurs. Par exemple, vous pouvez définir la valeur du paramètre régional en appelant la méthode `setLocale` de l’objet `UserImpl`.
+   >Appelez une méthode qui appartient à l’objet `UserImpl` pour définir d’autres valeurs. Par exemple, vous pouvez définir la valeur des paramètres régionaux en appelant la méthode `setLocale` de l’objet `UserImpl`.
 
 1. Ajoutez l’utilisateur ou l’utilisatrice à AEM Forms.
 

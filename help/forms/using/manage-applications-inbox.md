@@ -30,7 +30,7 @@ En résumé, la boîte de réception vous permet de créer une nouvelle applicat
 
 1. Accédez à la boîte de réception AEM à l’adresse https://’[serveur]:[port/]’/aem/inbox.
 1. Dans l’interface utilisateur de la boîte de réception, sélectionnez **[!UICONTROL Créer > Application]**. La page Sélectionner l’application s’affiche.
-1. Sélectionnez une application, puis appuyez sur **[!UICONTROL Créer]**. Le formulaire adaptatif associé à l’application s’ouvre. Renseignez les informations dans le formulaire adaptatif et sélectionnez **[!UICONTROL Envoyer]**. Cette action lance le processus associé et crée une tâche dans la boîte de réception de la personne désignée.
+1. Sélectionnez une application, puis cliquez sur **[!UICONTROL Créer]**. Le formulaire adaptatif associé à l’application s’ouvre. Renseignez les informations dans le formulaire adaptatif et sélectionnez **[!UICONTROL Envoyer]**. Cette action lance le processus associé et crée une tâche dans la boîte de réception de la personne désignée.
 
 ## Gestion des tâches {#manage-tasks}
 
@@ -136,7 +136,7 @@ Une personne propriétaire de modèle de workflow ne peut pas afficher des élé
      | allowExplicitSharing | allowExplicitSharing | BOOLÉEN |
 
 
-   * Déployez les index par le biais d’un package AEM. Vous pouvez utiliser un projet [AEM Archetype](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/using) pour créer un package AEM déployable. Utilisez l’exemple de code suivant pour ajouter des index à un projet AEM Archetype :
+   * Déployez les index par le biais d’un package AEM. Vous pouvez utiliser un projet [AEM Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using) pour créer un package AEM déployable. Utilisez l’exemple de code suivant pour ajouter des index à un projet AEM Archetype :
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()

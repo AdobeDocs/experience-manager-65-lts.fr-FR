@@ -9,8 +9,8 @@ role: Admin, User, Developer
 exl-id: b866ff4a-251c-4402-b426-9c4d97fd181d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3982'
-ht-degree: 100%
+source-wordcount: '3981'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ Dans ce workflow :
 
 #### Utilisation de modèles de lettre fournis avec Correspondence Management {#using-letter-templates-provided-with-correspondence-management}
 
-Au lieu de créer un modèle de disposition entièrement nouveau, vous pouvez choisir de modifier et réutiliser des modèles fournis par Correspondence Management. Vous pouvez utiliser Designer pour modifier rapidement l’identité graphique et les données et les champs de contenu des modèles en fonction des besoins de votre entreprise. Pour plus d’informations sur les modèles Correspondence Management, voir [Modèles de lettre de référence](/help/forms/using/reference-cm-layout-templates.md).
+Au lieu de créer un modèle de disposition entièrement nouveau, vous pouvez choisir de modifier et réutiliser des modèles fournis par Correspondence Management. Vous pouvez utiliser le concepteur pour modifier rapidement l’identité graphique et les données et les champs de contenu des modèles en fonction des besoins de votre entreprise. Pour plus d’informations sur les modèles Correspondence Management, voir [Modèles de lettre de référence](/help/forms/using/reference-cm-layout-templates.md).
 
 ### Création de fragments de document {#document-fragment-creation}
 
@@ -159,7 +159,7 @@ Analysez chaque lettre pour déceler ses différentes composantes. C’est au sp
 
 * les conditions dans lesquelles des utilisateurs et utilisatrices professionnelles, comme les experts et expertes en sinistres ou les chargés et chargées d’assistance, sont amenés à modifier tout ou partie du contenu de la lettre.
 * Les scénarios décrivent l’expérience des utilisateurs et utilisatrices, les conditions requises et les avantages de l’utilisation de la solution Lettres.
-* Ils fournissent également : les compétences et les outils requis pour le projet ;
+* Les scénarios fournissent également :The ensembles de compétences et d’outils requis pour votre projet.
 * les recommandations relatives à la planification de l’implémentation ; ``un bon aperçu général de l’implémentation.
 
 ## Avantages de l’analyse {#benefits-of-performing-the-analysis}

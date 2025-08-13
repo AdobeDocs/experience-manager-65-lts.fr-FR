@@ -11,8 +11,8 @@ role: Admin
 exl-id: ee438c55-88cd-4f55-873e-16376b36fa7b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 100%
+source-wordcount: '827'
+ht-degree: 94%
 
 ---
 
@@ -68,7 +68,7 @@ La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 >[!NOTE]
 >
 >Cet emplacement est utilisé uniquement si le cookie `request-path` n’est pas défini. Si vous demandez une page sous le chemin configuré sans jeton de connexion valide, le chemin demandé est stocké dans un cookie
->et le navigateur sera redirigé vers cet emplacement après une authentification réussie.
+>>et le navigateur sera redirigé vers cet emplacement après une authentification réussie.
 
 **Attribut ID de l’utilisateur** Nom de l’attribut contenant l’ID utilisateur utilisé pour authentifier et créer l’utilisateur dans le référentiel CRX.
 
@@ -92,7 +92,7 @@ La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 
 Les assertions SAML sont signées et peuvent éventuellement être chiffrées. Pour que cela fonctionne, vous devez fournir au moins le certificat public de l’IdP dans le référentiel. Pour ce faire, vous devez effectuer les opérations suivantes :
 
-1. Accédez à *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*.
+1. Accédez à *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*
 1. Appuyez sur **[!UICONTROL Créer un lien TrustStore]**.
 1. Saisissez le mot de passe du TrustStore, puis appuyez sur **[!UICONTROL Enregistrer]**.
 1. Cliquez sur **[!UICONTROL Gérer le TrustStore]**.
@@ -107,7 +107,7 @@ Les assertions SAML sont signées et peuvent éventuellement être chiffrées. P
 >
 >Les étapes ci-dessous sont obligatoires, sinon l’exception suivante sera générée : `com.adobe.granite.keystore.KeyStoreNotInitialisedException: Uninitialised system trust store`.
 
-1. Accédez à [http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html).
+1. Accédez à : [http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html)
 1. Modifiez l’utilisateur `authentication-service`.
 1. Créez un KeyStore en cliquant sur **Créer le KeyStore** sous **Paramètres du compte**.
 
@@ -133,7 +133,7 @@ Les assertions SAML sont signées et peuvent éventuellement être chiffrées. P
 
 Vous pouvez configurer un journal afin de déboguer tous les problèmes pouvant résulter d’une mauvaise configuration de SAML. Vous pouvez le faire en procédant comme suit :
 
-1. Accédez à la console web à l’adresse *http://localhost:4502/system/console/configMgr*.
+1. Accédez à la console web à l’adresse *http://localhost:4502/system/console/configMgr*
 1. Recherchez l’entrée nommée **Configuration du journal de connexion Sling Apache** et cliquez dessus.
 1. Créez un journal avec la configuration suivante :
 

@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: f1cea461-1d16-4944-b4c0-77be81b821e7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2459'
-ht-degree: 100%
+source-wordcount: '2464'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ Pour créer un tableau, faites glisser un composant Tableau à partir de l’exp
 
 ### A propos de l’en-tête et des cellules du corps {#about-header-and-body-cells}
 
-Les cellules d’en-tête sont des champs de texte. Pour modifier le libellé d’un en-tête, cliquez avec le bouton droit sur la cellule d’en-tête, puis cliquez sur **Modifier**. Dans la boîte de dialogue Modifier, mettez à jour le libellé dans le champ **Valeur** et appuyez sur **OK**.
+Les cellules d’en-tête sont des champs de texte. Pour modifier le libellé d’un en-tête, cliquez avec le bouton droit sur la cellule d’en-tête, puis cliquez sur **Modifier**. Dans la boîte de dialogue Modifier, mettez à jour le libellé dans le champ **Valeur** et cliquez sur **OK**.
 
 Les cellules du corps sont par défaut des zones de texte. Vous pouvez remplacer une cellule de corps par un autre composant de formulaire adaptatif disponible dans le sidekick, tel qu’une zone numérique, un sélecteur de date, ou une liste déroulante.
 
@@ -104,7 +104,7 @@ Pour activer le tri :
    ![Activer le tri](assets/enable_sorting_new.png)
 
 1. Passez au mode **Prévisualisation** pour voir le rendu. Le tableau est automatiquement trié en fonction de la première colonne du tableau.
-1. Appuyez sur l’en-tête de colonne pour trier les valeurs en fonction de la colonne.
+1. Cliquez sur l’en-tête de colonne pour trier les valeurs en fonction de la colonne.
 
    Un en-tête de colonne avec une flèche vers le haut indique que le tableau est trié en fonction de cette colonne. En outre, les valeurs de la colonne s’affichent dans l’ordre croissant.
 
@@ -287,7 +287,7 @@ Le fichier XML contenant les données au format suivant :
 
 Dans l’exemple XML, les données d’une ligne sont définies par les balises `<Row1>`, qui sont le nom d’élément de la ligne du tableau. Dans la balise `<Row1>`, les données de chaque cellule sont définies dans la balise pour son nom d’élément, notamment `<tableItem1>`, `<tableItem2>`, `<tableItem3>` et `<type>`.
 
-Pour les fusionner dans le tableau au moment de l’exécution, vous devez indiquer le formulaire adaptatif contenant le tableau à l’emplacement XML absolu avec le mode WCM désactivé. Par exemple, si le formulaire adaptatif se trouve sous *https://localhost:4502/myForms/bankTransaction.html* et que le fichier de données XML est enregistré sous *C:/myTransactions/bankSummary.xml*, vous pouvez afficher le tableau avec des données à l’adresse URL suivante :
+Pour les fusionner dans le tableau au moment de l’exécution, vous devez indiquer le formulaire adaptatif contenant le tableau à l’emplacement XML absolu avec le mode WCM désactivé. Par exemple, si le formulaire adaptatif se trouve sous *https://localhost:4502/myForms/bankTransaction.html* et que le fichier de données XML est enregistré sous *C:/myTransactions/bankSummary.xml*, vous pouvez afficher le tableau avec des données à l’adresse URL suivante :
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 

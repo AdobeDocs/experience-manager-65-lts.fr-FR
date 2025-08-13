@@ -12,8 +12,8 @@ role: User,Admin,Architect,Developer
 exl-id: b5fc6cf5-fffd-4ee9-91d4-d10e532c3a11
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1937'
-ht-degree: 100%
+source-wordcount: '1936'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ Les activités sont affichées avec un libellé décrivant le type d’activité
 
 >[!CAUTION]
 >
->Sécurisez le nœud de paramètres d’activité **cq:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les personnes utilisatrices normales. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
+>Sécurisez le nœud de paramètres d’activité **cq:ActivitySettings** sur l’instance de publication afin qu’il ne soit pas accessible aux utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
 >
 >Voir [Conditions préalables à l’intégration à Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) pour plus d’informations.
 

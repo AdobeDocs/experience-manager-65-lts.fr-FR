@@ -12,8 +12,8 @@ role: Admin,Architect,Data Architect,Developer,Leader
 exl-id: 8f8883d8-4e2b-4ba0-bd83-414a96e7d382
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3214'
-ht-degree: 100%
+source-wordcount: '3212'
+ht-degree: 98%
 
 ---
 
@@ -66,7 +66,7 @@ Chaque phase contient ses propres jalons. Pour chaque [personnage](#persona) (ou
 
 >[!NOTE]
 >
->Il n’existe pas de relation directe 1:1 entre les documents requis et les éléments livrables.
+>Il n’existe pas de relation directe 1:1 entre les différents documents requis et les éléments livrables.
 
 ### Préparation {#preparation}
 
@@ -239,7 +239,7 @@ La planification du développement est essentielle pour vous assurer que votre p
 
   Avant le développement, tous les processus de prise en charge nécessaires au déploiement, à la publication, au test et aux problèmes de rapports doivent être mis en place.
 
-  Voir aussi le [portail d’assistance Adobe](https://experienceleague.adobe.com/fr?support-solution=General&amp;lang=fr&amp;support-tab=home#support).
+  Voir aussi le [portail d’assistance Adobe](https://experienceleague.adobe.com/?support-solution=General&lang=fr&support-tab=home#support).
 
 ### Planification et mise en œuvre des opérations {#operations-planning-and-operations}
 
@@ -579,7 +579,7 @@ Le ou la responsable de la sécurité :
 
 Les listes de contrôle couvrent les **documents requis** et les **éléments livrables** pour chaque jalon.
 
-* Il n’existe aucune relation individuelle entre ces deux éléments ; par exemple, un groupe de documents requis peut générer un seul livrable.
+* Il n&#39;existe aucune relation 1:1 entre ces éléments. Par exemple, un groupe de documents requis peut résulter en un seul livrable.
 * Le livrable d’un rôle peut être un document requis par un autre rôle au cours du même jalon.
 
 ### Documents requis {#required-documents}

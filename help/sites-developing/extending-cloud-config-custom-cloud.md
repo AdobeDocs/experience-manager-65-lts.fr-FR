@@ -11,8 +11,8 @@ role: Developer
 exl-id: 7ae41982-8438-41a6-91f9-3b3b6755a39b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 100%
+source-wordcount: '399'
+ht-degree: 96%
 
 ---
 
@@ -147,8 +147,8 @@ Le jeu de services cloud par défaut peut être étendu avec des types de servic
    * avec comme **Titre**= `Google Analytics Configuration` ;
    * avec comme **allowedPath** = `/etc/cloudservices/googleanalytics(/.*)?` ;
    * avec comme **allowedChildren** = `/apps/acs/analytics/templates/googleanalytics` ;
-   * avec comme **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (sur le nœud template et non sur le nœud jcr:content) ;
-   * avec comme **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (sur jcr:content).
+   * avec comme **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (sur le nœud template et non sur le nœud jcr:content) ;
+   * avec comme **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (sur jcr:content) ;
 
 1. Créez un composant : `/apps/acs/analytics/components/googleanalytics`.
 

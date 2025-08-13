@@ -24,26 +24,26 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 >Fin de la prise en charge de Secure Socket Layer 2.0 et 3.0, ainsi que de Transport Layer Security 1.0 et 1.1.
->À compter du 30 avril 2024, Adobe Dynamic Media ne prendra plus en charge les éléments suivants :
+>>À compter du 30 avril 2024, Adobe Dynamic Media ne prendra plus en charge les éléments suivants :
 >
 >* SSL (Secure Socket Layer) 2.0
 >* SSL 3.0
 >* TLS (Transport Layer Security) 1.0 et 1.1
 >* Les chiffrements faibles suivants dans TLS 1.2 :
-> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
-> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
-> `TLS_RSA_WITH_AES_256_GCM_SHA384`
-> `TLS_RSA_WITH_AES_256_CBC_SHA256`
-> `TLS_RSA_WITH_AES_256_CBC_SHA`
-> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
-> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
-> `TLS_RSA_WITH_AES_128_GCM_SHA256`
-> `TLS_RSA_WITH_AES_128_CBC_SHA256`
-> `TLS_RSA_WITH_AES_128_CBC_SHA`
-> `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
-> `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
-> `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
-> `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
+>  > `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
+>  > `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
+>  > `TLS_RSA_WITH_AES_256_GCM_SHA384`
+>  > `TLS_RSA_WITH_AES_256_CBC_SHA256`
+>  > `TLS_RSA_WITH_AES_256_CBC_SHA`
+>  > `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
+>  > `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
+>  > `TLS_RSA_WITH_AES_128_GCM_SHA256`
+>  > `TLS_RSA_WITH_AES_128_CBC_SHA256`
+>  > `TLS_RSA_WITH_AES_128_CBC_SHA`
+>  > `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
+>  > `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
+>  > `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
+>  > `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
 >
 > Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
@@ -351,7 +351,7 @@ Configurez l’authentification de réplication sur l’auteur afin de pouvoir r
    * **[!UICONTROL Alias de Keystore]** : cette valeur est identique à celle de la valeur **Nouvel alias** lors de la génération de la clé dans la section [Configuration de l’authentification](#setting-up-authentication), par exemple, `replication`. (Reportez-vous à l’étape 7 de la section [Configuration de l’authentification](#setting-up-authentication).)
    * **[!UICONTROL Mot de passe du Keystore]** : le mot de passe du Keystore créé lorsque vous avez appuyé sur **[!UICONTROL Créer le KeyStore]**. Adobe ne fournit pas ce mot de passe. Reportez-vous à l’étape 5 de la section [Configuration de l’authentification](#setting-up-authentication).
 
-   L’image suivante montre l’agent de réplication avec des exemples de données :
+   L’image suivante montre l’agent de réplication avec des données d’exemple :
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
 
@@ -798,7 +798,7 @@ Ces étapes permettent de configurer l’instance de publication d’Experience�
 
 ### Personnalisation des filtres de ressources pour la réplication (facultatif) {#customizing-asset-filters-for-replication}
 
-1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils**&#x200B;[!UICONTROL &#x200B; > &#x200B;]&#x200B;**Général**&#x200B;[!UICONTROL &#x200B; > &#x200B;]&#x200B;**CRXDE Lite]**.
+1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils**[!UICONTROL  > ]**Général**[!UICONTROL  > ]**CRXDE Lite]**.
 1. Dans l’arborescence de gauche, accédez à `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` pour parcourir les filtres.
 
    ![chlimage_1-511](assets/chlimage_1-511.png)
@@ -1251,23 +1251,23 @@ Reportez-vous à la section [Diffusion de ressources Dynamic Media](/help/asset
   <tr>
    <td>Copier le code intégré d’une visionneuse</td>
    <td><p>La boîte de dialogue Copier le code affiche un fragment de code similaire à celui qui suit (le code est utilisé à des fins de démonstration uniquement) :</p> <p><code class="code">&lt;style type="text/css"&gt;
-       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
+       #s7basiczoom_div.s7basiczoomviewer{
        width:100%;
        height:auto;
-       &rbrace;
+       }
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
        "containerId" : "s7basiczoom_div",
-       "params" : &lbrace;
+       "params" : {
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
-       &rbrace;).init();
+       "asset" : "/content/dam/path/to/Image.jpg" }
+       }).init();
        &lt;/script&gt;</code></p> <p>où <code>PUBLISHNODE</code> désigne le nœud de publication standard d’Experience Manager et <code>IMAGESERVICEPUBLISHNODE</code> fait référence à l’URL du service d’images.</p> <p>Voir aussi <a href="/help/assets/delivering-dynamic-media-assets.md">Diffusion de ressources Dynamic Media</a>.</p> </td>
   </tr>
  </tbody>

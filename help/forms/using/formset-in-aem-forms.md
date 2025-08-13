@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 29339930-2c0c-46d8-84ad-92b1e8384422
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2804'
-ht-degree: 100%
+source-wordcount: '2801'
+ht-degree: 99%
 
 ---
 
@@ -286,7 +286,7 @@ prefillXML : O
 
 La sous-arborescence indique les données des formulaires dans le jeu de formulaires. L’élément est optionnel dans le XML prérempli uniquement si l’élément du jeu de formulaires n’est pas présent.
 
-### XDP :XDP {#xdp-xdp}
+### XDP:XDP {#xdp-xdp}
 
 `parent elements: fs_data/null`
 
@@ -300,7 +300,7 @@ La sous-arborescence indique les données des formulaires dans le jeu de formula
 
 Cette balise indique le début du XML du formulaire HTML5. Cela est ajouté à l’envoi XML s’il est présent dans le XML prérempli ou s’il n’y a aucun XML prérempli. Cette balise peut être supprimée du XML prérempli.
 
-### XFA : DATASETS {#xfa-datasets}
+### XFA :DATASETS {#xfa-datasets}
 
 `parent elements: xdp:xdp`
 
@@ -312,7 +312,7 @@ Cette balise indique le début du XML du formulaire HTML5. Cela est ajouté à l
 
 `children: xfa:data`
 
-### XFA:DATA {#xfa-data}
+### XFA :DATA {#xfa-data}
 
 `parent elements: xfa:datasets`
 

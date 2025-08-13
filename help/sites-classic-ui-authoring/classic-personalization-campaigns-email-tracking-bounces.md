@@ -11,8 +11,8 @@ role: User
 exl-id: b8d9df45-8b71-4f93-b94a-ecaf3da9b67b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 100%
+source-wordcount: '671'
+ht-degree: 93%
 
 ---
 
@@ -64,7 +64,7 @@ Pour configurer l’importateur de flux pour le suivi des messages rejetés, pro
 
    Permet de définir des indicateurs à rechercher.
 
-   `imap.flag.SEEN` :« false » pour les nouveaux messages ou les messages non consultés ; « true » pour les messages déjà lus.
+   `imap.flag.SEEN`:Set false pour les nouveaux messages ou les messages non consultés, true pour les messages déjà lus
 
    Voir [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html) pour obtenir la liste complète des indicateurs.
 

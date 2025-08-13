@@ -98,7 +98,7 @@ Pour ouvrir une mosaïque afin d’afficher ou de modifier des éléments :
 
 La chronologie du projet fournit des informations sur le moment auquel les ressources du projet ont été utilisées pour la dernière fois. Pour afficher la chronologie du projet, procédez comme suit.
 
-1. Dans la console **Projets**, sélectionnez **Chronologie** dans le sélecteur de rail en haut à gauche de la console.
+1. Dans la console **Projets**, cliquez sur **Chronologie** dans le sélecteur de rail en haut à gauche de la console.
    ![Sélection du mode Chronologie](assets/projects-timeline-rail.png)
 2. Dans la console, sélectionnez le projet pour lequel vous souhaitez afficher la chronologie.
    ![Mode Chronologie du projet](assets/project-timeline-view.png)

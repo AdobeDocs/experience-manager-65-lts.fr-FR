@@ -36,7 +36,7 @@ Correspondence Management expose les API pour récupérer des instances de lett
 >[!NOTE]
 >
 >LetterInstanceService est un service OSGi et son instance peut être récupérée à l’aide de @Reference dans une classe Java™
->ou sling.getService (LetterInstanceService. ) dans JSP.
+>>ou sling.getService (LetterInstanceService. ) dans JSP.
 
 ### Utilisation de getAllLetterInstances {#using-nbsp-getallletterinstances}
 

@@ -11,8 +11,8 @@ role: Developer
 exl-id: d8fe6fb6-8ede-4fa7-95da-adee313bf768
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 100%
+source-wordcount: '585'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ Depuis AEM 6.0, des modifications ont été apportées à la manière dont les 
 
       * Recréez la structure `/libs` appropriée sous `/apps`.
 
-        Cela ne nécessite aucune copie 1:1 ; [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) est utilisé pour effectuer des références croisées avec les définitions d’origine qui sont requises. Sling Resource Merger propose des services pour accéder à des ressources et les fusionner par le biais de mécanismes de différenciation (diff).
+        Cela ne nécessite pas de copie à 1 :1, le [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) est utilisé pour effectuer des références croisées avec les définitions d’origine qui sont requises. Sling Resource Merger propose des services pour accéder à des ressources et les fusionner par le biais de mécanismes de différenciation (diff).
 
       * Sous `/apps`, apportez vos éventuelles modifications.
 
@@ -81,7 +81,7 @@ Dans le cas des recouvrements, la ressource diffusée est un regroupement des re
    * L’ordre décroissant des chemins de recherche indique leurs priorités respectives.
    * Dans une installation standard, les principales valeurs par défaut sont les suivantes : `/apps`, `/libs`. Par conséquent, le contenu de `/apps` a une priorité supérieure à celui de `/libs` (en d’autres termes, il le *recouvre*).
 
-* Deux utilisateurs du service ont besoin d’un accès JCR:READ à l’emplacement de stockage des scripts. Ces utilisateurs sont : components-search-service (utilisé par les composants de cache et d’accès com.day.cq.wcm.coreto) et sling-scripting (utilisé par org.apache.sling.servlets.resolver pour rechercher des servlets).
+* Deux utilisateurs du service ont besoin d’un accès JCR:READ à l’emplacement de stockage des scripts. Ces utilisateurs sont : components-search-service (utilisé par les composants de cache et d’accès com.day.cq.wcm.coreto) et sling-scripting (utilisé par org.apache.sling.servlets.resolver pour rechercher des servlets).
 * La configuration suivante doit également être définie en fonction de l’emplacement de stockage des scripts (dans cet exemple sous /etc, /libs ou /apps).
 
   ```

@@ -178,7 +178,7 @@ Les paramètres ci-dessous sont disponibles pour le service Document management.
 
 L&#39;e-mail est généralement utilisé pour distribuer du contenu ou fournir des informations d’état dans le cadre d’un processus automatisé. `EmailService` permet aux processus de recevoir des courriers électroniques d’un serveur POP3 ou IMAP et d’en envoyer à un serveur SMTP.
 
-Par exemple, un processus utilise le service Email pour envoyer un e-mail avec un formulaire PDF en pièce jointe. Le service Email se connecte à un serveur SMTP pour envoyer l&#39;e-mail avec la pièce jointe. Le formulaire au format PDF est conçu pour permettre à la personne destinatrice d’appuyer sur le bouton d’envoi lorsqu’elle l’a rempli. Le formulaire est alors renvoyé sous forme de pièce jointe au serveur de messagerie indiqué. Le service Email récupère l&#39;e-mail renvoyé et stocke le formulaire complété dans une variable de formulaire de données de processus.
+Par exemple, un processus utilise le service Email pour envoyer un e-mail avec un formulaire PDF en pièce jointe. Le service Email se connecte à un serveur SMTP pour envoyer l&#39;e-mail avec la pièce jointe. Le formulaire au format PDF est conçu pour permettre à la personne destinataire de cliquer sur le bouton d’envoi après l’avoir rempli. Le formulaire est alors renvoyé sous forme de pièce jointe au serveur de messagerie indiqué. Le service Email récupère l&#39;e-mail renvoyé et stocke le formulaire complété dans une variable de formulaire de données de processus.
 
 Les paramètres ci-dessous sont disponibles pour le service Email.
 
@@ -295,7 +295,7 @@ dans le nom d’utilisateur (Windows uniquement) :** indique les caractères qu
 
 * **Réessayer selon le temps imparti**
 
-  Effectuez une nouvelle tentative de conversion PDF si la première tentative de conversion a duré moins de temps que le délai spécifié. Par exemple, si le délai spécifié est de 270 s et que la première tentative a duré 200 s, PDF Generator effectue une nouvelle tentative. Si la première tentative a duré 270 s, aucune nouvelle tentative ne sera effectuée.
+  Effectuez une nouvelle tentative de conversion PDF si la première tentative de conversion a duré moins de temps que le délai spécifié. Par exemple, si le délai spécifié est de 270 s et que la première tentative a duré 200 s, PDF Generator effectue une nouvelle tentative de conversion. Si la première tentative a duré 270 s, aucune nouvelle tentative de conversion ne sera effectuée.
 
 ## Paramètres du service Guides ES4 Utilities {#guides-es4-utilities-service-settings}
 
@@ -810,7 +810,7 @@ Les profils de sécurité par défaut sont installés. Ils peuvent ensuite être
 ### Modifier les paramètres de sécurité d’un service {#modify-security-settings-for-a-service}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des services.
-1. Dans la page Gestion des services, sélectionnez le service à configurer.
+1. Dans la page Gestion des services, cliquez sur le service à configurer.
 1. Cliquez sur l’onglet Sécurité.
 1. Dans la liste Demander aux appelants de s’authentifier, sélectionnez Oui ou Non pour indiquer si le service peut être appelé avec ou sans informations d’identification.
 
@@ -866,7 +866,7 @@ Chaque service peut tirer parti des options de pool pour traiter les demandes d�
 ### Activer le pool {#enable-pooling}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des services.
-1. Dans la page Gestion des services, sélectionnez le service à configurer.
+1. Dans la page Gestion des services, cliquez sur le service à configurer.
 1. Cliquez sur l’onglet Mise en pool.
 1. Dans la liste Stratégie de traitement de demande, sélectionnez Instances mises en pool pour Toutes les demandes.
 1. Dans le champ Taille initiale du pool d’instances de service, saisissez la taille initiale du pool. Lors du déploiement du service, cette valeur permet de déterminer le nombre d’instances d’implémentation du service à créer et à affecter au pool libre en attente de demandes d’appel. Le conteneur du service peut alors répondre immédiatement aux demandes d’appel sans initialisation préalable d’une instance de service.
@@ -878,7 +878,7 @@ Chaque service peut tirer parti des options de pool pour traiter les demandes d�
 ### Supprimer le pool {#remove-pooling}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des services.
-1. Dans la page Gestion des services, sélectionnez le service à configurer.
+1. Dans la page Gestion des services, cliquez sur le service à configurer.
 1. Cliquez sur l’onglet Mise en pool.
 1. Dans la liste Stratégie de traitement de demande, sélectionnez Nouvelle instance pour chaque demande ou Instance unique pour toutes les demandes.
 

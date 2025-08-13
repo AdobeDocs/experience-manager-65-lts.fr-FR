@@ -11,8 +11,8 @@ role: User
 exl-id: 3a39c4ba-353a-41ee-bfe6-e7eb4323f170
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 100%
+source-wordcount: '1219'
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ Tout d’abord, vérifiez que la connexion entre les instances de création et d
 
 >[!NOTE]
 >
->Vérifiez que la propriété **acMapping** sur le nœud **jcr:content** de la page est définie sur **mapRecipient** ou **profile**, lorsque vous utilisez respectivement Adobe Campaign 6.1.x ou Adobe Campaign Standard.
+>Assurez-vous que la propriété **acMapping** sur le nœud **jcr:content** de la page est définie sur **mapRecipient** ou **profile** lorsque vous utilisez Adobe Campaign 6.1.x ou Adobe Campaign Standard, respectivement
 >
 
 ### Création d’un formulaire {#creating-a-form}

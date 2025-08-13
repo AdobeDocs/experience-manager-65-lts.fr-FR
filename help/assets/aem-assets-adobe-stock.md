@@ -154,7 +154,7 @@ Exécutez les étapes suivantes pour ajouter la configuration cloud et vous conn
 1. Cliquez sur **[!UICONTROL Créer]** et la page **[!UICONTROL Configuration Adobe Stock]** affiche plusieurs champs. Suivez ces instructions pour spécifier les détails dans ces champs :
    * **[!UICONTROL Titre]** : accédez à la page **[!UICONTROL Configuration du compte technique Adobe IMS]** (voir [étape 3](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)), copiez le titre et collez-le ici.
    * **[!UICONTROL Configuration Adobe IMS associée]** : sélectionnez l’intégration [!DNL Adobe Stock] que vous avez créée.
-   * **[!UICONTROL Paramètre régional]** : sélectionnez **[!UICONTROL Anglais (États-Unis)]**.
+   * **[!UICONTROL Paramètres régionaux]** : sélectionnez **[!UICONTROL Anglais (États-Unis)]**.
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
    ![utiliser adobe atock avec aem](/help/assets/assets/adobe-stock-config-page.png)
 

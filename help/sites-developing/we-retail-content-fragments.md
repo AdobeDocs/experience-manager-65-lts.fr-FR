@@ -11,8 +11,8 @@ role: Developer
 exl-id: a772e177-1410-4341-b4be-7e5a658f4c5c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 100%
+source-wordcount: '428'
+ht-degree: 92%
 
 ---
 
@@ -49,13 +49,13 @@ Vous y trouverez notamment **Arctic Surfing in Lofoten**, un fragment avec des r
 
 * Naviguez par le biais de **Ressources**, **Fichiers**, **We.Retail**, **Anglais**, **Expériences**, **Arctic Surfing in Lofoten** :
 
-   * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
+   * [http://localhost:4502/assets.html/content/dam/we-retail/en/expériences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
 
 ![cf-44](assets/cf-44.png)
 
 Vous pouvez sélectionner et modifier le fragment **Arctic Surfing in Lofoten** :
 
-* [http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
+* [http://localhost:4502/editor.html/content/dam/we-retail/en/expériences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
 
 Ici, vous pouvez [modifier et gérer](/help/assets/content-fragments/content-fragments.md) votre fragment à l’aide des onglets (panneau de gauche) :
 

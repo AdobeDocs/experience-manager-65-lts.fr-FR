@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: b9b989e3-f204-4929-a03a-857cbb786185
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 100%
+source-wordcount: '1501'
+ht-degree: 99%
 
 ---
 
@@ -330,7 +330,7 @@ La mise en œuvre de la base de données du portail Forms utilise un tableau de 
 Effectuez les étapes suivantes pour créer [une bibliothèque cliente](/help/sites-developing/clientlibs.md) et utiliser le script :
 
 1. Connectez-vous à CRXDE et accédez à /etc/clientlibs/
-1. Créez un nœud de type **cq:ClientLibraryFolder** et nommez-le. Par exemple, `validation`.
+1. Créez un nœud de type **cq:ClientLibraryFolder** et indiquez son nom. Par exemple, `validation`.
 
    Cliquez sur **[!UICONTROL Enregistrer tout]**.
 

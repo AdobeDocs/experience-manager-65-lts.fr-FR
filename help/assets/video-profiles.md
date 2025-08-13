@@ -121,7 +121,7 @@ Pour utiliser un recadrage intelligent pour la vidéo, vous devez créer un prof
 
 ![Modification d’un profil de codage vidéo avec le recadrage intelligent](assets/edit-smart-crop-video2.png)
 
-Vous pouvez activer ou désactiver le recadrage intelligent de vidéo dans le profil vidéo à l’aide du curseur à l’extrémité droite de **[!UICONTROL Rapport de recadrage intelligent]** dans l’interface utilisateur.
+Vous pouvez activer ou désactiver le recadrage intelligent de vidéo dans le profil vidéo à l’aide du curseur à l’extrémité droite de **[!UICONTROL Ratio de recadrage intelligent]** dans l’interface d’utilisation.
 
 Après avoir créé et enregistré votre profil vidéo, vous pouvez l’appliquer aux dossiers de votre choix.
 

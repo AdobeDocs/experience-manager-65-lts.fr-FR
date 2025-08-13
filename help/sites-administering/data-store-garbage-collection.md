@@ -36,7 +36,7 @@ Les packages constituent une autre source de données à nettoyer récupérables
 
 ## Comment fonctionne la récupération de l’espace mémoire du magasin de données ? {#how-does-data-store-garbage-collection-work}
 
-Si le référentiel a été configuré avec un entrepôt de données externe, le [nettoyage de la mémoire d’entrepôt de données est exécuté automatiquement](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) dans le cadre de la période de maintenance hebdomadaire. L’administrateur système peut également [exécuter le nettoyage de la mémoire du magasin de données manuellement](#running-data-store-garbage-collection) selon les besoins. En général, il est recommandé d’effectuer périodiquement la récupération de l’espace mémoire du magasin de données, mais aussi de prendre en compte les facteurs suivants lors de sa planification :
+Si le référentiel a été configuré avec un magasin de données externe, la [récupération de l’espace mémoire du magasin de données est exécutée automatiquement](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) dans le cadre de la période de maintenance hebdomadaire. La personne en charge de l’administration système peut également [exécuter le récupération de l’espace mémoire du magasin de données manuellement](#running-data-store-garbage-collection) selon les besoins. En général, il est recommandé d’effectuer périodiquement la récupération de l’espace mémoire du magasin de données, mais aussi de prendre en compte les facteurs suivants lors de sa planification :
 
 * La récupération de l’espace mémoire du magasin de données prend du temps et peut avoir un impact sur les performances. Elle doit donc être planifiée en conséquence.
 * La suppression des enregistrements de mémoire du magasin de données n’affecte pas les performances normales. Il ne s’agit donc pas d’une optimisation des performances.
@@ -55,7 +55,7 @@ Cette approche fonctionne bien pour un nœud unique avec un entrepôt de donnée
 
 >[!NOTE]
 >
->Lorsque le nettoyage de la mémoire est effectué dans une configuration d’entrepôt de données partagé ou en cluster (avec Mongo ou Segment Tar), le journal peut contenir des avertissements sur l’impossibilité de supprimer certains ID de blob. Ces avertissements se produisent, car les ID de blob supprimés durant un nettoyage précédent sont à nouveau référencés de manière incorrecte par d’autres nœuds partagés ou clusters qui n’ont pas d’informations sur les suppressions des ID. Lorsque le nettoyage est effectué, un avertissement est donc enregistré dans le journal après une tentative de suppression d’un ID qui avait déjà été supprimé lors du précédent nettoyage. Ce comportement n’a toutefois aucune incidence sur les performances ou la fonctionnalité.
+>Lorsque la récupération de l’espace mémoire est effectuée dans une configuration de magasin de données partagé ou en cluster (avec Mongo ou Segment Tar), le journal peut contenir des avertissements sur l’impossibilité de supprimer certains ID de blob. Ces avertissements se produisent, car les ID de blob supprimés durant une récupération de l’espace mémoire précédente sont à nouveau référencés de manière incorrecte par d’autres nœuds partagés ou clusters qui n’ont pas d’informations sur les suppressions des ID. Lorsque la récupération de l’espace mémoire est effectuée, un avertissement est donc enregistré dans le journal après une tentative de suppression d’un ID qui avait déjà été supprimé lors du cycle précédent. Ce comportement n’a toutefois aucune incidence sur les performances ou la fonctionnalité.
 
 ## Exécution de la récupération de l’espace mémoire du magasin de données {#running-data-store-garbage-collection}
 
@@ -66,7 +66,7 @@ Il existe trois façons d’exécuter la récupération de l’espace mémoire d
 1. Via la [récupération de l’espace mémoire du magasin de données ](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard) - un mécanisme de récupération de l’espace mémoire spécifique aux magasins de données externes, disponible dans le tableau de bord des opérations.
 1. Via la [Console JMX](/help/sites-administering/jmx-console.md).
 
-Si TarMK est utilisé comme entrepôt de nœuds et entrepôt de données, le nettoyage de révision peut être utilisé pour le nettoyage de la mémoire de l’entrepôt de nœuds et l’entrepôt de données. Cependant, si un entrepôt de données externe est configuré comme entrepôt de données de système de fichiers, le nettoyage de la mémoire d’entrepôt de données doit être explicitement déclenché séparément du nettoyage de révision. La récupération de l’espace mémoire du magasin de données peut être déclenchée par le biais du tableau de bord des opérations ou de la console JMX.
+Si TarMK est utilisé comme entrepôt de nœuds et magasin de données, le nettoyage de révision peut être utilisé pour la récupération de l’espace mémoire de l’entrepôt de nœuds et du magasin de données. Cependant, si un magasin de données externe est configuré comme magasin de données de système de fichiers, la récupération de l’espace mémoire du magasin de données doit être explicitement déclenchée séparément du nettoyage de révision. La récupération de l’espace mémoire du magasin de données peut être déclenchée par le biais du tableau de bord des opérations ou de la console JMX.
 
 Le tableau ci-dessous indique le type de récupération de l’espace mémoire du magasin de données qui doit être utilisé pour tous les déploiements de magasins de données pris en charge dans AEM 6 :
 
@@ -85,24 +85,24 @@ Le tableau ci-dessous indique le type de récupération de l’espace mémoire d
   <tr>
    <td>TarMK</td>
    <td>Système de fichiers externe</td>
-   <td><p>Tâche de nettoyage de la mémoire du magasin de données via le tableau de bord des opérations</p> <p>Console JMX</p> </td>
+   <td><p>Tâche de récupération de l’espace mémoire du magasin de données via le tableau de bord des opérations</p> <p>Console JMX</p> </td>
   </tr>
   <tr>
    <td>MongoDB</td>
    <td>MongoDB</td>
-   <td><p>Tâche de nettoyage de la mémoire du magasin de données via le tableau de bord des opérations</p> <p>Console JMX</p> </td>
+   <td><p>Tâche de récupération de l’espace mémoire du magasin de données via le tableau de bord des opérations</p> <p>Console JMX</p> </td>
   </tr>
   <tr>
    <td>MongoDB</td>
    <td>Système de fichiers externe</td>
-   <td><p>Tâche de nettoyage de la mémoire du magasin de données via le tableau de bord des opérations</p> <p>Console JMX</p> </td>
+   <td><p>Tâche de récupération de l’espace mémoire du magasin de données via le tableau de bord des opérations</p> <p>Console JMX</p> </td>
   </tr>
  </tbody>
 </table>
 
-### Exécution du nettoyage de la mémoire du magasin de données via le tableau de bord des opérations {#running-data-store-garbage-collection-via-the-operations-dashboard}
+### Exécution de la récupération de l’espace mémoire du magasin de données via le tableau de bord des opérations {#running-data-store-garbage-collection-via-the-operations-dashboard}
 
-La période de maintenance hebdomadaire intégrée, disponible via le [tableau de bord des opérations](/help/sites-administering/operations-dashboard.md), contient une tâche intégrée pour déclencher le nettoyage de la mémoire du magasin de données à 1 heure du matin le dimanche.
+La période de maintenance hebdomadaire intégrée, disponible via le [tableau de bord des opérations](/help/sites-administering/operations-dashboard.md), contient une tâche intégrée pour déclencher la récupération de l’espace mémoire du magasin de données à 1 heure du matin le dimanche.
 
 Si vous devez exécuter la récupération de l’espace mémoire du magasin de données en dehors de cette période, vous pouvez la déclencher manuellement via le tableau de bord des opérations.
 
@@ -117,21 +117,21 @@ Avant d’exécuter la récupération de l’espace mémoire du magasin de donn�
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Le nettoyage de la mémoire du magasin de données s’exécute et son statut s’affiche sur le tableau de bord.
+1. La récupération de l’espace mémoire du magasin de données s’exécute et son statut s’affiche sur le tableau de bord.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
 >[!NOTE]
 >
->La tâche de nettoyage de la mémoire du magasin de données est uniquement visible si vous avez configuré un magasin de données basé sur les fichiers. Consultez [Configuration de magasins de nœuds et de données dans AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) pour obtenir des informations sur la configuration d’un magasin de données basé sur les fichiers.
+>La tâche de récupération de l’espace mémoire du magasin de données est uniquement visible si vous avez configuré un magasin de données basé sur les fichiers. Consultez [Configuration de magasins de nœuds et de données dans AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) pour obtenir des informations sur la configuration d’un magasin de données basé sur les fichiers.
 
 ### Exécution de la récupération de l’espace mémoire du magasin de données via le tableau de bord des opérations {#running-data-store-garbage-collection-via-the-jmx-console}
 
-Cette section aborde le nettoyage de la mémoire d’entrepôt de données via la console JMX. Si votre installation est configurée sans entrepôt de données externe, ceci ne s’applique pas. Au lieu de cela, consultez les instructions sur le nettoyage des révisions sous [Maintenance du référentiel](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
+Cette section aborde la récupération de l’espace mémoire du magasin de données via la console JMX. Si votre installation est configurée sans entrepôt de données externe, ceci ne s’applique pas. Au lieu de cela, consultez les instructions sur le nettoyage des révisions sous [Maintenance du référentiel](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 
 >[!NOTE]
 >
->Si vous exécutez TarMK avec un magasin de données externe, vous devez exécuter le nettoyage de révision d’abord pour que le nettoyage soit efficace.
+>Si vous exécutez TarMK avec un magasin de données externe, vous devez exécuter le nettoyage de révision d’abord pour que la récupération de l’espace mémoire soit efficace.
 
 Pour exécuter la récupération de l’espace mémoire :
 
@@ -148,17 +148,17 @@ Pour exécuter la récupération de l’espace mémoire :
 
 >[!NOTE]
 >
->Le nettoyage de la mémoire du magasin de données ne collecte pas les fichiers qui ont été supprimés au cours des dernières 24 heures.
+>La récupération de l’espace mémoire du magasin de données ne collecte pas les fichiers qui ont été supprimés au cours des dernières 24 heures.
 
 >[!NOTE]
 >
->La tâche de nettoyage de la mémoire du magasin de données ne commence que si vous avez configuré un magasin de données basé sur les fichiers. Si aucun magasin de données de fichier externe n’a été configuré, la tâche renvoie le message `Cannot perform operation: no service of type BlobGCMBean found` après l’appel. Consultez [Configuration de magasins de nœuds et de données dans AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) pour obtenir des informations sur la configuration d’un magasin de données basé sur les fichiers.
+>La tâche de récupération de l’espace mémoire du magasin de données ne commence que si vous avez configuré un magasin de données basé sur les fichiers. Si aucun magasin de données de fichier externe n’a été configuré, la tâche renvoie le message `Cannot perform operation: no service of type BlobGCMBean found` après l’appel. Consultez [Configuration de magasins de nœuds et de données dans AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) pour obtenir des informations sur la configuration d’un magasin de données basé sur les fichiers.
 
 ## Automatisation de la récupération de l’espace mémoire du magasin de données {#automating-data-store-garbage-collection}
 
 Si possible, la récupération de l’espace mémoire du magasin de données doit être exécutée lorsque la charge du système est faible, par exemple le matin.
 
-La période de maintenance hebdomadaire intégrée, disponible via le [tableau de bord des opérations](/help/sites-administering/operations-dashboard.md), contient une tâche intégrée pour déclencher le nettoyage de la mémoire d’entrepôt de données à 1 heure du matin le dimanche. Vous devez également vérifier qu’aucune sauvegarde n’est en cours à ce moment. Le lancement de la fenêtre de maintenance peut être personnalisé à partir du tableau de bord.
+La période de maintenance hebdomadaire intégrée, disponible via le [tableau de bord des opérations](/help/sites-administering/operations-dashboard.md), contient une tâche intégrée pour déclencher la récupération de l’espace mémoire du magasin de données à 1 heure du matin le dimanche. Vous devez également vérifier qu’aucune sauvegarde n’est en cours à ce moment. Le lancement de la fenêtre de maintenance peut être personnalisé à partir du tableau de bord.
 
 >[!NOTE]
 >
@@ -168,9 +168,9 @@ Si vous ne souhaitez pas exécuter la récupération de l’espace mémoire du m
 
 >[!CAUTION]
 >
->Dans les exemples de commande `curl` suivants, il se peut que divers paramètres doivent être configurés pour votre instance. Par exemple, le nom d’hôte (`localhost`), le port (`4502`), le mot de passe administrateur (`xyz`) et divers paramètres pour le nettoyage effectif de la mémoire du magasin de données.
+>Dans les exemples de commande `curl` suivants, il se peut que divers paramètres doivent être configurés pour votre instance. Par exemple, le nom d’hôte (`localhost`), le port (`4502`), le mot de passe administrateur (`xyz`) et divers paramètres pour la récupération de l’espace mémoire effective du magasin de données.
 
-Voici un exemple de commande curl invoquant le nettoyage de la mémoire du magasin de données via la ligne de commande :
+Voici un exemple de commande curl invoquant la récupération de l’espace mémoire du magasin de données via la ligne de commande :
 
 ```shell
 curl -u admin:admin -X POST --data markOnly=true  https://localhost:4503/system/console/jmx/org.apache.jackrabbit.oak"%"3Aname"%"3Drepository+manager"%"2Ctype"%"3DRepositoryManagement/op/startDataStoreGC/boolean

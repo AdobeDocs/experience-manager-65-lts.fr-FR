@@ -9,8 +9,8 @@ role: User, Developer
 exl-id: 0860f059-d599-4f87-9611-e7fe1c6bc059
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2001'
-ht-degree: 97%
+source-wordcount: '1999'
+ht-degree: 96%
 
 ---
 
@@ -149,10 +149,10 @@ Multiply(valueArray, category) {
 Une fois que vous avez rédigé une fonction personnalisée, procédez comme suit pour la rendre disponible pour une utilisation dans la configuration du graphique :
 
 1. Ajoutez la fonction personnalisée à la bibliothèque cliente associée au formulaire adaptatif ou au document.
-1. Dans CRXDE Lite, créez un nœud nt:unstructured dans le dossier des applications avec les propriétés suivantes :
+1. Dans CRXDE Lite, créez un nœud nt:unstructured dans le dossier des applications avec les propriétés suivantes :
    * Définissez guideComponentType sur fd/af/reducer. (Obligatoire)
    * Définissez la valeur sur un nom complet de la fonction JavaScript personnalisée. (Obligatoire)
-   * Définissez jcr:description avec un nom significatif. Il apparaît dans la liste déroulante **Utiliser la fonction**. Par exemple, **Multiplier**. 
+   * Définissez jcr:description sur un nom significatif. Il apparaît dans la liste déroulante **Utiliser la fonction**. Par exemple, **Multiplier**. 
    * Définissez qtip avec une brève description de la fonction. Elle s’affiche sous forme d’info-bulle lorsque le curseur est placé sur le nom de la fonction dans la liste déroulante Utiliser la fonction.
    * Cliquez sur **Enregistrer tout** pour enregistrer la configuration.
    * Cette fonctionnalité est désormais disponible dans le graphique.

@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: 6d24ce27-4653-4a70-97d0-e4299eceb32c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6130'
-ht-degree: 100%
+source-wordcount: '6129'
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ Les conditions préalables à la création d’une communication interactive son
 
    * **[!UICONTROL Post-traitement]** : sélectionnez le nom du processus à déclencher. Lorsque vous sélectionnez le workflow AEM, fournissez le chemin d’accès de la pièce jointe, le chemin d’accès à la mise en page, le chemin d’accès au fichier PDF, le chemin d’accès aux données d’impression et le chemin de données web.
    * **[!UICONTROL Balises]** : sélectionnez les balises à appliquer à la communication interactive. Vous pouvez également saisir un nom de balise nouveau ou personnalisé et appuyer sur Entrée pour créer la balise.
-   * **[!UICONTROL Auteur]** : le nom de l’auteur est automatiquement extrait du nom de l’utilisateur connecté.
+   * **[!UICONTROL Auteur]**:The le nom de l’auteur est automatiquement extrait du nom de l’utilisateur connecté.
    * **[!UICONTROL Date de publication :]** entrez la date de publication de la communication interactive.
    * **[!UICONTROL Date de dépublication]** : entrez la date de dépublication de la communication interactive.
 
@@ -207,13 +207,13 @@ Sélectionnez le fragment de document, puis ![configure_icon](assets/configure_i
 
 ## Prévisualiser la communication interactive {#previewic}
 
-Vous pouvez utiliser l’**option Prévisualisation** pour évaluer l’apparence de la communication interactive. Le canal web de la communication interactive fournit également une option permettant d’émuler l’expérience d’une communication interactive pour différents appareils. Par exemple, iPhone, iPad et appareils de bureau. Vous pouvez utiliser les options **Aperçu** et ![Règle](assets/ruler.png) d’**émulateur** conjointement pour visualiser un aperçu des sorties web pour les appareils dotés de tailles d’écran différentes. Les exemples de données dans l’aperçu sont renseignés à partir du modèle de données de formulaires spécifié.
+Vous pouvez utiliser l’**option Prévisualisation** pour évaluer l’apparence de la communication interactive. Le canal web de la communication interactive fournit également une option permettant d’émuler l’expérience d’une communication interactive pour différents appareils. Par exemple, iPhone, iPad et appareils de bureau. Vous pouvez utiliser les options **Aperçu** et ![Règle](assets/ruler.png) d’**émulateur** conjointement pour visualiser un aperçu des sorties web pour les appareils dotés de tailles d’écran différentes. Les données d’exemple dans l’aperçu sont renseignées à partir du modèle de données de formulaires spécifié.
 
 1. Sélectionnez le canal (d’impression ou web) à prévisualiser et appuyez sur Aperçu. La communication interactive s’affiche.
 
    >[!NOTE]
    >
-   >L’aperçu est rempli avec les exemples de données du modèle de données de formulaire spécifié. Pour plus d’informations sur la prévisualisation de la communication interactive avec d’autres données ou l’utilisation du service de préremplissage, consultez les sections [Utiliser un modèle de données de formulaire](/help/forms/using/using-form-data-model.md) et [Travailler avec un modèle de données de formulaire](/help/forms/using/work-with-form-data-model.md).
+   >L’aperçu est rempli avec les données d’exemple du modèle de données de formulaire spécifié. Pour plus d’informations sur la prévisualisation de la communication interactive avec d’autres données ou l’utilisation du service de préremplissage, consultez les sections [Utiliser un modèle de données de formulaire](/help/forms/using/using-form-data-model.md) et [Travailler avec un modèle de données de formulaire](/help/forms/using/work-with-form-data-model.md).
 
 1. Pour le canal web, utilisez ![Règle](assets/ruler.png) pour visualiser l’apparence de la communication interactive sur différents appareils.
 
@@ -302,7 +302,7 @@ Le tableau suivant présente un exemple de valeurs qui s’affichent suite à la
 
 Si aucun modèle d’affichage n’est spécifié pour une variable ou un élément de modèle de données de formulaire, la [configuration globale de fragment de document](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html) est utilisée par défaut.
 
-Si vous n’appliquez pas de modèle d’affichage à une variable de type de données numérique, l’aperçu d’impression affiche le modèle en fonction de la configuration globale du fragment de document. Si vous appliquez des modifications à la configuration globale de fragment de document par défaut, l’interface utilisateur de l’agent affiche toujours le modèle en fonction des séparateurs par défaut définis pour le paramètre régional.
+Si vous n’appliquez pas de modèle d’affichage à une variable de type de données numérique, l’aperçu d’impression affiche le modèle en fonction de la configuration globale du fragment de document. Si vous appliquez des modifications à la configuration globale de fragment de document par défaut, l’interface d’utilisation de l’agent affiche toujours le modèle en fonction des séparateurs par défaut définis pour les paramètres régionaux.
 
 De même, pour les champs, si le modèle d’affichage n’est pas spécifié, le modèle défini lors de la création du modèle d’impression (XDP) est appliqué au champ. S’il n’existe aucun modèle lors de la création du modèle d’impression, les modèles par défaut basés sur les spécifications XFA sont appliqués aux champs.
 
@@ -431,7 +431,7 @@ Pour activer le tri :
    ![Activer le tri](assets/enable_sorting_new-1.png)
 
 1. Passez au mode **Prévisualisation** pour voir le rendu. Le tableau est automatiquement trié en fonction de la première colonne du tableau.
-1. Appuyez sur l’en-tête de colonne pour trier les valeurs en fonction de la colonne.
+1. Cliquez sur l’en-tête de colonne pour trier les valeurs en fonction de la colonne.
 
    Un en-tête de colonne avec une flèche vers le haut représente :
 

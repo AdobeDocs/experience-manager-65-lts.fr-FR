@@ -11,8 +11,8 @@ role: Developer
 exl-id: 7b870221-2946-4e3d-b606-71a46bdfc568
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 100%
+source-wordcount: '532'
+ht-degree: 93%
 
 ---
 
@@ -122,7 +122,7 @@ Vous pouvez désormais envoyer le formulaire et valider, du côté Adobe Campai
 
 ## Résolution des problèmes {#troubleshooting}
 
-**« Invalid type for value &#39;02/02/2015&#39; from element &#39;@eventdate&#39; (document of type &#39;Event ([adb:event])&#39;) »**
+**« Type invalide sur la valeur &#39;02/02/2015&#39; à partir de l&#39;élément &#39;@eventdate&#39; (document de type &#39;Evénement ([adb:event])&#39;) »**
 
 Lors de l’envoi du formulaire, cette erreur est consignée dans la variable **error.log** dans AEM.
 

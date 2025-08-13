@@ -93,6 +93,6 @@ Notez que vous ne pouvez pas utiliser de balises intelligentes, de lien [!DNL As
 
 >[!MORELIKETHIS]
 >
->* [Fonctionnalités de gestion des ressources numériques dans  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/assets/assets)
+>* [Fonctionnalités de gestion des ressources numériques dans  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/assets/assets)
 >* Description du produit [[!DNL Experience Manager]  6.5 Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)
 >* Description du produit [[!DNL Experience Manager]  6.5 on-premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html)

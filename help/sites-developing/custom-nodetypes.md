@@ -11,8 +11,8 @@ role: Developer
 exl-id: 255f52f3-aff4-432c-a541-3ce03e626742
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1848'
-ht-degree: 100%
+source-wordcount: '1774'
+ht-degree: 93%
 
 ---
 
@@ -392,7 +392,7 @@ Définit les écouteurs (côté client) à exécuter lors d’un événement d�
 
 ## Gestion des ressources numériques (DAM) {#dam}
 
-### dam:AssetContent {#dam-assetcontent}
+### barrage:AssetContent {#dam-assetcontent}
 
 **Description**
 
@@ -404,7 +404,7 @@ Contenu d’une ressource de gestion des ressources numériques.
    * `+ metadata (nt:unstructured)`
    * `+ renditions (nt:folder)`
 
-### dam:Asset {#dam-asset}
+### barrage:Asset {#dam-asset}
 
 **Description**
 
@@ -416,7 +416,7 @@ Ressource de gestion des ressources numériques.
 `+ jcr:content (dam:AssetContent) = dam:AssetContent copy primary`
 `+ * (nt:base) = nt:base version`
 
-### dam:Thumbnail {#dam-thumbnail}
+### barrage:Thumbnail {#dam-thumbnail}
 
 **Description**
 
@@ -450,7 +450,7 @@ Liste des conteneurs.
 Le type de nœud `cq:attributes` concerne les balises de version ContentBus. Ce nœud comporte uniquement une série de propriétés, dont trois sont prédéfinies : « created », « CSD » et « timestamp ».
 
 * `@prop created (long) mandatory copy` - Horodatage de création des informations de version. Il s’agit généralement de l’heure d’archivage de la version précédente ou de l’heure de création de la page.
-* `@prop csd (string) mandatory copy` - Attribut CSD standard, copie de la propriété cq:csd du nœud de la page.
+* `@prop csd (string) mandatory copy` - Attribut csd standard, copie de la propriété cq:csd du nœud de la page.
 * `@prop timestamp (long) mandatory copy` - Horodatage de la dernière modification de la version ; il s’agit généralement de l’heure d’archivage.
 * `@prop * (string) copy` - Attributs supplémentaires, versionnés avec le nœud parent.
 
@@ -489,7 +489,7 @@ Les éléments de « `cq:Cq4ContentPage` » sont les suivants :
 Configuration du sondage.
 
 * `@prop source (String) mandatory` - URI de la source de données. Obligatoire et ne doit pas être vide.
-* `@prop target (String)` - Emplacement cible où sont stockées les données récupérées de la source de données. Ce paramètre est facultatif et est défini par défaut sur le nœud cq:PollConfig.
+* `@prop target (String)` - Emplacement cible où sont stockées les données récupérées de la source de données. Facultatif et prend par défaut le nœud cq:PollConfig.
 * `@prop interval (Long)` - Intervalle, en secondes, entre deux recherches de nouvelles données ou de données mises à jour auprès de la source de données. Ce paramètre est facultatif et défini, par défaut, sur 30 minutes (1 800 secondes).
 * [Création de services d’importation de données personnalisés pour Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
@@ -806,7 +806,7 @@ Seuls les auteurs/propriétaires sont autorisés à baliser le contenu (balisage
 
 **Description**
 
-Tout site Web public/utilisateur peut baliser le contenu (style Web2.0), utilisé à l’intérieur de cq:userContent.
+Tout site web public/utilisateur peut baliser le contenu (style Web2.0), utilisé dans cq:userContent.
 
 **Définition**
 
@@ -941,7 +941,7 @@ Champ
 
 ## Wiki {#wiki}
 
-### wiki:Topic {#wiki-topic}
+### wiki :Topic {#wiki-topic}
 
 **Description**
 
@@ -962,7 +962,7 @@ Rubrique Wiki
    * `- wiki:logMessage (string)`
    * `- wiki:quietSave (boolean)`
 
-### wiki:User {#wiki-user}
+### wiki :User {#wiki-user}
 
 **Description**
 
@@ -973,7 +973,7 @@ Utilisateur Wiki
 * `[wiki:User] mixin`
    * `- wiki:subscriptions (string) multiple`
 
-### wiki:Properties {#wiki-properties}
+### wiki :Properties {#wiki-properties}
 
 **Description**
 

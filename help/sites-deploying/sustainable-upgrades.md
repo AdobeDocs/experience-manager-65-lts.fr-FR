@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: 5a93918b-3b5f-49e0-9283-86776f9d8fb4
 source-git-commit: 180fd02df50f84e0d4f9bc01efe56e28d25555e2
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 100%
+source-wordcount: '855'
+ht-degree: 92%
 
 ---
 
@@ -42,17 +42,17 @@ Dans les versions précédentes d’Adobe Experience Manager (AEM), de nombreu
 
 #### Classifications de contenu {#content-classifications}
 
-AEM utilise depuis longtemps le principe des recouvrements et de Sling Resource Merger pour permettre aux clientes et clients d’étendre et de personnaliser la fonctionnalité AEM. Les fonctionnalités prédéfinies qui alimentent les consoles et l&#39;interface utilisateur AEM sont stockées dans **/libs**. Les clientes et clients ne doivent jamais rien modifier en dessous de **/libs** mais pourraient ajouter du contenu supplémentaire en dessous de **/apps** pour recouvrir et étendre les fonctionnalités définies dans **/libs** (Voir Développement avec des recouvrements pour plus d’informations). Cela provoquait encore de nombreux problèmes lors de la mise à niveau d&#39;AEM car le contenu dans **/libs** pouvait changer, entraînant une interruption inattendue de la fonctionnalité de recouvrement. Les utilisateurs et utilisatrices peuvent également étendre les composants AEM par le biais de l’héritage via `sling:resourceSuperType` ou simplement faire référence à un composant dans **/libs** directement par sling:resourceType. Des problèmes de mise à niveau similaires peuvent se produire avec des cas d’utilisation de référence et de remplacement.
+AEM utilise depuis longtemps le principe des recouvrements et de Sling Resource Merger pour permettre aux clientes et clients d’étendre et de personnaliser la fonctionnalité AEM. Les fonctionnalités prédéfinies qui alimentent les consoles et l&#39;interface utilisateur AEM sont stockées dans **/libs**. Les clientes et clients ne doivent jamais rien modifier en dessous de **/libs** mais pourraient ajouter du contenu supplémentaire en dessous de **/apps** pour recouvrir et étendre les fonctionnalités définies dans **/libs** (Voir Développement avec des recouvrements pour plus d’informations). Cela provoquait encore de nombreux problèmes lors de la mise à niveau d&#39;AEM car le contenu dans **/libs** pouvait changer, entraînant une interruption inattendue de la fonctionnalité de recouvrement. Les clients peuvent également étendre les composants AEM par le biais de l’héritage par le biais de `sling:resourceSuperType`, ou simplement référencer un composant dans **/libs** directement par le biais de sling:resourceType. Des problèmes de mise à niveau similaires peuvent se produire avec des cas d’utilisation de référence et de remplacement.
 
 Pour permettre aux clientes et clients de comprendre plus facilement et de manière plus sécurisée les domaines de **/libs** qui peuvent être utilisés et recouverts en toute sécurité, le contenu dans **/libs** a été classé avec les mixins suivants :
 
-* **Public (granite:PublicArea)** : définit un nœud comme étant public afin qu’il puisse être recouvert, hérité (`sling:resourceSuperType`) ou utilisé directement (`sling:resourceType`). Les nœuds situés sous /libs marqués comme étant publics peuvent être mis à niveau en toute sécurité avec l’ajout d’un package de compatibilité. En règle générale, les utilisateurs et utilisatrices doivent uniquement utiliser les nœuds publics.
+* **Public (granite:PublicArea)** définit un nœud comme étant public afin qu’il puisse être recouvert, hérité ( `sling:resourceSuperType`) ou utilisé directement ( `sling:resourceType`). Les nœuds situés sous /libs marqués comme étant publics peuvent être mis à niveau en toute sécurité avec l’ajout d’un package de compatibilité. En règle générale, les utilisateurs et utilisatrices doivent uniquement utiliser les nœuds publics.
 
-* **Résumé (granite:AbstractArea)** : définit un nœud en tant que résumé. Les nœuds peuvent être recouverts ou hérités (`sling:resourceSupertype`), mais ils ne doivent pas être utilisés directement (`sling:resourceType`).
+* **Abstrait (granite:AbstractArea)** - Définit un nœud comme abstrait. Les nœuds peuvent être recouverts ou hérités (`sling:resourceSupertype`), mais ils ne doivent pas être utilisés directement (`sling:resourceType`).
 
-* **Final (granite:FinalArea)** : définit un nœud comme étant final. Les nœuds classés en tant que finaux ne doivent idéalement pas être recouverts ni hérités. Les nœuds finaux peuvent être utilisés directement via `sling:resourceType`. Par défaut, les nœuds secondaires placés sous le nœud final sont considérés comme internes.
+* **Final (granite:FinalArea)** - Définit un nœud comme final. Les nœuds classés en tant que finaux ne doivent idéalement pas être recouverts ni hérités. Les nœuds finaux peuvent être utilisés directement via `sling:resourceType`. Par défaut, les nœuds secondaires placés sous le nœud final sont considérés comme internes.
 
-* ***Interne (granite:InternalArea)*** *- * Définit un nœud comme interne. Les nœuds classés dans la catégorie Interne ne peuvent pas être superposés, hérités, ni utilisés directement. Ces nœuds sont destinés uniquement à la fonctionnalité interne d’AEM
+* ***Interne (granite:InternalArea)*** *- *Définit un nœud comme interne. Les nœuds classés dans la catégorie Interne ne peuvent pas être superposés, hérités, ni utilisés directement. Ces nœuds sont destinés uniquement à la fonctionnalité interne d’AEM
 
 * **Aucune annotation** : les nœuds héritent d’une classification basée sur la hiérarchie de l’arborescence. La racine / est par défaut Public. **Les nœuds dont le parent est classé comme interne ou final doivent également être traités comme internes.**
 

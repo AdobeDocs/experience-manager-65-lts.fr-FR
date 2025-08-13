@@ -12,8 +12,8 @@ role: Admin
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '2672'
-ht-degree: 98%
+source-wordcount: '2678'
+ht-degree: 97%
 
 ---
 
@@ -210,7 +210,7 @@ Consultez ci-dessous la procédure devant être suivie pour créer une installat
 
 Le service peut également être configuré à l’aide de la console Web, en procédant comme suit :
 
-1. Accédez à la console web : *https://serveraddress:serverport/system/console/configMgr*.
+1. Accédez à la console web : *https://serveraddress:serverport/system/console/configMgr*
 1. Recherchez un service nommé **Apache Jackrabbit Oak Segment Tar Cold Standby Service** et double-cliquez dessus pour modifier les paramètres.
 1. Enregistrez les paramètres et redémarrez les instances pour que les nouveaux paramètres puissent prendre effet.
 
@@ -218,7 +218,7 @@ Le service peut également être configuré à l’aide de la console Web, en pr
 >
 >Vous pouvez vérifier le rôle d’une instance à tout moment en vérifiant la présence des modes d’exécution **principaux** ou **secondaires** dans la console Web des paramètres Sling.
 >
->Ceci peut être effectué en accédant à *https://localhost:4502/system/console/status-slingsettings* et en vérifiant la ligne **« modes d’exécution »**.
+>Pour ce faire, accédez à *https://localhost:4502/system/console/status-slingsettings* et vérifiez la ligne **« Modes d’exécution »**.
 
 ## Première synchronisation {#first-time-synchronization}
 
@@ -286,7 +286,7 @@ Les paramètres OSGi ci-dessous sont disponibles pour le service Cold Standby.
 * **Intervalle de synchronisation (`interval`) :** ce paramètre détermine l’intervalle entre la requête de synchronisation et s’applique uniquement à l’instance de secours.
 
 * **Plages IP autorisées (`primary.allowed-client-ip-ranges`) :** plages IP sur lesquelles l’instance principale autorise la connexion.
-* **Sécuriser (`secure`) &#x200B;** : active le chiffrement SSL. Pour pouvoir utiliser ce paramètre, il doit être activé sur toutes les instances.
+* **Sécuriser (`secure`) ** : active le chiffrement SSL. Pour pouvoir utiliser ce paramètre, il doit être activé sur toutes les instances.
 * **Délai d’expiration de lecture Standby (`standby.readtimeout`) :** délai d’expiration pour les demandes provenant de l’instance de secours, en millisecondes. La valeur par défaut utilisée est de 60 000 (une minute).
 
 * **Nettoyage automatique de secours (`standby.autoclean`) :** appelez cette méthode de nettoyage si la taille du magasin augmente lors d’un cycle de synchronisation..
@@ -402,12 +402,12 @@ Il se peut que la synchronisation de l’instance de secours avec l’instance p
 
 Comme alternative, le référentiel principal peut être copié manuellement sur le référentiel secondaire après avoir exécuté la compression sur le référentiel principal, reconstruisant essentiellement le référentiel secondaire à chaque exécution de la compression.
 
-### Récupérer de l’espace mémoire du magasin de données {#data-store-garbage-collection}
+### Récupération de l’espace mémoire du magasin de données {#data-store-garbage-collection}
 
 ll est important d’exécuter de temps en temps une récupération de l’espace mémoire sur les instances du magasin de données des fichiers. Sinon, les fichiers binaires supprimés restent sur le système de fichiers, ce qui contribue à surcharger le lecteur. Pour lancer la récupération de l’espace mémoire, suivez la procédure ci-dessous :
 
 1. Exécutez le processus de maintenance du référentiel Cold Standby, comme expliqué dans la section [ci-dessus](/help/sites-deploying/tarmk-cold-standby.md#cold-standby-repository-maintenance).
-1. Une fois le processus de maintenance terminé et les instances relancées, procédez comme suit :
+1. Une fois le processus de maintenance terminé et les instances redémarrées, procédez comme suit :
 
    * Sur l’instance principale, exécutez la récupération de l’espace mémoire du magasin de données par le biais du bean JMX approprié, comme décrit dans la section [Exécuter la récupération de l’espace mémoire du magasin de données via la console JMX](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
    * Sur l’instance secondaire, la récupération de l’espace mémoire du magasin de données est uniquement disponible via le MBean **BlobGarbageCollection** - `startBlobGC()`. Le MBean **RepositoryManagement** n’est pas disponible sur l’instance de secours.

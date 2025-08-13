@@ -12,8 +12,8 @@ role: User
 exl-id: 3232ccb0-dd4c-4457-9467-cdad788f977c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1202'
+ht-degree: 100%
 
 ---
 
@@ -111,7 +111,7 @@ Nous utilisons les définitions de teaser suivantes :
 
 Ensuite, si nous appliquons ceci à un visiteur ou à une visiteuse où :
 
-* **S1**, **S2 et &#x200B;** S6** sont résolus avec succès ;
+* **S1**, **S2 et **S6** sont résolus avec succès ;
 
 * la balise **marketing** a trois accès ;
 * la balise **entreprise** a six accès.

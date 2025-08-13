@@ -12,8 +12,8 @@ role: Admin
 exl-id: fcabfd44-31c2-4884-8dbd-99aa74972cfa
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '5743'
-ht-degree: 100%
+source-wordcount: '5740'
+ht-degree: 98%
 
 ---
 
@@ -101,7 +101,7 @@ La création d’un contrôle d’intégrité individuel se compose de deux éta
    >
    >La propriété `MBEAN_NAME` définit le nom du MBean généré pour ce contrôle d’intégrité.
 
-1. Après avoir créé un contrôle d’intégrité, un nouveau nœud de configuration doit être créé afin de le mettre à disposition dans l’interface du tableau de bord des opérations. Pour cette étape, il est nécessaire de connaître le nom du MBean JMX du contrôle d’intégrité (la propriété `MBEAN_NAME`). Pour créer une configuration pour le contrôle d’intégrité, ouvrez CRXDE et ajoutez un nœud (de type **nt:unstructured**) sous le chemin d’accès suivant : `/apps/settings/granite/operations/hc`.
+1. Après avoir créé un contrôle d’intégrité, un nouveau nœud de configuration doit être créé afin de le mettre à disposition dans l’interface du tableau de bord des opérations. Pour cette étape, il est nécessaire de connaître le nom du MBean JMX du contrôle d’intégrité (la propriété `MBEAN_NAME`). Pour créer une configuration pour le contrôle de l’intégrité, ouvrez CRXDE et ajoutez un nœud (de type **nt:unstructured**) sous le chemin d’accès suivant : `/apps/settings/granite/operations/hc`
 
    Les propriétés ci-dessous doivent être définies sur le nouveau nœud :
 
@@ -158,7 +158,7 @@ Un contrôle d’intégrité composite vise à agréger différents contrôles d
    >
    >Un nouveau MBean JMX est créé pour chaque nouvelle configuration du contrôle de l’intégrité composite Apache Sling.**
 
-1. Enfin, l’entrée du contrôle d’intégrité composite qui vient d’être créé doit être ajoutée aux nœuds de configuration du tableau de bord des opérations. La procédure est identique à celle des contrôles d’intégrité individuels : un nœud de type **nt:unstructured** doit être créé sous `/apps/settings/granite/operations/hc`. La propriété de ressource du nœud est définie par la valeur de **hc.mean.name** dans la configuration OSGI.
+1. Enfin, l’entrée du contrôle d’intégrité composite qui vient d’être créé doit être ajoutée aux nœuds de configuration du tableau de bord des opérations. La procédure est identique à celle des contrôles d’intégrité individuels : un nœud de type **nt:unstructured** doit être créé sous `/apps/settings/granite/operations/hc`. La propriété de ressource du nœud est définie par la valeur de **hc.mean.name** dans la configuration OSGI.
 
    Par exemple, si vous avez créé une configuration et défini la valeur de **hc.mbean.name** sur **diskusage**, les nœuds de configuration ressemblent à ce qui suit :
 
@@ -422,7 +422,7 @@ La page affiche :
 
 ### Expliquer la requête {#explain-query}
 
-Oak tente de déterminer la meilleure façon d’exécuter une requête donnée d’après les index Oak définis dans le référentiel sous le nœud **oak:index**. En fonction de la requête, Oak peut sélectionner différents index. La première étape de l’optimisation de la requête consiste à comprendre comment Oak exécute une requête.
+Oak tente de déterminer la meilleure façon d’exécuter une requête donnée en fonction des index Oak définis dans le référentiel sous le nœud **oak:index**. En fonction de la requête, Oak peut sélectionner différents index. La première étape de l’optimisation de la requête consiste à comprendre comment Oak exécute une requête.
 
 L’outil Expliquer la requête explique la façon dont Oak exécute une requête. Il est accessible en sélectionnant **Outils - Opérations - Diagnostic** sur l’écran d’accueil d’AEM. Cliquez ensuite sur **Performances des requêtes** et passez à l’onglet **Expliquer la requête** .
 
@@ -488,13 +488,13 @@ Les tâches ci-dessous sont disponibles dans le tableau de bord des opérations�
 1. Tâche **Nettoyage de la révision** dans le menu **Période de maintenance quotidienne**
 1. Tâche **Nettoyage des binaires Lucene** dans le menu **Période de maintenance quotidienne**
 1. Tâche **Purge du workflow** dans le menu **Période de maintenance hebdomadaire**
-1. Tâche **Nettoyage de la mémoire d’entrepôt de données** dans le menu **Période de maintenance hebdomadaire**
+1. Tâche **Récupération de l’espace mémoire du magasin de données** dans le menu **Période de maintenance hebdomadaire**
 1. Tâche **Maintenance des journaux d’audit** dans le menu **Période de maintenance hebdomadaire**
 1. Tâche **Maintenance de la purge des versions** dans le menu **Période de maintenance hebdomadaire**
 1. Tâche de maintenance **Purge du projet**, située sous le menu **Période de maintenance hebdomadaire** ; à l’aide de l’option **Ajouter**.
 1. Tâche de maintenance **Purge des tâches ad hoc**, située sous le menu **Période de maintenance hebdomadaire** ; à l’aide de l’option **Ajouter**.
 
-L’heure par défaut de la maintenance quotidienne est de 2 h à 5 h chaque matin. Les tâches configurées pour s’exécuter dans la fenêtre de maintenance hebdomadaire s’exécutent entre 1 h et 2 h le samedi.
+La synchronisation par défaut pour la fenêtre de maintenance quotidienne s’effectue de 2 :00 à 5 :00. Les tâches configurées pour s’exécuter dans la fenêtre de maintenance hebdomadaire s’exécutent entre 1:00 et 2:00 le samedi.
 
 Vous pouvez également configurer les heures en appuyant sur l’icône d’engrenage sur l’une des deux cartes de maintenance :
 
@@ -659,7 +659,7 @@ Le **tableau de bord de présentation** du système présente en détail la conf
 
 >[!NOTE]
 >
->Vous pouvez également [visionner cette vidéo](https://video.tv.adobe.com/v/3424582?captions=fre_fr) pour découvrir une présentation du tableau de bord de présentation du système.
+>Vous pouvez également [visionner cette vidéo](https://video.tv.adobe.com/v/21340) pour découvrir une présentation du tableau de bord de présentation du système.
 
 ### Accès {#how-to-access}
 

@@ -11,8 +11,8 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 20e958d7-5976-4ccd-99b6-0e3bdb424d2d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 100%
+source-wordcount: '1264'
+ht-degree: 96%
 
 ---
 
@@ -117,7 +117,7 @@ Pour créer un modèle personnalisé comme simpleEnrollmentTemplate, suivez la p
 
 ## Création d’un composant de page de formulaire adaptatif {#create-an-adaptive-form-page-component}
 
-Le modèle personnalisé possède les mêmes styles que le modèle par défaut, car il référence le composant de page /libs/fd/af/components/page/base. Vous pouvez trouver la référence au composant en tant que propriété `sling:resourceType` définie sur le nœud /apps/mycompany/templates/enrollment-template/jcr:content. Dans la mesure où base est un composant de produit principal, ne le modifiez pas.
+Le modèle personnalisé possède les mêmes styles que le modèle par défaut, car il référence le composant de page /libs/fd/af/components/page/base. Vous pouvez trouver la référence au composant en tant que `sling:resourceType` de propriété définie sur le nœud /apps/mycompany/templates/enrollment-template/jcr:content. Dans la mesure où base est un composant de produit principal, ne le modifiez pas.
 
 1. Accédez au nœud /apps/mycompany/templates/enrollment-template/jcr:content et modifiez la valeur de la propriété `sling:resourceType` en /apps/mycompany/components/page/enrollmentpage
 1. Copiez le nœud /libs/fd/af/components/page/base dans le dossier /apps/mycompany/components/page.

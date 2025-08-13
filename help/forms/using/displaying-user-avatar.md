@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 0c72fe67-13da-4eac-8cd6-8699e546f8f4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 100%
+source-wordcount: '188'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ L’avatar de l’utilisateur connecté s’affiche dans le coin supérieur droi
 
 >[!NOTE]
 >
->le rapport d’aspect des images de l’utilisateur est de 1:1.
+>Le rapport d’aspect pris en charge des images utilisateur est de 1 :1.
 
 1. Créez un DSC, à l’aide des détails mentionnés dans l’étape suivante. Pour plus d’informations, voir la section « Développement des composants d’AEM Forms » dans le guide [Programmer avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr).
 1. Dans le DSC, définissez une nouvelle SPI qui expose les méthodes getCurrentUserImageUrl et getUserImageUrl afin d’obtenir l’URL d’image d’un utilisateur d’AEM Forms. Voici un exemple d’extrait de code Java™ :

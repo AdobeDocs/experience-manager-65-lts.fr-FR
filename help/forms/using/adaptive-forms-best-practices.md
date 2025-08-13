@@ -96,7 +96,7 @@ Pour plus d’informations, voir [Création d’un formulaire adaptatif](/help/f
 
 ### Création de modèles de formulaire
 
-Vous pouvez créer un formulaire adaptatif à l’aide des modèles de formulaire activés dans **Explorateur de configurations**. Pour activer les modèles de formulaire, reportez-vous à [Création d’un modèle de formulaire adaptatif](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
+Vous pouvez créer un formulaire adaptatif à l’aide des modèles de formulaire activés dans **Explorateur de configurations**. Pour activer les modèles de formulaire, reportez-vous à [Création d’un modèle de formulaire adaptatif](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
 
 Vous pouvez également charger les modèles de formulaire à partir des packages de formulaires adaptatifs créés sur l’ordinateur d’un autre auteur. Les modèles de formulaire sont disponibles en installant [aemforms-references-* packages](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Nous recommandons de suivre les bonnes pratiques suivantes :
 
@@ -260,7 +260,7 @@ Un document d’enregistrement (DE) est une version PDF aplatie d’un formulair
 * Configurez l’en-tête, le pied de page, les images, la couleur, la police, etc. à partir de l’onglet Document d’enregistrement de l’éditeur de formulaires adaptatifs.
 * Utilisez `DoRService` pour générer le document d’enregistrement par programmation.
 * Excluez les champs masqués du document d’enregistrement.
-* Utilisez le paramètre de demande `afAcceptLang` pour afficher le document d’enregistrement dans une autre langue.
+* Utilisez le paramètre de demande `afAcceptLang` pour afficher le document d’enregistrement dans d’autres paramètres régionaux.
 
 ### Débogage et test des formulaires adaptatifs {#debugging-and-testing-adaptive-forms}
 
@@ -289,7 +289,7 @@ Voici quelques bonnes pratiques à appliquer lors de la traduction de formulaire
 
 * Utilisez les fragments de formulaire adaptatif pour les éléments courants des formulaires et localisez les fragments. Cela permet de traduire un fragment une seule fois et de répercuter la traduction dans tous les formulaires dans lesquels le fragment traduit est utilisé.
 * Les modifications telles que l’ajout d’un nouveau composant ou l’application d’un script dans un formulaire traduit ne sont pas automatiquement traduites. Par conséquent, vous devez finaliser un formulaire avant de le localiser pour éviter plusieurs cycles de localisation.
-* Utilisez le paramètre de requête `afAcceptLang` pour remplacer la langue du navigateur et pour rendre le formulaire dans la langue spécifiée. Par exemple, l’URL suivante force à effectuer le rendu du formulaire en japonais, indépendamment du paramètre régional spécifié dans les paramètres du navigateur :
+* Utilisez le paramètre de demande `afAcceptLang` pour remplacer la langue du navigateur et pour rendre le formulaire dans les paramètres régionaux spécifiés. Par exemple, l’URL suivante force à effectuer le rendu du formulaire en japonais, indépendamment des paramètres régionaux spécifiés dans les paramètres du navigateur :
 
   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
@@ -363,11 +363,11 @@ L’un des principaux défis pour les entreprises est de savoir comment gérer l
 
 L’éditeur de règles d’AEM Forms fournit une interface visuelle pour la création et la gestion des règles, ce qui réduit la nécessité d’un codage étendu. Il peut s’avérer particulièrement utile pour les utilisateurs et utilisatrices professionnels ou les personnes concevant des formulaires qui ne possèdent pas des compétences de programmation avancées, mais qui doivent définir et gérer des règles commerciales dans les formulaires. Nous examinons ici quelques cas d’utilisation où l’éditeur de règles vous permet ce qui suit :
 
-* &#x200B;<!-- Allows you --> Définir des règles commerciales pour vos formulaires sans avoir besoin d’une programmation étendue.
-* &#x200B;<!-- Use the Rule Editor when you need --> Implémenter une logique conditionnelle dans vos formulaires. Cela inclut l’affichage ou le masquage des éléments de formulaire, la modification des valeurs de champ selon certaines conditions ou la modification dynamique du comportement de vos formulaires.
-* &#x200B;<!--When you want --> Pour appliquer des règles de validation de données aux envois de formulaire, l’éditeur de règles peut être utilisé pour définir des conditions de validation.
-* &#x200B;<!-- When you need --> Pour intégrer vos formulaires à des sources de données externes (FDM) ou des services, l’éditeur de règles vous permet de définir des règles pour la récupération, l’affichage ou la manipulation des données lors des interactions avec les formulaires.
-* &#x200B;<!-- If you want -->Pour créer des formulaires dynamiques et interactifs qui répondent aux actions de l’utilisateur ou de l’utilisatrice, l’éditeur de règles vous permet de définir des règles qui régissent le comportement des éléments de formulaire en temps réel.
+* <!-- Allows you --> Définir des règles commerciales pour vos formulaires sans avoir besoin d’une programmation étendue.
+* <!-- Use the Rule Editor when you need --> Implémenter une logique conditionnelle dans vos formulaires. Cela inclut l’affichage ou le masquage des éléments de formulaire, la modification des valeurs de champ selon certaines conditions ou la modification dynamique du comportement de vos formulaires.
+* <!--When you want --> Pour appliquer des règles de validation de données aux envois de formulaire, l’éditeur de règles peut être utilisé pour définir des conditions de validation.
+* <!-- When you need --> Pour intégrer vos formulaires à des sources de données externes (FDM) ou des services, l’éditeur de règles vous permet de définir des règles pour la récupération, l’affichage ou la manipulation des données lors des interactions avec les formulaires.
+* <!-- If you want -->Pour créer des formulaires dynamiques et interactifs qui répondent aux actions de l’utilisateur ou de l’utilisatrice, l’éditeur de règles vous permet de définir des règles qui régissent le comportement des éléments de formulaire en temps réel.
 
 L’éditeur de règles est disponible pour les composants de base AEM Forms et les composants principaux.
 

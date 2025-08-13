@@ -49,7 +49,7 @@ Sélectionnez **Configuration de fragments de document** sur la page **Configura
    <td>Format d’affichage spécifique aux paramètres régionaux pour les champs, variables et éléments de modèle de données de formulaire disponibles lors de la création d’une communication interactive pour les canaux d’impression et web.</td> 
    <td> 
     <ul> 
-     <li>Paramètre régional = en_US, de_DE, fr_FR et ja_JP</li> 
+     <li>Paramètres régionaux = en_US, de_DE, fr_FR et ja_JP</li> 
      <li>dateFormat = dd-MM-yyyy</li> 
      <li>numberDecimalSeparator = .</li> 
      <li>numberGroupSeparator = ,</li> 

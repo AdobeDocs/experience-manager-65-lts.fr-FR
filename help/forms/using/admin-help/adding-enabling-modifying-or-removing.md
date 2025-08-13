@@ -33,7 +33,7 @@ Les points d’entrée peuvent uniquement être ajoutés aux services. Un point 
 >Il est recommandé d’utiliser des noms uniques lors de l’ajout de points d’entrée.
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des services.
-1. Dans la page Gestion des services, sélectionnez le service à configurer.
+1. Dans la page Gestion des services, cliquez sur le service à configurer.
 1. Dans la liste de l’onglet Points d’entrée, sélectionnez le type de point d’entrée à ajouter, puis cliquez sur Ajouter.
 1. Selon le type de point d’entrée, configurez des paramètres de point d’entrée supplémentaires.
 

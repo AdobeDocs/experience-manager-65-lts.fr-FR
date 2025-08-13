@@ -11,8 +11,8 @@ feature: Adaptive Forms,Foundation Components
 exl-id: f9ff1458-6fc9-476a-a03e-c651464105d4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '522'
+ht-degree: 97%
 
 ---
 
@@ -65,7 +65,7 @@ Démonstration relative à la mise en page de la barre d’outils personnalisée
 
 1. Renommez le nœud copié, de `mobileFixedToolbarLayout` à `customToolbarLayout.`.
 
-   Fournissez également une description appropriée pour le nœud. Par exemple, remplacez le jcr:description du nœud par **Disposition personnalisée pour la barre d’outils**.
+   Fournissez également une description appropriée pour le nœud. Par exemple, modifiez le jcr:description du nœud en **Mise en page personnalisée pour la barre d’outils**.
 
    La propriété `guideComponentType` du nœud détermine le type de mise en page. Dans le cas présent, le type de mise en page est toolbar. Il apparaît par conséquent dans la liste déroulante de sélection des mises en page de barre d’outils.
 

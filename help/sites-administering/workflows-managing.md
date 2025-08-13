@@ -11,8 +11,8 @@ role: Admin
 exl-id: 084c59b1-1e72-475e-8ec9-2cbc6e695876
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 100%
+source-wordcount: '569'
+ht-degree: 90%
 
 ---
 
@@ -54,7 +54,7 @@ Les modèles de workflows héritent d’une liste de contrôle d’accès par d�
 
 Si le modèle de workflow est stocké dans `/var/workflow/models`, vous pouvez affecter une liste de contrôle d’accès spécifique et ne se rapportant qu’à ce workflow, dans le dossier :
 
-1. Ouvrez CRXDE Lite dans votre navigateur web, par exemple [https://localhost:4502/crx/de](http://localhost:4502/crx/de).
+1. Ouvrez CRXDE Lite dans votre navigateur web (par exemple, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Dans l’arborescence de nœuds, sélectionnez le nœud du dossier des modèles de workflow :
 
    `/var/workflow/models`
@@ -66,7 +66,7 @@ Si le modèle de workflow est stocké dans `/var/workflow/models`, vous pouvez a
    * **Principal** : `content-authors`
    * **Type** : `Deny`
    * **Autorisations** : `jcr:read`
-   * **rep:glob** : référence au workflow spécifique
+   * **rep:glob** : référence au workflow spécifique
 
    ![wf-108](assets/wf-108.png)
 
@@ -90,7 +90,7 @@ comparable aux workflows de gestion des ressources numériques stockés sous
 
 Vous pouvez alors ajouter une liste de contrôle d’accès dans le dossier proprement dit.
 
-1. Ouvrez CRXDE Lite dans votre navigateur web (par exemple, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Ouvrez CRXDE Lite dans votre navigateur web (par exemple, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Dans l’arborescence de nœuds, sélectionnez le nœud du dossier individuel dans le dossier des modèles de workflow, comme par exemple :
 
    `/var/workflow/models/prototypes`
@@ -106,7 +106,7 @@ Vous pouvez alors ajouter une liste de contrôle d’accès dans le dossier prop
 
    >[!NOTE]
    >
-   >Comme lors de l’[application d’une liste de contrôle d’accès pour le modèle de workflow spécifique à /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models), vous pouvez inclure une propriété rep:glob pour limiter l’accès à un workflow spécifique.
+   >Comme pour [Appliquer une liste de contrôle d’accès pour le modèle de workflow spécifique à /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) vous pouvez inclure un rep:glob pour limiter l’accès à un workflow spécifique.
 
    ![wf-110](assets/wf-110.png)
 

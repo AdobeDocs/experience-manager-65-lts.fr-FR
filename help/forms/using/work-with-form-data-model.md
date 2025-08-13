@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: e95c4cc4-1800-4bd8-a3c4-c6c868a1276d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4159'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,12 +19,12 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html) |
 | AEM 6.5 | Cet article |
 
 ![data-integration](do-not-localize/data-integeration.png)
 
-L’éditeur de modèle de données de formulaire fournit une interface utilisateur intuitive et des outils d’édition et de configuration d’un modèle de données de formulaire. L’éditeur vous permet d’ajouter et de configurer des objets, des propriétés et des services de modèle de données à partir des sources de données disponibles dans le modèle de données de formulaire. En outre, il vous permet de créer des objets et des propriétés de modèle de données sans sources de données et de les lier ultérieurement aux objets et propriétés de modèle de données respectifs. Vous pouvez également générer et modifier des exemples de données pour les propriétés d’objet de modèle de données que vous pouvez utiliser pour préremplir des formulaires adaptatifs et des communications interactives lors de la prévisualisation. Vous pouvez tester les objets et services de modèle de données configurés dans un modèle de données de formulaire afin de vous assurer de leur intégration correcte aux sources de données.
+L’éditeur de modèle de données de formulaire fournit une interface utilisateur intuitive et des outils d’édition et de configuration d’un modèle de données de formulaire. L’éditeur vous permet d’ajouter et de configurer des objets, des propriétés et des services de modèle de données à partir des sources de données disponibles dans le modèle de données de formulaire. En outre, il vous permet de créer des objets et des propriétés de modèle de données sans sources de données et de les lier ultérieurement aux objets et propriétés de modèle de données respectifs. Vous pouvez également générer et modifier des données d’exemple pour les propriétés d’objet de modèle de données que vous pouvez utiliser pour préremplir des formulaires adaptatifs et des communications interactives lors de la prévisualisation. Vous pouvez tester les objets et services de modèle de données configurés dans un modèle de données de formulaire afin de vous assurer de leur intégration correcte aux sources de données.
 
 Si vous êtes novice en intégration de données Forms et n’avez pas configuré de source de données ou créé de modèle de données de formulaire, consultez les rubriques suivantes :
 
@@ -300,7 +300,7 @@ Pour modifier les propriétés :
 1. Sélectionnez **[!UICONTROL Modifier les propriétés]**. Le volet **[!UICONTROL Modifier les propriétés]** de l’objet de modèle, de la propriété ou du service sélectionné s’ouvre.
 
    * **Objet de modèle de données** : spécifiez les services de lecture et d’écriture et modifiez les arguments.
-   * **Propriété** : spécifiez le type, le sous-type et le format de la propriété. Vous pouvez également spécifier si la propriété sélectionnée est la clé principale de l’objet de modèle de données.
+   * **Propriété** : spécifiez le type, le sous-type et le format de la propriété. Vous pouvez également spécifier si la propriété sélectionnée est la clé primaire de l’objet de modèle de données.
    * **Service** : spécifiez l’objet de modèle d’entrée, le type de sortie et les arguments du service. Pour un service Get, vous pouvez spécifier s’il doit renvoyer un tableau.
 
    ![edit-properties-service](assets/edit-properties-service.png)
@@ -391,19 +391,19 @@ De même, vous pouvez choisir un service `GET LINK` et configurer ses propriét�
 
 ![add-association-nav-prop](assets/add-association-nav-prop.png)
 
-## Génération et modification des exemples de données {#sample}
+## Génération et modification de données d’exemple {#sample}
 
 L’éditeur de modèle de données de formulaire vous permet de générer des exemples de données pour toutes les propriétés d’objet de modèle de données, y compris les propriétés calculées, dans un modèle de données de formulaire. Il s’agit d’un ensemble de valeurs aléatoires conformes au type de données configuré pour chaque propriété. Vous pouvez également modifier et enregistrer des données qui sont conservées même si vous régénérez les données d’exemple.
 
-Procédez comme suit pour générer et modifier des exemples de données :
+Procédez comme suit pour générer et modifier des données d’exemple :
 
 1. Ouvrez un modèle de données de formulaire et sélectionnez **[!UICONTROL Modifier les données d’exemple]**. Cela génère et affiche les exemples de données dans la fenêtre Modifier les exemples de données.
 
-   ![Génération des exemples de données](assets/form_data_model_generate_sample_data_new.png)
+   ![Génération de données d’exemple](assets/form_data_model_generate_sample_data_new.png)
 
 1. Dans la fenêtre **[!UICONTROL Modifier les données d’exemple]**, modifiez les données, si nécessaire, et sélectionnez **[!UICONTROL Enregistrer]**.
 
-Vous pouvez ensuite utiliser les exemples de données pour préremplir et tester des communications interactives basées sur le modèle de données de formulaire. Pour plus d’informations, reportez-vous à la section [Utilisation d’un modèle de données de formulaire](/help/forms/using/using-form-data-model.md).
+Vous pouvez ensuite utiliser les données d’exemple pour préremplir et tester des communications interactives basées sur le modèle de données de formulaire. Pour plus d’informations, reportez-vous à la section [Utilisation d’un modèle de données de formulaire](/help/forms/using/using-form-data-model.md).
 
 ## Test des objets et des services de modèle de données {#test-data-model-objects-and-services}
 

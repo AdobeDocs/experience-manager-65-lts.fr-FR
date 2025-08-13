@@ -12,8 +12,8 @@ role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
 source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
 workflow-type: tm+mt
-source-wordcount: '1110'
-ht-degree: 82%
+source-wordcount: '1116'
+ht-degree: 80%
 
 ---
 
@@ -37,7 +37,7 @@ Avant de commencer la mise à niveau, il est important d’effectuer ces tâches
 
 ## Définitions d’index {#index-definitions}
 
-Assurez-vous d’avoir installé les définitions d’index requises publiées avec le dernier pack de services AEM 6.5. (Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/release-notes/release-notes) consultez les notes de mise à jour du pack de services AEM 6.5 ).
+Assurez-vous d’avoir installé les définitions d’index requises publiées avec le dernier pack de services AEM 6.5. (Pour plus d’informations[ consultez les notes de mise à jour du pack de services AEM 6.5 ](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/release-notes/release-notes)).
 
 ## Vérification de la disponibilité de l’espace disque nécessaire {#ensure-sufficient-disk-space}
 
@@ -64,7 +64,7 @@ Les tâches de maintenance préalables à la mise à niveau qui devaient auparav
 
 Le composant OSGi `PreUpgradeTasksMBean` est préconfiguré avec une liste de tâches de maintenance bénéficiant déjà de la mise à niveau, pouvant toutes être exécutées simultanément. Vous pouvez configurer les tâches en suivant la procédure ci-dessous :
 
-1. Accédez à la console web en vous rendant sur *https://serveraddress:serverport/system/console/configMgr*.
+1. Accédez à la console web en vous rendant sur *https://serveraddress:serverport/system/console/configMgr*
 
 1. Recherchez « **preupgradetasks** », puis cliquez sur le premier composant correspondant. Le nom complet du composant est `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`.
 
@@ -95,7 +95,7 @@ La fonctionnalité Bean gérée est accessible à l’aide de la [console JMX](/
 
 Vous pouvez accéder aux MBeans en procédant comme suit :
 
-1. Accédez à la console JMX à l’adresse *https://serveraddress:serverport/system/console/jmx*.
+1. Accédez à la console JMX à l’adresse *https://serveraddress:serverport/system/console/jmx*
 1. Recherchez **PreUpgradeTasks** et cliquez sur le résultat.
 
 1. Sélectionnez une méthode à partir de la section **Opérations** et sélectionnez **Invoquer** dans la fenêtre suivante.

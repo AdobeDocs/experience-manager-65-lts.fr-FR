@@ -13,7 +13,7 @@ exl-id: 281c96e2-24f8-4568-add2-67972148b406
 source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
 source-wordcount: '2919'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -556,7 +556,7 @@ Ces fonctionnalités sont accessibles par le biais du chevron en regard du champ
 
 ### Références {#references}
 
-**Références** affiche les connexions à la ressource sélectionnée. Par exemple, dans la console **Sites**, les [références](/help/sites-authoring/author-environment-tools.md#showingpagereferences) des pages affichent :
+Les **références** affichent les liens à la ressource sélectionnée. Par exemple, dans la console **Sites**, les [références](/help/sites-authoring/author-environment-tools.md#showingpagereferences) des pages affichent :
 
 * [Plans directeurs](/help/sites-administering/msm.md)
 * [Lancements](/help/sites-authoring/launches.md#launches-in-references-sites-console)
@@ -564,8 +564,8 @@ Ces fonctionnalités sont accessibles par le biais du chevron en regard du champ
 * [Copies de langue](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Références du contenu :
 
-   * Liens directs depuis d’autres pages vers la page sélectionnée
-   * Contenu emprunté, prêté à, ou les deux, à la page sélectionnée par le composant Référence
+   * Liens directs provenant d’autres pages vers la page sélectionnée
+   * Contenu emprunté et/ou prêté à la page sélectionnée par le composant Référence
 
 ![bh-28](assets/bh-28.png)
 

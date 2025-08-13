@@ -11,7 +11,7 @@ role: Developer
 exl-id: 6c54197f-86da-41bd-93e6-ee78ece91013
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '933'
 ht-degree: 99%
 
 ---
@@ -479,7 +479,7 @@ Configurez le service Fournisseur d’informations sur le package de workflow de
 
 L’ID du service est `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. Pour créer un filtre, indiquez une valeur pour une propriété `workflowpackageinfoprovider.filter`.
 
-Les valeurs de propriété comportent le caractère + ou - , suivi du chemin d’accès au package :
+Les valeurs de propriété sont précédées du caractère + ou - , suivi du chemin d’accès au package :
 
 * Le chemin d’accès est le chemin du nœud racine du package de workflow. Le chemin d’accès utilise la syntaxe FileVault.
 * Pour inclure un package, utilisez le préfixe +.
@@ -498,7 +498,7 @@ Le service applique le résultat cumulé de tous les filtres. Par exemple, les v
 
 Par exemple, pour configurer le service à l’aide de CRXDE Lite :
 
-1. Ouvrez CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Ouvrez CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Dans le dossier de configuration de votre application, créez un nœud :
 
    * Nom : `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`

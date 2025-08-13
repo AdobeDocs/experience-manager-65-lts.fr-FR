@@ -11,8 +11,8 @@ role: Admin
 exl-id: c0b285b7-3b20-4412-88b8-04de4a703f42
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '2323'
-ht-degree: 98%
+source-wordcount: '2338'
+ht-degree: 95%
 
 ---
 
@@ -78,7 +78,7 @@ Pour chaque instance de cluster, vous pouvez voir plusieurs propriétés liées 
 * Rubriques de traitement pour lesquelles l’instance est enregistrée pour le déchargement.
 * Rubriques de traitement que l’instance traite.
 
-1. À l’aide de l’interface utilisateur tactile, appuyez sur l’onglet Outils. ([http://localhost:4502/aem/start.html](http://localhost:4502/aem/start.html))
+1. À l’aide de l’interface d’utilisation tactile, cliquez sur l’onglet Outils. ([http://localhost:4502/aem/start.html](http://localhost:4502/aem/start.html))
 1. Pour afficher le déchargement, cliquez sur la mosaïque Déchargement dans la section Déploiement .
 1. Pour afficher la topologie, cliquez sur Mosaïque Topologie dans la section Déploiement .
 
@@ -111,7 +111,7 @@ Le service de découverte envoie des requêtes POST périodiques (pulsations) au
 * Pour joindre une instance à une topologie, précisez l’URL du service Topology Connector du membre racine.
 * Pour permettre à une instance de rejoindre une topologie, ajoutez l’instance à la liste autorisée du service Topology Connector du membre racine.
 
-Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propriétés suivantes du service org.apache.sling.discovery.impt.Config :
+Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propriétés suivantes du service org.apache.sling.discovery.impt.Config :
 
 <table>
  <tbody>
@@ -180,7 +180,7 @@ Utilisez le navigateur de déchargement pour configurer la consommation de rubri
 
 Les tâches sont réparties entre les instances ayant la rubrique associée activée à l’aide d’une logique circulaire.
 
-1. À l’aide de l’interface utilisateur tactile, appuyez sur l’onglet Outils. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
+1. À l’aide de l’interface d’utilisation tactile, cliquez sur l’onglet Outils. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
 1. Dans la zone Opérations Granite, cliquez sur Navigateur de déchargement.
 1. Dans le panneau de navigation, cliquez sur Navigateur de déchargement.
 
@@ -208,7 +208,7 @@ Plusieurs implémentations de JobConsumer sont installées avec Experience Mana
 | Rubrique de tâche | PID de service | Description |
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Installé avec Apache Sling. Tâches de traitement générées par l’administrateur d’événements OSGi, à des fins de rétrocompatibilité. |
-| com/day/cq/replication/job/&ast; | com.day.cq.replication.impl.AgentManagerImpl | Un agent de réplication qui réplique les payloads de la tâche. |
+| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Un agent de réplication qui réplique les payloads de la tâche. |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -226,7 +226,7 @@ Utilisez le console web ou un nœud `sling:OsgiConfig` pour configurer les propr
 
 | Nom de propriété dans la console web | ID OSGi | Description |
 |---|---|---|
-| Liste de rubriques autorisées | job.consumermanager.whitelist | Liste de rubriques traitées par le service JobManager local. La valeur par défaut &ast; envoie toutes les rubriques au service TopicConsumer enregistré. |
+| Liste de rubriques autorisées | job.consumermanager.whitelist | Liste de rubriques traitées par le service JobManager local. La valeur par défaut &amp;ast; envoie toutes les rubriques au service TopicConsumer enregistré. |
 | Liste bloquée de rubriques | job.consumermanager.blacklist | Liste de rubriques que le service JobManager local ne traite pas. |
 
 ## Création d’agents de réplication pour le déchargement {#creating-replication-agents-for-offloading}

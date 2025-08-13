@@ -79,7 +79,7 @@ Une sauvegarde en ligne de votre référentiel permet de créer, de télécharge
 
 >[!CAUTION]
 >
->N’exécutez pas la fonctionnalité Sauvegarde en ligne d’AEM en même temps que le [Nettoyage de la mémoire de magasin de données](/help/sites-administering/data-store-garbage-collection.md) ou le [Nettoyage des révisions](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Cela affecte les performances du système.
+>N’exécutez pas la fonctionnalité Sauvegarde en ligne d’AEM en même temps que la [Récupération de l’espace mémoire du magasin de données](/help/sites-administering/data-store-garbage-collection.md) ou le [Nettoyage de révision](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Cela affecte les performances du système.
 
 Lors du démarrage d’une sauvegarde, vous pouvez spécifier un **chemin d’accès cible** et un **délai**.
 

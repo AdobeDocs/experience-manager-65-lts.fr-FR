@@ -1061,7 +1061,7 @@ L’exemple de code suivant génère un formulaire HTML à l’aide de l’API c
 
 ## Démarrage rapide (mode SOAP) : rendu d’un formulaire HTML avec une barre d’outils personnalisée à lʼaide de l’API Java™ {#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api}
 
-L’exemple de code suivant génère un formulaire HTML avec une barre d’outils affichée en français. L’emplacement du fichier fscmenu.xml est C:\Adobe (ce dossier doit se trouver sur le serveur hébergeant AEM Forms). Notez que la valeur du paramètre régional est `fr_FR`. La section qui explique comment générer un formulaire HTML avec une barre d’outils personnalisée affiche la syntaxe du fichier fscmenu.xml utilisé dans ce tutoriel de démarrage rapide. (Voir [Générer des formulaires HTML avec barres d’outils personnalisées](/help/forms/developing/rendering-forms.md#rendering-html-forms-with-custom-toolbars).)
+L’exemple de code suivant génère un formulaire HTML avec une barre d’outils affichée en français. L’emplacement du fichier fscmenu.xml est C:\Adobe (ce dossier doit se trouver sur le serveur hébergeant AEM Forms). Notez que la valeur des paramètres régionaux est `fr_FR`. La section qui explique comment générer un formulaire HTML avec une barre d’outils personnalisée affiche la syntaxe du fichier fscmenu.xml utilisé dans ce tutoriel de démarrage rapide. (Voir [Générer des formulaires HTML avec barres d’outils personnalisées](/help/forms/developing/rendering-forms.md#rendering-html-forms-with-custom-toolbars).)
 
 ```java
  /*

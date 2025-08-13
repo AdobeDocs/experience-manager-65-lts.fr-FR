@@ -11,8 +11,8 @@ role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '2313'
-ht-degree: 99%
+source-wordcount: '2321'
+ht-degree: 97%
 
 ---
 
@@ -381,7 +381,7 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 
 * **depth**
 
-  Nombre de niveaux de caractères génériques sous lesquels le chemin de propriété/relatif peut exister (par exemple, `property=size depth=2` vérifie le nœud/la taille, le nœud/&ast;/taille et le nœud/&ast;/&ast;/taille).
+  Nombre de niveaux de caractères génériques sous lesquels le chemin de propriété/relatif peut exister (par exemple, `property=size depth=2` vérifie le nœud/la taille, le nœud/&amp;ast;/taille et le nœud/&amp;ast;/&amp;ast;/taille).
 
 ### rangeproperty {#rangeproperty}
 
@@ -483,7 +483,7 @@ Le nom « root » n’est jamais utilisé dans une requête ; il est implicit
 
    * **selective** :
 
-     Uniquement les propriétés spécifiées dans `p.properties`, à savoir une liste de chemins d’accès relatifs séparés par des espaces (utiliser « + » dans les URL) ; si le chemin d’accès relatif a une profondeur > 1, ils seront représentés sous la forme d’objets enfants ; la propriété jcr:path spéciale inclut le chemin de l’accès.
+     Uniquement les propriétés spécifiées dans `p.properties`, à savoir une liste de chemins d’accès relatifs séparés par des espaces (utiliser « + » dans les URL) ; si le chemin d’accès relatif a une profondeur > 1, ils sont représentés sous la forme d’objets enfants ; la propriété jcr:path spéciale inclut le chemin de l’accès.
 
 ### savedquery {#savedquery}
 

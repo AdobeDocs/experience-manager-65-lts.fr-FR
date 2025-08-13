@@ -84,7 +84,7 @@ Un modèle de données de formulaire vous permet de connecter une communication 
 * Configurer les services de lecture et d’écriture pour le modèle de données de formulaire
 * Créer des associations entre les objets de modèle de données
 * Afficher des données d’exemple générées automatiquement
-* Modifier les exemples de données
+* Modifier les données d’exemple
 * Tester le modèle de données de formulaire et les services configurés avec des données de test
 
 [](/help/forms/using/create-form-data-model0.md)

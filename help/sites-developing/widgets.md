@@ -12,8 +12,8 @@ role: Developer
 exl-id: 20a8e6d7-dab5-476a-9235-0abca3da5ff3
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4896'
-ht-degree: 100%
+source-wordcount: '4886'
+ht-degree: 98%
 
 ---
 
@@ -56,17 +56,17 @@ Pour créer une bibliothèque cliente, procédez comme suit :
 1. Créez un nœud sous `/apps/<project>` avec les propriétés suivantes :
 
    * name=&quot;clientlib&quot;
-   * jcr:mixinTypes=&quot;[mix:lockable]&quot;
-   * jcr:primaryType=&quot;cq:ClientLibraryFolder&quot;
-   * sling:resourceType=&quot;widgets/clientlib&quot;
+   * jcr:mixinTypes= »[mix:lockable] »
+   * jcr:primaryType=« cq:ClientLibraryFolder »
+   * sling:resourceType=« widgets/clientlib »
    * categories=&quot;[&lt;category-name>]&quot;
    * dependencies=&quot;[cq.widgets]&quot;
 
    `Note: <category-name> is the name of the custom library (for example, "cq.extjstraining") and is used to include the library on the page.`
 
-1. Sous `clientlib`, créez les dossiers `css` et `js` (nt:folder).
+1. Sous `clientlib` créer les dossiers `css` et `js` (nt:folder).
 
-1. Sous `clientlib`, créez les fichiers `css.txt` et `js.txt` (nt:files). Ces fichiers .txt répertorient les fichiers qui sont inclus dans la bibliothèque.
+1. Vous `clientlib` créer ci-dessous les fichiers `css.txt` et `js.txt` (nt:files). Ces fichiers .txt répertorient les fichiers qui sont inclus dans la bibliothèque.
 
 1. Modifier`js.txt` : il doit commencer par « `#base=js` », suivi de la liste des fichiers qui seront agrégés par le service de bibliothèque cliente CQ, par exemple :
 
@@ -103,7 +103,7 @@ où `<category-nameX>` est le nom de la bibliothèque côté client.
 * pour inclure uniquement le code JavaScript :
   `<ui:includeClientLib js="<category-name>"/>`
 
-Pour plus d’informations, reportez-vous à la description de la balise [&lt;ui:includeClientLib>](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
+Pour plus d’informations, voir la description de la balise [&lt;ui:includeClientLib>](/help/sites-developing/taglib.md#lt-ui-includeclientlib) .
 
 Parfois, une bibliothèque cliente ne doit être disponible qu’en mode création et doit être exclue du mode publication. Cela peut se faire comme suit :
 
@@ -669,11 +669,11 @@ Les cellules de la colonne « Test » peuvent être modifiées, étant donné 
 * `store` est un objet ` [CQ.Ext.data.GroupingStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)` :
    * Il récupère ses données en appelant le servlet enregistré à l’emplacement « `/bin/querybuilder.json` » ; quelques paramètres sont utilisés pour filtrer la requête.
    * Il repose sur l’objet `reader` défini précédemment.
-   * Le tableau est trié selon la colonne **jcr:path** dans l’ordre croissant.
+   * le tableau est trié selon la colonne « **jcr:path** » dans l’ordre croissant.
 * `gridPanel` est un objet ` [CQ.Ext.grid.EditorGridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)` qui peut être modifié :
    * Il repose sur l’objet `store` prédéfini et sur le modèle de colonne `cm`. 
    * Une seule ligne peut être sélectionnée à la fois :
      `sm: new [CQ.Ext.grid.RowSelectionModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
    * Le listener `afteredit` vérifie les éléments suivants après la modification d’une cellule de la colonne « **Test** » :
-      * La propriété `test` du nœud situé à l’emplacement défini par la colonne « **jcr:path** » est définie dans le référentiel avec la valeur de la cellule.
+      * la propriété « `test` » du nœud à l’emplacement défini par la colonne « **jcr:path** » est définie dans le référentiel avec la valeur de la cellule
       * Si l’opération POST est réussie, la valeur est ajoutée à l’objet `store` ; dans le cas contraire, elle est rejetée.

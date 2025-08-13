@@ -53,7 +53,7 @@ Pour modifier la période de création de rapports d’une page Content Insight�
 
 1. Si le délai n’apparaît pas en haut de la page, cliquez sur l’icône Activer/désactiver le délai.
 
-   ![Activer/désactiver le délai.](do-not-localize/chlimage_1-22.png)
+   ![Activer/désactiver la période](do-not-localize/chlimage_1-22.png)
 
 1. Pour modifier la date de début de la période de création de rapports, faites glisser le cercle qui s’affiche sur le côté gauche de la zone ombrée jusqu’à la date de début souhaitée.
 

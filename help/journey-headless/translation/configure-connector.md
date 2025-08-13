@@ -86,7 +86,7 @@ Pour créer une configuration de traduction :
 
    ![Créer une configuration de traduction](assets/create-translation-configuration.png)
 
-1. Sélectionnez **Créer**. La fenêtre **Modifier la configuration** apparaît alors. Vous pouvez y configurer les propriétés de configuration.
+1. Cliquez sur **Créer**. La fenêtre **Modifier la configuration** apparaît alors. Vous pouvez y configurer les propriétés de configuration.
 
 1. N’oubliez pas que les fragments de contenu sont stockés en tant que ressources dans AEM. Cliquez sur l’onglet **Ressources**.
 

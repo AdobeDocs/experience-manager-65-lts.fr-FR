@@ -47,7 +47,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 
    >[!NOTE]
    >
-   >Si vous saisissez l’ID d’e-mail d’une personne qui ne fait pas partie de votre entreprise, les mots [!UICONTROL Utilisateur externe] sont ajoutés à son ID d’e-mail.
+   >Si vous saisissez l’ID d’e-mail d’une personne qui ne fait pas partie de votre entreprise, les mots [!UICONTROL Utilisateur externe] sont ajoutés avant son ID d’e-mail.
 
 1. Dans la zone **[!UICONTROL Objet]**, indiquez l’objet de la ressource que vous souhaitez partager.
 

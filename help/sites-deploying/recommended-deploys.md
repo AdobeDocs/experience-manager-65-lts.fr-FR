@@ -178,7 +178,7 @@ Certaines conditions préalables et des recommandations sont disponibles si vous
 
 1. L’architecture et le dimensionnement du déploiement MongoDB doivent faire partie de la mise en œuvre du projet avec l’aide des architectes MongoDB ou des services de conseil Adobe qui connaissent bien AEM ;
 1. L’équipe partenaire ou celle du client ou de la cliente doit disposer de l’expertise MongoDB nécessaire pour être en mesure de maintenir et de gérer un environnement MongoDB existant ou nouveau ;
-1. Vous pouvez choisir de déployer la version commerciale ou open source de MongoDB (AEM prend en charge les deux), mais vous devez souscrire un contrat de maintenance et de support MongoDB directement auprès de MongoDB Inc ;
+1. Vous pouvez choisir de déployer la version commerciale ou Open Source de MongoDB (AEM prend en charge les deux), mais vous devez souscrire un contrat de maintenance et de support MongoDB directement auprès de MongoDB Inc ;
 1. Les architectures et infrastructures globales d&#39;AEM et de MongoDB doivent être bien définies et validées par un ou une architecte d&#39;AEM Adobe ;
 1. Examinez le modèle de prise en charge des déploiements d’AEM qui incluent MongoDB.
 

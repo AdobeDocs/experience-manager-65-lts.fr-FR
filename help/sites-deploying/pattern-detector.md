@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: c499432d-6aa4-481f-821d-bd2f9b7a911d
 source-git-commit: 90f1b2ca07bec5a3be6c312a5f048abaa088df16
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 100%
+source-wordcount: '502'
+ht-degree: 95%
 
 ---
 
@@ -44,7 +44,7 @@ Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’out
 
 * **Via la console Felix Inventory :**
 
-1. Accédez à la console web AEM en vous rendant sur *https://serveraddress:serverport/system/console/configMgr*.
+1. Accédez à la console web AEM en vous rendant sur *https://serveraddress:serverport/system/console/configMgr*
 1. Sélectionnez **Statut – Outil de détection des motifs**, comme illustré ci-dessous :
 
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
@@ -111,7 +111,7 @@ Avec la sortie :
     "code": "ECU",
     "type": "extraneous.content.usage",
     "detective": "ContentAccessDetector",
-    "moreInfo": "https://www.adobe.com/go/aem6_ECU_fr"
+    "moreInfo": "https://www.adobe.com/go/aem6_ECU"
   },
   "item": {
     "id": "a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f",
@@ -215,7 +215,7 @@ Actuellement, l’outil de détection des modèles permet de vérifier :
 * les usages exessifs des types de ressources Sling et super-types (avec superpositions de contenu de chemin de recherche) ;
 * les définitions des index Oak (compatibilité) ;
 * les packages VLT (surutilisation) ;
-* la compatibilité des nœuds rep:User (dans le contexte de la configuration OAuth) ;
+* compatibilité des nœuds rep:User (dans le contexte de la configuration OAuth) ;
 
 >[!NOTE]
 >
