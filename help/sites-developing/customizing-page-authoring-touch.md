@@ -54,7 +54,7 @@ Il est possible de les utiliser de différentes manières pour étendre la fonct
 
 >[!CAUTION]
 >
->****** Ne modifiez rien dans le chemin d’accès `/libs`.
+>**&#x200B;**&#x200B;** Ne modifiez rien dans le chemin d’accès `/libs`.
 >
 >Cela est dû au fait que le contenu de `/libs` sera écrasé lors de la prochaine mise à niveau de votre instance (et éventuellement lors de l’application d’un correctif ou d’un pack de fonctionnalités).
 >
@@ -193,7 +193,7 @@ Pour mettre en œuvre un nouvel éditeur statique (au sein de votre bibliothèqu
 >[!NOTE]
 >
 >Pour obtenir un exemple, reportez-vous à :
->>`/libs/cq/gui/components/authoring/editors/clientlibs/core/js/editors/editorExample.js`
+>&#x200B;>`/libs/cq/gui/components/authoring/editors/clientlibs/core/js/editors/editorExample.js`
 
 1. Implémentez les éléments suivants :
 

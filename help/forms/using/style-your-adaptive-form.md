@@ -479,7 +479,7 @@ Vous pouvez utiliser différentes polices pour concevoir un formulaire adaptatif
 9. Accédez au dossier `clientlibs` nouvellement créé et ajoutez les propriétés `allowProxy` et `categories`.
 10. Accédez à `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` et créez un dossier CSS.
 11. Accédez au dossier CSS créé et créez un fichier. Par exemple, créez un fichier en tant que `fonts.css` et collez le code intégré avec l’URL.
-   ![Structure de dossiers](/help/forms/using/assets/fonts-add-in-crxde.png)
+    ![Structure de dossiers](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Enregistrez les modifications.
 
 >[!NOTE]

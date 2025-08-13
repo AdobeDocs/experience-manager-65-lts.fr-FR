@@ -102,7 +102,7 @@ A.**Configurer** : lorsque vous sélectionnez **Configurer**, les propriétés
 
 B.**Modifier les règles** : lorsque vous sélectionnez Modifier les règles, l’éditeur de règles apparaît dans lequel vous pouvez modifier et créer des règles pour le composant sélectionné. Dans l’éditeur de règles, vous pouvez également sélectionner d’autres objets de formulaire (composants) et modifier/créer des règles pour ces objets de formulaire.
 
-C.** Copier** : permet de copier un composant et le coller ailleurs dans la communication interactive.
+C.**&#x200B; Copier** : permet de copier un composant et le coller ailleurs dans la communication interactive.
 
 D.**Couper** : permet de déplacer un composant d’un endroit à un autre dans la communication interactive.
 

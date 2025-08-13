@@ -31,7 +31,7 @@ Pour créer une page de destination efficace pour une newsletter, vous devez eff
 >[!NOTE]
 >
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (Gestion des prospects et des listes).
->>Il est conseillé d’utiliser [Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
+>&#x200B;>Il est conseillé d’utiliser [Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
 
 ## Créer une liste pour la newsletter {#creating-a-list-for-the-newsletter}
 

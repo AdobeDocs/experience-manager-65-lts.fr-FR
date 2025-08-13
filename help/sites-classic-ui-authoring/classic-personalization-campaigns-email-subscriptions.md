@@ -21,7 +21,7 @@ ht-degree: 95%
 >[!NOTE]
 >
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (Gestion des prospects et des listes).
->>Nous vous recommandons d’utiliser [Adobe Campaign et son intégration AEM](/help/sites-administering/campaign.md).
+>&#x200B;>Nous vous recommandons d’utiliser [Adobe Campaign et son intégration AEM](/help/sites-administering/campaign.md).
 
 Les utilisateurs peuvent être invités à s’abonner à des listes de publipostage de **fournisseurs de services de messagerie** à l’aide du composant **Formulaire** utilisé sur une page Web AEM. Pour préparer une page AEM avec un formulaire d’abonnement à des listes de diffusion d’un service de messagerie, appliquez la configuration de service correspondante à la page AEM que consultera l’abonné potentiel.
 

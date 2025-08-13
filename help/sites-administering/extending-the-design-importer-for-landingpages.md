@@ -470,7 +470,7 @@ L’utilisation de sélecteurs CSS similaires aux suivants n’est pas recommand
 En effet, des éléments HTML supplémentaires tels que les balises &lt;div> sont ajoutés au fichier Html généré après l’import.
 
 * Les scripts reposant sur une structure similaire à ci-dessus ne sont pas non plus recommandés pour une utilisation avec des éléments marqués pour conversion en composants AEM.
-* Il est déconseillé d’utiliser des styles sur les balises de mise en forme pour la conversion d’un composant, comme &lt;div data-cq-component=&quot;&amp;ast;&quot;>.
+* Il est déconseillé d’utiliser des styles sur les balises de mise en forme pour la conversion d’un composant, comme &lt;div data-cq-component=&quot;&ast;&quot;>.
 * La disposition de conception doit suivre les bonnes pratiques relatives au modèle HTML5 Boilerplate. Pour en savoir plus, consultez [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configuration de modules OSGI {#configuring-osgi-modules}
@@ -527,11 +527,11 @@ Le tableau ci-dessous décrit brièvement les propriétés :
 >[!NOTE]
 >
 >**Limites actuelles du préprocesseur de saisie de page de destination :**
->>Si vous devez apporter des modifications au modèle de recherche, lorsque vous ouvrez l’éditeur de propriétés Felix, vous devez ajouter manuellement des barres obliques inversées pour utiliser les métacaractères regex. Si vous n’ajoutez pas manuellement de barre oblique inverse, la regex est considérée comme non valide et ne remplacera pas l’ancienne.
+>&#x200B;>Si vous devez apporter des modifications au modèle de recherche, lorsque vous ouvrez l’éditeur de propriétés Felix, vous devez ajouter manuellement des barres obliques inversées pour utiliser les métacaractères regex. Si vous n’ajoutez pas manuellement de barre oblique inverse, la regex est considérée comme non valide et ne remplacera pas l’ancienne.
 >
 >Par exemple, si la configuration par défaut est
 >
->>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >Et vous devez remplacer `CQ_DESIGN_PATH` par `VIPURL` dans le modèle de recherche, qui doit se présenter comme suit :
 >

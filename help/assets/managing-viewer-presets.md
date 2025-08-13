@@ -60,7 +60,7 @@ Consultez la [Bibliothèque d’images réactive](https://experienceleague.adobe
 >[!NOTE]
 >
 >Publiez toutes les visionneuses prêtes à l’emploi avant de les utiliser pour la première fois.
->>Consultez la section [Publication de paramètres prédéfinis de visionneuse].(#publishing-viewer-presets)
+>&#x200B;>Consultez la section [Publication de paramètres prédéfinis de visionneuse].(#publishing-viewer-presets)
 
 ### Compatibilité du système de paramètres prédéfinis de la visionneuse {#viewer-preset-system-compatibility}
 
@@ -163,10 +163,10 @@ Voir « Notes de mise à jour sur les visionneuses » dans la table des matiè
 >[!NOTE]
 >
 >Tous les paramètres prédéfinis de visionneuse prêts à l’emploi de Dynamic Media sont déjà activés mais vous devez les publier.
->>Voir [Publication de paramètres de visionneuse prédéfinis](#publishing-viewer-presets).
+>&#x200B;>Voir [Publication de paramètres de visionneuse prédéfinis](#publishing-viewer-presets).
 >
 >Tous les nouveaux paramètres prédéfinis de visionneuse que vous créez et ajoutez doivent être activés *et* publiés.
->>Voir [Activation ou désactivation des paramètres prédéfinis de visionneuse](#activating-or-deactivating-viewer-presets) et [Publication de paramètres prédéfinis de visionneuse](#publishing-viewer-presets).
+>&#x200B;>Voir [Activation ou désactivation des paramètres prédéfinis de visionneuse](#activating-or-deactivating-viewer-presets) et [Publication de paramètres prédéfinis de visionneuse](#publishing-viewer-presets).
 
 <table>
  <tbody>

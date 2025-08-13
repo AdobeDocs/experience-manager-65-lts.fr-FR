@@ -77,7 +77,7 @@ Vous pouvez configurer User Management de manière à ce qu’il vérifie pério
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Configurer les attributs système avancés.
 1. Sous Expression cron d’achèvement de synchronisation, saisissez une expression cron qui représente l’intervalle auquel User Management tente de relancer les synchronisations ayant échoué. L’utilisation de l’expression cron est basée sur le système de planification des tâches open source Quartz, version 1.4.0.
 
-   La valeur par défaut est 0 0/13 &amp;ast; ? &amp;ast; , ce qui signifie que la vérification survient toutes les 13 minutes.
+   La valeur par défaut est 0 0/13 &ast; ? &ast; , ce qui signifie que la vérification survient toutes les 13 minutes.
 
 ## Synchronisation manuelle des annuaires {#manually-synchronize-directories}
 

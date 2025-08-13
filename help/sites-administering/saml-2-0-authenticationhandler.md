@@ -68,7 +68,7 @@ La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 >[!NOTE]
 >
 >Cet emplacement est utilisé uniquement si le cookie `request-path` n’est pas défini. Si vous demandez une page sous le chemin configuré sans jeton de connexion valide, le chemin demandé est stocké dans un cookie
->>et le navigateur sera redirigé vers cet emplacement après une authentification réussie.
+>&#x200B;>et le navigateur sera redirigé vers cet emplacement après une authentification réussie.
 
 **Attribut ID de l’utilisateur** Nom de l’attribut contenant l’ID utilisateur utilisé pour authentifier et créer l’utilisateur dans le référentiel CRX.
 

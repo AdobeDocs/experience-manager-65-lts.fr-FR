@@ -85,7 +85,7 @@ Les détails (configuration et journaux) sont accessibles à partir de la consol
 >* Agents sur l’instance de publication : réplication inverse (boîte d’envoi)
 >
 >Pour vérifier le statut de l’agent ou de la file d’attente, utilisez la console **Outils**.
->>Consultez la section [Surveillance de vos agents de réplication](#monitoring-your-replication-agents).
+>&#x200B;>Consultez la section [Surveillance de vos agents de réplication](#monitoring-your-replication-agents).
 
 #### Réplication (création vers publication) {#replication-author-to-publish}
 

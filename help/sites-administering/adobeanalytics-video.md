@@ -227,7 +227,7 @@ Les appels à Adobe Analytics à l’aide de l’exemple fourni doivent se pré
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Le **premier appel**à Adobe Analytics contient les valeurs suivantes :*
+*Le **premier appel**&#x200B;à Adobe Analytics contient les valeurs suivantes :*
 
 * *prop1 et eVar1 pour eventdata.a.media.name,*
 * *props2-4, avec eVar2 et eVar3 contenant contentType (vidéo) et segment (1:O:1-4)*
@@ -235,7 +235,7 @@ Les appels à Adobe Analytics à l’aide de l’exemple fourni doivent se pré
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-***Troisième appel**vers Adobe Analytics :*
+***Troisième appel**&#x200B;vers Adobe Analytics :*
 
 * *prop1 et eVar1 contiennent a.media.name ;*
 * *event1 car un segment a été visionné ;*
@@ -322,7 +322,7 @@ Cette méthode est similaire à la méthode Milestones, à la différence que le
 
    ![lmilestones1](assets/lmilestones1.png)
 
-   *La variable **pev3**envoyée dans l’appel contient les informations suivantes :*
+   *La variable **pev3**&#x200B;envoyée dans l’appel contient les informations suivantes :*
 
    * *Nom* : nom du fichier vidéo (*film.avi*)
 
