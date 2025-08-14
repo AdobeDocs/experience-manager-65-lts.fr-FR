@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5ca53958-dfcd-4058-a04c-c750ab4d9a6e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a8ff456d323e848cc0c6296670b39834682a36b9
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 100%
+source-wordcount: '522'
+ht-degree: 97%
 
 ---
 
@@ -166,7 +166,7 @@ Vous pouvez mettre du texte en gras comme suit :
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Pour désigner une plage de code, entourez-la de guillemets obliques (&grave;). Contrairement à un bloc de code préformaté, une plage de code indique du code dans un paragraphe normal.
+Pour indiquer une plage de code, entourez-la de guillemets obliques (`` ` ``). Contrairement à un bloc de code préformaté, une plage de code indique du code dans un paragraphe normal.
 
 Par exemple :
 
