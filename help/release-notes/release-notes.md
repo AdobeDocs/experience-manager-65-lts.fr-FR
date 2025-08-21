@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 70436606-d95c-4208-94f6-e33f3eefdf66
-source-git-commit: 160b27c188f8bcd3f3a668b50d3a824598909688
+source-git-commit: e9c09eebb372fc36ae161959e0465c07ad755130
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 96%
+source-wordcount: '1068'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 96%
 |---|---|
 | Version | 6.5 LTS |
 | Type | Version majeure |
-| Date de disponibilité générale | 7 mars 2025 |
+| Disponibilité générale | 7 mars 2025 |
 
 ## Nouveautés {#what-s-new}
 
