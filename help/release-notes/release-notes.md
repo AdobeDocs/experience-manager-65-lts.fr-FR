@@ -5,14 +5,14 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 8c726951cbd99660d2cfd23abef8857a6f4fcf36
+source-git-commit: b6a5e6bacfee72e162ce3bc035f909c02fbbf6db
 workflow-type: tm+mt
-source-wordcount: '4939'
+source-wordcount: '4935'
 ht-degree: 31%
 
 ---
 
-# Notes de mise à jour actuelles de Adobe Experience Manager 6.5 LTS, SP1 {#release-notes}
+# Notes de mise à jour actuelles pour Adobe Experience Manager 6.5 LTS, SP1 {#release-notes}
 
 ## Informations sur la version {#release-information}
 
@@ -31,7 +31,7 @@ ht-degree: 31%
 
 [!DNL Experience Manager] 6.5 LTS, SP1 comprend de nouvelles fonctionnalités, des améliorations importantes demandées par les clients et des correctifs de bugs. Elle comprend également des améliorations des performances, de la stabilité et de la sécurité publiées depuis la disponibilité initiale de 6,5 LTS en mars 2025. [Installez ce pack de services](#install-update) sur 6.5 LTS.
 
-## Principales fonctionnalités et améliorations
+<!-- ## Key features and enhancements -->
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
