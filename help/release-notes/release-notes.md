@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6b101bcb474abe07a72d5fd04895f858eef34587
+source-git-commit: e9fc4a6294588b527a3b19d64101c81f0eb7bf55
 workflow-type: tm+mt
-source-wordcount: '5228'
+source-wordcount: '5238'
 ht-degree: 34%
 
 ---
@@ -297,7 +297,6 @@ Correction d’un problème d’accessibilité en raison duquel les espaces rés
 #### Démarrage rapide{#foundation-quickstart-65-lts-sp1}
 
 * Placer sur la liste bloquée Mise à jour du script de désinstallation afin d’ajuster la plage de versions du lot Guava, ce qui empêche son arrêt lors de l’installation via le gestionnaire de packages. (GRANITE-59559)
-* Correction d’une erreur de configuration en plusieurs parties qui se produisait lors des chargements de packages AEMFD sur Tomcat 11 avec JDK 17 en mettant à jour la configuration du serveur pour prendre en charge les installations de packages volumineux sans déclencher d’échecs d’analyse. (GRANITE-58327)
 * Correction d’un problème dans l’interface utilisateur de réplication qui affichait une erreur (`#1660`) lors de la modification des agents de réplication en corrigeant la gestion des cases à cocher classiques dans l’interface. (GRANITE-58302)
 * Correction de plusieurs erreurs de démarrage du magasin de données S3 lors de l’exécution d’AEM 6.5 LTS avec JDK 21 en résolvant les problèmes d’autorisations de service manquantes, en mettant à jour la gestion de la configuration et en s’assurant que les services requis s’initialisent correctement. (GRANITE-57082)
 * Définition de la stratégie de maintenance et de maintenance pour AEM 6.5. Ce correctif incluait les éléments suivants :
@@ -369,6 +368,11 @@ Eclipse Jetty 11.0.x est utilisé comme moteur de servlet pour Quickstart.
 ## Installation et mise à jour {#install-update}
 
 Pour connaître les exigences de configuration, consultez les [instructions d’installation](/help/sites-deploying/custom-standalone-install.md).
+
+>[!NOTE]
+>
+> Si vous effectuez directement une mise à niveau vers LTS SP1 à partir d&#39;anciens SP 6.5, suivez les instructions données pour 6.5 à 6.5 LTS GA [mise à niveau](/help/sites-deploying/upgrade.md).
+
 
 Pour obtenir des instructions détaillées, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
 
@@ -452,7 +456,11 @@ Lorsque ce problème se produit, l’une des exceptions suivantes peut apparaît
 
 Un correctif [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) est disponible pour résoudre ce problème.
 
-### Échec de la connexion à Dispatcher avec la fonction SSL uniquement {#ssl-only-feature}
+### Échec de connexion à Dispatcher avec la fonction SSL uniquement (corrigé dans AEM 6.5 LTS SP1 et versions ultérieures){#ssl-only-feature}
+
+>[!NOTE]
+>
+> Ce problème est uniquement présent dans la version AEM 6.5 LTS GA.
 
 Lors de l’activation de la fonction SSL uniquement dans les déploiements AEM, un problème connu affecte la connectivité entre les instances Dispatcher et AEM. Une fois cette fonctionnalité activée, les contrôles d’intégrité peuvent échouer et la communication entre les instances Dispatcher et AEM peut être interrompue. Ce problème se produit spécifiquement lorsque les clients tentent de se connecter via `https + IP` à partir des instances Dispatcher vers AEM. Elle est liée à des problèmes de validation SNI (Server Name Indication).
 
