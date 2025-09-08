@@ -459,7 +459,7 @@ Pour obtenir des instructions détaillées, consultez la [documentation de mise 
 
 ## Installation et mise à jour du module complémentaire AEM Forms {#install-update-aem-forms-add-on}
 
-Pour obtenir des instructions détaillées, voir [Exécution d’une mise à niveau statique](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Pour obtenir des instructions détaillées, voir [Exécution d’une mise à niveau statique](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
