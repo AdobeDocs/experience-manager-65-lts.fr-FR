@@ -8,11 +8,11 @@ exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 12e2966754fe317c2a20951ee29b401425de486b
 workflow-type: tm+mt
 source-wordcount: '7223'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
-# Notes de mise à jour actuelles pour Adobe Experience Manager 6.5 LTS, SP1 {#release-notes}
+# Notes de mise à jour actuelles pour Adobe Experience Manager 6.5 LTS, SP1 {#release-notes}
 
 ## Informations sur la version {#release-information}
 
@@ -83,7 +83,7 @@ ht-degree: 82%
 * Amélioration de la visibilité et des infobulles des icônes dans les scénarios Reflow. Optimisation du comportement Reflow pour garantir l’affichage correct des infobulles des icônes **Télécharger**, **Retraiter les ressources** et **Extraire**. Mise en évidence d’un problème d’accessibilité en raison duquel les icônes et leurs libellés devenaient invisibles lorsque la fenêtre était redimensionnée ou que les paramètres de zoom du navigateur étaient modifiés. Cette correction améliore l’accessibilité pour les personnes ayant une mauvaise vue, en maintenant la visibilité et en fournissant des descriptions appropriées des icônes en mode Reflow. (SITES-26871)
 
 
-#### Interface utilisateur d’administration{#sites-adminui-65-lts-sp1}
+#### Interface d’utilisation d’administration{#sites-adminui-65-lts-sp1}
 
 * Correction d’un problème d’accessibilité en raison duquel JAWS n’annonçait pas les rôles de liste ou ne fournissait pas d’instructions de navigation et d’activation dans la boîte de dialogue Créer un site. (SITES-30661)
 * La prise en charge des lecteurs d’écran pour les messages de statut dans la vue de filtrage Sites fonctionne comme prévu, garantissant ainsi que les utilisateurs et utilisatrices reçoivent des commentaires clairs et opportuns lors du changement d’affichage. (SITES-24992)
@@ -110,7 +110,7 @@ ht-degree: 82%
 * Vérification de la fonctionnalité de saut de lien pour s’assurer qu’elle déplace la cible au clavier vers la zone de contenu principale, ce qui permet aux utilisateurs et utilisatrices du clavier de contourner les éléments d’en-tête et d’accéder efficacement au contenu. (SITES-24061)
 
 
-#### Interface utilisateur classique{#sites-classicui-65-lts-sp1}
+#### Interface d’utilisation classique{#sites-classicui-65-lts-sp1}
 
 Correction d’un problème dans l’interface d’utilisation classique en raison duquel les libellés de case à cocher manquaient et HTML s’affichait en tant que texte codé dans plusieurs éléments de l’interface d’utilisation, y compris la recherche de date et les interfaces non standard. (SITES-31822)
 
@@ -132,11 +132,11 @@ Les autres personnes chargées de la création peuvent continuer à publier des 
 
 #### [!DNL Content Fragments] - REST API{#sites-restapi-65-lts-sp1} -->
 
-#### Console de composant{#sites-component-console-65-lts-sp1}
+#### Console des composants{#sites-component-console-65-lts-sp1}
 
 Correction d’un problème dans le composant Liste de produits en raison duquel la case à cocher « Tout sélectionner » ajoutait uniquement les 20 premiers SKU de la page initiale au lieu de tous les SKU dans les résultats de la recherche. (SITES-29191)
 
-#### Serveur principal{#sites-core-backend-65-lts-sp1}
+#### Back-end principal{#sites-core-backend-65-lts-sp1}
 
 Des métadonnées XMP mal formatées déclenchaient une erreur lors du traitement des ressources d’image dans le `ValidationDataServlet`. Le correctif garantit la conformité de la gestion des métadonnées et évite l’analyse redondante de propriétés non valides. (SITE-30683)
 
@@ -158,7 +158,7 @@ Des métadonnées XMP mal formatées déclenchaient une erreur lors du traitemen
 * Correction d’une erreur JavaScript `ns.ui.alert is not a function` qui se produisait lors de la réactivation de l’héritage des composants fantômes dans AEM 6.5 On-prem. (SITES-31993)
 * Correction d’un problème en raison duquel l’option de déploiement « Ultérieurement » permettait de continuer sans sélectionner de date dans AEM 6.5. (SITES-31374)
 
-#### Éditeur de la page{#sites-pageeditor-65-lts-sp1}
+#### Éditeur de page{#sites-pageeditor-65-lts-sp1}
 
 * Correction d’un problème dans le modal du teaser en raison duquel l’onglet Lien et actions continuait à afficher le style d’erreur, les icônes et l’attribut aria-invalid après une saisie de données valide et une résolution d’erreur. (SITES-25527)
 * Correction d’un problème dans l’éditeur de texte modal du teaser en raison duquel les boutons Listes et Paragraphes ne transmettaient pas leur état développé ou réduit aux lecteurs d’écran, assurant ainsi des mises à jour d’attributs précises avec une extension ARIA. (SITES-25365)
@@ -452,7 +452,7 @@ Pour connaître les exigences de configuration, consultez les [instructions d’
 
 >[!NOTE]
 >
-> Si vous effectuez directement une mise à niveau vers LTS SP1 à partir d&#39;anciens SP 6.5, suivez les instructions données pour 6.5 à 6.5 LTS GA [mise à niveau](/help/sites-deploying/upgrade.md).
+> Si vous effectuez une mise à niveau directement vers LTS SP1 à partir d’anciens SP 6.5, suivez les instructions données pour la [mise à niveau](/help/sites-deploying/upgrade.md) 6.5 à 6.5 LTS GA.
 
 
 Pour obtenir des instructions détaillées, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
@@ -463,7 +463,7 @@ Pour obtenir des instructions détaillées, consultez la [documentation de mise 
 
 ## Installation et mise à jour du module complémentaire AEM Forms {#install-update-aem-forms-add-on}
 
-Pour obtenir des instructions détaillées, voir [Exécution d’une mise à niveau statique](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Pour obtenir des instructions détaillées, voir [Exécution d’une mise à niveau statique](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
@@ -543,11 +543,11 @@ Lorsque ce problème se produit, l’une des exceptions suivantes peut apparaît
 
 Un correctif [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) est disponible pour résoudre ce problème.
 
-### Échec de connexion à Dispatcher avec la fonction SSL uniquement (corrigé dans AEM 6.5 LTS SP1 et versions ultérieures){#ssl-only-feature}
+### Échec de connexion à Dispatcher avec la fonction SSL uniquement (corrigé dans AEM 6.5 LTS SP1 et versions ultérieures){#ssl-only-feature}
 
 >[!NOTE]
 >
-> Ce problème est uniquement présent dans la version AEM 6.5 LTS GA.
+> Ce problème est uniquement présent dans la version AEM 6.5 LTS GA.
 
 Lors de l’activation de la fonction SSL uniquement dans les déploiements AEM, un problème connu affecte la connectivité entre les instances Dispatcher et AEM. Une fois cette fonctionnalité activée, les contrôles d’intégrité peuvent échouer et la communication entre les instances Dispatcher et AEM peut être interrompue. Ce problème se produit plus particulièrement lorsque les clientes et clients tentent de se connecter via `https + IP` à partir des instances Dispatcher vers AEM. Il est lié aux problèmes de validation SNI (Server Name Indication).
 
