@@ -8,10 +8,10 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: 826074f588c60c77c9ec32b3f94b47ab9aa0c12d
 workflow-type: tm+mt
-source-wordcount: '3337'
-ht-degree: 93%
+source-wordcount: '3345'
+ht-degree: 91%
 
 ---
 
@@ -184,19 +184,19 @@ Pour effectuer la mise à niveau vers une nouvelle version du connecteur S3 1.60
 
 1. Désactivez l’instance AEM.
 
-1. Accédez à `<aem-install>/crx-quickstart/install/15` dans le dossier d’installation d’AEM et effectuez une sauvegarde du contenu.
-1. Après la sauvegarde, supprimez l’ancienne version du connecteur S3 et ses dépendances en supprimant tous les fichiers jar dans le dossier `<aem-install>/crx-quickstart/install/15`, par exemple :
+1. Accédez à `<aem-install>/crx-quickstart/install` dans le dossier d’installation d’AEM et sauvegardez tous ses sous-dossiers.
+1. Après la sauvegarde, supprimez l’ancienne version du connecteur S3 et ses dépendances en supprimant tous les fichiers jar dans tous les dossiers situés sous `<aem-install>/crx-quickstart/install/` dossier , par exemple :
 
-   * **oak-blob-cloud-1.6.1.jar**
-   * **aws-java-sdk-osgi-1.10.76.jar**
+   * **15/oak-blob-cloud-1.78.XXX.jar**
+   * **15/aws-java-sdk-osgi-1.12.XXX.jar**
 
    >[!NOTE]
    >
    >Les noms de fichier présentés ci-dessus sont utilisés à titre d’illustration uniquement.
 
-1. Téléchargez la dernière version du pack de fonctionnalités 1.60.x à partir de la [Distribution logicielle.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/s3-connector/6-5-lts/com.adobe.granite.oak.s3connector-1.60.2.zip)
-1. Décompressez le contenu dans un dossier séparé, puis accédez à `jcr_root/libs/system/install/15`.
-1. Copiez les fichiers jar dans le dossier d’installation AEM **&lt;aem-install>**/crx-quickstart/install/15.
+1. Téléchargez la dernière version du pack de fonctionnalités 1.60.x à partir du [référentiel Maven.](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)
+1. Décompressez le contenu dans un dossier séparé, puis accédez à `jcr_root/libs/system/install/`.
+1. Copiez tous les sous-dossiers dans **&lt;aem-install>**/crx-quickstart/install/ dans le dossier d’installation d’AEM.
 1. Démarrez AEM et vérifiez les fonctionnalités du connecteur.
 
 Vous pouvez utiliser le fichier de configuration avec les options présentées ci-dessous.
@@ -295,7 +295,7 @@ Vous pouvez utiliser le fichier de configuration avec les options présentées c
 
 Quand la mise à niveau est effectuée à partir d’une mise en œuvre de cache plus ancienne (avant Oak 1.6), la structure du répertoire du cache du système de fichiers local est différente. Dans l’ancienne structure de cache, les fichiers téléchargés et chargés étaient placés directement sous le chemin d’accès au cache. La nouvelle structure permet d’isoler les chargements des téléchargements afin de les stocker dans deux répertoires nommés `upload` et `download` dans le chemin du cache. Le processus de mise à niveau doit être transparent et tout chargement en attente doit être planifié. De plus, les fichiers précédemment chargés dans le cache seront placés dans le cache lors de l’initialisation.
 
-Il est également possible de mettre le cache à niveau hors ligne à l’aide de la commande oak-run `datastorecacheupgrade`. Pour plus d’informations sur l’exécution de la commande, consultez le fichier [lisez-moi](https://svn.apache.org/repos/asf/jackrabbit/oak/trunk/oak-run/README.md) du module oak-run.
+Il est également possible de mettre le cache à niveau hors ligne à l’aide de la commande oak-run `datastorecacheupgrade`. Pour plus d’informations sur l’exécution de la commande, consultez le fichier [lisez-moi](https://svn.apache.org/repos/asf/jackrabbit/oak/trunk/oak-run/README.md ) du module oak-run.
 
 Le cache est soumis à une limite de taille qui peut être configurée à l’aide du paramètre cacheSize.
 
