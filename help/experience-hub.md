@@ -1,25 +1,26 @@
 ---
-title: À propos d’Experience Hub
+title: À propos d’Experience Hub
 description: En savoir plus sur la page Adobe Experience Hub.
 landing-page-description: Découvrez Adobe Experience Hub, un point de départ centralisé pour accéder à toutes les fonctionnalités d’AEM.
 solution: Experience Manager, Experience Manager 6.5 LTS
-feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows
+feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
+role: Admin, Architect, Developer, User
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
-source-git-commit: 713dc1615ef1751c2fdbf67b5f97690ce6eed676
+source-git-commit: 4e4d367b93f1e99cf076df14a15352f664890676
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
-# À propos d’Experience Hub {#aem-experience-hub}
+# À propos d’Experience Hub {#aem-experience-hub}
 
 Experience Hub offre un point de départ centralisé pour la gestion du contenu, des ressources et des sites dans Adobe Experience Manager. Conçu pour offrir une expérience personnalisée, Experience Hub vous permet de naviguer facilement dans l’écosystème AEM en fonction de vos rôles et objectifs. Véritable guide, elle vous fournit des informations clés et vous recommande des actions pour vous aider à atteindre vos objectifs de manière efficace. Grâce à une disposition claire et personnalisée, Experience Hub garantit un accès rapide aux outils essentiels, ce qui permet une expérience rationalisée et efficace de toutes les fonctionnalités d’AEM.
 
 Regardez une présentation rapide de l’espace de travail AEM Experience Hub repensé (4 minutes, 9 secondes).
 
->[!VIDEO](https://video.tv.adobe.com/v/3471443?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -80,6 +81,6 @@ S’il n’existe aucun environnement de production AEM Cloud Service ou Managed
 
 ![Experience Hub sans environnements de production](/help/assets/assets-experience-hub/experience-hub-no-prod-environs-ams.png)
 
-## Assistant AI dans AEM
+## Assistant IA dans AEM
 
-Pour les clients qui ont [rempli les critères prérequis](/help/ai-assistant-in-aem.md#get-access), l’assistant AI dans AEM est disponible pour les utilisateurs de leur entreprise. Voir [Assistant AI dans AEM](/help/ai-assistant-in-aem.md).
+Pour les clients qui ont [rempli les critères prérequis](/help/ai-assistant-in-aem.md#get-access), l’assistant AI dans AEM est disponible pour les utilisateurs de leur entreprise. Voir [Assistant IA dans AEM](/help/ai-assistant-in-aem.md).
