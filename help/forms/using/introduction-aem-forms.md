@@ -5,21 +5,20 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
-source-git-commit: d9f6415aabcbc55af23824d9e0ab33c418f6761f
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 100%
+source-wordcount: '943'
+ht-degree: 97%
 
 ---
 
-# Présentation d’AEM Forms{#introduction-to-aem-forms}
+# Présentation d’AEM Forms {#introduction-to-aem-forms}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
 
-Pour en savoir plus sur les dernières fonctionnalités et améliorations d’AEM Forms, voir [Nouveautés d’AEM Forms](../../forms/using/whats-new.md).
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=fr).
 
 ## À propos d’AEM Forms {#about-aem-forms}
 
@@ -66,7 +65,7 @@ Les formulaires de navigateur HTML5 peuvent être affichés sur des appareils mo
 
 **Formulaires adaptatifs**
 
-Les formulaires adaptatifs peuvent s’adapter de manière dynamique aux réponses des utilisateurs et utilisatrices en ajoutant ou supprimant des champs ou des sections selon les besoins. AEM permet de réutiliser des modèles de formulaire XML Adobe pour créer des formulaires adaptatifs.
+Les formulaires adaptatifs peuvent s’adapter de manière dynamique aux réponses des utilisateurs et utilisatrices en ajoutant ou supprimant des champs ou des sections selon les besoins. AEM permet de réutiliser des modèles de formulaires XML Adobe pour créer des formulaires adaptatifs.
 
 ### Fonctionnalités prises en charge {#supported-features}
 

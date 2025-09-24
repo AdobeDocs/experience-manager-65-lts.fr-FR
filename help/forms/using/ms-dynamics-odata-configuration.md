@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 6c3c4d7f-fc4c-44ad-886f-f76d0532d91a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 100%
+source-wordcount: '1216'
+ht-degree: 98%
 
 ---
 
 # Configuration du service OData de Microsoft Dynamics{#microsoft-dynamics-odata-configuration}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html?lang=fr).
 
 ![data-integeration](assets/data-integeration.png)
 

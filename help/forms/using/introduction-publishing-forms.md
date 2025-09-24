@@ -9,19 +9,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
 exl-id: 606cd19d-b244-4c4d-ab25-7709351dcfe0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 100%
+source-wordcount: '1052'
+ht-degree: 98%
 
 ---
 
 # Présentation de la publication de formulaires sur un portail{#introduction-to-publishing-forms-on-a-portal}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=fr).
 
 
 ## Présentation des composants du portail Formulaires AEM {#aem-forms-portal-components-overview}

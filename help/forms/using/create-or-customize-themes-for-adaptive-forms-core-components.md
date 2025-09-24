@@ -6,19 +6,20 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
-source-git-commit: 7eddd03e7b1256f2f2b54bdd92672d5a1e4440d1
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1938'
-ht-degree: 100%
+source-wordcount: '1947'
+ht-degree: 98%
 
 ---
 
 # Créer ou personnaliser un thème de formulaire adaptatif {#introduction-to-theme}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=fr).
 
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->

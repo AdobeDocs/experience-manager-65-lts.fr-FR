@@ -8,19 +8,20 @@ feature: Transaction Reports
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: d9dc7630-a157-4202-8caf-7c55e348c06e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 100%
+source-wordcount: '1763'
+ht-degree: 98%
 
 ---
 
 # API facturables pour les rapports de transaction pour AEM Forms sur OSGi {#transaction-reports-billable-apis}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis).
 
 AEM Forms fournit plusieurs API permettant d’envoyer des formulaires, de traiter et de générer des documents. Certaines API sont comptabilisées comme des transactions et d’autres sont gratuites. Ce document fournit une liste de toutes les API comptabilisées comme des transactions dans un rapport de transaction. Voici quelques scénarios courants dans lesquels une API facturable est utilisée :
 
@@ -294,7 +295,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
  </tbody>
 </table>
 
-### Incohérence affectant le service assembleur {#assembler-service}
+### Service Assembler {#assembler-service}
 
 <table>
  <tbody>

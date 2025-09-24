@@ -6,10 +6,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 6e69ca67-883f-4079-96e2-5b7a9c843ada
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2884'
-ht-degree: 100%
+source-wordcount: '2893'
+ht-degree: 99%
 
 ---
 
@@ -17,10 +17,11 @@ ht-degree: 100%
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM 6.5 | Cet article |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page) |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page).
 
 Avec AEM Forms, vous pouvez facilement incorporer des formulaires adaptatifs dans vos pages web. Vos visiteurs et visiteuses peuvent ainsi remplir et envoyer facilement des formulaires sans jamais quitter la page sur laquelle ils se trouvent. Ce faisant, ils ou elles peuvent continuer à utiliser sans effort d’autres éléments du site web tout en interagissant activement avec le formulaire.
 

@@ -5,19 +5,20 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
 exl-id: dc3bd697-5b1a-4efe-9554-c6aa1575c1c0
-source-git-commit: 98097c29b1b9cfb436f9431e8b7dca6e6a58634a
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1535'
-ht-degree: 93%
+source-wordcount: '1544'
+ht-degree: 92%
 
 ---
 
 # Créer une action Envoyer personnalisée pour les formulaires adaptatifs{#writing-custom-submit-action-for-adaptive-forms}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html?lang=fr).
 
 Les formulaires adaptatifs requièrent des actions Envoyer pour traiter les données spécifiées par lʼutilisateur. Une action Envoyer détermine la tâche effectuée sur les données envoyées à lʼaide dʼun formulaire adaptatif. Adobe Experience Manager (AEM) contient des [actions d’envoi prêtes à l’emploi](../../forms/using/configuring-submit-actions.md) qui vous présentent les tâches personnalisées que vous pouvez effectuer à l’aide de données envoyées par les utilisateurs et les utilisatrices. Vous pouvez par exemple effectuer des tâches comme envoyer un courrier électronique ou stocker les données.
 

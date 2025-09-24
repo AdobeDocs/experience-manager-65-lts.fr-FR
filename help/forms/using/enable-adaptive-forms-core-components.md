@@ -6,19 +6,20 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: a163598d-0a6e-45a8-b3b2-1f260007952b
-source-git-commit: f21858421f2e84643fab1add5116b033cb6dd122
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 98%
+source-wordcount: '965'
+ht-degree: 96%
 
 ---
 
 # Activer les composants principaux des formulaires adaptatifs sur AEM Forms 6.5 {#enable-adaptive-forms-core-components}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=fr).
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
 
@@ -149,11 +150,11 @@ Les [composants principaux](https://experienceleague.adobe.com/docs/experience-m
 ### Quelles sont les fonctionnalités des composants principaux ?
 
 
-Lorsque les composants principaux des formulaires adaptatifs sont activés pour votre environnement, un modèle vierge de formulaire adaptatif basé sur les composants principaux et le thème Canvas 3.0 sont ajoutés à votre environnement. Après avoir activé les composants principaux des formulaires adaptatifs pour votre environnement, vous pouvez :
+Lorsque les composants principaux des formulaires adaptatifs sont activés pour votre environnement, un modèle de formulaire adaptatif vierge basé sur les composants principaux et le thème Canvas 3.0 sont ajoutés à votre environnement. Après avoir activé les composants principaux des formulaires adaptatifs pour votre environnement, vous pouvez :
 
 * Créer un formulaire adaptatif basé sur des composants principaux.
-* Créer des modèles de formulaires adaptatifs basés sur des composants principaux.
-* Créer des thèmes personnalisés pour les modèles de formulaires adaptatifs basés sur les composants principaux.
+* créer des modèles de formulaires adaptatifs basés sur des composants principaux ;
+* créer des thèmes personnalisés pour les modèles de formulaires adaptatifs basés sur des composants principaux ;
 * Diffuser les représentations JSON des formulaires adaptatifs basés sur les composants principaux à divers canaux tels que les applications mobiles, web et natives, ainsi que les services qui nécessitent une représentation découplée d’un formulaire.
 
 ## Prochaines étapes

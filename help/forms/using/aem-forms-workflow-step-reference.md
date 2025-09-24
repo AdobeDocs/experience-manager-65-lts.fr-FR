@@ -5,19 +5,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
 exl-id: 13d84b04-dab6-453f-bc0d-62a5f557c4f2
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '7604'
+source-wordcount: '7613'
 ht-degree: 99%
 
 ---
 
 # Référence sur les étapes du workflow basé sur l’utilisation de Forms on OSGi {#forms-centric-workflow-on-osgi-step-reference}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference).
 
 Vous utilisez des modèles de processus pour convertir une logique métier en processus répétitif automatisé. Un modèle permet de définir et d’exécuter une série d’étapes. Vous pouvez également définir des propriétés de modèle pour déterminer, par exemple, si le processus est transitoire ou s’il utilise plusieurs ressources. Vous pouvez [inclure diverses étapes d’un processus AEM dans un modèle pour appliquer la logique métier](/help/sites-developing/workflows-models.md#extending-aem).
 
@@ -83,7 +84,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 
    * **Enregistrer les données du canal web en utilisant :** enregistrez le fichier de données du canal web à l’aide d’un chemin d’accès relatif à la payload ou stockez-le dans une variable de type de données Document, JSON ou modèle de données de formulaire. Cette option est disponible uniquement si vous sélectionnez l’interface utilisateur de l’agent de communication interactive dans la liste déroulante Type.
    * **Enregistrer le document PDF en utilisant :** enregistrez le document PDF à l’aide d’un chemin d’accès relatif à la payload ou stockez-le dans une variable de type de données Document. Cette option est disponible uniquement si vous sélectionnez l’interface utilisateur de l’agent de communication interactive dans la liste déroulante Type.
-   * **Enregistrer le modèle de mise en page en utilisant :** enregistrez le modèle de mise en page à l’aide d’un chemin d’accès relatif à la payload ou stockez-le dans une variable de type de données Document. Le [modèle de disposition](../../forms/using/layout-design-details.md) fait référence à un fichier XDP que vous créez à l’aide de Forms Designer. Cette option est disponible uniquement si vous sélectionnez l’interface utilisateur de l’agent de communication interactive dans la liste déroulante Type.
+   * **Enregistrer le modèle de mise en page en utilisant :** enregistrez le modèle de mise en page à l’aide d’un chemin d’accès relatif à la payload ou stockez-le dans une variable de type de données Document. Le [modèle de mise en page](../../forms/using/layout-design-details.md) fait référence à un fichier XDP que vous créez à l’aide de Forms Designer. Cette option est disponible uniquement si vous sélectionnez l’interface utilisateur de l’agent de communication interactive dans la liste déroulante Type.
 
 * **Personne désignée > options d’affectation :** indiquez la méthode d’affectation de la tâche à un utilisateur. Vous pouvez affecter la tâche de manière dynamique à un utilisateur ou un groupe à l’aide du script Programme de sélection des participants ou affecter la tâche à un utilisateur ou à un groupe AEM spécifique.
 * **Programme de sélection des participants ou des participantes :** cette option est disponible lorsque l’option **Sélectionner de manière dynamique un utilisateur, une utilisatrice ou un groupe** est activée dans le champ Options d’affectation. Vous pouvez utiliser un ECMAScript ou un service pour sélectionner de manière dynamique un utilisateur ou un groupe.

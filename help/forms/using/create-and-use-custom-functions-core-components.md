@@ -6,9 +6,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 5f6106a9-64a6-45aa-a31d-2075d1e911bf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '3385'
+source-wordcount: '3394'
 ht-degree: 99%
 
 ---
@@ -24,10 +24,11 @@ Cet article décrit la création de fonctions personnalisées avec le dernier co
 Veillez à définir la [dernière version de formulaire](https://github.com/adobe/aem-core-forms-components/tree/release/650) sur votre environnement de composant principal AEM Forms pour utiliser les dernières fonctionnalités des fonctions personnalisées. </span>
 
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM 6.5 | Cet article |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions).
 
 ## Présentation
 
@@ -60,8 +61,8 @@ Le **nom** est utilisé pour identifier la fonction personnalisée dans l’édi
 
 >[!NOTE]
 >`[functionName]` est le nom de la fonction. Les espaces ne sont pas autorisés.
->&#x200B;>`<Function Name>` est le nom d’affichage de la fonction dans l’éditeur de règles des formulaires adaptatifs.
->&#x200B;>Si le nom de la fonction est identique au nom de la fonction elle-même, vous pouvez omettre `[functionName]` dans la syntaxe.
+>>`<Function Name>` est le nom d’affichage de la fonction dans l’éditeur de règles des formulaires adaptatifs.
+>>Si le nom de la fonction est identique au nom de la fonction elle-même, vous pouvez omettre `[functionName]` dans la syntaxe.
 
 #### Paramètre
 
@@ -572,7 +573,7 @@ Prévisualisons le formulaire pour observer comment les fonctions personnalisée
 
 >[!NOTE]
 >
-> Vous pouvez vous référer au dossier de [fonctions personnalisées](/help/forms/using/assets/customfunctions.zip) suivant. Téléchargez et installez ce dossier dans votre instance AEM à l’aide du [Gestionnaire de modules](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
+> Vous pouvez vous référer au dossier de [fonctions personnalisées](/help/forms/using/assets/customfunctions.zip) suivant. Téléchargez et installez ce dossier dans votre instance AEM à l’aide du [Gestionnaire de modules](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
 
 ### Prise en charge des fonctions asynchrones dans les fonctions personnalisées {#support-of-async-functions}
 

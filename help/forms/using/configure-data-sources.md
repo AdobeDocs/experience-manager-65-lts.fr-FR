@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 30b7b311-574d-4b01-8b48-0342c160d4d4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2076'
-ht-degree: 99%
+source-wordcount: '2085'
+ht-degree: 98%
 
 ---
 
 # Configurer des sources de données{#configure-data-sources}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=fr).
 
 
 ![Intégration de données](do-not-localize/data-integeration.png)
@@ -87,7 +88,7 @@ Vous pouvez configurer un profil utilisateur AEM à l’aide de la configuration
 
    >[!NOTE]
    >
-   >Le caractère **&#42;** dans l’exemple ci-dessus indique tous les nœuds sous le nœud `profile/empLocation/` du profil utilisateur AEM dans la structure CRXDE. Cela signifie que le modèle de données du formulaire peut accéder à la propriété `city` de type `string` présente dans n’importe quel nœud sous le nœud `profile/empLocation/`. Toutefois, les nœuds qui contiennent la propriété spécifiée doivent suivre une structure cohérente.
+   >Le caractère **&#42;** dans l’exemple ci-dessus indique tous les nœuds sous le nœud `profile/empLocation/` du profil utilisateur AEM dans la structure CRXDE. Cela signifie que le modèle de données de formulaire peut accéder à la propriété `city` de type `string` présente dans n’importe quel nœud sous le nœud `profile/empLocation/`. Toutefois, les nœuds qui contiennent la propriété spécifiée doivent suivre une structure cohérente.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
 
@@ -149,7 +150,7 @@ Procédez comme suit pour configurer les services RESTful :
 Le modèle de données de formulaire d’[!DNL Experience Manager Forms] lors de l’intégration des services web RESTful comme source de données comprend des configurations de client HTTP pour l’optimisation des performances.
 Effectuez les étapes suivantes pour configurer le client HTTP du modèle de données de formulaire :
 
-1. Connectez-vous à l’instance d’auteur [!DNL Experience Manager Forms] en tant qu’administrateur et accédez aux lots de la console web d’[!DNL Experience Manager]. L’URL par défaut est [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Connectez-vous à l’instance de création [!DNL Experience Manager Forms] en tant qu’administrateur ou administratrice et accédez aux bundles de la console web d’[!DNL Experience Manager]. L’URL par défaut est [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
 1. Sélectionnez **[!UICONTROL Configuration du client HTTP du modèle de données de formulaire pour la source de données REST]**.
 
@@ -194,7 +195,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 >[!NOTE]
 >
 >Le modèle de données de formulaire prend en charge [OData version 4](https://www.odata.org/documentation/).
->&#x200B;>Pour obtenir un guide pas à pas sur la configuration de Microsoft Dynamics 365, en ligne ou sur site, voir [Configuration OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
+>>Pour obtenir un guide pas à pas sur la configuration de Microsoft Dynamics 365, en ligne ou sur site, voir [Configuration OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Accédez à **[!UICONTROL Outils > Services Cloud > Sources de données]**. Sélectionnez le dossier dans lequel vous souhaitez créer une configuration cloud.
 

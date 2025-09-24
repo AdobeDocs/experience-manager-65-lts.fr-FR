@@ -1,15 +1,15 @@
 ---
 title: Comment créer un formulaire adaptatif ?
-description: Découvrez comment créer un formulaire adaptatif à l’aide de  [!DNL Experience Manager Forms]. Les formulaires adaptatifs sont des formulaires HTML5 réactifs qui rationalisent la collecte et le traitement des informations. Découvrez comment créer un formulaire adaptatif basé sur un modèle de données de formulaire et un schéma XML ou JSON.
+description: Découvrez comment créer un formulaire adaptatif à l’aide de  [!DNL Experience Manager Forms]. Les formulaires adaptatifs sont des formulaires HTML5 réactifs qui rationalisent la collecte et le traitement des informations. Découvrez comment créer un formulaire adaptatif basé sur un modèle de données de formulaire, un modèle de formulaire XFA et un schéma XML ou JSON.
 role: User, Developer
 level: Beginner
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 5d81781b-bb79-4b85-bba6-2ac67829bfcf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1984'
-ht-degree: 100%
+source-wordcount: '1993'
+ht-degree: 98%
 
 ---
 
@@ -17,16 +17,17 @@ ht-degree: 100%
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=fr).
 
 ## Créer un formulaire adaptatif {#strong-create-an-adaptive-form-strong}
 
 Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
 
-1. Accédez à l’instance d’auteur [!DNL Experience Manager Forms] à `https://'[server]:[port]'/<custom-context-if-any>.`.
+1. Accédez à l’instance de création [!DNL Experience Manager Forms] à `https://'[server]:[port]'/<custom-context-if-any>.`.
 
 1. Entrez vos informations d’identification dans la page de connexion d’Experience Manager.
 
@@ -92,7 +93,7 @@ Pour utiliser un modèle de données de formulaire pour créer un formulaire ada
 
 ## Créer un formulaire adaptatif basé sur un modèle de formulaire XFA {#create-an-adaptive-form-based-on-an-xfa-form-template}
 
-Vous pouvez réutiliser vos modèles de formulaire XFA pour créer des formulaires adaptatifs. Pour les réutiliser, chargez et associez un modèle de formulaire XFA à un formulaire adaptatif. Les éléments du modèle de formulaire (formulaire XFA) sont disponibles dans l’outil de recherche de contenu au moment de la création des formulaires adaptatifs. Dans l’outil de recherche de contenu, vous pouvez faire glisser et déposer les éléments de modèle de formulaire sur le formulaire.
+Vous pouvez réutiliser vos modèles de formulaires XFA pour créer des formulaires adaptatifs. Pour les réutiliser, chargez et associez un modèle de formulaire XFA à un formulaire adaptatif. Les éléments du modèle de formulaire (formulaire XFA) sont disponibles dans l’outil de recherche de contenu au moment de la création des formulaires adaptatifs. Dans l’outil de recherche de contenu, vous pouvez faire glisser et déposer les éléments de modèle de formulaire sur le formulaire.
 
 <!-- >>[!NOTE]
 >

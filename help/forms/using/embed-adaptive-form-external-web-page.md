@@ -8,19 +8,20 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: ecc90ca2-27a1-4b56-8641-55719240e146
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 100%
+source-wordcount: '1052'
+ht-degree: 98%
 
 ---
 
 # Incorporation d’un formulaire adaptatif dans une page web externe{#embed-adaptive-form-in-external-web-page}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-core-components-external-web-page) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-core-components-external-web-page).
 
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une approche plus ancienne de la création de formulaires adaptatifs à l’aide de composants de base. </span>
@@ -165,8 +166,8 @@ Lorsque vous incorporez un formulaire adaptatif dans une page web, prenez en com
 
 * Assurez-vous que les règles de style définies dans la page web CSS ne sont pas en conflit avec l’objet de formulaire CSS. Pour éviter les conflits, vous pouvez réutiliser la page web CSS dans le thème de formulaire adaptatif en utilisant la bibliothèque cliente AEM. Pour plus d’informations sur l’utilisation de la bibliothèque cliente dans les thèmes de formulaire adaptatif, voir [Thèmes dans AEM Forms](../../forms/using/themes.md).
 * Assurez-vous que le conteneur du formulaire dans la page web utilise toute la largeur de la fenêtre. Cela permet aux règles CSS configurées pour les appareils mobiles de fonctionner sans aucune modification. Si le conteneur du formulaire ne prend pas toute la largeur de la fenêtre, vous devez écrire un CSS personnalisé pour que le formulaire s’adapte aux différents appareils mobiles.
-* Utilisez l’API `[getData](https://helpx.adobe.com/fr/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` pour obtenir la représentation XML ou JSON des données de formulaire dans le client.
-* Utilisez l’API `[unloadAdaptiveForm](https://helpx.adobe.com/fr/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` pour décharger le formulaire adaptatif à partir du DOM HTML.
+* Utilisez l’API `[getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` pour obtenir la représentation XML ou JSON des données de formulaire dans le client.
+* Utilisez l’API `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` pour décharger le formulaire adaptatif à partir du DOM HTML.
 * Configurez l’en-tête access-control-origin lors de l’envoi de la réponse à partir du serveur AEM.
 
 ## Activer AEM Forms pour diffuser des formulaires adaptatifs vers un site interdomaine {#cross-site}

@@ -8,19 +8,20 @@ feature: Transaction Reports
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 205394bf-4609-4bdd-a030-974e354f9700
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 100%
+source-wordcount: '246'
+ht-degree: 91%
 
 ---
 
 # Enregistrer une transaction pour les implémentations personnalisées pour AEM Forms sur OSGi {#record-a-transaction-for-custom-implementations}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation).
 
 Utilisez l’API TransactionRecorder pour enregistrer automatiquement les actions qui ne sont pas automatiquement comptabilisées comme des transactions
 

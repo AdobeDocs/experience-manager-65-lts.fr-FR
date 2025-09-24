@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b27fceaf-38f8-433e-96c6-4f98bafa31af
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 100%
+source-wordcount: '961'
+ht-degree: 97%
 
 ---
 
 # Création d’un modèle de données de formulaire{#create-form-data-model}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html?lang=fr).
 
 
 ![image principale](do-not-localize/data-integration.png)
@@ -37,9 +38,9 @@ L’intégration de données d’AEM Forms fournit une interface utilisateur in
 
 ## Création d’un modèle de données de formulaire {#data-sources}
 
-Assurez-vous d’avoir configuré les sources de données que vous avez l’intention d’utiliser dans le modèle de formulaire de données, comme décrit dans la section [Configurer les sources de données](../../forms/using/configure-data-sources.md). Pour créer un modèle de données de formulaire basé sur des sources de données configurées, procédez comme suit :
+Assurez-vous d’avoir configuré les sources de données que vous avez l’intention d’utiliser dans le modèle de données de formulaire, comme décrit dans la section [Configurer les sources de données](../../forms/using/configure-data-sources.md). Pour créer un modèle de données de formulaire basé sur des sources de données configurées, procédez comme suit :
 
-1. Dans l’instance d’auteur AEM, accédez à **[!UICONTROL Forms (Formulaires) > Data Integrations]** (Intégrations de données).
+1. Dans l’instance de création AEM, accédez à **[!UICONTROL Formulaires > Intégrations de données]**.
 1. Sélectionner **[!UICONTROL Créer > Modèle de données de formulaire]**.
 1. Dans la boîte de dialogue Créer un modèle de données de formulaire :
 

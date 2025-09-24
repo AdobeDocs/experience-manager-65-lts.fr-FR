@@ -9,19 +9,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 1a0d00f9-45f7-45af-ab34-d1c164980abb
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 99%
+source-wordcount: '2064'
+ht-degree: 98%
 
 ---
 
 # Variables dans les workflows AEM Forms{#variables-in-aem-forms-workflows}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html?lang=fr).
 
 Une variable dans un modèle de processus permet de stocker une valeur en fonction de son type de données. Vous pouvez utiliser le nom de la variable dans n’importe quelle étape de workflow pour récupérer la valeur stockée dans la variable. Vous pouvez également utiliser des noms de variable pour définir des expressions afin de prendre des décisions de routage.
 
@@ -38,7 +39,7 @@ Les variables sont une extension de l’interface [MetaDataMap](https://develope
 Vous pouvez créer des variables à l’aide de la section Variables disponible dans le sidekick du modèle de processus. Les variables de workflow AEM prennent en charge les types de données suivants :
 
 * **Types de données primitifs** : Long, Doublon, Boolean, Date et String
-* **Types de données complexes** : [Document](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), instance [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) et modèle de données de formulaire.
+* **Types de données complexes** : [Document](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), instance [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) et modèle de données de formulaire.
 
 >[!NOTE]
 >

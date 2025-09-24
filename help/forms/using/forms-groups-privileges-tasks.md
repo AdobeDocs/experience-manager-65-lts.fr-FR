@@ -10,19 +10,20 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 1681e92b-2d88-4b10-a700-a516aa5a02c8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 100%
+source-wordcount: '298'
+ht-degree: 92%
 
 ---
 
 # Groupes et privilèges AEM Forms sur OSGi{#aem-forms-on-osgi-groups-and-privileges}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html?lang=fr).
 
 Vous pouvez [créer des groupes](/help/sites-administering/user-group-ac-admin.md#group-administration) et affecter des politiques et des [utilisateurs et utilisatrices](/help/sites-administering/user-group-ac-admin.md#user-administration) aux groupes dans Adobe Experience Manager (AEM). Ces politiques contrôlent les privilèges des utilisateurs et des utilisatrices qui font partie du groupe.
 

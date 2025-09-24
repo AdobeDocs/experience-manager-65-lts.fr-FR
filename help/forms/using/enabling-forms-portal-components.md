@@ -8,23 +8,24 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: a537fc63-b894-4e47-a71f-98ea07747baa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 100%
+source-wordcount: '341'
+ht-degree: 93%
 
 ---
 
 # Activation des composants du portail Formulaires {#enabling-forms-portal-components}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=fr).
 
 Les composants du portail Formulaires prêts à l’emploi ne sont pas disponibles. Pour que les composants apparaissent dans la liste des composants disponibles dans AEM sidekick, procédez comme suit :
 
-1. Connectez-vous à l’instance d’auteur de votre site web et ouvrez une page AEM Sites.
+1. Connectez-vous à l’instance de création de votre site web et ouvrez une page AEM Sites.
 
 1. Pour les pages utilisant un modèle statique, procédez comme suit :
 

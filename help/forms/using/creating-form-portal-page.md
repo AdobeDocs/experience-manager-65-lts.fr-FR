@@ -9,19 +9,20 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 03430815-6459-469c-b3dd-4cd83b9eec5f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 100%
+source-wordcount: '1675'
+ht-degree: 98%
 
 ---
 
 # Création d’une page de portail Formulaires{#creating-a-forms-portal-page}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=fr).
 
 Les composants du portail Formulaires permettent aux développeurs et développeuses web de créer et de personnaliser un portail de formulaires sur les sites web créés à l’aide d’Adobe Experience Manager (AEM). Pour obtenir un aperçu rapide du portail Formulaires, consultez [Présentation de la publication de formulaires sur un portail](../../forms/using/introduction-publishing-forms.md).
 

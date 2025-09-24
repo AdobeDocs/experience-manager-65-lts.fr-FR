@@ -9,19 +9,20 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 712590c6-2348-4c0d-93b9-686e6478ca03
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1964'
-ht-degree: 99%
+source-wordcount: '1973'
+ht-degree: 98%
 
 ---
 
 # Gérer les métadonnées de formulaire{#manage-form-metadata}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html?lang=fr).
 
 ## Présentation  {#overview-nbsp}
 
@@ -39,7 +40,7 @@ Dans AEM Forms, la liste des propriétés de métadonnées associées à une res
 
 Les types de ressources suivants sont pris en charge dans les AEM Forms :
 
-* Modèles de formulaire (formulaires XFA)
+* Modèles de formulaires (formulaires XFA)
 * Formulaires PDF
 * Document (PDF plats)
 * Formulaires adaptatifs

@@ -9,10 +9,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 6f68090f-4ded-42c3-a074-3a18b27e754d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '6086'
-ht-degree: 100%
+source-wordcount: '6095'
+ht-degree: 99%
 
 ---
 
@@ -20,10 +20,11 @@ ht-degree: 100%
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html?lang=fr).
 
 ## Présentation {#introduction}
 
@@ -497,7 +498,7 @@ Vous pouvez désormais utiliser les polices disponibles dans un service Web dans
 
 Pour configurer Adobe Fonts dans AEM, procédez comme suit :
 
-1. Dans l’instance d’auteur, cliquez sur ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Outils ![icône des réglages](assets/hammer.png) > Déploiement > Services Cloud.
+1. Dans l’instance de création, cliquez sur ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Outils ![marteau](assets/hammer.png) > Déploiement > Cloud Services.
 1. Sur la page **Cloud Services**, accédez à l’option **Adobe Fonts** et ouvrez-la. Ouvrez le dossier de configuration, puis cliquez sur **Créer**.
 1. Dans la boîte de dialogue **Créer une configuration**, indiquez un titre pour la configuration et cliquez sur **Créer**.
 
@@ -507,7 +508,7 @@ Pour configurer Adobe Fonts dans AEM, procédez comme suit :
 
 Pour configurer un thème de sorte qu’il utilise la configuration Adobe Fonts, procédez comme suit :
 
-1. Dans l’instance de l’auteur, ouvrez un thème dans l’éditeur de thèmes.
+1. Dans l’instance de création, ouvrez un thème dans l’éditeur de thèmes.
 1. Dans l’éditeur de thèmes, cliquez sur **Options du thème** ![theme-options](assets/theme-options.png) > **Configurer**.
 1. Dans le champ **Configuration d’Adobe Fonts**, sélectionnez un kit et cliquez sur **Enregistrer**.
 

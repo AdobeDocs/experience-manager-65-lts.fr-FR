@@ -5,19 +5,20 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: caa79def-4a29-4746-9a35-c362ea1c3c0c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 99%
+source-wordcount: '917'
+ht-degree: 97%
 
 ---
 
 # Tutoriel : créer votre premier formulaire adaptatif {#tutorial-create-your-first-adaptive-form}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form).
 
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
@@ -43,7 +44,7 @@ Le site Web fonctionne sous Adobe Experience Manager (AEM) et utilise AEM [!DNL 
 
 ### Prérequis {#prerequisite}
 
-* Configurez une [instance de création AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html?lang=fr#author-and-publish-installs).
+* Configurez une [instance de création AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs).
 * Installez le [module complémentaire AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) sur une instance de création.
 * Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du tutoriel sont basés sur la base de données [!DNL MySQL] et utilisent le [pilote de base de données MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html) d’[!DNL Oracle's].
 

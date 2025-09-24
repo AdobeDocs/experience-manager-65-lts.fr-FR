@@ -9,19 +9,20 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 23ffbaa6-1bd9-48c3-afa3-19737bb15de0
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1471'
-ht-degree: 95%
+source-wordcount: '1480'
+ht-degree: 94%
 
 ---
 
 # Topologies d’architecture et de déploiement pour AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html?lang=fr).
 
 ## Architecture {#architecture}
 
@@ -39,7 +40,7 @@ L’architecture d’AEM Forms comprend les composants suivants :
    * **Interface utilisateur frontale de rendu et de publication de formulaire** : interface utilisateur destinée à être utilisée par les utilisatrices et utilisateurs finaux d’AEM Forms (par exemple, des citoyennes et citoyens accédant à un site web d’administration). Cette interface fournit des fonctionnalités de rendu de formulaire (affichage du formulaire dans un navigateur web) et d’envoi.
    * **API REST** : les JSP et servlets exportent un sous-ensemble de services de formulaires à des fins d’utilisation distante par des clients HTTP appropriés, comme le kit SDK mobile des formulaires.
 
-**AEM Forms sur OSGi :** un environnement AEM Forms sur OSGi est un environnement dʼauteur ou de publication AEM standard sur lequel est déployé le package AEM Forms. Vous pouvez exécuter AEM Forms sur OSGi dans des [configurations à serveur unique, en batterie et en grappes](/help/sites-deploying/recommended-deploys.md). La mise en grappe n’est disponible que pour les instances dʼauteur AEM.
+**AEM Forms sur OSGi :** un environnement AEM Forms sur OSGi est un environnement dʼauteur ou de publication AEM standard sur lequel est déployé le package AEM Forms. Vous pouvez exécuter AEM Forms sur OSGi dans des [configurations à serveur unique, en batterie et en grappes](/help/sites-deploying/recommended-deploys.md). La mise en cluster n’est disponible que pour les instances de création AEM.
 
 <!--
 
@@ -68,7 +69,7 @@ L’image suivante affiche diverses configurations de serveur AEM Forms et leurs
 **Création :** une instance de création est un serveur AEM Forms exécuté en mode d’exécution de création standard. <!--It can be AEM Forms on JEE or AEM Forms on OSGi environment.--> Il est destiné aux utilisateurs internes, aux concepteurs de formulaires et de communications interactives, ainsi qu’aux développeurs. Il active les fonctionnalités suivantes :
 
 * **Création et gestion de formulaires et de communications interactives :** les équipes de conception et de développement peuvent créer et modifier des formulaires adaptatifs et des communications interactives, charger d’autres types de formulaires créés en externe, par exemple des formulaires créés dans Adobe Forms Designer, et gérer ces ressources à l’aide de la console de Gestionnaire de formulaires.
-* **Publication de formulaires et de communications interactives :** les ressources hébergées sur une instance de création peuvent être publiées sur une instance de publication pour effectuer des opérations d’exécution. La publication des ressources utilise les fonctionnalités de réplication d’AEM. Adobe recommande qu’un agent de réplication soit configuré sur toutes les instances d’auteur pour transférer manuellement les formulaires publiés vers les instances de traitement, et qu’un autre agent de réplication soit configuré sur les instances de traitement avec le déclencheur *A réception* activé pour répliquer automatiquement les formulaires reçus afin de publier les instances.
+* **Publication de formulaires et de communications interactives :** les ressources hébergées sur une instance de création peuvent être publiées sur une instance de publication pour effectuer des opérations d’exécution. La publication des ressources utilise les fonctionnalités de réplication d’AEM. Adobe recommande qu’un agent de réplication soit configuré sur toutes les instances de création pour transférer manuellement les formulaires publiés vers les instances de traitement, et qu’un autre agent de réplication soit configuré sur les instances de traitement avec le déclencheur *À réception* activé pour répliquer automatiquement les formulaires reçus sur les instances de publication.
 
 **Publier :** une instance de publication est un serveur AEM Forms fonctionnant en mode d’exécution de publication standard. Les instances de publication sont destinées aux utilisateurs finaux des applications de formulaires (par exemple, les utilisateurs accédant à un site Web public et envoyant des formulaires). L’élément Publier active les fonctionnalités suivantes :
 
@@ -76,10 +77,10 @@ L’image suivante affiche diverses configurations de serveur AEM Forms et leurs
 * Transmission des données de formulaire brutes envoyées aux instances de traitement pour un traitement supplémentaire et stockage dans le système d’enregistrements final. L’implémentation par défaut fournie dans AEM Forms effectue cette opération à l’aide des fonctionnalités de réplication inverse d’AEM. Un autre type d’implémentation est également disponible pour transférer directement les données du formulaire aux serveurs de traitement au lieu de les enregistrer localement d’abord (cette dernière étape constituant un prérequis pour l’activation de la réplication inverse). Les clients rencontrant des problèmes de stockage des données potentiellement sensibles sur les instances de publication peuvent utiliser cette [alternative d’implémentation](/help/forms/using/configuring-draft-submission-storage.md), car les instances de traitement se trouvent généralement dans une zone plus sécurisée.
 * Rendu et envoi de lettres et de communications interactives : une lettre et une communication interactive sont rendues sur les instances de publication et les données correspondantes sont envoyées aux instances de traitement pour le stockage et le post-traitement. Les données peuvent être sauvegardées localement sur une instance de publication et traitées par réplication inverse vers une instance de traitement (l’option par défaut) ultérieurement, ou directement transférées vers l’instance de traitement sans enregistrement sur l’instance de publication. Cette dernière implémentation est utile pour les clients soucieux de leur sécurité.
 
-**Traitement :** une instance d’AEM Forms s’exécutant en mode Auteur sans utilisateurs affectés au groupe de gestionnaires de formulaires. Vous pouvez déployer <!--AEM Forms on JEE or--> AEM Forms sur OSGi en tant qu’instance de traitement. Les utilisateurs n’y sont pas affectés afin de garantir que les activités de création et de gestion de formulaire ne sont pas exécutées sur l’instance de traitement et se produisent uniquement sur l’instance d’auteur. Une instance de traitement permet les fonctionnalités suivantes :
+**Traitement :** une instance d’AEM Forms s’exécutant en mode Auteur sans utilisateurs affectés au groupe de gestionnaires de formulaires. Vous pouvez déployer <!--AEM Forms on JEE or--> AEM Forms sur OSGi en tant qu’instance de traitement. Les utilisateurs n’y sont pas affectés afin de garantir que les activités de création et de gestion de formulaire ne sont pas exécutées sur l’instance de traitement et se produisent uniquement sur l’instance de création. Une instance de traitement permet les fonctionnalités suivantes :
 
 * **Traitement des données de formulaire brutes en provenance d’une instance de publication :** cela est principalement effectué sur une instance de traitement par le biais de workflows AEM qui se déclenchent lors de l’arrivée des données. Les workflows peuvent utiliser l’étape Modèle de données de formulaire prête à l’emploi pour archiver les données ou le document dans un magasin de données approprié.
-* **Stockage sécurisé des données de formulaire :** l’élément Traitement fournit un référentiel derrière le pare-feu pour les données de formulaire brutes qui sont également isolées des utilisateurs. Ni les concepteurs de formulaires de l’instance d’auteur, ni les utilisateurs finaux de l’instance de publication ne peuvent accéder à ce référentiel.
+* **Stockage sécurisé des données de formulaire :** l’élément Traitement fournit un référentiel derrière le pare-feu pour les données de formulaire brutes qui sont également isolées des utilisateurs. Ni les concepteurs de formulaires de l’instance de création, ni les utilisateurs finaux de l’instance de publication ne peuvent accéder à ce référentiel.
 
   >[!NOTE]
   >

@@ -9,19 +9,20 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7da165ac-2039-4ac8-810d-fbe6f771453a
-source-git-commit: c03b3e3e4526530715718b68804ac26d2562bdb8
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2381'
 ht-degree: 99%
 
 ---
 
 # Fragments de formulaire adaptatif{#adaptive-form-fragments}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=fr).
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
@@ -31,7 +32,7 @@ Les formulaires adaptatifs incluent un mécanisme pratique pour créer un segmen
 
 >[!NOTE]
 >
-> Vous pouvez facilement personnaliser votre expérience de fragment pour les utilisateurs et utilisatrices qui utilisent la [boîte de dialogue de configuration et la boîte de dialogue de conception d’un composant Fragment de formulaire](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
+> Vous pouvez facilement personnaliser votre expérience de fragment pour les utilisateurs et utilisatrices qui utilisent la [boîte de dialogue de configuration et la boîte de dialogue de conception d’un composant Fragment de formulaire](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
 
 ## Création d’un fragment {#create-a-fragment}
 
@@ -39,7 +40,7 @@ Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enr
 
 ### Création d’un fragment à partir de zéro {#create-fragment-from-scratch}
 
-1. Connectez-vous à l’instance d’auteur d’AEM Forms à l’adresse https://[*nom_hôte*]:[*port*]/aem/forms.html.
+1. Connectez-vous à l’instance de création d’AEM Forms à l’adresse https://[*nom_hôte*]:[*port*]/aem/forms.html.
 1. Cliquez sur **Créer > Fragment de formulaire adaptatif**.
 1. Indiquez le titre, le nom, la description et les balises du fragment.
 

@@ -6,10 +6,10 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: eb857ab1-ab1b-4c77-af3b-4507f53a8241
-source-git-commit: 254366c95c1aa1e3f5ba01441741a8dc1cfed42c
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1793'
-ht-degree: 100%
+source-wordcount: '1802'
+ht-degree: 98%
 
 ---
 
@@ -18,10 +18,11 @@ ht-degree: 100%
 
 <span class="preview"> Adobe recommande d’utiliser les composants principaux pour [ajouter des formulaires adaptatifs à une page AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) ou [créer des formulaires adaptatifs autonomes](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=fr).
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
 
@@ -53,7 +54,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=fr) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## Créer un formulaire adaptatif {#create-an-adaptive-form}

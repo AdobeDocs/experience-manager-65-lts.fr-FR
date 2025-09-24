@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 900ec6cd-d780-46eb-8ab1-907e563d81d7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1268'
-ht-degree: 100%
+source-wordcount: '1277'
+ht-degree: 98%
 
 ---
 
 # Utilisation d’un modèle de données de formulaire{#use-form-data-model}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html?lang=fr).
 
 
 ![image principale](do-not-localize/data-integration.png)
@@ -43,7 +44,7 @@ Un modèle de données de formulaire est une extension du schéma JSON que vous 
 
 ## Créer des formulaires adaptatifs et des fragments {#create-af}
 
-Vous pouvez créer des [formulaires adaptatifs](../../forms/using/creating-adaptive-form.md) et des [fragments de formulaire adaptatif](../../forms/using/adaptive-form-fragments.md) basés sur un modèle de données de formulaire. Procédez comme suit pour utiliser un modèle de données du formulaire lors de la création d’un formulaire adaptatif ou d’un fragment de formulaire adaptatif :
+Vous pouvez créer des [formulaires adaptatifs](../../forms/using/creating-adaptive-form.md) et des [fragments de formulaire adaptatif](../../forms/using/adaptive-form-fragments.md) basés sur un modèle de données de formulaire. Procédez comme suit pour utiliser un modèle de données de formulaire lors de la création d’un formulaire adaptatif ou d’un fragment de formulaire adaptatif :
 
 1. Dans l’onglet Modèle de formulaire de l’écran Ajouter des propriétés, sélectionnez **[!UICONTROL Modèle de données de formulaire]** dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**.
 
@@ -91,11 +92,11 @@ Pour en savoir plus, voir:
 
 ## Aperçu avec des données d’exemple {#preview-ic}
 
-L’éditeur de modèle de données de formulaire vous permet de générer et de modifier des données d’exemple pour les objets de modèle de données dans le modèle de données de formulaire. Vous pouvez utiliser ces données pour prévisualiser et tester les communications interactives et les formulaires adaptatifs. Générez les données d’exemple avant la prévisualisation, comme décrit dans la section [Utilisation d’un modèle de données du formulaire](../../forms/using/work-with-form-data-model.md#sample).
+L’éditeur de modèle de données de formulaire vous permet de générer et de modifier des données d’exemple pour les objets de modèle de données dans le modèle de données de formulaire. Vous pouvez utiliser ces données pour prévisualiser et tester les communications interactives et les formulaires adaptatifs. Générez les données d’exemple avant la prévisualisation, comme décrit dans la section [Utilisation d’un modèle de données de formulaire](../../forms/using/work-with-form-data-model.md#sample).
 
 Pour prévisualiser une communication interactive avec des données d’exemple du modèle de données de formulaire :
 
-1. Dans l’instance d’auteur AEM, accédez à **[!UICONTROL Formulaires > Formulaires et documents]**.
+1. Dans l’instance de création AEM, accédez à **[!UICONTROL Formulaires > Formulaires et documents]**.
 1. Sélectionnez une communication interactive et sélectionnez **[!UICONTROL Aperçu]** dans la barre d’outils pour sélectionner **[!UICONTROL Canal web]**, **[!UICONTROL Canal d’impression]** ou **[!UICONTROL Les deux canaux]** pour prévisualiser la communication interactive.
 1. Dans la boîte de dialogue Aperçu du [*canal*], assurez-vous d’avoir sélectionné **[!UICONTROL Tester les données du modèle de données de formulaire]** et sélectionnez **[!UICONTROL Aperçu]**.
 
@@ -148,4 +149,4 @@ Par exemple, la règle suivante appelle un service get qui utilise l’ID d’em
 
 ![invoke-service](assets/invoke-service.png)
 
-En outre, vous pouvez utiliser l’API `guidelib.dataIntegrationUtils.executeOperation` pour écrire un code JavaScript dans l’éditeur de code pour l’éditeur de règles. Pour plus de détails sur l’API, voir [API pour appeler le service de modèle de données](/help/forms/using/invoke-form-data-model-services.md).
+En outre, vous pouvez utiliser l’API `guidelib.dataIntegrationUtils.executeOperation` pour écrire un code JavaScript dans l’éditeur de code pour l’éditeur de règles. Pour plus de détails sur l’API, voir [API pour appeler le service de modèle de données de formulaire](/help/forms/using/invoke-form-data-model-services.md).

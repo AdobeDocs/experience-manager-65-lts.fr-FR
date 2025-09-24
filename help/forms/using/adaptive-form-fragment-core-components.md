@@ -7,19 +7,20 @@ feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, Developer
 exl-id: 708a4ab2-ca66-445d-8d69-bcf12fd5158a
-source-git-commit: 3239416a53382a9f683f90dacd91b40ac20e9f50
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 99%
+source-wordcount: '1849'
+ht-degree: 98%
 
 ---
 
 # Créer et utiliser des fragments de formulaires adaptatifs dans un formulaire adaptatif en fonction des composants principaux {#adaptive-form-fragments}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM 6.5 | Cet article |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=fr) |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=fr).
 
 Bien que chaque formulaire soit conçu pour un rôle spécifique, certains segments sont communs à la plupart des formulaires, comme les informations personnelles telles que le nom et l’adresse, les informations relatives à la famille et aux revenus. Les développeurs et développeuses de formulaires doivent créer ces segments communs chaque fois qu’un nouveau formulaire est créé.
 
@@ -31,7 +32,7 @@ Vous pouvez ajouter un fragment plusieurs fois à un document et utiliser les pr
 
 >[!NOTE]
 >
-> Vous pouvez facilement personnaliser votre expérience de fragment pour les personnes qui utilisent la [boîte de dialogue de configuration et la boîte de dialogue de conception d’un composant Fragment de formulaire](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
+> Vous pouvez facilement personnaliser votre expérience de fragment pour les personnes qui utilisent la [boîte de dialogue de configuration et la boîte de dialogue de conception d’un composant Fragment de formulaire](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
 
 
 ## Créer un fragment de formulaire {#create-a-fragment}

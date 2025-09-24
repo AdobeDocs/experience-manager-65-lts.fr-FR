@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e95c4cc4-1800-4bd8-a3c4-c6c868a1276d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4168'
+ht-degree: 99%
 
 ---
 
 # Utilisation d’un modèle de données de formulaire{#work-with-form-data-model}
 
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html?lang=fr) |
-| AEM 6.5 | Cet article |
+## Application {#applies-to}
+
+Cette documentation s’applique à **AEM 6.5 LTS Forms**.
+
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html).
 
 ![data-integration](do-not-localize/data-integeration.png)
 
@@ -46,7 +47,7 @@ Vous pouvez ajouter des objets et des services de modèle de données à partir 
 
 Pour ajouter des objets et services de modèle de données :
 
-1. Connectez-vous à l’instance d’auteur AEM, accédez à **[!UICONTROL Formulaires > Intégrations de données]** et ouvrez le modèle de données du formulaire dans lequel vous souhaitez ajouter des objets de modèle de données.
+1. Connectez-vous à l’instance de création AEM, accédez à **[!UICONTROL Formulaires > Intégrations de données]** et ouvrez le modèle de données du formulaire dans lequel vous souhaitez ajouter des objets de modèle de données.
 1. Dans le volet Sources de données, développez les sources de données pour afficher les objets et services de modèle de données disponibles.
 1. Sélectionnez les objets et services de modèle de données que vous souhaitez ajouter au modèle de données de formulaire, puis appuyez sur **[!UICONTROL Ajouter la sélection]**.
 
@@ -92,7 +93,7 @@ Vous pouvez ajouter des objets de modèle de données à partir de sources de do
 
 Pour créer un objet de modèle de données sans sources de données :
 
-1. Connectez-vous à l’instance de création AEM, accédez à **[!UICONTROL Formulaires > Intégrations de données]** et ouvrez le modèle de données du formulaire dans lequel vous souhaitez créer un objet ou une entité de modèle de données.
+1. Connectez-vous à l’instance de création AEM, accédez à **[!UICONTROL Formulaires > Intégrations de données]** et ouvrez le modèle de données de formulaire dans lequel vous souhaitez créer un objet ou une entité de modèle de données.
 1. Sélectionnez **[!UICONTROL Créer une entité]**.
 1. Dans la boîte de dialogue Créer un modèle de données, spécifiez un nom pour l’objet de modèle de données et sélectionnez **[!UICONTROL Ajouter]**. Un objet de modèle de données est ajouté au modèle de données de formulaire. L’objet de modèle de données ajouté n’est pas lié à une source de données et n’a aucune propriété comme indiqué dans l’image suivante.
 
@@ -128,7 +129,7 @@ Lorsque les sources de données que vous souhaitez intégrer au modèle de donn�
    ![select-object](assets/select-object.png)
 
 1. Développez l’arborescence des sources de données, sélectionnez un objet de modèle de données à lier puis l’icône en forme de coche.
-1. Sélectionnez **[!UICONTROL Terminé]** pour enregistrer les propriétés, puis sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le modèle de données du formulaire. L’objet de modèle de données est maintenant lié à une source de données. Notez que l’objet de modèle de données n’est plus marqué comme Non lié.
+1. Sélectionnez **[!UICONTROL Terminé]** pour enregistrer les propriétés, puis sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le modèle de données de formulaire. L’objet de modèle de données est maintenant lié à une source de données. Notez que l’objet de modèle de données n’est plus marqué comme Non lié.
 
    ![bound-model-object](assets/bound-model-object.png)
 
