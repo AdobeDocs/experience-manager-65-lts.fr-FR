@@ -21,7 +21,7 @@ ht-degree: 99%
 
 Cette documentation s’applique à **AEM 6.5 LTS Forms**.
 
-Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html).
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html?lang=fr).
 
 ![data-integration](do-not-localize/data-integeration.png)
 
