@@ -5,7 +5,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8c4ffb0e-b4dc-4a81-ac43-723754cbc0de
-source-git-commit: 9bf502146a309cd0d91f2aaa1778d5b550d424a8
+source-git-commit: 69033442fda82d9efdd1ba2f55a45173c8ffc6ec
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Ce document fournit un guide complet pour la mise à niveau de Adobe Experience Manager de la version **6.5** vers la version **6.5 LTS**, en se concentrant sur la migration du référentiel de contenu à l’aide de l’outil oak-upgrade , un utilitaire puissant pour transférer du contenu entre différents référentiels avec précision et contrôle.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Avant de commencer la migration, assurez-vous que les conditions suivantes sont remplies :
 
@@ -86,6 +86,6 @@ Le moyen le plus simple de résoudre ce problème consiste à spécifier le maga
 
 L’avertissement peut également être ignoré, mais dans ce cas, le référentiel est entièrement réindexé au premier démarrage. Le processus peut être long, surtout pour les grandes instances. Le référentiel ne sera pas utilisable tant que le processus de réindexation n’aura pas été terminé. Utilisez l’option `--skip-checkpoints` pour supprimer l’avertissement.
 
-Vous pouvez également réindexer hors ligne le référentiel avant de démarrer AEM à l’aide de la [réindexation hors ligne](/help/sites-deploying/upgrade-offline-reindexing.md) pour éviter une réindexation complète au premier démarrage.
+Vous pouvez également réindexer hors ligne le référentiel avant de démarrer AEM à l’aide de la [réindexation hors ligne](/help/sites-deploying/offline-reindexing.md) pour éviter une réindexation complète au premier démarrage.
 
 Pour plus d’informations sur l’outil oak-upgrade et son utilisation avancée, reportez-vous à la [documentation officielle](https://jackrabbit.apache.org/oak/docs/migration.html).

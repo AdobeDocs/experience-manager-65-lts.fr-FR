@@ -11,7 +11,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 255ef365-0da5-4bc9-b099-2e3bc67dd25a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 98%
@@ -25,12 +25,6 @@ ht-degree: 98%
 >La mise à niveau nécessite un temps d’arrêt pour l’instance de création, car la plupart des mises à niveau d’Adobe Experience Manager (AEM) sont effectuées sur place. En suivant ces bonnes pratiques, vous pouvez réduire ou éliminer le temps d’arrêt de l’instance de publication.
 
 Lors de la mise à niveau de vos environnements AEM, vous devez tenir compte des différences d’approche entre la mise à niveau des environnements de création ou de publication afin de minimiser les temps d’arrêt pour vos auteurs et autrices et vos utilisateurs et utilisatrices finaux. Cette page décrit la procédure de haut niveau pour mettre à niveau une topologie AEM en cours d’exécution sur une version d’AEM 6.x. Le processus étant différent entre les instances de création et de publication et les déploiements basés sur Mongo et TarMK, chaque niveau et micro-noyau a été répertorié dans une section distincte. Lors de l’exécution de votre déploiement, Adobe recommande d’abord de mettre à niveau votre environnement de création, de déterminer la réussite, puis de passer aux environnements de publication.
-
-<!--
->[!IMPORTANT]
->
->The downtime during the upgrade can be significally reduced by indexing the repository before performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)
--->
 
 ## Niveau de création TarMK {#tarmk-author-tier}
 
