@@ -61,8 +61,8 @@ Le **nom** est utilisé pour identifier la fonction personnalisée dans l’édi
 
 >[!NOTE]
 >`[functionName]` est le nom de la fonction. Les espaces ne sont pas autorisés.
->>`<Function Name>` est le nom d’affichage de la fonction dans l’éditeur de règles des formulaires adaptatifs.
->>Si le nom de la fonction est identique au nom de la fonction elle-même, vous pouvez omettre `[functionName]` dans la syntaxe.
+>&#x200B;>`<Function Name>` est le nom d’affichage de la fonction dans l’éditeur de règles des formulaires adaptatifs.
+>&#x200B;>Si le nom de la fonction est identique au nom de la fonction elle-même, vous pouvez omettre `[functionName]` dans la syntaxe.
 
 #### Paramètre
 
