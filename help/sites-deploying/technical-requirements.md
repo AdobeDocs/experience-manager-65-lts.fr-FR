@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 2534fb5af913603b69597e7be713156b427a1094
+source-git-commit: bcfbc3a67b4aa59532c93bd84eed655cee1262c1
 workflow-type: tm+mt
-source-wordcount: '3239'
-ht-degree: 92%
+source-wordcount: '3290'
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ Pour tout problème lié à la plateforme, contactez le fournisseur de la platef
 >
 >Selon la plateforme sur laquelle vous installez AEM, il peut y avoir différents ensembles d’exigences pour la gestion des utilisateurs et des utilisatrices.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Configuration minimale requise pour installer Adobe Experience Manager :
 
@@ -171,7 +171,9 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
    >* glibc-locale.x86_64 (2.17 ou version ultérieure)
+   >* OpenSSL 3 (requis à l’emplacement par défaut sur le système d’exploitation).
 
+   *Pour l’installation d’OpenSSL 3 : les bibliothèques libcrypto.so.3 et libssl.so.3 doivent être disponibles dans le chemin d’accès par défaut à la bibliothèque, représenté par la variable d’environnement LD_LIBRARY_PATH. Si elles sont installées dans un emplacement non standard, assurez-vous que ce chemin est ajouté à LD_LIBRARY_PATH avant de démarrer le serveur.*
 
 ### Environnements virtuels et de cloud computing {#virtual-cloud-computing-environments}
 
@@ -183,7 +185,7 @@ Adobe propose également l’utilisation d’Adobe Managed Services pour dépl
 
 Dans tous les autres cas de déploiement d’AEM sur Azure ou AWS, ou tout autre environnement de cloud computing, la prise en charge d’Adobe se limite à l’environnement informatique virtuel. Cet environnement virtuel doit être exécuté conformément aux spécifications techniques répertoriées sur cette page. Tout problème signalé relatif à AEM s’exécutant dans l’un de ces environnements cloud doit être reproductible, indépendamment de tout service cloud spécifique à l’environnement de cloud computing. Sauf dans le cas où le service cloud est pris en charge dans le cadre des exigences techniques répertoriées sur cette page, par exemple, le stockage Azure Blob ou AWS S3.
 
-Pour obtenir des recommandations sur le déploiement d’AEM sur Azure ou AWS, en dehors d’Adobe Managed Services, Adobe recommande de travailler directement avec le fournisseur de cloud. Vous pouvez également travailler avec des partenaires d’Adobe pour prendre en charge le déploiement d’AEM dans l’environnement cloud de votre choix. Le fournisseur ou le partenaire cloud sélectionné est responsable des spécifications de dimensionnement, de la conception et de l’implémentation de l’architecture, afin de répondre à vos exigences spécifiques en matière de performances, de charge, d’évolutivité et de sécurité.
+Pour obtenir des recommandations sur le déploiement d’AEM sur Azure ou AWS, en dehors d’Adobe Managed Services, Adobe recommande de travailler directement avec le fournisseur de services cloud. Vous pouvez également travailler avec des partenaires d’Adobe pour prendre en charge le déploiement d’AEM dans l’environnement cloud de votre choix. Le partenaire ou le fournisseur de services cloud sélectionné est responsable des spécifications de dimensionnement, de la conception et de l’implémentation de l’architecture, afin de répondre à vos exigences spécifiques en matière de performances, de charge, d’évolutivité et de sécurité.
 
 ### Plateformes de Dispatcher (serveurs web) {#dispatcher-platforms-web-servers}
 
@@ -376,7 +378,7 @@ Pour Windows x86 :
 * 10.9.x et versions ultérieures
 * Pris en charge uniquement à des fins d’évaluation et de démonstration
 
-### Considérations relatives à PDF Generator {#software-support-for-pdf-generator}
+### Conditions requises pour PDF Generator {#software-support-for-pdf-generator}
 
 <table>
  <tbody>
@@ -390,7 +392,7 @@ Pour Windows x86 :
   </tr>
 
 <tr>
-   <td>Licences Microsoft® Office 2021 Professional Plus, de vente au détail et en volume</td>
+   <td>Licences Microsoft® Office 2021 Professional Plus, licences au détail et en volume</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF et TXT</td>
   </tr>
   <tr>
@@ -413,7 +415,7 @@ Pour Windows x86 :
 >* PDF Generator ne prend pas en charge Microsoft® Office 365.
 >* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux®.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont uniquement prises en charge sous Windows.
->* Une version d’Acrobat est fournie avec AEM Forms pour activer la fonctionnalité PDF Generator. La version groupée ne doit être accessible par programmation qu’avec AEM Forms, pendant la durée de la licence AEM Forms, pour une utilisation avec AEM Forms PDF Generator uniquement. Pour plus d’informations, voir la description du produit AEM Forms correspondant à votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
+>* Une version d’Acrobat est fournie avec AEM Forms pour activer la fonctionnalité PDF Generator. La version groupée ne doit être accessible par programmation qu’avec AEM Forms, pendant la durée de la licence AEM Forms, pour une utilisation avec AEM Forms PDF Generator uniquement. Pour plus d’informations, consultez la description du produit AEM Forms correspondant à votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 >* Le service PDF Generator ne prend pas en charge Microsoft® Windows 11.
 
 
@@ -469,7 +471,7 @@ Pour Windows x86 :
 ### Conditions requises pour AEM Forms Designer {#requirements-for-aem-forms-designer}
 
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft Windows 10 ou Windows® 11
-* Processeur de 1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
+* Processeur d’1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
 * Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
 * Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
 * Mémoire graphique – 128 Mo de GPU (256 Mo recommandé)

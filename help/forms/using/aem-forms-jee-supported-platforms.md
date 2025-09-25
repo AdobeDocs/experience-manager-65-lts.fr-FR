@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 hide: true
 hidefromtoc: true
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 6ba07ca04dde793e5750b65bbe5fc9c51418ac90
 workflow-type: tm+mt
-source-wordcount: '4005'
-ht-degree: 100%
+source-wordcount: '4117'
+ht-degree: 99%
 
 ---
 
@@ -51,7 +51,7 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 
 - **Couverture des Packs de services** : Adobe fournit une assistance technique pour les environnements AEM Forms utilisant un des six derniers Packs de services. Si votre version actuelle est antérieure aux six derniers Packs de services, Adobe recommande vivement d’effectuer une mise à niveau vers la dernière version afin d’optimiser les performances, la sécurité et la continuité de la prise en charge.
 
-- **Instructions du programme d’installation de correctifs** : lors de l’utilisation des programmes d’installation de correctifs pour la mise à jour, il est essentiel de vérifier que l’ancienneté de la version du programme d’installation complet sous-jacent ne dépasse pas deux versions. Par exemple, lors de l’installation du pack de services 6.5.19.0, vérifiez que la version du programme d’installation complet sous-jacent est 6.5.18.0 ou 6.5.12.0.
+- **Instructions du programme d’installation de correctifs** : lors de l’utilisation des programmes d’installation de correctifs pour la mise à jour, il est essentiel de vérifier que l’ancienneté de la version du programme d’installation complet sous-jacent ne dépasse pas deux versions. Par exemple, lors de l’installation du pack de services 6.5.19.0, vérifiez que la version du programme d’installation complet sous-jacent est 6.5.18.0 ou 6.5.12.0.
 
 - **Prise en charge des mises à niveau avec des correctifs** : vous pouvez procéder aux mises à niveau vers le dernier Pack de services jusqu’à ce que vous effectuiez également la mise à niveau vers les plateformes prises en charge les plus récentes. Par exemple, la mise à niveau du pack de services 6.5.12.0 vers le version 6.5.19.0 est possible, à condition de passer à une combinaison de plateformes prise en charge dans la version 6.5.19.0.
 
@@ -112,6 +112,11 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
    <th><p><strong>Définitions de correctif prises en charge</strong></p> </th>
   </tr>
   <tr> 
+   <td><p>Oracle Java™ SE 17 (64 bits) <sup> [8] </sup> </p>  </td>
+   <td><p>A : pris en charge</p> </td>
+   <td><p>Versions et mises à jour mineures </p> </td>
+  </tr>
+  <tr> 
    <td><p>Oracle Java™ SE 11 (64 bits) <sup> [8] </sup> </p>  </td>
    <td><p>A : pris en charge</p> </td>
    <td><p>Versions et mises à jour mineures </p> </td>
@@ -128,6 +133,11 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
   </tr>
   <tr>
    <td>Oracle Java™ SE 8 (64 bits)</td>
+   <td>A : pris en charge</td>
+   <td>Versions et mises à jour mineures</td>
+  </tr>
+  <tr>
+   <td>Machine virtuelle IBM® J17 (avec Websphere Liberty uniquement)<br /> </td>
    <td>A : pris en charge</td>
    <td>Versions et mises à jour mineures</td>
   </tr>
@@ -164,12 +174,17 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
    <td><p>Pris en charge</p> </td>
   </tr>
   <tr>
-   <td><p> MongoDB Enterprise 5.0</p> </td>
+   <td><p> MongoDB Enterprise 7.0 </p> </td>
+   <td><p>Référentiel Microkernel</p> </td>
+   <td><p>Pris en charge</p> </td>
+  </tr>
+  <tr>
+   <td><p> MongoDB Enterprise 6.0</p> </td>
    <td><p>Référentiel Microkernel</p> </td>
    <td><p>Pris en charge</p> </td>
   </tr>
     <tr>
-   <td><p> MongoDB Enterprise 6.0 </p> </td>
+   <td><p> MongoDB Enterprise 5.0 </p> </td>
    <td><p>Référentiel Microkernel</p> </td>
    <td><p>Pris en charge</p> </td>
   </tr>
@@ -183,6 +198,11 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
    <td><p>Pris en charge</p> </td>
   </tr>
   <tr>
+   <td><p>Microsoft® SQL Server 2022 </p> </td>
+   <td><p>Référentiel Microkernel</p> </td>
+   <td><p>Pris en charge</p> </td>
+  </tr>
+  <tr>
    <td><p>Microsoft® SQL Server 2019 </p> </td>
    <td><p>Référentiel Microkernel</p> </td>
    <td><p>Pris en charge</p> </td>
@@ -191,6 +211,11 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
    <td>IBM® DB2® 11.1 (obsolète)</td>
    <td>Référentiel Microkernel</td>
    <td>R : Prise en charge limitée</td>
+  </tr>
+  <tr>
+   <td>MySQL 8.4</td>
+   <td>-</td>
+   <td>R : Prise en charge limitée </td>
   </tr>
   <tr>
   <tr>
@@ -223,8 +248,18 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
   </tr>
   <tr>
    <td>MySQL</td>
+   <td><p>MySQL Connector/J 8.4</p> </td>
+   <td><p>Fourni avec l’installation d’AEM Forms on JEE.</p> </td>
+  </tr>
+  <tr>
+   <td>MySQL</td>
    <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar (version 5.1.44)</p> </td>
    <td><p>Fourni avec l’installation d’AEM Forms on JEE.</p> </td>
+  </tr>
+  <tr>
+   <td>Microsoft® SQL Server <br /> </td>
+   <td><p>Pilote Microsoft® SQL Server JDBC 12.10.0<br /> </p> <p>sqljdbc12.10.0.jar</p> </td>
+   <td><p>À télécharger depuis le site web de Microsoft®.</p> </td>
   </tr>
   <tr>
    <td>Microsoft® SQL Server <br /> </td>
@@ -249,6 +284,11 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
    <td><p><strong>Définitions de correctif prises en charge</strong></p> </td>
   </tr>
   <tr>
+   <td>Oracle WebLogic Server 14.1.2 <sup>[9]</sup></td>
+   <td>A : pris en charge</td>
+   <td>Pack de services et mises à jour critiques</td>
+  </tr>
+  <tr>
    <td>Oracle WebLogic Server 12.2.1 (12c R2) (obsolète) <sup>[9]</sup></td>
    <td>A : pris en charge</td>
    <td>Pack de services et mises à jour critiques</td>
@@ -262,6 +302,11 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
    <td>IBM® WebSphere® Application Server 9.0.0.10 <sup>[1] [4]</sup><br /> </td>
    <td>A : pris en charge</td>
    <td>Pack de services et mises à jour critiques</td>
+  </tr>
+  <tr>
+   <td><p>JBoss® Enterprise Application Platform (EAP) 7.4.22 <sup>[2] [3] [7]</sup> </p> </td>
+   <td><p>A : pris en charge</p> </td>
+   <td><p>Correctifs et correctifs cumulatifs pour la version EAP prise en charge</p> </td>
   </tr>
   <tr>
    <td><p>JBoss® Enterprise Application Platform (EAP) 7.4 <sup>[2] [3] [7]</sup> </p> </td>
@@ -302,12 +347,12 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
    <td>Service Packs et mises à jour critiques</td>
   </tr>
   <tr>
-   <td><p>Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bits)</p> </td>
+   <td><p>Red Hat® Enterprise Linux® 9 (noyau 5.x) (64 bits)</p> </td>
    <td><p>A : pris en charge</p> </td>
    <td><p>Révisions mineures, mises à jour cumulatives et mises à jour critiques</p> </td>
   </tr>
   <tr>
-   <td><p>Red Hat® Enterprise Linux® 7 (Kernel 3.x) (64 bits) (obsolète)</td>
+   <td><p>Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bits)</td>
    <td><p>A : pris en charge</p> </td>
    <td><p>Révisions mineures, mises à jour cumulatives et mises à jour critiques</p> </td>
   </tr>
@@ -431,6 +476,10 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
    <td>8.5 Fix pack 2</td>
   </tr>
   <tr>
+   <td> Client IBM® Content Manager</td>
+   <td>8,7 </td>
+  </tr>
+  <tr>
    <td> IBM® Content Manager Client (obsolète)</td>
    <td>8.5 </td>
   </tr>
@@ -472,6 +521,10 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
   <tr>
    <td>Microsoft® Publisher 2019<br /> </td>
    <td>PUB</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Project 2019<br /> </td>
+   <td>MPP</td>
   </tr>
   <tr>
    <td>OpenOffice 4.1.10</td>
@@ -598,12 +651,12 @@ Pour des conditions requises supplémentaires, voir :
 - Configuration matérielle requise : processeur Intel® Pentium® 4 ou AMD® équivalent, processeur cadencé à 1 GHz.
 - Résolution d’affichage de 1024 X 768 pixels au minimum, écran couleur de 16 bits minimum.
 - La connexion réseau via le protocole TCP/IPv4 ou TCP/IPv6 au serveur AEM Forms on JEE
-- vous devez disposer des droits d’administration pour pouvoir installer Workbench sous Windows. Si vous effectuez l’installation à partir d’un compte autre que d’administration, le programme d’installation vous demande les informations d’identification d’un compte approprié.
+- vous devez disposer des droits d’administration pour pouvoir installer Workbench sous Windows. Si vous effectuez l’installation à partir d’un compte non administrateur, le programme d’installation vous demande les informations d’identification d’un compte approprié.
 
 ### Concepteur {#designer}
 
 - Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft Windows 10 ou Windows® 11
-- Processeur de 1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
+- Processeur d’1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
 - Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
 - Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
 - Mémoire graphique – 128 Mo de GPU (256 Mo recommandé)
@@ -660,7 +713,7 @@ Pour des conditions requises supplémentaires, voir :
 >- Safari est pris en charge uniquement sous Macintosh OS X.
 >- Workspace prend en charge Safari 5.1 sous Macintosh OS X 10.6 et 10.7 avec Acrobat DC ou versions ultérieures. Pour plus d’informations sur la compatibilité de Safari 5.1 avec Adobe Reader, Acrobat, voir [https://helpx.adobe.com/fr/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/fr/x-productkb/multi/safari-5-1-incompatible-reader.html).
 >- Administration Console n’est pas prise en charge sur Safari.
->- Correspondence Management ne prend pas en charge Windows® Internet Explorer 9.0 pour les formulaires AEM 6.1.
+>- Correspondence Management ne prend pas en charge Windows® Internet Explorer 9.0 pour les formulaires AEM 6.1.
 >- Le portail Formulaires prend en charge le logiciel de lecteur d’écran JAWS 14.0 sur Internet Explorer 11 pour une meilleure accessibilité.
 
 #### Clients mobiles {#mobile-clients}
@@ -716,7 +769,7 @@ AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs
 
 ## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
-La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65_fr](https://adobe.com/go/learn_aemforms_documentation_65_fr).
+La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_fr).
 
 Les plateformes de référence de fournisseurs tiers d’AEM Forms on JEE indiquent le niveau de correctif de l’infrastructure de fournisseur tiers en cours au moment du développement et de la publication d’AEM Forms on JEE, et forment le niveau minimum de correctif/pack de services de l’infrastructure prise en charge par cette version d’AEM Forms on JEE.
 
@@ -744,7 +797,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -827,7 +880,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -892,12 +945,12 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | | Microsoft® SQL Server 2016 |
 |  | | Microsoft® Windows Server 2016 |
 
-### Version 6.5.10.0 (1er septembre 2022)
+### Version 6.5.10.0 (1 Septembre 2022)
 
 | Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
 | -------------- | --------------- | ------------------- |
 | SDK Oracle Java™ SE 11 (64 bits) pour le serveur d’applications JBoss® EAP 7.4. | | [Adobe Acrobat 2017 - La prise en charge principale d’Adobe Acrobat 2017 prend fin le 6 juin 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). |
-|  | | Red Hat® Enterprise Linux® 7 (Kernel 3.x) (64 bits) |
+|  | Red Hat® Enterprise Linux® 7 (Kernel 3.x) (64 bits) | |
 |  | | Microsoft® Windows Server 2016 (64 bits) |
 |  | | Microsoft® Office 2016 |
 |  | | OpenOffice 4.1.2 |
