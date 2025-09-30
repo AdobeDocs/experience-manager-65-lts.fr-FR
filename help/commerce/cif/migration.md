@@ -5,10 +5,10 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 847c33c1-17d6-447a-9f2c-91f2a81a3f04
-source-git-commit: fdb84a17b3af7eaa76e5a7c30d21d7a601463278
+source-git-commit: 981b175b039fd7ffbddf558a77d2da2fed52ad79
 workflow-type: tm+mt
 source-wordcount: '259'
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ Ce guide permet d’identifier les zones à mettre à jour pour la migration du 
 
 ## Module complémentaire CIF
 
-Le module complémentaire CIF est disponible via le [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?fulltext=commerce*&2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&2_group.propertyvalues.operation=equals&2_group.propertyvalues.0_values=target-version%3Aaem%2F6-5&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=16). Il est compatible et fournit les mêmes fonctionnalités que le module complémentaire CIF pour Experience Manager as a Cloud Service.
+Le module complémentaire CIF est disponible via le [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?fulltext=commerce*&2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&2_group.propertyvalues.operation=equals&2_group.propertyvalues.0_values=target-version%3Aaem%2F6-5-lts&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=16). Il est compatible et fournit les mêmes fonctionnalités que le module complémentaire CIF pour Experience Manager as a Cloud Service.
 
 Consultez la section [Prise en main d’AEM Content and Commerce](getting-started.md).
 
@@ -34,7 +34,7 @@ L’importation de données de catalogue de produits n’est pas prise en charge
 
 ## Expériences de catalogue de produits avec rendu dans AEM
 
-Si vous utilisez le plan directeur de catalogue avec CIF classique, vous devez mettre à jour le workflow du catalogue de produits. Le module complémentaire CIF effectue désormais le rendu à la volée des expériences de catalogue de produits à l’aide de modèles de catalogue AEM. Aucune réplication des données de produit ou des pages de produit n’est désormais nécessaire.
+Si vous utilisez le plan directeur de catalogue avec CIF classique, vous devez mettre à jour le workflow du catalogue de produits. Le module complémentaire CIF effectue désormais le rendu à la volée des expériences de catalogue de produits à l’aide de modèles de catalogue AEM. Aucune réplication des données de produit ou des pages produits n’est désormais nécessaire.
 
 ## Données et interaction d’achat non mises en cache
 
