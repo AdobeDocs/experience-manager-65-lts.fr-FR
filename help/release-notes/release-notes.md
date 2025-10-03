@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 4e4d367b93f1e99cf076df14a15352f664890676
+source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
 workflow-type: tm+mt
-source-wordcount: '7103'
-ht-degree: 95%
+source-wordcount: '7319'
+ht-degree: 92%
 
 ---
 
@@ -449,6 +449,43 @@ Eclipse Jetty 11.0.x est utilisé comme moteur de servlet pour Quickstart.
 
 * Pour plus d’informations sur la procédure de mise à niveau, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
 
+#### Bonnes pratiques relatives aux mises à niveau du pack de services LTS d’AEM 6.5
+
+<!-- THE INFORMATION UNDER THIS HEADING CAME FROM CQDOC-23078 -->
+
+**Environnement**
+Application : clients AEM 6.5 LTS (On-Premise) installant le pack de services 1 (SP1). Le SP1 est fourni sous la forme d’un fichier JAR de démarrage rapide.
+
+**Pourquoi est-ce important**
+Le SP1 pour le LTS AEM 6.5 est fourni sous la forme d’un fichier JAR Quickstart plutôt que d’un fichier ZIP à installer via le gestionnaire de packages. Les clients on-premise effectuent une mise à niveau en remplaçant le fichier JAR Quickstart, en le décompressant et en redémarrant. Cette méthode est cohérente avec la procédure de mise à niveau statique d’Adobe.
+
+**Flux de mise à niveau recommandé (création ou publication)**
+
+1. Vérifiez que votre instance AEM 6.5 LTS est saine et accessible.
+1. Téléchargez le fichier JAR de démarrage rapide SP1 (par exemple, `cq-quickstart-6.6.x.jar`) à partir de la distribution logicielle.
+1. Arrêtez l’instance en cours d’exécution.
+1. Dans le répertoire d’installation d’AEM (en dehors de `crx-quickstart/`), remplacez le fichier JAR de démarrage rapide précédent par le fichier JAR SP1.
+1. Décompressez le fichier JAR :
+
+   ```java
+   java -jar cq-quickstart-6.6.x.jar -unpack
+   ```
+
+   (Ajustez les indicateurs de tas selon les besoins.)
+
+1. Renommez le fichier JAR décompressé pour qu’il corresponde au rôle et au port, par exemple `cq-author-4502.jar` ou `cq-publish-4503.jar`.
+1. Démarrez AEM et confirmez la mise à niveau dans l’interface utilisateur (Aide > À propos) et les journaux.
+
+**Bonne hygiène**
+
+* Exécutez la mise à niveau dans des environnements inférieurs/de test avant la production.
+* Effectuez des sauvegardes complètes et restaurables (référentiel et magasins de données externes) avant de commencer.
+* Consultez les conseils sur la mise à niveau sur place d’Adobe et les exigences techniques (Java 17/21 recommandé pour LTS).
+
+>[!NOTE]
+>
+>Les noms de fichier indiqués ci-dessus (par exemple, `cq-quickstart-6.6.x.jar`) reflètent le nom de l’artefact de démarrage rapide SP1 observé pour cette version LTS ; utilisez toujours le nom de fichier exact que vous téléchargez à partir de la distribution logicielle.
+
 ## Installation et mise à jour {#install-update}
 
 Pour connaître les exigences de configuration, consultez les [instructions d’installation](/help/sites-deploying/custom-standalone-install.md).
@@ -572,9 +609,9 @@ Lors de l’activation de la fonction SSL uniquement dans les déploiements AEM,
 **Solution :**
 Si vous rencontrez ce problème, contactez l’Assistance Client d’Adobe. Un correctif [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) est disponible pour résoudre ce problème. N’essayez pas d’activer les fonctions SSL uniquement avant d’avoir appliqué le correctif nécessaire.
 
-## Lots OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
+## Lots OSGi et modules de contenu inclus{#osgi-bundles-and-content-packages-included}
 
-Les documents texte suivants répertorient les offres groupées OSGi et les packages de contenu inclus dans cette version d’[!DNL Experience Manager] 6.5 LTS, Pack de services 1.
+Les documents texte suivants répertorient les offres groupées OSGi et les modules de contenu inclus dans cette version d’[!DNL Experience Manager] 6.5 LTS, Pack de services 1.
 
 * [Liste des offres groupées OSGi incluses dans Experience Manager 6.5 LTS, Pack de services 1](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [Liste des packages de contenu inclus dans Experience Manager 6.5 LTS, Pack de services 1](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
