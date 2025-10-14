@@ -922,9 +922,9 @@ Les informations suivantes peuvent s’avérer utiles :
 
 * [Combien d’auteurs travaillent avec le système ?](#how-many-authors-are-working-with-the-system)
 * [Quel est le nombre moyen d’activations de page par jour ?](#what-is-the-average-number-of-page-activations-per-day)
-* [Combien de pages maintenez-vous actuellement sur ce système ? ](#how-many-pages-do-you-currently-maintain-on-this-system)
-* [Si vous utilisez MSM, quel est le nombre moyen de rollouts par mois ? ](#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month)
-* [Quel est le nombre moyen de Live Copies par mois ? ](#what-is-the-average-number-of-live-copies-per-month)
+* [Combien de pages maintenez-vous actuellement sur ce système ? &#x200B;](#how-many-pages-do-you-currently-maintain-on-this-system)
+* [Si vous utilisez MSM, quel est le nombre moyen de rollouts par mois ? &#x200B;](#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month)
+* [Quel est le nombre moyen de Live Copies par mois ? &#x200B;](#what-is-the-average-number-of-live-copies-per-month)
 * [Si vous utilisez AEM Assets, combien de ressources maintenez-vous actuellement ?](#ifyouusecqdamhowmanyassetsdoyoucurrentlymaintainincqdam)
 * [Quelle est la taille moyenne des ressources ?](#what-is-the-average-size-of-the-assets)
 * [Combien de modèles sont actuellement utilisés ?](#how-many-templates-are-currently-used)

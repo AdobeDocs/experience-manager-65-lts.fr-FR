@@ -75,7 +75,7 @@ Pour ajouter des annotations à un formulaire, procédez comme suit :
    ![Annotation](assets/annotation.png)
 
 1. Cliquez maintenant sur l’icône **ajouter** située dans le rail supérieur gauche, comme illustré dans l’image, pour ajouter l’annotation.
-   ![ Ajouter une annotation ](assets/add-annotation.png)
+   ![&#x200B; Ajouter une annotation &#x200B;](assets/add-annotation.png)
 
 1. Vous pouvez maintenant ajouter des commentaires, dessiner des esquisses avec plusieurs couleurs pour former des composants.
 

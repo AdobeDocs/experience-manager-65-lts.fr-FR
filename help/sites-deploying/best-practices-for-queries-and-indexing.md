@@ -318,7 +318,7 @@ Problèmes possibles et solutions :
 
    * Effectuez une vérification du référentiel de traversée ; par exemple :
 
-     [http://localhost:4502/system/console/repositorycheck ](http://localhost:4502/system/console/repositorycheck)
+     [http://localhost:4502/system/console/repositorycheck &#x200B;](http://localhost:4502/system/console/repositorycheck)
 
      La traversée du référentiel détermine si d’autres fichiers binaires (à part les fichiers lucene) sont manquants.
 

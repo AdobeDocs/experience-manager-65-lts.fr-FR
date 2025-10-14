@@ -22,7 +22,7 @@ ht-degree: 17%
 
 Avant d’exécuter votre mise à niveau, plusieurs étapes doivent être réalisées. Voir [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) et [Tâches de maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) pour plus d’informations. Assurez-vous également que votre système répond à la [configuration requise pour AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md).
 
-Cochez [ Planification de la mise à niveau ](/help/sites-deploying/upgrade-planning.md) et comment l’[AEM Analyzer](/help/sites-deploying/aem-analyzer.md) peut vous aider à estimer la complexité de la mise à niveau d’AEM.
+Cochez [&#x200B; Planification de la mise à niveau &#x200B;](/help/sites-deploying/upgrade-planning.md) et comment l’[AEM Analyzer](/help/sites-deploying/aem-analyzer.md) peut vous aider à estimer la complexité de la mise à niveau d’AEM.
 
 ### Conditions préalables à la migration {#migration-prerequisites}
 

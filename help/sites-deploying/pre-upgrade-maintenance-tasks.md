@@ -37,7 +37,7 @@ Avant de commencer la mise à niveau, il est important d’effectuer ces tâches
 
 ## Définitions d’index {#index-definitions}
 
-Assurez-vous d’avoir installé les définitions d’index requises publiées avec le dernier pack de services AEM 6.5. (Pour plus d’informations[ consultez les notes de mise à jour du pack de services AEM 6.5 ](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/release-notes/release-notes)).
+Assurez-vous d’avoir installé les définitions d’index requises publiées avec le dernier pack de services AEM 6.5. (Pour plus d’informations[&#x200B; consultez les notes de mise à jour du pack de services AEM 6.5 &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/release-notes/release-notes)).
 
 ## Vérification de la disponibilité de l’espace disque nécessaire {#ensure-sufficient-disk-space}
 

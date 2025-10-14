@@ -31,7 +31,7 @@ Pour comparer deux formulaires adaptatifs distincts en fonction de leurs champs,
 
 1. En cliquant, vous voyez deux formulaires en mode Aperçu. Il sélectionne le premier formulaire comme formulaire de base à comparer au second et compare le contenu entre les deux formulaires, qui sont similaires et différenciés. Le contenu différencié de la première forme est marqué en vert comme illustré dans l’image.
 
-   ![ Formulaires comparés ](/help/forms/using/assets/compared-forms.png)
+   ![&#x200B; Formulaires comparés &#x200B;](/help/forms/using/assets/compared-forms.png)
 
 ## Voir également
 

@@ -26,11 +26,11 @@ Le code source de l’application AEM Forms est accessible via la Distribution 
 
 L’application AEM Forms est prise en charge sur les appareils iOS, Android, Windows. Vous pouvez installer l’application AEM Forms pour Android à partir de Google Play, pour iOS à partir d’App Store et pour Windows à partir de Windows Store.
 
-    [ ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms&amp;hl=fr)
+    [&#x200B; ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms&hl=fr)
     
-    [ ![app_store](assets/app_store.png)](https://itunes.apple.com/fr/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
+    [&#x200B; ![app_store](assets/app_store.png)](https://itunes.apple.com/fr/app/adobe-experience-manager-forms/id1129625976?ls=1&mt=8)
     
-    [ ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/fr-fr/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [&#x200B; ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/fr-fr/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 Pour installer, personnaliser et distribuer l’application sur des appareils iOS, Android ou Windows, reportez-vous à [Personnaliser, créer et distribuer l’application AEM Forms](#customize-build-distribute).
 
@@ -176,7 +176,7 @@ Pour plus d’informations sur la configuration d’un projet d’application AE
 
 * [Configuration de l’environnement de l’application AEM Forms](/help/forms/using/setup-environment-mobile-workspace.md)
 * [Configuration d’un projet Visual Studio et création d’une application Windows](/help/forms/using/setup-visual-studio-project-build-installer.md)
-* [Configuration d’un projet Xcode et création d’une application iOS ](/help/forms/using/setup-xcode-project-build-installer.md)
+* [Configuration d’un projet Xcode et création d’une application iOS &#x200B;](/help/forms/using/setup-xcode-project-build-installer.md)
 * [Configuration d’un projet Eclipse et création d’une application Android](/help/forms/using/setup-eclipse-project-build-installer.md)
 
 ### Créer et distribuer {#build-and-distribute}

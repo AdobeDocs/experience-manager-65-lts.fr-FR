@@ -640,7 +640,7 @@ Les conditions préalables à la création d’une interface utilisateur distinc
    * **description** : spécifie la description d’une ligne du rapport. Vous pouvez laisser le champ de description vide.
    * **icon** : indique l’image qui représente le rapport de manière graphique. Vous pouvez laisser le champ d’icône vide.
 
-   ![Propriétés du nœud ](assets/node_properties_new.png)
+   ![Propriétés du nœud &#x200B;](assets/node_properties_new.png)
 
    Propriétés du nœud
 

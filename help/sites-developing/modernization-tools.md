@@ -18,7 +18,7 @@ ht-degree: 88%
 
 [Les outils de modernisation d’AEM permettent de convertir facilement les éléments suivants :](https://opensource.adobe.com/aem-modernize-tools/)
 
-* Les modèles statiques en [ modèles modifiables ](page-templates-editable.md)
+* Les modèles statiques en [&#x200B; modèles modifiables &#x200B;](page-templates-editable.md)
 * Les configurations de conception en [politiques](page-templates-editable.md)
 * Les [composants de base](/help/sites-authoring/default-components-foundation.md) en [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 * L’[interface utilisateur classique](website.md) en [interface utilisateur optimisée pour les écrans tactiles](touch-ui-concepts.md)

@@ -130,7 +130,7 @@ En outre, lʼoption **Remplacer** de la barre d’outils vous permet de remplace
 
 La barre d’outils de la page, située en haut de l’écran, propose des options permettant de prévisualiser la communication interactive et d’en modifier les propriétés. Vous pouvez prévisualiser la communication interactive lors de sa création et apporter des modifications en conséquence. Dans la barre d’outils de la page, vous voyez :
 
-* Activer/désactiver le panneau latéral![ toggle-side-panel](assets/toggle-side-panel.png) : affiche ou masque la barre latérale.
+* Activer/désactiver le panneau latéral![&#x200B; toggle-side-panel](assets/toggle-side-panel.png) : affiche ou masque la barre latérale.
 * Informations sur la page ![pageinformationad](assets/pageinformationad.png): vous permet d’afficher les propriétés de la page.
 * Émulateur ![règle](assets/ruler.png): vous permet de simuler l’aspect de votre communication interactive pour différentes tailles d’affichage telles que des tablettes et des téléphones.
 * Modifier : permet de sélectionner d’autres modes comme : Modifier, Style, Développeur et Conception.

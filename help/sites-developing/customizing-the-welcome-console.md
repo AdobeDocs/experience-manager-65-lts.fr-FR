@@ -188,7 +188,7 @@ Consultez [Section de sécurité](/help/sites-administering/security.md) pour pl
 
 ### Mécanisme de sélection de liens {#link-selection-mechanism}
 
-L’outil `/libs/cq/core/components/welcome/welcome.jsp`ConsoleUtil[ est utilisé dans ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ConsoleUtil.html). Il exécute une requête sur les nœuds qui possèdent la propriété :
+L’outil `/libs/cq/core/components/welcome/welcome.jsp`ConsoleUtil[&#x200B; est utilisé dans &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ConsoleUtil.html). Il exécute une requête sur les nœuds qui possèdent la propriété :
 
 * `jcr:mixinTypes` avec la valeur : `cq:Console`
 

@@ -40,7 +40,7 @@ Dans cette page, vous trouverez les éléments suivants :
 
 Une fois que vous serez à l’aise avec ces principes fondamentaux, vous pourrez lire des informations plus détaillées et avancées dans les pages secondaires suivantes :
 
-* [Exigences techniques ](/help/sites-deploying/technical-requirements.md)
+* [Exigences techniques &#x200B;](/help/sites-deploying/technical-requirements.md)
 * [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md)
 * [Installation autonome personnalisée](/help/sites-deploying/custom-standalone-install.md)
 * [Installation du serveur d’applications](/help/sites-deploying/application-server-install.md)

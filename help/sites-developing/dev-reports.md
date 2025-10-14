@@ -988,7 +988,7 @@ N:defaults
 
 * `aggregate`
 
-  Les valeurs `aggregate` valides sont les mêmes que pour `type` sous `aggregates` (voir [Définitions spécifiques à la colonne (définitions - filtres / agrégats) ](#column-specific-definitions)).
+  Les valeurs `aggregate` valides sont les mêmes que pour `type` sous `aggregates` (voir [Définitions spécifiques à la colonne (définitions - filtres / agrégats) &#x200B;](#column-specific-definitions)).
 
 ### Événements et actions {#events-and-actions}
 

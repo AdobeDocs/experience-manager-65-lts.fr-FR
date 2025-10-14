@@ -282,7 +282,7 @@ Ces étapes doivent être effectuées avec un accès *administrateur système* a
    | Configuration de Platform | Windows 64 bits | Apple macOS n’est actuellement pas pris en charge |
    | Activer le local | « Utiliser le langage du système d’exploitation » | Paramètre par défaut |
    | Langue | Votre langue préférée | Pour l’interface Acrobat |
-   | Choisir les applications - applications disponibles | Conservez Adobe Acrobat dans les applications disponibles. Ne pas déplacer vers l’application sélectionnée | Téléchargez [ Adobe Acrobat](#step-6-download-and-install-adobe-acrobat-pro) à partir de la page Adobe Experience League à l’étape 6. |
+   | Choisir les applications - applications disponibles | Conservez Adobe Acrobat dans les applications disponibles. Ne pas déplacer vers l’application sélectionnée | Téléchargez [&#x200B; Adobe Acrobat](#step-6-download-and-install-adobe-acrobat-pro) à partir de la page Adobe Experience League à l’étape 6. |
    | Choisir les applications - applications sélectionnées | Conserver uniquement le fichier de licence dans les applications sélectionnées | Paramètre par défaut pour le déploiement FRL |
    | Modules externes | Ne pas apporter de modifications sur cet écran | |
    | Options | Ne pas apporter de modifications sur cet écran | |
@@ -432,7 +432,7 @@ Ces étapes doivent être effectuées avec un accès *administrateur système* a
    | Configuration de Platform | Windows 64 bits | Apple macOS n’est actuellement pas pris en charge |
    | Activer le local | « Utiliser le langage du système d’exploitation » | Paramètre par défaut |
    | Langue | Votre langue préférée | Pour l’interface Acrobat |
-   | Choisir les applications - applications disponibles | Conservez Adobe Acrobat dans les applications disponibles. Ne pas déplacer vers l’application sélectionnée | Téléchargez [ Adobe Acrobat](#step-6-download-and-install-adobe-acrobat-pro) à partir de la page Adobe Experience League à l’étape 6. |
+   | Choisir les applications - applications disponibles | Conservez Adobe Acrobat dans les applications disponibles. Ne pas déplacer vers l’application sélectionnée | Téléchargez [&#x200B; Adobe Acrobat](#step-6-download-and-install-adobe-acrobat-pro) à partir de la page Adobe Experience League à l’étape 6. |
    | Choisir les applications - applications sélectionnées | Conserver uniquement le fichier de licence dans les applications sélectionnées | Paramètre par défaut pour le déploiement FRL |
    | Modules externes | Ne pas apporter de modifications sur cet écran | |
    | Options | Ne pas apporter de modifications sur cet écran | |
@@ -588,7 +588,7 @@ Ces étapes doivent être effectuées avec un accès *administrateur système* a
    | Configuration de Platform | Windows 64 bits | Apple macOS n’est actuellement pas pris en charge |
    | Activer le local | « Utiliser le langage du système d’exploitation » | Paramètre par défaut |
    | Langue | Votre langue préférée | Pour l’interface Acrobat |
-   | Choisir les applications - applications disponibles | Conservez Adobe Acrobat dans les applications disponibles. Ne pas déplacer vers l’application sélectionnée | Téléchargez [ Adobe Acrobat](#step-6-download-and-install-adobe-acrobat-pro) à partir de la page Adobe Experience League à l’étape 6. |
+   | Choisir les applications - applications disponibles | Conservez Adobe Acrobat dans les applications disponibles. Ne pas déplacer vers l’application sélectionnée | Téléchargez [&#x200B; Adobe Acrobat](#step-6-download-and-install-adobe-acrobat-pro) à partir de la page Adobe Experience League à l’étape 6. |
    | Choisir les applications - applications sélectionnées | Conserver uniquement le fichier de licence dans les applications sélectionnées | Paramètre par défaut pour le déploiement FRL |
    | Modules externes | Ne pas apporter de modifications sur cet écran | |
    | Options | Ne pas apporter de modifications sur cet écran | |
@@ -745,7 +745,7 @@ Ces étapes doivent être effectuées avec un accès *administrateur système* a
    | Configuration de Platform | Windows 64 bits | Apple macOS n’est actuellement pas pris en charge |
    | Activer le local | « Utiliser le langage du système d’exploitation » | Paramètre par défaut |
    | Langue | Votre langue préférée | Pour l’interface Acrobat |
-   | Choisir les applications - applications disponibles | Conservez Adobe Acrobat dans les applications disponibles. Ne pas déplacer vers l’application sélectionnée | Téléchargez [ Adobe Acrobat](#step-6-download-and-install-adobe-acrobat-pro) à partir de la page Adobe Experience League à l’étape 6. |
+   | Choisir les applications - applications disponibles | Conservez Adobe Acrobat dans les applications disponibles. Ne pas déplacer vers l’application sélectionnée | Téléchargez [&#x200B; Adobe Acrobat](#step-6-download-and-install-adobe-acrobat-pro) à partir de la page Adobe Experience League à l’étape 6. |
    | Choisir les applications - applications sélectionnées | Conserver uniquement le fichier de licence dans les applications sélectionnées | Paramètre par défaut pour le déploiement FRL |
    | Modules externes | Ne pas apporter de modifications sur cet écran | |
    | Options | Ne pas apporter de modifications sur cet écran | |
@@ -1341,7 +1341,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 **Microsoft® Windows**
 
-* Assurez-vous que la [version 32 bits prise en charge ](/help/sites-deploying/technical-requirements.md) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
+* Assurez-vous que la [version 32 bits prise en charge &#x200B;](/help/sites-deploying/technical-requirements.md) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
 * Assurez-vous qu’un utilisateur ou qu’une utilisatrice de PDF Generator est ajouté(e) à l’interface utilisateur de configuration du PDF.
 * Assurez-vous que l’utilisateur ou l’utilisatrice de PDF Generator est membre du groupe d’administrateurs et que le privilège [Remplacer un jeton de niveau processus](#grant-the-replace-a-process-level-token-privilege) est défini pour l’utilisateur ou l’utilisatrice.
 * Assurez-vous que l’utilisateur ou l’utilisatrice est configuré(e) dans l’interface utilisateur de PDF Generator et qu’il ou elle effectue les actions suivantes :
