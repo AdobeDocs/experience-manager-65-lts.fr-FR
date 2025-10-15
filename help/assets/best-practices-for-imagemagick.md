@@ -6,10 +6,10 @@ role: Admin
 feature: Renditions,Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: 258c0d5e-ce2a-48c5-be79-bf5fac70ca96
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
 workflow-type: tm+mt
 source-wordcount: '680'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -29,7 +29,7 @@ Pour traiter des fichiers volumineux à l’aide d’ImageMagick, envisagez des 
 
 Plusieurs versions des fichiers d’installation ImageMagic sont disponibles pour les différents systèmes d’exploitation. Utilisez la version appropriée de votre système d’exploitation.
 
-1. Téléchargez les [fichiers d’installation d’ImageMagick](https://www.imagemagick.org/script/download.php) adaptés à votre système d’exploitation.
+1. Téléchargez les fichiers d’installation d’ImageMagick appropriés (site web `https://www.imagemagick.org/script/download.php`) pour votre système d’exploitation.
 1. Pour installer ImageMagick sur le disque hébergeant le serveur [!DNL Experience Manager], lancez le fichier d’installation.
 
 1. Définissez la variable de chemin d’environnement sur le répertoire d’installation d’ImageMagick.
@@ -82,7 +82,7 @@ Vous pouvez configurer l’étape de processus de ligne de commande en fonction 
 
 Il existe plusieurs vulnérabilités de sécurité associées à l’utilisation d’ImageMagick pour traiter les images. Par exemple, le traitement des images envoyées par l’utilisateur ou l’utilisatrice implique le risque d’exécution de code à distance (RCE).
 
-En outre, divers plug-ins de traitement d’images dépendent de la bibliothèque ImageMagick, y compris, mais sans s’y limiter, imagick de PHP, rmagick et paperclip de Ruby, et imagemagick de nodejs.
+En outre, divers plug-ins de traitement d’images dépendent de la bibliothèque ImageMagick, y compris, mais sans s’y limiter, l’imagick de PHP, l’imagick et le trombone de Ruby, et l’imagemagick de Nodejs.
 
 Si vous utilisez ImageMagick ou une bibliothèque affectée, Adobe vous recommande de réduire les vulnérabilités connues en effectuant au moins l’une des tâches suivantes (de préférence les deux) :
 

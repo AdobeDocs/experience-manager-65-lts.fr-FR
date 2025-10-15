@@ -7,10 +7,10 @@ feature: Renditions
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7f66bc81-c4f7-4267-93b8-b78097ebbb16
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
 workflow-type: tm+mt
 source-wordcount: '1063'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -92,7 +92,7 @@ Dans Experience Manager, le workflow Ressource de mise à jour de la gestion de
 
 1. Pour activer les modifications, cliquez sur **[!UICONTROL Synchronisation]**.
 
-Pour plus d’informations sur les fonctionnalités de ligne de commande d’ImageMagick, consultez [https://imagemagick.org](https://imagemagick.org).
+Pour plus d’informations sur les fonctionnalités de ligne de commande d’ImageMagick, consultez le site web `https://imagemagick.org`.
 
 ## Générer des rendus des ressources existantes à l’aide du workflow Experience Manager {#generate-renditions-of-existing-assets-using-aem-workflow}
 

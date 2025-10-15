@@ -7,10 +7,10 @@ role: User
 feature: Workflow,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: f96a2642-f923-481e-9735-14a62a80e6f1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
 workflow-type: tm+mt
-source-wordcount: '2113'
-ht-degree: 100%
+source-wordcount: '2116'
+ht-degree: 99%
 
 ---
 
@@ -449,7 +449,7 @@ Lorsque vous téléchargez un fichier TXT dans [!DNL Experience Manager], après
 
 Les conversions suivantes peuvent être automatiquement exécutées et stockées dans [!DNL Assets] :
 
-* Transformation d’EPS et d’AI à l’aide d’[ImageMagick](https://www.imagemagick.org/script/index.php) et de [Ghostscript](https://www.ghostscript.com/).
+* Transformation d’EPS et de l’IA à l’aide d’ImageMagick (site web `https://www.imagemagick.org/script/index.php`) et [Ghostscript](https://www.ghostscript.com/).
 * Transcodage de vidéo FLV à l’aide de [FFmpeg](https://ffmpeg.org/).
 * Encodage de MP3 à l’aide de [LAME](https://lame.sourceforge.io/).
 * Traitement audio à l’aide de [SOX](https://sourceforge.net/projects/sox/).
@@ -476,7 +476,7 @@ Pour cela, utilisez [!DNL ImageMagick]. [!DNL ImageMagick] est un logiciel de li
 
 Installez d’abord [!DNL ImageMagick] sur le disque hébergeant le serveur [!DNL Experience Manager] :
 
-1. Installez [!DNL ImageMagick] : consultez la [documentation d’ImageMagick](https://www.imagemagick.org/script/download.php).
+1. Installez [!DNL ImageMagick] : consultez la documentation d’ImageMagick sur le site web `https://www.imagemagick.org/script/download.php`.
 1. Configurez l’outil de sorte que sur la ligne de commande, vous puissiez exécuter `convert`.
 1. Pour vérifier si cet outil est installé correctement, exécutez la commande `convert -h` sur la ligne de commande.
 

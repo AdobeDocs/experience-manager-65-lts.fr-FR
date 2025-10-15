@@ -10,9 +10,9 @@ feature: Interactive Videos
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: caacf3b3-1e12-4ea3-9160-774181aadf41
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
 workflow-type: tm+mt
-source-wordcount: '5913'
+source-wordcount: '5900'
 ht-degree: 98%
 
 ---
@@ -33,7 +33,7 @@ Pour voir une vidéo interactive shoppable en action, sélectionnez [Démonstrat
 
 * Sélectionnez la miniature si vous souhaitez suspendre la vidéo et ouvrir l’aperçu rapide du produit. Par exemple, sélectionnez la miniature du KitchenAid dans la vidéo pour afficher le mixeur avec une option de rotation à 360 degrés ou utilisez le zoom pour afficher les détails du mixeur.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=fr. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![Image d’une vidéo interactive pouvant faire l’objet d’un achat](assets/chlimage_1-126.png) *Capture d’images vidéo à partir d’une vidéo interactive shoppable.*
 
@@ -50,9 +50,11 @@ Même si la présentation vidéo est personnalisée grâce à Assets à la deman
 
 Le webinaire « Utilisation de la vidéo interactive, du partage de liens et du partage sur YouTube dans Experience Manager Assets » vous explique comment utiliser la vidéo interactive ainsi que d’autres fonctionnalités pour lier des événements basés sur la conversion à votre contenu marketing vidéo.
 
+<!-- NOT FOUND; FIND REPLACEMENT
 >[!NOTE]
 >
->[Utilisation de la vidéo interactive, du partage de liens et du partage YouTube dans Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+>[Using Interactive Video, Link Sharing, and YouTube sharing in Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+-->
 
 ## Démarrage rapide : vidéos interactives {#quick-start-interactive-videos}
 
@@ -149,10 +151,10 @@ Consultez les exemples d’URL d’aperçu rapide et les variables de miniatures
     <td><p>SKU unique, trouvé dans la chaîne de requête.</p> </td>
     <td><p>Les URL d’aperçu rapide enregistrées incluent ce qui suit :</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>La seule partie variable de l’URL est la valeur du paramètre de chaîne de requête <code>productId=</code>, et il s’agit clairement d’une valeur de SKU. Par conséquent, seuls les champs SKU des miniatures doivent être renseignés avec des valeurs comme <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong> et <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
@@ -168,9 +170,9 @@ Consultez les exemples d’URL d’aperçu rapide et les variables de miniatures
     <td><p>SKU et ID de catégorie dans la chaîne de requête.</p> </td>
     <td><p>Les URL d’aperçu rapide enregistrées incluent ce qui suit :</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>Dans ce cas, l’URL comporte deux parties différentes. Le SKU est stocké dans le paramètre <code>prodId</code> et l’ID de catégorie dans le paramètre <code>category=</code>.</p> <p>Par conséquent, les définitions des miniatures sont des paires. Autrement dit, une valeur de SKU et une variable supplémentaire appelée <code>categoryId</code>. Les paires obtenues sont les suivantes :</p>
     <ul>
       <li>Le SKU est <code>305466</code> et <code>categoryId</code> est <code>1100004</code></li>
@@ -293,7 +295,7 @@ Une fois la vidéo interactive enregistrée, elle s’ouvre immédiatement dans 
 
    * Pour commencer à lire la vidéo, sélectionnez le bouton **[!UICONTROL Lecture]**. Lorsqu’un produit, un service ou un détail particulier que vous souhaitez mettre en évidence est affiché, sélectionnez **[!UICONTROL Ajouter un segment]** dans la barre d’outils. Répétez cette opération jusqu’à ce que vous ayez atteint la fin de la vidéo.
 
-     Pour chaque segment à ajouter, vous pouvez affecter une ou plusieurs images miniatures, puis lier ces miniatures à des pages de produit d’aperçu rapide pour que les clients procèdent à leurs achats ou accèdent à des pages web pour plus d’informations.
+     Pour chaque segment à ajouter, vous pouvez affecter une ou plusieurs images miniatures, puis lier ces miniatures à des pages produits en aperçu rapide pour que les clientes et clients procèdent à leurs achats ou accèdent à des pages web pour plus d’informations.
 
    * Pour commencer à lire la vidéo, sélectionnez le bouton **[!UICONTROL Lecture]**. Lorsqu’un produit, un service ou un détail particulier que vous souhaitez mettre en évidence est affiché, sélectionnez **[!UICONTROL Pause]**. Sélectionnez **[!UICONTROL Ajouter un segment]**.
 
@@ -659,27 +661,27 @@ La procédure de construction de l’URL de l’aperçu rapide est la procédure
   <tbody>
   <tr>
     <td><p>SKU unique, trouvé dans la chaîne de requête</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td>SKU unique, trouvé dans le chemin d’accès à l’URL</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td><p>SKU et ID de catégorie dans la chaîne de requête</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   </tbody>
 </table>
