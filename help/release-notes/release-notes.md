@@ -6,9 +6,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7319'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -449,23 +449,23 @@ Eclipse Jetty 11.0.x est utilisé comme moteur de servlet pour Quickstart.
 
 * Pour plus d’informations sur la procédure de mise à niveau, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
 
-#### Bonnes pratiques relatives aux mises à niveau du pack de services LTS d’AEM 6.5
+#### Bonnes pratiques relatives aux mises à niveau du pack de services d’AEM 6.5 LTS
 
 <!-- THE INFORMATION UNDER THIS HEADING CAME FROM CQDOC-23078 -->
 
 **Environnement**
-Application : clients AEM 6.5 LTS (On-Premise) installant le pack de services 1 (SP1). Le SP1 est fourni sous la forme d’un fichier JAR de démarrage rapide.
+Application : clients et clientes AEM 6.5 LTS (On-Premise) installant le pack de services 1 (SP1). Le SP1 est fourni sous la forme d’un fichier JAR de démarrage rapide.
 
 **Pourquoi est-ce important**
-Le SP1 pour le LTS AEM 6.5 est fourni sous la forme d’un fichier JAR Quickstart plutôt que d’un fichier ZIP à installer via le gestionnaire de packages. Les clients on-premise effectuent une mise à niveau en remplaçant le fichier JAR Quickstart, en le décompressant et en redémarrant. Cette méthode est cohérente avec la procédure de mise à niveau statique d’Adobe.
+Le SP1 pour AEM 6.5 LTS est fourni sous la forme d’un fichier JAR de démarrage rapide plutôt que d’un fichier ZIP à installer via le gestionnaire de modules. Les clients et clientes On-Prem effectuent une mise à niveau en remplaçant le fichier JAR de démarrage rapide, en le décompressant et en redémarrant. Cette méthode est conforme à la procédure de mise à niveau statique d’Adobe.
 
 **Flux de mise à niveau recommandé (création ou publication)**
 
-1. Vérifiez que votre instance AEM 6.5 LTS est saine et accessible.
-1. Téléchargez le fichier JAR de démarrage rapide SP1 (par exemple, `cq-quickstart-6.6.x.jar`) à partir de la distribution logicielle.
-1. Arrêtez l’instance en cours d’exécution.
-1. Dans le répertoire d’installation d’AEM (en dehors de `crx-quickstart/`), remplacez le fichier JAR de démarrage rapide précédent par le fichier JAR SP1.
-1. Décompressez le fichier JAR :
+1. Vérifiez que votre instance AEM 6.5 LTS est saine et accessible.
+1. Téléchargez le fichier JAR de démarrage rapide du SP1 (par exemple, `cq-quickstart-6.6.x.jar`) à partir de la distribution logicielle.
+1. Arrêtez l’instance en cours.
+1. Dans le répertoire d’installation d’AEM (en dehors de `crx-quickstart/`), remplacez le fichier JAR de démarrage rapide précédent par le fichier JAR du SP1.
+1. Décompressez le fichier JAR :
 
    ```java
    java -jar cq-quickstart-6.6.x.jar -unpack
@@ -473,18 +473,18 @@ Le SP1 pour le LTS AEM 6.5 est fourni sous la forme d’un fichier JAR Quickstar
 
    (Ajustez les indicateurs de tas selon les besoins.)
 
-1. Renommez le fichier JAR décompressé pour qu’il corresponde au rôle et au port, par exemple `cq-author-4502.jar` ou `cq-publish-4503.jar`.
-1. Démarrez AEM et confirmez la mise à niveau dans l’interface utilisateur (Aide > À propos) et les journaux.
+1. Renommez le fichier JAR décompressé pour qu’il corresponde au rôle et au port, par exemple `cq-author-4502.jar` ou `cq-publish-4503.jar`.
+1. Démarrez AEM et confirmez la mise à niveau dans l’interface d’utilisation (Aide > À propos) et les journaux.
 
-**Bonne hygiène**
+**Bonne qualité**
 
 * Exécutez la mise à niveau dans des environnements inférieurs/de test avant la production.
 * Effectuez des sauvegardes complètes et restaurables (référentiel et magasins de données externes) avant de commencer.
-* Consultez les conseils sur la mise à niveau sur place d’Adobe et les exigences techniques (Java 17/21 recommandé pour LTS).
+* Consultez les conseils sur la mise à niveau statique d’Adobe et les exigences techniques (Java 17/21 recommandé pour LTS).
 
 >[!NOTE]
 >
->Les noms de fichier indiqués ci-dessus (par exemple, `cq-quickstart-6.6.x.jar`) reflètent le nom de l’artefact de démarrage rapide SP1 observé pour cette version LTS ; utilisez toujours le nom de fichier exact que vous téléchargez à partir de la distribution logicielle.
+>Les noms de fichier indiqués ci-dessus (par exemple, `cq-quickstart-6.6.x.jar`) reflètent le nom de l’artefact de démarrage rapide du SP1 observé pour cette version LTS. Utilisez toujours le nom de fichier exact que vous téléchargez à partir de la distribution logicielle.
 
 ## Installation et mise à jour {#install-update}
 
