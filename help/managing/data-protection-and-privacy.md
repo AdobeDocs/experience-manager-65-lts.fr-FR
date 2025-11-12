@@ -1,19 +1,14 @@
 ---
 title: Règlements sur la protection et la confidentialité des données – Préparation d’Adobe Experience Manager
 description: Découvrez la prise en charge d’Adobe Experience Manager pour les règlements sur la protection et la confidentialité des données. Cela comprend le Règlement général sur la protection des données (RGPD) de l’UE, la loi sur la protection de la vie privée des consommateurs et consommatrices de Californie (California Consumer Privacy Act) et la manière de s’y conformer lors de la mise en œuvre d’un nouveau projet AEM.
-contentOwner: AEM Docs
-topic-tags: introduction, grdp
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
 exl-id: 6faf8e4f-ca2a-4d68-a354-fb0aa6c2644b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4a93e17da1157253a681bf8b3a38252962d8fb59
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 100%
+source-wordcount: '739'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +76,7 @@ Pour Adobe Experience Manager :
 
 Adobe fournit des procédures pour le traitement des demandes d’accès à des informations personnelles liées à l’accès, à la suppression et au droit d’opposition pour Adobe Experience Manager. Dans certains cas, des API peuvent être appelées à partir d’un portail développé par le client ou la cliente ou de scripts pour faciliter l’automatisation.
 
-Le diagramme suivant illustre à quoi pourrait ressembler un workflow de demande d’accès à des informations personnelles (illustré à l’aide d’Adobe Experience Manager 6.5) :
+Le diagramme suivant illustre à quoi pourrait ressembler un workflow de demande d’accès à des informations personnelles :
 
 ![Protection et confidentialité des données](assets/data-protection-and-privacy-01.png)
 
@@ -109,7 +104,7 @@ Pour plus d’informations, consultez les sections suivantes :
 
 * [Adobe Target – Présentation de la confidentialité](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=fr)
 
-* [Processus relatif à la confidentialité des données Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=fr)
+* [Processus relatif à la confidentialité des données Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
 
 ## AEM Forms {#aem-forms}
 

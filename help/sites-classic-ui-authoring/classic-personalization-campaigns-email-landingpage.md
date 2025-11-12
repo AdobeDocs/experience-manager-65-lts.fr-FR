@@ -1,16 +1,11 @@
 ---
 title: Création d’une page de destination efficace pour une newsletter
 description: Une page de destination efficace pour newsletter vous permet d’obtenir plus de personnes inscrites à votre newsletter (ou à toute autre campagne de marketing par e-mail). Vous pouvez utiliser les informations que vous collectez à partir des abonnements à vos newsletters pour obtenir des prospects.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: personalization
-content-type: reference
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 92f4946d-1f49-4286-a51e-84b2a46a6b8a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f69262246bafca44f88ff15a4c86125f5335507e
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 97%
@@ -31,7 +26,7 @@ Pour créer une page de destination efficace pour une newsletter, vous devez eff
 >[!NOTE]
 >
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (Gestion des prospects et des listes).
->&#x200B;>Il est conseillé d’utiliser [Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
+>Il est conseillé d’utiliser [Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
 
 ## Créer une liste pour la newsletter {#creating-a-list-for-the-newsletter}
 

@@ -1,14 +1,14 @@
 ---
 title: Publication de pages de contenu
-description: Découvrez comment publier des pages de contenu dans Adobe Experience Manager 6.5.
+description: Découvrez comment publier des pages de contenu dans Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
-source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
+source-git-commit: 46948a857ccb9d093f946ec9e48ff585b0647314
 workflow-type: tm+mt
-source-wordcount: '1701'
-ht-degree: 100%
+source-wordcount: '1702'
+ht-degree: 99%
 
 ---
 
@@ -26,13 +26,13 @@ Vous pouvez publier/dépublier une page tout de suite ou à une date/heure post�
 >Certains termes liés à la publication peuvent être déroutants :
 >
 >* **Publier/dépublier**
->  >  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
+>  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
 >
 >* **Activer/Désactiver**
->  >  Ces termes sont synonymes de publication/dépublication.
+>  Ces termes sont synonymes de publication/dépublication.
 >
 >* **Répliquer/Réplication**
->  >  Termes techniques indiquant le déplacement des données (contenu de la page, fichiers, code et commentaires de l’utilisateur, par exemple) d’un environnement à un autre ; lors de la publication ou de la réplication inverse des commentaires utilisateur, par exemple.
+>  Termes techniques indiquant le déplacement des données (contenu de la page, fichiers, code et commentaires de l’utilisateur, par exemple) d’un environnement à un autre ; lors de la publication ou de la réplication inverse des commentaires utilisateur, par exemple.
 
 ## Privilèges insuffisants {#insufficient-privileges}
 

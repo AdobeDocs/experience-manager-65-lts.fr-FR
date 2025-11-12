@@ -1,13 +1,13 @@
 ---
 title: Composants de base
-description: Présentation des composants de base dans Adobe Experience Manager 6.5.
+description: Découvrez les composants de base dans Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: c507bef7-4ddc-4e8c-9947-71cb2ecbbf0a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 1cdde3e82b0abb2be6f3d83020ad4bc0c8d68c2b
 workflow-type: tm+mt
-source-wordcount: '6846'
+source-wordcount: '6848'
 ht-degree: 99%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 >[!CAUTION]
 >
->La plupart des composants de base sont obsolètes avec AEM 6.5. Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) plus modernes et extensibles dans les projets AEM. Ces composants sont inclus dans l’[exemple de contenu We.Retail](/help/sites-developing/we-retail.md) et peuvent également être [installés séparément et utilisés pour le développement](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=fr) par votre administration.
+>La plupart des composants de base sont obsolètes avec AEM 6.5 LTS. Adobe recommande l’utilisation des [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) plus modernes et extensibles dans les projets AEM. Ces composants sont inclus dans l’[exemple de contenu We.Retail](/help/sites-developing/we-retail.md) et peuvent également être [installés séparément et utilisés pour le développement](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=fr) par votre administration.
 >
 >Vous pouvez utiliser la [Suite d’outils de modernisation AEM](https://opensource.adobe.com/aem-modernize-tools/) pour refactoriser votre site basé sur les composants de base afin d’utiliser les composants principaux.
 
@@ -227,7 +227,7 @@ Ajoutez vos données de graphique au format CSV ; une virgule (« , ») est 
 * **Avancé**
 
    * **Type de graphique**
-Effectuez un choix parmi les types suivants : Histogramme, Graphique en secteurs et Graphique en courbe.
+Effectuez un choix parmi les types suivants : Graphique en secteurs, Graphique linéaire et Graphique en barres.
 
    * **Texte secondaire**
 Affiche un texte secondaire au lieu du graphique.
@@ -238,7 +238,7 @@ Largeur du graphique en pixels.
    * **Hauteur**
 Hauteur du graphique en pixels.
 
-L’exemple suivant illustre des données de graphique suivies de l’histogramme qui en résulte :
+L’exemple suivant illustre des données de graphique suivies du graphique en barres qui en résulte :
 
 ![chlimage_1-89](assets/chlimage_1-89.png) ![dc_chart_use](assets/dc_chart_use.png)
 
@@ -967,7 +967,7 @@ Le composant Contrôle de colonne permet aux utilisateurs et utilisatrices de s�
 
 >[!CAUTION]
 >
->Le composant de base est obsolète. Adobe recommande d’utiliser plutôt les [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
+>Le composant de base est obsolète. Adobe recommande plutôt l’utilisation des [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
 
 Les composants Formulaire servent à créer des formulaires permettant aux visiteurs d’envoyer leur saisie. Les formulaires et composants de formulaire peuvent être utilisés pour collecter des informations, notamment les commentaires des utilisateurs et utilisatrices (par exemple, un questionnaire de satisfaction client) et des informations sur les utilisateurs et utilisatrices (par exemple, l’enregistrement des utilisateurs et utilisatrices).
 
@@ -1371,7 +1371,7 @@ Vous pouvez spécifier différents paramètres, notamment un titre, une descript
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation de [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
 
 Vous permet de fournir les champs nécessaires pour saisir les détails de la carte de crédit. Vous pouvez le configurer pour spécifier les types de carte acceptés et les informations requises (par exemple, le code de sécurité).
 
@@ -1399,7 +1399,7 @@ Vous pouvez spécifier un titre et les éléments à afficher dans la liste. Les
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation de [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
 
 Le composant Chargement du fichier fournit à l’utilisateur un moyen pour sélectionner un fichier et le charger.
 
@@ -1407,7 +1407,7 @@ Le composant Chargement du fichier fournit à l’utilisateur un moyen pour sél
 
 >[!NOTE]
 >
->Vous pouvez créer un composant de chargement personnalisé pour charger des fichiers vers un servlet Sling. Pour plus d’informations, voir [Chargement de fichiers dans Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276?profile.language=fr).
+>Vous pouvez créer un composant de chargement personnalisé pour charger des fichiers vers un servlet Sling. Pour plus d’informations, voir [Chargement de fichiers dans Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276).
 
 ### Champ masqué {#hidden-field}
 
@@ -1461,7 +1461,7 @@ Il est le plus souvent utilisé pour le formulaire d’événement de calendrier
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande plutôt l’utlisation des [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
 
 Permet à l’utilisateur ou à l’utilisatrice de saisir son mot de passe :
 

@@ -1,14 +1,14 @@
 ---
 title: Utilisation de l’éditeur de texte enrichi pour créer du contenu
-description: Utilisation de l’éditeur de texte enrichi pour créer du contenu dans Adobe Experience Manager 6.5.
+description: Utilisation de l’éditeur de texte enrichi pour créer du contenu dans Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 01c2a67a-7168-4362-ad7d-f4990ea43ed8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7fcb784124027df87bf41cc6169815d755cea6d7
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 100%
+source-wordcount: '265'
+ht-degree: 94%
 
 ---
 

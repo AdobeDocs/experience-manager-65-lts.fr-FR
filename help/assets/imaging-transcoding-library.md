@@ -1,15 +1,14 @@
 ---
 title: Bibliothèque de transcodage d’imagerie
 description: Découvrez comment configurer et utiliser la Bibliothèque de transcodage d’imagerie d’Adobe, une solution de traitement des images qui peut exécuter des fonctions essentielles de gestion des images, notamment le codage, le transcodage, le rééchantillonnage et le redimensionnement d’images.
-contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 solution: Experience Manager, Experience Manager Assets
 exl-id: fb24c331-55c3-4166-bd4f-c26cece902fc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 1dd093acdfa571dad9659270ddc6912ab3d5dba5
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 100%
+source-wordcount: '978'
+ht-degree: 99%
 
 ---
 
@@ -76,7 +75,7 @@ Pour configurer le traitement de la bibliothèque de transcodage d’imagerie, c
 
 Pour configurer la bibliothèque, créez un fichier CONF pour indiquer les bibliothèques en procédant comme suit. Vous avez besoin d’autorisations de type administrateur ou racine.
 
-1. Téléchargez le [package de la bibliothèque de transcodage d’imagerie dans la distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) et installez-le à l’aide du gestionnaire de packages. Le package est compatible avec [!DNL Experience Manager] 6.5.
+1. Téléchargez le [package de la bibliothèque de transcodage d’imagerie dans la distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) et installez-le à l’aide du gestionnaire de modules. Le package est compatible avec [!DNL Experience Manager] 6.5 LTS.
 
 1. Pour connaître un ID de lot pour `com.day.cq.dam.cq-dam-switchengine`, connectez-vous à la console web, puis cliquez sur **[!UICONTROL OSGi]** > **[!UICONTROL Lots]**. Pour ouvrir la console des lots, vous pouvez également accéder à l’URL `https://[aem_server:[port]/system/console/bundles/`. Localisez le lot `com.day.cq.dam.cq-dam-switchengine` et son identifiant.
 

@@ -10,10 +10,10 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: c576955f2e93de5e5fdc2d0e0f8bd8ba8810df63
 workflow-type: tm+mt
-source-wordcount: '2678'
-ht-degree: 97%
+source-wordcount: '2680'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 97%
 
 La capacité Cold Standby du micronoyau Tar permet à une ou plusieurs instances Adobe Experience Manager (AEM) de secours de se connecter à une instance principale. Le processus de synchronisation n’est qu’une façon de le faire, c’est-à-dire qu’il s’effectue uniquement de l’instance principale vers les instances de secours.
 
-L’objectif des instances de secours est de garantir une Live Copy du référentiel principal et d’assurer un basculement rapide sans perte de données s’il n’est pas disponible pour une raison quelconque.
+L’objectif des instances de secours est de garantir une Live Copy des données du référentiel principal et d’assurer un basculement rapide sans perte de données au cas où l’instance principale serait indisponible pour une raison quelconque.
 
 Le contenu est synchronisé de manière linéaire entre l’instance principale et les instances de secours sans aucune vérification d’intégrité pour détecter la corruption de fichier ou de référentiel. En raison de cette conception, les instances de secours sont des copies exactes de l’instance principale et ne peuvent pas aider à atténuer les incohérences sur les instances principales.
 
@@ -43,7 +43,7 @@ Le contenu est synchronisé de manière linéaire entre l’instance principale 
 
 ## Fonctionnement {#how-it-works}
 
-Sur l’instance principale d’AEM, un port TCP est ouvert et écoute les messages entrants. Actuellement, il existe deux types de messages que les secondaires envoient au principal :
+Sur l’instance principale d’AEM, un port TCP est ouvert et écoute les messages entrants. Actuellement, il existe deux types de messages que l’instance de secours envoie à l’instance principale :
 
 * un message demandant l’identifiant du segment de la tête actuelle ;
 * un message demandant des données de segment avec un identifiant spécifié.
@@ -72,7 +72,7 @@ Sur l’instance de secours, vous pouvez vous attendre à une consommation élev
 
 #### Sécurité {#security}
 
-En supposant que toutes les instances s’exécutent dans la même zone de sécurité intranet, le risque d’une violation de sécurité est considérablement réduit. Néanmoins, vous pouvez ajouter une couche de sécurité supplémentaire en activant les connexions SSL entre les secondaires et le principal. Cela réduit la possibilité que les données soient compromises par un intermédiaire.
+En supposant que toutes les instances s’exécutent dans la même zone de sécurité intranet, le risque d’une violation de sécurité est considérablement réduit. Néanmoins, vous pouvez ajouter une couche de sécurité supplémentaire en activant les connexions SSL entre les instances de secours et les instances principales. Cela réduit la possibilité que les données soient compromises par un intermédiaire.
 
 De plus, vous pouvez spécifier les instances de secours autorisées à se connecter en limitant l’adresse IP des requêtes entrantes. Cela permet de garantir qu’aucune personne de l’intranet ne peut copier le référentiel.
 
@@ -93,7 +93,7 @@ De plus, vous pouvez spécifier les instances de secours autorisées à se conne
 
 Pour créer une configuration TarMK Cold Standby, créez d’abord les instances secondaires en effectuant une copie du système de fichiers de l’ensemble du dossier d’installation de l’instance principale vers un nouvel emplacement. Vous pouvez ensuite démarrer chaque instance avec un mode d’exécution spécifiant leur rôle (`primary` ou `standby`).
 
-Consultez ci-dessous la procédure devant être suivie pour créer une installation avec une instance principale et une instance de secours : 
+Vous trouverez ci-dessous la procédure à suivre pour créer une configuration avec une instance principale et une instance de secours :
 
 1. Installez AEM.
 
@@ -286,7 +286,7 @@ Les paramètres OSGi ci-dessous sont disponibles pour le service Cold Standby.
 * **Intervalle de synchronisation (`interval`) :** ce paramètre détermine l’intervalle entre la requête de synchronisation et s’applique uniquement à l’instance de secours.
 
 * **Plages IP autorisées (`primary.allowed-client-ip-ranges`) :** plages IP sur lesquelles l’instance principale autorise la connexion.
-* **Sécuriser (`secure`) &#x200B;** : active le chiffrement SSL. Pour pouvoir utiliser ce paramètre, il doit être activé sur toutes les instances.
+* **Sécuriser (`secure`) ** : active le chiffrement SSL. Pour pouvoir utiliser ce paramètre, il doit être activé sur toutes les instances.
 * **Délai d’expiration de lecture Standby (`standby.readtimeout`) :** délai d’expiration pour les demandes provenant de l’instance de secours, en millisecondes. La valeur par défaut utilisée est de 60 000 (une minute).
 
 * **Nettoyage automatique de secours (`standby.autoclean`) :** appelez cette méthode de nettoyage si la taille du magasin augmente lors d’un cycle de synchronisation..
@@ -336,7 +336,7 @@ Pour ce faire, procédez comme suit :
 
 ## Surveillance {#monitoring}
 
-La fonctionnalité expose des informations à l’aide de JMX ou de MBeans. Ce faisant, vous pouvez inspecter l’état actuel de l’instance secondaire et de l’instance principale à l’aide de la [Console JMX](/help/sites-administering/jmx-console.md). Ces informations se trouvent dans un MBean de `type org.apache.jackrabbit.oak:type="Standby"` nommé `Status`.
+La fonctionnalité expose des informations à l’aide de JMX ou de MBeans. Vous pouvez ainsi inspecter l’état actuel de l’instance de secours et de l’instance principale à l’aide de la [ console JMX ](/help/sites-administering/jmx-console.md). Ces informations se trouvent dans un MBean de `type org.apache.jackrabbit.oak:type="Standby"` nommé `Status`.
 
 **Secondaire**
 
@@ -365,7 +365,7 @@ L’observation de l’instance principale expose des informations générales a
 
 * `Mode:` affiche toujours la valeur `primary`.
 
-De plus, les informations concernant jusqu’à dix clients (instances secondaire) connectés à l’instance principale peuvent être récupérées. L’ID MBean est l’UUID de l’instance. Il n’existe pas de méthodes pouvant être appelées pour ces MBeans, mais il existe quelques attributs utiles en lecture seule :
+En outre, il est possible de récupérer les informations relatives à un maximum de dix clients (instances de secours) connectés au principal. L’ID MBean est l’UUID de l’instance. Il n’existe pas de méthodes pouvant être appelées pour ces MBeans, mais il existe quelques attributs utiles en lecture seule :
 
 * `Name:` l’ID du client.
 * `LastSeenTimestamp:` l’horodatage de la dernière demande dans une représentation textuelle.

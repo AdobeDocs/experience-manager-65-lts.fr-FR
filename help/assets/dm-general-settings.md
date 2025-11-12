@@ -1,19 +1,15 @@
 ---
 title: Configurer les paramètres généraux de Dynamic Media
 description: Découvrez comment gérer les paramètres généraux dans Dynamic Media. Vous pouvez définir ici le nom de votre serveur de publication et le nom du serveur d’origine, puis définir une option de remplacement d’image. Il existe également des options de chargement par défaut pour le masquage des images, ainsi que des options de chargement pour le traitement des fichiers PostScript, Adobe Photoshop, PDF et Adobe Illustrator.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 solution: Experience Manager, Experience Manager Assets
 exl-id: 99cd5f46-f1aa-46f5-b112-311724e00490
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 298d0505a6c0561202e77008b3c352066d4e72b7
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 100%
+source-wordcount: '2498'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 100%
 La configuration des **[!UICONTROL paramètres généraux de Dynamic Media]** est disponible uniquement si :
 
 * Vous exécutez Dynamic Media en mode Scene7. Consultez [Activation de Dynamic Media en mode Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* Vous disposez d’une **[!UICONTROL Configuration Dynamic Media]** *existante* (dans **[!UICONTROL Services cloud]**) dans Adobe Experience Manager, version 6.5.11 ou supérieure. Voir [Création d’une configuration Dynamic Media dans Services cloud](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+* Vous disposez d’une configuration *existante* **[!UICONTROL Dynamic Media]** (dans **[!UICONTROL Cloud Services]**). Voir [Création d’une configuration Dynamic Media dans Services cloud](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
 * Vous êtes un administrateur système d’Experience Manager disposant de droits d’administrateur.
 
 Les paramètres généraux de Dynamic Media sont destinés aux développeurs et programmeurs chevronnés de sites Web. Adobe Dynamic Media recommande aux utilisateurs qui modifient ces paramètres de publication de se familiariser avec Dynamic Media sur Adobe Experience Manager et avec la technologie d’imagerie de base.

@@ -1,14 +1,14 @@
 ---
 title: Votre boîte de réception pour gérer les tâches
-description: Gestion de vos tâches avec la boîte de réception dans Adobe Experience Manager 6.5
+description: Gérer vos tâches avec la boîte de réception dans Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 077407ef-1d7f-47ad-b924-0afa19f21119
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 524f1bcea6761e299141bc1d1496e32c498ffd14
 workflow-type: tm+mt
-source-wordcount: '1155'
-ht-degree: 100%
+source-wordcount: '1156'
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ Prêt à l’emploi, AEM est préchargé avec quatre tâches affectées au group
 
 * [Configurer Analytics et Targeting](/help/sites-administering/opt-in.md)
 * [Appliquer la liste de contrôle de sécurité AEM](/help/sites-administering/security-checklist.md)
-* Autoriser la collecte de statistiques d’utilisation agrégées
+* Activer la collecte de statistiques d’utilisation agrégées
 * [Configurer le HTTPS](/help/sites-administering/ssl-by-default.md)
 
 ## Ouverture de la boîte de réception {#opening-the-inbox}

@@ -1,11 +1,11 @@
 ---
 title: Consignes de dimensionnement du matériel
 description: Ces consignes de dimensionnement procurent une estimation des ressources matérielles requises pour déployer un projet AEM.
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
 exl-id: dac9b87a-cbd2-49e3-bd4d-ebcccdec1659
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a5e7c2326785d6801601eabc71647923ba854f04
 workflow-type: tm+mt
 source-wordcount: '1231'
 ht-degree: 100%
@@ -59,11 +59,11 @@ Pour vérifier les modifications. Le nombre d’environnements de test varie sel
 * **Environnement de test de publication**
 Principalement pour tester les cas d’utilisation de collaboration sociale ou l’interaction entre l’instance de création et plusieurs instances de publication.
 
-* **Environnement d’exploitation de création**
+* **Environnement de production de création**
 Pour que les auteurs modifient le contenu.
 
-* **Environnement d’exploitation de publication**
-Pour servir du contenu publié.
+* **Environnement de production de publication**
+Pour diffuser du contenu publié.
 
 En outre, les environnements peuvent varier, allant d’un système à serveur unique exécutant AEM et un serveur d’applications, à un ensemble d’instances en cluster à plusieurs serveurs et processeurs à très grande échelle. Adobe recommande d’utiliser un ordinateur distinct pour chaque système de production et de ne pas exécuter d’autres applications sur ces ordinateurs.
 
@@ -133,7 +133,7 @@ Allouez au moins 16 Go de segment de mémoire et configurez le workflow [!UICON
 >
 >Voir aussi le[ Guide de performance des ressources](/help/sites-deploying/assets-performance-sizing.md).
 
-### Gestionnaire multi-sites {#multi-site-manager}
+### Multi-Site Manager {#multi-site-manager}
 
 La consommation de ressources lors de l’utilisation d’AEM MSM sur un environnement de création dépend fortement des cas d’utilisation spécifiques. Les facteurs de base sont :
 

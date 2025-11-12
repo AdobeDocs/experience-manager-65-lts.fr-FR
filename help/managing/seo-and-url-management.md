@@ -1,16 +1,13 @@
 ---
 title: Meilleures pratiques relatives à l’optimisation pour les moteurs de recherche et à la gestion des URL
 description: Découvrez les bonnes pratiques relatives à l’optimisation du moteur de recherche (SEO) et les recommandations relatives à une implémentation d’AEM.
-topic-tags: managing
-content-type: reference
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
 exl-id: 3f3437fb-1fff-4703-a50d-28da89b0a856
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: fd3404f62beb377362db73ab937b58391b15e195
 workflow-type: tm+mt
-source-wordcount: '3522'
+source-wordcount: '3475'
 ht-degree: 99%
 
 ---
@@ -206,7 +203,7 @@ La propriété `sling:alias` permet de pallier cette difficulté. `sling:alias` 
 * à laquelle vous ajoutez ensuite une propriété :
   `sling:alias` = `casa`
 
-Les outils de traduction d’AEM tels que le gestionnaire multisite peuvent ainsi conserver des relations entre :
+Les outils de traduction d’AEM tels que Multi-Site Manager peuvent ainsi conserver des relations entre :
 
 * `/en/home`
 
@@ -362,12 +359,6 @@ Lorsque vous placez le fichier `robots.txt` à la racine du site, il est possibl
 Les robots d’exploration utilisent des plans de site XML pour mieux comprendre la structure des sites web. Bien que le fait de fournir un plan de site ne garantisse pas un meilleur référencement sur les moteurs de recherche, c’est une pratique recommandée. Vous pouvez gérer manuellement un fichier XML sur le serveur web à utiliser comme plan du site. Cependant, Adobe vous recommande de générer le plan du site par programmation afin de vous assurer que, lorsque les auteurs et autrices créent du contenu, le plan du site reflète automatiquement leurs modifications.
 
 AEM utilise le [module de plan de site d’Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap) pour générer des plans de site XML, un module qui offre un large éventail d’options permettant aux personnes chargées du développement et de l’édition de tenir à jour un plan de site XML Sites.
-
->[!NOTE]
->
->Disponible en tant que fonctionnalité de produit depuis Adobe Experience Manager version 6.5.11.0.
-> 
->Pour les versions plus anciennes, vous pouvez enregistrer vous-même un servlet Sling pour écouter un appel `sitemap.xml`. Utilisez la ressource fournie par le biais de l’API de servlet pour rechercher la page active et ses descendants afin de générer un fichier `sitemap.xml`.
 
 Le module de plan de site Apache Sling fait la distinction entre un plan de site de niveau supérieur et un plan de site imbriqué, tous deux générés pour toute ressource dont la propriété `sling:sitemapRoot` est définie sur `true`. En règle générale, les plans de site sont rendus à l’aide de sélecteurs localisés par le chemin du plan de site de niveau supérieur de l’arborescence, qui correspond à la ressource qui n’a aucun autre ancêtre racine du plan de site. Cette racine de plan de site de niveau supérieur expose également l’index de plan de site, qui est normalement ce que le propriétaire d’un site doit configurer dans le portail de configuration du moteur de recherche ou ajouter au fichier `robots.txt` du site.
 

@@ -1,14 +1,14 @@
 ---
 title: Création
-description: Principes de création et de publication dans Adobe Experience Manager 6.5.
+description: Concepts de création et de publication dans Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 314a6c65-9b90-4f4c-9e4a-d551dbb646e9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 71ea867e240d76a2a881f6e7d65b83979b558f46
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 100%
+source-wordcount: '479'
+ht-degree: 97%
 
 ---
 
@@ -70,13 +70,13 @@ En règle générale, l’environnement de publication est situé en « zone d�
 >Il existe malheureusement une interférence dans la terminologie utilisée. Cela peut se produire avec les fonctions suivantes :
 >
 >* **Publier/dépublier**
->  >  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
+>  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
 >
 >* **Activer/Désactiver**
->  >  Ces termes sont synonymes de publication/dépublication.
+>  Ces termes sont synonymes de publication/dépublication.
 >
 >* **Répliquer/Réplication**
->  >  Ces termes techniques décrivent le déplacement des données (par exemple de contenu de la page, de fichiers, de code, de commentaires de l’utilisateur ou de l’utilisatrice) d’un environnement à un autre, c’est-à-dire lors de la publication ou de la réplication inverse des commentaires d’utilisateurs ou d’utilisatrices.
+>  Ces termes techniques décrivent le déplacement des données (par exemple de contenu de la page, de fichiers, de code, de commentaires de l’utilisateur ou de l’utilisatrice) d’un environnement à un autre, c’est-à-dire lors de la publication ou de la réplication inverse des commentaires d’utilisateurs ou d’utilisatrices.
 >
 
 #### Dispatcher {#dispatcher}

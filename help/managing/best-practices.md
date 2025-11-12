@@ -1,16 +1,11 @@
 ---
 title: 'Gestion des projets : liste de contrôle des bonnes pratiques'
 description: La gestion d’un projet de mise en œuvre d’Adobe Experience Manager (AEM) nécessite planification et compréhension. Les listes de contrôle de projet sont conçues comme un ensemble de bonnes pratiques pour la diffusion du projet. Elles vous guident tout au long du cycle de vie du projet et vous offrent une surveillance détaillée de votre statut.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing-checklist, introduction
-content-type: reference
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
 exl-id: 8f8883d8-4e2b-4ba0-bd83-414a96e7d382
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 58c2f666ef6fd89fc42f5d969d1ef1626e45fe45
 workflow-type: tm+mt
 source-wordcount: '3212'
 ht-degree: 98%
@@ -56,7 +51,7 @@ La feuille de calcul **Pulsation du projet** offre une vue d’ensemble graphiqu
 
 ## Statut par rôle {#status-by-role}
 
-La feuille de calcul **Statut par rôle** indique le détail de l’[**intégrité**, la **qualité et le &#x200B;** niveau d’achèvement&#x200B;**](#projectheartbeat) par &#x200B;** [phase](#phases-and-milestones)**&#x200B; et &#x200B;** [persona](#persona)**.
+La feuille de calcul **Statut par rôle** indique le détail de l’[**intégrité**, la **qualité et le **niveau d’achèvement**](#projectheartbeat) par **[phase](#phases-and-milestones)** et **[persona](#persona)**.
 
 ## Phases et jalons {#phases-and-milestones}
 
@@ -205,7 +200,7 @@ La planification du développement est essentielle pour vous assurer que votre p
 
    * la structure de code de base du projet ;
    * les artefacts de code (bundles, packages, etc.) ;
-   * les pannes des modèles/composants et de leurs relations ;
+   * Répartitions des modèles/composants et de leurs relations ;
    * les détails de haut niveau sur les personnalisations requises (des superpositions spécifiques suivront ultérieurement) ;
    * la conception des workflows requis par la solution (par exemple, création de contenu, approbation, publication, transformations, imports et exports) ;
    * la considération spéciale pour tout module complexe, tel que MSM, Commerce, intégration tierce.
@@ -239,7 +234,7 @@ La planification du développement est essentielle pour vous assurer que votre p
 
   Avant le développement, tous les processus de prise en charge nécessaires au déploiement, à la publication, au test et aux problèmes de rapports doivent être mis en place.
 
-  Voir aussi le [portail d’assistance Adobe](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr&support-tab=home#support).
+  Voir aussi le [portail d’assistance Adobe](https://experienceleague.adobe.com/?support-solution=General&lang=fr&support-tab=home#support).
 
 ### Planification et mise en œuvre des opérations {#operations-planning-and-operations}
 

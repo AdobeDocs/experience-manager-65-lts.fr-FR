@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
+source-git-commit: c99c7b2616e652ae372e98349d5de3b658a0beb1
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2468'
 ht-degree: 100%
 
 ---
@@ -148,7 +148,7 @@ Si vous indiquez un **nom** de page lors de la création d’une page, AEM [vali
 
 Dans AEM, un modèle spécifie un type de page spécialisé. Un modèle est utilisé comme base pour toute nouvelle page créée.
 
-Le modèle définit la structure d’une page, y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les coordonnées. Les modèles sont constitués de [composants](#components).
+Le modèle définit la structure d’une page, y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages produits, les plans de site et les coordonnées. Les modèles sont constitués de [composants](#components).
 
 AEM comporte plusieurs modèles prêts à l’emploi. Les modèles disponibles dépendent du site web individuel. Les champs clés sont les suivants :
 
@@ -395,10 +395,6 @@ Pour consulter le statut des tâches asynchrones, accédez au tableau de bord [*
 >[!NOTE]
 >
 >Pour plus d’informations sur le traitement de tâches asynchrones et sur la manière de configurer la limite pour les actions de déplacement/modification du nom de page, consultez le document [Tâches asynchrones](/help/sites-administering/asynchronous-jobs.md) dans le guide de l’utilisateur relatif à l’administration.
-
->[!NOTE]
->
->Pour le traitement asynchrone des déplacements de page, vous avez besoin d’AEM 6.5.3.0 ou ultérieure.
 
 ### Suppression d’une page {#deleting-a-page}
 

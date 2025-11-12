@@ -2,19 +2,13 @@
 title: Configuration de Dynamic Media en mode hybride
 description: Découvrez comment configurer Dynamic Media en mode hybride.
 mini-toc-levels: 3
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
-legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 role: User, Admin
 feature: Configuration,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 6252e61f-44b5-4931-80a0-426c6883092e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 846b45f6ab83599eb709573a77422f2aba1ef047
 workflow-type: tm+mt
-source-wordcount: '7738'
+source-wordcount: '7607'
 ht-degree: 100%
 
 ---
@@ -24,26 +18,26 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 >Fin de la prise en charge de Secure Socket Layer 2.0 et 3.0, ainsi que de Transport Layer Security 1.0 et 1.1.
->>À compter du 30 avril 2024, Adobe Dynamic Media ne prendra plus en charge les éléments suivants :
+>À compter du 30 avril 2024, Adobe Dynamic Media ne prendra plus en charge les éléments suivants :
 >
 >* SSL (Secure Socket Layer) 2.0
 >* SSL 3.0
 >* TLS (Transport Layer Security) 1.0 et 1.1
 >* Les chiffrements faibles suivants dans TLS 1.2 :
->  > `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
->  > `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
->  > `TLS_RSA_WITH_AES_256_GCM_SHA384`
->  > `TLS_RSA_WITH_AES_256_CBC_SHA256`
->  > `TLS_RSA_WITH_AES_256_CBC_SHA`
->  > `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
->  > `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
->  > `TLS_RSA_WITH_AES_128_GCM_SHA256`
->  > `TLS_RSA_WITH_AES_128_CBC_SHA256`
->  > `TLS_RSA_WITH_AES_128_CBC_SHA`
->  > `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
->  > `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
->  > `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
->  > `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
+> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
+> `TLS_RSA_WITH_AES_256_GCM_SHA384`
+> `TLS_RSA_WITH_AES_256_CBC_SHA256`
+> `TLS_RSA_WITH_AES_256_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
+> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
+> `TLS_RSA_WITH_AES_128_GCM_SHA256`
+> `TLS_RSA_WITH_AES_128_CBC_SHA256`
+> `TLS_RSA_WITH_AES_128_CBC_SHA`
+> `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
+> `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
+> `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
 >
 > Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
@@ -259,22 +253,6 @@ Pour désactiver Dynamic Media après l’avoir activé, supprimez l’indicate
    >
    >Notez également que lorsque le mode d’exécution Dynamic Media est désactivé après configuration du serveur Experience Manager, tous les ressources qui ont été chargés sous ce mode d’exécution son alors invalides.
 
-## (Facultatif) Migration des paramètres prédéfinis et des configurations Dynamic Media versions 6.3 à 6.5, sans interruption {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
-
-Si vous effectuez une mise à niveau d’Experience Manager - Dynamic Media de la version 6.3 vers la version 6.5 (qui inclut désormais la possibilité de réaliser des déploiements sans interruption), vous devez exécuter la commande curl suivante. La commande migre tous vos paramètres prédéfinis et configurations à partir de `/etc` vers `/conf` dans CRXDE Lite.
-
->[!NOTE]
->
->Si vous exécutez votre instance d’Experience Manager en mode de compatibilité (c’est-à-dire si le package de compatibilité est installé), il n’est pas nécessaire d’exécuter ces commandes.
-
-Pour toutes les mises à niveau, avec ou sans package de compatibilité, vous pouvez copier les paramètres prédéfinis de la visionneuse prête à l’emploi fournie initialement avec Dynamic Media en exécutant la commande curl Linux® suivante :
-
-`curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets/viewer.pushviewerpresets.json`
-
-Pour migrer des paramètres prédéfinis de visionneuse et des configurations personnalisés que vous avez créés dans `/etc` vers `/conf`, exécutez la commande curl Linux® suivante :
-
-`curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
-
 ## Configuration de la réplication de l’image {#configuring-image-replication}
 
 La diffusion d’images Dynamic Media se fait en publiant des ressources images, notamment des miniatures vidéo, à partir de l’auteur Experience Manager, puis en les répliquant vers le service de réplication On-Demand d’Adobe (l’URL du service de réplication). Les ressources sont ensuite diffusées par l’intermédiaire du service de diffusion d’images On-Demand (l’URL du service d’images).
@@ -433,7 +411,7 @@ vérifiez le mot de passe. Le mot de passe enregistré dans l’agent de réplic
 
 #### Problème : InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
-Ce problème est causé par une erreur de configuration dans votre instance Auteur Experience Manager. Le `javax.net.ssl.trustStore` obtenu par le processus Java™ sur l’auteur n’est pas correct. Vous rencontrez l’erreur suivante dans le journal de réplication :
+Ce problème est causé par une erreur de configuration dans votre instance de création Experience Manager. Le `javax.net.ssl.trustStore` obtenu par le processus Java™ sur l’auteur n’est pas correct. Vous rencontrez l’erreur suivante dans le journal de réplication :
 
 ```shell
 14.04.2016 09:37:43 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1460651862089, userId='admin', revision='null'}. java.io.IOException: Failed to execute request 'https://<localhost>:8580/is-publish/publish-receiver?Cmd=Test&RootId=rbrough-osx2': java.lang.RuntimeException: Unexpected error: java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
@@ -592,7 +570,7 @@ Assurez-vous d’avoir effectué cette tâche ***avant*** de paramétrer la Conf
 
 Vérifiez que le package de paramètres prédéfinis d’analyses vidéo du premier nœud Auteur est accessible sur le nouveau nœud Auteur.
 
-1. Téléchargez le package de paramètres prédéfinis d’analyses vidéo que vous avez créé précédemment sur le gestionnaire de packages.
+1. Téléchargez le package de paramètres prédéfinis d’analyses vidéo que vous avez créé précédemment sur le gestionnaire de modules.
 1. Installez le package de paramètres prédéfinis d’analyses vidéo.
 1. Configurez la Configuration de Dynamic Media (version antérieure à 6.3).
 
@@ -685,7 +663,7 @@ Reportez-vous à la section [Publication des paramètres prédéfinis de la visi
 
 >[!NOTE]
 >
->Par défaut, le système affiche différents rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** et différents paramètres prédéfinis de la visionneuse lorsque vous sélectionnez **[!UICONTROL Visionneuses]** dans la vue détaillée de la ressource. Vous pouvez augmenter ou diminuer le nombre affiché. Consultez [Augmentation du nombre de paramètres d’image prédéfinis affichés](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Augmentation du nombre de paramètres prédéfinis de visionneuse qui s’affichent](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+>Par défaut, le système affiche différents rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** et différents paramètres prédéfinis de la visionneuse lorsque vous sélectionnez **[!UICONTROL Visionneuses]** dans la vue détaillée de la ressource. Vous pouvez augmenter ou diminuer le nombre affiché. Consultez [Augmentation du nombre de paramètres d’image prédéfinis affichés](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Augmentation du nombre de paramètres de visionneuse prédéfinis affichés](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 ## Filtrage des ressources pour la réplication {#filtering-assets-for-replication}
 
@@ -717,7 +695,7 @@ Si vous utilisez Dynamic Media pour (1) les images en exploitation *ou* (2) les
    <td>Diffusion d’image Dynamic Media</td>
    <td><p>filter-images</p> <p>filter-sets</p> <p> </p> </td>
    <td><p>Commence par <strong>image/</strong></p> <p>Contient <strong>application/</strong> et se termine par <strong>set</strong>.</p> </td>
-   <td>Les « filter-images » d’usine (s’applique aux ressources d’images uniques, y compris aux images interactives) et les « filter-sets » (s’applique aux visionneuses à 360°, aux visionneuses de supports variés et aux visionneuses de carrousel) :
+   <td>Les « filter-images » d’usine (s’applique aux ressources d’images uniques, y compris aux images interactives) et les « filter-sets » (s’applique aux visionneuses à 360°, aux ensembles d’images, aux visionneuses de supports variés et aux ensembles de carrousels) :
     <ul>
      <li>ajoutent des images et des métadonnées PTIFF pour la réplication (tout rendu commençant par <strong>cqdam</strong>) ;</li>
      <li>suppriment de la réplication l’image d’origine et les rendus d’image statiques.</li>
@@ -786,7 +764,7 @@ Si vous utilisez Dynamic Media pour les images dans des déploiements hors expl
 1. Localisez `jcr:content`, cliquez avec le bouton droit de la souris, puis accédez à **[!UICONTROL Créer]** > **[!UICONTROL Créer un nœud]**. Saisissez le nom `damRenditionFilters` de type `nt:unstructured`.
 1. Localisez `damRenditionFilters`, cliquez dessus avec le bouton droit et sélectionnez **[!UICONTROL Coller]**.
 
-Ces étapes permettent de configurer l’instance de publication d’Experience Manager pour diffuser les images vers votre environnement hors exploitation. Le filtre exclut également de la réplication l’image originale et les rendus statiques, qui ne sont pas nécessaires sur l’instance de publication.
+Ces étapes permettent de configurer l’instance de publication d’Experience Manager pour diffuser les images vers votre environnement hors production. Le filtre exclut également de la réplication l’image originale et les rendus statiques, qui ne sont pas nécessaires sur l’instance de publication.
 
 >[!NOTE]
 >
@@ -824,7 +802,7 @@ Ces étapes permettent de configurer l’instance de publication d’Experience�
    | Caractère à utiliser | Filtrage des ressources pour la réplication |
    | --- | --- |
    | `*` | Caractère générique |
-   | `+` | Inclure les ressources à répliquer |
+   | `+` | Inclure les ressources pour la réplication |
    | `-` | Exclure les ressources de la réplication |
 
    Accédez à `content/dam/<locate your asset>/jcr:content/renditions`.
@@ -849,7 +827,7 @@ La configuration du serveur d’images Dynamic Media implique la modification du
 
 Pour configurer les paramètres du serveur d’images Dynamic Media :
 
-1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]**.
+1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
 1. Dans la page de configuration de la Console Web d’Adobe Experience Manager, accédez à **[!UICONTROL OSGi]** > **[!UICONTROL Configuration]** pour répertorier tous les lots en cours d’exécution dans Experience Manager.
 
    Les serveurs de diffusion Dynamic Media sont répertoriés dans la liste sous les noms suivants :

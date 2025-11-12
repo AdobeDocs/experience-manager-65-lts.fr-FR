@@ -1,15 +1,11 @@
 ---
 title: La Liste de contrôle
 description: Les listes de contrôle de projet sont conçues comme un ensemble de bonnes pratiques pour la diffusion du projet. Elles vous guident tout au long du cycle de vie du projet et vous offrent une surveillance détaillée de votre statut actuel.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing-checklist
-content-type: reference
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
 exl-id: 4a7d8228-101a-47bd-9bcf-d521a69d87a0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 343fe14be5c85eecdd34f7428460ee016e97734b
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 95%

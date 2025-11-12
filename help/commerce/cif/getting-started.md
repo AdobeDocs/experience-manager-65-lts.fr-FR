@@ -6,10 +6,10 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 15face30-3039-49a0-bfee-56bff21e5c27
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 0b337740dffb9e6421e6d2c44a1ae222dfa37711
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 100%
+source-wordcount: '676'
+ht-degree: 92%
 
 ---
 
@@ -22,15 +22,15 @@ Pour commencer à utiliser AEM Content and Commerce, vous devez installer le m
 
 L’intégration à AEM Content and Commerce est un processus en deux étapes :
 
-1. Installez le module complémentaire Content and Commerce AEM pour AEM 6.5.
+1. Installation du module complémentaire Content and Commerce d’AEM pour AEM 6.5 LTS
 
 2. Connectez AEM à votre solution de commerce.
 
-### Installation du module complémentaire Content and Commerce AEM pour AEM 6.5 {#install-add-on}
+### Installation du module complémentaire Content and Commerce d’AEM pour AEM 6.5 LTS {#install-add-on}
 
-Téléchargez et installez le module complémentaire AEM Commerce pour AEM 6.5, que vous trouverez dans le portail de [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+Téléchargez et installez le module complémentaire AEM Commerce pour AEM 6.5 LTS à partir du portail [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-Démarrez et installez le pack de services d’AEM 6.5 requis. Nous vous recommandons d’installer le dernier pack de services disponible.
+Démarrez et installez le pack de services AEM 6.5 LTS requis. Nous vous recommandons d’installer le dernier pack de services disponible.
 
 >[!NOTE]
 >

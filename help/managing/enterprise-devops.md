@@ -1,15 +1,11 @@
 ---
 title: Opérations de développement d’entreprise (DevOps)
 description: Découvrez les processus, les méthodes et la communication nécessaires pour faciliter le déploiement et simplifier la collaboration.
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing
-content-type: reference
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
 exl-id: bd80a4c5-4b65-43db-af4e-f43849c796be
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: db44ebd29ea80c3b95e385ace5156d028f4de122
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 100%
