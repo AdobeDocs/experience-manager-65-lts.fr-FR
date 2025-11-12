@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
-workflow-type: ht
-source-wordcount: '7319'
-ht-degree: 100%
+source-git-commit: 6023c211220bb500814ecd511b8787d107c3c6cd
+workflow-type: tm+mt
+source-wordcount: '7381'
+ht-degree: 99%
 
 ---
 
@@ -375,7 +375,7 @@ Correction d’un problème d’accessibilité en raison duquel les espaces rés
 * Lorsqu’une personne ouvre une communication interactive dans l’interface d’utilisation de l’agent, les données préremplies ne peuvent pas être complètement effacées ; une fois supprimées, elles sont automatiquement remplies avec les mêmes données. (FORMS-19151)
 * Lorsqu’un utilisateur ou une utilisatrice prévisualise un champ de type date dans l’interface Agent, la date change de façon inattendue. Le problème est causé par des différences de fuseau horaire entre le paramètre UTC de la machine virtuelle et l’interprétation locale de la date par le système. (FORMS-19115)
 * Lorsqu’un utilisateur ou une utilisatrice soumet un formulaire, les pièces jointes peuvent être dupliquées, entraînant plusieurs envois du même fichier. (FORMS-19045)(FORMS-19051).
-* L’ajout de coordinateurs et coordinatrices aux jeux de politiques dans Document Security échoue dans les environnements de production et inférieurs. (FORMS-18603, FORMS-18212, FORMS-19697)
+* L’ajout de coordinateurs et coordinatrices aux ensembles de politiques dans Document Security échoue dans les environnements de production et inférieurs. (FORMS-18603, FORMS-18212, FORMS-19697)
 * Lorsqu’une personne clique sur « datepicker-calendar-icon » en mode bureau avec un champ vide, une erreur se produit en raison de la variable _$focusedDate non définie, interrompant les scripts personnalisés associés. (FORMS-18483)(FORMS-18268)
 * Lorsqu’un client ou une cliente prévisualise une lettre, le champ « Montant en mots » ne s’affiche pas correctement ou ne met pas à jour correctement les valeurs numériques, ce qui entraîne un mauvais alignement et des espaces manquants dans le contenu. (FORMS-18437, FORMS-17330, FORMS-18209, FORMS-18557, CTG-4150848,FORMS-19614, LC-3922004)
 * Lorsqu’un client ou une cliente prévisualise une lettre enregistrée sur RHEL, le contenu ne s’aligne pas correctement, des espaces sont manquants et des caractères inattendus tels que « x » apparaissent. (FORMS-18422)(FORMS-17641).
@@ -608,6 +608,18 @@ Lors de l’activation de la fonction SSL uniquement dans les déploiements AEM,
 
 **Solution :**
 Si vous rencontrez ce problème, contactez l’Assistance Client d’Adobe. Un correctif [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) est disponible pour résoudre ce problème. N’essayez pas d’activer les fonctions SSL uniquement avant d’avoir appliqué le correctif nécessaire.
+
+### Page Autorisations vide dans l’interface utilisateur de sécurité d’AEM 6.5 LTS SP1
+
+>[!NOTE]
+>
+> Ce problème est uniquement présent dans la version AEM 6.5 LTS SP1.
+
+Lors de l’accès à la page Autorisations sous Outils -> Sécurité dans AEM 6.5 LTS SP1, une page vierge s’affiche au lieu des autorisations d’un utilisateur ou d’un groupe.
+
+**Solution :**
+Un correctif [cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) est disponible pour résoudre ce problème.
+
 
 ## Lots OSGi et modules de contenu inclus{#osgi-bundles-and-content-packages-included}
 
