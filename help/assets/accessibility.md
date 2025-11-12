@@ -226,5 +226,5 @@ Pour rédiger des commentaires, poser des questions et demander des amélioratio
 >
 >* [Fonctionnalités d’accessibilité d’ [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 >* [Notes de mise à jour des améliorations apportées à chaque version de service pack](/help/release-notes/release-notes.md).
->* Conseils en matière d’accessibilité d’[[!DNL Adobe Experience Manager] ](/help/managing/web-accessibility.md)
+>* Conseils en matière d’accessibilité d’[[!DNL Adobe Experience Manager] &#x200B;](/help/managing/web-accessibility.md)
 >* [Rapports de conformité (ACR) et liste VPAT (Modèle volontaire d’accessibilité des produits) pour les solutions d’Adobe](https://www.adobe.com/accessibility/compliance.html).
