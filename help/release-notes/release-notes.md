@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6023c211220bb500814ecd511b8787d107c3c6cd
+source-git-commit: 5dfcc115fd2e1991a8a4701597b0fb25b374e3ee
 workflow-type: tm+mt
-source-wordcount: '7381'
-ht-degree: 99%
+source-wordcount: '7405'
+ht-degree: 98%
 
 ---
 
@@ -410,6 +410,7 @@ Correction d’un problème d’accessibilité en raison duquel les espaces rés
 * Les utilisateurs et les utilisatrices n’ont pas pu utiliser la fonctionnalité de chronologie des fichiers PDF dans les formulaires AEM. Ce problème a affecté la capacité des utilisateurs et des utilisatrices à suivre efficacement les modifications et les révisions de documents. Lors du chargement d’un PDF dans la section Formulaires et documents de l’espace AEM Forms, l’affichage de la chronologie cessait de fonctionner. (FORMS-19408)
 * Les utilisateurs et les utilisatrices rencontrent une exception de pointeur nul lors de l’interaction avec OData. Cela entraîne des interruptions dans les processus de récupération des données. (FORMS-20348)
 * Suppression de la bibliothèque google.common.collect suite à la suppression de Guava, une bibliothèque Java open source. Cette mise à jour garantit une meilleure compatibilité et de meilleures performances pour la clientèle Enterprise qui utilise Adaptive Forms. (FORMS-17031)
+* Lorsque la validation côté serveur (SSV) est activée, les envois de formulaires peuvent échouer. Si vous rencontrez ce problème, contactez l’assistance [d’Adobe](https://business.adobe.com/in/support/main.html) pour obtenir de l’aide. (FORMS-21966)
 
 ### Captcha de formulaires
 
