@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: eef69d02-2e88-4f44-98bb-d98fa297e3a2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ffb467630ee061bce5a9cab4e8a311e70b2aeb38
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 100%
+source-wordcount: '914'
+ht-degree: 98%
 
 ---
 
@@ -34,6 +34,10 @@ L’agent est conçu pour vous aider à limiter les dernières classes vulnérab
 
 Adobe prend officiellement en charge Java™ 6, 7 et 8. Cependant, Adobe comprend que NotSoSerial prend également en charge Java™ 5.
 
+>[!WARNING]
+>
+>NotSoSerial ne doit pas être utilisé avec Java™ 17 ou version ultérieure.
+
 ## Installer l’agent {#installing-the-agent}
 
 >[!NOTE]
@@ -42,7 +46,7 @@ Adobe prend officiellement en charge Java™ 6, 7 et 8. Cependant, Adobe compre
 
 1. Installez le lot **com.adobe.cq.cq-serialization-tester**.
 
-1. Accédez à la console Lots web à l’adresse `https://server:port/system/console/bundles`.
+1. Accédez à la console web des bundles à l’adresse `https://server:port/system/console/bundles`.
 1. Recherchez le lot de sérialisation et démarrez-le. Vous chargez ainsi automatiquement et de manière dynamique l’agent NotSoSerial.
 
 ## Installer l’agent sur les serveurs d’applications {#installing-the-agent-on-application-servers}
