@@ -6,10 +6,10 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 hide: true
 hidefromtoc: true
-source-git-commit: f9fc041002a82f5f934800674733ca555074d34e
+source-git-commit: 8097d48b797759cc99e0b299a5dbca2d9f8194af
 workflow-type: tm+mt
-source-wordcount: '1713'
-ht-degree: 98%
+source-wordcount: '1709'
+ht-degree: 94%
 
 ---
 
@@ -58,7 +58,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 <!--
 ![JEE Installation](/help/forms/using/assets/jeeinstallation.png) -->
 
-+++1. Effectuez une sauvegarde de votre environnement existant.
++++&#x200B;1. Effectuez une sauvegarde de votre environnement existant
 
 1. Sauvegardez votre [référentiel CRX, votre schéma de base de données et votre GDS (stockage global de documents)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html?lang=fr).
 1. Sauvegardez le dossier &lt;*AEM_forms_root*>/deploy.
@@ -69,19 +69,19 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++2. Téléchargez le logiciel requis.
++++&#x200B;2. Téléchargez le logiciel requis
 
 * [Service Pack AEM Forms on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr)
 
 * [Servlet de fragment](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
 
 * [AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=fr)
-* [Package de modules complémentaires Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr)
+  <!--* [Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)-->
 
 
 +++
 
-+++3. Installez les packages redistribuables Microsoft Visual C++.
++++&#x200B;3. Installez les packages redistribuables Microsoft Visual C++.
 
 * Téléchargez et installez la [version 64 bits des packages Microsoft Visual C++ redistribuables pour Visual Studio 2015, 2017, 2019 et 2022](https://learn.microsoft.com/fr-fr/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) sur l’ordinateur sur lequel AEM 6.5 Forms est installé.
 
@@ -91,7 +91,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++4. Installez le pack de services AEM Forms on JEE :
++++&#x200B;4. Installez le pack de services AEM Forms on JEE :
 
 1. Arrêtez le serveur d’applications.
 1. Extrayez l’**archive du programme d’installation du Service Pack AEM Forms on JEE** sur votre disque dur :
@@ -143,7 +143,7 @@ Accédez au répertoire approprié puis, à partir du shell, saisissez `./aem65_
 
 +++
 
-+++5. Installer le fragment de servlet s’il n’est pas installé (**Étape obligatoire**).
++++&#x200B;5. Installer le fragment de servlet s’il n’est pas installé (**étape obligatoire**)
 
 <!-- >[!NOTE] > > * If you are upgrading from **AEM Service Pack 6.5.15.0**, the installation of the **servlet fragment** is not required. For versions **AEM Service Pack 6.5.14.0** or earlier, it is **mandatory to install** the servlet fragment. -->
 
@@ -161,7 +161,7 @@ Pour télécharger et installer le fragment de servlet :
 
 +++
 
-+++6. Installez AEM Service Pack 
++++&#x200B;6. Installer le pack de services AEM
 
 1. Redémarrez l’instance avant l’installation si l’instance est en mode de mise à jour (lorsque l’instance a été mise à jour à partir d’une version antérieure). Adobe recommande un redémarrage si le temps de disponibilité actuel d’une instance est élevé.
 1. Avant l’installation, prenez un instantané ou exécutez une sauvegarde récente de votre instance [!DNL Experience Manager].
@@ -192,7 +192,7 @@ Le package est automatiquement installé.
 
 +++
 
-+++7. Installer le package du module complémentaire Adobe Experience Manager Forms d’AEM
++++&#x200B;7. Installez le package complémentaire AEM Experience Manager Forms.
 
 1. Vérifiez que vous avez installé le pack de services [!DNL Experience Manager].
 1. Téléchargez le package complémentaire Forms correspondant répertorié dans les [versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) pour votre système d’exploitation.
@@ -207,7 +207,7 @@ Le package est automatiquement installé.
 <!-- ![OSGi Installation Steps](/help/forms/using/assets/osgiinstallation.png)
 -->
 
-+++1. Effectuez une sauvegarde de votre environnement existant.
++++&#x200B;1. Effectuez une sauvegarde de votre environnement existant
 
 1. Sauvegardez vos [référentiel CRX et schéma de base de données](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html?lang=fr).
 
@@ -217,14 +217,14 @@ Le package est automatiquement installé.
 
 +++
 
-+++2. Téléchargez le logiciel requis.
++++&#x200B;2. Téléchargez le logiciel requis
 
 * [AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=fr)
 * [Package de modules complémentaires Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr)
 
 +++
 
-+++ 3. Installez les packages redistribuables Microsoft Visual C++.
++++ &#x200B;3. Installez les packages redistribuables Microsoft Visual C++.
 
 * Téléchargez et installez la [version 64 bits des packages Microsoft Visual C++ redistribuables pour Visual Studio 2015, 2017, 2019 et 2022](https://learn.microsoft.com/fr-fr/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) sur l’ordinateur sur lequel AEM 6.5 Forms est installé.
 
@@ -235,7 +235,7 @@ Le package est automatiquement installé.
 
 +++
 
-+++4. Installez AEM Service Pack 
++++&#x200B;4. Installer le pack de services AEM
 
 1. Redémarrez l’instance avant l’installation si l’instance est en mode de mise à jour (lorsque l’instance a été mise à jour à partir d’une version antérieure). Adobe recommande un redémarrage si le temps de disponibilité actuel d’une instance est élevé.
 1. Avant l’installation, prenez un instantané ou exécutez une sauvegarde récente de votre instance [!DNL Experience Manager].
@@ -266,7 +266,7 @@ Vous pouvez utiliser deux méthodes différentes pour installer automatiquement 
 
 +++
 
-+++5. Installez le package complémentaire Adobe Experience Manager Forms (AEM).
++++&#x200B;5. Installez le package complémentaire Adobe Experience Manager Forms (AEM)
 
 1. Vérifiez que vous avez installé le pack de services [!DNL Experience Manager].
 1. Téléchargez le package complémentaire Forms correspondant répertorié dans les [versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) pour votre système d’exploitation.
