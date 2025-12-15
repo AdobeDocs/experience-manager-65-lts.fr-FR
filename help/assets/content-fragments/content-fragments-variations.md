@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
-source-git-commit: e0fb43e63eb876049447d12ab379fd92aa1ee4b6
+source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 98%
+source-wordcount: '2309'
+ht-degree: 100%
 
 ---
 
@@ -175,7 +175,7 @@ Vous pouvez également ouvrir l’éditeur plein écran pour accomplir d’autre
 Si le modèle de fragment de contenu contient des références à un fragment, les auteurs de fragments peuvent disposer d’options disponibles supplémentaires :
 
 * [Modifier le fragment de contenu](#fragment-references-edit-content-fragment)
-* [Nouveau fragment du contenu](#fragment-references-new-content-fragment)
+* [Nouveau fragment de contenu](#fragment-references-new-content-fragment)
 
 ![Références à un fragment](assets/cfm-variations-12.png)
 
@@ -407,12 +407,6 @@ Les variations vous permettent de prendre le contenu **principal** et le varier 
 
 Pour créer une variation :
 
->[!NOTE]
->
->Les variations ajoutent un temps de traitement à un fragment de contenu, dans l’environnement de création et lors de la diffusion également. Il est recommandé de maintenir le nombre de variations à un niveau minimal gérable.
->
->Une bonne pratique consiste à ne pas dépasser dix variations par fragment de contenu.
-
 1. Ouvrez votre fragment et assurez-vous que le panneau latéral est visible.
 1. Sélectionnez **Variations** dans la barre d’icônes du panneau latéral.
 1. Sélectionnez **Créer une variation**.
@@ -474,7 +468,7 @@ Lors de la modification d’une variation, vous avez accès à l’action de syn
 
 >[!CAUTION]
 >
->La synchronisation n’est disponible que pour copier les modifications *du **Maître**&#x200B;dans la variation*.
+>La synchronisation n’est disponible que pour copier les modifications *du **Maître**dans la variation*.
 >
 >Seul l’élément actif de la variation est synchronisé.
 >

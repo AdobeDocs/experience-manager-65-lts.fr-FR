@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: cb22ff03-6de1-4cab-8a3e-d3d0fa1d29e2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 100%
+source-wordcount: '1728'
+ht-degree: 99%
 
 ---
 
@@ -37,9 +37,13 @@ L’[éditeur de fragment de contenu](#opening-the-fragment-editor) fournit diff
 
 >[!NOTE]
 >
+>Tenez compte des [ Bonnes pratiques ](/help/assets/content-fragments/content-fragments.md#best-practices) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
+
+>[!NOTE]
+>
 >Les fragments de contenu sont stockés en tant que **Ressources**, et ils sont donc principalement gérés par l’intermédiaire de la console **Ressources**.
 
-## Créer des fragments de contenu {#creating-content-fragments}
+## Création de fragments de contenu {#creating-content-fragments}
 
 ### Création d’un modèle de contenu {#creating-a-content-model}
 

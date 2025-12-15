@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7d6e3662-f541-4755-b2a6-b35724dd8932
-source-git-commit: 6fccb80857b22ce0ab72f987afc9ce34d66bea54
+source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
 workflow-type: tm+mt
-source-wordcount: '2339'
-ht-degree: 100%
+source-wordcount: '2355'
+ht-degree: 99%
 
 ---
 
@@ -22,6 +22,10 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 1. [Créez](#creating-a-content-fragment-model) et [configurez](#defining-your-content-fragment-model) vos modèles de fragments de contenu.
 1. [Activez vos modèles de fragment de contenu](#enabling-disabling-a-content-fragment-model) à utiliser lors de la création de fragments de contenu.
 1. [Autorisez vos modèles de fragments de contenu sur les dossiers de ressources requis](#allowing-content-fragment-models-assets-folder) en configurant des **politiques**.
+
+>[!NOTE]
+>
+>Tenez compte des [ Bonnes pratiques ](/help/assets/content-fragments/content-fragments.md#best-practices) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
 
 ## Création d’un modèle de fragment de contenu {#creating-a-content-fragment-model}
 
@@ -240,10 +244,10 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 >AEM dispose d’une protection de récurrence pour :
 >
 >* Références du contenu
->  >  Cela empêche l’utilisateur d’ajouter une référence au fragment actif. Cette approche peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
+>  Cela empêche l’utilisateur d’ajouter une référence au fragment actif. Cette approche peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
 >
 >* Références de fragment dans GraphQL
->  >  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
+>  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
 
 ### Référence de contenu {#content-reference}
 
