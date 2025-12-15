@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7d6e3662-f541-4755-b2a6-b35724dd8932
-source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
+source-git-commit: e0a31fe9bc3297a4cb6e72765482c24cebb3ad29
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2326'
 ht-degree: 99%
 
 ---
@@ -25,7 +25,7 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
 >[!NOTE]
 >
->Tenez compte des [&#x200B; Bonnes pratiques &#x200B;](/help/assets/content-fragments/content-fragments.md#best-practices) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
+>Tenez compte des [ Bonnes pratiques ](/help/assets/content-fragments/content-fragments.md#best-practices) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
 
 ## Création d’un modèle de fragment de contenu {#creating-a-content-fragment-model}
 
@@ -109,13 +109,6 @@ Une sélection de types de données est disponible pour la définition de votre 
    * Ajoutez un ou plusieurs champs d’une seule ligne de texte ; il est possible de définir la longueur maximale.
 * **Plusieurs lignes de texte**
    * Zone de texte pouvant contenir du texte enrichi, du texte brut ou du texte Markdown.
-
-     >[!NOTE]
-     >
-     >Pour des raisons de performances, il n’est pas recommandé d’avoir plus de dix champs de texte enrichi dans un modèle.
-     >
-     >Si nécessaire, il est recommandé d’utiliser des [fragments de contenu imbriqués](#fragment-reference-nested-fragments).
-
 * **Nombre**
    * Ajoutez un ou plusieurs champs numériques
 * **Booléen**
