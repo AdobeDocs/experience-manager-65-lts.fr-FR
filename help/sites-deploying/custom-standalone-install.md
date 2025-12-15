@@ -7,10 +7,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 93aa6218c36b52bfcd7a204e6f0b65871a4b365b
+source-git-commit: 5c7ead37f55175bb565f8661c0c156f76f135131
 workflow-type: tm+mt
 source-wordcount: '1563'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ Si vous exécutez Oracle Java 17 ou Java 21, des commutateurs supplémentaires d
 * [Forms uniquement ] Voici un exemple pour vous assurer qu’AEM Forms fonctionne avec Java 17/Java21. Incluez les paramètres JVM supplémentaires suivants :
 
 ```shell
---add-opens=java.base/java.util=ALL-UNNAMED -add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED --add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
 ```
 
 ## Modes d’exécution {#run-modes}
@@ -71,8 +71,8 @@ Les **modes d’exécution** vous permettent d’ajuster votre instance d’AEM 
 Par défaut, le dossier `crx-quickstart/install` est surveillé pour les fichiers.
 Ce dossier n’existe pas, mais peut être simplement créé au moment de l’exécution.
 
-En présence d’un lot, la configuration ou le package de contenu est placé dans ce répertoire. Il est automatiquement sélectionné et installé. S’il est supprimé, il est désinstallé.
-Il s’agit d’une autre méthode pour placer des lots, des packages de contenu ou des configurations dans le référentiel.
+En présence d’un lot, la configuration ou le module de contenu est placé dans ce répertoire. Il est automatiquement sélectionné et installé. S’il est supprimé, il est désinstallé.
+Il s’agit d’une autre méthode pour placer des lots, des modules de contenu ou des configurations dans le référentiel.
 
 Cela est particulièrement intéressant pour plusieurs cas d’utilisation :
 
@@ -323,7 +323,7 @@ Bien qu’il existe de nombreuses possibilités de configuration de la gestion d
 
 >[!NOTE]
 >
-> Pour les nouvelles installations d’AEM 6.5 LTS, les définitions d’index doivent être installées séparément. Pour plus d’informations, reportez-vous [ci](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
+> Pour les nouvelles installations d’AEM 6.5 LTS, les définitions d’index doivent être installées séparément. Pour plus d’informations, reportez-vous à [cette page](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
 
 ## Accès à CRXDE Lite et à la console web {#accessing-crxde-lite-and-the-web-console}
 
