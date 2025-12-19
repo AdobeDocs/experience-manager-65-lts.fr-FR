@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0d68ed7cb5fe2bf942ffc62f99da9b005ce00410
+source-git-commit: 6ca845ce5f4b97bfc5a360b3426f7284fb9cd401
 workflow-type: tm+mt
-source-wordcount: '7405'
+source-wordcount: '7476'
 ht-degree: 98%
 
 ---
@@ -35,7 +35,11 @@ ht-degree: 98%
 
 [!DNL Experience Manager] 6.5 LTS, SP1 comprend de nouvelles fonctionnalités, des améliorations importantes demandées par la clientèle, ainsi que des correctifs. Cette version comprend également des améliorations en termes de performances, de stabilité et de sécurité, publiées depuis la mise à disposition initiale de la version 6.5 LTS en mars 2025. [Installez ce Pack de services](#install-update) sur la version 6.5 LTS.
 
-<!-- ## Key features and enhancements -->
+## Principales fonctionnalités et améliorations
+
+### Formulaires
+
+AEM 6.5 Forms LTS on JEE est désormais disponible. Pour plus d’informations sur les environnements pris en charge, consultez le document Combinaisons de plateformes prises en charge . Les liens du programme d’installation sont disponibles sur la page Versions d’AEM Forms .
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -180,7 +184,7 @@ Des métadonnées XMP mal formatées déclenchaient une erreur lors du traitemen
 * Amélioration du libellé du bouton Aide dans le modal du teaser afin de décrire clairement son objectif et de fournir un contexte explicite à tous les utilisateurs et utilisatrices, y compris les utilisateurs et utilisatrices de technologies d’assistance. (SITES-25224)
 * Amélioration de la règle d’émulateur pour les utilisateurs et utilisatrices de lecteurs d’écran en associant les mesures de règle à leurs appareils respectifs. Remplacement également de l’infobulle par un élément aria-descripbedby. (SITES-24955)
 * Aucun correctif n’a été implémenté, car le bouton Modifier fonctionne comme prévu et fournit un contexte informatif plutôt que d’exécuter une action. (SITES-24950)
-* L’ordre de cible confirmé sur la page de l’éditeur suit une séquence logique, ce qui permet aux utilisateurs et utilisatrices de parcourir tous les éléments interactifs sans passer ou revenir en arrière de manière inattendue. (SITES-24937)
+* L’ordre de focus confirmé sur la page de l’éditeur suit une séquence logique, ce qui permet aux utilisateurs et utilisatrices de parcourir tous les éléments interactifs sans passer ou revenir en arrière de manière inattendue. (SITES-24937)
 * La zone de travail du mode d’aperçu confirmée met correctement à jour l’espacement du texte lorsque les utilisateurs et utilisatrices appliquent des paramètres d’espacement personnalisés, assurant ainsi une mise en forme cohérente dans toutes les zones de contenu. (SITES-24936)
 * Le bouton Aperçu vérifié ne déclenche plus de changements de contexte ou d’état, ce qui garantit que les utilisateurs et utilisatrices activent délibérément le bouton avant la mise à jour des pages vues. (SITES-24784)
 * Ajout d’affectations de rôles ARIA correctes aux liens de navigation de l’application, permettant aux lecteurs d’écran d’identifier et d’annoncer précisément les éléments de navigation pour une meilleure accessibilité. (SITES-24718)
@@ -213,10 +217,7 @@ Correction d’un problème en raison duquel la synchronisation des ressources d
 
 #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp1}
 
-
-
 ### [!DNL Forms]{#forms-65-lts-sp1}
-
 
 #### Forms Designer 
 
@@ -231,8 +232,6 @@ Correction d’un problème en raison duquel la synchronisation des ressources d
 #### [!DNL Adaptive Forms] {#adaptive-forms-65-lts-sp1}
 
 #### [!DNL Forms Designer] {#forms-designer-65-lts-sp1} -->
-
-
 
 ### Foundation {#foundation-65-lts-sp1}
 
@@ -605,6 +604,9 @@ Lors de l’accès à la page Autorisations sous Outils -> Sécurité dans AEM 6
 **Solution :**
 Un correctif [cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) est disponible pour résoudre ce problème.
 
+### Forms JEE
+
+* Les utilisateurs des environnements Linux peuvent rencontrer des échecs de script du programme d’installation ou de Configuration Manager (LCM) en raison de terminaisons de ligne de type Windows. Convertissez tous les fichiers .sh à l’aide de dos2unix avant d’exécuter le programme d’installation ou LCM pour éviter les erreurs d’exécution.
 
 ## Lots OSGi et modules de contenu inclus{#osgi-bundles-and-content-packages-included}
 
