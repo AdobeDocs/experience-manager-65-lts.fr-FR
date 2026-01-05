@@ -1,16 +1,16 @@
 ---
 title: Correctifs Adobe Experience Manager Forms 6.5 LTS SP1
 description: Fournit des informations sur la manière de télécharger et d’installer un correctif pour AEM Forms 6.5 LTS.
-exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 6ca845ce5f4b97bfc5a360b3426f7284fb9cd401
+source-git-commit: 504240bdad9e964460a9fcdc555228c7cb02e314
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 45%
 
 ---
+
 
 # Correctifs LTS Adobe Experience Manager Forms 6.5{#aem-form-hotfix}
 
@@ -35,7 +35,7 @@ Cet article répertorie les correctifs critiques implémentés pour résoudre le
     <td>
     <ul>
     <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-correctif-on-add-on/adobe-aemfd-win-pkg-6.1.176-RHF-002.zip">Correctif2 pour le pack de services 6.5 LTS d’AEM sous Windows</a></li>
-    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]correctif-sur-modulecomplémentaire/adobe-aemfd-linux-pkg-6.1.176-RHF-002.zip">Hotfix2 pour AEM Service Pack 6.5 LTS sous Linux</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]correctif-sur-module complémentaire/adobe-aemfd-linux-pkg-6.1.176-RHF-002.zip">Hotfix2 pour AEM Service Pack 6.5 LTS sous Linux</a></li>
      <li>MacOS - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-osx-pkg-6.1.176-RHF-002.zip">correctif2 pour AEM Service Pack 6.5 LTS sur MacOS</a></li>
     <td>
     <ul>
