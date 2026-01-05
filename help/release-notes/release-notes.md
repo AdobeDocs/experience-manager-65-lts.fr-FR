@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6fdc7449673bede6a35151d4e7b97c6aa1605d4e
+source-git-commit: c9a7faf5810e78f8e80b38a87446794488efdd35
 workflow-type: tm+mt
-source-wordcount: '7477'
-ht-degree: 98%
+source-wordcount: '7355'
+ht-degree: 99%
 
 ---
 
@@ -319,6 +319,10 @@ Correction d’un problème d’accessibilité en raison duquel les espaces rés
 * Correction d’une erreur inattendue de compilation JSP avec `org.apache.sling.scripting.jsp 2.6.0`. (NPR-42640)
 
 <!--
+* Backported the fix for Sling Scripting issue that caused `DataTimeParseException` and `String.length()` null pointer exceptions during package installation. Updated Sling Scripting to version 2.8.3-1.0.10.6 to reduce installation errors and improve stability. (NPR-42640) -->
+
+<!--
+
 #### Translation{#foundation-translation-65-lts-sp1} -->
 
 #### Interface d’utilisation{#foundation-ui-65-lts-sp1}
@@ -406,7 +410,6 @@ Correction d’un problème d’accessibilité en raison duquel les espaces rés
 * Les utilisateurs et les utilisatrices n’ont pas pu utiliser la fonctionnalité de chronologie des fichiers PDF dans les formulaires AEM. Ce problème a affecté la capacité des utilisateurs et des utilisatrices à suivre efficacement les modifications et les révisions de documents. Lors du chargement d’un PDF dans la section Formulaires et documents de l’espace AEM Forms, l’affichage de la chronologie cessait de fonctionner. (FORMS-19408)
 * Les utilisateurs et les utilisatrices rencontrent une exception de pointeur nul lors de l’interaction avec OData. Cela entraîne des interruptions dans les processus de récupération des données. (FORMS-20348)
 * Suppression de la bibliothèque google.common.collect suite à la suppression de Guava, une bibliothèque Java open source. Cette mise à jour garantit une meilleure compatibilité et de meilleures performances pour la clientèle Enterprise qui utilise Adaptive Forms. (FORMS-17031)
-* Lorsque la validation côté serveur (SSV) est activée, les envois de formulaires peuvent échouer. Si vous rencontrez ce problème, contactez l’assistance [d’Adobe](https://business.adobe.com/in/support/main.html) pour obtenir de l’aide. (FORMS-21966)
 
 ### Captcha de formulaires
 
@@ -567,6 +570,19 @@ Cette section répertorie les fonctionnalités qui ont été supprimées dans AE
 
 <!-- DO THESE KNOWN ISSUES CARRY OVER EACH RELEASE? THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
 
+<!-- REMOVED THIS SECTION AS PER CQDOC-23046
+### Issue with JSP scripting bundle in AEM 6.5.21-6.5.23 and AEM 6.5 LTS GA
+
+AEM 6.5.21, 6.5.22, 6.5.23, and AEM 6.5 LTS GA ship with the `org.apache.sling.scripting.jsp:2.6.0` bundle, which contains a known issue. The issue typically occurs under high load when the AEM instance handles many concurrent requests.
+
+When this issue occurs, one of the following exceptions may appear in the error logs alongside references to `org.apache.sling.scripting.jsp:2.6.0`:
+
+* `java.io.IOException: classFile.delete() failed`
+* `java.io.IOException: tmpFile.renameTo(classFile) failed`
+* `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
+* `java.io.FileNotFoundException`
+
+A hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) is available to resolve this problem. -->
 
 ### Échec de connexion à Dispatcher avec la fonction SSL uniquement (corrigé dans AEM 6.5 LTS SP1 et versions ultérieures){#ssl-only-feature}
 
@@ -592,21 +608,6 @@ Lors de l’activation de la fonction SSL uniquement dans les déploiements AEM,
 
 **Solution :**
 Si vous rencontrez ce problème, contactez l’Assistance Client d’Adobe. Un correctif [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) est disponible pour résoudre ce problème. N’essayez pas d’activer les fonctions SSL uniquement avant d’avoir appliqué le correctif nécessaire.
-
-### Page Autorisations vide dans l’interface utilisateur de sécurité d’AEM 6.5 LTS SP1
-
->[!NOTE]
->
-> Ce problème est uniquement présent dans la version AEM 6.5 LTS SP1.
-
-Lors de l’accès à la page Autorisations sous Outils -> Sécurité dans AEM 6.5 LTS SP1, une page vierge s’affiche au lieu des autorisations d’un utilisateur ou d’un groupe.
-
-**Solution :**
-Un correctif [cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) est disponible pour résoudre ce problème.
-
-### Forms JEE
-
-* Les utilisateurs des environnements Linux peuvent rencontrer des échecs de script du programme d’installation ou de Configuration Manager (LCM) en raison de terminaisons de ligne de type Windows. Convertissez tous les fichiers .sh à l’aide de dos2unix avant d’exécuter le programme d’installation ou LCM pour éviter les erreurs d’exécution.
 
 ## Lots OSGi et modules de contenu inclus{#osgi-bundles-and-content-packages-included}
 
