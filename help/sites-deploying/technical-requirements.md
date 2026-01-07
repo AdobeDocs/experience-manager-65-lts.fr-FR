@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 075f671d878f9bd9be33a059223800fa9acddf40
+source-git-commit: d55edd443081ba21be7f119a77fcd01f68f47d4e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3232'
+ht-degree: 94%
 
 ---
 
@@ -138,7 +138,7 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 
 Adobe Experience Manager peut s’exécuter en tant que serveur autonome (fichier JAR de démarrage rapide) ou en tant qu’application web dans un serveur d’applications tiers (fichier WAR).
 
-La version minimale requise de l’API de servlet est la servlet 3.1. En outre, AEM prend en charge le servlet Jakarta 5 pour jar et war peut être déployé dans les serveurs d’applications qui mettent en œuvre l’API du servlet Jakarta 5/6.
+La version minimale requise de l’API de servlet est la servlet 3.1. En outre, AEM Forms prend en charge le servlet Jakarta 5 pour jar et war peut être déployé dans les serveurs d’applications qui mettent en œuvre l’API du servlet Jakarta 5/6.
 
 | Plateforme | Niveau de prise en charge |
 |---|---|
@@ -413,9 +413,8 @@ Pour Windows x86 :
 >* PDF Generator prend uniquement en charge la version 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
 >* Si une installation Microsoft® Office est désactivée ou n’a pas de licence pour une raison quelconque, par exemple si une installation sous licence en volume ne parvient pas à localiser un hôte KMS dans un délai spécifié, les conversions peuvent échouer jusqu’à ce que l’installation reçoive une nouvelle licence et soit réactivée.
 >* PDF Generator ne prend pas en charge Microsoft® Office 365.
->* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux®.
+>* Les conversions PDF Generator pour OpenOffice sont prises en charge sous Windows et Linux®.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont uniquement prises en charge sous Windows.
->* Une version d’Acrobat est fournie avec AEM Forms pour activer la fonctionnalité PDF Generator. La version groupée ne doit être accessible par programmation qu’avec AEM Forms, pendant la durée de la licence AEM Forms, pour une utilisation avec AEM Forms PDF Generator uniquement. Pour plus d’informations, consultez la description du produit AEM Forms correspondant à votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 >* Le service PDF Generator ne prend pas en charge Microsoft® Windows 11.
 
 
