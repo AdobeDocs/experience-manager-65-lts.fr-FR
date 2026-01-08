@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: d55edd443081ba21be7f119a77fcd01f68f47d4e
+source-git-commit: 4097adf1dd533bbf21c8635a1948f9ef4c294896
 workflow-type: tm+mt
-source-wordcount: '3232'
-ht-degree: 94%
+source-wordcount: '2877'
+ht-degree: 92%
 
 ---
 
@@ -415,57 +415,7 @@ Pour Windows x86 :
 >* PDF Generator ne prend pas en charge Microsoft® Office 365.
 >* Les conversions PDF Generator pour OpenOffice sont prises en charge sous Windows et Linux®.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont uniquement prises en charge sous Windows.
->* Le service PDF Generator ne prend pas en charge Microsoft® Windows 11.
-
-
-<table>
- <tbody>
-  <tr>
-   <th><p><strong>Produit</strong></p> </th>
-   <th><p><strong>Formats pris en charge pour la conversion en PDF</strong></p> </th>
-  </tr>
-  <tr>
-   <td>Dernière version <a href="https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html">Suivi classique Acrobat 2020</a></td>
-   <td>XPS, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF et DWF</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Office 2019</td>
-   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF et TXT</td>
-  </tr>
-  <tr>
-   <td>WordPerfect 2020<br /> </td>
-   <td>WP, WPD</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2019<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>OpenOffice 4.1.10</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF et TXT</td>
-  </tr>
- </tbody>
-</table>
-
->[!NOTE]
->
->PDF Generator ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
->
->En outre :
->
->* PDF Generator requiert la version 32 bits d’[Acrobat 2020 (suivi Classic) version 20.004.30006](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) ou d’Acrobat 2017 version 17.011.30078 pour effectuer la conversion.
->* PDF Generator prend uniquement en charge la version commerciale 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
->* L’installation de Microsoft® Office Professional Plus peut utiliser des licences en volume Retail ou MAK/KMS/AD.
->* Si une installation Microsoft® Office est désactivée ou n’a pas de licence pour une raison quelconque, par exemple si une installation sous licence en volume ne parvient pas à localiser un hôte KMS dans un délai spécifié, les conversions peuvent échouer jusqu’à ce que l’installation reçoive une nouvelle licence et soit réactivée.
->* PDF Generator prend en charge les versions 32 et 64 bits d’OpenOffice sous le système d’exploitation Linux®.
->* PDF Generator ne prend pas en charge Microsoft® Office 365.
->* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux®.
->* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont uniquement prises en charge sous Windows.
->* Une version d’Acrobat est fournie avec AEM Forms pour activer la fonctionnalité PDF Generator. Accédez à la version groupée uniquement par programmation avec AEM Forms, pendant la durée de la licence AEM Forms et pour une utilisation avec AEM Forms PDF Generator. Pour plus d’informations, consultez la description du produit AEM Forms correspondant à votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
->* Le service PDF Generator ne prend pas en charge Microsoft® Windows 10.
->* PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft® Visio 2019. Vous pouvez continuer à utiliser Microsoft® Visio 2016 pour convertir les fichiers `.VSD` et `.VSDX`.
->* PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft® Project 2019. Vous pouvez continuer à utiliser Microsoft® Project 2016 pour convertir les fichiers `.VSD` et `.VSDX`.
->
+>* Le service PDF Generator ne prend pas en charge Microsoft® Windows 11
 
 ### Conditions requises pour AEM Forms Designer {#requirements-for-aem-forms-designer}
 
@@ -499,3 +449,5 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 ### Conditions requises pour qu’AEM Assets traite les ressources lourdes en métadonnées sous Linux® {#assetsonlinux}
 
 Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux® contenant GLIBC_2.14, par exemple un noyau Linux® version 3.1.x. Cela améliore les performances de traitement des ressources qui contiennent un grand nombre de métadonnées, comme les fichiers PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+
+Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[AEM Forms](https://business.adobe.com/in/support/main.html)
