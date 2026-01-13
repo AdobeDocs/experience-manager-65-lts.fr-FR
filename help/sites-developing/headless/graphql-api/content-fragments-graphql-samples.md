@@ -5,7 +5,7 @@ feature: Content Fragments,GraphQL API
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: 9a953caa-47d3-4e06-a27d-2a0c3fc72597
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: c2947923fb83b57bc0e1c068af52558dd0a04867
 workflow-type: tm+mt
 source-wordcount: '1577'
 ht-degree: 99%
@@ -229,7 +229,7 @@ Il s’agit d’une requête simple pour renvoyer l’élément `name`de toutes 
 
 **Exemple de requête**
 
-```xmgraphqll
+```graphql
 query {
   cityList {
     items {
