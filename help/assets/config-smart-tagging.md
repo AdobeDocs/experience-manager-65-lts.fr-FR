@@ -19,7 +19,7 @@ Avant d’utiliser le service de contenu dynamique, vérifiez les points suivant
 
 * [Intégration à la console Adobe Developer](#integrate-adobe-io).
 * [Entraînement du service de contenu dynamique](#training-the-smart-content-service)
-* Installez le dernier pack de services [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
+* Installez le dernier pack de services [[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
 
 >[!IMPORTANT]
 >
@@ -154,7 +154,7 @@ Le résultat de la validation s’affiche dans la même boîte de dialogue.
 
 1. Cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
 
-1. Développez le panneau latéral pour afficher les étapes. Faites glisser l’étape Balise intelligente de la ressource disponible dans la section Workflow de DAM (gestion des actifs numériques) et placez-la après l’étape Traiter les miniatures.********
+1. Développez le panneau latéral pour afficher les étapes. Faites glisser l’étape Balise intelligente de la ressource disponible dans la section Workflow de DAM (gestion des actifs numériques) et placez-la après l’étape Traiter les miniatures.**&#x200B;**&#x200B;**&#x200B;**
 
    ![Ajout de l’étape Balise intelligente de la ressource après l’étape Miniatures des processus dans le processus Ressources de mise à jour de gestion des actifs numériques (DAM)](assets/smart-tag-in-dam-update-asset-workflow.png)
 
