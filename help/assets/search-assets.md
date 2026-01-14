@@ -7,10 +7,10 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
-source-git-commit: df4b8b9c80734917569c40d01ea5789e16bfb4e3
+source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
 workflow-type: tm+mt
-source-wordcount: '5635'
-ht-degree: 99%
+source-wordcount: '5633'
+ht-degree: 98%
 
 ---
 
@@ -91,7 +91,7 @@ L’utilisation de balises intelligentes ajoute une clause `OR` pour trouver l�
 
 * ressources avec les mots-clés `woman` et `running` dans les métadonnées (comportement par défaut) ;
 
-* ressources balisées intelligemment avec l’un des mots-clés (comportement des balises intelligentes).
+* ressources avec balises intelligentes avec l’un des mots-clés (comportement des balises intelligentes).
 
 ### Suggestions de recherche en cours de frappe {#searchsuggestions}
 
@@ -125,7 +125,7 @@ Vous pouvez améliorer la pertinence des mots-clés pour des ressources particul
 
 Vous pouvez l’utiliser à votre avantage en améliorant le classement de certaines ressources dans les résultats de recherche du mot-clé ciblé. Voir la vidéo d’exemple ci-dessous. Pour plus d’informations, voir [Recherche dans [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3410336/?quality=6&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Vidéo : Découvrez comment les résultats de recherche sont classés et comment le classement peut être influencé.*
 
@@ -143,7 +143,7 @@ Vous pouvez l’utiliser à votre avantage en améliorant le classement de certa
 
 ### Rechercher des images similaires {#visualsearch}
 
-Pour rechercher des images visuellement similaires à une image sélectionnée par l’utilisateur, cliquez sur l’option **[!UICONTROL Rechercher des images similaires]** dans le mode Carte d’une image ou dans la barre d’outils. [!DNL Experience Manager] affiche les images balisées intelligentes du référentiel de gestion des ressources numériques qui sont similaires à une image sélectionnée par l’utilisateur. Consultez la section [Configuration de la recherche par analogie](#configvisualsearch).
+Pour rechercher des images visuellement similaires à une image sélectionnée par l’utilisateur, cliquez sur l’option **[!UICONTROL Rechercher des images similaires]** dans le mode Carte d’une image ou dans la barre d’outils. [!DNL Experience Manager] affiche les images avec balises intelligentes du référentiel DAM qui sont semblables à une image sélectionnée par l’utilisateur ou l’utilisatrice. Consultez la section [Configuration de la recherche par analogie](#configvisualsearch).
 
 ![Rechercher des images similaires à l’aide de l’option en mode Carte](assets/search_find_similar.png)
 
@@ -155,7 +155,7 @@ Dans l’interface utilisateur d’[!DNL Experience Manager], les utilisateurs p
 
 ### Ressources Dynamic Media {#dmassets}
 
-Vous pouvez filtrer les images Dynamic Media en sélectionnant **[!UICONTROL Dynamic Media]** > **[!UICONTROL Visionneuses]** dans le panneau **[!UICONTROL Filtres]**. Il filtre et affiche des ressources telles que des visionneuses d’images, des carrousels, des visionneuses de supports variés et des visionneuses à 360°.
+Vous pouvez filtrer les images Dynamic Media en sélectionnant **[!UICONTROL Dynamic Media]** > **[!UICONTROL Visionneuses]** dans le panneau **[!UICONTROL Filtres]**. Il filtre et affiche des ressources telles que des ensembles d’images, des carrousels, des visionneuses de supports variés et des visionneuses à 360°.
 
 ### Recherche GQL à l’aide de valeurs spécifiques dans les champs de métadonnées {#gql-search}
 
@@ -204,11 +204,11 @@ Voici quelques exemples de formats de recherche pour des requêtes complexes :
 
 ## Recherche de ressources numériques à partir d’autres offres ou interfaces [!DNL Experience Manager] {#search-assets-other-surfaces}
 
-[!DNL Adobe Experience Manager] connecte le référentiel de gestion des ressources numériques à d’autres solutions [!DNL Experience Manager] afin de fournir un accès plus rapide aux ressources numériques et de rationaliser les workflows de création. Toute découverte de ressources commence par la navigation ou la recherche. Le comportement de recherche reste largement le même sur les différentes surfaces et solutions. Certaines méthodes de recherche changent lorsque le public cible, les cas d’utilisation et l’interface utilisateur varient d’une solution [!DNL Experience Manager] à l’autre. Les méthodes spécifiques sont documentées pour les solutions individuelles dans les liens ci-dessous. Les conseils et comportements universellement applicables sont décrits dans cet article.
+[!DNL Adobe Experience Manager] connecte le référentiel de gestion des ressources numériques à d’autres solutions [!DNL Experience Manager] afin de fournir un accès plus rapide aux ressources numériques et de rationaliser les workflows de création. Toute découverte de ressources commence par la navigation ou la recherche. Le comportement de recherche reste largement le même sur les différentes surfaces et solutions. Certaines méthodes de recherche changent lorsque l’audience cible, les cas d’utilisation et l’interface utilisateur varient d’une solution [!DNL Experience Manager] à l’autre. Les méthodes spécifiques sont documentées pour les solutions individuelles dans les liens ci-dessous. Les conseils et comportements universellement applicables sont décrits dans cet article.
 
 ### Recherche de ressources numériques à partir du panneau Adobe Asset Link {#aal}
 
-Grâce à Adobe Asset Link, les professionnels de la création peuvent désormais accéder au contenu stocké dans [!DNL Experience Manager Assets], sans quitter les applications Adobe Creative Cloud prises en charge. Ils peuvent parcourir, rechercher, extraire et archiver des ressources de manière transparente à l’aide du panneau intégré à l’application dans les applications [!DNL Adobe Creative Cloud] : [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] et [!DNL Adobe InDesign]. Asset Link permet également aux utilisateurs de rechercher des résultats visuellement similaires. Les résultats d’affichage de la recherche visuelle sont optimisés par les algorithmes de machine learning d’Adobe Sensei et aident les utilisateurs à trouver des images à l’esthétique similaire. Voir [Rechercher et parcourir des ressources](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) à l’aide d’Adobe Asset Link.
+Grâce à Adobe Asset Link, les professionnels de la création peuvent désormais accéder au contenu stocké dans [!DNL Experience Manager Assets], sans quitter les applications Adobe Creative Cloud prises en charge. Ils peuvent parcourir, rechercher, extraire et archiver des ressources de manière transparente à l’aide du panneau intégré à l’application dans les applications [!DNL Adobe Creative Cloud] : [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] et [!DNL Adobe InDesign]. Asset Link permet également aux utilisateurs de rechercher des résultats visuellement similaires. Les résultats de l’affichage de la recherche visuelle sont optimisés par les algorithmes de machine learning d’Adobe AI et aident les utilisateurs à trouver des images esthétiquement similaires. Voir [Rechercher et parcourir des ressources](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) à l’aide d’Adobe Asset Link.
 
 ### Recherche de ressources numériques dans l’application de bureau [!DNL Experience Manager] {#desktop-app}
 
@@ -224,7 +224,7 @@ Dans l’interface utilisateur d’[!DNL Experience Manager], les utilisateurs p
 
 ### Recherche de [!DNL Dynamic Media] ressources {#dynamic-media}
 
-Vous pouvez filtrer les images Dynamic Media en sélectionnant **[!UICONTROL Dynamic Media]** > **[!UICONTROL Visionneuses]** dans le panneau **[!UICONTROL Filtres]**. Il filtre et affiche des ressources telles que des visionneuses d’images, des carrousels, des visionneuses de supports variés et des visionneuses à 360°. Lors de la création de pages web, les auteurs peuvent rechercher des visionneuses dans l’outil de recherche de contenu. Un filtre est disponible pour les visionneuses dans un menu pop-up.
+Vous pouvez filtrer les images Dynamic Media en sélectionnant **[!UICONTROL Dynamic Media]** > **[!UICONTROL Visionneuses]** dans le panneau **[!UICONTROL Filtres]**. Il filtre et affiche des ressources telles que des ensembles d’images, des carrousels, des visionneuses de supports variés et des visionneuses à 360°. Lors de la création de pages web, les auteurs peuvent rechercher des visionneuses dans l’outil de recherche de contenu. Un filtre est disponible pour les visionneuses dans un menu pop-up.
 
 ### Recherche de ressources numériques dans l’outil de recherche de contenu lors de la création de pages web {#content-finder}
 
@@ -291,7 +291,7 @@ La fonctionnalité de recherche peut présenter des limitations de performances 
 * La recherche en texte intégral prend en charge les opérateurs tels que `-` et `^`. Pour rechercher des informations sous forme de chaînes littérales, indiquez la phrase de recherche entre guillemets. Par exemple, utilisez `"Notebook - Beauty"` au lieu de `Notebook - Beauty`.
 * Si les résultats de recherche sont trop nombreux, limitez la [portée de la recherche](#scope) pour trouver les ressources souhaitées. Cela fonctionne mieux lorsque vous avez une idée de la meilleure manière de rechercher les ressources que vous recherchez, par exemple un type de fichier, un emplacement ou des métadonnées spécifiques.
 
-* **Balisage** : les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces. Le balisage permet de propager la taxonomie appropriée à d’autres utilisateurs et workflows. [!DNL Experience Manager] propose des méthodes pour baliser automatiquement les ressources à l’aide des services d’intelligence artificielle d’Adobe Sensei, qui améliorent constamment le balisage de vos ressources au fil de l’utilisation et de l’entraînement. Lorsque vous recherchez des ressources, les balises intelligentes sont prises en compte si la fonction est activée sur votre compte. Cela fonctionne avec la fonctionnalité de recherche intégrée. Voir [Comportement de la recherche](#searchbehavior). Pour optimiser l’ordre d’affichage des résultats de recherche, vous pouvez [améliorer le classement](#searchrank) de quelques ressources sélectionnées.
+* **Balisage** : les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces. Le balisage permet de propager la taxonomie appropriée à d’autres utilisateurs et workflows. [!DNL Experience Manager] propose des méthodes pour baliser automatiquement les ressources à l’aide des services d’IA d’Adobe qui améliorent constamment le balisage de vos ressources avec l’utilisation et la formation. Lorsque vous recherchez des ressources, les balises intelligentes sont prises en compte si la fonction est activée sur votre compte. Cela fonctionne avec la fonctionnalité de recherche intégrée. Voir [Comportement de la recherche](#searchbehavior). Pour optimiser l’ordre d’affichage des résultats de recherche, vous pouvez [améliorer le classement](#searchrank) de quelques ressources sélectionnées.
 
 * **Indexation** : seules les métadonnées et les ressources indexées sont renvoyées dans les résultats de recherche. Pour une meilleure couverture et de meilleures performances, veillez à une indexation appropriée et suivez les bonnes pratiques. Voir [Indexation](#searchindex).
 
@@ -482,14 +482,14 @@ Liez et dissociez les ressources qui s’affichent dans les résultats de recher
 | Résultats incorrects lors de la recherche de ressources avec des métadonnées manquantes. | Lors de la recherche de ressources qui ne contiennent pas les métadonnées obligatoires, [!DNL Experience Manager] peut afficher certaines ressources qui ont des métadonnées valides. Les résultats reposent sur la propriété de métadonnées indexées. | Une fois les métadonnées mises à jour, une nouvelle indexation est nécessaire pour refléter l’état correct des métadonnées des ressources. Voir [Métadonnées obligatoires](metadata-schemas.md#define-mandatory-metadata). |
 | Trop de résultats de recherche. | Paramètre de recherche étendu. | Envisagez de limiter la [portée de la recherche](#scope). L’utilisation de balises intelligentes peut produire plus de résultats de recherche que vous ne le pensiez. Voir [Comportement de la recherche avec des balises intelligentes](#withsmarttags). |
 | Résultats de recherche sans rapport ou partiellement liés. | Le comportement de la recherche change avec le balisage intelligent. | Comprendre [comment change la recherche après le balisage intelligent](#withsmarttags). |
-| Aucune suggestion de saisie semi-automatique pour les ressources. | Les ressources qui viennent d’être chargées ne sont pas encore indexées. Les métadonnées ne sont pas immédiatement disponibles comme suggestions lorsque vous commencez à saisir un mot-clé de recherche dans la barre Omni-recherche. | [!DNL Experience Manager] attend jusqu’à l’expiration d’un délai d’attente (par défaut, une heure) avant d’effectuer une tâche en arrière-plan afin d’indexer les métadonnées pour toutes les ressources chargées/mises à jour dernièrement et de les ajouter à la liste de suggestions. |
+| Aucune suggestion de saisie semi-automatique pour les ressources. | Les ressources qui viennent d’être chargées ne sont pas encore indexées. Les métadonnées ne sont pas immédiatement disponibles comme suggestions lorsque vous commencez à saisir un mot-clé de recherche dans la barre Omni-recherche. | [!DNL Experience Manager] attend jusqu’au dépassement d’un délai d’expiration (par défaut, une heure) avant d’effectuer une tâche en arrière-plan afin d’indexer les métadonnées pour toutes les ressources chargées/mises à jour dernièrement et de les ajouter à la liste de suggestions. |
 | Aucun résultat de recherche. | <ul><li>Les ressources correspondant à votre requête n’existent pas. </li><li> Espace ajouté avant la requête de recherche. </li><li> Un champ de métadonnées non pris en charge contient le mot-clé que vous avez recherché.</li><li> Recherche effectuée pendant qu’une ressource était désactivée. </li></ul> | <ul><li>Rechercher avec un autre mot-clé. Vous pouvez également utiliser le balisage intelligent ou la recherche par analogie pour améliorer les résultats de la recherche. </li><li>[Limite connue](#limitations).</li><li>Certains champs de métadonnées ne sont pas pris en compte pour les recherches. Voir [Portée](#scope).</li><li>Effectuer une recherche plus tard ou modifier l’heure d’activation et de désactivation des ressources requises.</li></ul> |
 | Aucun filtre de recherche ou prédicat n’est disponible. | <ul><li>Le filtre de recherche n’est pas configuré.</li><li>Il n’est pas disponible pour votre connexion.</li><li>(Moins probable) Les options de recherche ne sont pas personnalisées sur le déploiement que vous utilisez.</li></ul> | <ul><li>Contacter l’administrateur pour vérifier la disponibilité de personnalisations de la recherche.</li><li>Contacter l’administrateur pour vérifier si votre compte dispose du privilège ou d’autorisations permettant d’utiliser la personnalisation.</li><li>Contacter l’administrateur et vérifier les personnalisations disponibles pour le déploiement [!DNL Assets] que vous utilisez.</li></ul> |
-| Lors de la recherche d’images similaires visuellement, une image attendue est manquante. | <ul><li>L’image n’est pas disponible dans [!DNL Experience Manager].</li><li>L’image n’est pas indexée. Généralement lorsqu’elle a été téléchargée récemment.</li><li>L’image ne présente pas de balisage intelligent.</li></ul> | <ul><li>Ajoutez l’image à [!DNL Assets].</li><li>Contactez votre administrateur pour indexer à nouveau le référentiel. Veillez également à utiliser l’index approprié.</li><li>Contactez votre administrateur pour procéder au balisage intelligent des ressources appropriées.</li></ul> |
+| Lors de la recherche d’images similaires visuellement, une image attendue est manquante. | <ul><li>L’image n’est pas disponible dans [!DNL Experience Manager].</li><li>L’image n’est pas indexée. Généralement lorsqu’elle a été téléchargée récemment.</li><li>L’image ne présente pas de balises intelligentes.</li></ul> | <ul><li>Ajoutez l’image à [!DNL Assets].</li><li>Contactez votre administrateur pour indexer à nouveau le référentiel. Veillez également à utiliser l’index approprié.</li><li>Contactez votre administrateur ou administratrice pour procéder au balisage intelligent des ressources appropriées.</li></ul> |
 | Lors de la recherche d’images similaires visuellement, une image inappropriée est affichée. | Comportement de recherche visuelle. | [!DNL Experience Manager] affiche autant de ressources potentiellement pertinentes que possible. Les images moins pertinentes, le cas échéant, sont ajoutées aux résultats, mais avec un classement inférieur dans les résultats de recherche. La qualité des correspondances et la pertinence des ressources recherchées diminuent à mesure que vous descendez dans les résultats de la recherche. |
 | Lors de la sélection de résultats de la recherche et d’action sur ces résultats, aucune action n’est réalisée sur certaines ressources recherchées. | L’option [!UICONTROL Sélectionner tout] ne sélectionne que les 100 premiers résultats de recherche dans la vue Carte et les 200 premiers résultats de recherche dans la vue Liste. | |
 
 >[!MORELIKETHIS]
 >
->* Guide de mise en œuvre des recherches[[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr)
+>* Guide de mise en œuvre des recherches[[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr)
 >* [Configuration avancée pour améliorer les résultats de recherche](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/search-and-discovery/search-boost)

@@ -7,10 +7,10 @@ feature: Asset Management,Search
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: cb7d28ce-c6bd-4760-b5fd-d0ecb3426844
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -47,9 +47,9 @@ La méthode la plus simple pour organiser les ressources consiste à les enregis
 
 ## Organisation de ressources à l’aide de balises {#use-tags-to-organize-assets}
 
-À l’aide de balises telles que les métadonnées, vous pouvez facilement rechercher des ressources, créer des collections à l’aide des résultats de recherche, améliorer le classement de certaines ressources et appliquer des algorithmes d’IA d’Adobe Sensei pour la découverte de ressources.
+À l’aide des balises telles que les métadonnées, vous pouvez facilement rechercher des ressources, créer des collections à l’aide des résultats de recherche, améliorer le classement de certaines ressources et utiliser des algorithmes d’intelligence artificielle de l’IA d’Adobe pour la découverte de ressources.
 
-[!DNL Adobe Experience Manager Assets] utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, l’intelligence artificielle et la structure de machine learning d’Adobe, qui peuvent être entraînés pour reconnaître et pour appliquer des balises standards et commerciales à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
+[!DNL Adobe Experience Manager Assets] utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise l’IA d’Adobe, l’intelligence artificielle d’Adobe et un framework de machine learning, qui peuvent être entraînés pour reconnaître et appliquer des balises standard et commerciales à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
 
 Pour plus d’informations, consultez les articles suivants :
 

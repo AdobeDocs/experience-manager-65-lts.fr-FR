@@ -5,7 +5,7 @@ role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: be7c294c-149b-4825-8376-573f9e2987e2
-source-git-commit: 1cedead501597fb655c2c7b87336b29cbf048294
+source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
 workflow-type: tm+mt
 source-wordcount: '1896'
 ht-degree: 97%
@@ -14,12 +14,12 @@ ht-degree: 97%
 
 # Préparation de [!DNL Assets] pour le balisage intelligent {#configure-asset-tagging-using-the-smart-content-service}
 
-Avant de commencer à baliser vos ressources à l’aide des services de contenu dynamique, intégrez [!DNL Experience Manager Assets] à l’Adobe Developer Console pour tirer parti du service dynamique d’[!DNL Adobe Sensei]. Une fois configuré, entraînez le service à l’aide de quelques images et d’une balise.
+Avant de commencer à baliser vos ressources à l’aide des services de contenu dynamique, intégrez [!DNL Experience Manager Assets] à l’Adobe Developer Console pour tirer parti du service dynamique d’[!DNL Adobe AI]. Une fois configuré, entraînez le service à l’aide de quelques images et d’une balise.
 Avant d’utiliser le service de contenu dynamique, vérifiez les points suivants :
 
 * [Intégration à la console Adobe Developer](#integrate-adobe-io).
 * [Entraînement du service de contenu dynamique](#training-the-smart-content-service)
-* Installez le dernier pack de services [[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
+* Installez le dernier pack de services [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
 
 >[!IMPORTANT]
 >
@@ -49,7 +49,7 @@ Pour configurer le service de contenu dynamique, procédez comme suit :
 
 ### Créer l’intégration de l’Adobe Developer Console {#create-adobe-io-integration}
 
-Pour utiliser les API de service de contenu dynamique, créez une intégration dans l’Adobe Developer Console afin d’obtenir la [!UICONTROL Clé API] (générée dans le champ [!UICONTROL ID CLIENT] de l’intégration dans l’Adobe Developer Console), l’[!UICONTROL ID D’ORGANISATION] et le [!UICONTROL SECRET CLIENT] pour les [!UICONTROL Paramètres du service de balisage intelligent des ressources] de la configuration cloud dans [!DNL Experience Manager].
+Pour utiliser les API de service de contenu dynamique, créez une intégration dans Adobe Developer Console afin d’obtenir la [!UICONTROL Clé API] (générée dans le champ [!UICONTROL ID CLIENT] de l’intégration dans Adobe Developer Console), l’[!UICONTROL ID D’ORGANISATION] et le [!UICONTROL SECRET CLIENT] pour les [!UICONTROL Paramètres du service de balisage intelligent des ressources] de la configuration cloud dans [!DNL Experience Manager].
 
 1. Accédez à l’URL [https://developer.adobe.com](https://developer.adobe.com/) dans un navigateur. Sélectionnez le compte approprié et vérifiez que le rôle d’organisation associé est **administrateur ou administratrice** système.
 
@@ -118,7 +118,7 @@ Pour configurer l’intégration, utilisez les valeurs d’[!UICONTROL ID DE COM
    | -------- | ---------------------------- |
    | Titre | Ajoutez le titre du compte IMS de configuration. |
    | Configuration Adobe IMS associée | Sélectionnez une configuration dans le menu déroulant. |
-   | Service URL (URL du service) | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. Par exemple, `https://smartcontent.adobe.io/apac`. Vous pouvez indiquer `na`, `emea`, ou `apac` comme les régions où votre instance d’auteur Experience Manager est hébergée. |
+   | Service URL (URL du service) | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. Par exemple, `https://smartcontent.adobe.io/apac`. Vous pouvez indiquer `na`, `emea` ou `apac` en tant que régions où votre instance de création Experience Manager est hébergée. |
 
    >[!NOTE]
    >
@@ -154,19 +154,19 @@ Le résultat de la validation s’affiche dans la même boîte de dialogue.
 
 1. Cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
 
-1. Développez le panneau latéral pour afficher les étapes. Faites glisser l’étape **[!UICONTROL Balisage intelligent de la ressource]** disponible dans la section Processus de DAM (gestion des actifs numériques) et placez-la après l’étape **[!UICONTROL Miniatures des processus]**.
+1. Développez le panneau latéral pour afficher les étapes. Faites glisser l’étape Balise intelligente de la ressource disponible dans la section Workflow de DAM (gestion des actifs numériques) et placez-la après l’étape Traiter les miniatures.********
 
-   ![Ajout de l’étape Balisage intelligent de la ressource après l’étape Miniatures des processus dans le processus Ressources de mise à jour de gestion des ressources numériques (DAM)](assets/smart-tag-in-dam-update-asset-workflow.png)
+   ![Ajout de l’étape Balise intelligente de la ressource après l’étape Miniatures des processus dans le processus Ressources de mise à jour de gestion des actifs numériques (DAM)](assets/smart-tag-in-dam-update-asset-workflow.png)
 
 1. Ouvrez les propriétés de l’étape pour modifier les détails. Dans **[!UICONTROL Paramètres avancés]**, vérifiez que l’option **[!UICONTROL Avance du gestionnaire]** est sélectionnée.
 
-   ![Configuration du workflow de Ressource de mise à jour de la gestion des ressources numériques et ajout de l’étape de balisage intelligent](assets/smart-tag-step-properties-workflow1.png)
+   ![Configuration du workflow Ressource de mise à jour de la gestion des ressources numériques et ajout de l’étape des balises intelligentes](assets/smart-tag-step-properties-workflow1.png)
 
 1. Dans l’onglet **[!UICONTROL Arguments]**, sélectionnez **[!UICONTROL Ignorer les erreurs]** si vous souhaitez que le workflow se termine même si l’étape de balisage automatique échoue.
 
    De plus, pour baliser les ressources lors de leur chargement, et ce, que le balisage intelligent soit activé ou non dans les dossiers, cochez la case **[!UICONTROL Ignorer l’indicateur de balise intelligente]**.
 
-   ![Configuration du workflow de ressource de mise à jour de la gestion des ressources numériques pour ajouter l’étape de balisage intelligent et sélectionner l’avance du gestionnaire](assets/smart-tag-step-properties-workflow2.png)
+   ![Configuration du workflow Ressource de mise à jour de la gestion des ressources numériques pour ajouter l’étape des balises intelligentes et sélectionner l’avance du gestionnaire](assets/smart-tag-step-properties-workflow2.png)
 
 1. Cliquez sur Terminé ![Icône Terminé](assets/do-not-localize/check-ok-done-icon.png) pour fermer l’étape du processus.
 
@@ -258,7 +258,7 @@ Pour vérifier que le service de contenu dynamique est entraîné sur vos balise
 
 ## Limites {#limitations}
 
-* Le balisage intelligent amélioré est basé sur des modèles d’apprentissage d’images et de leurs balises. Ces modèles ne sont pas toujours parfaits pour identifier les balises. La version actuelle du service de contenu dynamique présente les limites suivantes :
+* Les balises intelligentes améliorées sont basées sur des modèles d’apprentissage d’images et de leurs balises. Ces modèles ne sont pas toujours parfaits pour identifier les balises. La version actuelle du service de contenu dynamique présente les limites suivantes :
 
    * Impossibilité d’identifier des différences subtiles dans les images. Par exemple, des chemises coupe droite ou ajustée.
    * Impossibilité d’identifier des balises basées sur des motifs ou des éléments minuscules d’une image. Par exemple, des logos sur des t-shirts.
