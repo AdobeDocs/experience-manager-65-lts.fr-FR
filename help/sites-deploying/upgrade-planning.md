@@ -10,7 +10,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 3fe5421e-e97e-43c4-b34b-b84bf189a779
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 425b3fae2658d78b0885f5034ff4c61da625d9d4
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 61%
@@ -29,7 +29,7 @@ Le processus de mise à niveau d’AEM nécessite une gestion attentive des phas
 
 >[!NOTE]
 >
->La mise à niveau vers AEM 6.5 LTS est prise en charge à partir des 6 derniers Service Packs
+>La mise à niveau vers AEM 6.5 LTS est disponible pour tous les packs de services 6.5 pris en charge.
 
 Il est important de vous assurer que vous exécutez un système d’exploitation pris en charge, le runtime Java™, httpd et la version de Dispatcher. Pour plus d’informations, consultez la section [Exigences techniques pour AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md). La mise à niveau de ces composants doit être prise en compte dans votre plan de mise à niveau et doit avoir lieu avant la mise à niveau d’AEM.
 
