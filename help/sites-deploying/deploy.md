@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: add91325feaa96338526edcdde977d1f619e09d4
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 93%
@@ -36,11 +36,11 @@ Dans cette page, vous trouverez les éléments suivants :
    * [Installation locale par défaut](#default-local-install)
    * [Installation des instances d’auteur et de publication](#author-and-publish-installs)
    * [Répertoire d’installation décompressé](#unpacked-install-directory)
-   * [Démarrage et arrêt](#starting-and-stopping)
+   * [Démarrer et arrêter](#starting-and-stopping)
 
 Une fois que vous serez à l’aise avec ces principes fondamentaux, vous pourrez lire des informations plus détaillées et avancées dans les pages secondaires suivantes :
 
-* [Exigences techniques &#x200B;](/help/sites-deploying/technical-requirements.md)
+* [Exigences techniques](/help/sites-deploying/technical-requirements.md)
 * [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md)
 * [Installation autonome personnalisée](/help/sites-deploying/custom-standalone-install.md)
 * [Installation du serveur d’applications](/help/sites-deploying/application-server-install.md)
@@ -137,7 +137,7 @@ La section qui suit décrit une **installation autonome**. Pour plus d’informa
 
    Emplacement d’installation UNIX® : **/opt/aem**
 
-   Emplacement d’installation de Windows : **`C:\Program Files\aem`**
+   Emplacement d’installation de Windows : **`C:\aem`**
 
    Il est aussi courant d’installer les exemples d’instance dans un dossier sur le bureau. Dans tous les cas, Adobe désigne cet emplacement de manière générique comme :
 
@@ -232,7 +232,7 @@ Lorsque le fichier jar quickstart est lancé pour la première fois, il est déc
 
 Si l’instance a été installée à partir de l’interface utilisateur, une fenêtre de navigateur s’ouvre automatiquement. Une fenêtre d’application de bureau s’ouvre également et affiche l’hôte et le port de l’instance, ainsi qu’un bouton bascule activé/désactivé :
 
-![écran de démarrage](assets/screen_shot_.png)
+![Écran de démarrage](assets/screen_shot_.png)
 
 ### Démarrer et arrêter {#starting-and-stopping}
 
