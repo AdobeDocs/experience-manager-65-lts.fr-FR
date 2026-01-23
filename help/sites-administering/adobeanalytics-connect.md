@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: a39ed93e-4276-48ff-ba49-d0f630409222
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1487'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -72,7 +72,7 @@ Utilisez la [console Web pour configurer le](/help/sites-deploying/configuring-o
 
    >[!NOTE]
    >
-   >Pour savoir si vous avez accès à cette console, contactez l’administrateur ou l’administratrice de votre site.
+   >Pour savoir si vous avez accès à cette console, contactez l’administrateur de votre site.
 
 1. Sélectionnez l’élément de configuration nommé **Client HTTP Adobe Analytics d’AEM**.
 1. Pour ajouter l’URL d’un centre de données, appuyez sur le bouton + situé en regard de la liste **URL de centre de données**, puis saisissez l’URL dans la boîte de dialogue.
@@ -168,7 +168,7 @@ Commencez par ouvrir le panneau. Appuyez sur la flèche vers le bas en regard de
 
 ## Associer une page à un framework d’Adobe Analytics {#associating-a-page-with-a-adobe-analytics-framework}
 
-Lorsqu’une page est associée à un framework Adobe Analytics, elle envoie des données à Adobe Analytics lors de son chargement. Les variables que la page renseigne sont mappées et extraites des variables Adobe Analytics dans la structure. Par exemple, les pages vues sont récupérées à partir d’Adobe Analytics.
+Lorsqu’une page est associée à un framework Adobe Analytics, elle envoie des données à Adobe Analytics lors de son chargement. Les variables que la page renseigne sont mappées et récupérées des variables Adobe Analytics dans la structure. Par exemple, les pages vues sont récupérées à partir d’Adobe Analytics.
 
 Les descendants de la page héritent de l’association avec la structure. Par exemple, lorsque vous associez la page racine de votre site à un framework, toutes les pages du site sont associées au framework.
 

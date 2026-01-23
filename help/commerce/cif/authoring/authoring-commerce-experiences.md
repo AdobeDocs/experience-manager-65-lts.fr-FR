@@ -5,10 +5,10 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: b749ec33-9a78-41d5-889f-73dbdb33ceed
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 97%
+source-wordcount: '712'
+ht-degree: 89%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 ## Vue d’ensemble {#overview}
 
-Le module complémentaire CIF étend la création d’AEM avec des fonctionnalités spécifiques au commerce. Cela permet aux auteurs de créer et de gérer efficacement des expériences liées au commerce en accédant aux données et au contenu des produits sans quitter le contexte.
+Le module complémentaire CIF étend la création d’AEM avec des fonctionnalités spécifiques au commerce. Cela permet aux créateurs et créatrices de créer et de gérer efficacement des expériences liées au commerce en accédant aux données et au contenu des produits sans quitter le contexte.
 
 ## Sélecteurs {#pickers}
 
@@ -64,7 +64,7 @@ L’onglet « Ressources » du panneau latéral de l’éditeur permet d’acc
 
 ![Panneau latéral des données du produit](/help/commerce/cif/assets/authoring/products-side-panel.png)
 
-À l’instar des ressources, les produits peuvent être ajoutés à une page (ce qui crée un composant de teaser de produit par défaut) ou aux composants (actuellement pris en charge sont le teaser de produit et le carrousel de produit).
+À l’instar des ressources, les produits peuvent être placés par glisser-déposer sur une page (ce qui crée un composant de teaser de produit par défaut) ou sur des composants (actuellement pris en charge sont le teaser de produit et le carrousel de produit).
 
 ### Ajout de liens dans des champs de texte à l’aide de l’éditeur de texte enrichi {#rte}
 

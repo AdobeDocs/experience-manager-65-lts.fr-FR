@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 3fafb5e6-f5ac-4c11-809f-6cb2c5269377
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '969'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ Le vérificateur de liens s’exécute automatiquement pour aider les créateurs
 * L’affichage d’une liste de tous les liens externes dans le contenu
 * La réalisation des transformations de lien
 
-Le vérificateur de liens comporte un certain nombre d’[options de configuration](#configuring), par exemple la définition de la validation interne, le pouvoir d’omettre certains liens ou certains modèles de liens de la validation, et la réécriture des règles de réécriture de liens.
+Le vérificateur de liens comporte plusieurs [options de configuration](#configuring) telles que la définition de la validation interne, le pouvoir d’omettre certains liens ou modèles de liens de la validation et la réécriture des règles de réécriture de liens.
 
 Le vérificateur de liens valide les [liens internes](#internal) comme les [liens externes.](#external)
 

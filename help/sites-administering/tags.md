@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 6659ca39-f297-40b9-88e2-d942aa653e9b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1745'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ Voici quelques-unes des fonctionnalités des balises dans AEM :
 
 La console Balisage permet de créer et de gérer des balises et leurs taxonomies. Elle vise entre autres à éviter d’avoir de nombreuses balises similaires, qui renvoient essentiellement aux mêmes aspects : par exemple, page et pages ou chaussures et souliers.
 
-Les balises sont gérées en les regroupant dans des espaces de noms, en examinant l’utilisation des balises existantes avant d’en créer de nouvelles et en les réorganisant sans déconnecter la balise du contenu actuellement référencé.
+La gestion des balises s’effectue en regroupant les espaces de noms, en examinant l’utilisation des balises existantes avant d’en créer de nouvelles et en réorganisant les balises sans les déconnecter du contenu actuellement référencé.
 
 Pour accéder à la console Balisage, procédez comme suit :
 
@@ -202,7 +202,7 @@ Affiche d’abord le `name` actuel de la balise. Vous pouvez saisir un nouveau `
 
 ![chlimage_1-199](assets/chlimage_1-199.png)
 
-Il est également possible de recourir à la fusion de balises lorsqu’une taxonomie comporte des doublons. Lorsque la balise A est fusionnée dans la balise B, toutes les pages balisées avec la balise A sont balisées avec la balise B et la balise A n’est plus disponible pour les auteurs et autrices.
+Il est également possible de recourir à la fusion de balises lorsqu’une taxonomie comporte des doublons. Lorsque la balise A est fusionnée dans la balise B, toutes les pages balisées avec la balise A sont balisées avec la balise B et la balise A n’est plus disponible pour les créateurs et créatrices.
 
 Lorsqu’un espace de noms ou une autre balise est sélectionné, si vous sélectionnez l’icône **Fusionner**, un panneau s’ouvre dans lequel vous pouvez sélectionner le chemin d’accès à fusionner.
 
@@ -263,13 +263,13 @@ Les autorisations de balises sont [« sécurisées (par défaut) »](/help/sit
 
 * assurez-vous que toutes les instances de publication disposent des mêmes autorisations
 
-   * une approche consiste à [créer un package](/help/sites-administering/package-manager.md#package-manager) de l’espace de nom sur l’auteur ou l’autrice
+   * une approche consiste à [créer un package](/help/sites-administering/package-manager.md#package-manager) de l’espace de noms sur l’instance de création
 
       * Dans l’onglet `Advanced`, pour `AC Handling` sélectionnez `Overwrite`.
 
    * Répliquez le package.
 
-      * Sélectionnez `Replicate` dans le gestionnaire de packages.
+      * Sélectionnez `Replicate` dans le gestionnaire de modules.
 
 ## Gestion des balises dans différentes langues {#managing-tags-in-different-languages}
 

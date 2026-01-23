@@ -11,10 +11,10 @@ thumbnail: 34350.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 5f6171f8-20ca-4c31-a99f-a5bc07a63baf
-source-git-commit: e4cf6ae3392cef2ffd7e8fff3226b50c95f5a248
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
 source-wordcount: '803'
-ht-degree: 99%
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 99%
 
 Les [composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components) offrent des configurations avancées pour personnaliser les URL des pages de produits et de catégories. De nombreuses mises en œuvre personnalisent ces URL à des fins d’optimisation pour les moteurs de recherche (SEO). La vidéo suivante explique comment configurer le `UrlProvider` service et les fonctionnalités du [mappage Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) pour personnaliser les URL des pages de produits et de catégories.
 
->[!VIDEO](https://video.tv.adobe.com/v/38579/?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## Configuration {#configuration}
 
@@ -34,11 +34,11 @@ Pour configurer le service `UrlProvider` en fonction des exigences et des besoin
 
 >[!NOTE]
 >
->Depuis la version 2.0.0 des composants principaux CIF d’AEM, la configuration du fournisseur d’URL fournit uniquement des formats d’URL prédéfinis, au lieu des formats configurables en texte libre connus des versions 1.x. De plus, l’utilisation de sélecteurs pour transmettre des données dans des URL a été remplacée par des suffixes.
+>Depuis la version 2.0.0 des composants principaux CIF d’AEM, la configuration du fournisseur d’URL ne fournit que des formats d’URL prédéfinis, au lieu des formats configurables en texte libre connus des versions 1.x. De plus, l’utilisation de sélecteurs pour transmettre des données dans des URL a été remplacée par des suffixes.
 
-### Format d’URL de page de produits {#product}
+### Format d’URL des pages produits {#product}
 
-Celui-ci configure les URL des pages de produits et prend en charge les options suivantes :
+Celui-ci configure les URL des pages produits et prend en charge les options suivantes :
 
 * `{{page}}.html/{{sku}}.html#{{variant_sku}}` (par défaut)
 * `{{page}}.html/{{url_key}}.html#{{variant_sku}}`
@@ -79,7 +79,7 @@ Avec les données d’exemple ci-dessus, une URL de page de catégorie formaté
 
 ### Pages de catégorie/produit spécifiques {#specific-pages}
 
-Il n’est possible de créer [plusieurs pages de catégories et de produits](multi-template-usage.md) que pour un sous-ensemble spécifique de catégories ou de produits d’un catalogue.
+Il n’est possible de créer [plusieurs pages de catégories et produits](multi-template-usage.md) que pour un sous-ensemble spécifique de catégories ou de produits d’un catalogue.
 
 L’`UrlProvider` est préconfiguré pour générer des liens profonds vers ces pages sur les instances dʼauteur. Cette fonctionnalité est utile aux rédacteurs qui parcourent un site en mode Prévisualisation, se rendent sur une page produit ou de catégorie spécifique, puis repassent en mode Édition pour modifier la page.
 

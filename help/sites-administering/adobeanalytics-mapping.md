@@ -10,16 +10,16 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: d9ffc796-1c2b-4fa6-b434-fb3ee03d40b5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 100%
+source-wordcount: '1450'
+ht-degree: 96%
 
 ---
 
 # Mapper des données de composant à des propriétés Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
 
-Ajoutez à la structure des composants qui rassemblent les données à envoyer à Adobe Analytics. Les composants conçus pour collecter des données d’analyse stockent les données dans la **variable CQ** appropriée. Lorsque vous ajoutez ce type de composant à un framework, celle-ci affiche la liste des variables CQ afin que vous puissiez associer chacune d’elles à la **variable Analytics** appropriée.
+Ajoutez à la structure des composants qui rassemblent les données à envoyer à Adobe Analytics. Les composants conçus pour collecter des données d’analyse stockent les données dans la **variable CQ** appropriée. Lorsque vous ajoutez ce type de composant à un framework, celui-ci affiche la liste des variables CQ afin que vous puissiez les mapper chacune à la variable **Analytics** appropriée.
 
 ![aa-11](assets/aa-11.png)
 
@@ -90,7 +90,7 @@ Plusieurs composants d’AEM Commerce utilisent ces noms de variables.
 
 1. Connectez-vous au site Web d’Adobe Analytics à l’aide des informations d’identification fournies dans AEM.
 1. Assurez-vous que le RSID sélectionné est celui utilisé lors des étapes précédentes.
-1. Dans **Rapports** (dans la partie gauche de la page), sélectionnez **Conversion personnalisée**, puis **Conversion personnalisée 1-10** et sélectionnez la variable correspondant à `eVar7`.
+1. Dans **Rapports** (dans la partie gauche de la page), sélectionnez **Conversion personnalisée**, puis **Conversion personnalisée 1-10** et sélectionnez la variable correspondant à `eVar7`
 
 1. En fonction de la version d’Adobe Analytics que vous utilisez, vous devez attendre 45 minutes, en moyenne, pour que le rapport soit mis à jour avec le terme de recherche utilisé (« aubergine » dans l’exemple).
 
@@ -199,7 +199,7 @@ En prenant comme exemple l’image ci-dessus, la **vue AEM** possède les propri
 >La colonne Variable CQ de chaque table peut également être renseignée en ligne en double-cliquant sur le champ et en ajoutant du texte. Ces champs acceptent JavaScript comme entrée.
 >
 >Par exemple, à côté de `prop3`, vous pouvez ajouter :
->>     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
+>     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 >pour envoyer la variable *title* d’une page concaténé avec sa variable *sitesection* à l’aide d’un *:* (deux-points) et précédé du préfixe *Adobe* en tant que `prop3`.
 >
 

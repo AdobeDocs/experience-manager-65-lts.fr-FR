@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: 6a72ba56-8222-4853-adc6-ee8f3d395d9d
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: 3bc6f5aab61b6ea0ae1d6d909bf2d36fd7e4dbe4
 workflow-type: tm+mt
 source-wordcount: '1280'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -56,7 +56,7 @@ Tout d’abord, vérifiez que la connexion entre les instances de création et d
 >
 
 1. Dans AEM, dans Sites, naviguez jusqu’à l’emplacement où vous souhaitez créer une page.
-1. Créez une page et sélectionnez **Profil Adobe Campaign Classic** ou **Profil Adobe Campaign Standard** et cliquez sur **Suivant**.
+1. Créez une page et sélectionnez **Profil Adobe Campaign Classic** ou **Profil Adobe Campaign Standard** puis cliquez sur **Suivant**.
 
    ![chlimage_1-43](assets/chlimage_1-43a.png)
 
@@ -70,7 +70,7 @@ Tout d’abord, vérifiez que la connexion entre les instances de création et d
 
    ![chlimage_1-44](assets/chlimage_1-44a.png)
 
-1. Sur la page, dans le composant **Début du formulaire**, sélectionnez le type de formulaire : **Abonnement, Désabonnement,** ou **Enregistrement d’un profil**. Vous pouvez uniquement disposer d’un type par formulaire. Vous pouvez désormais [modifier le contenu du formulaire](#editing-form-content).
+1. Sur la page, dans le composant **Début du formulaire**, sélectionnez le type de formulaire : **Abonner, Se désabonner** ou **Enregistrer le profil**. Vous pouvez uniquement disposer d’un type par formulaire. Vous pouvez désormais [modifier le contenu du formulaire](#editing-form-content).
 
 ## Modifier le contenu d’un formulaire {#editing-form-content}
 
@@ -96,7 +96,7 @@ Cette section présente uniquement les liens spécifiques à Adobe Campaign. Po
    * **Adobe Campaign : Abonnement aux services** : permet de gérer les abonnements d’un ou d’une destinataire dans Adobe Campaign.
    * **Adobe Campaign : Désabonnement des services** : permet d’annuler les abonnements d’un ou d’une destinataire dans Adobe Campaign.
 
-1. Vous devez disposer d’un composant **Clé primaire chiffrée** (EPK) sur chaque formulaire. Ce composant définit le paramètre d’URL qui est utilisé pour accepter la clé primaire chiffrée d’un profil Adobe Campaign. Dans Composants, sélectionnez Adobe Campaign afin que seuls ces composants soient visibles.
+1. Vous devez disposer d’un composant **Clé primaire chiffrée** (EPK) sur chaque formulaire. Ce composant définit le paramètre d’URL qui est utilisé pour accepter la clé primaire chiffrée d’un profil Adobe Campaign. Dans Composants, sélectionnez Adobe Campaign afin que seuls ces composants soient visibles.
 1. Faites glisser le composant **Clé primaire chiffrée** sur le formulaire (n’importe où) et cliquez sur l’icône **Configuration**. Dans l’onglet **Adobe Campaign**, indiquez le nom du paramètre d’URL. Cliquez sur la coche pour enregistrer vos modifications.
 
    Les liens générés vers ce formulaire doivent utiliser ce paramètre d’URL et lui attribuer la clé primaire chiffrée d’un profil Adobe Campaign. La clé primaire chiffrée doit être correctement encodée en URL (pourcentage).
@@ -118,7 +118,7 @@ Cette section présente uniquement les liens spécifiques à Adobe Campaign. Po
 
    >[!CAUTION]
    >
-   >Vous devez fournir des autorisations de lecture à l’utilisateur ou à l’utilisatrice anonyme sur le service cloud pour utiliser les formulaires sur l’instance de publication. Toutefois, gardez en tête les problèmes de sécurité potentiels liés à l’octroi d’autorisations de lecture à l’utilisateur ou à l’utilisatrice anonyme et assurez-vous de les limiter, par exemple en configurant le Dispatcher.
+   >Vous devez fournir des autorisations de lecture à l’utilisateur anonyme sur le service cloud pour utiliser les formulaires sur l’instance de publication. Toutefois, gardez en tête les problèmes de sécurité potentiels liés à l’octroi d’autorisations de lecture à l’utilisateur ou à l’utilisatrice anonyme et assurez-vous de les limiter, par exemple en configurant le Dispatcher.
 
 ## Tester un formulaire {#testing-a-form}
 
@@ -126,7 +126,7 @@ Après avoir créé un formulaire et en avoir modifié le contenu, vous pouvez l
 
 >[!NOTE]
 >
->Vous devez disposer d’un composant **Clé primaire chiffrée** (EPK) sur chaque formulaire. Dans Composants, sélectionnez Adobe Campaign afin que seuls ces composants soient visibles.
+>Vous devez disposer d’un composant **Clé primaire chiffrée** (EPK) sur chaque formulaire. Dans Composants, sélectionnez Adobe Campaign afin que seuls ces composants soient visibles.
 >
 >Bien que dans le cadre de cette procédure vous deviez saisir manuellement le numéro EPK, en pratique, les utilisateurs et utilisatrices reçoivent un lien vers cette page (que l’action voulue soit le désabonnement, l’abonnement ou la mise à jour du profil) dans une newsletter. En fonction de l’utilisateur ou de l’utilisatrice, l’EPK se met automatiquement à jour.
 >
@@ -134,10 +134,10 @@ Après avoir créé un formulaire et en avoir modifié le contenu, vous pouvez l
 
 Pour ce faire, vous devez obtenir manuellement l’EPK d’un profil Adobe Campaign, puis l’ajouter à l’URL :
 
-1. Pour obtenir la clé primaire chiffrée (EPK) d’un profil Adobe Campaign :
+1. Pour obtenir la clé primaire chiffrée (EPK) d’un profil Adobe Campaign :
 
    * Dans Adobe Campaign Standard, accédez à **Profils et audiences** > **Profils**, qui répertorie les profils existants. Assurez-vous que le tableau contient le champ **Identifiant de ressource principale** dans l’une de ses colonnes (cela peut être configuré en cliquant/appuyant sur **Configurer la liste**). Copiez l’identifiant de ressource principale du profil souhaité.
-   * Dans Adobe Campaign Classic, accédez à **Profils et cibles** > **Destinataires** où les profils existants sont répertoriés. Assurez-vous que le tableau contient le champ **Identifiant chiffré** dans l’une de ses colonnes (cela peut être configuré en cliquant avec le bouton droit sur une entrée et en choisissant **Configurer la liste…**). Copiez l’identifiant chiffré du profil souhaité.
+   * Dans Adobe Campaign Classic, accédez à **Profils et cibles** > **Destinataires** où les profils existants sont répertoriés. Assurez-vous que le tableau contient le champ **Identifiant chiffré** dans l’une de ses colonnes (cela peut être configuré en cliquant avec le bouton droit sur une entrée et en choisissant **Configurer la liste**). Copiez l’identifiant chiffré du profil souhaité.
 
 1. Dans AEM, ouvrez la page du formulaire sur l’instance de publication et ajoutez l’EPK de l’étape 1 comme paramètre d’URL. Utilisez le même nom que celui précédemment défini dans le composant lors de la création du formulaire (par exemple, `?epk=...`).
 1. Le formulaire peut maintenant être utilisé pour modifier les données et abonnements associés au profil Adobe Campaign lié. Après avoir modifié certains champs et envoyé le formulaire, vous pouvez vérifier dans Adobe Campaign que les données appropriées ont été mises à jour.

@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 45d49917-d20f-470c-bf95-6e701de67a11
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '855'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -48,7 +48,7 @@ Pour trouver la commande exacte dont vous avez besoin pour votre opération part
 
 Les étapes suivantes décrivent comment effectuer cette opération en créant une page dans le navigateur Chrome, par exemple.
 
-1. Préparez l’action à appeler dans AEM. Dans ce cas, nous sommes allés jusqu’à la fin de l’assistant de **création de page**, mais nous n’avons pas encore cliqué sur **Créer**.
+1. Préparez l’action à appeler dans AEM. Dans ce cas, nous sommes allés jusqu’à la fin de l’assistant **Créer une page**, mais nous n’avons pas encore cliqué sur **Créer**.
 
    ![chlimage_1-66](assets/chlimage_1-66a.png)
 
@@ -61,7 +61,7 @@ Les étapes suivantes décrivent comment effectuer cette opération en créant u
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 
-1. Copiez la commande cURL dans un éditeur de texte et supprimez tous les en-têtes de la commande, qui commencent par `-H` (soulignés en bleu dans l’illustration ci-dessous), puis ajoutez le paramètre d’authentification approprié, comme `-u <user>:<password>`.
+1. Copiez la commande cURL dans un éditeur de texte et supprimez tous les en-têtes de la commande, qui commencent par `-H` (soulignés en bleu dans l’image ci-dessous), puis ajoutez le paramètre d’authentification approprié, tel que `-u <user>:<password>`.
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
