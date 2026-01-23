@@ -1,15 +1,15 @@
 ---
 title: Configuration de la banque d’informations d’identification de base de données (basée sur Elytron)
-description: JBoss EAP 8 prend en charge les magasins d’informations d’identification Elytron pour la gestion sécurisée des mots de passe de base de données dans AEM Forms, avec des scripts automatisés pour la configuration du mode domaine.
+description: JBoss EAP 8 prend en charge les magasins d’informations d’identification Elytron pour la gestion sécurisée des mots de passe de base de données dans AEM Forms pour la configuration du mode domaine.
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5d020671efaa4527a5f6dbb4b779c7a3351888a4
+source-git-commit: d397e6a51ad2a52da5ccb0a690e1acd3fafcee3c
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '379'
 ht-degree: 2%
 
 ---
