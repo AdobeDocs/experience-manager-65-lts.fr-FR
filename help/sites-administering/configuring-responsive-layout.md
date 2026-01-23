@@ -7,10 +7,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 413f15c9-5b51-4d8d-8cf0-3e98608b9d9e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 100%
+source-wordcount: '1388'
+ht-degree: 99%
 
 ---
 
@@ -307,7 +307,7 @@ Vous pouvez configurer le nombre de colonnes disponibles pour chaque instance sp
 
 Il peut arriver que vous trouviez nécessaire d’imbriquer des grilles réactives pour répondre aux besoins de votre projet. Toutefois, gardez à l’esprit que la bonne pratique recommandée par Adobe est de garder la structure aussi plate que possible.
 
-Lorsque vous ne pouvez pas éviter d’utiliser des grilles réactives imbriquées, assurez-vous des points suivants :
+Lorsque vous ne pouvez pas éviter d’utiliser des grilles réactives imbriquées, assurez-vous des points suivants :
 
 * Tous les conteneurs (conteneurs, onglets, accordéons, etc.) possèdent la propriété `layout = responsiveGrid`.
 * Ne mélangez pas les `layout = simple` de propriété dans la hiérarchie de conteneur.

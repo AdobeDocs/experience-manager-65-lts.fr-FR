@@ -11,7 +11,7 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 9f694358-e502-4fc0-8352-4c5119573756
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '8133'
 ht-degree: 98%
@@ -209,7 +209,7 @@ Chiffrez un document PDF avec un mot de passe à l’aide de l’API Encryption 
 
    * Créez un objet `PasswordEncryptionOptionSpec` en utilisant son constructeur.
    * Spécifiez les ressources du document PDF à chiffrer en attribuant une valeur d’énumération `PasswordEncryptionOption` au membre de données `encryptOption` de l’objet `PasswordEncryptionOptionSpec`. Pour chiffrer le PDF entier, y compris ses métadonnées et ses pièces jointes, attribuez `PasswordEncryptionOption.ALL` à ce membre de données.
-   * Définissez l’option de compatibilité Acrobat en attribuant une valeur d’énumération `PasswordEncryptionCompatability` au membre de données `compatability` de l’objet `PasswordEncryptionOptionSpec`. Par exemple, attribuez `PasswordEncryptionCompatability.ACRO_7` à ce membre de données.
+   * Spécifiez l’option de compatibilité Acrobat en attribuant une valeur d’énumération `PasswordEncryptionCompatibility` au membre de données `PasswordEncryptionOptionSpec` de l’objet `compatibility`. Par exemple, attribuez `PasswordEncryptionCompatibility.ACRO_7` à ce membre de données.
    * Indiquez la valeur de mot de passe qui permet à l’utilisateur d’ouvrir le document PDF chiffré en attribuant une valeur de chaîne représentant le mot de passe d’ouverture au membre de données `documentOpenPassword` de l’objet `PasswordEncryptionOptionSpec`.
    * Indiquez la valeur de mot de passe qui permet à l’utilisateur de supprimer le chiffrement du document PDF en attribuant une valeur de chaîne représentant le mot de passe principal au membre de données `permissionPassword` de l’objet `PasswordEncryptionOptionSpec`.
 

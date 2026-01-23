@@ -8,10 +8,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 9d1a22da-2eb3-4c79-8c4d-4d0a3ed7fe3b
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -82,7 +82,7 @@ Vous pouvez sélectionner l’icône **Configurer** ![configurer](assets/configu
 
    * **Classe CSS** : spécifiez la classe CSS de la bibliothèque client, le cas échéant. Utilisez des [thèmes](../../forms/using/themes.md) et des [styles en ligne](../../forms/using/inline-style-adaptive-forms.md) au lieu de la classe CSS.
 
-   Sélectionnez l’icône Terminé ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer les modifications. La signature est configurée correctement.
+   Sélectionnez l’icône Terminé ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer les modifications. La signature a été configurée avec succès.
 
    Désormais, lorsque vous remplissez un formulaire, une version PDF du formulaire adaptatif est affichée et les options pour signer le document PDF sont fournies. Pour plus d’informations, voir [Signature d’un formulaire adaptatif en utilisant la signature tactile](../../forms/using/signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 

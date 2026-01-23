@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Operations
 role: Admin
 exl-id: c5907a0b-031f-4e3a-8a5c-5daf31eb71fc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '4829'
 ht-degree: 99%
@@ -77,7 +77,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
    * Traitements terminés
    * Traitements traités
 
-**returnFailedWorkflowCount** Affiche le nombre d’instances de workflow ayant échoué. Vous pouvez spécifier un modèle de workflow pour interroger ou extraire les informations pour tous les modèles de workflow.
+**returnFailedWorkflowCount** Affiche le nombre d’instances de workflow ayant échoué. Vous pouvez spécifier un modèle de workflow pour interroger ou récupérer des informations pour tous les modèles de workflow.
 
 * Arguments :
 
@@ -290,7 +290,7 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>option.observation.supported</td>
-   <td>La valeur true indique que l’observation asynchrone des modifications apportées au référentiel est prise en charge. La prise en charge de l’observation asynchrone permet aux applications de recevoir et de répondre aux notifications de chaque modification au fur et à mesure.</td>
+   <td>La valeur true indique que l’observation asynchrone des modifications apportées au référentiel est prise en charge. La prise en charge de l’observation asynchrone permet aux applications de recevoir des notifications sur chaque modification au fur et à mesure et d’y répondre.</td>
   </tr>
   <tr>
    <td>query.jcrscore</td>
@@ -588,7 +588,7 @@ Lecture seule.
 * Arguments : aucun
 * Valeur renvoyée : aucune
 
-**tarIndexMerge** Fusionne les fichiers d’index de niveau supérieur de tous les ensembles TAR. Les fichiers d’index de niveau supérieur sont des fichiers comportant des versions principales différentes. Par exemple, les fichiers ci-dessous sont fusionnés dans le fichier file index_3_1.tar: index_1_1.tar, index_2_0.tar, index_3_0.tar. Les fichiers fusionnés sont supprimés (dans l’exemple précédent, index_1_1.tar, index_2_0.taret index_3_0.tar sont supprimés).
+**tarIndexMerge** Fusionne les fichiers d’index de niveau supérieur de tous les ensembles TAR. Les fichiers d’index de niveau supérieur sont des fichiers comportant des versions principales différentes. Par exemple, les fichiers ci-dessous sont fusionnés dans le fichier index_3_1.tar: index_1_1.tar, index_2_0.tar, index_3_0.tar. Les fichiers fusionnés sont supprimés (dans l’exemple précédent, index_1_1.tar, index_2_0.taret index_3_0.tar sont supprimés).
 
 * Arguments :
 
@@ -611,7 +611,7 @@ Lecture seule.
 
 * Valeur renvoyée : aucune
 
-**traversalCheck** Parcourt et corrige, éventuellement, les incohérences d’une sous-arborescence, en commençant par un nœud spécifique. Cet aspect est abordé en détail dans la documentation sur les gestionnaires de persistance.
+**traversalCheck** Effectue une traversée et corrige, éventuellement, les incohérences d’une sous-arborescence, en commençant par un nœud spécifique. Cet aspect est abordé en détail dans la documentation sur les gestionnaires de persistance.
 
 **consistencyCheck** Vérifie et corrige, éventuellement, les incohérences dans l’entrepôt de données. Cet aspect est abordé en détail dans la documentation sur l’entrepôt de données.
 
@@ -723,7 +723,7 @@ Lecture seule.
 
 Lecture-écriture.
 
-**QueueNumEntries** Valeur d’entier (int) représentant le nombre de tâches dans la file d’attente de l’agent. Lecture seule.
+**QueueNumEntries** Valeur d’entier (int) représentant le nombre de traitements dans la file d’attente de l’agent. Lecture seule.
 
 **QueueStatusTime** Valeur Date indiquant le temps passé sur le serveur une fois que les valeurs de statut affichées ont été obtenues. La valeur correspond au délai de chargement de la page. Lecture seule.
 

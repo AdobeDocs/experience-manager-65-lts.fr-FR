@@ -7,10 +7,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: cb00bc09-580a-4c73-b202-d4110fa2f645
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '1120'
-ht-degree: 99%
+ht-degree: 96%
 
 ---
 
@@ -54,7 +54,7 @@ Chaque client ou cliente se voit attribuer un numéro d’identification client 
    ![whencustomeridischanged](assets/whencustomeridischanged.png)
 
 1. Dans l’instruction **[!UICONTROL THEN]**, sélectionnez **[!UICONTROL Appeler un service]** dans la liste déroulante **[!UICONTROL Sélectionner une action]**.
-1. Sélectionnez le service **[!UICONTROL Extraire l’adresse d’expédition]** dans le menu déroulant **[!UICONTROL Sélectionner]**.
+1. Sélectionnez le service **[!UICONTROL Récupérer l’adresse d’expédition]** dans le menu déroulant **[!UICONTROL Sélectionner]**.
 1. Faites glisser et déposez le champ **[!UICONTROL ID du client]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposer l’objet ou sélectionner ici]** dans la zone **[!UICONTROL ENTREE]**.
 
    ![dropobjectstoinputfield-retrievedata](assets/dropobjectstoinputfield-retrievedata.png)
@@ -71,7 +71,7 @@ Chaque client ou cliente se voit attribuer un numéro d’identification client 
 
 ## Étape 2 : ajout de l&#39;adresse client mise à jour dans la base de données {#updated-customer-address}
 
-Une fois les détails du client ou de la cliente extraits de la base de données, vous pouvez mettre à jour l’adresse d’expédition, l’État et le code postal. La procédure ci-dessous appelle un service de modèle de données de formulaire pour mettre à jour les informations client dans la base de données :
+Une fois les détails du client ou de la cliente récupérés de la base de données, vous pouvez mettre à jour l’adresse d’expédition, l’État et le code postal. La procédure ci-dessous appelle un service de modèle de données de formulaire pour mettre à jour les informations client dans la base de données :
 
 1. Sélectionnez le champ **[!UICONTROL Envoyer]** et sélectionnez l’icône **[!UICONTROL Modifier les règles]**. La fenêtre Éditeur de règles s’ouvre.
 1. Sélectionnez la règle **[!UICONTROL Envoyer - Cliquer]**, puis l’icône **[!UICONTROL Modifier]**. Les options permettant de modifier la règle Envoi s’affichent.
@@ -95,7 +95,7 @@ Une fois les détails du client ou de la cliente extraits de la base de données
    >
    >Ne faites pas glisser les champs **[!UICONTROL Nom]** et **[!UICONTROL ID du client]** vers l’élément tablename.property correspondant (par exemple, customerdetails.name). Cela permet d’éviter de mettre à jour le nom et l’ID du client par erreur.
 
-1. Glissez-déposez le champ **[!UICONTROL ID du client]** de l’onglet [!UICONTROL Objets de formulaire] vers le champ ID dans la zone **[!UICONTROL ENTREE]**. Les champs sans préfixe tablename (par exemple, customerdetails dans ce cas d’utilisation) servent de paramètre de recherche pour le service de mise à jour. Le champ **[!UICONTROL id]** dans ce cas d’utilisation identifie de manière unique un enregistrement dans la tableau **customerdetails**.
+1. Glissez-déposez le champ **[!UICONTROL ID du client]** de l’onglet [!UICONTROL Objets de formulaire] vers le champ ID dans la zone **[!UICONTROL ENTREE]**. Les champs sans préfixe tablename (par exemple, customerdetails dans ce cas d’utilisation) servent de paramètre de recherche pour le service de mise à jour. Le champ **[!UICONTROL id]** dans ce cas d’utilisation identifie de manière unique un enregistrement dans la table **customerdetails**.
 1. Sélectionnez **[!UICONTROL Terminé]** pour enregistrer la règle. Dans la fenêtre Éditeur de règles, sélectionnez **[!UICONTROL Fermer]**.
 1. Prévisualisez le formulaire adaptatif. Récupérez les détails d’un client ou d’une cliente, mettez à jour l’adresse d’expédition et envoyez le formulaire. Lorsque vous récupérez à nouveau les détails du même client ou de la même cliente, l’adresse d’expédition mise à jour s’affiche.
 

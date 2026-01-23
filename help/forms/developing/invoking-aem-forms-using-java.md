@@ -11,10 +11,10 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 42c85231-9e65-4c3c-8b86-3efdaa577161
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '5333'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -218,7 +218,7 @@ Le tableau suivant énumère les fichiers JAR nécessaires pour appeler les serv
 
 ### Mode de connexion et fichiers JAR de l’application J2EE {#connection-mode-and-j2ee-application-jar-files}
 
-Le tableau suivant répertorie les fichiers JAR qui dépendent du mode de connexion et du serveur d’applications J2EE sur lequel AEM Forms est déployé.
+Le tableau suivant répertorie les fichiers JAR qui dépendent du mode de connexion et du serveur d’applications J2EE sur lequel AEM Forms est déployé.
 
 <table>
  <thead>
@@ -444,9 +444,9 @@ Pour appeler un service AEM Forms avec succès, définissez les propriétés de
   >
   >Au lieu d’utiliser une chaîne pour définir la propriété de connexion `DSC_SERVER_TYPE`, vous pouvez utiliser un élément statique de la classe `ServiceClientFactoryProperties`. Les valeurs suivantes peuvent être utilisées : `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE` ou `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
 
-* **DSC_CREDENTIAL_USERNAME :** spécifie le nom d’utilisateur ou d’utilisatrice AEM Forms. Pour qu’un utilisateur ou une utilisatrice puisse appeler un service AEM Forms, il lui faut le rôle Services User. Un utilisateur ou une utilisatrice peut également avoir un autre rôle incluant l’autorisation d’appel de services. Sinon, une exception est générée lorsque cette personne tente d’appeler un service. Si la sécurité du service est désactivée, il n’est pas nécessaire de spécifier cette propriété de connexion.
+* **DSC_CREDENTIAL_USERNAME :** spécifie le nom d’utilisateur ou d’utilisatrice AEM Forms. Pour qu’un utilisateur puisse appeler un service AEM Forms, il doit disposer du rôle Utilisateur des services . Un utilisateur ou une utilisatrice peut également avoir un autre rôle incluant l’autorisation d’appel de services. Sinon, une exception est générée lorsque cette personne tente d’appeler un service. Si la sécurité du service est désactivée, il n’est pas nécessaire de spécifier cette propriété de connexion.
 * **DSC_CREDENTIAL_PASSWORD :** spécifie la valeur de mot de passe correspondante. Si la sécurité du service est désactivée, il n’est pas nécessaire de spécifier cette propriété de connexion.
-* **DSC_REQUEST_TIMEOUT :** la limite du délai d’attente de requête par défaut pour la demande SOAP est 1 200 000 millisecondes (20 minutes). Parfois, une requête peut nécessiter plus de temps pour terminer l’opération. Par exemple, une requête SOAP qui récupère un grand ensemble d’enregistrements peut nécessiter un délai d’expiration plus long. Vous pouvez utiliser le `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` pour augmenter la limite de délai d’appel de demande pour les requêtes SOAP.
+* **DSC_REQUEST_TIMEOUT :** limite du délai d’expiration de requête par défaut pour la demande SOAP est 1 200 000 millisecondes (20 minutes). Parfois, une requête peut nécessiter plus de temps pour terminer l’opération. Par exemple, une requête SOAP qui récupère un grand ensemble d’enregistrements peut nécessiter un délai d’expiration plus long. Vous pouvez utiliser le `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` pour augmenter la limite de délai d’expiration d’appel de demande pour les requêtes SOAP.
 
   **Remarque** : seuls les appels basés sur SOAP prennent en charge la propriété DSC_REQUEST_TIMEOUT.
 
@@ -697,7 +697,7 @@ En fonction de la taille de l’objet de `com.adobe.idp.Document`, les données 
 
 Parfois, il est nécessaire de connaître le type de contenu d’un objet `com.adobe.idp.Document` avant de pouvoir le transmettre à un service. Par exemple, si une opération nécessite un type de contenu spécifique, comme `application/pdf`, il est recommandé de déterminer le type de contenu. (Voir [Détermination du type de contenu d’un document](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document).)
 
-L’objet `com.adobe.idp.Document` tente de déterminer le type de contenu en utilisant les données fournies. Si le type de contenu ne peut pas être extrait des données fournies (par exemple, lorsque les données ont été fournies sous forme de tableau d’octets), définissez le type de contenu. Pour définir le type de contenu, appelez la méthode `setContentType` de l’objet `com.adobe.idp.Document`. (Voir [Détermination du type de contenu d’un document](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document))
+L’objet `com.adobe.idp.Document` tente de déterminer le type de contenu en utilisant les données fournies. Si le type de contenu ne peut pas être récupéré des données fournies (par exemple, lorsque les données ont été fournies sous forme de tableau d’octets), définissez le type de contenu. Pour définir le type de contenu, appelez la méthode `setContentType` de l’objet `com.adobe.idp.Document`. (Voir [Détermination du type de contenu d’un document](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document))
 
 Si les fichiers de documentation et ressources résident sur le même système de fichiers, cela crée un objet `com.adobe.idp.Document` plus rapide. Si les fichiers de documentation et ressources résident sur des systèmes de fichiers distants, une opération de copie doit avoir lieu, ce qui affecte les performances.
 

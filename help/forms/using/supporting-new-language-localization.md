@@ -9,10 +9,10 @@ feature: Adaptive Forms,Foundation Components
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 exl-id: 9c516c90-1b1d-406a-b42d-909aae8bb634
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '841'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ Pour remplacer la langue du navigateur des utilisateurs et des utilisatrices, vo
    * Les paramètres régionaux du navigateur sont activés par défaut. Pour modifier les paramètres régionaux du navigateur :
       * Ouvrez Configuration Manager. L’URL est `http://[server]:[port]/system/console/configMgr`
       * Recherchez et ouvrez la configuration **[!UICONTROL du canal Web du formulaire adaptatif et de la communication interactive]**.
-      * Modifiez le statut de l’option **[!UICONTROL Utiliser les paramètres régionaux du navigateur]** et **[!UICONTROL enregistrez]** la configuration.
+      * Modifiez le statut de l’option **[!UICONTROL Utiliser les paramètres régionaux du navigateur]** et **[!UICONTROL Enregistrer]** la configuration.
 
 Une fois que les paramètres régionaux sont identifiés, le formulaire adaptatif sélectionne le dictionnaire qui lui est spécifique. Si le dictionnaire spécifique au formulaire pour les paramètres régionaux nécessaires est introuvable, il utilise le dictionnaire de la langue dans laquelle le formulaire adaptatif a été créé.
 

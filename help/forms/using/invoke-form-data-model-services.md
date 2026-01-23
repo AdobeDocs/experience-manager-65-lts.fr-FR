@@ -8,7 +8,7 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: e36be2da-af72-485f-87a6-cef6172037c6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 100%
@@ -126,7 +126,7 @@ La fonction d’appel peut avoir des fonctions de rappel `success` et `failure`.
 
 L’exemple de script suivant utilise l’API `guidelib.dataIntegrationUtils.executeOperation` pour appeler l’opération de service `GETOrder` configurée dans le modèle de données de formulaire `employeeOrder`.
 
-L’opération `GETOrder` prend la valeur du champ de formulaire `Order ID` comme entrée pour l’argument `orderId` et renvoie la valeur de quantité de commande dans la fonction de rappel `success`.  Si la fonction de rappel `success` ne renvoie pas la quantité de commande, la fonction de rappel `failure` affiche le message `Error occured`.
+L’opération `GETOrder` prend la valeur du champ de formulaire `Order ID` comme entrée pour l’argument `orderId` et renvoie la valeur de quantité de commande dans la fonction de rappel `success`.  Si la fonction de rappel `success` ne renvoie pas la quantité de commande, la fonction de rappel `failure` affiche le message `Error occurred`.
 
 >[!NOTE]
 >
