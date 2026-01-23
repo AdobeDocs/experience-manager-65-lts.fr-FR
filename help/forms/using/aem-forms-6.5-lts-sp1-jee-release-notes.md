@@ -4,16 +4,15 @@ description: 'Recherchez des informations sur la mise à jour, les nouveautés, 
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 5d020671efaa4527a5f6dbb4b779c7a3351888a4
+source-git-commit: 27ec3c516b0746fd7e0d82f86750fbb4ef410711
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '566'
 ht-degree: 3%
 
 ---
 
 
 # Notes de mise à jour de Adobe Experience Manager (AEM) Forms 6.5 LTS SP1 on JEE
-
 
 ## Informations sur la version
 
@@ -68,7 +67,7 @@ Pour plus d’informations, voir **Migration de l’espace de noms javax vers ja
 
 ## Mise à niveau
 
-Pour obtenir des instructions de mise à niveau détaillées, consultez le **Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE**.
+Pour obtenir des instructions de mise à niveau détaillées, consultez le [ Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 ## Installation
 
