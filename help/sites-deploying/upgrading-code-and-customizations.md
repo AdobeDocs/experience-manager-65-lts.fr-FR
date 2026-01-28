@@ -11,10 +11,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: f983fc1edc613feaa070c4e82a92aabab9d50cbb
+source-git-commit: c1935b95d4e9e8e3773f2ff9825c759f97738304
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 52%
+source-wordcount: '1097'
+ht-degree: 48%
 
 ---
 
@@ -30,7 +30,7 @@ Lors de la planification d’une mise à niveau, les aspects suivants d’une mi
 1. **AEM Analyzer** - Exécutez l’analyseur AEM comme décrit dans la planification de la mise à niveau et dans les détails sur la page [Évaluation de la complexité de la mise à niveau avec AEM Analyzer](/help/sites-deploying/aem-analyzer.md). Vous obtenez un rapport AEM Analyzer qui contient plus de détails sur les zones qui doivent être traitées en plus des API/lots indisponibles dans la version cible d’AEM. Le rapport AEM Analyzer vous donne une indication des incompatibilités éventuelles de votre code. S’il n’en existe pas, votre déploiement est déjà compatible avec 6.5 LTS. Vous pouvez toujours choisir d’effectuer un nouveau développement pour utiliser la fonctionnalité LTS 6.5, mais vous n’en avez pas besoin uniquement pour maintenir la compatibilité.
 1. **Développement de la base de code pour LTS 6.5**- Créez une branche ou un référentiel dédié à la base de code pour la version cible. Utilisez les informations de la compatibilité avant la mise à niveau pour prévoir les zones de code à mettre à jour.
 1. **Compilation avec 6.5 LTS Uber jar**- Mettez à jour les POM de la base de code pour pointer vers 6.5 LTS Uber jar et compilez le code en fonction de celui-ci.
-1. **Déploiement vers l’environnement LTS 6.5** - Une instance AEM 6.5 LTS (auteur + publication) nette doit être conservée dans un environnement Dev/QA. La base de code à jour et un échantillon représentatif de contenu (de l’exploitation actuelle) doivent être déployés.
+1. **Déploiement vers l’environnement LTS 6.5** - Une instance AEM 6.5 LTS (auteur + publication) nette doit être conservée dans un environnement Dev/QA. La base de code mise à jour et un échantillon représentatif de contenu (de l’exploitation actuelle) doivent être déployés.
 1. **Validation du contrôle qualité et correction des bogues** - Le contrôle qualité doit valider l’application sur les instances de création et de publication d’ 6.5 LTS . Tous les bugs détectés doivent être corrigés et intégrés dans la base de code 6.5 LTS. Répétez le cycle de développement jusqu’à ce que tous les bugs soient corrigés.
 
 Avant de procéder à la mise à niveau, vous devez disposer d’une base de code d’application stable qui a été minutieusement testée par rapport à AEM 6.5 LTS.
@@ -92,6 +92,7 @@ Pour AEM 6.5 LTS, il existe à nouveau deux types de fichiers Uber Jars :
 
 * Le LTS AEM 6.5 n’inclut pas de bibliothèque Google guava prête à l’emploi. La version requise peut être installée selon les besoins.
 * Le bundle Sling XSS utilise désormais la bibliothèque Java HTML Sanitizer et l’utilisation de la méthode `XSSAPI#filterHTML()` doit être utilisée pour effectuer le rendu du contenu HTML en toute sécurité et non pour transmettre des données à d’autres API.
+* Mise à jour de la configuration du filtre SSL HTTP Apache Felix : dans AEM 6.5 LTS, le lot `org.apache.felix.http.sslfilter` a été mis à niveau de la version 1.2.6 vers la version 2.0.2. Dans le cadre de cette mise à niveau, le PID de configuration OSGi `org.apache.felix.http.sslfilter.SslFilter` a été abandonné et remplacé par un nouveau PID : `org.apache.felix.http.sslfilter.Configuration`. Si le filtre SSL est utilisé dans le déploiement , les configurations existantes doivent être migrées manuellement vers le nouveau PID à l’aide du gestionnaire de configuration OSGi (`/system/console/configMgr`). Si la migration de la configuration échoue, le filtre SSL risque de ne pas être appliqué comme prévu après la mise à niveau.
 
 ## Procédure de test {#testing-procedure}
 
