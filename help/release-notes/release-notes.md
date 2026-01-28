@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c9a7faf5810e78f8e80b38a87446794488efdd35
+source-git-commit: 8f5a06dc80943362acebfd7b19fed13c051417d1
 workflow-type: tm+mt
-source-wordcount: '7355'
-ht-degree: 99%
+source-wordcount: '7751'
+ht-degree: 93%
 
 ---
 
@@ -40,6 +40,90 @@ ht-degree: 99%
 ### Formulaires
 
 AEM 6.5 Forms LTS on JEE est désormais disponible. Pour plus d’informations sur les environnements pris en charge, consultez le document [Plateforme prise en charge](/help/forms/using/aem-forms-jee-supported-platforms.md) Combinaisons . Les liens du programme d’installation sont disponibles sur la page [Versions d’AEM Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+
+#### Éléments compris dans AEM Forms 6.5 LTS SP1
+
+**Mises à jour de la prise en charge de Java**
+
+La prise en charge des versions Java plus récentes a été introduite :
+
+* Java™ 17
+* Java™ 21
+
+**Mises à jour de la prise en charge du serveur d’applications**
+
+* Ajout de la prise en charge de JBoss EAP 8.
+* L’ancien framework de sécurité PicketBox a été supprimé.
+* Les banques d’informations d’identification basées sur Elytron sont désormais prises en charge pour une gestion sécurisée des informations d’identification.
+
+**Configuration : banque d’informations d’identification (basée sur Elytron)**
+
+AEM Forms sur JBoss EAP 8 utilise Elytron pour gérer les informations d’identification sécurisées. Les clients doivent configurer un magasin d’informations d’identification basé sur Elytron pour réussir le démarrage du serveur et sécuriser l’authentification de la base de données.
+
+Pour plus d’informations sur la configuration, consultez le guide d’installation et de configuration .
+
+**Modifications de plateforme et de compatibilité**
+
+* Prise en charge de la spécification de servlet 5+
+* Selon la conformité Jakarta EE 9
+
+**Exigence de migration des espaces de noms**
+
+* Jakarta EE 9 introduit un changement d’espace de noms de `javax.*` à `jakarta.*`
+* Tous les **DSC personnalisés** doivent être migrés vers l’espace de noms `jakarta.*`
+* AEM Forms 6.5 LTS SP1 prend en charge **uniquement les serveurs d’applications Jakarta EE 9 et ultérieure**
+
+Pour plus d’informations, voir **Migration de l’espace de noms javax vers jakarta**.
+
+**Migration de l’espace de noms javax vers jakarta**
+
+#### Migration de `javax` vers l’espace de noms `jakarta`
+
+À compter de **AEM Forms 6.5 LTS SP1**, seuls les serveurs d’applications qui implémentent **Jakarta Servlet API 5/6** sont pris en charge. Avec **Jakarta EE 9 et versions ultérieures**, toutes les API sont passées de l’espace de noms `javax.{}` à `jakarta.`.
+
+Par conséquent, **tous les DSC personnalisés doivent utiliser l’espace de noms `jakarta`**. Les composants personnalisés créés à l’aide d’API `javax.{}` ne sont **pas compatibles** avec les serveurs d’applications pris en charge.
+
+**Options de migration pour les DSC personnalisés**
+
+Vous pouvez migrer des DSC personnalisés existants à l’aide de l’une des approches suivantes :
+
+**Option 1 : Migration Du Code Source (Recommandé)**
+
+* Mettre à jour toutes les instructions d’importation de `javax.{}` vers `jakarta.`
+* Recréer et recompiler les projets DSC personnalisés
+* Redéployez les composants mis à jour sur le serveur d’applications
+
+**Avantages :**
+
+* Garantit la compatibilité à long terme avec Jakarta EE 9+
+* Convient mieux aux projets gérés de manière active
+
+**Option 2 : Migration Binaire À L’Aide Du Transformateur Eclipse**
+
+* Utilisez l’outil **Eclipse Transformer** pour convertir des fichiers binaires compilés (`.jar`, `.war`) de `javax` en `jakarta`
+* Aucune recompilation ou modification du code source requise
+* Redéployez les fichiers binaires transformés sur le serveur d’applications
+
+>[!NOTE]
+>
+> La transformation binaire est effectuée au niveau du **bytecode**.
+
+Vous trouverez ci-dessous des exemples courants de changements d’espace de noms requis lors de la migration :
+
+Avant (javax)    Après (jakarta)
+javax.servlet. **jakarta.servlet**
+javax.servlet.http. **jakarta.servlet.http.**
+
+**Exemples de mappages d’importation**
+
+Le tableau suivant présente les modifications courantes des espaces de noms requises lors de la migration de `javax` vers `jakarta` :
+
+| Avant (`javax`) | Après (`jakarta`) |
+| ---------------------- | ------------------------ |
+| `javax.servlet.*` | `jakarta.servlet.*` |
+| `javax.servlet.http.*` | `jakarta.servlet.http.*` |
+
+Utilisez ces mappages comme référence lors de la mise à jour du code source DSC personnalisé ou de la validation des fichiers binaires transformés.
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -448,6 +532,7 @@ Eclipse Jetty 11.0.x est utilisé comme moteur de servlet pour Quickstart.
 ### Mise à niveau {#upgrade}
 
 * Pour plus d’informations sur la procédure de mise à niveau, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
+* Pour obtenir des instructions de mise à niveau détaillées, consultez le [ Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Bonnes pratiques relatives aux mises à niveau du pack de services d’AEM 6.5 LTS
 
@@ -520,14 +605,15 @@ Recherchez la matrice complète des plateformes prises en charge, y compris le n
 
 <!-- CARRY OVER EACH RELEASE -->
 
-Adobe examine continuellement les fonctionnalités du produit afin d’améliorer la valeur client en modernisant ou en remplaçant les anciennes fonctionnalités. Ces modifications sont effectuées avec une attention particulière portée à la rétrocompatibilité.
+Adobe examine et fait évoluer en permanence les fonctionnalités du produit afin de fournir une plus grande valeur ajoutée au client en modernisant ou en remplaçant les anciennes fonctionnalités. Ces modifications sont implémentées en tenant compte de la rétrocompatibilité.
 
-Pour communiquer la suppression ou le remplacement imminent(e) de fonctionnalités d’Adobe Experience Manager (AEM), les règles suivantes s’appliquent :
+Pour garantir la transparence et permettre une planification adéquate, Adobe suit ce processus d’obsolescence pour Adobe Experience Manager (AEM) :
 
-1. L’annonce de la suppression arrive en premier. Bien qu’elles soient obsolètes, les fonctionnalités sont toujours disponibles, mais ne sont pas améliorées.
-1. La suppression des fonctionnalités obsolètes se produit au plus tôt dans la version majeure suivante. La date cible réelle de suppression est prévue pour une annonce ultérieure.
+* L’obsolescence est d’abord annoncée. Les fonctionnalités obsolètes restent disponibles, mais ne sont plus améliorées.
 
-Ce processus donne aux clients au moins un cycle de version pour adapter leur implémentation à une nouvelle version ou à un produit de remplacement pour une fonctionnalité obsolète, avant que la suppression ne soit effective.
+* La suppression n’intervient pas avant la prochaine version majeure. Le calendrier de suppression prévu est communiqué séparément.
+
+* Un cycle de publication minimum est fourni pour que les clients puissent effectuer la transition vers des alternatives prises en charge avant la suppression d’une fonctionnalité.
 
 ### Fonctionnalités obsolètes {#deprecated-features}
 
@@ -543,6 +629,10 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 ### Fonctionnalités supprimées {#removed-features}
 
 Cette section répertorie les fonctionnalités qui ont été supprimées dans AEM 6.5 LTS. Ces fonctionnalités étaient signalées comme obsolètes dans les versions antérieures.
+
+* La prise en charge de la persistance du référentiel RDBMK pour CRX a été supprimée.
+
+* Dans les environnements en cluster, MongoMK est désormais la seule option prise en charge pour la persistance du référentiel.
 
 | Domaine | Fonctionnalité | Remplacement | Version (SP) |
 | --- | --- | --- | --- |
