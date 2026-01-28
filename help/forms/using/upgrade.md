@@ -9,10 +9,10 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
 exl-id: 93126750-4645-4084-a21b-5362e3cc08a9
-source-git-commit: 2cab77b98b35ff1cb6cbfb615d82166ca123c198
+source-git-commit: e2c8f98fbf31680782c7f0cf190d894d819d7219
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 22%
+source-wordcount: '252'
+ht-degree: 18%
 
 ---
 
@@ -29,6 +29,8 @@ AEM 6.5 LTS Forms comprend plusieurs nouvelles fonctionnalités et amélioration
 
 Vous pouvez mettre à niveau votre installation LiveCycle ou AEM Forms existante afin d’obtenir les nouvelles fonctionnalités et améliorations proposées dans AEM 6.5 LTS Forms tout en conservant intactes les données, processus et ressources existants. Lors de la mise à niveau, les métadonnées et l’état des processus sont également conservés. Vous pouvez choisir un chemin de mise à niveau pour commencer la mise à niveau.
 
+### AEM Forms LTS sur OSGi
+
 Le diagramme suivant affiche les chemins de mise à niveau disponibles pour AEM Forms LTS sur OSGi :
 
 ![Flux de mise à niveau OSGi](/help/forms/using/assets/updated-img-forms-upgrade-lts.png)
@@ -36,6 +38,14 @@ Le diagramme suivant affiche les chemins de mise à niveau disponibles pour AEM 
 Vous pouvez effectuer une mise à niveau directe depuis :
 
 * AEM 6.5.17.0 vers AEM Forms 6.5 LTS
+* AEM 6.5.18.0 vers AEM Forms 6.5 LTS
+* AEM 6.5.19.0 vers AEM Forms 6.5 LTS
+* AEM 6.5.20.0 vers AEM Forms 6.5 LTS
+* AEM 6.5.21.0 vers AEM Forms 6.5 LTS
+* AEM 6.5.22.0 vers AEM Forms 6.5 LTS
+* AEM 6.5.23.0 vers AEM Forms 6.5 LTS
+
+### AEM Forms LTS sous JEE
 
 Le diagramme suivant affiche les chemins de mise à niveau disponibles pour AEM Forms LTS sur JEE :
 
@@ -47,7 +57,7 @@ Vous pouvez effectuer une mise à niveau directe depuis :
 
 
 <!--
-AEM 6.5.18.0 Forms on JEE provides two types of installers: [Full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) and [Patch installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
+AEM 6.5.18.0 Forms on JEE provides two types of installers: [Full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) and [Patch installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 **Full installer**: You can use the full installer to set up fresh AEM Forms instances or perform upgrades from AEM 6.5.x.x Forms on JEE to AEM 6.5.18.0 Forms on JEE.
 
@@ -67,7 +77,7 @@ Refer to the [AEM 6.5 Forms Service Pack installation instructions](https://expe
 
 Migration involves moving only assets (PDF, XDP, images, adaptive forms, correspondence management assets) from one server to another - processes (LCA), settings, configurations, and a few other pieces of metadata are not migrated. Perform the following steps to migrate to AEM 6.3 Forms:
 
-1. Set up a fresh environment of [AEM 6.3 Forms](https://adobe.com/go/learn_aemforms_documentation_63_fr).
+1. Set up a fresh environment of [AEM 6.3 Forms](https://adobe.com/go/learn_aemforms_documentation_63).
 2. Move XDP or other compatible assets to the freshly set instance. For detailed instructions, see [Importing and exporting assets to AEM Forms](../../forms/using/import-export-forms-templates.md). [import templates](../../forms/using/import-export-forms-templates.md)
 3. Build the required services, if any.
 
