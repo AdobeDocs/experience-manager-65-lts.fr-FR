@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 8f5a06dc80943362acebfd7b19fed13c051417d1
+source-git-commit: 6a6a79663579e4d63e68ae6c9a4bec97f24032f9
 workflow-type: tm+mt
-source-wordcount: '7751'
+source-wordcount: '7745'
 ht-degree: 93%
 
 ---
@@ -75,8 +75,6 @@ Pour plus d’informations sur la configuration, consultez le guide d’installa
 
 Pour plus d’informations, voir **Migration de l’espace de noms javax vers jakarta**.
 
-**Migration de l’espace de noms javax vers jakarta**
-
 #### Migration de `javax` vers l’espace de noms `jakarta`
 
 À compter de **AEM Forms 6.5 LTS SP1**, seuls les serveurs d’applications qui implémentent **Jakarta Servlet API 5/6** sont pris en charge. Avec **Jakarta EE 9 et versions ultérieures**, toutes les API sont passées de l’espace de noms `javax.{}` à `jakarta.`.
@@ -110,9 +108,9 @@ Vous pouvez migrer des DSC personnalisés existants à l’aide de l’une des a
 
 Vous trouverez ci-dessous des exemples courants de changements d’espace de noms requis lors de la migration :
 
-Avant (javax)    Après (jakarta)
-javax.servlet. **jakarta.servlet**
-javax.servlet.http. **jakarta.servlet.http.**
+* Avant (javax)    Après (jakarta)
+* javax.servlet. **jakarta.servlet**
+* javax.servlet.http. **jakarta.servlet.http.**
 
 **Exemples de mappages d’importation**
 
@@ -532,7 +530,7 @@ Eclipse Jetty 11.0.x est utilisé comme moteur de servlet pour Quickstart.
 ### Mise à niveau {#upgrade}
 
 * Pour plus d’informations sur la procédure de mise à niveau, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
-* Pour obtenir des instructions de mise à niveau détaillées, consultez le [&#x200B; Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Pour obtenir des instructions de mise à niveau détaillées, consultez le [ Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Bonnes pratiques relatives aux mises à niveau du pack de services d’AEM 6.5 LTS
 
