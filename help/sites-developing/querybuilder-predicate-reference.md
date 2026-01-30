@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
 workflow-type: tm+mt
-source-wordcount: '2321'
-ht-degree: 97%
+source-wordcount: '2291'
+ht-degree: 65%
 
 ---
 
@@ -60,13 +60,13 @@ ht-degree: 97%
 * [tagsearch](/help/sites-developing/querybuilder-predicate-reference.md#tagsearch)
 * [type](/help/sites-developing/querybuilder-predicate-reference.md#type)
 
-### boolproperty {#boolproperty}
+### `boolproperty` {#boolproperty}
 
-Correspond aux propriétés BOOLEAN JCR. Accepte uniquement les valeurs « `true` » et « `false` ». Si la valeur est `false`, elle correspond si la propriété a la valeur `false`, ou si elle n’existe pas du tout. Cela peut s’avérer utile pour rechercher des indicateurs booléens qui sont définis uniquement lorsqu’ils sont activés.
+Correspond aux propriétés BOOLEAN JCR. Accepte uniquement les valeurs « `true` » et « `false` ». Si elle est définie sur « `false` », elle correspond si la valeur de la propriété est « `false` » ou si la propriété n’existe pas. Utile pour vérifier les indicateurs booléens qui sont définis uniquement lorsqu’ils sont activés.
 
 Le paramètre « `operation` » hérité n’a aucune signification.
 
-Prend en charge l’extraction de facettes. Fournit des compartiments pour chaque valeur `true` ou `false`, mais uniquement pour les propriétés existantes.
+Elle prend en charge l’extraction de facettes. Fournit des compartiments pour chaque valeur `true` ou `false`, mais uniquement pour les propriétés existantes.
 
 #### Propriétés {#properties}
 
@@ -74,26 +74,26 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 Chemin d’accès relatif à une propriété, par exemple, `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`.
 
 * **value**
-Valeur pour laquelle vérifier la propriété, « `true` » ou « `false` ».
+Valeur pour laquelle vérifier la propriété : « `true` » ou « `false` ».
 
-### contentfragment {#contentfragment}
+### `contentfragment` {#contentfragment}
 
 Limite le résultat aux fragments de contenu.
 
-Ne prend pas en charge le filtrage.
+Il ne prend pas en charge le filtrage.
 
-Ne prend pas en charge l’extraction de facettes.
+Il ne prend pas en charge l’extraction de facettes.
 
 #### Propriétés {#properties-1}
 
 * **contentfragment**
 Peut être utilisé avec n’importe quelle valeur pour rechercher des fragments de contenu.
 
-### dateComparison {#datecomparison}
+### `dateComparison` {#datecomparison}
 
 Compare entre elles deux propriétés DATE JCR. Vous pouvez tester si elles sont égales, inégales, supérieures ou supérieures ou égales.
 
-Il s’agit d’un prédicat de type filtrage seul qui ne peut pas utiliser d’index de recherche.
+Un prédicat de filtrage uniquement et qui ne peut pas utiliser d’index de recherche.
 
 #### Propriétés {#properties-2}
 
@@ -107,18 +107,18 @@ Il s’agit d’un prédicat de type filtrage seul qui ne peut pas utiliser d’
 
 * **operation**
 
-  « `equals` » pour une correspondance exacte, « `!=` » pour une comparaison inégale, « `greater` » lorsque la property1 est plus grande que la property2, « `>=` » lorsque la property1 est plus grande ou égale à la property2. La valeur par défaut est « `equals` ».
+  « `equals` » pour une correspondance exacte, « `!=` » pour une comparaison inégale, « `greater` » lorsque la property1 est plus grande que la property2, « `>=` » lorsque la property1 est plus grande ou égale à la property2. La valeur par défaut est « `equals` ».
 
-### daterange {#daterange}
+### `daterange` {#daterange}
 
-Met en correspondance les propriétés DATE JCR par rapport à un intervalle de date/heure. Il utilise le format ISO8601
-pour les dates et heures (`YYYY-MM-DDTHH:mm:ss.SSSZ`) et autorise les représentations partielles, comme `YYYY-MM-DD`. Vous pouvez également fournir la date et l’heure sous la forme du nombre de millisecondes écoulées depuis 1970 dans le fuseau horaire UTC, le format d’heure UNIX®.
+Fait correspondre les propriétés JCR DATE à un intervalle de date et d’heure. Utilise le ISO8601
+format des dates et des heures ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) et autorise les représentations partielles, comme les `YYYY-MM-DD`. Vous pouvez également fournir la date et l’heure sous la forme du nombre de millisecondes écoulées depuis 1970 dans le fuseau horaire UTC, le format d’heure UNIX®.
 
 Vous pouvez rechercher tout ce qui se trouve entre deux horodatages, un élément plus récent ou plus ancien qu’une date donnée, et également choisir entre des intervalles inclusifs et ouverts.
 
-Prend en charge l’extraction de facettes. Fournit des compartiments « aujourd’hui », « cette semaine », « ce mois-ci », « les 3 derniers mois », « cette année », « l’année dernière » et « avant l’année dernière ».
+Elle prend en charge l’extraction de facettes. Fournit des compartiments « aujourd’hui », « cette semaine », « ce mois-ci », « les 3 derniers mois », « cette année », « l’année dernière » et « plus tôt que l’année dernière ».
 
-Ne prend pas en charge le filtrage.
+Il ne prend pas en charge le filtrage.
 
 #### Propriétés {#properties-3}
 
@@ -132,7 +132,7 @@ Ne prend pas en charge le filtrage.
 
 * **lowerOperation**
 
-  « `>` » (plus récent) ou « `>=` » (à cette date ou plus récent) ; applicable à `lowerBound`. La valeur par défaut est de « `>` ».
+  « `>` » (plus récent) ou « `>=` » (à cette date ou plus récent) ; applicable à `lowerBound`. La valeur par défaut est « `>` ».
 
 * **upperBound**
 
@@ -140,19 +140,19 @@ Ne prend pas en charge le filtrage.
 
 * **upperOperation**
 
-  « `<` » (antérieur) ou « `<=` » (à cette date ou antérieur) ; applicable à `upperBound`. La valeur par défaut est de « `<` ».
+  « `<` » (antérieur) ou « `<=` » (à cette date ou antérieur) ; applicable à `upperBound`. La valeur par défaut est « `<` ».
 
 * **timeZone**
 
   ID du fuseau horaire à utiliser lorsqu’il n’est pas indiqué sous la forme d’une chaîne de date ISO-8601. La valeur par défaut est le fuseau horaire par défaut du système.
 
-### excludepaths {#excludepaths}
+### `excludepaths` {#excludepaths}
 
 Exclut des nœuds du résultat lorsque leur chemin d’accès correspond à une expression régulière.
 
-Il s’agit d’un prédicat de type filtrage seul qui ne peut pas utiliser d’index de recherche.
+Un prédicat de filtrage uniquement et qui ne peut pas utiliser d’index de recherche.
 
-Ne prend pas en charge l’extraction de facettes.
+Il ne prend pas en charge l’extraction de facettes.
 
 #### Propriétés {#properties-4}
 
@@ -160,13 +160,13 @@ Ne prend pas en charge l’extraction de facettes.
 
   Expression régulière comparée à des chemins de résultat, en excluant les correspondances du résultat.
 
-### fulltext {#fulltext}
+### `fulltext` {#fulltext}
 
-Recherche des termes dans l’index en texte intégral.
+Il recherche des termes dans l’index en texte intégral.
 
-Ne prend pas en charge le filtrage.
+Il ne prend pas en charge le filtrage.
 
-Ne prend pas en charge l’extraction de facettes.
+Il ne prend pas en charge l’extraction de facettes.
 
 #### Propriétés {#properties-5}
 
@@ -178,9 +178,9 @@ Ne prend pas en charge l’extraction de facettes.
 
   Chemin d’accès relatif devant faire l’objet d’une recherche dans la propriété ou le sous-nœud. Cette propriété est facultative.
 
-### group {#group}
+### `group` {#group}
 
-Permet la création de conditions imbriquées. Les groupes peuvent contenir des groupes imbriqués. Tout le contenu d’une requête Query Builder se trouve implicitement dans un groupe racine qui peut également posséder des paramètres `p.or` et `p.not`.
+Permet de créer des conditions imbriquées. Les groupes peuvent contenir des groupes imbriqués. Tout le contenu d’une requête Query Builder se trouve implicitement dans un groupe racine qui peut également posséder des paramètres `p.or` et `p.not`.
 
 Exemple pour la correspondance de l’une des deux propriétés par rapport à une valeur :
 
@@ -192,7 +192,7 @@ group.2_property=navTitle
 group.2_property.value=My Page
 ```
 
-D’un point de vue conceptuel, il s’agit de `(1_property` OU `2_property)`.
+Conceptuellement `(1_property` OU `2_property)`.
 
 Exemple pour les groupes imbriqués :
 
@@ -205,19 +205,19 @@ group.2_group.path=/content/dam/geometrixx
 group.2_group.type=dam:Asset
 ```
 
-Dans ce cas, le terme « **Management** » est recherché dans des pages sous `/content/geometrixx/en` ou dans des ressources sous `/content/dam/geometrixx`.
+Recherche le terme « **Management** » dans les pages de `/content/geometrixx/en` ou dans les ressources de `/content/dam/geometrixx`.
 
-Il s’agit conceptuellement de `fulltext AND ( (path AND type) OR (path AND type) )`. De telles jointures OR nécessitent de bons index pour des raisons de performances.
+Conceptuellement `fulltext AND ( (path AND type) OR (path AND type) )`. De telles jointures OR nécessitent de bons index pour des raisons de performances.
 
 #### Propriétés {#properties-6}
 
 * **p.or**
 
-  Si défini sur « `true` », un seul prédicat du groupe doit correspondre. La valeur par défaut est « `false` », ce qui signifie que tout doit correspondre.
+  Si « `true` » est défini, un seul prédicat du groupe doit correspondre. La valeur par défaut est « `false` », ce qui signifie que tout doit correspondre.
 
 * **p.not**
 
-  Si défini sur « `true` », le groupe est annulé (la valeur par défaut est « `false` »).
+  Si « `true` » est défini, le groupe est annulé (la valeur par défaut est « `false` »).
 
 * **&lt;predicate>**
 
@@ -231,7 +231,7 @@ Il s’agit conceptuellement de `fulltext AND ( (path AND type) OR (path AND typ
 
 Limite les résultats aux éléments dont la session en cours possède les [privilèges JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) spécifiés.
 
-Il s’agit d’un prédicat de type filtrage seul qui ne peut pas utiliser d’index de recherche. Il ne prend pas en charge l’extraction de facettes.
+Un prédicat de filtrage uniquement et qui ne peut pas utiliser d’index de recherche. Il ne prend pas en charge l’extraction de facettes.
 
 #### Propriétés {#properties-7}
 
@@ -239,27 +239,27 @@ Il s’agit d’un prédicat de type filtrage seul qui ne peut pas utiliser d’
 
   Privilèges JCR séparés par des virgules qui doivent TOUS être associés à la session utilisateur en cours pour le nœud en question. Par exemple, `jcr:write`, `jcr:modifyAccessControl`.
 
-### language {#language}
+### `language` {#language}
 
 Recherche les pages CQ dans une langue spécifique. Cela permet d’examiner à la fois la propriété de langue de la page et le chemin d’accès à la page qui inclut souvent la langue ou les paramètres régionaux dans une structure de site de niveau supérieur.
 
-Il s’agit d’un prédicat de type filtrage seul qui ne peut pas utiliser d’index de recherche.
+Un prédicat de filtrage uniquement et qui ne peut pas utiliser d’index de recherche.
 
-Prend en charge l’extraction de facettes. Fournit des compartiments pour chaque code de langue unique.
+Elle prend en charge l’extraction de facettes. Fournit des compartiments pour chaque code de langue unique.
 
 #### Propriétés {#properties-8}
 
 * **language**
 
-  Code de langue ISO ; par exemple, « `de` ».
+  Code de langue ISO ; par exemple, « `de` ».
 
-### mainasset {#mainasset}
+### `mainasset` {#mainasset}
 
-Vérifie si un nœud est une ressource principale DAM et non une sous-ressource. Il s’agit, en fait, de tout nœud qui ne se trouve pas à l’intérieur d’un nœud « sub-assets ». Ce prédicat ne recherche pas le type de nœud `dam:Asset`. Pour utiliser ce prédicat, définissez « `mainasset=true` » ou « `mainasset=false` » ; il n’y a pas d’autres propriétés.
+Vérifie si un nœud est une ressource principale DAM et non une sous-ressource. En gros, chaque nœud ne se trouve pas dans un nœud « sous-ressources ». Ne vérifie pas le type de nœud `dam:Asset`. Pour utiliser ce prédicat, définissez « `mainasset=true` » ou « `mainasset=false` », il n’y a pas d’autres propriétés.
 
-Il s’agit d’un prédicat de type filtrage seul qui ne peut pas utiliser d’index de recherche.
+Un prédicat de filtrage uniquement et qui ne peut pas utiliser d’index de recherche.
 
-Prend en charge l’extraction des facettes et fournit deux compartiments pour les ressources principales et secondaires.
+Elle prend en charge l’extraction de facettes et fournit deux compartiments pour les ressources principales et secondaires.
 
 #### Propriétés {#properties-9}
 
@@ -271,7 +271,7 @@ Prend en charge l’extraction des facettes et fournit deux compartiments pour l
 
 Recherche les éléments membres d’une [collection de ressources Sling](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) spécifique.
 
-Il s’agit d’un prédicat de type filtrage seul qui ne peut pas utiliser d’index de recherche. Ne prend pas en charge l’extraction de facettes.
+Un prédicat de filtrage uniquement et qui ne peut pas utiliser d’index de recherche. Il ne prend pas en charge l’extraction de facettes.
 
 #### Propriétés {#properties-10}
 
@@ -279,11 +279,11 @@ Il s’agit d’un prédicat de type filtrage seul qui ne peut pas utiliser d’
 
   Chemin d’accès à la collection de ressources Sling.
 
-### nodename {#nodename}
+### `nodename` {#nodename}
 
 Correspond aux noms des noeuds JCR.
 
-Prend en charge l’extraction de facettes. Fournit des compartiments pour chaque nom de nœud unique (nom de fichier).
+Elle prend en charge l’extraction de facettes. Fournit des compartiments pour chaque nom de nœud unique (nom de fichier).
 
 #### Propriétés {#properties-11}
 
@@ -291,13 +291,13 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 
   Modèle de nom de nœud qui autorise les caractères génériques : `*` = n’importe quel caractère, ou aucun, `?` = n’importe quel caractère, `[abc]` = uniquement les caractères entre crochets.
 
-### notexpired {#notexpired}
+### `notexpired` {#notexpired}
 
-Met en correspondance des éléments en vérifiant si une propriété DATE JCR est supérieure ou égale à l’heure actuelle du serveur. Ce prédicat peut être utilisé pour effectuer une vérification sur une propriété date de type « `expiresAt` » et se limiter uniquement à celles qui n’ont pas encore expiré (`notexpired=true`) ou qui ont déjà expiré (`notexpired=false`).
+Met en correspondance des éléments en vérifiant si une propriété DATE JCR est supérieure ou égale à l’heure actuelle du serveur. Peut être utilisé pour effectuer une vérification sur une propriété date de type `expiresAt` et se limiter uniquement à celles qui n’ont pas encore expiré ( `notexpired=true`) ou qui ont déjà expiré ( `notexpired=false`).
 
-Ne prend pas en charge le filtrage.
+Il ne prend pas en charge le filtrage.
 
-Prend en charge l’extraction de facettes de la même manière que le prédicat.
+Elle prend en charge l’extraction de facettes de la même manière que le prédicat daterange.
 
 #### Propriétés {#properties-12}
 
@@ -309,9 +309,9 @@ Prend en charge l’extraction de facettes de la même manière que le prédicat
 
   Chemin d’accès relatif à la propriété `DATE` à vérifier (obligatoire).
 
-### orderby {#orderby}
+### `orderby` {#orderby}
 
-Permet de trier les résultats. Si un classement basé sur plusieurs propriétés est requis, ce prédicat doit être ajouté plusieurs fois à l’aide du préfixe numérique, tel que `1_orderby=first`, `2_oderby=second`.
+Permet de trier les résultats. Si un classement basé sur plusieurs propriétés est requis, ce prédicat doit être ajouté plusieurs fois à l’aide du préfixe numérique, tel que `1_orderby=first`, `2_oderby=second`.
 
 #### Propriétés {#properties-13}
 
@@ -327,35 +327,36 @@ Permet de trier les résultats. Si un classement basé sur plusieurs propriété
 
   Si cette valeur est définie sur « `ignore` », le tri ne respecte pas la casse, ce qui signifie que « a » vient avant « B »; si cette valeur est vide ou ignorée, le tri respecte la casse, ce qui signifie que « B » vient avant « a ».
 
-### path {#path}
+### `path` {#path}
 
 Recherche dans un chemin donné.
 
-Ne prend pas en charge l’extraction de facettes.
+Il ne prend pas en charge l’extraction de facettes.
 
 #### Propriétés {#properties-14}
 
 * **path**
 
-  Modèle de chemin. Selon la propriété exacte, soit l’ensemble de la sous-arborescence correspond (revient à ajouter `//*` dans xpath, mais notez que cela n’inclut pas le chemin de base), ou seulement un chemin d’accès exact correspond, lequel peut inclure des caractères génériques (`*`) ; si la valeur self est définie, la recherche portera sur l’ensemble de la sous-arborescence, y compris le nœud de base.
+  Modèle de chemin. Lorsqu’elle est `exact=false` (par défaut), la recherche correspond à l’ensemble de la sous-arborescence sous le chemin spécifié, ce qui revient à ajouter des `//*` dans XPath, mais cela n’inclut pas le chemin de base lui-même. Lorsqu’elle est `exact=true`, la recherche ne correspond qu’au chemin exact, qui peut inclure des caractères génériques `*`. Si `self` est défini, la recherche inclut le nœud de base et sa sous-arborescence entière.
+
 
 * **exact**
 
-  Si la propriété `exact` est définie sur true/on, le chemin d’accès exact doit correspondre, mais il peut contenir des caractères génériques simples (`*`), qui correspondent aux noms, mais pas « `/` » ; si elle est définie sur false (par défaut) tous les descendants sont inclus (facultatif).
+  Si la `exact` est définie sur true (activé), le chemin d’accès exact doit correspondre, mais il peut contenir des caractères génériques simples ( `*`), qui correspondent aux noms, mais pas « `/` » ; si elle est définie sur false (par défaut) tous les descendants sont inclus (facultatif).
 
 * **flat**
 
-  Effectue uniquement des recherches dans les enfants directs (revient à ajouter « `/*` » dans xpath) (utilisé uniquement si « `exact` » n’est pas défini sur true, facultatif).
+  Effectue uniquement des recherches dans les enfants directs (revient à ajouter « `/*` » dans `xpath`) (utilisé uniquement si « `exact` » n’est pas défini sur true, facultatif).
 
 * **self**
 
   Effectue des recherches dans la sous-arborescence, mais inclut le nœud de base indiqué comme chemin d’accès (pas de caractères génériques).
 
-### property {#property}
+### `property` {#property}
 
 Met en correspondance des propriétés JCR et leurs valeurs.
 
-Prend en charge l’extraction de facettes. Fournit des compartiments pour chaque valeur de propriété dans les résultats.
+Elle prend en charge l’extraction de facettes. Fournit des compartiments pour chaque valeur de propriété dans les résultats.
 
 #### Propriétés {#properties-15}
 
@@ -377,19 +378,19 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 
 * **operation**
 
-  « `equals` » pour une correspondance exacte (par défaut), « `unequals` » pour la comparaison des inégalités,« `like` » pour utiliser la fonction xpath `jcr:like` (facultatif), « `not` » pour aucune correspondance (par exemple, « `not(@prop)` » dans xpath, le paramètre value est ignoré) ou « `exists` » pour la vérification de l’existence (la valeur peut être true – la propriété doit exister, par défaut – ou false – comme « `not` »).
+  Utilisez `equals` pour une correspondance exacte (par défaut) et `unequals` pour une comparaison des inégalités. Utilisez `like` pour appliquer la fonction XPath `jcr:like` facultative. Utilisez `not` pour l’absence de correspondance (par exemple, `not(@prop)` dans XPath) ; dans ce cas, le paramètre `value` est ignoré. Utilisez `exists` pour vérifier si une propriété existe : `true` (par défaut) requiert la propriété et `false` est équivalent à `not`.
 
 * **depth**
 
-  Nombre de niveaux de caractères génériques sous lesquels le chemin de propriété/relatif peut exister (par exemple, `property=size depth=2` vérifie le nœud/la taille, le nœud/&ast;/taille et le nœud/&ast;/&ast;/taille).
+  Nombre de niveaux de caractères génériques sous lesquels la propriété et le chemin d’accès relatif peuvent exister. Par exemple, `property=size depth=2` vérifie le nœud et la taille, le nœud/&amp;ast;/size et le nœud/&amp;ast;/&amp;ast;/size.
 
-### rangeproperty {#rangeproperty}
+### `rangeproperty` {#rangeproperty}
 
-Met en correspondance une propriété JCR par rapport à un intervalle. Ce prédicat s’applique à des propriétés de type linéaire telles que `LONG`, `DOUBLE` et `DECIMAL`. Pour `DATE`, reportez-vous au prédicat daterange qui présente une entrée de format de date optimisée.
+Met en correspondance une propriété JCR par rapport à un intervalle. S’applique aux propriétés de type linéaire, telles que `LONG`, `DOUBLE` et `DECIMAL`. Pour `DATE`, reportez-vous au prédicat daterange qui présente une entrée de format de date optimisée.
 
 Vous pouvez définir une limite inférieure et une limite supérieure ou seulement l’une d’elles. L’opération (par exemple, « inférieure à », ou « inférieure ou égale à ») peut également être spécifiée individuellement pour les limites inférieure et supérieure.
 
-Ne prend pas en charge l’extraction de facettes.
+Il ne prend pas en charge l’extraction de facettes.
 
 #### Propriétés {#properties-16}
 
@@ -403,7 +404,7 @@ Ne prend pas en charge l’extraction de facettes.
 
 * **lowerOperation**
 
-  « `>` » (par défaut) ou « `>=` », s’applique à `lowerValue`.
+  « `>` » (par défaut) ou « `>=` » s’applique à la `lowerValue`
 
 * **upperBound**
 
@@ -411,15 +412,15 @@ Ne prend pas en charge l’extraction de facettes.
 
 * **upperOperation**
 
-  « `<` » (par défaut) ou « `<=` », s’applique à `lowerValue`.
+  « `<` » (par défaut) ou « `<=` » s’applique à la `lowerValue`
 
 * **decimal**
 
   « `true` » si la propriété vérifiée est de type Décimal
 
-### relativedaterange {#relativedaterange}
+### `relativedaterange` {#relativedaterange}
 
-Fait correspondre les propriétés `JCR DATE` par rapport à un intervalle de date/heure à l’aide de décalages temporels relatifs à l’heure actuelle du serveur. Vous pouvez spécifier `lowerBound` et `upperBound` en utilisant une valeur en millisecondes ou la syntaxe bugzilla `1s 2m 3h 4d 5w 6M 7y` (une seconde, deux minutes, trois heures, quatre jours, cinq semaines, six mois, sept ans). Préfixe avec « `-` » pour indiquer un décalage négatif avant l’heure actuelle. Si vous spécifiez uniquement `lowerBound` ou `upperBound`, l’autre propriété est définie par défaut sur 0, ce qui signifie l’heure actuelle.
+Fait correspondre `JCR DATE` propriétés par rapport à un intervalle de date et d’heure à l’aide de décalages temporels relatifs à l’heure actuelle du serveur. Vous pouvez spécifier `lowerBound` et `upperBound` à l’aide d’une valeur en millisecondes ou de l’`1s 2m 3h 4d 5w 6M 7y` de syntaxe bugzilla. Préfixe avec « `-` » pour indiquer un décalage négatif avant l’heure actuelle. Si vous spécifiez uniquement `lowerBound` ou `upperBound`, l’autre propriété est définie par défaut sur 0, ce qui signifie l’heure actuelle.
 
 Par exemple :
 
@@ -431,9 +432,9 @@ Par exemple :
 
 Il ne tient pas compte des années bissextiles et tous les mois comptent 30 jours.
 
-Ne prend pas en charge le filtrage.
+Il ne prend pas en charge le filtrage.
 
-Prend en charge l’extraction de facettes de la même manière que le prédicat.
+Elle prend en charge l’extraction de facettes de la même manière que le prédicat daterange.
 
 #### Propriétés {#properties-17}
 
@@ -445,9 +446,9 @@ Prend en charge l’extraction de facettes de la même manière que le prédicat
 
   Limite de date inférieure en millisecondes ou `1s 2m 3h 4d 5w 6M 7y` (une seconde, deux minutes, trois heures, quatre jours, cinq semaines, six mois, sept ans) par rapport à l’heure actuelle du serveur ; utilisez « - » pour un décalage négatif.
 
-### root {#root}
+### `root` {#root}
 
-Groupe de prédicats racine. Prend en charge toutes les fonctionnalités d’un groupe et vous permet de définir des paramètres de requête globaux.
+Groupe de prédicats racine. Il prend en charge toutes les fonctionnalités d’un groupe et vous permet de définir des paramètres de requête globaux.
 
 Le nom « root » n’est jamais utilisé dans une requête ; il est implicite.
 
@@ -463,11 +464,12 @@ Le nom « root » n’est jamais utilisé dans une requête ; il est implicit
 
 * **p.guessTotal**
 
-  Recommandé : évitez de calculer le total des résultats, une opération qui peut s’avérer fastidieuse ; il s’agit soit d’un nombre qui indique la limite de comptage maximale (par exemple 1 000, un nombre qui offre aux utilisateurs et utilisatrices suffisamment d’informations sur la taille approximative et des valeurs exactes pour des résultats plus petits), ou « `true` » pour compter seulement jusqu’au minimum requis `p.offset`+`p.limit`.
+  Pour éviter le coût du calcul d’un total de résultats complet, ne comptez pas toutes les correspondances. Au lieu de cela, définissez un total maximal à compter jusqu’à (par exemple, `1000`) pour donner aux utilisateurs une taille approximative et des totaux exacts pour des résultats plus petits. Ou définissez-le sur `true` pour compter uniquement jusqu’au minimum requis : `p.offset + p.limit`.
+
 
 * **p.excerpt**
 
-  Si la valeur est définie sur « `true` », l’extrait de texte complet est inclus dans les résultats.
+  Si la valeur est définie sur « `true` », l’extrait de texte complet est inclus dans les résultats.
 
 * **p.hits**
 
@@ -479,21 +481,23 @@ Le nom « root » n’est jamais utilisé dans une requête ; il est implicit
 
    * **full** :
 
-     Rendu JSON Sling du nœud, avec `jcr:path` qui indique le chemin de l’accès : par défaut, seules les propriétés directes du nœud sont répertoriées, inclure une arborescence plus profonde avec `p.nodedepth=N`, 0 signifiant l’ensemble de la sous-arborescence infinie ; ajouter `p.acls=true` pour inclure les autorisations JCR de la session en cours sur l’élément de résultat donné (mappages : `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+     Les résultats sont rendus au format Sling JSON pour chaque nœud, avec des `jcr:path` indiquant le chemin d’accès. Par défaut, la réponse inclut uniquement les propriétés directes du nœud ; utilisez `p.nodedepth=N` pour inclure du contenu plus profond, où `0` renvoie l’ensemble de la sous-arborescence. Définissez `p.acls=true` pour inclure les autorisations JCR de la session en cours pour chaque élément (`create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+
 
    * **selective** :
 
-     Uniquement les propriétés spécifiées dans `p.properties`, à savoir une liste de chemins d’accès relatifs séparés par des espaces (utiliser « + » dans les URL) ; si le chemin d’accès relatif a une profondeur > 1, ils sont représentés sous la forme d’objets enfants ; la propriété jcr:path spéciale inclut le chemin de l’accès.
+     La réponse inclut uniquement les propriétés répertoriées dans `p.properties`, qui est une liste de chemins d’accès relatifs séparés par des espaces (à utiliser `+` dans les URL). Si un chemin relatif a une profondeur supérieure à 1, la sortie l’imbrique en tant qu’objets enfants. La propriété spéciale `jcr:path` inclut toujours le chemin d’accès.
 
-### savedquery {#savedquery}
 
-Inclut tous les prédicats d’une requête Query Builder persistante dans la requête actuelle sous la forme d’un prédicat de sous-groupe.
+### `savedquery` {#savedquery}
+
+Il inclut tous les prédicats d’une requête persistante de Query Builder dans la requête actuelle en tant que prédicat de sous-groupe.
 
 Il n’exécute pas de requête supplémentaire, mais étend la requête actuelle.
 
 Les requêtes peuvent être conservées par programmation à l’aide de `QueryBuilder#storeQuery()`. Ce format peut être soit une propriété String multiligne, soit un nœud `nt:file` contenant la requête en tant que fichier texte au format des propriétés Java™.
 
-Ne prend pas en charge l’extraction de facettes pour les prédicats de la requête enregistrée.
+Il ne prend pas en charge l’extraction de facettes pour les prédicats de la requête enregistrée.
 
 #### Propriétés {#properties-19}
 
@@ -501,11 +505,11 @@ Ne prend pas en charge l’extraction de facettes pour les prédicats de la requ
 
   Chemin d’accès à la requête enregistrée (propriété String ou nœud `nt:file`).
 
-### similar {#similar}
+### `similar` {#similar}
 
 Recherche par analogie à l’aide du `rep:similar()` du Xpath JCR.
 
-Ne prend pas en charge le filtrage. Ne prend pas en charge l’extraction de facettes.
+Il ne prend pas en charge le filtrage. Il ne prend pas en charge l’extraction de facettes.
 
 #### Propriétés {#properties-20}
 
@@ -515,17 +519,17 @@ Chemin d’accès absolu au nœud pour lequel des nœuds similaires sont recherc
 * **local**
 Un chemin relatif vers un nœud descendant ou `.` pour le nœud actif (facultatif, la valeur par défaut est« `.` »).
 
-### tag {#tag}
+### `tag` {#tag}
 
 Recherche du contenu identifié avec une ou plusieurs balises, en spécifiant les chemins d’accès aux titres des balises.
 
-Prend en charge l’extraction de facettes. Fournit des compartiments pour chaque balise, en utilisant le chemin d’accès vers le titre de balise active.
+Elle prend en charge l’extraction de facettes. Fournit des compartiments pour chaque balise, en utilisant le chemin d’accès vers le titre de balise active.
 
 #### Propriétés {#properties-21}
 
 * **tag**
 
-  Chemin d’accès au titre de la balise à rechercher ; par exemple, « Propriétés de ressource : Orientation/Paysage ».
+  Chemin d’accès au titre de la balise à rechercher ; par exemple, « Propriétés de ressource : Orientation / Paysage ».
 
 * **N_value**
 
@@ -535,31 +539,31 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 
   Propriété (ou chemin d’accès relatif à la propriété) à examiner (par défaut : « `cq:tags` »)
 
-### tagid {#tagid}
+### `tagid` {#tagid}
 
 Recherche du contenu identifié avec une ou plusieurs balises, en spécifiant les chemins d’accès aux ID des balise.
 
-Prend en charge l’extraction de facettes. Fournit des compartiments pour chaque balise, en utilisant le chemin d’accès à l’ID de la balise active.
+Elle prend en charge l’extraction de facettes. Fournit des compartiments pour chaque balise, en utilisant le chemin d’accès à l’ID de la balise active.
 
 #### Propriétés {#properties-22}
 
 * **tagid**
 
-  ID de balise pour pouvoir effectuer une recherche, par exemple « `properties:orientation/landscape` ».
+  Identifiant de balise afin que vous puissiez rechercher, par exemple, « `properties:orientation/landscape` ».
 
 * **N_value**
 
-  Utilisez `1_value`, `2_value`, ... pour rechercher plusieurs ID de balise (combinés avec `OR` par défaut, avec `AND` si et=true) (à partir de la version 5.6).
+  Utilisez `1_value`, `2_value`, ... pour rechercher plusieurs `tagids` (combinées avec `OR` par défaut, avec `AND` si and=true) (à partir de la version 5.6).
 
 * **property**
 
   Propriété (ou chemin d’accès relatif à la propriété) à examiner (par défaut : « `cq:tags` »).
 
-### tagsearch {#tagsearch}
+### `tagsearch` {#tagsearch}
 
-Recherche du contenu identifié avec une ou plusieurs balises, en spécifiant des mots-clés. Cette action recherche d’abord les balises dont les titres contiennent ces mots clés, puis limite les résultats aux seuls éléments balisés de la sorte.
+Recherche du contenu identifié avec une ou plusieurs balises, en spécifiant des mots-clés. Recherche d’abord les balises qui contiennent ces mots-clés dans leurs titres, puis limite le résultat aux seuls éléments balisés.
 
-Ne prend pas en charge l’extraction de facettes.
+Il ne prend pas en charge l’extraction de facettes.
 
 #### Propriétés {#Properties-1}
 
@@ -577,13 +581,13 @@ Ne prend pas en charge l’extraction de facettes.
 
 * **all**
 
-  (Booléen) Recherche le texte intégral d’une balise, c’est-à-dire tous les titres, la description, etc. Est prioritaire sur « I `ang` ».
+  (Booléen) Recherche le texte intégral d’une balise, c’est-à-dire tous les titres, la description, etc. A la priorité sur « l `ang` ».
 
-### type {#type}
+### `type` {#type}
 
-Limite les résultats à un type de nœud JCR spécifique, aussi bien pour les types de nœuds primaires que de mixin. Cette action trouve également des sous-types de ce type de nœud. Les index de recherche de référentiel doivent couvrir les types de nœuds pour une exécution efficace.
+Limite les résultats à un type de nœud JCR spécifique, à la fois au type de nœud principal ou au type de mixin , et trouve des sous-types de ce type de nœud. Les index de recherche de référentiel doivent couvrir les types de nœuds pour une exécution efficace.
 
-Prend en charge l’extraction de facettes. Fournit des compartiments pour chaque type unique dans les résultats.
+Elle prend en charge l’extraction de facettes. Fournit des compartiments pour chaque type unique dans les résultats.
 
 #### Propriétés {#Properties-2}
 
