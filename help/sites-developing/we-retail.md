@@ -50,7 +50,7 @@ Le site `We.Retail` est fourni en tant qu’exemple de contenu AEM. Pour l’uti
 
 >[!CAUTION]
 >
->Le site `We.Retail` repose sur la technologie AEM la plus récente et ne prend donc pas en charge la création dans l’IU [ classique](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md).
+>Le site `We.Retail` repose sur la technologie AEM la plus récente et ne prend donc pas en charge la création dans l’IU [&#x200B; classique](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md).
 
 ### Dernière version {#latest-version}
 
