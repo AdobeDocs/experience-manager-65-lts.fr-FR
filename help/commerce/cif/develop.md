@@ -31,7 +31,7 @@ Un environnement de développement local est recommandé pour travailler avec de
 
 >[!NOTE]
 >
->Les instructions suivantes vous aident à configurer un environnement de développement AEM local pour AEM Commerce à l’aide de CIF (avec le focus pour AEM 6.5 LTS). Si vous utilisez AEM as a Cloud Service, reportez-vous à la documentation [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#).
+>Les instructions suivantes vous aident à configurer un environnement de développement AEM local pour AEM Commerce à l’aide de CIF (avec le focus pour AEM 6.5 LTS). Si vous utilisez AEM as a Cloud Service, reportez-vous à la documentation [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#).
 
 Le module complémentaire AEM Commerce pour AEM, connu sous le nom de module complémentaire CIF, est également disponible pour le développement local et fourni sous la forme d’un package AEM. Il peut être téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) en tant que pack de fonctionnalités.
 
