@@ -1,30 +1,30 @@
 ---
 title: Sélection de manière dynamique d’un utilisateur ou d’un groupe pour les étapes de workflow basées sur l’utilisation d’AEM Forms
-description: Découvrez comment sélectionner un utilisateur ou un groupe pour un processus AEM Forms au moment de l’exécution.
+description: Découvrez comment sélectionner un utilisateur ou un groupe pour un workflow AEM Forms au moment de l’exécution.
 content-type: troubleshooting
 topic-tags: publish
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services
 exl-id: b3b3567f-df0a-4a24-849c-dcc0b745de63
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 97%
+source-wordcount: '865'
+ht-degree: 64%
 
 ---
 
 # Sélection de manière dynamique d’un utilisateur ou d’un groupe pour les étapes de workflow basées sur l’utilisation d’AEM Forms {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
-Découvrez comment sélectionner un utilisateur ou un groupe pour un processus AEM Forms au moment de l’exécution.
+Découvrez comment sélectionner un utilisateur ou un groupe pour un workflow AEM Forms au moment de l’exécution.
 
-Dans les grandes organisations, il est nécessaire de sélectionner dynamiquement les utilisateurs et utilisatrices pour un processus. On peut par exemple sélectionner un agent ou une agente de terrain pour servir un client ou une cliente en fonction de leur proximité. Dans un tel scénario, la sélection de l’agent ou de l’agente est dynamique.
+Dans les grandes entreprises, il est nécessaire de sélectionner les utilisateurs de manière dynamique pour un processus. On peut par exemple sélectionner un agent ou une agente de terrain pour servir un client ou une cliente en fonction de leur proximité. Dans un tel scénario, la sélection de l’agent ou de l’agente est dynamique.
 
-Attribuez une tâche et les étapes Adobe Sign des [workflows centrés sur les formulaires sur OSGi](/help/forms/using/aem-forms-workflow.md) fournissent des options pour sélectionner de manière dynamique un utilisateur. Vous pouvez utiliser des bundles ECMAScript ou OSGi pour sélectionner de manière dynamique une personne désignée pour l’étape Affecter une tâche ou pour sélectionner des signataires pour l’étape Signer un document.
+Attribuez une tâche et les étapes Adobe Sign des [workflows centrés sur Forms sur OSGi](/help/forms/using/aem-forms-workflow.md) fournissent des options pour sélectionner un utilisateur de manière dynamique. Vous pouvez utiliser des bundles ECMAScript ou OSGi pour sélectionner dynamiquement une personne désignée pour l’étape Affecter une tâche ou pour sélectionner des signataires pour l’étape Signer un document.
 
-## Utilisation de ECMAScript pour sélectionner de manière dynamique un utilisateur ou un groupe {#use-ecmascript-to-dynamically-select-a-user-or-group}
+## Utilisation de ECMAScript pour sélectionner un utilisateur ou un groupe de manière dynamique {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
-ECMAScript est un langage de script. Il est utilisé pour les applications de script et de serveur côté client. Suivez les étapes ci-après pour sélectionner dynamiquement un utilisateur, une utilisatrice ou un groupe à l’aide d’ECMAScript :
+ECMAScript est un langage de script. Il est utilisé pour les applications de script et de serveur côté client. Effectuez les étapes suivantes pour sélectionner de manière dynamique un utilisateur ou un groupe à l’aide de ECMAScript :
 
 1. Ouvrez CRXDE Lite. L’URL est `https://'[server]:[port]'/crx/de/index.jsp`
 1. Créez un fichier avec l’extension .ecma à l’emplacement suivant. Si le chemin d’accès (structure du nœud) n’existe pas, créez-le :
@@ -32,25 +32,25 @@ ECMAScript est un langage de script. Il est utilisé pour les applications de sc
    * (Chemin de l’étape Affecter une tâche) `/apps/fd/dashboard/scripts/participantChooser`
    * (Chemin de l’étape Signature) `/apps/fd/workflow/scripts/adobesign`
 
-1. Ajoutez ECMAScript, qui possède la logique pour sélectionner dynamiquement une personne, au fichier .ecma. Cliquez sur **[!UICONTROL Enregistrer tout]**.
+1. Ajoutez ECMAScript qui possède la logique pour sélectionner un utilisateur de manière dynamique au fichier `.ecma`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
    Pour des exemples de script, voir [Exemples de ECMAScript pour la sélection dynamique d’un utilisateur ou d’un groupe](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group).
 
 1. Ajoutez le nom d’affichage du script. Ce nom s’affiche dans les étapes du workflow. Pour spécifier le nom :
 
-   1. Développez le nœud du script, cliquez avec le bouton droit sur le nœud **[!UICONTROL jcr:content]**, puis cliquez sur **[!UICONTROL Mixins]**.
+   1. Développez le nœud du script, cliquez avec le bouton droit sur le nœud **`jcr:content`**, puis cliquez sur **[!UICONTROL Mixins]**.
    1. Ajoutez la propriété `mix:title` dans la boîte de dialogue Modifier les mixins et cliquez sur **OK**.
-   1. Ajoutez la propriété suivante au nœud de script jcr:content :
+   1. Ajoutez la propriété suivante au nœud de script `jcr:content` :
 
       | Nom | Type | Valeur |
       |--- |--- |--- |
-      | jcr:title | Chaîne | Indiquez le nom du script. Par exemple, sélectionnez l’agent ou agente de terrain se situant le plus près. Ce nom s’affiche dans les étapes Affecter une tâche et Signer un document. |
+      | `jcr:title` | Chaîne | Indiquez le nom du script. Par exemple, sélectionnez l’agent ou agente de terrain se situant le plus près. Ce nom s’affiche dans les étapes `Assign Task` et Signer le document . |
 
    1. Cliquez sur **Enregistrer tout**. Le script peut être sélectionné dans les composants du workflow AEM.
 
       ![script](assets/script.png)
 
-### Exemples de ECMAScript pour sélectionner de manière dynamique un utilisateur ou un groupe {#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group}
+### Exemples de ECMAScript pour sélectionner un utilisateur ou un groupe de manière dynamique {#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group}
 
 L’exemple ECMAScript suivant sélectionne de manière dynamique une personne désignée pour l’étape Affecter une tâche. Dans ce script, une personne est sélectionnée en fonction du chemin de la payload. Avant d’utiliser ce script, veillez à ce que toutes les personnes mentionnées dans le script existent dans AEM. Dans le cas contraire, le processus associé peut échouer.
 
@@ -113,11 +113,11 @@ function getAdobeSignRecipients() {
 }
 ```
 
-## Utilisation de l’interface Java pour sélectionner de manière dynamique un utilisateur ou un groupe {#use-java-interface-to-dynamically-choose-a-user-or-group}
+## Utilisation de l’interface Java pour sélectionner un utilisateur ou un groupe de manière dynamique {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-Vous pouvez utiliser l’interface Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) pour choisir de manière dynamique une personne ou un groupe pour les étapes Adobe Sign et Affecter une tâche. Vous pouvez créer un bundle OSGi qui utilise l’interface Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) et la déploie sur le serveur AEM Forms. Ainsi, l’option peut être sélectionnée dans les composants Affecter une tâche et Adobe Sign du workflow AEM.
+Vous pouvez utiliser l’interface Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) pour sélectionner de manière dynamique un utilisateur ou un groupe pour les étapes Adobe Sign et Affecter une tâche. Vous pouvez créer un bundle OSGi qui utilise l’interface Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) et la déploie sur le serveur AEM Forms. Cela rend disponible à la sélection l’option dans les composants `Assign Task` et Adobe Sign d’AEM Workflow.
 
-Vous avez besoin des fichiers jar [AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) et [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) pour compiler l’exemple de code répertorié ci-dessous. Ajoutez ces fichiers jar en tant que dépendances externes au projet de bundle OSGi. Vous pouvez utiliser n’importe quel IDE Java pour créer un bundle OSGi. La procédure suivante décrit l’utilisation d’Eclipse pour créer un bundle OSGi :
+Vous avez besoin des fichiers jar [AEM Forms Client SDK](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) et [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) pour compiler l’exemple de code répertorié ci-dessous. Ajoutez ces fichiers jar en tant que dépendances externes au projet de bundle OSGi. Vous pouvez utiliser n’importe quel IDE Java pour créer un bundle OSGi. La procédure suivante décrit l’utilisation d’Eclipse pour créer un bundle OSGi :
 
 1. Ouvrez Eclipse IDE. Accédez à **[!UICONTROL Fichier]** > **[!UICONTROL Nouveau projet]**.
 1. Dans l’écran Sélectionner un assistant, sélectionnez **[!UICONTROL Projet Maven]**, puis cliquez sur **[!UICONTROL Suivant]**.
@@ -224,16 +224,16 @@ Vous avez besoin des fichiers jar [AEM Forms Client SDK](https://experienceleagu
    </project>
    ```
 
-1. Ajoutez un code source qui utilise l’interface Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) pour choisir dynamiquement une personne ou un groupe pour l’étape Affecter une tâche. Pour consulter un exemple de code, rendez-vous sur [Exemple de choix dynamique d’une personne ou d’un groupe à l’aide de l’interface Java](#-sample-scripts-for).
+1. Ajoutez un code source qui utilise l’interface Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) pour sélectionner de manière dynamique un utilisateur ou un groupe pour l’étape Affecter une tâche. Pour obtenir un exemple de code, consultez [Exemple pour sélectionner de manière dynamique un utilisateur ou un groupe à l’aide d’une interface Java](#-sample-scripts-for).
 1. Ouvrez une invite de commande et accédez au répertoire contenant le projet de bundle OSGi. Utilisez la commande suivante pour créer le bundle OSGi :
 
    `mvn clean install`
 
-1. Chargez le bundle sur un serveur AEM Forms. Vous pouvez utiliser le gestionnaire de modules AEM pour importer le bundle dans le serveur AEM Forms.
+1. Chargez le bundle sur un serveur AEM Forms. Vous pouvez utiliser le gestionnaire de packages d’AEM pour importer le bundle sur le serveur AEM Forms.
 
 Une fois le bundle importé, l’option de sélection de l’interface Java pour sélectionner de manière dynamique un utilisateur ou un groupe devient disponible pour les étapes Adobe Sign et Affecter une tâche.
 
-### Exemples de code Java pour sélectionner de manière dynamique un utilisateur ou un groupe {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
+### Exemple de code Java pour sélectionner un utilisateur ou un groupe de manière dynamique {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
 
 L’exemple de code suivant sélectionne de manière dynamique une personne désignée pour l’étape Adobe Sign. Utilisez le code dans un bundle OSGi. Avant d’utiliser le code répertorié ci-dessous, assurez-vous que les coordonnées (adresses e-mails et numéros de téléphone) renseignées dans le code sont correctes. Dans le cas contraire, le processus associé peut échouer.
 

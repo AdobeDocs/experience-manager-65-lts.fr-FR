@@ -9,29 +9,29 @@ thumbnail: 39476.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
-source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
+source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 90%
+source-wordcount: '765'
+ht-degree: 56%
 
 ---
 
-# Développeur d’AEM Commerce {#develop}
+# Développement d’AEM Commerce {#develop}
 
-Le développement de projets AEM Commerce basés sur Commerce Integration Framework (CIF) pour AEM suit les mêmes règles et bonnes pratiques que les autres projets d’AEM. Veuillez d’abord examiner les éléments suivants :
+Le développement de projets AEM Commerce basés sur Commerce integration framework (CIF) pour AEM suit les mêmes règles et bonnes pratiques que les autres projets AEM. Passez en revue les éléments suivants :
 
 - [Guide de l’utilisateur pour le développement dans AEM](/help/sites-developing/getting-started.md)
 - [Concepts de base d’AEM](/help/sites-developing/the-basics.md)
 - [Développement sur AEM – Conseils et bonnes pratiques](/help/sites-developing/dev-guidelines-bestpractices.md)
 - [Création de projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md)
 
-## Développement local pour AEM Commerce {#local}
+## Développement local pour AEM Commerce {#local}
 
 Un environnement de développement local est recommandé pour travailler avec des projets CIF.
 
 >[!NOTE]
 >
->Les instructions suivantes vous aident à configurer un environnement de développement AEM local pour AEM Commerce à l’aide de CIF (avec le focus pour AEM 6.5 LTS). Si vous utilisez AEM as a Cloud Service, reportez-vous à la documentation [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=fr).
+>Les instructions suivantes vous aident à configurer un environnement de développement AEM local pour AEM Commerce à l’aide de CIF (avec le focus pour AEM 6.5 LTS). Si vous utilisez AEM as a Cloud Service, reportez-vous à la documentation [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#).
 
 Le module complémentaire AEM Commerce pour AEM, connu sous le nom de module complémentaire CIF, est également disponible pour le développement local et fourni sous la forme d’un package AEM. Il peut être téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) en tant que pack de fonctionnalités.
 
@@ -48,15 +48,15 @@ Les logiciels suivants doivent être installés localement :
 
 ### Accès au module complémentaire CIF
 
-Le module complémentaire CIF peut être téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html), recherchez « module complémentaire AEM Commerce ».
+Le module complémentaire CIF peut être téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html), recherchez `AEM Commerce add-on`.
 
 >[!TIP]
 >
->Veillez à toujours utiliser la dernière version du module complémentaire CIF.
+>Veillez à toujours utiliser la dernière version du module complémentaire de CIF.
 
 ### Configuration locale
 
-Pour le développement de projet CIF local à l’aide d’AEM et du module complémentaire CIF, procédez comme suit :
+Pour le développement de projet CIF local à l’aide d’AEM et du module complémentaire CIF, procédez comme suit :
 
 1. Décompressez le fichier AEM .jar pour créer le dossier `crx-quickstart` et exécutez :
 
@@ -70,11 +70,11 @@ Pour le développement de projet CIF local à l’aide d’AEM et du module comp
 
 >[!TIP]
 >
->Le package complémentaire CIF peut également être installé via le gestionnaire de modules.
+>Vous pouvez également installer le package complémentaire CIF à l’aide du gestionnaire de packages.
 
 1. Démarrage rapide AEM
 
-Vérifiez la configuration via la console OSGI : `http://localhost:4502/system/console/osgi-installer`. La liste doit inclure les lots liés au package complémentaire CIF, le package de contenu et les configurations OSGI. Assurez-vous que tous les lots sont démarrés.
+Vérifiez la configuration via la console OSGI : `http://localhost:4502/system/console/osgi-installer`. La liste doit inclure les lots liés au package complémentaire CIF, le package de contenu et les configurations OSGI. Assurez-vous que tous les lots sont démarrés.
 
 ## Configuration du projet {#project}
 
@@ -105,7 +105,7 @@ mvn -B archetype:generate \
  -D includeCommerce=y
 ```
 
-Les composants principaux CIF peuvent être utilisés dans n’importe quel projet en incluant le package `all` fourni ou individuellement en utilisant le module de contenu CIF et les bundles OSGI associés. Pour ajouter manuellement des composants principaux CIF à un projet, utilisez les dépendances suivantes :
+Vous pouvez utiliser les composants principaux CIF dans n’importe quel projet. Incluez simplement le package `all` fourni ou utilisez le package de contenu CIF et les lots OSGi associés individuellement. Ajoutez manuellement des composants principaux CIF à un projet à l’aide des dépendances suivantes :
 
 ```java
 <dependency>
@@ -137,11 +137,11 @@ Les composants principaux CIF peuvent être utilisés dans n’importe quel proj
 </dependency>
 ```
 
-### Utilisation du magasin de référence Venia AEM
+### Utiliser le magasin de référence AEM Venia
 
 Une deuxième manière de démarrer un projet CIF consiste à cloner et à utiliser le [magasin de référence Venia AEM](https://github.com/adobe/aem-cif-guides-venia). Le magasin de référence Venia AEM est un exemple d’application storefront de référence qui illustre l’utilisation des composants principaux CIF pour AEM. Cette application offre des exemples de bonnes pratiques, ainsi qu’un point de départ potentiel pour développer vos propres fonctionnalités.
 
-Pour commencer à utiliser le magasin de référence Venia AEM, il vous suffit de cloner le [référentiel Git](https://github.com/adobe/aem-cif-guides-venia) et de personnaliser le projet en fonction de vos besoins.
+Commencez avec le magasin de référence Venia en clonant le [référentiel Git](https://github.com/adobe/aem-cif-guides-venia) et commencez à personnaliser le projet en fonction de vos besoins.
 
 >[!NOTE]
 >
@@ -149,13 +149,13 @@ Pour commencer à utiliser le magasin de référence Venia AEM, il vous suffit d
 
 ### Connexion d’AEM au système Commerce
 
-Pour connecter votre projet au système de commerce, AEM doit être configuré avec le point d’entrée GraphQL de votre système Commerce.
+Pour connecter votre projet au système Commerce, AEM doit être configuré avec le point d’entrée GraphQL de votre système Commerce.
 
-Un projet généré par l’[Archétype de projet AEM](https://github.com/adobe/aem-project-archetype) ou le [Magasin de référence Venia AEM](https://github.com/adobe/aem-cif-guides-venia), ajoutez déjà une [configuration par défaut](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json), qui doit être ajustée.
+Un projet généré par l’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype) ou le [magasin de référence AEM Venia](https://github.com/adobe/aem-cif-guides-venia), incluent déjà une configuration par défaut qui doit être ajustée.
 
 Remplacez la valeur de l’`url` dans `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` avec le point d’entrée GraphQL de votre système Commerce utilisé par le projet.
 
-Le module complémentaire Commerce AEM et les composants principaux CIF se connectent au point d’entrée Commerce GraphQL via le serveur AEM et directement via le navigateur. Par défaut, les composants principaux CIF côté client et les outils de création du module complémentaire CIF se connectent à `/api/graphql`. Si nécessaire, vous pouvez l’ajuster via la configuration du Cloud Service CIF (voir ci-dessous).
+Le module complémentaire AEM Commerce et les composants principaux CIF se connectent au point d’entrée Commerce GraphQL via le serveur AEM. Ou directement à partir du navigateur. Par défaut, les composants principaux CIF côté client et les outils de création de module complémentaire CIF se connectent à `/api/graphql`. Si nécessaire, vous pouvez l’ajuster au moyen de la configuration de CIF Cloud Service (voir ci-dessous).
 
 Le module complémentaire CIF fournit un servlet de proxy GraphQL à l’adresse `/api/graphql`. Si vous ne prévoyez pas d’utiliser un Dispatcher d’AEM local, il est recommandé de configurer également le servlet proxy GraphQL.
 
