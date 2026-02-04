@@ -234,7 +234,7 @@ Cette section contient des détails et des instructions sur la configuration clo
 
 1. Accédez à :
 
-   https://<aemserver>:<port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://&lt;aemserver>:&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
    1. Assurez-vous d’accéder au serveur à l’aide de la même URL de redirection que celle configurée dans l’enregistrement de l’application MS® Dynamics.
 
@@ -376,7 +376,7 @@ Ce package est préconfiguré pour se connecter à Adobe Analytics. Les étapes 
 
    ![We.Gov Adobe Analytics](assets/wegov_adobe_analytics.jpg)
 
-1. Sur la même page, cliquez sur « Framework Adobe Analytics We.Gov (Framework Analytics) » si vous souhaitez mettre à jour les configurations de framework (voir [ Activer la création AEM ](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) pour activer la création).
+1. Sur la même page, cliquez sur « Framework Adobe Analytics We.Gov (Framework Analytics) » si vous souhaitez mettre à jour les configurations de framework (voir [&#x200B; Activer la création AEM &#x200B;](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) pour activer la création).
 
 #### Localisation d’informations d’identification utilisateur Adobe Analytics {#analytics-locating-user-credentials}
 
