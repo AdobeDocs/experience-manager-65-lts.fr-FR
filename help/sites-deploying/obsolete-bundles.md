@@ -101,5 +101,5 @@ Les lots suivants ne sont pas inclus dans une nouvelle instance AEM 6.5 LTS. Apr
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
 * com.adobe.granite.osgi.wrapper.guava
-* com.adobe.cq.core.wcm.components.core (peut être remplacé par la version [compatible avec AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/versions))
+* com.adobe.cq.core.wcm.components.core (peut être remplacé par la version [compatible avec AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/versions))
 * com.adobe.cq.core.wcm.components.extension.contentfragment.bundle (peut être remplacé par une version compatible avec AEM 6.5 LTS)
