@@ -228,7 +228,7 @@ Cette section contient des détails et des instructions sur la configuration clo
 **Références :**
 
 1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [Configurer Microsoft® Dynamics pour AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
+1. [Configurer Microsoft® Dynamics pour AEM Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
 
 #### Service cloud OData de MS® Dynamics {#ms-dynamics-odata-cloud-service}
 
@@ -483,7 +483,7 @@ Pour installer et configurer AEM Forms avec Adobe Forms, les utilisateurs de l�
 
 Consultez les informations suivantes avant de lire d’autres instructions :
 
-* [Configuration du service de conversion automatisée de formulaires](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#)
+* [Configuration du service de conversion automatisée de formulaires](https://experienceleague.adobe.com/fr/docs/aem-forms-automated-conversion-service/using/configure-service#)
 
 #### Création d’une configuration IMS - Partie 1 {#creating-ims-config}
 
@@ -582,7 +582,7 @@ Une fois la configuration IMS terminée, vous pouvez passer en revue la configu
 
 1. Pour cette configuration, les deux valeurs de case à cocher ont été laissées vides.
 
-   Pour en savoir plus sur ces options, voir [Configuration du service cloud](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
+   Pour en savoir plus sur ces options, voir [Configuration du service cloud](https://experienceleague.adobe.com/fr/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
 
 #### Configurer le cloud (production AFC `We.Finance`) {#configure-cloud-configuration-wefinance}
 
@@ -612,7 +612,7 @@ Une fois la configuration IMS terminée, vous pouvez procéder à la création d
 
 1. Pour cette configuration, les deux valeurs de case à cocher ont été laissées vides.
 
-   * Pour en savoir plus à propos de ces options, voir [Configurer le service cloud](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
+   * Pour en savoir plus à propos de ces options, voir [Configurer le service cloud](https://experienceleague.adobe.com/fr/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
 
 #### Tester la conversion de formulaires (demande d’inscription We.Gov) {#test-forms-conversion}
 
@@ -652,7 +652,7 @@ Une fois la configuration définie, les utilisateurs peuvent la tester en charge
 
 #### Problèmes connus et notes {#known-issues-notes}
 
-Le service Automated Forms Conversion comprend quelques [bonnes pratiques, modèles complexes connus](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#) et [problèmes connus](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/known-issues#). Consultez ces informations avant de commencer à utiliser le service AEM Forms Automated Forms Conversion.
+Le service Automated Forms Conversion comprend quelques [bonnes pratiques, modèles complexes connus](https://experienceleague.adobe.com/fr/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#) et [problèmes connus](https://experienceleague.adobe.com/fr/docs/aem-forms-automated-conversion-service/using/known-issues#). Consultez ces informations avant de commencer à utiliser le service AEM Forms Automated Forms Conversion.
 
 1. Créez le formulaire avec Générer des formulaires adaptatifs sans liaison de données activée si vous souhaitez lier le formulaire à un FDM après la conversion.
 
