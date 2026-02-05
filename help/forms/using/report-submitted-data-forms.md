@@ -21,7 +21,7 @@ AEM Forms fournit des API que vous pouvez utiliser pour interroger les données 
 
 >[!NOTE]
 >
->Les utilisateurs qui appellent les API doivent être ajoutés au groupe de réviseurs. Voir [ Association de réviseurs d’envoi à un formulaire](/help/forms/using/adding-reviewers-form.md).
+>Les utilisateurs qui appellent les API doivent être ajoutés au groupe de réviseurs. Voir [&#x200B; Association de réviseurs d’envoi à un formulaire](/help/forms/using/adding-reviewers-form.md).
 
 ## `/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview` GET {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
