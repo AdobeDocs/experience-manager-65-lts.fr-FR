@@ -4,7 +4,7 @@ description: JBoss EAP 8 prend en charge les magasins d’informations d’ident
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 2%
@@ -17,6 +17,7 @@ ht-degree: 2%
 ## Configuration Du Magasin D’Informations D’Identification De Base De Données À L’Aide D’Elytron
 
 JBoss EAP 8 utilise **Elytron credential stores** pour gérer en toute sécurité les mots de passe de base de données pour les déploiements AEM Forms. Adobe fournit des **scripts automatisés** pour simplifier la création et la configuration de la banque d’informations d’identification basée sur Elytron en mode domaine.
+
 
 Cette configuration doit être effectuée **avant de démarrer le contrôleur de domaine JBoss**.
 

@@ -4,7 +4,7 @@ description: Recherchez la configuration du magasin d’informations d’identif
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 2%
@@ -17,6 +17,7 @@ ht-degree: 2%
 ## Vue d’ensemble
 
 Ce guide couvre la **configuration de la banque d’informations d’identification de base de données** pour AEM Forms JEE sur JBoss/Red Hat EAP en **mode autonome**. Cela est nécessaire lors d’une installation manuelle.
+
 
 **Ce guide couvre les sujets suivants**
 
