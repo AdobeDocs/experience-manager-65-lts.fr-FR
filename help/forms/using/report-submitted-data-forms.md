@@ -1,6 +1,6 @@
 ---
-title: API pour travailler avec des formulaires envoyés sur le portail de formulaires
-description: AEM Forms fournit des API que vous pouvez utiliser pour interroger et prendre des mesures sur les données de formulaires soumises dans le portail Formulaires.
+title: API pour travailler avec les formulaires envoyés sur le portail Forms
+description: AEM Forms fournit des API que vous pouvez utiliser pour interroger et exécuter des actions sur les données de formulaires envoyés dans le portail Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
@@ -8,22 +8,22 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: a24d0218-d534-49c9-81c1-12b38d794caa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 100%
+source-wordcount: '512'
+ht-degree: 77%
 
 ---
 
-# API pour travailler avec des formulaires envoyés sur le portail de formulaires {#apis-to-work-with-submitted-forms-on-forms-portal}
+# API pour travailler avec les formulaires envoyés sur le portail Forms {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-AEM Forms fournit des API que vous pouvez utiliser pour interroger les données de formulaire envoyées via un portail de formulaires. En outre, vous pouvez envoyer des commentaires ou mettre à jour les propriétés des formulaires envoyés à l’aide des API décrites dans ce document.
+AEM Forms fournit des API que vous pouvez utiliser pour interroger les données de formulaire envoyées via le portail Forms. En outre, vous pouvez envoyer des commentaires ou mettre à jour les propriétés des formulaires envoyés à l’aide des API décrites dans ce document.
 
 >[!NOTE]
 >
->Les utilisateurs qui appelleront les API doivent être ajoutés au groupe de réviseurs comme décrit dans la section [Associer des réviseurs d’envoi à un formulaire](/help/forms/using/adding-reviewers-form.md).
+>Les utilisateurs qui appellent les API doivent être ajoutés au groupe de réviseurs. Voir [ Association de réviseurs d’envoi à un formulaire](/help/forms/using/adding-reviewers-form.md).
 
-## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
+## `/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview` GET {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
 Renvoie une liste de tous les formulaires éligibles.
 
@@ -57,7 +57,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getAllSubmissions {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
+## `/content/forms/portal/submission.review.json?func=getAllSubmissions` GET {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
 Renvoie les détails de tous les formulaires envoyés. Cependant, vous pouvez utiliser des paramètres d&#39;URL pour limiter les résultats.
 
@@ -85,11 +85,11 @@ Spécifiez les paramètres suivants dans l’URL de requête :
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (facultatif)</td>
-   <td>Spécifie la propriété de tri des résultats. La valeur par défaut est <strong>jcr:lastModified</strong>, qui trie les résultats en fonction de l’heure de la dernière modification.</td>
+   <td>Spécifie la propriété de tri des résultats. La valeur par défaut est <code>jcr:lastModified</code>, ce qui trie les résultats en fonction de l’heure de la dernière modification.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (facultatif)</td>
-   <td>Spécifie l’ordre de tri des résultats. La valeur par défaut est <strong>desc</strong>, qui trie les résultats par ordre décroissant. Vous pouvez spécifier <code>asc</code> pour trier les résultats dans l’ordre croissant.</td>
+   <td>Spécifie l’ordre de tri des résultats. La valeur par défaut est <code>desc</code>, qui trie les résultats dans l’ordre décroissant. Vous pouvez spécifier <code>asc</code> pour trier les résultats dans l’ordre croissant.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (facultatif)</td>
@@ -97,7 +97,7 @@ Spécifiez les paramètres suivants dans l’URL de requête :
   </tr>
   <tr>
    <td><code>search</code> <br /> (facultatif)</td>
-   <td>Recherche la valeur spécifiée dans les propriétés du formulaire et renvoie les formulaires avec les valeurs correspondantes. La valeur par défaut est <strong>""</strong>.</td>
+   <td>Recherche la valeur spécifiée dans les propriétés du formulaire et renvoie les formulaires avec les valeurs correspondantes. La valeur par défaut est <code>""</code>.</td>
   </tr>
  </tbody>
 </table>
@@ -127,7 +127,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 {"total":1,"items":[{"formName":"form2","formPath":"/content/dam/formsanddocuments/forms-review/form2","submitID":"1403037413508500","formType":"af","jcr:lastModified":"2015-11-05T17:52:32.243+05:30","owner":"admin"}]}
 ```
 
-## POST /content/forms/portal/submission.review.json?func=addComment {#post-content-forms-portal-submission-review-json-func-addcomment-br}
+## `/content/forms/portal/submission.review.json?func=addComment` POST {#post-content-forms-portal-submission-review-json-func-addcomment-br}
 
 Ajoute un commentaire à l’instance d’envoi spécifiée.
 
@@ -158,7 +158,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getComments {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## `/content/forms/portal/submission.review.json?func=getComments` GET   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 Renvoie tous les commentaires publiés sur l’instance d’envoi spécifiée.
 
@@ -196,7 +196,7 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 [{"owner":"fr1","comment":"API test comment","time":1446726988250}]
 ```
 
-## POST /content/forms/portal/submission.review.json?func=updateSubmission {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
+## `/content/forms/portal/submission.review.json?func=updateSubmission` POST {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
 
 Met à jour la valeur de la propriété spécifiée de l’instance de formulaire envoyée spécifiée.
 
@@ -212,7 +212,7 @@ Spécifiez les paramètres suivants dans l’URL de requête :
 
 ### Réponse {#response-4}
 
-Renvoie un objet JSON avec des informations sur la mise à jour publiée.
+Elle renvoie un objet JSON contenant des informations sur la mise à jour publiée.
 
 ### Exemple {#example-4}
 

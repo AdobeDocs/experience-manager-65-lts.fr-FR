@@ -1,5 +1,5 @@
 ---
-title: Intégration de l’interface utilisateur de création de correspondance dans votre portail personnalisé
+title: Intégration de la solution de création de correspondance à votre portail personnalisé
 description: Intégrer l’IU de création de correspondance à votre portail personnalisé
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,22 +9,22 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 496b125b-b091-4843-ba9f-2479dbeba07b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 100%
+source-wordcount: '403'
+ht-degree: 46%
 
 ---
 
-# Intégration de l’interface utilisateur de création de correspondance dans votre portail personnalisé{#integrating-create-correspondence-ui-with-your-custom-portal}
+# Intégration de la solution `Create Correspondence` à votre portail personnalisé{#integrating-create-correspondence-ui-with-your-custom-portal}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
-Cet article décrit comment intégrer la solution de création de correspondance à votre environnement.
+Cet article explique comment intégrer la solution `Create Correspondence` à votre environnement.
 
 ## Appel basé sur une URL {#url-based-invocation}
 
-Pour appeler l’application de création de correspondance à partir d’un portail personnalisé, vous pouvez préparer l’URL avec les paramètres de requête suivants :
+Pour appeler l’application `Create Correspondence` à partir d’un portail personnalisé, vous pouvez préparer l’URL avec les paramètres de requête suivants :
 
 * l’identifiant du modèle de lettre (à l’aide du paramètre cmLetterId).
 
@@ -39,16 +39,16 @@ Par exemple, le portail personnalisé prépare l’URL sous la forme\
 
 >[!NOTE]
 >
->Avant d’appeler l’application de création de correspondance, enregistrez et chargez les données pour appeler l’IU de création de correspondance à l’URL de données donnée. Vous pouvez le faire à partir du portail personnalisé ou par un autre processus principal.
+>Avant d’appeler l’application `Create Correspondence`, enregistrez et chargez les données pour appeler l’interface utilisateur `Create Correspondence` à l’adresse dataURL donnée. Ce processus peut être effectué à partir du portail personnalisé lui-même ou via un autre processus back-end.
 
 ## Appel en ligne basé sur les données {#inline-data-based-invocation}
 
-Un autre moyen (plus sûr) d’appeler l’application de création de correspondance consiste à accéder à l’URL https://&#39;[serveur]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, en transmettant les paramètres et données permettant d’appeler l’application de création de correspondance dans le cadre d’une requête POST (sans que l’utilisateur final ne les voie). Cela signifie également que vous pouvez désormais transmettre les données XML pour l’application de création de correspondance en ligne (dans le cadre de la même requête, à l’aide du paramètre cmData), ce qui n’était pas possible/idéal dans l’approche précédente.
+Un autre moyen plus sûr d’appeler l’application `Create Correspondence` consiste à accéder à l’URL https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html. Exécutez cette URL lors de l’envoi des paramètres et des données pour appeler l’application `Create Correspondence` en tant que requête POST, en les masquant à l’utilisateur final. Ce workflow signifie également que vous pouvez désormais transmettre en ligne les données XML pour l’application `Create Correspondence` (dans le cadre de la même requête, à l’aide du paramètre `cmData` ). Ce workflow n’était pas possible ni idéal dans l’approche précédente.
 
 ### Paramètres de spécification de lettre {#parameters-for-specifying-letter}
 
 | **Nom** | **Type** | **Description** |
-|---|---|---|
+| --- | --- | --- |
 | cmLetterInstanceId | Chaîne | Identifiant de l’instance de lettre. |
 | cmLetterId | Chaîne | Le nom du modèle de lettre. |
 
@@ -66,17 +66,17 @@ L’ordre des paramètres dans le tableau indique leur priorité d’utilisation
   <tr>
    <td>cmDataUrl<br /> </td> 
    <td>URL</td> 
-   <td>Données XML provenant d’un fichier source utilisant des protocoles de base tels que cq, ftp, http ou file.<br /> </td> 
+   <td>Données XML provenant d’un fichier source à l’aide de protocoles de base, tels que cq, ftp, http ou file.<br /> </td> 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
    <td>Chaîne</td> 
-   <td>Utilisation des données XML disponibles dans l’instance de lettre.</td> 
+   <td>Utilisation des données xml disponibles dans l’instance de lettre.</td> 
   </tr>
   <tr>
    <td>cmUseTestData</td> 
    <td>Booléen</td> 
-   <td>Pour réutiliser les données de test associées au dictionnaire de données.</td> 
+   <td>Pour réutiliser les données de test jointes dans un dictionnaire de données.</td> 
   </tr>
  </tbody>
 </table>
@@ -105,4 +105,4 @@ L’ordre des paramètres dans le tableau indique leur priorité d’utilisation
  </tbody>
 </table>
 
-Si vous utilisez le protocole http ou cq pour le paramètre cmDataURL, l’URL correspondante doit pouvoir être accessible de manière anonyme.
+Si vous utilisez le protocole http ou cq pour `cmDataURL`, l’URL de `http/cq` doit être accessible de manière anonyme.
