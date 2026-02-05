@@ -22,7 +22,7 @@ Les composants principaux sont des composants modernes et flexibles qui offrent 
 
 ## Faites un essai {#trying-it-out}
 
-1. Démarrez Adobe Experience Manager (AEM) avec l’exemple de contenu `We.Retail` et ouvrez la [ Console des composants ](/help/sites-authoring/default-components-console.md).
+1. Démarrez Adobe Experience Manager (AEM) avec l’exemple de contenu `We.Retail` et ouvrez la [&#x200B; Console des composants &#x200B;](/help/sites-authoring/default-components-console.md).
 
    **Navigation globale > Outils > Composants**
 
@@ -57,7 +57,7 @@ Les composants principaux sont des composants modernes et flexibles qui offrent 
 
 1. Sur la page de remerciement, sélectionnez le composant de texte et, dans le menu de modification du composant, cliquez sur l’icône Annuler l’héritage.
 
-   [`We.Retail` dispose d’une structure de site globalisée](/help/sites-developing/we-retail-globalized-site-structure.md) où le contenu est transmis du site de langue principale aux [ Live Copies par le biais d’un mécanisme appelé héritage](/help/sites-administering/msm.md). Pour cette raison, l’héritage doit être annulé pour permettre à l’utilisateur de modifier manuellement le texte.
+   [`We.Retail` dispose d’une structure de site globalisée](/help/sites-developing/we-retail-globalized-site-structure.md) où le contenu est transmis du site de langue principale aux [&#x200B; Live Copies par le biais d’un mécanisme appelé héritage](/help/sites-administering/msm.md). Pour cette raison, l’héritage doit être annulé pour permettre à l’utilisateur de modifier manuellement le texte.
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
