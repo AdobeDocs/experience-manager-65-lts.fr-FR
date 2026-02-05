@@ -86,10 +86,10 @@ Les composants principaux sont des composants modernes et flexibles qui offrent 
 
 ## Voir également {#further-information}
 
-Pour plus d’informations sur les composants principaux, consultez le guide de création [Composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/introduction) pour obtenir un aperçu des fonctionnalités. Consultez le guide [Développement des composants principaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) pour obtenir une présentation technique.
+Pour plus d’informations sur les composants principaux, consultez le guide de création [Composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/introduction) pour obtenir un aperçu des fonctionnalités. Consultez le guide [Développement des composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/overview) pour obtenir une présentation technique.
 
 
 
-Pour plus d’informations sur les composants principaux, consultez le document de création [Composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/introduction) pour obtenir un aperçu des fonctionnalités des composants principaux, et le document destiné aux développeurs [Développement des composants principaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) pour obtenir des détails techniques.
+Pour plus d’informations sur les composants principaux, consultez le document de création [Composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/introduction) pour obtenir un aperçu des fonctionnalités des composants principaux, et le document destiné aux développeurs [Développement des composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/overview) pour obtenir des détails techniques.
 
 Vous pouvez également vous renseigner sur les [modèles modifiables](/help/sites-developing/we-retail-editable-templates.md). Voir le document de création [Création de modèles de page](/help/sites-authoring/templates.md) ou la page de document de développement [Modèles - Modifiables](/help/sites-developing/page-templates-editable.md) pour obtenir des détails complets sur les modèles modifiables.
