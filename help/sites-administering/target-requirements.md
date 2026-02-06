@@ -31,7 +31,7 @@ Le code client identifie le compte client Adobe Target lors de l’appel du serv
 >
 >L’équipe Target doit permettre à votre compte d’utiliser l’intégration.
 >
->Si ce n’est pas encore le cas, contactez l’[Assistance clientèle Adobe](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information).
+>Si ce n’est pas encore le cas, contactez l’[Assistance clientèle Adobe](https://experienceleague.adobe.com/fr/docs/target/using/cmp-resources-and-contact-information).
 
 ## Activation de l’agent de réplication Target {#enabling-the-target-replication-agent}
 
