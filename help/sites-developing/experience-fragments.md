@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: bc621086-8128-4836-a580-dca99f61c439
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d894bb145d70fba819cc8452056e9e46112e69d9
 workflow-type: tm+mt
-source-wordcount: '1786'
-ht-degree: 100%
+source-wordcount: '1750'
+ht-degree: 63%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 100%
 
 Un [fragment d’expérience](/help/sites-authoring/experience-fragments.md) est un groupe d’un ou plusieurs composants comprenant un contenu et une disposition pouvant être référencés dans les pages.
 
-Un gabarit et/ou une variation du fragment d’expérience utilise :
+Un fragment d’expérience principal ou de variante, ou les deux, utilise les éléments suivants :
 
 * `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
 
-En l’absence de `/libs/cq/experience-fragments/components/xfpage/xfpage.html`, il revient à
+Comme il n’y a pas de `/libs/cq/experience-fragments/components/xfpage/xfpage.html`, il revient à ce qui suit :
 
 * `sling:resourceSuperType` : `wcm/foundation/components/page`
 
@@ -35,7 +35,7 @@ En l’absence de `/libs/cq/experience-fragments/components/xfpage/xfpage.html`,
 
 Le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML brut.
 
-Même s’il est directement disponible dans le navigateur, son principal objectif consiste à autoriser d’autres applications (des applications web tierces et des implémentations mobiles personnalisées, par exemple) à accéder directement au contenu du fragment d’expérience à l’aide de l’URL uniquement.
+Cette fonctionnalité est disponible à partir du navigateur. Toutefois, son principal objectif consiste à autoriser d’autres applications (des applications web tierces et des implémentations mobiles personnalisées, par exemple) à accéder directement au contenu du fragment d’expérience à l’aide de l’URL uniquement.
 
 Le rendu HTML brut ajoute le protocole, l’hôte et le chemin de contexte aux chemins suivants :
 
@@ -49,51 +49,51 @@ Par exemple :
 
 >[!NOTE]
 >
->Les liens font toujours référence à l’instance de publication. Ils sont utilisés par des tiers. Par conséquent, le lien sera toujours appelé à partir de l’instance de publication, et non de l’instance de création.
+>Les liens font toujours référence à l’instance de publication. Des tiers les utilisent. Ils appellent donc toujours le lien à partir de l’instance de publication, et non de l’instance de création.
 >
 >Pour plus d’informations, voir [Externalisation des URL](/help/sites-developing/externalizer.md).
 
 ![xf-14](assets/xf-14.png)
 
-Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts supplémentaires ; le module [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) est utilisé comme transformateur. Cette configuration se trouve dans l’emplacement suivant :
+Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts supplémentaires ; le [`Sling Rewriter`](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) est utilisé comme transformateur et configuré comme suit :
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
 ### Configuration de la génération du rendu HTML {#configuring-html-rendition-generation}
 
-Le rendu HTML est généré à l’aide des pipelines de réécriture Sling. Le pipeline est défini au niveau du chemin `/libs/experience-fragments/config/rewriter/experiencefragments`. Le transformateur HTML prend en charge les options suivantes :
+Le rendu HTML est généré à l’aide des pipelines `Sling Rewriter`. Le pipeline est défini au niveau du chemin `/libs/experience-fragments/config/rewriter/experiencefragments`. Le transformateur HTML prend en charge les options suivantes :
 
 * `allowedCssClasses`
    * Une expression RegEx correspondant aux classes CSS qui doivent être conservées dans le rendu final.
-   * Cela s’avère utile si le client ou la cliente souhaite supprimer certaines classes CSS spécifiques.
+   * Utile si le client souhaite supprimer certaines classes CSS spécifiques
 * `allowedTags`
    * Une liste des balises HTML autorisées dans le rendu final.
-   * Par défaut, les balises suivantes sont autorisées (aucune configuration requise) : html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link et script
+   * Par défaut, le système autorise les balises suivantes sans configuration : html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, `noscript`, div, link et script.
 
-Il est recommandé de configurer la réécriture à l’aide d’un recouvrement. Voir [Recouvrements](/help/sites-developing/overlays.md)
+Il est recommandé de configurer le module de réécriture à l’aide d’un recouvrement. Voir [Recouvrements](/help/sites-developing/overlays.md)
 
-## Variations sociales {#social-variations}
+## Variantes sociales {#social-variations}
 
 Les variations sociales peuvent être publiées sur les réseaux sociaux (texte et image). Dans Adobe Experience Manager (AEM), ces variations sociales peuvent contenir des composants ; des composants texte ou image, par exemple.
 
-L’image et le texte de la publication sur le réseau social peuvent être extraits de n’importe quel type de ressource d’image ou de ressource de texte, à n’importe quel niveau de profondeur (dans le bloc fonctionnel ou dans le conteneur de mise en page).
+Vous pouvez récupérer l’image et le texte de la publication sur les réseaux sociaux à partir de n’importe quel type de ressource image ou texte, à n’importe quelle profondeur. Les ressources peuvent provenir du bloc de création ou du conteneur de mises en page.
 
-Les variations sociales autorisent également les blocs fonctionnels et les prennent en compte lors de l’exécution d’actions sur les réseaux sociaux (dans l’environnement de publication).
+Les variations sociales permettent également la création de blocs de création et leur prise en compte lors des actions sociales (dans l’environnement de publication).
 
 Pour publier le contenu texte et image approprié sur le réseau social, il convient de respecter certaines conventions si vous développez vos propres composants personnalisés.
 
-Pour ce faire, vous devez utiliser les propriétés suivantes :
+Les propriétés suivantes doivent être utilisées :
 
-* Pour extraire l’image
+* Pour extraire l’image :
 
    * `fileReference`
    * `fileName`
 
-* Pour extraire le texte
+* Pour extraire le texte :
 
    * `text`
 
-Les composants qui ne respectent pas cette convention ne sont pas pris en compte.
+Seuls les composants qui utilisent cette convention sont pris en compte.
 
 ## Modèles de fragments d’expérience {#templates-for-experience-fragments}
 
@@ -105,7 +105,7 @@ Les composants qui ne respectent pas cette convention ne sont pas pris en compte
 
 Lors du développement d’un nouveau modèle pour les fragments d’expérience, vous pouvez suivre les pratiques standard en vigueur pour un [modèle modifiable](/help/sites-developing/page-templates-editable.md).
 
-Pour créer un modèle de fragment d’expérience détecté par l’assistant **Créer un fragment d’expérience**, vous devez suivre l’un des ensembles de règles suivants :
+Pour créer un modèle de fragment d’expérience détecté par l’assistant **Créer un fragment d’expérience**, vous devez suivre l’un des ensembles de règles suivants :
 
 1. Les deux :
 
@@ -114,7 +114,7 @@ Pour créer un modèle de fragment d’expérience détecté par l’assistant *
 
    1. Et le nom du modèle doit commencer par :
       `experience-fragments`
-Cela permet aux utilisateurs de créer des fragments d’expérience dans /content/experience-fragments, étant donné que la propriété `cq:allowedTemplates` de ce dossier inclut tous les modèles dont le nom commence par `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
+Permet aux utilisateurs de créer des fragments d’expérience dans `/content/experience-fragments`, car la propriété `cq:allowedTemplates` de ce dossier inclut tous les modèles dont le nom commence par `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
 
 1. Les [modèles autorisés](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder) peuvent être configurés dans la console des fragments d’expérience.
 <!--
@@ -130,7 +130,7 @@ Cela permet aux utilisateurs de créer des fragments d’expérience dans /conte
 
 Les [composants de développement](/help/sites-developing/components.md) à utiliser avec ou dans les fragments d’expérience sont conformes aux pratiques standard.
 
-La seule configuration supplémentaire consiste à s’assurer que les composants sont [autorisés sur ce modèle. Pour ce faire, la politique de contenu est utilisée](/help/sites-developing/page-templates-editable.md#content-policies).
+La seule configuration supplémentaire consiste à s’assurer que les composants sont autorisés sur le modèle. Cette fonctionnalité est réalisée avec la [politique de contenu](/help/sites-developing/page-templates-editable.md#content-policies).
 
 ## Fournisseur de réécriture de liens de fragments d’expérience – HTML {#the-experience-fragment-link-rewriter-provider-html}
 
@@ -141,7 +141,7 @@ Dans AEM, vous avez la possibilité de créer des fragments d’expérience. Un 
 
 De tels groupes sont notamment utilisés pour incorporer du contenu dans des points de contact tiers, tels qu’Adobe Target.
 
-### Réécriture de liens par défaut {#default-link-rewriting}
+### Réécriture de lien par défaut {#default-link-rewriting}
 
 La fonction [Exporter vers Target](/help/sites-administering/experience-fragments-target.md) vous permet :
 
@@ -151,15 +151,16 @@ La fonction [Exporter vers Target](/help/sites-administering/experience-fragment
 
 Cette fonction peut être [activée sur une instance de création d’AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). Elle nécessite une configuration Adobe Target valide, ainsi que des configurations pour l’externaliseur de liens.
 
-L’externaliseur de liens sert à déterminer les URL appropriées qui sont nécessaires lors de la création de la version de l’offre Target HTML, qui est ensuite envoyée à Adobe Target. Cela s’avère nécessaire dans la mesure où Adobe Target exige que tous les liens de l’offre HTML Target soient accessibles au public ; cela signifie que les ressources auxquelles les liens font référence et le fragment d’expérience proprement dit doivent être publiés avant d’être utilisés.
+L’externaliseur de liens sert à déterminer les URL appropriées qui sont nécessaires lors de la création de la version de l’offre Target HTML, qui est ensuite envoyée à Adobe Target. Adobe Target nécessite un accès public à tous les liens d’une offre Target HTML. Publiez le fragment d’expérience et toutes les ressources auxquelles ces liens font référence avant de les utiliser.
+
 
 Par défaut, lorsque vous créez une offre HTML Target, une requête est envoyée à un sélecteur Sling personnalisé dans AEM. Ce sélecteur est appelé `.nocloudconfigs.html`. Comme son nom l’indique, il crée un rendu HTML brut d’un fragment d’expérience, mais n’inclut pas de configurations cloud (qui seraient des informations superflues).
 
-Une fois la page HTML générée, le pipeline Sling Rewriter apporte des modifications à la sortie :
+Une fois que vous avez généré la page HTML, le pipeline `Sling Rewriter` apporte des modifications à la sortie :
 
-1. Les éléments `html`, `head` et `body` sont remplacés par des éléments `div`. Les éléments `meta`, `noscript` et `title` sont supprimés (il s’agit d’éléments enfants de l’élément `head` d’origine et ils ne sont pas pris en compte lorsque celui-ci est remplacé par l’élément `div`).
+1. Les éléments `html`, `head` et `body` sont remplacés par des éléments `div`. Les éléments `meta`, `noscript` et `title` sont supprimés (il s’agit d’éléments enfants de l’élément `head` d’origine qui ne sont pas pris en compte lorsqu’ils sont remplacés par l’élément `div`).
 
-   Cela permet de s’assurer que l’offre Target HTML peut être incluse dans les activités Target.
+   Ce processus permet de s’assurer que l’offre Target HTML peut être incluse dans les activités Target.
 
 1. AEM modifie les liens internes présents dans le code HTML afin qu’ils pointent vers une ressource publiée.
 
@@ -174,24 +175,24 @@ Une fois la page HTML générée, le pipeline Sling Rewriter apporte des modific
    >
    >Les liens internes du code HTML sont des liens relatifs, mais il peut arriver que des composants personnalisés fournissent des URL complètes dans le code HTML. Par défaut, AEM ignore ces URL complètes et n’effectue aucune modification.
 
-   Les liens de ces attributs sont exécutés via l’externaliseur de liens AEM `publishLink()` afin de recréer l’URL comme si elle se trouvait sur une instance publiée et, de ce fait, accessible au public.
+   Les liens de ces attributs transitent par le `publishLink()` de l’externaliseur de liens d’AEM pour recréer l’URL comme si elle se trouvait sur une instance publiée et, par conséquent, comme si elle était disponible publiquement.
 
-Lors de l’utilisation d’une implémentation prête à l’emploi, le processus décrit ci-dessus doit être suffisant pour générer l’offre Target à partir du fragment d’expérience, puis l’exporter vers Adobe Target. Toutefois, certains cas d’utilisation ne sont pas pris en compte dans ce processus, à savoir :
+Lors de l’utilisation d’une implémentation prête à l’emploi, le processus décrit ci-dessus est suffisant pour générer l’offre cible à partir du fragment d’expérience, puis l’exporter vers Adobe Target. Cependant, certains cas d’utilisation ne sont pas pris en compte dans ce processus, notamment les suivants :
 
-* Mappage Sling disponible uniquement sur l’instance de publication
-* Redirections du Dispatcher
+* Le mappage Sling est disponible uniquement sur l’instance de publication.
+* Redirections Dispatcher.
 
 Pour ces cas d’utilisation, AEM propose l’interface du fournisseur de réécriture de liens.
 
 ### Interface du fournisseur de réécriture de liens {#link-rewriter-provider-interface}
 
-Pour les cas plus complexes, non couverts par le [paramètre par défaut](#default-link-rewriting), AEM propose l’interface du fournisseur de réécriture de liens. Il s’agit d’une interface `ConsumerType` que vous pouvez implémenter dans vos bundles sous la forme d’un service. Elle ignore les modifications qu’AEM effectue sur les liens internes d’une offre HTML telle qu’elle est générée à partir d’un fragment d’expérience. Cette interface vous permet de personnaliser le processus de réécriture des liens HTML internes afin de l’adapter aux besoins de votre entreprise.
+Pour les cas plus complexes, non couverts par le [paramètre par défaut](#default-link-rewriting), AEM propose l’interface du fournisseur de réécriture de liens. Ce workflow est une interface `ConsumerType` que vous pouvez implémenter dans vos lots, en tant que service. Elle ignore les modifications qu’AEM effectue sur les liens internes d’une offre HTML telle qu’elle est générée à partir d’un fragment d’expérience. Cette interface vous permet de personnaliser le processus de réécriture des liens HTML internes afin de l’adapter aux besoins de votre entreprise.
 
 Voici quelques exemples d’implémentation de cette interface en tant que service :
 
 * Les mappages Sling sont activés sur les instances de publication, mais pas sur l’instance de création.
-* Un Dispatcher ou une technologie semblable est utilisé pour rediriger les URL en interne.
-* Il existe des `sling:alias mechanisms` pour les ressources.
+* Un Dispatcher ou une technologie similaire est utilisée pour rediriger les URL en interne.
+* Il y a `sling:alias` mécanismes en place pour les ressources.
 
 >[!NOTE]
 >
@@ -213,7 +214,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 ### Utilisation de l’interface du fournisseur de réécriture de liens {#how-to-use-the-link-rewriter-provider-interface}
 
-Avant d’utiliser cette interface, vous devez créer un lot contenant un nouveau composant de service qui l’implémente.
+Pour utiliser l’interface , vous devez d’abord créer un lot contenant un nouveau composant de service qui implémente l’interface du fournisseur de réécriture de liens.
 
 Ce service est utilisé pour se connecter à la réécriture Exporter vers Target du fragment d’expérience afin qu’elle puisse avoir accès aux différents liens.
 
@@ -258,7 +259,8 @@ Pour que le service fonctionne, trois méthodes doivent à présent être implé
 
 #### shouldRewrite {#shouldrewrite}
 
-Vous devez indiquer au système s’il doit ou non réécrire les liens lorsqu’un appel est effectué pour Exporter vers Target sur une variation donnée du fragment d’expérience. Pour ce faire, implémentez la méthode suivante :
+Vous devez indiquer au système s’il doit ou non réécrire les liens lorsqu’un appel est effectué pour Exporter vers Target sur une variation donnée du fragment d’expérience. Vous pouvez effectuer cette **implémentation** en utilisant la méthode suivante :
+
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
@@ -273,7 +275,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 
 Cette méthode reçoit, en tant que paramètre, la variation du fragment d’expérience qui est actuellement réécrite par le système Exporter vers Target.
 
-Dans l’exemple ci-dessus, nous souhaitons réécrire les éléments suivants :
+Dans l’exemple ci-dessus, vous souhaitez réécrire :
 
 * Les liens présents dans `src`
 
@@ -282,18 +284,18 @@ Dans l’exemple ci-dessus, nous souhaitons réécrire les éléments suivants 
 * Pour un fragment d’expérience spécifique :
   `/content/experience-fragment/master`
 
-Les autres fragments d’expérience transitant par le système Exporter vers Target sont ignorés et ne sont pas affectés par les modifications implémentées dans ce service.
+Le système Exporter vers Target ignore tous les autres fragments d’expérience qui transitent par ce système et ce service ne les affecte pas.
 
 #### rewriteLink {#rewritelink}
 
-S’agissant de la variation du fragment d’expérience concernée par le processus de réécriture, elle se poursuit pour permettre au service de traiter la réécriture du lien. Chaque fois qu’un lien est rencontré dans le code HTML interne, la méthode suivante est appelée :
+Pour la variation de fragment d’expérience affectée par le processus de réécriture, il continue à laisser le service gérer la réécriture des liens. Chaque fois qu’un lien est détecté dans le code HTML interne, la méthode suivante est appelée :
 
 `rewriteLink(String link, String tag, String attribute)`
 
 En entrée, la méthode reçoit les paramètres suivants :
 
 * `link`
-Représentation `String` du lien en cours de traitement. Il s’agit généralement d’une URL relative pointant vers la ressource sur l’instance de création.
+Représentation `String` du lien en cours de traitement. Généralement, une URL relative pointant vers la ressource dans l’instance de création.
 
 * `tag`
 Nom de l’élément HTML en cours de traitement.
@@ -315,11 +317,11 @@ rewriteLink(link="/etc.clientlibs/foundation/clientlibs/main.css", tag="link", a
 
 Lorsque vous créez le service, vous pouvez prendre des décisions en fonction de l’entrée indiquée, puis réécrire le lien en conséquence.
 
-Dans notre exemple, nous souhaitons supprimer la partie `/etc.clientlibs` de l’URL et ajouter le domaine externe approprié. Pour simplifier les choses, nous partons du principe que nous avons accès à un résolveur de ressources pour le service, comme dans `rewriteLinkExample2` :
+Par exemple, vous souhaitez supprimer la partie `/etc.clientlibs` de l’URL et ajouter le domaine externe approprié. Pour simplifier les choses, nous partons du principe que nous avons accès à un résolveur de ressources pour le service, comme dans `rewriteLinkExample2` :
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’obtention d’un résolveur de ressources par le biais d’un utilisateur des services, consultez [Utilisateurs des services dans AEM](/help/sites-administering/security-service-users.md).
+>Pour plus d’informations sur l’obtention d’un résolveur de ressources par l’intermédiaire d’un utilisateur de service, voir [Utilisateurs de service dans AEM](/help/sites-administering/security-service-users.md).
 
 ```java
 private ResourceResolver resolver;
@@ -352,7 +354,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 #### Priorités - getPriority {#priorities-getpriority}
 
-Il n’est pas rare de devoir utiliser plusieurs services pour traiter différents types de fragments d’expérience, voire de disposer d’un service générique qui gère l’externalisation et le mappage pour tous les fragments d’expérience. Dans ce cas, des conflits peuvent survenir au niveau du service à utiliser. Aussi, AEM permet-il de définir des **priorités** pour différents services. Les priorités sont spécifiées en utilisant la méthode suivante :
+Vous aurez peut-être besoin de plusieurs services pour prendre en charge différents types de fragments d’expérience. Vous pouvez également utiliser un service générique pour externaliser et mapper tous les fragments d’expérience. Dans ce cas, des conflits peuvent survenir au niveau du service à utiliser. Aussi, AEM permet-il de définir des **priorités** pour différents services. Les priorités sont spécifiées en utilisant la méthode suivante :
 
 * `getPriority()`
 

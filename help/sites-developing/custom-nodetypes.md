@@ -9,16 +9,16 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 255f52f3-aff4-432c-a541-3ce03e626742
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9bc1cad84bb14b7513ede1fff2c1a37768dac442
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 93%
+source-wordcount: '1703'
+ht-degree: 83%
 
 ---
 
 # Types de nœuds personnalisés{#custom-node-types}
 
-Adobe Experience Manager (AEM) est basé sur Sling et utilise un référentiel JCR. Aussi, les types de nœuds proposés par ces deux plateformes sont les suivants :
+Adobe Experience Manager (AEM) étant basé sur Sling et utilisant un référentiel JCR, les types de nœuds proposés par les deux sont disponibles pour une utilisation avec les éléments suivants :
 
 * [Types de nœuds JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Types de nœuds Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
@@ -27,7 +27,7 @@ En plus de ces types de nœuds, AEM propose une gamme de types de nœuds personn
 
 ## Audit {#audit}
 
-### cq:AuditEvent {#cq-auditevent}
+### `cq:AuditEvent` {#cq-auditevent}
 
 **Description**
 
@@ -55,7 +55,7 @@ Définit le type d’un nœud d’événement d’audit.
 
 ## Commentaire {#comment}
 
-### cq:Comment {#cq-comment}
+### `cq:Comment` {#cq-comment}
 
 **Description**
 
@@ -74,7 +74,7 @@ Définit le type de nœud d’un nœud de commentaire.
 * `- userIdentifier (string)`
 * `- authorizableId (string)`
 
-### cq:CommentAttachment {#cq-commentattachment}
+### `cq:CommentAttachment` {#cq-commentattachment}
 
 **Description**
 
@@ -86,7 +86,7 @@ Définit le type de nœud d’un nœud de `commentattachment`
    * `- * (undefined)`
    * `- * (undefined) multiple`
 
-### cq:CommentContent {#cq-commentcontent}
+### `cq:CommentContent` {#cq-commentcontent}
 
 **Description**
 
@@ -103,7 +103,7 @@ Définit le type de nœud d’un nœud de contenu du commentaire.
 * `- userIdentifier (string)`
 * `- authorizableId (string)`
 
-### cq:GeoLocation {#cq-geolocation}
+### `cq:GeoLocation` {#cq-geolocation}
 
 **Description**
 
@@ -118,7 +118,7 @@ Mixin qui définit un emplacement géographique en degrés décimaux (DD).
 * `- latitude (double)`
 * `- longitude (double)`
 
-### cq:Trackback {#cq-trackback}
+### `cq:Trackback` {#cq-trackback}
 
 **Description**
 
@@ -130,7 +130,7 @@ Définit le type de nœud d’un nœud de rétrolien.
 
 ## Base {#core}
 
-### cq:Page {#cq-page}
+### `cq:Page` {#cq-page}
 
 **Description**
 
@@ -144,17 +144,17 @@ Définit la page CQ par défaut.
    * `+ jcr:content (nt:base) = nt:unstructured copy primary`
    * `+ * (nt:base) = nt:base version`
 
-### cq:PseudoPage {#cq-pseudopage}
+### `cq:PseudoPage` {#cq-pseudopage}
 
 **Description**
 
-Définit un type de mixin qui marque les nœuds en tant que pseudo-pages. Cela signifie qu’elles peuvent être adaptées pour la prise en charge de l’édition de page et de gestion de contenu web.
+Ce type de mixin marque les nœuds en tant que pseudo-pages. Cela signifie qu’elles peuvent être adaptées pour la prise en charge de l’édition de page et de gestion de contenu web.
 
 **Définition**
 
 * `[cq:PseudoPage] mixin`
 
-### cq:PageContent {#cq-pagecontent}
+### `cq:PageContent` {#cq-pagecontent}
 
 **Description**
 
@@ -166,7 +166,7 @@ Définit le nœud par défaut du contenu de la page, avec les propriétés minim
 * `@prop cq:allowedTemplates` - Liste des expressions régulières utilisées pour déterminer les chemins d’accès au modèle autorisé.
 * `@prop pageTitle` - Titre affiché dans la balise `<title>`.
 * `@prop navTitle` - Titre affiché dans le cadre de la navigation.
-* `@prop hideInNav` - Détermine si la page doit être masquée dans la navigation.
+* `@prop hideInNav` - Indique si la page est masquée dans la navigation.
 * `@prop onTime` - Heure à laquelle cette page devient valide.
 * `@prop offTime` - Heure à laquelle cette page n’est plus valide.
 * `@prop cq:lastModified` - Date de la dernière modification de la page (ou de ses paragraphes).
@@ -178,6 +178,7 @@ Définit le nœud par défaut du contenu de la page, avec les propriétés minim
 >Il n’est pas obligatoire pour le contenu de page d’utiliser ce type.
 
 **Définition**
+
 * `[cq:PageContent] > nt:unstructured, mix:title, mix:created, cq:OwnerTaggable, sling:VanityPath, cq:ReplicationStatus, sling:Resource orderable`
    * `- cq:template (string)`
    * `- cq:allowedTemplates (string) multiple`
@@ -191,7 +192,7 @@ Définit le nœud par défaut du contenu de la page, avec les propriétés minim
    * `- cq:designPath (string)`
    * `- jcr:language (string)`
 
-### cq:Template {#cq-template}
+### `cq:Template` {#cq-template}
 
 **Description**
 
@@ -223,7 +224,7 @@ Définit un modèle CQ.
    * `- allowedChildren (string) multiple`
    * `- ranking (long)`
 
-### cq:Component {#cq-component}
+### `cq:Component` {#cq-component}
 
 **Description**
 
@@ -238,7 +239,7 @@ Définit un composant CQ.
 * `@prop cq:isContainer` - Indique s’il s’agit d’un composant de conteneur. Force l’utilisation des noms de cellule des composants enfants au lieu des noms de chemin d’accès. Par exemple, `parsys` est un composant de conteneur. Si cette valeur n’est pas définie, la vérification est effectuée sur la base de l’existence d’une propriété `cq:childEditConfig`.
 * `@prop cq:noDecoration` - Si la valeur est définie sur « true », aucune balise `div` de décoration n’est définie lors de l’insertion de ce composant.
 * `@node cq:editConfig` - Configuration qui définit les paramètres de la barre d’édition.
-* `@node cq:childEditConfig` - Configuration d’édition héritée par les composants enfants.
+* `@node cq:childEditConfig` - Configuration de modification héritée par les composants enfants.
 * `@node cq:htmlTag` - Définit des attributs de balise supplémentaires qui sont ajoutés à la balise `div` « environnante » lorsque le composant est inclus.
 * `@node icon.png` - Fichier contenant une icône de caractéristique.
 * `@node thumbnail.png` - Fichier contenant une miniature de caractéristique.
@@ -271,7 +272,7 @@ Définit un composant CQ.
    * `- componentGroup (string)`
    * `+ cq:infoProviders (nt:base) = nt:unstructured copy`
 
-### cq:ComponentMixin {#cq-componentmixin}
+### `cq:ComponentMixin` {#cq-componentmixin}
 
 **Description**
 
@@ -281,23 +282,23 @@ Définit un composant CQ en tant que type de mixin.
 
 `[cq:ComponentMixin] > cq:Component mixin`
 
-### cq:EditConfig {#cq-editconfig}
+### `cq:EditConfig` {#cq-editconfig}
 
 **Description**
 
-Définit la configuration de la barre d’édition.
+Définit la configuration du `editbar`.
 
 * `@prop cq:dialogMode` - Mode de la boîte de dialogue :
    * `floating` - Pour une boîte de dialogue flottante normale
    * `inline` - Modification en ligne
    * `auto` - Détection automatique (en fonction de l’espace disponible)
-* `@node cq:inplaceEditing` - Configuration de l’édition statique pour ce composant.
+* `@node cq:inplaceEditing` - Configuration de modification statique pour ce composant.
 * `@prop cq:layout` - Disposition de la barre d’édition :
    * `editbar` - Barre d’édition
    * `rollover` - Cadre de survol
    * `auto` - Détection automatique
-* `@node cq:formParameters` - Paramètres supplémentaires à ajouter au formulaire de boîte de dialogue
-* `@prop cq:actions` - Liste d’actions (boutons de la barre d’édition ou éléments de menu)
+* `@node cq:formParameters` - Paramètres supplémentaires à ajouter au formulaire de boîte de dialogue.
+* `@prop cq:actions` - Liste d’actions (boutons de la barre d’édition ou éléments de menu).
 * `@node cq:actionConfigs` - Configurations de widget pour la barre d’édition ou les éléments de menu
 * `@prop cq:emptyText` - Texte à afficher en l’absence de contenu visuel
 * `@node cq:dropTargets` - Collection de nœuds `{@link cq:DropTargetConfig}`
@@ -313,7 +314,7 @@ Définit la configuration de la barre d’édition.
    * `+ cq:dropTargets (nt:base) = nt:unstructured`
    * `+ cq:listeners (nt:base) = cq:EditListenersConfig`
 
-### cq:DropTargetConfig {#cq-droptargetconfig}
+### `cq:DropTargetConfig` {#cq-droptargetconfig}
 
 **Description**
 
@@ -331,7 +332,7 @@ Configure une cible de dépôt d’un composant. Le nom de ce nœud est utilisé
    * `- propertyName (string)`
    * `+ parameters (nt:base) = nt:unstructured`
 
-### cq:VirtualComponent {#cq-virtualcomponent}
+### `cq:VirtualComponent` {#cq-virtualcomponent}
 
 **Description**
 
@@ -340,8 +341,8 @@ Définit un composant CQ virtuel. Actuellement utilisé uniquement pour le nouve
 * `@prop jcr:title` - Titre de ce composant
 * `@prop jcr:description` - Description de ce composant
 * `@node cq:editConfig` - Configuration de modification qui définit les paramètres de la barre d’édition
-* `@node cq:childEditConfig`- Configuration de modification héritée par les composants enfants
-* `@node icon.png` - Fichier contenant une icône de caractéristique
+* `@node cq:childEditConfig` - Configuration de modification héritée par les composants enfants.
+* `@node icon.png` - Fichier contenant une icône de caractéristique.
 * `@node thumbnail.png` - Fichier contenant une miniature de caractéristique.
 * `@prop allowedParents` - Modèles d’expressions régulières utilisés pour déterminer les chemins d’accès des composants autorisés en tant que composants parents.
 * `@prop allowedChildren` - Modèles d’expressions régulières utilisés pour déterminer les chemins d’accès des composants autorisés en tant que composants enfants.
@@ -360,7 +361,7 @@ Définit un composant CQ virtuel. Actuellement utilisé uniquement pour le nouve
 `- allowedChildren (string) multiple`
 `- componentGroup (string)`
 
-### cq:EditListenersConfig {#cq-editlistenersconfig}
+### `cq:EditListenersConfig` {#cq-editlistenersconfig}
 
 **Description**
 
@@ -392,7 +393,7 @@ Définit les écouteurs (côté client) à exécuter lors d’un événement d�
 
 ## Gestion des ressources numériques (DAM) {#dam}
 
-### barrage:AssetContent {#dam-assetcontent}
+### `dam:AssetContent` {#dam-assetcontent}
 
 **Description**
 
@@ -404,7 +405,7 @@ Contenu d’une ressource de gestion des ressources numériques.
    * `+ metadata (nt:unstructured)`
    * `+ renditions (nt:folder)`
 
-### barrage:Asset {#dam-asset}
+### `dam:Asset` {#dam-asset}
 
 **Description**
 
@@ -416,7 +417,7 @@ Ressource de gestion des ressources numériques.
 `+ jcr:content (dam:AssetContent) = dam:AssetContent copy primary`
 `+ * (nt:base) = nt:base version`
 
-### barrage:Thumbnail {#dam-thumbnail}
+### `dam:Thumbnail` {#dam-thumbnail}
 
 **Description**
 
@@ -430,7 +431,7 @@ Miniature représentant une ressource de gestion des ressources numériques.
 
 ## Liste des conteneurs de diffusion {#delivery-container-list}
 
-### cq:containerList {#cq-containerlist}
+### `cq:containerList` {#cq-containerlist}
 
 **Description**
 
@@ -443,14 +444,14 @@ Liste des conteneurs.
 
 ## Page de diffusion {#delivery-page}
 
-### cq:Cq4PageAttributes {#cq-cq-pageattributes}
+### `cq:Cq4PageAttributes` {#cq-cq-pageattributes}
 
 **Description**
 
-Le type de nœud `cq:attributes` concerne les balises de version ContentBus. Ce nœud comporte uniquement une série de propriétés, dont trois sont prédéfinies : « created », « CSD » et « timestamp ».
+Le type de nœud `cq:attributes` concerne les balises de version ContentBus. Ce nœud ne comporte qu’une série de propriétés, dont trois sont prédéfinies : `created`, `csd` et `timestamp`.
 
 * `@prop created (long) mandatory copy` - Horodatage de création des informations de version. Il s’agit généralement de l’heure d’archivage de la version précédente ou de l’heure de création de la page.
-* `@prop csd (string) mandatory copy` - Attribut csd standard, copie de la propriété cq:csd du nœud de la page.
+* `@prop csd (string) mandatory copy` - Attribut standard `csd`, copie de la propriété `cq:csd` du nœud de page.
 * `@prop timestamp (long) mandatory copy` - Horodatage de la dernière modification de la version ; il s’agit généralement de l’heure d’archivage.
 * `@prop * (string) copy` - Attributs supplémentaires, versionnés avec le nœud parent.
 
@@ -462,7 +463,7 @@ Le type de nœud `cq:attributes` concerne les balises de version ContentBus. Ce 
    * `- timestamp (long) mandatory copy`
    * `- &ast; (string) copy`
 
-### cq:Cq4ContentPage {#cq-cq-contentpage}
+### `cq:Cq4ContentPage` {#cq-cq-contentpage}
 
 **Description**
 
@@ -471,8 +472,8 @@ Le type de nœud `cq:contentPage` contient les définitions de propriété et de
 Les éléments de « `cq:Cq4ContentPage` » sont les suivants :
 
 * `@prop cq:csd` - CSD ContentBus de la page
-* `@node cq:content` - Contenu de la page Ce nœud enfant n’existe pas si le statut du nœud de page est défini sur « Existant sans contenu » ou « Supprimé ».
-* `@node cq:attributes` - Liste d’attributs de page, connus précédemment sous le nom de balises de version. Ce nœud est obligatoire pour le type cq:contentPage. Le nœud de l’attribut est versionné lorsque le nœud de la page l’est également.
+* `@node cq:content` - Contenu de la page Ce nœud enfant n’existe pas si le statut du nœud de page est défini sur « Existant sans contenu » ou « Supprimé ».
+* `@node cq:attributes` - Liste d’attributs de page, connus précédemment sous le nom de balises de version. Ce nœud est obligatoire pour le type de `cq:contentPage`. Le nœud d’attributs est versionné lorsque le nœud de page l’est également.
 
 **Définition**
 
@@ -482,7 +483,7 @@ Les éléments de « `cq:Cq4ContentPage` » sont les suivants :
 
 ## Importateur {#importer}
 
-### cq:PollConfig {#cq-pollconfig}
+### `cq:PollConfig` {#cq-pollconfig}
 
 **Description**
 
@@ -491,7 +492,7 @@ Configuration du sondage.
 * `@prop source (String) mandatory` - URI de la source de données. Obligatoire et ne doit pas être vide.
 * `@prop target (String)` - Emplacement cible où sont stockées les données récupérées de la source de données. Facultatif et prend par défaut le nœud cq:PollConfig.
 * `@prop interval (Long)` - Intervalle, en secondes, entre deux recherches de nouvelles données ou de données mises à jour auprès de la source de données. Ce paramètre est facultatif et défini, par défaut, sur 30 minutes (1 800 secondes).
-* [Création de services d’importation de données personnalisés pour Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
+* [Création de services d’importation de données personnalisés pour Adobe Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 
 **Définition**
 
@@ -501,11 +502,11 @@ Configuration du sondage.
    * `- target (String)`
    * `- interval (Long)`
 
-### cq:PollConfigFolder {#cq-pollconfigfolder}
+### `cq:PollConfigFolder` {#cq-pollconfigfolder}
 
 **Description**
 
-Type de nœud principal permettant de créer facilement des nœuds de configuration de sondage.
+Type de nœud principal pratique pour créer facilement des nœuds de configuration de sondage.
 
 **Définition**
 
@@ -513,7 +514,7 @@ Type de nœud principal permettant de créer facilement des nœuds de configurat
 
 ## Emplacement {#location}
 
-### cq:GeoLocation {#cq-geolocation-1}
+### `cq:GeoLocation` {#cq-geolocation-1}
 
 **Description**
 
@@ -531,7 +532,7 @@ Mixin qui définit un emplacement géographique en degrés décimaux (DD).
 
 ## Courrier {#mailer}
 
-### cq:mailerMessage {#cq-mailermessage}
+### `cq:mailerMessage` {#cq-mailermessage}
 
 **Description**
 
@@ -547,7 +548,7 @@ Types de nœuds MailerService (Service mailer). Le mailer utilise des nœuds con
 
 ## MSM {#msm}
 
-### cq:LiveRelationship {#cq-liverelationship}
+### `cq:LiveRelationship` {#cq-liverelationship}
 
 **Description**
 
@@ -560,7 +561,7 @@ Définit un mixin LiveRelationship (Relation en direct). Un nœud source Princip
    * `- cq:lastRolledoutBy (string)`
    * `- cq:sourceUUID (string)`
 
-### cq:LiveSync {#cq-livesync}
+### `cq:LiveSync` {#cq-livesync}
 
 **Description**
 
@@ -577,7 +578,7 @@ Définit un mixin LiveSync (Synchronisation en direct). Si un nœud est impliqu�
 `+ * (cq:LiveSyncAction) = cq:LiveSyncAction`
 `+ cq:LiveSyncConfig (nt:base) = cq:LiveSyncConfig`
 
-### cq:LiveSyncCancelled {#cq-livesynccancelled}
+### `cq:LiveSyncCancelled` {#cq-livesynccancelled}
 
 **Description**
 
@@ -590,7 +591,7 @@ Définit un mixin LiveSyncCancelled (Dernière synchronisation annulée). Annule
 * `[cq:LiveSyncCancelled] > cq:LiveRelationship mixin`
    * `- cq:isCancelledForChildren (boolean)`
 
-### cq:LiveSyncAction {#cq-livesyncaction}
+### `cq:LiveSyncAction` {#cq-livesyncaction}
 
 **Description**
 
@@ -603,7 +604,7 @@ Définit une action de synchronisation en direct (LiveSyncAction) associée à u
 
 * `[cq:LiveSyncAction] > nt:unstructured`
 
-### cq:LiveSyncConfig {#cq-livesyncconfig}
+### `cq:LiveSyncConfig` {#cq-livesyncconfig}
 
 **Description**
 
@@ -616,11 +617,11 @@ Configuration de la synchronisation en direct.
    * `- cq:isDeep (boolean)`
    * `- cq:trigger (string) /** deprecated **/`
 
-Pour CQ 5.4, ajoutez ce qui suit en fin de liste :
+Pour AEM 5.4, ajoutez à la fin de la liste :
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
-### cq:BlueprintAction {#cq-blueprintaction}
+### `cq:BlueprintAction` {#cq-blueprintaction}
 
 **Description**
 
@@ -632,7 +633,7 @@ Action de plan directeur
 
 ## Plateforme {#platform}
 
-### cq:Console {#cq-console}
+### `cq:Console` {#cq-console}
 
 **Description**
 
@@ -645,7 +646,7 @@ Définit le type d’un nœud de console.
 
 ## Réplication {#replication}
 
-### cq:ReplicationStatus {#cq-replicationstatus}
+### `cq:ReplicationStatus` {#cq-replicationstatus}
 
 **Description**
 
@@ -671,21 +672,21 @@ Définit le mixin des informations relatives au statut de réplication.
 
 ## Sécurité {#security}
 
-### cq:ApplicationPrivilege {#cq-applicationprivilege}
+### `cq:ApplicationPrivilege` {#cq-applicationprivilege}
 
 **Description**
 
-Définit un privilège d’application.
+Il définit un privilège d’application.
 
 **Définition**
 
 * `[cq:ApplicationPrivilege] mixin`
 
-### cq:PrivilegeAcl {#cq-privilegeacl}
+### `cq:PrivilegeAcl` {#cq-privilegeacl}
 
 **Description**
 
-Définit un privilège d’application ACL.
+Il définit une liste de contrôle d’accès des privilèges d’application.
 
 * `@prop cq:isPathDependent`
 * `@node * ACEs`
@@ -696,11 +697,11 @@ Définit un privilège d’application ACL.
    * `- cq:isPathDependent (boolean)`
    * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
 
-### cq:PrivilegeAce {#cq-privilegeace}
+### `cq:PrivilegeAce` {#cq-privilegeace}
 
 **Description**
 
-Définit un privilège d’application ACE.
+Il définit une entrée de contrôle d’accès pour un privilège d’application.
 
 * `@prop path`
 * `@prop deny`
@@ -711,21 +712,21 @@ Définit un privilège d’application ACE.
    * `- path mandatory`
    * `- deny (boolean)`
 
-### cq:ApplicationPrivilege {#cq-applicationprivilege-1}
+### `cq:ApplicationPrivilege` {#cq-applicationprivilege-1}
 
 **Description**
 
-Définit un privilège d’application.
+Il définit un privilège d’application.
 
 **Définition**
 
 * `[cq:ApplicationPrivilege] mixin`
 
-### cq:PrivilegeAcl {#cq-privilegeacl-1}
+### `cq:PrivilegeAcl` {#cq-privilegeacl-1}
 
 **Description**
 
-Définit un privilège d’application ACL.
+Il définit une liste de contrôle d’accès des privilèges d’application.
 
 * `@prop cq:isPathDependent`
 * `@node * ACEs`
@@ -736,11 +737,11 @@ Définit un privilège d’application ACL.
    * `- cq:isPathDependent (boolean)`
    * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
 
-### cq:PrivilegeAce {#cq-privilegeace-1}
+### `cq:PrivilegeAce` {#cq-privilegeace-1}
 
 **Description**
 
-Définit un privilège d’application ACE.
+Il définit une entrée de contrôle d’accès pour un privilège d’application.
 
 * `@prop path`
 * `@prop deny`
@@ -753,11 +754,11 @@ Définit un privilège d’application ACE.
 
 ## Importateur de site {#site-importer}
 
-### cq:ComponentExtractorSource {#cq-componentextractorsource}
+### `cq:ComponentExtractorSource` {#cq-componentextractorsource}
 
 **Description**
 
-Définit un type de mixin qui marque les fichiers pouvant être ouverts avec l’extracteur de composants.
+Définit un type de mixin qui marque les fichiers pouvant être ouverts avec un extracteur de composants.
 
 **Définition**
 
@@ -765,7 +766,7 @@ Définit un type de mixin qui marque les fichiers pouvant être ouverts avec l�
 
 ## Balisage {#tagging}
 
-### cq:Tag {#cq-tag}
+### `cq:Tag` {#cq-tag}
 
 **Description**
 
@@ -779,7 +780,7 @@ Définit une balise unique, mais peut également en contenir plusieurs, créant 
    * `- * (undefined)`
    * `+ * (nt:base) = cq:Tag version`
 
-### cq:Taggable {#cq-taggable}
+### `cq:Taggable` {#cq-taggable}
 
 **Description**
 
@@ -792,7 +793,7 @@ Résume le mixin de base pour le contenu pouvant être balisé.
 * `[cq:Taggable]`
    * `- cq:tags (string) multiple`
 
-### cq:OwnerTaggable {#cq-ownertaggable}
+### `cq:OwnerTaggable` {#cq-ownertaggable}
 
 **Description**
 
@@ -802,22 +803,22 @@ Seuls les auteurs/propriétaires sont autorisés à baliser le contenu (balisage
 
 * `[cq:OwnerTaggable] > cq:Taggable`
 
-### cq:UserTaggable {#cq-usertaggable}
+### `cq:UserTaggable` {#cq-usertaggable}
 
 **Description**
 
-Tout site web public/utilisateur peut baliser le contenu (style Web2.0), utilisé dans cq:userContent.
+Tout site web public ou utilisateur peut baliser le contenu (style Web2.0), utilisé dans `cq:userContent`.
 
 **Définition**
 
 * `[cq:UserTaggable] > cq:Taggable`
    * `mixin`
 
-### cq:AllowsUserContent {#cq-allowsusercontent}
+### `cq:AllowsUserContent` {#cq-allowsusercontent}
 
 **Description**
 
-Ajoute un sous-nœud `cq:userContent` pouvant être modifié par les utilisateurs. Chaque personne possède son propre sous-nœud `cq:userContent/<userid>`, qui contient généralement le mixin `cq:UserTaggable`.
+Ajoute un sous-nœud `cq:userContent` que les utilisateurs peuvent modifier. Chaque personne possède son propre sous-nœud `cq:userContent/<userid>`, qui contient généralement le mixin `cq:UserTaggable`.
 
 **Définition**
 
@@ -831,11 +832,11 @@ Variante étendue, définissant de façon plus explicite l’arborescence `cq:us
    * `mixin`
    * `+ cq:userContent (cq:UserContent)`
 
-### cq:UserContent {#cq-usercontent}
+### `cq:UserContent` {#cq-usercontent}
 
 **Description**
 
-Peut être modifié par les utilisateurs.
+Les utilisateurs peuvent le modifier.
 
 **Définition**
 
@@ -845,7 +846,7 @@ Peut être modifié par les utilisateurs.
    * `// other content`
    * `+ * (nt:base)`
 
-### cq:UserData {#cq-userdata}
+### `cq:UserData` {#cq-userdata}
 
 **Description**
 
@@ -857,7 +858,7 @@ Données utilisateur
 
 ## Widgets {#widgets}
 
-### cq:ClientLibraryFolder {#cq-clientlibraryfolder}
+### `cq:ClientLibraryFolder` {#cq-clientlibraryfolder}
 
 **Description**
 
@@ -869,7 +870,7 @@ Dossier de bibliothèques clientes
    * `- categories (string) multiple`
    * `- dependencies (string) multiple`
 
-### cq:Widget {#cq-widget}
+### `cq:Widget` {#cq-widget}
 
 **Description**
 
@@ -883,7 +884,7 @@ Widget
    * `- title (string)`
    * `+ items (nt:base) = cq:WidgetCollection copy`
 
-### cq:WidgetCollection {#cq-widgetcollection}
+### `cq:WidgetCollection` {#cq-widgetcollection}
 
 **Description**
 
@@ -895,7 +896,7 @@ Collection de widgets
    * `orderable`
    * `+ * (cq:Widget) = cq:Widget copy`
 
-### cq:Dialog {#cq-dialog}
+### `cq:Dialog` {#cq-dialog}
 
 **Description**
 
@@ -905,7 +906,7 @@ Boîte de dialogue
 
 * `[cq:Dialog] > cq:Widget orderable`
 
-### cq:Panel {#cq-panel}
+### `cq:Panel` {#cq-panel}
 
 **Description**
 
@@ -915,7 +916,7 @@ Panneau
 
 `[cq:Panel] > cq:Widget orderable`
 
-### cq:TabPanel {#cq-tabpanel}
+### `cq:TabPanel` {#cq-tabpanel}
 
 **Description**
 
@@ -926,7 +927,7 @@ Panneau Onglet
 * `[cq:TabPanel]` > `cq:Panel orderable`
    * `- activeTab (long)`
 
-### cq:Field {#cq-field}
+### `cq:Field` {#cq-field}
 
 **Description**
 
@@ -941,7 +942,7 @@ Champ
 
 ## Wiki {#wiki}
 
-### wiki :Topic {#wiki-topic}
+### `wiki:Topic` {#wiki-topic}
 
 **Description**
 
@@ -962,7 +963,7 @@ Rubrique Wiki
    * `- wiki:logMessage (string)`
    * `- wiki:quietSave (boolean)`
 
-### wiki :User {#wiki-user}
+### `wiki:User` {#wiki-user}
 
 **Description**
 
@@ -973,7 +974,7 @@ Utilisateur Wiki
 * `[wiki:User] mixin`
    * `- wiki:subscriptions (string) multiple`
 
-### wiki :Properties {#wiki-properties}
+### `wiki:Properties` {#wiki-properties}
 
 **Description**
 
@@ -987,7 +988,7 @@ Propriétés Wiki
 
 ## Workflow {#workflow}
 
-### cq:Workflow {#cq-workflow}
+### `cq:Workflow` {#cq-workflow}
 
 **Description**
 
@@ -1012,7 +1013,7 @@ Représente une instance de workflow.
    * `+ metaData (nt:unstructured)`
    * `+ workItems (nt:unstructured)`
 
-### cq:WorkItem {#cq-workitem}
+### `cq:WorkItem` {#cq-workitem}
 
 **Description**
 
@@ -1030,7 +1031,7 @@ Représente une instance de workflow.
    * `- sling:resourceType (String) = "cq/workflow/components/workitem" mandatory autocreated`
    * `+ metaData (nt:unstructured)`
 
-### cq:Payload {#cq-payload}
+### `cq:Payload` {#cq-payload}
 
 **Description**
 
@@ -1047,7 +1048,7 @@ Payload
    * `- * (undefined)`
    * `- * (undefined) multiple`
 
-### cq:WorkflowData {#cq-workflowdata}
+### `cq:WorkflowData` {#cq-workflowdata}
 
 **Description**
 
@@ -1061,11 +1062,12 @@ Données de workflow
    * `+ payload (cq:Payload)`
    * `+ metaData (nt:unstructured) copy`
 
-### cq:WorkflowModel {#cq-workflowmodel}
+### `cq:WorkflowModel` {#cq-workflowmodel}
 
 **Description**
 
 Attribue automatiquement la configuration de workflow. La configuration suit la structure ci-dessous :
+
 * `workflows`
    * `+ name1`
       * `- cq:path`
@@ -1086,7 +1088,7 @@ Attribue automatiquement la configuration de workflow. La configuration suit la 
    * `+ metaData (nt:unstructured)`
       * `copy`
 
-### cq:WorkflowNode {#cq-workflownode}
+### `cq:WorkflowNode` {#cq-workflownode}
 
 **Description**
 
@@ -1106,7 +1108,7 @@ Nœud de workflow
    * `+ timeoutConfiguration (nt:unstructured)`
       * `copy`
 
-### cq:WorkflowTransition {#cq-workflowtransition}
+### `cq:WorkflowTransition` {#cq-workflowtransition}
 
 **Description**
 
@@ -1121,7 +1123,7 @@ Transition de workflow
    * `+ metaData (nt:unstructured)`
       * `copy`
 
-### cq:OrTab {#cq-ortab}
+### `cq:OrTab` {#cq-ortab}
 
 **Description**
 
@@ -1130,10 +1132,10 @@ Onglet Ou
 **Définition**
 
 * `[cq:OrTab]`
-   * `- workflowId (String) // not compulsory as this node will already be attached to the workflow node`
+   * `- workflowId (String) // not compulsory as this node is already be attached to the workflow node`
    * `- nodeId (String)`
 
-### cq:Wait {#cq-wait}
+### `cq:Wait` {#cq-wait}
 
 **Description**
 
@@ -1142,11 +1144,11 @@ Attendre
 **Définition**
 
 * `[cq:Wait]`
-   * `- workflowId (String) // not compulsory as this node will be already attached to the workflow node`
+   * `- workflowId (String) // not compulsory as this node is already attached to the workflow node`
    * `- destNodeId (String)`
    * `- fromNodeId (String)`
 
-### cq:WorkflowStack {#cq-workflowstack}
+### `cq:WorkflowStack` {#cq-workflowstack}
 
 **Description**
 
@@ -1159,7 +1161,7 @@ Pile de workflow (workflows).
    * `- parentInstanceId (String)`
    * `- nodeId (String)`
 
-### cq:ProcessStack {#cq-processstack}
+### `cq:ProcessStack` {#cq-processstack}
 
 **Description**
 
@@ -1168,16 +1170,16 @@ Pile de processus
 **Définition**
 
 * `[cq:ProcessStack]`
-   * `- workflowId (String) // not compulsory as this node will be already attached to the workflow node`
+   * `- workflowId (String) // not compulsory as this node is already attached to the workflow node`
    * `- containerWorkflowModelId (String)`
    * `- containerWorkflowNodeId`
    * `- containerWorkflowEndNodeId // still needed (if name already defines that id)`
 
-### cq:WorkflowLauncher {#cq-workflowlauncher}
+### `cq:WorkflowLauncher` {#cq-workflowlauncher}
 
 **Description**
 
-Lanceur de workflow
+Lanceur de workflows
 
 **Définition**
 
