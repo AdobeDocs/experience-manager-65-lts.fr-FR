@@ -10,28 +10,28 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: e1771229-b2ce-406a-95a5-99b11fafbe34
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 86%
+source-wordcount: '511'
+ht-degree: 63%
 
 ---
 
-# Conditions préalables à l’intégration à Adobe Target{#prerequisites-for-integrating-with-adobe-target}
+# Conditions préalables à l’intégration à Adobe Target{#prerequisites-for-integrating-with-adobe-target}
 
 Dans le cadre de l’[intégration d’AEM et Adobe Target](/help/sites-administering/target.md), vous devez vous inscrire à Adobe Target, configurer l’agent de réplication et sécuriser les paramètres d’activité sur le nœud de publication.
 
-## Inscription à Adobe Target {#registering-with-adobe-target}
+## S’inscrire auprès d’Adobe Target {#registering-with-adobe-target}
 
 Pour intégrer AEM à Adobe Target, vous devez disposer d’un compte Adobe Target valide. Ce compte doit disposer au minimum des permissions de niveau **approbateur**. Lorsque vous vous inscrivez à Adobe Target, vous recevez un code client. Vous avez besoin du code client et de votre nom d’utilisateur et mot de passe Adobe Target pour connecter AEM à Adobe Target.
 
-Le code client identifie le compte client Adobe Target lors de l’appel du serveur Adobe Target.
+Le code client identifie le compte client Adobe Target lors de l’appel du serveur Adobe Target.
 
 >[!NOTE]
 >
->Votre compte doit également être activé par l’équipe Target pour pouvoir utiliser l’intégration.
+>L’équipe Target doit permettre à votre compte d’utiliser l’intégration.
 >
->Si ce n’est pas encore le cas, contactez l’[Assistance clientèle Adobe](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=fr).
+>Si ce n’est pas encore le cas, contactez l’[Assistance clientèle Adobe](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information).
 
 ## Activation de l’agent de réplication Target {#enabling-the-target-replication-agent}
 
@@ -44,25 +44,25 @@ L’[agent de réplication](/help/sites-deploying/replication.md) Test&amp;Targe
 
    >[!NOTE]
    >
-   >Lorsque vous configurez l’agent de réplication Test&amp;Target, sous l’onglet **transport**, l’URI est défini par défaut sur **tnt:///**. Ne remplacez pas cet URI par **https://admin.testandtarget.omniture.com**.
+   >Lorsque vous configurez l’agent de réplication Test&amp;Target, sous l’onglet **Transport**, l’URI est défini par défaut sur `tnt:///`. Ne remplacez pas cet URI par `https://admin.testandtarget.omniture.com`.
    >
-   >Si vous tentez de tester la connexion avec **tnt:///**, elle renvoie une erreur. Ce comportement est prévu, car cet URI est destiné à un usage interne uniquement et ne doit pas être utilisé avec **Tester la connexion**.
+   >Si vous essayez de tester la connexion avec `tnt:///`, une erreur s’affiche, indiquant le comportement attendu. La raison en est que l’URI est destiné à un usage interne uniquement. Ne pas utiliser avec **Tester la connexion**.
 
-## Sécurisation du nœud de paramètres d’activité {#securing-the-activity-settings-node}
+## Sécurisez le nœud de paramètres d’activité {#securing-the-activity-settings-node}
 
 Sécurisez le nœud de paramètres d’activité **cq:ActivitySettings** sur l’instance de publication afin qu’il ne soit pas accessible aux utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
 
-Le nœud **cq:ActivitySettings** est disponible dans CRXDE Lite sous `/content/campaigns/*nameofbrand*`* *sous le nœud jcr:content des activités ;* *par exemple, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
+Le nœud **cq:ActivitySettings** est disponible dans CRXDE Lite sous `/content/campaigns/*nameofbrand*`* *sous le nœud `jcr:content` des activités . Par exemple, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
 
-Le nœud **cq:ActivitySettings** sous le jcr de l’activité:content est protégé par les listes de contrôle d’accès suivantes :
+Le nœud **cq:ActivitySettings** sous le `jcr:content` de l’activité est protégé par les listes de contrôle d’accès suivantes :
 
-* Refuser tout pour tous
-* Autorisez jcr:read,rep:write pour « target-activity-authors » (l’auteur est membre de ce groupe prêt à l’emploi).
-* Autoriser jcr:read,rep:write pour « targetservice »
+* Refuser tout pour tout le monde.
+* Autoriser les `jcr:read,rep:write` pour les `target-activity-authors` (l’auteur est un membre de ce groupe prêt à l’emploi).
+* Autoriser les `jcr:read,rep:write` pour les `targetservice`.
 
 Ces paramètres permettent de garantir que les utilisateurs ordinaires n’ont pas accès aux propriétés de nœud. Utilisez les mêmes ACL sur les instances de création et de publication. Consultez la section [Administration et sécurité des utilisateurs](/help/sites-administering/security.md) pour plus d’informations.
 
-## Configuration de l’externaliseur de liens Day CQ {#configuring-the-aem-link-externalizer}
+## Configuration de l’externaliseur de liens d’AEM {#configuring-the-aem-link-externalizer}
 
 Lors de la modification d’une activité dans Adobe Target, l’URL pointe sur **localhost**, à moins que vous ne modifiiez l’URL sur le nœud de création AEM. Vous pouvez configurer l’externaliseur de liens d’AEM si vous souhaitez que le contenu exporté pointe vers un domaine *publier*.
 
@@ -70,11 +70,11 @@ Lors de la modification d’une activité dans Adobe Target, l’URL pointe sur
 >
 >Consultez également la section [Ajout de la configuration cloud](/help/sites-administering/experience-fragments-target.md#add-the-cloud-configuration).
 
-Pour configurer l’externaliseur AEM, procédez comme suit :
+Pour configurer l’externaliseur d’AEM :
 
 >[!NOTE]
 >
->Pour plus d’informations, consultez la section [Externalisation des URL](/help/sites-developing/externalizer.md).
+>Pour plus d’informations, voir [Externalisation des URL](/help/sites-developing/externalizer.md).
 
 1. Accédez à la console web OSGi : **https://&lt;server>:&lt;port>/system/console/configMgr.**
 1. Recherchez **Externalisateur de lien Day CQ** et saisissez le domaine du nœud de création.

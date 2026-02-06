@@ -1,6 +1,6 @@
 ---
 title: Acceptation et approbation
-description: Les tests d’acceptation sont une catégorie spéciale de tests utilisés pour vérifier que le projet satisfait aux exigences du client ou de la cliente, et que ce dernier ou cette dernière accepte le projet.
+description: Les tests d’acceptation constituent une catégorie spéciale de tests utilisés pour vérifier que le projet répond aux exigences du client et que le client accepte le projet
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
@@ -9,24 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 22a779bc-efc3-416e-8f8a-8558c5db055a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 100%
+ht-degree: 16%
 
 ---
 
 # Acceptation et approbation{#acceptance-and-sign-off}
 
-Comme indiqué précédemment, les [Tests d’acceptation](/help/sites-developing/planning.md) sont une catégorie spéciale de tests utilisés pour vérifier que :
+Comme mentionné, les [tests d’acceptation](/help/sites-developing/planning.md) sont une catégorie spéciale de tests utilisés pour vérifier les éléments suivants :
 
-* le projet répond aux exigences du client ;
+* Le projet répond aux exigences du client.
 * le client ou la cliente accepte le projet.
 
-Ils doivent être définis par le client ou la cliente et le chef ou la cheffe de projet. Ils revêtent un caractère important, car ils permettent d’établir la facturation finale.
+Le client et le chef de projet doivent définir les exigences. Ils ont chacun une importance particulière, car ils sont souvent liés à la facturation finale.
 
-Pour cette raison, ils doivent être :
+Pour cette raison, les exigences doivent être les suivantes :
 
 * définis le plus tôt possible.
 * mis à jour chaque fois que nécessaire.
-* Toute modification doit être formellement acceptée et signée par les deux parties (partenaire et client ou cliente).
+* Le partenaire et le client doivent formellement accepter et signer toute modification.
+
