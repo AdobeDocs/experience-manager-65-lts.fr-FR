@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 4097adf1dd533bbf21c8635a1948f9ef4c294896
+source-git-commit: 7d40e37a29a426e0e72b233b3aab56b1ba6f1730
 workflow-type: tm+mt
-source-wordcount: '2877'
-ht-degree: 92%
+source-wordcount: '2870'
+ht-degree: 91%
 
 ---
 
@@ -95,7 +95,7 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 | Machine virtuelle IBM® Semeru J9 - build 17.0.13.0 | A : prise en charge de `[2]` |
 | Machine virtuelle IBM® Semeru J9 - build 21.0.6.0 | A : prise en charge de `[2]` |
 
-1. Oracle est passé à un modèle de « support à long terme » (LTS) pour les produits Oracle Java™ SE. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14 et Java™ 15m Java™ 16 sont des versions non-LTS fournies par Oracle (voir la [feuille de route de la prise en charge d’Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe assure uniquement la prise en charge des versions LTS de Java™. La prise en charge et la distribution du JDK Oracle Java™ SE, y compris toutes les mises à jour de maintenance des versions LTS après la fin des mises à niveau publiques, sont directement prises en charge par Adobe pour tous les clients et clientes AEM utilisant la technologie Oracle Java™ SE. Consultez la [Politique de prise en charge Java™ pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+1. Oracle est passé à un modèle de « support à long terme » (LTS) pour les produits Oracle Java™ SE. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14 et Java™ 15m Java™ 16 sont des versions non-LTS fournies par Oracle (voir la [feuille de route de la prise en charge d’Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe assure uniquement la prise en charge des versions LTS de Java™. La prise en charge et la distribution du JDK Oracle Java™ SE, y compris toutes les mises à jour de maintenance des versions LTS, sont directement prises en charge par Adobe pour tous les clients AEM qui utilisent la technologie Oracle Java™ SE. Consultez la [Politique de prise en charge Java™ pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
    **Cette version prend en charge Oracle Java™ 17 et Oracle Java™ 21.**
 
 1. IBM® JRE est pris en charge uniquement avec le serveur d’applications WebSphere®.
