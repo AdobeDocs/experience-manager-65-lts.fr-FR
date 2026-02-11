@@ -28,7 +28,7 @@ Utilisez le workflow et les tableaux suivants pour sélectionner le ou les guide
 
 ## Workflow d’installation et de mise à niveau {#installation-upgrade-workflow}
 
-1. Passez en revue la section [ Plateformes prises en charge par AEM Forms sur JEE ](/help/forms/using/aem-forms-jee-supported-platforms.md) et assurez-vous que votre système répond aux combinaisons logicielles/matérielles requises.
+1. Passez en revue la section [&#x200B; Plateformes prises en charge par AEM Forms sur JEE &#x200B;](/help/forms/using/aem-forms-jee-supported-platforms.md) et assurez-vous que votre système répond aux combinaisons logicielles/matérielles requises.
 2. Déterminez si vous effectuez une **nouvelle installation** ou une **mise à niveau**.
 3. Pour le chemin d’accès choisi, suivez la séquence décrite ci-dessous (certains scénarios nécessitent plusieurs guides).
 

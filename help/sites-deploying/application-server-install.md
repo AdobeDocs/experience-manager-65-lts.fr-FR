@@ -96,7 +96,7 @@ Pour vérifier si tout est installé, vous pouvez :
 
 ### WebSphere® 24.0.0.7 {#websphere}
 
-Avant le déploiement, veuillez lire la [ Description générale ](#general-description) ci-dessus.
+Avant le déploiement, veuillez lire la [&#x200B; Description générale &#x200B;](#general-description) ci-dessus.
 
 **Préparation du serveur**
 
