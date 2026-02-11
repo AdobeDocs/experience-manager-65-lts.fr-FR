@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: 2a33cb4b8aa1dcfd989cf61465492d563f9cd99a
+source-git-commit: 1d0fe9ee81a2e38f7887b6f884a13d1ba1462304
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 42%
+source-wordcount: '846'
+ht-degree: 41%
 
 ---
 
@@ -29,6 +29,7 @@ La procédure d’installation est décrite pour les serveurs d’applications s
 
 * [WebSphere](#websphere)
 * [Tomcat 10.0.x/10.1.x](#tomcat)
+* [JBoss EAP 8](/help/forms/using/upgrade-forms-osgi.md)
 
 Pour plus d’informations sur l’installation d’applications Web, sur les configurations serveur et sur le démarrage et l’arrêt du serveur, consultez la documentation du serveur d’applications approprié.
 
@@ -95,7 +96,7 @@ Pour vérifier si tout est installé, vous pouvez :
 
 ### WebSphere® 24.0.0.7 {#websphere}
 
-Avant le déploiement, veuillez lire la [&#x200B; Description générale &#x200B;](#general-description) ci-dessus.
+Avant le déploiement, veuillez lire la [ Description générale ](#general-description) ci-dessus.
 
 **Préparation du serveur**
 
