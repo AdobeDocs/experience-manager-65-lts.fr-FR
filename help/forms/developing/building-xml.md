@@ -1,5 +1,5 @@
 ---
-title: Comment utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML ?
+title: Comment utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML ?
 description: Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2f49cb29-698b-43ab-971f-81e2b18e6fa9
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ Parmi tous les services AEM Forms on JEE standard disponibles dans AEM Forms on 
 
 La création globale d’applications et de processus est hors de portée pour ce tutoriel, mais pour l’application de cette instruction, une application nommée « DemoApplication02 » a été créée. En supposant qu’une application ait déjà été créée, vous devez créer un processus dans cette application pour appeler le service executeScript. Pour ajouter un processus à l’application qui inclut le service `Execute Script` :
 
-1. Cliquez avec le bouton droit de la souris sur votre application et sélectionnez **[!UICONTROL Nouveau]**. Dans le menu déroulant **[!UICONTROL Nouveau]**, sélectionnez **[!UICONTROL Processus]**. Nommez votre processus, ajoutez une description si nécessaire, puis sélectionnez l’icône voulue pour représenter ce processus. Pour les besoins de ce tutoriel, nous avons créé un processus et l’avons appelé `executeScriptDemoProcess`.
+1. Cliquez avec le bouton droit de la souris sur votre application et sélectionnez **[!UICONTROL Nouveau]**. Dans le menu déroulant **[!UICONTROL Nouveau]**, sélectionnez **[!UICONTROL Processus]**. Nommez votre processus, ajoutez une description, si nécessaire, puis sélectionnez l’icône représentant ce processus. Pour les besoins de ce tutoriel, nous avons créé un processus et l’avons appelé `executeScriptDemoProcess`.
 1. Définissez vos points de départ ou optez simplement pour l’ajout de vos points de départ ultérieurement.
 1. Le processus est maintenant créé et doit s’ouvrir automatiquement dans la fenêtre [!UICONTROL Conception de processus]. Dans cette fenêtre, cliquez sur l’icône de sélecteur d’activité en haut de la fenêtre Conception de processus et faites glisser la nouvelle activité sur la piste de navigation. À ce stade, la [!UICONTROL fenêtre Définir l’activité] doit apparaître (voir la figure ci-dessous).
    ![Définir l’activité](assets/define-activity.jpg)

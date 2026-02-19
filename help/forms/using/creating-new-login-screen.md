@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 3e20857b-05bb-4f44-8011-550bdaf857c5
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -52,7 +52,7 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
 
 1. Sur le dossier `en`, procédez comme suit :
 
-   1. Donnez au dossier le nom de l’ensemble de paramètres régionaux que vous souhaitez prendre en charge. Par exemple, `ar`.
+   1. Renommez le dossier en utilisant le nom du paramètre régional que vous souhaitez prendre en charge. Par exemple, `ar`.
 
    1. Modifiez la valeur de la propriété `jcr:language` en `ar` (pour le dossier `ar`).
 
@@ -198,7 +198,7 @@ String browserLocale = "en";
    * de `/libs/livecycle/core/components/login`
    * vers `/apps/livecycle/core/components/login`
 
-1. Modifiez la valeur de la propriété `sling:message` du nœud (sous le dossier du code des paramètres régionaux souhaité) pour laquelle vous souhaitez modifier le texte. La traduction est effectuée via la clé mentionnée dans la valeur de la propriété `sling:key` du nœud.
+1. Modifiez maintenant la valeur de la propriété `sling:message` du nœud (sous le dossier du code du paramètre régional souhaité) pour laquelle vous souhaitez modifier le texte. La traduction est effectuée via la clé mentionnée dans la valeur de la propriété `sling:key` du nœud.
 
 1. Pour ajouter une nouvelle paire clé-valeur, effectuez les opérations suivantes : Vérifiez un exemple dans la capture d’écran qui suit.
 

@@ -6,7 +6,7 @@ mini-toc-levels: 4
 feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 98bd0c24-6c5e-4b96-a3aa-a3e4ef802baf
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '6494'
 ht-degree: 99%
@@ -47,7 +47,7 @@ Par défaut, [Dynamic Media](https://business.adobe.com/fr/products/experience-
 
 >[!WARNING]
 >
->Dynamic Media en mode Scene7 n’est destiné qu’à l’*Instance de création de Experience Manager uniquement*. Par conséquent, vous devez configurer `runmode=dynamicmedia_scene7` sur l’instance d’auteur du Experience Manager, et *non* sur l’instance de publication du Experience Manager.
+>Dynamic Media en mode Scene7 n’est destiné qu’à l’*Instance de création de Experience Manager uniquement*. Par conséquent, vous devez configurer `runmode=dynamicmedia_scene7` sur l’instance de création du Experience Manager, et *non* sur l’instance de publication du Experience Manager.
 
 Pour activer Dynamic Media, démarrez Experience Manager en mode d’exécution `dynamicmedia_scene7` à partir de la ligne de commande en saisissant ce qui suit dans une fenêtre de terminal (l’exemple de port utilisé est 4502) :
 
@@ -75,13 +75,13 @@ Pour migrer des paramètres prédéfinis de visionneuse et des configurations pe
 
 L’installation du pack de fonctionnalités 18912 est *facultative*.
 
-Le pack de fonctionnalités 18912 vous permet soit d’ingérer des ressources par FTP en bloc, soit de migrer des ressources de Dynamic Media en mode hybride ou de Dynamic Media Classic vers le mode Dynamic Media en mode Scene7 sur Experience Manager. Il est disponible à partir d’[Adobe Professional Services](https://business.adobe.com/fr/customers/consulting-services/main.html).
+Le pack de fonctionnalités 18912 vous permet soit d’ingérer des ressources par FTP en bloc, soit de migrer des ressources de Dynamic Media en mode hybride ou de Dynamic Media Classic vers le mode Dynamic Media en mode Scene7 sur Experience Manager. Il est disponible à partir d’[Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
 Consultez [Installer le Pack de fonctionnalités 18912 pour la migration de ressources en masse](/help/assets/bulk-ingest-migrate.md) pour plus d’informations.
 
 ## Création d’une configuration Dynamic Media dans les services cloud {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
@@ -262,7 +262,7 @@ Si vous avez l’intention d’utiliser cette fonction, tenez compte des conditi
 
 **Pour configurer Dynamic Media en mode Scene7 pour le chargement de ressources de plus de 2 Go :**
 
-1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils**&#x200B;[!UICONTROL &#x200B; > &#x200B;]&#x200B;**Général**&#x200B;[!UICONTROL &#x200B; > &#x200B;]&#x200B;**CRXDE Lite]**.
+1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils**[!UICONTROL  > ]**Général**[!UICONTROL  > ]**CRXDE Lite]**.
 
 1. Dans la fenêtre du CRXDE Lite, effectuez l’une des opérations suivantes :
 
@@ -297,7 +297,7 @@ Vous pouvez saisir une valeur allant jusqu’à 15 Go (`2013265920` octets). D
 
 1. Dans le coin supérieur gauche de fenêtre CRXDE Lite, sélectionnez **[!UICONTROL Tout enregistrer]**.
 
-   *Définissez maintenant le délai d’attente pour le gestionnaire de tâches de processus externe de workflow Adobe Granite en procédant comme suit :*
+   *Définissez maintenant le délai d’expiration pour le gestionnaire de tâches de processus externe de workflow Adobe Granite en procédant comme suit :*
 
 1. Dans Experience Manager, sélectionnez le logo d’Experience Manager pour accéder à la console de navigation globale.
 1. Effectuez l’une des opérations suivantes :
@@ -314,7 +314,7 @@ Vous pouvez saisir une valeur allant jusqu’à 15 Go (`2013265920` octets). D
 
 1. Dans l’angle inférieur droit de la boîte de dialogue, sélectionnez **[!UICONTROL Enregistrer]**.
 
-   *Définissez maintenant le délai d’attente de l’étape de processus Chargement de binaire direct Scene7 en procédant comme suit :*
+   *Définissez maintenant le délai d’expiration de l’étape de processus Chargement de binaire direct Scene7 en procédant comme suit :*
 
 1. Dans Experience Manager, sélectionnez le logo d’Experience Manager pour accéder à la console de navigation globale.
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflows]** > **[!UICONTROL Modèles]**.
@@ -335,7 +335,7 @@ Vous pouvez saisir une valeur allant jusqu’à 15 Go (`2013265920` octets). D
 * [Configuration de la gestion des couleurs](#configuring-color-management)
 * [Modification des types MIME pour les formats pris en charge](#editing-mime-types-for-supported-formats)
 * [Ajout de types MIME pour les formats non pris en charge](#adding-mime-types-for-unsupported-formats)
-* [Création de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) (dans l’interface utilisateur de Dynamic Media Classic)
+* [Création de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des ensembles d’images et des visionneuses à 360°](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) (dans l’interface d’utilisation de Dynamic Media Classic)
 
 #### Configurer la configuration de publication Dynamic Media pour Image Server {#publishing-setup-for-image-server}
 
@@ -357,7 +357,7 @@ Consultez [Configuration des paramètres d’image prédéfinis](/help/assets/ma
 
 >[!NOTE]
 >
->Par défaut, le système affiche 15 rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** et 15 paramètres prédéfinis de la visionneuse lorsque vous sélectionnez **[!UICONTROL Visionneuses]** dans la vue Détails de la ressource. Vous pouvez augmenter cette limite. Consultez [Augmentation du nombre de paramètres prédéfinis d’image affichés](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Augmentation du nombre de paramètres prédéfinis de visionneuse affichés](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+>Par défaut, le système affiche 15 rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** et 15 paramètres prédéfinis de la visionneuse lorsque vous sélectionnez **[!UICONTROL Visionneuses]** dans la vue Détails de la ressource. Vous pouvez augmenter cette limite. Consultez [Augmentation du nombre de paramètres d’image prédéfinis affichés](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Augmentation du nombre de paramètres de visionneuse prédéfinis affichés](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### Modification des types MIME pour les formats pris en charge {#editing-mime-types-for-supported-formats}
 
@@ -366,13 +366,13 @@ Vous pouvez définir les types de ressources traités par Dynamic Media et pers
 * Conversion d’un Adobe PDF en ressource de catalogue électronique.
 * Convertissez un document Adobe Photoshop (.PSD) en ressource de modèle de bannière pour la personnalisation.
 * Pixellisation d’un fichier Adobe Illustrator (.ai) ou d’un fichier PostScript® encapsulé Adobe Photoshop (.eps).
-* Des [profils vidéo](/help/assets/video-profiles.md) et des [profils d’images](/help/assets/image-profiles.md) peuvent être utilisés pour définir le traitement des vidéos et des images.
+* Des [profils vidéo](/help/assets/video-profiles.md) et des [profils d’image](/help/assets/image-profiles.md) peuvent être utilisés pour définir le traitement des vidéos et des images.
 
 Consultez [Chargement de ressources](/help/assets/manage-assets.md#uploading-assets).
 
 **Pour modifier des types MIME pour les formats pris en charge :**
 
-1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils**&#x200B;[!UICONTROL &#x200B; > &#x200B;]&#x200B;**Général**&#x200B;[!UICONTROL &#x200B; > &#x200B;]&#x200B;**CRXDE Lite]**.
+1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils**[!UICONTROL  > ]**Général**[!UICONTROL  > ]**CRXDE Lite]**.
 1. Dans le rail de gauche, accédez à ce qui suit :
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -382,7 +382,7 @@ Consultez [Chargement de ressources](/help/assets/manage-assets.md#uploading-ass
 1. Sous le dossier mimeTypes, sélectionnez un type MIME.
 1. Sur le côté droit de la page CRXDE Lite, dans la partie inférieure :
 
-   * Double-cliquez sur le champ **[!UICONTROL activé]**. Par défaut, tous les types MIME des ressources sont activés (définis sur **[!UICONTROL true]**), ce qui signifie que les ressources sont synchronisées avec Dynamic Media pour le traitement. Si vous souhaitez exclure ce type MIME de ressource du traitement, définissez ce paramètre sur **[!UICONTROL false]**.
+   * Double-cliquez sur le champ **[!UICONTROL activé]**. Par défaut, tous les types MIME des ressources sont activés (définis sur **[!UICONTROL true]**), ce qui signifie que les ressources sont synchronisées avec Dynamic Media pour le traitement. Si vous voulez exclure ce type MIME de ressource du traitement, définissez ce paramètre sur **[!UICONTROL false]**.
 
    * Appuyez deux fois sur **[!UICONTROL jobParam]** pour ouvrir le champ de texte associé. Consultez [Types MIME pris en charge](/help/assets/assets-formats.md#supported-mime-types) pour connaître la liste des valeurs de paramètres de traitement que vous pouvez utiliser pour un type MIME donné.
 
@@ -445,9 +445,9 @@ Vous pouvez ajouter des types de MIME personnalisés pour les formats non pris e
 
 1. Dans le coin supérieur gauche de la page CRXDE Lite, sélectionnez **[!UICONTROL Tout enregistrer]**.
 
-#### Création de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360° {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
+#### Création de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des ensembles d’images et des visionneuses à 360° {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
 
-Utilisez les paramètres prédéfinis d’ensemble par lot pour automatiser la création de visionneuses d’images ou de jeux de rotation lorsque des ressources sont chargées sur Dynamic Media.
+Utilisez les paramètres prédéfinis d’ensemble par lot pour automatiser la création d’ensembles d’images ou de visionneuses à 360° lorsque des ressources sont chargées sur Dynamic Media.
 
 Tout d’abord, définissez les conventions de nommage pour la façon dont les ressources doivent être regroupées dans un ensemble. Créez ensuite un paramètre prédéfini d’ensemble par lot, qui est un ensemble d’instructions autonomes nommées de manière unique. Il doit définir comment construire la visionneuse à l’aide d’images qui correspondent aux conventions de nommage définies dans la recette de paramètres prédéfinis.
 
@@ -503,7 +503,7 @@ Vous pouvez utiliser la méthode de champ de formulaire pour définir un paramè
 
    Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne possédez pas ces informations, contactez le service clientèle d’Adobe.
 
-1. Dans la barre de navigation située en haut de la page, accédez à **[!UICONTROL Configuration**&#x200B;[!UICONTROL > &#x200B;]&#x200B;**Configuration de l’application]** > **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]** > **[!UICONTROL Paramètre prédéfini d’ensemble par lot]**.
+1. Dans la barre de navigation située en haut de la page, accédez à **[!UICONTROL Configuration**[!UICONTROL  > ]**Configuration de l’application]** > **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]** > **[!UICONTROL Paramètre prédéfini d’ensemble par lot]**.
 
    L’option **[!UICONTROL Afficher le formulaire]**, indiquée dans le coin supérieur droit de la page Détails, correspond à la vue par défaut.
 
@@ -516,13 +516,13 @@ Vous pouvez utiliser la méthode de champ de formulaire pour définir un paramè
 
    * Pour définir une nouvelle convention d’affectation de nom quand vous configurez le paramètre prédéfini, développez **[!UICONTROL Affectation de nom de fichier]**, puis dans la liste déroulante Affectation de nom de fichier, sélectionnez **[!UICONTROL Personnalisé]**.
 
-1. Pour l’ordre de la séquence, définissez l’ordre des images une fois que la visionneuse est regroupée dans Dynamic Media.
+1. Pour l’ordre de la séquence, définissez l’ordre d’affichage des images une fois que l’ensemble est regroupé dans Dynamic Media.
 
    Par défaut, vos ressources sont classées par ordre alphanumérique. Cependant, vous pouvez utiliser une liste d’expressions régulières séparées par des virgules pour définir l’ordre.
 
 1. Dans Options de création et d’affectation de nom de l’ensemble, indiquez le suffixe ou le préfixe du nom de base que vous avez défini dans la convention d’affectation de nom. En outre, définissez si la visionneuse sera créée dans la structure de dossiers de Dynamic Media.
 
-   Si vous définissez un grand nombre de visionneuses, séparez-les des dossiers contenant les ressources elles-mêmes. Par exemple, créez un dossier Visionneuses d’images et placez-y les visionneuses générées.
+   Si vous définissez un grand nombre de visionneuses, séparez-les des dossiers contenant les ressources elles-mêmes. Par exemple, créez un dossier Ensembles d’images et placez-y les ensembles générées.
 
 1. Dans le panneau Détails, sélectionnez **[!UICONTROL Enregistrer]**.
 1. Sélectionnez **[!UICONTROL Actif]** en regard du nom du nouveau paramètre prédéfini.
@@ -559,7 +559,7 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 
    Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne possédez pas ces informations, contactez le service clientèle d’Adobe.
 
-1. Dans la barre de navigation située en haut de la page, accédez à **[!UICONTROL Configuration**&#x200B;[!UICONTROL > &#x200B;]&#x200B;**Configuration de l’application]** > **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]** > **[!UICONTROL Paramètre prédéfini d’ensemble par lot]**.
+1. Dans la barre de navigation située en haut de la page, accédez à **[!UICONTROL Configuration**[!UICONTROL  > ]**Configuration de l’application]** > **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]** > **[!UICONTROL Paramètre prédéfini d’ensemble par lot]**.
 
    L’option **[!UICONTROL Afficher le formulaire]**, indiquée dans le coin supérieur droit de la page Détails, correspond à la vue par défaut.
 
@@ -646,7 +646,7 @@ Pour mettre à jour l’un de ces paramètres, procédez comme indiqué dans la 
 
 #### Mise à jour de la file d’attente de workflows transitoires Granite {#updating-the-granite-transient-workflow-queue}
 
-La file d’attente de workflows Granite est utilisée pour le workflow **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques (DAM)]**. Dans Dynamic Media, elle est utilisée pour l’intégration et le traitement des images.
+La file d’attente de workflows Granite est utilisée pour le workflow **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques (DAM)]**. Dans Dynamic Media, elle est utilisée pour l’ingestion et le traitement des images.
 
 **Pour mettre à jour la file d’attente de workflows transitoires Granite :**
 
@@ -721,7 +721,7 @@ Si vous utilisez Dynamic Media pour les images ou les vidéos, ou les deux, vou
 
 |   | Filtrer | Type MIME | Rendus |
 | --- | --- | --- | --- |
-| Diffusion d’image Dynamic Media | filter-image<br>filter-sets | Commence par **image/**<br> Contient **applications/** et se termine par **set**. | Les filtres prêts à l’emploi « filter-images » (s’applique aux ressources d’images uniques, y compris les images interactives) et « filter-sets » (s’applique aux visionneuses à 360°, visionneuses d’images, visionneuses de supports variés et ensembles de carrousels) permettent :<br>• d’exclure de la réplication les rendus des images originales et des images statiques. |
+| Diffusion d’image Dynamic Media | filter-image<br>filter-sets | Commence par **image/**<br> Contient **applications/** et se termine par **set**. | Les filtres prêts à l’emploi « filter-images » (s’applique aux ressources d’images uniques, y compris les images interactives) et « filter-sets » (s’applique aux visionneuses à 360°, ensembles d’images, visionneuses de supports variés et ensembles de carrousels) permettent :<br>• d’exclure de la réplication les rendus des images originales et des images statiques. |
 | Diffusion vidéo Dynamic Media | filter-video | Commence par **video/** | La « vidéo de filtrage » prête à l’emploi :<br>• Exclure de la réplication la vidéo d’origine et les rendus de miniatures statiques. |
 
 >[!NOTE]
@@ -756,7 +756,7 @@ Si vous utilisez Dynamic Media pour les images ou les vidéos, ou les deux, vou
    | Caractère à utiliser | Filtrage des ressources pour la réplication |
    | --- | --- |
    | * | Caractère générique |
-   | + | Inclure les ressources à répliquer |
+   | + | Inclure les ressources pour la réplication |
    | - | Exclure les ressources de la réplication |
 
    Accédez à `content/dam/<locate your asset>/jcr:content/renditions`.

@@ -7,10 +7,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: a9cbab12-62a6-4779-955f-2858166945e6
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '2478'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -120,7 +120,7 @@ Les groupes suivants sont également inclus :
    >
    >Les paramètres d’AFC sont préconfigurés pour l’utilisateur final ou l’utilisatrice finale, ce qui signifie qu’ils ne doivent pas être modifiés.
 
-   * **Facultatif** : si vous souhaitez utiliser le thème Ultramarine accessible, cliquez simplement sur le thème Spécifier un formulaire adaptatif et sélectionnez le thème Ultramarine accessible qui apparaît dans la liste des options.
+   * **Facultatif** : si vous souhaitez utiliser le thème Ultramarine accessible, cliquez simplement sur le thème Spécifier un formulaire adaptatif et sélectionnez le thème Ultramarine accessible qui apparaît dans la liste des options.
 
    ![Démarrer la conversion](assets/aftia-start-conversion.jpg)
 
@@ -499,7 +499,7 @@ George approuve la demande d’Aya et, grâce à un workflow automatisé existan
 
    ![Vue Liste dans le menu déroulant Affichage](/help/forms/using/assets/list_view_view_dropdown.jpg)
 
-1. Dans le même menu, sélectionnez **Paramètre d’affichage**, puis les colonnes que vous souhaitez afficher dans la section **Analytics**.
+1. Dans le même menu, sélectionnez **Paramètre d’affichage** et sélectionnez les colonnes à afficher dans la section **Analytics**.
 
    ![Configurer l’affichage des colonnes](/help/forms/using/assets/view_setting_analytics.jpg)
 

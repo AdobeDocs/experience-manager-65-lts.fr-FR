@@ -7,10 +7,10 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 5e1f1f3c-a2f3-4bf1-ba96-a02f8b16c180
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -52,7 +52,7 @@ La méthode `invitedUser` accepte une instance `java.util.List` qui contient des
 >
 >En plus de présenter comment créer un gestionnaire d’invitation d’utilisateurs externes, cette section utilise également l’API AEM Forms.
 
-L’implémentation du gestionnaire d’invitation d’utilisateurs externes contient une méthode définie par l’utilisateur nommée `createLocalPrincipalAccount`. Cette méthode accepte une valeur de chaîne qui indique une adresse électronique comme valeur de paramètre. La méthode `createLocalPrincipalAccount` suppose la préexistence d’un domaine local appelé `EDC_EXTERNAL_REGISTERED`. Vous pouvez configurer ce nom de domaine comme vous le souhaitez ; toutefois, pour une application de production, vous pouvez vouloir l’intégrer à un domaine d’entreprise.
+L’implémentation du gestionnaire d’invitation d’utilisateurs externes contient une méthode définie par l’utilisateur nommée `createLocalPrincipalAccount`. Cette méthode accepte une valeur de chaîne qui indique une adresse électronique comme valeur de paramètre. La méthode `createLocalPrincipalAccount` suppose la préexistence d’un domaine local appelé `EDC_EXTERNAL_REGISTERED`. Vous pouvez configurer ce nom de domaine comme vous le souhaitez ; toutefois, pour une application de production, vous pouvez vouloir l’intégrer à un domaine d’entreprise.
 
 La méthode `createUsers` effectue une itération sur chaque adresse électronique et crée un objet Utilisateur correspondant (un utilisateur local dans le domaine `EDC_EXTERNAL_REGISTERED`). Enfin, la méthode `doEmails` est appelée. Cette méthode est délibérément laissée sous la forme d’un bulletin dans l’échantillon. Dans une implémentation destinée à la production, elle contiendrait la logique de l’application pour envoyer des messages d’invitation par e-mail aux utilisateurs et utilisatrices nouvellement créés. Il est laissé dans l’exemple pour démontrer le flux logique d’application d’une application réelle.
 
@@ -93,7 +93,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
     local_user.setEmail( email_address ); 
     local_user.setEmailAliases( aliases ); 
          
-    //  You may wish to disable the local user until, for example, his registration is processed by a confirmation link 
+    //  You may want to disable the local user until, for example, his registration is processed by a confirmation link 
     //local_user.setDisabled( true ); 
  
     DirectoryManager directory_manager = new DirectoryManagerServiceClient( _factory ); 

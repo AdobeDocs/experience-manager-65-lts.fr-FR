@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f9ffbe56-757b-4fd0-b33a-2522695aed35
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -39,7 +39,7 @@ Lorsque vous utilisez MySQL en tant que base de données AEM Forms, la console 
 ## Ajout d’une catégorie {#add-a-category}
 
 1. Dans la console d’administration, cliquez sur Services > Applications et services > Gestion des catégories.
-1. Cliquez sur Ajouter. Si vous souhaitez ajouter une sous-catégorie, sélectionnez une catégorie et cliquez ensuite sur Ajouter.
+1. Cliquez sur Ajouter. Si vous souhaitez ajouter une sous-catégorie, sélectionnez une catégorie, puis cliquez sur Ajouter.
 1. Dans la zone Nom, saisissez le nom de la catégorie, puis dans la zone Description, saisissez une description.
 1. Cliquez sur Ajouter. La catégorie s’affiche dans la page Gestion des catégories.
 
@@ -48,7 +48,7 @@ Lorsque vous utilisez MySQL en tant que base de données AEM Forms, la console 
 ## Modification d’une catégorie {#edit-a-category}
 
 1. Dans la console d’administration, cliquez sur Services > Applications et services > Gestion des catégories.
-1. Sélectionnez la catégorie que vous souhaitez modifier et cliquez sur Modifier. Vous pouvez également double-cliquer sur une catégorie pour la modifier.
+1. Sélectionnez la catégorie à modifier, puis cliquez sur Modifier. Vous pouvez également double-cliquer sur une catégorie pour la modifier.
 1. Modifiez le nom de la catégorie dans la zone Nom.
 
 ## Suppression d’une catégorie {#remove-a-category}
