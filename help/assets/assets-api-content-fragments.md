@@ -6,10 +6,10 @@ role: Developer
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: e799e9c99a12cad108ae2c035797e5887a2f4ef1
 workflow-type: tm+mt
-source-wordcount: '1901'
-ht-degree: 98%
+source-wordcount: '1939'
+ht-degree: 96%
 
 ---
 
@@ -20,8 +20,17 @@ ht-degree: 98%
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
-
 ## Vue d’ensemble {#overview}
+
+>[!CAUTION]
+>
+>La prise en charge des fragments de contenu dans l’API HTTP Assets est désormais [obsolète](/help/release-notes/release-notes.md#deprecated-features).
+>
+>Elle a été remplacée par [les OpenAPI de gestion des fragments de contenu et des modèles de fragment de contenu](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/65lts/).
+
+>[!NOTE]
+>
+>Pour obtenir les dernières informations sur les API Experience Manager, consultez la page [API Adobe Experience Manager](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion d’AEM découplé.
 
@@ -40,7 +49,7 @@ L’API permet d’utiliser Adobe Experience Manager en tant que système de g
 
 Par exemple, les applications monopages, basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
 
-Bien que les [composants de base AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) fournissent une API très complète, flexible et personnalisable pouvant traiter les opérations de lecture requises à cette fin, et dont la sortie JSON peut être personnalisée, ils ne nécessitent pas de connaissances sur AEM WCM (Web Content Management) pour la mise en œuvre, car ils doivent être hébergés sur des pages reposant sur des modèles AEM dédiés. Les entreprises de développement d’applications sur une seule page n’ont pas toutes accès à ces connaissances.
+Bien que les [composants principaux AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) fournissent une API très complète, flexible et personnalisable pouvant traiter les opérations de lecture requises à cette fin, et dont la sortie JSON peut être personnalisée, ils ne nécessitent pas de connaissances sur AEM WCM (Web Content Management) pour la mise en œuvre, car ils doivent être hébergés sur des pages reposant sur des modèles AEM dédiés. Les entreprises de développement d’applications sur une seule page n’ont pas toutes accès à ces connaissances.
 
 Dans ce cas, l’API REST Assets peut être utilisée. Elle permet aux développeurs d’accéder à des ressources (par exemple, des images et des fragments de contenu) directement, sans devoir d’abord les incorporer dans une page puis diffuser leur contenu au format JSON sérialisé.
 
@@ -172,7 +181,7 @@ Pour plus d’informations sur les fonctionnalités disponibles via l’API, voi
 
 L’API REST Assets prend en charge la pagination (pour les requêtes GET) via les paramètres d’URL :
 
-* `offset` : nombre de premières entités (enfants) à extraire
+* `offset` : nombre de premières entités (enfants) à récupérer
 * `limit` : nombre maximal d’entités renvoyées
 
 La réponse contiendra les informations de pagination dans la section `properties` de la sortie SIREN. Cette propriété `srn:paging` contient le nombre d’entités (enfants) (`total`), le décalage et la limite (`offset`, `limit`) tels que spécifiés dans la requête.
@@ -248,7 +257,7 @@ Le contenu associé n’est actuellement pas exposé.
 
 L’utilisation peut varier selon que vous utilisez un environnement d’auteur ou de publication AEM dans votre cas d’utilisation spécifique.
 
-* Il est vivement recommandé de lier la création à une instance d’auteur ([et il n’existe actuellement aucun moyen de répliquer un fragment pour publier à l’aide de cette API](/help/assets/assets-api-content-fragments.md#limitations)).
+* Il est vivement recommandé de lier la création à une instance de création ([et il n’existe actuellement aucun moyen de répliquer un fragment pour publier à l’aide de cette API](/help/assets/assets-api-content-fragments.md#limitations)).
 * La diffusion est possible à partir des deux, car AEM diffuse le contenu demandé au format JSON uniquement.
 
    * Le stockage et la diffusion depuis une instance de création AEM doivent suffire pour les applications de bibliothèque de médias situées derrière le pare-feu.

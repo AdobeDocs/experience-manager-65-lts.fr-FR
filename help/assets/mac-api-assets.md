@@ -7,7 +7,7 @@ feature: Assets HTTP API,Developer Tools
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7bb4aec8-e6c0-416a-a318-d3120f9688c4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f0385f595035dfd0dce77fc7eb8b2413eaf5431a
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 100%
@@ -178,7 +178,7 @@ Met à jour un fichier binaire de ressource (rendu avec le nom d’origine). La 
 
 ## Mettre à jour les métadonnées d’une ressource {#update-asset-metadata}
 
-Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez à jour une propriété du namespace `dc:`, l’API met à jour cette même propriété dans le namespace `jcr`. L’API ne synchronise pas les propriétés des deux espaces de noms.
+Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez à jour une propriété de l’espace de noms `dc:`, l’API met à jour cette même propriété dans l’espace de noms `jcr`. L’API ne synchronise pas les propriétés des deux espaces de noms.
 
 **Requête** : `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
