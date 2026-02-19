@@ -389,7 +389,7 @@ Eclipse Jetty 11.0.x est utilisé comme moteur de servlet pour Quickstart.
 ### Mise à niveau {#upgrade}
 
 * Pour plus d’informations sur la procédure de mise à niveau, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
-* Pour obtenir des instructions de mise à niveau détaillées, consultez le [ Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Pour obtenir des instructions de mise à niveau détaillées, consultez le [&#x200B; Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Bonnes pratiques relatives aux mises à niveau du pack de services d’AEM 6.5 LTS
 
