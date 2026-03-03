@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: f75f02c1e10deb6eef788d6584229c045b88880d
+source-git-commit: 4d32ffe38219728b916240784aad87beb0b277b7
 workflow-type: tm+mt
 source-wordcount: '6062'
 ht-degree: 21%
@@ -42,8 +42,6 @@ AEM 6.5 LTS SP2 comprend désormais des OpenAPI pour [la gestion de modèles et 
 <!-- UPDATE THE EACH RELEASE -->
 
 ## Problèmes corrigés dans la version 6.5 LTS, Pack de services 2 {#fixed-issues}
-
-<!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
 ### [!DNL Sites]{#sites-65-LTS-SP2}
 
@@ -389,7 +387,7 @@ Eclipse Jetty 11.0.x est utilisé comme moteur de servlet pour Quickstart.
 ### Mise à niveau {#upgrade}
 
 * Pour plus d’informations sur la procédure de mise à niveau, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
-* Pour obtenir des instructions de mise à niveau détaillées, consultez le [&#x200B; Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Pour obtenir des instructions de mise à niveau détaillées, consultez le [ Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Bonnes pratiques relatives aux mises à niveau du pack de services d’AEM 6.5 LTS
 
@@ -564,5 +562,5 @@ Les documents texte suivants répertorient les offres groupées OSGi et les modu
 Ces sites Web sont disponibles uniquement pour les clients. Si vous êtes client et avez besoin d’un accès, contactez votre responsable de compte Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/)
-* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
