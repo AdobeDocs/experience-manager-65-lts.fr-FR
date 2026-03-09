@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 4d32ffe38219728b916240784aad87beb0b277b7
+source-git-commit: f4b6c695110704bdd92967ce7f256c55c1229d34
 workflow-type: tm+mt
-source-wordcount: '6062'
+source-wordcount: '6063'
 ht-degree: 21%
 
 ---
@@ -313,7 +313,7 @@ AEM synchronise désormais les activités Adobe Target même lorsque les dates d
 
 #### Oak {#foundation-oak-65-lts-sp2}
 
-Le pack de services 2 LTS d’AEM 6.5 nécessite le connecteur S3 version 1.60.10 ou ultérieure. La configuration du magasin de données S3 inclut désormais `crossRegionAccess` et `mode` afin que les administrateurs puissent activer l’accès au compartiment inter-régions et basculer le stockage vers GCP si nécessaire. `s3EndPoint` attend désormais une région alignée sur `s3Region`, ou elle reste vide afin que le pilote génère le point d’entrée. (GRANITE-64873)
+Le pack de services 2 LTS d’AEM 6.5 nécessite le connecteur S3 version 1.60.10 ou ultérieure. La configuration du magasin de données S3 inclut désormais `crossRegionAccess` et `mode` afin que les administrateurs puissent activer l’accès au compartiment inter-régions et basculer le stockage vers GCP si nécessaire. Le `s3EndPoint` s&#39;attend désormais à ce qu&#39;une région soit alignée sur `s3Region`, ou elle reste vide afin que le pilote génère le point d&#39;entrée. (GRANITE-64873)
 
 
 #### Démarrage rapide{#foundation-quickstart-65-lts-sp2}
@@ -387,7 +387,7 @@ Eclipse Jetty 11.0.x est utilisé comme moteur de servlet pour Quickstart.
 ### Mise à niveau {#upgrade}
 
 * Pour plus d’informations sur la procédure de mise à niveau, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
-* Pour obtenir des instructions de mise à niveau détaillées, consultez le [&#x200B; Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Pour obtenir des instructions de mise à niveau détaillées, consultez le [ Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Bonnes pratiques relatives aux mises à niveau du pack de services d’AEM 6.5 LTS
 
@@ -562,5 +562,5 @@ Les documents texte suivants répertorient les offres groupées OSGi et les modu
 Ces sites Web sont disponibles uniquement pour les clients. Si vous êtes client et avez besoin d’un accès, contactez votre responsable de compte Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/)
-* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
