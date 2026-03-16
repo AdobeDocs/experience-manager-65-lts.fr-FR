@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0268920d3c4895a1c52fbc36f537a02d1424c2a4
+source-git-commit: 68bcdfff6ea13c7d392991eba9df957bd5ab1523
 workflow-type: tm+mt
 source-wordcount: '6243'
 ht-degree: 20%
@@ -66,11 +66,11 @@ AEM 6.5 LTS SP2 comprend désormais des OpenAPI pour [la gestion de modèles et 
 * Sortie NVDA corrigée pour le bouton Modifier . Le NVDA annonce maintenant l’action Modifier, et non le « bouton Aperçu activé ». (SITES-25320)
 * Correction des entrées de texte de la barre d’outils Démographies sans nom qui provoquaient une sortie de lecteur d’écran silencieuse ou générique. Chaque entrée expose désormais un nom accessible clair basé sur des libellés, ce qui améliore la navigation au clavier et avec les technologies d’assistance. (SITES-25316)
 * Correction de l’ordre de focus au clavier de la barre d’outils Démographique pendant la navigation de Prévisualisation de la disposition. La navigation à l’aide de l’onglet passe désormais directement du bouton Démographique aux commandes de la barre d’outils, sans passer à la barre d’outils secondaire. (SITES-25305)
-* Correction de l’ordre d’annonce incorrect pour les étiquettes « Petits écrans » et « Tablette » sur la règle de modification de la mise en page. Les lecteurs d’écran annoncent désormais ces libellés aux marqueurs de règle corrects, qui correspondent à la mise en page. (SITES-25291)
+* Correction d’un ordre d’annonce incorrect pour les libellés « Screens plus petit » et « Tablette » sur la règle Modifier la disposition. Les lecteurs d’écran annoncent maintenant ces libellés aux marqueurs de règle appropriés, qui correspondent à la mise en page. (SITES-25291)
 * Correction du débordement de la barre d’outils Modifier la disposition avec un zoom de 200 %. Le contenu reste désormais dans la fenêtre d’affichage et reste accessible par défilement. (SITES-25288)
 * Résolution d’un ordre de focus incorrect dans la superposition Annotations. La tabulation au clavier permet désormais de faire défiler les contrôles de recouvrement et les éléments d’annotation. La page parente ne se trouve plus derrière le recouvrement. (SITES-25282)
-* Correction de la gestion de la cible d’action de la fenêtre contextuelle Nuanciers. La boîte de dialogue déplace désormais le focus vers un en-tête clair et démarre la sortie du lecteur d’écran à ce point d’entrée. NVDA ne lit plus l’intégralité du contenu de la boîte de dialogue dans l’ordre. (SITES-25275)
-* Correction de la gestion de la mise au point modale de déformation temporelle après la fermeture du sélecteur de dates. `Escape` revient maintenant au bouton Sélecteur de dates. La sélection de la date place désormais le focus sur le champ de saisie en regard du contrôle du sélecteur de date, ce qui empêche la perte de focus et l’accès à la page d’arrière-plan. (SITES-25264)
+* Correction de la gestion de la cible d’action de la fenêtre contextuelle Nuanciers. La boîte de dialogue déplace désormais le focus vers un en-tête clair et démarre la sortie du lecteur d’écran à ce point d’entrée. NVDA ne lit plus le contenu complet de la boîte de dialogue hors séquence. (SITES-25275)
+* Correction de la gestion de la mise au point modale de Timewarp après la fermeture du sélecteur de date. `Escape` retourne désormais au bouton Sélecteur de date. La sélection de la date place désormais le focus sur le champ de saisie en regard du contrôle du sélecteur de date, ce qui empêche la perte de focus et l’accès à la page d’arrière-plan. (SITES-25264)
 * Correction de la gestion du focus au clavier pour la boîte de dialogue Supprimer l’annotation . Annuler renvoie désormais le focus sur le contrôle `Delete` qui a ouvert la boîte de dialogue, et non sur le contrôle Confirmer la valeur hexadécimale. Les lecteurs d’écran n’annoncent plus le contenu de boîte de dialogue sans rapport après Annuler. (SITES-25258)
 * Correction de la gestion de la sélection pour la boîte de dialogue modale Annotation. L’ouverture de la boîte de dialogue permet désormais de placer le focus sur l’en-tête de boîte de dialogue et empêche NVDA de lire le contenu de la zone de travail et le texte de boîte de dialogue sans rapport. La navigation au clavier reste désormais dans la boîte de dialogue jusqu’à la fermeture. (SITES-25257)
 * Correction de problèmes de disposition modale de recherche à une largeur de 320 px. Le contenu modal se redistribue désormais proprement et évite les chevauchements avec le répertoire de l’arborescence. Les utilisateurs peuvent afficher les résultats et naviguer dans le répertoire sans contrôles masqués. (SITES-25246)
@@ -97,8 +97,8 @@ AEM 6.5 LTS SP2 comprend désormais des OpenAPI pour [la gestion de modèles et 
 * La boîte de dialogue de sélection d’ouverture de lien restaure désormais le focus au clavier sur le déclencheur de boîte de dialogue après Fermer ou Annuler. Le focus ne passe plus à l’entrée Lien, ce qui maintient le contexte du lecteur d’écran stable et réduit la navigation supplémentaire. (SITES-24707)
 * La boîte de dialogue modale de l’image suit désormais une séquence de mise au point logique. Le focus n’ignore plus les contrôles ou les abandons précédents sur le repère de page après Annuler et les utilisateurs retrouvent le focus sur le bouton Configurer après la sortie. (SITES-24693)
 * La boîte de dialogue modale Rail des références piège désormais le focus au clavier. La touche de tabulation et Maj+Tab restent dans les contrôles de boîte de dialogue et le focus ne s’échappe plus au contenu de la page. Les lecteurs d’écran n’annoncent que le contenu de la boîte de dialogue. (SITES-24683)
-* Le mode Sélection de tracé d’hyperlien active désormais l’en-tête de la boîte de dialogue à l’ouverture. L’option Annuler ferme la boîte de dialogue et restaure le focus sur le bouton Ouvrir la boîte de dialogue de sélection, ce qui empêche la perte de focus et la sortie redondante du lecteur d’écran. (SITES-24672)
-* Le champ de recherche utilise désormais une étiquette persistante à l’écran au lieu d’un texte de substitution. Le libellé reste visible pendant la saisie, ce qui améliore la clarté pour les utilisateurs du clavier, du lecteur d’écran et de la voix. (SITES-24529)
+* La boîte de dialogue modale Sélection du chemin d’accès hypertexte met désormais le focus sur l’en-tête de boîte de dialogue lors de l’ouverture. Annuler ferme la boîte de dialogue et restaure le focus sur le bouton Ouvrir la boîte de dialogue de sélection, ce qui empêche la perte de focus et la sortie redondante du lecteur d’écran. (SITES-24672)
+* Le champ Rechercher utilise désormais un libellé persistant à l’écran au lieu du texte d’espace réservé. Le libellé reste visible lors de la saisie, ce qui améliore la clarté pour les utilisateurs utilisant un clavier, un lecteur d’écran et un système vocal. (SITES-24529)
 * La boîte de dialogue modale du teaser place désormais le focus sur l’en-tête de boîte de dialogue à l’ouverture. La fermeture de la boîte de dialogue renvoie le focus au contrôle `Configure`, ce qui empêche la perte de focus et une sortie excessive du lecteur d’écran. (SITES-24522)
 * Le panneau Assets Rail latéral comprend désormais une commande Fermer . Fermer renvoie le focus au clavier au bouton bascule Rail latéral et empêche l’affichage forcé du contenu du panneau. (SITES-24489)
 * La touche de tabulation du clavier atteint désormais les boutons et les liens dans les tableaux d’administration. Les utilisateurs ne dépendent plus de la navigation entre les cellules à l’aide de la touche fléchée pour trouver des commandes interactives. (SITES-24285)
@@ -142,7 +142,7 @@ La prise en charge des événements découplés ne comportait pas les événemen
 
 * Amélioration de la gestion de la validation des requêtes GraphQL pour arrêter les échecs de déploiement causés par des erreurs d’exécution de filtre. Le défaut a généré des exceptions lors du démarrage de l’application et a bloqué le déploiement réussi dans les environnements affectés. La révision garantit un comportement de validation cohérent et permet un déploiement fluide sans interruptions de validation des requêtes à l’exécution. (SITES-34301) CRITIQUE
 
-* La boîte de dialogue Modifier le point d’entrée GraphQL affiche désormais des chaînes d’interface localisées. La boîte de dialogue n’affiche plus le texte en anglais uniquement, tel que « Le schéma GraphQL est tiré de la configuration », et les libellés associés s’affichent correctement entre les langues. (SITES-34018)
+* La boîte de dialogue Modifier le point d’entrée GraphQL affiche désormais des chaînes d’interface localisées. La boîte de dialogue n’affiche plus de texte en anglais uniquement, tel que « Le schéma GraphQL provient de la configuration », et les libellés associés s’affichent correctement dans toutes les langues. (SITES-34018)
 
 #### [!DNL Content Fragments] - Requêteur GraphQL{#sites-graphql-query-editor-65-lts-sp2}
 
@@ -386,7 +386,7 @@ Eclipse Jetty 11.0.x est utilisé comme moteur de servlet pour Quickstart.
 
 ### Packaging Uberjar {#uber-jar-packaging}
 
-UberJar pour AEM 6.5 LTS SP2 utilise la version 6.6.0 d’AEM 6.5 LTS UberJar. Vous pouvez récupérer les artefacts UberJar correspondants à partir du référentiel central Maven. Contrairement à AEM 6.5, le LTS AEM 6.5 sépare les API publiques et les API obsolètes en deux artefacts différents.
+UberJar pour AEM 6.5 LTS SP2 utilise la version 6.6.2 d’AEM 6.5 LTS UberJar. Vous pouvez récupérer les artefacts UberJar correspondants à partir du référentiel central Maven. Contrairement à AEM 6.5, le LTS AEM 6.5 sépare les API publiques et les API obsolètes en deux artefacts différents.
 
 Pour compiler par rapport aux API publiques, utilisez ce qui suit :
 
@@ -394,7 +394,7 @@ Pour compiler par rapport aux API publiques, utilisez ce qui suit :
 <dependency>
     <groupId>com.adobe.aem</groupId>
     <artifactId>uber-jar</artifactId>
-    <version>6.6.0</version>
+    <version>6.6.2</version>
     <classifier>apis</classifier>
     <scope>provided</scope>
 </dependency>
@@ -406,7 +406,7 @@ Si votre code dépend également d’API obsolètes, ajoutez ce qui suit :
 <dependency>
     <groupId>com.adobe.aem</groupId>
     <artifactId>uber-jar</artifactId>
-    <version>6.6.0</version>
+    <version>6.6.2</version>
     <classifier>deprecated-apis</classifier>
     <scope>provided</scope>
 </dependency>
@@ -417,17 +417,17 @@ Voir aussi [Mise à jour de la version AEM Uber Jar](/help/sites-deploying/upgra
 ### Mise à niveau {#upgrade}
 
 * Pour plus d’informations sur la procédure de mise à niveau, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
-* Pour obtenir des instructions de mise à niveau détaillées, consultez le [Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Pour obtenir des instructions de mise à niveau détaillées, consultez le [ Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Bonnes pratiques relatives aux mises à niveau du pack de services d’AEM 6.5 LTS
 
 <!-- THE INFORMATION UNDER THIS HEADING CAME FROM CQDOC-23078 -->
 
 **Environnement**
-S’applique aux clients AEM 6.5 LTS (On-Premise) qui installent le Service Pack 2 (SP2). Le SP2 est fourni sous forme de fichier JAR Quickstart.
+Application : clients AEM 6.5 LTS (On-Premise) installant le pack de services 2 (SP2). Le SP2 est fourni sous la forme d’un fichier JAR de démarrage rapide.
 
-**Pourquoi cela est important**
-Le SP2 pour AEM 6.5 LTS est livré sous forme de fichier JAR Quickstart plutôt que sous forme de fichier ZIP à installer via Package Manager. Les clients et clientes On-Prem effectuent une mise à niveau en remplaçant le fichier JAR de démarrage rapide, en le décompressant et en redémarrant. Cette méthode est conforme à la procédure de mise à niveau statique d’Adobe.
+**Pourquoi est-ce important**
+Le SP2 pour le LTS AEM 6.5 est fourni sous la forme d’un fichier JAR Quickstart plutôt que d’un fichier ZIP à installer via le gestionnaire de packages. Les clients et clientes On-Prem effectuent une mise à niveau en remplaçant le fichier JAR de démarrage rapide, en le décompressant et en redémarrant. Cette méthode est conforme à la procédure de mise à niveau statique d’Adobe.
 
 **Flux de mise à niveau recommandé (création ou publication)**
 
@@ -506,7 +506,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 | Domaine | Fonctionnalité | Remplacement | Version (SP) |
 | --- | --- | --- | --- |
 | Démarrage rapide | API Mongo | Les API Mongo sont désormais obsolètes et leur suppression est prévue dans les prochaines versions. | 6.5 TS SP2 |
-| Sites | Prise en charge des fragments de contenu dans l’API REST AEM Assets | Le LTS SP2 d’AEM 6.5 fournit des API OpenAPI modernes pour la gestion des fragments de contenu et des modèles, de sorte que les anciens points d’entrée de la prise en charge des fragments de contenu dans l’API REST d’AEM Assets sont désormais obsolètes.<br>Adobe prévoit de conserver ces anciens points d’entrée disponibles jusqu’à une annonce de fin de vie. Adobe ne prévoit pas d’autres améliorations pour les points d’entrée obsolètes. | 6,5 LTS SP2 |
+| Sites | Prise en charge des fragments de contenu dans l’API REST AEM Assets | Le LTS SP2 d’AEM 6.5 fournit des API OpenAPI modernes pour la gestion des fragments de contenu et des modèles, de sorte que les anciens points d’entrée de la prise en charge des fragments de contenu dans l’API REST d’AEM Assets sont désormais obsolètes.<br>Adobe prévoit de conserver ces anciens points d’entrée disponibles jusqu’à une annonce de fin de vie. Adobe ne prévoit pas d’autres améliorations pour les points d’entrée obsolètes. | 6.5 LTS SP2 |
 | Sites | [Éditeur SPA](/help/sites-developing/spa-overview.md) | Les éditeurs recommandés pour la gestion du contenu découplé dans AEM sont les suivants : <br>- [Éditeur universel](/help/sites-developing/universal-editor/introduction.md) pour la modification visuelle.<br>- [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md) pour la modification basée sur les formulaires. | 6.5 LTS GA |
 | [!DNL Foundation] | Prise en charge de com.adobe.granite.oauth.server | Intégration Adobe IMS |  |
 
@@ -514,7 +514,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 
 Cette section répertorie les fonctionnalités qui ont été supprimées dans AEM 6.5 LTS. Ces fonctionnalités étaient signalées comme obsolètes dans les versions antérieures.
 
-* La prise en charge de RDBMK pour la persistance du référentiel CRX a été supprimée.
+* La prise en charge de la persistance du référentiel RDBMK pour CRX a été supprimée.
 * Dans les environnements en cluster, MongoMK est désormais la seule option prise en charge pour la persistance du référentiel.
 
 | Domaine | Fonctionnalité | Remplacement | Version (SP) |
@@ -555,9 +555,9 @@ Planifiez le temps d’arrêt de l’instance lors de son application. Pour un c
 >
 > * Démarrez AEM en définissant la propriété système `oak.compaction.legacy=true`.
 
-### Installation des index Oak requis pour les API sans tête Sites{#site-headless-api}
+### Installer les index Oak requis pour les API Sites Headless{#site-headless-api}
 
-Certaines API déplacées vers Sites Headless nécessitent des index Oak supplémentaires pour bénéficier de toutes les fonctionnalités.
+Certaines API déplacées vers Sites Headless nécessitent des index Oak supplémentaires pour une fonctionnalité complète.
 
 Installez le package `cq-dam-cfm-indices` pour utiliser les fonctionnalités suivantes :
 
@@ -606,5 +606,5 @@ Les documents texte suivants répertorient les offres groupées OSGi et les modu
 Ces sites Web sont disponibles uniquement pour les clients. Si vous êtes client et avez besoin d’un accès, contactez votre responsable de compte Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/)
-* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
