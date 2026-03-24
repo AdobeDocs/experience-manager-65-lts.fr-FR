@@ -4,13 +4,13 @@ description: JBoss EAP 8 prend en charge les magasins d’informations d’ident
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: f093f39fb535209297940cff13a99c7631812152
+exl-id: d7a9502b-8d6a-4d83-9b1f-0c82cbf34b70
+source-git-commit: 58f549aaf5f248c2382477790c825bba1d737137
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '373'
 ht-degree: 2%
 
 ---
-
 
 # Configuration de la banque d’informations d’identification de base de données (basée sur Elytron)
 
@@ -186,5 +186,5 @@ Tous les alias font référence au même mot de passe de base de données stock�
 
 >[!NOTE]
 >
->* Configurez le magasin d’informations d’identification uniquement sur le nœud principal.
->* Les nœuds Secondaires utilisent automatiquement la configuration de domaine synchronisée à partir du nœud principal.
+>* Copiez le fichier de magasin d’informations d’identification (cred-store.p12) créé sur le principal sur chacun des nœuds esclaves.
+
