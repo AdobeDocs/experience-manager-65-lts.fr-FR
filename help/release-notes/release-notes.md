@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 68bcdfff6ea13c7d392991eba9df957bd5ab1523
+source-git-commit: a3d1ebd3e1c4adba80fb63f0138d662a6d056cc6
 workflow-type: tm+mt
-source-wordcount: '6243'
+source-wordcount: '6403'
 ht-degree: 20%
 
 ---
@@ -239,14 +239,18 @@ Assets Relate fonctionne désormais pour les noms de fichier qui incluent des es
 
 <!-- #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp2} -->
 
-
 <!--
+#### Forms Designer-->
+
 ### [!DNL Forms]{#forms-65-lts-sp2}
 
-#### Forms Designer
 
-#### Forms
+#### Formulaires
 
+* Dans les déploiements de clusters LTS AEM Forms 6.5 sur JBoss EAP 8, `domain/configuration/domain_oracle.xml` ne contient plus de balise `<security>` en double qui provoquait un XML non valide et empêchait le démarrage du contrôleur de domaine. (FORMS-24687)
+* En mode de mise à niveau clé en main, la mise à jour du port de base de données dans `lc_turnkey.xml` est désormais correctement appliquée pendant la mise à niveau et ne fait plus référence à l’ancienne valeur de port. (FORMS-24689)
+* Lors de la configuration de JBoss EAP 8.0 sous Linux, les scripts shell modifiés sous Windows ne provoquent plus d’erreurs `/bin/sh^M: bad interpreter or $'\r': command not found` en raison des fins de ligne CRLF. (FORMS-24688)
+<!--
 #### Forms JEE 
 
 #### Forms Captcha {#forms-captcha-65-lts-sp2}
@@ -274,7 +278,7 @@ Assets Relate fonctionne désormais pour les noms de fichier qui incluent des es
 * La sécurité d’accès aux ressources Sling s’exécute désormais sur la version 1.1.2. ResourceAccessSecurityImpl ne renvoie plus une ClassCastException lors de l’initialisation lorsque plusieurs services ResourceAccessGateHandler s’enregistrent. L’initialisation s’effectue désormais de manière fiable et évite les échecs de démarrage dans les environnements comportant plusieurs gestionnaires. (NPR-42750)
 * La console JMX et la console web envoient désormais un `Content-Type: text/css header` pour les ressources CSS de la console. La vérification MIME stricte ne bloque plus le chargement des feuilles de style, de sorte que l’interface utilisateur `/system/console/jmx` s’affiche avec un style normal. (GRANITE-63677)
 * AEM évite désormais les entrées ACL en double pour le groupe `contributor` dans le `WEB-INF/resources/provisioning/model.txt` généré. La sortie WAR contient désormais un bloc ACL cohérent, ce qui empêche les différences d’autorisation déroutantes pendant la révision. (GRANITE-63269)
-* AEM n’efface plus le pare-feu de désérialisation lors des opérations de placer sur la liste bloquée placé sur la liste autorisée et de suppression de lot. La mise à jour de la logique d’enregistrement des filtres aligne l’instance de pare-feu active sur la configuration enregistrée, de sorte que la protection reste activée sans redémarrage. (GRANITE-61382)
+* AEM n’efface plus le pare-feu de désérialisation lors des opérations de placé sur la liste bloquée et de suppression de lot. La mise à jour de la logique d’enregistrement des filtres aligne l’instance de pare-feu active sur la configuration enregistrée, de sorte que la protection reste activée sans redémarrage. (GRANITE-61382)
 * La console web Felix ne génère plus d’erreurs `NullPointerException` intermittentes lors de l’accès au `/system/console`. La mise à jour de la gestion de ServiceTracker empêche un état de suivi nul. La connexion à la console et la navigation restent stables lors des demandes répétées et de la validation automatisée. (GRANITE-61042)
 
 <!--
@@ -332,7 +336,7 @@ Le pack de services 2 LTS d’AEM 6.5 nécessite le connecteur S3 version 1.60.1
 Ces anciennes configurations utilisent des propriétés, telles que `whitelist.name` et `whitelist.bundles`.
 
    * Sling assure toujours une rétrocompatibilité partielle pour les PID obsolètes, mais ne les utilise pas pour les nouvelles configurations. Utilisez plutôt les PID `LoginAdminAllowList.*` plus récents.
-   * Placer sur la liste autorisée N’exécutez pas simultanément des configurations obsolètes et nouvelles. Des configurations mixtes peuvent créer de l’ambiguïté et produire un comportement inattendu. Lorsque vous migrez vers AEM 6.5 LTS SP2, supprimez complètement les PID obsolètes.
+   * N’exécutez pas simultanément des configurations obsolètes et nouvelles. Des configurations mixtes peuvent créer de l’ambiguïté et produire un comportement inattendu. Lorsque vous migrez vers AEM 6.5 LTS SP2, supprimez complètement les PID obsolètes.
 
   **Ce que vous devez faire**
 
@@ -417,7 +421,7 @@ Voir aussi [Mise à jour de la version AEM Uber Jar](/help/sites-deploying/upgra
 ### Mise à niveau {#upgrade}
 
 * Pour plus d’informations sur la procédure de mise à niveau, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
-* Pour obtenir des instructions de mise à niveau détaillées, consultez le [&#x200B; Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Pour obtenir des instructions de mise à niveau détaillées, consultez le [ Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Bonnes pratiques relatives aux mises à niveau du pack de services d’AEM 6.5 LTS
 
@@ -541,6 +545,14 @@ Cette section répertorie les fonctionnalités qui ont été supprimées dans AE
 
 ## Problèmes connus {#known-issues}
 
+### AEM Forms
+
+* **FORMS-24690 :** dans Configuration Manager, l&#39;initialisation de la base de données échoue lors du démarrage lors de l&#39;exécution d&#39;AEM Forms 6.5 LTS JEE en mode clé en main avec une configuration personnalisée si aucun module n&#39;est sélectionné.
+
+* **FORMS-24692:** Le service de messagerie peut ne pas établir de connexion de socket TLS, ce qui entraîne l&#39;échec de la diffusion des e-mails.
+
+* **FORMS-24741:** Dans AEM Forms 6.5 LTS JEE sous Linux, le gestionnaire de configuration peut échouer si OSFileSetIntendedFor n’est pas défini correctement. Mettez-le à jour vers Linux dans les fichiers de configuration requis avant d’exécuter Configuration Manager.
+
 ### Corruption du référentiel lors du compactage en ligne après le compactage hors ligne (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
 Les utilisateurs et utilisatrices peuvent rencontrer une corruption du référentiel lors du compactage en ligne si le compactage hors ligne a été précédemment exécuté sur le référentiel JCR. Un `SegmentNotFoundException` (SNFE) peut se produire dans ce scénario et peut entraîner une corruption du référentiel.
@@ -606,5 +618,5 @@ Les documents texte suivants répertorient les offres groupées OSGi et les modu
 Ces sites Web sont disponibles uniquement pour les clients. Si vous êtes client et avez besoin d’un accès, contactez votre responsable de compte Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/)
-* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
