@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 2ef60b4896c8d90714b33a9025567bf833f2ce06
+source-git-commit: 449f466473a3696d2ae8a7b91bd762765ddeac5b
 workflow-type: tm+mt
-source-wordcount: '6954'
+source-wordcount: '6983'
 ht-degree: 18%
 
 ---
@@ -286,9 +286,9 @@ Assets Relate fonctionne désormais pour les noms de fichier qui incluent des es
 
 * FORMS-20679 : les utilisateurs ont rencontré une vulnérabilité de sécurité dans le tableau de bord du Forms adaptatif. Plus précisément, un problème de cross-site scripting (XSS) a été identifié dans le fichier startpointcontrol.js, ce qui peut potentiellement permettre l’exécution de scripts malveillants.
 
-* FORMS-24687 : dans les déploiements de clusters LTS AEM Forms 6.5 sur JBoss EAP 8, `domain/configuration/domain_oracle.xml` ne contient plus de balise `<security>` en double qui provoquait un XML non valide et empêchait le démarrage du contrôleur de domaine.
+* FORMS-24687 : dans les déploiements de clusters LTS AEM Forms 6.5 sur JBoss EAP 8, les fichiers domain/configuration/domain_oracle.xml, domain_mysql.xml et domain_mssql.xml ne contiennent plus de balise `<security>` en double qui provoquait un XML non valide et empêchait le démarrage du contrôleur de domaine.
 
-* Le mode de mise à niveau clé en main Forms-24689:In, qui met à jour le port de base de données dans `lc_turnkey.xml`, est désormais correctement appliqué lors de la mise à niveau et ne fait plus référence à l’ancienne valeur de port.
+* FORMS-24689 : en mode clé en main, la mise à jour du port de la base de données est désormais correctement effectuée lors de la nouvelle installation et de la mise à niveau. En mode d&#39;installation récente, les utilisateurs peuvent choisir parmi tous les ports disponibles, et en mode Mise à niveau, le port de base de données mis à jour dans lc_turnkey.xml est correctement référencé pendant le processus de mise à niveau.
 
 * FORMS-24688 : lors de la configuration de JBoss EAP 8.0 sous Linux, les scripts shell modifiés sous Windows ne provoquent plus d’erreurs `/bin/sh^M: bad interpreter or $'\r': command not found` en raison des fins de ligne CRLF.
 
@@ -463,7 +463,7 @@ Voir aussi [Mise à jour de la version AEM Uber Jar](/help/sites-deploying/upgra
 ### Mise à niveau {#upgrade}
 
 * Pour plus d’informations sur la procédure de mise à niveau, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
-* Pour obtenir des instructions de mise à niveau détaillées, consultez le [&#x200B; Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Pour obtenir des instructions de mise à niveau détaillées, consultez le [ Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Bonnes pratiques relatives aux mises à niveau du pack de services d’AEM 6.5 LTS
 
@@ -589,7 +589,7 @@ Cette section répertorie les fonctionnalités qui ont été supprimées dans AE
 
 ### AEM Forms
 
-* **FORMS-24690:** Dans Configuration Manager, l&#39;initialisation de la base de données peut échouer lors du démarrage dans le mode personnalisé clé en main d&#39;AEM Forms 6.5 LTS JEE lorsqu&#39;aucun module ou seulement des composants limités sont sélectionnés. L’échec est dû à une dépendance manquante (xalan-2.7.2.jar), ce qui entraîne une erreur. L’ajout du fichier JAR à adobe-livecycle-jboss.ear\lib résout le problème.
+* **FORMS-24690:** dans le gestionnaire de configuration, l’initialisation de la base de données échoue lors du démarrage dans le mode personnalisé clé en main d’AEM Forms 6.5 LTS JEE lorsqu’aucun module ou uniquement des composants limités sont sélectionnés. L’échec est dû à une dépendance manquante (xalan-2.7.2.jar), ce qui entraîne une erreur. L’ajout du fichier JAR à adobe-livecycle-jboss.ear\lib résout le problème.
 
 * **FORMS-24692:** Le service de messagerie peut ne pas établir de connexion de socket TLS, ce qui entraîne l&#39;échec de la diffusion des e-mails.
 
@@ -658,5 +658,5 @@ Les documents texte suivants répertorient les offres groupées OSGi et les modu
 Ces sites Web sont disponibles uniquement pour les clients. Si vous êtes client et avez besoin d’un accès, contactez votre responsable de compte Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/)
-* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
