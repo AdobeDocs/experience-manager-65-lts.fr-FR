@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: a3d1ebd3e1c4adba80fb63f0138d662a6d056cc6
+source-git-commit: 2ef60b4896c8d90714b33a9025567bf833f2ce06
 workflow-type: tm+mt
-source-wordcount: '6403'
-ht-degree: 20%
+source-wordcount: '6954'
+ht-degree: 18%
 
 ---
 
@@ -42,6 +42,23 @@ ht-degree: 20%
 
 AEM 6.5 LTS SP2 comprend désormais des OpenAPI pour [la gestion de modèles et de fragments de contenu](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/65lts/) et [les lancements](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/launches/). Ces API permettent d’accéder aux fragments de contenu et aux lancements pour la création et la planification. Ils utilisent les mêmes OpenAPI modernes qu’AEM as a Cloud Service.
 
+**AEM Forms**
+
+* Amélioration de l’expérience utilisateur dans l’éditeur visuel de règles. Cette mise à jour comprend les éléments suivants :
+
+   * Rechargement automatique de la vue récapitulative après un enregistrement pour afficher le statut de la règle mise à jour
+
+   * Affichage des boutons « Ajouter » et « Supprimer » et autorisation du basculement au lieu de les masquer
+
+   * Envoi d’un retour d’informations clair lorsqu’une opération d’enregistrement de règle échoue (FORMS-21261)
+
+* Ajout de l’interface de programmation d’application (API) Runtime pour activer ou désactiver le mode d’exportation hérité du langage de balisage extensible (XML) dans AEM Forms, en remplaçant le paramètre -Dcom.adobe.fd.forms.export.legacy. Cette amélioration permet aux utilisateurs de changer de mode d’exportation plus efficacement, améliorant ainsi la flexibilité du workflow. (FORMS-23115)
+
+* Ajout de la prise en charge de la notation d’objet JavaScript (JSON) avec les balises d’espace de noms dans Adaptive Forms. Cette amélioration permet aux utilisateurs de gérer plus efficacement les structures de données JSON, améliorant ainsi les fonctionnalités d’intégration et de traitement des données. (FORMS-22519)
+
+* Ajout du bouton Télécharger le document d’enregistrement (DE) / Envoi de formulaire en tant que bouton prêt à l’emploi dans l’éditeur de règles. Cette amélioration permet aux clients d’utiliser la fonction downloadDoR sans écrire de code personnalisé, ce qui améliore la convivialité et l’efficacité. (FORMS-21263)
+
+* Ajout de la prise en charge de la notation d’objet JavaScript (JSON) avec les balises d’espace de noms dans Adaptive Forms. Cette amélioration permet aux utilisateurs et utilisatrices de préremplir les formulaires de manière plus précise et plus efficace, ce qui améliore l’intégration des données et réduit les erreurs de saisie manuelle. (FORMS-10883)
 
 <!-- UPDATE THE EACH RELEASE -->
 
@@ -247,9 +264,34 @@ Assets Relate fonctionne désormais pour les noms de fichier qui incluent des es
 
 #### Formulaires
 
-* Dans les déploiements de clusters LTS AEM Forms 6.5 sur JBoss EAP 8, `domain/configuration/domain_oracle.xml` ne contient plus de balise `<security>` en double qui provoquait un XML non valide et empêchait le démarrage du contrôleur de domaine. (FORMS-24687)
-* En mode de mise à niveau clé en main, la mise à jour du port de base de données dans `lc_turnkey.xml` est désormais correctement appliquée pendant la mise à niveau et ne fait plus référence à l’ancienne valeur de port. (FORMS-24689)
-* Lors de la configuration de JBoss EAP 8.0 sous Linux, les scripts shell modifiés sous Windows ne provoquent plus d’erreurs `/bin/sh^M: bad interpreter or $'\r': command not found` en raison des fins de ligne CRLF. (FORMS-24688)
+* FORMS-23971 : les utilisateurs ont rencontré des problèmes avec la fonctionnalité « Source de données / Saisir un mot-clé » de l’éditeur de modèle de données de formulaire (FDM). Cela affectait la capacité à rechercher et à sélectionner des sources de données.
+
+* FORMS-23754 : sur les appareils mobiles, le composant Tableau d’Adaptive Forms affichait un en-tête masqué en haut, ce qui entraînait une mauvaise annonce du contenu par les lecteurs d’écran. Cela affectait les utilisateurs qui utilisaient des lecteurs d’écran pour la navigation.
+
+* FORMS-23632 : des problèmes sont survenus avec les types de ressources de référencement Adaptive Forms basés sur les composants principaux marqués comme granite:InternalArea, ce qui a affecté les fonctionnalités de plusieurs composants granite dans le module complémentaire Forms On-Premise.
+
+* FORMS-23457 : l’envoi du formulaire échoue après la mise à niveau vers AEM 6.5 LTS SP1. Les utilisateurs ne disposaient pas de com.adobe.cq.social.commons.CollabUtil, ce qui provoquait des erreurs de compilation JSP et des échecs d’action d’e-mail.
+
+* FORMS-23426 : des problèmes se sont produits avec la traduction incorrecte de hCaptcha dans le Forms adaptatif basé sur les composants de base. Cela affectait la capacité des utilisateurs non anglophones à remplir des formulaires avec précision.
+
+* FORMS-22633 : les utilisateurs ont rencontré des échecs d’envoi de formulaire avec une exception SAXParseException : « Le contenu n’est pas autorisé dans prolog » (HTTP 500). Ce problème se produisait en raison d’une valeur null dans le code XML des données de préremplissage, ce qui entraînait l’échec de l’analyse XML côté serveur.
+
+* FORMS-22101 : les utilisateurs ont rencontré des échecs d’audits WCAG (Web Content Accessibility Guidelines) pour Forms adaptatif, car le balisage de navigation par onglets du formulaire n’était pas valide. Un élément non répertorié a été rendu en tant qu’enfant direct d’une liste, où seuls les éléments de liste sont autorisés. Cela empêchait le formulaire de transmettre des validateurs d’accessibilité et les organisations affectées qui devaient respecter les exigences légales ou de conformité interne.
+
+* FORMS-21989 : les utilisateurs ont rencontré des problèmes d’accessibilité avec le document d’enregistrement (DE)/le PDF d’envoi où les champs de formulaire vides n’étaient pas balisés en tant qu’éléments de formulaire. Cela entraînait des difficultés pour les lecteurs d’écran, ce qui affectait la capacité des utilisateurs présentant un handicap à naviguer dans les formulaires et à les remplir efficacement.
+
+* FORMS-21925 : les utilisateurs rencontrent un problème en raison duquel les notes de bas de page des composants dans un sous-panneau ne s’affichent pas lors du chargement du formulaire. Cela se produisait lorsque l’élément avec la note de bas de page était le dernier composant de la page.
+
+* FORMS-21814 : les utilisateurs et utilisatrices ont rencontré des problèmes lors de la sélection de composants dans l’éditeur AEM Forms. Lorsque vous naviguez entre les onglets et revenez au premier onglet, certains conteneurs sont devenus insélectionnables, ce qui a empêché une identification et une interaction faciles.
+
+* FORMS-20679 : les utilisateurs ont rencontré une vulnérabilité de sécurité dans le tableau de bord du Forms adaptatif. Plus précisément, un problème de cross-site scripting (XSS) a été identifié dans le fichier startpointcontrol.js, ce qui peut potentiellement permettre l’exécution de scripts malveillants.
+
+* FORMS-24687 : dans les déploiements de clusters LTS AEM Forms 6.5 sur JBoss EAP 8, `domain/configuration/domain_oracle.xml` ne contient plus de balise `<security>` en double qui provoquait un XML non valide et empêchait le démarrage du contrôleur de domaine.
+
+* Le mode de mise à niveau clé en main Forms-24689:In, qui met à jour le port de base de données dans `lc_turnkey.xml`, est désormais correctement appliqué lors de la mise à niveau et ne fait plus référence à l’ancienne valeur de port.
+
+* FORMS-24688 : lors de la configuration de JBoss EAP 8.0 sous Linux, les scripts shell modifiés sous Windows ne provoquent plus d’erreurs `/bin/sh^M: bad interpreter or $'\r': command not found` en raison des fins de ligne CRLF.
+
 <!--
 #### Forms JEE 
 
@@ -421,7 +463,7 @@ Voir aussi [Mise à jour de la version AEM Uber Jar](/help/sites-deploying/upgra
 ### Mise à niveau {#upgrade}
 
 * Pour plus d’informations sur la procédure de mise à niveau, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
-* Pour obtenir des instructions de mise à niveau détaillées, consultez le [&#x200B; Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Pour obtenir des instructions de mise à niveau détaillées, consultez le [ Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Bonnes pratiques relatives aux mises à niveau du pack de services d’AEM 6.5 LTS
 
@@ -547,11 +589,9 @@ Cette section répertorie les fonctionnalités qui ont été supprimées dans AE
 
 ### AEM Forms
 
-* **FORMS-24690 :** dans Configuration Manager, l&#39;initialisation de la base de données échoue lors du démarrage lors de l&#39;exécution d&#39;AEM Forms 6.5 LTS JEE en mode clé en main avec une configuration personnalisée si aucun module n&#39;est sélectionné.
+* **FORMS-24690:** Dans Configuration Manager, l&#39;initialisation de la base de données peut échouer lors du démarrage dans le mode personnalisé clé en main d&#39;AEM Forms 6.5 LTS JEE lorsqu&#39;aucun module ou seulement des composants limités sont sélectionnés. L’échec est dû à une dépendance manquante (xalan-2.7.2.jar), ce qui entraîne une erreur. L’ajout du fichier JAR à adobe-livecycle-jboss.ear\lib résout le problème.
 
 * **FORMS-24692:** Le service de messagerie peut ne pas établir de connexion de socket TLS, ce qui entraîne l&#39;échec de la diffusion des e-mails.
-
-* **FORMS-24741:** Dans AEM Forms 6.5 LTS JEE sous Linux, le gestionnaire de configuration peut échouer si OSFileSetIntendedFor n’est pas défini correctement. Mettez-le à jour vers Linux dans les fichiers de configuration requis avant d’exécuter Configuration Manager.
 
 ### Corruption du référentiel lors du compactage en ligne après le compactage hors ligne (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
@@ -618,5 +658,5 @@ Les documents texte suivants répertorient les offres groupées OSGi et les modu
 Ces sites Web sont disponibles uniquement pour les clients. Si vous êtes client et avez besoin d’un accès, contactez votre responsable de compte Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/)
-* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
