@@ -3,10 +3,10 @@ title: Bonnes pratiques liées à  [!DNL Assets]
 description: Améliore la stabilité et les performances du système en cas de forte charge, en identifiant les bonnes pratiques et liées à votre déploiement et à votre configuration.
 contentOwner: AG
 feature: Asset Management
-role: Architect, Admin
+role: Developer,Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 754659d0-7d5f-4e60-a5a1-9bad177de9bc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 100%
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 [!DNL Adobe Experience Manager Assets] est essentiel pour fournir des expériences marketing numériques de qualité qui contribuent à la réussite des objectifs commerciaux en augmentant la vélocité du contenu. Si vous travaillez avec un grand nombre de ressources dans [!DNL Experience Manager Assets] ou si vous téléchargez régulièrement/périodiquement de nombreuses ressources, y compris des vidéos et des médias dynamiques, l’optimisation de votre expérience de gestion des ressources numériques est essentielle pour l’efficacité du système.
 
-Selon la place qu’occupe [!DNL Assets] pour votre organisation et les fonctionnalités que vous utilisez pour l’intégration des ressources, la génération du rendu et l’extraction des métadonnées, l’identification et le respect des bonnes pratiques dans divers domaines renforce considérablement la stabilité et les performances du système en cas de forte charge.
+Selon la place qu’occupe [!DNL Assets] pour votre organisation et les fonctionnalités que vous utilisez pour l’ingestion des ressources, la génération du rendu et l’extraction des métadonnées, l’identification et le respect des bonnes pratiques dans divers domaines renforce considérablement la stabilité et les performances du système en cas de forte charge.
 
 Les guides suivants vous permettront d’acquérir les connaissances et de connaître les outils requis pour créer et gérer un système de gestion des ressources qui répond aux besoins de votre organisation :
 

@@ -3,9 +3,9 @@ title: En savoir plus sur la création de modèles de fragment de contenu dans A
 description: Découvrez les concepts et les mécanismes de la modélisation du contenu pour votre CMS découplé à l’aide de modèles de fragments de contenu.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
+role: Admin,Developer
 exl-id: fe603779-7763-4cb9-b95a-34e4b78d72db
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 100%
@@ -76,7 +76,7 @@ Vous pouvez ajouter autant de champs que vous le souhaitez. Par exemple :
 
 ### Vos auteurs de contenu {#your-content-authors}
 
-Les auteurs de contenu ne voient pas les types de données et les propriétés que vous avez utilisés pour créer vos modèles. Cela signifie que vous devrez peut-être fournir de l’aide et des informations sur la façon dont ils doivent remplir des champs spécifiques. Pour fournir des informations de base, vous pouvez utiliser le libellé du champ et la valeur par défaut, mais il se peut qu’une documentation spécifique au projet plus complexe soit nécessaire.
+Les créateurs de contenu ne voient pas les types de données et les propriétés que vous avez utilisés pour créer vos modèles. Cela signifie que vous devrez peut-être fournir de l’aide et des informations sur la façon dont ils doivent remplir des champs spécifiques. Pour fournir des informations de base, vous pouvez utiliser le libellé du champ et la valeur par défaut, mais il se peut qu’une documentation spécifique au projet plus complexe soit nécessaire.
 
 >[!NOTE]
 >
@@ -135,4 +135,4 @@ Maintenant que vous en savez plus sur les bases, l’étape suivante consiste à
 
 * Guides de prise en main
 
-   * [Guide de démarrage rapide sur la création de modèles de fragments de contenu découplés](/help/sites-developing/headless/getting-started/create-content-model.md)
+   * [Guide de démarrage rapide sur la création de modèles de fragments de contenu découplé](/help/sites-developing/headless/getting-started/create-content-model.md)

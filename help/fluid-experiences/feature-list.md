@@ -1,12 +1,12 @@
 ---
 title: Liste des fonctionnalités d’AEM Fluid Experiences
 description: Liste des fonctionnalités de Fluid Experiences
-index: n
+index: false
 feature: Authoring
 solution: Experience Manager Sites,Experience Manager Assets
 role: Admin
 exl-id: 9bb1ff8b-5fcb-44df-8c45-2306e127410d
-source-git-commit: 6e6e04a2532f812596f00557b5d3dc4dccdab66d
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 90%

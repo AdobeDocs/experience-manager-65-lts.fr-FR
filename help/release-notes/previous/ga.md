@@ -3,10 +3,10 @@ title: Notes de mise à jour pour [!DNL Adobe Experience Manager] 6.5 LTS
 description: Recherchez les informations de mise à jour actuelles pour Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: dfda31ac-765b-401d-98d0-c19f0de22aab
-source-git-commit: eda8fc347ee8c68c1022495cbe8d48175c819be3
-workflow-type: ht
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+workflow-type: tm+mt
 source-wordcount: '1068'
 ht-degree: 100%
 

@@ -3,9 +3,9 @@ title: Guide de prise en main du mode découplé
 description: Grâce à ce guide de démarrage rapide, découvrez les fondamentaux des puissantes fonctionnalités d’Adobe Experience Manager (AEM) 6.5 en mode découplé comme les modèles de contenu, les fragments de contenu et l’API GraphQL.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 867613e7-59fe-4948-a19a-bd196aec737b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 100%
@@ -28,7 +28,7 @@ Les guides de prise en main du mode découplé présentent une méthode simple p
 >
 >Si vous découvrez AEM ou le découplage, reportez-vous à nos [parcours de documentation sur le découplage](/help/journey-headless/overview.md) pour une introduction de bout en bout au mode découplé et à la manière dont AEM le prend en charge.
 
-## Public {#audience}
+## Audience {#audience}
 
 Les tâches décrites dans les Guides de prise en main du découplage sont nécessaires pour une démonstration de base de bout en bout des capacités de découplage d’AEM. Toute personne disposant d’un accès d’administration à une instance AEM de test peut suivre ces guides pour comprendre la diffusion découplée dans AEM, même si une personne avec une expérience de développement est idéale.
 

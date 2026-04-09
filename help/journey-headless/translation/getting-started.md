@@ -3,9 +3,9 @@ title: Prise en main de la traduction découplée dans AEM
 description: Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: beebb7b6-5ed8-4cec-84cf-fa90b2ef711a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 100%
@@ -100,7 +100,7 @@ Notez le contenu du champ **Nom de la propriété** pour tous les champs qui doi
 
 ### Fragments de contenu {#content-fragments}
 
-Les modèles de contenu sont utilisés par les auteurs de contenu pour créer le véritable contenu découplé. Les auteurs de contenu sélectionnent le modèle sur lequel baser leur contenu, puis créent des fragments de contenu. Les fragments de contenu sont des instances de ces modèles et représentent le véritable contenu à diffuser en mode découplé.
+Les modèles de contenu sont utilisés par les auteurs de contenu pour créer le véritable contenu découplé. Les créateurs et créatrices de contenu sélectionnent le modèle sur lequel baser leur contenu, puis créent des fragments de contenu. Les fragments de contenu sont des instances de ces modèles et représentent le véritable contenu à diffuser en mode découplé.
 
 Si les modèles de contenu correspondent aux motifs de contenu, les fragments de contenu correspondent au véritable contenu basé sur ces modèles. Les fragments de contenu représentent le contenu qui doit être traduit.
 

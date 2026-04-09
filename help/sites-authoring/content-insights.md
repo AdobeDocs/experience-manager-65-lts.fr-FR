@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 10bf533d-c0a8-43ac-8dd5-d4fa501b8726
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 100%
@@ -94,9 +94,9 @@ Pour chaque campagne pour laquelle la page est active, un rapport s’affiche no
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
-## Rapport de recommendations SEO {#the-seo-recommendations-report}
+## Rapport de recommandations SEO {#the-seo-recommendations-report}
 
-Le rapport de recommendations SEO contient les résultats de l’analyse BrightEdge pour la page. Le rapport est une liste de contrôle des fonctionnalités de page qui indique quelles fonctionnalités la page inclut ou n’inclut pas pour optimiser la recherche à l’aide des moteurs de recherche.
+Le rapport de recommandations SEO contient les résultats de l’analyse BrightEdge pour la page. Le rapport est une liste de contrôle des fonctionnalités de page qui indique quelles fonctionnalités la page inclut ou n’inclut pas pour optimiser la recherche à l’aide des moteurs de recherche.
 
 Le rapport permet de créer des tâches afin d’améliorer la recherche des pages. Les recommandations indiquent que des tâches ont été créées pour la mise en œuvre de la recommandation. Voir [Attribution de tâches pour les recommandations SEO](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
 

@@ -9,9 +9,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: fb035c7d-7448-4e74-8b39-a24a385da172
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 100%
@@ -154,8 +154,8 @@ Utilisez des modèles de processus pour effectuer le traitement en bloc des page
 1. Lorsque les personnes créant du contenu convertissent des pages de lancement, elles les stockent dans le package de workflow.
 1. Démarrez un modèle de workflow en utilisant le package comme payload.
 
-Pour lancer automatiquement un workflow lors de la conversion de pages, [configurez un lanceur de workflow](/help/sites-administering/workflows-starting.md#workflows-launchers) pour le nœud du package.
+Pour démarrer automatiquement un workflow lors de la conversion des pages, [configurez un lanceur de workflows](/help/sites-administering/workflows-starting.md#workflows-launchers) pour le nœud du package.
 
-Par exemple, vous pouvez générer automatiquement des requêtes d’activation de page lorsque les personnes créant du contenu convertissent des pages de lancement. Configurez un lanceur de workflow pour démarrer le workflow Demander l’activation lorsque le nœud du package est modifié.
+Par exemple, vous pouvez générer automatiquement des requêtes d’activation de page lorsque les personnes créant du contenu convertissent des pages de lancement. Configurez un lanceur de workflows pour démarrer le workflow Demander l’activation lorsque le nœud du package est modifié.
 
-![Lanceur de workflow](assets/chlimage_1-108.png)
+![Lanceur de workflows](assets/chlimage_1-108.png)

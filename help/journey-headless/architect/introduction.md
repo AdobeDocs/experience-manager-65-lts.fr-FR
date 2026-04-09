@@ -3,9 +3,9 @@ title: Parcours d’architecte de contenu découplé Adobe Experience Manager
 description: Cette section présente les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager et explique comment modéliser le contenu de votre projet.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
+role: Admin,Developer
 exl-id: cb64e012-7001-47a3-b038-8f8f6891c6a0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 100%
@@ -63,7 +63,7 @@ La modélisation de contenu (également appelée modélisation de données) est 
 
 Pour que les applications découplées puissent accéder à votre contenu et l’utiliser, le contenu a vraiment besoin d’une structure prédéfinie. Il serait possible de donner à votre contenu une forme libre, mais cela compliquerait *grandement* les choses pour les applications.
 
-Pour AEM, en tant qu’architecte de contenu, vous exécuterez la modélisation de contenu afin de concevoir un ensemble de **Modèles de fragments de contenu**. Ceux-ci définissent la structure utilisée lorsque les auteurs de contenu créent les **Fragments de contenu** qui contiennent le contenu.
+Pour AEM, en tant qu’architecte de contenu, vous exécuterez la modélisation de contenu afin de concevoir un ensemble de **Modèles de fragments de contenu**. Ceux-ci définissent la structure utilisée lorsque les créateurs et créatrices de contenu créent les **Fragments de contenu** qui contiennent le contenu.
 
 ### Accès au contenu {#access-content}
 

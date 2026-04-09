@@ -3,9 +3,9 @@ title: Glossaire
 description: Ce glossaire répertorie (par ordre alphabétique) les détails de tous les documents livrables de la liste de contrôle de projet.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 exl-id: e6542ba9-1182-4b81-b251-537747b89e4c
-source-git-commit: fb979ab973476212aeed9ce86d3251eb1aedcb8c
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '6926'
 ht-degree: 100%
@@ -308,7 +308,7 @@ Toutes les instructions/exigences de la clientèle concernant la manière dont l
 
 Politiques de la clientèle définissant comment et quand les déploiements/publications peuvent être effectués.
 
-Il s’agit souvent de calendriers, de planifications et d’exigences de validation.
+Il s’agit souvent de chronologies, de planifications et d’exigences de validation.
 
 ### Politiques ou exigences de surveillance de la clientèle {#customer-monitoring-policies-or-requirements}
 
@@ -912,7 +912,7 @@ Les estimations initiales sont de haut niveau et établies en fonction des exige
 
 La documentation requise pour décrire l’organisation et la structure des rapports du projet et de l’équipe.
 
-Souvent, elle se présente sous la forme d’un graphique, ou en comprend un, pour présenter une vue d’ensemble visuel des calendriers et des responsabilités. De nombreux outils sont disponibles pour vous aider.
+Souvent, elle se présente sous la forme d’un graphique, ou en comprend un, pour présenter une vue d’ensemble visuel de la chronologie et des responsabilités. De nombreux outils sont disponibles pour vous aider.
 
 ### Document sur la portée du projet {#project-scope-document}
 
@@ -1328,9 +1328,9 @@ Par exemple :
 * combien de kilo-octets (Ko) de journaux non envoyés génèrent un avertissement sur l’instance de serveur principale
 * le nombre de millisecondes de délai moyen par transaction toléré avant la génération d’un avertissement sur le serveur principal
 
-### Calendrier et jalons {#timeline-and-milestones}
+### Chronologie et jalons {#timeline-and-milestones}
 
-Cela doit définir les calendriers du projet et les jalons contractuels à utiliser pour :
+Cela doit définir la chronologie du projet et les jalons contractuels à utiliser pour :
 
 * Facturation.
 * Alignement par rapport aux définitions et aux critères de réussite, mais aussi aux KPI.

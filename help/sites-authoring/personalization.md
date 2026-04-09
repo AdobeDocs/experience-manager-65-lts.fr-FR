@@ -3,9 +3,9 @@ title: Personnalisation et ciblage de contenu
 description: Découvrez comment Adobe Experience Manager 6.5 LTS peut créer du contenu personnalisé.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: da8a1341-55a9-46bb-b78d-ced79e22e87e
-source-git-commit: 8a4f8ce12a67985f659d0e565f2950c97179bc01
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 97%
@@ -20,7 +20,7 @@ AEM propose un ensemble d’outils permettant de créer du contenu ciblé et de 
 
 ## Mode Ciblage {#targeting-mode}
 
-[Créez du contenu ciblé à l’aide du mode Ciblage d’AEM. &#x200B;](/help/sites-authoring/content-targeting-touch.md) Le mode Ciblage et le composant Cible fournissent des outils permettant de créer du contenu pour les expériences de vos activités de marketing.
+[Créez du contenu ciblé à l’aide du mode Ciblage d’AEM. ](/help/sites-authoring/content-targeting-touch.md) Le mode Ciblage et le composant Cible fournissent des outils permettant de créer du contenu pour les expériences de vos activités de marketing.
 
 ## Activités {#activities}
 
@@ -46,7 +46,7 @@ Vous définissez des expériences pour une activité. Vous pouvez utiliser la [c
 
 Une offre est un contenu qui s’affiche à un emplacement sur une page pour une expérience. Utilisez différentes offres pour différentes expériences afin d’optimiser l’efficacité du contenu pour vos audiences.
 
-Par exemple, la page pour les femmes de l’exemple We.Retail peut utiliser des offres en tant qu’image de teaser apparaissant en haut de la page. L’offre utilisée en tant que teaser de l’expérience destinée aux femmes de plus de 30 ans n’est pas la même que celle utilisée pour les femmes de moins de 30 ans.
+Par exemple, la page pour les femmes de l’exemple de site web We.Retail peut utiliser des offres en tant qu’image de teaser apparaissant en haut de la page. L’offre utilisée en tant que teaser de l’expérience destinée aux femmes de plus de 30 ans n’est pas la même que celle utilisée pour les femmes de moins de 30 ans.
 
 Utilisez la [console Offres](/help/sites-authoring/offerlib.md) pour créer des offres que vous pouvez utiliser dans plusieurs expériences. Créez des offres à usage unique ou ajoutez des offres à partir d’une bibliothèque d’offres lors de la [création de contenu ciblé](/help/sites-authoring/content-targeting-touch.md).
 

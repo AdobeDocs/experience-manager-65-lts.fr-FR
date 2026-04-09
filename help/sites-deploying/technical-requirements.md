@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 7d40e37a29a426e0e72b233b3aab56b1ba6f1730
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '2870'
 ht-degree: 91%
@@ -90,10 +90,10 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 
 | **Plateforme** | **Niveau de prise en charge** | **Lien** |
 |---|---|---|
-| Oracle Java™ SE 17 JDK | A : prise en charge de `[1]` |
-| Oracle Java™ SE 21 JDK | A : prise en charge de `[1]` |
-| Machine virtuelle IBM® Semeru J9 - build 17.0.13.0 | A : prise en charge de `[2]` |
-| Machine virtuelle IBM® Semeru J9 - build 21.0.6.0 | A : prise en charge de `[2]` |
+| Oracle Java™ SE 17 JDK | A : prise en charge de `[1]` | |
+| Oracle Java™ SE 21 JDK | A : prise en charge de `[1]` | |
+| Machine virtuelle ® Semeru J9 - build 17.0.13.0 | A : prise en charge de `[2]` | |
+| Machine virtuelle ® Semeru J9 - build 21.0.6.0 | A : prise en charge de `[2]` | |
 
 1. Oracle est passé à un modèle de « support à long terme » (LTS) pour les produits Oracle Java™ SE. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14 et Java™ 15m Java™ 16 sont des versions non-LTS fournies par Oracle (voir la [feuille de route de la prise en charge d’Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe assure uniquement la prise en charge des versions LTS de Java™. La prise en charge et la distribution du JDK Oracle Java™ SE, y compris toutes les mises à jour de maintenance des versions LTS, sont directement prises en charge par Adobe pour tous les clients AEM qui utilisent la technologie Oracle Java™ SE. Consultez la [Politique de prise en charge Java™ pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
    **Cette version prend en charge Oracle Java™ 17 et Oracle Java™ 21.**
@@ -143,7 +143,7 @@ La version minimale requise de l’API de servlet est la servlet 3.1. En outre, 
 | Plateforme | Niveau de prise en charge |
 |---|---|
 | **Moteur de servlet intégré à démarrage rapide (Jetty 11.0.x)** | A : pris en charge |
-| IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) avec Web Profile 24.0.0.7 et IBM® Sumeru open JRE® 17/21 | R : prise en charge restreinte des nouveaux contrats `[1]` |
+| ® WebSphere® Application Server Continuous Delivery (LibertyProfile) avec Web Profile 24.0.0.7 et IBM® Sumeru open JRE® 17/21 | R : prise en charge restreinte des nouveaux contrats `[1]` |
 | Apache Tomcat 10.0.x/10.1.x | R : prise en charge restreinte des nouveaux contrats `[1]` |
 
 1. Avec les déploiements d’AEM 6.5 sur les serveurs d’applications, la prise en charge limitée sera activée. Les clientes et clients existant(e)s peuvent effectuer une mise à niveau vers AEM 6.5 et continuer à utiliser des serveurs d’applications. Pour les nouveaux clients et nouvelles clientes, des critères et un programme de prise en charge sont inclus, comme indiqué dans la description du niveau R ci-dessus.
@@ -450,4 +450,4 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux® contenant GLIBC_2.14, par exemple un noyau Linux® version 3.1.x. Cela améliore les performances de traitement des ressources qui contiennent un grand nombre de métadonnées, comme les fichiers PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
 
-Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[AEM Forms](https://business.adobe.com/in/support/main.html)
+Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[](https://business.adobe.com/in/support/main.html)

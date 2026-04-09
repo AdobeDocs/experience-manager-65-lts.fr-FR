@@ -5,7 +5,7 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '4292'
 ht-degree: 99%
@@ -81,7 +81,7 @@ Voir [Modèle de base d’un document d’enregistrement](#base-template-of-a-do
 
 Voir [Configuration du modèle de document d’enregistrement](#document-of-record-template-configuration).
 
-**Données de formulaire** : informations renseignées par un utilisateur dans le formulaire adaptatif. Il fusionne avec le modèle de document d’enregistrement pour générer le document d’enregistrement.
+**Données de formulaire** : informations renseignées par un utilisateur dans le formulaire adaptatif. Il fusionne avec le modèle de document de référence pour générer le document de référence.
 
 ## Mappage des éléments du formulaire adaptatif {#mapping-of-adaptive-form-elements}
 
@@ -198,9 +198,9 @@ Les sections ci-dessous décrivent l’apparence des éléments d’un formulair
 ### Composants statiques {#static-components}
 
 | Composant de formulaire adaptatif | Composant XFA correspondant | Remarques |
-|---|---|---|
+| --- | --- | --- |
 | Image | Image | Qu’ils soient liés ou non, les composants TextDraw et Image apparaissent toujours dans le document d’enregistrement relatif à un formulaire adaptatif basé sur XSD, à moins que cela ne soit exclu dans les paramètres de document d’enregistrement. |
-| Texte | Texte |
+| Texte | Texte | |
 
 >[!NOTE]
 >
@@ -333,7 +333,7 @@ Selon si vous sélectionnez un modèle par défaut ou un modèle personnalisé, 
 
   Si le modèle XDP personnalisé que vous sélectionnez comprend plusieurs gabarits, les propriétés de ces pages apparaissent dans la section **[!UICONTROL contenu]** de l’onglet **[!UICONTROL Document d’enregistrement]**.
 
-  ![Propriétés du gabarit de page &#x200B;](assets/master-page-properties.png)
+  ![Propriétés du gabarit de page ](assets/master-page-properties.png)
 
   Les propriétés du gabarit de page comprennent l’image du logo, le texte de l’en-tête, le titre du formulaire, l’étiquette de la clause de non-responsabilité et le texte de la clause de non-responsabilité. Vous pouvez appliquer les propriétés du formulaire adaptatif ou du modèle XDP au document d’enregistrement. AEM Forms applique par défaut les propriétés des modèles au document d’enregistrement. Vous pouvez également définir des valeurs personnalisées pour les propriétés du gabarit de page. Pour plus d’informations sur la façon d’appliquer plusieurs gabarits de pages dans un document d’enregistrement, voir [Appliquer plusieurs gabarits à un document d’enregistrement](#apply-multiple-master-pages-dor).
 

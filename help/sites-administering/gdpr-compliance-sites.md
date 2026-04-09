@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
+role: Admin,Developer,Leader,User
 exl-id: 826dafb8-db6c-4fe4-8b3d-edf7215dc571
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 100%
@@ -77,7 +77,7 @@ Le ou la propriétaire du site doit mettre en œuvre un composant d’exclusion 
 Ces instructions implémentent l’inclusion comme valeur par défaut. Ainsi, un visiteur ou une visiteuse du site web doit clairement donner son accord avant que toute donnée personnelle soit stockée dans la persistance du navigateur (côté client).
 
 * Le composant d’exclusion doit être inclus à chaque fois que le composant ContextHub est inclus.
-* Les conditions générales relatives au RGPD pour le site web doivent être présentées à ce visiteur ou à cette visiteuse du site web, pour lui permettre de :
+* Les conditions générales relatives au RGPD pour le site web doivent être présentées à la personne qui visite le site web, pour lui permettre de :
 
    * d’accepter ;
    * de refuser ;

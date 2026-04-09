@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 6a0c7dbf-02ae-4211-a5c7-941eb353a403
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '10800'
-ht-degree: 100%
+source-wordcount: '10799'
+ht-degree: 99%
 
 ---
 
@@ -547,8 +547,8 @@ Pour créer un point d’entrée de courrier électronique pour un service, spé
 * **Valeur de l’identifiant du connecteur** : indique le type de point d’entrée créé. Pour créer un point d’entrée de courrier électronique, spécifiez `Email`.
 * **Description** : indique une description du point d’entrée.
 * **Nom** : indique le nom du point d’entrée.
-* **Valeur de l’identifiant du service** : indique le service auquel appartient le point d’entrée. Par exemple, pour ajouter un point d’entrée de courrier électronique au processus présenté dans cette section (un processus devient un service lorsqu’il est activé à l’aide de Workbench), spécifiez `EncryptDocument`.
-* **Nom de l’opération** : indique le nom de l’opération appelée à l’aide du point d’entrée. En règle générale, lors de la création d’un point d’entrée de courrier électronique pour un service qui provient d’un processus créé dans Workbench, le nom de l’opération est `invoke`.
+* **Valeur de l’identifiant du service** : indique le service auquel appartient le point d’entrée. Par exemple, pour ajouter un point d’entrée E-mail au processus présenté dans cette section (un processus devient un service lorsqu’il est activé à l’aide de Workbench), spécifiez `EncryptDocument`.
+* **Nom de l’opération** : indique le nom de l’opération appelée à l’aide du point d’entrée. En règle générale, lors de la création d’un point d’entrée E-mail pour un service qui provient d’un processus créé dans Workbench, le nom de l’opération est `invoke`.
 
 **Spécifier les valeurs de configuration**
 
@@ -568,13 +568,13 @@ Les valeurs de configuration suivantes sont définies lors de l’ajout par prog
 * **userName** : nom d’utilisateur utilisé lors de l’appel d’un service cible à partir d’un e-mail. La valeur par défaut est `SuperAdmin`.
 * **domainName** : valeur de configuration obligatoire. La valeur par défaut est `DefaultDom`.
 * **domainPattern** : spécifie les modèles de domaine d’e-mail entrant acceptés par le fournisseur. Par exemple, si le domaine `adobe.com` est utilisé, seuls les e-mails de ce domaine sont traités. Ceux provenant d’autres domaines sont ignorés.
-*  **filePattern**: indique les modèles de pièce jointe de fichier entrant acceptés par le fournisseur. Cela inclut les fichiers ayant des extensions de nom de fichier spécifiques (&amp;ast;.dat, &amp;ast;.xml), les fichiers ayant des noms spécifiques (données) et les fichiers dont le nom et l’extension comportent des expressions composites (&amp;ast;.[dD][aA]« port »). La valeur par défaut est `*`.
+*  **filePattern**: indique les modèles de pièce jointe de fichier entrant acceptés par le fournisseur. Cela inclut les fichiers ayant des extensions de nom de fichier spécifiques (&amp;ast;.dat, &amp;ast;.xml), les fichiers ayant des noms spécifiques (données) et les fichiers dont le nom et l’extension comportent des expressions composites (&amp;ast;.`[dD][aA]`&#39;port&#39;). La valeur par défaut est `*`.
 * **recipientSuccessfulJob** : adresse électronique à laquelle sont envoyés les messages pour signaler les travaux effectués. Par défaut, un message de travail effectué est toujours envoyé à l’expéditeur. Si vous saisissez `sender`, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez d’autres destinataires au moyen de leurs adresses e-mail, séparées par des virgules. Pour désactiver cette option, ne remplissez pas ce champ. Dans certains cas, il se peut que vous souhaitiez déclencher un processus et ne pas recevoir de courrier électronique de notification du résultat. La valeur par défaut est `sender`.
 * **recipientFailedJob** : adresse électronique à laquelle sont envoyés les messages pour signaler les travaux ayant échoué. Par défaut, un message de travail ayant échoué est toujours envoyé à l’expéditeur. Si vous saisissez `sender`, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez d’autres destinataires au moyen de leurs adresses e-mail, séparées par des virgules. Pour désactiver cette option, ne remplissez pas ce champ. La valeur par défaut est `sender`.
 * **inboxHost** : nom ou adresse IP de l’hôte de la boîte de réception du fournisseur de messagerie électronique à analyser.
 * **inboxPort** : port utilisé par le serveur de messagerie. La valeur POP3 par défaut est 110 et la valeur IMAP par défaut est 143. Si le protocole SSL est activé, la valeur POP3 par défaut est 995 et la valeur IMAP par défaut est 993.
 * **inboxProtocol** : protocole utilisé par le point d’entrée de courrier électronique pour analyser la boîte de réception. Les options disponibles sont `IMAP` ou `POP3`. Le serveur de messagerie de l’hôte boîte de réception doit prendre en charge ces protocoles.
-* **inboxTimeOut** : délai (en secondes) pendant lequel le fournisseur d’e-mail attend les réponses de la boîte de réception. La valeur par défaut est 60.
+* **inboxTimeOut** : délai d’expiration (en secondes) pendant lequel le fournisseur d’e-mail attend les réponses de la boîte de réception. La valeur par défaut est 60.
 * **inboxUser** : nom d’utilisateur requis pour se connecter au compte e-mail. En fonction du serveur de messagerie et de la configuration, il peut s’agir uniquement de la partie nom d’utilisateur de l’e-mail ou de l’e-mail complet.
 * **inboxPassword** : mot de passe de l’utilisateur de la boîte de réception.
 * **inboxSSLEnabled** : définissez cette valeur pour forcer le fournisseur de messagerie à utiliser SSL lors de l’envoi de messages de notification de résultats ou d’erreurs. Assurez-vous que l’hôte IMAP ou POP3 prend en charge SSL.
@@ -656,7 +656,7 @@ Ajoutez un point d’entrée Email à l’aide de l’API Java :
    * Fournissez une description du point d’entrée en appelant la méthode `setDescription` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui décrit le point d’entrée.
    * Indiquez le nom du point d’entrée en appelant la méthode `setName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom.
    * Spécifiez le service auquel appartient le point d’entrée en appelant la méthode `setServiceId` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom du service.
-   * Spécifiez l’opération appelée en appelant la méthode `setOperationName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom de l’opération. En règle générale, lors de la création d’un point d’entrée Email pour un service qui provient d’un processus créé dans Workbench, le nom de l’opération est appelé.
+   * Spécifiez l’opération appelée en appelant la méthode `setOperationName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom de l’opération. En règle générale, lors de la création d’un point d’entrée E-mail pour un service qui provient d’un processus créé dans Workbench, le nom de l’opération est appelé.
 
 1. Spécifiez les valeurs de configuration.
 

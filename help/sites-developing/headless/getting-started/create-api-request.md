@@ -1,18 +1,18 @@
 ---
-title: Guide de démarrage rapide pour l’accès et la diffusion de fragments de contenu découplés
+title: Guide de prise en main pour l’accès et la diffusion de fragments de contenu découplé
 description: Découvrez comment utiliser l’API HTTP Assets d’AEM pour gérer les fragments de contenu et l’API GraphQL dans la diffusion de contenu de fragments de contenu en mode découplé.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: a5f7f0b9-7779-49c3-b79f-3dd3762c746a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 100%
 
 ---
 
-# Guide de démarrage rapide pour l’accès et la diffusion de fragments de contenu découplés {#accessing-delivering-content-fragments}
+# Guide de prise en main pour l’accès et la diffusion de fragments de contenu découplé {#accessing-delivering-content-fragments}
 
 Découvrez comment utiliser l’API AEM Assets REST pour gérer les fragments de contenu et l’API GraphQL pour la diffusion de contenu de fragments de contenu en mode découplé.
 
@@ -33,10 +33,10 @@ Les architectes d’informations doivent concevoir des requêtes pour leurs poin
 1. Connectez-vous à AEM et accédez à l’[interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md) :
    * Par exemple : `http://<host>:<port>/aem/graphiql.html`.
 
-1. GraphiQL est un éditeur de requêtes intégré au navigateur pour GraphQL. Vous pouvez l’utiliser pour créer des requêtes permettant de récupérer des fragments de contenu afin de les diffuser de manière découplée en mode JSON.
+1. GraphiQL est un requêteur intégré au navigateur pour GraphQL. Vous pouvez l’utiliser pour créer des requêtes permettant de récupérer des fragments de contenu afin de les diffuser de manière découplée en mode JSON.
    * Le volet de gauche permet de construire votre requête.
    * Le volet de droite affiche les résultats.
-   * L’éditeur de requêtes comprend la saisie du code et des touches d’accès rapide pour exécuter facilement la requête.
+   * Le requêteur comprend la saisie du code et des touches d’accès rapide pour exécuter facilement la requête.
      ![Éditeur GraphiQL](assets/graphiql.png)
 
 1. En supposant que le modèle que vous avez créé s’appelle `person`, avec les champs `firstName`, `lastName` et `position`, vous pouvez créer une requête simple pour récupérer le contenu du fragment de contenu.

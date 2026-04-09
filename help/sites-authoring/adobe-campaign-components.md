@@ -8,10 +8,10 @@ topic-tags: personalization
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 20de763d-dd07-4ba6-a54d-a2b3b9b7e1ec
 index: false
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2857'
 ht-degree: 100%
@@ -25,7 +25,7 @@ Lors de l’intégration à Adobe Campaign, des composants sont disponibles pour
 
 >[!CAUTION]
 >
->Les composants d’e-mail AEM ont été abandonnés. En raison de la nature de l’e-mail, en particulier son contenu et son style, les composants d’e-mail fournis prêts-à-l’emploi par AEM ne sont que rarement réutilisés par les clients car ils ont besoin d’implémenter des styles personnalisés dans les composants requis pour les projets.
+>Les composants d’e-mail AEM ont été abandonnés. En raison de la nature de l’e-mail, qui fusionne contenu et style, les composants d’e-mail fournis prêts à l’emploi par AEM ne sont que rarement réutilisés, car il est nécessaire d’implémenter des styles personnalisés dans les composants requis pour les projets.
 >
 >Les composants d’e-mail peuvent être implémentés au niveau du projet. Les composants d’e-mail AEM obsolètes illustrent la manière dont cela peut être réalisé. Toutefois, n’utilisez pas ces composants obsolètes sur les projets.
 
@@ -103,7 +103,7 @@ Différentes autres options sont disponibles en mode Plein écran. Par exemple, 
 Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
 * **Mapper**
-Pour faire correspondre une image, sélectionnez Mapper. Vous spécifiez ensuite comment créer l’image interactive (rectangle, polygone, etc.) et l’emplacement où doit pointer la zone.
+Pour faire correspondre une image, sélectionnez Mapper. Vous spécifiez ensuite comment créer la zone cliquable (rectangle, polygone, etc.) et l’emplacement où doit pointer la zone.
 
 * **Recadrer**
 Sélectionnez cette option pour recadrer une image à l’aide de la souris.

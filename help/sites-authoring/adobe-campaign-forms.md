@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 6a72ba56-8222-4853-adc6-ee8f3d395d9d
-source-git-commit: 3bc6f5aab61b6ea0ae1d6d909bf2d36fd7e4dbe4
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 92%
@@ -56,7 +56,7 @@ Tout d’abord, vérifiez que la connexion entre les instances de création et d
 >
 
 1. Dans AEM, dans Sites, naviguez jusqu’à l’emplacement où vous souhaitez créer une page.
-1. Créez une page et sélectionnez **Profil Adobe Campaign Classic** ou **Profil Adobe Campaign Standard** puis cliquez sur **Suivant**.
+1. Créez une page et sélectionnez **Profil** ou **Profil Adobe Campaign Standard** puis cliquez sur **Suivant**.
 
    ![chlimage_1-43](assets/chlimage_1-43a.png)
 

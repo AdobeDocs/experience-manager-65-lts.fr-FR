@@ -1,6 +1,6 @@
 ---
 title: Créer du contenu de page à partir de fragments de contenu
-description: Les fragments de contenu d’AEM vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages.
+description: Les fragments de contenu d’AEM vous permettent de concevoir, de créer, d’organiser et d’utiliser du contenu indépendant des pages.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Content Fragments
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 5bde6c78-84bc-48f5-b06f-1c4282eaf5c1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 100%

@@ -3,12 +3,12 @@ title: Réutilisation des ressources à l’aide de MSM
 description: Utilisez des ressources sur plusieurs pages/dossiers qui sont dérivées des ressources parents et liées à celles-ci. Les ressources restent synchronisées avec une copie primaire. De plus, en quelques clics, elles reçoivent les mises à jour des ressources parents.
 contentOwner: AG
 mini-toc-levels: 1
-role: User, Admin, Architect
+role: User,Admin,Developer
 feature: Asset Management,Multi Site Manager
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 29365a8a-7d29-41b2-9a54-d12fe802f6ed
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '3261'
 ht-degree: 100%

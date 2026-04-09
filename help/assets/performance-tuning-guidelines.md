@@ -3,11 +3,11 @@ title: Réglage des performances d’ [!DNL Assets]
 description: Suggestions et conseils relatifs à  [!DNL Experience Manager]  pour la configuration, les modifications apportées aux composants matériels, les logiciels et éléments réseau pour éviter les goulets d’étranglement et optimiser les performances d’ [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
-role: Architect, Admin
+role: Developer,Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43079a69-cd12-4853-9fff-96f9d177987a
-source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 99%
@@ -144,7 +144,7 @@ Dans la mesure du possible, définissez le workflow [!UICONTROL Ressource de mis
 
 Dans les cas où les workflows transitoires ne peuvent pas être utilisés, exécutez la purge des workflows régulièrement pour supprimer les workflows [!UICONTROL Ressource de mise à jour de gestion des ressources numériques] afin de garantir que les performances système ne se dégraderont pas.
 
-En règle générale, exécutez les workflows de purge une fois par semaine. Toutefois, dans les scénarios qui requièrent un important nombre de ressources, comme l’assimilation de ressources à grande échelle, vous pouvez l’exécuter plus fréquemment.
+En règle générale, exécutez les workflows de purge une fois par semaine. Toutefois, dans les scénarios qui requièrent un important nombre de ressources, comme l’ingestion de ressources à grande échelle, vous pouvez l’exécuter plus fréquemment.
 
 Pour configurer la purge des workflows, ajoutez une nouvelle configuration de purge de workflow d’Adobe Granite via la console OSGi. Ensuite, configurez et planifiez le workflow dans le cadre de la fenêtre de maintenance hebdomadaire.
 
@@ -152,7 +152,7 @@ Si la purge s’exécute trop longtemps, elle s’arrête. Par conséquent, vous
 
 Par exemple, après l’exécution d’un grand nombre de workflows transitoires (ce qui crée des nœuds d’instance de workflow), vous pouvez exécuter l’[outil de suppression de workflow ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) sur une base ponctuelle. Il supprime immédiatement les instances de workflow redondantes et terminées au lieu d’attendre que le planificateur de purge de workflow Adobe Granite s’exécute.
 
-### Tâches parallèles maximales    {#maximum-parallel-jobs}
+### Nombre maximum de tâches parallèles {#maximum-parallel-jobs}
 
 Par défaut, [!DNL Experience Manager] exécute un nombre maximal de tâches parallèles qui est égal au nombre de processeurs sur le serveur. Le problème avec ce paramètre est que pendant les périodes de charge importante, tous les processeurs sont occupés par des workflows [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques], ce qui ralentit la réactivité de l’interface utilisateur et empêche [!DNL Experience Manager] d’exécuter d’autres processus qui assurent la stabilité et les performances du serveur. En tant que bonne pratique, définissez cette valeur sur la moitié des processeurs disponibles sur le serveur en procédant comme suit :
 
@@ -259,7 +259,7 @@ Certaines optimisations peuvent être effectuées sur les configurations d’ind
 Si vos utilisateurs n’ont pas besoin d’effectuer une recherche de texte intégral de ressources, par exemple, lorsqu’ils parcourent le texte des documents PDF, désactivez-la. Vous améliorez les performances de l’index en désactivant l’indexation de texte intégral. Pour désactiver l’extraction de texte [!DNL Apache Lucene], procédez comme suit :
 
 1. Dans l’interface d’[!DNL Experience Manager], accédez au [!UICONTROL gestionnaire de modules].
-1. Téléchargez et installez le package disponible à l’adresse [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
+1. Chargez et installez le package disponible à l’adresse [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Paramètre guessTotal {#guess-total}
 

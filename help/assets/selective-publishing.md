@@ -10,7 +10,7 @@ role: User, Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: 64468f78-2dc1-4e42-a8c6-3cb81bca0e05
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 100%
@@ -186,7 +186,7 @@ Vous pouvez utiliser la fonction **[!UICONTROL Publication rapide]** dans les ca
 1. Sélectionnez l’une des options suivantes dans la liste de menu **[!UICONTROL Publication rapide]**.
 
    | Option Publication rapide | Effets |
-   | --- | --- | 
+   | --- | --- |
    | Publier dans Experience Manager | Publie immédiatement les ressources sélectionnées dans Experience Manager. |
    | Publier sur Brand Portal | Publie immédiatement les ressources sélectionnées dans **[!UICONTROL Brand Portal]**.<br>Cette option n’est disponible que si votre instance Experience Manager Assets dispose déjà de **[!UICONTROL Brand Portal]** configuré. |
    | Publier vers Dynamic Media | Publie immédiatement les ressources sélectionnées dans Dynamic Media.<br>Une ressource doit être synchronisée dans Dynamic Media. Si nécessaire, assurez-vous que le **[!UICONTROL mode de synchronisation]** dans les propriétés d’un dossier est déjà défini sur **[!UICONTROL Synchroniser avec Dynamic Media tout le contenu de cette sous-arborescence de dossier]**. |

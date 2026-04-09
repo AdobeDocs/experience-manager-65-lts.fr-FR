@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 56dac3e2-e330-47c9-a32e-db947272a632
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '3808'
-ht-degree: 100%
+source-wordcount: '3806'
+ht-degree: 95%
 
 ---
 
@@ -38,7 +38,7 @@ Tous les points d’entrée d’e-mail sont configurés avec un nom d’utilisat
 
 Si vos utilisateurs envoient des documents dont les noms et les chemins de conversion contiennent des caractères d’alphabet des langues de l’Europe occidentale, ils doivent utiliser une application d’e-mail prenant en charge les types d’encodage requis (Latin1 [ISO-8859-1], Langues de l’Europe occidentale [Windows] ou UTF-8). Pour plus d’informations, consultez le document *Installation et déploiement d’AEM forms* correspondant à votre serveur d’applications.
 
-Avant de configurer un point d’entrée d’e-mail, vous devez configurer le service E-mail. (Voir [Configurer les paramètres de point d’entrée d’e-mail par défaut](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Les paramètres de configuration du service E-mail ont deux objectifs :
+Avant de configurer un point d’entrée d’e-mail, vous devez configurer le service E-mail. (Voir [Configurer les paramètres de point d’entrée de courrier électronique par défaut](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Les paramètres de configuration du service de courrier électronique ont deux objectifs :
 
 * Pour configurer les attributs communs à tous les points d’entrée d’e-mail
 * Pour fournir des valeurs par défaut à tous les points d’entrée d’e-mail
@@ -47,9 +47,9 @@ Avant de configurer un point d’entrée d’e-mail, vous devez configurer le se
 
 Vous pouvez configurer les protocoles POP3, IMAP ou SMTP pour utiliser le protocole SSL (Secure Sockets Layer) pour un point d’entrée d’e-mail.
 
-1. Sur le serveur de messagerie, activez le protocole SSL pour POP3, IMAP ou SMTP, conformément à la documentation du fabricant.
+1. Sur le serveur de messagerie, activez SSL pour POP3, IMAP ou SMTP conformément à la documentation du fabricant.
 1. Exportez un certificat client à partir du serveur de messagerie.
-1. Utilisez le programme keytool pour importer le fichier du certificat client dans la boutique de certificats de la machine virtuelle Java (JVM) du serveur d’applications. La procédure de cette étape dépend de la JVM et des chemins d’installation du client ou de la cliente.
+1. Utilisez le programme keytool pour importer le fichier de certificat client dans le magasin de certificats JVM (Java Virtual Machine) du serveur d’applications. La procédure de cette étape dépend de la JVM et des chemins d’installation du client ou de la cliente.
 
    Par exemple, si vous utilisez une installation Oracle WebLogic Server par défaut avec JDK 1.5.0 sous Microsoft Windows Server® 2003, saisissez le texte suivant dans une invite de commande :
 
@@ -91,11 +91,11 @@ Pour que le workflow des formulaires reçoive et traite les e-mails entrants env
 
 **Modèle de domaine :** modèle de nom de domaine servant à filtrer les e-mails entrants. Par exemple, si le domaine adobe.com est utilisé, seuls les messages électroniques de ce domaine sont traités ; ceux provenant d’autres domaines sont ignorés.
 
-**Modèle de fichier :** indique les modèles de pièce jointe de fichier entrant acceptés par le fournisseur. Les fichiers portant des extensions particulières (*.dat, *.xml), des noms spécifiques (data) et contenant des expressions composites dans leur nom et leur extension (.[dD][aA]&#39;port&#39;). La valeur par défaut est &amp;ast;.&amp;ast;.
+**Modèle de fichier :** indique les modèles de pièce jointe de fichier entrant acceptés par le fournisseur. Les fichiers portant des extensions particulières (*.dat, *.xml), des noms spécifiques (data) et contenant des expressions composites dans leur nom et leur extension (.`[dD][aA]`&#39;port&#39;). La valeur par défaut est &amp;ast;.&amp;ast;.
 
-**Destinataires de tâches réussies :** une ou plusieurs adresses e-mails utilisées pour envoyer des e-mails afin d’indiquer les tâches réussies. Par défaut, un message de traitement réussi est toujours envoyé à l’expéditeur ou à l’expéditrice du traitement d’origine. Jusqu’à 100 destinataires sont pris en charge. Pour désactiver ce paramètre, ne renseignez pas ce champ.
+**Destinataires de tâches effectuées :** une ou plusieurs adresses e-mails utilisées pour envoyer des e-mails afin d’indiquer les tâches effectuées. Par défaut, un message de traitement réussi est toujours envoyé à l’expéditeur ou à l’expéditrice du traitement d’origine. Jusqu’à 100 destinataires sont pris en charge. Pour désactiver ce paramètre, ne renseignez pas ce champ.
 
-**Destinataires de tâches échouées :** une ou plusieurs adresses e-mails utilisées pour envoyer des e-mails afin d’indiquer les tâches ayant échoué. Par défaut, un message de traitement ayant échoué est toujours envoyé à l’expéditeur ou à l’expéditrice du traitement d’origine. Jusqu’à 100 destinataires sont pris en charge. Pour désactiver ce paramètre, ne renseignez pas ce champ.
+**Destinataires de tâches ayant échoué :** une ou plusieurs adresses e-mails utilisées pour envoyer des e-mails afin d’indiquer les tâches ayant échoué. Par défaut, un message de traitement ayant échoué est toujours envoyé à l’expéditeur ou à l’expéditrice du traitement d’origine. Jusqu’à 100 destinataires sont pris en charge. Pour désactiver ce paramètre, ne renseignez pas ce champ.
 
 **Hôte de boîte de réception :** nom ou adresse IP de l’hôte de boîte de réception du fournisseur de messagerie électronique à analyser.
 
@@ -149,7 +149,7 @@ Pour que le workflow des formulaires reçoive et traite les e-mails entrants env
 
 Définissez les paramètres suivants pour configurer un point d’entrée d’e-mail.
 
-**Nom :** paramètre obligatoire qui identifie le point d’entrée. N’incluez pas de caractère&lt;, car le nom affiché dans Workspace serait tronqué. Si vous saisissez une URL en tant que nom de point d’entrée, assurez-vous que celle-ci est conforme aux normes syntaxiques en la matière précisées dans le document RFC1738.
+**Nom :** paramètre obligatoire qui identifie le point d’entrée. N’incluez pas de caractère&lt;, car le nom affiché dans Workspace serait tronqué. Si vous saisissez une URL comme nom du point d’entrée, assurez-vous qu’elle est conforme aux règles de syntaxe spécifiées dans la RFC1738.
 
 **Description :** description du point d’entrée. N’incluez pas de caractère &lt;, car la description affichée dans Workspace serait tronquée.
 
@@ -165,17 +165,17 @@ Définissez les paramètres suivants pour configurer un point d’entrée d’e-
 
 **Nom d’utilisateur :** paramètre obligatoire correspondant au nom d’utilisateur utilisé lors de l’appel d’un service cible à partir de l’e-mail. La valeur par défaut est SuperAdmin.
 
-**Nom de domaine :** paramètre obligatoire correspondant au domaine de l’utilisateur. La valeur par défaut est DefaultDom.
+**Nom de domaine :** paramètre obligatoire correspondant au domaine de l’utilisateur. La valeur par défaut est DefaultDom.
 
 **Modèle de domaine :** spécifie les modèles de domaine d’e-mail entrant qui sont acceptés par le fournisseur. Par exemple, si le domaine adobe.com est utilisé, seuls les messages électroniques de ce domaine sont traités ; ceux provenant d’autres domaines sont ignorés.
 
-**Modèle de fichier :** indique les modèles de pièce jointe de fichier entrant qui sont acceptés par le fournisseur. Cela inclut les fichiers ayant des extensions spécifiques (&amp;ast;.dat, &amp;ast;.xml), des noms spécifiques (data) ou des expressions composites dans le nom et l’extension (&amp;ast;.[dD][aA]&#39;port&#39;).
+**Modèle de fichier :** indique les modèles de pièce jointe de fichier entrant qui sont acceptés par le fournisseur. Cela inclut les fichiers ayant des extensions spécifiques (&amp;ast;.dat, &amp;ast;.xml), des noms spécifiques (data) ou des expressions composites dans le nom et l’extension (&amp;ast;.`[dD][aA]`&#39;port&#39;).
 
-**Destinataires des tâches effectuées :** adresse e-mail à laquelle sont envoyés les messages pour signaler les tâches effectuées. Par défaut, un message de travail effectué est toujours envoyé à l’expéditeur. Si vous saisissez sender, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez d’autres destinataires avec des adresses e-mail séparées par des virgules (,).
+**Destinataires des tâches effectuées :** adresse e-mail à laquelle sont envoyés les messages pour signaler les tâches effectuées. Par défaut, un message de travail effectué est toujours envoyé à l’expéditeur. Si vous saisissez sender, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez d’autres destinataires avec des adresses e-mail séparées par des virgules (,).
 
 Pour désactiver ce paramètre, laissez-le vide. Dans certains cas, il se peut que vous souhaitiez déclencher un processus et ne pas recevoir d’e-mail de notification du résultat.
 
-**Destinataires des tâches en échec :** adresse e-mail à laquelle sont envoyés les messages pour signaler les travaux ayant échoué. Par défaut, un message de travail ayant échoué est toujours envoyé à l’expéditeur. Si vous saisissez sender, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez d’autres destinataires avec des adresses e-mail séparées par des virgules (,).
+**Destinataires des tâches en échec :** adresse e-mail à laquelle sont envoyés les messages pour signaler les travaux ayant échoué. Par défaut, un message de travail ayant échoué est toujours envoyé à l’expéditeur. Si vous saisissez sender, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez d’autres destinataires avec des adresses e-mail séparées par des virgules (,).
 
 Pour désactiver ce paramètre, laissez-le vide. Dans certains cas, il se peut que vous souhaitiez déclencher un processus et ne pas recevoir d’e-mail de notification du résultat.
 
@@ -185,7 +185,7 @@ Pour désactiver ce paramètre, laissez-le vide. Dans certains cas, il se peut q
 
 **Protocole de la boîte de réception :** protocole utilisé par le point d’entrée d’e-mail pour analyser la boîte de réception. Les valeurs sont IMAP ou POP3. Le serveur de messagerie de l’hôte boîte de réception doit prendre en charge ces protocoles.
 
-**Délai d’attente de la boîte de réception :** délai (en secondes) pendant lequel le fournisseur d’e-mail attend les réponses de la boîte de réception.
+**Délai d’expiration de la boîte de réception :** délai (en secondes) pendant lequel le fournisseur d’e-mail attend les réponses de la boîte de réception.
 
 **Utilisateur de la boîte de réception :** nom d’utilisateur requis pour se connecter au compte e-mail. En fonction du serveur de messagerie et de la configuration, il peut s’agir uniquement de la partie nom d’utilisateur de l’adresse électronique ou de l’adresse électronique complète.
 
@@ -209,7 +209,7 @@ Pour désactiver ce paramètre, laissez-le vide. Dans certains cas, il se peut q
 
 **asynchrone :** lorsque l’option est définie sur synchrone, tous les documents d’entrée sont traités, puis une seule réponse est renvoyée. Lorsque l’option est définie sur asynchrone, une réponse est envoyée pour chaque document traité.
 
-Par exemple, un point d’entrée d’e-mail est créé pour un service qui utilise un seul document Word et renvoie ce document en tant que fichier PDF. Un e-mail peut être envoyé vers la boîte de réception du point d’entrée qui contient plusieurs (3) documents Word. Une fois que les trois documents sont traités, si le point d’entrée est défini sur synchrone, un e-mail unique de réponse est envoyé avec les trois documents en pièces jointes. Si le point d’entrée est asynchrone, un e-mail de réponse est envoyé une fois que chaque document Word a été converti en PDF. Il en résulte trois e-mails, chacun possédant une seule pièce jointe au format PDF.
+Par exemple, un point d’entrée d’e-mail est créé pour un service qui utilise un seul document Word et renvoie ce document en tant que fichier PDF. Un e-mail peut être envoyé à la boîte de réception du point d’entrée qui contient plusieurs (3) documents Word. Une fois que les trois documents sont traités, si le point d’entrée est défini sur synchrone, un e-mail unique de réponse est envoyé avec les trois documents en pièces jointes. Si le point d’entrée est asynchrone, un e-mail de réponse est envoyé une fois que chaque document Word a été converti en PDF. Il en résulte trois e-mails, chacun possédant une seule pièce jointe au format PDF.
 
 La valeur par défaut est asynchrone.
 
@@ -243,7 +243,7 @@ La valeur par défaut est asynchrone.
 
 **%F** représente le nom du fichier source (extension non incluse).
 
-**%E** représente l’extension du fichier source.
+**%E** représente l&#39;extension du fichier source.
 
 Toute occurrence de la barre oblique inverse (\) est remplacée par %%.
 

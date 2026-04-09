@@ -1,18 +1,18 @@
 ---
-title: Guide de démarrage rapide sur la création de modèles de fragments de contenu découplés
+title: Guide de démarrage rapide sur la création de modèles de fragments de contenu découplé
 description: Définissez la structure du contenu que vous allez créer et diffuser en utilisant les fonctionnalités découplées d’Adobe Experience Manager (AEM) à l’aide des modèles de fragment de contenu.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 768a5d73-521f-47a5-b4a3-d1b0b77798f7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 100%
 
 ---
 
-# Guide de démarrage rapide sur la création de modèles de fragments de contenu découplés {#creating-content-fragment-models}
+# Guide de démarrage rapide sur la création de modèles de fragments de contenu découplé {#creating-content-fragment-models}
 
 Définissez la structure du contenu que vous allez créer et diffuser en utilisant les fonctionnalités découplées d’Adobe Experience Manager (AEM) à l’aide des modèles de fragment de contenu.
 

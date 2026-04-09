@@ -3,9 +3,9 @@ title: Création de contenu accessible pour Adobe Experience Manager (conformi
 description: Utilisez AEM pour rendre le contenu Web accessible et utilisable par les personnes en situation de handicap
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 0c3e3b6c-3c41-455e-823a-7cce50f174d4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '13630'
 ht-degree: 99%
@@ -235,7 +235,7 @@ Les détails exacts de la création de vidéos avec description audio ne font pa
 * [Comment remplir le critère de réussite 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
 
 <!--
-* [Adobe Encore](https://www.adobe.com/fr/products/encore.html) - a DVD authoring software tool
+* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
 -->
 
 ### Sous-titres (en direct) (1.2.4)  {#captions-live}
@@ -252,7 +252,7 @@ Ce critère de réussite est identique aux [Sous-titres (pré-enregistrés)](#ca
 
 Suivez les instructions de la section [Sous-titres (pré-enregistrés)](#captions-prerecorded) ci-dessus. Toutefois, étant donné qu’il s’agit de média en direct, les sous-titres doivent être créés aussi vite que possible et en fonction de ce qui se passe dans la vidéo. Par conséquent, vous devez envisager d’utiliser des outils de sous-titrage en temps réel ou de transcription audio en texte.
 
-Ce document ne vise pas à fournir des instructions détaillées à ce sujet, mais vous trouverez des renseignements utiles en suivant les liens ci-après :
+Ce document ne vise pas à fournir des instructions détaillées à ce sujet. Toutefois, les ressources suivantes apportent des informations utiles :
 
 * [WebAIM : Real Time Captioning (sous-titrage en temps réel ; en anglais)](https://webaim.org/techniques/captions/realtime)
 
@@ -334,7 +334,7 @@ Vous pouvez veiller à ce que vos pages web aient la structure appropriée en ut
 
   >[!NOTE]
   >
-  >Par défaut, ces éléments et attributs ne sont pas directement disponibles, mais l’administrateur du système peut ajouter la prise en charge de ces valeurs dans la boîte de dialogue **Propriétés du tableau[&#x200B; (voir** Ajout de la prise en charge des éléments et attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
+  >Par défaut, ces éléments et attributs ne sont pas directement disponibles, mais l’administrateur du système peut ajouter la prise en charge de ces valeurs dans la boîte de dialogue **Propriétés du tableau[ (voir** Ajout de la prise en charge des éléments et attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
 
   Pour ouvrir la boîte de dialogue **Tableau** dans laquelle vous pouvez sélectionner l’onglet **Propriétés du tableau** :
 
@@ -362,7 +362,7 @@ Vous pouvez veiller à ce que vos pages web aient la structure appropriée en ut
   >
   >L’attribut id n’est pas disponible dans une installation prête à l’emploi. Il peut être activé en configurant les règles HTML et le sérialiseur dans l’éditeur de texte enrichi.
 
-  Par exemple, dans le tableau ci-dessous, les attributs header et id correspondent de façon à créer une association de programmation pour les utilisateurs de technologies d’assistance.
+  Par exemple, dans le tableau ci-dessous, les attributs « header » et « id » correspondent pour créer une association de programmation pour les personnes qui utilisent les technologies d’assistance.
 
   ```xml
     <table>
@@ -776,7 +776,7 @@ Cette règle permet de s’assurer que la navigation pour accéder au contenu so
 
 #### Objectif – Contournement de blocs (2.4.1) {#purpose-bypass-blocks}
 
-Ce critère de réussite a pour but de permettre aux personnes qui naviguent de manière séquentielle dans le contenu d’accéder plus directement au contenu principal de la page web. Les pages web et les applications contiennent souvent du contenu qui s’affiche sur d’autres pages ou écrans. Parmi les exemples de blocs de contenu répétés, citons, entre autres, les liens de navigation, les graphiques de titres et les encadrés publicitaires. Concernant cette disposition, les petites sections répétées (mots seuls, expressions, liens uniques) ne sont pas considérées comme des blocs.
+Ce critère de réussite a pour but de permettre aux personnes qui naviguent de manière séquentielle dans le contenu d’accéder plus directement au contenu principal de la page web. Les pages web et les applications contiennent souvent du contenu qui s’affiche sur d’autres pages ou écrans. Parmi les exemples de blocs de contenu répétés, citons, entre autres, les liens de navigation, les graphiques d’en-tête et les encadrés publicitaires. Concernant cette disposition, les petites sections répétées (mots seuls, expressions, liens uniques) ne sont pas considérées comme des blocs.
 
 #### Comment procéder – Contournement de blocs (2.4.1) {#how-to-meet-bypass-blocks}
 

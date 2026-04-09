@@ -3,9 +3,9 @@ title: Traduction du contenu
 description: Utilisez le connecteur et les règles de traduction pour traduire votre contenu découplé.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: 13d11e2b-5a3f-4987-a653-14e0790fbbd0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2115'
 ht-degree: 100%
@@ -139,13 +139,13 @@ Pour afficher le détail du contenu découplé inclus dans ce projet :
 1. Appuyez ou cliquez sur la case à cocher de sélection d’un élément de ligne pour afficher d’autres options, telles que la possibilité de le supprimer de la tâche ou de l’afficher dans la console Fragments de contenu ou Ressources.
    ![Options de tâche de traduction](assets/translation-job-options.png)
 
-En règle générale, le contenu de la tâche de traduction commence en statut **Version préliminaire** comme indiqué par la colonne **Statut** dans la fenêtre **Tâche de traduction**.
+En règle générale, le contenu de la tâche de traduction commence dans le statut **Brouillon** comme indiqué par la colonne **État** dans la fenêtre **Tâche de traduction**.
 
 Pour démarrer la tâche de traduction, revenez à la présentation du projet de traduction et appuyez ou cliquez sur le bouton chevron en haut de la carte **Tâche de traduction** et sélectionnez **Démarrer**.
 
 ![Démarrer la tâche de traduction](assets/start-translation-job.png)
 
-AEM communique maintenant avec votre configuration de traduction et votre connecteur pour envoyer le contenu au service de traduction. Vous pouvez afficher la progression de la traduction en revenant à la fenêtre **Tâche de traduction** et en affichant la colonne **Statut** des entrées.
+AEM communique maintenant avec votre configuration de traduction et votre connecteur pour envoyer le contenu au service de traduction. Vous pouvez afficher la progression de la traduction en revenant à la fenêtre **Tâche de traduction** et en affichant la colonne **État** des entrées.
 
 ![Tâche de traduction approuvée](assets/translation-job-approved.png)
 
@@ -167,9 +167,9 @@ Pour ajouter du contenu à une tâche de traduction :
    ![Explorateur de chemins d’accès](assets/path-browser.png)
 
 1. Cliquez sur **Sélectionner** pour ajouter le contenu sélectionné à la tâche.
-1. Dans la boîte de dialogue **Traduire**, indiquez que vous souhaitez **Créer une copie de langue**.
+1. Dans la boîte de dialogue **Traduire**, indiquez que vous souhaitez **Créer une copie linguistique**.
 
-   ![Créer une copie de langue](assets/translate-copy-master.png)
+   ![Créer une copie linguistique](assets/translate-copy-master.png)
 
 1. Le contenu est désormais inclus dans la tâche.
 
@@ -188,13 +188,13 @@ Pour ajouter du contenu à une tâche de traduction :
 
 Vous pouvez utiliser les étapes précédentes pour ajouter le contenu nécessaire à toutes les langues (tâches) du projet. Une fois que vous avez sélectionné tout le contenu, vous pouvez commencer la traduction.
 
-En règle générale, le contenu de la tâche de traduction commence en statut **Version préliminaire** comme indiqué par la colonne **Statut** dans la fenêtre **Tâche de traduction**.
+En règle générale, le contenu de la tâche de traduction commence dans le statut **Brouillon** comme indiqué par la colonne **État** dans la fenêtre **Tâche de traduction**.
 
 Pour démarrer la tâche de traduction, revenez à la présentation du projet de traduction et appuyez ou cliquez sur le bouton chevron en haut de la carte **Tâche de traduction** et sélectionnez **Démarrer**.
 
 ![Démarrer la tâche de traduction](assets/start-translation-job-manual.png)
 
-AEM communique maintenant avec votre configuration de traduction et votre connecteur pour envoyer le contenu au service de traduction. Vous pouvez afficher la progression de la traduction en revenant à la fenêtre **Tâche de traduction** et en affichant la colonne **Statut** des entrées.
+AEM communique maintenant avec votre configuration de traduction et votre connecteur pour envoyer le contenu au service de traduction. Vous pouvez afficher la progression de la traduction en revenant à la fenêtre **Tâche de traduction** et en affichant la colonne **État** des entrées.
 
 ![Tâche de traduction approuvée](assets/translation-job-approved-manual.png)
 

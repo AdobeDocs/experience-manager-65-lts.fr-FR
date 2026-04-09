@@ -7,9 +7,9 @@ topic-tags: projects
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 53400e3d-542f-4abc-9909-45eb11b0cfcc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 100%
@@ -133,7 +133,7 @@ Vous pouvez désormais créer des projets dans ce dossier. Vous pouvez créer pl
 
 ### Désactivation de projets {#making-projects-inactive-or-active}
 
-Vous pouvez vouloir désactiver un projet si vous l’avez terminé mais que vous souhaitez conserver ses informations. [Les projets inactifs s’affichent désormais](#viewing-active-inactive-projects) par défaut dans la console **Projets**.
+Vous pouvez marquer un projet comment inactif si vous l’avez terminé, mais que vous souhaitez conserver les informations le concernant. [Les projets inactifs s’affichent désormais](#viewing-active-inactive-projects) par défaut dans la console **Projets**.
 
 Pour rendre un projet inactif, procédez comme suit.
 

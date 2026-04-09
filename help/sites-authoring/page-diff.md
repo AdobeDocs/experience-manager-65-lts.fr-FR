@@ -3,9 +3,9 @@ title: Outil de comparaison des pages
 description: De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 228c1ffb-91af-4f2e-82f8-1e570034f7ec
-source-git-commit: db1c30db0a61e852484a25909c60ad5940b2b33a
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 100%

@@ -3,9 +3,9 @@ title: Parcours d’architecture de contenu découplé AEM
 description: Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement découplé.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
+role: Admin,Developer
 exl-id: b5f5e214-d8b3-4066-b834-0ba74d773bbc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '784'
 ht-degree: 100%
@@ -18,7 +18,7 @@ Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnali
 
 ## Présentation {#introduction}
 
-L’implémentation découplée devient de plus en plus importante pour offrir des expériences à votre public, où qu’il se trouve et quel que soit son canal.
+L’implémentation découplée devient de plus en plus importante pour offrir des expériences à votre audience, où qu’elle se trouve et quel que soit son canal.
 
 L’implémentation découplée renonce à la gestion des pages et des composants, comme c’est généralement le cas avec les solutions complètes, et se concentre sur la création de fragments de contenu réutilisables et neutres du point de vue du canal, ainsi que sur leur diffusion entre canaux. Il s’agit d’un modèle de développement moderne et dynamique pour l’implémentation d’expériences digitales.
 
@@ -36,7 +36,7 @@ Les parcours de documentation sont conçus autour des principes de bonne pratiqu
 
 Si vous souhaitez savoir comment Adobe recommande de résoudre des cas d’utilisation découplés avec AEM, les [Parcours découplés AEM](/help/journey-headless/overview.md) sont un bon endroit pour commencer.
 
-## Public {#audience}
+## Audience {#audience}
 
 Ce parcours est conçu pour les architectes de contenu. En tant qu’architecte de contenu, vous serez en charge de la définition de la structure du contenu. Ces définitions seront ensuite utilisées par les auteurs de contenu lorsqu’ils créeront le contenu réel.
 
@@ -63,7 +63,7 @@ Vous êtes maintenant prêt à prendre en main votre parcours découplé Adobe. 
 
 ## Ressources supplémentaires {#additional-resources}
 
-Les parcours de documentation vous montrent comment AEM permet de résoudre un problème d’activité en vous fournissant une narration qui vous guide tout au long de processus et de fonctionnalités complexes et interconnectés. Un parcours illustre la façon dont plusieurs fonctionnalités fonctionnent ensemble pour répondre à un unique besoin d’activité.
+Les parcours de documentation vous montrent comment AEM permet de résoudre un problème d’activité en vous fournissant une narration qui vous guide tout au long de processus et de fonctionnalités complexes et interconnectés. Un parcours illustre la manière dont différentes fonctionnalités s’associent pour répondre à un besoin unique.
 
 Ainsi, les parcours sont conçus pour être autonomes. Toutefois, certains parcours peuvent être associés entre eux. Consultez ces parcours supplémentaires pour plus d’informations sur la manière dont les puissantes fonctionnalités d’AEM fonctionnent ensemble.
 

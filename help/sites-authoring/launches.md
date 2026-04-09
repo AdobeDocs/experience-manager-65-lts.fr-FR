@@ -8,9 +8,9 @@ topic-tags: site-features
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 22cfa2bc-04af-49e6-b9b1-51112c96ba23
-source-git-commit: c759cb6830810b0b822cd66f8a29cbcf4f2851eb
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 99%
@@ -25,7 +25,7 @@ Un *lancement* est créé pour vous permettre d’apporter des modifications en 
 
 Vous créez un *lancement*, puis, après avoir modifié et mis à jour vos pages de *lancement*, vous les *reconvertissez* en *Source*. Vous pouvez ensuite activer ces pages *Source* (de niveau supérieur). Le fait de promouvoir les pages duplique le contenu du lancement sur les pages source. Cette action peut être effectuée manuellement ou automatiquement (en fonction des champs définis lors de la création et de la modification du lancement).
 
-Par exemple, les pages de produits saisonniers de votre boutique en ligne sont mises à jour chaque trimestre, afin que les produits présentés correspondent à la saison en cours. Pour préparer la prochaine mise à jour trimestrielle, vous pouvez créer un lancement des pages web appropriées. Tout au long du trimestre, les modifications suivantes sont cumulées dans la copie de lancement :
+Par exemple, les pages produits saisonniers de votre boutique en ligne sont mises à jour chaque trimestre, afin que les produits présentés correspondent à la saison en cours. Pour préparer la prochaine mise à jour trimestrielle, vous pouvez créer un lancement des pages web appropriées. Tout au long du trimestre, les modifications suivantes sont cumulées dans la copie de lancement :
 
 * Les modifications apportées aux pages source après des tâches de maintenance normales. Ces modifications sont automatiquement dupliquées dans les pages de lancement.
 * Les modifications effectuées directement sur les pages de lancement en préparation du trimestre suivant.

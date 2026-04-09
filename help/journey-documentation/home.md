@@ -2,10 +2,10 @@
 title: Parcours de documentation AEM
 description: Les parcours de documentation fournissent une structure narrative à la documentation AEM en synthétisant des fonctionnalités complexes et disparates pour atteindre un objectif commercial en respectant les bonnes pratiques. Conçu pour les débutants dans AEM, les parcours présentent les concepts et les fonctionnalités permettant d’atteindre un objectif, étape par étape.
 solution: Experience Manager, Experience Manager Sites
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 feature: Administering
 exl-id: 5de9469f-b92f-42f6-a187-0c6835ad972c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 100%
@@ -75,7 +75,7 @@ Chaque parcours commence en définissant clairement l’audience visée pour ce 
 
 Les parcours de documentation ont été conçus pour compléter la documentation et les tutoriels techniques AEM existants. Par exemple, un parcours peut vous présenter un concept et les documents techniques vous présentent ensuite les options de configuration détaillées dont vous avez besoin et un tutoriel vous guide tout au long des processus spécifiques de configuration.
 
-| Type de documentation | Objectif | Public | Suppose | Omet | Type de contenu | Durée |
+| Type de documentation | Objectif | Audience | Suppose | Omet | Type de contenu | Durée |
 |---|---|---|---|---|---|---|
 | Parcours de documentation | Un parcours définit la façon dont AEM peut résoudre un problème d’activité en général au moyen d’un récit qui guide les lecteurs à travers des processus et des fonctionnalités complexes et interconnectés. Il illustre la manière dont plusieurs fonctionnalités fonctionnent ensemble pour répondre aux besoins d’une entreprise, conformément aux bonnes pratiques. | Lecteurs débutants dans AEM | Connaissances générales du CMS | Détails des options et de la configuration | Texte | Environ 1 heure |
 | Documents techniques | Les documents techniques se concentrent sur chaque fonctionnalité individuellement, en détaillant le fonctionnement technique de la fonctionnalité et chaque option disponible pour l’utilisateur. | Utilisateurs AEM expérimentés | Expérience d’AEM | Informations de contexte et d’arrière-plan | Texte | Variable |

@@ -3,9 +3,9 @@ title: Projets
 description: Les projets vous permettent de regrouper des ressources dans une seule entité dont l’environnement commun et partagé facilite la gestion de vos projets.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: c5b4ffe5-b722-4452-8450-1e1089e3ffba
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 100%
@@ -141,9 +141,9 @@ La mosaïque **Informations sur le projet** fournit des informations générales
 
 ### Tâche de traduction {#translation-job}
 
-La mosaïque **Tâche de traduction** est l’endroit où vous commencez une traduction et où vous pouvez voir le statut de toutes vos traductions.
+La vignette **Tâche de traduction** est l’endroit où vous commencez une traduction et où vous pouvez voir le statut de toutes vos traductions.
 
-![Mosaïque de tâche de traduction](assets/project-tile-translation.png)
+![Vignette de tâche de traduction](assets/project-tile-translation.png)
 
 Pour configurer votre traduction, consultez le document [Création de projets de traduction.](/help/assets/translation-projects.md)
 

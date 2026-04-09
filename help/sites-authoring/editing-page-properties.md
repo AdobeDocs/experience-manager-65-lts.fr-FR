@@ -3,10 +3,10 @@ title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page dans Adobe Experience Manager.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 5148afb9-f447-4475-a15c-1fa345325711
 mini-toc-levels: 2
-source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2477'
 ht-degree: 100%
@@ -106,7 +106,7 @@ Configurez Dispatcher pour activer l’accès aux URL de redirection. Consultez 
 #### Paramètres {#settings}
 
 * **Langue** – Langue de la page.
-* **Racine de la langue** – Cette option doit être activée si la page est la racine d’une copie de langue.
+* **Racine de la langue** : cette option doit être activée si la page est la racine d’une copie linguistique.
 * **Rediriger** – Indique la page vers laquelle cette page doit être automatiquement redirigée.
 * **Conception** : indique la [conception](/help/sites-developing/designer.md) à utiliser sur cette page.
 * **Alias** : indique un alias à utiliser avec cette page.

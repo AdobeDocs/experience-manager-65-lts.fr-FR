@@ -3,9 +3,9 @@ title: Système de style
 description: Le système de style permet à un auteur de modèles de définir des classes de style dans la politique de contenu d’un composant, de façon à pouvoir sélectionner ces classes lors de la modification du composant sur une page. Ces styles peuvent être des variantes visuelles d’un composant, le rendant ainsi plus flexible.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: a3d42a73-e1b2-4f76-b98a-89cd98eea2c9
-source-git-commit: 1b01d338c8400f38e4f062cb3ee592062f560a67
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 99%

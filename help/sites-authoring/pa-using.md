@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: debcc73f-c2bb-4e3a-8ebf-c7590264d289
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 98%
@@ -68,7 +68,7 @@ Les membres du groupe d’utilisateurs et d’utilisatrices d’administration d
 
 1. Sélectionnez les mesures à présenter aux auteurs dans la console Sites, puis cliquez sur **Ajouter**.
 
-   Les colonnes affichées sont obtenues à partir d’Adobe Analytics.
+   Les colonnes affichées sont récupérées depuis Adobe Analytics.
 
    ![aa-16](assets/aa-16.png)
 
@@ -77,9 +77,9 @@ Les membres du groupe d’utilisateurs et d’utilisatrices d’administration d
 Ouvrez [Content Insight](/help/sites-authoring/content-insights.md) à partir de la console Sites pour continuer à évaluer en détail l’efficacité des pages.
 
 1. Dans la console Sites, sélectionnez la page pour laquelle vous souhaitez afficher des Insights sur le contenu.
-1. Dans la barre d’outils, cliquez sur l’icône Analytics et Recommendations.
+1. Dans la barre d’outils, cliquez sur l’icône Analytics et Recommandations.
 
-   ![Icône Analytics et Recommendations](do-not-localize/chlimage_1-16a.png)
+   ![Icône Analytics et Recommandations](do-not-localize/chlimage_1-16a.png)
 
 ## Analytics visible dans l’éditeur de page (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 

@@ -3,12 +3,12 @@ title: Premières étapes pour les auteurs et autrices lors de la création de c
 description: Découvrez les concepts clés de la création de contenu dans AEM 6.5 LTS. Vous trouverez également des informations sur l’utilisation des balises, des modèles et d’autres fonctionnalités de page.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 8fc30cfe-cb10-47ba-911c-e4fdfaa970b5
-source-git-commit: 31370571843508acfb5d1e5cc491fdb043153a8f
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '414'
+ht-degree: 100%
 
 ---
 

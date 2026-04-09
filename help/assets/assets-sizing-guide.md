@@ -2,11 +2,11 @@
 title: Guide de dimensionnement d’[!DNL Assets]
 description: Bonnes pratiques pour déterminer les mesures efficaces permettant d’estimer l’infrastructure et les ressources nécessaires au déploiement d’ [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-role: Architect, Admin
+role: Developer,Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: d88e3ca9-f80d-48f5-857a-eaf71dcb9226
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1619'
 ht-degree: 100%
@@ -61,7 +61,7 @@ Les magasins de données volumineux peuvent être partagés en optant pour un ma
 
 #### Cas d’utilisation {#use-cases}
 
-Le magasin de données peut être partagé entre une instance d’auteur principale et de secours afin de réduire le temps nécessaire à la mise à jour de l’instance de secours avec les modifications apportées à l’instance principale. Vous pouvez également partager le magasin de données entre les instances de création et de publication afin de réduire le trafic pendant la réplication.
+Le magasin de données peut être partagé entre une instance de création principale et de secours afin de réduire le temps nécessaire à la mise à jour de l’instance de secours avec les modifications apportées à l’instance principale. Vous pouvez également partager le magasin de données entre les instances de création et de publication afin de réduire le trafic pendant la réplication.
 
 #### Inconvénients {#drawbacks}
 

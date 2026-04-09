@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 058f0019-68c2-4769-b49d-c1e251196ff1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2838'
 ht-degree: 100%
@@ -107,7 +107,7 @@ Chaque site partage du contenu personnalisé dans des régions géographiques :
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
 
-Pour l’hémisphère nord, une activité d’hiver a été créée, mais le spécialiste marketing en Amérique du Nord souhaiterait une image différente pour l’hiver pour le public masculin et il la modifie donc sur le site des États-Unis.
+Pour l’hémisphère nord, une activité d’hiver a été créée, mais le spécialiste marketing en Amérique du Nord souhaiterait une image différente pour l’hiver pour l’audience masculine et il la modifie donc sur le site des États-Unis.
 
 ![chlimage_1-273](assets/chlimage_1-273.png)
 
@@ -271,7 +271,7 @@ Pour rompre l’héritage du contenu ciblé dans une activité :
 1. Accédez à la page sur laquelle vous souhaitez désolidariser la Live Copy de la zone principale, puis cliquez sur **Ciblage** dans le menu déroulant du mode.
 1. Si votre page est liée à une zone qui est une Live Copy, vous pouvez voir le statut d’héritage. Cliquez sur **Commencer le ciblage**.
 1. Sélectionnez **Désolidariser une Live Copy** dans le menu déroulant de la barre d’outils. AEM confirme que vous souhaitez détacher la Live Copy.
-1. Cliquez sur **Désolidariser** pour désolidariser la Live Copy de l’activité. Une fois la désolidarisation effectuée, le menu déroulant relatif à l’héritage disparaît. L’activité est désormais locale.
+1. Cliquez sur **Désolidariser** pour désolidariser la Live Copy de l’activité. Une fois la dissociation effectuée, le menu déroulant relatif à l’héritage disparaît. L’activité est désormais locale.
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 

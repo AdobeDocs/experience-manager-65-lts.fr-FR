@@ -10,7 +10,7 @@ feature: Developing
 role: Developer
 exl-id: 59a79455-c108-4f4b-93c1-d8c6f23aec88
 index: false
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 100%
@@ -24,7 +24,7 @@ Cette page vous explique comment créer un modèle de page personnalisé qui uti
 
 >[!CAUTION]
 >
->Les composants d’e-mail AEM ont été abandonnés. En raison de la nature de l’e-mail, en particulier son contenu et son style, les composants d’e-mail fournis prêts-à-l’emploi par AEM ne sont que rarement réutilisés par les clients car ils ont besoin d’implémenter des styles personnalisés dans les composants requis pour les projets.
+>Les composants d’e-mail AEM ont été abandonnés. En raison de la nature de l’e-mail, qui fusionne contenu et style, les composants d’e-mail fournis prêts à l’emploi par AEM ne sont que rarement réutilisés, car il est nécessaire d’implémenter des styles personnalisés dans les composants requis pour les projets.
 >
 >Les composants d’e-mail peuvent être implémentés au niveau du projet. Les composants d’e-mail AEM obsolètes illustrent la manière dont cela peut être réalisé. Toutefois, n’utilisez pas ces composants obsolètes sur les projets.
 

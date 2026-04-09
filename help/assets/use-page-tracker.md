@@ -2,11 +2,11 @@
 title: Utilisation du dispositif de suivi de page et du code intégré sur les pages web
 description: Découvrez comment inclure le dispositif de suivi de page et incorporer du code JavaScript dans le code de votre site web pour permettre à Adobe Analytics de capturer des données d’utilisation concernant les ressources.
 contentOwner: AG
-role: Architect, Admin
+role: Developer,Admin
 feature: Asset Reports
 solution: Experience Manager, Experience Manager Assets
 exl-id: bf8b2e51-60f8-423e-8ed6-167d71d6ec94
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 100%

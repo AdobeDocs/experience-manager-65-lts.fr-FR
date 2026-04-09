@@ -10,7 +10,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0c20efb1-9b01-41ef-b38d-261fb4b0ff91
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '6654'
 ht-degree: 97%
@@ -688,7 +688,7 @@ Les nouvelles installations d’AEM utilisent par défaut les nouvelles mises en
 |---|---|
 | Chemins pris en charge `/content` | La gestion du contrôle d’accès pour les politiques de CUG est activée. |
 | FALSE activée pour l’évaluation des CUG | L’évaluation des autorisations est désactivée. Les politiques de CUG n’ont aucun effet. |
-| Classement | 200 | Consultez la documentation d’Oak. |
+| Classement \|200 | Consultez la documentation d’Oak. |
 
 >[!NOTE]
 >
@@ -700,7 +700,7 @@ Les nouvelles installations d’AEM utilisent par défaut les nouvelles mises en
 |---|---|
 | Chemins pris en charge `/content` | La gestion du contrôle d’accès pour les politiques de CUG est activée sous les chemins configurés. |
 | Évaluation des CUG activée TRUE | L’évaluation des autorisations est activée sous les chemins configurés. Les politiques de CUG prennent effet `Session.save()`. |
-| Classement | 200 | Consultez la documentation d’Oak. |
+| Classement \|200 | Consultez la documentation d’Oak. |
 
 | **« Liste d’exclusion de CUG Apache Jackrabbit Oak »** | **Explication** |
 |---|---|
@@ -753,9 +753,9 @@ Il existe une limite de réplication des politiques de CUG. Si une politique de 
 
 ### Gestionnaire d’authentification Adobe Granite {#adobe-granite-authentication-handler}
 
-Le gestionnaire d’authentification **Adobe Granite HTTP Header Authentication Handler** fourni avec le lot `com.adobe.granite.auth.authhandler` contient une référence à l’interface `CugSupport` définie par le même module. Il est utilisé pour calculer le domaine dans certains cas, en se repliant sur le domaine configuré avec le gestionnaire.
+Le gestionnaire d’authentification **Adobe Granite HTTP Header Authentication Handler** fourni avec le bundle `com.adobe.granite.auth.authhandler` contient une référence à l’interface `CugSupport` définie par le même module. Il est utilisé pour calculer le domaine dans certains cas, en se repliant sur le domaine configuré avec le gestionnaire.
 
-Cela a été réglé de façon à rendre la référence à `CugSupport` facultative pour assurer une compatibilité ascendante maximale si une configuration donnée décide de réactiver cette mise en œuvre obsolète. Pour les installations recourant à cette mise en œuvre, le domaine n’est pas extrait à partir de la mise en œuvre CUG, mais s’affiche toujours tel que défini auprès du gestionnaire d’authentification **Adobe Granite HTTP Header Authentication Handler**.
+Cela a été réglé de façon à rendre la référence à `CugSupport` facultative pour assurer une compatibilité ascendante maximale si une configuration donnée décide de réactiver cette mise en œuvre obsolète. Pour les installations recourant à cette implémentation, le domaine n’est pas extrait à partir de l’implémentation CUG, mais s’affiche toujours tel que défini auprès du gestionnaire d’authentification **Adobe Granite HTTP Header Authentication Handler**.
 
 >[!NOTE]
 >
@@ -849,7 +849,7 @@ Il peut s’agir d’un scénario valide et possible avec un éditeur de référ
 
 #### Chemins pris en charge configurés {#configured-supported-paths}
 
-Le type de mixin `granite:AuthenticationRequired` et la propriété granite:loginPath ne sont respectés que dans la portée définie par le jeu de l’option de configuration **Chemins pris en charge** présent avec le gestionnaire d’exigence d’authentification et de chemin de connexion Adobe **&#x200B;**. Si aucun chemin n’est spécifié, la fonction d’exigence d’authentification est complètement désactivée. Dans ce cas, ni le type de mixin ni la propriété ne prennent effet lorsqu’ils sont ajoutés ou définis sur un nœud JCR donné.
+Le type de mixin `granite:AuthenticationRequired` et la propriété granite:loginPath ne sont respectés que dans la portée définie par le jeu de l’option de configuration **Chemins pris en charge** présent avec le gestionnaire d’exigence d’authentification et de chemin de connexion Adobe ****. Si aucun chemin n’est spécifié, la fonction d’exigence d’authentification est complètement désactivée. Dans ce cas, ni le type de mixin ni la propriété ne prennent effet lorsqu’ils sont ajoutés ou définis sur un nœud JCR donné.
 
 ### Mappage de contenu JCR, de services OSGi et de configurations {#mapping-of-jcr-content-osgi-services-and-configurations}
 

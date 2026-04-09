@@ -8,9 +8,9 @@ topic-tags: site-features
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: a0ddb246-64eb-493c-9950-9b7ecb32e555
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '4650'
 ht-degree: 99%
@@ -130,7 +130,7 @@ Lors de la création d’un modèle modifiable :
 
 >[!CAUTION]
 >
->Ne saisissez jamais d’informations qui doivent être [internationalisées](/help/sites-developing/i18n.md) dans un modèle. Pour l’internalisation, il est recommandé d’utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr).
+>Ne saisissez jamais d’informations qui doivent être [internationalisées](/help/sites-developing/i18n.md) dans un modèle. Pour l’internationalisation, il est recommandé d’utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr).
 
 ### Création d’un dossier de modèles - Administrateur {#creating-a-template-folder-admin}
 
@@ -474,7 +474,7 @@ Dans le mode **Structure** de l’éditeur de modèles :
 
   >[!NOTE]
   >
-  >[Les politiques de contenu pour les composants impliquant la mise en œuvre de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) peuvent uniquement être définies pour les options accessibles par ses propres paramètres d’interface utilisateur.[&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[Les politiques de contenu pour les composants impliquant la mise en œuvre de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) peuvent uniquement être définies pour les options accessibles par ses propres paramètres d’interface utilisateur.[](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Politique et propriétés (conteneur de mise en page)**
 

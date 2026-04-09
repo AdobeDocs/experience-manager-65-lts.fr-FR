@@ -2,11 +2,11 @@
 title: Remarques et exigences relatives au réseau
 description: Décrit les considérations concernant le réseau lors de la conception d’un déploiement d’ [!DNL Adobe Experience Manager Assets] .
 contentOwner: AG
-role: Architect, Admin
+role: Developer,Admin
 feature: Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: bf1dee29-75bb-445b-a661-fc7c52d78b63
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 100%
@@ -82,7 +82,7 @@ En révisant le réseau de l’appareil client vers le déploiement [!DNL Experi
 
 En tenant compte des performances du réseau, il peut être important de prendre en considération les workflows et la publication qui auront lieu dans le système. De plus, le stockage S3 ou tout autre stockage relié au réseau que vous utilisez et les requêtes d’E/S consomment de la bande passante réseau. Par conséquent, même dans un réseau entièrement optimisé, la performance peut être limitée par les E/S du disque.
 
-Pour simplifier les processus d’assimilation des ressources (notamment lors du chargement d’un grand nombre de ressources), vous devez explorer leurs workflows et en savoir plus sur leur configuration.
+Pour simplifier les processus d’ingestion des ressources (notamment lors du chargement d’un grand nombre de ressources), vous devez explorer leurs workflows et en savoir plus sur leur configuration.
 
 Lors de l’évaluation de la topologie du workflow interne, vous devez analyser les éléments suivants :
 

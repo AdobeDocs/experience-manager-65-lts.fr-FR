@@ -9,7 +9,7 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 92bb4045-ed22-4cc3-9365-65cb39b3c82d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 99%
@@ -82,12 +82,12 @@ Pour générer une communication interactive, vous devez combiner un enregistrem
 Pour créer une communication interactive à partir d’enregistrements sauvegardés dans un fichier JSON, procédez comme suit :
 
 1. Créez un [Dossier de contrôle](/help/forms/using/creating-configure-watched-folder.md) et configurez-le pour quʼil utilise l’API Batch :
-   1. Connectez-vous à votre instance d’auteur AEM Forms.
+   1. Connectez-vous à votre instance de création AEM Forms.
    1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Configurer le dossier de contrôle]**. Sélectionnez **[!UICONTROL Nouveau]**.
    1. Spécifiez le **[!UICONTROL Nom]** et le **[!UICONTROL Chemin dʼaccès]** physique du dossier. Par exemple, `c:\batchprocessing`.
    1. Sélectionnez lʼoption **[!UICONTROL Service]** dans le champ **[!UICONTROL Traiter le fichier avec]**.
    1. Sélectionnez le service **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** dans le champ **[!UICONTROL Nom du service]**.
-   1. Spécifiez un **[!UICONTROL Modèle de fichier de sortie]**. Par exemple, le [modèle](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=fr#about-file-patterns) %F/ indique que le dossier de contrôle peut trouver des fichiers d’entrée dans un sous-dossier du dossier de contrôle\entrée.
+   1. Spécifiez un **[!UICONTROL Modèle de fichier de sortie]**. Par exemple, le [modèle](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) %F/ indique que le dossier de contrôle peut trouver des fichiers d’entrée dans un sous-dossier du dossier de contrôle\entrée.
 1. Configurer les paramètres avancés
    1. Ouvrez l’onglet **[!UICONTROL Avancé]** et ajoutez les propriétés personnalisées suivantes :
 
@@ -142,19 +142,19 @@ Vous combinez des données (enregistrements) enregistrées dans une source de do
    1. Enregistrez et fermez le fichier.
 
 1. Créer et configurer un [Dossier de contrôle](/help/forms/using/creating-configure-watched-folder.md) pour quʼil utilise le service API Batch
-   1. Connectez-vous à votre instance d’auteur AEM Forms.
+   1. Connectez-vous à votre instance de création AEM Forms.
    1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Configurer le dossier de contrôle]**. Sélectionnez **[!UICONTROL Nouveau]**.
    1. Spécifiez le **[!UICONTROL Nom]** et le **[!UICONTROL Chemin dʼaccès]** physique du dossier. Par exemple, `c:\batchprocessing`.
    1. Sélectionnez lʼoption **[!UICONTROL Service]** dans le champ **[!UICONTROL Traiter le fichier avec]**.
    1. Sélectionnez le service **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** dans le champ **[!UICONTROL Nom du service]**.
-   1. Spécifiez un **[!UICONTROL Modèle de fichier de sortie]**. Par exemple, le [modèle](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=fr#about-file-patterns) %F/ indique que le dossier de contrôle peut trouver des fichiers d’entrée dans un sous-dossier du dossier de contrôle\entrée.
+   1. Spécifiez un **[!UICONTROL Modèle de fichier de sortie]**. Par exemple, le [modèle](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) %F/ indique que le dossier de contrôle peut trouver des fichiers d’entrée dans un sous-dossier du dossier de contrôle\entrée.
 1. Configurer les paramètres avancés
    1. Ouvrez l’onglet **[!UICONTROL Avancé]** et ajoutez les propriétés personnalisées suivantes :
 
       | Propriété | Type | Description |
       |--- |--- |--- |
       | templatePath | Chaîne | Spécifiez le chemin dʼaccès du modèle de communication interactive à utiliser. Par exemple, /content/dam/formsanddocuments/testsample/mediumic. Il s’agit d’une propriété obligatoire. |
-      | recordPath | Chaîne | La valeur du champ recordPath permet de définir le nom d’une communication interactive. Vous pouvez définir le chemin dʼaccès du champ d’un enregistrement comme valeur du champ recordPath. Par exemple, si vous spécifiez /employee/Id, la valeur du champ ID devient le nom de la communication interactive correspondante. La valeur par défaut est une valeur [UUID aléatoire](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
+      | recordPath | Chaîne | La valeur du champ recordPath permet de définir le nom d’une communication interactive. Vous pouvez définir le chemin dʼaccès du champ d’un enregistrement comme valeur du champ recordPath. Par exemple, si vous spécifiez /employee/Id, la valeur du champ ID devient le nom de la communication interactive correspondante. La valeur par défaut est une valeur [UUID aléatoire](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
       | usePrefillService | Booléen | Définissez la valeur sur « true ». La valeur par défaut est false. Lorsque la valeur est définie sur « true », l’API Batch lit les données du modèle de données de formulaire configuré et les transmet dans la communication interactive. Lorsque la méthode usePrefillService est définie sur « true », les données JSON d’entrée (pour chaque enregistrement) sont traitées comme des arguments FDM. |
       | batchType | Chaîne | Définissez la valeur sur PRINT, WEB ou WEB_AND_PRINT. La valeur par défaut est WEB_AND_PRINT. |
       | paramètres régionaux | Chaîne | Spécifiez les paramètres régionaux de la communication interactive de sortie. Le service prêt à l’emploi n’utilise pas l’option des paramètres régionaux, mais vous pouvez créer un service personnalisé pour générer des communications interactives localisées. La valeur par défaut est en_US. |
@@ -363,4 +363,4 @@ Outre l’enregistrement des données sur le système de fichiers, vous pouvez s
 
 >[!NOTE]
 >
->Seul le protocole CRX est activé par défaut. Pour activer d’autres protocoles pris en charge, consultez [Configurer le service de préremplissage à l’aide de Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=fr).
+>Seul le protocole CRX est activé par défaut. Pour activer d’autres protocoles pris en charge, consultez [Configurer le service de préremplissage à l’aide de Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).

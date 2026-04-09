@@ -9,7 +9,7 @@ feature: Asset Management,Renditions
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
-source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '3306'
 ht-degree: 96%
@@ -22,7 +22,7 @@ L’imagerie dynamique applique les caractéristiques de visualisation uniques d
 
 ## À propos de l’imagerie dynamique {#what-is-smart-imaging}
 
-La technologie d’imagerie dynamique applique les fonctionnalités de l’IA d’Adobe et fonctionne avec les « paramètres d’image prédéfinis » existants. Elle permet d’améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
+La technologie d’imagerie dynamique applique les fonctionnalités d’Adobe AI et fonctionne avec les « paramètres d’image prédéfinis » existants. Elle permet d’améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
 
 De plus, obtenez désormais un meilleur score Google Core Web Vital pour LCP (Large Contentful Paint) grâce à l’amélioration de l’imagerie dynamique, qui s’accompagne désormais de la prise en charge d’AVIF et de WebP.
 
@@ -131,7 +131,7 @@ Les valeurs DPR et de bande passante réseau sont basées sur les valeurs côté
 
 * Amélioration du classement d’optimisation du référencement Google pour les pages web qui utilisent la technologie d’imagerie dynamique la plus récente.
 * Diffusion immédiate de contenus optimisés (au moment de l’exécution).
-* Utilise la technologie d’IA d’Adobe pour effectuer la conversion en fonction de la qualité (`qlt`) spécifiée dans la demande d’image.
+* Utilise la technologie Adobe AI pour effectuer la conversion en fonction de la qualité (`qlt`) spécifiée dans la demande d’image.
 * Indépendance vis-à-vis du temps de vie (TTL). Auparavant, un TTL minimal de 12 heures était obligatoire pour le fonctionnement de l’imagerie dynamique.
 * Auparavant également, les images d’origine et dérivées étaient mises en cache et un processus en deux étapes était nécessaire pour invalider le cache. Avec la technologie d’imagerie dynamique la plus récente, seules les images dérivées sont mises en cache, ce qui rend possible un processus d’invalidation du cache en une seule étape.
 * Les clients et les clientes qui utilisent des en-têtes personnalisés dans leur jeu de règles bénéficient de la version de l’imagerie dynamique la plus récente, car ces en-têtes ne sont pas bloqués, contrairement à la version précédente. Par exemple, « Timing Allow Origin » et « X-Robot ».

@@ -7,9 +7,9 @@ topic-tags: projects
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 4531a41c-99fa-4e98-b4f4-f8fc92ed9095
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2888'
 ht-degree: 100%
@@ -147,7 +147,7 @@ Suivez la même procédure pour configurer les tâches dans le **workflow Séanc
 Cette section décrit comment intégrer la gestion des informations produit (PIM) à votre projet de création.
 
 1. Accédez à un projet Séance photo de produit, et cliquez sur l’icône **Ajouter une tâche** sur la carte **Workflows**.
-1. Sélectionnez le workflow **Séance photo de produit (intégration de Commerce)** pour démarrer le workflow **Séance photo de produit (intégration de Commerce)**. Si les informations produit ne sont pas disponibles sous `/etc/commerce`, sélectionnez le workflow **Séance photo de produit** et lancez le workflow **Séance photo de produit**.
+1. Sélectionnez la carte de workflow **Séance photo de produit (intégration de Commerce)** pour démarrer le workflow **Séance photo de produit (intégration de Commerce)**. Si les informations produit ne sont pas disponibles sous `/etc/commerce`, sélectionnez le workflow **Séance photo de produit** et lancez le workflow **Séance photo de produit**.
 
    ![Assistant Workflow](assets/chlimage_1-140a.png)
 
@@ -198,7 +198,7 @@ La tâche **Créer une liste de plans** permet au propriétaire du projet de sé
 
    ![Modifier la liste de plans](assets/chlimage_1-149a.png)
 
-   Une fois que le fichier est à jour, cliquez sur **Enregistrer** dans la barre d’outils pour enregistrer le fichier.
+   Une fois le fichier mis à jour, cliquez sur **Enregistrer** dans la barre d’outils pour l’enregistrer.
 
 1. Après avoir ajouté les produits,cliquez sur l’icône **Terminer** sur la page de détails de la tâche **Créer une liste de plans** pour marquer la tâche comme terminée. Vous pouvez ajouter un commentaire facultatif.
 

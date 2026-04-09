@@ -3,9 +3,9 @@ title: Créer et organiser des pages avec AEM
 description: Découvrez comment créer et gérer des pages avec Adobe Experience Manager.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: c99c7b2616e652ae372e98349d5de3b658a0beb1
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2468'
 ht-degree: 100%
@@ -211,7 +211,7 @@ Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à 
 
    * **Titre** :
 
-      * Il est visible par la personne utilisatrice et est obligatoire.
+      * Il est visible par l’utilisateur ou l’utilisatrice et est obligatoire.
 
    * **Nom** :
 

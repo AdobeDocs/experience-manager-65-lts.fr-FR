@@ -3,10 +3,10 @@ title: Intégration de visionneuses Dynamic Media à Adobe Analytics et Experi
 description: Découvrez-en plus sur l’extension Visionneuses Dynamic Media pour Experience Platform Tags et les visionneuses Dynamic Media 5.13. Elle permet aux clients d’Adobe Analytics et aux utilisateurs d’Experience Platform Tags d’utiliser des événements et des données spécifiques aux visionneuses dans leur configuration Experience Platform Tags.
 mini-toc-levels: 3
 feature: Viewers
-role: User, Admin,Developer,Data Engineer,Data Architect
+role: User,Admin,Developer
 solution: Experience Manager, Experience Manager Assets
 exl-id: 3aea14f7-052d-4f23-b65d-e648623146e7
-source-git-commit: e38c229bd535ae6f2b058058b1a595cd9b4ddcdc
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '6663'
 ht-degree: 100%
@@ -847,7 +847,7 @@ Par exemple : `https://ims-na1.adobelogin.com/`
 
 À l’heure actuelle, l’auteur Experience Manager ne prend pas en charge l’intégration des visionneuses Dynamic Media avec Experience Platform Tags.
 
-Elle est toutefois prise en charge dans le nœud de publication Experience Manager. En utilisant les paramètres par défaut de la configuration cloud d’Experience Platform Tags, le nœud de publication Experience Manager utilise l’environnement d’exploitation d’Experience Platform Tags. Par conséquent, il est nécessaire de transmettre les mises à jour de la bibliothèque Experience Platform Tags de l’environnement de développement vers celui de production chaque fois pendant le test.
+Elle est toutefois prise en charge dans le nœud de publication Experience Manager. En utilisant les paramètres par défaut de la configuration cloud d’Experience Platform Tags, le nœud de publication Experience Manager utilise l’environnement de production d’Experience Platform Tags. Par conséquent, il est nécessaire de transmettre les mises à jour de la bibliothèque Experience Platform Tags de l’environnement de développement vers celui de production chaque fois pendant le test.
 
 Il est possible de contourner cette limitation. Spécifiez l’URL de développement ou d’évaluation de la bibliothèque Platform Tags dans la configuration cloud d’Experience Platform Tags pour la publication Experience Manager ci-dessus. Ainsi, le nœud de publication d’Experience Manager utilise la version de développement ou d’évaluation de la bibliothèque Experience Platform Tags.
 

@@ -3,9 +3,9 @@ title: Composants de base
 description: Découvrez les composants de base dans Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: c507bef7-4ddc-4e8c-9947-71cb2ecbbf0a
-source-git-commit: 1cdde3e82b0abb2be6f3d83020ad4bc0c8d68c2b
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '6848'
 ht-degree: 99%
@@ -67,7 +67,7 @@ Vous pouvez définir un lien avec un titre et une description.
 >
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal d’image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=fr).
 
-Le composant d’image adaptative génère des images dimensionnées en fonction de la fenêtre dans laquelle s’ouvre la page web. Pour utiliser le composant, vous devez fournir une image issue du système de fichiers ou du gestionnaire des actifs numériques. Une fois la page web ouverte, le navigateur télécharge une copie de l’image qui a été redimensionnée pour convenir à la fenêtre active.
+Le composant d’image adaptative génère des images dimensionnées en fonction de la fenêtre dans laquelle s’ouvre la page web. Pour utiliser le composant, vous devez fournir une ressource d’image issue du système de fichiers ou du gestionnaire des actifs numériques. Une fois la page web ouverte, le navigateur télécharge une copie de l’image qui a été redimensionnée pour convenir à la fenêtre active.
 
 Les caractéristiques suivantes peuvent déterminer la taille de la fenêtre :
 
@@ -252,7 +252,7 @@ L’exemple suivant illustre des données de graphique suivies du graphique en b
 >
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=fr).
 
-[Les fragments de contenu](/help/sites-authoring/content-fragments.md) sont créés et gérés en tant que ressources indépendantes de la page. Vous pouvez ensuite utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu.
+Les [fragments de contenu](/help/sites-authoring/content-fragments.md) sont créés et gérés comme des fichiers indépendants de la page. Vous pouvez ensuite utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu.
 
 ### Importateur de conception {#design-importer}
 
@@ -1407,7 +1407,7 @@ Le composant Chargement du fichier fournit à l’utilisateur un moyen pour sél
 
 >[!NOTE]
 >
->Vous pouvez créer un composant de chargement personnalisé pour charger des fichiers vers un servlet Sling. Pour plus d’informations, voir [Chargement de fichiers dans Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276?profile.language=fr).
+>Vous pouvez créer un composant de chargement personnalisé pour charger des fichiers vers un servlet Sling. Pour plus d’informations, voir [Chargement de fichiers dans Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276).
 
 ### Champ masqué {#hidden-field}
 
