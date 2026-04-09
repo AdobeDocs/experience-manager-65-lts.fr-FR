@@ -363,4 +363,4 @@ Outre l’enregistrement des données sur le système de fichiers, vous pouvez s
 
 >[!NOTE]
 >
->Seul le protocole CRX est activé par défaut. Pour activer d’autres protocoles pris en charge, consultez [Configurer le service de préremplissage à l’aide de Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).
+>Seul le protocole CRX est activé par défaut. Pour activer d’autres protocoles pris en charge, consultez [Configurer le service de préremplissage à l’aide de Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=fr).
