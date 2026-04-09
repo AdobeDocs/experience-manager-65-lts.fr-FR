@@ -27,9 +27,9 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 
 ## Experience Hub de près {#aem-experience-hub-about}
 
-1. Pour commencer, cliquez sur [](https://experience.adobe.com/#/@foundationinternal/home) pour ouvrir sa page d&#39;accueil.
+1. Pour commencer, cliquez sur [&#128279;](https://experience.adobe.com/#/@foundationinternal/home) pour ouvrir sa page d&#39;accueil.
 
-   ![Page d&#39;accueil de ](/help/assets/assets-experience-hub/experience-cloud-experiencemanager-ams.png)
+   ![Page d&#39;accueil de &#x200B;](/help/assets/assets-experience-hub/experience-cloud-experiencemanager-ams.png)
 
 1. Dans le regroupement **Accès rapide**, cliquez sur [**Experience Manager**](https://experience.adobe.com).
 1. Lors du premier accès, le système vous affecte le paramètre prédéfini **Auteur de contenu** (affiché près du coin supérieur droit de la page). Il contrôle les widgets, les éléments de navigation et le contenu que vous voyez.
@@ -53,7 +53,7 @@ La page Adobe Experience Manager a été actualisée avec une navigation amélio
 
 Ces solutions sont désormais déplacées vers la navigation principale sous **Outils** ou **Services**. En outre, les nouveaux éléments de navigation permettent d’accéder rapidement aux principales fonctionnalités de Adobe Experience Manager spécifiques aux solutions activées. Ces solutions comprennent Assets, Sites, Forms, les fragments de contenu, les lancements, etc.
 
-![Environnements ](/help/assets/assets-experience-hub/experience-hub-author-environments-ams.png)
+![Environnements &#x200B;](/help/assets/assets-experience-hub/experience-hub-author-environments-ams.png)
 
 Ces fonctionnalités sont disponibles pour l’environnement de production principal auquel vous pouvez accéder. Vous pouvez également sélectionner un environnement spécifique à cibler si vous avez accès à plusieurs instances AEM.
 
@@ -65,7 +65,7 @@ Faisant office de hub central pour Adobe Experience Manager, la page Experience 
 
 Les widgets peuvent également être redimensionnés et repositionnés sur la page en fonction de vos besoins et préférences.
 
-![Widgets ](/help/assets/assets-experience-hub/experience-hub-custom-widgets-ams.png)
+![Widgets &#x200B;](/help/assets/assets-experience-hub/experience-hub-custom-widgets-ams.png)
 
 La section **Environnements de création** affiche tous les environnements AEM auxquels vous avez accès. Il existe des raccourcis spécifiques pour les solutions et des pages disponibles pour celles-ci, qui vous permettent également d’épingler des environnements spécifiques que vous souhaitez afficher en haut de la liste.
 

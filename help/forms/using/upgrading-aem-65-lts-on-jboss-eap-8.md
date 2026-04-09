@@ -22,7 +22,7 @@ Ce guide fournit des instructions détaillées pour mettre à niveau une install
 >
 >Il s’agit d’une procédure de mise à niveau critique. Commencez toujours par effectuer cette mise à niveau dans un environnement hors production et conservez des sauvegardes complètes.
 >
-> ** CONDITIONS PRÉALABLES : ** une sauvegarde complète du système et un plan de restauration documenté sont obligatoires avant de continuer.
+> **&#x200B; CONDITIONS PRÉALABLES : &#x200B;** une sauvegarde complète du système et un plan de restauration documenté sont obligatoires avant de continuer.
 
 ## Conditions requises avant la mise à niveau
 
@@ -42,7 +42,7 @@ Ce guide fournit des instructions détaillées pour mettre à niveau une install
 Avant de commencer la mise à niveau, vérifiez les points suivants :
 
 1. **Distribution de JBoss EAP 8.0**\
-   Télécharger depuis : [](https://developers.redhat.com/products/eap/download)
+   Télécharger depuis : [&#128279;](https://developers.redhat.com/products/eap/download)
 
 2. **Programme d’installation du JDK 21**\
    Télécharger Oracle JDK 21 ou OpenJDK 21 pour Windows (64 bits)
@@ -550,8 +550,8 @@ Si la mise à niveau échoue et ne peut pas être résolue :
 ## Documentation connexe
 
 - [Guide de migration de JBoss EAP 8](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0/html/migration_guide/)
-- Guide de mise à niveau vers Adobe Experience Manager 6.5 [](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=fr)
-- [Installation des packs de services ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=fr)
+- Guide de mise à niveau vers Adobe Experience Manager 6.5 [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=fr)
+- [Installation des packs de services &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=fr)
 
 ## Informations sur le document
 
