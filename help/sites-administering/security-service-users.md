@@ -9,10 +9,10 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 893d04cb-3a71-4400-9ca4-62ad46aacfdd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4c6423d295aa93f6f7048a5ac919b551f3f305d7
 workflow-type: tm+mt
-source-wordcount: '1740'
-ht-degree: 99%
+source-wordcount: '1872'
+ht-degree: 83%
 
 ---
 
@@ -119,27 +119,39 @@ Pour remplacer la session d’administration par un utilisateur ou une utilisatr
 
 Après avoir vérifié qu’aucun utilisateur ni aucune utilisatrice de la liste des utilisateurs et utilisatrices de service AEM ne s’applique à votre cas d’utilisation et que les problèmes RTC correspondants ont été approuvés, vous pouvez ajouter le nouvel utilisateur ou la nouvelle utilisatrice au contenu par défaut.
 
-Il est recommandé de créer un utilisateur ou une utilisatrice de service pour utiliser l’explorateur de référentiel à l’adresse *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*.
+>[!IMPORTANT]
+>
+>L’Explorateur CRX (`/crx/explorer/index.jsp`) n’est pas disponible dans les environnements LTS AEM 6.5 et ne doit pas être utilisé pour créer des utilisateurs de services. Les utilisateurs de services existants créés via l’explorateur CRX continuent à fonctionner. Pour les nouveaux utilisateurs du service, utilisez l’une des approches décrites ci-dessous.
 
-Le but est d’obtenir une propriété `jcr:uuid` valide qui est obligatoire pour créer l’utilisateur ou l’utilisatrice par l’intermédiaire d’une installation de package de contenu.
+>[!NOTE]
+>
+>Aucun type de mixin n’est associé aux utilisateurs et utilisatrices de services au niveau du nœud JCR. Cela signifie que les nœuds d’utilisateur système ne sont pas associés directement à des politiques de contrôle d’accès. Au lieu de cela, le contrôle d’accès est géré séparément, par exemple par le biais d’instructions de liste de contrôle d’accès RepoInit ou d’une configuration de liste de contrôle d’accès au niveau du référentiel.
 
-Vous pouvez créer des utilisateurs de services de la façon suivante :
+### Utilisation de l’initialisation du référentiel Sling (RepoInit) {#creating-service-user-repoinit}
 
-1. En vous rendant dans l’explorateur de référentiel sur *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*.
-1. Connectez-vous en tant qu’administrateur ou administratrice en appuyant sur le lien **Connexion** en haut à gauche de l’écran.
-1. Ensuite, créez et nommez votre utilisateur ou utilisatrice système. Pour créer l’utilisateur ou l’utilisatrice en tant qu’utilisateur ou utilisatrice système, définissez le chemin intermédiaire comme `system` et ajoutez des sous-dossiers facultatifs en fonction de vos besoins :
+L’approche recommandée consiste à utiliser [Sling Repository Initialization (RepoInit)](https://sling.apache.org/documentation/bundles/repository-initialization.html) pour créer des utilisateurs de services. RepoInit vous permet de définir de manière déclarative les utilisateurs du service et leurs listes de contrôle d’accès à l’aide d’un langage de script simple.
 
-   ![chlimage_1-102](assets/chlimage_1-102a.png)
+Pour créer un utilisateur de service avec RepoInit, ajoutez une propriété `scripts` à une configuration OSGi par `org.apache.sling.jcr.repoinit.RepositoryInitializer` :
 
-1. Vérifiez que le nœud d’utilisateur système se présente comme suit :
+```
+create service user my-service-user with path system/cq
 
-   ![chlimage_1-103](assets/chlimage_1-103a.png)
+set ACL for my-service-user
+    allow jcr:read on /content
+end
+```
 
-   >[!NOTE]
-   >
-   >Notez qu’il n’existe aucun type de mixin associé aux utilisateurs ou utilisatrices de services. Cela signifie qu’il n’y a aucune politique de contrôle d’accès pour les utilisateurs et utilisatrices système.
+La directive `with path system/cq` place l’utilisateur du service sous `/home/users/system/cq` dans le référentiel. Vous pouvez choisir un chemin d’accès qui correspond à la structure organisationnelle de votre projet (par exemple, `system/myproject`). Si les nœuds de chemin intermédiaires n’existent pas, utilisez `with forced path` pour les créer automatiquement.
 
-En ajoutant le fichier content.xml correspondant au contenu du lot, assurez-vous que vous avez défini le `rep:authorizableId` et que le type principal est `rep:SystemUser`. Il doit ressembler à ceci :
+Cette approche est recommandée car elle permet de :
+
+* Définit les utilisateurs et les autorisations du service sous forme de code, en les rendant contrôlés par version et reproductibles
+* Gère automatiquement la création lors de l’initialisation du référentiel
+* Fonctionne dans les environnements AEM 6.5 LTS et AEM as a Cloud Service, bien que des différences de syntaxe mineures puissent exister entre les versions Sling. Consultez la documentation RepoInit pour votre plateforme cible
+
+### Utiliser un package de contenu {#creating-service-user-content-package}
+
+Vous pouvez également créer un utilisateur de service en incluant un `.content.xml` dans votre package de contenu. Assurez-vous que vous avez défini la `rep:authorizableId` et que le type principal est `rep:SystemUser`. Une propriété `jcr:uuid` valide est requise pour que l’utilisateur soit correctement créé lors de l’installation du package de contenu. Vous pouvez générer un UUID à l’aide d’un générateur UUID v4 standard (par exemple, l’outil de ligne de commande `uuidgen` ou tout générateur UUID en ligne). Le `.content.xml` doit ressembler à ceci :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -189,7 +201,7 @@ Pour ajouter un mappage de votre service avec les utilisateurs ou utilisatrices 
 
 1. Installez le bundle et assurez-vous que la configuration d’usine a été installée. Vous pouvez le faire en procédant comme suit :
 
-   * Accédez à la console web à l’adresse *https://serverhost:serveraddress/system/console/configMgr*
+   * Accédez à la console web à l’adresse *:serveraddress/system/console/configMgr*
    * Recherchez **Amendement du service de mappage des utilisateurs de service Apache Sling**.
    * Cliquez sur le lien pour vérifier si la configuration appropriée est en place.
 
