@@ -4,13 +4,13 @@ description: Recherchez la configuration du magasin d’informations d’identif
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: f093f39fb535209297940cff13a99c7631812152
+exl-id: f6e29287-a558-43ad-8465-ebf167c79c63
+source-git-commit: b4abf61e0d30396e78ecebf228114ad2bde30633
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '777'
 ht-degree: 2%
 
 ---
-
 
 # Guide De Configuration Du Magasin D’Informations D’Identification De Base De Données (Mode Autonome)
 
@@ -67,11 +67,11 @@ Utilisez les scripts fournis pour créer le magasin d’informations d’identif
 
 #### Sous Windows :
 
-**Emplacement du script :** `create-elytron-cred-standalone.bat`
+**Script:** `create-elytron-cred-standalone.bat`
 
-`batch cd path\to\script\location create-elytron-cred-standalone.bat`
+Téléchargez le script `create-elytron-cred-standalone.bat` à partir du [Portail de distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip).
 
-**Le script vous invitera à saisir :**
+**Le script vous invite à saisir :**
 1. **Chemin JBOSS_HOME** (par exemple, `C:\Adobe\Adobe_Experience_Manager_Forms\jboss`)
 2. **Nom du fichier de configuration** (par exemple, `lc_oracle.xml`, `lc_mysql.xml` ou `lc_mssql.xml`)
 3. **Mot de passe de la banque d’informations d’identification** (cela protège le fichier de stockage des clés ; mémorisez ce mot de passe)
@@ -91,11 +91,11 @@ Utilisez les scripts fournis pour créer le magasin d’informations d’identif
 
 #### Sous Linux :
 
-**Emplacement du script :** `create-elytron-cred-standalone.sh`
+**Script** `create-elytron-cred-standalone.sh`
 
-`bash cd /path/to/script/location chmod +x create-elytron-cred-standalone.sh./create-elytron-cred-standalone.sh`
+Téléchargez le script `create-elytron-cred-standalone.sh` à partir du [Portail de distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip).
 
-**Le script vous invitera à saisir :**
+**Le script vous invite à saisir :**
 
 1. **Chemin JBOSS_HOME** (par exemple, `/opt/Adobe/Adobe_Experience_Manager_Forms/jboss`)
 2. **Nom du fichier de configuration** (par exemple, `lc_oracle.xml`, `lc_mysql.xml` ou `lc_mssql.xml`)
@@ -296,4 +296,3 @@ ERROR: Configuration file not found
 
 - Variable : `-DCS_PASS=password`
 - Fichier : `standalone.conf.bat` (Windows) ou `standalone.conf` (Linux)
-
