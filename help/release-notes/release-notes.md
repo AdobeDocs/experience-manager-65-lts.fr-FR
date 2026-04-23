@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c04d683015576ab4aa59427f2ac1ec53fbb1d8f4
+source-git-commit: 560d505465362d33f2864f13e9b75921b83ba5e4
 workflow-type: tm+mt
 source-wordcount: '7427'
-ht-degree: 14%
+ht-degree: 13%
 
 ---
 
@@ -450,7 +450,7 @@ Voir aussi [Mise à jour de la version AEM Uber Jar](/help/sites-deploying/upgra
 ### Mise à niveau {#upgrade}
 
 * Pour plus d’informations sur la procédure de mise à niveau, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
-* Pour obtenir des instructions de mise à niveau détaillées, consultez le [&#x200B; Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Pour obtenir des instructions de mise à niveau détaillées, consultez le [ Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Bonnes pratiques relatives aux mises à niveau du pack de services d’AEM 6.5 LTS
 
@@ -540,7 +540,7 @@ Il est conseillé aux clients de vérifier s’ils utilisent la fonctionnalité 
 | --- | --- | --- | --- |
 | Démarrage rapide | API Mongo | Les API Mongo sont désormais obsolètes et leur suppression est prévue dans les prochaines versions. | 6.5 TS SP2 |
 | Sites | Prise en charge des fragments de contenu dans l’API REST AEM Assets | Le LTS SP2 d’AEM 6.5 fournit des API OpenAPI modernes pour la gestion des fragments de contenu et des modèles, de sorte que les anciens points d’entrée de la prise en charge des fragments de contenu dans l’API REST d’AEM Assets sont désormais obsolètes.<br>Adobe prévoit de conserver ces anciens points d’entrée disponibles jusqu’à une annonce de fin de vie. Adobe ne prévoit pas d’autres améliorations pour les points d’entrée obsolètes. | 6.5 LTS SP2 |
-| Sites | [Éditeur SPA](/help/sites-developing/spa-overview.md) | Les éditeurs recommandés pour la gestion du contenu découplé dans AEM sont les suivants : <br>- [Éditeur universel](/help/sites-developing/universal-editor/introduction.md) pour l’édition visuelle.<br>- [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md) pour l’édition basée sur les formulaires. | 6.5 LTS (disponibilité générale) |
+| Sites | [Éditeur SPA](/help/sites-developing/spa-overview.md) | Les éditeurs recommandés pour la gestion du contenu découplé dans AEM sont les suivants : <br>- [Éditeur universel](/help/sites-developing/universal-editor/introduction.md) pour l’édition visuelle.<br>- [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md) pour l’édition basée sur les formulaires. | 6.5 LTS GA |
 | [!DNL Foundation] | Prise en charge de com.adobe.granite.oauth.server | Intégration Adobe IMS |  |
 
 ### Fonctionnalités supprimées {#removed-features}
@@ -618,17 +618,17 @@ Lors de l’activation de la fonction SSL uniquement dans les déploiements AEM,
 
 **Impact**
 
-* Échec des contrôles d’intégrité avec les codes de réponse HTTP 400
-* Trafic rompu entre les instances Dispatcher et AEM
-* Contenu diffusé incorrectement via Dispatcher
-* Échecs de connexion lors de l’utilisation de HTTPS avec des adresses IP dans la configuration Dispatcher
-* Erreurs HTTP 400 « SNI non valide » lors de la connexion via HTTPS + IP
+* Échec des contrôles d’intégrité avec les codes de réponse HTTP 400.
+* Trafic rompu entre les instances Dispatcher et AEM.
+* Le contenu ne peut pas être correctement diffusé via le Dispatcher.
+* Échecs de connexion lors de l’utilisation de HTTPS avec des adresses IP dans la configuration Dispatcher.
+* Erreurs HTTP 400 « SNI non valide » lors de la connexion via HTTPS + IP.
 
 **Environnements affectés**
 
-* Déploiements d’AEM avec les configurations Dispatcher
-* Systèmes sur lesquels la fonction SSL uniquement a été activée
-* Configurations Dispatcher utilisant la méthode de connexion `https + IP` aux instances AEM
+* Déploiements d’AEM avec les configurations Dispatcher.
+* Systèmes sur lesquels la fonction SSL uniquement a été activée.
+* Configurations de Dispatcher à l’aide de `https + IP` méthode de connexion aux instances AEM.
 
 **Solution**
 
@@ -646,5 +646,5 @@ Les documents texte suivants répertorient les lots OSGi et les packages de cont
 Ces sites Web sont disponibles uniquement pour les clients. Si vous êtes client et avez besoin d’un accès, contactez votre responsable de compte Adobe.
 
 * [Téléchargement du produit sur licensing.adobe.com](https://licensing.adobe.com/)
-* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
