@@ -123,7 +123,7 @@ Cette section décrit des techniques que vous pouvez utiliser pendant le process
  </thead> 
  <tbody>
   <tr> 
-   <td><p>Privilèges&amp;nbsp;</p> </td> 
+   <td><p>Privilèges&nbsp;</p> </td> 
    <td><p>Utilisez le minimum de droits requis pour installer le logiciel. Connectez-vous à votre ordinateur via un compte qui n’appartient pas au groupe d’administration. Sous Windows, vous pouvez utiliser la commande Exécuter pour exécuter le programme d’installation d’AEM Forms sur JEE en tant qu’utilisateur non administrateur. Sous UNIX et Linux, utilisez une commande comme <code>sudo</code> pour installer le logiciel.</p> </td> 
   </tr> 
   <tr> 
@@ -264,7 +264,7 @@ Configuration Manager a utilisé une servlet déployée sur votre serveur d’ap
 1. Démarrez le serveur AEM Forms.
 1. Entrez l’URL suivante dans un navigateur pour tester la modification et garantir que l’adresse ne fonctionne plus.
 
-   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
+   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
 
 **Verrouillage de l’accès distant au Trust Store**
 
@@ -952,7 +952,7 @@ Cette section décrit les ports par défaut (et les plages de configurations alt
  </tbody> 
 </table>
 
-**Ports WebSphere **
+**Ports WebSphere &#x200B;**
 
 Pour plus d’informations sur les ports WebSphere requis par AEM Forms sur JEE, consultez Configuration des numéros de ports dans l’interface utilisateur de WebSphere Application Server.
 
