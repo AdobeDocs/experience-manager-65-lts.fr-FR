@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: e0aa9304-3da0-4ae6-a465-089dc96c427e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1053'
 ht-degree: 100%
 
 ---
@@ -92,7 +92,7 @@ Vous pouvez configurer le ralentissement pour Work Manager, afin que les tâche
 **Ajouter des options Java à WebLogic**
 
 1. Démarrez la console d’administration WebLogic en saisissant `https://[host name]:[port]/console` dans un navigateur web.
-1. Tapez le nom d’utilisateur et le mot de passe que vous avez créés pour le domaine du serveur WebLogic, sélectionnez Se connecter sous Centre des modifications, puis Verrouiller et modifier.
+1. Tapez le nom d’utilisateur et le mot de passe que vous avez créés pour le domaine du serveur WebLogic, cliquez sur Se connecter sous Centre des modifications, puis sur Verrouiller et modifier.
 1. Sous Structure du domaine, cliquez sur Environment > Serveurs et, dans le volet de droite, cliquez sur le nom du serveur géré.
 1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
 1. Dans la zone Arguments, ajoutez les arguments dont vous avez besoin à la fin du contenu actuel. Par exemple, pour désactiver Health Monitor, ajoutez :

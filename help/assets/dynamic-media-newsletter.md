@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Assets
 role: User, Admin
 feature: Collaboration,Dynamic Media Classic
 exl-id: ee098fae-cc6f-4c6e-8475-1737134543df
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1111'
 ht-degree: 100%
 
 ---
@@ -24,13 +24,16 @@ La newsletter Dynamic Media d’Experience League était conçue pour vous aid
 
 Dans cette newsletter unique archivée, vous trouverez des ressources précieuses pour développer vos connaissances, telles que des vidéos pratiques et des présentations de solutions. Il existe également des présentations des principales fonctionnalités telles que les paramètres prédéfinis d’image, les paramètres prédéfinis de visionneuse et les profils vidéo.
 
-<!-- ## Get inspired - Stay informed
+<!--
+## Get inspired - Stay informed
 
-[Sign up](https://www.adobe.com/subscription/dynamic-media-newsletter.html) to receive the Dynamic Media Newsletter on a monthly basis in your inbox. -->
+[Sign up](https://www.adobe.com/subscription/dynamic-media-newsletter.html) to receive the Dynamic Media Newsletter on a monthly basis in your inbox.
+-->
 
 ## Archive de la newsletter Dynamic Media
 
-<!-- * **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+<!--
+* **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
 
     In this issue:
 
@@ -43,7 +46,8 @@ Dans cette newsletter unique archivée, vous trouverez des ressources précieuse
     * Look what's new in Experience Manager Innovation.
     * Build your Experience Manager skills *live* with the Adobe pros.
     * Connect with the Adobe Experience Manager Community.
-    * Fast-track your Adobe expertise with Adobe Experience League. -->
+    * Fast-track your Adobe expertise with Adobe Experience League.
+-->
 
 * **[Avril 2020, numéro 3](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2020_April.html?lang=fr)**
 
@@ -138,7 +142,7 @@ Dans cette newsletter unique archivée, vous trouverez des ressources précieuse
    * Regardez des tutoriels vidéo importants dans Experience League.
    * Apprenez-en plus sur le prochain Adobe Insider Tour.
    * Découvrez comment vous pouvez protéger vos ressources numériques contre le piratage.
-   * Découvrez la fonction de recadrage dynamique pour les images, piloté par l’IA.
+   * Découvrez le recadrage intelligent des images piloté par l’IA.
    * Rencontre avec `Alex Thiers`, un des principaux acteurs à l’origine des nombreuses fonctionnalités et innovations de Dynamic Media et de Dynamic Media Classic.
 
 * **[Mai 2019, numéro 05](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_05_2019_May.html?lang=fr)**
@@ -149,7 +153,7 @@ Dans cette newsletter unique archivée, vous trouverez des ressources précieuse
    * Regardez des tutoriels vidéo importants dans Experience League.
    * Découvrez le prochain Adobe Insider Tour.
    * Pour mettre à jour votre stratégie de média enrichi, lisez cette série de blogs en trois parties.
-   * Découvrez le recadrage vidéo intelligent piloté par l’IA.
+   * Découvrez le recadrage intelligent des vidéos piloté par l’IA.
 
 * **[Avril 2019, numéro 04](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2019_April.html?lang=fr)**
 

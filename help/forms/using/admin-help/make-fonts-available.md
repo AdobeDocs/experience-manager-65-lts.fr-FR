@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2861bde5-b373-4ab2-9808-7d32ef1dc925
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 100%
@@ -37,4 +37,4 @@ Pour plus d’informations sur les paramètres de police supplémentaires, voir 
 
 >[!NOTE]
 >
->Les polices sont sélectionnées à partir du cache des polices du système Windows et un redémarrage du système est requis pour mettre à jour le cache. Après avoir spécifié le répertoire des polices du client, assurez-vous de redémarrer le système sur lequel AEM Forms est installé.
+>Les polices sont sélectionnées à partir du cache des polices du système Windows et un redémarrage du système est requis pour mettre à jour le cache. Après avoir spécifié le répertoire des polices du client ou de la cliente, assurez-vous de redémarrer le système sur lequel AEM forms est installé.

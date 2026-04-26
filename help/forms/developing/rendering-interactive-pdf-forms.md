@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: de61c579-50ed-423b-adca-60329f3f0b89
-source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2471'
 ht-degree: 98%
 
 ---
@@ -121,9 +121,9 @@ Pour effectuer le rendu d’un formulaire PDF interactif, procédez comme suit 
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
-**Créez un objet API client Forms**
+**Créer un objet API client Forms**
 
-Avant d’effectuer par programmation une opération de l’API cliente du service Forms, vous devez créer un objet API client Forms. Si vous utilisez l’API Java, créez un objet `FormsServiceClient`. Si vous utilisez l’API du service web Forms, créez un objet `FormsService`.
+Avant d’effectuer par programmation une opération de l’API cliente du service Forms, vous devez créer un objet API client Forms. Si vous utilisez l’API Java, créez un objet `FormsServiceClient`. Si vous utilisez l’API Web Service Forms, créez un objet `FormsService`.
 
 **Spécifier les valeurs URI**
 
@@ -217,11 +217,11 @@ Pour générer un formulaire PDF interactif à l’aide de l’API Forms (Java),
 
    Appelez la méthode `renderPDFForm` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire qui fait partie d’une application Forms, veillez à spécifier le chemin dʼaccès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `com.adobe.idp.Document`.
    * Un objet `PDFFormRenderSpec` stockant les options d’exécution. Ce paramètre est facultatif et vous pouvez indiquer `null` si vous ne souhaitez pas spécifier d’options d’exécution.
-   * Un objet `URLSpec` contenant des valeurs URI requises par le service Forms.
-   * Un objet `java.util.HashMap` qui stocke les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
+   * Un objet `URLSpec` contenant les valeurs URI requises par le service Forms.
+   * Objet `java.util.HashMap` stockant les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
 
    La méthode `renderPDFForm` renvoie un objet `FormsResult` contenant un flux de données de formulaire qui doit être écrit dans le navigateur web client.
 
@@ -272,15 +272,15 @@ Pour générer un formulaire PDF interactif à l’aide de l’API Forms (servic
 
    Appelez la méthode `renderPDFForm` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
-   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire qui fait partie d’une application Forms, veillez à spécifier le chemin dʼaccès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Un objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez `null`.
-   * Un objet `PDFFormRenderSpec` stockant les options d’exécution. Ce paramètre est facultatif et vous pouvez indiquer `null` si vous ne souhaitez pas spécifier d’options d’exécution.
+   * Un objet `PDFFormRenderSpec` prévu pour stocker les options d’exécution. Ce paramètre est facultatif et vous pouvez indiquer `null` si vous ne souhaitez pas spécifier d’options d’exécution.
    * Un objet `URLSpec` contenant des valeurs URI requises par le service Forms.
-   * Un objet `java.util.HashMap` qui stocke les pièces jointes. Il sʼagit dʼun paramètre facultatif. Vous pouvez indiquer `null` si vous ne souhaitez pas joindre de fichier au formulaire.
+   * Objet `java.util.HashMap` stockant les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
    * Un objet `com.adobe.idp.services.holders.BLOBHolder` vide qui est renseigné par la méthode. Il permet de stocker le formulaire PDF rendu.
    * Un objet `javax.xml.rpc.holders.LongHolder` vide qui est renseigné par la méthode. (Cet argument stocke le nombre de pages dans le formulaire).
    * Un objet `javax.xml.rpc.holders.StringHolder` qui est renseigné par la méthode. (Cet argument stocke la valeur des paramètres régionaux).
-   * Un objet `com.adobe.idp.services.holders.FormsResultHolder` vide qui contiendra les résultats de cette opération.
+   * Objet `com.adobe.idp.services.holders.FormsResultHolder` vide qui contient les résultats de cette opération.
 
    La méthode `renderPDFForm` renseigne l’objet `com.adobe.idp.services.holders.FormsResultHolder` qui est transmis en tant que dernière valeur d’argument avec un flux de données de formulaire qui doit être écrit dans le navigateur web client.
 
@@ -292,7 +292,7 @@ Pour générer un formulaire PDF interactif à l’aide de l’API Forms (servic
    * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `BLOB`.
    * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
    * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
-   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données du formulaire vers le navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
+   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données du formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Écrire le flux de données de formulaire dans le navigateur web client**
 

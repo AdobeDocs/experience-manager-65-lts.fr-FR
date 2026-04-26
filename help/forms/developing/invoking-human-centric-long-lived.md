@@ -11,10 +11,10 @@ feature: Adaptive Forms, APIs & Integrations, AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 1cc7b91e-c2f1-4831-b8cd-1399e7dd821e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3674'
-ht-degree: 100%
+source-wordcount: '3762'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Vous pouvez appeler par programmation des processus de longue durée créés dan
 
 Le processus de longue durée appelé est nommé *FirstAppSolution/PreLoanProcess*. Vous pouvez créer ce processus en suivant le tutoriel spécifié dans [Créer la première application AEM Forms](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63).
 
-Un processus pour des intervenants humains implique une tâche à laquelle un utilisateur peut répondre à l’aide de Workspace. Par exemple, avec Workbench, vous pouvez créer un processus qui permet à un gestionnaire de banque d’approuver ou de refuser une demande de prêt. L’illustration suivante présente le processus *FirstAppSolution/PreLoanProcess*.
+Un processus pour des intervenants humains implique une tâche à laquelle un utilisateur peut répondre à l’aide de Workspace. Par exemple, avec Workbench, vous pouvez créer un processus qui permet à un directeur ou une directrice de banque d’approuver ou de refuser une demande de prêt. L’illustration suivante présente le processus *FirstAppSolution/PreLoanProcess*.
 
 Le processus *FirstAppSolution/PreLoanProcess* accepte un paramètre d’entrée nommé *formData* dont le type de données est XML. Les données XML sont fusionnées avec une conception de formulaire nommée *PreLoanForm.xdp*. L’illustration suivante présente un formulaire qui représente une tâche affectée à un utilisateur pour approuver ou refuser une demande de prêt. L’utilisateur approuve ou refuse la demande à l’aide de Workspace. L’utilisateur de Workspace peut approuver la demande de prêt en cliquant sur le bouton Approuver illustré ci-dessous. De même, l’utilisateur peut refuser la demande de prêt en cliquant sur le bouton Refuser.
 
@@ -98,7 +98,7 @@ Pour créer une application web Java qui appelle le processus `FirstAppSolution/
 
 ### Créer un projet web {#create-a-web-project}
 
-La première étape pour créer une application web est de créer un projet web. L’IDE Java sur lequel repose ce document est Eclipse 3.3. À l’aide de l’IDE Eclipse, créez un projet web et ajoutez les fichiers JAR requis à votre projet. Ajoutez une page HTML nommée *index.html* et une servlet Java au projet.
+La première étape pour créer une application web est de créer un projet web. L’IDE Java sur lequel est basé ce document est Eclipse 3.3. À l’aide de l’IDE Eclipse, créez un projet web et ajoutez les fichiers JAR requis à votre projet. Ajoutez une page HTML nommée *index.html* et une servlet Java au projet.
 
 La liste suivante indique les fichiers JAR à inclure dans le projet web :
 
@@ -585,11 +585,11 @@ Pour créer une page ASP qui appelle le processus `FirstAppSolution/PreLoanProce
     https://hiro-xp:8080/soap/services/FirstAppSolution/PreLoanProcess?blob=mtom
    ```
 
-   Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Veillez toutefois à indiquer `?blob=mtom`.
+   Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Toutefois, veillez à indiquer `?blob=mtom`.
 
    >[!NOTE]
    >
-   >Remplacez `hiro-xp`* avec l’adresse IP du serveur d’applications J2EE hébergeant AEM Forms. *
+   >Remplacez `hiro-xp`* par l’adresse IP du serveur d’applications J2EE hébergeant AEM Forms. *
 
 1. Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du membre de données `FirstAppSolution_PreLoanProcessClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
 1. Définissez le membre de données `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
@@ -850,7 +850,7 @@ Pour créer une application cliente créée avec Flex qui peut appeler le proces
 
 1. Démarrez un nouveau projet Flex.
 1. Incluez le fichier adobe-remoting-provider.swc dans le chemin de classe de votre projet. (Voir [Inclure le fichier de bibliothèque Flex AEM Forms](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file).)
-1. Créez une instance `mx:RemoteObject` à l’aide d’ActionScript ou de MXML. (Voir [Créer une instance mx:RemoteObject](/help/forms/developing/invoking-aem-forms-using-remoting.md))
+1. Créez une instance `mx:RemoteObject` à l’aide d’ActionScript ou de MXML. (Voir [Création d’une instance mx:RemoteObject](/help/forms/developing/invoking-aem-forms-using-remoting.md))
 1. Configurez une instance `ChannelSet` pour communiquer avec AEM Forms et l’associer à l’instance `mx:RemoteObject`. (Voir [Créer un canal vers AEM Forms](/help/forms/developing/invoking-aem-forms-using-remoting.md).)
 1. Appelez la méthode `login` de ChannelSet ou la méthode `setCredentials` du service pour spécifier la valeur de l’identifiant utilisateur et le mot de passe. (Voir [Utiliser l’authentification unique](/help/forms/developing/invoking-aem-forms-using-remoting.md#using-single-sign-on).)
 1. Créez la source de données XML à transmettre au processus `FirstAppSolution/PreLoanProcess` en créant une instance XML. (Cette logique d’application est illustrée dans l’exemple de code suivant.)

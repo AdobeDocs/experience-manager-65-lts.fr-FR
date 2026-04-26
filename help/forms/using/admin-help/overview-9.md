@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: aa2477a3-3870-4ba4-bcea-e94ae2d06d02
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '259'
 ht-degree: 100%
 
 ---
@@ -42,7 +42,7 @@ Sur chaque page de Forms Workflow, dans la console d’administration, vous pou
      <li><p>Configuration des notifications pour l’administrateur ou l’administratrice</p></li>
      <li><p>Configuration des paramètres de configuration de Business Activity Monitoring </p></li>
     </ul></td>
-   <td><p><a href="/help/forms/using/admin-help/configuring-server-settings.md#configuring-server-settings">Configuration des paramètres du serveur</a></p></td>
+   <td><p><a href="/help/forms/using/admin-help/configuring-server-settings.md#configuring-server-settings">Configurer les paramètres du serveur</a></p></td>
   </tr>
   <tr>
    <td><p>Workflow Forms</p></td>
@@ -60,7 +60,7 @@ Sur chaque page de Forms Workflow, dans la console d’administration, vous pou
     <ul>
      <li><p>Rechercher des processus</p></li>
     </ul></td>
-   <td><p><a href="/help/forms/using/admin-help/searching-process-instances.md#searching-for-process-instances">Recherche d’instances de processus</a></p></td>
+   <td><p><a href="/help/forms/using/admin-help/searching-process-instances.md#searching-for-process-instances">Rechercher des instances de processus</a></p></td>
   </tr>
   <tr>
    <td><p>Recherche de tâches</p></td>
@@ -68,7 +68,7 @@ Sur chaque page de Forms Workflow, dans la console d’administration, vous pou
     <ul>
      <li><p>Recherche de tâches par utilisateur ou utilisatrice ou par identifiant de tâche</p></li>
     </ul></td>
-   <td><p><a href="/help/forms/using/admin-help/tasks.md#working-with-tasks">Utilisation de tâches</a></p></td>
+   <td><p><a href="/help/forms/using/admin-help/tasks.md#working-with-tasks">Utiliser les tâches</a></p></td>
   </tr>
   <tr>
    <td><p>Erreurs d’opérations bloquées</p></td>
@@ -77,7 +77,7 @@ Sur chaque page de Forms Workflow, dans la console d’administration, vous pou
      <li><p>Afficher toutes les opérations bloquées et leurs erreurs</p></li>
      <li><p>Essayer de relancer ou arrêter des opérations bloquées</p></li>
     </ul></td>
-   <td><p><a href="/help/forms/using/admin-help/stalled-operations-branches.md#working-with-stalled-operations-and-branches">Utilisation d’opérations et de branches bloquées</a></p></td>
+   <td><p><a href="/help/forms/using/admin-help/stalled-operations-branches.md#working-with-stalled-operations-and-branches">Travailler avec des opérations et des branches bloquées</a></p></td>
   </tr>
   <tr>
    <td><p>Erreurs de branches bloquées</p></td>
@@ -86,7 +86,7 @@ Sur chaque page de Forms Workflow, dans la console d’administration, vous pou
      <li><p>Afficher toutes les branches bloquées et leurs erreurs</p></li>
      <li><p>Essayer de relancer des branches bloquées</p></li>
     </ul></td>
-   <td><p><a href="/help/forms/using/admin-help/stalled-operations-branches.md#working-with-stalled-operations-and-branches">Utilisation d’opérations et de branches bloquées</a></p></td>
+   <td><p><a href="/help/forms/using/admin-help/stalled-operations-branches.md#working-with-stalled-operations-and-branches">Travailler avec des opérations et des branches bloquées</a></p></td>
   </tr>
   <tr>
    <td><p>Absence du bureau</p></td>
@@ -97,7 +97,7 @@ Sur chaque page de Forms Workflow, dans la console d’administration, vous pou
      <li><p>Ajout d’une période d’absence du bureau </p></li>
      <li><p>Spécifier les actions à entreprendre pour les tâches lorsque l’utilisateur ou l’utilisatrice est absente du bureau</p></li>
     </ul></td>
-   <td><p><a href="/help/forms/using/admin-help/configuring-out-office-settings.md#configuring-out-of-office-settings">Configuration des paramètres d’absence du bureau</a></p></td>
+   <td><p><a href="/help/forms/using/admin-help/configuring-out-office-settings.md#configuring-out-of-office-settings">Configurer les paramètres d’absence du bureau</a></p></td>
   </tr>
   <tr>
    <td><p>Calendriers professionnels</p></td>

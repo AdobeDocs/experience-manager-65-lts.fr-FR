@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 23ffbaa6-1bd9-48c3-afa3-19737bb15de0
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1480'
+source-wordcount: '1547'
 ht-degree: 94%
 
 ---
@@ -58,7 +58,8 @@ AEM Forms on JEE also includes provides following supporting services to the AEM
 
 L’interface utilisateur dʼauteur AEM Forms ne prend pas en charge la création de documents d’enregistrement (DOR) et de formulaires PDF et HTML5. Ces ressources sont conçues à l’aide de l’application autonome Forms Designer et téléchargées individuellement vers AEM Forms Manager. <!--Alternatively, for AEM Forms on JEE, forms can be designed as application (in AEM Forms Workbench) assets and deployed into AEM Forms on JEE server.-->
 
-AEM Forms sur OSGi <!--and AEM Forms on JEE both--> des fonctionnalités de workflow. Vous pouvez rapidement créer et déployer des workflows de base pour différentes tâches dans AEM Forms sur OSGi.<!--, without having to install the full-fledged Process Management capability of AEM Forms on JEE. There is some difference in the [features of Form-centric workflow on AEM Forms on OSGi and Process Management capability of AEM Forms on JEE](capabilities-osgi-jee-workflows.md). The development and management of Form-centric workflows on AEM Forms on OSGi uses the familiar AEM Workflow and AEM Inbox capabilities.-->
+AEM Forms sur OSGi <!--and AEM Forms on JEE both--> des fonctionnalités de workflow. Vous pouvez rapidement créer et déployer des workflows de base pour différentes tâches dans AEM Forms sur OSGi.
+<!--, without having to install the full-fledged Process Management capability of AEM Forms on JEE. There is some difference in the [features of Form-centric workflow on AEM Forms on OSGi and Process Management capability of AEM Forms on JEE](capabilities-osgi-jee-workflows.md). The development and management of Form-centric workflows on AEM Forms on OSGi uses the familiar AEM Workflow and AEM Inbox capabilities.-->
 
 ## Terminologies {#terminologies}
 
@@ -66,7 +67,7 @@ L’image suivante affiche diverses configurations de serveur AEM Forms et leurs
 
 ![aem_forms_-_recommendationstopology](assets/aem_forms_-_recommendedtopology.png)
 
-**Création :** une instance de création est un serveur AEM Forms exécuté en mode d’exécution de création standard. <!--It can be AEM Forms on JEE or AEM Forms on OSGi environment.--> Il est destiné aux utilisateurs internes, aux concepteurs de formulaires et de communications interactives, ainsi qu’aux développeurs. Il active les fonctionnalités suivantes :
+**Création :** une instance de création est un serveur AEM Forms s’exécutant en mode d’exécution de création standard. <!--It can be AEM Forms on JEE or AEM Forms on OSGi environment.--> Il est destiné aux utilisateurs et utilisatrices internes, aux concepteurs et conceptrices de formulaires et de communication interactive, ainsi qu’à l’équipe de développement. Il active les fonctionnalités suivantes :
 
 * **Création et gestion de formulaires et de communications interactives :** les équipes de conception et de développement peuvent créer et modifier des formulaires adaptatifs et des communications interactives, charger d’autres types de formulaires créés en externe, par exemple des formulaires créés dans Adobe Forms Designer, et gérer ces ressources à l’aide de la console de Gestionnaire de formulaires.
 * **Publication de formulaires et de communications interactives :** les ressources hébergées sur une instance de création peuvent être publiées sur une instance de publication pour effectuer des opérations d’exécution. La publication des ressources utilise les fonctionnalités de réplication d’AEM. Adobe recommande qu’un agent de réplication soit configuré sur toutes les instances de création pour transférer manuellement les formulaires publiés vers les instances de traitement, et qu’un autre agent de réplication soit configuré sur les instances de traitement avec le déclencheur *À réception* activé pour répliquer automatiquement les formulaires reçus sur les instances de publication.
@@ -140,7 +141,7 @@ You can make the following changes/customizations to the above-suggested topolog
 
 ### Topologie pour la capture de données, la communication interactive et le workflow basé sur l’utilisation de Forms sur OSGi {#topology-for-data-capture-interactive-communication-form-centric-workflow-on-osgi-capabilities}
 
-Les clients AEM Forms prévoyant d’utiliser les fonctionnalités de capture de données AEM Forms, par exemple, les formulaires adaptatifs, les formulaires HTML5 et les formulaires PDF, peuvent avoir une topologie similaire à celle présentée ci-dessous. Cette topologie est également recommandée pour l’utilisation de la fonctionnalité de communications interactives et de processus basés sur l’utilisation de Forms on OSGi, par exemple pour utiliser la boîte de réception AEM et l’application AEM Forms pour les flux de processus métier.
+Les clientes et clients AEM Forms prévoyant d’utiliser les fonctionnalités de capture de données AEM Forms, par exemple, les formulaires adaptatifs, les formulaires HTML5 et les formulaires PDF, peuvent avoir une topologie semblable à celle présentée ci-dessous. Cette topologie est également recommandée pour l’utilisation de la fonctionnalité de communications interactives et de workflows basés sur l’utilisation de Forms on OSGi, par exemple pour utiliser la boîte de réception AEM et l’application AEM Forms pour les flux de processus métier.
 
 ![cas-d’utilisation-interactifs-du-workflow-osgi-af-cm](assets/interactive-use-cases-af-cm-osgi-workflow.png)
 

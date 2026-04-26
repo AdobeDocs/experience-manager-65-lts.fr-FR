@@ -5,10 +5,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+source-git-commit: e91f40d1af626b3aa42c9ddb8381d73ef9a69273
 workflow-type: tm+mt
-source-wordcount: '4292'
-ht-degree: 99%
+source-wordcount: '4354'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Cette documentation s’applique à **AEM 6.5 LTS Forms**.
 Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms).
 
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Après l’envoi d’un formulaire, vos clients veulent généralement conserver un enregistrement, sous forme imprimée ou de document, des informations qu’ils ont intégrées au formulaire pour s’y reporter ultérieurement. On parle ici de document d’enregistrement.
 
@@ -37,15 +37,17 @@ Cet article explique comment générer un document d’enregistrement pour les f
 
 Lorsque vous créez un formulaire adaptatif, vous pouvez sélectionner un modèle de formulaire. Vous avez le choix entre :
 
-* [Modèles de formulaires](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)
-Vous permet de sélectionner un modèle XFA pour votre formulaire adaptatif. Lorsque vous sélectionnez un modèle XFA, vous pouvez utiliser le fichier XDP associé pour créer le document d’enregistrement, comme décrit ci-dessus.
+* [Modèles de formulaire](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)
+Permet de sélectionner un modèle XFA pour votre formulaire adaptatif. Lorsque vous sélectionnez un modèle XFA, vous pouvez utiliser le fichier XDP associé pour créer le document d’enregistrement, comme décrit ci-dessus.
 
-* [Schéma XML](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema) Vous permet de sélectionner une définition de schéma XML pour votre formulaire adaptatif. Lorsque vous sélectionnez un schéma XML pour votre formulaire adaptatif, vous pouvez :
+* [Schéma XML](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
+Permet de sélectionner une définition de schéma XML pour votre formulaire adaptatif. Lorsque vous sélectionnez un schéma XML pour votre formulaire adaptatif, vous pouvez :
 
    * associer un modèle XFA pour créer un document d’enregistrement. Assurez-vous que ce modèle XFA associé utilise le même schéma XML que votre formulaire adaptatif.
    * Générer automatiquement un document d’enregistrement
 
-* Aucun Vous permet de créer un formulaire adaptatif sans modèle de formulaire. Le document d’enregistrement est généré automatiquement pour votre formulaire adaptatif.
+* Aucun
+Permet de créer un formulaire adaptatif sans modèle de formulaire. Le document d’enregistrement est généré automatiquement pour votre formulaire adaptatif.
 
 Lorsque vous sélectionnez un modèle de formulaire, configurez le document d’enregistrement à l’aide des options disponibles sous Configuration du modèle de document d’enregistrement. Voir [Configuration du modèle de document d’enregistrement](#document-of-record-template-configuration).
 
@@ -333,7 +335,7 @@ Selon si vous sélectionnez un modèle par défaut ou un modèle personnalisé, 
 
   Si le modèle XDP personnalisé que vous sélectionnez comprend plusieurs gabarits, les propriétés de ces pages apparaissent dans la section **[!UICONTROL contenu]** de l’onglet **[!UICONTROL Document d’enregistrement]**.
 
-  ![Propriétés du gabarit de page &#x200B;](assets/master-page-properties.png)
+  ![Propriétés du gabarit de page ](assets/master-page-properties.png)
 
   Les propriétés du gabarit de page comprennent l’image du logo, le texte de l’en-tête, le titre du formulaire, l’étiquette de la clause de non-responsabilité et le texte de la clause de non-responsabilité. Vous pouvez appliquer les propriétés du formulaire adaptatif ou du modèle XDP au document d’enregistrement. AEM Forms applique par défaut les propriétés des modèles au document d’enregistrement. Vous pouvez également définir des valeurs personnalisées pour les propriétés du gabarit de page. Pour plus d’informations sur la façon d’appliquer plusieurs gabarits de pages dans un document d’enregistrement, voir [Appliquer plusieurs gabarits à un document d’enregistrement](#apply-multiple-master-pages-dor).
 
@@ -390,7 +392,7 @@ Les paramètres du document d’enregistrement d’un composant sont disponibles
    * **[!UICONTROL Placer]** > **[!UICONTROL Sur la page]** > Nom du gabarit de page : place le panneau sur la page indiquée. Si un saut de page n’est pas inséré automatiquement, [!DNL AEM Forms] ajoute un saut de page.
    * **[!UICONTROL Placer]** > **[!UICONTROL Haut de la page suivante :]** place le panneau en haut de la page suivante. Si un saut de page n’est pas inséré automatiquement, [!DNL AEM Forms] ajoute un saut de page.
    * **[!UICONTROL Placer]** > **[!UICONTROL Haut de la page]** > Nom du gabarit de page : place le panneau en haut de la page, lorsque la page indiquée est générée. Si un saut de page n’est pas inséré automatiquement, [!DNL AEM Forms] ajoute un saut de page.
-* **[!UICONTROL Pagination]** > **[!UICONTROL Après]** : détermine la zone à remplir une fois le panneau placé. Les champs suivants sont disponibles dans la section **[!UICONTROL Après]** :
+* **[!UICONTROL Pagination]** > **[!UICONTROL Après]** : détermine la zone à remplir une fois le panneau placé.Les champs suivants sont disponibles dans la section **[!UICONTROL Après]** :
    * **[!UICONTROL Après]** > **[!UICONTROL Continuer à remplir le parent]** : continue de fusionner les données de tous les objets à remplir dans le panneau parent.
    * **[!UICONTROL Après]** > **[!UICONTROL Aller à la zone de contenu suivante]** : commence à remplir la zone de contenu suivante après avoir placé le panneau.
    * **[!UICONTROL Après]** > **[!UICONTROL Aller à la zone de contenu]** > Nom de la zone de contenu : commence à remplir la zone de contenu spécifiée après avoir placé le panneau.
@@ -448,8 +450,8 @@ Si le modèle XDP personnalisé que vous sélectionnez comprend plusieurs gabari
 
 Vous pouvez appliquer plusieurs gabarits de page à un document d’enregistrement en appliquant différents gabarits de page aux composants d’un formulaire adaptatif. Utilisez la section [Pagination](#document-of-record-settings) des propriétés du document d’enregistrement pour appliquer plusieurs gabarits de page.
 
-Voici un exemple d’application de plusieurs gabarits à un document d’enregistrement : 
-vous téléchargez un modèle XDP qui comprend quatre gabarits de page dans le serveur [!DNL AEM Forms]. [!DNL AEM Forms] applique par défaut les propriétés du modèle au document d’enregistrement. [!DNL AEM Forms] applique également les propriétés du premier gabarit de page du modèle au document d’enregistrement.
+Voici un exemple d’application de plusieurs gabarits de page à un document d’enregistrement :
+Vous téléchargez un modèle XDP qui comprend quatre gabarits de page sur le serveur [!DNL AEM Forms]. [!DNL AEM Forms] applique par défaut les propriétés du modèle au document d’enregistrement. [!DNL AEM Forms] applique également les propriétés du premier gabarit de page du modèle au document d’enregistrement.
 
 Pour appliquer les propriétés du deuxième gabarit de page à un panneau et les propriétés du troisième gabarit de page aux panneaux qui suivent, procédez comme suit :
 
@@ -477,7 +479,7 @@ Gardez à l’esprit les points et restrictions suivants lorsque vous utilisez u
 
 ## Utiliser un fichier XCI personnalisé
 
-Un fichier XCI permet de définir différentes propriétés d’un document. <!-- Forms as a Cloud Service has a master XCI file.--> Vous pouvez utiliser un fichier XCI personnalisé pour remplacer une ou plusieurs propriétés par défaut spécifiées dans votre fichier XCI existant. Par exemple, vous pouvez choisir d’incorporer une police dans un document ou d’activer la propriété balisée pour tous les documents. Le tableau suivant indique les options XCI :
+Un fichier XCI vous permet de définir différentes propriétés d’un document. <!-- Forms as a Cloud Service has a master XCI file.--> Vous pouvez utiliser un fichier XCI personnalisé pour remplacer une ou plusieurs propriétés par défaut spécifiées dans le fichier XCI existant. Par exemple, vous pouvez choisir d’incorporer une police dans un document ou d’activer la propriété balisée pour tous les documents. Le tableau suivant indique les options XCI :
 
 | Option XCI | Description |
 |--- |--- |
@@ -517,12 +519,14 @@ Un fichier XCI permet de définir différentes propriétés d’un document. <!-
   1. Add the custom XCI file to your development project.
   1. Specify the following inline property:(/help/implementing/deploying/configuring-osgi.md)
   1. Deploy the project to your AEM Forms environment. <!--Cloud Service environment
-  
 -->
 
 ### Utiliser un fichier XCI personnalisé dans votre environnement de développement Forms local
 
 1. Chargez le fichier XCI dans votre environnement de développement local.
-1. Ouvrez Configuration Manager dans <!--Cloud Service SDK-->. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+1. Ouvrez <!--Cloud Service SDK--> gestionnaire de configuration.
+
+   <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+
 1. Recherchez et ouvrez la configuration **[!UICONTROL du canal web pour la communication interactive et les formulaires adaptatifs]**.
 1. Spécifiez le chemin d’accès du fichier XCI et cliquez sur **[!UICONTROL Enregistrer]**.

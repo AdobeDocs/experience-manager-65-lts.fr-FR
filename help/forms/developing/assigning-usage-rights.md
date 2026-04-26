@@ -11,10 +11,10 @@ feature: Adaptive Forms,Document Services, Reader Extensions
 hide: true
 hidefromtoc: true
 exl-id: d8027b43-10c7-435c-8fb5-059508966d42
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3890'
-ht-degree: 99%
+source-wordcount: '3973'
+ht-degree: 98%
 
 ---
 
@@ -97,7 +97,7 @@ Une fois que le service d’extensions Acrobat Reader DC a appliqué des droits 
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Démarrages rapides de l’API du service des extensions Acrobat Reader DC](/help/forms/developing/acrobat-reader-dc-extensions-service.md#acrobat-reader-dc-extensions-service-java-api-quick-start-soap)
+[Démarrages rapides de l’API du service Extensions Acrobat Reader DC](/help/forms/developing/acrobat-reader-dc-extensions-service.md#acrobat-reader-dc-extensions-service-java-api-quick-start-soap)
 
 ### Appliquer des droits d’utilisation à l’aide de l’API Java {#apply-usage-rights-using-the-java-api}
 
@@ -110,16 +110,16 @@ Appliquez des droits d’utilisation à un document PDF à l’aide de l’API d
 1. Créez un objet Client des extensions Acrobat Reader DC.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `ReaderExtensionsServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `ReaderExtensionsServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Récupérez un document PDF.
 
-   * Créez un objet `java.io.FileInputStream` qui représente le document PDF en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du document PDF.
-   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
+   * Créez un objet `java.io.FileInputStream` qui représente le document PDF en utilisant son constructeur et en transmettant une valeur de chaîne qui indique l’emplacement du document PDF.
+   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
 
 1. Spécifiez les droits d’utilisation à appliquer.
 
-   * Créez un objet `UsageRights` qui représente les droits d’utilisation à l’aide de son constructeur.
+   * Créez un objet `UsageRights` représentant les droits d’utilisation à l’aide de son constructeur.
    * Pour chaque droit d’utilisation à appliquer, appelez une méthode correspondante qui appartient à l’objet `UsageRights`. Par exemple, pour ajouter le droit d’utilisation `enableFormFillIn`, appelez la méthode `enableFormFillIn` de l’objet `UsageRights` et transmettez `true`. (Répétez cette étape pour chaque droit d’utilisation à appliquer).
 
 1. Appliquez les droits d’utilisation au document PDF.
@@ -127,7 +127,7 @@ Appliquez des droits d’utilisation à un document PDF à l’aide de l’API d
    * Créez un objet `ReaderExtensionsOptionSpec` en utilisant son constructeur. Cet objet contient les options d’exécution requises par le service Extensions Acrobat Reader DC. Lorsque vous appelez ce constructeur, vous devez spécifier les valeurs suivantes :
 
       * Objet `UsageRights` contenant les droits d’utilisation à appliquer au document.
-      * Valeur de chaîne qui spécifie un message que l’utilisateur voit lorsque le document PDF avec droits d’utilisation est ouvert dans Adobe Reader 7.x. Ce message n’est pas affiché dans Adobe Reader 8.0.
+      * Une valeur de chaîne qui spécifie un message qu’un utilisateur voit lorsqu’un document PDF dont les droits sont activés est ouvert dans Adobe Reader 7.x. Ce message ne s’affiche pas dans Adobe Reader 8.0.
 
    * Appliquez des droits d’utilisation au document PDF en appelant la méthode `applyUsageRights` de l’objet `ReaderExtensionsServiceClient` et en transmettant les valeurs suivantes :
 
@@ -142,13 +142,13 @@ Appliquez des droits d’utilisation à un document PDF à l’aide de l’API d
 1. Enregistrez le document PDF défini avec des droits d’utilisation.
 
    * Créez un objet `java.io.File` et assurez-vous que l’extension du fichier est .pdf.
-   * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour copier le contenu de l’objet `com.adobe.idp.Document` dans le fichier (assurez-vous d’utiliser l’objet `com.adobe.idp.Document` qui a été renvoyé par la méthode `applyUsageRights`).
+   * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour copier le contenu de l’objet `com.adobe.idp.Document` dans le fichier (veillez à utiliser l’objet `com.adobe.idp.Document` renvoyé par la méthode `applyUsageRights`).
 
 **Voir également**
 
 [Appliquer des droits d’utilisation aux documents PDF](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-[Démarrage rapide (mode SOAP)](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[Démarrage rapide (mode SOAP):Applying droits d’utilisation à l’aide de l’API Java](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -170,7 +170,7 @@ Appliquez des droits d’utilisation à un document PDF à l’aide de l’API d
 
    * Créez un objet `ReaderExtensionsServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `ReaderExtensionsServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Assurez-vous de spécifier `?blob=mtom`).
-   * Créez un objet `System.ServiceModel.BasicHttpBinding` en récupérant la valeur du champ `ReaderExtensionsServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `ReaderExtensionsServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
@@ -185,7 +185,7 @@ Appliquez des droits d’utilisation à un document PDF à l’aide de l’API d
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec le flux de données en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’objet `BLOB` en affectant à sa propriété `MTOM` le contenu du tableau d’octets.
+   * Renseignez l’objet `BLOB` en attribuant le contenu du tableau d’octets à sa propriété `MTOM`.
 
 1. Spécifiez les droits d’utilisation à appliquer.
 
@@ -194,7 +194,7 @@ Appliquez des droits d’utilisation à un document PDF à l’aide de l’API d
 
 1. Appliquez les droits d’utilisation au document PDF.
 
-   * Créez un objet `ReaderExtensionsOptionSpec` en utilisant son constructeur. Cet objet contient des options d’exécution requises par le service Extensions Acrobat Reader DC.
+   * Créez un objet `ReaderExtensionsOptionSpec` en utilisant son constructeur. Cet objet contient les options d’exécution requises par le service Extensions Acrobat Reader DC.
    * Affectez l’objet `UsageRights` au membre de données `usageRights` de l’objet `ReaderExtensionsOptionSpec`.
    * Affectez une valeur de chaîne spécifiant le message qu’un utilisateur voit lorsqu’un document PDF défini avec des droits d’utilisation est ouvert dans Adobe Reader au membre de données `message` de l’objet `ReaderExtensionsOptionSpec`.
    * Appliquez des droits d’utilisation au document PDF en appelant la méthode `applyUsageRights` de l’objet `ReaderExtensionsServiceClient` et en transmettant les valeurs suivantes :
@@ -240,7 +240,7 @@ Pour supprimer des droits d’utilisation d’un document PDF défini avec des d
 1. Supprimez les droits d’utilisation du document PDF.
 1. Enregistrez le formulaire PDF.
 
-**Inclure des fichiers de projet**
+**Inclure les fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
@@ -280,7 +280,7 @@ Supprimez les droits d’utilisation d’un document PDF dont les droits sont ac
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un objet Client des extensions Acrobat Reader DC.
 
@@ -289,7 +289,7 @@ Supprimez les droits d’utilisation d’un document PDF dont les droits sont ac
 1. Récupérez un document PDF.
 
    * Créez un objet `java.io.FileInputStream` qui représente le document PDF dont les droits sont activés en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du document PDF.
-   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
+   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
 
 1. Supprimez les droits d’utilisation du document PDF.
 
@@ -298,7 +298,7 @@ Supprimez les droits d’utilisation d’un document PDF dont les droits sont ac
 1. Appliquez les droits d’utilisation au document PDF.
 
    * Créez un objet `java.io.File` et assurez-vous que l’extension du fichier est .PDF.
-   * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier (assurez-vous d’utiliser l’objet `Document` qui a été renvoyé par la méthode `removeUsageRights`).
+   * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier (veillez à utiliser l’objet `Document` renvoyé par la méthode `removeUsageRights`).
 
 **Voir également**
 
@@ -326,7 +326,7 @@ Supprimez les droits d’utilisation d’un document PDF dont les droits sont ac
 
    * Créez un objet `ReaderExtensionsServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `ReaderExtensionsServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Assurez-vous de spécifier `?blob=mtom`).
-   * Créez un objet `System.ServiceModel.BasicHttpBinding` en récupérant la valeur du champ `ReaderExtensionsServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `ReaderExtensionsServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
@@ -341,7 +341,7 @@ Supprimez les droits d’utilisation d’un document PDF dont les droits sont ac
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’objet `BLOB` en affectant sa propriété `MTOM` au contenu du tableau d’octets.
+   * Renseignez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Supprimez les droits d’utilisation du document PDF.
 
@@ -351,7 +351,7 @@ Supprimez les droits d’utilisation d’un document PDF dont les droits sont ac
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du fichier du PDF.
    * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` qui a été renvoyé par la méthode `removeUsageRights`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
-   * Créez un objet `System.IO.BinaryWriter` en appelant son constructeur et en transmettant l’objet `System.IO.FileStream`.
+   * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
 
 **Voir également**
 
@@ -378,7 +378,7 @@ Pour récupérer des informations sur les informations d’identification utilis
 1. Récupérez un document PDF dont les droits sont activés.
 1. Récupérez des informations sur les informations d’identification.
 
-**Inclure des fichiers de projet**
+**Inclure les fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
@@ -418,7 +418,7 @@ Récupérez les informations d’identification à l’aide de l’API Extension
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un objet Client des extensions Acrobat Reader DC.
 
@@ -427,11 +427,11 @@ Récupérez les informations d’identification à l’aide de l’API Extension
 1. Récupérez un document PDF.
 
    * Créez un objet `java.io.FileInputStream` qui représentent le document PDF dont les droits sont activés en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du document PDF dont les droits sont activés.
-   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
+   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
 
 1. Supprimez les droits d’utilisation du document PDF.
 
-   * Récupérez les informations relatives aux informations d’identification utilisées pour appliquer les droits d’utilisation au document PDF en appelant la méthode `getDocumentUsageRights` de l’objet `ReaderExtensionsServiceClient` et en transmettant l’objet `com.adobe.idp.Document` qui contient le document PDF dont les droits sont activés. Cette méthode renvoie un objet `GetUsageRightsResult` qui contient des informations d’identification.
+   * Récupérez des informations sur les informations d’identification utilisées pour appliquer des droits d’utilisation au document PDF en appelant la méthode `getDocumentUsageRights` de l’objet `ReaderExtensionsServiceClient` et en transmettant l’objet `com.adobe.idp.Document` contenant le document PDF dont les droits sont activés. Cette méthode renvoie un objet `GetUsageRightsResult` qui contient des informations d’identification.
    * Récupérez la date après laquelle les informations d’identification ne sont plus valides en appelant la méthode `getNotAfter` de l’objet `GetUsageRightsResult`. Cette méthode renvoie un objet `java.util.Date` qui représente la date après laquelle les informations d’identification ne sont plus valides.
    * Récupérez le message qui s’affiche dans Adobe Reader lors de l’ouverture d’un document PDF dont les droits sont activés en appelant la méthode `getMessage` de l’objet `GetUsageRightsResult`. Cette méthode renvoie une valeur de chaîne qui représente le message.
 
@@ -461,7 +461,7 @@ Récupérez les informations d’identification à l’aide de l’API des exten
 
    * Créez un objet `ReaderExtensionsServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `ReaderExtensionsServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Assurez-vous de spécifier `?blob=mtom`).
-   * Créez un objet `System.ServiceModel.BasicHttpBinding` en récupérant la valeur du champ `ReaderExtensionsServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `ReaderExtensionsServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
@@ -476,7 +476,7 @@ Récupérez les informations d’identification à l’aide de l’API des exten
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF dont les droits sont activés et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’objet `BLOB` en affectant sa propriété `MTOM` au contenu du tableau d’octets.
+   * Renseignez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Supprimez les droits d’utilisation du document PDF.
 

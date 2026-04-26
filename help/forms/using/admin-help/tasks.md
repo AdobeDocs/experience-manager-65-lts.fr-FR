@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: d6a0caed-99fa-4121-ac2e-bc21626ff9e0
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 100%
@@ -86,7 +86,7 @@ Pour chaque affectation de tâche, la liste affiche les informations suivantes 
 
 **Demande :** l’utilisateur a demandé que la tâche lui soit affectée dans une liste de tâches partagée.
 
-**Transmission :** une durée prédéterminée est passée (comme définie dans l’action d’utilisateur dans Workbench) sans interaction de l’utilisateur et la tâche a été affectée à un autre utilisateur.
+**Transmission :** une durée prédéterminée est passée (comme définie dans l’action Utilisateur dans Workbench) sans interaction de l’utilisateur ou de l’utilisatrice et la tâche a été affectée à une autre personne.
 
 **Consultation :** le propriétaire de la tâche l’a envoyée pour consultation à un autre utilisateur qui peut ouvrir le formulaire, enregistrer les données, modifier les pièces jointes et les notes, mais qui ne peut pas terminer l’étape. L’utilisateur doit renvoyer la tâche au propriétaire qui lui a demandé de la consulter.
 

@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f1a68461-c66a-4ea4-902b-644c620ea3f6
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 100%
@@ -29,7 +29,7 @@ Utilisez la page Configurer les attributs système avancés pour modifier certai
 
    >[!NOTE]
    >
-   >Vous ne devez pas définir un délai d’attente de session inférieur à 10 minutes, sinon le système risque de ne pas se comporter correctement. Il est recommandé de choisir une valeur comprise entre 10 et 120 (minutes).
+   >Vous ne devez pas définir un délai d’expiration de session inférieur à 10 minutes, sinon le système risque de ne pas se comporter correctement. Il est recommandé de choisir une valeur comprise entre 10 et 120 (minutes).
 
    **Seuil d’identification (en secondes) :** cette valeur indique une durée de mise en mémoire pour compenser les retards dus aux différences de temps système entre le serveur d’applications AEM forms d’une grappe. AEM forms antidate la durée de connexion d’un utilisateur en fonction de la durée (en secondes) spécifiée dans cette propriété. Les valeurs valides sont comprises entre `0` et `3600`. La valeur par défaut est `60`. Ce paramètre met à jour la clé d’entrée `SAML/Producer/assertionThresholdInSeconds` dans le fichier de configuration.
 

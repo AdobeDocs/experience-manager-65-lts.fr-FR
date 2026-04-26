@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 560d505465362d33f2864f13e9b75921b83ba5e4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
 source-wordcount: '7427'
 ht-degree: 13%
@@ -262,7 +262,8 @@ Assets Relate fonctionne désormais pour les noms de fichier qui incluent des es
 <!-- #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp2} -->
 
 <!--
-#### Forms Designer-->
+#### Forms Designer
+-->
 
 ### [!DNL Forms]{#forms-65-lts-sp2}
 
@@ -382,7 +383,8 @@ Ces anciennes configurations utilisent des propriétés, telles que `whitelist.n
 <!--
 #### Security{#foundation-security-65-lts-sp2}
 
-AEM now prevents NullPointerException errors when a logged-in user lacks read access for some groups and opens the Groups tab. The tab now hides groups without access and renders group membership details without a blank or unresponsive UI. (NPR-43311) -->
+AEM now prevents NullPointerException errors when a logged-in user lacks read access for some groups and opens the Groups tab. The tab now hides groups without access and renders group membership details without a blank or unresponsive UI. (NPR-43311)
+-->
 
 #### Sling{#foundation-sling-65-lts-sp2}
 
@@ -450,7 +452,7 @@ Voir aussi [Mise à jour de la version AEM Uber Jar](/help/sites-deploying/upgra
 ### Mise à niveau {#upgrade}
 
 * Pour plus d’informations sur la procédure de mise à niveau, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
-* Pour obtenir des instructions de mise à niveau détaillées, consultez le [&#x200B; Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Pour obtenir des instructions de mise à niveau détaillées, consultez le [ Guide de mise à niveau pour AEM Forms 6.5 LTS SP1 sous JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Bonnes pratiques relatives aux mises à niveau du pack de services d’AEM 6.5 LTS
 
@@ -646,5 +648,5 @@ Les documents texte suivants répertorient les lots OSGi et les packages de cont
 Ces sites Web sont disponibles uniquement pour les clients. Si vous êtes client et avez besoin d’un accès, contactez votre responsable de compte Adobe.
 
 * [Téléchargement du produit sur licensing.adobe.com](https://licensing.adobe.com/)
-* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 

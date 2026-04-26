@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: cee9cce0-becd-4822-ac37-094d564f2289
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 100%
+source-wordcount: '968'
+ht-degree: 94%
 
 ---
 
@@ -24,7 +24,7 @@ Lorsque la fonctionnalité de contrôle est activée, Document Security vous pe
 
 **Utilisateurs :** ils peuvent afficher les événements contrôlés sur leurs documents protégés par une politique, ainsi que sur les documents protégés qu’ils reçoivent et utilisent.
 
-**Coordinateurs de jeux de politiques :** ils peuvent afficher les événements contrôlés, notamment les événements de document et de politique, pour les documents protégés par des politiques issues de leurs jeux de politiques.
+**Coordinateurs et coordinatrices d’ensembles de politiques** : peuvent afficher les événements contrôlés, notamment les événements de document et de politique, pour les documents protégés par des politiques issues de leurs ensembles de politiques.
 
 **Administrateurs :** ils peuvent afficher les événements contrôlés concernant tous les utilisateurs et documents protégés par une politique. Les administrateurs et administratrices peuvent également suivre d’autres types d’événements, tels que les événements d’utilisateur ou d’utilisatrice, de document, de stratégie et de système.
 
@@ -60,17 +60,17 @@ Vous pouvez rechercher des événements dans la page Événements en combinant d
 
 **Utilisateurs :** ils peuvent afficher les événements contrôlés sur leurs documents protégés par une politique, ainsi que sur les documents protégés qu’ils reçoivent et utilisent. Les options de recherche disponibles sont les suivantes :
 
-**Événements me
-concernant :** les utilisateurs peuvent rechercher des événements concernant les documents protégés par une politique qu’ils ont créés ou reçus. Par exemple, si un utilisateur ouvre, affiche ou imprime un document qui était protégé par une autre personne, l’utilisateur ne voit que les événements concernant ce document.
+**Événements liés
+Selon moi :** les utilisateurs peuvent rechercher des événements pour les documents protégés par une politique qu’ils ont créés ou reçus. Par exemple, si un utilisateur ouvre, affiche ou imprime un document qui était protégé par une autre personne, l’utilisateur ne voit que les événements concernant ce document.
 
 **Événements liés à mes documents :** les utilisateurs peuvent rechercher tous les événements relatifs à leurs propres documents protégés par une politique. Les utilisateurs voient les événements générés par chaque personne ayant manipulé leurs documents.
 
-**Coordinateurs de jeux de politiques :** ils peuvent afficher les événements contrôlés (notamment les événements de document et de politique) pour les documents protégés par des politiques issues de leurs jeux de politiques. Voici les options de disponibles :
+**Coordinateurs et coordinatrices d’ensembles de politiques** : peuvent afficher les événements contrôlés, notamment les événements de document et de politique, pour les documents protégés par des politiques issues de leurs ensembles de politiques. Voici les options de disponibles :
 
-**Événements de document pour lesquels
-je suis coordinateur de jeux de politiques :** les coordinateurs de jeux de politiques qui disposent de l’autorisation d’affichage des événements peuvent rechercher les événements liés aux documents protégés par des politiques issues de leurs jeux de politiques.
+**Événements de document où
+Je suis coordinateur de jeux de politiques** : les coordinateurs de jeux de politiques qui disposent de l’autorisation d’affichage des événements peuvent rechercher les événements liés aux documents protégés par des politiques issues de leurs jeux de politiques.
 
-**Événements de politique pour lesquels je suis coordinateur de jeux de politiques :** les coordinateurs de jeux de politiques qui disposent de l’autorisation d’affichage des événements peuvent rechercher les événements liés aux politiques issues de leurs jeux de politiques.
+**Événements de politique pour lesquels je coordonne des ensembles de politiques :** les coordinateurs et coordinatrices d’ensembles de politiques qui disposent de l’autorisation d’affichage des événements peuvent rechercher les événements liés aux politiques issues de leurs ensembles de politiques.
 
 **Administrateurs :** ils peuvent afficher les événements contrôlés concernant tous les utilisateurs et documents protégés par une politique. Les administrateurs et administratrices peuvent également assurer le suivi d’autres types. De plus, les administrateurs et administratrices peuvent subdiviser les recherches d’événements par type d’utilisateur ou d’utilisatrice :
 

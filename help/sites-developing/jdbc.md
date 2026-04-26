@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 0d5e1e83-9ecf-41d6-adbe-8b06a034943e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 100%
+source-wordcount: '939'
+ht-degree: 99%
 
 ---
 
@@ -85,9 +85,9 @@ La connaissance du code source vous permet de décider quelle solution utiliser.
 
 Les liens suivants ouvrent les pages de téléchargement de certains produits de base de données populaires :
 
-* [Microsoft® SQL Server](https://www.microsoft.com/fr-fr/sql-server/sql-server-downloads)
+* [Microsoft® SQL Server](https://www.microsoft.com/fr-fr/sql-server/sql-server-downloads)
 * [Oracle](https://www.oracle.com/fr/database/technologies/appdev/c-downloads.html)
-* [IBM DB2®](https://www.ibm.com/support/pages/download-db2-fix-packs-version-db2-linux-unix-and-windows)
+* [IBM® DB2®](https://www.ibm.com/support/pages/download-db2-fix-packs-version-db2-linux-unix-and-windows)
 
 ### Configurer le service pool de connexions JDBC {#configuring-the-jdbc-connection-pool-service}
 
@@ -171,7 +171,9 @@ L’exemple de code JSP suivant récupère une instance de la source de données
 >Si la méthode getDataSource renvoie une exception car la source de données est introuvable, assurez-vous que la configuration du service pool de connexions est correcte. Vérifiez les noms de propriété, les valeurs et les types de données.
 >
 
-<!-- Link below redirects to the "Get started with AEM Sites - WKND tutorial"
+<!--
+Link below redirects to the "Get started with AEM Sites - WKND tutorial"
 >[!NOTE]
 >
->To learn how to inject a DataSourcePool into an OSGi bundle, see [Injecting a DataSourcePool Service into an Adobe Experience Manager OSGi bundle](https://helpx.adobe.com/experience-manager/using/datasourcepool.html). -->
+>To learn how to inject a DataSourcePool into an OSGi bundle, see [Injecting a DataSourcePool Service into an Adobe Experience Manager OSGi bundle](https://helpx.adobe.com/experience-manager/using/datasourcepool.html).
+-->

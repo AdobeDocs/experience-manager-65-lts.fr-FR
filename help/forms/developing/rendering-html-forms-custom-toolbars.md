@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: e4b02c17-dcd1-424b-9aee-579a8346b4d7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2358'
 ht-degree: 98%
 
 ---
@@ -157,7 +157,7 @@ Spécifiez également une valeur de paramètres régionaux valide en appelant la
 >
 >Avant d’effectuer le rendu d’un formulaire HTML qui utilise une barre d’outils personnalisée, vous devez comprendre comment les formulaires HTML sont rendus. (Consultez la section [Rendre des formulaires en HTML](/help/forms/developing/rendering-forms-html.md)).
 
-Pour plus d’informations sur le service Forms, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+Pour plus d’informations à propos du service Forms, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -169,7 +169,7 @@ Pour effectuer le rendu d’un formulaire HTML qui contient une barre d’outils
 1. Effectuez le rendu d’un formulaire HTML.
 1. Écrivez le flux de données du formulaire dans le navigateur web du client.
 
-**Inclure des fichiers de projet**
+**Inclure les fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, incluez les fichiers proxy.
 
@@ -181,7 +181,7 @@ Avant de pouvoir effectuer par programmation une opération prise en charge par 
 
 Pour effectuer le rendu d’un formulaire HTML qui contient une barre d’outils personnalisée, référencez un fichier XML fscmenu qui décrit la barre d’outils. (Cette section fournit deux exemples de fichier XML fscmenu.) Assurez-vous également que le fichier fscmenu.xml spécifie correctement les emplacements de tous les fichiers référencés. Comme mentionné précédemment dans cette section, veillez à ce que tous les fichiers soient référencés par le mot-clé `FSToolBarURI` ou par leur emplacement absolu.
 
-**Effectuer le rendu d’un formulaire HTML**
+**Rendre un formulaire HTML**
 
 Pour effectuer le rendu d’un formulaire HTML, spécifiez une conception de formulaire qui a été créée dans Designer et enregistrée en tant que fichier XDP. Sélectionnez également un type de transformation HTML. Par exemple, vous pouvez spécifier le type de transformation HTML qui effectue le rendu d’un HTML dynamique pour Internet Explorer 5.0 ou version ultérieure.
 
@@ -220,7 +220,7 @@ Effectuez le rendu d’un formulaire HTML contenant une barre d’outils personn
 1. Créer un objet API Java Forms
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `FormsServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `FormsServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Référencer un fichier XML fscmenu personnalisé
 
@@ -245,7 +245,7 @@ Effectuez le rendu d’un formulaire HTML contenant une barre d’outils personn
    * Un objet `URLSpec` qui stocke les valeurs URI nécessaires pour effectuer le rendu d’un formulaire HTML.
    * Un objet `java.util.HashMap` qui stocke les pièces jointes. Il s’agit d’un paramètre facultatif, si vous ne souhaitez pas joindre de fichier au formulaire, indiquez `null`.
 
-   La méthode `renderHTMLForm` renvoie un objet `FormsResult` qui contient un flux de données de formulaire qui doit être écrit dans le navigateur web du client.
+   La méthode `renderHTMLForm` renvoie un objet `FormsResult` contenant un flux de données de formulaire qui doit être écrit dans le navigateur web client.
 
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
@@ -295,28 +295,28 @@ Effectuez le rendu d’un formulaire HTML contenant une barre d’outils personn
 
    * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Une valeur d’énumération `TransformTo` spécifiant le type de préférence HTML. Par exemple, pour effectuer le rendu d’un formulaire HTML compatible avec le HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
-   * Un objet `BLOB` qui contient les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner les données, transmettez `null`.
+   * Objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez `null`.
    * Lʼobjet `HTMLRenderSpec` qui stocke les options d’exécution du formulaire HTML.
    * Une valeur de chaîne qui spécifie la valeur de lʼen-tête `HTTP_USER_AGENT`, comme `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322`). Vous pouvez transmettre une chaîne vide si vous ne souhaitez pas définir cette valeur.
-   * Un objet `URLSpec` qui stocke les valeurs URI nécessaires au rendu dʼun formulaire HTML.
+   * Un objet `URLSpec` qui stocke les valeurs URI nécessaires pour effectuer le rendu d’un formulaire HTML.
    * Un objet `java.util.HashMap` qui stocke les pièces jointes. Ce paramètre est facultatif. Vous pouvez indiquer `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
    * Un objet `com.adobe.idp.services.holders.BLOBHolder` vide, renseigné par la méthode `renderHTMLForm`. La valeur de ce paramètre enregistre le formulaire rendu.
    * Un objet `com.adobe.idp.services.holders.BLOBHolder` vide, renseigné par la méthode `renderHTMLForm`. Ce paramètre stocke les données XML de sortie.
    * Un objet `javax.xml.rpc.holders.LongHolder` vide, renseigné par la méthode `renderHTMLForm`. Cet argument stocke le nombre de pages du formulaire.
    * Un objet `javax.xml.rpc.holders.StringHolder` vide, renseigné par la méthode `renderHTMLForm`. Cet argument stocke la valeur des paramètres régionaux.
    * Un objet `javax.xml.rpc.holders.StringHolder` vide, renseigné par la méthode `renderHTMLForm`. Cet argument stocke la valeur de rendu HTML utilisée.
-   * Un objet `com.adobe.idp.services.holders.FormsResultHolder` vide qui contiendra les résultats de cette opération.
+   * Objet `com.adobe.idp.services.holders.FormsResultHolder` vide qui contient les résultats de cette opération.
 
    La méthode `renderHTMLForm` renseigne l’objet `com.adobe.idp.services.holders.FormsResultHolder` qui est transmis en tant que dernière valeur d’argument avec un flux de données de formulaire qui doit être écrit dans le navigateur web client.
 
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
-   * Créez un objet `FormResult` en obtenant la valeur du membre de données `value` de l’objet `com.adobe.idp.services.holders.FormsResultHolder`.
+   * Créez un objet `FormResult` en obtenant la valeur du membre de données `value` de lʼobjet `com.adobe.idp.services.holders.FormsResultHolder`.
    * Créez un objet `BLOB` contenant des données de formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
-   * Obtenez le type de contenu de l’objet `BLOB` en appelant sa méthode `getContentType`.
+   * Accédez au type de contenu de l’objet `BLOB` en appelant sa méthode `getContentType`.
    * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `BLOB`.
-   * Créez un objet `javax.servlet.ServletOutputStream`, utilisé pour enregistrer le flux de données de formulaire dans le navigateur web du client, en appelant la méthode `getOutputStream` de lʼobjet `javax.servlet.http.HttpServletResponse`.
-   * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de lʼobjet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
+   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données du formulaire dans le navigateur web du client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
+   * Créez un tableau d’octets et remplissez-le en appelant la méthode `getBinaryData` de lʼobjet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
    * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**

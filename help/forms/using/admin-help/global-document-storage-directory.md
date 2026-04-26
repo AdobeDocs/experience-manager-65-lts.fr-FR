@@ -11,16 +11,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 9a93b8f9-33cb-4aec-81e0-a1146bba955a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '690'
 ht-degree: 100%
 
 ---
 
 # Répertoire de stockage global de documents{#global-document-storage-directory}
 
-Le répertoire de *stockage global de documents (GDS)* est un répertoire utilisé pour stocker les fichiers de longue durée utilisés dans un processus. Ces fichiers incluent des fichiers PDF, des politiques et des modèles de formulaire. Les fichiers de longue durée constituent un élément essentiel de l’état général de nombreux déploiements d’AEM Forms. Si une partie ou la totalité de ces documents est perdue ou corrompue, le serveur Forms peut devenir instable. Les documents d’entrée pour les appels de tâches asynchrones sont également stockés dans le répertoire GDS et doivent être disponibles pour traiter les requêtes. Il est important de prendre en compte la fiabilité du système de fichiers qui héberge le répertoire GDS. Utilisez la technologie RAID ou une autre technologie adaptée à vos besoins en matière de qualité et de niveau de service.
+Le répertoire de *stockage global de documents (GDS)* est un répertoire utilisé pour stocker les fichiers de longue durée utilisés dans un processus. Ces fichiers incluent des fichiers PDF, des politiques et des modèles de formulaires. Les fichiers de longue durée constituent un élément essentiel de l’état général de nombreux déploiements d’AEM Forms. Si une partie ou la totalité de ces documents est perdue ou corrompue, le serveur Forms peut devenir instable. Les documents d’entrée pour les appels de tâches asynchrones sont également stockés dans le répertoire GDS et doivent être disponibles pour traiter les requêtes. Il est important de prendre en compte la fiabilité du système de fichiers qui héberge le répertoire GDS. Utilisez la technologie RAID ou une autre technologie adaptée à vos besoins en matière de qualité et de niveau de service.
 
 Les fichiers de longue durée peuvent contenir des informations utilisateur sensibles. Ces informations peuvent nécessiter des informations d’identification spéciales lorsqu’elles sont accessibles à l’aide des API ou des interfaces utilisateur d’AEM Forms. Il est important que le répertoire GDS soit correctement sécurisé via le système d’exploitation. Seul le compte d’administrateur ou d’administratrice utilisé pour exécuter le serveur d’applications doit disposer d’un accès en lecture/écriture au répertoire GDS.
 

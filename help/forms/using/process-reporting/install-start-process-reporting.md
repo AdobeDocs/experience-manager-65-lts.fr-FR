@@ -11,16 +11,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: e64a3b6f-7248-4426-9f13-f703eab3632d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1711'
+source-wordcount: '1734'
 ht-degree: 99%
 
 ---
 
 # Prise en main de Process Reporting{#getting-started-with-process-reporting}
 
-Process Reporting permet aux utilisateurs d’AEM Forms de demander des renseignements à propos des processus AEM Forms actuellement définis dans le cadre de la mise en œuvre d’AEM Forms. Toutefois, Process Reporting n’accède pas directement aux données à partir du référentiel AEM Forms. Les données sont d’abord publiées dans le référentiel Process Reporting selon un calendrier (*par les services ProcessDataPublisher et ProcessDataStorage*). Les rapports et requêtes de Process Reporting sont ensuite générés à partir des données Process Reporting publiées dans le référentiel. Process Reporting est installé dans le cadre du module Forms Workflow.
+Process Reporting permet aux personnes qui utilisent AEM Forms de demander des informations sur des processus AEM Forms actuellement définis dans le cadre de la mise en œuvre d’AEM Forms. Toutefois, Process Reporting n’accède pas directement aux données à partir du référentiel AEM Forms. Les données sont d’abord publiées dans le référentiel Process Reporting selon un calendrier (*par les services ProcessDataPublisher et ProcessDataStorage*). Les rapports et requêtes de Process Reporting sont ensuite générés à partir des données Process Reporting publiées dans le référentiel. Process Reporting est installé dans le cadre du module Forms Workflow.
 
 Cet article décrit les étapes à suivre pour activer la publication des données AEM Forms dans le référentiel Process Reporting. Ensuite, vous pourrez utiliser Process Reporting pour exécuter des rapports et des requêtes. L’article couvre également les options disponibles pour configurer les services Process Reporting.
 
@@ -169,7 +169,7 @@ Le service ReportConfiguration est utilisé par Process Reporting pour configure
 
 Le service ProcessDataPublisher importe les données de processus de la base de données AEM Forms et les publie dans le service ProcessDataStorageProvider pour le stockage.
 
-#### Pour configurer le service ProcessDataPublisher  {#to-configure-processdatapublisher-service-nbsp}
+#### Pour configurer le service ProcessDataPublisher   {#to-configure-processdatapublisher-service-nbsp}
 
 1. Connectez-vous à la **Console d’administration** avec vos informations d’identification d’administrateur.
 

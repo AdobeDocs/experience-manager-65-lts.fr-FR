@@ -6,10 +6,10 @@ role: User, Admin
 feature: Configuration,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 6252e61f-44b5-4931-80a0-426c6883092e
-source-git-commit: 846b45f6ab83599eb709573a77422f2aba1ef047
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '7607'
-ht-degree: 100%
+source-wordcount: '8118'
+ht-degree: 95%
 
 ---
 
@@ -24,25 +24,14 @@ ht-degree: 100%
 >* SSL 3.0
 >* TLS (Transport Layer Security) 1.0 et 1.1
 >* Les chiffrements faibles suivants dans TLS 1.2 :
-> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
-> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
-> `TLS_RSA_WITH_AES_256_GCM_SHA384`
-> `TLS_RSA_WITH_AES_256_CBC_SHA256`
-> `TLS_RSA_WITH_AES_256_CBC_SHA`
-> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
-> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
-> `TLS_RSA_WITH_AES_128_GCM_SHA256`
-> `TLS_RSA_WITH_AES_128_CBC_SHA256`
-> `TLS_RSA_WITH_AES_128_CBC_SHA`
-> `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
-> `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
-> `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
-> `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`> `TLS_RSA_WITH_AES_256_GCM_SHA384`> `TLS_RSA_WITH_AES_256_CBC_SHA256`> `TLS_RSA_WITH_AES_256_CBC_SHA`> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`> `TLS_RSA_WITH_AES_128_GCM_SHA256`> `TLS_RSA_WITH_AES_128_CBC_SHA256`> `TLS_RSA_WITH_AES_128_CBC_SHA`> `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`> `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`> `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`> `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
 >
 > Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
-<!-- FOR ABOVE - CQDOC-19433 (original ticket)
-and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
+<!--
+FOR ABOVE - CQDOC-19433 (original ticket)
+and CQDOC-19792 (removed as per this ticket December 5, 2022)
+-->
 
 
 Dynamic Media en mode hybride doit être activé et configuré pour être utilisé. Selon l’utilisation que vous souhaitez en faire, Dynamic Media prend en charge [plusieurs configurations](#supported-dynamic-media-configurations).
@@ -390,7 +379,8 @@ Replication test to s7delivery:https://s7bern.macromedia.com:8580/is-publish/
  Server returned status code 401 with message: Authorization required.
 ```
 
-**Solution** : vérifiez que le `KeyStore` est enregistré pour l’utilisateur **dynamic-media-replication** et qu’il est fourni avec le bon mot de passe.
+**Solution :**
+Vérifiez que le `KeyStore` est enregistré pour l’utilisateur **dynamic-media-replication** et qu’il est fourni avec le bon mot de passe.
 
 #### Problème : Impossible de déchiffrer la clé - Impossible de déchiffrer les données {#problem-could-not-decrypt-key-could-not-decrypt-data}
 
@@ -406,8 +396,8 @@ Replication test to s7delivery:https://<localhost>:8580/is-publish/
 17.06.2016 19:00:16 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1466215216662, userId='admin', revision='null'}. java.lang.SecurityException: java.security.UnrecoverableKeyException: Could not decrypt key: Could not decrypt data.
 ```
 
-**Solution** :
-vérifiez le mot de passe. Le mot de passe enregistré dans l’agent de réplication n’est pas le même que celui utilisé pour créer le KeyStore.
+**Solution :**
+Vérifiez le mot de passe. Le mot de passe enregistré dans l’agent de réplication n’est pas le même que celui utilisé pour créer le KeyStore.
 
 #### Problème : InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
@@ -427,8 +417,8 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
         at com.scene7.is.catalog.service.publish.atomic.PublishingServiceHttp.executePost(PublishingServiceHttp.scala:195)
 ```
 
-**Solution** :
-Vérifiez que le processus Java™ sur l’auteur Experience Manager a la propriété `-Djavax.net.ssl.trustStore=` définie sur un TrustStore valide.
+**Solution :**
+Assurez-vous que le processus Java™ sur l’auteur Experience Manager a la propriété système `-Djavax.net.ssl.trustStore=` définie sur un TrustStore valide.
 
 #### Problème : le KeyStore n’est pas configuré ou n’a pas été initialisé. {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
@@ -547,7 +537,7 @@ Vous pouvez configurer les rapports vidéo pour plusieurs installations d’Expe
 **Prise en main :** configurez les rapports vidéo en effectuant les trois tâches suivantes.
 
 1. Créez un package de paramètres prédéfinis d’analyses vidéo après avoir configuré la Configuration de Dynamic Media (version antérieure à 6.3) sur le premier nœud de création. Cette première tâche est importante car elle permet à une nouvelle configuration de continuer à utiliser la même suite de rapports.
-1. Installez le package de paramètres prédéfinis d’analyses vidéo sur tout ***nouveau*** nœud Auteur ***avant*** de paramétrer la Configuration Dynamic Media (version antérieure à 6.3). 
+1. Installez le package de paramètres prédéfinis d’analyses vidéo sur tout ***nouveau*** nœud Auteur ***avant*** de paramétrer la Configuration Dynamic Media (version antérieure à 6.3).
 1. Vérifiez et déboguez l’installation du package.
 
 ### Création d’un package de paramètres prédéfinis d’analyses vidéo après la configuration du premier nœud Auteur {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
@@ -578,8 +568,8 @@ Vérifiez que le package de paramètres prédéfinis d’analyses vidéo du prem
 
 1. Effectuez l’une des actions suivantes et, si nécessaire, déboguez l’installation du package :
 
-   * **Vérifiez les paramètres prédéfinis d’analyses vidéo au moyen du JCR**
-Pour vérifier les paramètres prédéfinis d’analyses vidéo au moyen du JCR, vous devez disposer d’un accès à CRXDE Lite.
+   * **Vérification du paramètre prédéfini d’analyses vidéo au moyen du JCR**
+Pour vérifier le paramètre prédéfini d’analyses vidéo au moyen du JCR, vous devez avoir accès à CRXDE Lite.
 
      Experience Manager : dans CRXDE Lite, accédez à `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`.
 
@@ -603,8 +593,8 @@ Par exemple, pour afficher le paramètre prédéfini d’analyse sur le nœud Au
       trackingServer=aemvideodal.d2.sc.omtrdc.net
      ```
 
-   * **Vérification du paramètre prédéfini d’analyses vidéo à l’aide de l’outil de création de rapports vidéo dans Experience Manager**
-Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports vidéo]**.
+   * **Vérification du paramètre prédéfini d’analyses vidéo à l’aide de l’outil de création de rapports vidéo d’Experience Manager**
+Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Rapports vidéo]**
 
      `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -708,7 +698,7 @@ Si vous utilisez Dynamic Media pour (1) les images en exploitation *ou* (2) les
    <td>La « filter-video » d’usine :
     <ul>
      <li>comprend des rendus vidéo proxy, des images de miniatures/d’affiche vidéo, des métadonnées (à la fois pour les rendus vidéo et vidéo parents) pour la réplication (tout rendu commençant par <strong>cqdam</strong>) ;</li>
-     <li>exclue de la réplication la vidéo d’origine et les rendus de miniatures statiques.<br /> <br /> <strong>Remarque :</strong> les rendus de vidéo en mode proxy ne contiennent pas de données binaires, et ne sont en fait que des propriétés de nœud. Ils n’affectent donc pas la taille du référentiel de l’éditeur.</li>
+     <li>Exclure de la réplication la vidéo d’origine et les rendus de miniature statiques.<br /> <br /> <strong>Remarque :</strong> les rendus de vidéo en mode proxy ne contiennent pas de fichiers binaires, mais sont simplement des propriétés de nœud. Ils n’affectent donc pas la taille du référentiel de l’éditeur.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -845,7 +835,7 @@ Pour configurer les paramètres du serveur d’images Dynamic Media :
    | Propriété | Valeur par défaut | Description |
    | --- | --- | --- |
    | `TcpPort.name` | *`empty`* | Numéro de port à utiliser pour les communications avec le processus ImageServer. Le port disponible par défaut est automatiquement détecté. |
-   | `AllowRemoteAccess.name` | *`empty`* | Autorise ou refuse l’accès à distance au processus ImageServer. En cas de refus, le serveur d’images écoute uniquement sur le localhost.<br> Les paramètres par défaut du service Externalizer qui pointent vers le localhost doivent spécifier le domaine ou l’adresse IP de l’instance VM spécifique. La raison est que l’hôte local pointe vers le système parent de la machine virtuelle.<br>Les domaines ou les adresses IP de la machine virtuelle ont donc besoin d’une entrée de fichier hôte pour être résolus. |
+   | `AllowRemoteAccess.name` | *`empty`* | Autorise ou refuse l’accès à distance au processus ImageServer. Si la valeur est false, le serveur d’images écoute uniquement sur localhost.<br> Les paramètres par défaut du service Externalizer qui pointent vers le localhost doivent spécifier le domaine ou l’adresse IP de l’instance VM spécifique. En effet, l’hôte local pointe vers le système parent de VM.<br>Domains ou d’adresses IP de la machine virtuelle doit avoir une entrée de fichier hôte pour être résolu. |
    | `MaxRenderRgnPixels` | 16 MP | Taille maximale du rendu, en mégapixels. |
    | `MaxMessageSize` | 16 Mo | Taille maximale du message envoyé, en mégaoctets. |
    | `RandomAccessUrlTimeout` | 20 | Délai d’expiration correspondant au nombre de secondes durant lesquelles le serveur d’images attend le JCR avant de répondre à une requête de plage de mosaïque. |
@@ -889,11 +879,11 @@ Tableau des paramètres du manifeste et leurs valeurs par défaut :
 | Propriété | Valeur par défaut | Description |
 | --- | --- | --- |
 | `bkgcolor` | `FFFFFF` | Couleur d’arrière-plan par défaut. La valeur RVB est utilisée pour remplir toutes les zones d’une image de réponse qui ne contiennent aucune donnée d’image actuelle. Consultez également la section [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html?lang=fr#image-serving-api) dans l’API du service d’images. |
-| `defaultpix` | `300,300` | Taille d’affichage par défaut. Le serveur oblige les images de réponse à ne pas dépasser cette largeur et cette hauteur si la requête ne spécifie pas explicitement la taille d’affichage à l’aide de wid=, hei=, ou scl=.<br>Spécifiée sous la forme de deux nombres entiers de valeur supérieure ou égale à zéro, séparés par une virgule. Largeur et hauteur en pixels. Vous pouvez définir sur 0 les deux valeurs, ou une seule des deux, pour ne pas les limiter. Ne s’applique pas aux requêtes imbriquées/intégrées.<br>Consultez également la section [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html?lang=fr#image-serving-api) dans l’API du service d’images.<br>Habituellement, cependant, vous utilisez un paramètre de visionneuse ou d’image prédéfini pour fournir la ressource. Defaultpix ne s’applique qu’à une ressource qui n’utilise pas de paramètre de visionneuse ou d’image prédéfini. |
-| `defaultthumbpix` | `100,100` | Taille de miniature par défaut. Utilisé à la place d’attribute::DefaultPix pour les requêtes de miniature (`req=tmb`).<br>Le serveur oblige les images de réponse à ne pas dépasser cette largeur et cette hauteur. Cette action est définie sur true si une demande de miniature (`req=tmb`) ne spécifie pas explicitement la taille et ne spécifie pas la taille d’affichage explicitement à l’aide de `wid=`, `hei=`ou `scl=`.<br>Spécifiée sous la forme de deux nombres entiers de valeur supérieure ou égale à zéro, séparés par une virgule. Largeur et hauteur en pixels. Vous pouvez définir sur 0 les deux valeurs, ou une seule des deux, pour ne pas les limiter.<br>Ne s’applique pas aux requêtes imbriquées/intégrées.<br>Consultez également la section [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html?lang=fr#image-serving-api) dans l’API du service d’images. |
+| `defaultpix` | `300,300` | Taille d’affichage par défaut. Le serveur oblige les images de réponse à ne pas dépasser ces valeurs de largeur et de hauteur, si la requête ne spécifie pas explicitement la taille d’affichage à l’aide des commandes wid=, hei= ou scl=.<br>Spécifiée sous la forme de deux nombres entiers, supérieurs ou égaux à 0, séparés par une virgule. Largeur et hauteur en pixels. Vous pouvez définir sur 0 les deux valeurs, ou une seule des deux, pour ne pas les limiter. Ne s’applique pas aux requêtes imbriquées/intégrées.<br>Consultez également la section [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html?lang=fr#image-serving-api) dans l’API du service d’images.<br>En règle générale, cependant, vous utilisez un paramètre prédéfini de visionneuse ou d’image pour diffuser la ressource. Defaultpix ne s’applique qu’à une ressource qui n’utilise pas de paramètre de visionneuse ou d’image prédéfini. |
+| `defaultthumbpix` | `100,100` | Taille de miniature par défaut. Utilisé à la place d’attribute::DefaultPix pour les requêtes de miniature (`req=tmb`).<br>Le serveur oblige les images de réponse à ne pas dépasser cette largeur et cette hauteur. Cette action est définie sur true si une demande de miniature (`req=tmb`) ne spécifie pas explicitement la taille et ne spécifie pas la taille d’affichage explicitement à l’aide de `wid=`, `hei=` ou `scl=`.<br>Spécifiée sous la forme de deux nombres entiers, supérieurs ou égaux à 0, séparés par une virgule. Largeur et hauteur en pixels. Vous pouvez définir sur 0 les deux valeurs, ou une seule des deux, pour ne pas les limiter.<br>Ne s’applique pas aux requêtes imbriquées/intégrées.<br>Consultez également la section [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html?lang=fr#image-serving-api) dans l’API du service d’images. |
 | `expiration` | `36000000` | Durée de vie par défaut du cache. Fournit un intervalle d’expiration par défaut en heures au cas où un enregistrement de catalogue spécifique ne contient pas de valeur catalog::Expiration valide.<br>Nombre réel, supérieur ou égal à zéro. Nombre de millisecondes avant expiration depuis la génération des données de réponse. Définissez la valeur sur zéro pour que l’image de réponse expire immédiatement, ce qui permet de désactiver efficacement la mise en cache de client. Par défaut, cette valeur est définie sur 10 heures, ce qui signifie que si une nouvelle image est publiée, il faut 10 heures pour que l’ancienne image quitte le cache de l’utilisateur ou de l’utilisatrice. Contactez le service clientèle si vous avez besoin que la mémoire cache soit effacée plus rapidement.<br>Consultez également la section [Expiration](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html?lang=fr) dans l’API du service d’images. |
 | `jpegquality` | `80` | Attributs de codage JPEG par défaut. Indique l’attribut par défaut des images de réponse au format JPEG.<br>Nombre entier et indicateur, séparés par une virgule. La première valeur est comprise dans la plage 1..100 et définit la qualité. La seconde valeur peut être égale à 0 par défaut, ou à 1 pour désactiver la réduction de la résolution chromatique RVB utilisée par les encodeurs JPEG.<br>Consultez également la section [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html?lang=fr#image-serving-api) dans l’API du service d’images. |
-| `maxpix` | `2000,2000` | Renvoie la limite de taille des images. Largeur et hauteur maximales de l’image de réponse renvoyée au client ou à la cliente.<br>Le serveur renvoie une erreur si une requête provoque la création d’une image de réponse dont la largeur ou la hauteur est plus importante que la valeur d’attribute::MaxPix.<br>Consultez également la section [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=fr#image-serving-api) dans l’API du service d’images. |
+| `maxpix` | `2000,2000` | Renvoie la limite de taille des images. Largeur et hauteur maximales de l’image de réponse renvoyée au client ou à la cliente.<br>Le serveur renvoie une erreur si une requête provoque la création d’une image de réponse dont la largeur ou la hauteur est plus importante que la valeur d’attribute::MaxPix.<br>Voir aussi [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=fr#image-serving-api) dans l’API du service d’images. |
 | `resmode` | `SHARP2` | Mode de rééchantillonnage par défaut. Indique les attributs de rééchantillonnage et d’interpolation par défaut à utiliser pour le redimensionnement des données d’image.<br>Utilisé lorsque `resMode=` n’est pas spécifié dans une requête.<br>Les valeurs autorisées comprennent `BILIN`, `BICUB` ou `SHARP2`.<br>Enum. définie sur 2 pour le mode d’interpolation `bilin`, 3 pour le `bicub` ou 4 pour le `sharp2`. Utilisez `sharp2` pour obtenir de meilleurs résultats.<br>Consultez également la section [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html?lang=fr#image-serving-api) dans l’API du service d’images. |
 | `resolution` | `72` | Résolution d’objet par défaut. Fournit une résolution d’objet par défaut au cas où un enregistrement de catalogue particulier ne contient pas de valeur catalog::Resolution valide.<br>Nombre réel, supérieur à 0. Généralement exprimé en pixels par pouce, mais peut également être exprimé dans d’autres unités, comme les pixels par mètre.<br>Consultez également la section [Résolution](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html?lang=fr#image-serving-api) dans l’API du service d’images. |
 | `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | Ces valeurs représentent un instantané du temps de lecture de la vidéo et sont transférées à [encoding.com](https://www.encoding.com/). Reportez-vous à la section [À propos des miniatures vidéo](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode) pour plus d’informations. |
@@ -1011,7 +1001,7 @@ Une fois que vous avez installé le pack de fonctionnalités, configurez les pro
    <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=fr">iccrenderintent</a></td>
    <td>Chaîne</td>
    <td>relative</td>
-   <td><p>Indique le mode de rendu. Les valeurs possibles sont : <strong>perception, relative, saturation, absolue. </strong><i></i>Adobe recommande d’utiliser <strong>colorimétrie relative</strong><i></i> comme valeur par défaut.</p> </td>
+   <td><p>Indique le mode de rendu. Les valeurs possibles sont les suivantes : <strong>perception, relative, saturation, absolue. </strong><i></i>Adobe recommande <strong>relatif</strong><i></i> comme valeur par défaut.</p> </td>
   </tr>
  </tbody>
 </table>

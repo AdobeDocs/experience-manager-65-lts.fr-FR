@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: b960ca0b-5e0f-4009-b923-e93889c3c1f7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 100%
+source-wordcount: '494'
+ht-degree: 95%
 
 ---
 
@@ -382,7 +382,7 @@ L’exemple de code suivant permet de trouver un utilisateur local et le groupe 
 
 ## Démarrage rapide (mode SOAP) : gérer des rôles et des autorisations à l’aide de l’API Java {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
 
-L’exemple de code suivant permet d’affecter le rôle Utilisateur des services à un principal, dʼimprimer les rôles dont dispose le principal et de supprimer par la suite le rôle du principal. Ce démarrage rapide appelle deux services : DirectoryManager et AuthorizationManager.(Consultez la section [Gérer les rôles et les autorisations](/help/forms/developing/users.md#managing-roles-and-permissions)).
+L’exemple de code suivant permet d’affecter le rôle Utilisateur des services à un principal, dʼimprimer les rôles dont dispose le principal et de supprimer par la suite le rôle du principal. Deux services sont appelés pour ce démarrage rapide : le service DirectoryManager et le service AuthorizationManager (voir [Gestion des rôles et des autorisations](/help/forms/developing/users.md#managing-roles-and-permissions)).
 
 ```java
  /*

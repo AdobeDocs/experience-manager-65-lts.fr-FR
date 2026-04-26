@@ -6,9 +6,9 @@ level: Beginner
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 5d81781b-bb79-4b85-bba6-2ac67829bfcf
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '2057'
 ht-degree: 98%
 
 ---
@@ -37,7 +37,7 @@ Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
    >
    >Dans le cadre d’une installation par défaut, l’identifiant est `admin` et le mot de passe est `admin`.
 
-1. Sélectionnez **[!UICONTROL Créer]**, puis **[!UICONTROL Formulaire adaptatif]**.
+1. Sélectionnez **[!UICONTROL Créer]** et **[!UICONTROL Formulaire adaptatif]**.
 1. Une option permettant de sélectionner un modèle s’affiche. Pour plus d’informations sur les modèles, voir [Modèles de formulaires adaptatifs](creating-adaptive-form.md#p-adaptive-form-templates-p). Sélectionnez un modèle puis Suivant.
 1. Une option Ajouter des propriétés s’affiche. Spécifiez les valeurs des champs de propriété suivants. Les champs Titre et Nom sont obligatoires :
 
@@ -73,7 +73,7 @@ Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
 
 ## Créer un formulaire adaptatif en fonction du modèle de données de formulaire {#fdm}
 
-[[!DNL Experience Manager Forms] L’intégration de données](data-integration.md) vous permet d’intégrer plusieurs sources de données et de rassembler leurs entités et services pour créer un modèle de données de formulaire. Il s’agit d’une extension du schéma JSON. Vous pouvez utiliser un modèle de données de formulaire pour créer un formulaire adaptatif. Les entités ou les objets de modèle de données configurés dans un modèle de données de formulaire sont disponibles en tant qu’objets de modèle de données pour la création de formulaire. Ils sont associés à des sources de données respectives et utilisés pour pré-remplir un formulaire et écrire les données envoyées dans les sources de données respectives. Vous pouvez également appeler des services configurés dans un modèle de données de formulaire à l’aide des règles de formulaire adaptatif.
+[[!DNL Experience Manager Forms] L’intégration de données](data-integration.md) vous permet d’intégrer plusieurs sources de données et de rassembler leurs entités et services pour créer un modèle de données de formulaire. Il s’agit d’une extension du schéma JSON. Vous pouvez utiliser un modèle de données de formulaire pour créer un formulaire adaptatif. Les entités ou les objets de modèle de données configurés dans un modèle de données de formulaire sont disponibles en tant qu’objets de modèle de données pour la création de formulaires. Ils sont associés à des sources de données respectives et utilisés pour pré-remplir un formulaire et écrire les données envoyées dans les sources de données respectives. Vous pouvez également appeler des services configurés dans un modèle de données de formulaire à l’aide des règles de formulaire adaptatif.
 
 Pour utiliser un modèle de données de formulaire pour créer un formulaire adaptatif :
 
@@ -95,7 +95,8 @@ Pour utiliser un modèle de données de formulaire pour créer un formulaire ada
 
 Vous pouvez réutiliser vos modèles de formulaires XFA pour créer des formulaires adaptatifs. Pour les réutiliser, chargez et associez un modèle de formulaire XFA à un formulaire adaptatif. Les éléments du modèle de formulaire (formulaire XFA) sont disponibles dans l’outil de recherche de contenu au moment de la création des formulaires adaptatifs. Dans l’outil de recherche de contenu, vous pouvez faire glisser et déposer les éléments de modèle de formulaire sur le formulaire.
 
-<!-- >>[!NOTE]
+<!--
+>>[!NOTE]
 >
 >[Upload the XFA Form Template](get-xdp-pdf-documents-aem.md) to AEM Forms before you start creating an adaptive form based on the form template.
 
@@ -109,11 +110,12 @@ Do the following to use an XFA form template as form model for your adaptive for
 
    >[!NOTE]
    >
-   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model). -->
+   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model).
+-->
 
 ## Créer un formulaire adaptatif en fonction du schéma XML ou JSON {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
-Les schémas XML et JSON représentent la structure dans laquelle les données sont générées ou utilisées par le système principal de votre organisation. Vous pouvez associer un schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma sont disponibles dans l’onglet Objet du modèle de données du navigateur de contenu pour la création de formulaires adaptatifs. Vous pouvez faire glisser et déposer les éléments du schéma pour créer le formulaire.
+Les schémas XML et JSON représentent la structure dans laquelle les données sont générées ou utilisées par le système principal de votre organisation. Vous pouvez associer un schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma sont disponibles dans l’onglet Objet de modèle de données du navigateur de contenu pour la création de formulaires adaptatifs. Vous pouvez faire glisser et déposer les éléments du schéma pour créer le formulaire.
 
 Consultez les documents suivants pour découvrir comment concevoir un schéma XML ou JSON pour la création de formulaires adaptatifs.
 
@@ -139,7 +141,7 @@ Procédez comme suit pour utiliser un schéma XML ou JSON comme modèle de formu
 
 1. (Pour le schéma XML uniquement) Après avoir sélectionné ou chargé un schéma XML, spécifiez un élément racine du fichier XSD sélectionné à mapper avec le formulaire adaptatif.
 
-   ![Sélection de l’élément racine de schéma XSD](assets/xsd-root-element.png)
+   ![Sélection de l’élément racine XSD](assets/xsd-root-element.png)
    **Figure :** *Sélection de l’élément racine XSD*
 
 >[!NOTE]

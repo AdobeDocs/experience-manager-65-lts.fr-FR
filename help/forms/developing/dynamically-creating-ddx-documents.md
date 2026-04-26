@@ -12,9 +12,9 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 3508d2d1-e05a-4733-b682-4b022348147a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2153'
+source-wordcount: '2183'
 ht-degree: 100%
 
 ---
@@ -42,7 +42,7 @@ Ce document DDX désassemble un document PDF. Il est recommandé de vous familia
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Assembler, consultez la section [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Assembler, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ Créez un document DDX de façon dynamique et désassemblez un document PDF à l
    * Créez un objet `Transformer` en appelant la méthode `newTransformer` de l’objet `TransformerFactory`.
    * Créez un objet `ByteArrayOutputStream` en utilisant son constructeur.
    * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur. Transmettez l’objet `org.w3c.dom.Document` qui représente le document DDX.
-   * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `ByteArrayOutputStream`. 
+   * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `ByteArrayOutputStream`.
    * Renseignez l’objet `ByteArrayOutputStream` Java en appelant la méthode `transform` de l’objet `javax.xml.transform.Transformer`. Transmettez les objets `javax.xml.transform.dom.DOMSource` et `javax.xml.transform.stream.StreamResult`.
    * Créez un tableau d’octets et affectez la taille de l’objet `ByteArrayOutputStream` au tableau d’octets.
    * Renseignez le tableau dʼoctets en appelant la méthode `toByteArray` de lʼobjet `ByteArrayOutputStream`.
@@ -172,9 +172,9 @@ Créez un document DDX de façon dynamique et désassemblez un document PDF à l
 
    Appelez la méthode `invokeDDX` de l’objet `AssemblerServiceClient` et transmettez les valeurs suivantes :
 
-   * Un objet `com.adobe.idp.Document` représentant le document DDX créé dynamiquement
+   * Un objet `com.adobe.idp.Document` qui représente le document DDX créé dynamiquement.
    * Un objet `java.util.Map` contenant le document PDF à désassembler
-   * Un objet `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` spécifiant les options d’exécution, notamment la police par défaut et le niveau de journalisation de la tâche
+   * Un objet `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` qui spécifie les options d’exécution, dont la police par défaut et le niveau du log de traitement.
 
    La méthode `invokeDDX` renvoie un objet `com.adobe.livecycle.assembler.client.AssemblerResult` contenant les documents PDF désassemblés et les exceptions survenues.
 
@@ -208,9 +208,9 @@ Créez de manière dynamique un document DDX et désassemblez un document PDF à
 
 1. Créez un client Assembler PDF.
 
-   * Créez un objet `AssemblerServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
-   * Créez un objet `System.ServiceModel.BasicHttpBinding` en récupérant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Créez un `AssemblerServiceClient` objet en utilisant son constructeur par défaut.
+   * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
@@ -249,7 +249,7 @@ Créez de manière dynamique un document DDX et désassemblez un document PDF à
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document PDF d’entrée. Cet objet `BLOB` est transmis à `invokeOneDocument` comme argument.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne qui représente l’emplacement du fichier du document PDF d’entrée et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en affectant le contenu du tableau d’octets à sa propriété `MTOM`.
 
 1. Définissez les options d’exécution.
@@ -261,7 +261,7 @@ Créez de manière dynamique un document DDX et désassemblez un document PDF à
 
    Appelez la méthode `invokeDDX` de l’objet `AssemblerServiceClient` et transmettez les valeurs suivantes :
 
-   * Un objet `BLOB` qui représente le document DDX créé dynamiquement.
+   * Un objet `BLOB` représentant le document DDX créé dynamiquement
    * Tableau `mapItem` qui contient le document PDF d’entrée.
    * Un objet `AssemblerOptionSpec` qui spécifie les options d’exécution.
 

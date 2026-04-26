@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Security
 hide: true
 hidefromtoc: true
 exl-id: 6c384e25-f53f-44aa-9043-b9f9f659f987
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1794'
 ht-degree: 98%
 
 ---
@@ -36,7 +36,7 @@ Le processus de courte durée AEM Forms suivant, nommé `MyApplication/EncryptDo
 
 >[!NOTE]
 >
->Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre les exemples de code qui expliquent comment appeler ce processus, créez un processus nommé `MyApplication/EncryptDocument` utilisation de workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).)
+>Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre les exemples de code qui expliquent comment appeler ce processus, créez un processus nommé `MyApplication/EncryptDocument` à l’aide de l’atelier. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).)
 
 L’application cliente créée à l’aide de Flash Builder interagit avec le servlet de sécurité d’User Manager configuré sous `/um/login` et `/um/logout`. En d’autres termes, l’application cliente envoie une requête à l’URL `/um/login` au démarrage pour déterminer l’état de l’utilisateur. Ensuite, User Manager répond avec le statut de l’utilisateur. L’application cliente et le servlet de sécurité User Manager communiquent à l’aide du protocole HTTP.
 

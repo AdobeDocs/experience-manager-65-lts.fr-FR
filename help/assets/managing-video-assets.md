@@ -7,10 +7,10 @@ feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e2b9b13b-c00c-4bfc-8512-84188e90c0ed
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '5472'
-ht-degree: 98%
+source-wordcount: '5596'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 Le format vidéo est un élément essentiel des ressources numériques d’une entreprise. [!DNL Adobe Experience Manager] propose des solutions et des fonctionnalités matures pour gérer l’ensemble du cycle de vie de vos ressources vidéo après leur création.
@@ -65,7 +65,7 @@ Pour configurer une limite de taille de fichier supérieure, procédez comme sui
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Tout enregistrer]**.
 1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
 1. Dans la page [!UICONTROL Bundles de la console web [!DNL Adobe Experience Manager]], dans la colonne Nom de la table, recherchez et cliquez sur **[!UICONTROL Gestionnaire des tâches du processus externe de workflow Adobe Granite]**.
-1. Dans la page [!UICONTROL Gestionnaire des tâches du processus externe de workflow Adobe Granite], définissez les secondes pour les champs de **[!UICONTROL dépassement de délai par défaut]** et de **[!UICONTROL délai dépassé maximum]** sur `18000` (cinq heures). Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Dans la page [!UICONTROL Gestionnaire des tâches du processus externe de workflow Adobe Granite], définissez les secondes pour les champs de **[!UICONTROL délai d’expiration par défaut]** et de **[!UICONTROL délai d’expiration maximum]** sur `18000` (cinq heures). Cliquez sur **[!UICONTROL Enregistrer]**.
 1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 1. Dans la page Modèles de workflow, sélectionnez **[!UICONTROL Vidéo de codage Dynamic Media]**, puis cliquez sur **[!UICONTROL Modifier]**.
 1. Dans la page du workflow, double-cliquez sur le composant **[!UICONTROL Processus de service vidéo Dynamic Media]**.
@@ -154,11 +154,11 @@ Pour configurer les paramètres de Google Cloud, procédez comme suit :
 
 1. Sur la page **[!UICONTROL Ajouter des identifiants au projet]**, à l’étape 1, procédez comme suit :
 
-   * Dans la liste déroulante **[!UICONTROL Quelle API utilisez-vous ?]**, sélectionnez **[!UICONTROL YouTube Data API v3]**.
+   * Dans la liste **[!UICONTROL Quelle API utilisez-vous ?]** dans la liste déroulante, sélectionnez **[!UICONTROL API de données YouTube v3]**.
 
-   * Depuis la liste déroulante **[!UICONTROL Quelle plate-forme utilisez-vous pour appeler l’API ?]**, sélectionnez **[!UICONTROL Serveur web (par exemple, node.js, Tomcat)]**.
+   * Depuis la **[!UICONTROL D’où appelez-vous l’API ?]** dans la liste déroulante, sélectionnez **[!UICONTROL Serveur web (par exemple, node.js, Tomcat)]**
 
-   * Dans la liste déroulante **[!UICONTROL À quelles données accédez-vous ?Dans la liste déroulante]**, sélectionnez **[!UICONTROL Données utilisateur]**.
+   * Dans la liste **[!UICONTROL À quelles données accédez-vous ?]** dans la liste déroulante, sélectionnez **[!UICONTROL Données utilisateur]**.
 
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
@@ -278,7 +278,7 @@ Laissez ouverte la page Créer une configuration YouTube ; vous allez y revenir
    Vous pouvez éventuellement ajouter une description.
 
 1. Sélectionnez **[!UICONTROL Ajouter]**.
-1. L’authentification YouTube/Google s’affiche. Si vous n’êtes pas déjà connecté(e) au compte Google Cloud, ignorez cette étape.
+1. L’authentification YouTube/Google s’affiche. Si vous n’avez pas encore effectué de connexion au compte Google Cloud, ignorez cette étape.
 
    * Saisissez le nom d’utilisateur et le mot de passe Google associés à l’ID de projet Google et au texte JSON ci-dessus.
    * Selon le nombre de canaux de votre compte, deux éléments ou plus s’affichent. Sélectionnez un canal. Ne sélectionnez pas l’adresse e-mail ; ce n’est pas un canal.
@@ -311,7 +311,7 @@ Laissez ouverte la page Créer une configuration YouTube ; vous allez y revenir
    Vous avez spécifié l’ID de projet lorsque vous avez précédemment [configuré les paramètres de Google Cloud](/help/assets/video.md#configuring-google-cloud-settings).
 Laissez la boîte de dialogue Paramètres de compte YouTube ouverte. Vous y retournerez dans quelques instants.
 
-1. À l’aide d’un éditeur de texte brut, ouvrez le fichier JSON que vous avez téléchargé et enregistré plus tôt au cours de la tâche de configuration des paramètres de Google Cloud.
+1. À l’aide d’un éditeur de texte brut, ouvrez le fichier JSON que vous avez téléchargé et enregistré au cours de la tâche Configuration des paramètres de Google Cloud.
 1. Sélectionnez l’intégralité du texte JSON et copiez-le.
 1. Revenez à la boîte de dialogue Paramètres du compte YouTube. Dans le champ **[!UICONTROL Configuration JSON]**, collez le texte JSON.
 1. **[!UICONTROL Cliquez sur OK]**.
@@ -324,7 +324,7 @@ Laissez la boîte de dialogue Paramètres de compte YouTube ouverte. Vous y reto
    Vous pouvez éventuellement ajouter une description.
 
 1. **[!UICONTROL Cliquez sur OK]**.
-1. L’authentification YouTube/Google s’affiche. Si vous n’êtes pas déjà connecté(e) au compte Google Cloud, ignorez cette étape.
+1. L’authentification YouTube/Google s’affiche. Si vous n’avez pas encore effectué de connexion au compte Google Cloud, ignorez cette étape.
 
    * Saisissez le nom d’utilisateur et le mot de passe Google associés à l’ID de projet Google et au texte JSON ci-dessus.
    * Selon le nombre de canaux de votre compte, deux éléments ou plus s’affichent. Sélectionnez un canal. Ne sélectionnez pas l’adresse e-mail ; ce n’est pas un canal.
@@ -391,7 +391,7 @@ Collez la valeur copiée dans l’éditeur de texte ouvert. Vous allez avoir bes
    * Cliquez sur **[!UICONTROL Libellé du champ]** afin de sélectionner le composant.
    * Dans la partie droite de la page, sous l’onglet Paramètres, collez les valeurs de publication YouTube (valeur Libellé du champ et Associer à la propriété) copiées précédemment, dans les champs respectifs du formulaire. Collez la valeur Choix dans le champ Valeur par défaut.
 
-1. Ajoutez les valeurs copiées de confidentialité YouTube au profil en procédant comme suit :
+1. Ajoutez les valeurs de confidentialité Youtube copiées dans le profil en procédant comme suit :
 
    * Dans la partie droite de la page, cliquez sur l’onglet **[!UICONTROL Créer le formulaire]**.
    * (Facultatif) Faites glisser le composant appelé **[!UICONTROL En-tête de section]** vers la gauche et déposez-le dans la zone de formulaire.
@@ -431,9 +431,9 @@ Vous devez maintenant associer les balises que vous avez précédemment ajoutée
 1. Sélectionnez la ressource vidéo (visionneuse de vidéos adaptative).
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]**.
 1. Dans l’onglet De base, sous l’en-tête Métadonnées, cliquez sur **[!UICONTROL Boîte de dialogue Ouvrir la sélection]** à droite du champ Balises.
-1. Sur la page Sélectionner des balises, accédez aux balises que vous souhaitez utiliser, puis sélectionnez une ou plusieurs balises.
+1. Accédez aux balises à utiliser sur la page Sélectionner des balises, puis sélectionnez une ou plusieurs balises.
 
-   N’oubliez pas que les balises doivent être associées au canal YouTube.
+   N’oubliez pas que les balises doivent être associées à la chaîne YouTube.
 
 1. Dans le coin supérieur droit de la page, cliquez sur **[!UICONTROL Sélectionner]**.
 1. Dans le coin supérieur droit de la page des propriétés de la vidéo, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
@@ -526,7 +526,7 @@ Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage 
    >
    >* Configuration de la file d’attente des tâches Apache Sling
    >* Gestionnaire de tâches de processus externe du workflow Adobe Granite
-   >* File d’attente d’expiration du workflow Granite
+   >* File d’attente de temporisation du workflow Granite
    >
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
@@ -558,7 +558,7 @@ Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage 
    >
    >* Configuration de la file d’attente des tâches Apache Sling
    >* Gestionnaire de tâches de processus externe du workflow Adobe Granite
-   >* File d’attente d’expiration du workflow Granite
+   >* File d’attente de temporisation du workflow Granite
    >
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
@@ -570,7 +570,7 @@ Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage 
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
-1. Vous recevez des notifications par courrier électronique sur les tâches de processus annulées ou qui ont échoué. Ces notifications peuvent être configurées par un administrateur. Voir [Configuration des notifications par e-mail](#configuring-e-mail-notifications).
+1. Vous recevez des notifications par e-mail sur les tâches de processus annulées ou qui ont échoué. Ces notifications peuvent être configurées par un administrateur. Voir [Configuration des notifications par e-mail](#configuring-e-mail-notifications).
 
 #### Configuration des notifications par e-mail {#configuring-e-mail-notifications}
 
@@ -626,7 +626,7 @@ La façon dont vous configurez les notifications varie si vous souhaitez recevoi
 
    ![Recherche d’une heure dans une vidéo à ignorer pendant les secondes spécifiées](assets/seek-in-video.png)
 
-1. Pour l’afficher dans la chronologie, cliquez sur une annotation. Pour supprimer l’annotation de la chronologie, cliquez sur **[!UICONTROL Supprimer]**.
+1. Pour l’afficher dans le journal, cliquez sur une annotation. Pour supprimer l’annotation du journal, cliquez sur **[!UICONTROL Supprimer]**.
 
    ![Affichage des annotations et des détails dans la chronologie](assets/timeline-view-annotation.png)
 

@@ -1,6 +1,6 @@
 ---
-title: 'DB2&rég; base de données : exécution d’un processus hebdomadaire'
-description: Découvrez comment vous pouvez améliorer la performance de votre base de données AEM Forms DB2®.
+title: 'DB2&reg ; base de données : exécution d''un processus hebdomadaire'
+description: Découvrez comment améliorer les performances de votre base de données AEM Forms DB2&reg;.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: e8cf9e73-345c-4dea-8361-b678c1a3cd1b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 95%
+source-wordcount: '149'
+ht-degree: 85%
 
 ---
 

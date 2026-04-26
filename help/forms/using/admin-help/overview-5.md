@@ -12,9 +12,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: cc0a3d56-3adc-4d6e-87a3-9a8587bbe3f2
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '150'
 ht-degree: 100%
 
 ---
@@ -27,6 +27,6 @@ PDF Generator convertit de nombreux formats de fichier au format PDF. Il convert
 
 Vous pouvez envoyer des fichiers à traiter à PDF Generator de trois façons différentes :
 
-* Les administrateurs et administratrices peuvent accéder aux pages PDFG dans la console d’administration.  (voir [Conversion de fichiers à l’aide de PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)).
+* Les administrateurs et administratrices peuvent accéder aux pages PDFG dans la console d’administration. (voir [Conversion de fichiers à l’aide de PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)).
 * Les utilisateurs peuvent accéder aux pages des utilisateurs finaux de PDFG en se connectant à `http(s)://'[server]:[port]'/pdfgui.`. De là, ils peuvent accéder aux pages Imprimante réseau PDFG, Créer un PDF, HTML en PDF, Exporter PDF et Optimiser PDF.
 * Vous pouvez configurer les points d’entrée de ce service Voir la section <!--Fix broken link to Managing Endpoints --> [Recommandations relatives au service Generate PDF](configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).

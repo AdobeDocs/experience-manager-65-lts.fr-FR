@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 96e44da3-da89-4671-a4fb-19ce1b9a38c4
-source-git-commit: 10f0949f6317f060c38791cfe43156a56f8ebe47
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '503'
 ht-degree: 100%
 
 ---
@@ -54,7 +54,7 @@ Le mode hérité est destiné aux clientes et clients disposant d’interfaces p
 
 ## Méthode de configuration {#how-to-set-up}
 
-Le **package de compatibilité AEM 6.4 pour la version 6.5** peut être installé en tant que package à l’aide du gestionnaire de packages. Vous pouvez télécharger le [package de compatibilité AEM 6.4 pour la version 6.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) sur le site de la distribution logicielle.
+Le **package de compatibilité AEM 6.4 pour la version 6.5** peut être installé en tant que package à l’aide du gestionnaire de modules. Vous pouvez télécharger le [package de compatibilité AEM 6.4 pour la version 6.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) sur le site de la distribution logicielle.
 
 Une fois le package de compatibilité installé, le routage peut être activé ou désactivé à l’aide d’un commutateur dans la configuration OSGI, comme indiqué ci-dessous :
 

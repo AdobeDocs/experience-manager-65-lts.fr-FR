@@ -6,10 +6,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 43%
+source-wordcount: '619'
+ht-degree: 46%
 
 ---
 
@@ -47,7 +47,8 @@ Avant d’exécuter votre mise à niveau, plusieurs étapes doivent être réali
 
 1. Si le fichier sling.properties personnalisé doit être appliqué, créez une nouvelle instance AEM locale et récupérez le fichier sling.properties dans son répertoire crx-quickstart/conf. Appliquez les modifications personnalisées requises à ce fichier, puis copiez-le dans le répertoire crx-quickstart/conf de l’instance AEM mise à niveau. S’il n’existe aucune propriété personnalisée, cette étape peut être ignorée.
 
-<!-- Alexandru: drafting temporarily
+<!--
+Alexandru: drafting temporarily
 
 ## Content Repository Migration {#content-repository-migration}
 
@@ -180,7 +181,7 @@ Démarrez à présent l’instance AEM à l’aide de la nouvelle commande déte
 >
 >La prise en charge de certains arguments Java 8/11 a été supprimée dans Java 17/21, voir [Documents Oracle Java™ 17](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html), [Documents Oracle Java™ 21](https://docs.oracle.com/en/java/javase/21/docs/specs/man/java.html) et [Considérations relatives aux arguments Java&amp;trade pour AEM 6.5 LTS](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
 
-Pour exécuter la mise à niveau, il est important de démarrer AEM à l’aide du fichier jar pour afficher l’instance.
+Pour exécuter la mise à niveau, il est important de démarrer AEM à l’aide du fichier jar pour faire apparaître l’instance.
 
 Notez que le démarrage d’AEM à partir du script de démarrage ne lance pas la mise à niveau. La plupart des clientes et clients démarre AEM à l’aide du script de démarrage et ont personnalisé ce script de démarrage pour inclure des commutateurs pour les configurations d’environnement telles que les paramètres de mémoire, les certificats de sécurité, etc. Pour cette raison, Adobe recommande de suivre cette procédure pour déterminer la commande de mise à niveau appropriée :
 
@@ -206,7 +207,7 @@ Notez que le démarrage d’AEM à partir du script de démarrage ne lance pas l
 
 ## Déployer le base de code mise à niveau {#deploy-upgraded-codebase}
 
-Une fois la mise à niveau statique terminée, la base de code mise à niveau doit être déployée. La procédure de mise à jour de la base de code pour qu’elle fonctionne dans la version cible d’AEM est disponible dans la page [Mise à niveau du code et personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md).
+Une fois la mise à niveau statique terminée, la base de code mise à jour doit être déployée. La procédure de mise à jour de la base de code pour qu’elle fonctionne dans la version cible d’AEM est disponible dans la page [Mise à niveau du code et personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md).
 
 ## Effectuer les vérifications et le dépannage après la mise à niveau {#perform-post-upgrade-check-troubleshooting}
 

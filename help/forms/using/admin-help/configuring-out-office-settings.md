@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: bf4fa6e4-25c7-46a8-9bae-4af7bfc14426
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 100%
@@ -52,7 +52,7 @@ Lors de la création d’un processus, l’utilisateur ou l’utilisatrice de Wo
 
 ## Ajouter une période d’absence du bureau pour un utilisateur ou une utilisatrice {#add-an-out-of-office-date-range-for-a-user}
 
-1. Recherchez l’utilisateur ou l’utilisatrice, comme décrit dans[Afficher les informations d’absence du bureau d’un utilisateur ou une utilisatrice](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
+1. Recherchez l’utilisateur ou l’utilisatrice, comme décrit dans [Afficher les informations d’absence du bureau d’un utilisateur ou d’une utilisatrice](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Cliquez sur le nom de l’utilisatrice ou l’utilisateur voulu.
 1. Cliquez sur Ajouter une période.
 1. Entrez une heure de début et une heure de fin. Vous pouvez cliquer sur l’icône Calendrier pour sélectionner une date. Si vous ne spécifiez pas d’heure de fin, l’utilisatrice ou l’utilisateur sera défini comme absent du bureau indéfiniment.
@@ -67,7 +67,7 @@ Lorsqu’une utilisatrice ou un utilisateur est absent du bureau, vous pouvez af
 * Attribuez un utilisateur ou une utilisatrice par défaut qui recevra la plupart des tâches de l’utilisateur ou l’utilisatrice, mais précisez que les tâches de certains processus sont réaffectées à d’autres utilisateurs et utilisatrices ou restent attribuées à l’utilisatrice ou l’utilisateur qui est absent du bureau.
 * N’attribuez pas d’utilisateur ou d’utilisatrice par défaut, mais attribuez certaines tâches de certains processus à des utilisateurs et utilisatrices spécifiques.
 
-   1. Recherchez l’utilisateur ou l’utilisatrice, comme décrit dans [Afficher les informations d’absence du bureau d’un utilisateur ou une utilisatrice](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
+   1. Recherchez l’utilisateur ou l’utilisatrice, comme décrit dans [Afficher les informations d’absence du bureau d’un utilisateur ou d’une utilisatrice](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
    1. Cliquez sur le nom de l’utilisatrice ou l’utilisateur voulu.
    1. Dans la liste Utilisateur par défaut pour les tâches d’absence du bureau, sélectionnez un utilisateur ou une utilisatrice dans la liste. Si vous ne souhaitez pas désigner un utilisateur ou une utilisatrice par défaut pour recevoir les éléments réaffectés, sélectionnez Ne pas attribuer.
 

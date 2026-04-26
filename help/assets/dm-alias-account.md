@@ -9,15 +9,17 @@ role: User,Admin
 mini-toc-levels: 4
 solution: Experience Manager, Experience Manager Assets
 exl-id: a058b4ba-8351-4c5f-87be-566620fb8876
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '684'
 ht-degree: 100%
 
 ---
 
-<!-- hide: yes
-hidefromtoc: yes -->
+<!--
+hide: true
+hidefromtoc: yes
+-->
 
 # À propos de la configuration d’un compte d’alias de société Dynamic Media {#about-dm-alias-acct}
 
@@ -46,7 +48,7 @@ Vous commencez à configurer un compte d’alias de société Dynamic Media en s
    * Votre région.
    * Si des [ensembles de règles](/help/assets/using-rulesets-to-transform-urls.md) ont été utilisés précédemment pour obtenir la diffusion de contenu Dynamic Media par le biais d’un autre nom de compte de société Dynamic Media.
 
-1. Une fois le compte d’alias Dynamic Media créé par l’assistance, dans l’instance d’auteur as a Cloud Service Experience Manager, sélectionnez le logo Experience Manager as a Cloud Service pour accéder à la console de navigation globale.
+1. Une fois le compte d’alias Dynamic Media créé par l’assistance, dans l’instance de création d’Experience Manager as a Cloud Service, sélectionnez le logo Experience Manager as a Cloud Service pour accéder à la console de navigation globale.
 1. Sur le côté gauche de la console, sélectionnez l’icône Outils, puis **[!UICONTROL Cloud Services > Configuration Dynamic Media]**.
 1. Sur la page du navigateur de configuration Dynamic Media, dans le volet de gauche, sélectionnez **[!UICONTROL global]**. Ne sélectionnez pas l’icône de dossier située à gauche de **[!UICONTROL global]**. Sélectionnez ensuite **[!UICONTROL Modifier]**.
 

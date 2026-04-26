@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: aff0274a-bbb7-4062-afaf-7f9c31f57cb1
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 100%
@@ -44,7 +44,7 @@ La valeur par défaut est `com/adobe/formServer/PA/pa_output.xci`.
 
 **Emplacement par défaut :** il s’agit de la sélection par défaut. Lorsque cette option est sélectionnée, le cache est créé à un emplacement différent selon le serveur d’applications utilisé :
 
-* **JBoss :**`[JBoss Home]\server\[install type]\svcdata\Output\Cache` 
+* **JBoss :**`[JBoss Home]\server\[install type]\svcdata\Output\Cache`
 * **WebLogic :**`[WebLogic Home]\user_projects\domains\[aem-forms domain Name]\adobe\[Forms Server name]\Output\Cache`
 * **WebSphere :**`[IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\Output\Cache`
 

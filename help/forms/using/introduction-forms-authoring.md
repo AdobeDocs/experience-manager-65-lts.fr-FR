@@ -9,10 +9,10 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: a1791374-d05c-4f60-b178-152a7bc06c45
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3151'
-ht-degree: 99%
+source-wordcount: '3215'
+ht-degree: 96%
 
 ---
 
@@ -27,18 +27,18 @@ Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur 
 
 ## Vue d’ensemble {#overview}
 
-Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit une interface utilisateur intuitive et des composants prêts à l’emploi pour créer et utiliser des formulaires adaptatifs. Vous pouvez choisir de créer un formulaire adaptatif basé sur un modèle ou un schéma de formulaire ou sans modèle de formulaire. Il est important de choisir avec soin le modèle de formulaire qui convient non seulement à vos besoins, mais qui étend également vos investissements et vos ressources d’infrastructure existantes. Vous pouvez choisir parmi les options suivantes pour créer un formulaire adaptatif :
+Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit une interface utilisateur intuitive et des composants prêts à l’emploi pour créer et utiliser des formulaires adaptatifs. Vous pouvez choisir de créer un formulaire adaptatif basé sur un modèle ou un schéma de formulaire ou sans modèle de formulaire. Il est important de choisir avec soin le modèle de formulaire qui convient non seulement à vos besoins, mais qui étend également vos investissements et vos ressources d’infrastructure existants. Vous pouvez choisir parmi les options suivantes pour créer un formulaire adaptatif :
 
-* **Utilisation d’un modèle de données de formulaire**
+* **Utiliser un modèle de données de formulaire**
   L’[intégration de données](../../forms/using/data-integration.md) vous permet d’intégrer des entités et des services provenant de sources de données disparates dans un modèle de données de formulaire que vous pouvez utiliser pour créer des formulaires adaptatifs. Choisissez le modèle de données de formulaire si le formulaire adaptatif que vous créez implique l’extraction et l’écriture de données depuis et vers plusieurs sources de données.
 
 * **Utilisation d’un modèle de formulaire XDP**
 Il s’agit d’un modèle de formulaire idéal si vous investissez dans des formulaires XFA ou XDP. Il fournit une méthode directe de conversion des formulaires de type XFA en formulaires adaptatifs. Toutes les règles XFA existantes sont conservées dans les formulaires adaptatifs associés. Les formulaires adaptatifs qui en résultent prennent en charge les éléments XFA, tels que les validations, les événements, les propriétés et les modèles.
 
 * **Utilisation d’une définition de schéma XML (XSD) ou d’un schéma JSON**
-Les schémas XML et JSON représentent la structure dans laquelle les données sont produites ou consommées par le système principal de votre entreprise. Vous pouvez associer le schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma peuvent être utilisés dans l’onglet Objets du modèle de données de l’explorateur de contenu lors de la création de formulaires adaptatifs.
+Les schémas XML et JSON représentent la structure dans laquelle les données sont générées ou utilisées par le système back-end de votre organisation. Vous pouvez associer le schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma peuvent être utilisés dans l’onglet Objets de modèle de données de l’explorateur de contenu lors de la création de formulaires adaptatifs.
 
-* **Utilisation sans aucun modèle de formulaire**
+* **Utilisation sans ou aucun modèle de formulaire**
 Les formulaires adaptatifs créés avec cette option n’utilisent aucun modèle de formulaire. Les données XML générées à partir de ce type de formulaire présentent une structure plate avec des champs et des valeurs correspondantes.
 
 Pour en savoir plus sur la création d’un formulaire adaptatif, consultez [Création d’un formulaire adaptatif](../../forms/using/creating-adaptive-form.md).
@@ -75,13 +75,16 @@ La barre latérale vous permet de
 
 **A.** Explorateur de contenu **B.** Explorateur de propriétés **C.** Explorateur de ressources **D.** Explorateur de composants
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-](assets/sidebar-comps-1.png) -->
+](assets/sidebar-comps-1.png)
+-->
 
 La barre latérale comprend les explorateurs suivants :
 
-* **Explorateur de contenu** Dans l’explorateur de contenu, vous pouvez voir 
+* **Explorateur de contenu**
+Dans le navigateur de contenu, vous pouvez voir
 
    * **Objets de formulaire**
 Affiche la hiérarchie des objets du formulaire. L’auteur peut accéder au composant spécifique du formulaire en appuyant sur cet élément dans l’arborescence de l’objet de formulaire. L’auteur peut alors rechercher des objets et les réorganiser depuis l’arborescence.
@@ -152,7 +155,7 @@ Il vous permet de faire glisser des éléments du modèle de formulaire sur le f
   </tr>
   <tr>
    <td>E-mail</td>
-   <td><p>Ajoute un champ pour capturer une adresse e-mail. Le composant E-mail, par défaut, valide les adresses e-mail à l’aide de l’expression régulière suivante.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Ajoute un champ pour capturer une adresse e-mail. Le composant E-mail, par défaut, valide les adresses e-mail à l’aide de l’expression régulière suivante.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Pièce jointe</td>
@@ -313,7 +316,7 @@ Pour connaître les bonnes pratiques concernant les formulaires adaptatifs, voir
 >
 >Les composants de formulaire adaptatif ne prennent pas en charge les langues de droite à gauche (RTL). comme l’hébreu.
 
-### Barre d’outils Page {#page-toolbar}
+### Barre d’outils de la page {#page-toolbar}
 
 La barre d’outils de la page, située en haut de l’écran, propose des options permettant de prévisualiser le formulaire, d’en modifier les propriétés, puis d’en modifier la disposition. Vous pouvez prévisualiser le formulaire lors de sa création et apporter des modifications en conséquence. Dans la barre d’outils de la page, vous voyez :
 
@@ -387,7 +390,7 @@ La structure de contenu contient généralement les composants principaux ci-des
 * **guideContainer** : racine d’un formulaire adaptatif, indiquée sous la forme **[!UICONTROL Début du formulaire adaptatif]** dans l’interface utilisateur du formulaire. Dans ce composant, vous pouvez spécifier les éléments suivants :
 
    * *Disposition du formulaire adaptatif pour mobiles* : définit l’apparence du formulaire sur les appareils mobiles.
-   * *Page de remerciement* : définit la page vers laquelle l’utilisateur ou l’utilisatrice est redirigée après l’envoi du formulaire.
+   * *Page de remerciement* : définit la page vers laquelle la personne utilisatrice est redirigée après l’envoi du formulaire.
    * *Action d’envoi* : définit la manière dont le formulaire est traité sur le serveur lorsque l’utilisateur ou l’utilisatrice l’envoie.
    * *Style* : indique le chemin d’accès au fichier CSS utilisé pour personnaliser l’apparence du formulaire.
 

@@ -12,10 +12,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: e3ef1435-d405-482f-9eb5-f9a64ff03322
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 100%
+source-wordcount: '727'
+ht-degree: 81%
 
 ---
 
@@ -33,18 +33,18 @@ Ces versions ne sont jamais purgées. La taille du référentiel augmente au fil
 
 AEM est fourni avec divers mécanismes pour vous aider à gérer votre référentiel :
 
-* Le [gestionnaire de versions](#version-manager)
-Il peut être installé pour supprimer les anciennes versions lorsque de nouvelles versions sont créées. 
+* le [Gestionnaire de versions](#version-manager)
+Cette option peut être configurée pour purger les anciennes versions lorsque de nouvelles versions sont créées.
 
-* L’outil [Purger les versions](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)
-Sert dans le cadre de la surveillance et de la maintenance du référentiel.
- Il vous permet d’intervenir et de supprimer les anciennes versions d’un nœud ou d’une hiérarchie de nœuds, en fonction des paramètres suivants :
+* l’outil [ Purger les versions ](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)
+Il est utilisé dans le cadre de la surveillance et de la maintenance de votre référentiel.
+Il vous permet d’intervenir et de supprimer les anciennes versions d’un nœud ou d’une hiérarchie de nœuds, en fonction des paramètres suivants :
 
    * Le nombre maximal de versions à conserver dans le référentiel.
 Une fois ce nombre dépassé, la version la plus ancienne est supprimée.
 
    * L’âge maximal des versions conservées dans le référentiel.
- Lorsque l’âge d’une version dépasse cette valeur, elle est purgée du référentiel. 
+Lorsque l’âge d’une version dépasse cette valeur, elle est purgée du référentiel.
 
 * La [tâche de maintenance Purge de version](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer automatiquement les anciennes versions. Ainsi, cela réduit la nécessité d’utiliser manuellement les outils de purge de version.
 
@@ -62,28 +62,28 @@ Pour installer le gestionnaire de versions, [créez une configuration](/help/sit
 
 Les options suivantes sont disponibles :
 
-* `versionmanager.createVersionOnActivation` (booléen, valeur par défaut : true)
-Spécifie si vous souhaitez créer une version lorsque des pages sont activées.
+* `versionmanager.createVersionOnActivation` (booléen, valeur par défaut : true)
+Indique s’il faut créer une version lorsque les pages sont activées.
 Une version est créée sauf si l’agent de réplication est configuré pour supprimer la création de versions, qui est prise en charge par le gestionnaire de versions.
 Une version est créée uniquement si l’activation s’effectue sur un chemin qui est contenu dans `versionmanager.ivPaths` (voir ci-dessous).
 
-* `versionmanager.ivPaths`(Chaîne[], valeur par défaut : `{"/"}`)
-Spécifie les chemins d’accès sur lesquels des versions sont créées implicitement lors de leur activation si la valeur de `versionmanager.createVersionOnActivation` est true.
+* `versionmanager.ivPaths`(String[], default: `{"/"}`)
+Indique les chemins d’accès sur lesquels des versions sont créées implicitement lors de l’activation si `versionmanager.createVersionOnActivation` est défini sur true.
 
-* `versionmanager.purgingEnabled` (booléenne, valeur par défaut : false)
-Définit s’il faut activer la purge lors de la création de nouvelles versions.
+* `versionmanager.purgingEnabled` (booléen, valeur par défaut : false)
+Définit s’il faut activer la purge lorsque de nouvelles versions sont créées.
 
-* `versionmanager.purgePaths` (Chaîne[], valeur par défaut : {&quot;/content&quot;})
+* `versionmanager.purgePaths` (chaîne[], valeur par défaut : {« /content »})
 Indique sur quels chemins d’accès purger les versions lorsque de nouvelles versions sont créées.
 
-* `versionmanager.maxAgeDays` (int, valeur par défaut : 30)
-Lors de la purge, toute version antérieure à cette valeur est supprimée. Si cette valeur est inférieure à 1, la purge n’est pas effectuée sur la base de l’âge de la version.
+* `versionmanager.maxAgeDays` (int, valeur par défaut : 30)
+Lors de la purge de version, toute version antérieure à la valeur configurée est supprimée. Si cette valeur est inférieure à 1, la purge n’est pas effectuée sur la base de l’âge de la version.
 
-* `versionmanager.maxNumberVersions` (int, valeur par défaut : 5)
-Lors de la purge, toute version antérieure à la n-ième dernière version est supprimée. Si cette valeur est inférieure à 1, la purge n’est pas effectuée sur la base du nombre de versions.
+* `versionmanager.maxNumberVersions` (int, valeur par défaut 5)
+Lors de la purge, toute version antérieure à la nième version la plus récente est supprimée. Si cette valeur est inférieure à 1, la purge n’est pas effectuée sur la base du nombre de versions.
 
-* `versionmanager.minNumberVersions` (int, valeur par défaut : 0)
-Nombre minimum de versions à conserver, indépendamment de l’âge. Si cette valeur est inférieure à 1, aucun nombre minimum de versions n’est conservé.
+* `versionmanager.minNumberVersions` (int, 0 par défaut)
+Nombre minimum de versions à conserver, quel que soit l’âge. Si cette valeur est inférieure à 1, aucun nombre minimum de versions n’est conservé.
 
 >[!NOTE]
 >

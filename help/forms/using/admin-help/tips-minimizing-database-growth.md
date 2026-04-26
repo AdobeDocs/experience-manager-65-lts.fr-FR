@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac3766c5-b741-4e65-8053-0c9cfd66a2f9
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 93%
+source-wordcount: '419'
+ht-degree: 94%
 
 ---
 
@@ -36,4 +36,4 @@ Préférez les types de variable simples (par exemple, string ou int) aux types 
 
 Utilisez efficacement le stockage global de documents. Le répertoire de stockage global de documents sur le serveur Forms Server permet de stocker, entre autres, les fichiers qui sont transmis aux services AEM Forms dans les processus. Pour améliorer les performances, les documents plus petits sont stockés en mémoire et conservés dans la base de données.
 
-La console d’administration s’appuie sur la propriété Taille maximale par défaut de la ligne d’entrée du document, pour configurer la taille maximale des documents stockés en mémoire et maintenus dans la base de données. (Voir [Configurer les paramètres généraux d’AEM forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Si vous définissez cette propriété sur une valeur faible, la plupart des documents sont conservés dans le répertoire de stockage global de documents plutôt que dans la base de données. L’avantage est que vous pouvez plus facilement supprimer des fichiers de ce répertoire lorsqu’ils ne sont plus nécessaires.
+La console d’administration s’appuie sur la propriété Taille maximale par défaut de la ligne d’entrée du document, pour configurer la taille maximale des documents stockés en mémoire et maintenus dans la base de données. (voir [Configuration des paramètres généraux d’AEM forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)). Si vous définissez cette propriété sur une valeur faible, la plupart des documents sont conservés dans le répertoire de stockage global de documents plutôt que dans la base de données. L’avantage est que vous pouvez plus facilement supprimer des fichiers de ce répertoire lorsqu’ils ne sont plus nécessaires.

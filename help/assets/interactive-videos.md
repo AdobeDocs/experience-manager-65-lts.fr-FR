@@ -10,10 +10,10 @@ feature: Interactive Videos
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: caacf3b3-1e12-4ea3-9160-774181aadf41
-source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '5900'
-ht-degree: 98%
+source-wordcount: '6172'
+ht-degree: 96%
 
 ---
 
@@ -21,19 +21,19 @@ ht-degree: 98%
 
 Vous pouvez facilement créer des vidéos interactives, également appelées vidéos shoppable, qui génèrent des conversions directement à partir de la vidéo. L’engagement du client avec la vidéo a lieu dans un panneau à côté du lecteur vidéo, où les miniatures des services, informations ou produits associés défilent en fonction de ce qui est présenté dans la vidéo. Les clients peuvent sélectionner la miniature et accéder directement au service, ajouter l’article à un panier pour un achat immédiat ou encore accéder à une page web pour plus d’informations.
 
-Une fois la vidéo terminée, un résumé visuel de toutes les offres s’affiche pour générer un appel à l’action. Les clients ont une autre occasion de sélectionner l’élément qu’ils souhaitent. Ces expériences concrètes et spécifiques augmentent les interactions et les conversions des clients.
+Une fois la vidéo terminée, un résumé visuel de toutes les offres s’affiche pour générer un appel à l’action. Les clients ont une autre occasion de sélectionner l’élément qu’ils souhaitent. Ces expériences concrètes et spécifiques augmentent l’engagement et la conversion des clientes et clients.
 
 Voir aussi [Images interactives](/help/assets/interactive-images.md).
 
 ## Vidéos interactives à l’œuvre {#interactive-video-in-action}
 
-Pour voir une vidéo interactive shoppable en action, sélectionnez [Démonstrations en direct](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), faites défiler la page jusqu’à l’en-tête **[!UICONTROL Médias shoppables]**, puis sélectionnez la vidéo shoppable pour commencer la lecture.
+Pour voir une vidéo interactive shoppable en action, sélectionnez [Démonstrations en direct](https://landing.adobe.com/fr/na/dynamic-media/ctir-2755/live-demos.html), faites défiler la page jusqu’à l’en-tête **[!UICONTROL Médias shoppables]**, puis sélectionnez la vidéo shoppable pour commencer la lecture.
 
 * Pendant la lecture, lorsque les produits sont utilisés dans la vidéo, le produit identique s’affiche à droite sous forme de miniature.
 
 * Sélectionnez la miniature si vous souhaitez suspendre la vidéo et ouvrir l’aperçu rapide du produit. Par exemple, sélectionnez la miniature du KitchenAid dans la vidéo pour afficher le mixeur avec une option de rotation à 360 degrés ou utilisez le zoom pour afficher les détails du mixeur.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=fr. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![Image d’une vidéo interactive pouvant faire l’objet d’un achat](assets/chlimage_1-126.png) *Capture d’images vidéo à partir d’une vidéo interactive shoppable.*
 
@@ -50,7 +50,8 @@ Même si la présentation vidéo est personnalisée grâce à Assets à la deman
 
 Le webinaire « Utilisation de la vidéo interactive, du partage de liens et du partage sur YouTube dans Experience Manager Assets » vous explique comment utiliser la vidéo interactive ainsi que d’autres fonctionnalités pour lier des événements basés sur la conversion à votre contenu marketing vidéo.
 
-<!-- NOT FOUND; FIND REPLACEMENT
+<!--
+NOT FOUND; FIND REPLACEMENT
 >[!NOTE]
 >
 >[Using Interactive Video, Link Sharing, and YouTube sharing in Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
@@ -75,7 +76,7 @@ Au terme du tutoriel dans la dernière section Exemple, votre page web de démon
 1. **(Facultatif) Identifier des variables d’aperçu rapide** : commencez par identifier les variables dynamiques utilisées par votre mise en œuvre existante de l’aperçu rapide. Vous utilisez des variables pour mapper des vignettes de produit à l’aperçu rapide du produit correspondant lorsque vous créez votre vidéo interactive. Consultez la section [(Facultatif) Identification des variables d’aperçu rapide](#optional-identifying-quickview-variables).
    *Cette étape n’est nécessaire que si les conditions ci-dessous se vérifient :*
    * Vous souhaitez ajouter de l’interactivité à votre vidéo en déclenchant des aperçus rapides.
-   * Votre mise en œuvre d’Experience Manager n’utilise *pas* de framework d’intégration de commerce électronique pour extraire des données de produit dans Experience Manager à partir d’une solution de commerce électronique, comme IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop.
+   * Votre mise en œuvre d’Experience Manager *n’utilise pas* de framework d’intégration d’e-commerce pour extraire des données de produit dans Experience Manager à partir d’une solution d’e-commerce telle qu’IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop.
 1. **(Facultatif) Créer un paramètre prédéfini de visionneuse de vidéos interactives** : personnalisez l’aspect et le comportement des différents composants qui constituent la visionneuse, comme la barre vidéo et les miniatures interactives.
 Vous n’avez pas besoin de créer votre propre paramètre prédéfini de visionneuse de vidéos interactives si vous envisagez plutôt d’utiliser les paramètres de visionneuse de vidéos interactives prêts à l’emploi `Shoppable_Video_Light` ou `Shoppable_Video_Dark`.
 Voir [Création d’un paramètre prédéfini de visionneuse](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) (facultatif) et [Aspects spéciaux de la création d’un paramètre prédéfini de visionneuse de vidéos interactives](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
@@ -104,7 +105,7 @@ Si vous utilisez un gestionnaire de contenu web (WCM) tiers, vous devez intégre
 >Cette tâche n’est nécessaire que si les conditions ci-dessous sont remplies :
 >
 >* Vous souhaitez ajouter de l’interactivité à votre vidéo en déclenchant des aperçus rapides.
->* Votre mise en œuvre d’Experience Manager n’utilise *pas* de framework d’intégration de commerce électronique pour extraire des données de produit dans Experience Manager à partir d’une solution de commerce électronique, comme IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop.
+>* Votre mise en œuvre d’Experience Manager *n’utilise pas* de framework d’intégration d’e-commerce pour extraire des données de produit dans Experience Manager à partir d’une solution d’e-commerce telle qu’IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop.
 >
 >Si votre mise en œuvre d’Experience Manager utilise l’e-commerce, vous pouvez ignorer cette tâche et passer à la tâche suivante.
 
@@ -125,7 +126,7 @@ La plupart des implémentations d’aperçu rapide utilisent le modèle suivant�
 
 L’approche consiste alors à visiter différentes zones du site Web existant où la fonctionnalité d’aperçu rapide est implémentée, à déclencher l’aperçu rapide et à capturer l’URL Ajax envoyée par la page Web pour charger les données ou le contenu de l’aperçu rapide.
 
-Normalement, il n’est pas nécessaire d’utiliser des outils de débogage spécialisés. Les navigateurs web modernes incluent des inspecteurs web qui font un travail correct. Vous trouverez ci-dessous quelques exemples de navigateurs web qui incluent des inspecteurs web :
+Normalement, il n’est pas nécessaire d’utiliser des outils de débogage spécialisés. Les navigateurs web modernes disposent d’inspecteurs web qui effectuent un travail adéquat. Voici quelques exemples de navigateurs web qui incluent des inspecteurs web :
 
 * Pour voir toutes les demandes HTTP sortantes dans Google Chrome, appuyez sur **F12** (Windows) ou **Contrôle+Options+I** (Mac) pour ouvrir le panneau Outils de développement, puis sélectionnez l’onglet **Réseau**.
 
@@ -151,10 +152,10 @@ Consultez les exemples d’URL d’aperçu rapide et les variables de miniatures
     <td><p>SKU unique, trouvé dans la chaîne de requête.</p> </td>
     <td><p>Les URL d’aperçu rapide enregistrées incluent ce qui suit :</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>La seule partie variable de l’URL est la valeur du paramètre de chaîne de requête <code>productId=</code>, et il s’agit clairement d’une valeur de SKU. Par conséquent, seuls les champs SKU des miniatures doivent être renseignés avec des valeurs comme <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong> et <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
@@ -170,10 +171,10 @@ Consultez les exemples d’URL d’aperçu rapide et les variables de miniatures
     <td><p>SKU et ID de catégorie dans la chaîne de requête.</p> </td>
     <td><p>Les URL d’aperçu rapide enregistrées incluent ce qui suit :</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
-    </ul> <p>Dans ce cas, l’URL comporte deux parties différentes. Le SKU est stocké dans le paramètre <code>prodId</code> et l’ID de catégorie dans le paramètre <code>category=</code>.</p> <p>Par conséquent, les définitions des miniatures sont des paires. Autrement dit, une valeur de SKU et une variable supplémentaire appelée <code>categoryId</code>. Les paires obtenues sont les suivantes :</p>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+    </ul> <p>Dans ce cas, l’URL comporte deux parties différentes. Le SKU est stocké dans le paramètre <code>prodId</code> et l’ID de catégorie dans le paramètre <code>category=</code>.</p> <p>Par conséquent, les définitions des miniatures sont des paires. Autrement dit, une valeur de SKU et une variable supplémentaire appelée « <code>categoryId</code> ». Les paires obtenues sont les suivantes :</p>
     <ul>
       <li>Le SKU est <code>305466</code> et <code>categoryId</code> est <code>1100004</code></li>
       <li>Le SKU est <code>310181</code> et <code>categoryId</code> est <code>1100004</code></li>
@@ -237,7 +238,7 @@ Vous pouvez éventuellement créer votre propre paramètre prédéfini personnal
 
 Le paramètre prédéfini de visionneuse de vidéo interactive effectue le rendu de la vidéo et de tous les segments de chronologie que vous avez ajoutés. Il utilise également un aperçu rapide d’exemple par défaut lorsque vous sélectionnez la miniature d’un produit en mode de prévisualisation afin de pouvoir tester son interactivité avant la publication.
 
-Une fois le paramètre prédéfini de la visionneuse enregistré, son état est automatiquement définit sur **Activé** dans la page Paramètres prédéfinis de la visionneuse. Cet état signifie qu’il est visible dans le composant Dynamic Media et chaque fois que vous prévisualisez une vidéo avec ce paramètre prédéfini. Veillez à également publier manuellement votre nouveau paramètre prédéfini de visionneuse.
+Après avoir enregistré le paramètre prédéfini de visionneuse, son état est automatiquement défini sur **Activé** dans la page Paramètres prédéfinis de la visionneuse. Cet état signifie qu’il est visible dans le composant Dynamic Media et chaque fois que vous prévisualisez une vidéo avec celui-ci. Veillez à également publier manuellement votre nouveau paramètre prédéfini de visionneuse.
 
 Pour créer votre propre paramètre prédéfini de visionneuse de vidéos interactives, reportez-vous à la section [Création d’un paramètre prédéfini de visionneuse](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
 
@@ -264,7 +265,7 @@ Voir [Charger des ressources à l’aide de la planification de tâches FTP](/he
 
 Vous ajoutez des segments de chronologie à une vidéo à l’aide de l’éditeur visuel intégré sur la page Créer une vidéo interactive.
 
-Une fois que vous avez ajouté des segments de montage, vous ajoutez des images de miniatures à chaque segment. Pour chaque miniature que vous ajoutez, vous lui appliquez une action. Par exemple, vous pouvez appliquer un aperçu rapide à la miniature, ou vous pouvez lui affecter un lien hypertexte ou un fragment d’expérience.
+Après avoir ajouté des segments de chronologie, vous ajoutez des images miniatures dans chaque segment. Pour chaque miniature que vous ajoutez, vous lui appliquez une action. Par exemple, vous pouvez appliquer un aperçu rapide à la miniature, ou vous pouvez lui affecter un lien hypertexte ou un fragment d’expérience.
 
 Voir [Fragments d’expérience](/help/sites-authoring/experience-fragments.md).
 
@@ -390,7 +391,7 @@ Une fois la vidéo interactive enregistrée, elle s’ouvre immédiatement dans 
       <tbody>
         <tr>
         <td>Pour associer une miniature à un segment de chronologie sélectionné</td>
-        <td><p>Sélectionnez l’image dans le panneau Sélecteur de ressources dans la partie droite.</p> <p>Vous pouvez ajouter à un segment de chronologie autant de miniatures que vous le souhaitez. Pour chaque image que vous sélectionnez, une coche s’affiche au-dessus de l’image dans le sélecteur de ressources.</p> </td>
+        <td><p>Sélectionnez l’image dans le panneau Sélecteur de ressources dans la partie droite.</p> <p>Vous pouvez ajouter autant de miniatures que vous le souhaitez à un segment de chronologie. Pour chaque image sélectionnée, une coche apparaît sur l’image dans le sélecteur de ressources.</p> </td>
         </tr>
         <tr>
         <td>Pour supprimer une miniature du segment de chronologie sélectionné</td>
@@ -436,7 +437,7 @@ Une fois la vidéo interactive enregistrée, elle s’ouvre immédiatement dans 
       <td>Pour associer l’image miniature sélectionnée à un fragment d’expérience</td> 
       <td><p>Sous Type d’action, sélectionnez <strong>Fragment d’expérience</strong>, puis effectuez les actions suivantes :<p> 
        <ul> 
-       <li>Si vous êtes client Experience Manager Sites, sélectionnez l’icône Rechercher (loupe) afin d’ouvrir la page Fragment d’expérience. Sélectionnez le fragment d’expérience à utiliser, puis <strong>Sélectionner</strong> dans le coin supérieur droit de la page pour revenir au panneau Actions de la page précédente.<br /> Voir <a href="/help/sites-authoring/experience-fragments.md">Fragments d’expérience</a>.</li> 
+       <li>Si vous êtes client Experience Manager Sites, sélectionnez l’icône Rechercher (loupe) afin d’ouvrir la page Fragment d’expérience. Sélectionnez le fragment d’expérience à utiliser, puis sélectionnez <strong>Sélectionner</strong> dans le coin supérieur droit de la page pour revenir au panneau Actions de la page précédente<br />. Voir <a href="/help/sites-authoring/experience-fragments.md">Fragments d’expérience</a>.</li> 
       </ul> 
        <ul> 
        <li>Indiquez la largeur et la hauteur du fragment d’expérience tel que vous souhaitez qu’il apparaisse dans la vidéo.</li>
@@ -524,8 +525,8 @@ Si vous êtes un client Experience Manager Sites, vous pouvez ajouter la vidéo
 Si vous êtes un client Experience Manager Assets autonome, vous pouvez ajouter manuellement la vidéo interactive à votre site web, comme indiqué dans cette section.
 
 1. Copiez le code intégré ou l’URL de la vidéo interactive publiée.
-Voir [Incorporer la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
-Si vous avez ajouté l’interactivité avec des aperçus rapides, utilisez uniquement le code intégré ; si vous avez ajouté l’interactivité grâce à des pages web connectées par liens hypertexte, vous pouvez également utiliser l’URL publiée. Notez toutefois que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
+Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
+Si vous avez ajouté l’interactivité avec des aperçus rapides, utilisez uniquement le code intégré ; si vous avez ajouté l’interactivité grâce à des pages web connectées par liens hypertexte, vous pouvez également utiliser l’URL publiée. Notez toutefois que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
 
 1. Dans le code de la page web cible, identifiez l’emplacement de la vidéo statique.
 1. Supprimez la vidéo statique et remplacez le code par le code intégré ou par l’URL que vous avez copié à partir d’Experience Manager Assets, en l’état.
@@ -661,27 +662,27 @@ La procédure de construction de l’URL de l’aperçu rapide est la procédure
   <tbody>
   <tr>
     <td><p>SKU unique, trouvé dans la chaîne de requête</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td>SKU unique, trouvé dans le chemin d’accès à l’URL</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td><p>SKU et ID de catégorie dans la chaîne de requête</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   </tbody>
 </table>

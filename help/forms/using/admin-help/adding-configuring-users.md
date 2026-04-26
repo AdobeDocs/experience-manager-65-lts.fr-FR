@@ -7,10 +7,10 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: b3f8e1d6-3e6e-4b2c-8528-3346bbda3396
-source-git-commit: 9dcdf84b70a3b0ea6fb332cd2cf8ccf1d4476489
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1713'
-ht-degree: 100%
+source-wordcount: '1724'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ Les informations relatives aux utilisateurs, utilisatrices et aux groupes sont g
 
 Lorsque vous créez des utilisateurs pu des utilisatrices, vous pouvez les ajouter à des groupes et leur affecter des rôles.
 
-1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > Gestion des utilisateurs > Utilisateurs et groupes]**, puis sur **[!UICONTROL Nouvel utilisateur]**.
+1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > Gestion des utilisateurs > Utilisateurs et groupes]**, puis sur **[!UICONTROL Nouvel utilisateur]**.
 .
 1. Sous **[!UICONTROL Paramètres généraux]**, fournissez les informations requises, puis cliquez sur Suivant. **[!UICONTROL Suivant]**. Pour plus d’informations sur ces paramètres, voir [Paramètres utilisateur](adding-configuring-users.md#user-settings).
 1. (Facultatif) Pour ajouter l’utilisateur à un groupe, cliquez sur **[!UICONTROL Rechercher des groupes]** et procédez comme suit :
@@ -46,7 +46,7 @@ Spécifiez les paramètres ci-dessous lorsque vous créez ou modifiez un utilisa
 
 **Nom canonique :**(obligatoire) identificateur unique de l’utilisateur. Tous les utilisateurs, utilisatrices et groupes d’un domaine doivent disposer d’un nom canonique unique. Cochez la case Généré par le système pour laisser User Management affecter une valeur unique au paramètre Nom canonique ou désélectionnez la case et saisissez une valeur personnalisée.
 
-Évitez l’utilisation de caractères de soulignement (_) dans les noms canoniques, par exemple, `sample_user`. Lorsque vous recherchez des utilisateurs à l’aide de leur nom canonique, les noms contenant des caractères de soulignement n’apparaissent pas dans les résultats.
+Évitez d’utiliser les caractères de soulignement (_) dans les noms canoniques, par exemple `sample_user`. Lorsque vous recherchez des utilisateurs à l’aide de leur nom canonique, les noms contenant des caractères de soulignement n’apparaissent pas dans les résultats.
 
 **Prénom :**(obligatoire) prénom de l’utilisateur ou de l’utilisatrice.
 

@@ -5,9 +5,9 @@ role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: be7c294c-149b-4825-8376-573f9e2987e2
-source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1980'
 ht-degree: 97%
 
 ---
@@ -19,7 +19,7 @@ Avant d’utiliser le service de contenu dynamique, vérifiez les points suivant
 
 * [Intégration à la console Adobe Developer](#integrate-adobe-io).
 * [Entraînement du service de contenu dynamique](#training-the-smart-content-service)
-* Installez le dernier pack de services [[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
+* Installez le dernier pack de services [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
 
 >[!IMPORTANT]
 >
@@ -64,13 +64,13 @@ Pour plus de détails sur la façon d’effectuer cette configuration, consultez
       * [Authentification de serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
 
    * Créer de nouvelles informations d’identification OAuth :
-      * [Guide de mise en œuvre des informations d’identification OAuth de serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
+      * [Guide de mise en œuvre des informations d’identification de serveur à serveur OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
    * Migrer des informations d’identification JWT existantes vers des informations d’identification OAuth :
-      * [Migrer des informations d’identification du compte de service (JWT) vers les informations d’identification OAuth de serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
+      * [Migration des informations d’identification du compte de service (JWT) vers les informations d’identification OAuth de serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
 
 
-1. Dans la page **[!UICONTROL Sélectionner les profils de produit]**, sélectionnez **[!UICONTROL Services de contenu dynamique]**. Cliquez sur **[!UICONTROL Enregistrer l’API configurée]**. 
+1. Dans la page **[!UICONTROL Sélectionner les profils de produit]**, sélectionnez **[!UICONTROL Services de contenu dynamique]**. Cliquez sur **[!UICONTROL Enregistrer l’API configurée]**.
 
    Une page affiche davantage d’informations sur la configuration. Laissez cette page ouverte pour copier et ajouter ces valeurs dans les [!UICONTROL Paramètres du service de balisage intelligent des ressources] de la configuration cloud dans [!DNL Experience Manager] pour configurer des balises intelligentes.
 
@@ -136,7 +136,8 @@ Une fois la configuration terminée, vous pouvez utiliser un MBean JMX pour vali
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]** pour ouvrir la console OSGi. Cliquez sur **[!UICONTROL Principal] > [!UICONTROL JMX]**.
 
 <!--
-1. Click `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.-->
+1. Click `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.
+-->
 
 1. Cliquez sur `com.day.cq.dam.similaritysearch.internal.impl (SCS)`.
 
@@ -154,7 +155,7 @@ Le résultat de la validation s’affiche dans la même boîte de dialogue.
 
 1. Cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
 
-1. Développez le panneau latéral pour afficher les étapes. Faites glisser l’étape Balise intelligente de la ressource disponible dans la section Workflow de DAM (gestion des actifs numériques) et placez-la après l’étape Traiter les miniatures.**&#x200B;**&#x200B;**&#x200B;**
+1. Développez le panneau latéral pour afficher les étapes. Faites glisser l’étape Balise intelligente de la ressource disponible dans la section Workflow de DAM (gestion des actifs numériques) et placez-la après l’étape Traiter les miniatures.********
 
    ![Ajout de l’étape Balise intelligente de la ressource après l’étape Miniatures des processus dans le processus Ressources de mise à jour de gestion des actifs numériques (DAM)](assets/smart-tag-in-dam-update-asset-workflow.png)
 

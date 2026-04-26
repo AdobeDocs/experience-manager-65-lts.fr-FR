@@ -7,10 +7,10 @@ feature: Assets HTTP API,Developer Tools
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7bb4aec8-e6c0-416a-a318-d3120f9688c4
-source-git-commit: f0385f595035dfd0dce77fc7eb8b2413eaf5431a
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1775'
-ht-degree: 100%
+source-wordcount: '1798'
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 ## Vue d’ensemble {#overview}
@@ -145,7 +145,7 @@ Un appel d’API échoue avec un code de réponse `500` si le nœud parent du ch
 * 412 – ÉCHEC DE LA PRÉCONDITION – si la collection racine est introuvable ou inaccessible.
 * 500 – ERREUR INTERNE DU SERVEUR – si une autre erreur s’est produite.
 
-## Créer une ressource  {#create-an-asset}
+## Créer une ressource {#create-an-asset}
 
 Placez le fichier fourni à l’emplacement indiqué pour créer une ressource dans le référentiel de gestion des ressources numériques. Si un astérisque `*` est indiqué au lieu d’un nom de nœud, le servlet utilise le nom du paramètre ou du fichier comme nom de nœud.
 

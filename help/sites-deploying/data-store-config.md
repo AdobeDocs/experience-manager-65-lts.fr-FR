@@ -8,10 +8,10 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 826074f588c60c77c9ec32b3f94b47ab9aa0c12d
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3345'
-ht-degree: 91%
+source-wordcount: '3508'
+ht-degree: 88%
 
 ---
 
@@ -73,11 +73,11 @@ customBlobStore=B"true"
 
 Le magasin de nœuds de document est la base de l’implémentation d’AEM MongoMK. Le * * PID `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService` est utilisé. Les options de configuration suivantes sont disponibles :
 
-* `mongouri` : [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) requis pour se connecter à la base donnée Mongo. La valeur par défaut est de `mongodb://localhost:27017`.
+* `mongouri` : [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) requis pour se connecter à la base de données Mongo. La valeur par défaut est de `mongodb://localhost:27017`.
 
 * `db` : nom de la base de données Mongo. La valeur par défaut est **aem-author**.
 
-* `cache` : taille du cache en Mo. Elle est distribuée entre différents caches utilisés dans DocumentNodeStore. La valeur par défaut est `256`.
+* `cache` : taille du cache, en Mo. Elle est distribuée entre différents caches utilisés dans DocumentNodeStore. La valeur par défaut est `256`.
 
 * `changesSize` : taille en Mo de la collection limitée utilisée dans Mongo pour la mise en cache de la sortie diff. La valeur par défaut est `256`.
 
@@ -112,7 +112,7 @@ Vous trouverez ci-dessous des informations détaillées sur les différents maga
 
 ### Fichier Magasin de données {#file-data-store}
 
-Il s’agit de l’implémentation de [FileDataStore](https://jackrabbit.apache.org/api/trunk/org/apache/jackrabbit/core/data/FileDataStore.html) présent dans Jackrabbit 2, qui offre une méthode pour stocker les données binaires comme tout autre fichier sur le système de fichiers. Le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` est utilisé.
+Il s’agit de l’implémentation de [FileDataStore](https://jackrabbit.apache.org/api/trunk/org/apache/jackrabbit/core/data/FileDataStore.html) présent dans Jackrabbit 2. Il permet de stocker les données binaires en tant que fichiers normaux sur le système de fichiers. Le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` est utilisé.
 
 Voici les options de configuration disponibles :
 
@@ -161,7 +161,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
    * `For MongoMK: org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
    * `For TarMK: org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
 
-1. Retournez à l’emplacement temporaire où le pack de fonctionnalités a été extrait, puis copiez le contenu du dossier suivant : 
+1. Retournez à l’emplacement temporaire où le pack de fonctionnalités a été extrait, puis copiez le contenu du dossier suivant :
 
    * `jcr_root/libs/system/config`
 
@@ -246,7 +246,7 @@ Vous pouvez utiliser le fichier de configuration avec les options présentées c
 | uploadThreads | Nombre de threads de téléchargement utilisés pour les téléchargements asynchrones. | 10 | Nombre |
 | writeThreads | Nombre de threads simultanés utilisés pour l’écriture via S3 Transfer Manager. | 10 | Nombre |
 
-<!---
+<!--
 ### Bucket region options {#bucket-region-options}
 
 <table>
@@ -433,7 +433,7 @@ Une fois téléchargé, vous pouvez installer et configurer le connecteur Azure 
 
 Vous pouvez utiliser le fichier de configuration avec les options suivantes :
 
-* azureSas=&quot;&quot; : dans la version 1.6.3 du connecteur, la signature d’accès partagé Azure (SAS) est pris en charge. **Si les informations d’identification SAS et de stockage figurent dans le fichier de configuration, SAS a la priorité.** Pour plus d’informations sur SAS, consultez la [documentation officielle](https://learn.microsoft.com/fr-fr/azure/storage/common/storage-sas-overview). Assurez-vous que le caractère ’=’ est placé dans une séquence d’échappement telle que ’\=’.
+* azureSas=&quot;&quot; : dans la version 1.6.3 du connecteur, la signature d’accès partagé Azure (SAS) est pris en charge. **Si les informations d’identification SAS et de stockage figurent dans le fichier de configuration, SAS a la priorité.** Pour plus d’informations sur SAS, consultez la [ documentation officielle ](https://learn.microsoft.com/fr-fr/azure/storage/common/storage-sas-overview). Assurez-vous que le caractère ’=’ est placé dans une séquence d’échappement telle que ’\=’.
 
 * azureBlobEndpoint=&quot;&quot; : point d’entrée Blob Azure. Par exemple, https://&lt;storage-account>.blob.core.windows.net.
 * accessKey=&quot;&quot; : nom du compte de stockage. Pour plus d’informations sur les informations d’identification de l’authentification Microsoft® Azure, reportez-vous à la [documentation officielle](https://learn.microsoft.com/fr-fr/azure/storage/common/storage-account-create).
@@ -442,14 +442,14 @@ Vous pouvez utiliser le fichier de configuration avec les options suivantes :
 * container=&quot;&quot; : nom du conteneur de stockage d’objets blob Microsoft® Azure. Le conteneur est le regroupement d’un ensemble d’objets blob. Pour plus d’informations, consultez la [documentation officielle](https://learn.microsoft.com/fr-fr/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
 * maxConnections=&quot;&quot; : nombre simultané de requêtes simultanées par opération. La valeur par défaut est 1.
 * maxErrorRetry=&quot;&quot; : nombre de nouvelles tentatives par demande. La valeur par défaut est 3.
-* socketTimeout=&quot;&quot; : intervalle d’expiration, en millisecondes, utilisé pour la demande. la valeur par défaut est de 5 minutes.
+* socketTimeout=&quot;&quot; : intervalle de délai d’expiration, en millisecondes, utilisé pour la demande. la valeur par défaut est de 5 minutes.
 
 En plus des paramètres ci-dessus, les paramètres suivants peuvent également être configurés :
 
 * path : chemin d’accès du magasin de données. La valeur par défaut est `<aem-install>/repository/datastore.`.
 * RecordLength : taille minimale d’un objet devant être enregistré dans le magasin de données. La valeur par défaut est de 16 Ko.
 * maxCachedBinarySize : les fichiers binaires dont la taille est inférieure ou égale à cette taille sont stockés dans le cache mémoire. La taille est en octets. La valeur par défaut est de 17 408 (17 Ko).
-* cacheSize : taille du cache. La valeur est exprimée en octets. La valeur par défaut est 64 Go.
+* cacheSize : taille du cache. La valeur est spécifiée en octets. La valeur par défaut est de 64 Go.
 * secret : à utiliser uniquement si la réplication sans binaire est utilisée pour la configuration du magasin de données partagé.
 * stagingSplitPercentage : pourcentage de la taille du cache configuré afin d’être utilisé pour les chargements asynchrones intermédiaires. La valeur par défaut est 10.
 * uploadThreads : nombre de threads de chargement utilisés pour les chargements asynchrones. La valeur par défaut est 10.
@@ -465,14 +465,14 @@ accessKey="ASDASDERFAERAER"
 secretKey="28932hfjlkwdo8fufsdfas\=\="
 ```
 
-## Récupération de l’espace mémoire du magasin de données  {#data-store-garbage-collection}
+## Récupération de l’espace mémoire du magasin de données {#data-store-garbage-collection}
 
 Le processus de récupération de l’espace mémoire du magasin de données est utilisé pour supprimer tous les fichiers inutilisés dans le magasin de données en vue de libérer de l’espace disque.
 
 Vous pouvez exécuter la récupération de l’espace mémoire du magasin de données en :
 
-1. Accédez à la console JMX à l’adresse *https://&lt;serveraddress:port>/system/console/jmx*
-1. Recherche de **RepositoryManagement.** Une fois que vous avez trouvé le gestionnaire de référentiel MBean, cliquez dessus pour afficher les options disponibles.
+1. En accédant à la console JMX à l’adresse *https://&lt;serveraddress:port>/system/console/jmx*
+1. Recherche de **RepositoryManagement.** Une fois que vous avez trouvé le MBean Repository Manager, cliquez dessus pour afficher les options disponibles.
 1. Faites défiler la page jusqu’à la fin, puis cliquez sur le lien **startDataStoreGC(boolean markOnly)**.
 1. Dans la boîte de dialogue suivante, saisissez `false` pour le paramètre `markOnly`, puis cliquez sur **Invoquer** :
 

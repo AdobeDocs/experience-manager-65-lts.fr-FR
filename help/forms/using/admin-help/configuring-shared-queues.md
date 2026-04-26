@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 6665b95a-39fd-472a-b3b5-8b97257c69a7
-source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 82%
+source-wordcount: '652'
+ht-degree: 83%
 
 ---
 
@@ -47,7 +47,7 @@ Une fois partagées, ces tâches peuvent être effectuées par l’utilisateur o
 > Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 1. Connectez-vous à la console d’administration à l’aide d’un compte d’administration.
-1. Sélectionnez **Services** > **Forms Workflow** > **File d’attente partagée**.
+1. Sélectionner **Services** > **Forms Workflow** > **File d’attente partagée**.
 
 1. Dans l’onglet Gérer l’accès à un utilisateur , recherchez et sélectionnez l’utilisateur dont vous souhaitez partager la file d’attente. À tout moment, le volet inférieur droit affiche la liste des utilisateurs et utilisatrices ayant accès à la file d’attente sélectionnée d’utilisateur ou d’utilisatrice.
 1. Dans le volet inférieur gauche, recherchez et sélectionnez l’utilisateur ou l’utilisatrice. Cliquez sur Partager.
@@ -56,7 +56,7 @@ Une fois partagées, ces tâches peuvent être effectuées par l’utilisateur o
 ### Révocation de l’accès à une file d’attente sélectionnée d’utilisateur ou d’utilisatrice {#revoking-access-to-a-selected-user-queue}
 
 1. Connectez-vous à la console d’administration à l’aide d’un compte d’administration.
-1. Sélectionnez **Services** > **Forms Workflow** > **File d’attente partagée**.
+1. Sélectionner **Services** > **Forms Workflow** > **File d’attente partagée**.
 
 1. Dans l’onglet Gérer l’accès à un utilisateur , recherchez et sélectionnez l’utilisateur dont vous souhaitez gérer la file d’attente.
 1. Le volet inférieur droit affiche la liste des utilisateurs et utilisatrices ayant accès à la file d’attente délectionnée d’utilisateur ou d’utilisatrice. Sélectionnez l’utilisateur ou l’utilisatrice et cliquez sur Révoquer.
@@ -75,7 +75,7 @@ Une fois affectées, ces tâches peuvent être effectuées par l’utilisateur o
 ### Accorder l’accès à une file d’attente sélectionnée d’utilisateur ou d’utilisatrice {#granting-access-to-a-selected-user-queue}
 
 1. Connectez-vous à la console d’administration à l’aide d’un compte d’administration.
-1. Sélectionnez **Services** > **Forms Workflow** > **File d’attente partagée**.
+1. Sélectionner **Services** > **Forms Workflow** > **File d’attente partagée**.
 
 1. Dans l’onglet Gérer l’accès à un utilisateur , recherchez et sélectionnez l’utilisateur dont vous souhaitez partager la file d’attente. À tout moment, le volet inférieur droit affiche la liste des utilisateurs et utilisatrices ayant accès à la file d’attente sélectionnée d’utilisateur ou d’utilisatrice.
 1. Dans le volet inférieur gauche, recherchez et sélectionnez les files d’attente d’utilisateurs à partager avec l’utilisateur sélectionné. Cliquez sur Partager.
@@ -84,7 +84,7 @@ Une fois affectées, ces tâches peuvent être effectuées par l’utilisateur o
 ### Révocation de l’accès à une file d’attente sélectionnée d’utilisateur ou d’utilisatrice {#revoking_access_to_a_selected_user_queue-1}
 
 1. Connectez-vous à la console d’administration à l’aide d’un compte d’administration.
-1. Sélectionnez **Services** > **Forms Workflow** > **File d’attente partagée**.
+1. Sélectionner **Services** > **Forms Workflow** > **File d’attente partagée**.
 
 1. Dans l’onglet Gérer l’accès par un utilisateur , recherchez et sélectionnez l’utilisateur dont vous souhaitez gérer la file d’attente.
 1. Le volet inférieur droit affiche la liste des files d’attente d’utilisateur et d’utilisatrice affectées à la personne utilisatrice sélectionnée. Sélectionnez la file d’attente de l’utilisateur ou de l’utilisatrice et cliquez sur Révoquer.

@@ -1,6 +1,6 @@
 ---
-title: Démarrage rapide de l’API Credential Service Java™ (SOAP)
-description: Découvrez comment importer et supprimer des informations d’identification dans AEM Forms à l’aide du démarrage rapide d’API Java™ (SOAP).
+title: Java&trade du service d’identification ; API QuickStart (SOAP)
+description: Découvrez comment importer et supprimer des informations d’identification dans AEM Forms à l’aide de Java&trade ; API Quick Start (SOAP).
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 7314fbae-05af-423d-92c8-f8c608048956
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 100%
+source-wordcount: '233'
+ht-degree: 89%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 100%
 
 Le démarrage rapide d’API Java™ est disponible pour Credential Service.
 
-[Démarrage rapide (mode SOAP) : importer des informations d’identification à l’aide de Java](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[Démarrage rapide (mode SOAP) : importer des informations d’identification à l’aide de l’API Java™.](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : supprimer des informations d’identification à l’aide de Java](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[Démarrage rapide (mode SOAP) : supprimer des informations d’identification à l’aide de l’API Java™](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée dʼAEM Forms et le mode de connexion doit être défini sur SOAP.
 

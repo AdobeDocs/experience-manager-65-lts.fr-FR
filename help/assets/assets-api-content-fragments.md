@@ -6,10 +6,10 @@ role: Developer
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
-source-git-commit: e799e9c99a12cad108ae2c035797e5887a2f4ef1
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 96%
+source-wordcount: '2064'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 ## Vue d’ensemble {#overview}
@@ -325,19 +325,19 @@ Il existe quelques restrictions :
 
 Les codes d’état suivants s’affichent dans les circonstances pertinentes :
 
-* **200** (OK) 
-Retourné lorsque :
+* **200** (OK)
+Affiché dans le scénario suivant :
 
    * demande d’un fragment de contenu via `GET`
    * mise à jour réussie d’un fragment de contenu via `PUT`
 
 * **201** (Créé)
-Retourné lorsque :
+Affiché dans le scénario suivant :
 
    * création réussie d’un fragment de contenu via `POST`
 
 * **404** (Introuvable)
-Retourné lorsque :
+Affiché dans le scénario suivant :
 
    * le fragment de contenu demandé n’existe pas
 
@@ -394,7 +394,7 @@ Retourné lorsque :
 
 Pour accéder aux références d’API détaillées :
 
-* [API Adobe Experience Manager Assets – Fragments de contenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [API Adobe Experience Manager Assets - Fragments de contenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [API HTTP Assets](/help/assets/mac-api-assets.md)
 
    * [Fonctionnalités disponibles](/help/assets/mac-api-assets.md#assets)
@@ -404,4 +404,4 @@ Pour accéder aux références d’API détaillées :
 Pour plus d’informations, voir :
 
 * [Documentation de l’API HTTP Assets](/help/assets/mac-api-assets.md)
-* [Session AEM Gem : OAuth](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [Session AEM Gem : OAuth](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

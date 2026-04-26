@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2c0dd472-9697-4b96-b3fa-3c50883bf425
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3253'
-ht-degree: 100%
+source-wordcount: '3275'
+ht-degree: 99%
 
 ---
 
@@ -36,7 +36,7 @@ Pour chaque domaine d’entreprise que vous configurez, indiquez les annuaires q
 > 
 > Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
-1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Nouveau domaine d’entreprise ou sélectionnez un domaine d’entreprise existant.
 1. Cliquez sur Ajouter un annuaire.
 1. Dans la zone Nom du profil, saisissez un nom permettant de distinguer cet annuaire, puis cliquez sur Suivant.
@@ -131,7 +131,7 @@ Si vous avez sélectionné l’option Activer la référence dans les paramètre
 
 Bien que le paramètre ND de base soit obligatoire dans la console d’administration, certains serveurs d’annuaire tels que IBM Domino Enterprise Server peuvent requérir un ND de base vide. Pour spécifier un ND de base vide, exportez le fichier config.xml, modifiez le paramètre dans le fichier config.xml, puis réimportez-le. (Voir [Import et export du fichier de configuration](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
-**Filtre de recherche :** (obligatoire) filtre de recherche à utiliser pour trouver l’enregistrement associé à l’utilisateur. Vous pouvez effectuer une recherche sur un seul niveau ou sur les niveaux inférieurs. (Voir Syntaxe des filtres de recherche ou RFC 2254.) Pour plus d’informations sur le schéma Microsoft AD, voir Schéma Active Directory.
+**Filtre de recherche :** (obligatoire) filtre de recherche à utiliser pour trouver l’enregistrement associé à l’utilisateur. Vous pouvez effectuer une recherche sur un seul niveau ou sur les niveaux inférieurs. (Voir Syntaxe des filtres de recherche ou RFC 2254.) Pour plus d’informations sur le schéma Microsoft AD, voir Schéma Active Directory .
 
 **Description :** attribut de schéma pour la description de l’utilisateur.
 
@@ -145,7 +145,7 @@ Bien que le paramètre ND de base soit obligatoire dans la console d’administr
 
 **Initiales :** attribut de schéma pour les initiales de l’utilisateur ou de l’utilisatrice.
 
-**Calendrier professionnel :** permet d’associer un calendrier professionnel à un utilisateur, en fonction de la valeur de ce paramètre (clé du calendrier professionnel). Les calendriers professionnels définissent les jours ouvrés et non ouvrés. AEM forms peut faire appel à des calendriers professionnels lors du calcul des dates et heures futures associées à des événements, tels que rappels, échéances et transmissions. Les clés de calendrier professionnel sont attribuées à des utilisateurs et utilisatrices en fonction du domaine utilisé (domaine d’entreprise, local ou hybride). Voir Configuration des calendriers professionnels. 
+**Calendrier professionnel :** permet d’associer un calendrier professionnel à un utilisateur, en fonction de la valeur de ce paramètre (clé du calendrier professionnel). Les calendriers professionnels définissent les jours ouvrés et non ouvrés. AEM forms peut faire appel à des calendriers professionnels lors du calcul des dates et heures futures associées à des événements, tels que rappels, échéances et transmissions. Les clés de calendrier professionnel sont attribuées à des utilisateurs et utilisatrices en fonction du domaine utilisé (domaine d’entreprise, local ou hybride). Voir Configuration des calendriers professionnels.
 
 Si vous utilisez un domaine d’entreprise, vous pouvez associer le paramètre Calendrier professionnel à un champ du répertoire LDAP. Par exemple, si chaque personne enregistrée dans votre répertoire dispose d’un champ *pays* et que vous souhaitez affecter des calendriers professionnels en fonction du pays dans lequel la personne se trouve, spécifiez le nom du champ *pays* en tant que valeur du paramètre Calendrier professionnel. Vous pouvez ensuite associer les clés de calendrier professionnel (valeurs définies pour le champ *pays* dans le répertoire LDAP) aux calendriers professionnels dans Forms Workflow.
 
@@ -185,7 +185,7 @@ L’espace utilisé pour afficher le nom de la clé de calendrier professionnel 
 
 **ND de base :** (obligatoire) identifiant de base du répertoire.
 
-Bien que le paramètre ND de base soit obligatoire dans la console d’administration, certains serveurs d’annuaire tels que IBM Domino Enterprise Server requièrent un ND de base vide. Pour spécifier un ND de base vide, exportez le fichier config.xml, modifiez le paramètre dans le fichier config.xml, puis réimportez-le. (Voir [Import et export du fichier du fichier de configuration](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
+Bien que le paramètre ND de base soit obligatoire dans la console d’administration, certains serveurs d’annuaire tels que IBM Domino Enterprise Server requièrent un ND de base vide. Pour spécifier un ND de base vide, exportez le fichier config.xml, modifiez le paramètre dans le fichier config.xml, puis réimportez-le. (Voir [Import et export du fichier de configuration](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
 **Filtre de recherche :** (obligatoire) filtre de recherche à utiliser pour trouver l’enregistrement associé au groupe. Vous pouvez effectuer une recherche sur un seul niveau ou sur les niveaux inférieurs.
 

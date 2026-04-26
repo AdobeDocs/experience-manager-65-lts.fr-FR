@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3fa1b6c9-fe73-4d76-aa72-20ce3e502941
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 100%
+source-wordcount: '1234'
+ht-degree: 98%
 
 ---
 
@@ -123,6 +123,6 @@ Je vous encourage à continuer à explorer les deux exemples de fichiers PDF.  V
 * [Ronald Rivest](https://fr.wikipedia.org/wiki/Ronald_Rivest)
 * [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
 * [Collision de hachage](https://fr.wikipedia.org/wiki/Collision_(informatique))
-* [Tableau arc-en-ciel](https://fr.wikipedia.org/wiki/Rainbow_table)
+* [Table arc-en-ciel](https://fr.wikipedia.org/wiki/Rainbow_table)
 * [Page d’accueil du projet JavaScript MD5](https://pajhome.org.uk/crypt/md5/)
 * [Page d’accueil du projet jsSHA2](https://anmar.eu.org/projects/jssha2/)

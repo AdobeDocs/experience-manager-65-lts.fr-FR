@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 39d793ca-5909-428e-9f6e-08d587f828c0
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1323'
 ht-degree: 98%
 
 ---
@@ -36,7 +36,7 @@ Cette rubrique décrit l’utilisation de l’API du service Distiller (Java et 
 
 >[!NOTE]
 >
->Pour plus d’informations à propos du service Distiller, consultez la section [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations à propos du service Forms, consultez la section [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Créer un client de service Distiller**
 
-Avant de pouvoir effectuer par programmation une opération de service Distiller, vous devez créer un client de service Distiller. Si vous utilisez l’API Java, créez un objet `DistillerServiceClient`. Si vous utilisez l’API de service web, créez un objet `DistillerServiceService`.
+Avant de pouvoir effectuer par programmation une opération de service Distiller, vous devez créer un client de service Distiller. Si vous utilisez l’API Java, créez un objet `DistillerServiceClient`. Si vous utilisez l’API Web Service, créez un objet `DistillerServiceService`.
 
 **Récupérer le fichier à convertir**
 
@@ -100,7 +100,7 @@ Pour convertir un fichier PostScript en document PDF à l’aide de l’API du s
 1. Récupérez le fichier à convertir.
 
    * Créez un objet `java.io.FileInputStream` qui représente le fichier à convertir en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du fichier.
-   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
+   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
 
 1. Appelez l’opération de création de PDF.
 
@@ -119,12 +119,12 @@ Pour convertir un fichier PostScript en document PDF à l’aide de l’API du s
 
    Pour obtenir le document PDF nouvellement créé, procédez comme suit :
 
-   * Appelez la méthode `getCreatedDocument` de l’objet `CreatePDFResult`. Cette fonction renvoie un objet `com.adobe.idp.Document`.
+   * Appelez la méthode `getCreatedDocument` de l’objet `CreatePDFResult`. Celle-ci renvoie un objet `com.adobe.idp.Document`.
    * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour extraire le document PDF.
 
    De même, pour obtenir le document journal, procédez comme suit.
 
-   * Appelez la méthode `getLogDocument` de l’objet `CreatePDFResult`. Celle-ci renvoie un objet `com.adobe.idp.Document`.
+   * Appelez la méthode `getLogDocument` de l’objet `CreatePDFResult`. Cette fonction renvoie un objet `com.adobe.idp.Document`.
    * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour extraire le document de journal.
 
 **Voir également**
@@ -168,7 +168,7 @@ Pour convertir un fichier PostScript en document PDF à l’aide de l’API Dist
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier et son mode d’ouverture.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’objet `BLOB` en attribuant sa propriété `MTOM` le contenu du tableau d’octets.
+   * Renseignez l’objet `BLOB` en affectant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Appelez l’opération de création de PDF.
 
@@ -194,7 +194,8 @@ Pour convertir un fichier PostScript en document PDF à l’aide de l’API Dist
 
 [Résumé des étapes](converting-postscript-pdf-documents.md#summary-of-steps)
 
-<!-- UNRESOLVED LINKS
+<!--
+UNRESOLVED LINKS
 [Quick Start (MTOM): Converting a PostScript file to a PDF document using the web service API](unresolvedlink-lc-qs-distiller-di.xml#ws624e3cba99b79e12e69a9941333732bac8-7f01.2)
 
 [Quick Start (SwaRef): Converting a PostScript file to a PDF document using the web service API](unresolvedlink-lc-qs-distiller-di.xml#ws624e3cba99b79e12e69a9941333732bac8-7eff.2)

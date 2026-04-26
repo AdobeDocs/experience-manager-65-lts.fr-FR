@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 054d31c3-bd58-4596-8c06-4909d75e9569
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '792'
 ht-degree: 98%
 
 ---
@@ -47,7 +47,7 @@ Vous avez besoin des modules EMC NetWorker suivants :
 * Module NetWorker pour le type de base de données utilisé par votre serveur de contenu
 * Module NetWorker pour Documentum
 
-## Préparation d’EMC Document Content Server pour la sauvegarde et la récupération  {#preparing-the-emc-document-content-server-for-backup-and-recovery}
+## Préparation d’EMC Document Content Server pour la sauvegarde et la récupération {#preparing-the-emc-document-content-server-for-backup-and-recovery}
 
 Cette section décrit l’installation et la configuration du logiciel EMC NetWorker sur le serveur de contenu.
 
@@ -199,15 +199,15 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
 
    * Sauvegarde complète de la base de données (nsrnmddbf.bat) :
 
-     `NetWorker_database_module_root` `-s`*&lt;Nom_Serveur_Networker>* `-U` `[username]` `-P`*[mot de passe ]*`-l full`*&lt;nom_base_de_données>*
+     `NetWorker_database_module_root` `-s`*&lt;Nom_Serveur_Networker>* `-U``[username]` `-P`*[mot de passe ]*`-l full`*&lt;nom_base_de_données>*
 
    * Sauvegarde incrémentielle de la base de données (nsrnmddbi.bat) :
 
-     `[NetWorker_database_module_root]` `-s`*&lt;Nom_Serveur_Networker>* `-U` `[username]` `-P` `[password]` `-l 1 -R`*&lt;nom_base_de_données>*
+     `[NetWorker_database_module_root]` `-s`*&lt;Nom_Serveur_Networker>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;nom_base_de_données>*
 
    * Sauvegarde du journal de la base de données (nsrnmddbl.bat) :
 
-     `[NetWorker_database_module_root]` `-s` `<NetWorker_Server_Name>` `-U` `[username]` `-P` `[password]` `-l incr -R`*&lt;nom_base_de_données>*
+     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;nom_base_de_données>*
 
      Où :
 

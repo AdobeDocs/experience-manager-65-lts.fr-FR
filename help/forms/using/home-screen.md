@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: b8e413e0-1387-46c7-891a-85d5fc61288b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '340'
 ht-degree: 100%
 
 ---
@@ -28,9 +28,11 @@ La figure suivante est annotée avec les légendes des principaux composants de 
 
 ![Écran d’accueil de l’application Forms](assets/home-screen-1.png)
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-![home-screen-1-1](assets/home-screen-1-1.png)-->
+![home-screen-1-1](assets/home-screen-1-1.png)
+-->
 
 1. **Bouton de menu :** sélectionnez le bouton **Menu** pour accéder aux tâches, aux formulaires, à la boîte d’envoi et aux paramètres. Si votre application AEM Forms est connectée à un serveur AEM Forms JEE, l’option Tâches s’affiche. L’option Tâches stocke également les brouillons créés à partir de tâches dans un processus. Pour les serveurs AEM Forms OSGi, l’option Tâches est masquée. La boîte d’envoi stocke les formulaires et les brouillons enregistrés avant de se synchroniser avec le serveur. Tous les formulaires et brouillons enregistrés dans la boîte d’envoi sont chargés sur le serveur AEM Forms lorsque l’application est [synchronisée avec le serveur](../../forms/using/sync-app.md). Pour plus d’informations sur les paramètres, consultez [Mise à jour des paramètres généraux](../../forms/using/update-general-settings.md).
 1. **Tâche ou formulaire** : sélectionnez la tâche ou le formulaire répertorié à utiliser.

@@ -5,10 +5,10 @@ role: Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: f0db5ec6-45ea-418e-ae5f-e6e307a40a38
-source-git-commit: 8489976fbcee595ee8230c530597523e7cd0f6b7
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1548'
-ht-degree: 98%
+source-wordcount: '1582'
+ht-degree: 97%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 98%
 * Le programme de traitement du proxy définit et gère une tâche spécifique.
 Il peut couvrir une grande variété de tâches ; par exemple l’utilisation d’[!DNL InDesign Server] pour traiter les fichiers.
 
-Pour charger intégralement des fichiers créés avec [!DNL Adobe InDesign] vers [!DNL Experience Manager Assets], un proxy est utilisé. Cette méthode utilise un programme de traitement du proxy pour communiquer avec [!DNL Adobe InDesign Server], qui exécute des [scripts](https://helpx.adobe.com/fr/indesign/using/scripting.html) afin d’extraire des métadonnées et de générer divers rendus pour [!DNL Experience Manager Assets]. Le programme de traitement du proxy permet une communication bidirectionnelle entre [!DNL InDesign Server] et les instances [!DNL Experience Manager] dans une configuration cloud.
+Pour charger intégralement des fichiers créés avec [!DNL Adobe InDesign] vers [!DNL Experience Manager Assets], un proxy est utilisé. Cette méthode utilise un programme de traitement du proxy pour communiquer avec [!DNL Adobe InDesign Server], qui exécute des [scripts](https://helpx.adobe.com/indesign/using/scripting.html) afin d’extraire des métadonnées et de générer divers rendus pour [!DNL Experience Manager Assets]. Le programme de traitement du proxy permet une communication bidirectionnelle entre [!DNL InDesign Server] et les instances [!DNL Experience Manager] dans une configuration cloud.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] est proposé sous la forme de deux offres distinctes. L’application de bureau [Adobe InDesign](https://www.adobe.com/fr/products/indesign.html) utilisée pour concevoir des dispositions pour la distribution papier et numérique. [Adobe InDesign Server](https://www.adobe.com/fr/products/indesignserver.html) vous permet de créer des documents de façon automatisée, et par programmation, sur la base de vos dispositions créées avec [!DNL InDesign]. Il fonctionne comme un service offrant une interface à son moteur [ExtendScript](https://helpx.adobe.com/fr/indesign/using/scripting.html). Les scripts sont écrits en [!DNL ExtendScript], qui est similaire à [!DNL JavaScript].
+>[!DNL Adobe InDesign] est proposé sous la forme de deux offres distinctes. L’application de bureau [Adobe InDesign](https://www.adobe.com/fr/products/indesign.html) utilisée pour concevoir des dispositions pour la distribution papier et numérique. [Adobe InDesign Server](https://www.adobe.com/fr/products/indesignserver.html) vous permet de créer des documents de façon automatisée, et par programmation, sur la base de vos dispositions créées avec [!DNL InDesign]. Il fonctionne comme un service offrant une interface à son moteur [ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html).Les scripts sont écrits en [!DNL ExtendScript], un langage similaire à [!DNL JavaScript].
 
 ## Fonctionnement de l’extraction {#how-the-extraction-works}
 
@@ -96,7 +96,7 @@ Pour installer et démarrer [!DNL InDesign Server] afin de l’utiliser avec [!D
 * [Extraction de médias](#media-extraction)
 * [Extraction de page](#page-extraction)
 
-Ce workflow est configuré avec les valeurs par défaut qui peuvent être adaptées à votre configuration pour diverses instances d’auteur (il s’agit d’un workflow standard, aussi des informations supplémentaires sont disponibles sous [Modifier un workflow](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Si vous utilisez les valeurs par défaut (port SOAP compris), aucune configuration n’est nécessaire.
+Ce workflow est configuré avec les valeurs par défaut qui peuvent être adaptées à votre configuration pour diverses instances de création (il s’agit d’un workflow standard, aussi des informations supplémentaires sont disponibles sous [Modifier un workflow](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Si vous utilisez les valeurs par défaut (port SOAP compris), aucune configuration n’est nécessaire.
 
 Après la configuration, le chargement de fichiers [!DNL InDesign] dans [!DNL Experience Manager Assets] (via les méthodes habituelles) déclenche le workflow pour le traitement de la ressource et la préparation des différents rendus. Testez votre configuration en chargeant un fichier INDD dans [!DNL Experience Manager Assets] afin de confirmer que vous voyez les différents rendus créés par IDS sous `<*your_asset*>.indd/Renditions`.
 
@@ -114,7 +114,8 @@ Arguments d’extraction de médias et chemins de scripts
 
 * **Développer les scripts** : vous pouvez indiquer ici différentes combinaisons de script. Si vous souhaitez que vos propres scripts soient exécutés sur [!DNL InDesign Server], enregistrez-les sous `/apps/settings/dam/indesign/scripts`.
 
-<!-- TBD: Hiding this link since ADC is not available anymore. 
+<!--
+TBD: Hiding this link since ADC is not available anymore. 
 For information about [!DNL Adobe InDesign] scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 -->
 
@@ -161,8 +162,8 @@ Pour la personnaliser, vous pouvez modifier l’onglet **[!UICONTROL Arguments]*
 
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
-   * **Pool IDS**
-Points d’entrée SOAP à utiliser pour communiquer avec [!DNL InDesign Server]. Vous pouvez ajouter, supprimer ou trier les éléments au besoin.
+   * Pool **IDS**
+Point(s) d’entrée SOAP à utiliser pour communiquer avec le [!DNL InDesign Server]. Vous pouvez ajouter, supprimer ou trier les éléments au besoin.
 
 1. Cliquez sur OK pour enregistrer.
 

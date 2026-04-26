@@ -11,10 +11,10 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: a9eae40f-531f-4354-ade0-853e84dd88d9
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 100%
+source-wordcount: '1037'
+ht-degree: 98%
 
 ---
 
@@ -74,7 +74,7 @@ Vous pouvez configurer le fournisseur de services de référentiel à utiliser a
 
 >[!NOTE]
 >
->Pour sélectionner un fournisseur de services de référentiel non répertorié, configurez le service RepositoryService dans Applications et Services > Gestion des services.<!-- Fix broken link (See Managing Services) -->
+>Pour sélectionner un fournisseur de services de référentiel non répertorié, configurez le service RepositoryService dans Applications et Services > Gestion des services. <!-- Fix broken link (See Managing Services) -->.
 
 1. Dans la console d’administration, cliquez sur Services > Connector for EMC Documentum > Paramètres de configuration.
 1. Dans la zone Informations sur le fournisseur de services de référentiel, sélectionnez un autre fournisseur de services de référentiel.

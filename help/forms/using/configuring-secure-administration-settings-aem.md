@@ -10,9 +10,9 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 2278a4df-2584-4a15-9aaf-bbfc0487b72a
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '852'
 ht-degree: 100%
 
 ---
@@ -68,7 +68,7 @@ Suivez cette procédure à l’aide de la page web Applications et services dans
 
 ## Désactivation des accès anonymes non essentiels pour des services {#disabling-non-essential-anonymous-access-to-services}
 
-Certains services du serveur Forms Server permettent d’effectuer des appels non authentifiés (anonymes) pour certaines opérations. Cela signifie qu’une ou plusieurs opérations exposées par le service peuvent être appelées par une personne authentifiée ou non. 
+Certains services du serveur Forms Server permettent d’effectuer des appels non authentifiés (anonymes) pour certaines opérations. Cela signifie qu’une ou plusieurs opérations exposées par le service peuvent être appelées par une personne authentifiée ou non.
 
 1. Connectez-vous à la console d’administration en saisissant l’URL suivante dans un navigateur web :
 

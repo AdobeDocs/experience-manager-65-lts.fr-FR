@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 6bd234fb-28ad-405f-a018-bdf4fa412839
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1882'
+source-wordcount: '1904'
 ht-degree: 100%
 
 ---
@@ -46,7 +46,7 @@ Lorsque l’administrateur ou l’administratrice du serveur d’applications d�
    * Augmentation de capacité
    * Taille du cache d’instruction
 
-1. Cliquez sur Enregistrer, puis sur Activer les modifications.
+1. Cliquez sur Save, puis sur Activate Changes.
 1. Redémarrez le serveur géré WebLogic.
 
 ### Configurer les paramètres du pool de connexions pour WebLogic pour SQLServer {#configure-connection-pool-settings-for-weblogic-for-sqlserver}
@@ -60,7 +60,7 @@ Lorsque l’administrateur ou l’administratrice du serveur d’applications d�
    * Augmentation de capacité
    * Taille du cache d’instruction
 
-1. Cliquez sur Enregistrer, puis sur Activer les modifications.
+1. Cliquez sur Save, puis sur Activate Changes.
 1. Redémarrez le serveur géré WebLogic.
 
 ### Configurer les paramètres du pool de connexions pour WebSphere pour DB2 {#configure-connection-pool-settings-for-websphere-for-db2}

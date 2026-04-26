@@ -6,10 +6,10 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5b3beaa6-ca0a-454e-85ee-c3653dd423fe
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2058'
-ht-degree: 98%
+source-wordcount: '2189'
+ht-degree: 97%
 
 ---
 
@@ -105,8 +105,8 @@ Dans ce tutoriel, vous allez appliquer un style aux en-têtes et aux pieds de pa
 1. Connectez vous à l’instance de création AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Thèmes]**. L’URL par défaut est [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Appuyez sur **[!UICONTROL Créer]** et sélectionnez **[!UICONTROL Thème]**. La page [!UICONTROL Créer un thème] s’affiche avec les champs requis pour créer un thème. Les champs **[!UICONTROL Titre]** et **[!UICONTROL Nom]** sont obligatoires :
 
-   * **Titre :** spécifiez le titre du thème. Par exemple, **Thème global.** Le titre vous permet d’identifier le thème dans la liste des thèmes.
-   * **Nom :** spécifiez le nom du thème. Par exemple, **Thème-global.** Un nœud portant le nom spécifié est créé dans le référentiel. Lorsque vous commencez à saisir un titre, la valeur du champ Nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ Nom ne peut contenir que des caractères alphanumériques, des traits d’union et des traits de soulignement. Toutes les entrées non valides sont remplacées par un trait d’union.
+   * **Titre :** spécifiez le titre du thème. Par exemple, **Thème global.** Le titre vous permet d’identifier le thème à partir de la liste des thèmes.
+   * **Nom :** spécifiez le nom du thème. Par exemple, **Global-Theme.** Un nœud portant le nom spécifié est créé dans le référentiel. Lorsque vous commencez à saisir un titre, la valeur du champ Nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ Nom ne peut contenir que des caractères alphanumériques, des traits d’union et des traits de soulignement. Toutes les entrées non valides sont remplacées par un trait d’union.
 
 1. Sélectionnez **[!UICONTROL Créer]**. Un thème est créé et une boîte de dialogue permettant d’ouvrir le formulaire à modifier s’affiche. Cliquez sur **[!UICONTROL Ouvrir]** pour ouvrir le thème créé dans un nouvel onglet. Le thème s’ouvre dans l’éditeur de thèmes. Pour le style, l’éditeur de thèmes utilise un formulaire adaptatif prêt à l’emploi fourni avec AEM [!DNL Forms].
 
@@ -233,7 +233,7 @@ Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capt
     </tbody> 
     </table>
 
-1. Cliquez sur la zone vide au-dessus du champ **[!UICONTROL ID client]**, puis sur **[!UICONTROL Conteneur de panneau réactif]**. Définissez **[!UICONTROL Arrière-plan]** > **[!UICONTROL Couleur d’arrière-plan]** sur F1F2F2. Sélectionnez ![&#x200B; aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Cliquez sur la zone vide au-dessus du champ **[!UICONTROL ID client]**, puis sur **[!UICONTROL Conteneur de panneau réactif]**. Définissez **[!UICONTROL Arrière-plan]** > **[!UICONTROL Couleur d’arrière-plan]** sur F1F2F2. Sélectionnez ![ aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    ![Conteneur de panneau réactif](do-not-localize/responsive-panel-container.png)
 
@@ -448,7 +448,8 @@ Vous pouvez utiliser différentes polices pour concevoir un formulaire adaptatif
 <!--
 >[!NOTE]
 >
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).-->
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
+-->
 
 >[!NOTE]
 >
@@ -479,7 +480,7 @@ Vous pouvez utiliser différentes polices pour concevoir un formulaire adaptatif
 9. Accédez au dossier `clientlibs` nouvellement créé et ajoutez les propriétés `allowProxy` et `categories`.
 10. Accédez à `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` et créez un dossier CSS.
 11. Accédez au dossier CSS créé et créez un fichier. Par exemple, créez un fichier en tant que `fonts.css` et collez le code intégré avec l’URL.
-    ![Structure de dossiers](/help/forms/using/assets/fonts-add-in-crxde.png)
+   ![Structure de dossiers](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Enregistrez les modifications.
 
 >[!NOTE]
@@ -515,4 +516,5 @@ The fonts added to the **[!UICONTROL Adobe Fonts]** are available for selection 
 1. Create an [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. It is required to use [!DNL Adobe Fonts] (Web Fonts) in an adaptive form. 
 1. In the AEM [!DNL Forms] Server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Now, open a configuration folder. If a configuration is already available, click the **[!UICONTROL Create]** button to create an instance.
 
-   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**. -->
+   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**.
+-->

@@ -9,14 +9,13 @@ docset: aem65
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: AEM Forms on JEE,AEM Forms Upgrade
-exl-id: 6d8c0e24-7f08-4e66-bb12-2cf1cfe1d5d3
-source-git-commit: fb9f6ef794da7f3b242e9e81a6c2505692c16cd8
+exl-id: 67a96376-412e-4065-b7af-fbb720a4720a
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '564'
 ht-degree: 3%
 
 ---
-
 
 # Workflow d’installation et de mise à niveau pour AEM Forms sous JEE {#aem-forms-jee-installation-upgrade-documentation}
 
@@ -28,7 +27,7 @@ Utilisez le workflow et les tableaux suivants pour sélectionner le ou les guide
 
 ## Workflow d’installation et de mise à niveau {#installation-upgrade-workflow}
 
-1. Passez en revue la section [&#x200B; Plateformes prises en charge par AEM Forms sur JEE &#x200B;](/help/forms/using/aem-forms-jee-supported-platforms.md) et assurez-vous que votre système répond aux combinaisons logicielles/matérielles requises.
+1. Passez en revue la section [ Plateformes prises en charge par AEM Forms sur JEE ](/help/forms/using/aem-forms-jee-supported-platforms.md) et assurez-vous que votre système répond aux combinaisons logicielles/matérielles requises.
 2. Déterminez si vous effectuez une **nouvelle installation** ou une **mise à niveau**.
 3. Pour le chemin d’accès choisi, suivez la séquence décrite ci-dessous (certains scénarios nécessitent plusieurs guides).
 
@@ -77,5 +76,5 @@ Utilisez le workflow et les tableaux suivants pour sélectionner le ou les guide
 
 <!--
 | Preparing to Install AEM Forms (Server Cluster) (PDF) (**TBD**) | Use **before** a **cluster upgrade**. Describes how to prepare the environment for a server cluster before upgrading to AEM 6.5 LTS Forms. It applies to environments running AEM Forms on JEE in a server cluster installation mode. *(Link will be added once the PDF is available.)* |
-| Upgrading to AEM Forms on JEE for JBoss (Cluster) (PDF) (**TBD**) | Use for the **step-by-step upgrade procedure** on JBoss in a **clustered** installation mode. Follow this guide **after** completing *Preparing to Install AEM Forms (Server Cluster)*. *(Link will be added once the PDF is available.)* | -->
-
+| Upgrading to AEM Forms on JEE for JBoss (Cluster) (PDF) (**TBD**) | Use for the **step-by-step upgrade procedure** on JBoss in a **clustered** installation mode. Follow this guide **after** completing *Preparing to Install AEM Forms (Server Cluster)*. *(Link will be added once the PDF is available.)* |
+-->

@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c499432d-6aa4-481f-821d-bd2f9b7a911d
-source-git-commit: 90f1b2ca07bec5a3be6c312a5f048abaa088df16
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '532'
 ht-degree: 95%
 
 ---
@@ -27,7 +27,7 @@ Cela peut servir à évaluer l’ampleur des tâches de développement nécessai
 
 ## Méthode de configuration {#how-to-set-up}
 
-L’outil de détection des motifs est publié séparément sous forme de [package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) qui fonctionne sous toutes les versions AEM sources, depuis la version 6.1 jusqu’à la version 6.5, et cible la mise à niveau AEM 6.5. Il peut être installé à l’aide du [Gestionnaire de packages](/help/sites-administering/package-manager.md).
+L’outil de détection des motifs est publié séparément sous forme de [package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) qui fonctionne sous toutes les versions AEM sources, depuis la version 6.1 jusqu’à la version 6.5, et cible la mise à niveau AEM 6.5. Il peut être installé à l’aide du [gestionnaire de modules](/help/sites-administering/package-manager.md).
 
 ## Utilisation {#how-to-use}
 
@@ -111,7 +111,7 @@ Avec la sortie :
     "code": "ECU",
     "type": "extraneous.content.usage",
     "detective": "ContentAccessDetector",
-    "moreInfo": "https://www.adobe.com/go/aem6_ECU_fr"
+    "moreInfo": "https://www.adobe.com/go/aem6_ECU"
   },
   "item": {
     "id": "a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f",

@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 2e8b73eb-7070-4b7b-b14b-bfcca6175afb
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2754'
+source-wordcount: '2784'
 ht-degree: 98%
 
 ---
@@ -158,12 +158,12 @@ Pour importer des données de formulaire à l’aide de l’API Form Data Inte
 1. Créez un client de service d’intégration des données de formulaire.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `FormDataIntegrationClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `FormDataIntegrationClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Référencez un formulaire PDF.
 
    * Créez un objet `java.io.FileInputStream` en utilisant son constructeur. Transmettez une valeur de chaîne spécifiant l’emplacement du formulaire PDF.
-   * Créez un objet `com.adobe.idp.Document` qui stocke le formulaire PDF à l’aide du constructeur `com.adobe.idp.Document`. Transmettez l’objet `java.io.FileInputStream` qui contient le formulaire PDF au constructeur.
+   * Créez un objet `com.adobe.idp.Document` qui stocke le formulaire PDF à l’aide du constructeur `com.adobe.idp.Document`. Transmettez au constructeur l’objet `java.io.FileInputStream` qui contient le formulaire PDF.
 
 1. Référencez une source de données XML.
 
@@ -182,7 +182,7 @@ Pour importer des données de formulaire à l’aide de l’API Form Data Inte
 1. Enregistrez le formulaire au format PDF.
 
    * Créez un objet `java.io.File` et assurez-vous que l’extension du fichier est « .PDF ».
-   * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier (assurez-vous d’utiliser l’objet `Document` qui a été renvoyé par la méthode `importData`).
+   * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier (veillez à utiliser l’objet `Document` renvoyé par la méthode `importData`).
 
 **Voir également**
 
@@ -328,7 +328,7 @@ Pour exporter les données de formulaire à l’aide de l’API Form Data Inte
 1. Créez un client de service d’intégration des données de formulaire.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `FormDataIntegrationClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `FormDataIntegrationClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Référencez un formulaire PDF.
 
@@ -342,7 +342,7 @@ Pour exporter les données de formulaire à l’aide de l’API Form Data Inte
 1. Enregistrez le formulaire au format PDF.
 
    * Créez un objet `java.io.File` et assurez-vous que l’extension du fichier est XML.
-   * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier (veillez à utiliser l’objet `Document` renvoyé par la méthode `exportData`).
+   * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier (assurez-vous d’utiliser l’objet `Document` qui a été renvoyé par la méthode `exportData`).
 
 **Voir également**
 

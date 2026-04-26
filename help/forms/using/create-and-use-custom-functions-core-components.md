@@ -6,10 +6,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 5f6106a9-64a6-45aa-a31d-2075d1e911bf
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3394'
-ht-degree: 99%
+source-wordcount: '3508'
+ht-degree: 98%
 
 ---
 
@@ -61,8 +61,8 @@ Le **nom** est utilisé pour identifier la fonction personnalisée dans l’édi
 
 >[!NOTE]
 >`[functionName]` est le nom de la fonction. Les espaces ne sont pas autorisés.
->&#x200B;>`<Function Name>` est le nom d’affichage de la fonction dans l’éditeur de règles des formulaires adaptatifs.
->&#x200B;>Si le nom de la fonction est identique au nom de la fonction elle-même, vous pouvez omettre `[functionName]` dans la syntaxe.
+>`<Function Name>` est le nom d’affichage de la fonction dans l’éditeur de règles des formulaires adaptatifs.
+>Si le nom de la fonction est identique au nom de la fonction elle-même, vous pouvez omettre `[functionName]` dans la syntaxe.
 
 #### Paramètre
 
@@ -347,8 +347,8 @@ Avant de commencer à ajouter une fonction personnalisée aux formulaires adapta
 ## Création d’une fonction personnalisée {#create-custom-function}
 
 Les étapes de création de fonctions personnalisées sont les suivantes :
-1. [Créez une bibliothèque côté client à l’aide de l’archétype de projet AEM et ajoutez une fonction personnalisée,](#create-client-library-archetype)
-OU
+1. [Créer une bibliothèque côté client à l’aide de l’archétype de projet AEM et ajouter une fonction personnalisée](#create-client-library-archetype)
+SOIT
    [Créez des fonctions personnalisées via CRXDE.](#create-add-custom-function)
 1. [Ajout d’une bibliothèque cliente à un formulaire adaptatif](#add-client-library)
 1. [Utilisation d’une fonction personnalisée dans un formulaire adaptatif](#use-custom-functions)
@@ -531,7 +531,7 @@ Une fois que vous avez déployé votre bibliothèque cliente dans votre environn
 
 Vous pouvez maintenant créer une règle pour utiliser des fonctions personnalisées dans l’éditeur de règles :
 
-![Ajout de la bibliothèque cliente de fonction personnalisée](/help/forms/using//assets/calculateage-customfunction.png)
+![Ajout de la bibliothèque cliente de fonctions personnalisées](/help/forms/using//assets/calculateage-customfunction.png)
 
 Maintenant, apprenons comment configurer et utiliser une fonction personnalisée à l’aide du [service d’appel de l’éditeur de règles dans AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke).
 
@@ -573,7 +573,7 @@ Prévisualisons le formulaire pour observer comment les fonctions personnalisée
 
 >[!NOTE]
 >
-> Vous pouvez vous référer au dossier de [fonctions personnalisées](/help/forms/using/assets/customfunctions.zip) suivant. Téléchargez et installez ce dossier dans votre instance AEM à l’aide du [Gestionnaire de modules](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
+> Vous pouvez vous référer au dossier de [fonctions personnalisées](/help/forms/using/assets/customfunctions.zip) suivant. Téléchargez et installez ce dossier dans votre instance AEM à l’aide du [Gestionnaire de modules](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
 
 ### Prise en charge des fonctions asynchrones dans les fonctions personnalisées {#support-of-async-functions}
 
@@ -634,7 +634,8 @@ Les objets Field font référence aux composants ou éléments individuels d’u
 >
 > Le paramètre `param {scope} globals` doit être le dernier paramètre et il ne s’affiche pas dans l’éditeur de règles d’un formulaire adaptatif.
 
-<!-- Let us look at the following code snippet:
+<!--
+Let us look at the following code snippet:
 
 ```JavaScript
    
@@ -654,7 +655,8 @@ Les objets Field font référence aux composants ou éléments individuels d’u
     }
 ```
 
-In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form.
+-->
 
 Découvrez comment les fonctions personnalisées utilisent des objets Field et Globals à l’aide d’un formulaire `Contact Us` utilisant différents cas d’utilisation.
 
@@ -817,8 +819,8 @@ Si l’utilisateur ou l’utilisatrice saisit plus de 15 caractères dans la zo
 
 #### **Cas d’utilisation** : envoyer des données modifiées au serveur
 
-La ligne de code suivante :
-`globals.functions.submitForm(globals.functions.exportData(), false);` est utilisée pour envoyer les données de formulaire après la manipulation.
+La ligne de code suivante :
+`globals.functions.submitForm(globals.functions.exportData(), false);` est utilisé pour envoyer les données de formulaire après manipulation.
 * Le premier argument est celui des données à envoyer.
 * Le deuxième argument indique si le formulaire doit être validé avant envoi. Il est `optional` et est défini sur `true` par défaut.
 * Le troisième argument est le `contentType` de l’envoi, qui est également facultatif avec la valeur par défaut `multipart/form-data`. Les autres valeurs peuvent être `application/json` et `application/x-www-form-urlencoded`.

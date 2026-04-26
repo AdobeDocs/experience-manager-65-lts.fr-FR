@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: bc621086-8128-4836-a580-dca99f61c439
-source-git-commit: d894bb145d70fba819cc8452056e9e46112e69d9
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1767'
 ht-degree: 63%
 
 ---
@@ -25,11 +25,11 @@ Un [fragment d’expérience](/help/sites-authoring/experience-fragments.md) est
 
 Un fragment d’expérience principal ou de variante, ou les deux, utilise les éléments suivants :
 
-* `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
+* `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
 
 Comme il n’y a pas de `/libs/cq/experience-fragments/components/xfpage/xfpage.html`, il revient à ce qui suit :
 
-* `sling:resourceSuperType` : `wcm/foundation/components/page`
+* `sling:resourceSuperType` : `wcm/foundation/components/page`
 
 ## Rendu HTML brut {#the-plain-html-rendition}
 
@@ -121,7 +121,8 @@ Permet aux utilisateurs de créer des fragments d’expérience dans `/content/e
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
 -->
 
-<!-- >[!NOTE]
+<!--
+>[!NOTE]
 >
 >[Allowed templates](/help/sites-authoring/experience-fragments.md#configuring-allowed-templates) can be configured in the Experience Fragments console.
 -->

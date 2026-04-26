@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 198016d7-0fb5-47e6-91ed-f2f0c98b2224
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '161'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 > 
 > Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
-Le service Forms vous permet de spécifier un fichier XCI personnalisé à utiliser pour le rendu. (Voir [Configurer des emplacements pour Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).) Par défaut, le service Forms remplace certaines des options spécifiées dans le fichier XCI, notamment :
+Le service Forms vous permet de spécifier un fichier XCI personnalisé à utiliser pour le rendu. (Voir [Configurer des emplacements pour Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).) Par défaut, Forms remplace certaines des options spécifiées dans le fichier XCI, notamment les suivantes :
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`

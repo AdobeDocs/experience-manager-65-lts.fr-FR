@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 9df608f8-cdd0-4820-aab1-eab9fd70f961
-source-git-commit: 547d7866346fb148cb66f546d8a2e1141f69f563
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 99%
@@ -95,7 +95,7 @@ Dans AEM 6.1, le prédicat de texte intégral standard faisait partie du formul
  <tbody>
   <tr>
    <td>Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1<br /> <br /> </td>
-   <td>path</td>
+   <td>chemin</td>
   </tr>
   <tr>
    <td><p>Type de ressource dans la version 6.1</p> </td>
@@ -236,7 +236,7 @@ Le statut de page a été remplacé par deux prédicats de propriétés d’opti
  <tbody>
   <tr>
    <td>Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1<br /> <br /> </td>
-   <td>n/a</td>
+   <td>s.o.</td>
   </tr>
   <tr>
    <td><p>Type de ressource dans la version 6.1</p> </td>
@@ -261,7 +261,7 @@ Le statut de page a été remplacé par deux prédicats de propriétés d’opti
  <tbody>
   <tr>
    <td>Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1<br /> <br /> </td>
-   <td>n/a</td>
+   <td>s.o.</td>
   </tr>
   <tr>
    <td><p>Type de ressource dans la version 6.1</p> </td>
@@ -282,7 +282,7 @@ Le statut de page a été remplacé par deux prédicats de propriétés d’opti
  <tbody>
   <tr>
    <td>Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1<br /> <br /> </td>
-   <td>n/a</td>
+   <td>s.o.</td>
   </tr>
   <tr>
    <td><p>Type de ressource dans la version 6.1</p> </td>
@@ -303,7 +303,7 @@ Le statut de page a été remplacé par deux prédicats de propriétés d’opti
  <tbody>
   <tr>
    <td>Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1<br /> <br /> </td>
-   <td>n/a</td>
+   <td>s.o.</td>
   </tr>
   <tr>
    <td><p>Type de ressource dans la version 6.1</p> </td>
@@ -324,7 +324,7 @@ Le statut de page a été remplacé par deux prédicats de propriétés d’opti
  <tbody>
   <tr>
    <td>Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1<br /> <br /> </td>
-   <td>n/a</td>
+   <td>s.o.</td>
   </tr>
   <tr>
    <td><p>Type de ressource dans la version 6.1</p> </td>
@@ -345,7 +345,7 @@ Le statut de page a été remplacé par deux prédicats de propriétés d’opti
  <tbody>
   <tr>
    <td>Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1<br /> <br /> </td>
-   <td>n/a</td>
+   <td>s.o.</td>
   </tr>
   <tr>
    <td><p>Type de ressource dans la version 6.1</p> </td>

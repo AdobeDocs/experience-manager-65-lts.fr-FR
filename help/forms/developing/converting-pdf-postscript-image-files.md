@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 509b9e53-9af4-4916-afba-2db358ec0764
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2774'
+source-wordcount: '2820'
 ht-degree: 98%
 
 ---
@@ -60,7 +60,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Créer un client PDF Convert**
 
-Avant d’effectuer par programmation une opération du service Convert PDF, vous devez créer un client de service Convert PDF. Si vous utilisez l’API Java, créez un objet `ConvertPdfServiceClient`. Si vous utilisez l’API de service web, créez un objet `ConvertPDFServiceService`.
+Avant d’effectuer par programmation une opération du service Convert PDF, vous devez créer un client de service Convert PDF. Si vous utilisez l’API Java, créez un objet `ConvertPdfServiceClient`. Si vous utilisez l’API Web Service, créez un objet `ConvertPDFServiceService`.
 
 Cette section utilise la nouvelle fonctionnalité de service web introduite dans AEM Forms. Pour accéder à cette nouvelle fonctionnalité, vous devez construire votre objet proxy à l’aide de lʼattribut `lc_version`. (Consultez la rubrique « Accéder aux nouvelles fonctionnalités à l’aide des services web » dans la section [Appeler AEM Forms à l’aide de services web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
 
@@ -111,7 +111,7 @@ Convertissez un document PDF en PostScript à l’aide de l’API Convert PDF Se
 1. Créez un client PDF Convert.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `ConvertPdfServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `ConvertPdfServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Référencez le document PDF à convertir en fichier PostScript.
 
@@ -275,12 +275,12 @@ Convertissez un document PDF en format d’image à l’aide de l’API Convert 
 1. Créez un client PDF Convert.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `ConvertPdfServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `ConvertPdfServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Récupérez le document du PDF à convertir.
 
    * Créez un objet `java.io.FileInputStream` qui représente le document PDF à convertir en utilisant son constructeur et en transmettant une valeur string spécifiant l’emplacement du document du PDF.
-   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
+   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
 
 1. Définissez les options d’exécution.
 
@@ -289,7 +289,7 @@ Convertissez un document PDF en format d’image à l’aide de l’API Convert 
 
    >[!NOTE]
    >
-   >Paramétrer la valeur d’énumération `ImageConvertFormat` est obligatoire.
+   >La définition de la valeur d’énumération `ImageConvertFormat` est obligatoire.
 
 1. Convertissez le PDF en image.
 
@@ -331,7 +331,7 @@ Convertissez un document PDF en format d’image à l’aide de l’API Convert 
       * Attribuez le nom d’utilisateur AEM forms au champ `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `ConvertPdfServiceClient.ClientCredentials.UserName.Password`.
       * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Récupérez le document du PDF à convertir.
 
@@ -339,7 +339,7 @@ Convertissez un document PDF en format d’image à l’aide de l’API Convert 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur string qui spécifie l’emplacement du formulaire PDF et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Déterminez la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’objet `BLOB` en affectant à son champ `MTOM` le contenu du tableau d’octets.
+   * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Définissez les options d’exécution.
 

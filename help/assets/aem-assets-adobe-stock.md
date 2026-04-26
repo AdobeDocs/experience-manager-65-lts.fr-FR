@@ -7,9 +7,9 @@ role: User, Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 33f539d2-ae00-4f43-a27a-55c1b55a6c0c
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2158'
+source-wordcount: '2240'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,8 @@ ht-degree: 100%
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=fr) |
 | AEM 6.5 LTS | Cet article |
 
-<!-- old content
+<!--
+old content
 
 [!DNL Experience Manager Assets] provides users the ability to search, preview, save, and license [!DNL Adobe Stock] assets directly from [!DNL Experience Manager]. 
 
@@ -30,10 +31,11 @@ Organizations can integrate their [!DNL Adobe Stock] enterprise plan with [!DNL 
 [!DNL Adobe Stock] service provides designers and businesses with access to millions of high-quality, curated, royalty-free photos, vectors, illustrations, videos, templates, and 3D assets for all their creative projects. [!DNL Experience Manager] users are able to quickly find, preview, and license [!DNL Adobe Stock] assets that are saved in [!DNL Experience Manager], without leaving the [!DNL Experience Manager] interface.
 -->
 
-<!-- New overview content
+<!--
+New overview content
 -->
 
-Le service [!DNL Adobe Stock] permet aux concepteurs et aux entreprises d’accéder à des millions de photos, de vecteurs, d’illustrations, de vidéos, de modèles et de ressources 3D organisés, de grande qualité et libres de droits d’auteur pour tous leurs projets de création. 
+Le service [!DNL Adobe Stock] permet aux concepteurs et aux entreprises d’accéder à des millions de photos, de vecteurs, d’illustrations, de vidéos, de modèles et de ressources 3D organisés, de grande qualité et libres de droits d’auteur pour tous leurs projets de création.
 
 [!DNL Adobe Stock] pour l’offre d’entreprise, inclut par défaut des droits de partage à l’échelle de l’entreprise. Une fois qu’une ressource a obtenu une licence d’un utilisateur de votre entreprise, d’autres utilisateurs de votre entreprise peuvent l’identifier, la télécharger et l’utiliser sans avoir à la renouveler. Une fois qu’une ressource a obtenu une licence de votre entreprise, le droit de l’utiliser est perpétuel.
 
@@ -57,7 +59,8 @@ Une formule d’abonnement à [!DNL Adobe Stock] pour entreprise,
 
 Dans les droits, un profil de produit par défaut pour [!DNL Adobe Stock] existe dans [!DNL Admin Console]. Plusieurs profils peuvent être créés et ils déterminent qui peut acquérir des ressources Stock sous licence. Un utilisateur disposant d’un accès direct au profil de produits peut accéder à [https://stock.adobe.com/fr](https://stock.adobe.com/fr) et acquérir des ressources Stock sous licence. Cependant, il existe une autre méthode d’utilisation de l’Accès des développeurs pour créer une intégration (API). Cette intégration authentifie la communication entre [!DNL Experience Manager Assets] et [!DNL Adobe Stock].
 
-<!-- Old content
+<!--
+Old content
 ## Prerequisites {#prerequisites}
 
 The integration requires an [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/).
@@ -158,7 +161,8 @@ Exécutez les étapes suivantes pour ajouter la configuration cloud et vous conn
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
    ![utiliser adobe atock avec aem](/help/assets/assets/adobe-stock-config-page.png)
 
-<!-- old content
+<!--
+old content
 
 ## Steps to integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integration-steps}
 
@@ -468,7 +472,8 @@ Les utilisateurs peuvent afficher les propriétés de toutes les ressources, ave
 >* [[!DNL Adobe Stock] FAQ](https://helpx.adobe.com/fr/stock/faq.html)
 
 
-<!--old content
+<!--
+old content
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
@@ -482,7 +487,8 @@ Les utilisateurs peuvent afficher les propriétés de toutes les ressources, ave
 
 -->
 
-<!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
+<!--
+TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
 
 <!--

@@ -9,10 +9,10 @@ feature: Adaptive Forms,AEM Forms on OSGi
 hide: true
 hidefromtoc: true
 exl-id: a817fa19-ae22-4c77-8a8e-6c4deed10d67
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 100%
+source-wordcount: '1032'
+ht-degree: 99%
 
 ---
 
@@ -83,7 +83,7 @@ Toutefois, dans les scénarios suivants d’identification des workflows associ�
 
 Pour identifier et accéder aux données utilisateur stockées pour une instance de workflow, procédez comme suit :
 
-1. Sur l’instance d’auteur AEM, accédez à `https://'[server]:[port]'/crx/de` puis à **[!UICONTROL Outils > Requête]**.
+1. Sur l’instance de création AEM, accédez à `https://'[server]:[port]'/crx/de`, puis à **[!UICONTROL Outils > Requête]**.
 
    Sélectionnez **[!UICONTROL SQL2]** dans le menu déroulant **[!UICONTROL Type]**.
 
@@ -159,5 +159,5 @@ Vous devez être administrateur ou administratrice AEM pour supprimer les donné
 Vous pouvez également utiliser des API pour accéder aux nœuds et propriétés et les supprimer. Consultez la documentation suivante pour en savoir plus.
 
 * [Comment accéder au JCR AEM par programmation](/help/sites-developing/access-jcr.md)
-* [Suppression des nœuds et propriétés](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [Guide de référence des API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)
+* [Suppression de nœuds et de propriétés](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
+* [Référence d’API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)

@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 11a7278e-efaa-402c-8add-5280bf5a156a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2485'
+source-wordcount: '2507'
 ht-degree: 97%
 
 ---
@@ -44,7 +44,7 @@ La valeur obligatoire `ServiceName` est le nom du service Forms à appeler. La v
 
 Les types de données suivants sont pris en charge lors de l’appel des services AEM Forms à l’aide de requêtes REST :
 
-* Types de données primitifs de Java, tels que les chaînes et les entiers
+* Types de données primitifs Java, tels que les chaînes et les entiers
 * Type de données `com.adobe.idp.Document`
 * Types de données XML tels que `org.w3c.Document` et `org.w3c.Element`
 * Objets de collection, tels que `java.util.List` et `java.util.Map`
@@ -151,15 +151,15 @@ Pour assurer une transmission sécurisée des appels REST, un administrateur ou 
 
 >[!NOTE]
 >
->En tant que développeur Workbench souhaitant exposer ses processus via un point d’entrée REST, gardez à l’esprit le problème de la vulnérabilité XSS. Les vulnérabilités XSS peuvent être exploitées pour voler ou manipuler des cookies, modifier la présentation du contenu et compromettre des informations confidentielles. Il est recommandé d’étendre la logique de processus avec les règles supplémentaires de validation des données d’entrée et de sortie pour éviter les problèmes de vulnérabilité XSS.
+>En tant que responsable du développement Workbench souhaitant exposer ses processus via un point d’entrée REST, gardez à l’esprit le problème de la vulnérabilité XSS. Les vulnérabilités XSS peuvent être exploitées pour voler ou manipuler des cookies, modifier la présentation du contenu et compromettre des informations confidentielles. Il est recommandé d’étendre la logique de processus avec les règles supplémentaires de validation des données d’entrée et de sortie pour éviter les problèmes de vulnérabilité XSS.
 
 ## Services AEM Forms qui prennent en charge les appels REST {#aem-forms-services-that-support-rest-invocation}
 
-Bien qu’il soit recommandé d’appeler directement les processus créés à l’aide de Workbench plutôt que les services, certains services AEM Forms prennent en charge les appels REST. La raison pour laquelle il est recommandé d’appeler un processus plutôt qu’un service directement est qu’il est plus efficace d’appeler un processus. Considérez le scénario suivant. Supposons que vous souhaitiez créer une politique à partir d’un client REST. En d’autres termes, vous souhaitez que le client REST définisse des valeurs telles que le nom de la politique et la période d’ouverture hors ligne.
+Bien qu’il soit recommandé d’appeler directement les processus créés à l’aide de Workbench plutôt que les services, certains services AEM Forms prennent en charge les appels REST. La raison pour laquelle il est recommandé d’appeler un processus plutôt qu’un service directement est qu’il est plus efficace d’appeler un processus. Considérez le scénario suivant. Supposons que vous souhaitiez créer une politique à partir d’un client REST. En d’autres termes, vous souhaitez que le client REST définisse des valeurs telles que le nom de la politique et la période de bail hors ligne.
 
 Pour créer une politique, vous devez définir des types de données complexes tels que l’objet `PolicyEntry`. Un objet `PolicyEntry` définit des attributs tels que les autorisations associées à la politique. (Voir [Créer des politiques](/help/forms/developing/protecting-documents-policies.md#creating-policies)).
 
-Au lieu d’envoyer une requête REST pour créer une politique (ce qui impliquerait de définir des types de données complexes tels qu’un objet `PolicyEntry`), créez un processus qui crée une politique à l’aide de Workbench. Définissez le processus pour qu’il accepte des variables d’entrée primitives telles qu’une valeur de chaîne qui définit le nom du processus ou un entier qui définit la période d’ouverture hors ligne.
+Au lieu d’envoyer une requête REST pour créer une politique (ce qui impliquerait de définir des types de données complexes tels qu’un objet `PolicyEntry`), créez un processus qui crée une politique à l’aide de Workbench. Définissez le processus pour qu’il accepte des variables d’entrée primitives telles qu’une valeur de chaîne qui définit le nom du processus ou un entier qui définit la période de bail hors ligne.
 
 De cette façon, vous n’avez pas à créer de requête d’appel REST qui inclut les types de données complexes requis par l’opération. Le processus définit les types de données complexes et tout ce que vous faites à partir du client REST est d’appeler le processus et de transmettre les types de données primitifs. Pour plus d’informations sur l’appel d’un processus à l’aide de REST, voir [Appel du processus MyApplication/EncryptDocument à l’aide de REST](#rest-invocation-examples).
 

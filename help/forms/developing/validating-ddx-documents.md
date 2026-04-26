@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 4efc6e82-f577-4881-9c9d-30e1fe2cdb9d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1542'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ Vous pouvez valider par programme un document DDX utilisé par le service Assemb
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Assembler, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Assembler, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-utility.jar (obligatoire si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss)
 
-si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utility.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé.
+Si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge et différent de JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé.
 
 **Créer un client Assembler PDF**
 
@@ -107,8 +107,8 @@ Validez un document DDX à l’aide de l’API Assembler Service (Java) :
 
 1. Référencez un document DX existant.
 
-   * Créez un objet `java.io.FileInputStream` qui représente le document DDX en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du fichier DDX.
-   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
+   * Créez un objet `java.io.FileInputStream` représentant le document DDX en utilisant son constructeur et en transmettant une valeur de chaîne qui indique l’emplacement du fichier DDX.
+   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
 
 1. Définir les options d’exécution pour valider le document DDX
 
@@ -160,9 +160,9 @@ Pour valider un document DDX à l’aide de l’API Assembler Service (service 
 
 1. Créez un client Assembler PDF.
 
-   * Créez un objet `AssemblerServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
-   * Créez un objet `System.ServiceModel.BasicHttpBinding` en récupérant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Créez un `AssemblerServiceClient` objet en utilisant son constructeur par défaut.
+   * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
@@ -177,7 +177,7 @@ Pour valider un document DDX à l’aide de l’API Assembler Service (service 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document DDX et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’objet `BLOB` en attribuant sa propriété `MTOM` avec le contenu du tableau d’octets.
+   * Renseignez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Définir les options d’exécution pour valider le document DDX
 
@@ -189,11 +189,11 @@ Pour valider un document DDX à l’aide de l’API Assembler Service (service 
 
    Appelez la méthode `invokeDDX` de l’objet `AssemblerServiceClient` et transmettez les valeurs suivantes :
 
-   * Objet `BLOB` qui représente le document DDX.
+   * Un objet `BLOB` qui représente le document DDX.
    * Valeur `null` pour l’objet `Map` qui stocke généralement des documents PDF.
    * Objet `AssemblerOptionSpec` qui spécifie les options d’exécution.
 
-   La méthode `invokeDDX` renvoie un objet `AssemblerResult` qui contient des informations indiquant si le document DDX est valide.
+   La méthode `invokeDDX` renvoie un objet `AssemblerResult`, lequel contient des informations indiquant si le document DDX est valide.
 
 1. Enregistrer les résultats de la validation dans un fichier journal
 
@@ -201,7 +201,7 @@ Pour valider un document DDX à l’aide de l’API Assembler Service (service 
    * Créez un objet `BLOB` qui stocke les informations du journal en obtenant la valeur du membre de données `jobLog` de l’objet `AssemblerResult`.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB`. Renseignez le tableau d’octets en obtenant la valeur du champ `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
    >[!NOTE]
    >

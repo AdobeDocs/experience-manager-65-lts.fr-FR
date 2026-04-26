@@ -7,9 +7,9 @@ role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 512bd351-2e6b-47a2-85c6-a23ea2c7102f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '192'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 [!DNL Adobe Experience Manager Assets] vous permet d’automatiser les workflows de traduction des ressources (y compris les fichiers binaires, les métadonnées et les balises) pour générer des ressources dans d’autres langues à utiliser dans des projets multilingues.

@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 8bb1dd68-51ec-4458-9ff8-bfe6fb0b67fd
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 98%
+source-wordcount: '1036'
+ht-degree: 97%
 
 ---
 
@@ -42,7 +42,7 @@ Vous pouvez également indiquer s’il convient d’envoyer des informations rel
 
 >[!NOTE]
 >
->Remarque : Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs et utilisatrices de concevoir, de gérer, de surveiller et d’optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[&#x200B; Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
+>Remarque : Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs et utilisatrices de concevoir, de gérer, de surveiller et d’optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
 
 ## Activation de la synchronisation différentielle d’annuaires {#enable-delta-directory-synchronization}
 
@@ -77,7 +77,7 @@ Vous pouvez configurer User Management de manière à ce qu’il vérifie pério
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Configurer les attributs système avancés.
 1. Sous Expression cron d’achèvement de synchronisation, saisissez une expression cron qui représente l’intervalle auquel User Management tente de relancer les synchronisations ayant échoué. L’utilisation de l’expression cron est basée sur le système de planification des tâches open source Quartz, version 1.4.0.
 
-   La valeur par défaut est 0 0/13 &ast; ? &ast; , ce qui signifie que la vérification survient toutes les 13 minutes.
+   La valeur par défaut est 0 0/13 &amp;ast; ? &amp;ast; , ce qui signifie que la vérification a lieu toutes les 13 minutes.
 
 ## Synchronisation manuelle des annuaires {#manually-synchronize-directories}
 

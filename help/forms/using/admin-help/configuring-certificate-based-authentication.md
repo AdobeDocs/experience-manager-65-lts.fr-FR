@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 56603735-959e-4460-b642-bba63fa20c02
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 99%
+source-wordcount: '739'
+ht-degree: 88%
 
 ---
 
@@ -53,7 +53,7 @@ Lorsque vous testez un certificat, User Management charge les vérifications de 
 1. Cliquez sur Nouveau mappage de certificats et dans la liste Pour l’émetteur, sélectionnez l’alias du certificat tel que configuré dans Trust Store Management.
 1. Mappez l’un des attributs du certificat à l’attribut d’un utilisateur ou d’une utilisatrice. Par exemple, vous pouvez mapper le nom commun du certificat à l’ID de connexion de l’utilisateur ou utilisatrice.
 
-   Si le contenu de l’attribut dans le certificat est différent du contenu de l’attribut de l’utilisateur ou utilisatrice dans la base de données de User Management, vous pouvez utiliser une expression régulière Java (regex) pour faire correspondre les deux attributs. Par exemple, si les noms communs des certificats ressemblent à *Alex Pink (authentification)* et *Alex Pink (signature)* et que le nom commun dans la base de données User Management est *Alex Pink*, vous utilisez une expression régulière pour extraire la partie requise de l’attribut de certificat (dans cet exemple, *Alex Pink*). L’expression régulière que vous spécifiez doit être conforme à la spécification regex Java.
+   Si le contenu de l’attribut dans le certificat est différent du contenu de l’attribut de l’utilisateur ou utilisatrice dans la base de données de User Management, vous pouvez utiliser une expression régulière Java (regex) pour faire correspondre les deux attributs. Par exemple, si les noms communs des certificats sont des noms tels que *Alex Pink (authentification)* et *Alex Pink (signature)* et que le nom commun dans la base de données User Management est *Alex Pink*, vous utilisez une expression régulière pour extraire la partie requise de l’attribut de certificat (dans cet exemple, *Alex Pink*.) L’expression régulière que vous spécifiez doit être conforme à la spécification RegEx Java.
 
    Vous pouvez transformer l’expression en spécifiant l’ordre des groupes dans la zone Ordre personnalisé. L’ordre personnalisé s’utilise avec la méthode `java.util.regex.Matcher.replaceAll()`. Le comportement observé correspond à celui de cette méthode et la chaîne d’entrée (l’ordre personnalisé) doit être spécifiée en conséquence.
 
@@ -61,8 +61,8 @@ Lorsque vous testez un certificat, User Management charge les vérifications de 
 
    Vous pouvez utiliser les caractères suivants dans l’expression régulière :
 
-   *  : (n’importe quel caractère)
-   * &ast; (0 ou plus d’occurrences)
+   * . (n’importe quel caractère)
+   * &amp;ast; (0 occurrence ou plus)
    * () (spécifier le groupe entre parenthèses)
    * \ (permet d’utiliser un caractère regex en tant que caractère normal)
    * $n (permet de faire référence au énième groupe)
@@ -71,21 +71,21 @@ Lorsque vous testez un certificat, User Management charge les vérifications de 
 
    * Pour extraire « Alex Pink » de « Alex Pink (Authentification) »
 
-     **Regex :** (.&ast;) \(Authentification\)
+     **Regex:** (.&amp;ast;) \(Authentification\)
 
    * Pour extraire « Alex Pink » de « Alex (Authentification) Pink »
 
-     **Regex :** (.&ast;)\(Authentification\) (.&ast;)
+     **Regex:** (.&amp;ast;)\(Authentification\) (.&amp;ast;)
 
    * Pour extraire « Pink Alex » de « Alex (Authentification) Pink »
 
-     **Regex :** (.&ast;)\(Authentification\) (.&ast;)
+     **Regex:** (.&amp;ast;)\(Authentification\) (.&amp;ast;)
 
      Ordre personnalisé : $2 $1 (renvoyer le deuxième groupe, concaténé au premier groupe, capturé par un espace blanc)
 
    * Pour extraire « apink@sampleorg.com » de « smtp:apink@sampleorg.com »
 
-     **Regex :** smtp:(.&ast;)
+     **Regex:** smtp:(.&amp;ast;)
 
    Pour plus d’informations sur l’utilisation des expressions régulières, voir [Tutoriel Java sur les expressions régulières](https://java.sun.com/docs/books/tutorial/essential/regex/).
 

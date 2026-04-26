@@ -11,9 +11,9 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 42c85231-9e65-4c3c-8b86-3efdaa577161
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '5333'
+source-wordcount: '5557'
 ht-degree: 99%
 
 ---
@@ -72,7 +72,7 @@ Le tableau suivant énumère les fichiers JAR nécessaires pour appeler les serv
 <table>
  <thead>
   <tr>
-   <th><p>File</p></th>
+   <th><p>Fichier</p></th>
    <th><p>Description</p></th>
    <th><p>Emplacement</p></th>
   </tr>
@@ -81,7 +81,7 @@ Le tableau suivant énumère les fichiers JAR nécessaires pour appeler les serv
   <tr>
    <td><p>adobe-livecycle-client.jar</p></td>
    <td><p>Doit toujours être inclus dans le chemin de classe d’une application cliente Java.</p></td>
-   <td><p>&lt;<i>répertoire d’installation</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>dossier d’installation</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-usermanager-client.jar</p></td>
@@ -101,37 +101,37 @@ Le tableau suivant énumère les fichiers JAR nécessaires pour appeler les serv
   <tr>
    <td><p>adobe-assembler-client.jar</p></td>
    <td><p>Requis pour appeler le service Assembler. </p></td>
-   <td><p>&lt;<i>répertoire d’installation</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>dossier d’installation</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-backup-restore-client-sdk.jar</p></td>
    <td><p>Requis pour appeler l’API du service de sauvegarde et de restauration.</p></td>
-   <td><p>&lt;<i>répertoire d’installation</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>dossier d’installation</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-barcodedforms-client.jar</p></td>
    <td><p>Requis pour appeler le service Barcoded Forms. </p></td>
-   <td><p>&lt;<i>répertoire d’insallation</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>dossier d’installation</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-convertpdf-client.jar</p></td>
    <td><p>Requis pour appeler le service Convert PDF. </p></td>
-   <td><p>&lt;<i>répertoire d’installation</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>dossier d’installation</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-distiller-client.jar</p></td>
    <td><p>Requis pour appeler le service Distiller.</p></td>
-   <td><p>&lt;<i>répertoire d’installation</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>dossier d’installation</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-docconverter-client.jar</p></td>
    <td><p>Requis pour appeler le service DocConverter.</p></td>
-   <td><p>&lt;<i>répertoire d’installation</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>dossier d’installation</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-contentservices-client.jar</p></td>
    <td><p>Requis pour appeler le service Document Management.</p></td>
-   <td><p>&lt;<i>répertoire d’installation</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>dossier d’installation</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-encryption-client.jar</p></td>
@@ -223,7 +223,7 @@ Le tableau suivant répertorie les fichiers JAR qui dépendent du mode de connex
 <table>
  <thead>
   <tr>
-   <th><p>File</p> </th>
+   <th><p>Fichier</p> </th>
    <th><p>Description</p> </th>
    <th><p>Emplacement</p> </th>
   </tr>
@@ -298,7 +298,7 @@ Le tableau suivant indique les scénarios d’appel et répertorie les fichiers�
   <tr>
    <td><p>Service Forms</p> </td>
    <td><p>EJB</p> </td>
-   <td><p>JBoss </p> </td>
+   <td><p>JBoss</p> </td>
    <td>
     <ul>
      <li><p>adobe-livecycle-client.jar</p> </li>
@@ -315,7 +315,7 @@ Le tableau suivant indique les scénarios d’appel et répertorie les fichiers�
   <tr>
    <td><p>Service Forms</p> <p>Service d’extensions Acrobat Reader DC</p> <p>Service Signature</p> </td>
    <td><p>EJB</p> </td>
-   <td><p>JBoss </p> </td>
+   <td><p>JBoss</p> </td>
    <td>
     <ul>
      <li><p>adobe-livecycle-client.jar</p> </li>
@@ -334,7 +334,7 @@ Le tableau suivant indique les scénarios d’appel et répertorie les fichiers�
   <tr>
    <td><p>Service Forms</p> </td>
    <td><p>SOAP</p> </td>
-   <td><p>WebLo gic</p> </td>
+   <td><p>WebLogic</p> </td>
    <td>
     <ul>
      <li><p>adobe-livecycle-client.jar</p> </li>
@@ -363,7 +363,7 @@ Le tableau suivant indique les scénarios d’appel et répertorie les fichiers�
   <tr>
    <td><p>Service Forms</p> <p>Service d’extensions Acrobat Reader DC</p> <p>Service Signature</p> </td>
    <td><p>SOAP</p> </td>
-   <td><p>WebLo gic</p> </td>
+   <td><p>WebLogic</p> </td>
    <td>
     <ul>
      <li><p>adobe-livecycle-client.jar</p> </li>
@@ -644,7 +644,7 @@ Le référencement d’un serveur d’applications J2EE spécifique n’est pas 
 
 Les applications clients qui utilisent le mode de connexion SOAP peuvent utiliser le port de répartition de charge HTTP pour le cluster. Les applications clients qui utilisent le mode de connexion EJB peuvent se connecter au port EJB d’un serveur d’applications J2EE spécifique. Cette action gère la répartition de la charge entre les nœuds du cluster.
 
-**WebSphere &#x200B;**
+**WebSphere **
 
 L’exemple suivant montre le contenu d’un fichier jndi.properties utilisé pour se connecter à AEM Forms déployé sur WebSphere.
 
@@ -663,7 +663,7 @@ L’exemple suivant montre le contenu d’un fichier jndi.properties utilisé po
  java.naming.provider.url=t3://appserver1:8001, appserver2:8001
 ```
 
-**JBoss &#x200B;**
+**JBoss **
 
 L’exemple suivant montre le contenu d’un fichier jndi.properties utilisé pour se connecter à AEM Forms déployé sur JBoss.
 

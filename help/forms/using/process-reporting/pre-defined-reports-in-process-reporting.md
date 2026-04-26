@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3bf65798-a8ce-4864-9d77-952bb8d8da43
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '703'
 ht-degree: 100%
 
 ---
@@ -78,7 +78,7 @@ Le rapport Durée du processus affiche le nombre d’instances d’un processus 
 
    Paramètres:
 
-   * **Sélectionner un processus** (*obligatoire*) : sélectionnez un processus AEM Forms.
+   * **Sélectionnez un processus** (*obligatoire*) : sélectionnez un processus AEM Forms.
 
 1. Cliquez sur **Lancer** pour exécuter le rapport.
 
@@ -109,19 +109,19 @@ Le rapport Volume des workflows affiche le nombre d’instances en cours d’ex�
 
    Paramètres:
 
-   * **Sélectionnez un processus** (*obligatoire*) : sélectionnez un processus AEM Forms.
+   * **Sélectionner un processus** (*obligatoire*) : sélectionnez un processus AEM Forms.
 
    * **Démarré après** (*facultatif*) : sélectionnez une date. Filtre le rapport afin d’afficher les instances de processus démarrées après la date spécifiée.
 
    * **Démarré avant** (*facultatif*) : sélectionnez une date. Filtre le rapport pour afficher les instances de processus qui ont démarré avant la date spécifiée.
 
-1. Cliquez sur **Aller** pour exécuter le rapport.
+1. Cliquez sur **Lancer** pour exécuter le rapport.
 
-   Le rapport s’affiche dans l’onglet **Rapport** à droite de la fenêtre **Process Reporting**.
+   Le rapport s’affiche dans le panneau **Rapport** à droite de la fenêtre **Process Reporting**.
 
    ![workflow_volume_report](assets/workflow_volume_report.png)
 
-   Utilisez les options situées dans le coin supérieur droit du panneau **Rapport** pour y effectuer les opérations suivantes.
+   Utilisez les options situées dans le coin supérieur droit du panneau **Rapport** pour effectuer les opérations suivantes sur le rapport.
 
    * **Actualiser** : permet d’actualiser le rapport avec les dernières données stockées.
    * **Changer la couleur de la légende** : permet de sélectionner et de modifier la couleur de la légende du rapport.

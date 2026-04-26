@@ -1,6 +1,6 @@
 ---
-title: Démarrage rapide (SOAP) de l’API Java™ du service Encryption
-description: Découvrez comment chiffrer, supprimer le chiffrement par mot de passe/certificat, déverrouiller et déterminer le type de chiffrement des documents PDF à l’aide de l’API Java™ en mode SOAP.
+title: Java&trade du service de chiffrement ; API QuickStart (SOAP)
+description: Découvrez comment chiffrer, supprimer le chiffrement par mot de passe/certificat, déverrouiller et déterminer le type de chiffrement des documents PDF à l’aide de l’API Java&trade; en mode SOAP.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 4ad47959-fe48-4cff-9a54-9a9749cf3d6f
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 100%
+source-wordcount: '481'
+ht-degree: 93%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 100%
 
 [Démarrage rapide (mode SOAP) : chiffrer un document PDF à l’aide de l’API Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : supprimer le chiffrement par mot de passe à l’aide de l’API Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
+[Démarrage rapide (mode SOAP) : supprimer le chiffrement par mot de passe à l’aide de l’API™ Java](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : chiffrer un document PDF avec un certificat à l’aide de l’API Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
+[Démarrage rapide (mode SOAP) : chiffrer un document PDF avec un certificat à l’aide de l’API Java™.](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
 [Démarrage rapide (mode SOAP) : supprimer un chiffrement par certificat à l’aide de l’API Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : déverrouiller un document PDF chiffré à l’aide de l’API Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : déverrouiller un document PDF chiffré à l’aide de l’API Java™.](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
 
 [Démarrage rapide (mode SOAP) : déterminer le type de chiffrement à l’aide de l’API Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 

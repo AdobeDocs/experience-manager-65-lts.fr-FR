@@ -12,10 +12,10 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 31a10544-0be7-4ef7-ba0f-c37099d36bcb
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2894'
-ht-degree: 100%
+source-wordcount: '2915'
+ht-degree: 99%
 
 ---
 
@@ -66,7 +66,7 @@ L’illustration suivante présente les données XML correspondantes récupéré
 
 ![hs_hs_loandata](assets/hs_hs_loandata.png)
 
-Les champs du formulaire de prêt. Ces valeurs peuvent être récupérées 
+Les champs du formulaire de prêt. Ces valeurs peuvent être récupérées
 à l’aide des classes XML Java.
 
 >[!NOTE]
@@ -114,7 +114,7 @@ Si les données de formulaire sont envoyées sous la forme de données UTF-16 d�
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations à propos du service Forms, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ## Résumé des étapes {#summary-of-steps}
 
@@ -326,7 +326,7 @@ Gérez un formulaire envoyé en utilisant l’API des formulaires (service Web)�
       * Créez un objet `BLOB` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
       * Créez un tableau d’octets en appelant la méthode `getBinaryData` de l’objet `BLOB`.
       * Créez un objet `java.io.File` en utilisant son constructeur public. Veillez à spécifier PDF comme extension de nom du fichier.
-      * Créez un objet `java.io.FileOutputStream` en utilisant son constructeur et en transmettant l’objet `java.io.File`. 
+      * Créez un objet `java.io.FileOutputStream` en utilisant son constructeur et en transmettant l’objet `java.io.File`.
       * Renseignez le fichier PDF en appelant la méthode `write` de l’objet `java.io.FileOutputStream` et en transmettant le tableau d’octets.
 
 **Voir également**

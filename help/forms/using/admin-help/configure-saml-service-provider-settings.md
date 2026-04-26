@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0f1b39e7-5de5-4b54-b622-61774ce839db
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 100%
+source-wordcount: '626'
+ht-degree: 95%
 
 ---
 
@@ -29,7 +29,7 @@ Le langage SAML (Security Assertion Markup Language) est l’une des options qu
 Pour obtenir une explication sur SAML, voir [Présentation technique du langage SAML (Security Assertion Markup Language) V2.0](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. Dans la console d’administration, cliquez sur Paramètres > Gestion des utilisateurs et utilisatrices > Configuration > Paramètres du fournisseur de services SAML.
-1. Dans la zone ID d’entité du fournisseur de services, saisissez un ID unique à utiliser comme identifiant pour l’implémentation du fournisseur de services AEM Forms. Vous pouvez également définir cet ID unique lors de la configuration du fournisseur d’identité (par exemple, `um.lc.com`). Vous pouvez également utiliser l’URL d’accès à AEM Forms (par exemple, `https://AEMformsserver`).
+1. Dans la zone ID d’entité du fournisseur de services, saisissez un ID unique à utiliser comme identifiant pour l’implémentation du fournisseur de services AEM Forms. Vous pouvez également définir cet ID unique lors de la configuration du fournisseur d’identité (par exemple, `um.lc.com`). Vous pouvez également utiliser l’URL d’accès à AEM forms (par exemple, `https://AEMformsserver`).
 1. Dans le champ URL de base du fournisseur de services, saisissez l’URL de base du serveur Forms (par exemple, `https://AEMformsserver:8080`).
 1. (Facultatif) Pour permettre à AEM Forms d’envoyer des demandes d’authentification signées à l’IDP, effectuez les tâches suivantes :
 
@@ -43,7 +43,7 @@ Pour obtenir une explication sur SAML, voir [Présentation technique du langage
    >
    >Les formats de nom ne sont pas sensibles à la casse.
 
-1. (Facultatif) Sélectionnez Activer l’invite d’authentification pour les utilisateurs et utilisatrices locaux. Lorsque cette option est sélectionnée, deux liens s’affichent :
+1. (Facultatif) Sélectionnez Activer le prompt d’authentification pour les utilisateurs et utilisatrices locaux. Lorsque cette option est sélectionnée, deux liens s’affichent :
 
    * un lien vers la page de connexion du fournisseur d’identité SAML tiers, sur laquelle les personnes appartenant à un domaine d’entreprise peuvent s’authentifier.
    * un lien vers la page de connexion d’AEM Forms, sur laquelle les personnes appartenant à un domaine local peuvent s’authentifier.

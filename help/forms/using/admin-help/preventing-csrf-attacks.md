@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 00f52303-66c3-4865-a74b-eda0e6949193
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 100%
+source-wordcount: '978'
+ht-degree: 97%
 
 ---
 
@@ -70,7 +70,7 @@ AEM Forms offre une option de filtrage des référents aidant à prévenir les 
 
 Lorsque vous exécutez Configuration Manager, l’hôte par défaut et l’adresse IP ou le serveur Forms sont ajoutés à la liste de référents autorisés. Vous pouvez modifier cette liste dans la console d’administration.
 
-1. Dans la console d’administration, cliquez sur Paramètres > User Management > Configuration > Configurer les URL des référents autorisés. La liste de référents autorisés s’affiche en bas de la page.
+1. Dans la console d’administration, cliquez sur Paramètres > User Management > Configuration > Configurer les URL de référent autorisées. La liste de référents autorisés s’affiche au bas de la page.
 1. Pour ajouter un référent autorisé :
 
    * Saisissez un nom d’hôte ou une adresse IP dans le champ Référents autorisés. Pour ajouter plusieurs référents autorisés en même temps, saisissez chaque nom d’hôte ou adresse IP sur une nouvelle ligne.

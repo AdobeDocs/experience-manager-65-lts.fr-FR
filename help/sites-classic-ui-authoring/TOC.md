@@ -8,9 +8,9 @@ breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5 LTS
 role: user
 hide: true
-source-git-commit: 96d94c843d1912abd91577b3373e38bd9fd9ed6c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '262'
 ht-degree: 89%
 
 ---

@@ -7,9 +7,9 @@ role: Developer,Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43079a69-cd12-4853-9fff-96f9d177987a
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2770'
 ht-degree: 99%
 
 ---
@@ -57,7 +57,8 @@ Une fois que le volume temporaire haute performance est prêt, définissez le pa
 
 Adobe recommande de déployer [!DNL Experience Manager Assets] sur Java 8 pour des performances optimales.
 
-<!-- TBD: Link to the latest official word around Java.
+<!--
+TBD: Link to the latest official word around Java.
 -->
 
 ### Paramètres JVM {#jvm-parameters}
@@ -76,7 +77,7 @@ Définissez les paramètres JVM suivants :
 
 Nous recommandons à tous les utilisateurs d’[!DNL Experience Manager Assets] de séparer le magasin de données et l’entrepôt de segments. En outre, la configuration des paramètres `maxCachedBinarySize` et `cacheSizeInMB` peut vous aider à optimiser les performances. Définissez le paramètre `maxCachedBinarySize` selon la plus petite taille de fichier pouvant être contenue dans le cache. Spécifiez la taille du cache en mémoire à utiliser pour l’entrepôt de données dans `cacheSizeInMB`. Adobe vous recommande de définir cette valeur entre 2 et 10 % de la taille totale du tas. Toutefois, les tests de charge/performance peuvent vous aider à déterminer le paramètre idéal.
 
-### Configuration de la taille maximale du cache d’images mis en mémoire tampon    {#configure-the-maximum-size-of-the-buffered-image-cache}
+### Configuration de la taille maximale du cache d’images mis en mémoire tampon {#configure-the-maximum-size-of-the-buffered-image-cache}
 
 Lors du chargement d’un grand nombre de ressources vers [!DNL Adobe Experience Manager], réduisez la taille maximale configurée du cache d’images mis en mémoire tampon. De cette façon, vous tiendrez compte des pics inattendus de consommation de la mémoire et éviterez l’échec de JVM du fait d’erreurs de mémoire insuffisante. Prenez l’exemple d’un système présentant un tas maximal (- `Xmx`param) de 5 Go, un BlobCache Oak défini sur 1 Go et un cache de documents défini sur 2 Go. Dans ce cas, le cache mis en mémoire tampon prendrait 1,25 Go au maximum de mémoire, ce qui laisserait seulement 0,75 Go de mémoire pour les pics inattendus.
 
@@ -124,7 +125,7 @@ Votre stratégie d’optimisation du réseau dépend essentiellement de la quant
 * HTTPS : la plupart des utilisateurs et utilisatrices disposent de pare-feu qui détectent le trafic HTTP, ce qui peut avoir un impact négatif sur le chargement des fichiers ou même endommager les fichiers lors de l’opération de chargement.
 * Chargements de fichiers volumineux : assurez-vous que les utilisateurs et utilisatrices disposent de connexions câblées au réseau (les connexions Wi-Fi se saturent rapidement).
 
-## Workflows    {#workflows}
+## Workflows {#workflows}
 
 ### Workflows transitoires {#transient-workflows}
 
@@ -213,7 +214,7 @@ En outre, définissez le chemin du dossier temporaire d’ImageMagick dans le fi
 >
 >Les fichiers `policy.xml` et `configure.xml` d’ImageMagick sont disponibles à l’emplacement `/usr/lib64/ImageMagick-&#42;/config/` au lieu de `/etc/ImageMagick/`. Consultez la documentation d’ImageMagick (site web `https://www.imagemagick.org/script/resources.php`) pour obtenir l’emplacement des fichiers de configuration.
 
-Si vous utilisez [!DNL Experience Manager] dans Adobe Managed Services (AMS), contactez l’assistance clientèle d’Adobe si vous envisagez de traiter un grand nombre de fichiers PSD ou PSB volumineux. Collaborez avec le représentant de l’assistance clientèle d’Adobe afin de mettre en œuvre ces bonnes pratiques pour votre déploiement AMS et de choisir les meilleurs outils et modèles possibles pour les formats propriétaires d’Adobe. Il se peut qu’[!DNL Experience Manager] ne puisse pas traiter des fichiers PSB à très haute résolution de plus de 30 000 x 23 000 pixels.
+Si vous utilisez [!DNL Experience Manager] sur Adobe Managed Services (AMS), contactez l’assistance clientèle d’Adobe si vous envisagez de traiter un grand nombre de fichiers PSD ou PSB volumineux. Collaborez avec le représentant de l’assistance clientèle d’Adobe afin de mettre en œuvre ces bonnes pratiques pour votre déploiement AMS et de choisir les meilleurs outils et modèles possibles pour les formats propriétaires d’Adobe. Il se peut qu’[!DNL Experience Manager] ne puisse pas traiter des fichiers PSB à très haute résolution de plus de 30 000 x 23 000 pixels.
 
 ### Écriture différée XMP {#xmp-writeback}
 
@@ -231,7 +232,7 @@ L’importation d’une grande quantité de métadonnées peut entraîner une ac
 
 Lors de la réplication des ressources vers un grand nombre d’instances de publication (par exemple, dans une implémentation Sites), Adobe vous recommande d’utiliser la réplication par chaîne. Dans ce cas, l’instance de création se réplique sur une instance de publication unique qui, à son tour, se réplique sur les autres instances de publication, libérant ainsi l’instance de création.
 
-### Configuration de la réplication en chaîne    {#configure-chain-replication}
+### Configuration de la réplication en chaîne {#configure-chain-replication}
 
 1. Sélectionnez l’instance de publication vers laquelle vous souhaitez effectuer les réplications en chaîne
 1. Sur cette instance de publication, ajoutez des agents de réplication qui pointent vers les autres instances de publication
@@ -241,7 +242,7 @@ Lors de la réplication des ressources vers un grand nombre d’instances de pub
 >
 >Adobe ne recommande pas d’activer automatiquement les ressources. Cependant, si nécessaire, Adobe recommande d’effectuer cette opération en tant qu’étape finale d’un workflow, généralement Ressource de mise à jour de gestion des ressources numériques.
 
-## Recherche des index    {#search-indexes}
+## Recherche des index {#search-indexes}
 
 Installez [les derniers pack de services](/help/release-notes/release-notes.md) et les correctifs liés aux performances, car ils incluent souvent des mises à jour des index système.
 
@@ -277,7 +278,7 @@ De même, lorsque les fichiers atteignent 2 Go lors de l’utilisation d’un m
 
 Pour chaque déploiement d’[!DNL Experience Manager], créez un régime de tests de performances qui permet d’identifier et de résoudre les goulots d’étranglement rapidement. Voici quelques points clés.
 
-### Test réseau    {#network-testing}
+### Test réseau {#network-testing}
 
 Pour toutes les préoccupations de performances du réseau du client, effectuez les tâches suivantes :
 

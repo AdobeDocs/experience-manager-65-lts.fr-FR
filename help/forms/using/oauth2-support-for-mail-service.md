@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a9790625-af8d-4416-b96f-4724a025260b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 99%
+source-wordcount: '1046'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ Vous pouvez également accéder directement à [https://portal.azure.com/#blade/
 
 1. Renseignez les informations selon vos besoins puis cliquez sur **Enregistrement**.
    ![Compte pris en charge](/help/forms/using/assets/azure_suuportedaccountype.png)
-Dans le cas ci-dessus, l’option **Comptes dans n’importe quel répertoire de l’entreprise (n’importe quel Azure AD Directory - à plusieurs clients) et comptes Microsoft® personnels (par exemple, Skype, Xbox)** est sélectionnée.
+Dans le cas ci-dessus, l’option **Comptes dans n’importe quel répertoire de l’entreprise (n’importe quel répertoire Azure AD - à plusieurs clients) et comptes Microsoft® personnels (par exemple, Skype, Xbox)** est sélectionnée.
 
    >[!NOTE]
    >
@@ -118,9 +118,9 @@ Maintenant, configurez le service de messagerie sur le dernier serveur JEE en vo
    > Pour activer le service d’authentification oAuth 2.0, il est obligatoire de cocher la case **Si le serveur SMTP requiert une authentification (authentification SMTP)**.
 
 1. Définir **Paramètres d’authentification oAuth 2.0** sur `True`.
-1. Copiez les valeurs de **ID client** et **Secret client** à partir du portail Azure.
+1. Copiez les valeurs d’**ID client** et de **Secret client** à partir d’Azure Portal.
 1. Copiez la valeur du **jeton d’actualisation** généré.
-1. Connectez-vous à **Workbench** et recherchez **Email 1.0** dans **Sélecteur d’activités**.
+1. Connectez-vous à **Workbench** et recherchez **Email 1.0** dans **Sélecteur d’activités**.
 1. Trois options sont disponibles sous Email 1.0 :
    * **Envoyer avec document** : envoie l’e-mail avec des pièces jointes uniques.
    * **Envoyer avec mappage des pièces jointes** : envoie l’e-mail avec plusieurs pièces jointes.
@@ -139,13 +139,13 @@ Maintenant, configurez le service de messagerie sur le dernier serveur JEE en vo
 
    >[!NOTE]
    >
-   >Si vous le souhaitez, vous pouvez modifier le paramètre d’authentification OAuth 2.0 en authentification de base pour un processus particulier dans un Workbench. Pour ce faire, définissez la valeur **Authentification OAuth 2.0** sur « False » sous **Utiliser les paramètres globaux** dans l’onglet **Paramètres de connexion**.
+   >Si vous le souhaitez, vous pouvez modifier le paramètre d’authentification OAuth 2.0 en authentification de base pour un processus particulier dans un atelier. Pour ce faire, définissez la valeur **Authentification OAuth 2.0** sur « False » sous **Utiliser les paramètres globaux** dans l’onglet **Paramètres de connexion**.
 
 ## Pour activer les notifications de tâche oAuth {#enable_oauth_task}
 
 1. Accédez à **Accueil** > **Services** > **Workflow de formulaire** > **Paramètres du serveur** > **Paramètres d’e-mail**.
 1. Pour activer les notifications de tâche oAuth, sélectionnez l’option **Activer oAuth**.
-1. Copiez les valeurs de **ID client** et **Secret du client** depuis le portail Azure.
+1. Copiez les valeurs d’**ID client** et de **Secret client** à partir d’Azure Portal.
 1. Copiez la valeur du **jeton d’actualisation** généré.
 1. Cliquez sur **Enregistrer** pour enregistrer les détails.
 
@@ -153,7 +153,7 @@ Maintenant, configurez le service de messagerie sur le dernier serveur JEE en vo
 
    >[!NOTE]
    >
-   > Pour en savoir plus sur les notifications de tâche, [cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=fr#create-an-email-endpoint-for-the-complete-task-service).
+   > Pour en savoir plus sur les notifications de tâche, [cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## Pour configurer le point d’entrée de l’e-mail, {#configure_email_endpoint}
 
@@ -167,7 +167,7 @@ Maintenant, configurez le service de messagerie sur le dernier serveur JEE en vo
 
    >[!NOTE]
    >
-   > Pour plus d’informations sur la configuration des points d’entrée d’e-mail, cliquez sur [Configuration d’un point d’entrée d’e-mail](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=fr).
+   > Pour plus d’informations sur la configuration des points d’entrée d’e-mail, cliquez sur [Configuration d’un point d’entrée d’e-mail](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html).
 
 ## Résolution des problèmes {#troubleshooting}
 

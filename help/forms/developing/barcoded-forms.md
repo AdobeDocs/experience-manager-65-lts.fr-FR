@@ -11,9 +11,9 @@ feature: Adaptive Forms, APIs & Integrations, Barcoded Forms
 hide: true
 hidefromtoc: true
 exl-id: 71dc8036-f9a3-4e00-bce1-3f162428053d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1934'
 ht-degree: 100%
 
 ---
@@ -124,7 +124,7 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 1. Obtenir un formulaire PDF contenant des données à code à barres
 
    * Créez un objet `java.io.FileInputStream` qui représente le formulaire PDF contenant des données à code à barres en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du document PDF.
-   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
+   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
 
 1. Décoder les données du formulaire PDF
 
@@ -139,7 +139,7 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
    * Un objet `java.lang.Boolean` spécifiant s’il faut décoder un code à barres 39.
    * Un objet `java.lang.Boolean` spécifiant s’il faut décoder un code à barres EAN-13.
    * Un objet `java.lang.Boolean` spécifiant s’il faut décoder un code à barres EAN-8.
-   * Une valeur d’énumération `com.adobe.livecycle.barcodedforms.CharSet` spécifiant la valeur de codage du jeu de caractères utilisé dans le code à barres.
+   * Valeur d’énumération `com.adobe.livecycle.barcodedforms.CharSet` spécifiant la valeur de codage du jeu de caractères utilisé dans le code à barres.
 
    La méthode `decode` renvoie un objet `org.w3c.dom.Document` contenant des données de formulaire décodées.
 
@@ -188,9 +188,9 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 1. Obtenir un formulaire PDF contenant des données à code à barres
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF contenant un code à barres.
-   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du document PDF et son mode d’ouverture.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à sa propriété `binaryData` le contenu du tableau d’octets.
 
 1. Décoder les données du formulaire PDF

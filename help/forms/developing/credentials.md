@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: b3a0eb20-5b85-45a3-a416-a16a9f44acc5
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1100'
 ht-degree: 100%
 
 ---
@@ -71,7 +71,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classe
 * adobe-utilities.jar (Requis si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (Requis si AEM Forms est déployé sur JBoss)
 
-Pour plus d’informations sur l’emplacement de ces fichiers JAR, consultez la section [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Créer un client de service d’identification**
 
@@ -108,7 +108,7 @@ Importez des informations d’identification dans AEM Forms à l’aide de l’
 1. Créer un client de service d’identification
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `CredentialServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `CredentialServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Référencer des informations d’identification
 
@@ -161,7 +161,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 * adobe-utilities.jar (Requis si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (Requis si AEM Forms est déployé sur JBoss)
 
-Pour plus d’informations sur l’emplacement de ces fichiers JAR, consultez la section [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Créer un client de service d’identification**
 
@@ -192,7 +192,7 @@ Supprimez des informations d’identification d’AEM Forms à l’aide de l’A
 1. Créer un client de service d’identification
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `CredentialServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `CredentialServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Exécuter l’opération de suppression
 

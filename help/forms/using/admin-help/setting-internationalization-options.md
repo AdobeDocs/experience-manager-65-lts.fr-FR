@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 47a49147-2921-4d28-8d04-2281c0b9a190
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 100%
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ## Indication des paramètres régionaux utilisés pour effectuer le rendu du formulaire {#specify-the-locale-used-to-render-forms}
 
-Vous pouvez spécifier les paramètres régionaux utilisés lors du rendu d’un formulaire PDF. Les champs d’un formulaire PDF utilisent les paramètres régionaux spécifiés pour afficher les données. Par exemple, si le paramètre régional est défini sur Allemand, le formulaire utilise des séparateurs décimaux allemands pour les valeurs numériques. Les paramètres régionaux sont également utilisés pour envoyer des messages de validation aux appareils clients, tels que les navigateurs web, dans le cadre de transformations HTML.
+Vous pouvez spécifier les paramètres régionaux utilisés lors du rendu d’un formulaire PDF. Les champs d’un formulaire PDF utilisent les paramètres régionaux spécifiés pour afficher les données. Par exemple, si les paramètres régionaux sont définis sur Allemand, le formulaire utilise des séparateurs décimaux allemands pour les valeurs numériques. Les paramètres régionaux sont également utilisés pour envoyer des messages de validation aux appareils clients, tels que les navigateurs web, dans le cadre de transformations HTML.
 
 1. Dans la console d’administration, cliquez sur Services > Formulaires.
 1. Dans la liste de langues, dans l’onglet Internationalisation, sélectionnez les paramètres régionaux utilisés pour effectuer le rendu d’un formulaire. La valeur par défaut Anglais (États-Unis).

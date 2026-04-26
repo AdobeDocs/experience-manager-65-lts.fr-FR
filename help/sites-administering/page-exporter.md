@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 997637d5-1627-4102-8b7c-a0cfd871a7b2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 98%
+source-wordcount: '1064'
+ht-degree: 90%
 
 ---
 
@@ -50,7 +50,7 @@ Sélectionnez le modèle requis pour votre site, puis confirmez avec **OK**.
    Accessible via :
    * localhost:4502/content/we-retail/language-masters/en.export.zip
 
-1. Téléchargez l’archive dans votre système de fichiers. 
+1. Téléchargez l’archive dans votre système de fichiers.
 
 1. Dans votre système de fichiers, décompressez le fichier si nécessaire. Une fois développé, un dossier portant le même nom que la page sélectionnée s’affiche. Ce dossier contient les éléments suivants :
 
@@ -64,9 +64,9 @@ Sélectionnez le modèle requis pour votre site, puis confirmez avec **OK**.
 
 ## Création d’une configuration de l’exportateur de page pour votre site {#creating-a-page-exporter-configuration-for-your-site}
 
-L’exportateur de page repose sur le [framework de synchronisation du contenu. &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html) Les configurations disponibles dans la boîte de dialogue **Propriétés de la page** sont des modèles d’exportation qui définissent les dépendances requises pour une page.
+L’exportateur de page repose sur le [framework de synchronisation du contenu. ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html) Les configurations disponibles dans la boîte de dialogue **Propriétés de la page** sont des modèles d’exportation qui définissent les dépendances requises pour une page.
 
-Au déclenchement d’un export de page, le modèle de configuration est utilisé. Les chemins d’accès à la page et à la conception s’appliquent dynamiquement à la configuration. Le fichier compressé est alors créé à l’aide de la fonctionnalité de synchronisation de contenu standard.
+Lorsqu’une exportation de page est déclenchée, le modèle d’exportation est référencé. Le chemin d’accès à la page et le chemin d’accès à la conception sont appliqués dynamiquement. Le fichier compressé est alors créé à l’aide de la fonctionnalité de synchronisation de contenu standard.
 
 Une installation AEM prête à l’emploi comprend un modèle par défaut sous `/etc/contentsync/templates/default`.
 
@@ -110,7 +110,8 @@ Une fois votre modèle configuré, rendez-le disponible :
 
 Le modèle se compose d’une structure de nœud, dans la mesure où il utilise le [Framework de synchronisation de contenu](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html). Chaque nœud possède une propriété `type` qui définit une action spécifique dans le processus de création du fichier compressé.
 
-<!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
+<!--
+For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
 Les nœuds ci-dessous peuvent être utilisés pour créer un modèle de d’exportation :
@@ -180,7 +181,8 @@ As you may have noticed in the node structure, the **Geometrixx** page export te
 
 Pour répondre à certaines exigences spécifiques, implémentez un [gestionnaire de mise à jour personnalisé](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
-<!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
+<!--
+To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Exporter une page par programmation {#programmatically-exporting-a-page}

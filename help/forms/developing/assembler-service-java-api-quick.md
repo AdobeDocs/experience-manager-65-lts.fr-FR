@@ -1,6 +1,6 @@
 ---
-title: Démarrage rapide (SOAP) pour l’API Java™ Assembler Service
-description: Découvrez comment assembler, désassembler et créer dynamiquement un document PDF à l’aide du démarrage rapide (SOAP) pour l’API Java™ Assembler Service.
+title: Java&trade ; API QuickStart (SOAP) du service Assembler
+description: Découvrez comment assembler, désassembler et créer dynamiquement un document PDF à l’aide du service Assembler Java&trade ; API QuickStart (SOAP).
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: e56b22b9-3f4f-46d1-9885-a7e58b47f42d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 100%
+source-wordcount: '1016'
+ht-degree: 94%
 
 ---
 
@@ -1192,7 +1192,8 @@ L’exemple de code Java suivant crée dynamiquement un document DDX qui désass
 * `createDDX` : crée un objet `org.w3c.dom.Document` qui représente le document DDX envoyé au service Assembler. Cette méthode définie par l’utilisateur renvoie l’objet `org.w3c.dom.Document`.
 * `convertDDX` : convertit un objet `org.w3c.dom.Document` en un objet `com.adobe.idp.Document`. Cette méthode accepte un objet `org.w3c.dom.Document` en tant que paramètre d’entrée et renvoie un objet `com.adobe.idp.Document`.
 
-  Ces deux méthodes sont invoquées dans ce démarrage rapide. (Voir [Créer dynamiquement des documents DDX](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).)
+  Ces deux méthodes sont invoquées dans ce démarrage rapide. (Voir [ Création dynamique de documents DDX](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).)
+``
 
 ```java
 /*

@@ -11,9 +11,9 @@ feature: Adaptive Forms, Document Services
 hide: true
 hidefromtoc: true
 exl-id: c6e007e9-6050-4d86-a32e-0bd942d48f27
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '7848'
+source-wordcount: '7942'
 ht-degree: 98%
 
 ---
@@ -153,12 +153,12 @@ Convertissez un document Microsoft Word en document PDF à l’aide de l’API G
 1. Créez un client Generate PDF.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `GeneratePdfServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `GeneratePdfServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Récupérez le fichier à convertir en document PDF.
 
    * Créez un objet `java.io.FileInputStream` représentant le fichier Word à convertir à l’aide de son constructeur. Transmettez une valeur de chaîne indiquant l’emplacement du fichier.
-   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
+   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
 
 1. Convertissez le fichier en document PDF.
 
@@ -183,7 +183,7 @@ Convertissez un document Microsoft Word en document PDF à l’aide de l’API G
 
    Si vous avez utilisé la méthode `createPDF2` pour obtenir le document de journal (qui ne s’applique pas aux conversions HTML), procédez comme suit :
 
-   * Appelez la méthode `getLogDocument` de l’objet `CreatePDFResult`. Celle-ci renvoie un objet `com.adobe.idp.Document`.
+   * Appelez la méthode `getLogDocument` de lʼobjet `CreatePDFResult`. Celle-ci renvoie un objet `com.adobe.idp.Document`.
    * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour extraire le document journal.
 
 **Voir également**
@@ -238,9 +238,9 @@ Convertissez un document Microsoft Word en document PDF à l’aide de l’API 
    * Un objet `java.lang.String` contenant les paramètres de type de fichier à utiliser lors de la conversion. Les paramètres de type de fichier fournissent des paramètres de conversion pour différents types de fichiers, tels que .doc ou .xls.
    * Un objet de chaîne contenant les paramètres PDF à utiliser. Vous pouvez préciser `Standard`.
    * Un objet de chaîne contenant les paramètres de sécurité à utiliser. Vous pouvez préciser `No Security`.
-   * Un objet `BLOB` contenant les paramètres à appliquer lors de la génération du document PDF.
-   * Un objet `BLOB` facultatif contenant des informations de métadonnées à appliquer au document PDF.
-   * Un paramètre de sortie de type `BLOB` renseigné par la méthode `CreatePDF2`. La méthode `CreatePDF2` renseigne cet objet avec le document converti. (Cette valeur de paramètre est requise uniquement pour l’appel du service web).
+   * Un objet `BLOB` facultatif contenant les paramètres à appliquer lors de la génération du document PDF.
+   * Un objet facultatif `BLOB` contenant des informations de métadonnées à appliquer au document PDF.
+   * Paramètre de sortie de type `BLOB` renseigné par la méthode `CreatePDF2`. La méthode `CreatePDF2` renseigne cet objet avec le document converti. (Cette valeur de paramètre est requise uniquement pour l’appel du service web).
    * Un paramètre de sortie de type `BLOB` renseigné par la méthode `CreatePDF2`. La méthode `CreatePDF2` renseigne cet objet avec le document de journal. (Cette valeur de paramètre est requise uniquement pour l’appel du service web).
 
 1. Récupérez les résultats.
@@ -376,7 +376,7 @@ Pour convertir le contenu HTML en document PDF à l’aide de l’API Generate 
       * Attribuez le nom d’utilisateur AEM forms au champ `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
       * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Récupérez le contenu du fichier HTML à convertir en document PDF.
 
@@ -391,7 +391,7 @@ Pour convertir le contenu HTML en document PDF à l’aide de l’API Generate 
    * Un objet de chaîne contenant les paramètres de sécurité à utiliser.
    * Un objet `BLOB` facultatif contenant les paramètres à appliquer lors de la génération du document PDF.
    * Un objet `BLOB` facultatif contenant des informations de métadonnées à appliquer au document PDF.
-   * Un paramètre de sortie de type `BLOB` renseigné par la méthode `CreatePDF2`. La méthode `CreatePDF2` renseigne cet objet avec le document converti. (Cette valeur de paramètre est requise uniquement pour l’appel du service web).
+   * Paramètre de sortie de type `BLOB` renseigné par la méthode `CreatePDF2`. La méthode `CreatePDF2` renseigne cet objet avec le document converti. (Cette valeur de paramètre est requise uniquement pour l’appel du service web).
 
 1. Récupérez les résultats.
 
@@ -414,7 +414,7 @@ Cette section décrit comment utiliser l’API Java Generate PDF et l’API Web 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Generate PDF, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Generate PDF, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
@@ -426,7 +426,7 @@ Pour convertir un document PDF en l’un des types pris en charge, procédez com
 1. Convertissez le document PDF.
 1. Enregistrez le fichier converti.
 
-**Inclure des fichiers de projet**
+**Inclure les fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
@@ -473,7 +473,7 @@ Convertissez un document PDF en fichier RTF à l’aide de l’API Generate PDF 
 1. Récupérez le document du PDF à convertir.
 
    * Créez un objet `java.io.FileInputStream` représentant le document PDF à convertir à l’aide de son constructeur. Transmettez une valeur de chaîne qui spécifie l’emplacement du document PDF.
-   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
+   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
 
 1. Convertissez le document PDF.
 
@@ -491,7 +491,7 @@ Convertissez un document PDF en fichier RTF à l’aide de l’API Generate PDF 
 
    Pour obtenir le fichier nouvellement créé, procédez comme suit :
 
-   * Appelez la méthode `getConvertedDocument` de l’objet `ExportPDFResult`. Celle-ci renvoie un objet `com.adobe.idp.Document`.
+   * Appelez la méthode `getConvertedDocument` de lʼobjet `ExportPDFResult`. Celle-ci renvoie un objet `com.adobe.idp.Document`.
    * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour extraire le nouveau document.
 
 **Voir également**
@@ -527,7 +527,7 @@ Convertissez un document PDF en fichier RTF à l’aide de l’API Generate PDF 
       * Attribuez le nom d’utilisateur AEM forms au champ `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
       * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Récupérez le document du PDF à convertir.
 
@@ -628,12 +628,12 @@ Ce tableau répertorie le type d’informations utilisées pour imprimer des for
   </tr>
   <tr>
    <td><p>Instructions relatives aux boîtes de dialogue spécifiques à l’application</p></td>
-   <td><p>Indique comment répondre aux boîtes de dialogue spécifiques à l’application. </p><p>Le fichier contenant ces informations est appmon.<i>`[appname]`</i>.dialog.<i>`[locale]`</i>.xml (par exemple appmon.word.en_US.xml).</p></td>
+   <td><p>Indique comment répondre aux boîtes de dialogue spécifiques à l’application. </p><p>Le fichier qui contient ces informations est appmon.<i>`[appname]`</i>.dialog.<i>`[locale]`</i>.xml (par exemple, appmon.word.en_US.xml).</p></td>
    <td><p>Ne modifiez pas ce fichier. </p><p>Pour ajouter des instructions relatives aux boîtes de dialogue pour une nouvelle application native, consultez la section <a href="converting-file-formats-pdf.md#creating_or_modifying_an_additional_dialog_xml_file_for_a_native_application">Créer ou modifier un fichier XML de boîte de dialogue supplémentaire pour une application native</a>.</p></td>
   </tr>
   <tr>
    <td><p>Instructions relatives aux boîtes de dialogue supplémentaires spécifiques à l’application </p></td>
-   <td><p>Spécifie les remplacements et les ajouts aux instructions de boîte de dialogue spécifiques à l’application. Cette section présente un exemple de ces informations. </p><p>Le fichier contenant ces informations est appmon.<i>`[appname]`</i>.addition.<i>`[locale]`</i>.xml. Par exemple, appmon.addition.en_US.xml.</p></td>
+   <td><p>Spécifie les remplacements et les ajouts aux instructions de boîte de dialogue spécifiques à l’application. Cette section présente un exemple de ces informations. </p><p>Le fichier qui contient ces informations est appmon.<i>`[appname]`</i>.addition.<i>`[locale]`</i>.xml. Par exemple, appmon.addition.en_US.xml.</p></td>
    <td><p>Les fichiers de ce type peuvent être créés et modifiés à l’aide dʼune application dʼédition XML. (Consultez la section <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Créer ou modifier un fichier XML de boîte de dialogue supplémentaire pour une application native</a>). </p><p><strong>Important</strong> : créez des instructions de boîte de dialogue supplémentaires spécifiques à l’application pour chaque application native que votre serveur prendra en charge. </p></td>
   </tr>
  </tbody>
@@ -733,7 +733,7 @@ Après avoir ajouté ces fichiers XML au fichier adobe-appmondata.jar, vous deve
 1. À l’aide d’un outil tel que WinZip ou WinRAR, ouvrez le fichier adobe-livecycle-native-jboss-x86_win32.earfile > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar.
 1. Ajoutez la boîte de dialogue et les fichiers XML de script au fichier appmondata.jar ou modifiez les fichiers XML existants dans ce fichier. (Voir [Créer ou modifier un fichier XML de script pour une application native](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application) et [Créer ou modifier un fichier XML de boîte de dialogue supplémentaire pour une application native](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).)
 1. À l’aide d’un outil tel que WinZip ou WinRAR, ouvrez adobe-generatepdf-dsc.jar > adobe-appmondata.jar.
-1. Ajoutez la boîte de dialogue et les fichiers XML de script au fichier appmondata.jar ou modifiez les fichiers XML existants dans ce fichier. (Voir [Créer ou modifier un fichier XML de script pour une application native](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)et [Créer ou modifier un fichier XML de boîte de dialogue supplémentaire pour une application native](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application)). Après avoir ajouté les fichiers XML au fichier adobe-appmondata.jar, placez le nouveau fichier adobe-appmondata.jar dans le fichier adobe-generatepdf-dsc.jar.
+1. Ajoutez la boîte de dialogue et les fichiers XML de script au fichier appmondata.jar ou modifiez les fichiers XML existants dans ce fichier. (Voir [Créer ou modifier un fichier XML de script pour une application native](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application) et [Créer ou modifier un fichier XML de boîte de dialogue supplémentaire pour une application native](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).) Après avoir ajouté les fichiers XML au fichier adobe-appmondata.jar, placez le nouveau fichier adobe-appmondata.jar dans le fichier adobe-generatepdf-dsc.jar.
 1. Si vous avez ajouté la prise en charge d’un autre format de fichier natif, créez une variable d’environnement système qui fournit le chemin d’accès à l’application (voir [Créer une variable d’environnement pour localiser l’application native](converting-file-formats-pdf.md#creating-an-environment-variable-to-locate-the-native-application).)
 
 **Pour redéployer le composant GeneratePDF**
@@ -754,7 +754,7 @@ Après avoir ajouté ces fichiers XML au fichier adobe-appmondata.jar, vous deve
 
 Si vous souhaitez rediriger des fichiers vers une nouvelle application native, vous devez créer un fichier XML de script pour cette application. Si vous souhaitez modifier la manière dont le service Generate PDF interagit avec une application native déjà prise en charge, vous devez modifier le script de cette application.
 
-Le script contient des instructions qui parcourent les éléments de fenêtre de l’application native et qui fournissent des réponses spécifiques à ces éléments. Le fichier qui contient ces informations est `appmon.`[appname]&grave;&grave; `.script.`[locale]`.xml`. Exemple : appmon.notepad.script.en_US.xml.
+Le script contient des instructions qui parcourent les éléments de fenêtre de l’application native et qui fournissent des réponses spécifiques à ces éléments. Le fichier qui contient ces informations est `appmon.`[appname]`` `.script.`[locale]`.xml`. Exemple : appmon.notepad.script.en_US.xml.
 
 #### Identifier les étapes que le script doit exécuter {#identifying-steps-the-script-must-execute}
 
@@ -796,7 +796,7 @@ Vous pouvez utiliser des expressions régulières dans les spécifications des l
 
 #### Organiser les éléments windowList et window {#ordering-the-window-and-windowlist-elements}
 
-Organsez les éléments `window` et `windowList` comme suit :
+Organisez les éléments `window` et `windowList` comme suit :
 
 * Lorsque plusieurs éléments `window` apparaissent en tant qu’enfants dans un élément `windowList` ou `dialog`, ordonnez ces éléments `window` par ordre décroissant, la longueur des noms `caption` indiquant la position dans l’ordre.
 * Lorsque plusieurs éléments `windowList` apparaissent dans un élément `window`, ordonnez ces éléments `windowList` par ordre décroissant, les longueurs des attributs `caption` du premier élément `indexes/` indiquant la position dans l’ordre.

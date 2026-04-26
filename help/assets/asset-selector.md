@@ -7,9 +7,9 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9ee9e034-ac69-4c3b-b050-7e829c830bcd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '534'
 ht-degree: 100%
 
 ---
@@ -36,7 +36,7 @@ Vous pouvez transmettre les paramètres de requête suivants dans une URL pour d
 
 | Nom | Valeurs | Exemple | Objectif |
 |---|---|---|---|
-| suffixe de la ressource (B) | Chemin d’accès au dossier indiqué comme suffixe de la ressource dans l’URL :`http://localhost:4502/aem/`<br>`assetpicker.html/<folder_path>` | Pour démarrer le sélecteur de ressources avec un dossier particulier, par exemple avec le dossier `/content/dam/we-retail/en/activities` sélectionné, l’URL doit avoir la forme suivante : `http://localhost:4502/aem/assetpicker.html`<br>`/content/dam/we-retail/en/activities?assettype=images`. | Si vous avez besoin de sélectionner un dossier en particulier au démarrage du sélecteur de ressources, vous pouvez l’indiquer comme suffixe de ressource. |
+| suffixe de la ressource (B) | Chemin d’accès au dossier indiqué comme suffixe de la ressource dans l’URL :`http://localhost:4502/aem/`<br>`assetpicker.html/<folder_path>` | Pour démarrer le sélecteur de ressources avec un dossier particulier sélectionné, par exemple, le dossier `/content/dam/we-retail/en/activities`, l’URL doit se présentée comme suit : `http://localhost:4502/aem/assetpicker.html`<br>`/content/dam/we-retail/en/activities?assettype=images` | Si vous avez besoin de sélectionner un dossier en particulier au démarrage du sélecteur de ressources, vous pouvez l’indiquer comme suffixe de ressource. |
 | mode | single, multiple | `http://localhost:4502/aem/assetpicker.html`<br>`?mode=multiple` <br> `http://localhost:4502/aem/assetpicker.html`<br>`?mode=single` | En mode multiple, vous pouvez sélectionner plusieurs ressources simultanément à l’aide du sélecteur de ressources. |
 | boîte de dialogue | true, false | `http://localhost:4502/aem/assetpicker.html`<br>`?dialog=true` | Utilisez ces paramètres pour ouvrir le sélecteur de ressources en tant que boîte de dialogue Granite. Cette option ne peut être appliquée qu’au démarrage du sélecteur de ressources via le champ Chemin de Granite, en la configurant comme URL pickerSrc. |
 | root | `<folder_path>` | `http://localhost:4502/aem/`<br>`assetpicker.html?assettype=images`<br>`&root=/content/dam/we-retail/en/activities` | Utilisez cette option pour spécifier le dossier racine du sélecteur de ressources. Dans ce cas, le sélecteur de ressources vous permet de sélectionner uniquement les ressources enfants (directes/indirectes) sous le dossier racine. |

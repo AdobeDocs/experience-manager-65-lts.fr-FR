@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 70b2d1aa-6fcd-461d-b628-e82ddf266f48
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1488'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ Pour appliquer des droits d’utilisation à un formulaire, le service Extension
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations à propos du service Forms, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ## Résumé des étapes {#summary-of-steps}
 
@@ -51,9 +51,9 @@ Pour restituer un formulaire dont les droits sont activés, procédez comme suit
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
-**Créer un objet de lʼAPI client de Forms**
+**Créer un objet API client Forms**
 
-Avant d’effectuer par programmation une opération de l’API du client de service Forms, vous devez créer un client de service Forms.
+Avant d’effectuer par programmation une opération d’API client de service Forms, vous devez créer un client de service Forms.
 
 **Définir les options d’exécution des droits d’utilisation**
 
@@ -114,8 +114,8 @@ Pour restituer un formulaire dont les droits sont activés à l’aide de l’AP
 
    Appelez la méthode `renderPDFFormWithUsageRights` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire qui fait partie d’une application Forms, veillez à spécifier le chemin dʼaccès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner les données, transmettez un objet `com.adobe.idp.Document` vide.
+   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `com.adobe.idp.Document`.
    * Un objet `PDFFormRenderSpec` stockant les options d’exécution.
    * Un objet `ReaderExtensionSpec` stockant les options d’exécution des droits d’utilisation.
    * Un objet `URLSpec` contenant des valeurs URI requises par le service Forms.
@@ -163,7 +163,7 @@ Pour générer un formulaire défini avec des droits à l’aide de l’API Form
 
    Appelez la méthode `renderPDFFormWithUsageRights` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
-   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire qui fait partie d’une application Forms, veillez à spécifier le chemin dʼaccès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Un objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner de données avec le formulaire, vous devez transmettre un objet `BLOB` basé sur une source de données XML vide. Vous ne pouvez pas transmettre un objet `BLOB` nul ; dans le cas contraire, une exception est générée.
    * Un objet `PDFFormRenderSpec` permettant de stocker les options d’exécution.
    * Un objet `ReaderExtensionSpec` stockant les options d’exécution des droits d’utilisation.
@@ -173,12 +173,12 @@ Pour générer un formulaire défini avec des droits à l’aide de l’API Form
 
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
-   * Créez un objet `BLOB` contenant des données de formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+   * Créez un objet `BLOB` qui contient les données du formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
    * Obtenez le type de contenu de l’objet `BLOB` en appelant sa méthode `getContentType`.
    * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `BLOB`.
    * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
    * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
-   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données du formulaire vers le navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
+   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données du formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 

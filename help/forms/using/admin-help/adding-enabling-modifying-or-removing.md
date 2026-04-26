@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 14264788-a05a-4a8d-b485-33ae1caac094
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '382'
 ht-degree: 100%
 
 ---
@@ -37,13 +37,13 @@ Les points d’entrée peuvent uniquement être ajoutés aux services. Un point 
 1. Dans la liste de l’onglet Points d’entrée, sélectionnez le type de point d’entrée à ajouter, puis cliquez sur Ajouter.
 1. Selon le type de point d’entrée, configurez des paramètres de point d’entrée supplémentaires.
 
-[Paramètres des points d’entrée Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
+   [Paramètres des points d’entrée Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
 
-[Paramètres des points d’entrée de courrier électronique](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
+   [Paramètres des points d’entrée de courrier électronique](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
 
-[Configuration des points d’entrée TaskManager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
+   [Configuration des points d’entrée TaskManager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
 
-[Paramètres des points d’entrée Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
+   [Paramètres des points d’entrée Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
 
 1. Cliquez sur Ajouter.
 

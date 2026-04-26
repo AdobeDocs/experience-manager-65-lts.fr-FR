@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 62d31b00-be95-4502-9e97-3ce563192de2
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '436'
 ht-degree: 100%
 
 ---
@@ -34,12 +34,12 @@ La collecte des statistiques système qui renseignent Health Monitor a un impac
   <tr>
    <td><p>adobe.healthmonitor.enabled</p></td>
    <td><p>Activer ou désactiver le thread Health Monitor</p></td>
-   <td><p>true</p></td>
+   <td><p>vrai</p></td>
   </tr>
   <tr>
    <td><p>adobe.cache.statistics-enabled</p></td>
    <td><p>Activer ou désactiver la mise en cache de Gemfire</p></td>
-   <td><p>true</p></td>
+   <td><p>vrai</p></td>
   </tr>
   <tr>
    <td><p>adobe.healthmonitor.refresh-interval</p></td>
@@ -54,7 +54,7 @@ La collecte des statistiques système qui renseignent Health Monitor a un impac
   <tr>
    <td><p>statistic-sample-rate</p></td>
    <td><p>Taux en millisecondes auquel les statistiques sont échantillonnées. Les statistiques du système d’exploitation ne sont mises à jour que lorsqu’un échantillon est prélevé.</p></td>
-   <td><p>600 000</p></td>
+   <td><p>600000</p></td>
   </tr>
   <tr>
    <td><p>adobe.workmanager.healthmonitor.enabled</p></td>

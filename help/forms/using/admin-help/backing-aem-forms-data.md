@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: cbcb9301-48c9-4394-b8c0-766eed76101d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 100%
+source-wordcount: '1555'
+ht-degree: 98%
 
 ---
 
@@ -66,10 +66,10 @@ Sauvegardez la base de données AEM Forms, y compris tous les journaux de trans
 
 Pour plus d’informations, voir l’article de votre base de données dans la base de connaissances :
 <!-- The four URLs below are all 404s; checked July 19, 2023 -->
-* [Oracle - Sauvegarde et récupération pour AEM Forms](https://www.adobe.com/go/kb403624)
-* [MySQL - Sauvegarde et récupération pour AEM Forms](https://www.adobe.com/go/kb403625)
-* [Microsoft® SQL - Sauvegarde et récupération pour AEM Forms](https://www.adobe.com/go/kb403623)
-* [DB2® - Sauvegarde et récupération AEM Forms](https://www.adobe.com/go/kb403626)
+* [Sauvegarde et récupération d’Oracle pour AEM Forms](https://www.adobe.com/go/kb403624)
+* [MySQL Backup and Recovery for AEM Forms](https://www.adobe.com/go/kb403625)
+* [Microsoft® SQL - Sauvegarde et récupération pour AEM Forms](https://www.adobe.com/go/kb403623)
+* [DB2® - Sauvegarde et récupération pour AEM Forms](https://www.adobe.com/go/kb403626)
 
 Ces articles vous aident à utiliser les fonctions de sauvegarde et de récupération de base de la base de données. Ils ne constituent en aucun cas des guides techniques expliquant de manière exhaustive les fonctions de sauvegarde et de récupération de bases de données spécifiques à certains fournisseurs. Ils présentent simplement les commandes nécessaires à la création d’une stratégie de sauvegarde fiable des bases de données pour les données de l’application AEM Forms.
 

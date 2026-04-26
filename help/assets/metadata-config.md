@@ -7,10 +7,10 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43fb8af8-9750-44c1-8e02-34b25b92fd65
-source-git-commit: 194937f0678ea27a04319197f391dd7cc358ec51
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 98%
+source-wordcount: '2007'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,8 @@ ht-degree: 98%
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=fr) |
 | AEM 6.5 LTS | Cet article |
 
-<!-- Scope of metadata articles:
+<!--
+Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
@@ -40,7 +41,7 @@ Vous pouvez ajouter vos propres espaces de noms à [!DNL Experience Manager]. To
 1. Accédez à la page d’administration du type de nœud `https://[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`.
 1. Pour accéder à la page d’administration des espaces de noms, cliquez sur **[!UICONTROL Espaces de noms]** en haut de la page.
 1. Pour ajouter un espace de noms, cliquez sur **[!UICONTROL Nouveau]** en bas de la page.
-1. Spécifiez un espace de noms personnalisé dans la convention des espaces de noms XML. Spécifiez l’identifiant sous la forme d’un URI et d’un préfixe associé à l’ID. Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Spécifiez un espace de noms personnalisé dans la convention des espaces de noms XML. Spécifiez l’ID sous la forme d’un URI et d’un préfixe associé à l’ID. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 ## Configuration du nombre maximal de paramètres pour la mise à jour des métadonnées en bloc {#bulk-metadata-update-limit}
 
@@ -117,8 +118,9 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 1. Cliquez sur **[!UICONTROL Supprimer les profils de métadonnées]** dans la barre d’outils.
 1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Supprimer]** pour confirmer l’opération de suppression. Le profil de métadonnées est supprimé de la liste.
 
-<!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/fr/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+<!--
+TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -187,12 +189,12 @@ L’onglet **[!UICONTROL Créer le formulaire]** répertorie les éléments de f
 |---|---|
 | [!UICONTROL En-tête de section] | Permet d’ajouter un en-tête de section pour une liste de composants communs. |
 | [!UICONTROL Une seule ligne de texte] | Permet d’ajouter une propriété de texte d’une seule ligne. Elle est stockée sous la forme d’une chaîne. |
-| [!UICONTROL Texte à plusieurs valeurs] | Permet d’ajouter une propriété de texte à plusieurs valeurs. Il est stocké sous forme de tableau de chaînes. |
+| [!UICONTROL Texte à plusieurs valeurs] | Permet d’ajouter une propriété de texte à plusieurs valeurs. Il est stocké sous la forme d’une table de chaînes. |
 | [!UICONTROL Nombre] | Permet d’ajouter un composant de nombre. |
 | [!UICONTROL Date] | Permet d’ajouter un composant de date. |
 | [!UICONTROL Liste déroulante] | Permet d’ajouter une liste déroulante. |
 | [!UICONTROL Balises standard] | Permet d’ajouter une balise. |
-| [!UICONTROL Champ masqué] | Permet d’ajouter un champ masqué. Il est envoyé en tant que paramètre POST lorsque la ressource est enregistrée. |
+| [!UICONTROL Champ masqué] | Ajoutez un champ masqué. Elle est envoyée en tant que paramètre POST lorsque la ressource est enregistrée. |
 
 #### Modification d’éléments de formulaire {#editing-form-items}
 
@@ -200,7 +202,7 @@ Pour modifier les propriétés d’éléments de formulaire, cliquez sur le comp
 
 **[!UICONTROL Libellé du champ]** : nom de la propriété de métadonnées qui s’affiche sur la page des propriétés du dossier.
 
-**[!UICONTROL Associer à la propriété]** : cette propriété spécifie le chemin d’accès relatif du nœud de dossier dans le référentiel CRX où il est enregistré. Elle commence par « **./** », qui indique que le chemin d’accès se trouve sous le nœud du dossier.
+**[!UICONTROL Associer à la propriété]** : cette propriété spécifie le chemin d’accès relatif du nœud de dossier dans le référentiel CRX où il est enregistré. Elle commence par « **./** », qui indique que le chemin d’accès se trouve sous le nœud du dossier.
 
 Les valeurs admises pour cette propriété sont les suivantes :
 

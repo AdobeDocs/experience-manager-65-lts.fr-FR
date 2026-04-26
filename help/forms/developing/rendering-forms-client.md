@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: cd0a9205-5ccc-420b-9245-98f8bd7d6c9f
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1690'
+source-wordcount: '1715'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ Les modifications apportées à un formulaire par l’exécution d’un script c
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations à propos du service Forms, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -43,7 +43,7 @@ Pour effectuer le rendu d’un formulaire au niveau du client, effectuez les tâ
 1. Rendez un formulaire au niveau du client.
 1. Écrivez le formulaire dans le navigateur web du client.
 
-**Inclure des fichiers de projet**
+**Inclure les fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
@@ -113,8 +113,8 @@ Restituez un formulaire au client à l’aide de l’API Forms (Java) :
 
    Appelez la méthode `renderPDFForm` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez un modèle de formulaire faisant partie d’une application AEM Forms, veillez à en spécifier le chemin d’accès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `com.adobe.idp.Document` vide.
+   * Une valeur de chaîne qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier. Si vous référencez un modèle de formulaire faisant partie d’une application AEM Forms, veillez à en spécifier le chemin d’accès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `com.adobe.idp.Document`.
    * Objet `PDFFormRenderSpec` stockant les options d’exécution requises pour générer un formulaire au niveau du client.
    * Objet `URLSpec` contenant des valeurs URI requises par le service Forms pour générer un formulaire.
    * Objet `java.util.HashMap` stockant les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
@@ -129,7 +129,7 @@ Restituez un formulaire au client à l’aide de l’API Forms (Java) :
    * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
    * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
    * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la méthode `read` de l’objet `InputStream` et en transmettant le tableau d’octets en tant qu’argument.
-   * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
+   * Appelez la méthode `write` de lʼobjet `javax.servlet.ServletOutputStream` pour envoyer le flux de données de formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 
@@ -161,26 +161,26 @@ Restituez un formulaire au client à l’aide de l’API Forms (Web Service) :
 
    Appelez la méthode `renderPDFForm` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
-   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire qui fait partie d’une application Forms, veillez à spécifier le chemin dʼaccès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez `null`. (Voir [Préremplir des formulaires avec des mises en page fluides](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez `null`. (Voir [Préremplir des formulaires avec des mises en page modulables](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
    * Objet `PDFFormRenderSpec` stockant les options d’exécution requises pour générer un formulaire au niveau du client.
-   * Objet `URLSpec` contenant les valeurs URI requises par le service Forms.
-   * Un objet `java.util.HashMap` qui stocke les pièces jointes. Il sʼagit dʼun paramètre facultatif. Vous pouvez indiquer `null` si vous ne souhaitez pas joindre de fichier au formulaire.
-   * Objet `com.adobe.idp.services.holders.BLOBHolder` vide qui est rempli par la méthode. Ce paramètre est utilisé pour stocker le formulaire PDF rendu.
-   * Objet `javax.xml.rpc.holders.LongHolder` vide qui est rempli par la méthode. (Cet argument permet de stocker le nombre de pages du formulaire).
+   * Un objet `URLSpec` contenant les valeurs URI requises par le service Forms.
+   * Objet `java.util.HashMap` stockant les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
+   * Un objet `com.adobe.idp.services.holders.BLOBHolder` vide qui est renseigné par la méthode. Ce paramètre est utilisé pour stocker le formulaire PDF rendu.
+   * Un objet `javax.xml.rpc.holders.LongHolder` vide qui est renseigné par la méthode. (Cet argument permet de stocker le nombre de pages du formulaire).
    * Un objet `javax.xml.rpc.holders.StringHolder` vide qui est renseigné par la méthode. (Cet argument permet de stocker la valeur des paramètres régionaux).
-   * Un objet `com.adobe.idp.services.holders.FormsResultHolder` vide qui contiendra les résultats de cette opération.
+   * Objet `com.adobe.idp.services.holders.FormsResultHolder` vide qui contient les résultats de cette opération.
 
    La méthode `renderPDFForm` renseigne l’objet `com.adobe.idp.services.holders.FormsResultHolder` qui est transmis en tant que dernière valeur d’argument avec un flux de données de formulaire qui doit être écrit dans le navigateur web client.
 
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
-   * Créez un objet `FormResult` en obtenant la valeur du membre de données `value` de l’objet `com.adobe.idp.services.holders.FormsResultHolder`.
+   * Créez un objet `FormResult` en obtenant la valeur du membre de données `value` de lʼobjet `com.adobe.idp.services.holders.FormsResultHolder`.
    * Créez un objet `BLOB` contenant des données de formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
-   * Obtenez le type de contenu de l’objet `BLOB` en appelant sa méthode `getContentType`.
+   * Accédez au type de contenu de l’objet `BLOB` en appelant sa méthode `getContentType`.
    * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `BLOB`.
-   * Créez un objet `javax.servlet.ServletOutputStream` servant à écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
-   * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
+   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
+   * Créez un tableau d’octets et remplissez-le en appelant la méthode `getBinaryData` de lʼobjet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
    * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**

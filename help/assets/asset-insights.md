@@ -7,9 +7,9 @@ feature: Asset Insights,Asset Reports
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 6f6cb4fb-d9c7-4f44-b4ba-adcad74f3a59
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '797'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 La fonction Assets Insights vous permet d’effectuer le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans les sites Web tiers, les campagnes marketing et les solutions de création d’Adobe. Elle permet d’extraire les statistiques sur leurs performances et leur popularité.
@@ -27,7 +27,7 @@ La fonction Assets Insights vous permet d’effectuer le suivi des évaluations
 
 Pour que la fonction [!DNL Assets] Insights puisse capturer les statistiques d’utilisation des images à partir d’un site Web, vous devez inclure le code intégré de l’image dans celui du site Web.
 
-Pour permettre à Assets Insights d’afficher les statistiques d’utilisation des ressources, commencez par configurer la fonction afin qu’elle récupère les données de rapports d’Adobe Analytics. Pour plus d’informations, consultez [Configuration d’Assets Insights](/help/assets/configure-asset-insights.md). Pour utiliser cette fonctionnalité dans une installation on-premise, achetez le licence [!DNL Adobe Analytics] séparément. Les clients [!DNL Managed Services] reçoivent une licence [!DNL Analytics] groupée avec [!DNL Experience Manager]. Consultez [Description du produit Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Pour permettre à Assets Insights d’afficher les statistiques d’utilisation des ressources, commencez par configurer la fonction afin qu’elle récupère les données de rapports d’Adobe Analytics. Pour plus d’informations, consultez [Configuration d’Assets Insights](/help/assets/configure-asset-insights.md). Pour utiliser cette fonctionnalité dans une installation on-premise, achetez la licence [!DNL Adobe Analytics] séparément. Les clients [!DNL Managed Services] reçoivent une licence [!DNL Analytics] groupée avec [!DNL Experience Manager]. Consultez [Description du produit Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Vous pouvez afficher les scores de toutes les ressources d’un dossier simultan
 
 La fonction Assets Insights extrait les données d’utilisation des ressources à partir de suites de rapports Adobe Analytics de manière périodique. Par défaut, la fonction Assets Insights exécute une tâche en arrière-plan toutes les 24 heures, à 2 heures du matin, pour récupérer les données. Cependant, vous pouvez modifier la fréquence et l’heure en configurant le service de **[!UICONTROL tâche de synchronisation de rapport de performances de ressource de gestion des ressources numériques Adobe CQ]** via la console Web.
 
-1. Cliquez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]**.
+1. Cliquez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
 1. Ouvrez la configuration de service **[!UICONTROL Tâche de synchronisation des rapports sur les performances des ressources de la gestion des actifs numériques Adobe CQ]**.
 
    ![chlimage_1-99](assets/chlimage_1-304.png)

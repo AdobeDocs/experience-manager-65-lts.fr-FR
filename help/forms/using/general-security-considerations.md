@@ -11,9 +11,9 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 5d0ba475-06be-47fd-8ea2-9160c2d86b07
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1135'
 ht-degree: 100%
 
 ---
@@ -164,7 +164,7 @@ Ce tableau décrit les ports par défaut devant être ouverts pendant le process
    <td><p>8080</p> </td>
   </tr>
   <tr>
-   <td><p>WebLo gic</p> </td>
+   <td><p>WebLogic</p> </td>
    <td><p>7001</p> </td>
   </tr>
   <tr>
@@ -225,7 +225,7 @@ Le serveur d’applications JBoss® utilise le port HTTP par défaut 8080. JBoss
 
 >[!NOTE]
 >
-> Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+> Il est recommandé d’utiliser la commande « Ctrl+C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 ## Considérations relatives à la sécurité d’AEM Forms sur JEE {#aem-forms-on-jee-security-considerations}
 

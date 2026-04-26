@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ba02f9b1-209e-42f2-b1df-2ed64fc9fdbc
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 98%
+source-wordcount: '1739'
+ht-degree: 96%
 
 ---
 
@@ -77,7 +77,7 @@ Vous pouvez également activer la fonction SSO à l’aide d’en-têtes HTTP. (
 >AEM Forms on JEE ne prend pas en charge la configuration de l’authentification unique à l’aide de Kerberos/SPNEGO dans plusieurs environnements d’un domaine enfant.
 
 1. Déterminez le domaine à utiliser pour activer l’authentification unique. Le serveur AEM Forms et les utilisateurs et utilisatrices doivent appartenir au même domaine Windows ou au même domaine de confiance.
-1. Dans Active Directory, créez un utilisateur ou une utilisatrice qui représente le serveur AEM Forms. (Voir [Créer un compte d’utilisateur ou d’utilisatrice](enabling-single-sign-on-aem.md#create-a-user-account).) Si vous configurez plusieurs domaines pour utiliser SPNEGO, assurez-vous que les mots de passe de chacun de ces utilisateurs et utilisatrices sont différents. Si les mots de passe ne sont pas différents, l’authentification unique SPNEGO ne fonctionne pas.
+1. Dans Active Directory, créez un utilisateur ou une utilisatrice qui représente le serveur AEM Forms. (Voir [Créer un compte utilisateur](enabling-single-sign-on-aem.md#create-a-user-account).) Si vous configurez plusieurs domaines pour utiliser SPNEGO, assurez-vous que les mots de passe de chacun de ces utilisateurs sont différents. Si les mots de passe ne sont pas différents, l’authentification unique SPNEGO ne fonctionne pas.
 1. Mappez le nom principal du service. (Voir [Mappage d’un nom principal de service (SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Configurez le contrôleur de domaine. (Voir [Prévention des échecs de contrôle d’intégrité de Kerberos](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
 1. Ajoutez ou modifiez un domaine d’entreprise comme décrit dans la section [Ajout de domaines](/help/forms/using/admin-help/adding-domains.md#adding-domains) ou [Modification et conversion de domaines existants](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). Lorsque vous créez ou modifiez le domaine d’entreprise, effectuez les tâches suivantes :

@@ -1,29 +1,31 @@
 ---
-title: La génération de PDF ne parvient pas à imprimer un grand nombre de PDF avec WorkBench.
-description: Lorsqu’une personne génère un grand nombre de PDF via des services implémentés par le biais de WorkBench, le service d’impression échoue.
+title: La génération de PDF ne parvient pas à imprimer un grand nombre de PDF avec Workbench.
+description: Lorsqu’une personne génère un grand nombre de PDF via des services implémentés par le biais de Workbench, le service d’impression échoue.
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 80a4e5c0-d68f-4591-a43d-ab75b5f0764c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '787'
 ht-degree: 100%
 
 ---
 
-# La génération de PDF ne parvient pas à imprimer un grand nombre de PDF via WorkBench. {#PDF-generation-fails-to-print-a-large-number-of-PDFs-via-WorkBench}
+# La génération de PDF ne parvient pas à imprimer un grand nombre de PDF via Workbench. {#PDF-generation-fails-to-print-a-large-number-of-PDFs-via-WorkBench}
 
 ## Problème {#issue}
 
-Lorsqu’une personne génère un grand nombre de PDF via des services implémentés par le biais de WorkBench. Le service échoue en raison d’une mémoire insuffisante. L’erreur se produit comme suit :
+Lorsqu’une personne génère un grand nombre de PDF via des services implémentés par le biais de Workbench. Le service échoue en raison d’une mémoire insuffisante. L’erreur se produit comme suit :
 
 `ALC-OUT-002-013: XMLFormFactory, PAexecute failure: "0: Out of Memory"`
 
-<!-- Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
-Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.-->
+<!--
+Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
+Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.
+-->
 
 En effet, le nombre maximal de pages dans une requête d’impression est limité à environ 1 000 pages sous Windows. Lorsqu’une sortie d’impression est générée, le modèle et les données doivent être chargés en mémoire et la disposition qui en résulte est assemblée en mémoire. Cela signifie qu’il existe des limites à la taille de la sortie finale. Le processus qui génère la sortie d’impression est une tâche 32 bits, ce qui signifie qu’elle est limitée à 2 Go de RAM sous Windows <!--and 4 GB on UNIX-->.
 

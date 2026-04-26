@@ -11,10 +11,10 @@ feature: Adaptive Forms,AEM Forms Upgrade,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 643bc966-b2d8-4626-8c25-b63c8909287e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 75%
+source-wordcount: '395'
+ht-degree: 67%
 
 ---
 
@@ -37,8 +37,8 @@ Effectuez la procédure suivante pour utiliser le programme d’installation com
 1. Voir [Préparation de la mise à niveau vers AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65_fr) pour découvrir et exécuter les tâches permettant d’effectuer correctement la mise à niveau pour un temps d’arrêt du serveur minimal.
 1. En fonction de votre environnement et de votre serveur d’application, sélectionnez l’un des documents suivants et suivez les instructions.
 
-   * [Mise à niveau d’AEM 6.3 Forms ou d’AEM 6.4 Forms vers AEM 6.5 Forms pour JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_fr)
-   * [Mise à niveau d’AEM 6.3 Forms ou d’AEM 6.4 Forms vers AEM 6.5 Forms pour WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_fr)
-   * [Mise à niveau d’AEM 6.3 Forms ou d’AEM 6.4 Forms vers AEM 6.5 Forms pour JBoss clé en main](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_fr)
+   * [Mise à niveau d’AEM 6.3 ou AEM 6.4 Forms vers AEM 6.5 Forms pour JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_fr)
+   * [Mise à niveau d’AEM 6.3 ou AEM 6.4 Forms vers AEM 6.5 Forms pour WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_fr)
+   * [Mise à niveau d’AEM 6.3 ou AEM 6.4 Forms vers AEM 6.5 Forms pour JBoss clé en main](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_fr)
 
 La mise à niveau directe de LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms et AEM 6.2 Forms vers AEM 6.5 Forms n’est pas disponible. Vous pouvez effectuer une mise à niveau intermédiaire vers une ou plusieurs versions de LiveCycle ou AEM Forms, puis effectuer une mise à niveau vers AEM 6.5 Forms. Pour la liste des versions intermédiaires et les instructions de mise à niveau correspondantes, voir [Sélectionner un chemin de mise à niveau](upgrade.md).

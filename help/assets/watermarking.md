@@ -7,9 +7,9 @@ feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 6c8b4ff5-28ac-4655-b310-4f0b0417bd63
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '333'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 [!DNL Adobe Experience Manager Assets] vous permet d’ajouter un filigrane numérique aux ressources pour vérifier l’authenticité et la propriété du copyright de ces ressources. [!DNL Experience Manager Assets] prend en charge le texte à utiliser comme filigrane dans les fichiers PNG et JPEG.

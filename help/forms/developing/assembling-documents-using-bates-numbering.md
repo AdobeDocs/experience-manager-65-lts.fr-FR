@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services
 hide: true
 hidefromtoc: true
 exl-id: 310d0566-673a-4b78-9f0d-86f56c495105
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1910'
+source-wordcount: '1934'
 ht-degree: 100%
 
 ---
@@ -56,7 +56,7 @@ Ce document DDX fusionne deux documents PDF nommés *map.pdf* et *directions.pdf
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Assembler, consultez la section [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Assembler, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-utility.jar (obligatoire si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss)
 
-Si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utility.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé. Pour plus d’informations à propos de l’emplacement de ces fichiers, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utility.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé. Pour plus d’informations sur l’emplacement de ces fichiers, consultez la section [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Créer un client Assembler PDF**
 
@@ -139,15 +139,15 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
 
 1. Référencez un document DX existant.
 
-   * Créez un objet `java.io.FileInputStream` qui représente le document DDX en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du fichier DDX.
-   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
+   * Créez un objet `java.io.FileInputStream` représentant le document DDX en utilisant son constructeur et en transmettant une valeur de chaîne qui indique l’emplacement du fichier DDX.
+   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
 
-1. Référencez des documents PDF d’entrée.
+1. Référencez les documents PDF d’entrée.
 
    * Créez un objet `java.util.Map` utilisé pour stocker des documents PDF d’entrée à l’aide d’un constructeur `HashMap`.
    * Pour chaque document PDF d’entrée, créez un objet `java.io.FileInputStream` en utilisant son constructeur et en transmettant l’emplacement du document PDF d’entrée. Dans ce cas, transmettez l’emplacement d’un document PDF non sécurisé.
    * Pour chaque document PDF d’entrée, créez un objet `com.adobe.idp.Document` et transmettez l’objet `java.io.FileInputStream` contenant le document PDF.
-   * Ajoutez une entrée à l’objet `java.util.Map` en appelant la méthode `put` correspondante et en transmettant les arguments suivants :
+   * Ajoutez une entrée à l’objet `java.util.Map` en appelant sa méthode `put` et en transmettant les arguments suivants :
 
       * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à celle de l’élément source PDF spécifié dans le document DDX. Par exemple, le nom du fichier source du PDF spécifié dans le document DDX présenté dans cette section est Loan.pdf.
       * Objet `com.adobe.idp.Document` contenant le document PDF non sécurisé.
@@ -163,7 +163,7 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
 
    * Objet `com.adobe.idp.Document` représentant le document DDX.
    * Objet `java.util.Map` contenant le fichier PDF non sécurisé entré.
-   * Objet `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` spécifiant les options d’exécution, y compris la police par défaut et le niveau de journalisation des tâches.
+   * Objet `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` qui spécifie les options d’exécution, y compris la police par défaut et le niveau du log de traitement.
 
    La méthode `invokeDDX` renvoie un objet `com.adobe.livecycle.assembler.client.AssemblerResult` contenant un document PDF chiffré par mot de passe.
 
@@ -173,7 +173,7 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
 
    * Appelez la méthode `getDocuments` de lʼobjet `AssemblerResult`. Cette action renvoie un objet `java.util.Map`.
    * Effectuez une itération à l’aide de l’objet `java.util.Map` jusqu’à ce que vous trouviez l’objet `com.adobe.idp.Document`.
-   * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour extraire le document PDF.
+   * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour extraire le document PDF.
 
 **Voir également**
 
@@ -193,13 +193,13 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client Assembler PDF.
 
-   * Créez un objet `AssemblerServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
-   * Créez un objet `System.ServiceModel.BasicHttpBinding` en récupérant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Créez un `AssemblerServiceClient` objet en utilisant son constructeur par défaut.
+   * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
@@ -214,7 +214,7 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document DDX et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’objet `BLOB` en affectant à son champ `MTOM` le contenu du tableau d’octets.
+   * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Référencez les documents PDF d’entrée.
 
@@ -222,12 +222,12 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
    * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne qui représente l’emplacement du fichier du document PDF d’entrée et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
+   * Renseignez l’objet `BLOB` en attribuant le contenu du tableau d’octets à sa propriété `MTOM`.
    * Créez un objet `MyMapOf_xsd_string_To_xsd_anyType`. Cet objet de collection est utilisé pour stocker les documents PDF d’entrée.
    * Pour chaque document PDF d’entrée, créez un objet `MyMapOf_xsd_string_To_xsd_anyType_Item`. Par exemple, si deux documents PDF d’entrée sont utilisés, créez deux objets `MyMapOf_xsd_string_To_xsd_anyType_Item`.
    * Attribuez une valeur de chaîne qui représente le nom de la clé au champ `key` de lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item`. Cette valeur doit correspondre à celle de l’élément source PDF spécifié dans le document DDX. (Répétez cette tâche pour chaque document PDF d’entrée).
    * Attribuez lʼobjet `BLOB` qui stocke le document PDF au champ `value` de lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item`. (Répétez cette tâche pour chaque document PDF d’entrée).
-   * Ajoutez lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item` à lʼobjet `MyMapOf_xsd_string_To_xsd_anyType`. Appelez la méthode `Add` de l’objet `MyMapOf_xsd_string_To_xsd_anyType` et transmettez l’objet `MyMapOf_xsd_string_To_xsd_anyType`. (Répétez cette tâche pour chaque document PDF d’entrée).
+   * Ajoutez lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item` à l’objet `MyMapOf_xsd_string_To_xsd_anyType`. Appelez la méthode `Add` de l’objet `MyMapOf_xsd_string_To_xsd_anyType` et transmettez-la à l’objet `MyMapOf_xsd_string_To_xsd_anyType`. (Répétez cette tâche pour chaque document PDF d’entrée).
 
 1. Définissez la valeur initiale du nombre Bates.
 
@@ -250,7 +250,7 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
 
    * Accédez au champ `documents` de lʼobjet `AssemblerResult`, qui est un objet `Map` contenant les documents PDF obtenus.
    * Effectuez une itération au sein de l’objet `Map` jusqu’à ce que vous trouviez la clé correspondant au nom du document généré. Convertissez ensuite la `value` de ce ou cette membre de tableau en `BLOB`.
-   * Extrayez les données binaires qui représentent le document PDF en accédant à la propriété `MTOM` de son objet `BLOB`. Cette opération renvoie un tableau d’octets que vous pouvez enregistrer dans un fichier PDF.
+   * Extrayez les données binaires représentant le document PDF en accédant à la propriété `MTOM` de son objet `BLOB`. Cette opération renvoie un tableau d’octets que vous pouvez enregistrer dans un fichier PDF.
 
 **Voir également**
 

@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5ac3350d-8819-4b33-b1a1-9e686b6abd9e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 100%
@@ -30,7 +30,7 @@ Les types de points d’entrée suivants peuvent être ajoutés aux services. To
 
 **E-mail :** permet à un utilisateur d’appeler un service en envoyant un e-mail, avec une ou plusieurs pièces jointes, à un compte de messagerie spécifié. Avant de configurer un point d’entrée de courrier électronique, vous devez configurer les comptes de messagerie requis. Voir Configuration des points d’entrée de courrier électronique.
 
-**Watched Folder :** permet à un utilisateur d’appeler un service en plaçant un fichier dans un dossier balayé à intervalles réguliers. (voir Configuration des points d’entrée Watched Folder). 
+**Watched Folder :** permet à un utilisateur d’appeler un service en plaçant un fichier dans un dossier balayé à intervalles réguliers. (voir Configuration des points d’entrée Watched Folder).
 
 **TaskManager :** permet à un utilisateur de Workspace d’appeler le service.
 

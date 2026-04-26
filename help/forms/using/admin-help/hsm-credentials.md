@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5e9e0371-018a-496f-aad4-04ff21391d51
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 100%
+source-wordcount: '1355'
+ht-degree: 98%
 
 ---
 
@@ -109,4 +109,4 @@ AEM Forms utilise un mécanisme IPC/RPC basé sur les services web. Ce mécani
 Ce mécanisme ne prend pas en charge la création en ligne de profils HSM ni les vérifications de statut. Toutefois, il existe deux façons de créer des profils HSM et d’effectuer des vérifications de statut :
 
 * Créez des informations d’identification client pour AEM Forms en lui transmettant le certificat du ou de la signataire. Suivez les étapes mentionnées dans la rubrique [Configuration de la prise en charge HSM pour AEM Forms ES à l’aide du JDK Sun sur une plateforme Windows 64 bits](https://helpx.adobe.com/fr/livecycle/kb/configuring-hsm-support-using-sun.html) pour plus d’informations. L’emplacement du service web est transmis en tant que propriété Credential. La création de profils HSM hors ligne à l’aide du certificat der ou du certificat SHA-1 hex est également prise en charge. Cependant, si vous avez effectué une mise à niveau vers AEM Forms à partir d’une version antérieure, apportez des modifications au client car les informations d’identification comportaient des informations de certificat et de service web.
-* L’emplacement du service web est spécifié dans la console d’administration pour le service Signature. (Voir [Paramètres du service Signature](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Ici, le client ne transportait que l’alias du profil HSM dans le Trust Store. Vous pouvez facilement utiliser cette option sans aucune modification du client, même si vous avez effectué une mise à niveau vers AEM Forms à partir d’une version antérieure d’AEM Forms. Cette option ne prend pas en charge les profils HSM utilisant le certificat SHA-1.
+* L’emplacement du service web est spécifié dans la console d’administration pour le service Signature. (Voir [Paramètres du service Signature](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Ici, le client ne transportait que l’alias du profil HSM dans le Trust Store. Vous pouvez facilement utiliser cette option sans aucune modification du client, même si vous avez effectué une mise à niveau vers AEM Forms à partir d’une version antérieure d’AEM Forms. Cette option ne prend pas en charge les profils HSM utilisant le certificat SHA-1.

@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 6deed56a-2e87-4444-8fb5-1d06b0792a5e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1401'
 ht-degree: 100%
 
 ---
@@ -194,8 +194,8 @@ Pour importer des métadonnées XMP par programmation à l’aide de l’API Web
 
 1. Inclure les fichiers du projet
 
-   * Créez un assemblage client Microsoft .NET qui utilise le fichier WSDL du service XMP Utilities. (Voir [Appeler AEM Forms à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
-   * Référencez l’assemblage client Microsoft .NET. (Voir [Créer un assemblage client .NET à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding).)
+   * Créez un assemblage client Microsoft .NET qui utilise le fichier WSDL du service XMP Utilities. (Consultez la section [Appeler AEM Forms à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+   * Référencez l’assemblage client Microsoft .NET. (Consultez la section [Créer un assemblage client .NET utilisant le codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding).)
 
 1. Créer un client XMPUtilityService
 

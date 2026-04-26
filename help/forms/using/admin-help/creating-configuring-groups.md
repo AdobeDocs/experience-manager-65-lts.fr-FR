@@ -11,10 +11,10 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: e8824453-8891-40e0-9948-c0c0f0fdce62
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1590'
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Si vous utilisez Content Services (obsolète), vous pouvez sélectionner l’op
 
 1. Cliquez sur Suivant.
 1. Pour affecter des rôles au groupe, cliquez sur Rechercher des rôles, cochez les cases correspondant à chaque rôle à affecter au groupe, puis cliquez sur OK. Les personnes du groupe héritent des rôles affectés au niveau du groupe.
-1. Cliquez sur Finish (Terminer). 
+1. Cliquez sur Finish (Terminer).
 
 ## Créer un groupe dynamique {#create-a-dynamic-group}
 
@@ -115,7 +115,7 @@ Un groupe dynamique contient uniquement des utilisateurs et des utilisatrices. I
 
 1. Cliquez sur Suivant.
 1. Pour affecter des rôles au groupe dynamique, cliquez sur Rechercher des rôles, cochez les cases correspondant à chaque rôle à affecter au groupe, puis cliquez sur OK. Les personnes du groupe héritent des rôles affectés au niveau du groupe.
-1. Cliquez sur Finish (Terminer). 
+1. Cliquez sur Finish (Terminer).
 
 ## Afficher les détails concernant un groupe {#view-details-about-a-group}
 

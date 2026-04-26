@@ -10,10 +10,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 3fe5421e-e97e-43c4-b34b-b84bf189a779
-source-git-commit: 425b3fae2658d78b0885f5034ff4c61da625d9d4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 61%
+source-wordcount: '1205'
+ht-degree: 70%
 
 ---
 
@@ -33,7 +33,8 @@ Le processus de mise à niveau d’AEM nécessite une gestion attentive des phas
 
 Il est important de vous assurer que vous exécutez un système d’exploitation pris en charge, le runtime Java™, httpd et la version de Dispatcher. Pour plus d’informations, consultez la section [Exigences techniques pour AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md). La mise à niveau de ces composants doit être prise en compte dans votre plan de mise à niveau et doit avoir lieu avant la mise à niveau d’AEM.
 
-<!-- Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
 ## Upgrade Scope and Requirements {#upgrade-scope-requirements}
 
@@ -89,13 +90,15 @@ Below you will find a list of areas that are impacted in a typical AEM Upgrade p
  </tbody>
 </table>
 
-It is important to ensure that you are running a supported operating system, Java&trade; runtime, httpd, and Dispatcher version. For more information, see the [AEM 6.5 Technical Requirements page](/help/sites-deploying/technical-requirements.md). Upgrading these components must be accounted for in your project plan and should take place before upgrading AEM. -->
+It is important to ensure that you are running a supported operating system, Java&trade; runtime, httpd, and Dispatcher version. For more information, see the [AEM 6.5 Technical Requirements page](/help/sites-deploying/technical-requirements.md). Upgrading these components must be accounted for in your project plan and should take place before upgrading AEM.
+-->
 
 ## Phases de mise à niveau {#upgrade-phases}
 
 La planification et l’exécution d’une mise à niveau d’AEM demandent beaucoup de travail. En vue de clarifier les différents efforts de ce processus, Adobe a divisé les exercices de planification et d’exécution en plusieurs phases distinctes. Dans les sections ci-dessous, chaque phase génère un livrable qui est souvent utilisé par une phase ultérieure de la mise à niveau.
 
-<!-- Alexandru:drafting for now
+<!--
+Alexandru:drafting for now
 
 ### Planning for Author Training {#planning-for-author-training}
 
@@ -103,17 +106,18 @@ With any new release, there are potential changes to the UI and user workflows t
 
 ![unu_cropped](assets/unu_cropped.png)
 
-New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/release-notes/release-notes.md). Make sure to note any changes to UIs or product features that are commonly used in your organization. As you look through the new features, also take note of any that can be of value to your organization. After looking through what has changed in AEM 6.5, develop a training plan for your authors. This could involve using freely available resources like the help feature videos or formal training offered through [Adobe Digital Learning Services](https://learning.adobe.com/). -->
+New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/release-notes/release-notes.md). Make sure to note any changes to UIs or product features that are commonly used in your organization. As you look through the new features, also take note of any that can be of value to your organization. After looking through what has changed in AEM 6.5, develop a training plan for your authors. This could involve using freely available resources like the help feature videos or formal training offered through [Adobe Digital Learning Services](https://learning.adobe.com/).
+-->
 
 ### Création d’un plan de tests {#creating-a-test-plan}
 
-La mise en œuvre d’AEM par chaque client ou cliente est unique et a été personnalisée pour répondre aux besoins de l’entreprise. Par conséquent, il est important de déterminer toutes les personnalisations qui ont été apportées au système afin qu’elles puissent être incluses dans un plan de test.
+La mise en œuvre d’AEM par chaque client ou cliente est unique et a été personnalisée pour répondre aux besoins de l’entreprise. Par conséquent, il est important de déterminer toutes les personnalisations qui ont été apportées au système afin qu’elles puissent être incluses dans un plan de tests.
 
 L’environnement de production exact doit être dupliqué et les tests doivent y être effectués après la mise à niveau afin de s’assurer que toutes les applications et le code personnalisé s’exécutent toujours selon vos besoins. Réglez toutes vos personnalisations et exécutez les tests de performances, de chargement et de sécurité. Lors de l’organisation de votre plan de tests, veillez à couvrir toutes les personnalisations apportées au système en plus des interfaces utilisateur et des workflows prêts à l’emploi utilisés dans vos opérations quotidiennes. Il peut s’agir de services et servlets OSGI personnalisés, d’intégrations à Adobe Experience Cloud, d’intégrations à des tiers par le biais de connecteurs pour AEM, d’intégrations tierces personnalisées, de composants et de modèles personnalisés, de recouvrements de l’interface utilisateur personnalisés dans AEM et de workflows personnalisés. En outre, les requêtes personnalisées doivent toujours être testées pour s’assurer que leurs index continuent à fonctionner efficacement après la mise à niveau.
 
 ### Évaluation de la complexité de la mise à niveau {#assessing-upgrade-complexity}
 
-En raison de la grande variété dans la quantité et la nature des personnalisations que la clientèle d’Adobe applique à ses environnements AEM, il est important de prendre le temps de déterminer le niveau d’effort global attendu lors de votre mise à niveau. [AEM Analyzer pour AEM 6.5 LTS](/help/sites-deploying/aem-analyzer.md) peut vous aider à évaluer la complexité de la mise à niveau.
+En raison de la grande variété de la quantité et de la nature des personnalisations que les clientes et clients Adobe appliquent à leurs environnements AEM, il est important de consacrer du temps à déterminer le niveau d’effort global attendu dans votre mise à niveau. [AEM Analyzer pour AEM 6.5 LTS](/help/sites-deploying/aem-analyzer.md) peut vous aider à évaluer la complexité de la mise à niveau.
 
 L’[AEM Analyer pour AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) devrait vous donner une estimation assez précise de ce à quoi vous devez vous attendre la plupart du temps lors d’une mise à niveau. Cependant, pour les personnalisations et déploiements plus complexes comportant des modifications incompatibles, vous pouvez mettre à niveau une instance de développement vers AEM 6.5 LTS conformément aux instructions de la section [Exécution d’une mise à niveau statique](/help/sites-deploying/in-place-upgrade.md). Une fois l’opération terminée, effectuez un test de vérification de haut niveau dans cet environnement. L’objectif de cet exercice n’est pas de terminer l’inventaire exhaustif des cas de test et de produire un inventaire formel des défauts, mais de nous donner une estimation approximative de la quantité de travail qui sera nécessaire pour mettre à niveau le code pour la compatibilité LTS d’AEM 6.5. Associé à [AEM Analyzer](/help/sites-deploying/aem-analyzer.md) et aux modifications architecturales déterminées dans la section précédente, il est possible de fournir une estimation grossière à l’équipe de gestion de projet pour planifier la mise à niveau.
 
@@ -121,19 +125,23 @@ L’[AEM Analyer pour AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) de
 
 Bien qu’Adobe ait documenté le processus de mise à niveau d’une instance AEM, la configuration réseau, l’architecture de déploiement et les personnalisations de chaque cliente ou client nécessitent d’affiner et de personnaliser cette approche. C’est pourquoi Adobe vous encourage à consulter toute la documentation fournie et à l’utiliser pour informer un runbook spécifique à la mise à niveau qui décrit les procédures de mise à niveau et de restauration spécifiques que vous suivrez dans votre environnement.
 
-<!--Alexandru:drafting for now
+<!--
+Alexandru:drafting for now
 
-![runbook-diagram](assets/runbook-diagram.png) -->
+![runbook-diagram](assets/runbook-diagram.png)
+-->
 
-Adobe vous présente les procédures de restauration et de mise à niveau dans la section [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md), ainsi que les instructions à suivre pour appliquer la mise à niveau lorsque vous effectuez une [mise à niveau sur place](/help/sites-deploying/in-place-upgrade.md). Ces instructions doivent être examinées et prises en compte avec l’architecture de votre système, les personnalisations et la tolérance aux temps d’arrêt afin de déterminer les procédures de basculement et de restauration appropriées que vous exécuterez lors de la mise à niveau. Toute modification de l’architecture ou de la taille du serveur doit être incluse lors de la rédaction de votre runbook personnalisé.
+Adobe vous présente les procédures de restauration et de mise à niveau dans la section [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md), ainsi que les instructions à suivre pour appliquer la mise à niveau lorsque vous effectuez une [mise à niveau sur place](/help/sites-deploying/in-place-upgrade.md). Ces instructions doivent être examinées et prises en compte avec l’architecture de votre système, les personnalisations et la tolérance aux temps d’arrêt afin de déterminer les procédures de basculement et de restauration appropriées que vous exécuterez lors de la mise à niveau. Toute modification de l’architecture ou des tailles de serveur doit être incluse lors de la rédaction de votre runbook personnalisé.
 
 ### Développement d’un plan de mise à niveau {#developing-an-upgrade-plan}
 
 Les résultats des exercices précédents peuvent être utilisés pour créer un plan de mise à niveau couvrant les délais prévus pour vos efforts de test ou de développement, et l’exécution réelle de la mise à niveau.
 
-<!--Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
-![develop-project-plan](assets/develop-project-plan.png) -->
+![develop-project-plan](assets/develop-project-plan.png)
+-->
 
 Un plan de projet complet doit comprendre les éléments suivants :
 
@@ -150,9 +158,11 @@ Un plan de projet complet doit comprendre les éléments suivants :
 
 Adobe a fourni des procédures pour que [Mise à niveau du code et personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) soit compatible avec AEM 6.5 LTS. Pendant l’exécution de ce processus itératif, le runbook doit être modifié selon les besoins.
 
-<!--Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
-![patru_cropped](assets/patru_cropped.png) -->
+![patru_cropped](assets/patru_cropped.png)
+-->
 
 Le processus de développement et de test est généralement itératif. À mesure que des problèmes qui nécessitent des ajustements au processus de mise à niveau sont découverts, veillez à les ajouter à votre runbook de mise à niveau personnalisé. Après plusieurs itérations de test et de correction, le codebase doit être entièrement validé et prêt à être déployé dans l’environnement d’évaluation.
 
@@ -160,11 +170,13 @@ Le processus de développement et de test est généralement itératif. À mesur
 
 Adobe recommande un dernier cycle de tests une fois que le codebase a été certifié par l’équipe d’assurance qualité de votre entreprise. Ce cycle de tests implique la validation de votre runbook dans un environnement d’évaluation suivi de séries de tests d’acceptation par l’utilisateur ou l’utilisatrice, de performances et de sécurité.
 
-<!--Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
-![cinci_cropped](assets/cinci_cropped.png) -->
+![cinci_cropped](assets/cinci_cropped.png)
+-->
 
-Cette étape est essentielle, car c’est la seule fois où vous pouvez valider les étapes du runbook par rapport à un environnement de type production. Une fois l’environnement mis à niveau, il est important de laisser aux utilisateurs et utilisatrices finaux le temps de se connecter et de parcourir les activités qu’ils effectuent lors de l’utilisation du système dans leurs activités quotidiennes. La recherche et la correction de problèmes dans ces domaines avant la mise en production peuvent aider à éviter des pannes de production coûteuses.
+Cette étape est essentielle, car c’est la seule fois où vous pouvez valider les étapes du runbook par rapport à un environnement de type production. Une fois l’environnement mis à niveau, il est important de laisser aux utilisateurs et utilisatrices finaux le temps de se connecter et de parcourir les activités qu’ils effectuent lors de l’utilisation du système dans leurs activités quotidiennes. Trouver et corriger les problèmes dans ces zones avant la mise en service peut aider à éviter des pannes de production coûteuses.
 
 ### Exécuter la mise à niveau {#performing-the-upgrade}
 

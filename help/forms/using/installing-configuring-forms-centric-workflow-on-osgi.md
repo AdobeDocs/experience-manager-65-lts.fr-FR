@@ -1,16 +1,16 @@
 ---
 title: Installation et configuration d’un workflow basé sur l’utilisation de Forms sur OSGi
-description: Installez et configurez les communications interactives AEM Forms pour créer les correspondances commerciales, les documents, les déclarations, les avis, les courriers marketing, les factures et les kits de bienvenue.
+description: Installez et configurez les communications interactives AEM Forms pour créer des correspondances commerciales, des documents, des déclarations, des avis de prestations, des courriers marketing, des factures et des kits de bienvenue.
 topic-tags: installing
 docset: aem65
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,AEM Forms on OSGi
 exl-id: 4b316ade-4431-41fc-bb8a-7262a17fb456
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 98%
+source-wordcount: '1627'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,8 @@ AEM Forms est une plateforme d’entreprise performante. Le workflow basé sur 
 
 >[!NOTE]
 >
->Avec le processus basé sur l’utilisation de Forms sur OSGi, vous pouvez rapidement créer et déployer des processus pour diverses tâches sur la pile OSGi<!--, without having to install the full-fledged Process Management capability on JEE stack-->.<!-- See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities.--><!--After the comparison, If you choose to install the Process Management capability on JEE stack, see [Install or Upgrade AEM Forms on JEE](/help/forms/using/introduction-aem-forms.md) for detailed information about installing and configuring JEE stack and the Process Management capabilities.-->
+>Avec le processus basé sur l’utilisation de Forms sur OSGi, vous pouvez rapidement créer et déployer des processus pour diverses tâches sur la pile OSGi<!--, without having to install the full-fledged Process Management capability on JEE stack-->.
+><!-- See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities.-->><!--After the comparison, If you choose to install the Process Management capability on JEE stack, see [Install or Upgrade AEM Forms on JEE](/help/forms/using/introduction-aem-forms.md) for detailed information about installing and configuring JEE stack and the Process Management capabilities.-->
 
 ## Topologie de déploiement {#deployment-topology}
 
@@ -36,9 +37,9 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. Une 
 
 La topologie suivante est fournie à titre indicatif pour exécuter les fonctionnalités de communications interactives AEM Forms, Correspondence Management, capture de données AEM Forms et des workflows basés sur des formulaires sur OSGi. Pour plus d’informations sur la topologie, voir [Topologies d’architecture et de déploiement pour AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-![topologie-recommandée](assets/recommended-topology.png)
+![recommended-topology](assets/recommended-topology.png)
 
-Le workflow basé sur lʼutilisation de Forms AEM Forms sur OSGi exécute la boîte de réception AEM et l’interface utilisateur de création de modèle de workflow AEM sur les instances d’auteur d’AEM Forms.
+Le workflow basé sur lʼutilisation de formulaires AEM Forms sur OSGi exécute la boîte de réception AEM et l’interface d’utilisation de création de modèle de workflow AEM sur les instances de création d’AEM Forms.
 
 ## Configuration requise {#system-requirements}
 
@@ -104,12 +105,12 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. Le p
    1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.
    2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
 1. Sélectionnez le nom de package applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les conditions du CLUF]**, puis sélectionnez **[!UICONTROL Télécharger]**.
-1. Ouvrez [Package Manager](/help/sites-administering/package-manager.md) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
-1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
+1. Ouvrez le [gestionnaire de modules](/help/sites-administering/package-manager.md) et cliquez sur **[!UICONTROL Charger le package]** pour charger le package.
+1. Sélectionnez le package, puis cliquez sur **[!UICONTROL Installer]**.
 
    Vous pouvez également télécharger le package via le lien direct répertorié dans l’article [Version d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
 
-1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d’apparaître dans le fichier [repertoire-installation-AEM]/crx-quickstart/logs/error.log et que le journal soit stable.
+1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d’apparaître dans le fichier [AEM-Installation-Directory]/crx-quickstart/logs/error.log et que le journal soit stable.
 
    >[!NOTE]
    >

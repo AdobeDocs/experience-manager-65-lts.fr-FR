@@ -1,6 +1,6 @@
 ---
 title: Exécuter AEM Forms en mode de maintenance
-description: Le mode de maintenance est utile lorsque vous réalisez des tâches telles que l’application d’un correctif à un DSC, la mise à niveau d’AEM forms ou l’application d’un pack de services. Découvrez comment exécuter AEM Forms en mode de maintenance.
+description: Le mode de maintenance est utile lorsque vous réalisez des tâches telles que l’application d’un correctif à un DSC, la mise à niveau d’AEM forms ou l’application d’un Service Pack. Découvrez comment exécuter AEM Forms en mode de maintenance.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: d4cfe1c1-8b44-4bd5-b6ec-29e5f70f0674
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '259'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ Le mode de maintenance est utile lorsque vous réalisez des tâches telles que l
 
 Évitez d’appeler des processus lorsque le serveur est en mode de maintenance. Voici en effet ce qui se produirait :
 
-* S’il s’agit d’un processus de longue durée, il est ajouté à la base de données des travaux, mais pas démarré. Lorsque vous quittez le mode de maintenance, AEM Forms traite les travaux de longue durée présents dans sa file d’attente, même si le serveur a été redémarré alors qu’il se trouvait en mode de maintenance.
+* S’il s’agit d’un processus de longue durée, il est ajouté à la base de données des tâches, mais pas démarré. Lorsque vous quittez le mode de maintenance, AEM Forms traite les travaux de longue durée présents dans sa file d’attente, même si le serveur a été redémarré alors qu’il se trouvait en mode de maintenance.
 * S’il s’agit d’un processus de courte durée, il est immédiatement traité.
 
 **Activation d’AEM Forms en mode de maintenance**

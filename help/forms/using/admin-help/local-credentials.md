@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: d297ab09-2b92-442a-8b19-ffee86e24bb9
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 100%
+source-wordcount: '545'
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Pour obtenir des informations et des instructions concernant les extensions Acro
 ## Importation d’informations d’identification {#import-a-credential}
 
 1. Dans la console d’administration, cliquez sur Paramètres >Gestion de Trust Store > Informations d’identification locales.
-1. Cliquez sur Importer, puis, sous Type de Trust Store, sélectionnez l’une des options suivantes :
+1. Cliquez sur Importer. Sous Type de Trust Store, sélectionnez l’une des options suivantes :
 
    * **Informations d’identification de signature de document :** informations d’identification utilisées pour émettre une signature numérique sur un document.
    * **Informations d’identification des extensions Acrobat Reader DC :** certificat numérique spécifique des extensions Acrobat Reader DC qui permet l’activation de droits Adobe Reader dans les documents PDF générés.

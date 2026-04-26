@@ -1,5 +1,5 @@
 ---
-title: Démarrage rapide de l’API Distiller Service Java (SOAP)
+title: Distiller Service Java&trade ; API QuickStart (SOAP)
 description: Découvrez comment le service Distiller transforme les fichiers PostScript, EPS et PRN en PDF, couramment utilisés pour la conversion de gros volumes de documents imprimés en documents électroniques.
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: f38c6b8d-1870-4ff1-b08c-f65bd77bc5d0
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 100%
+source-wordcount: '194'
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Le démarrage rapide de l’API Java™ (SOAP) est disponible pour le service Distiller® :
 
-[Démarrage rapide (mode SOAP) : convertir un fichier PostScript en document PDF à l’aide de Java](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : convertir un fichier PostScript en document PDF à l’aide de l’API Java™](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
 Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée dʼAEM Forms et le mode de connexion doit être défini sur SOAP.
 

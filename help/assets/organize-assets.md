@@ -7,9 +7,9 @@ feature: Asset Management,Search
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: cb7d28ce-c6bd-4760-b5fd-d0ecb3426844
-source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '813'
 ht-degree: 92%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 92%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| Adobe Experience Manager (AEM) as a Cloud Service. | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=fr) |
+| Adobe Experience Manager (AEM) as a Cloud Service. | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 L’ensemble des ressources numériques, des métadonnées et du contenu des documents Microsoft® Office et PDF sont extraits et rendus utilisables dans une requête. Les recherches permettent un filtrage élaboré des ressources et respectent entièrement les autorisations. Les métadonnées sont traitées en détail dans la section Métadonnées de la gestion des ressources numériques.
@@ -47,9 +47,9 @@ La méthode la plus simple pour organiser les ressources consiste à les enregis
 
 ## Organisation de ressources à l’aide de balises {#use-tags-to-organize-assets}
 
-À l’aide des balises telles que les métadonnées, vous pouvez facilement rechercher des ressources, créer des collections à l’aide des résultats de recherche, améliorer le classement de certaines ressources et utiliser des algorithmes d’intelligence artificielle de l’IA d’Adobe pour la découverte de ressources.
+À l’aide des balises telles que les métadonnées, vous pouvez facilement rechercher des ressources, créer des collections à l’aide des résultats de recherche, améliorer le classement de certaines ressources et utiliser les algorithmes d’intelligence artificielle d’Adobe AI pour la découverte de ressources.
 
-[!DNL Adobe Experience Manager Assets] utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise l’IA d’Adobe, l’intelligence artificielle d’Adobe et un framework de machine learning, qui peuvent être entraînés pour reconnaître et appliquer des balises standard et commerciales à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
+[!DNL Adobe Experience Manager Assets] utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe AI, l’intelligence artificielle d’Adobe et la structure de machine learning, qui peuvent être entraînés pour reconnaître et appliquer des balises standard et commerciales à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
 
 Pour plus d’informations, consultez les articles suivants :
 
@@ -63,7 +63,8 @@ Grâce aux collections de ressources dans [!DNL Experience Manager Assets], vous
 
 Pour plus d’informations, consultez [Gérer les collections](manage-collections.md).
 
-<!-- TBD items: add screenshots where applicable
+<!--
+TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.
 Add back links to blog posts by marketing?
 -->

@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5670fede-4567-445e-8eeb-84349405db0e
-source-git-commit: 7e7c9f2414504ade45d6695641e08108afed0bd2
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 97%
+source-wordcount: '1021'
+ht-degree: 98%
 
 ---
 
@@ -640,7 +640,7 @@ Les conditions préalables à la création d’une interface utilisateur distinc
    * **description** : spécifie la description d’une ligne du rapport. Vous pouvez laisser le champ de description vide.
    * **icon** : indique l’image qui représente le rapport de manière graphique. Vous pouvez laisser le champ d’icône vide.
 
-   ![Propriétés du nœud &#x200B;](assets/node_properties_new.png)
+   ![Propriétés du nœud ](assets/node_properties_new.png)
 
    Propriétés du nœud
 

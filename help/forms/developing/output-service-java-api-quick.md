@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: a85333ac-427f-4730-b6d6-04c4b9419883
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1302'
+source-wordcount: '1307'
 ht-degree: 100%
 
 ---
@@ -52,7 +52,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fort
 
 ## Didacticiel de mise en route (mode SOAP) : créer un document PDF à l’aide de l’API Java {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant permet de créer un document PDF nommé *Loan.pdf*. Ce document PDF est basé sur une conception de formulaire nommée *Loan.xdp* et un fichier de données XML nommé *Loan.xml*. Le fichier *Loan.pdf* est enregistré dans le dossier C:\Adobe, situé sur le serveur dʼapplications J2EE hébergeant AEM Forms, et non sur lʼordinateur client. (Consultez la section [Créer des documents PDF](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)).
+L’exemple de code Java suivant crée un document PDF nommé *Loan.pdf*. Ce document PDF est basé sur une conception de formulaire nommée *Loan.xdp* et un fichier de données XML nommé *Loan.xml*. Le fichier *Loan.pdf* est enregistré dans le dossier C:\Adobe, situé sur le serveur dʼapplications J2EE hébergeant AEM Forms, et non sur lʼordinateur client. (Consultez la section [Créer des documents PDF](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)).
 
 ```java
  /*
@@ -170,7 +170,7 @@ L’exemple de code Java suivant permet de créer un document PDF nommé *Loan.p
 
 ## Didacticiel de mise en route (mode SOAP) : créer un document PDF basé sur un fichier XDP d’application à l’aide de l’API Java {#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api}
 
-L’exemple de code Java suivant crée un document PDF nommé *Loan.pdf*. Ce document PDF est basé sur une conception de formulaire nommée *Loan.xdp* et un fichier de données XML nommé *Loan.xml*. Le fichier XDP est déployé au sein d’une application AEM Forms nommée `Applications/FormsApplication`. Notez que le chemin dʼaccès à lʼURI est `repository:///Applications/FormsApplication/1.0/FormsFolder/`. Le fichier *Loan.pdf* est enregistré dans le dossier C:\Adobe, situé sur le serveur dʼapplications J2EE hébergeant AEM Forms, et non sur l’ordinateur client. (Consultez la section [Créer des documents PDF](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)).
+L’exemple de code Java suivant crée un document PDF nommé *Loan.pdf*. Ce document PDF est basé sur une conception de formulaire nommée *Loan.xdp* et un fichier de données XML nommé *Loan.xml*. Le fichier XDP est déployé au sein d’une application AEM Forms nommée `Applications/FormsApplication`. Notez que le chemin dʼaccès à lʼURI est `repository:///Applications/FormsApplication/1.0/FormsFolder/`. Le fichier *Loan.pdf* est enregistré dans le dossier C:\Adobe, situé sur le serveur dʼapplications J2EE hébergeant AEM Forms, et non sur lʼordinateur client. (Consultez la section [Créer des documents PDF](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)).
 
 >[!NOTE]
 >
@@ -445,7 +445,7 @@ Le fichier *Loan.pdf* est enregistré dans le dossier C:\Adobe, situé sur le se
 
 ## Didacticiel de mise en route (mode SOAP) : créer un document PDF à l’aide de l’API Java {#quick_start_soap_mode_creating_a_pdf_document_using_the_java_api-1}
 
-L’exemple de code Java suivant permet de créer un document PDF nommé *Loan.pdf*. Ce document PDF est basé sur une conception de formulaire nommée *Loan.xdp* et un fichier de données XML nommé *Loan.xml*. Le fichier *Loan.pdf* est enregistré dans le dossier C:\Adobe, situé sur le serveur dʼapplications J2EE hébergeant AEM Forms, et non sur lʼordinateur client. (Consultez la section [Créer des documents PDF](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)).
+L’exemple de code Java suivant crée un document PDF nommé *Loan.pdf*. Ce document PDF est basé sur une conception de formulaire nommée *Loan.xdp* et un fichier de données XML nommé *Loan.xml*. Le fichier *Loan.pdf* est enregistré dans le dossier C:\Adobe, situé sur le serveur dʼapplications J2EE hébergeant AEM Forms, et non sur lʼordinateur client. (Consultez la section [Créer des documents PDF](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)).
 
 ```java
  /*

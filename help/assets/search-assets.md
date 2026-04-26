@@ -7,9 +7,9 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
-source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '5633'
+source-wordcount: '5797'
 ht-degree: 98%
 
 ---
@@ -52,7 +52,7 @@ Familiarisez-vous avec l’interface de recherche et les actions disponibles.
 
 *Figure : Présentation de l’interface des résultats de recherche [!DNL Experience Manager Assets].*
 
-**A.** Enregistrer la recherche en tant que collection dynamique. **B.** Filtres ou prédicats pour limiter les résultats de recherche. **C.** Afficher les fichiers, les dossiers ou les deux. **D.** Cliquer sur Filtres pour ouvrir ou fermer le rail de gauche. **E.** L’emplacement de recherche est la gestion des ressources numériques. **F.** Champ Omni-recherche avec mot-clé de recherche fourni par l’utilisateur. **G.** Sélectionner les résultats de recherche chargés. **H.** Nombre de résultats de recherche affichés par rapport au nombre total de résultats de recherche. **I.** Fermer la recherche. **J.** Basculer entre les vues Carte et Liste.
+**A.** Enregistrer la recherche en tant que collection dynamique. **B.** Filtres ou prédicats pour limiter les résultats de recherche. **C.** Afficher les fichiers, les dossiers ou les deux. **D.** Cliquer sur Filtres pour ouvrir ou fermer le rail de gauche. **E.** L’emplacement de recherche est la gestion des ressources numériques. **F.** Champ Omnisearch avec mot-clé de recherche fourni par l’utilisateur. **G.** Sélectionner les résultats de recherche chargés. **H.** Nombre de résultats de recherche affichés par rapport au nombre total de résultats de recherche. **I.** Fermer la recherche. **J.** Basculer entre les vues Carte et Liste.
 
 ### Facettes de recherche dynamique {#dynamicfacets}
 
@@ -101,7 +101,7 @@ Lorsque vous commencez à saisir un mot-clé, [!DNL Experience Manager] suggère
 * Titre de la ressource. (mappage avec `jcr:content/metadata/dc:title`)
 * Description de la ressource. (mappage avec `jcr:content/metadata/dc:description`)
 * Titre dans le référentiel JCR. La valeur peut être mappée au titre de la ressource. (mappage avec `jcr:content/jcr:title`)
-* Description dans le référentiel JCR. La valeur peut être mappée à la description de la ressource. (mappage vers `jcr:content/jcr:description`)
+* Description dans le référentiel JCR. La valeur peut être mappée à la description de la ressource. (mappage avec `jcr:content/jcr:description`)
 
 Pour recevoir des suggestions pour plusieurs mots-clés de recherche, continuez à saisir tous les mots-clés sans sélectionner de suggestion pour un seul mot-clé.
 
@@ -125,7 +125,7 @@ Vous pouvez améliorer la pertinence des mots-clés pour des ressources particul
 
 Vous pouvez l’utiliser à votre avantage en améliorant le classement de certaines ressources dans les résultats de recherche du mot-clé ciblé. Voir la vidéo d’exemple ci-dessous. Pour plus d’informations, voir [Recherche dans [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3410336/?captions=fre_fr&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Vidéo : Découvrez comment les résultats de recherche sont classés et comment le classement peut être influencé.*
 
@@ -175,19 +175,20 @@ Vous pouvez rechercher des ressources numériques en fonction des valeurs exacte
 | Date d’expiration | expire:YYYY-MM-DDTHH |
 | Heure d’activation | ontime:YYYY-MM-DDTHH |
 | Heure de désactivation | hors temps:YYYY-MM-DDTHH |
-| Plage de temps (expiration : dateontime,offtime) | champ de facette : lowerbound..upperbound |
+| Plage de temps (expiration : dateontime,offtime) | champ de facette : lowerbound.upperbound |
 | Chemin | /content/dam/&lt;nom_dossier> |
 | Titre du PDF | pdftitle:&quot;Adobe Document&quot; |
 | Objet | subject:&quot;Training&quot; |
 | Balises | tags:&quot;Location And Travel&quot; |
 | Type | type:&quot;image\png&quot; |
-| Largeur de l’image | largeur:lowerbound..upperbound |
+| Largeur de l’image | width:lowerbound..upperbound |
 | Hauteur de l’image | hauteur:lowerbound..upperbound |
 | Personne | personne :John |
 
 Les propriétés `path`, `limit`, `size` et `orderby` ne peuvent pas être combinées à l’aide de l’opérateur `OR` avec une autre propriété.
 
-<!-- TBD: Where are the limit, size, orderby properties defined?
+<!--
+TBD: Where are the limit, size, orderby properties defined?
 -->
 
 Le mot-clé d’une propriété générée par un utilisateur correspond au libellé de son champ dans l’éditeur de propriétés en minuscules et sans espace.
@@ -218,7 +219,7 @@ Les professionnels de la création utilisent l’application de bureau pour rend
 
 Les utilisateurs métiers et les spécialistes marketing utilisent Brand Portal pour partager efficacement et en toute sécurité les ressources numériques approuvées avec leurs équipes internes étendues, partenaires et revendeurs. Voir [Recherche de ressources sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=fr).
 
-### Rechercher des images [!DNL Adobe Stock]  {#adobe-stock1}
+### Rechercher des images [!DNL Adobe Stock] {#adobe-stock1}
 
 Dans l’interface utilisateur d’[!DNL Experience Manager], les utilisateurs peuvent rechercher des ressources Adobe Stock et obtenir des licences pour les ressources requises. Ajoutez `Location: Adobe Stock` dans le champ OmniSearch. Vous pouvez également utiliser le panneau **[!UICONTROL Filtres]** pour trouver toutes les ressources qui sont ou non sous licence, ou effectuer des recherches dans une ressource spécifique à l’aide du numéro de fichier Adobe Stock. Consultez la section [Gestion des images  [!DNL Adobe Stock] dans  [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
@@ -291,7 +292,7 @@ La fonctionnalité de recherche peut présenter des limitations de performances 
 * La recherche en texte intégral prend en charge les opérateurs tels que `-` et `^`. Pour rechercher des informations sous forme de chaînes littérales, indiquez la phrase de recherche entre guillemets. Par exemple, utilisez `"Notebook - Beauty"` au lieu de `Notebook - Beauty`.
 * Si les résultats de recherche sont trop nombreux, limitez la [portée de la recherche](#scope) pour trouver les ressources souhaitées. Cela fonctionne mieux lorsque vous avez une idée de la meilleure manière de rechercher les ressources que vous recherchez, par exemple un type de fichier, un emplacement ou des métadonnées spécifiques.
 
-* **Balisage** : les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces. Le balisage permet de propager la taxonomie appropriée à d’autres utilisateurs et workflows. [!DNL Experience Manager] propose des méthodes pour baliser automatiquement les ressources à l’aide des services d’IA d’Adobe qui améliorent constamment le balisage de vos ressources avec l’utilisation et la formation. Lorsque vous recherchez des ressources, les balises intelligentes sont prises en compte si la fonction est activée sur votre compte. Cela fonctionne avec la fonctionnalité de recherche intégrée. Voir [Comportement de la recherche](#searchbehavior). Pour optimiser l’ordre d’affichage des résultats de recherche, vous pouvez [améliorer le classement](#searchrank) de quelques ressources sélectionnées.
+* **Balisage** : les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces. Le balisage permet de propager la taxonomie appropriée à d’autres utilisateurs et workflows. [!DNL Experience Manager] propose des méthodes pour baliser automatiquement les ressources à l’aide des services Adobe AI qui améliorent constamment le balisage de vos ressources avec utilisation et formation. Lorsque vous recherchez des ressources, les balises intelligentes sont prises en compte si la fonction est activée sur votre compte. Cela fonctionne avec la fonctionnalité de recherche intégrée. Voir [Comportement de la recherche](#searchbehavior). Pour optimiser l’ordre d’affichage des résultats de recherche, vous pouvez [améliorer le classement](#searchrank) de quelques ressources sélectionnées.
 
 * **Indexation** : seules les métadonnées et les ressources indexées sont renvoyées dans les résultats de recherche. Pour une meilleure couverture et de meilleures performances, veillez à une indexation appropriée et suivez les bonnes pratiques. Voir [Indexation](#searchindex).
 
@@ -316,7 +317,7 @@ Utilisez des guillemets doubles autour des mots-clés pour rechercher des ressou
 
 *Figure : Exemple d’utilisation d’un caractère générique (astérisque) dans la recherche de ressources.*
 
-**Recherche avec un caractère générique (point d’interrogation)** : pour élargir la recherche, utilisez un ou plusieurs caractères « ? ». pour correspondre au nombre exact de caractères. Par exemple, dans l’illustration suivante :
+**Recherche avec point d’interrogation générique** : pour élargir la recherche, utilisez un ou plusieurs caractères « ? » pour correspondre au nombre exact de caractères. Par exemple, dans l’illustration suivante :
 
 * la requête `run???` ne correspond à aucune ressource ;
 
@@ -491,5 +492,5 @@ Liez et dissociez les ressources qui s’affichent dans les résultats de recher
 
 >[!MORELIKETHIS]
 >
->* Guide de mise en œuvre des recherches[[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr)
+>* Guide de mise en œuvre des recherches[[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr)
 >* [Configuration avancée pour améliorer les résultats de recherche](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/search-and-discovery/search-boost)

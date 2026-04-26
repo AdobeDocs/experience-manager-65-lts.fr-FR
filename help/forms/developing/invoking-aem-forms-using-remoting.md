@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,Workbench
 hide: true
 hidefromtoc: true
 exl-id: 37f5efaa-db0b-4035-987d-4140fc5a97be
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '4602'
+source-wordcount: '4651'
 ht-degree: 99%
 
 ---
@@ -90,7 +90,7 @@ Pour appeler par programmation les processus d’AEM Forms à l’aide de Remot
 
 [Appeler AEM Forms à l’aide d’AEM Forms Remoting (obsolète pour AEM Forms)](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
-[Gérer des documents avec AEM Forms Remoting (obsolète pour AEM Forms)](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting)
+[Gérer des documents avec AEM Forms Remoting (obsolète pour AEM Forms)](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting)
 
 [Appeler un processus de courte durée en transmettant un document non sécurisé à l’aide d’AEM Forms Remoting (obsolète pour AEM Forms)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
 
@@ -137,7 +137,7 @@ docRef.text = "Text for my document";  // Optionally, you can override the ser
 >Si AEM Forms est configuré pour autoriser le chargement de documents non sécurisés, vous pouvez utiliser un utilisateur qui ne dispose pas du rôle Utilisateur de l’application de chargement de documents pour charger un document. Un utilisateur peut également disposer de l’autorisation Chargement de document. Cependant, si AEM Forms est configuré pour autoriser uniquement les documents sécurisés, assurez-vous que l’utilisateur dispose du rôle Utilisateur de l’application de chargement de document ou de l’autorisation Chargement de document. (Voir [Configurer AEM Forms pour accepter des documents sécurisés et non sécurisés](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).
 
 Vous utilisez les fonctionnalités de chargement Flash standard pour l’URL de chargement désignée : `https://SERVER:PORT/remoting/lcfileupload`. Vous pouvez ensuite utiliser l’objet `DocumentReference` où un paramètre d’entrée de type `Document` est attendu
-` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`Le didacticiel de mise en route de Remoting utilise le servlet de chargement Remoting pour transmettre un fichier PDF au processus `MyApplication/EncryptDocument`. (Voir [Appeler un processus de courte durée en transmettant un document non sécurisé à l’aide d’AEM Forms Remoting (obsolète pour AEM Forms)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
+` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }` Le didacticiel de mise en route Remoting utilise le servlet de chargement Remoting pour transmettre un fichier PDF au processus `MyApplication/EncryptDocument`. (Voir [Appeler un processus de courte durée en transmettant un document non sécurisé à l’aide d’AEM Forms Remoting (obsolète pour AEM Forms)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
 
 ```java
  
@@ -182,7 +182,7 @@ Une application cliente reçoit un objet de type `mx.rpc.livecycle.DocumentRefer
 
 [Inclure le fichier de bibliothèque Flex AEM Forms](invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)
 
-[Appeler un processus de courte durée en transmettant un document non sécurisé à l’aide d’AEM Forms Remoting (obsolète pour AEM Forms)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
+[Appeler un processus de courte durée en transmettant un document non sécurisé à l’aide d’AEM Forms Remoting (obsolète pour AEM Forms)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
 
 [Authentifier des applications client créées avec Flex](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
 
@@ -889,7 +889,7 @@ Si AEM Forms est configuré pour autoriser uniquement le chargement de documents
 
 [Inclure le fichier de bibliothèque Flex AEM Forms](invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)
 
-[Appeler un processus de courte durée en transmettant un document non sécurisé à l’aide d’AEM Forms Remoting (obsolète pour AEM Forms)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
+[Appeler un processus de courte durée en transmettant un document non sécurisé à l’aide d’AEM Forms Remoting (obsolète pour AEM Forms)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
 
 [Authentifier des applications client créées avec Flex](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
 
@@ -1276,7 +1276,7 @@ Ce démarrage rapide contient une feuille de style nommée *bank.css*. Le code s
 
 [Inclure le fichier de bibliothèque Flex AEM Forms](invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)
 
-[Appeler un processus de courte durée en transmettant un document non sécurisé à l’aide d’AEM Forms Remoting (obsolète pour AEM Forms)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
+[Appeler un processus de courte durée en transmettant un document non sécurisé à l’aide d’AEM Forms Remoting (obsolète pour AEM Forms)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
 
 [Authentifier des applications client créées avec Flex](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
 

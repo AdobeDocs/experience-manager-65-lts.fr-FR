@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 4d35b174-40e5-4d2a-89ad-c3891f206e7e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '871'
 ht-degree: 98%
 
 ---
@@ -272,7 +272,7 @@ L’exemple de code Java suivant récupère les noms des champs de signature dan
 
 ## Didacticiel de mise en route (mode SOAP) : modification d’un champ de signature à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
-L’exemple de code Java suivant modifie un champ de signature nommé SignatureField1 en verrouillant tous les champs du formulaire lorsqu’une signature est appliquée au champ de signature et en s’assurant qu’aucune modification n’est autorisée. Une fois le document PDF, qui contient le champ de signature modifié, renvoyé par le service Signature, il est enregistré en tant que fichier PDF nommé LoanSig.pdf. (Cet exemple remplace le fichier PDF transmis au service Signature.) (Voir [Modification des champs de signature](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
+L’exemple de code Java suivant modifie un champ de signature nommé SignatureField1 en verrouillant tous les champs du formulaire lorsqu’une signature est appliquée au champ de signature et en s’assurant qu’aucune modification n’est autorisée. Une fois le document PDF, qui contient le champ de signature modifié, renvoyé par le service Signature, il est enregistré en tant que fichier PDF nommé LoanSig.pdf. (Cet exemple remplace le fichier PDF transmis au service Signature.) (Voir [Modifier les champs de signature](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
 
 ```java
  /*

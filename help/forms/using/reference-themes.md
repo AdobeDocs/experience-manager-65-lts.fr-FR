@@ -8,9 +8,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: 2a80a7f6-3907-45f3-8945-c3bfba018580
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '548'
 ht-degree: 100%
 
 ---
@@ -42,9 +42,11 @@ Le thème Beryl est utilisé par le formulaire adaptatif We.Gov et souligne l’
 
 ![Thème Beryl](assets/beryl.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/beryl-1.png)-->
+](assets/beryl-1.png)
+-->
 
 ## Exec {#exec}
 
@@ -52,9 +54,11 @@ Le thème Exec évite les remplissages d’arrière-plan de couleur unie pour me
 
 ![Thème Exec](assets/exec.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/exec-1.png)-->
+](assets/exec-1.png)
+-->
 
 ## Exec Light {#exec-light}
 
@@ -62,9 +66,11 @@ Le thème Exec Light utilise l’espace blanc pour créer une expérience transp
 
 ![Thème Exec light](assets/exec-light.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/exec-light-1.png)-->
+](assets/exec-light-1.png)
+-->
 
 ## Liberty {#liberty}
 
@@ -72,9 +78,11 @@ Le thème Liberty utilise une approche minimaliste pour mettre en évidence ce q
 
 ![Thème Liberty](assets/liberty.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/liberty-1.png)-->
+](assets/liberty-1.png)
+-->
 
 ## Tranquil {#tranquil}
 
@@ -82,9 +90,11 @@ Le thème Tranquil fournit des nuances claires et sombres du jeu de couleurs Tra
 
 ![Thème Tranquil](assets/tranquil.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tranquil-1.png)-->
+](assets/tranquil-1.png)
+-->
 
 ## Ultramarine {#ultramarine}
 
@@ -100,9 +110,11 @@ Le thème Urbane met en évidence une apparence minimaliste et fonctionnelle de 
 
 ![Thème Urbane](assets/urbane.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/urbane-1.png)-->
+](assets/urbane-1.png)
+-->
 
 ## U.S. Web Design Standards {#u-s-web-design-standards}
 
@@ -110,6 +122,8 @@ Le thème U.S. Web Design Standards, comme le nom l’indique, utilise les polic
 
 ![Thème U.S. Web Design Standards](assets/us-web-standards.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/usgov.png)-->
+](assets/usgov.png)
+-->

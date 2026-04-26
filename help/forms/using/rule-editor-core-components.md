@@ -5,23 +5,23 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 01fa9744-775e-4185-aba5-e132011b1b89
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '5588'
-ht-degree: 100%
+source-wordcount: '5734'
+ht-degree: 98%
 
 ---
 
 # Ajout de règles à un formulaire adaptatif basé sur des composants principaux {#adaptive-forms-rule-editor}
 
-Cet article contient les dernières fonctionnalités de l’éditeur de règles des composants principaux de formulaires adaptatifs, à savoir les suivantes :
+Cet article contient les dernières fonctionnalités de l’éditeur de règles des composants principaux de formulaires adaptatifs, à savoir :
 * Prise en charge de l’implémentation de conditions imbriquées avec la fonctionnalité When-then-else
 * Validation ou réinitialisation des panneaux et des formulaires, y compris des champs
 * Prise en charge des fonctionnalités JavaScript modernes telles que les fonctions let et arrow (prise en charge d’ES10) dans les fonctions personnalisées
 
 La fonctionnalité d’éditeur de règles permet aux utilisateurs et utilisatrices professionnels et aux développeurs et développeuses de formulaires de créer des règles sur des objets de formulaire adaptatif. Ces règles déterminent les actions à déclencher sur des objets de formulaire en fonction des conditions prédéfinies, des entrées utilisateur et des actions de l’utilisateur ou de l’utilisatrice sur le formulaire. Cela permet de rationaliser davantage l’expérience de remplissage du formulaire en assurant précision et vitesse.
 
-L’éditeur de règles fournit une interface utilisateur intuitive et simplifiée pour la création de règles. L’éditeur de règles met un éditeur visuel à disposition de tous les utilisateurs.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Vous pouvez effectuer différentes actions sur des objets de formulaire adaptatif utilisant des règles, comme les suivantes :
+L’éditeur de règles fournit une interface utilisateur intuitive et simplifiée pour la création de règles. L’éditeur de règles propose un éditeur visuel pour tous les utilisateurs.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Voici quelques-unes des actions clés que vous effectuez sur les objets de formulaire adaptatif utilisant des règles :
 
 * Afficher ou masquer un objet
 * Activer ou désactiver un objet
@@ -95,7 +95,8 @@ L’éditeur de règles fournit les opérateurs logiques et les événements sui
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
 * **Step Completion(event):** Returns true when a step of a rule completes.
 * **Successful Submission(event):** Returns true on successful submission of data to a form data model.
-* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model. -->
+* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model.
+-->
 
 ## Types de règle disponibles dans l’éditeur de règles {#available-rule-types-in-rule-editor}
 
@@ -117,7 +118,7 @@ En clair, un type de règle Lorsque standard est structuré comme suit :
 
 `Action 2 on Object B;`
 `AND`
-`Action 3 on Object C` ;
+`Action 3 on Object C`;
 
 `Else, do the following:`
 
@@ -184,13 +185,14 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 1. Add the **key** and **value** pair as follows:
    * key: fd:changeEventBehaviour
    * value: deps
-1. Click **[!UICONTROL Done]**. -->
+1. Click **[!UICONTROL Done]**.
+-->
 
 Si plusieurs champs autorisés de la fonctionnalité de condition Lorsque rencontrent des problèmes, suivez les étapes de dépannage comme suit :
 
 1. Ouvrez le formulaire en mode d’édition.
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
-1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/using/assets/configure-icon.svg). La boîte de dialogue du conteneur de formulaires adaptatifs s’ouvre.
+1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/using/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
 1. Cliquez sur Terminé et enregistrez à nouveau la boîte de dialogue.
 
 **[!UICONTROL Masquer]** Masque l’objet spécifié.
@@ -256,7 +258,8 @@ La figure suivante illustre un exemple d’activation dynamique de la case à co
 
 **[!UICONTROL Sortie de fonction]** Définit une règle basée sur des fonctions prédéfinies ou des fonctions personnalisées.
 
-**[!UICONTROL Accéder à]** Accède à d’autres <!--Interactive Communications,-->formulaires adaptatifs, d’autres ressources, comme des images ou des fragments de document ou une URL externe. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL Accéder à]** Permet d’accéder à d’autres ressources <!--Interactive Communications,--> de Forms adaptatif, d’autres ressources telles que des images ou des fragments de document ou une URL externe.
+<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 **[!UICONTROL Distribuer l’événement]** Déclenche des actions ou des comportements spécifiques en fonction de conditions ou d’événements prédéfinis.
 
@@ -270,10 +273,10 @@ Notez que le type de règle **Définir la valeur de** n’est pas disponible pou
 Définir la valeur d’Objet A sur :
 
 (chaîne ABC) OU
-(propriété d’objet X de l’objet C) OU
+(propriété d&#39;objet X de l&#39;objet C) OU
 (valeur d’une fonction) OU
 (valeur d’une expression mathématique) OU
-(valeur de sortie d’un service de modèle de données) ;
+(valeur de sortie d’un service de modèle de données);
 
 Lorsque (facultatif) :
 
@@ -385,7 +388,8 @@ To define a rule based on a form data model:
 1. Select a data model object property from the **[!UICONTROL Display Value]** drop-down list. The number of checkboxes in the Adaptive Form is derived from the number of instances defined for that property in the database.
 1. Select a data model object property from the **[!UICONTROL Save Value]** drop-down list.
 
-![FDM set options](assets/fdm_set_options_new.png) -->
+![FDM set options](assets/fdm_set_options_new.png)
+-->
 
 ## Présentation de l’interface utilisateur de l’éditeur de règles {#understanding-the-rule-editor-user-interface}
 
@@ -492,9 +496,11 @@ Pour créer des règles :
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
-<!--  In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
+<!--
+In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
 
-   ![Radio button values from rule editor](assets/radio-button-values.png)-->
+   ![Radio button values from rule editor](assets/radio-button-values.png)
+-->
 
 1. Dans le champ **[!UICONTROL Saisir une chaîne]** de la règle, sélectionnez **Marié ou mariée** dans le menu déroulant.
 
@@ -532,7 +538,8 @@ Pour créer des règles :
 <!--
 1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
 
-   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png) -->
+   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png)
+-->
 
 >[!NOTE]
 >
@@ -588,7 +595,7 @@ Pour créer des règles :
 
    * Sélectionnez Chaîne dans l’autre champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]** et spécifiez **[!UICONTROL Marié(e)]** dans le champ **[!UICONTROL Saisissez la chaîne]**.
 
-   Enfin, la règle s’affiche comme suit dans l’éditeur de règles. ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16-cc.png)
+   Enfin, la règle s’affiche comme suit dans l’éditeur de règles.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16-cc.png)
 
 1. Sélectionnez **[!UICONTROL Terminé]**. La règle est enregistrée.
 
@@ -600,16 +607,17 @@ Vous pouvez également utiliser la règle Définir la valeur de pour calculer l�
 
 ![write-rules-visual-editor-18](assets/write-rules-visual-editor-18-cc.png)
 
-De même, vous pouvez écrire une règle combinée pour contrôler la visibilité du champ Salaire du conjoint ou de la conjointe lorsque la valeur d’état civil est Marié ou mariée à l’aide de la condition Else.
+Vous pouvez créer une règle combinée pour contrôler la visibilité du champ Salaire de l’époux ou de l’épouse et calculer l’éligibilité au prêt lorsque la valeur d’état civil est Marié ou Mariée à l’aide de la condition Else.
 
 ![write-rules-visual-editor-19](assets/write-rules-visual-editor-19-cc.png)
 
 
-<!-- ### Using code editor {#using-code-editor}
+<!--
+### Using code editor {#using-code-editor}
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -711,7 +719,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=fr#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -820,7 +828,7 @@ Vous pouvez modifier l’ordre d’une règle en appuyant sur ![sort-rules](asse
 
 * **Supprimer** : pour supprimer une règle, sélectionnez-la puis choisissez **[!UICONTROL Supprimer]**.
 
-* **Activer/désactiver** : lorsque vous devez suspendre temporairement l’utilisation d’une règle, vous pouvez sélectionner une ou plusieurs règles et appuyer sur **[!UICONTROL Désactiver]** dans la barre d’outils Actions pour les désactiver. Si une règle est désactivée, elle ne s’exécute pas lors de l’exécution. Pour activer une règle désactivée, vous pouvez la sélectionner puis choisir Activer dans la barre d’outils Actions. La colonne de statut de la règle indique si la règle est activée ou désactivée.
+* **Activer/désactiver** : lorsque vous devez suspendre temporairement l’utilisation d’une règle, vous pouvez sélectionner une ou plusieurs règles et appuyer sur **[!UICONTROL Désactiver]** dans la barre d’outils Actions pour les désactiver. Si une règle est désactivée, elle ne s’exécute pas lors de l’exécution. Pour activer une règle désactivée, vous pouvez la sélectionner puis choisir Activer dans la barre d’outils Actions. La colonne Statut de la règle indique si la règle est activée ou désactivée.
 
 ![Désactiver la règle](assets/disablerule-cc.png)
 
@@ -886,17 +894,19 @@ Lorsque l’utilisateur indique qu’il habite à l’adresse résidentielle act
 
 ![Plus de justificatif demandé](assets/additionalproofrequested.png)
 
-<!-- ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
+<!--
+## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
 
 In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.1 Forms] feature pack 1, form authors and developers used to write expressions in the Scripts tab of the Edit component dialog to add dynamic behavior to Adaptive Forms. The Scripts tab is now replaced by the rule editor.
 
-Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
+Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor.
+-->
 
 ## Exemples de règles {#example}
 
 ### Appeler service de modèle de données de formulaire {#invoke}
 
-Imaginons un service web `GetInterestRates` prenant le montant du prêt, la durée et la cote de solvabilité du demandeur ou de la demandeuse comme valeurs d’entrée et renvoyant un plan de prêt incluant le montant des mensualités et le taux d’intérêt. Vous créez un modèle de données de formulaire à l’aide du service web comme source de données. Vous ajoutez des objets de modèle de données et un service `get` au modèle de formulaire. Le service s’affiche sur l’onglet Services du modèle de données de formulaire. Ensuite, créez un formulaire adaptatif incluant des champs des objets de modèle de données pour capturer les données saisies par l’utilisateur pour le montant et la durée du prêt et la cote de solvabilité. Ajoutez un bouton qui demande au service Web d’extraire les détails du plan. La sortie est renseignée dans les champs appropriés.
+Imaginons un service web `GetInterestRates` prenant le montant du prêt, la durée et la cote de solvabilité du demandeur ou de la demandeuse comme valeurs d’entrée et renvoyant un plan de prêt incluant le montant des mensualités et le taux d’intérêt. Vous créez un modèle de données de formulaire à l’aide du service web comme source de données. Vous ajoutez des objets de modèle de données et un service `get` au modèle de formulaire. Le service s’affiche sur l’onglet Services du modèle de données de formulaire. Ensuite, créez un formulaire adaptatif incluant des champs des objets de modèle de données pour capturer les données saisies pour le montant et la durée du prêt et la cote de solvabilité. Ajoutez un bouton qui demande au service Web d’extraire les détails du plan. La sortie est renseignée dans les champs appropriés.
 
 La règle ci-dessous indique comment configurer l’action Appel du service pour accomplir l’exemple de scénario.
 
@@ -910,7 +920,7 @@ La règle ci-dessous indique comment configurer l’action Appel du service pour
 
 Dans un formulaire de demande de prêt, vous voulez savoir si la personne demandant le prêt est un client ou une cliente existante ou non. En fonction des informations fournies par l’utilisateur ou l’utilisatrice, le champ ID du client ou de la cliente doit s’afficher ou se masquer. En outre, vous souhaitez placer le focus sur le champ d’ID de client ou cliente si l’utilisateur ou l’utilisatrice est un client ou une cliente existant. Le formulaire de demande de prêt est composé des éléments suivants :
 
-* Un bouton radio,**[!UICONTROL Êtes-vous déjà client(e) chez Geometrixx ?]**, qui propose les options [!UICONTROL Oui] et [!UICONTROL Non]. La valeur Oui est **0** ; la valeur Non est **1**.
+* Un bouton radio, **[!UICONTROL Êtes-vous déjà client Geometrixx ?]**, qui propose les options [!UICONTROL Oui] et [!UICONTROL Non]. La valeur Oui est **0** ; la valeur Non est **1**.
 
 * Un champ de texte, **[!UICONTROL ID de client Geometrixx]**, pour indiquer l’ID du client/de la cliente.
 
@@ -922,11 +932,13 @@ Règle dans l’éditeur visuel
 
 Dans l’exemple de règle, l’instruction suivante dans la section Lorsque est la condition qui, si elle renvoie True, exécute les actions spécifiées dans la section Alors.
 
-<!-- The rule appears as follows in the code editor.
+<!--
+The rule appears as follows in the code editor.
 
 ![when-rule-example-code](assets/when-rule-example-code.png) 
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### Utilisation d’une sortie de fonction dans une règle {#using-a-function-output-in-a-rule}
 
@@ -946,11 +958,13 @@ Maintenant, vous souhaitez ajouter des quantités spécifiées dans la colonne Q
 
 Règle dans l’éditeur visuel
 
-<!-- he rule appears as follows in the code editor.
+<!--
+he rule appears as follows in the code editor.
 
 ![example-function-output-code](assets/example-function-output-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### Validation d’une valeur de champ à l’aide d’une expression {#validating-a-field-value-using-expression}
 
@@ -959,8 +973,10 @@ Dans le formulaire de bon de commande décrit dans l’exemple précédent, vous
 ![Example-validate](assets/example-validate.png)
 Règle dans l’éditeur visuel
 
-<!-- The rule appears as follows in the code editor.
+<!--
+The rule appears as follows in the code editor.
 
 ![example-validate-code](assets/example-validate-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->

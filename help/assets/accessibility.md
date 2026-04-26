@@ -5,10 +5,10 @@ feature: Asset Management
 role: User,Developer,Leader
 solution: Experience Manager, Experience Manager Assets
 exl-id: f9540bfb-1c4f-41f0-9caa-ef9265225648
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1882'
-ht-degree: 56%
+source-wordcount: '1933'
+ht-degree: 57%
 
 ---
 
@@ -55,7 +55,7 @@ Les utilisateurs en situation de handicap font fréquemment appel au matériel e
 * Matériel d’assistance, y compris commandes de commutation, affichages en braille actualisables et autres appareils d’entrée sur ordinateur.
 * Outils d’agrandissement de l’interface utilisateur.
 
-## Cas d’utilisation d’[!DNL Experience Manager Assets] accessibles  {#accessible-assets-use-cases}
+## Cas d’utilisation d’[!DNL Experience Manager Assets] accessibles {#accessible-assets-use-cases}
 
 Dans [!DNL Experience Manager], les fonctionnalités d’accessibilité répondent à deux exigences clés des utilisateurs de [!DNL Experience Manager] et de leurs clients.
 
@@ -68,7 +68,8 @@ Les principales fonctionnalités d’[!DNL Assets] sont plus accessibles qu’au
 
 De nombreux éléments de l’interface utilisateur cliquables ou exploitables à l’aide d’un pointeur peuvent également être utilisés à l’aide d’un clavier. À l’aide du clavier, les utilisateurs peuvent se concentrer sur les éléments de l’interface et prendre les mesures appropriées. Les utilisateurs peuvent directement utiliser des raccourcis clavier pour déclencher une commande ou une action sans avoir à se concentrer sur les éléments de l’interface utilisateur et la déclencher à l’aide du clavier. Par exemple, les utilisateurs peuvent ouvrir la chronologie d’une ressource dans la partie gauche de l’interface utilisateur. Accédez à la commande de l’interface utilisateur à l’aide du clavier, puis sélectionnez `Return` et `Alt + 2` raccourci clavier.
 
-<!-- TBD items:
+<!--
+TBD items:
 
 * The option to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
@@ -111,7 +112,8 @@ Une fois connectés, les utilisateurs de la gestion des ressources numériques p
 
 Si un utilisateur développe l’option d’aide ou de profil utilisateur à partir du menu, le lecteur d’écran annonce l’option ou le statut approprié. Si un utilisateur développe l’option de profil utilisateur, les options disponibles peuvent être sélectionnées à l’aide du clavier. Par exemple, un utilisateur peut emprunter l’identité d’un autre utilisateur. Si un utilisateur recherche une chaîne à partir de l’option [!UICONTROL Aide], un narrateur annonce « Recherche de l’aide » pour indiquer qu’une recherche est en cours.
 
-<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
+<!--
+TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
 ![Keyboard navigation of top options in [!DNL Experience Manager] user interface](assets/keyboard-navigation-in-aem.gif)
 
@@ -122,7 +124,8 @@ Si un utilisateur développe l’option d’aide ou de profil utilisateur à par
 
 Dans l’interface utilisateur d’[!DNL Assets], les utilisateurs peuvent utiliser le clavier pour parcourir les ressources numériques dans le référentiel de gestion des ressources numériques et prévisualiser ou télécharger une ressource. Les utilisateurs peuvent également afficher les rendus générés, changer de vue et consulter la chronologie, l’historique des versions, les commentaires et les références. En outre, les utilisateurs peuvent afficher et gérer les métadonnées.
 
-<!-- TBD: Not sure about the following list items mean:
+<!--
+TBD: Not sure about the following list items mean:
 
 In [!DNL Experience Manager] header section, when navigating in browse mode, screen reader now announces,
   
@@ -148,7 +151,8 @@ Lors de la navigation dans le référentiel de ressources, les fonctionnalités 
 * Les commentaires relatifs à une ressource sont disponibles dans la chronologie de cette ressource, Il est accessible si vous accédez au rail de gauche à l’aide d’un clavier ou d’un raccourci clavier.
 * Les [!UICONTROL Paramètres d’affichage] d’[!DNL Experience Manager] sont accessibles à l’aide du clavier. L’utilisateur peut parcourir les tailles de carte disponibles à l’aide des touches fléchées, naviguer parmi ces tailles via les touches de tabulation et définir d’autres éléments dans la vue Paramètres d’affichage existante.
 
-<!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
+<!--
+TBD: Gradually, as more enhancements are done in these categories, add more content.
 
 ## Add and upload digital assets {#upload}
 
@@ -166,7 +170,7 @@ De nombreuses tâches de gestion des ressources, telles que les opérations CRUD
 Pour les opérations de métadonnées généralement effectuées par des rôles, tels que les spécialistes marketing et les administrateurs, les fonctionnalités suivantes améliorent l’accessibilité :
 
 * L’option [!UICONTROL Enregistrer et fermer] de la page Ressource [!UICONTROL Propriétés] est désormais accessible à l’aide du clavier.
-* Les lecteurs d’écran annoncent les options permettant de supprimer les balises sélectionnées dans l’onglet [!UICONTROL &#x200B; De base &#x200B;] de la ressource [!UICONTROL Propriétés].
+* Les lecteurs d’écran annoncent les options permettant de supprimer les balises sélectionnées dans l’onglet [!UICONTROL  De base ] de la ressource [!UICONTROL Propriétés].
 * Les utilisateurs peuvent utiliser la boîte de dialogue pop-up du sélecteur de date à l’aide du clavier. L’élément d’interface utilisateur du sélecteur de date permet de définir les heures d’activation et les heures de désactivation, puis de sélectionner une date.
 * La fonctionnalité glisser à l’aide du clavier fonctionne correctement dans l’[!UICONTROL Éditeur de schéma de métadonnées] en mode de navigation du lecteur d’écran.
 * Un utilisateur peut utiliser le clavier pour déplacer la sélection vers le champ **Ajouter un utilisateur ou un groupe**.
@@ -191,7 +195,8 @@ Lors du filtrage des résultats de recherche :
 
 ## Partage de ressources {#share-assets}
 
-<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
+<!--
+TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
 -->
 
 Lors du partage de ressources, les fonctionnalités suivantes améliorent l’accessibilité :
@@ -221,5 +226,5 @@ Pour fournir des commentaires, poser des questions et demander des amélioration
 >
 >* [Fonctionnalités d’accessibilité d’ [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 >* [Notes de mise à jour des améliorations apportées à chaque version de service pack](/help/release-notes/release-notes.md).
->* Conseils en matière d’accessibilité d’[[!DNL Adobe Experience Manager] &#x200B;](/help/managing/web-accessibility.md)
+>* Conseils en matière d’accessibilité d’[[!DNL Adobe Experience Manager] ](/help/managing/web-accessibility.md)
 >* [Rapports de conformité (ACR) et liste VPAT (Modèle volontaire d’accessibilité des produits) pour les solutions d’Adobe](https://www.adobe.com/accessibility/compliance.html).

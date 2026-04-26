@@ -7,9 +7,9 @@ feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: bea51406-a033-4db1-ba1d-8596891cd12d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '475'
 ht-degree: 100%
 
 ---
@@ -18,10 +18,10 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/check-out-and-submit-assets.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/check-out-and-submit-assets.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
-[!DNL Adobe Experience Manager Assets] permet d’extraire des ressources pour les modifier et de les ré-archiver après y avoir apporté les modifications. Après avoir extrait une ressource, vous seul pouvez la modifier, l’annoter, la publier, la déplacer ou la supprimer. Le fait d’extraire une ressource entraîne son verrouillage. Les autres utilisateurs ne peuvent effectuer aucune de ces opérations sur la ressource tant que vous ne l’avez pas archivée dans [!DNL Assets]. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
+[!DNL Adobe Experience Manager Assets] permet d’extraire des ressources pour les modifier et de les archiver à nouveau après y avoir apporté des modifications. Une fois la ressource extraite, vous êtes la seule personne à pouvoir la modifier, l’annoter, la publier, la déplacer ou la supprimer. Le fait d’extraire une ressource entraîne son verrouillage. Les autres utilisateurs ne peuvent effectuer aucune de ces opérations sur la ressource tant que vous ne l’avez pas archivée dans [!DNL Assets]. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
 
 Vous avez besoin d’un accès en écriture à ces ressources pour être en mesure de les extraire ou de les archiver.
 
@@ -30,7 +30,7 @@ Cette caractéristique permet d’empêcher les autres utilisateurs d’écraser
 ## Extraction de ressources {#checking-out-assets}
 
 1. Dans l’interface utilisateur d’[!DNL Assets], sélectionnez la ressource que vous souhaitez extraire. Vous pouvez également sélectionner plusieurs ressources à extraire.
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Extraction]**. L’option **[!UICONTROL Extraction]** devient **[!UICONTROL Archivage]**.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Extraction]**. L’option **[!UICONTROL Extraction]** passe en **[!UICONTROL Archivage]**.
 Pour vérifier si d’autres utilisateurs peuvent modifier la ressource que vous avez extraite, connectez-vous comme un utilisateur différent. Un symbole représentant un verrou s’affiche sur la miniature de la ressource que vous avez extraite.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
@@ -70,5 +70,5 @@ Les administrateurs peuvent archiver les ressources extraites par d’autres uti
 
 >[!MORELIKETHIS]
 >
->* [Présentation de l’archivage et de l’extraction dans l’appli de bureau [!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#how-app-works2)
+>* [Présentation de l’archivage et de l’extraction dans l’appli de bureau [!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#how-app-works2)
 >* [Tutoriel vidéo pour comprendre l’archivage et l’extraction [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html?lang=fr)

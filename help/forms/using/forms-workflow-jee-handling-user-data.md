@@ -9,9 +9,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 622c4899-f75f-4b47-a6c0-f94c8427e977
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1403'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ Les workflows AEM Forms JEE fournissent des outils pour concevoir, créer et gé
 
 * Démarrer un processus à partir d’AEM Forms Workspace
 * Utiliser le service SOAP ou RESTful
-* Envoyer un formulaire adaptatif
+* Envoi d’un formulaire adaptatif
 * Utilisant le dossier de contrôle
 * Utiliser la messagerie
 
@@ -89,7 +89,7 @@ Un workflow peut être conçu de manière à capturer les données utilisateur d
 
 Effectuez les étapes suivantes afin de déterminer si un workflow qui stocke des données dans des variables de type primitif contient des données pour l’utilisateur ou l’utilisatrice :
 
-1. Exécutez la commande de base de données suivante : 
+1. Exécutez la commande de base de données suivante :
 
    ```sql
    select database_table from omd_object_type where name='pt_<app_name>/<workflow_name>'

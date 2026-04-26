@@ -11,9 +11,9 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 06869949-4a71-4d8a-9431-b94df13985e9
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2549'
+source-wordcount: '2577'
 ht-degree: 100%
 
 ---
@@ -43,7 +43,7 @@ Vous pouvez utiliser les API Java et de service web PDF Utilities pour converti
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service PDF Utilities, consultez la section [Guide de référence des services AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service PDF Utilities, consultez la section [Guide de référence des services d’AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -130,7 +130,7 @@ Vous pouvez utiliser les API Java et de service web PDF Utilities pour convertir
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, consultez la section [Guide de référence des services AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service PDF Utilities, consultez la section [Guide de référence des services d’AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -233,7 +233,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Créer un client PDFUtilityService**
 
-Avant d’effectuer par programmation une opération PDF Utilities, vous devez créer un client PDFUtilityService. Si vous utilisez l’API Java, créez un objet `PDFUtilityServiceClient`. Si vous utilisez l’API de service web, créez un objet `PDFUtilityServiceService`.
+Avant d’effectuer par programmation une opération PDF Utilities, vous devez créer un client PDFUtilityService. Si vous utilisez l’API Java, créez un objet `PDFUtilityServiceClient`. Avec l’API de service web, cela se fait à l’aide d’un objet `PDFUtilityServiceService`.
 
 **Appeler l’opération de récupération des propriétés**
 
@@ -289,7 +289,7 @@ Récupérez les propriétés des documents PDF à l’aide de l’API du service
 
 1. Créer un client PDFUtilityService
 
-   Créez un objet `PDFUtilityServiceService` en utilisant le constructeur de votre classe proxy.
+   Créez un objet `PDFUtilityServiceService` en utilisant votre constructeur de classe proxy.
 
 1. Appeler l’opération de récupération des propriétés
 
@@ -314,7 +314,7 @@ Vous pouvez utiliser les API Java et du service web du service PDF Utilities pou
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service PDF Utilities, consultez [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service PDF Utilities, consultez la section [Guide de référence des services d’AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-3}
 
@@ -395,7 +395,7 @@ Pour définir les options d’enregistrement du document PDF à l’aide de l’
 
 1. Transmettre le document PDF à une autre opération AEM Forms
 
-   * Transmettez l’objet `com.adobe.idp.Document` vers une autre opération AEM Forms.
+   * Transmettez l’objet `com.adobe.idp.Document` renvoyé à une autre opération AEM Forms.
 
 **Voir également**
 
