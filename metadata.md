@@ -1,31 +1,33 @@
 ---
 product: adobe experience manager
 description: Documentation de Adobe Experience Manager 6.5 LTS.
-git-repo: https://github.com/AdobeDocs/experience-manager-65-lts.fr-FR
+git-repo: https://github.com/AdobeDocs/experience-manager-65-lts.en
 index: true
 type: Documentation
 solution: Experience Manager, Experience Manager 6.5 LTS
+landing-page-name: experience-manager-lts
+landing-page-breadcrumb-title: AEM 6.5 LTS
 version: Experience Manager 6.5 LTS
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 cloud: Experience Cloud
 recommendations: noDisplay
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+source-git-commit: 530dd0c09d5ef82f304ffff118cd52935c24cd98
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 52%
+source-wordcount: '93'
+ht-degree: 2%
 
 ---
 
 
-# Métadonnées pour utilisation interne
+# Métadonnées à usage interne
 
 Les métadonnées dans le système de création GitHub sont hiérarchiques et sont définies selon les niveaux de précédent croissants suivants.
 
 1. metadata.md
-1. Table des matières
+1. ToC
 1. Article
 
-Les métadonnées définies dans le fichier metadata.md s’appliquent à l’intégralité du référentiel, mais peuvent être remplacées aux niveaux de la table des matières et de l’article. Tout remplacement des métadonnées doit être effectué au niveau le plus bas possible.
+Les métadonnées définies dans le fichier metadata.md s’appliquent à l’ensemble du référentiel, mais elles peuvent être remplacées au niveau de la table des matières et de l’article. Tout remplacement des métadonnées doit être effectué au niveau le plus bas possible.
 
 Les métadonnées du référentiel experience-manager-cloud-service.en sont le minimum requis.
 
@@ -41,7 +43,7 @@ metadata.md
 * `tutorials-title`
 * `tutorials-url`
 
-Tables des matières
+ToCs
 
 * `sub-product`
 * `user-guide-title`
