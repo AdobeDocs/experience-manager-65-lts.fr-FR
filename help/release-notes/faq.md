@@ -6,8 +6,8 @@ feature: Release Information
 role: User,Admin,Developer
 exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: tm+mt
-source-wordcount: '513'
+workflow-type: ht
+source-wordcount: '517'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ Cette page est destinée à répondre à des questions fréquentes sur AEM 6.5�
 
 ## Pourquoi Adobe a-t-il publié 6.5 LTS pour AEM ?
 
-Adobe accorde une grande importance à la sécurité et à la stabilité des applications fournies. La prise en charge à long terme (LTS, Long-term Support) d’AEM 6.5 pose les bases des futures mises à jour d’AEM 6.5. AEM 6.5 LTS inclut notamment la prise en charge d’Oracle Java 17 et Java 21, et sera la branche AEM qui recevra les nouvelles fonctionnalités et innovations d’AEM.
+Adobe accorde une grande importance à la sécurité et à la stabilité des applications fournies. La prise en charge à long terme d’AEM 6.5 pose les bases des futures mises à jour d’AEM 6.5.AEM 6.5 LTS inclut notamment la prise en charge d’Oracle Java 17 et Java 21, et sera la branche AEM qui recevra les nouvelles fonctionnalités et innovations d’AEM.
 
 ## Je suis un client ou une cliente On-Premise. Que se passe-t-il si je ne mets pas à niveau vers AEM 6.5 LTS ?
 
