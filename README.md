@@ -1,16 +1,10 @@
 ---
-source-git-commit: 8c01084831774686c0b02578dfd03e159ce01b50
+source-git-commit: 99ef8b9ae964b5a68b2ce6b5405de3bc21233783
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 64%
+source-wordcount: '4'
+ht-degree: 0%
 
 ---
-# Documentation LTS de Adobe Experience Manager 6.5
+# ARCHIVÉ
 
-Il s’agit du référentiel de la documentation LTS de Adobe Experience Manager 6.5. Cette documentation couvre l’installation, l’administration, la création d’utilisation et la personnalisation d’AEM 6.5 LTS.
-
-Vos contributions à la documentation sont les bienvenues. Reportez-vous aux ressources suivantes :
-
-* [contributing.md](contributing.md) Pour obtenir un aperçu de la contribution à la documentation.
-* [guidelines.md](guidelines.md) Pour obtenir une vue d’ensemble de ce qui est attendu dans les contributions et comment composer vos contributions à la documentation.
-* [code-of-conduct.md](code-of-conduct.md) Pour une présentation des normes de comportement attendues à mesure que vous participez à ce projet de documentation.
+Ce référentiel a été migré vers <https://github.com/Adobe-Enterprise-Docs/experience-manager-65-lts.en>.
