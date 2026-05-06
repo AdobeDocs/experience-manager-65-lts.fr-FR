@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: ht
-source-wordcount: '271'
-ht-degree: 100%
+source-git-commit: 89016492c069d61c18f9bf83bfb896cd78fb20fd
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 75%
 
 ---
 
@@ -26,9 +26,17 @@ Le nouveau point d’entrée du contrôle d’intégrité est disponible à l’
 
 Pour obtenir une documentation détaillée sur le framework de contrôle d’intégrité Felix, reportez-vous à la [documentation Felix](https://github.com/apache/felix-dev/blob/master/healthcheck/README.md).
 
-### Prise en charge de la console AEM Groovy
+### Prise en charge d’AEM Groovy Console
 
-La version de la console AEM Groovy utilisée dans AEM 6.5 peut ne pas fonctionner dans AEM 6.5 LTS en raison de l’absence de dépendances Guava. La nouvelle version prise en charge de la console AEM Groovy est la [19.0.8](https://github.com/orbinson/aem-groovy-console/releases/download/19.0.8/aem-groovy-console-all-19.0.8.zip).
+La version de la console AEM Groovy utilisée dans AEM 6.5 peut ne pas fonctionner dans AEM 6.5 LTS en raison de l’absence de dépendances guava. La nouvelle version prise en charge de la console AEM Groovy est la [19.0.8](https://github.com/orbinson/aem-groovy-console/releases/download/19.0.8/aem-groovy-console-all-19.0.8.zip).
+
+#### Configuration supplémentaire requise pour la console AEM Groovy
+
+Si vous utilisez la console AEM Groovy, vous devez ajouter explicitement la configuration OSGi suivante pour `com.adobe.granite.apicontroller.FilterResolverHookFactory`. Ajoutez des `aem-groovy-console-bundle` à la liste des lots autorisés pour la clé `org.apache.sling.distribution.api`, en étendant les valeurs par défaut de la plateforme :
+
+```
+"org.apache.sling.distribution.api": "com.adobe.*,com.day.*,org.apache.sling.*,aem-groovy-console-bundle"
+```
 
 ### AEM 6.5 LTS prend-il en charge la synchronisation des utilisateurs et utilisatrices ?
 
