@@ -27,7 +27,7 @@ Process Reporting fournit un ensemble de rapports d’usine qui vous permettent
 
 En outre, Process Reporting fournit une interface permettant d’exécuter des requêtes ad hoc et d’intégrer des vues de rapports personnalisées dans son interface utilisateur.
 
-Pour obtenir la liste des navigateurs pris en charge, voir [Plateformes prises en charge par ](/help/sites-deploying/technical-requirements.md)
+Pour obtenir la liste des navigateurs pris en charge, voir [Plateformes prises en charge par &#x200B;](/help/sites-deploying/technical-requirements.md)
 
 Process Reporting est construit sur des modules qui permettent de :
 
