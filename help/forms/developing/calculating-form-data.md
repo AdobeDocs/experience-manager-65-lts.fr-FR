@@ -10,9 +10,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 071a6ccb-8204-4cbc-a39b-143da52c16f7
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1870'
 ht-degree: 96%
@@ -129,7 +128,7 @@ Après avoir vérifié que l’état de traitement associé à un formulaire env
 [Calcul des données de formulaire à l’aide de l’API Java](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
 [Calcul des données de formulaire à l’aide de l’API de service web](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
 [Définition des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
-Démarrages rapides de l’API du service Forms [&#128279;](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+Démarrages rapides de l’API du service Forms [](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 [Rendu de PDF forms interactive](/help/forms/developing/rendering-interactive-pdf-forms.md)
 [Création d’applications web qui effectuent le rendu de Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -198,7 +197,7 @@ Calculez les données du formulaire en utilisant l’API Forms (Web Service) :
    * Créez un objet `RenderOptionsSpec` en utilisant son constructeur. Définissez la valeur des paramètres régionaux en appelant la méthode `setLocale` de l’objet `RenderOptionsSpec` et en transmettant une valeur de chaîne qui la spécifie.
    * Appelez la méthode `processFormSubmission` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-      * Objet `BLOB` contenant les données du formulaire.
+      * Objet `BLOB` contenant les données de formulaire.
       * Valeur de chaîne spécifiant les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Par exemple, vous pouvez spécifier la valeur de chaîne suivante : `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`.
       * Valeur de chaîne spécifiant la valeur de l’en-tête `HTTP_USER_AGENT`, par exemple `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Un objet `RenderOptionsSpec` qui stocke les options d’exécution. Pour plus d’informations, .
@@ -216,7 +215,7 @@ Calculez les données du formulaire en utilisant l’API Forms (Web Service) :
 
 1. Réécrivez le flux de données de formulaire dans le navigateur web client.
 
-   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données du formulaire au navigateur web du client.
+   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données de formulaire au navigateur web client.
    * Créez un objet `BLOB` contenant des données de formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
    * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
    * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données du formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.

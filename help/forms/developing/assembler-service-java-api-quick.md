@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: e56b22b9-3f4f-46d1-9885-a7e58b47f42d
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 94%
@@ -1192,8 +1191,8 @@ L’exemple de code Java suivant crée dynamiquement un document DDX qui désass
 * `createDDX` : crée un objet `org.w3c.dom.Document` qui représente le document DDX envoyé au service Assembler. Cette méthode définie par l’utilisateur renvoie l’objet `org.w3c.dom.Document`.
 * `convertDDX` : convertit un objet `org.w3c.dom.Document` en un objet `com.adobe.idp.Document`. Cette méthode accepte un objet `org.w3c.dom.Document` en tant que paramètre d’entrée et renvoie un objet `com.adobe.idp.Document`.
 
-  Ces deux méthodes sont invoquées dans ce démarrage rapide. (Voir [&#x200B; Création dynamique de documents DDX](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).)
-&grave;&grave;
+  Ces deux méthodes sont invoquées dans ce démarrage rapide. (Voir [ Création dynamique de documents DDX](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).)
+``
 
 ```java
 /*

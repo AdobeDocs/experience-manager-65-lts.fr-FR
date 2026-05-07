@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: e64a3b6f-7248-4426-9f13-f703eab3632d
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1734'
 ht-degree: 99%
@@ -79,7 +78,7 @@ Pour modifier le planning de publication, procédez comme suit :
 
    Dans la zone d’arguments JVM génériques, ajoutez l’argument `-Dreporting.publisher.cron = <expression>.`.
 
-   **Exemple** : l’expression cron suivante entraîne la publication par Process Reporting de données d’AEM Forms dans le référentiel de Process Reporting toutes les 5 heures :
+   **Exemples** : l’expression cron suivante entraîne la publication par Process Reporting de données d’AEM Forms dans le référentiel de Process Reporting toutes les 5 heures :
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 

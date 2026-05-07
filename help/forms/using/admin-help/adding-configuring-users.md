@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
-hidefromtoc: true
 exl-id: b3f8e1d6-3e6e-4b2c-8528-3346bbda3396
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1724'
 ht-degree: 99%
@@ -165,7 +164,7 @@ Si un utilisateur ou une utilisatrice ne disposant pas des autorisations AEM For
 * Solution Correspondence Management
 * Espace de travail AEM Forms
 
-  ***Remarque &#x200B;** : Flex Workspace est obsolète pour la version d’AEM Forms.*
+  ***Remarque ** : Flex Workspace est obsolète pour la version d’AEM Forms.*
 
 * gestionnaire de formulaires
 * Rapports de workflow

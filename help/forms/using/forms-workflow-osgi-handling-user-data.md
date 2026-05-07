@@ -7,9 +7,8 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
 hide: true
-hidefromtoc: true
 exl-id: a817fa19-ae22-4c77-8a8e-6c4deed10d67
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 99%
@@ -136,7 +135,7 @@ Vous devez être administrateur ou administratrice AEM pour supprimer les donné
    * Chemins d’accès aux payloads des instances de workflow
    * Chemins d’accès aux brouillons et à l’historique des instances de workflow
 
-1. Effectuez cette étape pour des instances de workflow à l’état **EN COURS**,**SUSPENDU** ou **&#x200B;**&#x200B;OBSOLÈTE :
+1. Effectuez cette étape pour des instances de workflow à l’état **EN COURS**,**SUSPENDU** ou **** OBSOLÈTE :
 
    1. Accédez à `https://'[server]:[port]'/aem/start.html` et connectez-vous avec les informations d’identification de l’administrateur.
    1. Accédez à **[!UICONTROL Outils > Workflow > Instances]**.

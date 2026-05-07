@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 5cc5c9fe-50ce-4863-bfa4-a009a6c3b06f
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 94%
@@ -24,7 +23,7 @@ Les informations d’identification contiennent des informations décrivant son 
 
 1. Ouvrez un navigateur web et saisissez l’URL suivante :
 
-   http://localhost:port/ReaderExtensions (où *port* correspond au numéro de port du serveur d’applications)
+   :port/ReaderExtensions (où *port* correspond au numéro de port du serveur d’applications)
 
 1. Connectez-vous à l’aide du nom d’utilisateur ou d’utilisatrice et du mot de passe par défaut :
 

@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 0fe1aef7-f607-4c40-bfa9-9ec9ebd8abeb
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '2536'
 ht-degree: 100%
@@ -59,11 +58,11 @@ Vous passez en mode de sauvegarde pour permettre les sauvegardes à chaud d’un
 * La durée d’exécution de la procédure de sauvegarde.
 * Un indicateur qui signale si le mode de sauvegarde en continu doit être activé, ce qui n’est utile que si vous effectuez des sauvegardes en continu.
 
-Avant d’écrire des applications pour passer en mode de sauvegarde, il est recommandé de comprendre les procédures de sauvegarde qui sont utilisées après avoir activé le mode de sauvegarde sur le serveur Forms Server. Pour plus d’informations sur les éléments à prendre en compte lors de l’exécution de sauvegardes pour AEM Forms, reportez-vous à l’[aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).
+Avant d’écrire des applications pour passer en mode de sauvegarde, il est recommandé de comprendre les procédures de sauvegarde qui sont utilisées après avoir activé le mode de sauvegarde sur le serveur Forms Server. Pour plus d’informations sur les éléments à prendre en compte lors de l’exécution de sauvegardes pour AEM Forms, consultez la section [Aide dʼadministration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Sauvegarder et Restaurer, reportez-vous aux [références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Sauvegarder et Restaurer, reportez-vous aux [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -131,7 +130,7 @@ Pour passer en mode de sauvegarde à l’aide de l’API du service Backup and R
 
    Passez en mode de sauvegarde en appelant la méthode `enterBackupMode` avec les paramètres suivants :
 
-   * Une valeur `String` qui spécifie un libellé lisible unique qui identifie la session du mode de sauvegarde. Il est recommandé de ne pas utiliser d’espaces ou de caractères qui ne peuvent pas être codés au format XML.
+   * Une valeur `String` spécifiant un libellé lisible unique qui identifie la session du mode de sauvegarde. Il est recommandé de ne pas utiliser d’espaces ou de caractères qui ne peuvent pas être codés au format XML.
    * Une valeur `int` spécifiant le nombre de minutes à rester en mode de sauvegarde. Vous pouvez spécifier une valeur comprise entre `1` et `10080` (nombre de minutes dans une semaine). Cette valeur est ignorée lors de l’utilisation du mode de sauvegarde continue.
    * Une valeur `Boolean` spécifiant si lʼon doit être en mode de sauvegarde continu. Une valeur de `True` indique que lʼon est en mode de sauvegarde continu. En mode de sauvegarde continue, la valeur que vous indiquez pour le nombre de minutes de maintien en mode de sauvegarde est ignorée.
 
@@ -188,7 +187,7 @@ Avant d’écrire des demandes pour quitter le mode de sauvegarde, il est recomm
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Sauvegarder et Restaurer, reportez-vous aux [références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Sauvegarder et Restaurer, reportez-vous aux [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 

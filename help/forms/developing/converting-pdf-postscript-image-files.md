@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 509b9e53-9af4-4916-afba-2db358ec0764
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '2820'
 ht-degree: 98%
@@ -33,7 +32,7 @@ Le service Convert PDF vous permet dʼeffectuer les tâches suivantes :
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Convert PDF, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Convert PDF, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ## Convertir des documents PDF en PostScript {#converting-pdf-documents-to-postscript}
 
@@ -41,7 +40,7 @@ Cette rubrique décrit lʼutilisation de l’API Convert PDF Service (Java et se
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Convert PDF, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Convert PDF, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -157,7 +156,7 @@ Convertissez un document PDF en PostScript à l’aide de l’API Convert PDF Se
 
    >[!NOTE]
    >
-   >Remplacez `localhost` avec l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client PDF Convert.
 
@@ -230,7 +229,7 @@ Pour convertir un document PDF en l’un des types pris en charge, procédez com
 1. Convertissez le PDF en image.
 1. Récupérez les fichiers image d’une collection.
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
@@ -318,7 +317,7 @@ Convertissez un document PDF en format d’image à l’aide de l’API Convert 
 
    >[!NOTE]
    >
-   >Remplacez `localhost` avec l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client PDF convert.
 

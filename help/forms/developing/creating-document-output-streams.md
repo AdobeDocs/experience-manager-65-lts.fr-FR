@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: a90ccd28-00ae-4317-bfda-c39acbdb835b
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '19156'
 ht-degree: 98%
@@ -71,7 +70,7 @@ Vous pouvez accomplir ces tâches à l’aide du service Output :
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Output, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ## Créer des documents PDF {#creating-pdf-documents}
 
@@ -113,7 +112,7 @@ Si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge a
 
 **Créer un objet client Output**
 
-Avant de pouvoir effectuer par programmation une opération du service Output, vous devez créer un objet client du service Output. Si vous utilisez l’API Java, créez un objet `OutputClient`. Si vous utilisez l’API du service Web Output, créez un objet `OutputServiceService`.
+Avant de pouvoir effectuer par programmation une opération du service Output, vous devez créer un objet client du service Output. Si vous utilisez l’API Java, créez un objet `OutputClient`. Si vous utilisez l’API Output du service web, créez un objet `OutputServiceService`.
 
 **Référencer une source de données XML**
 
@@ -244,13 +243,13 @@ Créez un document PDF à l’aide de l’API Output (Java) :
 
    >[!NOTE]
    >
-   >Vous ne pouvez pas définir l’option de PDF linéarisé à l’aide de la méthode `setLinearizedPDF` de l’objet `RenderOptionsSpec` si le document PDF d’entrée est certifié ou signé numériquement. (Voir [Signature numérique de documents PDF &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >Vous ne pouvez pas définir l’option de PDF linéarisé à l’aide de la méthode `setLinearizedPDF` de l’objet `RenderOptionsSpec` si le document PDF d’entrée est certifié ou signé numériquement. (Voir [Signature numérique de documents PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Générez un document PDF.
 
    Créez un document PDF en appelant la méthode `generatePDFOutput` de l’objet `OutputClient` et en transmettant les valeurs suivantes :
 
-   * Valeur d’énumération `TransformationFormat`. Pour générer un document PDF, spécifiez `TransformationFormat.PDF`.
+   * Valeur d’énumération `TransformationFormat`. Pour générer un document PDF, spécifiez `TransformationFormat.PDF`.
    * Valeur string spécifiant le nom de la nouvelle conception de formulaire.
    * Une valeur de chaîne qui spécifie la racine de contenu où se trouve la conception de formulaire.
    * Objet `PDFOutputOptionsSpec` contenant les options d’exécution du PDF.
@@ -261,7 +260,7 @@ Créez un document PDF à l’aide de l’API Output (Java) :
 
    >[!NOTE]
    >
-   >Lors de la génération d’un document PDF en appelant la méthode `generatePDFOutput`, vous ne pouvez pas fusionner des données avec un formulaire PDF XFA signé ou certifié. (Voir [Signature numérique et certification de documents &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Lors de la génération d’un document PDF en appelant la méthode `generatePDFOutput`, vous ne pouvez pas fusionner des données avec un formulaire PDF XFA signé ou certifié. (Voir [Signature numérique et certification de documents ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -269,13 +268,13 @@ Créez un document PDF à l’aide de l’API Output (Java) :
 
    >[!NOTE]
    >
-   >Vous pouvez également créer un document PDF en appelant la méthode `generatePDFOutput2` de l’objet `OutputClient`. (Voir [Transmission de documents situés dans Content Services (obsolète) vers le service Output &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >Vous pouvez également créer un document PDF en appelant la méthode `generatePDFOutput2` de l’objet `OutputClient`. (Voir [Transmission de documents situés dans Content Services (obsolète) vers le service Output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Récupérer les résultats de l’opération.
 
    * Récupérez un objet `com.adobe.idp.Document` qui représente le statut de l’opération `generatePDFOutput` en appelant la méthode `getStatusDoc` de l’objet `OutputResult`. Cette méthode renvoie des données XML de statut qui spécifient si l’opération a réussi.
    * Créez un objet `java.io.File` contenant les résultats de l’opération. Assurez-vous que l’extension du nom du fichier est .xml.
-   * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour copier le contenu de l’objet `com.adobe.idp.Document` dans le fichier (assurez-vous d’utiliser l’objet `com.adobe.idp.Document` renvoyé par la méthode `getStatusDoc`).
+   * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour copier le contenu de l’objet `com.adobe.idp.Document` dans le fichier (veillez à utiliser l’objet `com.adobe.idp.Document` qui a été renvoyé par la méthode `getStatusDoc`).
 
    Bien que le service Output écrive le document PDF à l’emplacement spécifié par l’argument transmis à la méthode `setFileURI` de l’objet `PDFOutputOptionsSpec`, vous pouvez récupérer le document PDF/A par programmation en appelant la méthode `getGeneratedDoc` de l’objet `OutputResult`.
 
@@ -340,13 +339,13 @@ Créez un document PDF à l’aide de l’API Output (service web) :
 
    >[!NOTE]
    >
-   >Vous ne pouvez pas définir l’option PDF linéarisé à l’aide du membre `linearizedPDF` de l’objet `RenderOptionsSpec` si le document PDF d’entrée est certifié ou signé numériquement. (Voir [Signature numérique de documents PDF &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >Vous ne pouvez pas définir l’option PDF linéarisé à l’aide du membre `linearizedPDF` de l’objet `RenderOptionsSpec` si le document PDF d’entrée est certifié ou signé numériquement. (Voir [Signature numérique de documents PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Générez un document PDF.
 
    Créez un document PDF en appelant la méthode `generatePDFOutput` de l’objet `OutputServiceService` et en transmettant les valeurs suivantes :
 
-   * Valeur d’énumération `TransformationFormat`. Pour générer un document PDF, spécifiez `TransformationFormat.PDF`.
+   * Valeur d’énumération `TransformationFormat`. Pour générer un document PDF, spécifiez `TransformationFormat.PDF`.
    * Valeur string spécifiant le nom de la nouvelle conception de formulaire.
    * Une valeur de chaîne qui spécifie la racine de contenu où se trouve la conception de formulaire.
    * Objet `PDFOutputOptionsSpec` contenant les options d’exécution du PDF.
@@ -358,11 +357,11 @@ Créez un document PDF à l’aide de l’API Output (service web) :
 
    >[!NOTE]
    >
-   >Lors de la génération d’un document PDF en appelant la méthode `generatePDFOutput`, vous ne pouvez pas fusionner des données avec un formulaire PDF XFA signé ou certifié. (Voir [Signature numérique et certification de documents &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Lors de la génération d’un document PDF en appelant la méthode `generatePDFOutput`, vous ne pouvez pas fusionner des données avec un formulaire PDF XFA signé ou certifié. (Voir [Signature numérique et certification de documents ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
-   >Vous pouvez également créer un document PDF en appelant la méthode `generatePDFOutput2` de l’objet `OutputClient`. (Voir [Transmission de documents situés dans Content Services (obsolète) vers le service Output &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >Vous pouvez également créer un document PDF en appelant la méthode `generatePDFOutput2` de l’objet `OutputClient`. (Voir [Transmission de documents situés dans Content Services (obsolète) vers le service Output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Récupérer les résultats de l’opération.
 
@@ -519,7 +518,7 @@ Créez un document PDF/A à l’aide de l’API Output (Java) :
    * Objet `RenderOptionsSpec` qui contient les options d’exécution de rendu.
    * Objet `com.adobe.idp.Document` contenant la source de données XML où se trouvent les données à fusionner avec la conception de formulaire.
 
-   La méthode `generatePDFOutput` renvoie un objet `OutputResult` contenant les résultats de l’authentification.
+   La méthode `generatePDFOutput` renvoie un objet `OutputResult` contenant les résultats de l’opération.
 
    >[!NOTE]
    >
@@ -533,7 +532,7 @@ Créez un document PDF/A à l’aide de l’API Output (Java) :
 
    * Créez un objet `com.adobe.idp.Document` qui représente le statut de la méthode `generatePDFOutput` en appelant la méthode `getStatusDoc` de l’objet `OutputResult`.
    * Créez un objet `java.io.File` qui contient les résultats de l’opération. Assurez-vous que l’extension du nom du fichier est .xml.
-   * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour copier le contenu de l’objet `com.adobe.idp.Document` dans le fichier (assurez-vous d’utiliser l’objet `com.adobe.idp.Document` renvoyé par la méthode `getStatusDoc`).
+   * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour copier le contenu de l’objet `com.adobe.idp.Document` dans le fichier (veillez à utiliser l’objet `com.adobe.idp.Document` qui a été renvoyé par la méthode `getStatusDoc`).
 
    >[!NOTE]
    >
@@ -601,7 +600,7 @@ Créez un document PDF/A à l’aide de l’API Output (Web Service) :
 
    Créez un document PDF en appelant la méthode `generatePDFOutput` de l’objet `OutputServiceService` et en transmettant les valeurs suivantes :
 
-   * Valeur d’énumération TransformationFormat. Pour générer un document PDF, spécifiez `TransformationFormat.PDFA`.
+   * Valeur d’énumération TransformationFormat. Pour générer un document PDF, spécifiez `TransformationFormat.PDFA`.
    * Valeur string spécifiant le nom de la nouvelle conception de formulaire.
    * Une valeur de chaîne qui spécifie la racine de contenu où se trouve la conception de formulaire.
    * Objet `PDFOutputOptionsSpec` contenant les options d’exécution du PDF.
@@ -618,7 +617,7 @@ Créez un document PDF/A à l’aide de l’API Output (Web Service) :
 1. Récupérer les résultats de l’opération.
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente un emplacement de fichier XML contenant les données de résultat. Assurez-vous que l’extension du nom du fichier est .xml.
-   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` ayant été renseigné avec les données de résultat par la méthode `generatePDFOutput` de l’objet `OutputServiceService` (le huitième paramètre). Renseignez le tableau d’octets en obtenant la valeur du champ `MTOM` de l’objet `BLOB`.
+   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` ayant été renseigné avec les données de résultat par la méthode `OutputServiceService` de l’objet `generatePDFOutput` (le huitième paramètre). Renseignez le tableau d’octets en obtenant la valeur du champ `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
    * Écrivez le contenu du tableau d’octets dans le fichier XML en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
@@ -725,7 +724,7 @@ Transmettez un document récupéré de Content Services (obsolète) à l’aide 
    * Objet `RenderOptionsSpec` qui contient les options d’exécution de rendu.
    * Objet `com.adobe.idp.Document` qui contient la source de données XML contenant les données à fusionner avec la conception de formulaire.
 
-   La méthode `generatePDFOutput2` renvoie un objet `OutputResult` contenant les résultats de l’authentification.
+   La méthode `generatePDFOutput2` renvoie un objet `OutputResult` contenant les résultats de l’opération.
 
 1. Exécutez une action avec le flux de données de formulaire.
 
@@ -1083,7 +1082,7 @@ Créez un document PDF basé sur des fragments à l’aide de l’API Output Ser
 
    >[!NOTE]
    >
-   >Remplacez `localhost` avec l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un objet client Output et Assembler.
 
@@ -1107,7 +1106,7 @@ Créez un document PDF basé sur des fragments à l’aide de l’API Output Ser
 
    Appelez la méthode `invokeDDX` de l’objet `AssemblerServiceClient` et transmettez les valeurs suivantes :
 
-   * Objet `BLOB` représentant le document DDX.
+   * Un objet `BLOB` représentant le document DDX
    * Objet `MyMapOf_xsd_string_To_xsd_anyType` contenant les fichiers requis.
    * Un objet `AssemblerOptionSpec` qui spécifie les options d’exécution
 
@@ -1329,7 +1328,7 @@ Imprimez dans un fichier à l’aide de l’API Output (Web Service) :
    * Une valeur de chaîne qui spécifie l’emplacement des fichiers associés, tels que les fichiers image.
    * Une valeur de chaîne qui spécifie l’emplacement du fichier XDC à utiliser (vous pouvez transmettre `null` si vous avez spécifié le fichier XDC à utiliser à l’aide de l’objet `PrintedOutputOptionsSpec`).
    * Objet `PrintedOutputOptionsSpec` qui contient les options d’exécution de l’impression requises pour imprimer un fichier.
-   * L’objet `BLOB` contenant la source de données XML contenant les données de formulaire.
+   * Objet `BLOB` qui contient la source de données XML contenant les données du formulaire.
    * Objet `BLOB` qui est renseigné par la méthode `generatePDFOutput`. La méthode `generatePDFOutput` renseigne cet objet avec des métadonnées générées qui décrivent le document. (Cette valeur de paramètre est requise pour l’appel de service web uniquement.)
    * Objet `BLOB` renseigné par la méthode `generatePDFOutput`. La méthode `generatePDFOutput` renseigne cet objet avec les données de résultat. (Cette valeur de paramètre est requise pour l’appel de service web uniquement.)
    * Objet `OutputResult` contenant les résultats de l’opération. (Cette valeur de paramètre est requise pour l’appel de service web uniquement.)
@@ -1337,7 +1336,7 @@ Imprimez dans un fichier à l’aide de l’API Output (Web Service) :
 1. Récupérer les résultats de l’opération.
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente un emplacement de fichier XML contenant les données de résultat. Assurez-vous que l’extension de fichier est XML.
-   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` qui a été renseigné avec les données de résultat par la méthode `generatePDFOutput` de l’objet `OutputServiceService` (le huitième paramètre). Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
+   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` ayant été renseigné avec les données de résultat par la méthode `OutputServiceService` de l’objet `generatePDFOutput` (le huitième paramètre). Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
    * Écrivez le contenu du tableau d’octets dans le fichier XML en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
@@ -1565,7 +1564,7 @@ Envoyez un flux d’impression à une imprimante réseau à l’aide de l’API 
 
    >[!NOTE]
    >
-   >La méthode `sendToPrinter` a été ajoutée à l’API AEM Forms dans la version 8.2.1.
+   >La méthode `sendToPrinter` a été ajoutée à l’API AEM Forms dans la version 8.2.1.
 
 ### Envoyer un flux d’impression vers une imprimante à l’aide de l’API du service web {#send-a-print-stream-to-a-printer-using-the-web-service-api}
 
@@ -1893,7 +1892,7 @@ Pour créer plusieurs fichiers PDF à l’aide de l’API Output (service web), 
    * Créez un objet `System.IO.FileStream` en utilisant son constructeur. Transmettez une valeur string qui représente l’emplacement du fichier XML qui contient plusieurs enregistrements.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
+   * Renseignez l’objet `BLOB` en attribuant le contenu du tableau d’octets à son champ `MTOM`.
 
 1. Définissez les options d’exécution du PDF.
 
@@ -1912,7 +1911,7 @@ Pour créer plusieurs fichiers PDF à l’aide de l’API Output (service web), 
 
    Créez plusieurs fichiers PDF en appelant la méthode `generatePDFOutput` de l’objet `OutputServiceService` et en transmettant les valeurs suivantes :
 
-   * Valeur d’énumération TransformationFormat. Pour générer un document PDF, spécifiez `TransformationFormat.PDF`.
+   * Valeur d’énumération TransformationFormat. Pour générer un document PDF, spécifiez `TransformationFormat.PDF`.
    * Valeur string spécifiant le nom de la nouvelle conception de formulaire.
    * Une valeur de chaîne qui spécifie la racine de contenu où se trouve la conception de formulaire.
    * Objet `PDFOutputOptionsSpec` contenant les options d’exécution du PDF.
@@ -2125,7 +2124,7 @@ Créez des règles de recherche à l’aide de l’API Output (service web) :
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur string qui représente l’emplacement du fichier du document PDF à chiffrer et son mode d’ouverture.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
+   * Renseignez l’objet `BLOB` en attribuant le contenu du tableau d’octets à son champ `MTOM`.
 
 1. Définissez des règles de recherche.
 
@@ -2165,7 +2164,7 @@ Créez des règles de recherche à l’aide de l’API Output (service web) :
 
    Créez un document PDF en appelant la méthode `generatePDFOutput` de l’objet `OutputServiceService` et en transmettant les valeurs suivantes :
 
-   * Valeur d’énumération `TransformationFormat`. Pour générer un document PDF, spécifiez `TransformationFormat.PDF`.
+   * Valeur d’énumération `TransformationFormat`. Pour générer un document PDF, spécifiez `TransformationFormat.PDF`.
    * Valeur string spécifiant le nom de la nouvelle conception de formulaire.
    * Une valeur de chaîne qui spécifie la racine de contenu où se trouve la conception de formulaire.
    * Objet `PDFOutputOptionsSpec` contenant les options d’exécution du PDF.
@@ -2182,7 +2181,7 @@ Créez des règles de recherche à l’aide de l’API Output (service web) :
 1. Récupérer les résultats de l’opération
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente un emplacement de fichier XML contenant les données de résultat. Assurez-vous que l’extension de fichier est XML.
-   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` qui a été renseigné avec les données de résultat par la méthode `generatePDFOutput` de l’objet `OutputServiceService` (le huitième paramètre). Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
+   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` ayant été renseigné avec les données de résultat par la méthode `OutputServiceService` de l’objet `generatePDFOutput` (le huitième paramètre). Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
    * Écrivez le contenu du tableau d’octets dans le fichier XML en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 

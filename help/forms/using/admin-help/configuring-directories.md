@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 2c0dd472-9697-4b96-b3fa-3c50883bf425
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '3275'
 ht-degree: 99%
@@ -54,7 +53,7 @@ Pour chaque domaine d’entreprise que vous configurez, indiquez les annuaires q
 
 Pour plus d’informations sur la création d’une interface SPI personnalisée, consultez la section « Développement d’interfaces SPI pour AEM Forms » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr). Pour rendre une interface SPI personnalisée déployée récemment disponible pour une association au domaine, redémarrez le serveur.
 
-1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Nouveau domaine d’entreprise ou sélectionnez un domaine d’entreprise existant.
 1. Cliquez sur Ajouter un annuaire.
 1. Saisissez un nom dans la zone Nom du profil, sélectionnez Fournisseur SPI personnalisé, puis cliquez sur Suivant.
@@ -284,7 +283,7 @@ Voici un exemple de script LDIF pour une entrée VLV pour les utilisateurs et 
 
    >[!NOTE]
    >
-   >par convention, le nom de l’entrée vlvIndex est également `lcuser`, mais vous pouvez le nommer différemment. Utilisez le même nom dans l’outil vlvindex. Voir [Création de l’index du serveur d’annuaire pour VLV &#x200B;](configuring-directories.md#create-the-directory-server-index-for-vlv)*.*
+   >par convention, le nom de l’entrée vlvIndex est également `lcuser`, mais vous pouvez le nommer différemment. Utilisez le même nom dans l’outil vlvindex. Voir [Création de l’index du serveur d’annuaire pour VLV ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.*
 
 1. En vous aidant de l’outil `ldapmodify` fourni par le serveur Sun ONE, créez une entrée similaire pour les groupes en utilisant respectivement le nom distinctif de base du groupe, le filtre de recherche et le champ de tri :
 

@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 8de9682f-8332-4f6e-ac4b-295fca82a424
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '3513'
 ht-degree: 97%
@@ -269,7 +268,7 @@ Pour préremplir un formulaire avec une disposition souple à l’aide de l’AP
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Créez un élément enfant appartenant à lʼélément de détail en appelant la méthode `createElement` de lʼobjet `Document` et transmettez une valeur de chaîne qui représente le nom de lʼélément. Convertissez la valeur de retour en `Element`. Définissez ensuite une valeur pour l’élément enfant en appelant sa méthode `appendChild` et transmettez la méthode `createTextNode` de lʼobjet `Document` comme argument. Définissez une valeur de chaîne qui apparaîtra comme la valeur de lʼélément enfant. Pour terminer, ajoutez lʼélément enfant à lʼélément de détail en appelant la méthode `appendChild` de lʼélément de détail et transmettez lʼobjet de lʼélément enfant sous forme dʼargument. Les lignes de code suivantes illustrent cette logique dʼapplication :
+   * Créez un élément enfant qui appartient à l’élément de détail en appelant la méthode `createElement` de lʼobjet `Document` et transmettez une valeur de chaîne qui représente le nom de l’élément. Convertissez la valeur de retour en `Element`. Définissez ensuite une valeur pour l’élément enfant en appelant sa méthode `appendChild` et transmettez la méthode `createTextNode` de lʼobjet `Document` comme argument. Définissez une valeur de chaîne qui apparaîtra comme la valeur de lʼélément enfant. Pour terminer, ajoutez lʼélément enfant à lʼélément de détail en appelant la méthode `appendChild` de lʼélément de détail et transmettez lʼobjet de lʼélément enfant sous forme dʼargument. Les lignes de code suivantes illustrent cette logique dʼapplication :
 
      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
@@ -292,10 +291,10 @@ Pour préremplir un formulaire avec une disposition souple à l’aide de l’AP
 
    Appelez la méthode `renderPDFForm` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier.
-   * Un objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Veillez à utiliser l’objet `com.adobe.idp.Document` créé aux étapes 1 et 2.
+   * Une valeur de chaîne qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier.
+   * Objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Veillez à utiliser l’objet `com.adobe.idp.Document` créé aux étapes 1 et 2.
    * Un objet `PDFFormRenderSpec` prévu pour stocker les options d’exécution.
-   * Un objet `URLSpec` contenant les valeurs URI requises par le service Forms.
+   * Un objet `URLSpec` contenant des valeurs URI requises par le service Forms.
    * Objet `java.util.HashMap` stockant les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
 
    La méthode `renderPDFForm` renvoie un objet `FormsResult` contenant un flux de données de formulaire qui doit être écrit dans le navigateur web client.
@@ -368,8 +367,8 @@ Pour préremplir un formulaire avec une disposition fluide à l’aide de l’AP
 
    Appelez la méthode `renderPDFForm` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
-   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier.
-   * Un objet `BLOB` contenant les données à fusionner avec le formulaire. Veillez à utiliser lʼobjet `BLOB` créé aux étapes 1 et 2.
+   * Une valeur de chaîne qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier.
+   * Objet `BLOB` contenant les données à fusionner avec le formulaire. Veillez à utiliser lʼobjet `BLOB` créé aux étapes 1 et 2.
    * Un objet `PDFFormRenderSpecc` qui stocke les options dʼexécution. Pour plus dʼinformations, consultez la section [Référence de lʼAPI AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Un objet `URLSpec` contenant des valeurs URI requises par le service Forms.
    * Objet `java.util.HashMap` stockant les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.

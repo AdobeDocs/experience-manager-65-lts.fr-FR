@@ -10,9 +10,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: f1e6adca-0591-4974-9c12-66706aa35247
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '4149'
 ht-degree: 96%
@@ -284,7 +283,7 @@ Renvoyez un formulaire HTML à l’aide de l’API Forms (Java) :
 
    >[!NOTE]
    >
-   >Les formulaires ne s’affichent pas correctement au format HTML lorsque l’option `StandAlone` est `true` et le `ApplicationWebRoot` référence un serveur autre que le serveur d’applications J2EE hébergeant les formulaires AEM (la valeur `ApplicationWebRoot` est spécifiée à l’aide de l’objet `URLSpec` qui est transmis à la méthode `(Deprecated) renderHTMLForm` de l’objet `FormsServiceClient`). Lorsque `ApplicationWebRoot` est un serveur autre que celui qui héberge AEM Forms, la valeur de l’URI racine web dans la console d’administration doit être définie comme valeur de l’URI de l’application web du formulaire. Pour ce faire, connectez-vous à la console d’administration, cliquez sur Services > Forms, puis définissez l’URI racine web sur https://server-name:port/FormServer. Enregistrez ensuite vos paramètres.
+   >Les formulaires ne sont générés correctement en HTML lorsque l’option `StandAlone` est `true` et que `ApplicationWebRoot` référence un serveur autre que le serveur d’applications J2EE hébergeant AEM Forms (la valeur `ApplicationWebRoot` est spécifiée à l’aide de l’objet `URLSpec` qui est transmis à la méthode `(Deprecated) renderHTMLForm` de l’objet `FormsServiceClient`). Lorsque `ApplicationWebRoot` est un serveur autre que celui qui héberge AEM Forms, la valeur de l’URI racine web dans la console d’administration doit être définie comme valeur de l’URI de l’application web du formulaire. Pour ce faire, connectez-vous à la console d’administration, cliquez sur Services > Forms, puis définissez l’URI racine web sur https://server-name:port/FormServer. Enregistrez ensuite vos paramètres.
 
 1. Effectuer le rendu d’un formulaire HTML
 

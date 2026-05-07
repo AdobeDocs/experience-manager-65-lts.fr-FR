@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 hide: true
-hidefromtoc: true
 exl-id: 04700c18-c5fe-45c3-b9ad-16d4b427d65e
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1779'
 ht-degree: 100%
@@ -55,7 +54,7 @@ Dans le cadre de cette discussion, supposons que le document DDX suivant soit ut
 
 >[!NOTE]
 >
->Pour plus d’informations sur les documents DDX, consultez la section [Guide de référence du service Assembler et de DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Pour plus d’informations sur un document DDX, voir [service Assembler et référence DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Résumé des étapes {#summary-of-steps}
 
@@ -162,7 +161,7 @@ Désassemblez un document PDF à l’aide de l’API Assembler Service (Java) :
 
    Pour obtenir des documents PDF désassemblés, procédez comme suit :
 
-   * Appelez la méthode `getDocuments` de lʼobjet `AssemblerResult`. Celle-ci renvoie un objet `java.util.Map`.
+   * Appelez la méthode `getDocuments` de lʼobjet `AssemblerResult`. Cette fonction renvoie un objet `java.util.Map`.
    * Effectuez une itération à l’aide de l’objet `java.util.Map` jusqu’à ce que vous trouviez l’objet `com.adobe.idp.Document` résultant.
    * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour extraire le document PDF.
 
@@ -207,7 +206,7 @@ Pour désassembler un document PDF à l’aide de l’API du service Assembler (
    * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne qui représente l’emplacement du fichier du document DDX et son mode d’ouverture.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’objet `BLOB` en attribuant sa propriété `MTOM` au contenu du tableau d’octets.
+   * Renseignez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Référencez un document de PDF à désassembler.
 

@@ -1,53 +1,52 @@
 ---
-title: Activer le bouton (bascule) de fonctionnalités pour intégrer les fonctionnalités destinées aux utilisateurs et utilisatrices précoces et en version préliminaire
-description: Le bouton (bascule) des fonctionnalités est une fonctionnalité d’AEM qui permet aux administrateurs d’activer de nouvelles fonctionnalités dans un environnement d’exécution.
+title: Activer la fonction d’activation/désactivation des fonctionnalités pour intégrer les fonctionnalités destinées aux utilisateurs et utilisatrices précoces et en version préliminaire
+description: La fonction d’activation/désactivation des fonctionnalités est une fonctionnalité d’AEM qui permet aux administrateurs et administratrices d’activer de nouvelles fonctionnalités dans un environnement d’exécution.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-hidefromtoc: true
 exl-id: 8b6dea41-540b-498a-b52b-e584a9255f25
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 8%
+source-wordcount: '298'
+ht-degree: 100%
 
 ---
 
-# Basculement de fonctionnalité dans Adobe Experience Manager (AEM) 6.5{#enable-feature-toggle-aem-forms-65}
+# Fonction d’activation/désactivation des fonctionnalités dans Adobe Experience Manager (AEM) 6.5{#enable-feature-toggle-aem-forms-65}
 
-Le bouton (bascule) des fonctionnalités est une fonctionnalité d’AEM qui permet aux administrateurs d’activer ou de désactiver des fonctionnalités spécifiques de manière dynamique. Cette fonctionnalité est particulièrement utile pour gérer les **fonctionnalités destinées aux utilisateurs et utilisatrices précoces** et **fonctionnalités de version préliminaire** sans nécessiter de déploiements ou de modifications majeurs de la base de code. Elle offre flexibilité et contrôle sur les fonctionnalités accessibles dans un environnement AEM.
+La fonction d’activation/désactivation des fonctionnalités est une fonctionnalité d’AEM qui permet aux administrateurs et aux administratrices d’activer ou de désactiver des fonctionnalités spécifiques de manière dynamique. Cette fonctionnalité est particulièrement utile pour gérer les **fonctionnalités destinées aux utilisateurs et utilisatrices précoces** et les **fonctionnalités de version préliminaire** sans nécessiter de déploiements ou de modifications importants de la base du code. Elle offre de la flexibilité et du contrôle sur les fonctionnalités accessibles dans un environnement AEM.
 
 ## Bouton (bascule) Activer la fonction {#enable-feature-toggle-65}
 
-Les basculements de fonctionnalités pour les utilisateurs et utilisatrices précoces ou les nouvelles fonctionnalités peuvent être configurés via la **console web d’AEM** en suivant les étapes ci-dessous :
+La fonction d’activation/désactivation des fonctionnalités pour les utilisateurs et les utilisatrices précoces ou pour les nouvelles fonctionnalités peut être configurée via la **console web d’AEM** en suivant les étapes ci-dessous :
 
-1. Connectez-vous à l’instance AEM Forms.
+1. Connectez-vous à votre instance AEM Forms.
 2. Accédez à `http://<author-instance-url>:portnumber/system/console/configMgr`.
-3. Recherchez **Fournisseur de basculement dynamique Adobe Granite** dans le gestionnaire de configuration.
-4. Cliquez sur l’icône ![icône-crayon](assets/illustratorcc_penciltool_cur_edit_2_17.png).
-5. Dans la section [!UICONTROL Activation des bascules], cliquez sur ![icône-crayon](assets/aem6forms_add.png).
-6. Ajoutez l’ID de basculement de la fonctionnalité, comme illustré dans l’image ci-dessous.
-   ![Ajouter un bouton](assets/add_toggle_number_forms.png)
+3. Recherchez **Fournisseur de fonction bascule dynamique Adobe Granite** dans le gestionnaire de configuration.
+4. Cliquez sur l’icône ![icône-de-crayon](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+5. Dans la section [!UICONTROL Fonctions bascules activées], cliquez sur ![icône-de-crayon](assets/aem6forms_add.png).
+6. Ajoutez l’identifiant du bouton d’activation de fonctionnalités, comme illustré dans l’image ci-dessous.
+   ![Ajouter une fonction bascule](assets/add_toggle_number_forms.png)
 
    >[!NOTE]
    >
-   >Vous trouverez l’ID de basculement de fonction dans le document spécifique aux fonctions destinées aux utilisateurs et utilisatrices précoces.
+   >Vous trouverez l’identifiant de la fonction d’activation/désactivation des fonctionnalités dans le document spécifique aux fonctions destinées aux utilisateurs et aux utilisatrices précoces.
 
 7. Cliquez sur Enregistrer.
 
-## Désactiver le bouton (bascule) des fonctionnalités {#disable-feature-toggle-65}
+## Désactiver la fonction d’activation/désactivation des fonctionnalités {#disable-feature-toggle-65}
 
-Pour désactiver la ou les fonctionnalités dont le ou les boutons d’activation sont activés, procédez comme suit :
+Pour désactiver la fonction d’activation/désactivation des fonctionnalités pour les fonctionnalités sur lesquelles celle-ci est activée, procédez comme suit :
 
-1. Connectez-vous à l’instance AEM Forms.
+1. Connectez-vous à votre instance AEM Forms.
 2. Accédez à `http://<author-instance-url>:portnumber/system/console/configMgr`.
-3. Recherchez **Fournisseur de basculement dynamique Adobe Granite** dans le gestionnaire de configuration.
-4. Cliquez sur l’icône ![icône-crayon](assets/illustratorcc_penciltool_cur_edit_2_17.png).
-5. Dans la section [!UICONTROL Activation/désactivation des bascules], cliquez sur ![icône-crayon](assets/aem6forms_add.png).
-6. Ajoutez le numéro du bouton (bascule) de la fonction à désactiver.
-   ![Supprimer le bouton bascule](assets/remove_toggle_feature_forms.png)
+3. Recherchez **Fournisseur de fonction bascule dynamique Adobe Granite** dans le gestionnaire de configuration.
+4. Cliquez sur l’icône ![icône-de-crayon](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+5. Dans la section [!UICONTROL Fonctions bascules désactivées], cliquez sur ![icône-de-crayon](assets/aem6forms_add.png).
+6. Ajoutez le numéro de la fonction bascule pour désactiver la fonction.
+   ![Supprimer la fonction bascule](assets/remove_toggle_feature_forms.png)
 7. Cliquez sur Enregistrer.
 
-## Considérations Techniques
+## Considérations techniques
 
-Les bascules de fonctionnalités sont spécifiques à un environnement et sont gérées au moment de l’exécution. Il n’est donc pas nécessaire de redémarrer le serveur. Cependant, certaines fonctionnalités peuvent nécessiter d’actualiser les pages appropriées ou d’effacer le cache pour refléter les modifications.
-Vous pouvez accéder à la liste des fonctionnalités activées par le biais du bouton (bascule) des fonctionnalités pour votre environnement via `http://<author-instance-url>:4502/etc.clientlibs/toggles.json`.
+Les fonctions d’activation/désactivation de fonctionnalités sont spécifiques à un environnement et sont gérées au moment de l’exécution. Il n’est donc pas nécessaire de redémarrer le serveur. Cependant, certaines fonctionnalités peuvent nécessiter d’actualiser les pages concernées ou d’effacer le cache pour refléter les modifications.
+Vous pouvez accéder à la liste des fonctionnalités activées par le biais de la fonction d’activation/désactivation des fonctionnalités pour votre environnement via `http://<author-instance-url>:4502/etc.clientlibs/toggles.json`.

@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 98%
@@ -131,7 +130,7 @@ En cas de panne de l’ensemble du cluster en raison de problèmes tels que le c
    1. Supprimez le fichier clusterNode/revision.log sur le nœud.
    1. Supprimez le fichier .lock sur le nœud, le cas échéant.
    1. Supprimez le fichier repository/system.id sur le nœud, le cas échéant.
-   1. Supprimez les fichiers &ast;&ast;/listener.properties sur le nœud, le cas échéant.
+   1. Supprimez les fichiers &amp;ast;&amp;ast;/listener.properties sur le nœud, le cas échéant.
    1. Restaurez le fichier repository/cluster_node.id pour chaque nœud du cluster.
 
 >[!NOTE]
@@ -161,7 +160,7 @@ En cas de panne de l’ensemble du cluster en raison de problèmes tels que le c
    1. Supprimez le fichier clusterNode/revision.log sur tous les nœuds du cluster.
    1. Supprimez le fichier .lock sur tous les nœuds du cluster, le cas échéant.
    1. Supprimez le fichier repository/system.id tous les nœuds du cluster, le cas échéant.
-   1. Supprimez les fichiers &ast;&ast;/listener.properties sur tous les nœuds du cluster, le cas échéant.
+   1. Supprimez les fichiers &amp;ast;&amp;ast;/listener.properties sur tous les nœuds du cluster, le cas échéant.
    1. Restaurez le fichier repository/cluster_node.id pour chaque nœud du cluster.
 
 >[!NOTE]

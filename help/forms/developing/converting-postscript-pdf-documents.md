@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 39d793ca-5909-428e-9f6e-08d587f828c0
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 98%
@@ -119,7 +118,7 @@ Pour convertir un fichier PostScript en document PDF à l’aide de l’API du s
 
    Pour obtenir le document PDF nouvellement créé, procédez comme suit :
 
-   * Appelez la méthode `getCreatedDocument` de l’objet `CreatePDFResult`. Celle-ci renvoie un objet `com.adobe.idp.Document`.
+   * Appelez la méthode `getCreatedDocument` de l’objet `CreatePDFResult`. Cette fonction renvoie un objet `com.adobe.idp.Document`.
    * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour extraire le document PDF.
 
    De même, pour obtenir le document journal, procédez comme suit.
@@ -147,7 +146,7 @@ Pour convertir un fichier PostScript en document PDF à l’aide de l’API Dist
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client de service Distiller.
 

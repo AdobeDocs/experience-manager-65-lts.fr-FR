@@ -11,9 +11,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 hide: true
-hidefromtoc: true
 exl-id: 2ba6faf9-7b30-42b1-854b-9fada1e12a4a
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1886'
 ht-degree: 98%
@@ -84,7 +83,7 @@ Pour chaque sous-formulaire, vous pouvez ajouter un élément `XDPContent` (cet 
 
 >[!NOTE]
 >
->Pour plus d’informations sur les documents DDX, consultez la section [Guide de référence du service Assembler et de DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Pour plus d’informations sur un document DDX, voir [service Assembler et référence DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Résumé des étapes {#summary-of-steps}
 
@@ -207,7 +206,7 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (Ja
 **Voir également**
 
 [Assembler plusieurs fragments XDP](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
-[&#x200B; Démarrage rapide (mode SOAP) : assembler plusieurs fragments XDP à l’aide de l’API Java.](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[ Démarrage rapide (mode SOAP) : assembler plusieurs fragments XDP à l’aide de l’API Java.](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Définition des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -272,7 +271,7 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (se
 
    * Objet `BLOB` représentant le document DDX.
    * Objet `MyMapOf_xsd_string_To_xsd_anyType` contenant les fichiers requis.
-   * Un objet `AssemblerOptionSpec` qui spécifie les options d’exécution.
+   * Un objet `AssemblerOptionSpec` qui spécifie les options d’exécution
 
    La méthode `invokeDDX` renvoie un objet `AssemblerResult` contenant les résultats de la tâche et les exceptions survenues.
 

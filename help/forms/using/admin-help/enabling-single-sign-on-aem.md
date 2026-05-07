@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: ba02f9b1-209e-42f2-b1df-2ed64fc9fdbc
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 96%
@@ -157,7 +156,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 Pour que l’authentification SPNEGO fonctionne, l’ordinateur client doit faire partie du domaine dans lequel le compte d’utilisateur ou d’utilisatrice est créé. Vous devez également configurer le navigateur client pour autoriser l’authentification SPNEGO. De plus, le site qui nécessite une authentification SPNEGO doit être un site de confiance.
 
-Si vous accédez au serveur en utilisant le nom de l’ordinateur, par exemple https://lcserver:8080, aucun paramètre n’est requis pour Internet Explorer. Si vous saisissez une URL qui ne contient aucun point (« . »), Internet Explorer traite le site comme un site intranet local. Si vous utilisez un nom qualifié complet pour le site, celui-ci doit être ajouté en tant que site de confiance.
+Si vous accédez au serveur en utilisant le nom de l’ordinateur, par exemple :8080, aucun paramètre n’est requis pour Internet Explorer. Si vous saisissez une URL qui ne contient aucun point (« . »), Internet Explorer traite le site comme un site intranet local. Si vous utilisez un nom qualifié complet pour le site, celui-ci doit être ajouté en tant que site de confiance.
 
 **Configurer Internet Explorer 6.x**
 

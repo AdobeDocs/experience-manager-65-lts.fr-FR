@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 054d31c3-bd58-4596-8c06-4909d75e9569
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 98%
@@ -199,15 +198,15 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
 
    * Sauvegarde complète de la base de données (nsrnmddbf.bat) :
 
-     `NetWorker_database_module_root` `-s`*&lt;Nom_Serveur_Networker>* `-U` `[username]` `-P`*[mot de passe ]*`-l full`*&lt;nom_base_de_données>*
+     `NetWorker_database_module_root` `-s`*&lt;Nom_Serveur_Networker>* `-U``[username]` `-P`*[mot de passe ]*`-l full`*&lt;nom_base_de_données>*
 
    * Sauvegarde incrémentielle de la base de données (nsrnmddbi.bat) :
 
-     `[NetWorker_database_module_root]` `-s`*&lt;Nom_Serveur_Networker>* `-U` `[username]` `-P` `[password]` `-l 1 -R`*&lt;nom_base_de_données>*
+     `[NetWorker_database_module_root]` `-s`*&lt;Nom_Serveur_Networker>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;nom_base_de_données>*
 
    * Sauvegarde du journal de la base de données (nsrnmddbl.bat) :
 
-     `[NetWorker_database_module_root]` `-s` `<NetWorker_Server_Name>` `-U` `[username]` `-P` `[password]` `-l incr -R`*&lt;nom_base_de_données>*
+     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;nom_base_de_données>*
 
      Où :
 
@@ -241,7 +240,7 @@ Après avoir réalisé une sauvegarde complète des données AEM Forms, effectue
 
 >[!NOTE]
 >
->Les scripts de commande exigent que le chemin d’accès complet soit configuré sur le fichier nsrnmd_win.cfg créé dans la section [Préparation d’EMC Document Content Server pour la sauvegarde et la récupération](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
+>Les scripts de commande exigent le chemin d’accès complet au fichier nsrnmd_win.cfg créé dans la section [Préparation d’EMC Document Content Server pour la sauvegarde et la récupération](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
 1. Ouvrez une invite de commande, puis modifiez la valeur sur `[NetWorker_root]\Legato\nsr\bin`.
 1. Exécutez la commande suivante :

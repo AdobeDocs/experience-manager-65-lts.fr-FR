@@ -6,11 +6,10 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 role: Admin,User
 hide: true
-hidefromtoc: true
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 3de38e4d-6a12-470e-aded-7eb75a9cdcd8
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '7800'
 ht-degree: 98%
@@ -123,7 +122,7 @@ Cette section décrit des techniques que vous pouvez utiliser pendant le process
  </thead> 
  <tbody>
   <tr> 
-   <td><p>Privilèges&nbsp;</p> </td> 
+   <td><p>Privilèges&amp;nbsp;</p> </td> 
    <td><p>Utilisez le minimum de droits requis pour installer le logiciel. Connectez-vous à votre ordinateur via un compte qui n’appartient pas au groupe d’administration. Sous Windows, vous pouvez utiliser la commande Exécuter pour exécuter le programme d’installation d’AEM Forms sur JEE en tant qu’utilisateur non administrateur. Sous UNIX et Linux, utilisez une commande comme <code>sudo</code> pour installer le logiciel.</p> </td> 
   </tr> 
   <tr> 
@@ -264,7 +263,7 @@ Configuration Manager a utilisé une servlet déployée sur votre serveur d’ap
 1. Démarrez le serveur AEM Forms.
 1. Entrez l’URL suivante dans un navigateur pour tester la modification et garantir que l’adresse ne fonctionne plus.
 
-   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
 
 **Verrouillage de l’accès distant au Trust Store**
 
@@ -952,7 +951,7 @@ Cette section décrit les ports par défaut (et les plages de configurations alt
  </tbody> 
 </table>
 
-**Ports WebSphere &#x200B;**
+**Ports WebSphere **
 
 Pour plus d’informations sur les ports WebSphere requis par AEM Forms sur JEE, consultez Configuration des numéros de ports dans l’interface utilisateur de WebSphere Application Server.
 

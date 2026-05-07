@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
-hidefromtoc: true
 exl-id: 11a7278e-efaa-402c-8add-5280bf5a156a
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '2507'
 ht-degree: 97%
@@ -321,7 +320,7 @@ Vous pouvez appeler un processus Forms depuis Acrobat en effectuant une requête
 
 Spécifiez lʼURL dʼappel du processus dans le champ *URL d’envoi* du bouton, comme illustré ci-après.
 
-L’URL complète pour appeler le processus est https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument.
+L’URL complète pour appeler le processus est :8080/rest/services/MyApplication/EncryptDocument.
 
 Si le processus nécessite un document PDF comme valeur d’entrée, veillez à envoyer le formulaire au format PDF, comme illustré ci-dessus. En outre, pour appeler correctement un processus, il doit renvoyer un document PDF. Sinon, Acrobat ne peut pas traiter la valeur renvoyée et une erreur se produit. Il n’est pas nécessaire de spécifier le nom de la variable de processus d’entrée. Par exemple, le processus *MyApplication/EncryptDocument* comporte une variable d’entrée nommée `inDoc`. Si le formulaire est envoyé au format PDF, il n’est pas nécessaire de spécifier inDoc.
 

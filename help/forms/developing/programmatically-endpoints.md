@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 6a0c7dbf-02ae-4211-a5c7-941eb353a403
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '10888'
 ht-degree: 98%
@@ -333,7 +332,7 @@ La liste suivante spécifie les valeurs de configuration définies lors de l’a
 * **userName** : nom d’utilisateur utilisé lors de l’appel d’un service cible à partir du dossier de contrôle. Cette valeur est obligatoire. La valeur par défaut est SuperAdmin.
 * **domainName** : domaine de l’utilisateur ou utilisatrice. Cette valeur est obligatoire. La valeur par défaut est DefaultDom.
 * **batchSize** : le nombre de fichiers ou de dossiers à sélectionner par analyse. Ce paramètre permet d’éviter une surcharge du système, car l’analyse simultanée d’un trop grand nombre de fichiers peut provoquer une panne. La valeur par défaut est 2.
-* **waitTime** : délai d’attente (en millisecondes) avant l’analyse d’un dossier ou d’un fichier après sa création. Par exemple, si la durée d’attente est de 36 000 000 millisecondes (une heure) et que le fichier a été créé il y a une minute, ce dernier sera sélectionné à l’issue d’un laps de temps de 59 minutes ou plus. Ce paramètre assure la copie intégrale d’un fichier ou d’un dossier dans le dossier d’entrée. Par exemple, si vous devez traiter un fichier volumineux dont le téléchargement dure dix minutes, définissez une durée d’attente de 10&ast;60 &ast;1 000 millisecondes. Ce paramètre empêche le dossier de contrôle d’analyser le fichier s’il n’a pas attendu dix minutes. La valeur par défaut est 0.
+* **waitTime** : délai d’attente (en millisecondes) avant l’analyse d’un dossier ou d’un fichier après sa création. Par exemple, si la durée d’attente est de 36 000 000 millisecondes (une heure) et que le fichier a été créé il y a une minute, ce dernier sera sélectionné à l’issue d’un laps de temps de 59 minutes ou plus. Ce paramètre assure la copie intégrale d’un fichier ou d’un dossier dans le dossier d’entrée. Par exemple, si vous devez traiter un fichier volumineux dont le téléchargement dure dix minutes, définissez une durée d’attente de 10&amp;ast;60 &amp;ast;1 000 millisecondes. Ce paramètre empêche le dossier de contrôle d’analyser le fichier s’il n’a pas attendu dix minutes. La valeur par défaut est 0.
 * **excludeFilePattern** : le modèle utilisé par un dossier de contrôle pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers pourvus de ce modèle ne sont pas analysés en vue d’être traités. Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs fichiers. Vous pouvez copier le contenu du dossier dans un dossier dont le nom sera choisi par le dossier de contrôle. Ceci empêche le dossier de contrôle de sélectionner un dossier en vue de le traiter avant qu’il ne soit complètement copié dans le dossier d’entrée. Ainsi, si l’attribut excludeFilePattern a la valeur `data*`, tous les fichiers et les dossiers correspondant à `data*` ne sont pas sélectionnés. Cela inclut les fichiers et les dossiers nommés `data1`, `data2`, etc. En outre, le modèle peut être complété par des caractères génériques pour spécifier des modèles de fichier. Le dossier de contrôle modifie l’expression régulière afin de prendre en charge les modèles génériques tels que `*.*` et `*.pdf`. Ces modèles de caractères génériques ne sont pas pris en charge par les expressions régulières.
 * **includeFilePattern** : le modèle utilisé par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Ainsi, si l’attribut IncludeFilePattern a la valeur `*`, tous les fichiers et les dossiers correspondant à `input*` sont sélectionnés. Cela inclut les fichiers et les dossiers nommés `input1`, `input2`, etc. La valeur par défaut est `*`. Cette valeur indique tous les fichiers et dossiers. En outre, le modèle peut être complété par des caractères génériques pour spécifier des modèles de fichier. Le dossier de contrôle modifie l’expression régulière afin de prendre en charge les modèles génériques tels que `*.*` et `*.pdf`. Ces modèles de caractères génériques ne sont pas pris en charge par les expressions régulières. Cette valeur n’est pas obligatoire.
 * **resultFolderName** : le dossier dans lequel les résultats enregistrés sont stockés. Cet emplacement peut être un chemin d’accès absolu ou relatif au répertoire. Si les résultats ne s’affichent pas dans ce dossier, vérifiez le dossier des échecs. Les fichiers en lecture seule ne sont pas traités et ils sont enregistrés dans le dossier des échecs. La valeur par défaut est `result/%Y/%M/%D/`. Il s’agit du dossier de résultats dans le dossier de contrôle.
@@ -344,11 +343,11 @@ La liste suivante spécifie les valeurs de configuration définies lors de l’a
 
 **Définir les valeurs des paramètres d’entrée**
 
-Lorsque vous créez un point d’entrée de dossier de contrôle, vous devez définir les valeurs des paramètres d’entrée. En d’autres termes, vous devez décrire les valeurs d’entrée qui sont transmises à l’opération appelée par le dossier de contrôle. Prenons le cas du processus introduit dans cette rubrique. Il comporte une valeur d’entrée appelée `InDoc` et son type de données est `com.adobe.idp.Document`. Lorsque vous créez un point d’entrée de dossier de contrôle pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre d’entrée.
+Lorsque vous créez un point d’entrée de dossier de contrôle, vous devez définir les valeurs des paramètres d’entrée. En d’autres termes, vous devez décrire les valeurs d’entrée qui sont transmises à l’opération appelée par le dossier de contrôle. Prenons le cas du processus introduit dans cette rubrique. Il comporte une valeur d’entrée nommée `InDoc` et son type de données est `com.adobe.idp.Document`. Lorsque vous créez un point d’entrée de dossier de contrôle pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre d’entrée.
 
 Pour définir les valeurs des paramètres d’entrée requis pour un point d’entrée de dossier de contrôle, spécifiez les valeurs suivantes :
 
-**Nom du paramètre d’entrée :** le nom du paramètre d’entrée. Le nom d’une valeur d’entrée est spécifié dans Workbench pour un processus. Si la valeur d’entrée appartient à une opération de service (un service qui n’est pas un processus créé dans Workbench), le nom d’entrée est spécifié dans le fichier component.xml. Par exemple, le nom du paramètre d’entrée pour le processus présenté dans cette section est `InDoc`.
+**Input parameter name** : nom du paramètre d’entrée. Le nom d’une valeur d’entrée est spécifié dans Workbench pour un processus. Si la valeur d’entrée appartient à une opération de service (un service qui n’est pas un processus créé dans Workbench), le nom d’entrée est spécifié dans le fichier component.xml. Par exemple, le nom du paramètre d’entrée pour le processus présenté dans cette section est `InDoc`.
 
 **Type de mappage :** utilisé pour configurer les valeurs d’entrée requises pour appeler l’opération de service. Il existe deux types de mappage :
 
@@ -361,7 +360,7 @@ Pour définir les valeurs des paramètres d’entrée requis pour un point d’e
 
 **Définir une valeur de paramètre de sortie**
 
-Lors de la création d’un point d’entrée de dossier de contrôle, vous devez définir une valeur de paramètre de sortie. En d’autres termes, vous devez décrire la valeur de sortie qui est renvoyée par le service qui est appelé par le point d’entrée de dossier de contrôle. Prenons le cas du processus introduit dans cette rubrique. Elle a une valeur de sortie nommée `SecuredDoc` et son type de données est `com.adobe.idp.Document`. Lorsque vous créez un point d’entrée de dossier de contrôle pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre de sortie.
+Lors de la création d’un point d’entrée de dossier de contrôle, vous devez définir une valeur de paramètre de sortie. En d’autres termes, vous devez décrire la valeur de sortie qui est renvoyée par le service qui est appelé par le point d’entrée de dossier de contrôle. Prenons le cas du processus introduit dans cette rubrique. Il a une valeur de sortie nommée `SecuredDoc` et son type de données est `com.adobe.idp.Document`. Lorsque vous créez un point d’entrée de dossier de contrôle pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre de sortie.
 
 Pour définir une valeur de paramètre de sortie requise pour un point d’entrée de dossier de contrôle, spécifiez les valeurs suivantes :
 
@@ -431,7 +430,7 @@ Ajoutez un point d’entrée Watched Folder à l’aide de l’API Java AEM Form
    * Valeur string spécifiant le nom du nouveau paramètre d’entrée. Par exemple, le nom du paramètre d’entrée pour le service EncryptDocument est `InDoc`.
    * Valeur string qui spécifie le type de données du paramètre d’entrée. Par exemple, le type de données du paramètre d’entrée `InDoc` est `com.adobe.idp.Document`.
    * Valeur string qui spécifie le type de mappage. Par exemple, vous pouvez spécifier `variable`.
-   * Valeur string qui spécifie la valeur du type de mappage. Par exemple, vous pouvez spécifier &ast;.pdf comme modèle de fichier.
+   * Valeur string qui spécifie la valeur du type de mappage. Par exemple, vous pouvez spécifier &amp;ast;.pdf comme modèle de fichier.
 
    >[!NOTE]
    >
@@ -568,7 +567,7 @@ Les valeurs de configuration suivantes sont définies lors de l’ajout par prog
 * **userName** : nom d’utilisateur utilisé lors de l’appel d’un service cible à partir d’un e-mail. La valeur par défaut est `SuperAdmin`.
 * **domainName** : valeur de configuration obligatoire. La valeur par défaut est `DefaultDom`.
 * **domainPattern** : spécifie les modèles de domaine d’e-mail entrant acceptés par le fournisseur. Par exemple, si le domaine `adobe.com` est utilisé, seuls les e-mails de ce domaine sont traités. Ceux provenant d’autres domaines sont ignorés.
-* **filePattern**: indique les modèles de pièce jointe de fichier entrant acceptés par le fournisseur. Cela inclut les fichiers ayant des extensions de nom de fichier spécifiques (&ast;.dat, &ast;.xml), les fichiers ayant des noms spécifiques (données) et les fichiers dont le nom et l’extension comportent des expressions composites (&ast;.`[dD][aA]`&#39;port&#39;). La valeur par défaut est `*`.
+* **filePattern**: indique les modèles de pièce jointe de fichier entrant acceptés par le fournisseur. Cela inclut les fichiers ayant des extensions de nom de fichier spécifiques (&amp;ast;.dat, &amp;ast;.xml), les fichiers ayant des noms spécifiques (données) et les fichiers dont le nom et l’extension comportent des expressions composites (&amp;ast;.`[dD][aA]`&#39;port&#39;). La valeur par défaut est `*`.
 * **recipientSuccessfulJob** : adresse électronique à laquelle sont envoyés les messages pour signaler les travaux effectués. Par défaut, un message de travail effectué est toujours envoyé à l’expéditeur. Si vous saisissez `sender`, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez d’autres destinataires au moyen de leurs adresses e-mail, séparées par des virgules. Pour désactiver cette option, ne remplissez pas ce champ. Dans certains cas, il se peut que vous souhaitiez déclencher un processus et ne pas recevoir de courrier électronique de notification du résultat. La valeur par défaut est `sender`.
 * **recipientFailedJob** : adresse électronique à laquelle sont envoyés les messages pour signaler les travaux ayant échoué. Par défaut, un message de travail ayant échoué est toujours envoyé à l’expéditeur. Si vous saisissez `sender`, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez d’autres destinataires au moyen de leurs adresses e-mail, séparées par des virgules. Pour désactiver cette option, ne remplissez pas ce champ. La valeur par défaut est `sender`.
 * **inboxHost** : nom ou adresse IP de l’hôte de la boîte de réception du fournisseur de messagerie électronique à analyser.
@@ -676,7 +675,7 @@ Ajoutez un point d’entrée Email à l’aide de l’API Java :
    * Valeur string spécifiant le nom du nouveau paramètre d’entrée. Par exemple, le nom du paramètre d’entrée pour le service EncryptDocument est `InDoc`.
    * Valeur string qui spécifie le type de données du paramètre d’entrée. Par exemple, le type de données du paramètre d’entrée `InDoc` est `com.adobe.idp.Document`.
    * Valeur string qui spécifie le type de mappage. Par exemple, vous pouvez spécifier `variable`.
-   * Valeur string qui spécifie la valeur du type de mappage. Par exemple, vous pouvez spécifier &ast;.pdf comme modèle de fichier.
+   * Valeur string qui spécifie la valeur du type de mappage. Par exemple, vous pouvez spécifier &amp;ast;.pdf comme modèle de fichier.
 
    >[!NOTE]
    >
@@ -803,13 +802,13 @@ Pour créer un point d’entrée Remoting pour un service, spécifiez les valeur
 * **Description** : fournit une description du point d’entrée.
 * **Nom** : indique le nom du point d’entrée.
 * **Valeur de l’identifiant du service** : indique le service auquel appartient le point d’entrée. Par exemple, pour ajouter un point d’entrée Remoting au processus présenté dans cette section (un processus devient un service lorsqu’il est activé dans Workbench), spécifiez `EncryptDocument`.
-* **Nom de l’opération** : indique le nom de l’opération appelée à l’aide du point d’entrée. Lors de la création d’un point d’entrée Remoting, spécifiez un caractère générique (&ast;).
+* **Nom de l’opération** : indique le nom de l’opération appelée à l’aide du point d’entrée. Lors de la création d’un point d’entrée Remoting, spécifiez un caractère générique (&amp;ast;).
 
 **Créer un point d’entrée Remoting**
 
 Une fois que vous avez défini les attributs du point d’entrée Remoting, vous pouvez créer un point d’entrée Remoting pour un service.
 
-**Activez le point d’entrée**
+**Activer le point d’entrée**
 
 Après avoir créé un point d’entrée, vous devez l’activer. Lorsqu’un point d’entrée Remoting est activé, il permet à un client Flex d’appeler le service.
 
@@ -1195,7 +1194,7 @@ Pour récupérer les informations du connecteur de point d’entrée, procédez 
 1. Spécifiez le type de connecteur.
 1. Récupérez les valeurs de configuration.
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 

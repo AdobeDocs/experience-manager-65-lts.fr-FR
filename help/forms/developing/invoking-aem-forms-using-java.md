@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 42c85231-9e65-4c3c-8b86-3efdaa577161
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '5557'
 ht-degree: 99%
@@ -644,7 +643,7 @@ Le référencement d’un serveur d’applications J2EE spécifique n’est pas 
 
 Les applications clients qui utilisent le mode de connexion SOAP peuvent utiliser le port de répartition de charge HTTP pour le cluster. Les applications clients qui utilisent le mode de connexion EJB peuvent se connecter au port EJB d’un serveur d’applications J2EE spécifique. Cette action gère la répartition de la charge entre les nœuds du cluster.
 
-**WebSphere &#x200B;**
+**WebSphere **
 
 L’exemple suivant montre le contenu d’un fichier jndi.properties utilisé pour se connecter à AEM Forms déployé sur WebSphere.
 
@@ -663,7 +662,7 @@ L’exemple suivant montre le contenu d’un fichier jndi.properties utilisé po
  java.naming.provider.url=t3://appserver1:8001, appserver2:8001
 ```
 
-**JBoss &#x200B;**
+**JBoss **
 
 L’exemple suivant montre le contenu d’un fichier jndi.properties utilisé pour se connecter à AEM Forms déployé sur JBoss.
 

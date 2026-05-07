@@ -10,9 +10,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: b70404ee-21dc-4c0b-a66f-c37a6f29f98e
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 100%
@@ -55,7 +54,7 @@ Pour afficher un formulaire HTML qui utilise un fichier CSS, effectuez les tâch
 1. Effectuez le rendu d’un formulaire HTML.
 1. Écrivez le flux de données du formulaire dans le navigateur web du client.
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
