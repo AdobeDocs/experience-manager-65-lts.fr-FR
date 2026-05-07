@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 06869949-4a71-4d8a-9431-b94df13985e9
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '2577'
 ht-degree: 100%
@@ -43,7 +42,7 @@ Vous pouvez utiliser les API Java et de service web PDF Utilities pour converti
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service PDF Utilities, consultez la section [Guide de référence des services d’AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Forms, Consultez la section [Guide de référence des services AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -451,7 +450,7 @@ Vous pouvez utiliser les API Java PDF Utilities pour convertir par programmation
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service PDF Utilities, consultez la section [Guide de référence des services d’AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Forms, Consultez la section [Guide de référence des services AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-4}
 

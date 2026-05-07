@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 6a0c7dbf-02ae-4211-a5c7-941eb353a403
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '10888'
 ht-degree: 98%
@@ -344,11 +343,11 @@ La liste suivante spécifie les valeurs de configuration définies lors de l’a
 
 **Définir les valeurs des paramètres d’entrée**
 
-Lorsque vous créez un point d’entrée de dossier de contrôle, vous devez définir les valeurs des paramètres d’entrée. En d’autres termes, vous devez décrire les valeurs d’entrée qui sont transmises à l’opération appelée par le dossier de contrôle. Prenons le cas du processus introduit dans cette rubrique. Il comporte une valeur d’entrée appelée `InDoc` et son type de données est `com.adobe.idp.Document`. Lorsque vous créez un point d’entrée de dossier de contrôle pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre d’entrée.
+Lorsque vous créez un point d’entrée de dossier de contrôle, vous devez définir les valeurs des paramètres d’entrée. En d’autres termes, vous devez décrire les valeurs d’entrée qui sont transmises à l’opération appelée par le dossier de contrôle. Prenons le cas du processus introduit dans cette rubrique. Il comporte une valeur d’entrée nommée `InDoc` et son type de données est `com.adobe.idp.Document`. Lorsque vous créez un point d’entrée de dossier de contrôle pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre d’entrée.
 
 Pour définir les valeurs des paramètres d’entrée requis pour un point d’entrée de dossier de contrôle, spécifiez les valeurs suivantes :
 
-**Nom du paramètre d’entrée :** le nom du paramètre d’entrée. Le nom d’une valeur d’entrée est spécifié dans Workbench pour un processus. Si la valeur d’entrée appartient à une opération de service (un service qui n’est pas un processus créé dans Workbench), le nom d’entrée est spécifié dans le fichier component.xml. Par exemple, le nom du paramètre d’entrée pour le processus présenté dans cette section est `InDoc`.
+**Input parameter name** : nom du paramètre d’entrée. Le nom d’une valeur d’entrée est spécifié dans Workbench pour un processus. Si la valeur d’entrée appartient à une opération de service (un service qui n’est pas un processus créé dans Workbench), le nom d’entrée est spécifié dans le fichier component.xml. Par exemple, le nom du paramètre d’entrée pour le processus présenté dans cette section est `InDoc`.
 
 **Type de mappage :** utilisé pour configurer les valeurs d’entrée requises pour appeler l’opération de service. Il existe deux types de mappage :
 
@@ -361,7 +360,7 @@ Pour définir les valeurs des paramètres d’entrée requis pour un point d’e
 
 **Définir une valeur de paramètre de sortie**
 
-Lors de la création d’un point d’entrée de dossier de contrôle, vous devez définir une valeur de paramètre de sortie. En d’autres termes, vous devez décrire la valeur de sortie qui est renvoyée par le service qui est appelé par le point d’entrée de dossier de contrôle. Prenons le cas du processus introduit dans cette rubrique. Elle a une valeur de sortie nommée `SecuredDoc` et son type de données est `com.adobe.idp.Document`. Lorsque vous créez un point d’entrée de dossier de contrôle pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre de sortie.
+Lors de la création d’un point d’entrée de dossier de contrôle, vous devez définir une valeur de paramètre de sortie. En d’autres termes, vous devez décrire la valeur de sortie qui est renvoyée par le service qui est appelé par le point d’entrée de dossier de contrôle. Prenons le cas du processus introduit dans cette rubrique. Il a une valeur de sortie nommée `SecuredDoc` et son type de données est `com.adobe.idp.Document`. Lorsque vous créez un point d’entrée de dossier de contrôle pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre de sortie.
 
 Pour définir une valeur de paramètre de sortie requise pour un point d’entrée de dossier de contrôle, spécifiez les valeurs suivantes :
 
@@ -809,7 +808,7 @@ Pour créer un point d’entrée Remoting pour un service, spécifiez les valeur
 
 Une fois que vous avez défini les attributs du point d’entrée Remoting, vous pouvez créer un point d’entrée Remoting pour un service.
 
-**Activez le point d’entrée**
+**Activer le point d’entrée**
 
 Après avoir créé un point d’entrée, vous devez l’activer. Lorsqu’un point d’entrée Remoting est activé, il permet à un client Flex d’appeler le service.
 
@@ -1195,7 +1194,7 @@ Pour récupérer les informations du connecteur de point d’entrée, procédez 
 1. Spécifiez le type de connecteur.
 1. Récupérez les valeurs de configuration.
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 

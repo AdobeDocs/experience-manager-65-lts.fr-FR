@@ -10,9 +10,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: de61c579-50ed-423b-adca-60329f3f0b89
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '2471'
 ht-degree: 98%
@@ -51,7 +50,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>Le servlet Java <code>GetLoanForm</code> utilise l’API cliente du service Forms pour effectuer le rendu du formulaire de prêt vers le navigateur web client. (Consultez la section <a href="#render-an-interactive-pdf-form-using-the-java-api">Générer un formulaire PDF interactif à l’aide de l’API Java</a>).</p></td>
+   <td><p>La servlet Java <code>GetLoanForm</code> utilise lʼAPI Client du service Forms pour restituer le formulaire de prêt au navigateur web du client. (Consultez la section <a href="#render-an-interactive-pdf-form-using-the-java-api">Générer un formulaire PDF interactif à l’aide de l’API Java</a>).</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -104,7 +103,7 @@ En règle générale, vous ne placez pas le code de l’API cliente du service F
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations à propos du service Forms, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 **Résumé des étapes**
 
@@ -220,7 +219,7 @@ Pour générer un formulaire PDF interactif à l’aide de l’API Forms (Java),
    * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `com.adobe.idp.Document`.
    * Un objet `PDFFormRenderSpec` stockant les options d’exécution. Ce paramètre est facultatif et vous pouvez indiquer `null` si vous ne souhaitez pas spécifier d’options d’exécution.
-   * Un objet `URLSpec` contenant les valeurs URI requises par le service Forms.
+   * Un objet `URLSpec` contenant des valeurs URI requises par le service Forms.
    * Objet `java.util.HashMap` stockant les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
 
    La méthode `renderPDFForm` renvoie un objet `FormsResult` contenant un flux de données de formulaire qui doit être écrit dans le navigateur web client.
@@ -273,7 +272,7 @@ Pour générer un formulaire PDF interactif à l’aide de l’API Forms (servic
    Appelez la méthode `renderPDFForm` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
    * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Un objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez `null`.
+   * Objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez `null`.
    * Un objet `PDFFormRenderSpec` prévu pour stocker les options d’exécution. Ce paramètre est facultatif et vous pouvez indiquer `null` si vous ne souhaitez pas spécifier d’options d’exécution.
    * Un objet `URLSpec` contenant des valeurs URI requises par le service Forms.
    * Objet `java.util.HashMap` stockant les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.

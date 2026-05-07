@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 387f917c-eae3-4326-88f4-3b77cb9e4d46
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '2382'
 ht-degree: 100%
@@ -160,7 +159,7 @@ Convertissez un document PDF en document PDF/A à l’aide de l’API DocConvert
 1. Créer un client DocConvert
 
    * À l’aide de l’assemblage client .NET Microsoft, créez un objet `DocConverterServiceService` en appelant son constructeur par défaut.
-   * Définissez le membre de données `Credentials` de l’objet `DocConverterServiceService` avec une valeur `System.Net.NetworkCredential` indiquant le nom d’utilisateur et le mot de passe.
+   * Définissez le membre de données `Credentials` de l’objet `DocConverterServiceService` avec une valeur `System.Net.NetworkCredential` qui spécifie le nom d’utilisateur et le mot de passe.
 
 1. Référencer un document PDF à convertir en document PDF/A
 
@@ -321,7 +320,7 @@ Déterminez la conformité au format PDF/A à l’aide de l’API Web Service :
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’objet `BLOB` en attribuant à sa propriété `binaryData` le contenu du tableau d’octets.
+   * Renseignez l’objet `BLOB` en affectant à sa propriété `binaryData` le contenu du tableau d’octets.
 
 1. Définir les options d’exécution
 

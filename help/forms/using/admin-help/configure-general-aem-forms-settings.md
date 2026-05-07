@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 54e7132d-3009-4a83-9f03-55bb2c41ae90
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1801'
 ht-degree: 97%
@@ -103,7 +102,7 @@ Ce paramètre est obligatoire. La valeur par défaut est de 30 secondes.
 
 **Activer le FIPS** *ndash; Sélectionnez cette option pour activer le mode FIPS. Le FIPS (Federal Information Processing Standard) 140-2 est un standard de chiffrement défini par le gouvernement des États-Unis. En mode FIPS, AEM Forms limite la protection des données aux algorithmes approuvés FIPS 140-2 en utilisant le module de chiffrement RSA BSAFE Crypto-C 2.1.
 
-Le mode FIPS ne prend pas en charge les algorithmes de chiffrement utilisés dans les versions Adobe Acrobat® antérieures à la version 7.0. Si le mode FIPS est activé et que vous utilisez le service Encryption pour chiffrer le PDF à l’aide d’un mot de passe dont le niveau de compatibilité est défini sur Acrobat 5, la tentative de chiffrement échoue avec une erreur.
+Le mode FIPS ne prend pas en charge les algorithmes de chiffrement utilisés dans les versions ® antérieures à la version 7.0. Si le mode FIPS est activé et que vous utilisez le service Encryption pour chiffrer le PDF à l’aide d’un mot de passe dont le niveau de compatibilité est défini sur Acrobat 5, la tentative de chiffrement échoue avec une erreur.
 
 En général, lorsque le mode FIPS est activé, le service Assembler n’applique le chiffrement du mot de passe à aucun document. En cas de tentative, une exception FIPSModeException est générée pour indiquer que « Le chiffrement du mot de passe n’est pas autorisé en mode FIPS ». En outre, l’élément PDFsFromBookmarks DDX (Document Description XML) n’est pas pris en charge en mode FIPS lorsque le document de base est chiffré par mot de passe.
 

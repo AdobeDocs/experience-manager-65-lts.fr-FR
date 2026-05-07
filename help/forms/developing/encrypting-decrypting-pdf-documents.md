@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 9f694358-e502-4fc0-8352-4c5119573756
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '8295'
 ht-degree: 98%
@@ -49,7 +48,7 @@ Si vous chiffrez un document PDF avec un mot de passe, les utilisateurs devront 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Encryption, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Encryption, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -258,7 +257,7 @@ Un certificat de clé publique contient la clé publique d’un utilisateur et s
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Encryption, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Encryption, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -418,7 +417,7 @@ Chiffrez un document PDF avec un certificat à l’aide de l’API Encryption (W
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur string qui représente l’emplacement du fichier du document PDF à chiffrer et son mode d’ouverture.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
+   * Renseignez l’objet `BLOB` en affectant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Référencez le certificat.
 
@@ -427,7 +426,7 @@ Chiffrez un document PDF avec un certificat à l’aide de l’API Encryption (W
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur string qui représente l’emplacement du fichier du certificat et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez lʼobjet `BLOB` en affectant le contenu du tableau dʼoctets au membre de données `MTOM` de lʼobjet `BLOB`.
+   * Renseignez l’objet `BLOB` en attribuant le contenu du tableau d’octets au membre de données `MTOM` de l’objet `BLOB`.
    * Affectez l’objet `BLOB` qui stocke le certificat au membre de données `x509Cert` de l’objet `Recipient`.
    * Créez un objet `CertificateEncryptionIdentity` qui stocke les informations de certificat à l’aide de son constructeur.
    * Affectez l’objet `Recipient` qui stocke le certificat dans le membre de données du destinataire de l’objet `CertificateEncryptionIdentity`.
@@ -437,7 +436,7 @@ Chiffrez un document PDF avec un certificat à l’aide de l’API Encryption (W
 
    * Créez un objet `CertificateEncryptionOptionSpec` en utilisant son constructeur.
    * Spécifiez les ressources du document PDF à chiffrer en attribuant une valeur d’énumération `CertificateEncryptionOption` au membre de données `option` de l’objet `CertificateEncryptionOptionSpec`. Pour chiffrer l’intégralité du document PDF, y compris ses métadonnées et ses pièces jointes, affectez `CertificateEncryptionOption.ALL` à ce membre de données.
-   * Définissez l’option de compatibilité Acrobat en attribuant une valeur d’énumération `CertificateEncryptionCompatibility` au membre de données `compat` de l’objet `CertificateEncryptionOptionSpec`. Par exemple, affectez `CertificateEncryptionCompatibility.ACRO_7` à ce membre de données.
+   * Définissez l’option de compatibilité Acrobat en attribuant une valeur d’énumération `CertificateEncryptionCompatibility` au membre de données `compat` de l’objet `CertificateEncryptionOptionSpec`. Par exemple, attribuez `CertificateEncryptionCompatibility.ACRO_7` à ce membre de données.
 
 1. Créez un document PDF chiffré par certificat.
 
@@ -596,7 +595,7 @@ Supprimez le chiffrement avec certificat à l’aide de l’API Encryption (serv
 1. Prenez le document PDF chiffré.
 
    * Créez un objet `BLOB` en utilisant son constructeur. Lʼobjet `BLOB` sert à stocker le document PDF chiffré.
-   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui indique l’emplacement du fichier du document PDF chiffré et son mode d’ouverture.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF chiffré et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant le contenu du tableau d’octets au membre de données `MTOM` de l’objet `BLOB`.
@@ -631,7 +630,7 @@ Supprimez le chiffrement avec mot de passe d’un document PDF et permettez ains
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Encryption, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Encryption, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-3}
 
@@ -745,16 +744,16 @@ Supprimez le chiffrement par mot de passe à l’aide de l’API Encryption (ser
 1. Prenez le document PDF chiffré.
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF chiffré par mot de passe.
-   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui indique l’emplacement du fichier du document PDF chiffré et son mode d’ouverture.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF chiffré et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez lʼobjet `BLOB` en affectant le contenu du tableau dʼoctets au membre de données `MTOM` de lʼobjet `BLOB`.
+   * Renseignez l’objet `BLOB` en attribuant le contenu du tableau d’octets au membre de données `MTOM` de l’objet `BLOB`.
 
 1. Supprimez le mot de passe.
 
    Appelez la méthode `removePDFPasswordSecurity` de l’objet `EncryptionServiceService` et transmettez les valeurs suivantes :
 
-   * L’objet `BLOB` qui contient des données de flux de fichiers représentant un document PDF chiffré.
+   * Lʼobjet `BLOB` qui contient des données de flux de fichiers représentant un document PDF chiffré.
    * Une valeur de chaîne qui indique la valeur de mot de passe utilisée pour supprimer le chiffrement du document PDF. Cette valeur est spécifiée lors du chiffrement du document PDF avec un mot de passe.
 
    La méthode `removePDFPasswordSecurity` renvoie un objet `BLOB` contenant un document PDF non sécurisé.
@@ -1048,7 +1047,7 @@ Déterminez le type de chiffrement qui protège un document PDF à l’aide de l
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client de service.
 

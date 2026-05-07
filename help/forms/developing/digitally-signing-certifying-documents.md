@@ -5,9 +5,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 30ed51ad-4f69-41eb-9fca-d29d644aa4ba
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '17116'
 ht-degree: 99%
@@ -726,7 +725,7 @@ Signez numériquement un document PDF à l’aide de l’API Signature (Java) 
    * Une valeur de chaîne qui représente la raison pour laquelle le document PDF a été signé numériquement.
    * Une valeur de chaîne qui représente les informations de contact du ou de la signataire.
    * Un objet `PDFSignatureAppearanceOptions` contrôlant l’aspect de la signature numérique. Vous pouvez, par exemple, utiliser cet objet pour ajouter un logo personnalisé à une signature numérique.
-   * Un objet `java.lang.Boolean` qui spécifie s’il faut effectuer une vérification de la révocation sur le certificat du signataire.
+   * Objet `java.lang.Boolean` spécifiant si la révocation doit être vérifiée sur le certificat du signataire.
    * Un objet `OCSPOptionSpec` stockant les préférences pour la prise en charge du protocole OCSP (Online Certificate Status Protocol). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
    * Un objet `CRLPreferences` qui stocke les préférences de liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
    * Objet `TSPPreferences` stockant les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Ce paramètre est facultatif et peut être `null`. Pour plus d’informations, voir [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
@@ -794,12 +793,12 @@ Pour signer numériquement un document PDF à l’aide de l’API Signature (ser
    * Une valeur de chaîne qui représente l’emplacement du ou de la signataire.
    * Une valeur de chaîne qui représente les informations de contact du ou de la signataire.
    * Un objet `PDFSignatureAppearanceOptions` contrôlant l’aspect de la signature numérique. Vous pouvez, par exemple, utiliser cet objet pour ajouter un logo personnalisé à une signature numérique.
-   * Un objet `System.Boolean` indiquant si la révocation doit être vérifiée sur le certificat du signataire. Si cette vérification de la révocation est effectuée, elle est intégrée à la signature. La valeur par défaut est de `false`.
-   * Un objet `OCSPOptionSpec` qui stocke les préférences pour la prise en charge du protocole OCSP (Online Certificate Status Protocol). Si la vérification de la révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`. Pour plus d’informations sur cet objet, voir [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Objet `System.Boolean` spécifiant si la révocation doit être vérifiée sur le certificat du signataire. Si cette vérification de la révocation est effectuée, elle est intégrée à la signature. La valeur par défaut est de `false`.
+   * Un objet `OCSPOptionSpec` qui stocke les préférences pour la prise en charge du protocole OCSP (Online Certificate Status Protocol). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`. Pour plus d’informations sur cet objet, voir [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Un objet `CRLPreferences` qui stocke les préférences de liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
    * Objet `TSPPreferences` stockant les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Ce paramètre est facultatif et peut être `null`.
 
-   La méthode `sign` renvoie un objet `BLOB` représentant le document PDF signé.
+   La méthode `sign` renvoie un objet `BLOB` représentant le document PDF signé.
 
 1. Enregistrer le document PDF signé
 
@@ -939,14 +938,14 @@ Signez numériquement un formulaire interactif à l’aide de l’API Forms et S
 
    Signez le document PDF en appelant la méthode `sign` de l’objet `SignatureServiceClient` et en transmettant les valeurs suivantes :
 
-   * Objet `com.adobe.idp.Document` représentant le document PDF à signer. Assurez-vous que cet objet correspond à l’objet `com.adobe.idp.Document` obtenu à partir du service Forms.
+   * Un objet `com.adobe.idp.Document` représentant le document PDF à signer. Assurez-vous que cet objet correspond à l’objet `com.adobe.idp.Document` obtenu à partir du service Forms.
    * Une valeur de chaîne représentant le nom du champ de signature signé.
    * Un objet `Credential` représentant les informations d’identification utilisées pour signer le document PDF. Créez un objet `Credential` en appelant la méthode `getInstance` statique de l’objet `Credential`. Transmettez une valeur de chaîne spécifiant la valeur d’alias correspondant aux informations d’identification de sécurité.
-   * Un objet `HashAlgorithm` spécifiant un membre de données statique qui représente l’algorithme de hachage à utiliser pour synthétiser le document PDF. Par exemple, vous pouvez spécifier `HashAlgorithm.SHA1` pour utiliser l’algorithme SHA1.
+   * Un objet `HashAlgorithm` spécifiant un membre de données statique qui représente l’algorithme de hachage à utiliser pour synthétiser le document PDF. Par exemple, vous pouvez spécifier `HashAlgorithm.SHA1` pour utiliser l’algorithme SHA1.
    * Une valeur de chaîne qui représente la raison pour laquelle le document PDF a été signé numériquement.
    * Une valeur de chaîne qui représente les informations de contact du ou de la signataire.
    * Un objet `PDFSignatureAppearanceOptions` contrôlant l’aspect de la signature numérique. Vous pouvez, par exemple, utiliser cet objet pour ajouter un logo personnalisé à une signature numérique.
-   * Un objet `java.lang.Boolean` qui spécifie s’il faut effectuer une vérification de la révocation sur le certificat du signataire.
+   * Objet `java.lang.Boolean` spécifiant si la révocation doit être vérifiée sur le certificat du signataire.
    * Un objet `OCSPPreferences` stockant les préférences pour la prise en charge du protocole OCSP (Online Certificate Status Protocol). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
    * Un objet `CRLPreferences` qui stocke les préférences de liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
    * Objet `TSPPreferences` stockant les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Ce paramètre est facultatif et peut être `null`.
@@ -982,7 +981,7 @@ Signez numériquement un formulaire interactif à l’aide de l’API Forms et S
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client Forms et Signatures
 
@@ -1036,17 +1035,17 @@ Signez numériquement un formulaire interactif à l’aide de l’API Forms et S
    * Une valeur de chaîne représentant le nom du champ de signature signé.
    * Un objet `Credential` représentant les informations d’identification utilisées pour signer le document PDF. Créez un objet `Credential` en utilisant son constructeur et en spécifiant l’alias en attribuant une valeur à la propriété `alias` de l’objet `Credential`.
    * Un objet `HashAlgorithm` spécifiant un membre de données statique qui représente l’algorithme de hachage à utiliser pour synthétiser le document PDF. Par exemple, vous pouvez spécifier `HashAlgorithm.SHA1` pour utiliser l’algorithme SHA1.
-   * Valeur booléenne spécifiant si l’algorithme de hachage est utilisé.
+   * Une valeur booléenne qui indique si l’algorithme de hachage est utilisé.
    * Une valeur de chaîne qui représente la raison pour laquelle le document PDF a été signé numériquement.
    * Une valeur de chaîne qui représente l’emplacement du ou de la signataire.
    * Une valeur de chaîne qui représente les informations de contact du ou de la signataire.
    * Un objet `PDFSignatureAppearanceOptions` contrôlant l’aspect de la signature numérique. Vous pouvez, par exemple, utiliser cet objet pour ajouter un logo personnalisé à une signature numérique.
    * Objet `System.Boolean` spécifiant si la révocation doit être vérifiée sur le certificat du signataire. Si cette vérification de la révocation est effectuée, elle est intégrée à la signature. La valeur par défaut est de `false`.
-   * Un objet `OCSPPreferences` qui stocke les préférences pour la prise en charge du protocole OCSP (Online Certificate Status Protocol). Si la vérification de la révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`. Pour plus d’informations sur cet objet, voir [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Un objet `OCSPPreferences` qui stocke les préférences pour la prise en charge du protocole OCSP (Online Certificate Status Protocol). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`. Pour plus d’informations sur cet objet, voir [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Un objet `CRLPreferences` qui stocke les préférences de liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
    * Objet `TSPPreferences` stockant les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Ce paramètre est facultatif et peut être `null`.
 
-   La méthode `sign` renvoie un objet `BLOB` représentant le document PDF signé.
+   La méthode `sign` renvoie un objet `BLOB` représentant le document PDF signé.
 
 1. Enregistrer le document PDF signé
 
@@ -1189,7 +1188,7 @@ Certifiez un document PDF à l’aide de l’API Signature (Java) :
    * Un objet `MDPPermissions` spécifiant les actions pouvant être effectuées sur le document PDF et qui invalide la signature.
    * Un objet `PDFSignatureAppearanceOptions` qui contrôle l’aspect de la signature certifiée. Si vous le souhaitez, modifiez l’aspect de la signature en appelant une méthode, telle que `setShowDate`.
    * Une valeur de chaîne qui fournit une explication des actions qui invalident la signature.
-   * Un objet `java.lang.Boolean` spécifiant si la révocation doit être vérifiée sur le certificat du signataire. Si cette vérification de la révocation est effectuée, elle est intégrée à la signature. La valeur par défaut est de `false`.
+   * Objet `java.lang.Boolean` spécifiant si la révocation doit être vérifiée sur le certificat du signataire. Si cette vérification de la révocation est effectuée, elle est intégrée à la signature. La valeur par défaut est de `false`.
    * Objet `java.lang.Boolean` spécifiant si le champ de signature en cours de certification est verrouillé. Si le champ est verrouillé, le champ de signature est marqué comme étant en lecture seule, ses propriétés ne peuvent pas être modifiées et il ne peut pas être effacé par un utilisateur ne disposant pas d’autorisations requises. La valeur par défaut est de `false`.
    * Un objet `OCSPPreferences` qui stocke les préférences pour la prise en charge du protocole OCSP (Online Certificate Status Protocol). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`. Pour plus d’informations sur cet objet, voir [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Un objet `CRLPreferences` qui stocke les préférences de liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.

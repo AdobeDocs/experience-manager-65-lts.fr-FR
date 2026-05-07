@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 hide: true
-hidefromtoc: true
 exl-id: e449c6f6-7b75-47ab-9abd-8031b7b151e5
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '6236'
 ht-degree: 99%
@@ -221,7 +220,7 @@ Ajoutez des utilisateurs à l’aide de l’API du service Directory Manager (se
 
    >[!NOTE]
    >
-   >Remplacer `localhost` avec l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client DirectoryManagerService.
 
@@ -282,7 +281,7 @@ Pour supprimer un utilisateur, procédez comme suit :
 1. Spécifiez lʼutilisateur à supprimer.
 1. Supprimez l’utilisateur d’AEM Forms.
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, incluez les fichiers proxy.
 
@@ -397,7 +396,7 @@ Pour créer un groupe, procédez comme suit :
 1. Créez le groupe.
 1. Effectuez une action avec le groupe.
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires.
 
@@ -509,7 +508,7 @@ Pour gérer les utilisateurs et les groupes, procédez comme suit :
 1. Créez un client DirectoryManagerService.
 1. Appelez les opérations d’utilisateur ou de groupe appropriées.
 
-**Incluez les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
@@ -618,7 +617,7 @@ Pour gérer les rôles et les autorisations, procédez comme suit :
 1. Créez un client AuthorizationManagerService.
 1. Appelez les opérations de rôle ou d’autorisation appropriées.
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
@@ -658,7 +657,7 @@ Pour gérer les rôles et les autorisations à l’aide de l’API Authorization
 
    Pour attribuer un rôle à un principal, appelez la méthode `assignRole` de l’objet `AuthorizationManagerServiceClient` et transmettez les valeurs suivantes :
 
-   * Objet `java.lang.String` contenant l’identifiant de rôle
+   * Un objet `java.lang.String` qui contient l’identifiant de rôle
    * Un tableau d’objets `java.lang.String` contenant les identifiants des principaux.
 
    Pour supprimer un rôle d’un principal, appelez la méthode `unassignRole` de l’objet `AuthorizationManagerServiceClient` et transmettez les valeurs suivantes :
@@ -771,7 +770,7 @@ Pour authentifier un utilisateur par programmation, procédez comme suit :
 1. Appelez l’opération d’authentification.
 1. Si nécessaire, récupérez le contexte afin que l’application cliente puisse le transférer vers un autre service AEM Forms pour authentification.
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
@@ -898,7 +897,7 @@ Pour synchroniser les utilisateurs par programme, procédez comme suit :
 1. Appelez l’opération d’authentification.
 1. Déterminer si l’opération de synchronisation est terminée
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 

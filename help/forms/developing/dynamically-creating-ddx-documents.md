@@ -10,9 +10,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 3508d2d1-e05a-4733-b682-4b022348147a
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 100%
@@ -46,7 +45,7 @@ Ce document DDX désassemble un document PDF. Il est recommandé de vous familia
 
 >[!NOTE]
 >
->Pour plus d’informations sur les documents DDX, consultez la section [Guide de référence du service Assembler et de DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Pour plus d’informations sur un document DDX, voir [service Assembler et référence DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Résumé des étapes {#summary-of-steps}
 
@@ -172,7 +171,7 @@ Créez un document DDX de façon dynamique et désassemblez un document PDF à l
 
    Appelez la méthode `invokeDDX` de l’objet `AssemblerServiceClient` et transmettez les valeurs suivantes :
 
-   * Un objet `com.adobe.idp.Document` qui représente le document DDX créé dynamiquement.
+   * Un objet `com.adobe.idp.Document` représentant le document DDX créé dynamiquement
    * Un objet `java.util.Map` contenant le document PDF à désassembler
    * Un objet `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` qui spécifie les options d’exécution, dont la police par défaut et le niveau du log de traitement.
 
@@ -182,7 +181,7 @@ Créez un document DDX de façon dynamique et désassemblez un document PDF à l
 
    Pour obtenir des documents PDF désassemblés, procédez comme suit :
 
-   * Appelez la méthode `getDocuments` de l’objet `AssemblerResult`. Cette méthode renvoie un objet `java.util.Map`.
+   * Appelez la méthode `getDocuments` de lʼobjet `AssemblerResult`. Cette méthode renvoie un objet `java.util.Map`.
    * Effectuez une itération à l’aide de l’objet `java.util.Map` jusqu’à ce que vous trouviez l’objet `com.adobe.idp.Document` résultant.
    * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour extraire le document PDF.
 

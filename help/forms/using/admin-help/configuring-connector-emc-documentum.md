@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
-hidefromtoc: true
 exl-id: a9eae40f-531f-4354-ade0-853e84dd88d9
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 98%
@@ -70,7 +69,7 @@ Vous pouvez configurer le fournisseur de services de référentiel à utiliser a
 
 **Fournisseur de référentiels Documentum ECM (Enterprise Content Management) :** établit le fournisseur de référentiels Documentum comme fournisseur du référentiel. Cette option est obsolète.
 
-**Fournisseur de référentiels :** établit le fournisseur de référentiel natif comme fournisseur du référentiel.
+**fournisseur de référentiels :** fait du fournisseur de référentiels natif le fournisseur du référentiel.
 
 >[!NOTE]
 >

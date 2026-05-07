@@ -8,9 +8,8 @@ feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '6249'
 ht-degree: 97%
@@ -446,7 +445,7 @@ Ces options permettent de déterminer comment les fichiers Microsoft PowerPoint
 
 **[!UICONTROL Essayer OpenOffice comme convertisseur de secours]** : lorsque cette option est sélectionnée et qu’une conversion utilisant Microsoft PowerPoint échoue ou atteint le délai d’expiration spécifié, PDF Generator tente d’effectuer la conversion en utilisant OpenOffice. Si la conversion à l’aide d’OpenOffice échoue ou atteint le délai d’expiration spécifié, une exception est consignée dans le fichier journal.
 
-**[!UICONTROL Extensions de nom de fichier]** : permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est ppt,pptx. N’insérez pas de point devant les extensions ou d’espace entre celles-ci.
+**[!UICONTROL Extensions de nom de fichier]** : permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est ppt,pptx. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
 
 **[!UICONTROL Convertir les informations sur le document]** : permet d’ajouter des informations sur le document depuis la boîte de dialogue Propriétés du fichier source, y compris le titre, l’objet, l’auteur, les mots-clés, le responsable, la société, la catégorie et les commentaires. Cette option est sélectionnée par défaut.
 
@@ -491,7 +490,7 @@ Ces options déterminent le mode de conversion des fichiers Microsoft Word. Pou
 
 **[!UICONTROL Essayer OpenOffice comme convertisseur de secours]** : lorsque cette option est sélectionnée et qu’une conversion utilisant Microsoft Word échoue ou atteint le délai d’expiration spécifié, PDF Generator tente d’effectuer la conversion en utilisant OpenOffice. Si la conversion à l’aide d’OpenOffice échoue ou atteint le délai d’expiration spécifié, une exception est consignée dans le fichier journal.
 
-**[!UICONTROL Extensions de nom de fichier]** : permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est de `doc,docx,rtf,txt`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
+**[!UICONTROL Extensions de nom de fichier]** : permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est de `doc,docx,rtf,txt`. N’insérez pas de point devant les extensions ou d’espace entre celles-ci.
 
 **[!UICONTROL Convertir les informations sur le document]** : permet d’ajouter des informations sur le document depuis la boîte de dialogue Propriétés du fichier source, y compris le titre, l’objet, l’auteur, les mots-clés, le responsable, la société, la catégorie et les commentaires. Cette option est sélectionnée par défaut.
 
