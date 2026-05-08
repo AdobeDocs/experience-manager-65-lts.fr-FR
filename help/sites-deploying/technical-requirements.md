@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 551f915c2fa91a3b099ce5636ae5b7f4439c8236
+source-git-commit: f5a36877c0d051de5c96a8ab89b2886b28865249
 workflow-type: tm+mt
-source-wordcount: '3086'
-ht-degree: 90%
+source-wordcount: '3090'
+ht-degree: 88%
 
 ---
 
@@ -392,12 +392,12 @@ Pour Windows x86 :
   </tr>
 
 <tr>
-   <td>Licences Microsoft® Office 2021 Professional Plus, licences au détail et en volume</td>
+   <td>Licences ® Office 2024 Professional Plus, de vente au détail et en volume</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF et TXT</td>
   </tr>
   <tr>
    <td>
-    <strong>OpenOffice 4.1.15</strong>   </td>
+   OpenOffice 4.1.15 </td>
    <td>
     ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF et TXT<br>
 
@@ -408,15 +408,15 @@ Pour Windows x86 :
 
 >[!NOTE]
 >
->* PDF Generator prend en charge Microsoft® Office 2024.
 >* PDF Generator ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
->* PDF Generator nécessite Adobe Acrobat Pro DC (32 bits) pour effectuer la conversion.
->* PDF Generator prend uniquement en charge la version 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
->* Si une installation Microsoft® Office est désactivée ou n’a pas de licence pour une raison quelconque, par exemple si une installation sous licence en volume ne parvient pas à localiser un hôte KMS dans un délai spécifié, les conversions peuvent échouer jusqu’à ce que l’installation reçoive une nouvelle licence et soit réactivée.
+>* PDF Generator nécessite Adobe Acrobat Pro DC 32 bits et Microsoft® Office Professional Plus pour effectuer la conversion.
+>* L’installation de Microsoft® Office Professional Plus peut utiliser des licences en volume Retail ou MAK/KMS/AD.
+>* Si une installation ® Office est désactivée ou n&#39;obtient pas de licence pour une raison quelconque, par exemple une installation sous licence en volume qui ne peut pas localiser un hôte KMS au cours d&#39;une période spécifiée, les conversions peuvent échouer jusqu&#39;à ce que l&#39;installation soit à nouveau sous licence et réactivée.
 >* PDF Generator ne prend pas en charge Microsoft® Office 365.
 >* Les conversions PDF Generator pour OpenOffice sont prises en charge sous Windows et Linux®.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont uniquement prises en charge sous Windows.
->* Le service PDF Generator ne prend pas en charge Microsoft® Windows 11
+>* PDF Generator ne prend pas en charge Microsoft® Windows 11.
+>* La prise en charge de ® Office 2021 Professional Plus est obsolète.
 
 ### Conditions requises pour AEM Forms Designer {#requirements-for-aem-forms-designer}
 
@@ -451,4 +451,4 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux® contenant GLIBC_2.14, par exemple un noyau Linux® version 3.1.x. Il améliore les performances de traitement des ressources contenant une grande quantité de métadonnées, comme les fichiers PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
 
-Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[&#128279;](https://business.adobe.com/in/support/main.html)
+Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[](https://business.adobe.com/in/support/main.html)
