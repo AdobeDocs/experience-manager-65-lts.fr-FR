@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+source-git-commit: 551f915c2fa91a3b099ce5636ae5b7f4439c8236
 workflow-type: tm+mt
-source-wordcount: '2870'
-ht-degree: 91%
+source-wordcount: '3086'
+ht-degree: 90%
 
 ---
 
@@ -64,7 +64,7 @@ Adobe recommande ces configurations et fournit une prise en charge complète dan
    <td>Adobe fournit une prise en charge et une maintenance complètes de cette configuration. Cette configuration est couverte par le processus d’assurance qualité d’Adobe.</td>
   </tr>
   <tr>
-   <td><strong>R : Prise en charge limitée </strong></td>
+   <td><strong>R : Prise en charge limitée</strong></td>
    <td>Pour garantir la réussite des projets des clients et clientes, Adobe fournit une prise en charge complète dans le cadre d’un programme d’assistance restreint, qui nécessite que des conditions spécifiques soient remplies. La prise en charge au niveau R nécessite une requête formelle de la part du client ou de la cliente et une confirmation par Adobe. Pour plus d’informations, contactez l’assistance clientèle d’Adobe.</td>
   </tr>
  </tbody>
@@ -155,7 +155,7 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 | **Plateforme** | **Niveau de prise en charge** |
 |---|---|
 | **Linux®, basé sur la distribution Red Hat®** | A : prise en charge de : `[1]` `[2]` |
-| Linux, en fonction de la distribution Debian, incluse Ubuntu  | A : pris en charge `[1]` |
+| Linux, en fonction de la distribution Debian, incluse Ubuntu | A : pris en charge `[1]` |
 | Linux, en fonction de la distribution SUSE® | A : prise en charge de `[1]` |
 | Microsoft® Windows Server 2022 | R : pris en charge |
 
@@ -408,6 +408,7 @@ Pour Windows x86 :
 
 >[!NOTE]
 >
+>* PDF Generator prend en charge Microsoft® Office 2024.
 >* PDF Generator ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
 >* PDF Generator nécessite Adobe Acrobat Pro DC (32 bits) pour effectuer la conversion.
 >* PDF Generator prend uniquement en charge la version 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
@@ -448,6 +449,6 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 ### Conditions requises pour qu’AEM Assets traite les ressources lourdes en métadonnées sous Linux® {#assetsonlinux}
 
-Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux® contenant GLIBC_2.14, par exemple un noyau Linux® version 3.1.x. Cela améliore les performances de traitement des ressources qui contiennent un grand nombre de métadonnées, comme les fichiers PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux® contenant GLIBC_2.14, par exemple un noyau Linux® version 3.1.x. Il améliore les performances de traitement des ressources contenant une grande quantité de métadonnées, comme les fichiers PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
 
 Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[&#128279;](https://business.adobe.com/in/support/main.html)
