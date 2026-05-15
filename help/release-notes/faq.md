@@ -22,7 +22,7 @@ Adobe accorde une grande importance à la sécurité et à la stabilité des app
 
 ## Je suis un client ou une cliente On-Premise. Que se passe-t-il si je ne mets pas à niveau vers AEM 6.5 LTS ?
 
-AEM 6.5 LTS comprend d’importantes mises à jour de sécurité et de stabilité, notamment la prise en charge d’Oracle Java 17 et Java 21. Il est recommandé aux entreprises de planifier une mise à niveau vers la version 6.5 LTS. Adobe continuera à prendre en charge AEM 6.5 jusqu’au 28 février 2027. Consultez la [feuille de route](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem65) pour plus d’informations.
+AEM 6.5 LTS comprend d’importantes mises à jour de sécurité et de stabilité, notamment la prise en charge d’Oracle Java 17 et Java 21. Il est recommandé aux entreprises de planifier une mise à niveau vers la version 6.5 LTS. Adobe continuera à prendre en charge AEM 6.5 jusqu’au 28 février 2027. Consultez la [feuille de route](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem65) pour plus d’informations.
 
 ## Mes personnalisations et intégrations existantes seront-elles impactées si j’effectue la mise à niveau vers AEM 6.5 LTS ?
 
