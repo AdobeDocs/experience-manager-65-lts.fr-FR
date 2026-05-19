@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: eab6902e5bdb58f626e7b79f91d27447b31d6830
+source-git-commit: 02b7915e1e5554d29577e46960c072d46bcc8b0c
 workflow-type: tm+mt
-source-wordcount: '7581'
-ht-degree: 97%
+source-wordcount: '7695'
+ht-degree: 95%
 
 ---
 
@@ -595,6 +595,16 @@ Planifiez le temps d’arrêt de l’instance lors de son application. Pour la c
 > * Pour toutes les opérations `oak-run`, utilisez le fichier jar [`oak-run` 1.88.1-B006](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar).
 >
 > * Démarrez AEM en définissant la propriété système `oak.compaction.legacy=true`.
+
+### Lot de `com.adobe.granite.apicontroller` manquant dans AEM 6.5 LTS SP2 (GRANITE-67640) {#missing-apicontroller-bundle-granite-67640}
+
+Le lot `com.adobe.granite.apicontroller` est manquant dans AEM 6.5 LTS SP2. Ce lot contrôle la manière dont les lots OSGi sont résolus et peut empêcher les lots de se résoudre sur d’autres lots, ce qui est utile pour limiter les API exposées.
+
+Installez le correctif à partir de [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-67640-1.0.zip) pour utiliser cette fonctionnalité.
+
+>[!NOTE]
+>
+> Après avoir installé le correctif, vérifiez le statut de tous les lots installés pour vous assurer que la configuration par défaut de `com.adobe.granite.apicontroller` n’a pas introduit de restrictions de résolution involontaires susceptibles d’affecter les implémentations personnalisées existantes.
 
 ### Les commentaires JSON ne sont plus pris en charge dans Sling-Initial-Content (SP2) {#json-comments-no-longer-supported-in-sling-initial-content}
 

@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: ht
-source-wordcount: '517'
-ht-degree: 100%
+source-git-commit: 004a3859c06e7c219e7919ac5920a9bc179ede43
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 91%
 
 ---
 
@@ -18,11 +18,11 @@ Cette page est destinée à répondre à des questions fréquentes sur AEM 6.5�
 
 ## Pourquoi Adobe a-t-il publié 6.5 LTS pour AEM ?
 
-Adobe accorde une grande importance à la sécurité et à la stabilité des applications fournies. La prise en charge à long terme d’AEM 6.5 pose les bases des futures mises à jour d’AEM 6.5.AEM 6.5 LTS inclut notamment la prise en charge d’Oracle Java 17 et Java 21, et sera la branche AEM qui recevra les nouvelles fonctionnalités et innovations d’AEM.
+Adobe accorde une grande importance à la sécurité et à la stabilité des applications fournies. La prise en charge à long terme d’AEM 6.5 pose les bases des futures mises à jour d’AEM 6.5. AEM 6.5 LTS inclut notamment la prise en charge d’Oracle Java 17 et Java 21, et sera la branche AEM qui recevra les nouvelles fonctionnalités et innovations d’AEM.
 
 ## Je suis un client ou une cliente On-Premise. Que se passe-t-il si je ne mets pas à niveau vers AEM 6.5 LTS ?
 
-AEM 6.5 LTS comprend d’importantes mises à jour de sécurité et de stabilité, notamment la prise en charge d’Oracle Java 17 et Java 21. Bien qu’Adobe continuera de prendre en charge AEM 6.5 pendant au moins les 2 prochaines années, il est recommandé aux entreprises de commencer à planifier une mise à niveau vers la version 6.5 LTS.
+AEM 6.5 LTS comprend d’importantes mises à jour de sécurité et de stabilité, notamment la prise en charge d’Oracle Java 17 et Java 21. Il est recommandé aux entreprises de planifier une mise à niveau vers la version 6.5 LTS. Adobe continuera à prendre en charge AEM 6.5 jusqu’au 28 février 2027. Consultez la [feuille de route](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem65) pour plus d’informations.
 
 ## Mes personnalisations et intégrations existantes seront-elles impactées si j’effectue la mise à niveau vers AEM 6.5 LTS ?
 
