@@ -7,8 +7,8 @@ role: Admin,Developer,User,Leader
 exl-id: a8d4c122-6de6-42da-a8ef-d3b93fd3d3ae
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 100%
+source-wordcount: '724'
+ht-degree: 96%
 
 ---
 
@@ -61,7 +61,7 @@ Par exemple, les modèles de fragment de contenu suivants peuvent être définis
 * Personne
 * Distinctions
 
-Cela semble évident, mais une entreprise compte à la fois un ou une PDG et des employées et employés…Et chaque élément d’entre eux est défini en tant que personne.
+Cela semble assez simple, mais une entreprise compte à la fois un PDG et des employés.... et tous ces gens sont définis comme une personne.
 
 Et une personne peut recevoir une distinction (ou peut-être deux).
 

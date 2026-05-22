@@ -7,7 +7,7 @@ role: Admin, Developer
 exl-id: 8837e7cd-c949-46cc-9c39-3c7a82cc1daf
 source-git-commit: 84ef35149332330e040b8d94cae151708e3c6829
 workflow-type: tm+mt
-source-wordcount: '1801'
+source-wordcount: '1909'
 ht-degree: 99%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 Dans cette partie du [Parcours de développement AEM découplé](overview.md), découvrez comment déployer une application découplée en direct.
 
-## Un peu d’histoire...  {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 Dans le document précédent du parcours découplé AEM, [Comment mettre à jour votre contenu grâce aux API d’AEM Assets](update-your-content.md) vous avez appris à mettre à jour votre contenu découplé dans AEM à l’aide de l’API et vous devriez maintenant :
 
@@ -59,7 +59,7 @@ Utilisez le référentiel Git pour gérer le contrôle de code source et pour ar
 
 AEM utilise Apache Maven pour créer des projets générés à partir de l’archétype de projet AEM Maven. Tous les environnements de développement intégré majeurs prennent en charge l’intégration de Maven.
 
-Node.js est un environnement d’exécution JavaScript utilisé pour fonctionner avec les ressources front-end du sous-projet `ui.frontend` d’un projet AEM. Node.js est distribué avec npm, qui est le gestionnaire de packages Node.js utilisé d’ordinaire pour gérer les dépendances JavaScript.
+Node.js est un environnement d’exécution JavaScript utilisé pour fonctionner avec les ressources front-end du sous-projet `ui.frontend` d’un projet AEM. Node.js est distribué avec npm, qui est le gestionnaire de modules Node.js utilisé d’ordinaire pour gérer les dépendances JavaScript.
 
 ## Composants d’un système AEM en un coup d’œil {#components-of-an-aem-system-at-a-glance}
 
@@ -195,7 +195,7 @@ Pour signaler un bug de manière efficace à l’assistance, si vous avez besoin
 * Documentez le contenu à l’origine du problème.
 * Consignez un problème à l’aide du portail d’assistance AEM avec la priorité appropriée.
 
-## Serait-ce la fin de notre voyage ?  {#journey-ends}
+## Serait-ce la fin de notre voyage ? {#journey-ends}
 
 Félicitations ! Vous avez terminé le parcours de développement découplé AEM. Vous devriez maintenant comprendre les éléments suivants :
 
@@ -225,10 +225,10 @@ Si vous recherchez cette flexibilité pour votre projet, consultez la section fa
 
 * Cache CDN
 
-   * [Contrôle d’un cache CDN &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr#controlling-a-cdn-cache)
+   * [Contrôle d’un cache CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr#controlling-a-cdn-cache)
 
    * Configuration du [CDN Rewriter](/help/sites-deploying/osgi-configuration-settings.md) (*recherchez « CDN Rewriter »*)
 
 * [Présentation d’AEM en tant que CMS découplé](/help/sites-developing/headless/introduction.md)
-* [Portail de développement d’AEM &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
-* [Tutoriels pour le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
+* [Portail du développeur AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

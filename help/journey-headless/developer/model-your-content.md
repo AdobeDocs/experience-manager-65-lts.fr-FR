@@ -7,8 +7,8 @@ role: Admin, Developer
 exl-id: b95b8f27-dbcd-4335-ac50-266ab3461d44
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 100%
+source-wordcount: '1833'
+ht-degree: 98%
 
 ---
 
@@ -200,7 +200,7 @@ Deux types de données fournissent des références au contenu en dehors d’un
 Il s’agit d’une référence simple à tout autre contenu de n’importe quel type.
 Par exemple, vous pouvez référencer une image à un emplacement spécifié.
 
-* **Référence du fragment**
+* **Référence de fragment**
 Cette section fournit des références à d’autres fragments de contenu.
 Ce type de référence est utilisé pour créer du contenu imbriqué, présentant les relations nécessaires au modèle de votre contenu.
 Le type de données peut être configuré pour permettre aux auteurs de fragments de procéder aux opérations suivantes :
@@ -219,7 +219,7 @@ Au début, vous devez activer les modèles de fragment de contenu pour votre sit
 
 Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Ces actions peuvent être réalisées dans Outils > Ressources > Modèles de fragment de contenu. Par exemple :
 
-![Modèle de fragment de contenu ](assets/cfm-model.png)
+![Modèle de fragment de contenu &#x200B;](assets/cfm-model.png)
 
 >[!NOTE]
 >

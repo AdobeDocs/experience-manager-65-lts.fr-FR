@@ -7,8 +7,8 @@ role: Admin,Developer,User,Leader
 exl-id: a5c9ca6e-cec3-409b-9fe8-950423a85470
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 100%
+source-wordcount: '876'
+ht-degree: 99%
 
 ---
 
@@ -87,4 +87,4 @@ Ainsi, les parcours sont conçus pour être autonomes. Toutefois, certains parco
 * [Documentation technique d’AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr) - Si vous connaissez déjà bien les technologies AEM et découplées, vous pouvez consulter directement notre documentation technique détaillée.
    * Une [Présentation d’AEM en tant que CMS découplé](/help/sites-developing/headless/introduction.md)
 * [Tutoriels pour AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) : si vous préférez apprendre par la pratique et préférez la technique à la théorie, suivez nos tutoriels pratiques organisés par API et par structure, qui explorent la création et l’utilisation d’applications reposant sur le découplage AEM.
-* [Portail de développement d’AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Portail du développeur AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
