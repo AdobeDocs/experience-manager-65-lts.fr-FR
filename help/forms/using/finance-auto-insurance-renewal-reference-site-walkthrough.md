@@ -45,7 +45,7 @@ Sarah reçoit un e-mail dont l’objet est « Votre renouvellement d’assurance
 
 #### Démonstration {#see-it-yourself}
 
-Accédez à **** > **Forms** > **Forms et documents** > **`We.Finance`** > **Assurance automobile**. Sélectionnez **Communication interactive** du renouvellement de l’assurance automobile, puis cliquez sur **Ouvrir l’interface utilisateur de l’agent**. La communication interactive s’ouvre dans l’interface utilisateur de l’agent. Saisissez une adresse e-mail valide pour envoyer un e-mail contenant le document de police joint, puis cliquez sur Envoyer.
+Accédez à **&#x200B;**&#x200B;> **Forms** > **Forms et documents** > **`We.Finance`** > **Assurance automobile**. Sélectionnez **Communication interactive** du renouvellement de l’assurance automobile, puis cliquez sur **Ouvrir l’interface utilisateur de l’agent**. La communication interactive s’ouvre dans l’interface utilisateur de l’agent. Saisissez une adresse e-mail valide pour envoyer un e-mail contenant le document de police joint, puis cliquez sur Envoyer.
 
 Vous pouvez accéder à la communication interactive du renouvellement de l’assurance automobile et la consulter directement depuis `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`.
 
