@@ -7,7 +7,7 @@ role: Admin,Developer,User,Leader
 exl-id: dcec1797-c1da-4738-95e8-9d77fa9e9bec
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1066'
 ht-degree: 100%
 
 ---
@@ -49,7 +49,7 @@ Ce parcours présuppose que le lecteur dispose d’une expérience en traduction
 
 Voici les personnes qui interagissent dans ce parcours.
 
-| Personne | Description | Rôle dans le parcours |
+| Personne | Description | Rôle dans le Parcours |
 |---|---|---|
 | Spécialiste de traduction | Définit le contenu à traduire et gère les workflows. | Audience ciblée de ce parcours |
 | Auteur de contenu | Crée et gère le contenu diffusé de façon découplée | Les auteurs de contenu créent du contenu que le spécialiste de traduction doit traduire. |

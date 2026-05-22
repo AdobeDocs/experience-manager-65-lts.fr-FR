@@ -7,7 +7,7 @@ role: Admin,Developer,User,Leader
 exl-id: beebb7b6-5ed8-4cec-84cf-fa90b2ef711a
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1491'
 ht-degree: 100%
 
 ---
@@ -194,5 +194,5 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de tra
 * [Configuration du framework d’intégration de la traduction](/help/sites-administering/tc-tic.md) : découvrez comment configurer le framework d’intégration de la traduction pour l’intégrer à des services de traduction tiers.
 * [Gestion de projets de traduction](/help/sites-administering/tc-manage.md) : découvrez comment créer et gérer des projets de traduction automatique et humaine dans AEM.
 * [Présentation d’AEM en tant que CMS découplé](/help/sites-developing/headless/introduction.md)
-* Le [Portail de développement AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* La variable [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
 * [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
