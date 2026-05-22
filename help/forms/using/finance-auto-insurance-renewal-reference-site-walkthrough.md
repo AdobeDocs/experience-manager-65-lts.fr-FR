@@ -11,7 +11,7 @@ role: User, Developer
 exl-id: 3f9f1a20-9029-4e30-9c9d-ef452512f7e9
 source-git-commit: c0bf6864bb344e582c4f88371c892d401ce2827c
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '747'
 ht-degree: 48%
 
 ---
@@ -45,7 +45,7 @@ Sarah reçoit un e-mail dont l’objet est « Votre renouvellement d’assurance
 
 #### Démonstration {#see-it-yourself}
 
-Accédez à **Adobe Experience Manager** > **Forms** > **Forms et documents** > **`We.Finance`** > **Assurance automobile**. Sélectionnez **Communication interactive** du renouvellement de l’assurance automobile, puis cliquez sur **Ouvrir l’interface utilisateur de l’agent**. La communication interactive s’ouvre dans l’interface utilisateur de l’agent. Saisissez une adresse e-mail valide pour envoyer un e-mail contenant le document de police joint, puis cliquez sur Envoyer.
+Accédez à **** > **Forms** > **Forms et documents** > **`We.Finance`** > **Assurance automobile**. Sélectionnez **Communication interactive** du renouvellement de l’assurance automobile, puis cliquez sur **Ouvrir l’interface utilisateur de l’agent**. La communication interactive s’ouvre dans l’interface utilisateur de l’agent. Saisissez une adresse e-mail valide pour envoyer un e-mail contenant le document de police joint, puis cliquez sur Envoyer.
 
 Vous pouvez accéder à la communication interactive du renouvellement de l’assurance automobile et la consulter directement depuis `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`.
 

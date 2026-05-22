@@ -7,8 +7,8 @@ role: Admin,Developer,User,Leader
 exl-id: 20ff7c83-0882-454e-a8f5-9eda1724cfe3
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 100%
+source-wordcount: '1698'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ Cet article s’appuie sur ces éléments afin que vous compreniez comment crée
 
 ## Manipulation de base {#basic-handling}
 
-Avant de vous familiariser avec les fragments de contenu, voici une introduction (très) rapide à l’utilisation d’AEM…mais rien ne remplace vraiment l’expérience de connexion et d’utilisation du système.
+Avant de vous familiariser avec les fragments de contenu, voici une introduction (très) rapide à l’utilisation d’....mais rien ne remplace vraiment l’expérience de connexion et d’utilisation du système.
 
 ### Auteur et publication {#author-preview-publish}
 
@@ -204,7 +204,7 @@ Les modèles de fragment de contenu sont essentiels à vos fragments de contenu,
 
   Celui-ci est assez évident, car il s’agit d’un onglet dans l’éditeur.
 
-  Les fragments de contenu sont disponibles dans AEM depuis un certain nombre de versions. À l’origine, ils étaient disponibles pour une utilisation « traditionnelle » lors de la création de pages...et ils sont toujours utilisés dans ce contexte. Cela peut impliquer l’association de ressources (des images, par exemple) qui, bien qu’elles ne soient pas incorporées dans le fragment, doivent être disponibles pour le créateur ou la créatrice lors de la création d’une page.
+  Les fragments de contenu sont disponibles dans AEM depuis un certain nombre de versions. À l’origine.... ils étaient disponibles pour une utilisation « traditionnelle » lors de la création de pages et ils sont toujours utilisés dans ce contexte. Cela peut impliquer l’association de ressources (des images, par exemple) qui, bien qu’elles ne soient pas incorporées dans le fragment, doivent être disponibles pour le créateur ou la créatrice lors de la création d’une page.
 
 * **Aperçu**
 
