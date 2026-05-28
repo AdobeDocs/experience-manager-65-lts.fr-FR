@@ -4,7 +4,7 @@ description: Découvrez comment définir et déployer des espaces de noms person
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,JCR
 role: Developer
-source-git-commit: 31d67c5b9bff651077df5a497e5c318b86a48158
+source-git-commit: 475a77e8e4ff0ecd19a939fd3b3c9294adf24997
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 66%
@@ -29,11 +29,11 @@ Les espaces de noms peuvent être utilisés pour indiquer la portée et l’inte
 
 Les espaces de noms personnalisés sont gérés dans les scripts [Sling Repository Initialization (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html) et déployés en tant que configurations OSGi dans le package de configuration de votre projet (par exemple, `ui.config`).
 
-## Ressources
+## Ressources {#resources}
 
 + [Documentation sur l’initialisation du référentiel Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios)
 
-## Code
+## Code {#code}
 
 Le code suivant est utilisé pour configurer un espace de noms `wknd`.
 

@@ -6,10 +6,10 @@ role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: b7aa877f9e782b0568adc7baa440dc630c690454
+source-git-commit: b5db6129e83dd7a54516707bbdb8864dc709d54b
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 47%
+source-wordcount: '1615'
+ht-degree: 44%
 
 ---
 
@@ -93,12 +93,12 @@ Après la mise à niveau vers le pack de services AEM Forms 6.5.22.0, procédez 
 
    >[!NOTE]
    >
-   >Dans AEM 6.4 Forms, la structure du référentiel crx a changé. Après la mise à niveau d’AEM 6.3 Forms vers AEM 6.5 Forms, utilisez les chemins d’accès modifiés pour la personnalisation que vous créez à nouveau. Pour la liste complète des chemins modifiés, voir [Restructuration du référentiel des formulaires dans AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
+   >Dans AEM 6.4 Forms, la structure du référentiel crx a changé. Après la mise à niveau d’AEM 6.3 Forms vers AEM 6.5 Forms, utilisez les chemins d’accès modifiés pour la personnalisation que vous créez à nouveau. Pour la liste complète des chemins modifiés, voir [Restructuration du référentiel des formulaires dans AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
 
 
 ## Déploiement d’AEM sur JBoss EAP 8 (Windows)
 
-### Vue d’ensemble
+### Présentation
 
 Ce guide fournit des instructions détaillées sur le déploiement de Adobe Experience Manager (AEM) en tant que fichier WAR OSGi autonome sur JBoss Enterprise Application Platform (EAP) 8 dans un environnement Windows à l’aide du JDK 21.
 
@@ -122,7 +122,7 @@ Avant de commencer le processus de déploiement, assurez-vous que votre environn
 #### Télécharger JBoss EAP
 
 1. Accédez au portail de développement Red Hat :\
-   [https://developers.redhat.com/products/eap/download](https://developers.redhat.com/products/eap/download)
+   [](https://developers.redhat.com/products/eap/download)
 
 2. Téléchargez la distribution JBoss EAP 8 ZIP pour Windows.
 
@@ -133,7 +133,7 @@ Avant de commencer le processus de déploiement, assurez-vous que votre environn
 2. Notez que ce chemin d’accès au répertoire est `<JBOSS_HOME>` à utiliser dans ce guide.
 
    **Exemple :**\
-   ```C:\jboss-eap-8.0```
+   `C:\jboss-eap-8.0`
 
 ### Étape 2 : préparation du fichier WAR AEM
 
@@ -217,7 +217,7 @@ Toutes les modifications de configuration doivent être effectuées **avant** le
 
 >[!NOTE]
 >
-> L’étape 5 s’applique uniquement à **AEM Forms**. Si vous configurez **AEM uniquement** vous pouvez ignorer cette étape.
+> L’étape 5 s’applique uniquement à ****. Si vous configurez **AEM uniquement** vous pouvez ignorer cette étape.
 
 
 #### Modifier le fichier web.xml
@@ -287,7 +287,7 @@ Une fois toutes les modifications de configuration effectuées, recompressez le 
    ```
 
    **Exemple :**
-   ```C:\jboss-eap-8.0\standalone\deployments```
+   `C:\jboss-eap-8.0\standalone\deployments`
 
 #### Configuration des paramètres JVM (facultatifs, mais recommandés)
 
@@ -318,7 +318,7 @@ Avant de démarrer JBoss, configurez les paramètres de mémoire JVM :
    ```
 
    **Exemple :**
-   ```cmd cd C:\jboss-eap-8.0\bin```
+   `cmd cd C:\jboss-eap-8.0\bin`
 
 1. Démarrez le serveur JBoss :
 
@@ -343,7 +343,7 @@ Deployed "cq-quickstart.war" (runtime-name : "cq-quickstart.war")
 Une fois le déploiement terminé et AEM entièrement démarré :
 
 **URL d’auteur AEM :**
-```http://<server-ip>:8080/cq-quickstart```
+`http://<server-ip>:8080/cq-quickstart`
 
 **Informations d’identification par défaut :**
 
