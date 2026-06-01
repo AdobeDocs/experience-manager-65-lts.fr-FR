@@ -9,10 +9,10 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: eb4c7e2afa28c5bd5bdf9c38fe44143a71abd1fc
+source-git-commit: aed08dbb5afd7aefb07716ff5dbbff7265c208e5
 workflow-type: tm+mt
-source-wordcount: '3184'
-ht-degree: 92%
+source-wordcount: '3156'
+ht-degree: 91%
 
 ---
 
@@ -80,10 +80,10 @@ Adobe recommande ces configurations et fournit une prise en charge totale ou res
 
 >[!NOTE]
 >
->Pour aider les clients d’AEM Forms à réduire le coût de possession, à simplifier l’architecture de déploiement et à moderniser la pile de développement, la plateforme d’entreprise Adobe Experience Manager délaisse les déploiements sur serveur d’applications au profit de déploiements OSGi autonomes. Adobe continue de prendre en charge la pile AEM Forms JEE avec une matrice réduite de composants d’infrastructure.
->Pour les nouvelles installations, il est recommandé, dans la mesure du possible, de déployer AEM Forms sur la pile OSGi moderne afin d’utiliser les dernières innovations en matière de formulaires adaptatifs réactifs pour les communications mobiles et interactives multicanaux, ainsi que des intégrations de données backend utilisant le modèle de données de formulaire.
+>Pour aider les clients AEM Forms à réduire le coût de possession, à simplifier l’architecture de déploiement et à moderniser la pile de développement, la plateforme d’entreprise Adobe Experience Manager délaisse les déploiements sur serveur d’applications au profit de déploiements OSGi autonomes. Adobe continue à prendre en charge la pile AEM Forms JEE avec une matrice réduite de composants d’infrastructure.
+>Pour les nouvelles installations, il est recommandé, dans la mesure du possible, de déployer AEM Forms sur la pile OSGi moderne afin d’utiliser les dernières innovations en matière de Responsive Adaptive Forms pour les communications mobiles et interactives multicanaux, ainsi que les intégrations de données principales utilisant le modèle de données de formulaire.
 >
->Adobe reconnaît que les utilisateurs et utilisatrices actuels doivent continuer à déployer la pile AEM Forms on JEE. Dans ce cas de figure, Adobe nécessite le déploiement d’AEM Forms JEE sur une infrastructure prise en charge, comme décrit dans cette documentation. Si vous effectuez une mise à niveau vers AEM 6.5 Forms et que vous utilisez une plateforme non prise en charge sur la version précédente d’AEM Forms, vous pouvez contacter le support Adobe pour obtenir de l’aide sur la mise à niveau vers une plateforme prise en charge.
+>Adobe reconnaît que les utilisateurs et utilisatrices actuels doivent continuer à déployer la pile AEM Forms on JEE. Dans ce cas de figure, Adobe nécessite le déploiement d’AEM Forms JEE sur une infrastructure prise en charge, comme décrit dans cette documentation. Si vous effectuez une mise à niveau vers AEM 6.5 Forms et que vous utilisez une plateforme non prise en charge sur la version précédente d’AEM Forms, vous pouvez contacter l’assistance technique d’Adobe pour obtenir de l’aide sur la mise à niveau vers une plateforme prise en charge.
 
 ### Machines virtuelles Java™ (JVM) {#java-virtual-machines-jvm}
 
@@ -272,6 +272,11 @@ Vous pouvez exécuter AEM Forms on JEE sur un ordinateur physique ou un environ
   </tr>
   <tr>
    <td><p>Microsoft® Windows® 10 64 bits</p> </td>
+   <td>E : Fonctionnement supposé</td>
+   <td><p>Pack de services et mises à jour critiques</p> </td>
+  </tr>
+  <tr>
+   <td><p>® Windows® 11 64 bits</p> </td>
    <td>E : Fonctionnement supposé</td>
    <td><p>Pack de services et mises à jour critiques</p> </td>
   </tr>
@@ -491,6 +496,10 @@ Pour des conditions requises supplémentaires, voir :
   </tr>
   <tr>
    <td><p>Microsoft® Windows® 10 (Entreprise, Professionnel, Basic)</p> <p>Version 32 bits ou 64 bits</p> <p> </p> </td>
+   <td>Service Packs et mises à jour critiques</td>
+  </tr>
+  <tr>
+   <td><p>® Windows® 11 (Enterprise, Pro, Basic)</p> <p>Version 64 bits</p> <p> </p> </td>
    <td>Packs de services et mises à jour critiques</td>
   </tr>
   <tr>
