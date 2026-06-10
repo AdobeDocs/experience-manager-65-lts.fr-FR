@@ -621,7 +621,7 @@ Vous pouvez également définir la manière dont les formulaires sont envoyés. 
 
 ## Paramètres d’autres applications (Windows uniquement) {#other-applications-settings-windows-only}
 
-Vous ne pouvez pas modifier les paramètres d’autres applications dans la console d’administration. Ils indiquent les extensions correspondant aux types de fichiers pris en charge. Pour obtenir des instructions sur l’accès à ces paramètres, consultez [Créer ou modifier des paramètres de type de fichier](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
+Vous ne pouvez pas modifier les paramètres d’autres applications dans la console d’administration. Ils indiquent les extensions correspondant aux types de fichiers pris en charge. Pour obtenir des instructions sur l’accès à ces paramètres, consultez [Créer ou modifier des paramètres de type de fichier](https://help.adobe.com/fr_FR/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
 
 * Corel WordPerfect : `wpd`
 * Adobe PageMaker: `pmd, pm6, p65, pm`
