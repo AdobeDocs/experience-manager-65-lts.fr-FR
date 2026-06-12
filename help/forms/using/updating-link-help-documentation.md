@@ -1,5 +1,5 @@
 ---
-title: 'Mise à jour du lien vers la documentation '
+title: Mise à jour du lien vers la documentation
 description: Comment mettre à jour la destination du lien d’aide de Workspace dans l’espace de travail AEM Forms pour qu’il pointe vers le lien de documentation personnalisé.
 contentOwner: robhagat
 content-type: reference
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: e99f1cbd-492e-4cc2-9975-8f17c885dd8c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '142'
 ht-degree: 100%
 
 ---
 
-# Mise à jour du lien vers la documentation  {#updating-the-link-to-the-documentation}
+# Mise à jour du lien vers la documentation {#updating-the-link-to-the-documentation}
 
 Vous pouvez accéder au contenu de l’aide par défaut pour l’espace de travail AEM Forms en sélectionnant **Aide > Aide de Workspace**. Le chemin pointe vers la documentation en ligne sur le site Web d’Adobe. Cependant, vous pouvez le mettre à jour pour qu’il pointe vers une autre URL.
 
