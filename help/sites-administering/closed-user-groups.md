@@ -12,7 +12,7 @@ role: Admin
 exl-id: 0c20efb1-9b01-41ef-b38d-261fb4b0ff91
 source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '6654'
+source-wordcount: '6780'
 ht-degree: 97%
 
 ---
@@ -819,7 +819,7 @@ Le modèle d’autorisation du CUG permet d’activer individuellement la gestio
 
 Dans l’évaluation des politiques de CUG de la nouvelle configuration par défaut d’AEM, elle est activée uniquement avec le mode d’exécution de publication. Consultez les informations relatives à la [configuration par défaut depuis AEM 6.3](#default-configuration-since-aem) pour en savoir plus. Cela peut être vérifié en comparant les politiques en vigueur pour un chemin donné vers les politiques stockées dans le contenu. Les politiques en vigueur sont affichées uniquement dans le cas où l’évaluation des permissions est activée pour les CUG.
 
-Comme expliqué plus haut, les politiques de contrôle d’accès de CUG sont désormais toujours stockées dans le contenu, mais l’évaluation des permissions en vigueur découlant de ces politiques ne sera imposée que si l’**évaluation des CUG activée** est sélectionnée dans la console système au niveau de la configuration des CUG Apache Jackrabbit Oak **.** Par défaut, elle est uniquement activée avec le mode d’exécution de publication.
+Comme expliqué ci-dessus, les politiques de contrôle d’accès de CUG sont désormais toujours stockées dans le contenu, mais l’évaluation des permissions en vigueur découlant de ces politiques ne sera imposée que si l’option **Évaluation des CUG activée** est activée dans la console système sur Apache Jackrabbit Oak **Configuration des CUG**. Par défaut, elle est uniquement activée avec le mode d’exécution de publication.
 
 ### Différences en matière d’authentification {#differences-with-regards-to-authentication}
 
@@ -849,7 +849,7 @@ Il peut s’agir d’un scénario valide et possible avec un éditeur de référ
 
 #### Chemins pris en charge configurés {#configured-supported-paths}
 
-Le type de mixin `granite:AuthenticationRequired` et la propriété granite:loginPath ne sont respectés que dans la portée définie par le jeu de l’option de configuration **Chemins pris en charge** présent avec le gestionnaire d’exigence d’authentification et de chemin de connexion Adobe **&#x200B;**. Si aucun chemin n’est spécifié, la fonction d’exigence d’authentification est complètement désactivée. Dans ce cas, ni le type de mixin ni la propriété ne prennent effet lorsqu’ils sont ajoutés ou définis sur un nœud JCR donné.
+Le type de mixin `granite:AuthenticationRequired` et la propriété granite:loginPath ne sont respectés que dans la portée définie par le jeu de l’option de configuration **Chemins pris en charge** présent avec le gestionnaire d’exigence d’authentification et de chemin de connexion Adobe ****. Si aucun chemin n’est spécifié, la fonction d’exigence d’authentification est complètement désactivée. Dans ce cas, ni le type de mixin ni la propriété ne prennent effet lorsqu’ils sont ajoutés ou définis sur un nœud JCR donné.
 
 ### Mappage de contenu JCR, de services OSGi et de configurations {#mapping-of-jcr-content-osgi-services-and-configurations}
 

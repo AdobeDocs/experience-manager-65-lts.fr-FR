@@ -12,7 +12,7 @@ role: Developer
 exl-id: d918ddf2-aa70-4742-97d5-24a2c51f578a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1189'
 ht-degree: 98%
 
 ---
@@ -53,7 +53,7 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 
 ## Utilisations de l’outil de serveur proxy {#uses-of-the-proxy-server-tool}
 
-Les scénarios ci-dessous indiquent une partie des fins auxquelles l’outil de serveur proxy peut être utilisé : 
+Les scénarios ci-dessous indiquent une partie des fins auxquelles l’outil de serveur proxy peut être utilisé :
 
 **Rechercher les cookies et leurs valeurs**
 

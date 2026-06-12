@@ -12,8 +12,8 @@ role: User,Admin,Developer
 exl-id: 11ab6be0-ed61-4a4b-af82-d26eec982edd
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '2211'
-ht-degree: 100%
+source-wordcount: '2223'
+ht-degree: 99%
 
 ---
 
@@ -43,7 +43,7 @@ Vous pouvez modifier une page à l’aide de l’éditeur de page. Par exemple 
 >
 >Vous pouvez ignorer cette présentation ou la revoir à tout moment en la sélectionnant dans le menu **Informations sur la page**.
 
-## Accès à l’Aide   {#accessing-help}
+## Accès à l’Aide {#accessing-help}
 
 Lorsque vous modifiez une page, l’**Aide** est accessible depuis :
 
@@ -234,7 +234,7 @@ Ouvrez la console appropriée, puis accédez à la ressource requise et ouvrez *
 
 ![ateat-22](assets/ateat-22.png)
 
-Sélectionnez le type de référence approprié pour en savoir plus. Dans certains cas, d’autres actions sont disponibles lorsque vous sélectionnez une référence particulière, notamment :
+Sélectionnez le type de référence approprié pour plus d’informations. Dans certains cas, d’autres actions sont disponibles lorsque vous sélectionnez une référence spécifique, notamment :
 
 * **Liens entrants** fournit une liste des pages qui font référence à cette page, ainsi qu’un lien direct vers l’option **Modifier** pour l’une de ces pages lorsque vous sélectionnez un lien spécifique.
 

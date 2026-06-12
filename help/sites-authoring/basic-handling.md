@@ -12,8 +12,8 @@ role: User,Admin,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '2919'
-ht-degree: 100%
+source-wordcount: '2951'
+ht-degree: 97%
 
 ---
 
@@ -71,7 +71,7 @@ Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant s
 
 La navigation globale se compose de deux panneaux, représentés par des icônes dans la marge gauche de l’écran :
 
-* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** : représenté par une boussole 
+* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** : représenté par une boussole
 * **[Outils](/help/sites-authoring/basic-handling.md#tools-panel)** : représenté par un marteau
 
 Consultez les options disponibles dans ces panneaux ci-dessous.
@@ -94,7 +94,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
   </tr>
   <tr>
    <td>Ressources<br /> </td>
-   <td>Ces consoles permettent d’importer et de <a href="/help/assets/assets.md">gérer des ressources numériques</a>, telles que des images, des vidéos, des documents et des fichiers audio. Utilisez ces ressources dans n’importe quel site web exécuté sur la même instance d’AEM. </td>
+   <td>Ces consoles vous permettent d’importer et de <a href="/help/assets/assets.md">gérer des ressources numériques</a> telles que des images, des vidéos, des documents et des fichiers audio. Ces ressources peuvent ensuite être utilisées par n’importe quel site web exécuté sur la même instance d’AEM. </td>
   </tr>
   <tr>
    <td>Fragments d’expérience</td>
@@ -143,7 +143,7 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
   Vous pouvez également utiliser la [touche de raccourci](/help/sites-authoring/keyboard-shortcuts.md) `/` (barre oblique) pour appeler la recherche à partir de n’importe quelle console.
 
-* [Solutions](https://business.adobe.com/fr/)
+* [Solutions](https://business.adobe.com/)
 
   ![Solutions](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -213,7 +213,7 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
   ![Passer au contenu principal](assets/bh-30.png)
 
-## Accès à l’Aide    {#accessing-help}
+## Accès à l’Aide {#accessing-help}
 
 Plusieurs ressources d’aide sont disponibles :
 
@@ -242,10 +242,10 @@ Plusieurs ressources d’aide sont disponibles :
   Dans la console **Outils**, vous pouvez également accéder aux **Ressources** externes :
 
    * **Documentation**
-Affichez la documentation de Web Experience Management.
+Consulter la documentation de Web Experience Management
 
    * **Ressources pour les développeurs**
-Ressources et téléchargements pour les développeurs.
+Ressources et téléchargements pour les développeurs
 
   >[!NOTE]
   >
@@ -268,7 +268,7 @@ Les actions disponibles dans la barre d’outils change pour tenir compte des ac
 
 La manière dont vous [sélectionnez une ressource](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) dépend du mode.
 
-En raison des restrictions d’espace dans certaines fenêtres, la barre d’outils peut rapidement dépasser l’espace disponible. Dans ce cas, d’autres options s’affichent. Cliquez ou appuyez sur les points de suspension (les trois points ou **...**) pour ouvrir un sélecteur de liste déroulante contenant toutes les actions restantes. Par exemple, après avoir sélectionné une page dans la console **Sites** :
+En raison des restrictions d’espace dans certaines fenêtres, la barre d’outils peut rapidement dépasser l’espace disponible. Dans ce cas, d’autres options s’affichent. Cliquez ou appuyez sur les points de suspension (les trois petits points ou **...**) ouvre un sélecteur déroulant contenant toutes les actions restantes. Par exemple, après avoir sélectionné une page dans la console **Sites** :
 
 ![Barre d’outils Actions](assets/bh-12.png)
 

@@ -12,8 +12,8 @@ role: Developer
 exl-id: 2a94ea8d-2919-4f30-be31-ce559493805d
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 99%
+source-wordcount: '684'
+ht-degree: 92%
 
 ---
 
@@ -26,10 +26,10 @@ ht-degree: 99%
 AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les consoles et la [fonctionnalité de création de pages](/help/sites-developing/customizing-page-authoring-touch.md) de votre instance de création.
 
 * Clientlibs
-Les bibliothèques clientes (clientlibs) vous permettent d’étendre l’implémentation par défaut afin d’obtenir la nouvelle fonctionnalité, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` Par exemple, elle peut contenir le code requis pour votre composant personnalisé.
+Les bibliothèques clientes (clientlibs) vous permettent d’étendre l’implémentation par défaut afin d’obtenir de nouvelles fonctionnalités, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` Par exemple, elle peut contenir le code requis pour votre composant personnalisé.
 
 * Recouvrements
-Les recouvrements sont basés sur les définitions de nœuds et vous permettent de recouvrir les fonctionnalités standard (dans `/libs` ) avec vos propres fonctionnalités personnalisées (dans `/apps`). Lors de la création d’un recouvrement, il n’est pas nécessaire de disposer d’une copie 1:1 de l’original, car Sling Resource Merger autorise l’héritage.
+Les recouvrements sont basés sur les définitions de nœuds et vous permettent de recouvrir les fonctionnalités standard (dans `/libs`) avec vos propres fonctionnalités personnalisées (dans `/apps`). Lors de la création d’un recouvrement:1 une copie 1 de l’original n’est pas nécessaire, car la fusion de ressources Sling permet l’héritage.
 
 Ils peuvent être utilisés de différentes manières pour étendre vos consoles AEM. Une petite sélection est abordée ci-dessous (à un niveau élevé).
 
@@ -151,7 +151,6 @@ Pour personnaliser les colonnes dans la vue Liste :
 1. Facultatif :
 
    * Si vous souhaitez connecter des données supplémentaires, vous devez écrire un [PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) avec une
-
      `pageInfoProviderType`.
 
    Par exemple, consultez la classe/le lot joint (à partir de GitHub) ci-dessous.

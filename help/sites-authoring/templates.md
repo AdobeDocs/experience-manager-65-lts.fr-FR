@@ -12,7 +12,7 @@ role: User,Admin,Developer
 exl-id: a0ddb246-64eb-493c-9950-9b7ecb32e555
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '4650'
+source-wordcount: '4704'
 ht-degree: 99%
 
 ---
@@ -94,7 +94,7 @@ Les tâches présentées dans ce document sont répertoriées avec le rôle resp
 
 * [Modèles modifiables](/help/sites-authoring/templates.md#creatingandmanagingnewtemplates)
 
-   * Peuvent être [créés](#creatinganewtemplate) et [modifiés](#editingatemplate) à l’aide de la **console de modèles** et de l’éditeur de modèles. La **console de modèles** est accessible dans la section **Général** de la console **Outils**. 
+   * Peuvent être [créés](#creatinganewtemplate) et [modifiés](#editingatemplate) à l’aide de la **console de modèles** et de l’éditeur de modèles. La **console de modèles** est accessible dans la section **Général** de la console **Outils**.
 
    * Une fois la page créée, une connexion dynamique est maintenue entre la page et le modèle. Cela signifie que les modifications apportées à la structure du modèle et/ou au contenu verrouillé seront répercutées sur toutes les pages créées avec ce modèle. Les modifications apportées au contenu déverrouillé (c’est-à-dire initial) ne sont pas répercutées.
    * Pour conserver les propriétés de conception, utilisez des politiques de contenu que vous pouvez définir à partir de l’éditeur de modèles. Le mode de conception de l’éditeur de page n’est plus utilisé pour les modèles modifiables.
@@ -166,7 +166,7 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
    >
    >Lorsque vous créez un modèle, il est marqué comme **Brouillon** dans la console pour indiquer qu’il n’est pas encore actif.
 
-### Définition des propriétés des modèles - Créateur de modèles  {#defining-template-properties-template-author}
+### Définition des propriétés des modèles - Créateur de modèles {#defining-template-properties-template-author}
 
 Un modèle peut avoir les propriétés suivantes :
 
@@ -392,7 +392,7 @@ Dans le mode **Structure** de l’éditeur de modèles :
 
   Lorsque vous travaillez en mode **Structure**, une bordure orange signale le composant actuellement sélectionné. Une ligne pointillée indique également le composant parent.
 
-  Par exemple, sur la capture d’écran ci-dessous, le composant **Texte** est sélectionné, dans un **Conteneur de mise en page** (responsivegrid). 
+  Par exemple, sur la capture d’écran ci-dessous, le composant **Texte** est sélectionné, dans un **Conteneur de mise en page** (responsivegrid).
 
   ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -474,7 +474,7 @@ Dans le mode **Structure** de l’éditeur de modèles :
 
   >[!NOTE]
   >
-  >[Les politiques de contenu pour les composants impliquant la mise en œuvre de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) peuvent uniquement être définies pour les options accessibles par ses propres paramètres d’interface utilisateur.[&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[Les politiques de contenu pour les composants impliquant la mise en œuvre de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) peuvent uniquement être définies pour les options accessibles par ses propres paramètres d’interface utilisateur.[](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Politique et propriétés (conteneur de mise en page)**
 
