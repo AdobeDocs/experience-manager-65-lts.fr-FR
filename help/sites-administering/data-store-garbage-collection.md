@@ -12,7 +12,7 @@ role: Admin
 exl-id: 2b4214b0-1a38-4e36-b740-16fcaf9ceb54
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1905'
 ht-degree: 100%
 
 ---
@@ -44,7 +44,7 @@ Si le référentiel a été configuré avec un magasin de données externe, la [
 
 Le nettoyeur de la mémoire d’entrepôt de données prend d’abord note de l’horodatage actuel lorsque le processus commence. La récupération est ensuite effectuée à l’aide d’un algorithme de modèle de marquage/balayage à plusieurs passages.
 
-Lors de la première phase, le nettoyeur de la mémoire du magasin de données traverse entièrement le contenu du référentiel. Pour chaque objet de contenu qui contient une référence à un enregistrement d’entrepôt de données, il localise le fichier dans le système de fichiers, exécutant une mise à jour de métadonnées (en modifiant l’attribut « dernière modification » ou MTIME). À ce stade, les fichiers accessibles par cette phase deviennent plus récents que l’horodatage de base initial.
+Lors de la première phase, le nettoyeur de la mémoire du magasin de données effectue une traversée complète du contenu du référentiel. Pour chaque objet de contenu qui contient une référence à un enregistrement d’entrepôt de données, il localise le fichier dans le système de fichiers, exécutant une mise à jour de métadonnées (en modifiant l’attribut « dernière modification » ou MTIME). À ce stade, les fichiers accessibles par cette phase deviennent plus récents que l’horodatage de base initial.
 
 Lors de la seconde phase, le nettoyeur de la mémoire d’entrepôt de données traverse la structure de répertoires physique d’un entrepôt de données à peu près comme une opération de recherche. Il examine l’attribut « dernière modification » ou MTIME du fichier et détermine ce qui suit :
 

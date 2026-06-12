@@ -11,7 +11,7 @@ role: User
 exl-id: f3755499-472b-4eb9-bc98-7918b77f7ab0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '556'
 ht-degree: 100%
 
 ---
@@ -42,7 +42,7 @@ Lors de la discussion de la segmentation, la terminologie suivante est utilisée
 
 **Utilisateur** : un utilisateur est un visiteur qui s’inscrit auprès du site web pour recevoir un profil de compte. Pour générer leur profil, ils ou elles fournissent une identification supplémentaire, telle qu’une adresse e-mail et un genre, entre autres. Des informations supplémentaires peuvent également être collectées, notamment l’activité de la communauté et les modèles d’achat, entre autres. En fonction des informations fournies dans le profil, un profil démographique peut être créé.
 
-**Caractéristique** : une caractéristique est une particularité ou une propriété d’un visiteur qui peut être utilisée pour déterminer son appartenance à un segment spécifique.
+**Caractéristique** : une caractéristique est une particularité ou une propriété d’un visiteur ou d’une visiteuse qui peut être utilisée pour déterminer son appartenance à un segment spécifique.
 
 **Segment** : un segment est un groupe de visiteurs qui partagent certaines caractéristiques. Les segments doivent être distincts, avec un minimum de chevauchement avec les autres segments.
 
@@ -62,7 +62,7 @@ Lors de la discussion de la segmentation, la terminologie suivante est utilisée
 * Genre
 * Emplacement
 
-**Caractéristiques dérivées**  
+**Caractéristiques dérivées**
 
 En l’absence d’un enregistrement, certaines caractéristiques démographiques sont difficiles à déterminer, mais peuvent être extraites en combinant les caractéristiques comportementales et démographiques.
 

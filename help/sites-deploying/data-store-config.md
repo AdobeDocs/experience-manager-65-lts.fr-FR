@@ -134,7 +134,7 @@ AEM peut être configuré pour stocker des donnés dans le service Simple Stora
 >
 >AEM 6.5 LTS prend en charge le stockage de données dans Amazon S3, mais cette prise en charge n’est pas étendue au stockage de données sur d’autres plateformes, dont les fournisseurs peuvent avoir leurs propres mises en œuvre des API S3 d’Amazon.
 
-Pour activer la fonctionnalité du magasin de données S3, un pack de fonctionnalités contenant le connecteur du magasin de données S3 doit être téléchargé et installé. Accédez au [Référentiel Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) puis téléchargez la dernière version des versions 1.60.x du pack de fonctionnalités (par exemple, com.adobe.granite.oak.s3connector-1.60.2.zip). En outre, vous devez télécharger et installer le dernier pack de services AEM, comme indiqué à la page Notes de mise à jour d’[AEM 6.5 LTS](/help/release-notes/release-notes.md).
+Pour activer la fonctionnalité du magasin de données S3, un pack de fonctionnalités contenant le connecteur du magasin de données S3 doit être téléchargé et installé. Accédez au [Référentiel &#x200B;](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) puis téléchargez la dernière version des versions 1.60.x du pack de fonctionnalités (par exemple, com.adobe.granite.oak.s3connector-1.60.2.zip). En outre, vous devez télécharger et installer le dernier pack de services AEM, comme indiqué à la page Notes de mise à jour d’[AEM 6.5 LTS](/help/release-notes/release-notes.md).
 
 >[!NOTE]
 >
@@ -324,7 +324,7 @@ Pour configurer la réplication sans binaires avec S3, les étapes suivantes son
 
 1. Ajoutez le paramètre « `true`=`binaryless` » dans l’URI de transport. Après la modification, l’URI doit ressembler à ce qui suit :
 
-   *https://localhost:4503/bin/receive?sling:authRequestLogin=1&amp;binaryless=true*
+   *:4503/bin/receive?sling:authRequestLogin=1&amp;binaryless=true*
 
 1. Redémarrez toutes les instances de création et de publication pour que les modifications soient prises en compte.
 
