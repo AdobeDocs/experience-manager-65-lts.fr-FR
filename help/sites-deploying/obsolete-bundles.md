@@ -1,6 +1,6 @@
 ---
 title: Liste des lots obsolètes désinstallés après la mise à niveau
-description: 'Liste répertoriant les lots automatiquement désinstallées lors de la mise à niveau vers AEM 6.3. '
+description: Liste répertoriant les lots automatiquement désinstallées lors de la mise à niveau vers AEM 6.3.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
@@ -11,8 +11,8 @@ role: Admin
 exl-id: 29f1d07b-925b-4612-aa1b-34c387a5765f
 source-git-commit: b93a65226587936010c3dd53312c66e15f73cf2a
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 15%
+source-wordcount: '384'
+ht-degree: 7%
 
 ---
 
@@ -51,8 +51,8 @@ Lors de la mise à niveau vers AEM 6.5 LTS, les lots suivants seront automatique
 * com.adobe.cq.social.cq-social-members-impl
 * com.adobe.cq.social.cq-social-messaging-api
 * com.adobe.cq.social.cq-social-messaging-impl
-* com.adobe.cq.social.cq-social-moderation-spamdetector-core
-* com.adobe.cq.social.cq-social-moderation
+* com.adobe.cq.social.cq-social-modation-spamdetector-core
+* com.adobe.cq.social.cq-social-modation
 * com.adobe.cq.social.cq-social-ms-provider
 * com.adobe.cq.social.cq-social-notifications-api
 * com.adobe.cq.social.cq-social-notifications-channels-web
@@ -101,5 +101,5 @@ Les lots suivants ne sont pas inclus dans une nouvelle instance AEM 6.5 LTS. Apr
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
 * com.adobe.granite.osgi.wrapper.guava
-* com.adobe.cq.core.wcm.components.core (peut être remplacé par la version [compatible avec AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/versions))
+* com.adobe.cq.core.wcm.components.core (peut être remplacé par la version [compatible avec AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/versions))
 * com.adobe.cq.core.wcm.components.extension.contentfragment.bundle (peut être remplacé par une version compatible avec AEM 6.5 LTS)
