@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: d9dc7630-a157-4202-8caf-7c55e348c06e
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1763'
-ht-degree: 98%
+source-wordcount: '2359'
+ht-degree: 96%
 
 ---
 
@@ -203,7 +203,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
    <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PDFOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePDFOutputBatch</a></td>
    <td>Fusionne des données et des modèles pour créer un ensemble de documents PDF.</td>
    <td>Documents traités</td>
-   <td> L’API generatePDFOutputBatch combine un modèle de formulaire avec un enregistrement et génère un PDF. Lorsque vous traitez un lot d’enregistrements, le service de reporting des transactions comptabilise chaque enregistrement comme un rendu de PDF distinct. <br> Vous pouvez utiliser l’indicateur <a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> pour combiner plusieurs rendus en un seul fichier PDF. Quel que soit l’état de l’indicateur, le service comptabilise chaque enregistrement comme un rendu de PDF distinct. </td>
+   <td> L’API generatePDFOutputBatch combine un modèle de formulaire avec un enregistrement et génère un PDF. Lorsque vous traitez un lot d’enregistrements, le service de reporting des transactions comptabilise chaque enregistrement comme un rendu PDF distinct. <br> Vous pouvez utiliser l’indicateur <a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> pour combiner plusieurs rendus en un seul fichier PDF. Quel que soit l’état de l’indicateur, le service comptabilise chaque enregistrement comme un rendu de PDF distinct. </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
@@ -221,7 +221,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
    <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td>
    <td>Convertit un ensemble de documents XDP et PDF en un ensemble de formats de fichiers PostScript (PS), PCL (Printer Command Language) et ZPL. </td>
    <td>Documents traités</td>
-   <td> L’API generatePDFOutputBatch combine un modèle de formulaire avec un enregistrement et génère un PDF. Lorsque vous traitez un lot d’enregistrements, le service de reporting des transactions comptabilise chaque enregistrement comme un rendu de PDF distinct. <br> Vous pouvez utiliser l’indicateur <a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> pour combiner plusieurs rendus en un seul fichier PDF. Quel que soit l’état de l’indicateur, le service comptabilise chaque enregistrement comme un rendu de PDF distinct. </td>
+   <td> L’API generatePDFOutputBatch combine un modèle de formulaire avec un enregistrement et génère un PDF. Lorsque vous traitez un lot d’enregistrements, le service de reporting des transactions comptabilise chaque enregistrement comme un rendu PDF distinct. <br> Vous pouvez utiliser l’indicateur <a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> pour combiner plusieurs rendus en un seul fichier PDF. Quel que soit l’état de l’indicateur, le service comptabilise chaque enregistrement comme un rendu de PDF distinct. </td>
   </tr>
  </tbody>
 </table>
@@ -288,7 +288,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode-com.adobe.aemfd.docmanager.Document-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-com.adobe.fd.bcf.api.CharSet-" target="_blank">decode</a></td>
-   <td>Décode tous les codes-barres d’un objet Document et renvoie un objet org.w3c.dom.Document contenant les données extraites du code-barre.</td>
+   <td>Décode tous les codes-barres d’un objet Document et renvoie un objet org.w3c.dom.Document contenant les données récupérées du code à barres.</td>
    <td>Documents traités</td>
    <td> </td>
   </tr>
