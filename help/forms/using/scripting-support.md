@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 4110e3d5-7242-459b-b249-637b5bf3472d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3916'
-ht-degree: 100%
+source-wordcount: '3948'
+ht-degree: 99%
 
 ---
 
@@ -1009,7 +1009,7 @@ Les propriétés JavaScript, FormCalc et les méthodes prises en charge dans les
   </tr>
   <tr>
    <td>edge</td>
-   <td>L’objet edge décrit un arc, une ligne, ou le côté d’une bordure ou d’un rectangle.<br /> </td>
+   <td>L’objet edge décrit un arc, une ligne ou un côté d’une bordure ou d’un rectangle.<br /> </td>
    <td>Les attributs tels que la couleur, la limite, etc. ne sont pas pris en charge. </td>
   </tr>
  </tbody>
@@ -1026,7 +1026,7 @@ Les propriétés JavaScript, FormCalc et les méthodes prises en charge dans les
   </tr>
   <tr>
    <td>edge</td>
-   <td>L’objet edge décrit un arc, une ligne, ou le côté d’une bordure ou d’un rectangle.<br /> </td>
+   <td>L’objet edge décrit un arc, une ligne ou un côté d’une bordure ou d’un rectangle.<br /> </td>
    <td>Les attributs tels que la couleur, la limite, etc. ne sont pas pris en charge. </td>
   </tr>
  </tbody>
@@ -1285,7 +1285,7 @@ FormCalc est un langage spécifique à XFA qui permet de créer une logique cen
   </tr>
   <tr>
    <td>app.setTimeOut()</td>
-   <td>Spécifie un script JavaScript et une période. Le script est exécuté une seule fois, une fois la période écoulée. La valeur renvoyée par cette méthode doit être contenue dans une variable JavaScript. Dans le cas contraire, l’objet timeout est soumis au nettoyage de la mémoire, ce qui entraînerait l’arrêt de l’horloge. Pour annuler l’événement timeout, transmettez l’objet timeout renvoyé à clearTimeOut.</td>
+   <td>Spécifie un script JavaScript et une période. Le script est exécuté une seule fois, après l’expiration du délai.La valeur renvoyée par cette méthode doit être conservée dans une variable JavaScript. Dans le cas contraire, l’objet timeout est soumis au nettoyage de la mémoire, ce qui entraînerait l’arrêt de l’horloge. Pour annuler l’événement timeout, transmettez l’objet timeout renvoyé à clearTimeOut.</td>
    <td> </td>
   </tr>
   <tr>

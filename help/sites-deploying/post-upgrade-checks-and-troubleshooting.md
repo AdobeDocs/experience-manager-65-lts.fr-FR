@@ -12,7 +12,7 @@ role: Admin
 exl-id: 8b3d8d0f-10f7-4736-881d-8f1f21c69182
 source-git-commit: a037dc7cbb13abfeb8a7289baded50d3d788cbf6
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1203'
 ht-degree: 80%
 
 ---
@@ -123,7 +123,7 @@ Si vos lots personnalisés ne passent pas à l’état actif, il est probable qu
 
 Il est également préférable de vérifier si la modification à l’origine du problème était nécessaire et de revenir en arrière si ce n’est pas le cas. Vérifiez également si la nouvelle version du package d’exportation est plus élevée que nécessaire, à l’aide du contrôle de version sémantique strict.
 
-### Analyse des journaux error.log et upgrade.log  {#analyzing-the-error.log-and-upgrade.log}
+### Analyse des journaux error.log et upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
 Dans la plupart des cas, les journaux doivent être consultés afin d’y chercher des erreurs pour détecter la cause d’un problème. Toutefois, pour les mises à niveau, il est également nécessaire de surveiller les problèmes de dépendance, car les anciens lots peuvent ne pas être mis à niveau correctement.
 

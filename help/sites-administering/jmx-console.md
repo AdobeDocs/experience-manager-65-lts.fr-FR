@@ -12,7 +12,7 @@ role: Admin
 exl-id: c5907a0b-031f-4e3a-8a5c-5daf31eb71fc
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '4829'
+source-wordcount: '4969'
 ht-degree: 99%
 
 ---
@@ -252,7 +252,7 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>identifier.stability</td>
-   <td>Indique la stabilité des identifiants de nœud non référençables. Les valeurs suivantes sont valides :
+   <td>Indique la stabilité des identifiants de nœud non référençables. Les valeurs possibles sont les suivantes :
     <ul>
      <li>identifier.stability.indefinite.duration : les identifiants ne changent pas.</li>
      <li>identifier.stability.method.duration : les identifiants peuvent changer entre les appels de méthode.</li>
@@ -557,7 +557,7 @@ Lecture seule.
 
      Pour effectuer une sauvegarde incrémentielle, spécifiez le répertoire qui a déjà été utilisé pour la sauvegarde.
 
-       Vous pouvez spécifier un chemin d’accès absolu ou relatif. Les chemins d’accès relatifs le sont par rapport au parent du répertoire crx-quickstart.
+     Vous pouvez spécifier un chemin d’accès absolu ou relatif. Les chemins d’accès relatifs le sont par rapport au parent du répertoire crx-quickstart.
 
      Lorsque vous ne spécifiez aucune valeur, la valeur par défaut `backup-currentdate.zip` est utilisée, où `currentdate` est au format `yyyyMMdd-HHmm`.
 
@@ -886,7 +886,7 @@ Les MBeans déployés avec un service OSGi exposent les attributs et les opérat
 
 La page principale de la console JMX comporte un tableau des services. Chaque ligne du tableau représente un service exposé par un MBean.
 
-1. Ouvrez la console web et cliquez sur l’onglet JMX. ([http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
+1. Ouvrez la console web et cliquez sur l’onglet JMX. ([:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
 2. Cliquez sur une valeur de cellule pour un service afin d’afficher les attributs et les opérations du service.
 3. Pour modifier une valeur d’attribut, cliquez sur la valeur, spécifiez la valeur dans la boîte de dialogue qui s’affiche, puis cliquez sur Enregistrer.
 4. Pour appeler une opération de service, cliquez sur le nom de l’opération, spécifiez les valeurs d’argument dans la boîte de dialogue qui s’affiche, puis cliquez sur Appeler.
@@ -916,7 +916,7 @@ JConsole affiche une liste des processus locaux de machine virtuelle Java. La li
 
 Pour se connecter à un processus CRX distant, la JVM qui héberge le processus CRX distant doit être activée pour accepter les connexions JMX distantes.
 
-  Pour activer les connexions JMX à distance, la propriété système ci-dessous doit être définie au démarrage de la machine virtuelle Java :
+Pour activer les connexions JMX à distance, la propriété système ci-dessous doit être définie au démarrage de la machine virtuelle Java :
 
 `com.sun.management.jmxremote.port=portNum`
 

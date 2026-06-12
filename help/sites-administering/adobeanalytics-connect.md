@@ -12,7 +12,7 @@ role: Admin
 exl-id: a39ed93e-4276-48ff-ba49-d0f630409222
 source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1491'
 ht-degree: 98%
 
 ---
@@ -47,7 +47,7 @@ Avant de commencer, assurez-vous que vos informations d’identification vous pe
 
 * [Se connecter à Adobe Experience Cloud](https://experience.adobe.com/#/@login/home)
 
-* [Se connecter à Adobe Analytics](https://sc.omniture.com/login/)
+* [Se connecter à Adobe Analytics](https://sc.omniture.com/login/)
 
 ### Configuration d’AEM pour utiliser vos centres de données Adobe Analytics {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
@@ -67,7 +67,7 @@ Utilisez la [console Web pour configurer le](/help/sites-deploying/configuring-o
 
 ![aa-07](assets/aa-07.png)
 
-1. Ouvrez la console Web dans votre navigateur Web. ([https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
+1. Ouvrez la console Web dans votre navigateur Web. ([:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
 1. Pour accéder à la console, saisissez vos informations d’identification.
 
    >[!NOTE]
@@ -196,17 +196,17 @@ Voir [Affichage des données d’analyse de page](/help/sites-authoring/page-ana
 
 Configurez l’instance appropriée du service **Importateur Sling de rapports Adobe AEM Analytics** :
 
-* **Tentatives de récupération** :
-nombre de tentatives de récupération d’un rapport en file d’attente.
+* **Tentatives de récupération** :
+Nombre de tentatives de récupération d’un rapport en file d’attente.
 La valeur par défaut est `6`.
 
-* **Délai de récupération** :
-nombre de millisecondes entre les tentatives de récupération d’un rapport en file d’attente.
-La valeur par défaut est de `10000`. Comme la valeur est en millisecondes, cela correspond à 10 secondes.
+* **Délai de récupération** :
+Nombre de millisecondes écoulées entre les tentatives de récupération d’un rapport mis en file d’attente.
+La valeur par défaut est `10000`. Comme cette valeur est exprimée en millisecondes, elle correspond à 10 secondes.
 
-* **Fréquence de récupération** :
-expression `cron` pour déterminer la fréquence de récupération du rapport Analytics.
-La valeur par défaut est `0 0 0/12 * * ?` ; cela correspond à 12 récupérations par heure.
+* **Fréquence de récupération** :
+Expression `cron` permettant de déterminer la fréquence de récupération du rapport Analytics.
+La valeur par défaut est `0 0 0/12 * * ?` ; cela correspond à 12 récupérations toutes les heures.
 
 Pour configurer ce service OSGi, vous pouvez utiliser la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou un [nœud osgiConfig dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (le PID de service est `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
 

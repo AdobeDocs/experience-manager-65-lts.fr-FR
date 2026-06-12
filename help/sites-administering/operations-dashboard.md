@@ -12,8 +12,8 @@ role: Admin
 exl-id: fcabfd44-31c2-4884-8dbd-99aa74972cfa
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '5740'
-ht-degree: 98%
+source-wordcount: '6016'
+ht-degree: 96%
 
 ---
 
@@ -79,7 +79,7 @@ La création d’un contrôle d’intégrité individuel se compose de deux éta
 
 1. Pour créer un contrôle d’intégrité Sling, créez un composant OSGI qui implémente l’interface de contrôle d’intégrité Sling. Ajoutez ce composant dans un lot. Les propriétés du composant identifient entièrement le contrôle d’intégrité. Une fois le composant installé, un MBean JMX est automatiquement créé pour le contrôle d’intégrité. Voir la [documentation du contrôle d’intégrité Sling](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) pour plus d’informations.
 
-    Exemple de composant de contrôle de l’intégrité Sling, écrit avec des annotations de composant de service OSGi :
+   Exemple de composant de contrôle de l’intégrité Sling, écrit avec des annotations de composant de service OSGi :
 
    ```java
    @Component(service = HealthCheck.class,
@@ -156,7 +156,7 @@ Un contrôle d’intégrité composite vise à agréger différents contrôles d
 
    >[!NOTE]
    >
-   >Un nouveau MBean JMX est créé pour chaque nouvelle configuration du contrôle de l’intégrité composite Apache Sling.**
+   >Un nouveau MBean JMX est créé pour chaque nouvelle configuration du contrôle de l’intégrité composite Apache Sling.**
 
 1. Enfin, l’entrée du contrôle d’intégrité composite qui vient d’être créé doit être ajoutée aux nœuds de configuration du tableau de bord des opérations. La procédure est identique à celle des contrôles d’intégrité individuels : un nœud de type **nt:unstructured** doit être créé sous `/apps/settings/granite/operations/hc`. La propriété de ressource du nœud est définie par la valeur de **hc.mean.name** dans la configuration OSGI.
 
@@ -205,12 +205,12 @@ Un contrôle d’intégrité composite vise à agréger différents contrôles d
     </ul> <p>La longueur maximale de chaque file d’attente provient de configurations distinctes (Oak et AEM) et n’est pas configurable à partir de ce contrôle de l’intégrité. Le MBean pour ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
-   <td>Limites de requête transversales</td>
-   <td><p>Le contrôle Limites de requête transversales contrôle le MBean <code>QueryEngineSettings</code>, plus particulièrement les attributs <code>LimitInMemory</code> et <code>LimitReads</code> et renvoie le statut suivant :</p>
+   <td>Limites de requête de traversée</td>
+   <td><p>Le contrôle Limites de requête de traversée contrôle le MBean <code>QueryEngineSettings</code>, plus particulièrement les attributs <code>LimitInMemory</code> et <code>LimitReads</code> et renvoie le statut suivant :</p>
     <ul>
-     <li>« Avertissement » si l’une des limites est égale ou supérieure à  <code>Integer.MAX_VALUE</code></li>
+     <li>« Avertissement » si l’une des limites est égale ou supérieure à <code>Integer.MAX_VALUE</code></li>
      <li>« Avertissement » si l’une des limites est inférieure à 10 000 (paramètre recommandé d’Oak)</li>
-     <li>« Critique » si la valeur <code>QueryEngineSettings</code> ou l’une des limites ne peut pas être extraite.</li>
+     <li>« Critique » si la valeur <code>QueryEngineSettings</code> ou l’une des limites ne peut pas être récupérée.</li>
     </ul> <p>Le MBean pour ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueryTraversalLimitsBundle%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queryTraversalLimitsBundle,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -284,7 +284,7 @@ Un contrôle d’intégrité composite vise à agréger différents contrôles d
   </tr>
   <tr>
    <td>Espace disque</td>
-   <td><p>Le contrôle Espace disque observe le MBean <code>FileStoreStats</code>, extrait la taille de l’entrepôt de nœuds et la quantité d’espace disque utilisable sur la partition Entrepôt de nœuds, puis :</p>
+   <td><p>Le contrôle Espace disque observe le MBean <code>FileStoreStats</code>, récupère la taille de l’entrepôt de nœuds et la quantité d’espace disque utilisable sur la partition Entrepôt de nœuds, puis :</p>
     <ul>
      <li>renvoie le statut « Avertissement » si le rapport espace disque utilisable/taille du référentiel est inférieur au seuil d’avertissement (la valeur par défaut est 10) ;</li>
      <li>renvoie le statut « Critique » si le rapport espace disque utilisable/taille du référentiel est inférieur au seuil critique (la valeur par défaut est 2).</li>
@@ -296,7 +296,7 @@ Un contrôle d’intégrité composite vise à agréger différents contrôles d
   </tr>
   <tr>
    <td>Contrôles de sécurité</td>
-   <td><p>Le contrôle de sécurité est un contrôle composite, qui agrège les résultats de différents contrôles liés à la sécurité. Chacun de ces contrôles d’intégrité prennent en compte différentes préoccupations de la liste de contrôle de sécurité, disponibles dans la page de documentation <a href="/help/sites-administering/security-checklist.md">Liste de contrôle de sécurité.</a> Ils sont utiles comme test de vérification de la sécurité lorsque l’instance est démarrée. </p> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitychecks,type=HealthCheck</a>.</p> </td>
+   <td><p>Le contrôle de sécurité est un contrôle composite, qui agrège les résultats de différents contrôles liés à la sécurité. Ces contrôles d’intégrité individuels répondent à différentes préoccupations de la liste de contrôle de sécurité disponible à la page de documentation de la <a href="/help/sites-administering/security-checklist.md">Liste de contrôle de sécurité</a>. La vérification est utile comme test de vérification de la sécurité lorsque l’instance est démarrée. </p> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitychecks,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Lots actifs</td>
@@ -558,7 +558,7 @@ Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer a
 
 >[!NOTE]
 >
->L’arrêt de la tâche de maintenance consiste à suspendre son exécution mais en continuant à effectuer le suivi de la tâche déjà en cours.
+>L’arrêt de la tâche de maintenance consiste à suspendre son exécution, mais en continuant à effectuer le suivi de la tâche déjà en cours.
 
 >[!CAUTION]
 >
@@ -622,14 +622,14 @@ Les tâches de maintenance personnalisées peuvent être mises en œuvre sous fo
   </tr>
   <tr>
    <td>job.topics</td>
-   <td>Il s’agit d’une rubrique unique de la tâche de maintenance.<br /> Le traitement des tâches Apache Sling démarre une tâche avec précisément cette rubrique afin d’exécuter la tâche de maintenance ; lorsque la tâche est enregistrée pour cette rubrique, elle est exécutée.<br /> La rubrique doit commencer par <i>com/adobe/granite/maintenance/job/</i>.</td>
+   <td>Une rubrique unique de la tâche de maintenance.<br /> Le traitement des tâches Apache Sling démarre une tâche avec précisément cette rubrique afin d’exécuter la tâche de maintenance ; lorsque la tâche est enregistrée pour cette rubrique, elle est exécutée.<br /> La rubrique doit commencer par <i>com/adobe/granite/maintenance/job/</i>.</td>
    <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td>
    <td>Requise</td>
   </tr>
  </tbody>
 </table>
 
-En dehors des propriétés de service ci-dessus, la méthode `process()` de l’interface `JobConsumer` doit être mise en œuvre en ajoutant le code à exécuter pour la tâche de maintenance. L’élément `JobExecutionContext` fourni peut être utilisé pour générer les informations de statut. Vérifiez si la tâche est interrompue par l’utilisateur et produit un résultat (réussite ou échec).
+En dehors des propriétés de service ci-dessus, la méthode `process()` de l’interface `JobConsumer` doit être mise en œuvre en ajoutant le code à exécuter pour la tâche de maintenance. L’élément `JobExecutionContext` fourni peut être utilisé pour générer les informations de statut. Vérifiez si la tâche est interrompue par l’utilisateur ou l’utilisatrice et produit un résultat (réussite ou échec).
 
 Dans les cas où une tâche de maintenance ne doit pas être exécutée sur toutes les installations (si vous l’exécutez uniquement sur l’instance de publication, par exemple), vous pouvez faire en sorte que le service doive être configuré de manière à être actif en ajoutant `@Component(policy=ConfigurationPolicy.REQUIRE)`. Vous pouvez alors marquer la configuration correspondante comme étant dépendante du mode d’exécution dans le référentiel. Pour plus d’informations, consultez la section [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md#creating-the-configuration-in-the-repository).
 
@@ -659,7 +659,7 @@ Le **tableau de bord de présentation** du système présente en détail la conf
 
 >[!NOTE]
 >
->Vous pouvez également [visionner cette vidéo](https://video.tv.adobe.com/v/3424582?captions=fre_fr) pour découvrir une présentation du tableau de bord de présentation du système.
+>Vous pouvez également [visionner cette vidéo](https://video.tv.adobe.com/v/21340) pour découvrir une présentation du tableau de bord de présentation du système.
 
 ### Accès {#how-to-access}
 
@@ -724,7 +724,7 @@ Vous pouvez également télécharger un fichier `JSON` pour résumer les informa
    <td>
     <ul>
      <li>Système d’exploitation et version du système d’exploitation (par exemple, macOS X)</li>
-     <li>Charge moyenne du système, extraite de <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage—">OperatingSystemMXBeanusable</a></li>
+     <li>Charge moyenne du système, récupérée de <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage—">OperatingSystemMXBeanusable</a></li>
      <li>Espace disque (sur la partition où se trouve le répertoire racine)</li>
      <li>Nombre maximal de segments de mémoire, renvoyé par <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage—">MemoryMXBean</a></li>
     </ul> </td>
@@ -817,13 +817,13 @@ Vous pouvez également télécharger un fichier `JSON` pour résumer les informa
     </ul> <p>Pour chacun des états présentés ci-dessus, une requête est exécutée, avec une limite de 400 millisecondes. À 400 millisecondes, le nombre d’entrées obtenues jusqu’à ce point s’affiche.</p> </td>
    <td><p>Non interprété :</p>
     <ul>
-     <li>l’utilisateur ou l’utilisatrice doit déterminer s’il existe des workflows et des tâches dont l’état est inattendu.</li>
+     <li>l’utilisateur ou l’utilisatrice doit déterminer s’il existe des workflows et des tâches dont le statut est inattendu.</li>
     </ul> </td>
    <td>Page Échecs de workflow</td>
   </tr>
   <tr>
    <td>Tâches Sling</td>
-   <td><p>Nombre de tâches Sling : nombre de tâches dans un état donné (le cas échéant) :</p>
+   <td><p>Nombre de tâches Sling : nombre de tâches dans un statut donné (le cas échéant) :</p>
     <ul>
      <li>échec</li>
      <li>en file d’attente</li>
@@ -832,7 +832,7 @@ Vous pouvez également télécharger un fichier `JSON` pour résumer les informa
     </ul> </td>
    <td><p>Non interprété :</p>
     <ul>
-     <li>l’utilisateur ou l’utilisatrice doit déterminer s’il existe des tâches dont les états sont inattendus ou dont le nombre est élevé.</li>
+     <li>l’utilisateur ou l’utilisatrice doit déterminer s’il existe des tâches dont les statuts sont inattendus ou dont le nombre est élevé.</li>
     </ul> </td>
    <td>S/O</td>
   </tr>

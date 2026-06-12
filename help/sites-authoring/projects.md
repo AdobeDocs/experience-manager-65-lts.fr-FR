@@ -7,8 +7,8 @@ role: User,Admin,Developer
 exl-id: c5b4ffe5-b722-4452-8450-1e1089e3ffba
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 100%
+source-wordcount: '1366'
+ht-degree: 97%
 
 ---
 
@@ -227,7 +227,7 @@ Lorsque vous créez le projet et ajoutez des utilisateurs aux différents rôles
 
 Par exemple, un projet appelé Myproject aurait trois groupes **Propriétaires Myproject**, **Éditeurs Myproject**, **Observateurs Myproject**.
 
-Si le projet est supprimé, ces groupes ne sont supprimés que si vous sélectionnez l’option appropriée [ lors de la suppression du projet.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) L’équipe d’administration peut également supprimer manuellement les groupes dans **Outils** > **Sécurité** > **Groupes**.
+Si le projet est supprimé, ces groupes ne sont supprimés que si vous sélectionnez l’option appropriée [lors de la suppression du projet](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project). Un administrateur peut également supprimer manuellement les groupes dans **Outils** > **Sécurité** > **Groupes**.
 
 ## Ressources supplémentaires {#additional-resources}
 

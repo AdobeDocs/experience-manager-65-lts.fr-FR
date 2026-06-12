@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 1a0d00f9-45f7-45af-ab34-d1c164980abb
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2064'
-ht-degree: 98%
+source-wordcount: '2127'
+ht-degree: 94%
 
 ---
 
@@ -30,7 +30,7 @@ Dans des modèles de workflow AEM, vous pouvez :
 
 * [Créer une variable](../../forms/using/variable-in-aem-workflows.md#create-a-variable) d’un type de données en fonction du type d’informations que vous souhaitez y stocker.
 * [Définir une valeur pour la variable](../../forms/using/variable-in-aem-workflows.md#set-a-variable) à l’aide de l’étape de processus Définir la variable.
-* [Utiliser la variable](../../forms/using/variable-in-aem-workflows.md#use-a-variable) dans toutes les étapes de processus AEM Forms pour extraire la valeur stockée et dans les étapes de division OU ou d’accès pour définir une expression de routage.
+* [Utiliser la variable](../../forms/using/variable-in-aem-workflows.md#use-a-variable) dans toutes les étapes de processus AEM Forms pour récupérer la valeur stockée et dans les étapes de division OU ou d’accès pour définir une expression de routage.
 
 Les variables sont une extension de l’interface [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) existante. Vous pouvez utiliser [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) dans ECMAScript pour accéder aux métadonnées enregistrées à l’aide de variables.
 
@@ -38,8 +38,8 @@ Les variables sont une extension de l’interface [MetaDataMap](https://develope
 
 Vous pouvez créer des variables à l’aide de la section Variables disponible dans le sidekick du modèle de processus. Les variables de workflow AEM prennent en charge les types de données suivants :
 
-* **Types de données primitifs** : Long, Doublon, Boolean, Date et String
-* **Types de données complexes** : [Document](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), instance [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) et modèle de données de formulaire.
+* **Types de données primitifs** : Long, Double, Booléen, Date et Chaîne
+* **Types de données complexes** : [Document](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), instance [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) et modèle de données de formulaire.
 
 >[!NOTE]
 >
@@ -83,8 +83,8 @@ En fonction du type de données de la variable, vous pouvez définir la valeur d
 
 * **Expression** : utilisez l’option lorsque la valeur à utiliser est calculée en fonction d’une expression. L’expression est créée dans l’éditeur d’expressions fourni.
 
-* **Notation de point JSON** : l’option permet d’extraire une valeur d’une variable de type JSON ou FDM.
-* **XPATH** : l’option permet d’extraire une valeur d’une variable de type XML.
+* **Notation de point JSON** : l’option permet de récupérer une valeur d’une variable de type JSON ou FDM.
+* **XPATH** : l’option permet de récupérer une valeur d’une variable de type XML.
 
 * **Relatif à la charge** : utilisez l’option lorsque la valeur à enregistrer dans la variable est disponible à un chemin d’accès relatif à la charge utile.
 
@@ -140,7 +140,7 @@ Pour en savoir plus, consultez la section [Éditeur de règles de formulaires ad
 
 ## Utiliser une variable {#use-a-variable}
 
-Vous pouvez utiliser des variables pour extraire des entrées et des sorties ou enregistrer le résultat d’une étape. L’éditeur de processus fournit deux types d’étapes de processus :
+Vous pouvez utiliser des variables pour récupérer des entrées et des sorties ou enregistrer le résultat d’une étape. L’éditeur de processus fournit deux types d’étapes de processus :
 
 * Étapes de workflow avec prise en charge des variables
 * Étapes de workflow sans prise en charge des variables
@@ -149,7 +149,7 @@ Vous pouvez utiliser des variables pour extraire des entrées et des sorties ou 
 
 L’étape d’accès, l’étape de Division OU et toutes les étapes de workflow d’AEM Forms prennent en charge les variables.
 
-#### OU étape Fractionner {#or-split-step}
+#### Étape Division OU {#or-split-step}
 
 L’étape de division OU divise le processus et une seule branche est active par la suite. Cette étape permet d’ajouter des chemins de traitement conditionnels dans le processus. Vous ajoutez des étapes de processus à chaque branche selon vos besoins.
 
@@ -185,9 +185,9 @@ Toutes les étapes de processus AEM Forms prennent en charge les variables. Pour
 
 Vous pouvez utiliser l’interface [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) pour accéder à des variables dans des étapes de processus qui ne prennent pas en charge les variables.
 
-#### Extraction de la valeur d’une variable {#retrieve-the-variable-value}
+#### Récupération de la valeur d’une variable {#retrieve-the-variable-value}
 
-Les API suivantes dans le script ECMA permettent d’extraire des valeurs de variables existantes en fonction du type de données :
+Les API suivantes dans le script ECMA permettent de récupérer des valeurs de variables existantes en fonction du type de données :
 
 | Type de données de la variable | API |
 |---|---|
@@ -201,7 +201,7 @@ Vous avez besoin du [Package de modules complémentaires AEM Forms](https://hel
 
 **Exemple**
 
-Extrayez la valeur du type de données de chaîne à l’aide de l’API suivante :
+Récupérez la valeur du type de données de chaîne à l’aide de l’API suivante :
 
 ```javascript
 workItem.getWorkflowData().getMetaDataMap().get(accname, Packages.java.lang.String)
@@ -266,8 +266,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ### Stocker des données utilisateur sensibles en dehors de JCR à l’aide de variables de workflow {#jcr-independent-persistance}
 
-Les données traitées à l’aide de Forms Workflow peuvent contenir des données utilisateur sensibles, telles que des informations d’identification personnelles et des informations personnelles sensibles. Les entreprises peuvent choisir de stocker les données, qui sont traitées par différentes étapes de workflow (et transmises à l’aide de variables de workflow), à partir du stockage JCR vers un entrepôt de données externe dont elles sont propriétaires et qu’elles gèrent. Pour en savoir plus sur la conservation des données de workflow dans un stockage externe, voir [Utilisation de variables de workflow pour les entrepôts de données détenus par le client](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
-[!DNL Adobe Experience Manager] fournit l’API de workflow [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) pour stocker des variables de workflow dans des entrepôts Azure Blob externes. Pour plus d’informations sur l’utilisation de l’API, voir [Utiliser les variables de workflow pour paramétrer les données sensibles et les stocker dans des entrepôts de données externes](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
+Les données traitées à l’aide de Forms Workflow peuvent contenir des données utilisateur sensibles, telles que des informations d’identification personnelles et des informations personnelles sensibles. Les entreprises peuvent choisir de stocker les données, qui sont traitées par différentes étapes de workflow (et transmises à l’aide de variables de workflow), à partir du stockage JCR vers un magasin de données externe dont elles sont propriétaires et qu’elles gèrent. Pour en savoir plus sur la conservation des données de workflow dans un stockage externe, consultez [Utilisation de variables de workflow pour les magasins de données détenus par le client](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+[!DNL Adobe Experience Manager] fournit une API de workflow [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) pour stocker des variables de workflow dans des entrepôts Azure Blob externes. Pour plus d’informations sur l’utilisation de l’API, voir [ Utilisation de variables de workflow pour paramétrer les données sensibles et les stocker dans des entrepôts de données externes](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 
 ## Modification d’une variable {#edit-a-variable}
 
