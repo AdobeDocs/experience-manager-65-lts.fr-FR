@@ -44,15 +44,15 @@ Le service Assembler peut assembler des documents PDF non interactifs sans que l
 
 >[!NOTE]
 >
->Avant dʼentamer cette section, il est recommandé de se familiariser avec l’assemblage de documents PDF à l’aide du service Assembler. Cette section nʼaborde pas les concepts tels que la création dʼun objet de collection contenant des documents dʼentrée, ou lʼapprentissage de lʼextraction des résultats de lʼobjet de collection retourné. (Voir [Assemblage par programme de documents PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+>Avant dʼentamer cette section, il est recommandé de se familiariser avec l’assemblage de documents PDF à l’aide du service Assembler. Cette section nʼaborde pas les concepts tels que la création dʼun objet de collection contenant des documents dʼentrée, ou lʼapprentissage de lʼextraction des résultats de lʼobjet de collection retourné. (Consultez la section [Assembler par programmation des documents PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md)).
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Assembler, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Assembler, consultez la section [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 >[!NOTE]
 >
->Pour plus d’informations sur un document DDX, voir [service Assembler et référence DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Pour plus d’informations sur les documents DDX, consultez la section [Guide de référence du service Assembler et de DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Résumé des étapes {#summary-of-steps}
 
@@ -148,7 +148,7 @@ Assemblez un document PDF non interactif à l’aide de l’API du service Assem
    * Objet `com.adobe.idp.Document` contenant le document PDF interactif.
    * Objet `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` spécifiant les options d’exécution, y compris la police par défaut et le niveau du log de traitement.
 
-   La méthode `invokeOneDocument` renvoie un objet `com.adobe.idp.Document` contenant un document PDF non interactif.
+   La méthode `invokeOneDocument` renvoie un objet `com.adobe.idp.Document` qui contient un document PDF non interactif.
 
 1. Enregistrez le document PDF non interactif.
 

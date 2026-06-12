@@ -46,11 +46,11 @@ Il n’est pas nécessaire que le service de chiffrement fasse partie de votre i
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Assembler, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Assembler, consultez [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 >[!NOTE]
 >
->Pour plus d’informations sur un document DDX, voir [service Assembler et référence DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Pour plus d’informations sur les documents DDX, consultez la section [Guide de référence du service Assembler et de DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Résumé des étapes {#summary-of-steps}
 
@@ -184,7 +184,7 @@ Si un seul document PDF est transmis au service Assembler, ce dernier renvoie un
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document DDX et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’objet `BLOB` en attribuant le contenu du tableau d’octets à son champ `MTOM`.
+   * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Référencez un document PDF non sécurisé.
 

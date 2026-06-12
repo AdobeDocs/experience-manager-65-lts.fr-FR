@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: 2d05a36e-c02e-41ef-a03d-2a799aa6eab3
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1670'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,7 @@ Une fois que vous avez inclus le fragment de texte dans une communication intera
 
 ### Exemple : utilisation d’une condition intégrée dans une lettre pour effectuer le rendu de l’adresse appropriée  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
 
-Vous pouvez insérer une condition intégrée dans une lettre en insérant la condition intégrée dans le module de texte approprié. L’exemple suivant utilise deux conditions pour évaluer et afficher l’adresse appropriée, Monsieur ou Madame, dans une lettre basée sur le sexe de l’élément DD. En utilisant les mêmes étapes, vous pouvez créer d’autres conditions.
+Vous pouvez insérer une condition intégrée dans une lettre en insérant la condition intégrée dans le module de texte approprié. L’exemple suivant utilise deux conditions pour évaluer et afficher la formule appropriée (Monsieur ou Madame) dans une lettre, en fonction de l’élément DD Genre. En utilisant les mêmes étapes, vous pouvez créer d’autres conditions.
 
 >[!NOTE]
 >

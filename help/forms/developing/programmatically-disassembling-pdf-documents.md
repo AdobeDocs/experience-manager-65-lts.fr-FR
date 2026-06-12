@@ -50,11 +50,11 @@ Dans le cadre de cette discussion, supposons que le document DDX suivant soit ut
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Assembler, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Assembler, consultez la section [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 >[!NOTE]
 >
->Pour plus d’informations sur un document DDX, voir [service Assembler et référence DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Pour plus d’informations sur les documents DDX, consultez la section [Guide de référence du service Assembler et de DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Résumé des étapes {#summary-of-steps}
 

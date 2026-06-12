@@ -788,7 +788,7 @@ Pour signer numériquement un document PDF à l’aide de l’API Signature (ser
    * Une valeur de chaîne qui représente le nom du champ de signature qui contiendra la signature numérique.
    * Un objet `Credential` représentant les informations d’identification utilisées pour signer numériquement le document PDF. Créez un objet `Credential` en utilisant son constructeur et en spécifiant l’alias en attribuant une valeur à la propriété `alias` de l’objet `Credential`.
    * Un objet `HashAlgorithm` spécifiant un membre de données statique qui représente l’algorithme de hachage à utiliser pour synthétiser le document PDF. Par exemple, vous pouvez spécifier `HashAlgorithm.SHA1` pour utiliser l’algorithme SHA1.
-   * Une valeur booléenne qui indique si l’algorithme de hachage est utilisé.
+   * Valeur booléenne spécifiant si l’algorithme de hachage est utilisé.
    * Une valeur de chaîne qui représente la raison pour laquelle le document PDF a été signé numériquement.
    * Une valeur de chaîne qui représente l’emplacement du ou de la signataire.
    * Une valeur de chaîne qui représente les informations de contact du ou de la signataire.
@@ -938,7 +938,7 @@ Signez numériquement un formulaire interactif à l’aide de l’API Forms et S
 
    Signez le document PDF en appelant la méthode `sign` de l’objet `SignatureServiceClient` et en transmettant les valeurs suivantes :
 
-   * Un objet `com.adobe.idp.Document` représentant le document PDF à signer. Assurez-vous que cet objet correspond à l’objet `com.adobe.idp.Document` obtenu à partir du service Forms.
+   * Objet `com.adobe.idp.Document` représentant le document PDF à signer. Assurez-vous que cet objet correspond à l’objet `com.adobe.idp.Document` obtenu à partir du service Forms.
    * Une valeur de chaîne représentant le nom du champ de signature signé.
    * Un objet `Credential` représentant les informations d’identification utilisées pour signer le document PDF. Créez un objet `Credential` en appelant la méthode `getInstance` statique de l’objet `Credential`. Transmettez une valeur de chaîne spécifiant la valeur d’alias correspondant aux informations d’identification de sécurité.
    * Un objet `HashAlgorithm` spécifiant un membre de données statique qui représente l’algorithme de hachage à utiliser pour synthétiser le document PDF. Par exemple, vous pouvez spécifier `HashAlgorithm.SHA1` pour utiliser l’algorithme SHA1.
@@ -981,7 +981,7 @@ Signez numériquement un formulaire interactif à l’aide de l’API Forms et S
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client Forms et Signatures
 
@@ -1035,7 +1035,7 @@ Signez numériquement un formulaire interactif à l’aide de l’API Forms et S
    * Une valeur de chaîne représentant le nom du champ de signature signé.
    * Un objet `Credential` représentant les informations d’identification utilisées pour signer le document PDF. Créez un objet `Credential` en utilisant son constructeur et en spécifiant l’alias en attribuant une valeur à la propriété `alias` de l’objet `Credential`.
    * Un objet `HashAlgorithm` spécifiant un membre de données statique qui représente l’algorithme de hachage à utiliser pour synthétiser le document PDF. Par exemple, vous pouvez spécifier `HashAlgorithm.SHA1` pour utiliser l’algorithme SHA1.
-   * Une valeur booléenne qui indique si l’algorithme de hachage est utilisé.
+   * Valeur booléenne spécifiant si l’algorithme de hachage est utilisé.
    * Une valeur de chaîne qui représente la raison pour laquelle le document PDF a été signé numériquement.
    * Une valeur de chaîne qui représente l’emplacement du ou de la signataire.
    * Une valeur de chaîne qui représente les informations de contact du ou de la signataire.

@@ -56,11 +56,11 @@ Le document DXX doit contenir une balise `Portfolio` avec une balise `Navigator`
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Assembler, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Assembler, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 >[!NOTE]
 >
->Pour plus d’informations sur un document DDX, voir [service Assembler et référence DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Pour plus d’informations sur les documents DDX, consultez la section [Guide de référence du service Assembler et de DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Résumé des étapes {#summary-of-steps}
 
@@ -248,7 +248,7 @@ Assemblez un portfolio PDF à l’aide de l’API du service Assembler (service 
 
    * Objet `BLOB` représentant le document DDX.
    * Objet `MyMapOf_xsd_string_To_xsd_anyType` contenant les fichiers requis.
-   * Un objet `AssemblerOptionSpec` qui spécifie les options d’exécution
+   * Un objet `AssemblerOptionSpec` qui spécifie les options d’exécution.
 
    La méthode `invokeDDX` renvoie un objet `AssemblerResult` contenant les résultats de la tâche et les exceptions survenues.
 

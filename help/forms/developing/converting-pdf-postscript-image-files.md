@@ -32,7 +32,7 @@ Le service Convert PDF vous permet dʼeffectuer les tâches suivantes :
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Convert PDF, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Convert PDF, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ## Convertir des documents PDF en PostScript {#converting-pdf-documents-to-postscript}
 
@@ -40,7 +40,7 @@ Cette rubrique décrit lʼutilisation de l’API Convert PDF Service (Java et se
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Convert PDF, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Convert PDF, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -156,7 +156,7 @@ Convertissez un document PDF en PostScript à l’aide de l’API Convert PDF Se
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacez `localhost` avec l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client PDF Convert.
 
@@ -288,7 +288,7 @@ Convertissez un document PDF en format d’image à l’aide de l’API Convert 
 
    >[!NOTE]
    >
-   >La définition de la valeur d’énumération `ImageConvertFormat` est obligatoire.
+   >Paramétrer la valeur d’énumération `ImageConvertFormat` est obligatoire.
 
 1. Convertissez le PDF en image.
 
@@ -317,7 +317,7 @@ Convertissez un document PDF en format d’image à l’aide de l’API Convert 
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacez `localhost` avec l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client PDF convert.
 

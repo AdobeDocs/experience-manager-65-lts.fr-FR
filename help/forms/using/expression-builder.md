@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: aed65a14-2b4f-45ac-8b20-fdb08b3c9038
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '797'
 ht-degree: 96%
 
 ---
@@ -26,7 +26,7 @@ Comme le Générateur d’expression utilise en interne les bibliothèques EL JS
 
 ![Générateur d’expression](assets/expressionbuilder.png)
 
-### Opérateurs  {#operators}
+### Opérateurs {#operators}
 
 Les opérateurs pouvant être utilisés dans les expressions sont disponibles dans la barre supérieure du générateur d’expression.
 
@@ -80,8 +80,8 @@ Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonct
 
    1. **Activé** : indique si cette méthode est activée. Expression Manager ignore les méthodes désactivées.
    1. **familyId** : indique la famille (groupe) de méthodes. Si l’attribut est vide, Expression Manager considère que la méthode appartient à la famille par défaut. Il n’y a aucun registre de familles (à l’exception de celui par défaut) d’où sont sélectionnées les fonctions. Expression Manager crée le registre de façon dynamique en utilisant une union de tous les ID de famille spécifiés par toutes les fonctions exportées par les différents lots. Assurez-vous que l’ID indiqué ici est raisonnablement lisible, puisqu’il s’affiche également dans l’interface utilisateur de création d’expression.
-   1. **displayName** : nom intelligible de la fonction. Ce nom apparaît dans l’interface utilisateur de création. Si l’attribut est vide, Expression Manager crée un nom par défaut à l’aide du préfixe et du nom local de la fonction.
-   1. **Description** : description détaillée de la fonction. Cette description apparaît dans l’interface utilisateur de création. Si l’attribut est vide, Expression Manager crée une description par défaut à l’aide du préfixe et du nom local de la fonction.
+   1. **displayName** : nom intelligible de la fonction. Ce nom apparaît dans l’interface de création. Si l’attribut est vide, Expression Manager crée un nom par défaut à l’aide du préfixe et du nom local de la fonction.
+   1. **Description** : description détaillée de la fonction. Cette description apparaît dans l’interface de création. Si l’attribut est vide, Expression Manager crée une description par défaut à l’aide du préfixe et du nom local de la fonction.
 
    ```java
    package mergeandfuse.com;
