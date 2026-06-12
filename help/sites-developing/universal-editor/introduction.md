@@ -42,7 +42,7 @@ Les éléments suivants prennent en charge l’éditeur universel :
    * L’hébergement on-premise et Adobe Managed Services (AMS)* sont pris en charge.
 * [AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
    * L’hébergement On-Premise et AMS* sont pris en charge.
-* [](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (version `2023.8.13099` ou ultérieure)
+* [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (version `2023.8.13099` ou ultérieure)
 
 Ce document se concentre sur la prise en charge LTS d’AEM 6.5 de l’éditeur universel. Pour utiliser l’éditeur universel avec AEM 6.5 LTS, vous avez besoin des éléments suivants :
 
