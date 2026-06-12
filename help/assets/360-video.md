@@ -136,7 +136,7 @@ Voir [Ajout de Dynamic Media Assets aux pages](/help/assets/adding-dynamic-media
 
 Publiez la vidéo 360 pour pouvoir l’utiliser. La publication d’une vidéo 360 active l’URL et le code intégré. Elle publie également la vidéo 360 sur le cloud Dynamic Media intégré au CDN pour un débit évolutif et performant.
 
-Consultez [ Publication de ressources Dynamic Media ](/help/assets/publishing-dynamicmedia-assets.md) pour plus d’informations sur la publication de vidéos 360.
+Consultez [&#x200B; Publication de ressources Dynamic Media &#x200B;](/help/assets/publishing-dynamicmedia-assets.md) pour plus d’informations sur la publication de vidéos 360.
 Voir aussi [Intégration de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
 Voir aussi [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
-Voir aussi [ Ajout de ressources Dynamic Media aux pages ](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Voir aussi [&#x200B; Ajout de ressources Dynamic Media aux pages &#x200B;](/help/assets/adding-dynamic-media-assets-to-pages.md).
