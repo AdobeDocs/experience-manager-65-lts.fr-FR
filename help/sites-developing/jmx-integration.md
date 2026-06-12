@@ -9,8 +9,8 @@ role: Developer
 exl-id: ca929fe7-8393-42df-983d-e2005d8434ac
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1621'
-ht-degree: 98%
+source-wordcount: '1671'
+ht-degree: 96%
 
 ---
 
@@ -431,7 +431,7 @@ Par souci de commodité, nous proposons de copier et de coller le code XML suiva
 * Plug-in bundle Apache Felix Maven : crée le bundle et le manifeste.
 * Plug-in SCR Apache Felix Maven : crée le fichier de descripteur de composant et configure l’en-tête de manifeste du composant de service.
 
-**Remarque :** au moment de la rédaction de ce document, le module externe maven scr n’est pas compatible avec le module externe m2e pour Eclipse. (Voir [Bogue Felix 3170](https://issues.apache.org/jira/browse/FELIX-3170).) Pour utiliser l’IDE Eclipse, installez Maven et utilisez l’interface de ligne de commande pour effectuer des versions.
+**Remarque :** au moment de la rédaction de ce document, le module externe maven scr n’est pas compatible avec le module externe m2e pour Eclipse. (Voir [Bogue Felix 3170](https://issues.apache.org/jira/browse/FELIX-3170).) Pour utiliser l’IDE Eclipse, installez Maven et utilisez l’interface de ligne de commande pour effectuer les versions.
 
 #### Exemple de fichier POM {#example-pom-file}
 

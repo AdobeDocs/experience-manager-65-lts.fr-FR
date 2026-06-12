@@ -12,7 +12,7 @@ role: Admin
 exl-id: 6dd29f1c-3769-469c-8b8a-464f9ac00b15
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2781'
+source-wordcount: '2806'
 ht-degree: 99%
 
 ---
@@ -171,7 +171,7 @@ Lorsque la collecte de données démarre, vous pouvez sélectionner les élémen
 
   Vous pouvez sélectionner Mois, Semaine, Jour et Heure pour l’échelle et l’agrégation du rapport.
 
-   Par exemple, si des instantanés quotidiens sont disponibles pour le mois de février 2011 :
+  Par exemple, si des instantanés quotidiens sont disponibles pour le mois de février 2011 :
 
    * Si l’intervalle est défini sur `Day`, chaque instantané s’affiche comme une valeur unique dans le graphique.
    * Si l’intervalle est défini sur `Month`, tous les instantanés de février sont regroupés en une seule valeur (affichée sous la forme d’un « point » unique dans le graphique).
@@ -258,12 +258,12 @@ Il s’agit d’un emplacement où la période de collecte des instantanés pour
 
      Cette option peut être utilisée pour éviter les retards causés par des opérations d’actualisation automatique en cas de volume de données élevé.
 
-      Cette option indique que les données du rapport doivent être actualisées manuellement lorsqu’un aspect de la configuration du rapport a changé. Cela signifie également que lorsque vous changez un aspect de la configuration, le tableau du rapport est effacé.
+     Cette option indique que les données du rapport doivent être actualisées manuellement lorsqu’un aspect de la configuration du rapport a changé. Cela signifie également que lorsque vous changez un aspect de la configuration, le tableau du rapport est effacé.
 
      Lorsque cette option est sélectionnée, le bouton **[Charger les données](#load-data)** s’affiche (en regard de **Modifier** sur le rapport). Le bouton **Charger les données** charge les données et actualise les données du rapport affichées.
 
 * **Instantanés**
-Vous pouvez définir la fréquence pour créer des instantanés : quotidienne, horaire ou pas du tout.
+Vous pouvez définir la fréquence pour créer des instantanés : quotidienne, horaire ou pas du tout.
 
 ### Charger les données {#load-data}
 

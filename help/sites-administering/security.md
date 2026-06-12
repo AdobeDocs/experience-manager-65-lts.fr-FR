@@ -12,8 +12,8 @@ role: Admin
 exl-id: 2661bd32-82c4-4a04-bf85-6ed120a73de4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '5386'
-ht-degree: 99%
+source-wordcount: '5443'
+ht-degree: 98%
 
 ---
 
@@ -76,7 +76,7 @@ Les tableaux suivants répertorient chaque élément avec :
    <td>Évitez de supprimer ou de désactiver ce compte, car cela aurait une incidence négative sur le fonctionnement des instances de création. Si vous devez le supprimer pour des raisons de sécurité, assurez-vous d’abord de tester correctement les effets qu’il a sur vos systèmes.</td>
   </tr>
   <tr>
-   <td><p>auteur </p> <p>Mot de passe par défaut : author</p> </td>
+   <td><p>auteur</p> <p>Mot de passe par défaut : author</p> </td>
    <td>Utilisateur</td>
    <td><p>Compte de création autorisé à écrire dans /content. Comprend les privilèges de contributeur et de surfeur.</p> <p>Peut être utilisé comme webmaster, car il a accès à l’ensemble de l’arborescence /content.</p> <p>Ce compte n’est pas un utilisateur intégré, mais un autre utilisateur de démonstration de Geometrixx.</p> </td>
    <td><p>Adobe recommande de supprimer complètement le compte ou de modifier le mot de passe par défaut.</p> <p>De préférence lors de l’installation, bien que vous puissiez le faire par la suite.</p> </td>
@@ -415,7 +415,7 @@ Les onglets permettent d’accéder à diverses configurations :
 | Propriétés | Répertorie les informations sur l’utilisateur ou le groupe pouvant inclure des informations d’e-mail, une description et un nom. Vous permet également de modifier le mot de passe d’un utilisateur ou d’une utilisatrice. Consultez les sections [Création d’utilisateurs et de groupes](#creating-users-and-groups), [Modification des propriétés d’utilisateur et de groupe](#modifying-user-and-group-properties) et [Modification d’un mot de passe utilisateur](#changing-a-user-password). |
 | Groupes | Répertorie tous les groupes auxquels l’utilisateur ou le groupe sélectionné appartient. Vous pouvez affecter l’utilisateur ou le groupe sélectionné à d’autres groupes ou les supprimer des groupes. Consultez la section [Groupes](#adding-users-or-groups-to-a-group). |
 | Membres | Disponible uniquement pour les groupes. Répertorie les membres d’un groupe spécifique. Consultez la section [Membres](#members-adding-users-or-groups-to-a-group). |
-| Autorisations | Vous pouvez attribuer des autorisations à un utilisateur ou à un groupe. Permet de contrôler les éléments suivants :<ul><li>Les autorisations liées à des pages ou des nœuds spécifiques. Consultez la section [Définition des autorisations](#setting-permissions). </li><li>Les autorisations liées à la création et la suppression de pages et à la modification de hiérarchie. ??? vous permet d’[allouer des privilèges](#settingprivileges), par exemple la modification de hiérarchie, qui permet de créer et supprimer des pages.</li><li>Les autorisations liées aux [droits de réplication](#setting-replication-privileges) (généralement de l’auteur à la publication) selon un chemin d’accès.</li></ul> |
+| Autorisations | Vous pouvez attribuer des autorisations à un utilisateur ou à un groupe. Permet de contrôler les éléments suivants :<ul><li>Les autorisations liées à des pages ou des nœuds spécifiques. Consultez la section [Définition des autorisations](#setting-permissions). </li><li>Autorisations liées à la création et la suppression de pages et à la modification de hiérarchie. ??? vous permet d’[allouer des privilèges](#settingprivileges), comme la modification de hiérarchie, qui vous permet de créer et de supprimer des pages ;</li><li>Les autorisations liées aux [droits de réplication](#setting-replication-privileges) (généralement de l’auteur à la publication) selon un chemin d’accès.</li></ul> |
 | Emprunteurs d’identité | Permet à un autre utilisateur d’emprunter l’identité d’un compte. Utile lorsque vous avez besoin qu’un utilisateur agisse au nom d’un autre utilisateur. Consultez la section [Emprunt d’identités utilisateurs](#impersonating-another-user). |
 | Préférences | Permet de définir les [préférences d’un groupe ou d’un utilisateur](#setting-user-and-group-preferences). Par exemple, les préférences de langue. |
 
@@ -735,7 +735,7 @@ La définition et l’enregistrement d’autorisations personnalisées font offi
 
 Le mécanisme d’enregistrement des autorisations est reflété dans l’interface utilisateur sous **Configuration du référentiel**.
 
-L’enregistrement de nouveaux privilèges (personnalisés) est lui-même protégé par un privilège intégré qui doit être accordé au niveau du référentiel. Dans JCR : charger « null » comme paramètre « absPath » dans l’API ac mgt, voir le jsr 333 pour plus de détails. Par défaut, le membre **admin** et tous les membres du groupe d’administrateurs disposent de cette autorisation.
+L’enregistrement de nouvelles autorisations (personnalisées) est lui-même protégé par une autorisation intégrée qui doit être accordée au niveau du référentiel. Dans JCR : transmettre « null » comme paramètre « absPath » dans l’api ac mgt, consultez le jsr 333 pour plus d’informations. Par défaut, le membre **admin** et tous les membres du groupe d’administrateurs disposent de cette autorisation.
 
 >[!NOTE]
 >
