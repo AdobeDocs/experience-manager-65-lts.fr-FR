@@ -122,7 +122,7 @@ Avant de commencer le processus de déploiement, assurez-vous que votre environn
 #### Télécharger JBoss EAP
 
 1. Accédez au portail de développement Red Hat :\
-   [](https://developers.redhat.com/products/eap/download)
+   [&#128279;](https://developers.redhat.com/products/eap/download)
 
 2. Téléchargez la distribution JBoss EAP 8 ZIP pour Windows.
 
@@ -217,7 +217,7 @@ Toutes les modifications de configuration doivent être effectuées **avant** le
 
 >[!NOTE]
 >
-> L’étape 5 s’applique uniquement à ****. Si vous configurez **AEM uniquement** vous pouvez ignorer cette étape.
+> L’étape 5 s’applique uniquement à **&#x200B;**. Si vous configurez **AEM uniquement** vous pouvez ignorer cette étape.
 
 
 #### Modifier le fichier web.xml
