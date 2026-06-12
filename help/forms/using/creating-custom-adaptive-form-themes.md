@@ -10,8 +10,8 @@ feature: Adaptive Forms,Foundation Components
 exl-id: e9853779-e22c-484e-8480-8e724d584ab7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 97%
+source-wordcount: '800'
+ht-degree: 96%
 
 ---
 
@@ -41,10 +41,10 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Vou
 >
 >La procédure suivante est décrite avec des exemples de noms d’objets AEM comme les nœuds, les propriétés et les dossiers.
 >
->Si vous procédez comme suit en utilisant les noms, le modèle résultant ressemble normalement à l’instantané suivant : 
+>Si vous procédez comme suit en utilisant les noms, le modèle résultant ressemble normalement à l’instantané suivant :
 
-![Aperçu d’un formulaire adaptatif avec thème Forêt](assets/thumbnail.png)
-**Figure :** *Exemple de thème Forêt*
+![Instantané de formulaire adaptatif avec thème Forêt](assets/thumbnail.png)
+**Image :** *Exemple de thème Forêt*
 
 1. Créez un nœud de type `cq:ClientLibraryFolder` sous le nœud `/apps`.
 
@@ -118,7 +118,7 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Vou
 
    * `/apps/clientlibs/fd/af/third-party/less/mixins.less`
 
-   Exemple de définition de mixin : 
+   Exemple de définition de mixin :
 
    ```css
    .rounded-corners (@radius) {
@@ -205,7 +205,7 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Vou
 
 ## Pour utiliser un thème dans un formulaire adaptatif {#to-use-a-theme-in-an-adaptive-form}
 
-Après avoir créé un thème de formulaire adaptatif, effectuez les étapes suivantes pour utiliser ce thème dans un formulaire adaptatif : 
+Après avoir créé un thème de formulaire adaptatif, effectuez les étapes suivantes pour utiliser ce thème dans un formulaire adaptatif :
 
 1. Pour inclure le thème créé dans [Création d’un thème de formulaire adaptatif](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p), créez une page personnalisée de type `cq:Component`.
 

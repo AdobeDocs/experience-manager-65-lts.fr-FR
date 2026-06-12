@@ -8,7 +8,7 @@ feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '10681'
+source-wordcount: '10632'
 ht-degree: 98%
 
 ---
@@ -1091,7 +1091,7 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. Le p
 
    >[!NOTE]
    >
-   >Vos droits d’utilisation relatifs aux polices fournies par des sociétés autres qu’Adobe sont régis par les contrats de licence accompagnant ces polices. Ils ne sont pas couverts par la licence d’utilisation du logiciel Adobe qui vous est concédée. Adobe vous recommande de vous assurer que vous agissez en conformité avec tous les contrats de licence non-Adobe applicables avant d’utiliser des polices non-Adobe avec des logiciels Adobe, notamment en ce qui concerne l’utilisation de polices dans des environnements de serveurs.
+   >Votre droit d’utilisation des polices fournies par des sociétés autres qu’Adobe est régi par les contrats de licence accompagnant ces polices. Il n’est pas couvert par votre licence d’utilisation du logiciel Adobe. Adobe vous recommande de vérifier et de vous assurer que vous êtes en conformité avec tous les contrats de licence non-Adobe applicables avant d’utiliser des polices non-Adobe avec des logiciels Adobe, en particulier en ce qui concerne l’utilisation de polices dans un environnement de serveur.
    >Lorsque vous installez de nouvelles polices dans le dossier de polices, redémarrez l’instance AEM Forms.
    >
 
@@ -1188,7 +1188,7 @@ Avant de configurer des certificats, assurez -vous que vous disposez des éléme
 
 * Mot de passe de la clé privée, fourni avec le certificat.
 
-* Alias de la clé privée. Vous pouvez exécuter la commande Java keytool pour afficher l’alias de la clé privée :
+* Alias de clé privée. Vous pouvez exécuter la commande Java keytool pour afficher l’alias de la clé privée :
   `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
 * Mot de passe du fichier KeyStore. Si vous utilisez le certificat Reader Extensions d’Adobe, le mot de passe du fichier KeyStore est toujours identique au mot de passe de la clé privée.
@@ -1343,7 +1343,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 **Microsoft® Windows**
 
-* Assurez-vous que la [version 32 bits prise en charge &#x200B;](/help/sites-deploying/technical-requirements.md) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
+* Assurez-vous que la [version 32 bits prise en charge ](/help/sites-deploying/technical-requirements.md) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
 * Assurez-vous qu’un utilisateur ou qu’une utilisatrice de PDF Generator est ajouté(e) à l’interface utilisateur de configuration du PDF.
 * Assurez-vous que l’utilisateur ou l’utilisatrice de PDF Generator est membre du groupe d’administrateurs et que le privilège [Remplacer un jeton de niveau processus](#grant-the-replace-a-process-level-token-privilege) est défini pour l’utilisateur ou l’utilisatrice.
 * Assurez-vous que l’utilisateur ou l’utilisatrice est configuré(e) dans l’interface utilisateur de PDF Generator et qu’il ou elle effectue les actions suivantes :
@@ -1458,7 +1458,6 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
          adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=&lt;Absolute path to prov.xml>]
          
          ```
-
      
    * Sérialisez en volume le module (resérialisez l’installation existante à l’aide du fichier prov.xml et du nouveau numéro de série) : exécutez la commande suivante à partir du dossier d’installation PRTK en tant qu’administrateur pour sérialiser et activer les modules déployés sur les ordinateurs clients :
 
@@ -1466,8 +1465,8 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
          adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
          
          ```
-
-     * Pour les installations à grande échelle, utilisez [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) pour supprimer les versions précédentes de Reader et Acrobat. Personnalisez le programme d’installation et déployez-le sur tous les ordinateurs de votre organisation.
+     
+* Pour les installations à grande échelle, utilisez [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) pour supprimer les versions précédentes de Reader et Acrobat. Personnalisez le programme d’installation et déployez-le sur tous les ordinateurs de votre organisation.
 
 +++
 

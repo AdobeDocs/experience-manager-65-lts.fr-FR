@@ -7,8 +7,8 @@ role: Admin, User, Developer
 exl-id: 87e03ff2-1324-42bd-b4da-54a0c17ce98e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1336'
-ht-degree: 92%
+source-wordcount: '1415'
+ht-degree: 91%
 
 ---
 
@@ -36,7 +36,7 @@ Il est plus facile de créer et de gérer des formulaires en suivant un processu
 
 ## Étape 1 : création du formulaire adaptatif {#step-create-the-adaptive-form}
 
-1. Connectez-vous à l’instance d’auteur AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**. L’URL par défaut est [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+1. Connectez-vous à l’instance de création AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**. L’URL par défaut est [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 1. Sélectionnez **[!UICONTROL Créer]** et **[!UICONTROL Formulaire adaptatif]**. Une option permettant de sélectionner un modèle s’affiche. Sélectionnez le modèle **[!UICONTROL Vide]**, puis sélectionnez **[!UICONTROL Suivant]**.
 
 1. L’option **[!UICONTROL Ajouter des propriétés]** s’affiche. Les champs **[!UICONTROL Titre]** et **[!UICONTROL Nom]** sont obligatoires :
@@ -61,7 +61,7 @@ AEM [!DNL Forms] fournit de nombreux composants pour l’affichage d’informat
 
    Vous pouvez sélectionner Obtenir le fichier pour télécharger le logo utilisé dans cet article si vous n’en avez pas.
 
-[Obtenir le fichier](assets/logo.png)
+   [Obtenir le fichier](assets/logo.png)
 
 1. Faites glisser le composant **[!UICONTROL Pied de page]** de ![treeexpandall](assets/treeexpandall.png) vers le formulaire adaptatif. À ce stade, le formulaire a l’apparence suivante :
 
@@ -72,7 +72,7 @@ AEM [!DNL Forms] fournit de nombreux composants pour l’affichage d’informat
 Les composants sont les blocs de construction d’un formulaire adaptatif. AEM [!DNL Forms]fournit de nombreux composants pour la capture et l’affichage d’informations dans un formulaire adaptatif. Vous pouvez faire glisser les composants de ![treeexpandall](assets/treeexpandall.png) vers un formulaire. Pour en savoir plus sur les composants disponibles et les fonctionnalités correspondantes, voir [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
 
 1. Faites glisser le **[!UICONTROL composant de zone numérique]** vers le formulaire adaptatif. Placez-le avant le composant de pied de page. Ouvrez les propriétés du composant, remplacez le **[!UICONTROL titre]** du composant par **`Customer ID`** et le **[!UICONTROL nom de l’élément]** par **`customer_ID`**. Activez les options **[!UICONTROL Champ obligatoire]** et **[!UICONTROL Utiliser le type d’entrée de nombre HTML5]**, puis sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
-1. Faites glisser trois composants de la zone de texte vers le formulaire adaptatif. Placez-les avant le pied de page. Définissez les propriétés suivantes pour ces zones de texte.:
+1. Faites glisser trois composants de la zone de texte vers le formulaire adaptatif. Placez-les avant le pied de page. Définissez les propriétés suivantes pour ces zones de texte :
 
    <table> 
     <tbody> 
@@ -182,7 +182,7 @@ Vous pouvez utiliser l’option **[!UICONTROL Aperçu]** pour évaluer l’appar
 
 Les formulaires adaptatifs permettent également d’émuler l’expérience d’un formulaire pour différents appareils. Par exemple, pour iPhone, iPad et appareils de bureau. Vous pouvez utiliser les options **[!UICONTROL Prévisualisation]** et **[!UICONTROL Gestionnaire de]** ![l’émulateur](assets/ruler.png) conjointement pour prévisualiser un formulaire pour les appareils dotés de tailles d’écran différentes.
 
-1. Sélectionnez l’option **[!UICONTROL Aperçu]** sur le côté droit de l’éditeur de formulaires. Le formulaire s’ouvre en mode aperçu. Si vous avez utilisé le nom mentionné dans le tutoriel, l’URL de l’aperçu du formulaire est [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
+1. Sélectionnez l’option **[!UICONTROL Aperçu]** sur le côté droit de l’éditeur de formulaires. Le formulaire s’ouvre en mode aperçu. Si vous avez utilisé le nom mentionné dans le tutoriel, l’URL de l’aperçu du formulaire est [:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
 1. Utilisez ![gestionnaire](assets/ruler.png) pour visualiser l’apparence du formulaire sur différents appareils.
 1. Remplissez les champs du formulaire, puis sélectionnez **[!UICONTROL Envoyer]**. Le formulaire est envoyé et vous êtes redirigé(e) vers la **page de remerciement** par défaut. Vous pouvez également spécifier une page de remerciement personnalisée. Pour plus de détails, voir [Configuration de la page de redirection](/help/forms/using/configuring-redirect-page.md).
 

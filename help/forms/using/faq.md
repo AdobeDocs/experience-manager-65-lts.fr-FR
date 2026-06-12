@@ -12,8 +12,8 @@ role: Admin, User, Developer
 exl-id: fc98390c-8517-46fc-9f15-bac5d4327c60
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2006'
-ht-degree: 98%
+source-wordcount: '1982'
+ht-degree: 97%
 
 ---
 
@@ -33,13 +33,13 @@ Il existe des questions fréquentes (FAQ) sur la disposition, la prise en charge
 
 1. Existe-t-il des restrictions concernant l’utilisation de sous-formulaires répétables ?
 
-   Réponse : les sous-formulaires répétables doivent avoir un nombre initial de 1 ou plus. Les sous-formulaires répétables avec un nombre initial de zéro ne sont pas pris en charge. Vous pouvez également choisir d’utiliser un sous-formulaire répétable et de ne pas l’afficher au chargement du formulaire. Pour réaliser le cas d’utilisation : 
+   Réponse : les sous-formulaires répétables doivent avoir un nombre initial de 1 ou plus. Les sous-formulaires répétables avec un nombre initial de zéro ne sont pas pris en charge. Vous pouvez également choisir d’utiliser un sous-formulaire répétable et de ne pas l’afficher au chargement du formulaire. Pour réaliser le cas d’utilisation :
 
    1. Définissez le nombre initial de sous-formulaire répétable sur 1.
 
       ![intial-count](assets/intial-count.png)
 
-   1. Utilisez l’événement initialize du formulaire pour masquer l’instance principale du sous-formulaire. Par exemple, le code ci-dessous masque l’instance principale du sous-formulaire lors de l’initialisation du formulaire. Il vérifie également le type d’application pour s’assurer que le script est exécuté uniquement du côté client : 
+   1. Utilisez l’événement initialize du formulaire pour masquer l’instance principale du sous-formulaire. Par exemple, le code ci-dessous masque l’instance principale du sous-formulaire lors de l’initialisation du formulaire. Il vérifie également le type d’application pour s’assurer que le script est exécuté uniquement du côté client :
 
       ```javascript
       if ((xfa.host.appType == "HTML 5" || xfa.host.appType == "Exchange-Pro" || xfa.host.appType == "Reader")&&(_RepeatSubform.count == 1)&&(form1.Page1.Subform1.RepeatSubform.Key.rawValue == null)) {
@@ -111,9 +111,9 @@ Il existe des questions fréquentes (FAQ) sur la disposition, la prise en charge
 
    Réponse : oui, les formulaires HTML5 sont soumis à certaines limitations. Si le nombre de chiffres dépasse celui indiqué dans la clause d’image, les numéros ne sont pas traduits et s’affichent dans les paramètres régionaux anglais.
 
-1. Pourquoi les formulaires HTML sont-ils plus volumineux que les formulaires PDF ?
+1. Pourquoi les formulaires HTML sont-ils plus volumineux que les formulaires PDF ?
 
-   Réponse : De nombreuses structures et objets de données intermédiaires tels que les DOM du formulaire, les DOM de données, les DOM de disposition sont requis pour rendre un XDP sur un formulaire HTML.
+   Réponse : de nombreuses structures et objets de données intermédiaires tels que les DOM du formulaire, les DOM de données, les DOM de disposition sont requis pour rendre un XDP sur un formulaire HTML.
 
    Pour les formulaires PDF, Adobe Acrobat dispose d’un moteur XTG intégré pour créer des structures de données intermédiaires, ainsi que des objets. Acrobat prend également en charge la disposition et les scripts.
 
@@ -171,8 +171,8 @@ Il existe des questions fréquentes (FAQ) sur la disposition, la prise en charge
 
    Réponse : les formulaires HTML5 ne prennent pas en charge les modèles d’affichage pour les champs flottants.
 
-1. Quel est le format du champ Date dans les formulaires HTML5 ?
-Réponse : le champ Date accepte le format ISO AAAA-MM-JJ. Si vous spécifiez une date dans un autre format, le champ Date n’accepte pas la mise en forme tant que l’utilisateur ou l’utilisatrice n’a pas quitté le champ à l’aide de la touche de tabulation.
+1. Quel est le format du champ Date dans HTML5 Forms ?
+Réponse : le champ Date accepte le format ISO AAAA-MM-JJ. Si vous spécifiez une date dans un autre format, le champ de date n’accepte pas le formatage tant que l’utilisateur n’a pas désélectionné le champ.
 
 ### Scripts {#scripting}
 

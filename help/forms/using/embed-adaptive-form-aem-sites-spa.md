@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: 2ac51487-42e0-4b8a-b224-2858f26e85ef
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 100%
+source-wordcount: '1192'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 AEM Forms permet aux équipes de développement de formulaires d’incorporer facilement des formulaires adaptatifs et des communications interactives dans une application monopage AEM Sites. Le formulaire adaptatif et la communication interactive incorporés fonctionnent parfaitement et les utilisateurs peuvent remplir et envoyer le formulaire sans quitter la page. Cela permet à l’utilisateur de rester dans le contexte des autres éléments de la page web et d’interagir simultanément avec le formulaire adaptatif ou la communication interactive.
 
-L’application monopage AEM Sites vous permet dʼajouter un formulaire adaptatif ou une communication interactive à l’aide du [Composant Conteneur d’applications monopages d’AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Il s’agit d’un composant AEM Forms pour les SPA AEM Sites que vous pouvez ajouter à votre page Sites.
+Dans une application d’une seule page AEM Sites, vous pouvez ajouter un formulaire adaptatif ou une communication interactive à l’aide du composant [Conteneur SPA AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Il s’agit d’un composant AEM Forms pour les SPA AEM Sites que vous pouvez ajouter à votre page Sites.
 
 Pour plus d’informations sur l’incorporation d’un formulaire adaptatif dans une page AEM Sites non SPA, consultez la section [Incorporation d’un formulaire adaptatif ou d’une communication interactive dans une page AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
@@ -33,8 +33,8 @@ Pour incorporer un formulaire adaptatif ou une communication interactive dans un
 
 * Java SE Development Kit 8 ou version ultérieure
 * Apache Maven (version 3.3.1 ou ultérieure)
-* Instance dʼauteur AEM
-* [Package de module complémentaire AEM Forms 6.4.2](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) sur l’instance d’auteur
+* Instance de création AEM
+* [Package de module complémentaire AEM Forms 6.4.2](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) sur l’instance de création
 
 ## Installation du composant Conteneur SPA AEM Forms {#install-aem-forms-spa-container-component}
 

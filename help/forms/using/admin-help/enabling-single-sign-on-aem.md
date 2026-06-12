@@ -12,7 +12,7 @@ hide: true
 exl-id: ba02f9b1-209e-42f2-b1df-2ed64fc9fdbc
 source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1719'
 ht-degree: 96%
 
 ---
@@ -187,7 +187,7 @@ Cliquez pour connaître les étapes permettant d’[attribuer des rôles aux uti
 
 1. Connectez-vous à votre environnement AEM Forms on JEE.
 1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs et utilisatrices > Gestion des domaines.
-1. Sélectionnez la configuration de votre domaine, par exemple LDAP, et cliquez dessus. Vous trouvez tous les utilisateurs et utilisatrices et les groupes créés dans le répertoire. Si nécessaire, vous pouvez créer de nouveaux utilisateurs et utilisatrices ou groupes.
+1. Sélectionnez la configuration de votre domaine, par exemple LDAP, puis cliquez dessus. Tous les utilisateurs et groupes créés sont répertoriés dans le Répertoire. Si nécessaire, vous pouvez créer de nouveaux utilisateurs, utilisatrices ou groupes.
    ![Page de gestion des domaines](/help/forms/using/assets/domain-mgmt-page.png)
 1. Cliquez sur Authentification. Dans la nouvelle page, sélectionnez un fournisseur d’authentification, tel que LDAP.
 1. Accédez à la page Gestion des domaines, sélectionnez LDAP, puis cliquez sur **Synchroniser maintenant** pour synchroniser le répertoire avec le schéma d’authentification que vous avez configuré pour l’accès AEM.
