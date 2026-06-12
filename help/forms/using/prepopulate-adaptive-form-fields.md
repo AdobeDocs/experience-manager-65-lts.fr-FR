@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 69734a2b-7f9d-4661-a1e9-3bf6e362c272
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2213'
-ht-degree: 98%
+source-wordcount: '2298'
+ht-degree: 97%
 
 ---
 
@@ -97,7 +97,7 @@ Prefill-Submit-Data-ContentPackage.zip
 [Obtenir le fichier](assets/prefill-submit-data-contentpackage.zip)
 Exemple de données contenant un préremplissage et de données envoyées
 
-### Formulaires adaptatifs basés sur un schéma XML  {#xml-schema-af}
+### Formulaires adaptatifs basés sur un schéma XML  {#xml-schema-af}
 
 La structure du code XML de préremplissage et du code XML envoyé pour les formulaires adaptatifs basés sur le schéma XML se présente comme suit :
 
@@ -242,7 +242,7 @@ Pour activer le service de préremplissage, spécifiez la configuration de servi
 >La configuration du service de préremplissage s’applique aux formulaires adaptatifs, aux formulaires HTML5 et aux ensembles de formulaires HTML5.
 
 1. Ouvrez la **[!UICONTROL configuration de la console web d’Adobe Experience Manager]** à l’aide de l’URL :\
-   https://&lt;serveur>:&lt;port>/system/console/configMgr
+   https://<serveur>:<port>/system/console/configMgr
 1. Recherchez et ouvrez la **[!UICONTROL configuration de service de préremplissage par défaut]**.
 
    ![Configuration du préremplissage](assets/prefill_config_new.png)
@@ -277,7 +277,7 @@ En règle générale, les champs liés (schéma de formulaire) et non liés sont
 
 Les formulaires adaptatifs peuvent être préremplis avec des données utilisateur au format de données de préremplissage via les protocoles suivants lorsqu’ils sont configurés avec une regex valide :
 
-### Protocole crx://  {#the-crx-protocol}
+### Protocole crx:// {#the-crx-protocol}
 
 ```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///tmp/fd/af/myassets/sample.xml
@@ -293,13 +293,13 @@ https://localhost:4502/content/forms/af/someAF.html?wcmmode=disabled&dataRef=fil
 
 Le fichier référencé doit se trouver sur le même serveur.
 
-### Protocole https://  {#the-http-protocol}
+### Protocole https:// {#the-http-protocol}
 
 ```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://localhost:8000/somesamplexmlfile.xml
 ```
 
-### Protocole service://  {#the-service-protocol}
+### Protocole service:// {#the-service-protocol}
 
 ```http
 https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
@@ -351,7 +351,7 @@ Vous pouvez utiliser le service de préremplissage personnalisé pour les scéna
 
 Le service de préremplissage est un service OSGi et fait partie du bundle OSGi. Vous créez le lot OSGi, vous le chargez et l’installez sur les lots AEM Forms. Avant de débuter la création du bundle :
 
-* [Téléchargez l’AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr)
+* [Télécharger le SDK client AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr)
 * Téléchargement du package standard
 
 * Placez le fichier de données (données de préremplissage) dans le référentiel crx. Vous pouvez placer le fichier à tout emplacement dans le dossier \contents du référentiel crx.

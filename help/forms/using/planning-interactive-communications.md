@@ -9,7 +9,7 @@ role: Admin, User, Developer
 exl-id: 8591214f-9c11-4cd3-b2a1-c83040507b20
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '658'
 ht-degree: 100%
 
 ---
@@ -130,7 +130,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
    <td>Appels détaillés - sortants</td>
    <td><p>Noms des colonnes :</p>
     <ul>
-     <li>Date </li>
+     <li>Date</li>
      <li>estimé</li>
      <li>Nombre</li>
      <li>Durée</li>
