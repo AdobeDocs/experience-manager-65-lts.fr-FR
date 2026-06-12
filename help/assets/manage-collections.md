@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 5b91d368-aa22-4f13-9c2c-6be831470609
 source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2170'
 ht-degree: 98%
 
 ---
@@ -117,7 +117,7 @@ Pour créer une collection dynamique, procédez comme suit :
 Vous pouvez ajouter des ressources à une collection qui comporte une liste de ressources ou de dossiers référencés. Les collections dynamiques utilisent une requête de recherche pour renseigner les ressources. Par conséquent, les références statiques aux ressources et aux dossiers ne s’y appliquent pas.
 
 1. Dans l’interface utilisateur [!DNL A]ssets, sélectionnez la ressource, puis cliquez sur **[!UICONTROL À la collection]** ![ajouter à la collection](assets/do-not-localize/add-to-collection.png) dans la barre d’outils.
-Vous pouvez également faire glisser la ressource sur la zone **[!UICONTROL Déposer dans la collection]** dans l’interface. Ajoutez les ressources lorsque le libellé de la zone devient **[!UICONTROL Déposer pour ajouter]**.
+Vous pouvez également faire glisser la ressource vers la zone **[!UICONTROL Déposer dans la collection]** de l’interface. Ajoutez les ressources lorsque le libellé de la zone devient **[!UICONTROL Déposer pour ajouter]**.
 
 1. Sur la page **[!UICONTROL Ajouter à la collection]**, sélectionnez la collection à laquelle vous souhaitez ajouter la ressource.
 

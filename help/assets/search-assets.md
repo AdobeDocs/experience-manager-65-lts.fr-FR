@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '5797'
-ht-degree: 98%
+source-wordcount: '5754'
+ht-degree: 97%
 
 ---
 
@@ -86,8 +86,8 @@ Par défaut, la recherche d’[!DNL Experience Manager] associe les termes de re
 * `woman.running`
 * `woman-running`
 
-Toutefois, la requête `woman -running` renvoie des ressources sans `running` dans leurs métadonnées.
-L’utilisation de balises intelligentes ajoute une clause `OR` pour trouver l’un des termes de recherche dans les balises intelligentes appliquées. Une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
+Toutefois, la requête renvoie `woman -running` des ressources sans `running` dans leurs métadonnées.
+L’utilisation de balises intelligentes ajoute une clause de `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes appliquées. Une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît également dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
 
 * ressources avec les mots-clés `woman` et `running` dans les métadonnées (comportement par défaut) ;
 

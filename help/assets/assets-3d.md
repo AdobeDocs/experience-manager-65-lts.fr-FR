@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: f27b595b-24eb-444c-a598-6f70c59ed8fc
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2354'
-ht-degree: 100%
+source-wordcount: '2419'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ Consultez aussi les [Formats 3D pris en charge](/help/assets/assets-formats.md)
 | GLB | Transmission GL binaire | model/gltf-binary | Inclut les matières et les textures dans une seule ressource. |
 | OBJ | Fichier d’objet 3D WaveFront | application/x-tgif |  |
 | STL | Stéréolithographie | application/vnd.ms-pki.stl |  |
-| USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | *Prise en charge de l’ingestion uniquement ; aucun affichage ni interaction n’est disponible.* USDZ est un format 3D propriétaire qui peut être visualisé en mode natif à l’aide d’appareils Safari ou iOS. |
+| USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | *Prise en charge de l’ingestion uniquement ; aucun affichage ou interaction n’est disponible.* USDZ est un format 3D propriétaire qui peut être visualisé en mode natif à l’aide d’appareils Safari et iOS. |
 
 >[!NOTE]
 >
@@ -151,7 +151,7 @@ Voir aussi [Prévisualisation de ressources à l’aide de l’interface logicie
    * Près de l’angle supérieur droit de la page, sélectionnez **[!UICONTROL Aperçu]** pour passer en mode **[!UICONTROL Aperçu]**.
    * Supprimez `/editor.html` de l’URL de la page dans le navigateur.
 
-   ![Ressource 3D affichée dans le composant Média 3D](/help/assets/assets-dm/3d-asset-in-3d-media.png)
+   Ressource ![3D affichée dans le composant Média 3D](/help/assets/assets-dm/3d-asset-in-3d-media.png)
 Ressource 3D entièrement interactive affichée en mode **[!UICONTROL Aperçu]**.
 
 1. En mode **[!UICONTROL Aperçu]**, effectuez l’une des opérations suivantes :
