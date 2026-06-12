@@ -13,7 +13,7 @@ exl-id: 9889b0fe-f39c-42dc-bc7b-8743d68e7503
 index: false
 source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1169'
 ht-degree: 100%
 
 ---
@@ -274,7 +274,7 @@ Il est régulièrement nécessaire que les composants d’une application sur un
 
 * **Option 1 :** centralisez la logique et procédez à une diffusion vers les composants nécessaires, par exemple en utilisant React Context.
 * **Option 2 :** Partagez des états de composant en utilisant une bibliothèque d’états telle que Redux.
-* **Option 3 :** Tirez parti de la hiérarchie d’objets en personnalisant et en étendant le composant de conteneur.
+* **Option 3 :** tirez parti de la hiérarchie d’objets en personnalisant et en étendant le composant de conteneur.
 
 ## Étapes suivantes {#next-steps}
 

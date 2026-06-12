@@ -11,8 +11,8 @@ role: Developer
 exl-id: 4a78de53-33bf-4999-ba3c-7d0bc33196a4
 source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
 workflow-type: tm+mt
-source-wordcount: '3668'
-ht-degree: 59%
+source-wordcount: '6205'
+ht-degree: 73%
 
 ---
 
@@ -242,7 +242,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-des
 
   [CQ.wcm.CreateSiteWizard](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-   CreateSiteWizard est un assistant détaillé pour créer des sites (MSM).
+  CreateSiteWizard est un assistant détaillé pour créer des sites (MSM).
 
 * `createversiondialog`
 
@@ -260,7 +260,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-des
 
   [CQ.Ext.CycleButton](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-   SplitButton spécialisé contenant un menu d’éléments [CQ.Ext.menu.CheckItem](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html). Le bouton fait défiler automatiquement chaque élément de menu à chaque clic, augmentant l’événement [change](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) du bouton (ou appelant la fonction [changeHandler](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) du bouton, si disponible) pour l’élément de menu actif.
+  SplitButton spécialisé contenant un menu d’éléments [CQ.Ext.menu.CheckItem](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html). Le bouton fait défiler automatiquement chaque élément de menu à chaque clic, augmentant l’événement [change](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) du bouton (ou appelant la fonction [changeHandler](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) du bouton, si disponible) pour l’élément de menu actif.
 
 * `dataview`
 
@@ -510,7 +510,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-des
 
   [CQ.Ext.menu.Menu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  Un objet de menu. Conteneur auquel vous pouvez ajouter des éléments de menu. Le menu peut également servir de classe de base lorsque vous souhaitez un menu spécialisé basé sur un autre composant (comme [CQ.Ext.menu.DateMenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) par exemple).
+  Un objet de menu. Conteneur auquel vous pouvez ajouter des éléments de menu. Menu peut également servir de classe de base lorsque vous souhaitez un menu spécialisé basé sur un autre composant (comme [CQ.Ext.menu.DateMenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) par exemple).
 
   Les menus peuvent contenir des [éléments de menu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) ou des [composants](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) généraux.
 
@@ -638,7 +638,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-des
 
   [CQ.Ext.grid.PropertyGrid](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-   Mise en œuvre de grille spécialisée conçue pour imiter la grille de propriété classique figurant généralement dans les IDE de développement. Chaque ligne dans la grille représente une propriété d’un objet, et les données sont stockées sous la forme d’un ensemble de paires nom/valeur dans [CQ.Ext.grid.PropertyRecord](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html).
+  Mise en œuvre de grille spécialisée conçue pour imiter la grille de propriété classique figurant généralement dans les IDE de développement. Chaque ligne dans la grille représente une propriété d’un objet, et les données sont stockées sous la forme d’un ensemble de paires nom/valeur dans [CQ.Ext.grid.PropertyRecord](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html).
 
 * `propgrid`
 
@@ -843,7 +843,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-des
   CQ.tagging.TagInputField
   ```
 
-   est un widget de formulaire qui permet de saisir des balises. Il dispose d’un menu pop-up permettant de faire une sélection parmi les balises existantes, et comprend la saisie semi-automatique ainsi que de nombreuses autres fonctionnalités.
+  est un widget de formulaire qui permet de saisir des balises. Il dispose d’un menu pop-up permettant de faire une sélection parmi les balises existantes, et comprend la saisie semi-automatique ainsi que de nombreuses autres fonctionnalités.
 
 * `textarea`
 
