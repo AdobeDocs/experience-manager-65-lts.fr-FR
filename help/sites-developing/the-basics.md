@@ -11,8 +11,8 @@ role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3237'
-ht-degree: 96%
+source-wordcount: '3366'
+ht-degree: 95%
 
 ---
 
@@ -44,7 +44,7 @@ La norme Java™ Content Repository (JCR), [JSR 283](https://developer.adobe.
 
 La spécification est gérée par Adobe Research (Suisse) AG.
 
-Le package [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&ast; est utilisé pour l’accès direct et la manipulation du contenu du référentiel.
+Le package [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&amp;ast; est utilisé pour l’accès direct et la manipulation du contenu du référentiel.
 
 ## Experience Server (CRX) et Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -285,7 +285,7 @@ Si vous appelez la représentation (le script) directement, vous masquez la ress
 
 ### API Sling {#sling-api}
 
-Elle utilise le package API Sling org.apache.sling.&ast; et les bibliothèques de balises.
+Elle utilise le package d’API Sling org.apache.sling.&amp;ast; et les bibliothèques de balises.
 
 ### Référencement d’éléments existants à l’aide de sling:include {#referencing-existing-elements-using-sling-include}
 
@@ -417,7 +417,7 @@ La liste suivante propose une vue d’ensemble de la structure que vous verrez d
 
 * `/apps`
 
-   Application connexe qui inclut des définitions de composants spécifiques à votre site web. Les composants que vous développez peuvent être basés sur les composants prêts à l’emploi disponibles dans `/libs/foundation/components`.
+  Application connexe qui inclut des définitions de composants spécifiques à votre site web. Les composants que vous développez peuvent être basés sur les composants prêts à l’emploi disponibles dans `/libs/foundation/components`.
 
 * `/content`
 
@@ -431,7 +431,7 @@ La liste suivante propose une vue d’ensemble de la structure que vous verrez d
 
 * `/libs`
 
-   Bibliothèques et définitions appartenant au noyau d’AEM. Les sous-dossiers dans `/libs` représentent les fonctionnalités d’AEM prêtes à l’emploi telles que la recherche ou la réplication. Le contenu de `/libs` ne doit pas être modifié car il affecte le fonctionnement d’AEM. Les fonctionnalités spécifiques à votre site web doivent être développées sous `/apps` (voir [Personnalisation de composants et d’autres éléments](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+  Bibliothèques et définitions appartenant au noyau d’AEM. Les sous-dossiers dans `/libs` représentent les fonctionnalités d’AEM prêtes à l’emploi telles que la recherche ou la réplication. Le contenu de `/libs` ne doit pas être modifié car il affecte le fonctionnement d’AEM. Les fonctionnalités spécifiques à votre site web doivent être développées sous `/apps` (voir [Personnalisation de composants et d’autres éléments](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
@@ -465,7 +465,7 @@ Le moteur de workflow permet de gérer l’implémentation de vos workflows et l
 
 Multi Site Manager (MSM) permet de gérer facilement plusieurs sites web partageant du contenu commun. MSM vous permet de définir des relations entre les sites, de sorte que les modifications de contenu d’un site soient automatiquement répliquées sur d’autres sites.
 
-Par exemple, les sites web sont souvent proposés dans plusieurs langues à l’intention d’un public international. Lorsque le nombre de sites dans la même langue est faible (de trois à cinq), un processus manuel de synchronisation du contenu entre les sites est possible. Cependant, lorsque le nombre de sites augmente ou que plusieurs langues sont impliquées, il devient plus efficace d’automatiser le processus.
+Par exemple, les sites web sont souvent proposés dans plusieurs langues à l’intention d’une audience internationale. Lorsque le nombre de sites dans la même langue est faible (de trois à cinq), un processus manuel de synchronisation du contenu entre les sites est possible. Cependant, lorsque le nombre de sites augmente ou que plusieurs langues sont impliquées, il devient plus efficace d’automatiser le processus.
 
 * Gérez efficacement les différentes versions linguistiques d’un site web.
 * Mettez automatiquement à jour un ou plusieurs sites à partir d’un site source :
