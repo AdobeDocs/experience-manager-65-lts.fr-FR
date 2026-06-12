@@ -11,8 +11,8 @@ role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
 source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
 workflow-type: tm+mt
-source-wordcount: '2291'
-ht-degree: 65%
+source-wordcount: '2354'
+ht-degree: 63%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 65%
 >
 >Pour obtenir un exemple, reportez-vous à :
 >
->* [http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
+>* [:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
 
 ## Général {#general}
 
@@ -71,7 +71,7 @@ Elle prend en charge l’extraction de facettes. Fournit des compartiments pour 
 #### Propriétés {#properties}
 
 * **boolproperty**
-Chemin d’accès relatif à une propriété, par exemple, `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`.
+Chemin d’accès relatif à la propriété, par exemple `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`.
 
 * **value**
 Valeur pour laquelle vérifier la propriété : « `true` » ou « `false` ».
@@ -87,7 +87,7 @@ Il ne prend pas en charge l’extraction de facettes.
 #### Propriétés {#properties-1}
 
 * **contentfragment**
-Peut être utilisé avec n’importe quelle valeur pour rechercher des fragments de contenu.
+Elle peut être utilisée avec n’importe quelle valeur pour rechercher des fragments de contenu.
 
 ### `dateComparison` {#datecomparison}
 
@@ -473,7 +473,7 @@ Le nom « root » n’est jamais utilisé dans une requête ; il est implicit
 
 * **p.hits**
 
-   (uniquement pour le servlet JSON) Sélectionne la manière dont les accès sont écrits au format JSON, avec ces éléments standard (extensibles via le service ResultHitWriter) :
+  (uniquement pour le servlet JSON) Sélectionne la manière dont les accès sont écrits au format JSON, avec ces éléments standard (extensibles via le service ResultHitWriter) :
 
    * **simple** :
 
@@ -513,11 +513,11 @@ Il ne prend pas en charge le filtrage. Il ne prend pas en charge l’extraction 
 
 #### Propriétés {#properties-20}
 
-* **similar**
-Chemin d’accès absolu au nœud pour lequel des nœuds similaires sont recherchés.
+* **similaire**
+Chemin d’accès absolu au nœud pour lequel rechercher des nœuds similaires.
 
 * **local**
-Un chemin relatif vers un nœud descendant ou `.` pour le nœud actif (facultatif, la valeur par défaut est« `.` »).
+Chemin d’accès relatif à un nœud descendant ou `.` pour le nœud actuel (facultatif, la valeur par défaut est « `.` »).
 
 ### `tag` {#tag}
 

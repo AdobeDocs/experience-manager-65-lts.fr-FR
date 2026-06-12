@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 9cc83733-630a-4846-bd9e-72fd76a3286d
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 97%
+source-wordcount: '2386'
+ht-degree: 94%
 
 ---
 
@@ -26,17 +26,18 @@ Le code source de l’application AEM Forms est accessible via la Distribution 
 
 L’application AEM Forms est prise en charge sur les appareils iOS, Android, Windows. Vous pouvez installer l’application AEM Forms pour Android à partir de Google Play, pour iOS à partir d’App Store et pour Windows à partir de Windows Store.
 
-    [&#x200B; ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms&hl=fr)
+    [![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
-    [&#x200B; ![app_store](assets/app_store.png)](https://itunes.apple.com/fr/app/adobe-experience-manager-forms/id1129625976?ls=1&mt=8)
+    [![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&mt=8)
     
-    [&#x200B; ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/fr-fr/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 Pour installer, personnaliser et distribuer l’application sur des appareils iOS, Android ou Windows, reportez-vous à [Personnaliser, créer et distribuer l’application AEM Forms](#customize-build-distribute).
 
 ## Prérequis {#prerequisites}
 
-L’application AEM Forms nécessite un serveur AEM Forms. Les utilisateurs peuvent générer les formulaires que vous créez dans le serveur AEM Forms, les remplir, les enregistrer sous forme de brouillons et les envoyer. L’application se connecte au serveur et récupère les formulaires activés à partir de celui-ci. L’application AEM Forms se synchronise avec le serveur, et une fois que les formulaires sont chargés dans l’application, les utilisateurs et utilisatrices peuvent travailler hors ligne. Si l’application est hors ligne, les données sont enregistrées sur l’appareil. Elles sont synchronisées avec le serveur lorsque l’application est en ligne.
+L’application AEM Forms nécessite un serveur AEM Forms. Les utilisateurs peuvent générer les formulaires que vous créez dans AEM Forms
+, remplissez-les, enregistrez-les sous forme de brouillons et envoyez-les. L’application se connecte au serveur et récupère les formulaires activés à partir de celui-ci. L’application AEM Forms se synchronise avec le serveur, et une fois que les formulaires sont chargés dans l’application, les utilisateurs et utilisatrices peuvent travailler hors ligne. Si l’application est hors ligne, les données sont enregistrées sur l’appareil. Elles sont synchronisées avec le serveur lorsque l’application est en ligne.
 
 ### Application AEM Forms avec des serveurs utilisant AEM Forms Workflow {#aem-forms-app-with-servers-using-aem-forms-workflow}
 
@@ -54,7 +55,7 @@ Les formulaires sont téléchargés sur votre application et sont disponibles ho
 
 Pour synchroniser votre formulaire dans l’application AEM Forms :
 
-1. Dans l’instance d’auteur, sélectionnez un formulaire, puis cliquez sur **[!UICONTROL Afficher les propriétés]**. 
+1. Dans l’instance de création, sélectionnez un formulaire, puis cliquez sur **[!UICONTROL Afficher les propriétés]**.
 
 1. Dans la page des propriétés, cliquez sur **[!UICONTROL Avancé]**.
 1. Dans la section Avancé, activez l’option : **[!UICONTROL Synchroniser avec l’application AEM Forms]** et appuyez sur **[!UICONTROL Enregistrer]**.
@@ -176,7 +177,7 @@ Pour plus d’informations sur la configuration d’un projet d’application AE
 
 * [Configuration de l’environnement de l’application AEM Forms](/help/forms/using/setup-environment-mobile-workspace.md)
 * [Configuration d’un projet Visual Studio et création d’une application Windows](/help/forms/using/setup-visual-studio-project-build-installer.md)
-* [Configuration d’un projet Xcode et création d’une application iOS &#x200B;](/help/forms/using/setup-xcode-project-build-installer.md)
+* [Configuration d’un projet Xcode et création d’une application iOS](/help/forms/using/setup-xcode-project-build-installer.md)
 * [Configuration d’un projet Eclipse et création d’une application Android](/help/forms/using/setup-eclipse-project-build-installer.md)
 
 ### Créer et distribuer {#build-and-distribute}
@@ -191,8 +192,8 @@ Pour obtenir le code source de l’application AEM Forms, procédez comme suit�
    1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.
    2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
 1. Sélectionnez le nom de package applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les conditions du CLUF]**, puis sélectionnez **[!UICONTROL Télécharger]**.
-1. Ouvrez [Package Manager](/help/sites-administering/package-manager.md) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
-1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
+1. Ouvrez le [gestionnaire de modules](/help/sites-administering/package-manager.md) et cliquez sur **[!UICONTROL Charger le package]** pour charger le package.
+1. Sélectionnez le package, puis cliquez sur **[!UICONTROL Installer]**.
 
 **Pour iOS** :
 
@@ -216,7 +217,8 @@ Pour plus d’informations sur les modalités de distribution de l’application
 
 Si vous effectuez une mise à niveau vers la dernière version de l’application AEM Forms, prenez soin de lire les indications suivantes :
 
-* **Si vous avez installé une version antérieure de l’application à partir du Play Store sur Android,** vous pouvez mettre à niveau l’application directement du Play Store.
+* **Si vous avez installé une version antérieure de l’application à partir du Play Store sur Android**
+Vous pouvez mettre à niveau l’application directement depuis le Play Store.
 
 * **Si une version antérieure de l’application est créée et installée à l’aide du code source (applicable pour iOS et Android)** :
 

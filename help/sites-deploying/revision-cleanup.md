@@ -12,7 +12,7 @@ exl-id: 114a77bc-0b7e-49ce-bca1-e5195b4884dc
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
 source-wordcount: '5313'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -167,7 +167,7 @@ Dans certains cas, l’alternance entre le modes de compression complète et par
   </tr>
   <tr>
    <td><strong>Quels sont les facteurs qui déterminent la durée du nettoyage des révisions en ligne ?</strong></td>
-   <td>Les facteurs sont les suivants :<br />
+   <td>Les facteurs sont les suivants :<br />
     <ul>
      <li>Taille du référentiel</li>
      <li>Chargement sur le système (requêtes par minute, en particulier opérations d’écriture)</li>
@@ -380,7 +380,7 @@ Dans certains cas, l’alternance entre le modes de compression complète et par
   </tr>
   <tr>
    <td><strong>D’après la vérification d’intégrité et les entrées du journal, le processus de nettoyage des révisions en ligne a échoué trois fois de suite. Que doit-on faire pour assurer le succès du nettoyage des révisions en ligne ?</strong></td>
-   <td>Vous pouvez prendre plusieurs mesures pour trouver et résoudre le problème :<br />
+   <td>Vous pouvez prendre plusieurs mesures pour trouver et résoudre le problème :<br />
     <ul>
      <li>Tout d’abord, vérifiez les entrées du journal.<br /> </li>
      <li>Selon les informations contenues dans les journaux, prenez les mesures appropriées :
@@ -557,7 +557,7 @@ java -Dupdate.limit=10000 -Dcompaction-progress-log=150000 -Dlogback.configurati
 
 Outre les méthodes présentées ci-dessus, vous pouvez déclencher le mécanisme de nettoyage des révisions à l’aide de la console JMX comme suit :
 
-1. Ouvrez la console JMX en accédant à [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)
+1. Ouvrez la console JMX en accédant à [:4502/system/console/jmx](http://localhost:4502/system/console/jmx)
 1. Cliquez sur le MBean **RevisionGarbageCollection**.
 1. Dans la fenêtre suivante, cliquez sur **startRevisionGC()**, puis sur **Appeler** pour démarrer la tâche de récupération de l’espace mémoire.
 

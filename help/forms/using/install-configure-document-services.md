@@ -8,7 +8,7 @@ feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '10681'
+source-wordcount: '10632'
 ht-degree: 98%
 
 ---
@@ -1091,7 +1091,7 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. Le p
 
    >[!NOTE]
    >
-   >Vos droits d’utilisation relatifs aux polices fournies par des sociétés autres qu’Adobe sont régis par les contrats de licence accompagnant ces polices. Ils ne sont pas couverts par la licence d’utilisation du logiciel Adobe qui vous est concédée. Adobe vous recommande de vous assurer que vous agissez en conformité avec tous les contrats de licence non-Adobe applicables avant d’utiliser des polices non-Adobe avec des logiciels Adobe, notamment en ce qui concerne l’utilisation de polices dans des environnements de serveurs.
+   >Votre droit d’utilisation des polices fournies par des sociétés autres qu’Adobe est régi par les contrats de licence accompagnant ces polices. Il n’est pas couvert par votre licence d’utilisation du logiciel Adobe. Adobe vous recommande de vérifier et de vous assurer que vous êtes en conformité avec tous les contrats de licence non-Adobe applicables avant d’utiliser des polices non-Adobe avec des logiciels Adobe, en particulier en ce qui concerne l’utilisation de polices dans un environnement de serveur.
    >Lorsque vous installez de nouvelles polices dans le dossier de polices, redémarrez l’instance AEM Forms.
    >
 
@@ -1188,7 +1188,7 @@ Avant de configurer des certificats, assurez -vous que vous disposez des éléme
 
 * Mot de passe de la clé privée, fourni avec le certificat.
 
-* Alias de la clé privée. Vous pouvez exécuter la commande Java keytool pour afficher l’alias de la clé privée :
+* Alias de clé privée. Vous pouvez exécuter la commande Java keytool pour afficher l’alias de la clé privée :
   `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
 * Mot de passe du fichier KeyStore. Si vous utilisez le certificat Reader Extensions d’Adobe, le mot de passe du fichier KeyStore est toujours identique au mot de passe de la clé privée.

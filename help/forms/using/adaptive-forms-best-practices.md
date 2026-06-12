@@ -6,8 +6,8 @@ role: Admin, User, Developer
 exl-id: b87629fa-85a9-4024-963a-4761bc093e62
 source-git-commit: d0529c8bce32e192cbbc7686f14825df57762363
 workflow-type: tm+mt
-source-wordcount: '5535'
-ht-degree: 99%
+source-wordcount: '5664'
+ht-degree: 98%
 
 ---
 
@@ -64,11 +64,11 @@ Une fois votre projet AEM configuré, définissez la stratégie de création et 
 * AEM Forms vous permet de créer des formulaires adaptatifs basés sur les modèles de formulaires suivants. Les modèles de formulaire font office d’interface pour l’échange de données entre un formulaire et un système AEM et fournissent une structure XML pour le flux de données à l’intérieur et à l’extérieur d’un formulaire adaptatif. En outre, les modèles de formulaire imposent des règles et des contraintes aux formulaires adaptatifs sous la forme de schémas et de contraintes XFA.
 
    * **Aucun** : les formulaires adaptatifs créés avec cette option n’utilisent aucun modèle de formulaire. Les données XML générées à partir de ce type de formulaire présentent une structure plate avec des champs et des valeurs correspondantes.
-   * **Schéma XML ou JSON** : les schémas XML et JSON représentent la structure dans laquelle les données sont générées ou utilisées par le système back-end de l’entreprise. Vous pouvez associer un schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma sont disponibles dans l’onglet Objet du modèle de données du navigateur de contenu pour la création de formulaires adaptatifs. Vous pouvez faire glisser et déposer les éléments du schéma pour créer le formulaire.
+   * **Schéma XML ou JSON** : les schémas XML et JSON représentent la structure dans laquelle les données sont générées ou utilisées par le système back-end de l’entreprise. Vous pouvez associer un schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma sont disponibles dans l’onglet Objet de modèle de données du navigateur de contenu pour la création de formulaires adaptatifs. Vous pouvez faire glisser et déposer les éléments du schéma pour créer le formulaire.
    * **Modèle de formulaire XDP** : il s’agit d’un modèle de formulaire idéal si vous investissez dans des formulaires HTML5 basés sur XFA. Il fournit une méthode directe de conversion des formulaires de type XFA en formulaires adaptatifs. Toutes les règles XFA existantes sont conservées dans les formulaires adaptatifs associés. Les formulaires adaptatifs qui en résultent prennent en charge les éléments XFA, tels que les validations, les événements, les propriétés et les modèles.
    * **Modèle de données de formulaire** : il s’agit du modèle de formulaire idéal si vous souhaitez intégrer les systèmes back-end tels que les bases de données, les services web et un profil utilisateur AEM pour préremplir des formulaires adaptatifs et enregistrer des données de formulaire envoyé dans les systèmes back-end. Un éditeur de modèle de données de formulaire vous permet de définir et de configurer des entités et des services dans un modèle de données de formulaire que vous pouvez utiliser pour créer des formulaires adaptatifs. Pour plus d’informations, voir [Intégration des données AEM Forms](/help/forms/using/data-integration.md).
 
-Il est important de sélectionner avec soin le modèle de données qui correspond à vos besoins, tout en optimisant vos investissements existants dans les ressources XFA et XSD, le cas échéant. Il est recommandé d’utiliser le modèle XSD pour créer des modèles de formulaire, car le fichier XML généré contient les données selon l’expression XPATH définie par le schéma. L’utilisation du modèle XSD comme choix par défaut pour le modèle de données de formulaire s’avère également utile, dans la mesure où il découple le design du formulaire du système backend qui traite et consomme des données. Cela permet d’améliorer les performances du formulaire en raison d’un mappage un à un des champs de formulaire. En outre, la valeur BindRef du champ peut être utilisée comme XPATH de sa valeur de données dans le fichier XML.
+Il est important de sélectionner avec soin le modèle de données qui correspond à vos besoins, tout en optimisant vos investissements existants dans les ressources XFA et XSD, le cas échéant. Il est recommandé d’utiliser le modèle XSD pour créer des modèles de formulaires, car le fichier XML généré contient les données selon l’expression XPATH définie par le schéma. L’utilisation du modèle XSD comme choix par défaut pour le modèle de données de formulaire s’avère également utile, dans la mesure où il découple le design du formulaire du système backend qui traite et consomme des données. Cela permet d’améliorer les performances du formulaire en raison d’un mappage un à un des champs de formulaire. En outre, la valeur BindRef du champ peut être utilisée comme XPATH de sa valeur de données dans le fichier XML.
 
 Pour plus d’informations, voir [Création d’un formulaire adaptatif](/help/forms/using/creating-adaptive-form.md).
 
@@ -94,16 +94,16 @@ Pour plus d’informations, voir [Création d’un formulaire adaptatif](/help/f
 
 * Pour connaître les recommandations relatives à la gestion des données d’identification personnelle, reportez-vous à la section [Gestion des informations d’identification personnelle.](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p)
 
-### Création de modèles de formulaire
+### Création de modèles de formulaires
 
-Vous pouvez créer un formulaire adaptatif à l’aide des modèles de formulaire activés dans **Explorateur de configurations**. Pour activer les modèles de formulaire, reportez-vous à [Création d’un modèle de formulaire adaptatif](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
+Vous pouvez créer un formulaire adaptatif à l’aide des modèles de formulaires activés dans **Explorateur de configurations**. Pour activer les modèles de formulaire, reportez-vous à [Création d’un modèle de formulaire adaptatif](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
 
-Vous pouvez également charger les modèles de formulaire à partir des packages de formulaires adaptatifs créés sur l’ordinateur d’un autre auteur. Les modèles de formulaire sont disponibles en installant [aemforms-references-* packages](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Nous recommandons de suivre les bonnes pratiques suivantes :
+Vous pouvez également charger les modèles de formulaires à partir des packages de formulaires adaptatifs créés sur une autre machine de création. Les modèles de formulaires sont disponibles en installant les [packages aemforms-references-*](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Nous recommandons de suivre les bonnes pratiques suivantes :
 
 * Nous recommandons le mode d’exécution **nosamplecontent** uniquement pour les nœuds d’auteur et non pour les nœuds de publication.
 * La création de ressources telles que les formulaires adaptatifs, les thèmes, les modèles ou les configurations cloud s’effectue uniquement sur les nœuds d’auteur, qui peuvent être publiés sur les nœuds de publication configurés.
-Pour plus d’informations, reportez-vous à [Publication et annulation de la publication de formulaires et de documents](/help/forms/using/publishing-unpublishing-forms.md).
-* Le package du module complémentaire Forms est nécessaire pour la création et la publication, afin de prendre en charge les opérations de service de document. Il peut donc être considéré comme une dépendance.
+Pour plus d’informations, voir [Publication et dépublication de formulaires et de documents](/help/forms/using/publishing-unpublishing-forms.md)
+* Le package de module complémentaire Forms est nécessaire pour la création et la publication, afin de prendre en charge les opérations de service de document. Il peut donc être considéré comme une dépendance.
 Si vous souhaitez uniquement des packages d’exemples de modèle, de thèmes et de documents d’enregistrement liés à Forms, vous pouvez les télécharger à partir de [aemforms-references-* packages](/help/forms/using/upgrade-forms-osgi.md).
 
 Pour plus d’informations, reportez-vous aux bonnes pratiques dans [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
@@ -152,7 +152,7 @@ L’éditeur de règles fournit un éditeur visuel et un éditeur de code pour l
 * Les auteurs et autrices de formulaires adaptatifs peuvent avoir besoin d’écrire du code JavaScript pour créer une logique métier dans un formulaire. Bien que JavaScript soit puissant et efficace, il est susceptible de compromettre les attentes en matière de sécurité. Par conséquent, vous devez vous assurer que l’auteur ou l’autrice du formulaire est une personne de confiance et qu’il existe des processus pour examiner et approuver le code JavaScript avant qu’un formulaire ne soit mis en production. L’administrateur ou l’administratrice peut restreindre l’accès à l’éditeur de règles de certains groupes d’utilisateurs et d’utilisatrices en fonction de leur rôle ou de leur fonction. Voir [Autorisation d’accès à l’éditeur de règles pour des groupes d’utilisateurs et d’utilisatrices sélectionnés](/help/forms/using/rule-editor-access-user-groups.md).
 * Vous pouvez utiliser des expressions dans les règles pour rendre les formulaires adaptatifs dynamiques. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Ces expressions renvoient des valeurs de certains types. Pour plus d’informations sur les expressions et les meilleures pratiques associées, voir [Expressions des formulaires adaptatifs](/help/forms/using/adaptive-form-expressions.md).
 
-* Adobe recommande d’utiliser des opérations synchrones JavaScript plutôt que asynchrones lors de la création de règles avec l’éditeur de règles. L’utilisation d’opérations asynchrones est fortement déconseillée. Cependant, si vous vous trouvez dans une situation où les opérations asynchrones sont inévitables, il est essentiel de mettre en œuvre les fonctions de fermeture (closures) de JavaScript. Vous pouvez ainsi vous protéger de manière efficace contre toute situation de concurrence potentielle, en veillant à ce que vos mises en œuvre de règles offrent des performances optimales et maintiennent la stabilité. 
+* Adobe recommande d’utiliser des opérations synchrones JavaScript plutôt que asynchrones lors de la création de règles avec l’éditeur de règles. L’utilisation d’opérations asynchrones est fortement déconseillée. Cependant, si vous vous trouvez dans une situation où les opérations asynchrones sont inévitables, il est essentiel de mettre en œuvre les fonctions de fermeture (closures) de JavaScript. Vous pouvez ainsi vous protéger de manière efficace contre toute situation de concurrence potentielle, en veillant à ce que vos mises en œuvre de règles offrent des performances optimales et maintiennent la stabilité.
 
   Supposons, par exemple, que nous devions récupérer des données d’une API externe, puis appliquer certaines règles basées sur ces données. Nous utilisons une fermeture pour gérer l’appel API asynchrone et nous assurer que les règles sont appliquées après la récupération des données. Voici l’exemple de code :
 
@@ -369,7 +369,7 @@ L’éditeur de règles d’AEM Forms fournit une interface visuelle pour la cr
 * &#x200B;<!-- When you need --> Pour intégrer vos formulaires à des sources de données externes (FDM) ou des services, l’éditeur de règles vous permet de définir des règles pour la récupération, l’affichage ou la manipulation des données lors des interactions avec les formulaires.
 * &#x200B;<!-- If you want -->Pour créer des formulaires dynamiques et interactifs qui répondent aux actions de l’utilisateur ou de l’utilisatrice, l’éditeur de règles vous permet de définir des règles qui régissent le comportement des éléments de formulaire en temps réel.
 
-L’éditeur de règles est disponible pour les composants de base AEM Forms et les composants principaux.
+L’éditeur de règles est disponible pour les composants de base et les composants principaux d’AEM Forms.
 
 ### Éditeur de code {#code-editor}
 

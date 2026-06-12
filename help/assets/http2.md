@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 7576e0e3-b05a-483b-9d38-316ddf0d5816
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 100%
+source-wordcount: '788'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe est heureux d’annoncer la disponibilité de HTTP/2 pour la diffusion de 
 >
 >Cette fonctionnalité nécessite l’utilisation du réseau CDN prêt à l’emploi fourni avec Adobe Experience Manager Dynamic Media. Aucun autre réseau CDN personnalisé n’est pris en charge avec cette fonctionnalité.
 
-## Qu’est-ce que le HTTP/2 ?  {#what-is-http}
+## Qu’est-ce que le HTTP/2 ? {#what-is-http}
 
 Le HTTP/2 améliore la communication entre les navigateurs et les serveurs, en accélérant le transfert d’informations tout en réduisant la puissance de traitement nécessaire.
 
@@ -32,7 +32,7 @@ Le site web suivant décrit le HTTP/2 et ses avantages de manière simple et rap
 
 [Ce que vous devez savoir sur le HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)
 
-## Quels sont les principaux avantages de la transition vers le HTTP/2 pour la diffusion de contenu ?  {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
+## Quels sont les principaux avantages de la transition vers le HTTP/2 pour la diffusion de contenu ? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
 L’amélioration des performances peut varier considérablement. Elle repose sur de nombreux facteurs, tels que le code de votre site web, la manière dont vous utilisez Dynamic Media, l’appareil, l’écran et l’emplacement du consommateur.
 
@@ -57,7 +57,7 @@ Pour utiliser HTTP/2, vous devez respecter les conditions suivantes :
 
   Dans le cas contraire, Adobe programmera votre transition vers le HTTP/2 pour 2018.
 
-## Quel est le processus d’activation du HTTP/2 pour mon compte Dynamic Media ?  {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
+## Quel est le processus d’activation du HTTP/2 pour mon compte Dynamic Media ? {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
 
 Pour basculer vers le HTTP/2, vous devez en faire la demande, car cette procédure n’est pas automatique.
 
@@ -79,7 +79,7 @@ Pour basculer vers le HTTP/2, vous devez en faire la demande, car cette procédu
 
       Pour Firefox et Chrome, il existe une extension appelée « HTTP/2 and SPDY Indicator ». Les navigateurs ne prennent en charge le HTTP/2 qu’en mode sécurisé. Par conséquent, appelez une URL avec le protocole HTTPS pour vérifier. Si le http/2 est pris en charge, l’extension comprend un symbole Flash de couleur bleue et un en-tête « X-Firefox-Spdy » : « h2 ».
 
-## Quand puis-je espérer passer au HTTP/2 ?  {#when-can-i-expect-to-be-transitioned-over-to-http}
+## Quand puis-je espérer passer au HTTP/2 ? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
 Les demandes sont traitées dans l’ordre dans lequel l’assistance clientèle les reçoit.
 

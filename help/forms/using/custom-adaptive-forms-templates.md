@@ -1,6 +1,6 @@
 ---
 title: Créer un modèle de formulaire adaptatif personnalisé
-description: Cet article décrit comment créer des modèles de formulaire adaptatif personnalisés.
+description: Cet article décrit comment créer des modèles de formulaires adaptatifs personnalisés.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
@@ -11,8 +11,8 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 20e958d7-5976-4ccd-99b6-0e3bdb424d2d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 96%
+source-wordcount: '1288'
+ht-degree: 95%
 
 ---
 
@@ -34,25 +34,25 @@ Un modèle de formulaire adaptatif est un modèle de page AEM spécialisé avec 
 
 Une fois un formulaire créé, les modifications apportées à la structure de contenu du modèle d’origine ne sont pas prises en compte dans le formulaire.
 
-## Modèles de formulaire adaptatif par défaut {#default-adaptive-form-templates}
+## Modèles de formulaires adaptatifs par défaut {#default-adaptive-form-templates}
 
 Le démarrage rapide AEM fournit les modèles de formulaires adaptatifs suivants :
 
 * Modèle Questionnaire : permet de créer un formulaire adaptatif d’une seule page avec une disposition réactive comprenant plusieurs colonnes configurées. La disposition s’ajuste automatiquement selon les dimensions des différents écrans sur lesquels vous souhaitez afficher le formulaire.
 * Modèle Inscription simple : permet de créer un formulaire adaptatif à plusieurs étapes à l’aide d’une disposition d’assistant. Dans cette disposition, vous pouvez spécifier une expression d’achèvement d’étape pour chaque étape, qui est validée avant que l’assistant ne passe à l’étape suivante.
 * Modèle Inscription avec onglet : permet de créer un formulaire adaptatif à plusieurs onglets à l’aide d’une disposition d’onglets sur la gauche, dans laquelle vous pouvez consulter des onglets de manière aléatoire.
-* Modèle Inscription avancée : permet de créer un formulaire avec plusieurs onglets et un assistant. Il utilise une disposition d’onglets sur la gauche qui vous permet de consulter les onglets dans n’importe quel ordre. Il utilise les services d’Adobe Document Cloud eSign pour la signature et la vérification. 
+* Modèle Inscription avancée : permet de créer un formulaire avec plusieurs onglets et un assistant. Il utilise une disposition d’onglets sur la gauche qui vous permet de consulter les onglets dans n’importe quel ordre. Il utilise les services d’Adobe Document Cloud eSign pour la signature et la vérification.
 * Modèle vierge : permet de créer un formulaire sans aucun contenu initial, d’en-tête, et de pied de page. Vous pouvez ajouter des composants tels que des zones de texte, des boutons et des images. Le modèle vierge permet de créer un formulaire que vous pouvez [incorporer dans des pages du site AEM](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
 Ces modèles possèdent la propriété `sling:resourceType` définie sur le composant de page correspondant. Le composant de page effectue le rendu de la page CQ contenant le conteneur de formulaire adaptatif, qui à son tour effectue le rendu du formulaire adaptatif.
 
-Le tableau suivant décrit l’association entre les modèles et le composant de page :
+Le tableau suivant énumère l’association entre les modèles et le composant de page :
 
 <table>
  <tbody>
   <tr>
    <td><p><strong>Modèle</strong></p> </td>
-   <td><p><strong>Composant de page </strong></p> </td>
+   <td><p><strong>Composant de page</strong></p> </td>
   </tr>
   <tr>
    <td><p>/libs/fd/af/templates/surveyTemplate</p> </td>
@@ -113,7 +113,7 @@ Pour créer un modèle personnalisé comme simpleEnrollmentTemplate, suivez la p
 
 1. Ouvrez l’onglet **[!UICONTROL Properties]** (Propriétés) et modifier la valeur de la propriété `cq:designPath` en /etc/designs/mycompany.
 
-1. Créez maintenant un nœud /etc/designs/mycompany pour le `cq:Page`type 
+1. Créez maintenant un nœud /etc/designs/mycompany pour le `cq:Page`type
 
 ## Création d’un composant de page de formulaire adaptatif {#create-an-adaptive-form-page-component}
 

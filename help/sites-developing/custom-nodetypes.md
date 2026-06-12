@@ -11,8 +11,8 @@ role: Developer
 exl-id: 255f52f3-aff4-432c-a541-3ce03e626742
 source-git-commit: 9bc1cad84bb14b7513ede1fff2c1a37768dac442
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 83%
+source-wordcount: '1735'
+ht-degree: 82%
 
 ---
 
@@ -492,7 +492,7 @@ Configuration du sondage.
 * `@prop source (String) mandatory` - URI de la source de données. Obligatoire et ne doit pas être vide.
 * `@prop target (String)` - Emplacement cible où sont stockées les données récupérées de la source de données. Facultatif et prend par défaut le nœud cq:PollConfig.
 * `@prop interval (Long)` - Intervalle, en secondes, entre deux recherches de nouvelles données ou de données mises à jour auprès de la source de données. Ce paramètre est facultatif et défini, par défaut, sur 30 minutes (1 800 secondes).
-* [Création de services d’importation de données personnalisés pour Adobe Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
+* [Création de services d’importation de données personnalisés pour Adobe Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 
 **Définition**
 

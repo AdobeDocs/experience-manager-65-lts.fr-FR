@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: e6e6c08a-3bed-4713-a0e0-2a02607c7fc7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '280'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ Pour éviter des problèmes d’accessibilité avec les lecteurs d’écran qui 
 * Les en-têtes de ligne
 * L’étendue de ligne
 
-Pour utiliser le nouveau format dans les formulaires HTML5, indiquez que le tableau est complexe. Pour marquer le tableau en tant que tel, ajoutez la balise `extras` dans la source XML du sous-formulaire du tableau comme suit : 
+Pour utiliser le nouveau format dans les formulaires HTML5, indiquez que le tableau est complexe. Pour marquer le tableau en tant que tel, ajoutez la balise `extras` dans la source XML du sous-formulaire du tableau comme suit :
 
 ```xml
 </extras>

@@ -12,7 +12,7 @@ role: Developer
 exl-id: efa4b828-0807-40ac-81a0-1090cac9a257
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2973'
+source-wordcount: '2996'
 ht-degree: 97%
 
 ---
@@ -624,7 +624,7 @@ Contient le contenu du contexte client personnalisé.
   `/contextstores`
 vous permet de définir des configurations différentes pour les magasins de contexte.
 
-Pour utiliser votre contexte client personnalisé, modifiez la propriété
+Pour utiliser votre contexte client personnalisé, modifiez la propriété .
 `path`
-dans le style de conception du composant contexte client, tels qu’il est inclus dans le modèle de page. Par exemple, comme emplacement standard de :
+dans le style de conception du composant contexte client, tel qu’il est inclus dans le modèle de page. Par exemple, comme emplacement standard de :
 `/libs/cq/personalization/components/clientcontext/design_dialog/items/path`

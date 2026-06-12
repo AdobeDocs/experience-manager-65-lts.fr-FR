@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1853'
-ht-degree: 99%
+source-wordcount: '1888'
+ht-degree: 97%
 
 ---
 
@@ -372,7 +372,7 @@ Processus LiveCycle requis permettant l’exécution du processus de service de 
 
    ![Sélection du fichier SendLetterForReview.lca](assets/14_sendletterforreview_lca.png)
 
-1. Cliquez sur **Aperçu**. 
+1. Cliquez sur **Aperçu**.
 
 1. Sélectionnez **Déployer les ressources à l’exécution à la fin de l’importation**.
 

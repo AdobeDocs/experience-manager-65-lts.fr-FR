@@ -122,7 +122,7 @@ Cette section décrit des techniques que vous pouvez utiliser pendant le process
  </thead> 
  <tbody>
   <tr> 
-   <td><p>Privilèges&nbsp;</p> </td> 
+   <td><p>Autorisations</p> </td> 
    <td><p>Utilisez le minimum de droits requis pour installer le logiciel. Connectez-vous à votre ordinateur via un compte qui n’appartient pas au groupe d’administration. Sous Windows, vous pouvez utiliser la commande Exécuter pour exécuter le programme d’installation d’AEM Forms sur JEE en tant qu’utilisateur non administrateur. Sous UNIX et Linux, utilisez une commande comme <code>sudo</code> pour installer le logiciel.</p> </td> 
   </tr> 
   <tr> 
@@ -821,7 +821,7 @@ Lorsque vous configurez une architecture réseau sécurisée comme décrit dans 
  <thead> 
   <tr> 
    <th><p>Protocole</p> </th> 
-   <th><p>Utiliser</p> </th> 
+   <th><p>Utilisez</p> </th> 
   </tr> 
  </thead> 
  <tbody>

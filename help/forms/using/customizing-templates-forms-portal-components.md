@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 3eb9c0e3-950e-4dd5-a4c9-2d8f486ea3cf
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 92%
+source-wordcount: '1188'
+ht-degree: 89%
 
 ---
 
@@ -46,7 +46,7 @@ Procédez comme suit pour créer un modèle personnalisé pour divers composants
 
    * Composant Link : /libs/fd/fp/linkTemplate
 
-   Ajoutez un titre à afficher lors de la sélection des modèles de disposition.
+   Ajoutez un titre à afficher lors de la sélection des modèles de mise en page.
 
    >[!NOTE]
    >
@@ -120,8 +120,8 @@ Prise en charge de la localisation et du tri et utilisation des propriétés de 
 1. **Prise en charge de la localisation** : pour localiser du texte statique, utilisez l’attribut `${localize-YOUR_TEXT}` et rendez la valeur localisée disponible, si elle ne l’est déjà.
    *Dans l’exemple présenté, les attributs `${localize-Apply}` et `${localize-Download}` sont utilisés pour localiser les termes Apply et Download.*
 
-1. **Prise en charge du tri** : cliquez sur l’élément HTML pour trier les résultats de la recherche. Pour mettre en œuvre le tri dans une disposition de tableau, ajoutez l’attribut « data-sortKey » sur l’en-tête particulier du tableau. Ajoutez en outre sa valeur en tant que métadonnées pour lesquelles vous souhaitez effectuer un tri.
-Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur de l’en-tête &quot;data-sortKey&quot; est &quot;title&quot;. Cliquez sur l’en-tête pour trier les valeurs d’une colonne particulière.
+1. **Prise en charge du tri** : cliquez sur l’élément HTML pour trier les résultats de la recherche. Pour implémenter le tri dans une mise en page de tableau, ajoutez l’attribut « data-sortKey » dans l’en-tête particulier du tableau. Ajoutez en outre sa valeur en tant que métadonnées pour lesquelles vous souhaitez effectuer un tri.
+Par exemple, pour l’en-tête « Title » dans la vue Grille, la valeur de l’en-tête « data-sortKey » est « title ». Cliquez sur l’en-tête pour trier les valeurs d’une colonne particulière.
 
 1. **Utilisation des propriétés de configuration** : le composant Recherche et énumérateur possède plusieurs configurations que vous pouvez utiliser dans l’interface utilisateur. Par exemple, pour afficher du texte d’info-bulle HTML enregistré dans la boîte de dialogue Modifier, utilisez l’attribut `${config-htmlLinkText}`. **De même, pour le texte d’info-bulle PDF, utilisez l’attribut** `${config-pdfLinkText}`.
 
@@ -156,9 +156,9 @@ Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur d
 
 ![Nœud Drafts and Submission](assets/raw-image-with-index.png)
 
-**A**. Elément conteneur
+**A** Élément de conteneur
 
-**B.** Métadonnées « path » avec hiérarchie fixe pour obtenir la miniature stockée pour chaque formulaire.
+**B.** Métadonnées « path » avec hiérarchie fixe pour obtenir la miniature stockée pour chaque formulaire.
 
 **C.** Attribut « data-repeatable » utilisé pour la section du modèle de chaque formulaire.
 
