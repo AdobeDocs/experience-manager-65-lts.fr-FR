@@ -12,7 +12,7 @@ role: Admin
 exl-id: d9ffc796-1c2b-4fa6-b434-fb3ee03d40b5
 source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1459'
 ht-degree: 96%
 
 ---
@@ -198,8 +198,7 @@ En prenant comme exemple l’image ci-dessus, la **vue AEM** possède les propri
 >
 >La colonne Variable CQ de chaque table peut également être renseignée en ligne en double-cliquant sur le champ et en ajoutant du texte. Ces champs acceptent JavaScript comme entrée.
 >
->Par exemple, à côté de `prop3`, vous pouvez ajouter :
->     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
+>Par exemple, à côté de `prop3` vous pouvez ajouter :> `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 >pour envoyer la variable *title* d’une page concaténé avec sa variable *sitesection* à l’aide d’un *:* (deux-points) et précédé du préfixe *Adobe* en tant que `prop3`.
 >
 

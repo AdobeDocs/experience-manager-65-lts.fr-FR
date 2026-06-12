@@ -11,7 +11,7 @@ role: Developer
 exl-id: e33640ba-6039-4057-8942-b4faa9b2e250
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '954'
 ht-degree: 100%
 
 ---
@@ -187,7 +187,7 @@ S-0-#000319 -> [</html>]
 
 ### Utilisations du serveur proxy {#uses-of-the-proxy-server}
 
-Les scénarios ci-dessous indiquent une partie des fins auxquelles le serveur proxy peut être utilisé : 
+Les scénarios ci-dessous indiquent une partie des fins auxquelles le serveur proxy peut être utilisé :
 
 **Rechercher les cookies et leurs valeurs**
 

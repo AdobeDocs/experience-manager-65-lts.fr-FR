@@ -7,8 +7,8 @@ role: Admin, Developer
 exl-id: e8f2a771-b2e3-4f3e-85a0-480f783fc313
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2328'
-ht-degree: 96%
+source-wordcount: '2662'
+ht-degree: 95%
 
 ---
 
@@ -491,8 +491,8 @@ Examinez la fonctionnalité du badge **Nouveau** qui a déjà été mis en œuvr
 ## Ressources supplémentaires {#additional-resources}
 
 - [Archétype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr)
-- [Composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components)
-- [Personnalisation des composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components)
+- [Composants principaux d’AEM CIF](https://github.com/adobe/aem-core-cif-components)
+- [Personnalisation des composants principaux d’AEM CIF](https://github.com/adobe/aem-core-cif-components)
 - [Personnalisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=fr)
 - [Prise en main d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)
 - [Utilisation du sélecteur de produits et de catégories CIF](use-cif-pickers.md)

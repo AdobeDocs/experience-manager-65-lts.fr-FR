@@ -11,8 +11,8 @@ role: Developer
 exl-id: 8d53072b-826d-4ff4-843b-09204fb5a455
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 98%
+source-wordcount: '1467'
+ht-degree: 94%
 
 ---
 
@@ -71,7 +71,7 @@ Lorsque vous modifiez une page, plusieurs [modes](/help/sites-authoring/author-e
 
 Une instance AEM standard fournit la couche MSM. Cela permet d’accéder aux données relatives à la [gestion multisite](/help/sites-administering/msm.md) et de les mettre en évidence dans le calque.
 
-Pour obtenir une démonstration, vous pouvez modifier toute page [Copie de langue We.Retail](/help/sites-developing/we-retail-globalized-site-structure.md) (ou n’importe quelle autre page Live Copy) et sélectionner le mode **Statut de Live Copy**.
+Pour obtenir une démonstration, vous pouvez modifier toute page [Copie linguistique We.Retail](/help/sites-developing/we-retail-globalized-site-structure.md) (ou n’importe quelle autre page Live Copy) et sélectionner le mode **Statut de Live Copy**.
 
 Vous trouverez la définition du calque MSM (pour référence) à l’emplacement suivant :
 
@@ -85,7 +85,7 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-authoring-new-layer-mode sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode).
+* [Ouvrez le projet aem-authoring-new-layer-mode sur GitHub .](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode/archive/master.zip).
 
 ## Ajouter une nouvelle catégorie de sélection à l’explorateur de ressources {#add-new-selection-category-to-asset-browser}
@@ -100,7 +100,7 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-authoring-extension-assetfinder-flickr sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr).
+* [Ouvrez le projet aem-authoring-extension-assetfinder-flickr sur GitHub .](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr/archive/master.zip).
 
 ## Filtrer les ressources {#filtering-resources}
@@ -132,7 +132,7 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-authoring-extension-toolbar-screenshot sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot).
+* [Ouvrez le projet aem-authoring-extension-toolbar-screenshot sur GitHub .](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot/archive/master.zip).
 
 ## Ajouter un nouvel éditeur statique {#add-new-in-place-editor}
@@ -184,7 +184,7 @@ Dans une installation AEM standard :
 
    >[!CAUTION]
    >
-   >Dans AEM, les rapports de recadrage, tels qu’ils sont définis par la propriété `ratio`, sont définis sous la forme **hauteur/largeur**.  Cela diffère de la définition conventionnelle de la largeur/hauteur. Cela a été créée pour des raisons de compatibilité héritée. Les utilisateurs chargés de la création ne percevront aucune différence, à condition que vous définissiez clairement la propriété `name`, car c’est cette dernière qui s’affiche dans l’interface utilisateur.
+   >Dans AEM, les rapports de recadrage, tels qu’ils sont définis par la propriété `ratio`, sont définis sous la forme **hauteur/largeur**. Cela diffère de la définition conventionnelle de la largeur/hauteur. Cela a été créée pour des raisons de compatibilité héritée. Les utilisateurs chargés de la création ne percevront aucune différence, à condition que vous définissiez clairement la propriété `name`, car c’est cette dernière qui s’affiche dans l’interface utilisateur.
 
 #### Création d’un éditeur statique {#creating-a-new-in-place-editor}
 
@@ -192,8 +192,8 @@ Pour mettre en œuvre un nouvel éditeur statique (au sein de votre bibliothèqu
 
 >[!NOTE]
 >
->Pour obtenir un exemple, reportez-vous à :
->&#x200B;>`/libs/cq/gui/components/authoring/editors/clientlibs/core/js/editors/editorExample.js`
+>Par exemple, consultez :
+>`/libs/cq/gui/components/authoring/editors/clientlibs/core/js/editors/editorExample.js`
 
 1. Implémentez les éléments suivants :
 
@@ -214,7 +214,7 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-authoring-extension-inplace-editor sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor).
+* [Ouvrez le projet aem-authoring-extension-inplace-editor sur GitHub .](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor/archive/master.zip).
 
 #### Configurer plusieurs éditeurs statiques {#configuring-multiple-in-place-editors}
@@ -233,7 +233,7 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-authoring-extension-header-backtosites sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites).
+* [Ouvrez le projet aem-authoring-extension-header-backtosites sur GitHub .](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites/archive/master.zip).
 
 ## Personnalisation du workflow Demander l’activation {#customizing-the-request-for-activation-workflow}

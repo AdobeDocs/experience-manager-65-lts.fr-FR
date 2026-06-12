@@ -11,7 +11,7 @@ role: Developer
 exl-id: 3ce50030-86c7-4291-98fa-0cc9cb63f45c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1830'
 ht-degree: 98%
 
 ---
@@ -433,7 +433,7 @@ Chaque partie de l’éditeur en bloc peut être configurée. Le tableau suivant
   </tr>
   <tr>
    <td>colsMetadata</td>
-   <td>Configuration des métadonnées de colonne. Les propriétés possibles sont (appliquées à toutes les cellules de la colonne) : <br />
+   <td>Configuration des métadonnées de colonne. Les propriétés possibles sont (appliquées à toutes les cellules de la colonne) : <br />
     <ul>
      <li>cellStyle : style html </li>
      <li>cellCls : classe css </li>
@@ -449,7 +449,7 @@ Chaque partie de l’éditeur en bloc peut être configurée. Le tableau suivant
 
 Vous pouvez configurer les éléments suivants pour chaque colonne :
 
-* les propriétés d’affichage : style html, classe CSS et lecture seule 
+* les propriétés d’affichage : style html, classe CSS et lecture seule
 
 * une case à cocher
 * une position forcée

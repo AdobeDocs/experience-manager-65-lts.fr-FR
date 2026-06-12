@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: 03e87c5a-c106-4b4c-9b42-8ce7a04d9c0c
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1456'
 ht-degree: 98%
 
 ---
@@ -79,8 +79,8 @@ Le document DDX peut spécifier les documents cibles avec ces caractéristiques�
 
 Vous pouvez utiliser DDX pour étendre les documents PDF dans le cadre de l’assemblage et du désassemblage de documents. Vous pouvez spécifier n’importe quelle combinaison des effets suivants :
 
-* ajout ou suppression de filigranes ou d’arrière-plans sur les pages sélectionnées ; 
-* insertion ou suppression d’en-têtes et de pieds de page sur les pages sélectionnées ; 
+* ajout ou suppression de filigranes ou d’arrière-plans sur les pages sélectionnées ;
+* insertion ou suppression d’en-têtes et de pieds de page sur les pages sélectionnées ;
 * suppression de la structure et des capacités de navigation dans un package PDF ou un portfolio PDF ; Le résultat est un document PDF unique.
 * renumérotation des intitulés de page ; Les étiquettes de page servent généralement à numéroter des pages.
 * importation de métadonnées à partir d’un autre document source ;
