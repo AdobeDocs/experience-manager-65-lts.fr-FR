@@ -12,14 +12,14 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 52325c53-324f-4dd0-93c0-cb8a78a38d6b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1506'
 ht-degree: 100%
 
 ---
 
 # Visionneuses de médias mixtes{#mixed-media-sets}
 
-Une visionneuse de médias mixtes permet d’offrir un mélange d’images, de visionneuses d’images, de visionneuses à 360° et de vidéos dans une même présentation.
+Une visionneuse de supports variés permet d’offrir un mélange d’images, d’ensembles d’images, de visionneuses à 360° et de vidéos dans une même présentation.
 
 Les visionneuses de médias mixtes sont désignées par une bannière contenant les mots **[!UICONTROL Visionneuse de médias mixtes]**. En outre, si la visionneuse de médias mixtes est publiée, la date de publication, indiquée par l’icône représentant la **[!UICONTROL Terre]**, figure sur la bannière avec la date de dernière modification, indiquée par l’icône représentant un **[!UICONTROL crayon]**.
 
@@ -35,7 +35,7 @@ Pour démarrer rapidement, procédez comme suit :
 
 1. [Chargez vos ressources](#uploading-assets).
 
-   Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. Le cas échéant, créez les [Visionneuses d’images](/help/assets/image-sets.md) et [Visionneuses à 360°](/help/assets/spin-sets.md). Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse de médias mixtes, choisissez les images avec soin. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande.
+   Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. Le cas échéant, créez les [Ensemble d’images](/help/assets/image-sets.md) et [Visionneuses à 360°](/help/assets/spin-sets.md). Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse de médias mixtes, choisissez les images avec soin. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande.
 
    Voir [Dynamic Media - Formats d’image raster pris en charge](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) pour obtenir une liste des formats pris en charge par les ensembles de supports variés.
 
@@ -79,13 +79,13 @@ Si nécessaire, vous pouvez modifier les [Visionneuses de médias mixtes](#editi
 
 Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse de médias mixtes, choisissez les images avec soin. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande.
 
-Si vous souhaitez ajouter des visionneuses à 360° ou des visionneuses d’images à la visionneuse de médias mixtes, créez-les aussi.
+Si vous souhaitez ajouter des visionneuses à 360° ou des ensembles d’images à la visionneuse de supports variés, créez-les aussi.
 
 Consultez la section [Dynamic Media - Formats d’image matricielle pris en charge](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuse de médias mixtes.
 
 ## Création d’une visionneuse de médias mixtes {#creating-mixed-media-sets}
 
-Vous pouvez ajouter des images, des visionneuses d’images, des visionneuses à 360° et des vidéos à votre visionneuse de médias mixtes. Assurez-vous que les fichiers, visionneuses d’images et visionneuses à 360° sont prêts pour la publication avant de les ajouter à la visionneuse de médias mixtes.
+Vous pouvez ajouter des images, des ensembles d’images, des visionneuses à 360° et des vidéos à votre visionneuse de supports variés. Assurez-vous que les fichiers, ensembles d’images et visionneuses à 360° sont prêts pour la publication avant de les ajouter à la visionneuse de supports variés.
 
 Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement les ressources après les avoir ajoutées.
 
