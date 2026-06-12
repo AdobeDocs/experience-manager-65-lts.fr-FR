@@ -8,8 +8,8 @@ role: Admin
 exl-id: f185c622-1681-4221-a082-cac71d6b510b
 source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4379'
-ht-degree: 99%
+source-wordcount: '4463'
+ht-degree: 98%
 
 ---
 
@@ -85,7 +85,7 @@ Lorsqu’ils utilisent l’éditeur de texte enrichi, les créateurs et créatri
 
 * **Mode MS® Word** : collage du texte, y compris de tableaux, avec la mise en forme lors de la copie à partir de MS® Word. La copie et le collage de texte à partir d’une autre source, telle qu’une page web ou MS® Excel ne sont pas pris en charge et conservent uniquement une mise en forme partielle.
 
-### Configuration des options de collage disponibles sur la barre d’outils de l’éditeur de texte enrichi   {#configure-paste-options-available-on-the-rte-toolbar}
+### Configuration des options de collage disponibles sur la barre d’outils de l’éditeur de texte enrichi  {#configure-paste-options-available-on-the-rte-toolbar}
 
 Les trois icônes ci-dessous peuvent être mises à la disposition des auteurs dans la barre d’outils de l’éditeur de texte enrichi :
 
@@ -270,7 +270,7 @@ Ensuite, spécifiez les emplacements des feuilles de style à référencer :
 
    * **Nom** `cssName`
    * **Type** `String`
-   * **Valeur** Nom de la classe CSS (non précédé d’un point « . » ; par exemple, `cssClass` au lieu de `.cssClass`)
+   * **Valeur** Nom de la classe CSS (sans « . » devant ; par exemple, `cssClass` au lieu de `.cssClass`)
 
 1. Ajoutez la propriété `text` au même nœud. Elle définit le texte affiché dans la boîte de dialogue de sélection :
 
@@ -299,7 +299,7 @@ Pour créer le style que les auteurs peuvent appliquer au texte japonais, procé
 
 1. Ajoutez la propriété text au même nœud. La valeur est le nom du style que l’auteur ou l’autrice voit lors de la sélection du style.
    * Nom : `text`
-*Type : `String`
+*Type : `String`
    * Valeur : `Japanese word-wrap`
 
 1. Créez une feuille de style et spécifiez son chemin d’accès. Consultez [Spécifier l’emplacement de la feuille de style](#locationofstylesheet). Ajoutez le contenu suivant à la feuille de style. Modifiez la couleur d’arrière-plan selon vos besoins.
@@ -570,7 +570,7 @@ Une installation d’AEM standard inclut les dictionnaires pour l’anglais amé
 1. Effectuez l’une des opérations suivantes pour trouver un dictionnaire de votre choix de langue :
 
    * Recherchez le dictionnaire de votre choix de langue. Sur la page du dictionnaire, localisez le lien vers la source originale ou la page Web de l’auteur. Localisez les fichiers de dictionnaire pour v2.x sur une telle page.
-   * Recherchez des fichiers de dictionnaire v2.x dans [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
+   * Recherchez des fichiers de dictionnaire v2.x dans [:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
 
 1. Téléchargez l’archive avec les définitions d’orthographe. Extrayez le contenu de l’archive dans votre système de fichiers.
 
@@ -686,13 +686,13 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
 
       * **Nom** `cssInternal`
       * **Type** `String`
-      * **Valeur** Nom de la classe CSS (non précédé d’un point « . » ; par exemple, `cssClass` au lieu de `.cssClass`)
+      * **Valeur** nom de la classe CSS (sans « . » devant ; par exemple, `cssClass` au lieu de `.cssClass`)
 
    * Style CSS pour les liens externes
 
       * **Nom** `cssExternal`
       * **Type** `String`
-      * **Valeur** Nom de la classe CSS (non précédé d’un point « . » ; par exemple, `cssClass` au lieu de `.cssClass`)
+      * **Valeur** nom de la classe CSS (sans « . » devant ; par exemple, `cssClass` au lieu de `.cssClass`)
 
    * Tableau des **protocoles** valides. Les protocoles pris en charge sont les suivants : `http://`, `https://`, `file://` et `mailto:`.
 

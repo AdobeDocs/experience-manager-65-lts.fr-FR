@@ -11,8 +11,8 @@ role: Admin
 exl-id: c49a9876-3a8e-4837-a1a7-e0e62bc60e32
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 100%
+source-wordcount: '519'
+ht-degree: 92%
 
 ---
 
@@ -38,11 +38,11 @@ Le XSS est une priorité majeure pendant le test et le développement et les pro
 
 AEM utilise des techniques d’authentification performantes et éprouvées, qui font appel à [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/index.html) et [Apache Sling](https://sling.apache.org/). Les sessions de navigateur ou HTTP ne sont pas utilisées dans AEM.
 
-## &#x200B;4. Références d’objets directs non sécurisées {#insecure-direct-object-references}
+## &#x200B;4. Références d’objet direct non sécurisées {#insecure-direct-object-references}
 
 Tous les accès aux objets de données sont arbitrés par le référentiel et donc restreints par le contrôle d’accès basé sur les rôles.
 
-## &#x200B;5. Cross-Site Request Forgery (attaque CSRF) {#cross-site-request-forgery-csrf}
+## 5. Cross-Site Request Forgery (CSRF) {#cross-site-request-forgery-csrf}
 
 Une attaque Cross-Site Request Forgery (CSRF) est arbitrée en injectant automatiquement un jeton cryptographique dans l’ensemble des formulaires et des requêtes AJAX et en vérifiant ce jeton sur le serveur pour chaque requête POST.
 
@@ -60,14 +60,14 @@ Les mots de passe sont stockés sous la forme de hachages cryptographiques dans 
 
 Les données sensibles telles que les informations d’identification tierces sont stockées sous forme chiffrée à l’aide d’une bibliothèque cryptographique certifiée FIPS 140-2.
 
-## &#x200B;8. Échec de la limitation de l’accès à l’URL {#failure-to-restrict-url-access}
+## &#x200B;8. Échec de la restriction d’accès à l’URL {#failure-to-restrict-url-access}
 
 Le référentiel permet de définir des [autorisations précises (comme spécifié par JCR)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) pour n’importe quelle personne ou n’importe quel groupe dans n’importe quel chemin d’accès, via des entrées de contrôle d’accès. Les restrictions d’accès sont appliquées par le référentiel.
 
-## &#x200B;9. Protection insuffisante de la couche de transfert {#insufficient-transport-layer-protection}
+## &#x200B;9. Protection insuffisante de la couche de transport {#insufficient-transport-layer-protection}
 
 Atténuée par la configuration du serveur (par exemple, en utilisant HTTPS uniquement).
 
-## &#x200B;10. Redirections et transferts non validés {#unvalidated-redirects-and-forwards}
+## &#x200B;10. Redirections et transferts non valides {#unvalidated-redirects-and-forwards}
 
 Risque atténué en restreignant toutes les redirections à des destinations fournies par l’utilisateur vers des emplacements internes.

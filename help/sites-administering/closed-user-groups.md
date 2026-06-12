@@ -12,7 +12,7 @@ role: Admin
 exl-id: 0c20efb1-9b01-41ef-b38d-261fb4b0ff91
 source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '6654'
+source-wordcount: '6780'
 ht-degree: 97%
 
 ---
@@ -819,7 +819,7 @@ Le modèle d’autorisation du CUG permet d’activer individuellement la gestio
 
 Dans l’évaluation des politiques de CUG de la nouvelle configuration par défaut d’AEM, elle est activée uniquement avec le mode d’exécution de publication. Consultez les informations relatives à la [configuration par défaut depuis AEM 6.3](#default-configuration-since-aem) pour en savoir plus. Cela peut être vérifié en comparant les politiques en vigueur pour un chemin donné vers les politiques stockées dans le contenu. Les politiques en vigueur sont affichées uniquement dans le cas où l’évaluation des permissions est activée pour les CUG.
 
-Comme expliqué plus haut, les politiques de contrôle d’accès de CUG sont désormais toujours stockées dans le contenu, mais l’évaluation des permissions en vigueur découlant de ces politiques ne sera imposée que si l’**évaluation des CUG activée** est sélectionnée dans la console système au niveau de la configuration des CUG Apache Jackrabbit Oak **.** Par défaut, elle est uniquement activée avec le mode d’exécution de publication.
+Comme expliqué ci-dessus, les politiques de contrôle d’accès de CUG sont désormais toujours stockées dans le contenu, mais l’évaluation des permissions en vigueur découlant de ces politiques ne sera imposée que si l’option **Évaluation des CUG activée** est activée dans la console système sur Apache Jackrabbit Oak **Configuration des CUG**. Par défaut, elle est uniquement activée avec le mode d’exécution de publication.
 
 ### Différences en matière d’authentification {#differences-with-regards-to-authentication}
 

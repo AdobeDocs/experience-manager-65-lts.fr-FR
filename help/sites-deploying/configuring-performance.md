@@ -11,8 +11,8 @@ role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
 source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '5053'
-ht-degree: 99%
+source-wordcount: '5215'
+ht-degree: 98%
 
 ---
 
@@ -511,7 +511,7 @@ Si vous ne disposez pas d’une association un-à-un éditeur/dispatcher, ajoute
 >
 >Pour de meilleures performances, Adobe recommande un ratio de cache de 90 % à 95 %.
 
-#### Utilisation d’un codage cohérent de page  {#using-consistent-page-encoding}
+#### Utilisation d’un codage cohérent de page {#using-consistent-page-encoding}
 
 Avec le Dispatcher version 4.1.11, vous pouvez mettre en cache les en-têtes de réponse. Si vous ne mettez pas en cache les en-têtes de réponse sur le Dispatcher, des problèmes peuvent survenir quand vous stockez des informations de codage de page dans l’en-tête. Dans ce cas, lorsque le Dispatcher diffuse une page du cache, le codage par défaut du serveur web est utilisé pour la page. Deux méthodes permettent d’éviter ce problème :
 
@@ -540,7 +540,7 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 >
 >Cette URL invoque la même page et le même modèle que `gallery.html`. Dans la définition du modèle, vous pouvez spécifier le script qui effectue le rendu de la page ou vous pouvez utiliser le même script pour toutes les pages.
 
-#### Personnalisation par URL  {#customize-by-url}
+#### Personnalisation par URL {#customize-by-url}
 
 Si vous autorisez les utilisateurs et utilisatrices à modifier la taille de la police (ou toute autre personnalisation de la disposition), assurez-vous que les différentes personnalisations sont reflétées dans l’URL.
 
@@ -562,7 +562,7 @@ www.myCompany.com/news/main.large.html
 >
 >À l’aide de l’extension métacaractère du script de la définition du modèle, vous pouvez spécifier un script distinct qui effectue le rendu des pages d’impression.
 
-#### Invalidation de fichiers image utilisés comme titres  {#invalidating-image-files-used-as-titles}
+#### Invalidation de fichiers image utilisés comme titres {#invalidating-image-files-used-as-titles}
 
 Si vous effectuez le rendu des titres de page, ou d’un autre texte, sous forme d’images, il est recommandé de stocker les fichiers afin qu’ils soient supprimés lors d’une mise à jour du contenu sur la page :
 
@@ -577,7 +577,7 @@ Par exemple, vous pouvez stocker le titre de la page `myPage.html` dans le `file
 >
 >Le fichier image n’existe pas nécessairement physiquement sur l’instance AEM. Vous pouvez utiliser un script qui crée dynamiquement le fichier image. Dispatcher stocke ensuite le fichier sur le serveur web.
 
-#### Invalidation des fichiers image utilisés pour la navigation  {#invalidating-image-files-used-for-navigation}
+#### Invalidation des fichiers image utilisés pour la navigation {#invalidating-image-files-used-for-navigation}
 
 Si vous utilisez des images pour les entrées de navigation, la méthode est fondamentalement la même qu’avec les titres mais seulement un peu plus complexe. Stockez toutes les images de navigation avec les pages cibles. Si vous utilisez deux images pour « normale » et « active », vous pouvez utiliser les scripts suivants :
 

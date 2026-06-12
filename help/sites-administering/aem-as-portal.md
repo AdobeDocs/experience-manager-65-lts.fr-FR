@@ -12,8 +12,8 @@ role: Admin
 exl-id: 448715f1-ccec-4fb8-92d7-b7458cf9e6d4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6065'
-ht-degree: 97%
+source-wordcount: '6108'
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,7 @@ Pour configurer l&#39;affichage du contenu AEM dans un portail, voir [Installati
 
 >[!CAUTION]
 >
->AEM Portal Director est obsolète depuis AEM 6.4 et n’est désormais plus pris en charge dans AEM 6.5 LTS. Consultez les [Fonctionnalités obsolètes et supprimées](/help/release-notes/release-notes.md#deprecated-and-removed-features). 
+>AEM Portal Director est obsolète depuis AEM 6.4 et n’est désormais plus pris en charge dans AEM 6.5 LTS. Consultez les [Fonctionnalités obsolètes et supprimées](/help/release-notes/release-notes.md#deprecated-and-removed-features).
 
 ## Administration du portlet de contenu AEM. {#administering-the-aem-content-portlet}
 
@@ -113,7 +113,7 @@ Le portlet peut être configuré avec les préférences suivantes :
   </tr>
   <tr>
    <td>htmlSelector</td>
-   <td>Sélecteur ajouté à chaque adresse URL. Par défaut, il s’agit d’un <strong>portlet</strong> afin que toutes les demandes de pages HTML qui utilisent des adresses URL qui se terminent par <strong>.portlet.html.</strong> Cela permet d’utiliser des scripts personnalisés dans AEM pour le rendu du portlet.</td>
+   <td>Sélecteur ajouté à chaque adresse URL. Par défaut, il s’agit d’un <strong>portlet</strong>, de sorte que toutes les requêtes de pages HTML utilisent des URL se terminant par <strong>.portlet.html.</strong> Cela permet d’utiliser des scripts personnalisés dans AEM pour le rendu du portlet.</td>
   </tr>
   <tr>
    <td>addCssToPortalHeader</td>
@@ -171,7 +171,7 @@ Vous pouvez déployer ce lot lors de l’exécution ou l’ajouter à l’applic
 Une fois le cache déployé, le portlet met en cache le contenu de l’instance de publication. Le cache du portlet peut être annulé en vidant le Dispatcher d’AEM. Pour configurer le portlet afin qu’il utilise son propre cache, procédez comme suit :
 
 1. Configurez un agent de réplication dans l’instance de création qui cible le serveur de portail.
-1. Si le serveur du portail est exécuté sur **localhost**, **port 8080**, et que l’application Web du portlet AEM est montée dans le contexte **cqportlet**, l’adresse URL pour vider le cache de la console Web est `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Utilisez la méthode GET.
+1. En supposant que le serveur du portail s’exécute sur l’hôte **localhost**, **port 8080**, et que l’application web du portlet AEM soit montée dans le contexte **cqportlet**, l’adresse URL pour vider le cache est `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Utilisez la méthode GET.
    **Remarque :** au lieu d’utiliser un paramètre de demande, vous pouvez envoyer un en-tête HTTP appelé **Path**.
 
 #### Purge du cache via l’agent de réplication {#flushing-the-cache-via-replication-agent}
@@ -389,7 +389,7 @@ Pour afficher la page d’administration du site web ou modifier une page du por
    </LoginModule>
    ```
 
-1. Dans la console de configuration OSGi, située par défaut à l’adresse https://localhost:4502/system/console/configMgr, sélectionnez **Gestionnaire d’authentification par code personnel CQ** dans le menu déroulant.
+1. Dans la console de configuration OSGi, située par défaut à l’adresse :4502/system/console/configMgr, sélectionnez **Gestionnaire d’authentification par code personnel CQ** dans le menu déroulant.
 1. Modifiez le paramètre **Chemin d’accès racine de l’URL** pour qu’il contienne la valeur unique **/**.
 
 ### Autorisations {#privileges}
@@ -530,7 +530,7 @@ Pour installer une disposition personnalisée, accédez à la section **Lots** d
 
 #### Packages {#packages}
 
-Si vous devez charger ou créer des packages pour votre installation, consultez Gestionnaire de packages dans la documentation d’AEM pour obtenir des instructions détaillées.
+Si vous devez charger ou créer des packages pour votre installation, consultez Gestionnaire de modules dans la documentation d’AEM pour obtenir des instructions détaillées.
 
 ### Gestion des liens {#link-handling}
 
@@ -654,9 +654,9 @@ Le fichier JAR d’AEM Quickstart contient les fichiers du composant Portlet. P
    * Exécuter Quickstart : crx-quickstart/opt/portal
    * Extraire le contenu Quickstart : static/opt/portal
 
-1. Ouvrez le Gestionnaire de packages de l’instance de création CQ5 déployée sur le serveur d’applications. (https://*appserverhost*:*port*/cq5author/crx/packmgr)
+1. Ouvrez le gestionnaire de modules de l’instance de création CQ5 déployée sur le serveur d’applications. (https://*appserverhost*:*port*/cq5author/crx/packmgr)
 
-1. Utilisez le Gestionnaire de packages pour [charger et installer](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) le package cq-portlets-components.zip.
+1. Utilisez le gestionnaire de modules pour [charger et installer](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) le package cq-portlets-components.zip.
 
    Le package installe cq-portlet-director-sharedlibs-x.x.x.jar dans le dossier /libs/portal/director dans le référentiel.
 
@@ -775,7 +775,8 @@ Pour configurer le portlet :
 
    * **URL de base de la création** : URL de base de l’instance de création AEM.
    * **URL de base de la publication**: URL de base de l’instance de publication AEM.
-   * **Création utilisée comme publication** : l’instance de création est-elle utilisée comme instance de publication (pour le développement) ?
+   * **Création utilisée comme publication** : l’instance de création est-elle utilisée comme publication ?
+instance (pour le développement) ?
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 

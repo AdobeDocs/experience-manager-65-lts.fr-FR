@@ -11,8 +11,8 @@ role: Admin
 exl-id: 8bf470d5-1824-41d6-80e4-4af1eb6df713
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 98%
+source-wordcount: '2210'
+ht-degree: 97%
 
 ---
 
@@ -163,7 +163,7 @@ Lorsque les bibliothèques de gestion dynamique des balises sont hébergées sur
   </tr>
   <tr>
    <td>Énoncé de planification</td>
-   <td>(Apparaît et est obligatoire lorsque l’option Activer l’importateur d’interrogations est sélectionnée.) Une expression cron qui contrôle à quel moment les bibliothèques de gestion dynamique des balises sont téléchargées.</td>
+   <td>(Apparaît et est obligatoire lorsque l’option Activer l’importateur d’interrogations est sélectionnée.) Expression cron qui contrôle à quel moment les bibliothèques de gestion dynamique des balises sont téléchargées.</td>
   </tr>
  </tbody>
 </table>
