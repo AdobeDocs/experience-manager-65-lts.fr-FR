@@ -7,8 +7,8 @@ feature: Smart Imaging
 exl-id: 3b4f3624-d76d-4835-834b-e8610c2c40bd
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 100%
+source-wordcount: '294'
+ht-degree: 94%
 
 ---
 
@@ -56,8 +56,8 @@ Le RGPD côté client vous donne des valeurs et fonctionne entièrement exacts p
 
    Vous pouvez combiner les deux scripts DPR en un seul afin d’éviter plusieurs requêtes réseau.
 
-   Adobe recommande de charger ces scripts _avant_ tout autre script dans la page de HTML.
-Adobe recommande également le Bootstrap de votre application sous la balise de HTML diff plutôt qu’un élément de corps. La raison en est la suivante : `dprImageInjection.js` injecte dynamiquement la balise d’image dans la partie supérieure de la section corps de la page HTML.
+   Adobe vous recommande de charger ces scripts _avant_ tout autre script de la page HTML.
+Adobe recommande également de Bootstrap votre application sous la balise diff HTML plutôt qu’un élément de corps. En effet, `dprImageInjection.js` injecte dynamiquement la balise d’image en haut de la section du corps de la page HTML.
 
 ## Téléchargement des fichiers JavaScript {#client-side-dpr-script}
 

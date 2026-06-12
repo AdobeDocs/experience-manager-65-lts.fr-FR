@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: f1cea461-1d16-4944-b4c0-77be81b821e7
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2473'
-ht-degree: 97%
+source-wordcount: '2550'
+ht-degree: 96%
 
 ---
 
@@ -129,8 +129,8 @@ Vous pouvez définir le style d’un tableau à l’aide du mode Style de la bar
 
 1. Dans la barre d’outils de la page, avant Aperçu, sélectionnez ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
 
-1. Dans la barre latérale, sélectionnez le tableau, puis cliquez sur le bouton Modifier (![edit-button](assets/edit-button.png)).
-Vous pouvez afficher les propriétés de style dans la barre latérale.
+1. Dans la barre latérale, sélectionnez le tableau, puis sélectionnez le bouton Modifier ![edit-button](assets/edit-button.png).
+Les propriétés de style s’affichent dans la barre latérale.
 
 ![Propriétés de style d’un tableau](assets/style-table.png)
 

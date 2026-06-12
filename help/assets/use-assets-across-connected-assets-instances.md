@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 61a1c41a-7aec-4ffb-b622-905b3ca62c1b
 source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '4025'
+source-wordcount: '4005'
 ht-degree: 98%
 
 ---
@@ -162,8 +162,8 @@ Pour utiliser [!DNL Dynamic Media] avec les ressources connectées :
 
 Pour configurer les déploiements [!DNL Dynamic Media] sur [!DNL Assets] et [!DNL Sites] :
 
-1. Activez et configurez [!DNL Dynamic Media] en tant que configuration globale pour le déploiement de l’auteur [!DNL Assets] à distance. Pour configurer Dynamic Media, consultez la section [Configuration de Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
-Sur le déploiement [!DNL Assets] distant, dans le [!UICONTROL mode de synchronisation Dynamic Media], sélectionnez **[!UICONTROL Activé par défaut]**.
+1. Activez et configurez [!DNL Dynamic Media] en tant que configuration globale pour le déploiement de l’auteur de [!DNL Assets] à distance. Pour configurer Dynamic Media, voir [Configuration de Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
+Sur le déploiement [!DNL Assets] distant, dans [!UICONTROL mode de synchronisation Dynamic Media], sélectionnez **[!UICONTROL Activé par défaut]**.
 
 1. Créez une configuration de ressources connectées comme décrit dans la section [Configuration de la connexion entre les sites et des déploiements de ressources](#configure-a-connection-between-sites-and-assets-deployments). Sélectionnez également l’option **[!UICONTROL Récupérer le rendu d’origine pour les ressources connectées Dynamic Media]**.
 

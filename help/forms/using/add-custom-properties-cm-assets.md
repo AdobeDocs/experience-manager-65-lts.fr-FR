@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 248692f7-0718-4a12-9f82-24b4cef2b1e2
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4393'
-ht-degree: 92%
+source-wordcount: '4415'
+ht-degree: 91%
 
 ---
 
@@ -132,7 +132,7 @@ Créez un nœud pour chacune des propriétés (champs) pour lesquelles vous deve
    <tr>
       <td>name</td>
       <td>Chaîne</td>
-      <td>./extendedproperties/geographicallocation (conserver la valeur identique au nom du champ que vous avez créé sous le nœud d’éléments).</td>
+      <td>./extendedproperties/geographicallocation (conserver la valeur identique au nom du champ que vous avez créé sous le nœud d’éléments).</td>
    </tr>
    <tr>
       <td>renderReadOnly</td>
@@ -295,7 +295,7 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 
    1. Cliquez sur **Enregistrer tout**.
 
-1. Pour créer un champ dans l’onglet personnalisé (ici Destinataires), ajoutez un nœud (ici GeographicalLocation). Cette propriété correspond à la colonne que vous avez créée. Pour créer le champ, procédez comme suit (pour créer d’autres champs/nœuds, répétez ces étapes).:
+1. Pour créer un champ dans l’onglet personnalisé (ici Destinataires), ajoutez un nœud (ici GeographicalLocation). Cette propriété correspond à la colonne que vous avez créée. Procédez comme suit pour créer le champ (pour créer d’autres champs/nœuds, répétez ces étapes) :
 
    1. Cliquez avec le bouton droit sur le nœud d’éléments et sélectionnez **Créer** > **Créer un nœud**.
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
@@ -379,7 +379,7 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 
 ### Scénario : ajout de propriétés personnalisées à des types de ressources spécifiques {#scenario-adding-custom-properties-for-specific-asset-types}
 
-Ce scénario vous indique comment ajouter à toutes les ressources de texte une propriété personnalisée à un type de ressource spécifique tel qu’un champ.  Grâce à ce processus, vous pouvez ajouter des propriétés à l’un des éléments suivants :
+Ce scénario vous indique comment ajouter à toutes les ressources de texte une propriété personnalisée à un type de ressource spécifique tel qu’un champ. Grâce à ce processus, vous pouvez ajouter des propriétés à l’un des éléments suivants :
 
 * Texte
 * Condition
@@ -388,7 +388,7 @@ Ce scénario vous indique comment ajouter à toutes les ressources de texte une 
 * Dictionnaire de données
 * Lettre
 
-Par exemple, vous souhaitez ajouter une propriété, Emplacement des destinataires, uniquement aux ressources de texte, pour identifier la zone géographique à laquelle une ressource correspond. ![Propriété personnalisée ajoutée à une ressource](assets/newtabui.png)
+Par exemple, vous souhaitez ajouter une propriété, Emplacement des destinataires, uniquement aux ressources de texte, pour identifier la zone géographique à laquelle une ressource correspond.  ![Propriété personnalisée ajoutée à une ressource](assets/newtabui.png)
 
 Procédez comme suit pour ajouter une propriété à un type de ressource :
 
@@ -713,7 +713,7 @@ Pour afficher la propriété personnalisée dans l’interface utilisateur de la
       %>
       ```
 
-      Dans le code, GeoLocation correspond à la valeur définie dans la propriété de nom lors de la création du nœud/champ personnalisé. Lors de la création d’un nœud/champ personnalisé, vous avez indiqué le nom de la propriété avec .préfixe /extendedproperties/ : ./extendedproperties/GeoLocation. Dans le code, le préfixe n’est pas obligatoire.
+      Dans le code, GeoLocation correspond à la valeur définie dans la propriété de nom lors de la création du nœud/champ personnalisé. Lors de la création d’un nœud/champ personnalisé, vous avez spécifié le nom de la propriété avec ./extendedproperties/ prefix: ./extendedproperties/GeoLocation. Dans le code, le préfixe n’est pas obligatoire.
 
    1. Pour afficher la nouvelle propriété dans l’interface utilisateur, ajoutez une balise TD comme la suivante avant la balise de fermeture tr (&lt;/tr>) :
 
@@ -838,7 +838,7 @@ Pour ce faire, effectuez les étapes suivantes :
 
 >[!NOTE]
 >
->Si vous ne parvenez toujours pas à effectuer une recherche, un problème d’indexation peut en être la cause. Pour indexer de nouveau, accédez au nœud suivant et définissez la valeur de la propriété « re-index » sur true :
+>Si vous ne parvenez toujours pas à effectuer une recherche, un problème d’indexation peut en être la cause. Pour effectuer une nouvelle indexation, accédez au nœud suivant et définissez la valeur de la propriété « re-index » sur true :
 >
 >/oak:index/cmLucene » et modifier la valeur de la propriété
 

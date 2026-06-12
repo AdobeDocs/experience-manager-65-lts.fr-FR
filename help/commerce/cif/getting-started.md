@@ -8,8 +8,8 @@ role: Admin, Developer
 exl-id: 15face30-3039-49a0-bfee-56bff21e5c27
 source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 92%
+source-wordcount: '741'
+ht-degree: 89%
 
 ---
 
@@ -78,7 +78,7 @@ Les propriétés suivantes peuvent être configurées :
 
   >[!NOTE]
   >
-  >La prise en charge des UID a été introduite dans Adobe Commerce version 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
+  >La prise en charge des UID a été introduite dans Adobe Commerce 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
 
 - Identifiant de catégorie racine du catalogue : l’identifiant (UID ou ID) de la racine du catalogue du magasin.
 
@@ -93,5 +93,5 @@ Pour des configurations plus complexes à l’aide de plusieurs structures de si
 ## Ressources supplémentaires {#additional-resources}
 
 - [Archétype de projet AEM](https://github.com/adobe/aem-project-archetype)
-- [Magasin de référence Venia AEM](https://github.com/adobe/aem-cif-guides-venia)
+- [Magasin de référence AEM Venia](https://github.com/adobe/aem-cif-guides-venia)
 - [Configuration multi-magasin Commerce](configuring/multi-store-setup.md)

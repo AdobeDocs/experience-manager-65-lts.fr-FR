@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 5ca53958-dfcd-4058-a04c-c750ab4d9a6e
 source-git-commit: a8ff456d323e848cc0c6296670b39834682a36b9
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 97%
+source-wordcount: '523'
+ht-degree: 96%
 
 ---
 
@@ -92,7 +92,7 @@ Par exemple, les images intégrées présentent la syntaxe suivante :
 
 La syntaxe comprend :
 
-* Un point d’exclamation : !;
+* Un point d’exclamation : !;
 * suivi d’un ensemble de crochets, contenant le texte d’attribut alternatif de l’image ;
 * suivi d’un ensemble de parenthèses, contenant l’URL ou le chemin d’accès de l’image, et un attribut de titre facultatif inclus dans des guillemets doubles ou simples.
 
@@ -130,7 +130,7 @@ Vous pouvez avoir des blocs de citation imbriqués. Par exemple :
 
 Vous pouvez créer des listes ordonnées et non ordonnées.
 
-Pour créer une liste non ordonnée, insérez le symbole * avant les éléments de la liste. Par exemple :
+Pour créer une liste non triée, utilisez le symbole &amp;ast; avant les éléments de la liste. Par exemple :
 
     `* item in list`
 
@@ -166,7 +166,7 @@ Vous pouvez mettre du texte en gras comme suit :
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Pour indiquer une plage de code, entourez-la de guillemets obliques (`` ` ``). Contrairement à un bloc de code préformaté, une plage de code indique du code dans un paragraphe normal.
+Pour désigner une plage de code, entourez-la de guillemets obliques (`` ` ``). Contrairement à un bloc de code préformaté, une plage de code indique du code dans un paragraphe normal.
 
 Par exemple :
 
