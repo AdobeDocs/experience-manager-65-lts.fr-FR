@@ -7,8 +7,8 @@ role: Admin, User, Developer
 exl-id: ece49f03-e711-439f-9c2d-6308fe2998ae
 source-git-commit: 4f2374a48687d39f7d365e09d9055edf583e2c20
 workflow-type: tm+mt
-source-wordcount: '6895'
-ht-degree: 100%
+source-wordcount: '6828'
+ht-degree: 97%
 
 ---
 
@@ -220,8 +220,8 @@ Une liste est un groupe de contenu associé qui peut être utilisé dans un mod�
 * Lors de la création d’une liste, vous pouvez spécifier un type, par exemple :
 * **Classique** : aucun style supplémentaire de mise en forme n’est appliqué à la liste.
 * **À puces** : une liste formatée avec une puce simple.
-* **Numérotée** : une liste numérique avec le choix entre les nombres standard (1, 2,...), romains majuscules (I, II, ...) et romains minuscules (i, ii, etc.).
-* **Avec lettres** : une liste alphabétique permettant de choisir entre minuscules (a, b, etc.) et majuscules (A, B, etc.).
+* **Numérotée** : une liste numérique avec le choix entre Standard (1, 2,...), Romain majuscule (I, II, ...) et Romain minuscule (i, ii, etc.) numériques.
+* **Avec lettres** : liste alphabétique permettant de choisir entre minuscules (a, b, etc.) et majuscules (A, B, etc.) lettres.
 * **Personnalisée** : vous pouvez créer n’importe quel type numéroté/avec lettres, ainsi que les valeurs de préfixe et de suffixe de votre choix.
 
 1. Sélectionnez **Formulaires** > **Fragments de document**.
@@ -242,8 +242,8 @@ Une liste est un groupe de contenu associé qui peut être utilisé dans un mod�
 
    ![Sélectionner les actifs à ajouter à la liste](assets/selectassets.png)
 
-1. Les actifs sont ajoutés à la page Eléments de la liste.
-Pour modifier l’ordre des ressources dans la liste, sélectionnez et maintenez enfoncée l’icône de flèches (![dragndrop](assets/dragndrop.png)), puis effectuez un glisser-déposer. Lorsque l’utilisateur ouvre un modèle de courrier dans l’interface utilisateur de création de correspondance, le contenu est assemblé dans l’ordre que vous avez défini ici.
+1. Les ressources sont ajoutées à la page Eléments de la liste .
+Pour modifier l’ordre des ressources dans la liste, sélectionnez et maintenez enfoncées les icônes de flèches ( ![dragndrop](assets/dragndrop.png) ), puis effectuez un glisser-déposer. Lorsque l’utilisateur ouvre un modèle de lettre dans l’interface utilisateur Création de correspondance, le contenu est assemblé dans l’ordre que vous avez défini ici.
 
    ![Réorganiser et configurer les actifs dans une liste](assets/listitems.png)
 
@@ -313,7 +313,7 @@ L’éditeur de conditions vous permet de spécifier une condition par défaut. 
 1. Pour ajouter une ressource à la condition, sélectionnez-la dans la page Sélection des ressources et sélectionnez **Terminé**. Les actifs sont ajoutés au volet Expression.
 1. Vous pouvez sélectionner les options suivantes pour spécifier le comportement de la condition au moment de l’exécution :
 
-   * **Désactiver l’évaluation de résultats multiples\Activer l’évaluation de résultats multiples** : lorsque cette option est activée (qu’elle apparaît comme « Activer l’évaluation… »), toutes les conditions sont évaluées et le résultat est la somme de toutes les conditions vraies (true). Si cette option est désactivée (« Désactiver l’évaluation… »), alors seule la première condition vérifiée est évaluée et devient la sortie de la condition.
+   * **Désactiver l’évaluation de résultats multiples\Activer l’évaluation de résultats multiples** : lorsque cette option est activée (qu’elle apparaît comme « Activer l’évaluation… »), toutes les conditions sont évaluées et le résultat est la somme de toutes les conditions vraies (true). Si cette option est désactivée (apparaît comme « Désactiver l’intégration... ») alors seule la première condition qui s’avère vraie est évaluée et devient la sortie de la condition.
    * **Saut de page** : sélectionnez cette option (![saut de page](assets/break.png)) pour insérer un saut de page entre les modules des conditions. Lorsque cette option nʼest pas sélectionnée (![pas de saut de page](assets/nobreak.png)) et quʼune condition déborde sur la page suivante, la condition entière est décalée vers la page suivante, au lieu de marquer un saut de page entre les modules.
 
 1. Pour modifier l’ordre des ressources dans la condition, sélectionnez l’icône de flèches (![dragndrop](assets/dragndrop.png)) sans relâcher le bouton de la souris, puis effectuez un glisser-déposer. Lorsque l’utilisateur ou l’utilisatrice ouvre un modèle de courrier dans l’interface utilisateur de création de correspondance, le contenu est assemblé dans l’ordre que vous avez défini ici.
@@ -398,7 +398,7 @@ Pour un exemple détaillé de l’utilisation de tableaux statiques et dynamique
 
 1. Sélectionnez l’onglet **Tableau** et spécifiez les informations suivantes pour la disposition :
 
-   * **Configuration pour** : sélectionnez le tableau à configurer. Dans la liste déroulante, le suffixe du nom de tableau est (Statique) si le tableau est statique ou (Dynamique) si le tableau est dynamique. Les tableaux statiques contiennent un nombre fixe de lignes. Les tableaux statiques peuvent contenir des zones cible et des champs. Ces zones cible et champs ne peuvent pas être liés à des DDE répétés. Les données liées à des cellules déterminent le nombre des lignes des tableaux dynamiques.
+   * **Configuration pour** : sélectionnez la table en cours de configuration.Le suffixe du nom du tableau dans la liste déroulante est (Statique) si le tableau est statique ou (Dynamique) si le tableau est dynamique. Les tableaux statiques contiennent un nombre fixe de lignes. Les tableaux statiques peuvent contenir des zones cible et des champs. Ces zones cible et champs ne peuvent pas être liés à des DDE répétés. Les données liées à des cellules déterminent le nombre des lignes des tableaux dynamiques.
 
    * **Lignes** : sélectionnez le nombre de lignes pour la mise en page. Le nombre de lignes configuré doit être supérieur ou égal au nombre de lignes d’origine.
    * **Colonnes** : Sélectionnez le nombre de colonnes pour la mise en page. Le nombre de colonnes configuré doit être supérieur ou égal au nombre de colonnes d’origine.
@@ -477,8 +477,8 @@ De nombreux modèles de lettre contiennent des tableaux. Les tableaux peuvent ê
 * **Tableaux statiques** : les tableaux sont parfois créés avec des lignes ayant un nombre de colonnes différent, comme pour un tableau des conditions générales. Dans un tel tableau, chaque ligne représente une condition et chaque condition peut comporter différentes sous-parties. Chaque partie est affichée dans une colonne distincte.
 * **Tableaux dynamiques** : les fragments de disposition permettent de lier les champs d’un tableau dynamique aux DDE de collection. Au moment de la génération de la lettre, les lignes du tableau sont générées en fonction de la taille des DDE de collection.
 
-Le DD a un élément Collection Nominee_details possédant un élément composite avec trois éléments primitifs : Nominee_name, Nominee_address et Nominee_gender.
-Le fichier XDP dynamique utilise les mêmes en-têtes. Vous pouvez mapper les champs dynamiques XDP avec les champs mentionnés ci-dessus de DD.
+Le DD a un élément Collection Nominee_details qui a un élément composite avec trois éléments primitifs : Nominee_name, Nominee_address et Nominee_gender.
+Le fichier XDP dynamique possède également les mêmes en-têtes. Vous pouvez mapper les champs XDP dynamiques avec les champs mentionnés ci-dessus de DD.
 
 ### Exemple avec des fichiers d’exemple : utiliser des tableaux statiques et dynamiques dans une lettre {#examplewithsamplefiles}
 
@@ -492,7 +492,7 @@ Cet exemple montre comment créer un tableau dynamique et statique, lier le tabl
 
    ![Structure du dictionnaire de données](assets/dd.jpeg)
 
-[Obtenir le fichier](assets/exportpackage_1431709897770.cmp.zip)
+   [Obtenir le fichier](assets/exportpackage_1431709897770.cmp.zip)
 
 1. Dans Designer, créez deux fichiers XDP (fragments de disposition) : un tableau dynamique et un tableau statique. Pour les deux dispositions :
 
@@ -501,12 +501,12 @@ Cet exemple montre comment créer un tableau dynamique et statique, lier le tabl
 
    Ou utilisez les fichiers XDP statiques et dynamiques liés à cette étape.
 
-   Pour plus d’informations sur l’utilisation des fragments de mise en page, voir [Fragments de mise en page](#layoutfragments).
-Pour plus d’informations sur la conception de mises en pages, voir [Aide de Designer](https://help.adobe.com/fr_FR/AEMForms/6.1/DesignerHelp/).
+   Pour plus d’informations sur l’utilisation des fragments de disposition, voir [Fragments de disposition](#layoutfragments).
+Pour plus d&#39;informations sur la conception de mises en page, consultez l&#39;aide de [&#128279;](https://help.adobe.com/fr_FR/AEMForms/6.1/DesignerHelp/).
 
-[Obtenir le fichier](assets/static.xdp.zip)
+   [Obtenir le fichier](assets/static.xdp.zip)
 
-[Obtenir le fichier](assets/dynamic.xdp.zip)
+   [Obtenir le fichier](assets/dynamic.xdp.zip)
 
 1. Téléchargez les fichiers XDP vers AEM Forms.
 1. Créez un fragment de disposition basé sur le fichier XDP dynamique. L’onglet Tableau des propriétés affiche que le tableau est dynamique (champ Configuration pour). Le nombre de lignes (1) et de colonnes (3) provient du fichier XDP/fragment de disposition.

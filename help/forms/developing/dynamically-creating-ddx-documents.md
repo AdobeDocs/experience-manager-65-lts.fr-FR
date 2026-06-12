@@ -13,8 +13,8 @@ hide: true
 exl-id: 3508d2d1-e05a-4733-b682-4b022348147a
 source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 100%
+source-wordcount: '2111'
+ht-degree: 99%
 
 ---
 
@@ -41,11 +41,11 @@ Ce document DDX désassemble un document PDF. Il est recommandé de vous familia
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Assembler, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Assembler, consultez la section [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 >[!NOTE]
 >
->Pour plus d’informations sur un document DDX, voir [service Assembler et référence DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Pour plus d’informations sur les documents DDX, consultez la section [Guide de référence du service Assembler et de DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Résumé des étapes {#summary-of-steps}
 
@@ -129,7 +129,7 @@ Créez un document DDX de façon dynamique et désassemblez un document PDF à l
    * Créez un objet `DocumentBuilderFactory` Java en appelant la méthode `newInstance` de la classe `DocumentBuilderFactory`.
    * Créez un objet `DocumentBuilder` Java en appelant la méthode `newDocumentBuilder` de l’objet `DocumentBuilderFactory`.
    * Appelez la méthode `newDocument` de l’objet `DocumentBuilder` pour instancier un objet `org.w3c.dom.Document`.
-   * Créez l’élément racine du document DDX en appelant la méthode `createElement` de l’objet `org.w3c.dom.Document`. Cette méthode crée un objet `Element` qui représente l’élément racine. Transmettez une valeur de chaîne représentant le nom de l’élément à la méthode `createElement`. Convertissez la valeur de retour en `Element`. Ensuite, définissez une valeur pour l’élément enfant en appelant sa méthode `setAttribute`. Enfin, ajoutez l’élément à l’élément d’en-tête en appelant sa méthode `appendChild` et transmettez l’objet d’élément enfant en tant qu’argument. Les lignes de code suivantes illustrent cette logique dʼapplication :
+   * Créez l’élément racine du document DDX en appelant la méthode `createElement` de l’objet `org.w3c.dom.Document`. Cette méthode crée un objet `Element` qui représente l’élément racine. Transmettez une valeur de chaîne représentant le nom de l’élément à la méthode `createElement`. Convertissez la valeur de retour en `Element`. Ensuite, définissez une valeur pour l’élément enfant en appelant sa méthode `setAttribute`. Enfin, ajoutez l’élément à l’élément d’en-tête en appelant sa méthode `appendChild` et transmettez l’objet d’élément enfant en tant qu’argument. Les lignes de code suivantes illustrent cette logique d’application :
      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * Créez l’élément `PDFsFromBookmarks` en appelant la méthode `createElement` de l’objet `Document`. Transmettez une valeur de chaîne représentant le nom de l’élément à la méthode `createElement`. Convertissez la valeur de retour en `Element`. Définissez une valeur pour l’élément `PDFsFromBookmarks` en appelant sa méthode `setAttribute`. Ajoutez l’élément `PDFsFromBookmarks` à l’élément `DDX` en appelant la méthode `appendChild` de l’élément DDX. Transmettez l’objet d’élément `PDFsFromBookmarks` en tant qu’argument. Les lignes de code suivantes illustrent cette logique dʼapplication :
@@ -171,7 +171,7 @@ Créez un document DDX de façon dynamique et désassemblez un document PDF à l
 
    Appelez la méthode `invokeDDX` de l’objet `AssemblerServiceClient` et transmettez les valeurs suivantes :
 
-   * Un objet `com.adobe.idp.Document` représentant le document DDX créé dynamiquement
+   * Un objet `com.adobe.idp.Document` qui représente le document DDX créé dynamiquement.
    * Un objet `java.util.Map` contenant le document PDF à désassembler
    * Un objet `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` qui spécifie les options d’exécution, dont la police par défaut et le niveau du log de traitement.
 

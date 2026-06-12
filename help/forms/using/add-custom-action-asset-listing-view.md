@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: a27c4469-6430-4a68-ba2c-7fb0ddebb263
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1381'
 ht-degree: 98%
 
 ---
@@ -33,7 +33,7 @@ Cette personnalisation est illustrée par le scénario qui ajoute une commande �
 
 Pour réaliser le scénario suivant ou un scénario similaire, vous devez connaître :
 
-* CRX 
+* CRX
 * JavaScript
 * Java™
 
@@ -230,7 +230,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisate
 
 1. Dans le dossier d’applications, créez un dossier appelé éléments avec un chemin/une structure semblable au dossier d’éléments dans le dossier actionhandlers. Pour ce faire, procédez comme suit :
 
-   1. Faites un clic droit sur le dossier des **éléments** à l’emplacement suivant, puis sélectionnez **Nœud de recouvrement** : 
+   1. Faites un clic droit sur le dossier des **éléments** à l’emplacement suivant, puis sélectionnez **Nœud de recouvrement** :
 
       `/libs/fd/cm/ma/gui/content/commons/actionhandlers/items/`
 

@@ -220,7 +220,7 @@ Ajoutez des utilisateurs à l’aide de l’API du service Directory Manager (se
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacer `localhost` avec l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client DirectoryManagerService.
 
@@ -657,7 +657,7 @@ Pour gérer les rôles et les autorisations à l’aide de l’API Authorization
 
    Pour attribuer un rôle à un principal, appelez la méthode `assignRole` de l’objet `AuthorizationManagerServiceClient` et transmettez les valeurs suivantes :
 
-   * Un objet `java.lang.String` qui contient l’identifiant de rôle
+   * Objet `java.lang.String` contenant l’identifiant de rôle
    * Un tableau d’objets `java.lang.String` contenant les identifiants des principaux.
 
    Pour supprimer un rôle d’un principal, appelez la méthode `unassignRole` de l’objet `AuthorizationManagerServiceClient` et transmettez les valeurs suivantes :

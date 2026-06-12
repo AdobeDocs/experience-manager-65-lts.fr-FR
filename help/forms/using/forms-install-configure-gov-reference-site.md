@@ -9,8 +9,8 @@ role: Admin, User, Developer
 exl-id: 9c05a71b-70fa-4470-afdf-823fd5da5ad1
 source-git-commit: 51342861dd01e659999c19fbe0274e8d3cbcf8c4
 workflow-type: tm+mt
-source-wordcount: '4485'
-ht-degree: 62%
+source-wordcount: '4746'
+ht-degree: 61%
 
 ---
 
@@ -189,7 +189,7 @@ Cette section contient des informations détaillées sur la configuration du pro
 
 1. La clé privée est le *localhostprivate.der*.
 1. Le certificat est le *localhost.crt*.
-1. Cliquez sur **Suivant**.
+1. Cliquez sur **Next** (Suivant).
 1. Définissez le nom d’hôte HTTPS sur *localhost*.
 1. Définissez Port sur un port exposé par le système.
 
@@ -227,8 +227,8 @@ Cette section contient des détails et des instructions sur la configuration clo
 
 **Références :**
 
-1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [Configurer Microsoft® Dynamics pour AEM Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
+1. [Configuration de ® Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md)
+1. [Configuration de ® Dynamics pour AEM Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
 
 #### Service cloud OData de MS® Dynamics {#ms-dynamics-odata-cloud-service}
 
@@ -283,13 +283,13 @@ Les étapes détaillées dans cette section vous aident à localiser l’ID clie
 1. Pour localiser l’URL de ressource/l’URL racine du service, accédez au tableau de bord de l’instance MS® Dynamics.
 1. Dans la barre de navigation supérieure, cliquez sur **Ventes** ou sur votre propre type d’instance, puis sur **Sélectionner les paramètres**.
 1. Près de l’angle inférieur droit, cliquez sur **Personnalisations** et **Ressources pour les développeurs**.
-1. Recherchez l’URL racine du service. Par exemple,
+1. Recherchez l’URL racine du service. Par exemple :
 
    `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 
 1. Les détails sur l’URL Actualiser et Jeton d’accès sont disponibles aux adresses suivantes :
 
-   [https://learn.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app](https://learn.microsoft.com/fr-fr/rest/api/datacatalog/authenticate-a-client-app)
+   [https://learn.microsoft.com/fr-fr/rest/api/datacatalog/authenticate-a-client-app](https://learn.microsoft.com/fr-fr/rest/api/datacatalog/authenticate-a-client-app)
 
 #### Tester le modèle de données de formulaire (Dynamics) {#testing-the-form-data-model}
 
@@ -383,7 +383,7 @@ Ce package est préconfiguré pour se connecter à Adobe Analytics. Les étapes 
 Recherchez les informations d’identification de l’utilisateur d’un compte Adobe Analytics que l’administrateur du compte doit exécuter pour effectuer les tâches suivantes.
 
 1. Accédez au portail Adobe Experience Cloud.
-Se connecter avec des informations d’identification d’administrateur
+Se connecter avec les informations d’identification de votre administrateur
 1. Sélectionnez l’icône Adobe Analytics dans le tableau de bord principal.
    ![Accès rapide](assets/aftia-quick-access.jpg)
 1. Accédez à l’onglet Admin et sélectionnez l’élément Gestion des utilisateurs (hérité).
@@ -431,7 +431,7 @@ Les administrateurs peuvent accorder aux utilisateurs des autorisations AEM Anal
 >Si vous installez le package `we-gov-forms.ui.analytics-<version>.zip`, les données AEM Forms Analytics sont disponibles hors ligne ou sans configuration Adobe Analytics Cloud. Les données AEM Sites nécessitent une configuration cloud principale.
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/sites.html/content*
-1. Sélectionnez **Site We.Gov d’AEM Forms** pour afficher les pages du site.
+1. Sélectionnez **Site We.Gov d’** pour afficher les pages du site.
 1. Sélectionnez l’une des pages du site (par exemple Accueil), puis choisissez **Analytics et Recommandations**.
 
    ![Analytics et Recommandations](assets/analytics_recommendations.jpg)
@@ -608,7 +608,7 @@ Une fois la configuration IMS terminée, vous pouvez procéder à la création d
 
 1. URL du thème : */content/dam/formsanddocuments-themes/adobe-finance-forms-themes/we-finance-theme*
 
-1. Cliquez sur **Suivant**.
+1. Cliquez sur **Next** (Suivant).
 
 1. Pour cette configuration, les deux valeurs de case à cocher ont été laissées vides.
 
@@ -620,7 +620,7 @@ Une fois la configuration définie, les utilisateurs peuvent la tester en charge
 
 1. Accédez au système AEM https://&lt;domain_name>:&lt;system_port>.
 
-1. Cliquez sur **Forms** > **Forms et documents** > **AEM Forms We.gov Forms** > **AFC**.
+1. Cliquez sur **&#x200B;**&#x200B;> **Forms et documents** > **AEM Forms We.gov Forms** > **AFC**.
 
 1. Sélectionnez le PDF de demande d’inscription We.Gov.
 
@@ -777,7 +777,7 @@ Si vous souhaitez exporter ces données, cliquez sur les trois boutons situés �
 
 ### Thème Ultramarine {#ultramarine-theme}
 
-Le thème Ultramarine, accessible au public et géré par Adobe, est intégré au
+Le thème Ultramarine, accessible au public et géré par Adobe, est intégré dans
 `we-gov-forms.pkg.all-<version>.zip` fichier ZIP installable. Ce package est installé à l’aide de CRX.
 
 Les utilisateurs du gestionnaire de packages peuvent accéder au thème Ultramarine dans AEM Forms en accédant à **Forms** > **Thèmes** > **Thèmes de référence** > **Accessible à Ultramarine**.

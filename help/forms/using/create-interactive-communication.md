@@ -10,7 +10,7 @@ role: User, Developer
 exl-id: 6d24ce27-4653-4a70-97d0-e4299eceb32c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6129'
+source-wordcount: '6132'
 ht-degree: 99%
 
 ---
@@ -32,12 +32,12 @@ Les conditions préalables à la création d’une communication interactive son
 
 ## Créer une communication interactive {#createic}
 
-1. Connectez-vous à l’instance d’auteur AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
+1. Connectez-vous à l’instance de création AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 1. Sélectionnez **[!UICONTROL Créer]** et sélectionnez **[!UICONTROL Communication interactive]**. La page Créer une communication interactive s’affiche.
 
    ![create-interactive-communication](assets/create-interactive-communication.png)
 
-1. Saisissez les informations ci-après.  :
+1. Saisissez les informations ci-après. :
 
    * **[!UICONTROL Titre]** : entrez le titre de la communication interactive.
    * **[!UICONTROL Nom]** : le nom de la communication interactive est dérivé du titre que vous avez entré. Modifiez-le, si nécessaire.
@@ -53,7 +53,7 @@ Les conditions préalables à la création d’une communication interactive son
    * **[!UICONTROL Date de publication :]** entrez la date de publication de la communication interactive.
    * **[!UICONTROL Date de dépublication]** : entrez la date de dépublication de la communication interactive.
 
-1. Sélectionnez **[!UICONTROL Suivant]**. L’écran de spécification des informations relatives aux canaux web et d’impression s’affiche.
+1. Sélectionnez **[!UICONTROL Suivant]**. L’écran de spécification des informations relatives aux canaux d’impression et web s’affiche.
 1. Entrez la commande suivante :
 
    * **[!UICONTROL Imprimer]** : sélectionnez cette option pour générer le canal d’impression de la communication interactive.
@@ -62,8 +62,8 @@ Les conditions préalables à la création d’une communication interactive son
    * **[!UICONTROL Modèle web de communication interactive]** : recherchez et sélectionnez le modèle web.
    * **[!UICONTROL Thème]** et **[!UICONTROL Sélectionner un thème]** : recherchez et sélectionnez le thème pour définir le style de canal web de la communication interactive. Pour plus d’informations, voir [Thèmes dans AEM Forms](/help/forms/using/themes.md).
 
-   * **[!UICONTROL Utiliser l’impression en tant que page principale pour le canal web]** : sélectionnez cette option pour créer le canal web en synchronisation avec le canal d’impression. L’utilisation du canal d’impression comme page principale du canal web garantit que le contenu et la liaison des données du canal web sont dérivés du canal d’impression et que les modifications apportées au canal d’impression sont répercutées sur le canal web lorsque vous appuyez sur Synchroniser. Les auteurs sont toutefois autorisés à interrompre l’héritage pour des composants spécifiques dans le canal web, selon les besoins. Pour plus d’informations, consultez [Synchroniser le canal web avec le canal d’impression](../../forms/using/create-interactive-communication.md#synchronize).
-Si vous sélectionnez l’option **[!UICONTROL Utiliser l’impression comme Principal pour le canal web]**, vous pouvez sélectionner l’un des modes suivants pour générer le canal web :
+   * **[!UICONTROL Utiliser l’impression en tant que Principal pour le canal web]** : sélectionnez cette option pour créer le canal web en synchronisation avec le canal d’impression. L’utilisation du canal d’impression en tant que page principale pour le canal web garantit que le contenu et la liaison de données du canal web sont dérivés du canal d’impression et que les modifications apportées au canal d’impression sont répercutées sur le canal web lorsque vous sélectionnez Synchroniser. Les auteurs sont toutefois autorisés à interrompre l’héritage pour des composants spécifiques dans le canal web, selon les besoins. Pour plus d’informations, voir [Synchroniser le canal web avec le canal d’impression](../../forms/using/create-interactive-communication.md#synchronize).
+Si vous sélectionnez l’option **[!UICONTROL Utiliser l’impression en tant que Principal pour le canal web]**, vous pouvez sélectionner l’un des modes suivants pour générer le canal web :
 
       * **[!UICONTROL Disposition automatique]** : sélectionnez ce mode pour générer automatiquement des espaces réservés, du contenu et des liaisons de données pour le canal web à partir du canal d’impression.
       * **[!UICONTROL Organisation manuelle]** : sélectionnez ce mode pour sélectionner manuellement et ajouter des éléments du canal d’impression au canal web à l’aide du contenu principal disponible dans l’onglet **[!UICONTROL Sources de données]**. Pour plus d’informations, voir [Sélectionner les éléments du canal d’impression pour créer le contenu du canal web](#selectprintchannelelements).
@@ -86,7 +86,7 @@ Pour en savoir plus sur l’interface de création de la communication interacti
 
    | **Composant** | **Fonctionnalité** |
    |---|---|
-   | Graphique | Ajoute un graphique que vous pouvez utiliser dans une communication interactive pour la représentation visuelle des données bidimensionnelles extraites d’une collection de modèles de données de formulaire. Pour en savoir plus, consultez la rubrique [Utiliser des graphiques dans les communications interactives](/help/forms/using/chart-component-interactive-communications.md). |
+   | Graphique | Ajoute un graphique que vous pouvez utiliser dans une communication interactive pour la représentation visuelle des données bidimensionnelles récupérées d’une collection de modèles de données de formulaire. Pour en savoir plus, consultez la rubrique [Utiliser des graphiques dans les communications interactives](/help/forms/using/chart-component-interactive-communications.md). |
    | Fragment de document | Vous permet d’ajouter un composant réutilisable, comme du texte, une liste ou une condition, à une communication interactive. Le composant ajouté peut être basé sur un modèle de données de formulaire ou sans modèle de données de formulaire. |
    | Image | Permet d’insérer une image. |
 
@@ -191,7 +191,7 @@ Sélectionnez le fragment de document, puis ![configure_icon](assets/configure_i
 
    | Composants | Fonctionnalité |
    |---|---|
-   | Graphique | Ajoute un graphique que vous pouvez utiliser dans une communication interactive pour la représentation visuelle des données bidimensionnelles extraites d’une collection de modèles de données de formulaire. Pour en savoir plus, voir [Utiliser le composant de graphique](../../forms/using/chart-component-interactive-communications.md). |
+   | Graphique | Ajoute un graphique que vous pouvez utiliser dans une communication interactive pour la représentation visuelle des données bidimensionnelles récupérées d’une collection de modèles de données de formulaire. Pour en savoir plus, voir [Utiliser le composant de graphique](../../forms/using/chart-component-interactive-communications.md). |
    | Fragment de document | Vous permet d’ajouter un composant réutilisable, du texte, une liste ou une condition à une communication interactive. Le composant réutilisable que vous ajoutez à une communication interactive peut être basé sur modèle de données de formulaire ou sans modèle de données de formulaire. |
    | Image | Permet d’insérer une image. |
    | Panneau | Permet d’ajouter un [Panneau](../../forms/using/create-interactive-communication.md#add-panel-component-to-the-web-channel) à la communication interactive. |
@@ -414,7 +414,7 @@ Vous pouvez créer un tableau dynamique de canal web uniquement dans une communi
 
 #### Tri des colonnes d’un tableau {#sortcolumns}
 
-Vous pouvez trier les données en fonction de n’importe quelle colonne d’un tableau du formulaire adaptatif. Les valeurs de la colonne peuvent être triées par ordre croissant ou décroissant.
+Vous pouvez trier les données en fonction de n’importe quelle colonne d’un tableau de la communication interactive Les valeurs de la colonne peuvent être triées par ordre croissant ou décroissant.
 
 Le tri peut être appliqué aux colonnes du tableau contenant :
 
@@ -455,7 +455,7 @@ Utilisez la page **Propriétés** pour :
 
 Pour accéder à la page **Propriétés** :
 
-1. Connectez-vous à l’instance d’auteur AEM et accédez à **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
+1. Connectez-vous à l’instance de création AEM et accédez à **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
 1. Sélectionnez la communication interactive, puis **Propriétés**.
 1. Sélectionnez l’onglet **Général** pour modifier les champs **Titre** et **Description**.
 

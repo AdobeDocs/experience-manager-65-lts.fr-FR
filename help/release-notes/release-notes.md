@@ -7,7 +7,7 @@ role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: c87fd907f2e9b91cc7013be5c12c867fb71dbbe1
 workflow-type: tm+mt
-source-wordcount: '7679'
+source-wordcount: '7660'
 ht-degree: 97%
 
 ---
@@ -155,7 +155,7 @@ La prise en charge des événements découplés ne comportait pas les événemen
 
 * L’éditeur de texte enrichi du fragment de contenu présentait des problèmes de disposition et visuels après de récentes modifications de style de l’interface d’utilisation. Le pack de services 2 affine le style de l’éditeur de texte enrichi afin que la barre d’outils et la zone modifiable s’affichent correctement et restent lisibles. L’éditeur de fragment de contenu s’aligne désormais sur l’aspect et le comportement de l’éditeur de page. (SITES-38684)
 * La suppression des portées IMS du sélecteur de ressources Polaris interrompait l’intégration du fragment de contenu au point d’entrée de diffusion. Les créateurs et créatrices rencontraient des échecs lors de l’ouverture du sélecteur de ressources distant et de la sélection de ressources. La mise à jour ajoute à nouveau les portées IMS nécessaires et restaure un accès stable au niveau de la diffusion. (SITES-35837)
-* Le panneau Contenu associé n’affiche plus d’espace réservé codé en dur « non défini ». L’éditeur de fragment de contenu résout désormais ce texte par le biais de ressources de localisation, afin que les éditeurs et éditrices voient le texte traduit de l’interface d’utilisation. (SITES-33675)
+* Le panneau Contenu associé n’affiche plus d’espace réservé codé en dur « non défini ». L’éditeur de fragment de contenu résout désormais ce texte par le biais de ressources de localisation, afin que les éditeurs voient le texte traduit de l’interface utilisateur. (SITES-33675)
   <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
 * L’éditeur de fragment de contenu affiche désormais un libellé d’onglet Général traduit dans tous les paramètres régionaux. L’éditeur remplace le texte d’onglet non localisé et supprime les identifiants internes des titres d’onglet. (SITES-30715)
 * L’éditeur de fragment de contenu affiche désormais les noms traduits pour les types de ressources autorisés. La liste de sélecteur ne mélange plus les chaînes internes et les libellés en anglais uniquement lorsque les créateurs et créatrices configurent des restrictions de référence de contenu. (SITES-29699)
