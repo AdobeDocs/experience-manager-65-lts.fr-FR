@@ -53,7 +53,7 @@ La collecte des statistiques système qui renseignent Health Monitor a un impac
   <tr>
    <td><p>statistic-sample-rate</p></td>
    <td><p>Taux en millisecondes auquel les statistiques sont échantillonnées. Les statistiques du système d’exploitation ne sont mises à jour que lorsqu’un échantillon est prélevé.</p></td>
-   <td><p>600000</p></td>
+   <td><p>600 000</p></td>
   </tr>
   <tr>
    <td><p>adobe.workmanager.healthmonitor.enabled</p></td>

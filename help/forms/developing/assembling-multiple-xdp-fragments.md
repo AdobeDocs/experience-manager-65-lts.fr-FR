@@ -79,11 +79,11 @@ Pour chaque sous-formulaire, vous pouvez ajouter un élément `XDPContent` (cet 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Assembler, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Assembler, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 >[!NOTE]
 >
->Pour plus d’informations sur un document DDX, voir [service Assembler et référence DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Pour plus d’informations sur les documents DDX, consultez la section [Guide de référence du service Assembler et de DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Résumé des étapes {#summary-of-steps}
 
@@ -224,7 +224,7 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (se
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client Assembler PDF.
 
@@ -271,7 +271,7 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (se
 
    * Objet `BLOB` représentant le document DDX.
    * Objet `MyMapOf_xsd_string_To_xsd_anyType` contenant les fichiers requis.
-   * Un objet `AssemblerOptionSpec` qui spécifie les options d’exécution
+   * Un objet `AssemblerOptionSpec` qui spécifie les options d’exécution.
 
    La méthode `invokeDDX` renvoie un objet `AssemblerResult` contenant les résultats de la tâche et les exceptions survenues.
 

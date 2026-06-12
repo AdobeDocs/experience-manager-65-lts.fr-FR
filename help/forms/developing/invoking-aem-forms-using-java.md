@@ -71,7 +71,7 @@ Le tableau suivant énumère les fichiers JAR nécessaires pour appeler les serv
 <table>
  <thead>
   <tr>
-   <th><p>Fichier</p></th>
+   <th><p>File</p></th>
    <th><p>Description</p></th>
    <th><p>Emplacement</p></th>
   </tr>
@@ -80,7 +80,7 @@ Le tableau suivant énumère les fichiers JAR nécessaires pour appeler les serv
   <tr>
    <td><p>adobe-livecycle-client.jar</p></td>
    <td><p>Doit toujours être inclus dans le chemin de classe d’une application cliente Java.</p></td>
-   <td><p>&lt;<i>dossier d’installation</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>répertoire d’installation</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-usermanager-client.jar</p></td>
@@ -100,37 +100,37 @@ Le tableau suivant énumère les fichiers JAR nécessaires pour appeler les serv
   <tr>
    <td><p>adobe-assembler-client.jar</p></td>
    <td><p>Requis pour appeler le service Assembler. </p></td>
-   <td><p>&lt;<i>dossier d’installation</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>répertoire d’installation</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-backup-restore-client-sdk.jar</p></td>
    <td><p>Requis pour appeler l’API du service de sauvegarde et de restauration.</p></td>
-   <td><p>&lt;<i>dossier d’installation</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>répertoire d’installation</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-barcodedforms-client.jar</p></td>
    <td><p>Requis pour appeler le service Barcoded Forms. </p></td>
-   <td><p>&lt;<i>dossier d’installation</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>répertoire d’insallation</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-convertpdf-client.jar</p></td>
    <td><p>Requis pour appeler le service Convert PDF. </p></td>
-   <td><p>&lt;<i>dossier d’installation</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>répertoire d’installation</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-distiller-client.jar</p></td>
    <td><p>Requis pour appeler le service Distiller.</p></td>
-   <td><p>&lt;<i>dossier d’installation</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>répertoire d’installation</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-docconverter-client.jar</p></td>
    <td><p>Requis pour appeler le service DocConverter.</p></td>
-   <td><p>&lt;<i>dossier d’installation</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>répertoire d’installation</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-contentservices-client.jar</p></td>
    <td><p>Requis pour appeler le service Document Management.</p></td>
-   <td><p>&lt;<i>dossier d’installation</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>répertoire d’installation</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-encryption-client.jar</p></td>
@@ -222,7 +222,7 @@ Le tableau suivant répertorie les fichiers JAR qui dépendent du mode de connex
 <table>
  <thead>
   <tr>
-   <th><p>Fichier</p> </th>
+   <th><p>File</p> </th>
    <th><p>Description</p> </th>
    <th><p>Emplacement</p> </th>
   </tr>
@@ -333,7 +333,7 @@ Le tableau suivant indique les scénarios d’appel et répertorie les fichiers�
   <tr>
    <td><p>Service Forms</p> </td>
    <td><p>SOAP</p> </td>
-   <td><p>WebLogic</p> </td>
+   <td><p>WebLo gic</p> </td>
    <td>
     <ul>
      <li><p>adobe-livecycle-client.jar</p> </li>
@@ -362,7 +362,7 @@ Le tableau suivant indique les scénarios d’appel et répertorie les fichiers�
   <tr>
    <td><p>Service Forms</p> <p>Service d’extensions Acrobat Reader DC</p> <p>Service Signature</p> </td>
    <td><p>SOAP</p> </td>
-   <td><p>WebLogic</p> </td>
+   <td><p>WebLo gic</p> </td>
    <td>
     <ul>
      <li><p>adobe-livecycle-client.jar</p> </li>
