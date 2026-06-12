@@ -11,8 +11,8 @@ role: Admin
 exl-id: 68a4d4b2-91a3-4545-a491-2a1ec08ceec5
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2072'
-ht-degree: 100%
+source-wordcount: '2078'
+ht-degree: 94%
 
 ---
 
@@ -201,7 +201,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
      <li>Nom de la propriété*</li>
      <li>Sélection simple</li>
      <li>Chemin d’accès aux options</li>
-     <li>sa description ;</li>
+     <li>Description</li>
     </ul> </td>
   </tr>
   <tr>
@@ -228,7 +228,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Chemin  </td>
+   <td>Chemin </td>
    <td>Recherche de ressources situées sous un chemin d’accès spécifique.</td>
    <td>
     <ul>
@@ -331,11 +331,11 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
 
 >[!NOTE]
 >
->* Les prédicats de recherche courants sont définis dans :
->  >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>* Les prédicats de recherche courants sont définis dans :
+>  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->* Les prédicats de recherche liés uniquement à siteadmin (IU classique) se trouvent sous :
->  >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
+>* Les prédicats de recherche liés uniquement à siteadmin (interface utilisateur classique) se trouvent sous :
+>  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * Ils sont obsolètes et disponibles uniquement à des fins de rétrocompatibilité.
 >
 >Ces informations sont proposées à titre de référence uniquement. Ne modifiez pas `/libs`.
@@ -384,16 +384,16 @@ En fonction du prédicat, une sélection de paramètres est disponible pour la c
 
   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Chemin d’accès au nœud d’options**
-Globalement identique à **Chemin d’accès aux options**, à la différence qu’il se trouve dans le champ de prédicat commun, tandis que l’autre est spécifique aux ressources.
+* Chemin du nœud **Options**
+En fait, comme pour le **Chemin d’accès aux options**, seul ce chemin d’accès se trouve dans le champ de prédicat commun, l’autre est spécifique aux ressources.
 
-* **Sélection simple**
-Si cette case est cochée, les options sont présentées sous forme de cases à cocher qui ne permettent qu’une sélection simple. Si cette option est sélectionnée par erreur, vous pouvez désélectionner la case à cocher correspondante.
+* **Sélection unique**
+Si cette option est cochée, les options sont rendues sous forme de cases à cocher qui n’autorisent qu’une seule sélection. Si cette option est sélectionnée par erreur, vous pouvez désélectionner la case à cocher correspondante.
 
-* **Noms des propriétés Publication et de Live Copy**
-Libellés des cases à cocher Publication et Live Copy pour le prédicat spécifique aux sites.
+* **Noms des propriétés de publication et de Live Copy**
+Les libellés des cases à cocher de publication et de Live Copy pour le prédicat spécifique à Sites.
 
-* L’astérisque (&amp;ast;) figurant dans les libellés de champ de l’onglet **Paramètres** désigne les champs obligatoires, pour lesquels un message d’erreur s’affiche s’ils ne sont pas renseignés.
+* L’&amp;ast; figurant dans les libellés de champ de l’onglet **Paramètres** signifie que les champs sont obligatoires et qu’un message d’erreur s’affiche s’ils ne sont pas renseignés.
 
 ## Configuration des formulaires de recherche {#configuring-your-search-forms}
 
@@ -552,7 +552,7 @@ Le tableau ci-dessous répertorie les autorisations nécessaires à la modificat
   </tr>
   <tr>
    <td>Aperçu</td>
-   <td>Autorisations de lecture, d’écriture et de suppression sur le nœud <code>/var/dam/content</code>.<br /> Autorisations de lecture et d’écriture sur le nœud <code>/apps</code>.</td>
+   <td>Autorisations en lecture, écriture et suppression sur le nœud <code>/var/dam/content</code>.<br /> Autorisations en lecture et écriture sur le nœud <code>/apps</code>.</td>
   </tr>
  </tbody>
 </table>

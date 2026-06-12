@@ -12,8 +12,8 @@ role: Developer
 exl-id: b60b198e-1683-4970-b9b4-f1d0178e00e1
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2117'
-ht-degree: 100%
+source-wordcount: '2207'
+ht-degree: 97%
 
 ---
 
@@ -108,7 +108,7 @@ Ceux-ci répondent aux exigences suivantes :
 GraniteUI.pdf
 
 [Obtenir le fichier](assets/graniteui.pdf)
-L’IU Granite :
+L’IU Granite :
 
 * Utilise l’architecture RESTful de Sling.
 * Implémente des bibliothèques de composants destinées à la création d’applications web centrées sur le contenu.
@@ -120,7 +120,7 @@ L’IU Granite :
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-* [Composants de base de l’IU Granite](#granite-ui-foundation-components)
+* [Composants de base de l’IU Granite](#granite-ui-foundation-components)
 Cette bibliothèque de composants de base peut être utilisée ou étendue par d’autres bibliothèques.
 * [Composants d’administration de l’IU Granite](#granite-ui-administration-components)
 
@@ -145,7 +145,7 @@ Actuellement, les codes JS et CSS sont fournis sous forme de [bibliothèques cli
 
 `granite.ui.foundation and granite.ui.foundation.admin`
 
-Elles sont distribuées dans le cadre du package de contenu :
+Elles sont distribuées dans le cadre du module de contenu :
 
 `granite.ui.content`
 
@@ -157,7 +157,7 @@ Actuellement, les composants se trouvent dans le référentiel Granite à l’ad
 
 `/libs/granite/ui/components/foundation`
 
-Il est distribué dans le cadre du package de contenu :
+Il est distribué dans le cadre du module de contenu :
 
 `granite.ui.content`
 
@@ -274,7 +274,7 @@ Mise en œuvre :
 CoralUI.pdf
 
 [Obtenir le fichier](assets/coralui.pdf)
-L’interface utilisateur Coral (CUI) est une implémentation du style visuel d’Adobe pour l’interface utilisateur tactile. Elle a été conçue par Adobe pour garantir une expérience client homogène entre plusieurs produits. L’IU Coral fournit tout ce dont vous avez besoin pour adopter le style visuel utilisé dans l’environnement de création.
+L’interface utilisateur (IU) Coral est une implémentation du style visuel Adobe pour l’interface utilisateur tactile. Elle est conçue pour garantir une expérience utilisateur homogène entre plusieurs produits. L’IU Coral fournit tout ce dont vous avez besoin pour adopter le style visuel utilisé dans l’environnement de création.
 
 >[!CAUTION]
 >

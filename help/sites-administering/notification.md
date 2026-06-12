@@ -11,8 +11,8 @@ role: Admin
 exl-id: 3ef72c05-1301-402e-94ce-49fbaf26fb98
 source-git-commit: aff6c41e13293a1c83eca226354f5c16cff18d99
 workflow-type: tm+mt
-source-wordcount: '2147'
-ht-degree: 99%
+source-wordcount: '2175'
+ht-degree: 98%
 
 ---
 
@@ -70,7 +70,7 @@ Pour configurer l’adresse électronique De, ajoutez un nœud `sling:OsgiConfig
 
 1. Cliquez sur **Enregistrer tout**.
 
-Procédez comme suit pour définir le nœud dans les dossiers source de votre package de contenu :
+Procédez comme suit pour définir le nœud dans les dossiers sources de votre module de contenu :
 
 1. Dans votre `jcr_root/apps/*app_name*/config folder`, créez un fichier nommé `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`.
 
@@ -206,7 +206,7 @@ subject=<text_1>
 >
 >Vous trouverez plus d’informations sur le format des modèles dans les [javadocs de la méthode Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-).
 
-La méthode `${payload.path.open}` révèle le chemin d’accès au payload de l’élément de travail. Par exemple, pour une page dans Sites, `payload.path.open` serait similaire à `/bin/wcmcommand?cmd=open&path=…`.Sans le nom de serveur, raison pour laquelle le modèle fait précéder ceci de `${host.prefix}`.
+La méthode `${payload.path.open}` révèle le chemin d’accès au payload de l’élément de travail. Par exemple, pour une page dans Sites, `payload.path.open` serait similaire à `/bin/wcmcommand?cmd=open&path=…`. Sans le nom de serveur, c’est pourquoi le modèle fait précéder ceci de `${host.prefix}`.
 
 Les variables suivantes peuvent être utilisées dans le modèle d’e-mail :
 
@@ -271,7 +271,7 @@ Vous pouvez configurer OAuth pour plusieurs fournisseurs de messagerie, comme in
 
 >[!NOTE]
 >
->Cette procédure est un exemple pour une instance de publication. Si vous souhaitez activer les notifications par e-mail sur une instance d’auteur, vous devez suivre les mêmes étapes sur l’instance d’auteur.
+>Cette procédure est un exemple pour une instance de publication. Si vous souhaitez activer les notifications par e-mail sur une instance de création, vous devez suivre les mêmes étapes sur l’instance de création.
 
 ### Gmail {#gmail}
 
@@ -289,7 +289,7 @@ Vous pouvez configurer OAuth pour plusieurs fournisseurs de messagerie, comme in
 
 >[!NOTE]
 >
->Les clients d’Adobe Managed Services peuvent collaborer avec leur équipe d’ingénierie de service client pour apporter ces modifications aux environnements d’exploitation.
+>Les clientes et clients d’Adobe Managed Services peuvent collaborer avec leur équipe d’ingénierie du service client pour apporter ces modifications aux environnements de production.
 
 Tout d’abord, configurez le service de messagerie :
 
