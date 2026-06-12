@@ -106,7 +106,7 @@ Le tableau suivant répertorie les définitions WSDL de service (en supposant qu
    <td><p><code>http://localhost:8080/soap/services/FormDataIntegration?wsdl</code></p></td>
   </tr>
   <tr>
-   <td><p>Générer des PDF</p></td>
+   <td><p>Generate PDF</p></td>
    <td><p><code>http://localhost:8080/soap/services/ GeneratePDFService?wsdl</code></p></td>
   </tr>
   <tr>
@@ -669,7 +669,7 @@ Vous pouvez appeler un service AEM Forms à l’aide des classes proxy Java et 
 
    >[!NOTE]
    >
-   >Remplacez `hiro-xp` *par l’adresse IP du serveur d’applications J2EE hébergeant AEM Forms*.
+   >Remplacez `hiro-xp` *par l’adresse IP du serveur d’applications J2EE hébergeant AEM Forms.*
 
 1. Regroupez les classes proxy Java créées à l’aide de JAX-WS dans un fichier JAR.
 1. Incluez le fichier JAR du proxy Java et les fichiers JAR situés dans le chemin d’accès suivant :
@@ -686,7 +686,7 @@ Vous pouvez appeler un service AEM Forms à l’aide des classes proxy Java et 
 
      `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64`
 
-   * Attribuez lʼutilisateur ou utilisatrice d’AEM Forms au champ `USERNAME_PROPERTY` de lʼobjet `javax.xml.ws.BindingProvider`.
+   * Affectez l’utilisateur ou l’utilisatrice d’AEM Forms au champ `USERNAME_PROPERTY` de l’objet `javax.xml.ws.BindingProvider`.
    * Affectez la valeur de mot de passe correspondante au champ `PASSWORD_PROPERTY` de l’objet `javax.xml.ws.BindingProvider`.
 
    L’exemple de code suivant illustre cette logique d’application :
@@ -1004,7 +1004,7 @@ Vous pouvez appeler un service AEM Forms à l’aide de classes proxy Java et de
 
      `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http`
 
-   * Attribuez lʼutilisateur ou utilisatrice d’AEM Forms au champ `USERNAME_PROPERTY` de lʼobjet `javax.xml.ws.BindingProvider`.
+   * Attribuez l’utilisateur ou l’utilisatrice d’AEM Forms au champ `USERNAME_PROPERTY` de l’objet `javax.xml.ws.BindingProvider`.
    * Affectez la valeur de mot de passe correspondante au champ `PASSWORD_PROPERTY` de l’objet `javax.xml.ws.BindingProvider`.
 
    L’exemple de code suivant illustre cette logique d’application :

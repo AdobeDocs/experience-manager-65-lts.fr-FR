@@ -11,14 +11,14 @@ role: Admin, User, Developer
 exl-id: 197f0c6e-8319-453c-b082-183de1b7ba2e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2190'
 ht-degree: 100%
 
 ---
 
 # Conception de la mise en page{#layout-design}
 
-Les modèles de formulaire XFA ou XDP sont des modèles pour :
+Les modèles de formulaires XFA ou XDP sont des modèles pour :
 
 * [Lettres](/help/forms/using/create-letter.md)
 * [Canal d’impression](/help/forms/using/web-channel-print-channel.md#printchannel) des [communications interactives](/help/forms/using/interactive-communications-overview.md)
