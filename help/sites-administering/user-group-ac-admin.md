@@ -11,7 +11,7 @@ role: Admin
 exl-id: a1f4823f-4861-4e99-88cd-4a686abe3f64
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3073'
+source-wordcount: '3107'
 ht-degree: 100%
 
 ---
@@ -77,7 +77,7 @@ CRX utilise deux concepts clés lors de l’évaluation des droits d’accès :
 
 * Un **objet** est utilisé pour représenter la source de la demande.
 
-   Il est utilisé pour centraliser les droits d’accès applicables pour cette demande. Ceux-ci proviennent de :
+  Il est utilisé pour centraliser les droits d’accès applicables pour cette demande. Ceux-ci proviennent de :
 
    * le principal de sécurité de l’utilisateur ;
 
@@ -449,7 +449,7 @@ Les politiques sont classées en fonction des éléments suivants :
 
   Ces politiques peuvent être appliquées.
 
-   Ce sont les politiques disponibles pour créer une politique locale. Une fois que vous avez sélectionné et ajouté une politique applicable, elle devient une politique locale.
+  Ce sont les politiques disponibles pour créer une politique locale. Une fois que vous avez sélectionné et ajouté une politique applicable, elle devient une politique locale.
 
 * **Politiques de contrôle d’accès locales**
 

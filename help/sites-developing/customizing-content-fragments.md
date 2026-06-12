@@ -10,8 +10,8 @@ role: Developer
 exl-id: 705bffea-ef70-40b5-81d8-b130d3908073
 source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
-source-wordcount: '2687'
-ht-degree: 99%
+source-wordcount: '2826'
+ht-degree: 93%
 
 ---
 
@@ -84,14 +84,14 @@ Les fragments de contenu avec du contenu structuré (c’est-à-dire basé sur u
    * Les données d’éléments sont stockées sous le sous-nœud maître :
      `jcr:content/data/master`
 
-   * Les variations sont stockées sous un sous-nœud portant le nom de la variation :
-par exemple, `jcr:content/data/myvariation`.
+   * Les variations sont stockées sous un sous-nœud portant le nom de la variation :
+par exemple, `jcr:content/data/myvariation`
 
-   * Les données de chaque élément sont stockées dans le sous-nœud respectif en tant que propriété avec le nom d’élément :
-par exemple, le contenu de l’élément `text` est stocké en tant que propriété `text` sur `jcr:content/data/master`.
+   * Les données de chaque élément sont stockées dans le sous-nœud respectif en tant que propriété avec le nom d’élément :
+par exemple, le contenu de l’élément `text` est stocké en tant que propriété `text` sur `jcr:content/data/master`
 
-* Les métadonnées et le contenu associé sont stockés sous `jcr:content/metadata`
-Hormis le titre et la description, qui ne sont pas considérés comme des métadonnées traditionnelles et sont stockés sur `jcr:content`.
+* Les métadonnées et le contenu associé sont stockés ci-dessous `jcr:content/metadata`
+À l’exception du titre et de la description, qui ne sont pas considérés comme des métadonnées traditionnelles et sont stockés sur `jcr:content`
 
 #### Mappage des fragments de contenu simples à Assets {#mapping-simple-content-fragments-to-assets}
 
@@ -129,9 +129,9 @@ Pour plus d’informations, voir [Fragments de contenu – considérations sur
 
 >[!CAUTION]
 >
->Le [composant de base Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr) est désormais recommandé. Consultez la section [Développement des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=fr) pour plus d’informations.
+>Le [composant principal Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr) est désormais recommandé. Consultez la section [Développement des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=fr) pour plus d’informations.
 
-Les fragments de contenu peuvent être référencés à partir des pages AEM, comme tout autre type de ressource. AEM fournit le composant de base de [**&#x200B;** fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr) [qui permet d’inclure des fragments de contenu sur vos pages](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Vous pouvez également étendre ce composant principal **Fragment de contenu**.
+Les fragments de contenu peuvent être référencés à partir des pages AEM, comme tout autre type de ressource. AEM fournit le composant principal de [**&#x200B;** fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr) [qui permet d’inclure des fragments de contenu sur vos pages](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Vous pouvez également étendre ce composant principal **Fragment de contenu**.
 
 * Le composant utilise la propriété `fragmentPath` pour référencer le fragment de contenu. La propriété `fragmentPath` est traitée de la même façon que les propriétés similaires d’autres types de ressources, par exemple, lorsque le fragment de contenu est déplacé vers un autre emplacement.
 
@@ -162,7 +162,7 @@ L’implémentation principale des fragments de contenu est, par exemple, charg�
 Les paramètres correspondants peuvent être configurés dans la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) pour le lot OSGi **Configuration des composants de fragments de contenu**.
 
 * **Types de ressources**
-Une liste de `sling:resourceTypes` peut être fournie de façon à définir les composants qui sont utilisés pour le rendu des fragments de contenu et l’endroit où le traitement en arrière-plan doit être appliqué.
+Une liste de `sling:resourceTypes` peut être fournie pour définir les composants utilisés pour le rendu des fragments de contenu et l’endroit où le traitement en arrière-plan doit être appliqué.
 
 * **Propriétés de référence**
 Une liste de propriétés peut être configurée pour spécifier l’emplacement où la référence au fragment est stockée pour le composant correspondant.
@@ -392,7 +392,7 @@ Il convient de noter les éléments suivants :
 
    * La suppression de variations existantes ne met pas à jour la structure de données.
 
-## L’API de gestion des fragments de contenu – côté client  {#the-content-fragment-management-api-client-side}
+## API de gestion des fragments de contenu – côté client {#the-content-fragment-management-api-client-side}
 
 >[!CAUTION]
 >
@@ -404,7 +404,7 @@ Reportez-vous aux informations suivantes :
 
 * `filter.xml`
 
-  Le fichier `filter.xml` pour la gestion des fragments de contenu est configuré pour ne pas chevaucher le package de contenu de base d’Assets.
+  Le fichier `filter.xml` pour la gestion des fragments de contenu est configuré pour ne pas chevaucher le module de contenu de base d’Assets.
 
 ## Sessions de modification {#edit-sessions}
 
