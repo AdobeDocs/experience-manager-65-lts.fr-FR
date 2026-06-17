@@ -9,10 +9,10 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: 7cc40eba821828dfce4188b10c117739dd74dd61
+source-git-commit: 6795f085b5a4d1ac2836b6c6f2f4d09a5739e639
 workflow-type: tm+mt
-source-wordcount: '2860'
-ht-degree: 89%
+source-wordcount: '2893'
+ht-degree: 88%
 
 ---
 
@@ -223,6 +223,10 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
  </tbody>
 </table>
 
+>[!NOTE]
+>
+>WebSphere® Liberty Profile (WLP) est pris en charge uniquement avec Oracle Database et IBM® Sumeru JDK 21.
+
 ### Systèmes d’exploitation de serveur {#server-operating-systems}
 
 #### Environnements de production {#production-environments}
@@ -294,8 +298,9 @@ Tenez compte des exceptions suivantes lorsque vous choisissez la plateforme de c
 
 1. Le référentiel CRX prend en charge la persistance de type TarMK et MongoDB.
 1. AEM Forms on JEE ne prend pas en charge le contrôle d’accès basé sur les rôles (RBAC) JBoss®.
+1. AEM Forms on JEE prend en charge WebSphere® Liberty Profile (WLP) uniquement avec Oracle Database et IBM® Sumeru JDK 21.
 
-<!-- 
+<!--
 1. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312) 
 -->
 
@@ -303,7 +308,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
 
 - AEM Forms sur JEE prend en charge les mises à jour et les packs de correctifs en plus des versions majeures et mineures spécifiées des logiciels pris en charge. Toutefois, la mise à jour à la version majeure ou mineure suivante n’est pas prise en charge sauf indication contraire.
 - Les installations en cluster ne prennent pas en charge la persistance de TarMK. Pour plus d’informations sur la persistance prise en charge, voir [Choix d’un type de persistance pour une installation AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
-- AEM Forms on JEE prend en charge divers logiciels tiers, conformément à la [Politique de prise en charge des logiciels tiers](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p) d’Adobe.
+- AEM Forms on JEE prend en charge divers logiciels tiers, conformément à la [Politique de prise en charge des logiciels tiers](#third-party-patch-support-policy-third-party-patch-support-policy) d’Adobe.
 - AEM Forms on JEE prend en charge des plateformes en fonction de la prise en charge offerte par les fournisseurs tiers. Certaines combinaisons peuvent ne pas être autorisées par les fournisseurs tiers. Par exemple, de nombreux fournisseurs n’ont pas certifié leurs serveurs d’applications avec Oracle. Par conséquent, AEM Forms on JEE ne prend pas non plus en charge ces combinaisons. Pour vous assurer de choisir les versions prises en charge des logiciels, vérifiez également le tableau de prise en charge des fournisseurs tiers.
 - AEM Forms on JEE ne prend pas en charge TarMK Cold Standby.
 - AEM Forms on JEE ne prend pas en charge la mise en cluster verticale.
@@ -466,7 +471,7 @@ Les sous-systèmes suivants d’AEM Forms ne sont pas conformes à la section [
 
 >[!NOTE]
 >
->Pour plus d’informations sur la configuration requise, consultez [&#x200B; Configuration requise pour le déploiement sur serveur unique d’AEM Forms on JEE](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf)
+>Pour plus d’informations sur la configuration requise, consultez [ Configuration requise pour le déploiement sur serveur unique d’AEM Forms on JEE](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf)
 
 ### Adobe Acrobat et Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -637,7 +642,7 @@ AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs
 
 ## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
-La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation d’[AEM Forms 65 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/forms/getting-started/introduction-aem-forms) .
+La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation d’[AEM Forms 65 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/getting-started/introduction-aem-forms) .
 
 Les plateformes de référence de fournisseurs tiers d’AEM Forms on JEE indiquent le niveau de correctif de l’infrastructure de fournisseur tiers en cours au moment du développement et de la publication d’AEM Forms on JEE, et forment le niveau minimum de correctif/pack de services de l’infrastructure prise en charge par cette version d’AEM Forms on JEE.
 
@@ -651,7 +656,7 @@ Adobe se réserve le droit de modifier à tout moment les plateformes de fournis
 
 Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en recherchant sur le site de support aux entreprises d’Adobe les articles de la base de connaissances relatifs à votre produit.
 
-Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[&#128279;](https://business.adobe.com/in/support/main.html)
+Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[](https://business.adobe.com/in/support/main.html)
 
 <!--
 
@@ -667,7 +672,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -750,7 +755,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -819,7 +824,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/fr/support/programs/eol-matrix.html)|
+| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html)|
 |  | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)| |
 |  | | Microsoft&reg; Windows Server 2016 (64-bit)|
 |  | | Microsoft&reg; Office 2016 |
