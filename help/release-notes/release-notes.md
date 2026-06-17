@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: a24394ffd8d54faf9f16245e359d91c0cfbb04e4
+source-git-commit: 6795f085b5a4d1ac2836b6c6f2f4d09a5739e639
 workflow-type: tm+mt
-source-wordcount: '7696'
+source-wordcount: '7708'
 ht-degree: 96%
 
 ---
@@ -49,7 +49,7 @@ AEM 6.5 LTS SP2 comprend désormais des API OpenAPI pour [la gestion de modè
 
 * Nouvelle prise en charge de RDBMK avec JBoss® EAP 8.0.
 
-* Ajout de la prise en charge de WebSphere® Liberty Profile (WLP).
+* Ajout de la prise en charge de WebSphere® Liberty Profile (WLP). WLP est pris en charge uniquement avec Oracle Database et IBM® Sumeru JDK 21.
 
 * Amélioration de l’expérience d’utilisation dans l’éditeur visuel de règles. Cette mise à jour inclut les fonctionnalités suivantes :
 

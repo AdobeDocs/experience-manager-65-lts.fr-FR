@@ -9,10 +9,10 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: 7cc40eba821828dfce4188b10c117739dd74dd61
+source-git-commit: 6795f085b5a4d1ac2836b6c6f2f4d09a5739e639
 workflow-type: tm+mt
-source-wordcount: '2860'
-ht-degree: 89%
+source-wordcount: '2893'
+ht-degree: 88%
 
 ---
 
@@ -223,6 +223,10 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
  </tbody>
 </table>
 
+>[!NOTE]
+>
+>WebSphere® Liberty Profile (WLP) est pris en charge uniquement avec Oracle Database et IBM® Sumeru JDK 21.
+
 ### Systèmes d’exploitation de serveur {#server-operating-systems}
 
 #### Environnements de production {#production-environments}
@@ -294,8 +298,9 @@ Tenez compte des exceptions suivantes lorsque vous choisissez la plateforme de c
 
 1. Le référentiel CRX prend en charge la persistance de type TarMK et MongoDB.
 1. AEM Forms on JEE ne prend pas en charge le contrôle d’accès basé sur les rôles (RBAC) JBoss®.
+1. AEM Forms on JEE prend en charge WebSphere® Liberty Profile (WLP) uniquement avec Oracle Database et IBM® Sumeru JDK 21.
 
-<!-- 
+<!--
 1. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312) 
 -->
 
@@ -303,7 +308,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
 
 - AEM Forms sur JEE prend en charge les mises à jour et les packs de correctifs en plus des versions majeures et mineures spécifiées des logiciels pris en charge. Toutefois, la mise à jour à la version majeure ou mineure suivante n’est pas prise en charge sauf indication contraire.
 - Les installations en cluster ne prennent pas en charge la persistance de TarMK. Pour plus d’informations sur la persistance prise en charge, voir [Choix d’un type de persistance pour une installation AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
-- AEM Forms on JEE prend en charge divers logiciels tiers, conformément à la [Politique de prise en charge des logiciels tiers](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p) d’Adobe.
+- AEM Forms on JEE prend en charge divers logiciels tiers, conformément à la [Politique de prise en charge des logiciels tiers](#third-party-patch-support-policy-third-party-patch-support-policy) d’Adobe.
 - AEM Forms on JEE prend en charge des plateformes en fonction de la prise en charge offerte par les fournisseurs tiers. Certaines combinaisons peuvent ne pas être autorisées par les fournisseurs tiers. Par exemple, de nombreux fournisseurs n’ont pas certifié leurs serveurs d’applications avec Oracle. Par conséquent, AEM Forms on JEE ne prend pas non plus en charge ces combinaisons. Pour vous assurer de choisir les versions prises en charge des logiciels, vérifiez également le tableau de prise en charge des fournisseurs tiers.
 - AEM Forms on JEE ne prend pas en charge TarMK Cold Standby.
 - AEM Forms on JEE ne prend pas en charge la mise en cluster verticale.
