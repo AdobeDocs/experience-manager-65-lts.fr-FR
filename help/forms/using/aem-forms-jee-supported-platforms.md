@@ -9,10 +9,10 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: a24394ffd8d54faf9f16245e359d91c0cfbb04e4
+source-git-commit: 7cc40eba821828dfce4188b10c117739dd74dd61
 workflow-type: tm+mt
-source-wordcount: '3167'
-ht-degree: 91%
+source-wordcount: '2860'
+ht-degree: 89%
 
 ---
 
@@ -27,24 +27,26 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 
 >[!NOTE]
 >
->- Pour une liste complète des exceptions concernant les plateformes de serveur prises en charge, consultez [Exceptions aux plateformes de serveur prises en charge](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >- AEM Forms on JEE ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
 
 ### Politique de mise à niveau et de prise en charge
 
 #### Programme d’installation complet
 
-- **Prise en charge de la mise à niveau pour les programmes d’installation complets** : un programme d’installation complet est publié avec un sixième pack de services AEM. Les mises à niveau complètes avec le programme d’installation sont prises en charge à partir d’AEM 6.5.23.0 uniquement.
+- **Prise en charge des mises à niveau pour les programmes d’installation complets** : les mises à niveau complètes sont prises en charge à partir d’AEM 6.5.23.0 uniquement.
 
 - **Obsolescence et suppression** : la prise en charge des plateformes est mise à jour avec chaque version du programme d’installation complet. Tout logiciel indiqué comme obsolète dans la matrice des plateformes dans une version de programme d’installation complet est autorisé à être supprimé de la matrice des plateformes prises en charge dans une version ultérieure du programme d’installation complet, ceci indiquant la fin de la prise en charge du logiciel.
 
-#### Packs de services
 
-- **Couverture des Packs de services** : Adobe fournit une assistance technique pour les environnements AEM Forms utilisant un des six derniers Packs de services. Si votre version actuelle est antérieure aux six derniers Packs de services, Adobe recommande vivement d’effectuer une mise à niveau vers la dernière version afin d’optimiser les performances, la sécurité et la continuité de la prise en charge.
+<!--
+#### Service Packs
 
-- **Instructions du programme d’installation de correctifs** : lors de l’utilisation des programmes d’installation de correctifs pour la mise à jour, il est essentiel de vérifier que l’ancienneté de la version du programme d’installation complet sous-jacent ne dépasse pas deux versions. Par exemple, lors de l’installation du pack de services 6.5.19.0, vérifiez que la version du programme d’installation complet sous-jacent est 6.5.18.0 ou 6.5.12.0.
+- **Service Pack Coverage**: Adobe provides technical support for AEM Forms environments using any of the latest six service packs. If your current version predates the last six service packs, Adobe strongly recommends upgrading to the latest version for optimal performance, security, and continuous support. 
 
-- **Prise en charge des mises à niveau avec des correctifs** : vous pouvez procéder aux mises à niveau vers le dernier Pack de services jusqu’à ce que vous effectuiez également la mise à niveau vers les plateformes prises en charge les plus récentes. Par exemple, la mise à niveau du pack de services 6.5.12.0 vers le version 6.5.19.0 est possible, à condition de passer à une combinaison de plateformes prise en charge dans la version 6.5.19.0.
+- **Patch Installer Guidelines**: While using the patch installers to update, it's crucial to verify that the underlying full installer version is not more than two releases old. For instance, during the installation of service pack 6.5.19.0, ensure the underlying full installer version is either 6.5.18.0 or 6.5.12.0. 
+
+- **Patch Upgrade Support**: You can keep upgrading to the latest service pack, until you are upgrading to the most recent supported platforms also. For example, upgrading from service pack 6.5.12.0 to 6.5.19.0 is possible, provided that you transition to a platform combination supported for 6.5.19.0.
+-->
 
 ### Configurations recommandées {#recommendedconfigurations}
 
@@ -82,8 +84,6 @@ Adobe recommande ces configurations et fournit une prise en charge totale ou res
 >
 >Pour aider les clients AEM Forms à réduire le coût de possession, à simplifier l’architecture de déploiement et à moderniser la pile de développement, la plateforme d’entreprise Adobe Experience Manager délaisse les déploiements sur serveur d’applications au profit de déploiements OSGi autonomes. Adobe continue à prendre en charge la pile AEM Forms JEE avec une matrice réduite de composants d’infrastructure.
 >Pour les nouvelles installations, il est recommandé, dans la mesure du possible, de déployer AEM Forms sur la pile OSGi moderne afin d’utiliser les dernières innovations en matière de Responsive Adaptive Forms pour les communications mobiles et interactives multicanaux, ainsi que les intégrations de données principales utilisant le modèle de données de formulaire.
->
->Adobe reconnaît que les utilisateurs et utilisatrices actuels doivent continuer à déployer la pile AEM Forms on JEE. Dans ce cas de figure, Adobe nécessite le déploiement d’AEM Forms JEE sur une infrastructure prise en charge, comme décrit dans cette documentation. Si vous effectuez une mise à niveau vers AEM 6.5 Forms et que vous utilisez une plateforme non prise en charge sur la version précédente d’AEM Forms, vous pouvez contacter l’assistance technique d’Adobe pour obtenir de l’aide sur la mise à niveau vers une plateforme prise en charge.
 
 ### Machines virtuelles Java™ (JVM) {#java-virtual-machines-jvm}
 
@@ -301,7 +301,7 @@ Tenez compte des exceptions suivantes lorsque vous choisissez la plateforme de c
 
 Tenez également compte des points suivants lors de votre choix de logiciels pour le déploiement d’Adobe AEM Forms on JEE :
 
-- AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs de correctifs en plus des versions majeures et mineures spécifiées du logiciel pris en charge. Toutefois, la mise à jour à la version majeure ou mineure suivante n’est pas prise en charge sauf indication contraire.
+- AEM Forms sur JEE prend en charge les mises à jour et les packs de correctifs en plus des versions majeures et mineures spécifiées des logiciels pris en charge. Toutefois, la mise à jour à la version majeure ou mineure suivante n’est pas prise en charge sauf indication contraire.
 - Les installations en cluster ne prennent pas en charge la persistance de TarMK. Pour plus d’informations sur la persistance prise en charge, voir [Choix d’un type de persistance pour une installation AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
 - AEM Forms on JEE prend en charge divers logiciels tiers, conformément à la [Politique de prise en charge des logiciels tiers](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p) d’Adobe.
 - AEM Forms on JEE prend en charge des plateformes en fonction de la prise en charge offerte par les fournisseurs tiers. Certaines combinaisons peuvent ne pas être autorisées par les fournisseurs tiers. Par exemple, de nombreux fournisseurs n’ont pas certifié leurs serveurs d’applications avec Oracle. Par conséquent, AEM Forms on JEE ne prend pas non plus en charge ces combinaisons. Pour vous assurer de choisir les versions prises en charge des logiciels, vérifiez également le tableau de prise en charge des fournisseurs tiers.
@@ -464,10 +464,9 @@ Les sous-systèmes suivants d’AEM Forms ne sont pas conformes à la section [
  </tbody>
 </table>
 
-Pour des conditions requises supplémentaires, voir :
-
-- [Configuration requise pour le déploiement sur serveur unique d’AEM Forms on JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_65_fr)
-- [Configuration requise pour le déploiement en grappe d’AEM Forms on JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65_fr)
+>[!NOTE]
+>
+>Pour plus d’informations sur la configuration requise, consultez [ Configuration requise pour le déploiement sur serveur unique d’AEM Forms on JEE](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf)
 
 ### Adobe Acrobat et Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -487,7 +486,7 @@ Pour des conditions requises supplémentaires, voir :
 
 >[!NOTE]
 >
->La famille de produits Acrobat DC présente deux suivis pour Acrobat et Reader qui sont des produits différents : « Classique » et « Continu ». Pour plus d’informations et une comparaison des deux suivis, voir [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
+>La famille de produits Acrobat DC présente deux suivis pour Acrobat et Reader qui sont des produits différents : « Classique » et « Continu ».
 
 ## Clients pris en charge pour AEM Forms on JEE {#supported-clients-for-aem-forms-on-jee}
 
@@ -580,7 +579,7 @@ Pour des conditions requises supplémentaires, voir :
 >Voici quelques exceptions liées au navigateur pour les ordinateurs de bureau :
 >
 >- Safari est pris en charge uniquement sous Macintosh OS X.
->- Workspace prend en charge Safari 5.1 sous Macintosh OS X 10.6 et 10.7 avec Acrobat DC ou versions ultérieures. Pour plus d’informations sur la compatibilité de Safari 5.1 avec Adobe Reader, Acrobat, voir [https://helpx.adobe.com/fr/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/fr/x-productkb/multi/safari-5-1-incompatible-reader.html).
+>- Workspace prend en charge Safari 5.1 sous Macintosh OS X 10.6 et 10.7 avec Acrobat DC ou versions ultérieures.
 >- Administration Console n’est pas prise en charge sur Safari.
 >- Correspondence Management ne prend pas en charge Windows® Internet Explorer 9.0 pour les formulaires AEM 6.1.
 >- Le portail Formulaires prend en charge le logiciel de lecteur d’écran JAWS 14.0 sur Internet Explorer 11 pour une meilleure accessibilité.
@@ -638,13 +637,13 @@ AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs
 
 ## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
-La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_fr).
+La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation d’[AEM Forms 65 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/getting-started/introduction-aem-forms) .
 
 Les plateformes de référence de fournisseurs tiers d’AEM Forms on JEE indiquent le niveau de correctif de l’infrastructure de fournisseur tiers en cours au moment du développement et de la publication d’AEM Forms on JEE, et forment le niveau minimum de correctif/pack de services de l’infrastructure prise en charge par cette version d’AEM Forms on JEE.
 
 Adobe prend en charge les correctifs urgents ou recommandés publiés par des fournisseurs tiers lors de leur publication, en supposant que les fournisseurs tiers garantissent une compatibilité ascendante avec les versions qu’AEM Forms on JEE prend en charge. Adobe ne prend en charge que les correctifs publiés après le niveau minimum de correctif indiqué dans la documentation d’AEM Forms on JEE.
 
-Dans certains cas, Adobe ne prend pas en charge les mises à jour de fournisseurs tiers qui modifient des fonctionnalités importantes, et ne permettent donc pas une compatibilité ascendante totale. Pour plus d’informations sur les mises à jour prises en charge, consultez la section [Définitions de correctif prises en charge](https://helpx.adobe.com/fr/aem-forms/aem-forms-third-party-software-patch.html) pour les produits de fournisseurs donnés et les types de correctifs qu’Adobe prend en charge.
+Dans certains cas, Adobe ne prend pas en charge les mises à jour de fournisseurs tiers qui modifient des fonctionnalités importantes, et ne permettent donc pas une compatibilité ascendante totale.
 
 Dans des circonstances échappant au contrôle d’Adobe, des correctifs tiers revendiquant une compatibilité ascendante peuvent avoir un impact négatif sur les produits ou les environnements clients Adobe. Dans ce cas, Adobe recommande aux clients et clientes d’évaluer l’impact de tout correctif urgent provenant d’un fournisseur tiers avant de l’appliquer aux systèmes critiques. Adobe collabore avec des tierces parties et engage des efforts commerciaux raisonnables pour résoudre ce genre de problèmes, soit par le biais de programmes d’assistance Adobe normaux, soit par l’intermédiaire de tiers qui rectifient le problème dans un correctif. Cela ne garantit pas qu’un correctif tiers récemment publié, pris en charge par Adobe, fonctionne tel que le documente le fournisseur ou avec AEM Forms on JEE.
 
@@ -652,7 +651,7 @@ Adobe se réserve le droit de modifier à tout moment les plateformes de fournis
 
 Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en recherchant sur le site de support aux entreprises d’Adobe les articles de la base de connaissances relatifs à votre produit.
 
-Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[&#128279;](https://business.adobe.com/in/support/main.html)
+Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[](https://business.adobe.com/in/support/main.html)
 
 <!--
 
@@ -668,7 +667,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -751,7 +750,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -820,7 +819,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/fr/support/programs/eol-matrix.html)|
+| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html)|
 |  | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)| |
 |  | | Microsoft&reg; Windows Server 2016 (64-bit)|
 |  | | Microsoft&reg; Office 2016 |
