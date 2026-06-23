@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation LTS de Adobe Experience Manager 6.5 pour en savoir plus sur son fonctionnement et sur ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5 LTS
-source-git-commit: c77ad85cf736ee660bfaa662d428a7f7e83a12ff
+source-git-commit: 176e5aabb810f9eee0aa2f8583422f149f016a2e
 workflow-type: tm+mt
-source-wordcount: '7695'
-ht-degree: 68%
+source-wordcount: '7709'
+ht-degree: 67%
 
 ---
 
@@ -220,7 +220,7 @@ ht-degree: 68%
          + [Intégration à Adobe Campaign](/help/sites-administering/campaign.md)
          + [Intégrer à ExactTarget](/help/sites-administering/exacttarget.md)
          + [Analytics avec des fournisseurs externes](/help/sites-administering/external-providers.md)
-         + [Intégration à Adobe Experience Cloud](/help/sites-administering/marketing-cloud.md)
+         + [Intégration avec Adobe Experience Cloud](/help/sites-administering/marketing-cloud.md)
          + [Configuration manuelle de l’intégration à Adobe Target](/help/sites-administering/target-configuring.md)
          + [Conditions préalables à l’intégration à Adobe Target](/help/sites-administering/target-requirements.md)
          + [Classifications Adobe](/help/sites-administering/adobeanalytics-classifications.md)
@@ -1096,6 +1096,7 @@ ht-degree: 68%
       + {hide-from-toc}[Le service PaperCapture ne parvient pas à effectuer de reconnaissance optique des caractères sur les PDF](/help/forms/using/papercapture-service-resolution.md)
       + [Échec de l’exécution du script sur AEM Forms 6.5 LTS avec JBoss EAP 8 (Linux)](/help/forms/using/script-execution-issues-on-aem-forms-65-lts-with-jboss-eap-8-linux.md)
       + [Impossible de démarrer le contrôleur de domaine JBoss](/help/forms/using/unable-to-start-jboss-domain-controller-due-to-duplicate-security-tag.md)
+      + [Réduire VULN-36128 et VULN-36120 pour AEM Forms on JEE 6.5 LTS SP2](/help/forms/using/mitigating-vulnerabilities-vuln-36128-vuln-36120-for-aem-forms-on-jee-65-lts-sp2.md)
    + Documentation héritée {#legacy-documentation}
       + {hide-from-toc}[Utilisation du service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](/help/forms/developing/building-xml.md)
       + {hide-from-toc}[Compression et décompression de fichiers à l’aide d’un DSC personnalisé AEM Forms on JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
@@ -1262,7 +1263,7 @@ ht-degree: 68%
             + Parcours d’architecte de contenu découplé {#architect}
                + [Aperçu du parcours d’architecture de contenu découplé AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html?lang=fr)
                + [Modélisation de contenu pour le découplage avec AEM – Introduction](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html?lang=fr)
-               + [En savoir plus sur les bases de la modélisation de contenu pour le découplage avec AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html?lang=fr)
+               + [En savoir plus sur les bases de la modélisation de contenu pour le découplage avec AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html)
                + [En savoir plus sur la création de modèles de fragment de contenu dans AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/model-structure.html?lang=fr)
          + Guides de prise en main {#getting-started}
             + [Présentation](/help/sites-developing/headless/getting-started/introduction.md)
@@ -1272,7 +1273,7 @@ ht-degree: 68%
             + [Création d’un fragment de contenu](/help/sites-developing/headless/getting-started/create-content-fragment.md)
             + [Accès aux fragments de contenu et leur diffusion](/help/sites-developing/headless/getting-started/create-api-request.md)
          + Fragments de contenu{#content-fragments}
-            + [Diffusion découplée avec des fragments de contenu et GraphQL](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-graphql.html?lang=fr)
+            + [Diffusion découplée avec des fragments de contenu et GraphQL](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-graphql.html)
             + [Utilisation de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments.html?lang=fr)
             + [Activation de la fonctionnalité de fragments de contenu pour votre instance](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-configuration-browser.html?lang=fr)
             + [Modèles de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-models.html?lang=fr)
