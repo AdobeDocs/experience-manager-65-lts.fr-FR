@@ -461,7 +461,7 @@ Les sous-systèmes suivants d’AEM Forms ne sont pas conformes à la section [
 
 >[!NOTE]
 >
->Pour plus d’informations sur la configuration requise, consultez [ Configuration requise pour le déploiement sur serveur unique d’AEM Forms on JEE](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf)
+>Pour plus d’informations sur la configuration requise, consultez [&#x200B; Configuration requise pour le déploiement sur serveur unique d’AEM Forms on JEE](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf)
 
 ### Adobe Acrobat et Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -646,7 +646,7 @@ Adobe se réserve le droit de modifier à tout moment les plateformes de fournis
 
 Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en recherchant sur le site de support aux entreprises d’Adobe les articles de la base de connaissances relatifs à votre produit.
 
-Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[](https://business.adobe.com/in/support/main.html)
+Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[&#128279;](https://business.adobe.com/in/support/main.html)
 
 <!--
 
