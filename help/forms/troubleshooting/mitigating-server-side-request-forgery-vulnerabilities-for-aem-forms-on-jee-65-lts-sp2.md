@@ -1,21 +1,18 @@
 ---
 title: Réduction des vulnérabilités SSRF (Server Side Request Forgery) pour AEM Forms on JEE 6.5 LTS SP2
 description: Procédure de réduction des vulnérabilités SSRF (Server Side Request Forgery) sur les déploiements du pack de services 2 LTS d’AEM Forms on JEE 6.5 exécutés sur JBoss.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: Security
-solution: Experience Manager, Experience Manager Forms
-feature: Security
-role: Admin
+solution: Experience Manager
+feature: Deploying
+role: User,Admin,Developer
 exl-id: 7c4a9e12-3b8f-4d6a-9f1e-2a5c8d7e6b04
-source-git-commit: 314aafaec6b45d7ea929f32d47e73da293800d4b
+source-git-commit: 1d825cd821609504c5e2cff7f7002bf3afe30434
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 28%
+source-wordcount: '343'
+ht-degree: 30%
 
 ---
 
-# Réduction des vulnérabilités SSRF (Server Side Request Forgery)
+# Réduction des vulnérabilités SSRF (Server Side Request Forgery) pour AEM Forms on JEE 6.5 LTS SP2
 
 ## Référence rapide {#quick-reference}
 
@@ -75,4 +72,4 @@ Cette précaution vous permet d’effectuer une restauration à l’état d’or
 
 ## Référence {#references}
 
-* [Bonnes pratiques de sécurité d’Adobe Experience Manager Forms](/help/forms/using/hardening-securing-aem-forms-environment.md)
+* [Bonnes pratiques de sécurité pour Adobe Experience Manager Forms](/help/forms/using/hardening-securing-aem-forms-environment.md)
