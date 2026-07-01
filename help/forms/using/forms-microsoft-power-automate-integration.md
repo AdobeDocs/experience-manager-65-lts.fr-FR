@@ -1,6 +1,6 @@
 ---
-title: Comment connecter et envoyer des données de formulaire adaptatif à Microsoft&reg; Power Automate ?
-description: Guide détaillé pour la connexion et l’envoi de données de formulaire adaptatif à Microsoft&reg; Power Automate.
+title: Comment connecter et envoyer des données de formulaire adaptatif à Microsoft&reg ; Power Automate ?
+description: Un guide détaillé pour connecter et envoyer des données de formulaire adaptatif à Microsoft&reg ; Power Automate.
 keywords: Formulaires adaptatifs Microsoft Power Automate, envoi de données et de formulaires adaptatifs à Microsoft Power Automate
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
@@ -8,8 +8,8 @@ role: User, Developer
 exl-id: e2c4cae6-67db-4531-b1e1-0a378d9800f2
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1179'
-ht-degree: 100%
+source-wordcount: '1233'
+ht-degree: 95%
 
 ---
 
@@ -38,10 +38,10 @@ Les éléments suivants sont requis pour connecter un formulaire adaptatif à Mi
 
 Effectuez les actions suivantes pour connecter votre instance de création AEM Forms à Microsoft® Power Automate :
 
-1. [Créer une Microsoft](#ms-power-automate-application)
-1. [Créer Microsoft](#microsoft-power-automate-dataverse-cloud-configuration)
-1. [Créer Microsoft](#create-microsoft-power-automate-flow-cloud-configuration)
-1. [Publier Microsoft](#publish-microsoft-power-automate-dataverse-cloud-configuration)
+1. [Création d’une application ® Azure Active Directory](#ms-power-automate-application)
+1. [Créez une configuration cloud de Dataverse de Microsoft® Power Automate.](#microsoft-power-automate-dataverse-cloud-configuration)
+1. [Créer la configuration cloud du service de flux de Microsoft® Power Automate](#create-microsoft-power-automate-flow-cloud-configuration)
+1. [Publication des configurations cloud du Dataverse de ® Power Automate et du service de flux de Microsoft® Power Automate](#publish-microsoft-power-automate-dataverse-cloud-configuration)
 
 ### Créer une application Microsoft® Azure Active Directory {#ms-power-automate-application}
 
@@ -118,7 +118,7 @@ Votre instance de création AEM Forms est maintenant connectée à Microsoft® 
 
 Après la [connexion de votre instance de création AEM Forms à Microsoft® Power Automate](#connect-forms-server-with-power-automate), effectuez l’action suivante pour configurer votre formulaire adaptatif afin d’envoyer les données capturées à un flux Microsoft® lors de la soumission du formulaire.
 
-1. Connectez-vous à votre instance Création, sélectionnez votre formulaire adaptatif et cliquez sur **[!UICONTROL Propriétés]**.
+1. Connectez-vous à votre instance de création, sélectionnez votre formulaire adaptatif et cliquez sur **[!UICONTROL Propriétés]**.
 1. Dans le conteneur de configuration, recherchez et sélectionnez le conteneur créé dans la section [Créer une configuration cloud du Dataverse de Microsoft® Power Automate](#microsoft-power-automate-dataverse-cloud-configuration), puis choisissez **[!UICONTROL Enregistrer et fermer]**.
 1. Ouvrez le formulaire adaptatif pour le modifier et accéder à la section **[!UICONTROL Envoi]** des propriétés du Conteneur de formulaires adaptatifs.
 1. Dans le conteneur de propriétés, pour **[!UICONTROL Envoyer des actions]**, sélectionnez l’option **[!UICONTROL Appeler un flux Power Automate]**. Une liste des flux Power Automate disponibles se trouve désormais dans l’option **[!UICONTROL Flux Power Automate]**. Sélectionnez le flux requis afin que les données de formulaires adaptatifs lui soient soumises lors de l’envoi.
@@ -193,4 +193,4 @@ Après la [connexion de votre instance de création AEM Forms à Microsoft® Po
 
 * [Créer un formulaire adaptatif](create-an-adaptive-form-core-components.md)
 * [Configurer une action d’envoi](configuring-submit-actions.md)
-* [Connecteur Adobe Experience Manager pour Microsoft® Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
+* [Connecteur Adobe Experience Manager pour Microsoft® Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)

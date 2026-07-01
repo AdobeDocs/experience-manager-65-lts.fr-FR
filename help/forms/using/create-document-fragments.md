@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: 6c23092f-49ac-4133-baf0-87e4deaabeb0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1689'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ Les fragments de document sont des composants réutilisables d’une corresponda
 
 * Texte : une ressource texte est un élément de contenu comprenant un ou plusieurs paragraphes de texte. Un paragraphe peut être statique ou dynamique.
 * Liste : la liste est un groupe de fragments du document, incluant du texte, des listes, des conditions et des images.
-* Condition : les conditions vous permettent de définir le contenu à inclure dans la communication interactive en fonction des données reçues du formulaire de modèle de données.
+* Condition : les conditions vous permettent de définir le contenu à inclure dans la communication interactive en fonction des données reçues du modèle de données de formulaire.
 
 Ce tutoriel vous guide à travers les étapes pour créer plusieurs fragments de document de texte en fonction de la structure fournie à la section [Planifier la communication interactive](/help/forms/using/planning-interactive-communications.md). À la fin de ce tutoriel, vous devriez pouvoir effectuer les opérations suivantes :
 
@@ -232,7 +232,7 @@ Pour créer des variables pour les champs dont la source de données est l’int
 1. Placez le curseur en regard du champ **Réglages** et double-cliquez sur la variable **Adjustments**.
 1. Placez le curseur en regard du champ **Montant dû** et double-cliquez sur la variable **Amountdue**.
 1. Placez le curseur en regard du champ **Date d’échéance** et double-cliquez sur la variable **Duedate**.
-1. Sélectionnez l’onglet **Objets de modèle de données**, placez le curseur en regard du champ **Facturation de la période en cours** dans le volet de droite, puis double-cliquez sur la propriété **factures** > **usagecharges**.
+1. Sélectionnez l’onglet **Objets de modèle de données**, placez le curseur en regard du champ **Facturation de la période en cours** dans le volet de droite, puis double-cliquez sur la propriété **factures** > **usagecharges**.
 
    ![Récapitulatif de facturation](assets/bill_summary_static_variables_new.png)
 
