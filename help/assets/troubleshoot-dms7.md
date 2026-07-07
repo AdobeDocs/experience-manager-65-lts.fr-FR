@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 469495f2-b6d3-490d-a5df-ffa07b30cc1e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1410'
 ht-degree: 97%
 
 ---
@@ -50,7 +50,7 @@ Vous pouvez passer en revue les propriétés de ressource suivantes dans CRXDE 
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a\|364266`** | Indicateur général indiquant que le nœud est lié à Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** ou texte d’erreur | Statut du téléchargement de la ressource vers Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Doit être renseigné pour générer des URL vers la ressource distante de Dynamic Media. |
-| `<object_node>/jcr:content/dam:lastSyncStatus` | **succès** ou **échec :`<error text>`** | Statut de synchronisation des visionneuses (visionneuses à 360°, visionneuses d’images, etc.), des paramètres prédéfinis d’image, des paramètres prédéfinis de visionneuse, des mises à jour de zone cliquable pour une ressource ou des images ayant été modifiées. |
+| `<object_node>/jcr:content/dam:lastSyncStatus` | **succès** ou **échec :`<error text>`** | Statut de synchronisation des visionneuses (visionneuses à 360°, ensembles d’images, etc.), des paramètres d’image prédéfinis, des paramètres de visionneuse prédéfinis, des mises à jour de zone cliquable pour une ressource ou des images ayant été modifiées. |
 
 ### Journalisation de la synchronisation {#synchronization-logging}
 
@@ -251,12 +251,11 @@ Si les exemples de ressources ou l’illustration du paramètre prédéfini de l
 
 1. Accédez à CRXDE Lite.
 1. Supprimez `<sync-folder>/_CSS/_OOTB`.
-1. Accédez au gestionnaire de packages CRX : `https://localhost:4502/crx/packmgr/`.
+1. Accédez au gestionnaire de modules CRX : `https://localhost:4502/crx/packmgr/`.
 1. Recherchez le package de visionneuse dans la liste ; il commence par `cq-dam-scene7-viewers-content`.
 1. Sélectionnez **Réinstaller**.
 1. Sous Services cloud, accédez à la page Configuration de Dynamic Media, puis ouvrez la boîte de dialogue de configuration correspondant à la configuration S7 de Dynamic Media.
-1. N’effectuez aucune modification, sélectionnez **Enregistrer**.
-Cette sauvegarde a pour effet de déclencher à nouveau la logique pour créer et synchroniser les exemples de ressources, la feuille CSS du paramètre prédéfini de la visionneuse et l’illustration.
+1. N’effectuez aucune modification, sélectionnez **Enregistrer**.Cette sauvegarde a pour effet de déclencher à nouveau la logique pour créer et synchroniser les exemples de ressources, la feuille CSS du paramètre prédéfini de la visionneuse et l’illustration.
 
 ### Problème : l’aperçu de l’image ne se charge pas dans la création des paramètres prédéfinis de la visionneuse. {#image-preview-not-loading}
 
