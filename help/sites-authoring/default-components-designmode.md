@@ -7,8 +7,8 @@ role: User,Admin,Developer
 exl-id: 679ec753-1beb-49d2-9ed3-ee9abdd5f1a9
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 97%
+source-wordcount: '902'
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 Pour les installations prêtes à l’emploi de l’instance d’AEM, une sélection de composants est immédiatement disponible dans l’explorateur de composants.
 
-D’autres composants sont également disponibles. Vous pouvez utiliser le mode de conception pour [activer/désactiver ces composants](#enable-disable-components). Une fois ces composants activés et situés sur votre page, utilisez le mode de conception pour [configurer différents aspects de la conception](#configuring-the-design-of-a-component) en modifiant les paramètres d’attribut.
+En outre, divers autres composants sont également disponibles. Vous pouvez utiliser le mode de conception pour [ activer/désactiver ces composants ](#enable-disable-components). Une fois activé et situé sur votre page, vous pouvez utiliser le mode de conception pour [configurer différents aspects de la conception du composant](#configuring-the-design-of-a-component) en modifiant les paramètres d’attribut.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Par exemple, le contenu d’une page produit peut contenir un système de paragr
 >
 >La modification de la conception en mode Création, telle que décrite dans cet article, est la méthode recommandée pour définir des conceptions de modèles statiques.
 >
->La modification de conceptions dans CRX DE, par exemple, n’est pas recommandée et l’application de ces conceptions peut provoquer un comportement imprévu.
+>La modification de conceptions dans CRX DE, par exemple, n’est pas recommandée, car l’application de ces conceptions risque de provoquer un comportement imprévu.
 
 ## Activer/désactiver des composants {#enable-disable-components}
 

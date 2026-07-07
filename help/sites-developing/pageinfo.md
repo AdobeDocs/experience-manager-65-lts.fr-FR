@@ -11,8 +11,8 @@ role: Developer
 exl-id: 6c54197f-86da-41bd-93e6-ee78ece91013
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 99%
+source-wordcount: '950'
+ht-degree: 98%
 
 ---
 
@@ -516,7 +516,7 @@ Pour configurer le service dans la source de votre projet :
 
 1. Recherchez ou créez le dossier de configuration de votre application AEM dans la source de votre projet.
 
-   Par exemple, si vous avez utilisé l’archétype multimodule du module externe Content Package Maven pour créer votre projet, le chemin du dossier est `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`.
+   Par exemple, si vous avez utilisé l’archétype multimodule du plug-in de module de contenu Maven pour créer votre projet, le chemin du dossier est `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`.
 1. Dans le dossier de configuration, créez un fichier texte nommé com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml.
 1. Copiez le texte suivant dans le fichier :
 
