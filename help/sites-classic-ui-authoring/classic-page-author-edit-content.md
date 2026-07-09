@@ -12,7 +12,7 @@ role: User
 exl-id: be81e33d-8e37-4a57-bcc1-78e968c64641
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1843'
 ht-degree: 100%
 
 ---
@@ -202,7 +202,7 @@ Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, vous po
 
 ## Ajouter des annotations {#adding-annotations}
 
-Les [annotations](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permettent à d’autres auteurs et autrices de réagir sur votre contenu. Elles sont principalement destinées à la révision et à la validation.
+Les [annotations](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permettent à d’autres personnes de laisser des commentaires sur votre contenu. Elles sont principalement destinées à la révision et à la validation.
 
 ## Aperçu des pages {#previewing-pages}
 
