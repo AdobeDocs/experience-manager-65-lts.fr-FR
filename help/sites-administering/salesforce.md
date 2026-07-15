@@ -12,8 +12,8 @@ role: Admin
 exl-id: 68003650-76d7-40b3-860b-70454c13211e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1537'
-ht-degree: 97%
+source-wordcount: '1594'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ L’intégration de Salesforce à Adobe Experience Manager (AEM) fournit des fon
 L’intégration bidirectionnelle et extensible entre AEM et Salesforce permet :
 
 * Aux organisations d’utiliser et de modifier entièrement les données pour améliorer l’expérience client.
-* Une participation des équipes marketing aux activités de vente.
+* Engagement des activités marketing aux activités de vente.
 * Aux organisations de transmettre et de recevoir automatiquement des données d’un magasin de données Salesforce.
 
 Ce document répond aux questions suivantes :
@@ -160,7 +160,7 @@ Pour effectuer cette opération, configurez les éléments suivants :
 
 1. Liez un utilisateur ou une utilisatrice AEM à un identifiant Salesforce via le composant Salesforce Connect.
 1. Ajoutez les données de profil Salesforce dans la page de contexte client afin de définir les propriétés que vous souhaitez afficher.
-1. (Facultatif) Créez un segment qui utilise les données du magasin de contexte client Salesforce. 
+1. (Facultatif) Créez un segment qui utilise les données du magasin de contexte client Salesforce.
 
 ### Liaison d’un utilisateur ou d’une utilisatrice AEM à un identifiant Salesforce {#linking-an-aem-user-with-a-salesforce-id}
 
@@ -227,7 +227,7 @@ AEM est fourni avec un exemple de composant Recherche, qui cherche des prospects
 
 Pour utiliser ce composant :
 
-1. Accédez à la page dans laquelle vous souhaitez utiliser cette configuration. Ouvrez les propriétés de la page et sélectionnez **Services Cloud.** Cliquez sur **Ajouter des services**, sélectionnez **Salesforce** et la configuration appropriée, puis cliquez sur **OK**.
+1. Accédez à la page dans laquelle vous souhaitez utiliser cette configuration. Ouvrez les propriétés de la page et sélectionnez **Cloud Services.** Cliquez sur **Ajouter des services**, sélectionnez **Salesforce** puis la configuration appropriée et cliquez sur **OK**.
 
    ![chlimage_1-20](assets/chlimage_1-20.jpeg)
 

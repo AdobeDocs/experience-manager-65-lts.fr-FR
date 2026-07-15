@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: 6c3c4d7f-fc4c-44ad-886f-f76d0532d91a
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1280'
 ht-degree: 98%
 
 ---
@@ -146,7 +146,7 @@ Lorsque vous installez le package AEM Forms, un modèle de données de formulai
 
 Lorsque vous ouvrez le modèle de données de formulaire pour la première fois, il se connecte au service Microsoft Dynamics configuré et récupère les entités de votre instance Microsoft Dynamics. Les entités « contact » et « prospect » de Microsoft Dynamics sont déjà ajoutées dans le modèle de données de formulaire.
 
-Pour consulter le modèle de données de formulaire, accédez à **[!UICONTROL Formulaires > Intégrations de données]**. Sélectionnez **Microsoft Dynamics FDM** et cliquez sur **Modifier** pour ouvrir le modèle de données de formulaire en mode édition. Vous pouvez également ouvrir le modèle de données de formulaire directement à partir de l’URL suivante : 
+Pour consulter le modèle de données de formulaire, accédez à **[!UICONTROL Formulaires > Intégrations de données]**. Sélectionnez **Microsoft Dynamics FDM** et cliquez sur **Modifier** pour ouvrir le modèle de données de formulaire en mode édition. Vous pouvez également ouvrir le modèle de données de formulaire directement à partir de l’URL suivante :
 
 `https://'[server]:[port]'/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
 
@@ -154,7 +154,7 @@ Pour consulter le modèle de données de formulaire, accédez à **[!UICONTROL F
 
 Ensuite, vous pouvez créer un formulaire adaptatif basé sur le modèle de données de formulaire et l’utiliser dans divers cas de formulaires adaptatifs, tels que :
 
-* Remplir le formulaire adaptatif en obtenant des informations des entités et services Microsoft Dynamics
+* Remplir le formulaire adaptatif en demandant des informations des entités et services Microsoft Dynamics
 * Appeler des opérations du serveur Microsoft Dynamics définies dans un modèle de données de formulaire à l’aide de règles de formulaires adaptatifs
 * Écrire les données de formulaire envoyées dans les entités Microsoft Dynamics
 
