@@ -10,7 +10,7 @@ role: User, Developer
 exl-id: 8afc775f-2178-4acc-afb7-718970c435b4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '417'
 ht-degree: 100%
 
 ---
@@ -66,7 +66,7 @@ Le tableau ci-dessous répertorie les options d’aperçu disponibles pour les d
 
    * Prévisualiser au format HTML
    * Aperçu avec des données
-   * Aperçu au format PDF (disponible pour les modèles de formulaire)
+   * Aperçu au format PDF (disponible pour les modèles de formulaires)
 
 ## Aperçu avec des données {#preview-with-data}
 
