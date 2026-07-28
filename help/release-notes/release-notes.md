@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: ee3cfd977ab2e7f7cadabb2719fb38ef255b6a2a
+source-git-commit: 992c178c97245aa3fef43137498dc45e5ab79c39
 workflow-type: tm+mt
-source-wordcount: '7770'
-ht-degree: 96%
+source-wordcount: '7761'
+ht-degree: 95%
 
 ---
 
@@ -53,11 +53,11 @@ AEM 6.5 LTS SP2 comprend désormais des API OpenAPI pour [la gestion de modè
 
 * Amélioration de l’expérience d’utilisation dans l’éditeur visuel de règles. Cette mise à jour inclut les fonctionnalités suivantes :
 
-   * Rechargement automatique de la vue récapitulative après un enregistrement pour afficher le statut de la règle mis à jour
+  * Rechargement automatique de la vue récapitulative après un enregistrement pour afficher le statut de la règle mis à jour
 
-   * Affichage des boutons (bascule) Ajouter et Supprimer au lieu de les masquer
+  * Affichage des boutons (bascule) Ajouter et Supprimer au lieu de les masquer
 
-   * Envoi de commentaires clairs lorsqu’une opération d’enregistrement de règle échoue. (FORMS-21261)
+  * Envoi de commentaires clairs lorsqu’une opération d’enregistrement de règle échoue. (FORMS-21261)
 
 * Ajout de l’interface API (interface de programmation d’applications) Runtime pour activer/désactiver le mode d’export hérité du langage XML (Extensible Markup Language) dans AEM Forms, en remplaçant le paramètre `Dcom.adobe.fd.forms.export.legacy`. Cette amélioration permet de changer de mode d’export plus efficacement et ainsi d’améliorer la flexibilité du workflow. (FORMS-23115)
 
@@ -157,7 +157,8 @@ La prise en charge des événements découplés ne comportait pas les événemen
 
 * L’éditeur de texte enrichi du fragment de contenu présentait des problèmes de disposition et visuels après de récentes modifications de style de l’interface d’utilisation. Le pack de services 2 affine le style de l’éditeur de texte enrichi afin que la barre d’outils et la zone modifiable s’affichent correctement et restent lisibles. L’éditeur de fragment de contenu s’aligne désormais sur l’aspect et le comportement de l’éditeur de page. (SITES-38684)
 * La suppression des portées IMS du sélecteur de ressources Polaris interrompait l’intégration du fragment de contenu au point d’entrée de diffusion. Les créateurs et créatrices rencontraient des échecs lors de l’ouverture du sélecteur de ressources distant et de la sélection de ressources. La mise à jour ajoute à nouveau les portées IMS nécessaires et restaure un accès stable au niveau de la diffusion. (SITES-35837)
-* Le panneau Contenu associé n’affiche plus d’espace réservé codé en dur « non défini ». L’éditeur de fragment de contenu résout désormais ce texte par le biais de ressources de localisation, afin que les éditeurs et éditrices voient le texte traduit de l’interface d’utilisation. (SITES-33675)  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
+* Le panneau Contenu associé n’affiche plus d’espace réservé codé en dur « non défini ». L’éditeur de fragment de contenu résout désormais ce texte par le biais de ressources de localisation, afin que les éditeurs voient le texte traduit de l’interface utilisateur. (SITES-33675)
+  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
 * L’éditeur de fragment de contenu affiche désormais un libellé d’onglet Général traduit dans tous les paramètres régionaux. L’éditeur remplace le texte d’onglet non localisé et supprime les identifiants internes des titres d’onglet. (SITES-30715)
 * L’éditeur de fragment de contenu affiche désormais les noms traduits pour les types de ressources autorisés. La liste de sélecteur ne mélange plus les chaînes internes et les libellés en anglais uniquement lorsque les créateurs et créatrices configurent des restrictions de référence de contenu. (SITES-29699)
 
@@ -359,23 +360,23 @@ Le pack de services 2 LTS d’AEM 6.5 nécessite le connecteur S3, version 1.60.
 
   **Impact**
 
-   * Sling rend obsolètes ces PID et vous devez les supprimer de vos configurations :
-      * PID factory : `org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment`
-      * PID global : `org.apache.sling.jcr.base.internal.LoginAdminWhitelist`
-Ces anciennes configurations utilisent des propriétés, telles que `whitelist.name` et `whitelist.bundles`.
+  * Sling rend obsolètes ces PID et vous devez les supprimer de vos configurations :
+    * PID factory : `org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment`
+    * PID global : `org.apache.sling.jcr.base.internal.LoginAdminWhitelist`
+      Ces anciennes configurations utilisent des propriétés, telles que `whitelist.name` et `whitelist.bundles`.
 
-   * Sling assure toujours une rétrocompatibilité partielle pour les PID obsolètes, mais ne les utilise pas pour les nouvelles configurations. Utilisez plutôt les PID `LoginAdminAllowList.*` plus récents.
-   * N’exécutez pas simultanément des configurations obsolètes et nouvelles. Des configurations mixtes peuvent créer de l’ambiguïté et produire un comportement inattendu. Lorsque vous migrez vers AEM 6.5 LTS SP2, supprimez complètement les PID obsolètes.
+  * Sling assure toujours une rétrocompatibilité partielle pour les PID obsolètes, mais ne les utilise pas pour les nouvelles configurations. Utilisez plutôt les PID `LoginAdminAllowList.*` plus récents.
+  * N’exécutez pas simultanément des configurations obsolètes et nouvelles. Des configurations mixtes peuvent créer de l’ambiguïté et produire un comportement inattendu. Lorsque vous migrez vers AEM 6.5 LTS SP2, supprimez complètement les PID obsolètes.
 
   **Ce que vous devez faire**
 
-   1. Recherchez les configurations de liste autorisée qui utilisent des PID `LoginAdminWhitelist*`.
-   1. Remplacez-les par les nouveaux PID appropriés :
+  1. Recherchez les configurations de liste autorisée qui utilisent des PID `LoginAdminWhitelist*`.
+  1. Remplacez-les par les nouveaux PID appropriés :
 
-      * PID factory : `org.apache.sling.jcr.base.LoginAdminAllowList.fragment`
-      * PID global : `org.apache.sling.jcr.base.LoginAdminAllowList`
+     * PID factory : `org.apache.sling.jcr.base.LoginAdminAllowList.fragment`
+     * PID global : `org.apache.sling.jcr.base.LoginAdminAllowList`
 
-      Pour plus d’informations, voir [Approche obsolète de la recherche de bundles de liste autorisée pour les connexions d’administration](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecated-approach-to-allowlist-bundles-for-administrative-login).
+     Pour plus d’informations, voir [Approche obsolète de la recherche de bundles de liste autorisée pour les connexions d’administration](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecated-approach-to-allowlist-bundles-for-administrative-login).
 
 * AEM 6.5 LTS SP2 met à jour l’ensemble de bundles de couches de base pour Sling, Oak et Felix. Ces mises à niveau renforcent la stabilité d’exécution principale et alignent les versions dépendantes sur la plateforme. (GRANITE-61874)
 
@@ -499,7 +500,7 @@ Pour connaître les exigences de configuration, consultez les [instructions d’
 > Si vous effectuez une mise à niveau directement vers LTS SP1 à partir d’anciens SP 6.5, suivez les instructions données pour la [mise à niveau](/help/sites-deploying/upgrade.md) 6.5 à 6.5 LTS GA.
 
 
-Pour obtenir des instructions détaillées, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
+Pour obtenir des instructions détaillées, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md), car la même documentation s’applique aux mises à jour du pack de services LTS.
 
 >[!NOTE]
 >
