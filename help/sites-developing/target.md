@@ -12,8 +12,8 @@ role: Developer
 exl-id: 722c8052-6b1e-4b52-a332-b549f4a6bc05
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 94%
+source-wordcount: '1296'
+ht-degree: 92%
 
 ---
 
@@ -204,7 +204,7 @@ Par exemple, si vous souhaitez utiliser le [service Marketing Cloud ID](https:/
 >
 >Si une mbox personnalisée est définie dans une configuration Target, vous devez posséder un accès en lecture à **/etc/cloudservices** sur les serveurs de publication. Sans cet accès, le chargement de fichiers mbox.js sur un site web de publication générera une erreur 404.
 
-1. Accédez à la page **Outils** de CQ et sélectionnez ensuite **Services cloud**. ([https://localhost:4502/libs/cq/core/content/tools/cloudservices.html](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Accédez à la page **Outils** de CQ et sélectionnez ensuite **Services cloud**. ([&#128279;](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 1. Dans l’arborescence, sélectionnez Adobe Target, puis, dans la liste des configurations, double-cliquez sur votre configuration Target.
 1. Sur la page de configuration, cliquez sur Modifier.
 1. Pour la propriété mbox.js personnalisée, cliquez sur Parcourir et sélectionnez le fichier.
@@ -234,7 +234,7 @@ Par exemple, pour désactiver le ciblage pour les composants de titre des pages 
 >
 >Si vous n’utilisez pas DTM, vous envoyez une confirmation de commande à Adobe Target.
 
-Pour suivre les performances de votre site Web, envoyez à Adobe Target les informations relatives aux achats figurant sur la page de confirmation de commande. (Voir [Création d’une mBox orderConfirmPage](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=fr) et [mBox de confirmation de commande : ajoutez des paramètres personnalisés.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779?profile.language=fr)Adobe Target identifie les données de mBox comme des données de confirmation de commande lorsque le nom de votre mBox est `orderConfirmPage` et utilise les noms de paramètres spécifiques suivants :
+Pour suivre les performances de votre site Web, envoyez à Adobe Target les informations relatives aux achats figurant sur la page de confirmation de commande. (Voir [Création d’une mBox orderConfirmPage](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=fr) et [mBox de confirmation de commande : ajoutez des paramètres personnalisés.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779)) Adobe Target reconnaît les données de mbox comme des données de confirmation de commande lorsque le nom de votre mbox est `orderConfirmPage` et utilise les noms de paramètres spécifiques suivants :
 
 * productPurchasedId : Liste des ID qui identifient les produits achetés.
 * orderId : L’ID de la commande.
@@ -318,7 +318,7 @@ Lorsque le composant est inclus dans la page de passage en caisse de l’exemple
 
 ## Comprendre le composant Target {#understanding-the-target-component}
 
-Le composant Target permet aux auteurs et autrices de créer des mBox dynamiques à partir des composants de contenu CQ. (Voir [Ciblage de contenu](/help/sites-authoring/content-targeting-touch.md).) Le composant Target se trouve à l’emplacement suivant : /libs/cq/personalization/components/target.
+Le composant Target permet aux auteurs et autrices de créer des mBox dynamiques à partir des composants de contenu CQ. (voir [Ciblage de contenu](/help/sites-authoring/content-targeting-touch.md)). Le composant Target se trouve à l’emplacement suivant : /libs/cq/personalization/components/target.
 
 Le script target.jsp accède aux propriétés de la page pour déterminer le moteur de ciblage à utiliser pour le composant, puis exécute le script approprié :
 
