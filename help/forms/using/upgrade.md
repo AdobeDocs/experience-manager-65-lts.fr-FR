@@ -9,10 +9,10 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
 exl-id: 93126750-4645-4084-a21b-5362e3cc08a9
-source-git-commit: 19c58198faab2bbacd4b02e0fd38c21c0222ee72
+source-git-commit: b93457f543c22c893edd01259af19399e2548b72
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 16%
+source-wordcount: '316'
+ht-degree: 24%
 
 ---
 
@@ -49,7 +49,7 @@ Vous pouvez effectuer une mise à niveau directe depuis :
 
 Le diagramme suivant affiche les chemins de mise à niveau disponibles pour AEM Forms LTS sur JEE :
 
-![Mise à niveau de JEE 6.5](do-not-localize/jee-upgrade-6-5.png)
+![Mise à niveau de JEE 6.5](do-not-localize/jee-upgrade-6-5.svg)
 
 Vous pouvez effectuer une mise à niveau directe depuis :
 
