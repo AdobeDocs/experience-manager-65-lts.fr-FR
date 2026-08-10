@@ -13,8 +13,8 @@ role: Developer
 exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3199'
-ht-degree: 99%
+source-wordcount: '3540'
+ht-degree: 98%
 
 ---
 
@@ -88,7 +88,7 @@ Le mécanisme permettant de séparer la logique de l’aspect aide à définir c
 
 ### Utilisation de Java {#using-java}
 
-[L’Use-API Java HTL permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr) Cela vous permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
+[L’Use-API Java HTL permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr) Cela vous permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
 
 ### Utiliser JavaScript {#using-javascript}
 
@@ -132,15 +132,15 @@ Pour plus d’informations, consultez :
 
 * IU Coral
 
-   * Fournit une interface utilisateur uniforme dans toutes les solutions cloud.
-   * [Concepts de l’IU tactile AEM - IU Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Guide de l’IU Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
+  * Fournit une interface utilisateur uniforme dans toutes les solutions cloud.
+  * [Concepts de l’IU tactile AEM - IU Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+  * [Guide de l’IU Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 
 * IU Granite
 
-   * Fournit le balisage de l’IU Coral encapsulé dans les composants Sling pour la création de consoles d’interface utilisateur et de boîtes de dialogue.
-   * [Concepts de l’IU tactile AEM - IU Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Documentation relative à l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+  * Fournit le balisage de l’IU Coral encapsulé dans les composants Sling pour la création de consoles d’interface utilisateur et de boîtes de dialogue.
+  * [Concepts de l’IU tactile AEM - IU Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+  * [Documentation sur l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 
 >[!NOTE]
 >
@@ -158,7 +158,7 @@ Les boîtes de dialogue pour l’interface utilisateur tactile :
 * utilisent le framework de l’interface utilisateur Granite ;
 * contiennent une structure de nœud décrivant les champs contenus dans la boîte de dialogue.
 
-   * Ces nœuds sont `nt:unstructured` avec la propriété `sling:resourceType` obligatoire.
+  * Ces nœuds sont `nt:unstructured` avec la propriété `sling:resourceType` obligatoire.
 
 Un exemple de structure de nœud pourrait être :
 
@@ -229,7 +229,7 @@ Pour consulter un exemple, reportez-vous à :
 
 * `cqgems/customizingfield/components/colorpicker/clientlibs`
 
-   * fournie par l’[exemple de code](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * fournie par l’[exemple de code](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 #### Extension (par héritage) d’un champ {#extending-inheriting-from-a-field}
 
@@ -267,7 +267,7 @@ Pour consulter un exemple, reportez-vous à :
 
 * `cqgems/customizingfield/components/clientlibs/customizingfield`
 
-   * fournie par l’[exemple de code](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * fournie par l’[exemple de code](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 #### Listeners dans la structure de contenu {#listeners-in-the-content-structure}
 
@@ -306,7 +306,7 @@ Pour consulter des exemples, voir :
 
 * `cqgems/customizingfield/components/clientlibs/customizingfield/js/validations.js`
 
-   * fourni par l’[exemple de code](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * fourni par l’[exemple de code](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 * `/libs/cq/gui/components/authoring/dialog/clientlibs/dialog/js/validations.js`
 
@@ -314,7 +314,7 @@ Pour consulter des exemples, voir :
 
 La boîte de dialogue Conception est utilisée lorsqu’un composant possède des détails de conception modifiables en [mode Conception](/help/sites-authoring/default-components-designmode.md).
 
-La définition est très similaire à celle d’une boîte de dialogue[&#x200B; servant à modifier le contenu](#creating-a-new-dialog), à la différence qu’elle est définie comme un nœud :
+La définition est très similaire à celle d’une boîte de dialogue[ servant à modifier le contenu](#creating-a-new-dialog), à la différence qu’elle est définie comme un nœud :
 
 * Nom du nœud : `cq:design_dialog`
 * Type : `nt:unstructured`
@@ -358,7 +358,7 @@ Pour ce faire, procédez comme suit :
 
 ## Configuration d’un système de paragraphes de manière à faire glisser une ressource pour créer une instance de composant {#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance}
 
-AEM offre la possibilité de configurer un système de paragraphes sur votre page afin qu’une[&#x200B; instance de votre nouveau composant soit automatiquement créée lorsqu’un utilisateur ou une utilisatrice fait glisser une ressource (appropriée) sur une instance de cette page](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui) (au lieu d’avoir toujours à faire glisser un composant vide sur la page).
+AEM offre la possibilité de configurer un système de paragraphes sur votre page afin qu’une[ instance de votre nouveau composant soit automatiquement créée lorsqu’un utilisateur ou une utilisatrice fait glisser une ressource (appropriée) sur une instance de cette page](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui) (au lieu d’avoir toujours à faire glisser un composant vide sur la page).
 
 Ce comportement, et la relation ressource-à-composant requise, peuvent être configurés :
 
@@ -385,28 +385,28 @@ Ce comportement, et la relation ressource-à-composant requise, peuvent être co
 
    * `assetGroup` :
 
-      * Type : `String`
-      * Valeur : groupe auquel l’actif associé appartient, par exemple, `media`
+     * Type : `String`
+     * Valeur : groupe auquel l’actif associé appartient, par exemple, `media`
 
    * `assetMimetype` :
 
-      * Type : `String`
-      * Valeur : type MIME de la ressource associée, par exemple `image/*`
+     * Type : `String`
+     * Valeur : type MIME de la ressource associée, par exemple `image/*`
 
    * `droptarget` :
 
-      * Type : `String`
-      * Valeur : cible de dépôt, par exemple, `image`
+     * Type : `String`
+     * Valeur : cible de dépôt, par exemple, `image`
 
    * `resourceType` :
 
-      * Type : `String`
-      * Valeur : ressource de composant associée, par exemple, `foundation/components/image`
+     * Type : `String`
+     * Valeur : ressource de composant associée, par exemple, `foundation/components/image`
 
    * `type` :
 
-      * Type : `String`
-      * Valeur : type, par exemple, `Images`
+     * Type : `String`
+     * Valeur : type, par exemple, `Images`
 
 Pour voir des exemples, reportez-vous à :
 
@@ -418,12 +418,12 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-project-archetype sur GitHub](https://github.com/adobe/aem-project-archetype).
+* [Ouvrez le projet aem-project-archetype sur GitHub .](https://github.com/adobe/aem-project-archetype)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/adobe/aem-project-archetype/archive/master.zip).
 
 >[!NOTE]
 >
->La création automatique d’instances de composant est désormais facile à configurer dans l’interface utilisateur lors de l’utilisation de [composants de base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et de modèles modifiables. Consultez [Création de modèles de page](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) pour plus d’informations sur la définition des composants automatiquement associés à des types de média donnés.
+>La création automatique d’instances de composant est désormais facile à configurer dans l’interface utilisateur lors de l’utilisation de [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et de modèles modifiables. Consultez [Création de modèles de page](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) pour plus d’informations sur la définition des composants automatiquement associés à des types de média donnés.
 
 ## Utilisation de l’extension AEM Brackets {#using-the-aem-brackets-extension}
 
@@ -440,26 +440,26 @@ L’extension :
 
 ## Migration à partir d’un composant classique {#migrating-from-a-classic-component}
 
-Lors de la migration d’un composant de l’IU classique vers un composant pouvant être utilisé avec l’IU tactile (exclusivement ou conjointement), les problèmes suivants doivent être anticipés : 
+Lors de la migration d’un composant de l’IU classique vers un composant pouvant être utilisé avec l’IU tactile (exclusivement ou conjointement), les problèmes suivants doivent être anticipés :
 
 * HTL
 
-   * L’utilisation d’[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) n’est pas obligatoire, mais si le composant doit être mis à jour, c’est l’occasion idéale pour envisager une [migration de JSP vers HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
+  * L’utilisation d’[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) n’est pas obligatoire, mais si le composant doit être mis à jour, c’est l’occasion idéale pour envisager une [migration de JSP vers HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
 
 * Les composants :
 
-   * migrent le code [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) qui utilise des fonctions spécifiques à l’IU classique ;
-   * Plugin RTE. Pour plus d’informations, consultez [Configuration de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md) ;
-   * [migrent le code `cq:listener`](#migrating-cq-listener-code) qui utilise des fonctions spécifiques à l’IU classique.
+  * migrent le code [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) qui utilise des fonctions spécifiques à l’IU classique ;
+  * Plugin RTE. Pour plus d’informations, consultez [Configuration de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md) ;
+  * [migrent le code `cq:listener`](#migrating-cq-listener-code) qui utilise des fonctions spécifiques à l’IU classique.
 
 * Boîtes de dialogue
 
-   * Créez une boîte de dialogue à utiliser dans l’interface utilisateur tactile. Pour des raisons de compatibilité, l’IU tactile peut utiliser la définition d’une boîte de dialogue d’IU classique, si aucune boîte de dialogue n’a été définie pour l’IU tactile.
-   * Les [Outils de modernisation d’AEM](/help/sites-developing/modernization-tools.md) sont fournis pour vous aider à étendre les composants existants.
-   * Le [mappage d’ExtJS aux composants de l’IU Granite](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) fournit une présentation pratique des xtypes ExtJS et des types de nœud avec les types de ressources équivalents dans l’IU Granite.
-   * Personnalisation des champs ; pour plus d’informations, consultez la session AEM Gems sur la [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=fr).
-   * Migration des types vers la [Validation de l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * Utilisation des listeners JS ; pour plus d’informations, voir [Gestion des événements de champ](#handling-field-events) et la session AEM Gems sur la [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=fr).
+  * Créez une boîte de dialogue à utiliser dans l’interface utilisateur tactile. Pour des raisons de compatibilité, l’IU tactile peut utiliser la définition d’une boîte de dialogue d’IU classique, si aucune boîte de dialogue n’a été définie pour l’IU tactile.
+  * Les [Outils de modernisation d’AEM](/help/sites-developing/modernization-tools.md) sont fournis pour vous aider à étendre les composants existants.
+  * Le [mappage d’ExtJS aux composants de l’IU Granite](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) fournit une présentation pratique des xtypes ExtJS et des types de nœud avec les types de ressources équivalents dans l’IU Granite.
+  * Personnalisation des champs ; pour plus d’informations, consultez la session AEM Gems sur la [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=fr).
+  * Migration des types vers la [Validation de l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
+  * Utilisation des listeners JS ; pour plus d’informations, voir [Gestion des événements de champ](#handling-field-events) et la session AEM Gems sur la [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=fr).
 
 ### Migration du code cq:listener {#migrating-cq-listener-code}
 
