@@ -1416,7 +1416,7 @@ ht-degree: 67%
         + [Test des fragments d’expériences dans We.Retail](/help/sites-developing/we-retail-experience-fragments.md)
       + [Conseils pour bien coder](/help/sites-developing/coding-tips.md)
       + [Les pièges du codage](/help/sites-developing/code-pitfalls.md)
-      + [Lots OSGi](/help/sites-developing/osgi-bundles.md)
+      + [Bundles OSGi](/help/sites-developing/osgi-bundles.md)
       + [Intégration JCR](/help/sites-developing/jcr-integration.md)
       + [Espaces de noms personnalisés](/help/sites-developing/custom-namespaces.md)
       + [Exemples de code](/help/sites-developing/code-samples.md)
