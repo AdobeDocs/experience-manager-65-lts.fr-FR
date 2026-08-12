@@ -1,25 +1,25 @@
 ---
 title: Mise à niveau vers AEM 6.5 Forms LTS on OSGi
-description: Vous pouvez effectuer une mise à niveau directe d’AEM 6.5.22.0 Forms vers AEM 6.5 Forms LTS.
+description: Vous pouvez effectuer une mise à niveau directe depuis AEM 6.5.17.0 Forms ou une version ultérieure vers AEM 6.5 Forms LTS.
 content-type: reference
 role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: b5db6129e83dd7a54516707bbdb8864dc709d54b
+source-git-commit: 818673651f736311d400c71bfeb635b73b25a034
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1619'
 ht-degree: 44%
 
 ---
 
 # Mise à niveau vers AEM 6.5 Forms LTS on OSGi {#upgrade-to-aem-forms-osgi}
 
-Pour [mettre à niveau d’AEM 6.5 vers AEM 6.5 LTS](/help/sites-deploying/upgrade.md), effectuez la mise à niveau vers AEM 6.5.22.0 Forms ou une version ultérieure. Une mise à niveau directe d’AEM 6.5.22.0 vers AEM 6.5 Forms LTS est prise en charge.
+Pour [mettre à niveau d’AEM 6.5 vers AEM 6.5 LTS](/help/sites-deploying/upgrade.md), effectuez la mise à niveau vers AEM 6.5.17.0 Forms ou une version ultérieure. Une mise à niveau directe d’AEM 6.5.17.0 (ou version ultérieure) vers AEM 6.5 Forms LTS est prise en charge.
 
 Si vous utilisez AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms, AEM 6.3 Forms, AEM 6.4 Forms ou AEM 6.5 Forms, aucune mise à niveau directe vers AEM 6.5 Forms LTS n’est disponible. Pour obtenir des chemins de mise à niveau détaillés, consultez la documentation [Chemins de mise à niveau](/help/forms/using/upgrade.md).
 
-Après la mise à niveau vers le pack de services AEM Forms 6.5.22.0, procédez comme suit pour effectuer la mise à niveau vers AEM 6.5 LTS Forms :
+Après la mise à niveau vers AEM Forms 6.5.17.0 ou version ultérieure, procédez comme suit pour effectuer la mise à niveau vers AEM 6.5 LTS Forms :
 
 1. Installation du package complémentaire AEM Forms. Suivez les étapes ci-dessous :
 
@@ -74,8 +74,8 @@ Après la mise à niveau vers le pack de services AEM Forms 6.5.22.0, procédez 
 
      Dans AEM 6.5 Forms, la version de jQuery est mise à jour vers la version 3.2.1 et la version de l’interface utilisateur de jQuery est mise à jour vers la version 1.12.1. AEM Form utilise JQuery en mode **noConflict**. Ainsi, si vous utilisez une autre version de jQuery, aucun problème ne s’affiche lors de l’exécution d’une mise à niveau. Cependant, lorsque vous effectuez une mise à niveau vers AEM 6.5 Forms :
 
-      * Assurez-vous que vos composants personnalisés, le cas échéant, sont compatibles avec les versions jQuery prises en charge.
-      * Supprimez les API non prises en charge des composants personnalisés. Voir [guide de mise à niveau](https://jquery.com/upgrade-guide/3.0/) pour la liste des API supprimées. Par exemple, la prise en charge des API load(), .unload() et .error() est supprimée. Utilisez la méthode .on() à la place des API mentionnées ci-dessus. Par exemple, remplacez $(&quot;img&quot;).load(fn) par $(&quot;img&quot;).on(&quot;load&quot;, fn).
+     * Assurez-vous que vos composants personnalisés, le cas échéant, sont compatibles avec les versions jQuery prises en charge.
+     * Supprimez les API non prises en charge des composants personnalisés. Voir [guide de mise à niveau](https://jquery.com/upgrade-guide/3.0/) pour la liste des API supprimées. Par exemple, la prise en charge des API load(), .unload() et .error() est supprimée. Utilisez la méthode .on() à la place des API mentionnées ci-dessus. Par exemple, remplacez $(&quot;img&quot;).load(fn) par $(&quot;img&quot;).on(&quot;load&quot;, fn).
 
    * **(Si vous effectuez une mise à niveau à partir d’AEM 6.2 Forms ou de versions précédentes uniquement) Reconfigurez l’analyse et les rapports**
 
@@ -87,9 +87,9 @@ Après la mise à niveau vers le pack de services AEM Forms 6.5.22.0, procédez 
    * **Vérifier la réplication et la réplication inverse :** publiez, remplissez et envoyez quelques formulaires migrés. Vérifiez également les données envoyées.
    * **Vérifier l’accès aux interfaces utilisateur d’administration et de développement :** connectez-vous à l’instance AEM à partir d’un compte d’administration et vérifiez que vous avez accès aux URL suivantes :
 
-      * `https://'[server]:[port]'/crx/packmgr`
-      * `https://'[server]:[port]'/crx/de`
-      * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
+     * `https://'[server]:[port]'/crx/packmgr`
+     * `https://'[server]:[port]'/crx/de`
+     * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
 
    >[!NOTE]
    >
@@ -286,7 +286,7 @@ Une fois toutes les modifications de configuration effectuées, recompressez le 
    <JBOSS_HOME>\standalone\deployments
    ```
 
-   **Exemple :**
+   **Exemple :**
    `C:\jboss-eap-8.0\standalone\deployments`
 
 #### Configuration des paramètres JVM (facultatifs, mais recommandés)
@@ -317,7 +317,7 @@ Avant de démarrer JBoss, configurez les paramètres de mémoire JVM :
    cd <JBOSS_HOME>\bin
    ```
 
-   **Exemple :**
+   **Exemple :**
    `cmd cd C:\jboss-eap-8.0\bin`
 
 1. Démarrez le serveur JBoss :
