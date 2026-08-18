@@ -7,8 +7,8 @@ role: Admin, User, Developer
 exl-id: 7f66832f-c9d1-43e1-b3a4-a25ea9a8a224
 source-git-commit: 7a52531c6c9c1c81ab563fd85f67ba4b7f81d318
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 100%
+source-wordcount: '1440'
+ht-degree: 97%
 
 ---
 
@@ -68,11 +68,11 @@ Les formulaires Adobe Experience Manager (AEM) peuvent vous aider à transfor
 
 * [Bonnes pratiques en matière de déploiement et de maintenance d’AEM](/help/sites-deploying/best-practices.md)
 * [Meilleures pratiques pour la création de contenu](/help/sites-authoring/best-practices.md)
-* [Meilleures pratiques d’administration dans AEM ](/help/sites-administering/administer-best-practices.md)
+* [Meilleures pratiques d’administration dans AEM](/help/sites-administering/administer-best-practices.md)
 * [Meilleures pratiques pour le développement de solutions](/help/sites-developing/best-practices.md)
 * [Meilleures pratiques pour travailler avec les formulaires adaptatifs](/help/forms/using/adaptive-forms-best-practices.md)
 
 ## Carte de référence rapide {#quick-reference-card}
 
-Vous pouvez imprimer la carte suivante (cliquez sur la carte pour télécharger une version haute résolution) et la conserver sur votre bureau pour une référence rapide :
-[![Carte de référence rapide sur les bonnes pratiques de HTML5 Forms](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+Vous pouvez imprimer la carte suivante (cliquez sur la carte pour télécharger une version haute résolution) et la conserver sur votre bureau pour une référence rapide :
+[![Carte de référence rapide des bonnes pratiques d’HTML5 Forms](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)

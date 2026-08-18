@@ -12,7 +12,7 @@ role: Admin
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
 source-git-commit: 7584fa1c544f9dd499b4007a9158e25b783f620c
 workflow-type: tm+mt
-source-wordcount: '2587'
+source-wordcount: '2613'
 ht-degree: 94%
 
 ---
@@ -50,7 +50,7 @@ Un indexeur est un **Index de propriété**, pour lequel la définition d’inde
 
 Implémentation pour **Apache Lucene** disponible par défaut, qui prend en charge l’indexation du texte intégral.
 
-L’**indexation transversale** est utilisé si aucun autre indexeur n’est disponible. Cela signifie que le contenu n’est pas indexé et que les nœuds de contenu sont parcourus pour trouver des correspondances avec la requête.
+L’**index de traversée** est utilisé si aucun autre indexeur n’est disponible. Cela signifie que le contenu n’est pas indexé et que les nœuds de contenu sont parcourus pour trouver des correspondances avec la requête.
 
 Si plusieurs indexeurs sont disponibles pour une requête, chaque indexeur disponible estime le coût d’exécution de la requête. Oak choisit ensuite l’indexeur avec le coût estimé le plus faible.
 
@@ -70,7 +70,7 @@ Ensuite, chaque index est consulté pour estimer le coût de la requête. Une fo
 
 Si une réindexation s’avère nécessaire dans des référentiels volumineux, en particulier lorsque vous utilisez MongoDB et des index en texte intégral, pensez à recourir à la pré-extraction de texte, ainsi qu’à utiliser la commande oak-run pour générer l’index initial et procéder à la réindexation.
 
-Les index sont configurés en tant que nœuds dans le référentiel, sous le nœud **Oak:index**.
+Les index sont configurés en tant que nœuds dans le référentiel, sous le nœud **:index**.
 
 Le type du nœud d’index doit être **oak:QueryIndexDefinition.** Plusieurs options de configuration sont disponibles pour chaque indexeur en tant que propriétés de nœud. Pour plus d’informations, voir les détails de configuration pour chaque type d’indexeur ci-dessous.
 
@@ -310,45 +310,45 @@ Si vous souhaitez utiliser un analyseur prêt à l’emploi, vous pouvez le conf
 
 #### Création d’analyseurs par composition {#creating-analyzers-via-composition}
 
-Les analyseurs peuvent également être composés en fonction de `Tokenizers`, `TokenFilters` et `CharFilters`. Vous pouvez le faire en spécifiant un analyseur et en créant des nœuds enfants de ses jetons et filtres facultatifs qui sont appliqués dans l’ordre indiqué.
+Les analyseurs peuvent également être composés en fonction de `Tokenizers`, `TokenFilters` et `CharFilters`. Vous pouvez effectuer cette opération en spécifiant un analyseur et en créant des nœuds enfants de ces générateurs de jetons et filtres facultatifs, qui seront appliqués dans l’ordre indiqué.
 
 Prenez cette structure de nœud comme exemple :
 
 * **Nom :** `analyzers`
 
-   * **Nom :** `default`
+  * **Nom :** `default`
 
-      * **Nom :** `charFilters`
-      * **Type :** `nt:unstructured`
+    * **Nom :** `charFilters`
+    * **Type :** `nt:unstructured`
 
-         * **Nom :** `HTMLStrip`
-         * **Nom :** `Mapping`
+      * **Nom :** `HTMLStrip`
+      * **Nom :** `Mapping`
 
-      * **Nom :** `tokenizer`
+    * **Nom :** `tokenizer`
 
-         * **Nom de la propriété :** `name`
+      * **Nom de la propriété :** `name`
 
-            * **Type :** `String`
-            * **Valeur :** `Standard`
+        * **Type :** `String`
+        * **Valeur :** `Standard`
 
-      * **Nom :** `filters`
-      * **Type :** `nt:unstructured`
+    * **Nom :** `filters`
+    * **Type :** `nt:unstructured`
 
-         * **Nom :** `LowerCase`
-         * **Nom :** `Stop`
+      * **Nom :** `LowerCase`
+      * **Nom :** `Stop`
 
-            * **Nom de la propriété :** `words`
+        * **Nom de la propriété :** `words`
 
-               * **Type :** `String`
-               * **Valeur :** `stop1.txt, stop2.txt`
+          * **Type :** `String`
+          * **Valeur :** `stop1.txt, stop2.txt`
 
-            * **Nom :** `stop1.txt`
+        * **Nom :** `stop1.txt`
 
-               * **Type :** `nt:file`
+          * **Type :** `nt:file`
 
-            * **Nom :** `stop2.txt`
+        * **Nom :** `stop2.txt`
 
-               * **Type :** `nt:file`
+          * **Type :** `nt:file`
 
 Les noms des filtres, charFilters et générateurs de jetons sont formés en supprimant les suffixes d’usine. Ainsi :
 
@@ -419,7 +419,7 @@ Vous pouvez activer la journalisation en procédant comme suit :
 
 #### Configuration de l’index {#index-configuration}
 
-La configuration de l’index influence largement la manière dont la requête est évaluée. Il est important de faire analyser la configuration de l’index ou de l’envoyer à l’assistance. Vous pouvez obtenir la configuration sous la forme d’un package de contenu ou un rendu JSON.
+La configuration de l’index influence largement la manière dont la requête est évaluée. Il est important de faire analyser la configuration de l’index ou de l’envoyer à l’assistance. Vous pouvez obtenir la configuration sous la forme d’un module de contenu ou un rendu JSON.
 
 En règle générale, la configuration d’indexation est stockée sous le nœud `/oak:index` dans CRXDE. Vous pouvez obtenir la version JSON à l’adresse :
 
@@ -456,5 +456,5 @@ Vous pouvez également fournir une sortie JMX consolidée via `https://serverad
 
 Vous pouvez rassembler des informations supplémentaires pour résoudre le problème, telles que :
 
-1. Version Oak sur laquelle votre instance s’exécute. Vous pouvez l’afficher en ouvrant CRXDE et en affichant la version dans le coin inférieur droit de la page d’accueil ou en vérifiant la version du lot `org.apache.jackrabbit.oak-core`.
+1. Version Oak sur laquelle votre instance s’exécute. Vous pouvez l’afficher en ouvrant CRXDE et en affichant la version dans le coin inférieur droit de la page d’accueil ou en vérifiant la version du bundle `org.apache.jackrabbit.oak-core`.
 1. La sortie du débogueur QueryBuilder de la requête posant problème. Le débogueur est accessible à l’adresse : `https://serveraddress:port/libs/cq/search/content/querydebug.html`.
