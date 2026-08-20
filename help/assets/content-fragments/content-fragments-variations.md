@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
-source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
+source-git-commit: fd7199ca5efa15df0fd014b7a0cfc52cbd7173fe
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 100%
+source-wordcount: '2078'
+ht-degree: 99%
 
 ---
 
@@ -18,8 +18,8 @@ Les [variations](/help/assets/content-fragments/content-fragments.md#constituent
 
 Dans l’onglet **Variations**, vous pouvez :
 
-* [saisir le contenu](#authoring-your-content) de votre fragment ;
-* [créer et gérer les variations](#managing-variations) du contenu **maître** ;
+* [saisir le contenu](#authoring-your-content) pour votre fragment ;
+* [Créer et gérer les variations](#managing-variations) du contenu **Principal**
 
 Vous pouvez effectuer diverses autres actions selon le type de données que vous modifiez, par exemple :
 
@@ -30,8 +30,6 @@ Vous pouvez effectuer diverses autres actions selon le type de données que vous
 * [Chargement du contenu](#uploading-content)
 
 * [Affichage des statistiques clés](#viewing-key-statistics) (à propos du texte sur plusieurs lignes)
-
-* [Création d’un résumé de texte](#summarizing-text)
 
 * [Synchronisation des variations avec le contenu maître](#synchronizing-with-master)
 
@@ -51,22 +49,22 @@ Vous pouvez effectuer les actions suivantes :
 
 * Apportez des modifications à votre contenu directement dans l’onglet **Variations**. Chaque type de données fournit différentes options de modification, par exemple :
 
-   * Pour les champs **Plusieurs lignes de texte**, vous pouvez également ouvrir l’[éditeur plein écran](#full-screen-editor) pour :
+  * Pour les champs **Plusieurs lignes de texte**, vous pouvez également ouvrir l’[éditeur plein écran](#full-screen-editor) pour :
 
-      * sélectionner le [format](#formats) ;
-      * voir davantage d’options de modification (pour le format [Texte enrichi](#rich-text)) ;
-      * accéder à un éventail d’[actions](#actions).
+    * sélectionner le [format](#formats) ;
+    * voir davantage d’options de modification (pour le format [Texte enrichi](#rich-text)) ;
+    * accéder à un éventail d’[actions](#actions).
 
-   * Pour les champs **Référence de fragment**, l’option [Modifier le fragment de contenu](#fragment-references-edit-content-fragment) peut être disponible, selon la définition du modèle.
+  * Pour les champs **Référence de fragment**, l’option [Modifier le fragment de contenu](#fragment-references-edit-content-fragment) peut être disponible, selon la définition du modèle.
 
 * Attribuez des **Balises** à la variation actuelle. Les balises peuvent être ajoutées, mises à jour et supprimées.
 
-   * Les [balises](/help/sites-authoring/tags.md) sont puissantes lors de l’organisation de vos fragments, car elles peuvent être utilisées pour la classification et la taxonomie du contenu. Les balises peuvent être utilisées pour rechercher du contenu (par balises) et appliquer des opérations en bloc.
+  * Les [balises](/help/sites-authoring/tags.md) sont puissantes lors de l’organisation de vos fragments, car elles peuvent être utilisées pour la classification et la taxonomie du contenu. Les balises peuvent être utilisées pour rechercher du contenu (par balises) et appliquer des opérations en bloc.
 
-      * Les recherches d’une balise renvoient le fragment avec la variation balisée en surbrillance.
-      * Vous pouvez également utiliser les balises de variation pour regrouper des variations pour un profil de réseau de diffusion de contenu (CDN) spécifique (pour la mise en cache CDN), au lieu d’utiliser le nom de la variation.
+    * Les recherches d’une balise renvoient le fragment avec la variation balisée en surbrillance.
+    * Vous pouvez également utiliser les balises de variation pour regrouper des variations pour un profil de réseau de diffusion de contenu (CDN) spécifique (pour la mise en cache CDN), au lieu d’utiliser le nom de la variation.
 
-     Par exemple, vous pouvez baliser les fragments pertinents en tant que « lancement de Noël » pour ne les parcourir que sous forme de sous-ensemble, ou les copier pour les utiliser avec un autre lancement futur dans un nouveau dossier.
+    Par exemple, vous pouvez baliser les fragments pertinents en tant que « lancement de Noël » pour ne les parcourir que sous forme de sous-ensemble, ou les copier pour les utiliser avec un autre lancement futur dans un nouveau dossier.
 
   >[!NOTE]
   >
@@ -101,8 +99,6 @@ Les actions suivantes sont également disponibles (pour tous les [formats](#form
 
 * [Synchronisation avec le gabarit](#synchronizing-with-master) (lors de la modification d’une variation)
 
-* [Création d’un résumé de texte](#summarizing-text)
-
 ### Formats {#formats}
 
 Les options de modification du texte multiligne dépendent du format sélectionné :
@@ -130,10 +126,10 @@ La modification de texte enrichi permet de mettre en forme :
 * Style de paragraphe : paragraphe et en-tête 1/2/3
 * [Insérer une ressource](#inserting-assets-into-your-fragment)
 * Ouvrez l’éditeur plein écran où les options de mise en forme suivantes sont disponibles :
-   * Rechercher
-   * Rechercher/remplacer
-   * Vérificateur orthographique
-   * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+  * Rechercher
+  * Rechercher/remplacer
+  * Vérificateur orthographique
+  * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [Insérer un fragment de contenu](#inserting-content-fragment-into-your-fragment) ; disponible lorsque votre champ **Plusieurs lignes de texte** est configuré avec l’option **Autoriser la référence de fragment** activée.
 
 Les [actions](#actions) sont également accessibles à partir de l’éditeur plein écran.
@@ -216,60 +212,6 @@ Par exemple :
 ### Chargement de contenu {#uploading-content}
 
 Pour simplifier le processus de création de fragments de contenu, vous pouvez charger du texte préparé dans un éditeur externe et l’ajouter directement au fragment.
-
-### Résumé de texte {#summarizing-text}
-
-Le résumé de texte a été conçu pour permettre aux utilisateurs et utilisatrices de réduire la longueur de leur texte à un nombre prédéfini de mots tout en conservant les éléments clés et la signification globale.
-
->[!NOTE]
->
->À un niveau plus technique, le système conserve les phrases qu’il évalue comme ayant le *meilleur rapport de densité et d’unicité des informations* selon des algorithmes spécifiques.
-
->[!CAUTION]
->
->Le fragment de contenu doit posséder un dossier de langue valide (code ISO) en tant qu’ancêtre ; celui-ci permet de déterminer le modèle de langue à utiliser.
->
->Par exemple, `en/` comme dans le chemin d’accès suivant :
->
->  `/content/dam/my-brand/en/path-down/my-content-fragment`
-
->[!CAUTION]
->
->L’anglais est disponible par défaut.
->
->D’autres langues sont disponibles en tant que packages de modèle de langue à partir du partage de modules :
->
->* [Français (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Allemand (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italien (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Espagnol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
->
-
-1. Sélectionnez **Principal** ou la variation requise.
-1. Ouvrez l’éditeur plein écran.
-
-1. Sélectionnez **Résumer le texte** dans la barre d’outils.
-
-   ![récapitulation](assets/cfm-variations-05.png)
-
-1. Indiquez le nombre cible de mots et sélectionnez **Démarrer** :
-1. Le texte original s’affiche côte à côte avec la synthèse proposée :
-
-   * Toutes les phrases à éliminer sont surlignées en rouge et barrées.
-   * Cliquez sur une phrase en surbrillance si vous souhaitez la conserver dans le contenu résumé.
-   * Cliquez sur une phrase non mise en surbrillance si vous souhaitez l’éliminer.
-
-1. Sélectionnez **Résumer** pour confirmer les modifications.
-
-1. Le texte original s’affiche côte à côte avec la synthèse proposée :
-
-   * Toutes les phrases à éliminer sont surlignées en rouge et barrées.
-   * Cliquez sur une phrase en surbrillance si vous souhaitez la conserver dans le contenu résumé.
-   * Cliquez sur une phrase non mise en surbrillance si vous souhaitez l’éliminer.
-   * Les statistiques de synthèse s’affichent : **Réel** et **Cible**-
-   * Vous pouvez **prévisualiser** les modifications.
-
-   ![comparaison des résumés](assets/cfm-variations-06.png)
 
 ### Annotation d’un fragment de contenu {#annotating-a-content-fragment}
 
@@ -468,7 +410,7 @@ Lors de la modification d’une variation, vous avez accès à l’action de syn
 
 >[!CAUTION]
 >
->La synchronisation n’est disponible que pour copier les modifications *du **Maître**dans la variation*.
+>La synchronisation n’est disponible que pour copier les modifications *du **Maître**&#x200B;dans la variation*.
 >
 >Seul l’élément actif de la variation est synchronisé.
 >
