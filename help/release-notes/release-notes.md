@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0ce890503d43af340b6ee3c85b1b563613627c78
+source-git-commit: d4d05cf9f295e6c3740ebf1e3559b5d117898342
 workflow-type: tm+mt
-source-wordcount: '6749'
+source-wordcount: '6752'
 ht-degree: 26%
 
 ---
@@ -530,7 +530,6 @@ Il est conseillé aux clients de vérifier s’ils utilisent la fonctionnalité 
 
 | Domaine | Fonctionnalité | Remplacement | Version (SP) |
 | --- | --- | --- | --- |
-| Sites | Résumé textuel du fragment de contenu | Aucun remplacement n’est disponible. | |
 | Démarrage rapide | API Mongo | Les API Mongo sont désormais obsolètes et leur suppression est prévue dans les prochaines versions. | 6.5 TS SP2 |
 | Sites | Prise en charge des fragments de contenu dans l’API REST AEM Assets | AEM 6.5 LTS SP2 fournit des API OpenAPI modernes pour la gestion des fragments de contenu et des modèles, de sorte que les anciens points d’entrée de la prise en charge des fragments de contenu dans l’API REST AEM Assets sont désormais obsolètes.<br>Adobe prévoit de conserver ces anciens points d’entrée disponibles jusqu’à une annonce de fin de vie. Adobe ne prévoit pas d’autres améliorations pour les points d’entrée obsolètes. | 6.5 LTS SP2 |
 | Sites | [Éditeur SPA](/help/sites-developing/spa-overview.md) | Les éditeurs recommandés pour la gestion du contenu découplé dans AEM sont les suivants : <br>- [Éditeur universel](/help/sites-developing/universal-editor/introduction.md) pour la modification visuelle.<br>- [Éditeur de fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md) pour la modification de formulaires. | 6.5 LTS GA |
@@ -545,6 +544,7 @@ Cette section répertorie les fonctionnalités qui ont été supprimées dans AE
 
 | Domaine | Fonctionnalité | Remplacement | Version (SP) |
 | --- | --- | --- | --- |
+| Sites | Résumé textuel du fragment de contenu | Aucun remplacement n’est disponible. | 6.5 LTS SP3 |
 | Commerce | AEM CIF Classic n’est pas pris en charge. | Migrez vers [AEM CIF](/help/commerce/cif/migration.md). | 6.5 LTS GA |
 | Solutions | Social / Communities n’est pas pris en charge. | Aucun remplacement n’est disponible. | 6.5 LTS GA |
 | Screens | Screens n’est pas pris en charge. | Aucun remplacement n’est disponible. | 6.5 LTS GA |
