@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: d4d05cf9f295e6c3740ebf1e3559b5d117898342
+source-git-commit: 79f3d3211a79ce62242273df0cdecd24cd8900cf
 workflow-type: tm+mt
-source-wordcount: '6752'
+source-wordcount: '6705'
 ht-degree: 26%
 
 ---
@@ -415,27 +415,27 @@ UberJar pour AEM 6.5 LTS SP3 utilise la version 6.6.3 d’AEM 6.5 LTS UberJar. V
 
 Pour compiler par rapport aux API publiques, utilisez ce qui suit :
 
-    « xml
-    &lt;dependency>
-    &lt;groupId>com.adobe.aem&lt;/groupId>
-    &lt;artifactId>uber-jar&lt;/artifactId>
-    &lt;version>6.6.3&lt;/version>
-    &lt;classifier>api&lt;/classifier>
-    &lt;scope>fournie&lt;/scope>
-    &lt;/dependency>
-     »
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.6.3</version>
+    <classifier>apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
 
 Si votre code dépend également d’API obsolètes, ajoutez ce qui suit :
 
-    « xml
-    &lt;dependency>
-    &lt;groupId>com.adobe.aem&lt;/groupId>
-    &lt;artifactId>uber-jar&lt;/artifactId>
-    &lt;version>6.6.3&lt;/version>
-    &lt;classifier>deprecated-apis&lt;/classifier>
-    &lt;scope>provided&lt;/scope>
-    &lt;/dependency>
-     »
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.6.3</version>
+    <classifier>deprecated-apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
 
 Voir également [Mise à jour de la version AEM Uber Jar](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
@@ -462,10 +462,10 @@ Le SP2 pour AEM 6.5 LTS est fourni sous la forme d’un fichier JAR de démarrag
 1. Dans le répertoire d’installation d’AEM (en dehors de `crx-quickstart/`), remplacez le fichier JAR de démarrage rapide précédent par le fichier JAR SP3.
 1. Décompressez le fichier JAR :
 
-       « java 
-     java -jar cq-quickstart-6.6.x.jar -unpack 
-      »
-   
+   ```java
+   java -jar cq-quickstart-6.6.x.jar -unpack
+   ```
+
    (Ajustez les indicateurs de tas selon les besoins.)
 
 1. Renommez le fichier JAR décompressé pour qu’il corresponde au rôle et au port, par exemple `cq-author-4502.jar` ou `cq-publish-4503.jar`.
