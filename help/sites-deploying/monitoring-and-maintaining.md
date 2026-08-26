@@ -25,7 +25,7 @@ L’un des facteurs clés est que, pour identifier les problèmes potentiels, vo
 
 >[!NOTE]
 >
->Les conseils de cette page s’appliquent aux déploiements autogérés (on-premise). Si vous exécutez AEM sur Adobe Managed Services, la télémétrie des applications et des infrastructures est collectée pour vous et disponible via Observability Insights, qui fournit une vue hébergée de vos environnements de production et hors production. Pour plus d’informations, voir [Observability Insights](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview).
+>Les conseils de cette page s’appliquent aux déploiements autogérés (on-premise). Si vous exécutez AEM sur Adobe Managed Services, la télémétrie des applications et des infrastructures est collectée pour vous et disponible via Observability Insights, qui fournit une vue hébergée de vos environnements de production et hors production. Pour plus d’informations, voir [Observability Insights](https://experienceleague.adobe.com/fr/docs/ams-observability-insights/content/overview).
 
 | Vérification | Considérations | Commentaire/Actions |
 |---|---|---|
