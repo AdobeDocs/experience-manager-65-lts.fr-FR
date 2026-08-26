@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Forms
 exl-id: 8d2781e7-732e-42e4-b18b-e6d9ceaa7abe
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1910'
 ht-degree: 97%
 
 ---
@@ -33,7 +33,7 @@ La création d’un formulaire adaptatif à l’aide d’un schéma JSON en tant
 
 ## Utilisation d’un schéma JSON comme modèle de formulaire  {#using-a-json-schema-as-form-model}
 
-[!DNL Adobe Experience Manager Forms] prend en charge la création d’un formulaire adaptatif en utilisant un schéma JSON existant en tant que modèle de formulaire. Ce schéma JSON représente la structure dans laquelle les données sont générées ou utilisées par le système back-end de votre organisation.  Le schéma JSON que vous utilisez doit être compatible avec les [spécifications v4](https://json-schema.org/draft-04/schema).
+[!DNL Adobe Experience Manager Forms] prend en charge la création d’un formulaire adaptatif en utilisant un schéma JSON existant en tant que modèle de formulaire. Ce schéma JSON représente la structure dans laquelle les données sont générées ou utilisées par le système back-end de votre organisation. Le schéma JSON que vous utilisez doit être compatible avec les [spécifications v4](https://json-schema.org/draft-04/schema).
 
 Les fonctionnalités clés de l’utilisation d’un schéma JSON sont les suivantes :
 
@@ -313,7 +313,7 @@ Vous trouverez ci-dessous un exemple de schéma JSON.
 
 ### Définitions de schéma réutilisables {#reusable-schema-definitions}
 
-Les clés de définition sont utilisées pour identifier les schémas réutilisables. Les définitions de schéma réutilisables sont utilisées pour créer des fragments. Elle est similaire à l’identification des types complexes dans XSD.  Un exemple de schéma JSON dont la définition est fournie ci-dessous :
+Les clés de définition sont utilisées pour identifier les schémas réutilisables. Les définitions de schéma réutilisables sont utilisées pour créer des fragments. Elle est similaire à l’identification des types complexes dans XSD. Un exemple de schéma JSON dont la définition est fournie ci-dessous :
 
 ```json
 {

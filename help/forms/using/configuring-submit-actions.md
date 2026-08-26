@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: a5aff5dd-912d-49ee-94e8-38cdbc396e5b
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2602'
-ht-degree: 98%
+source-wordcount: '2700'
+ht-degree: 97%
 
 ---
 
@@ -54,7 +54,7 @@ Les actions d’envoi par défaut disponibles avec les formulaires adaptatifs so
 >[!NOTE]
 >
 >Vérifiez que le dossier [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM
->&#x200B;>pas. Le répertoire est nécessaire pour stocker temporairement des pièces jointes. Si le fichier n’existe pas, créez-le.
+>pas. Le répertoire est nécessaire pour stocker temporairement des pièces jointes. Si le fichier n’existe pas, créez-le.
 
 >[!CAUTION]
 >
@@ -80,13 +80,13 @@ Configuration de l’action Envoyer vers le point d’entrée REST
 >
 >Pour transmettre les champs en tant que paramètres dans une URL REST, tous les champs doivent avoir des noms d’éléments différents, même s’ils sont placés sur différents panneaux.
 
-### Publier les données envoyées vers une ressource ou un point d’entrée REST externe {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
+### Publier les données envoyées vers une ressource ou un point d’entrée REST externe  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
 Utilisez l’action **Envoyer vers le point d’entrée REST** pour transmettre les données envoyées à l’URL REST. L’URL peut être celle d’un serveur interne (le serveur sur lequel le formulaire est rendu) ou externe.
 
 Pour publier des données sur un serveur interne, indiquez le chemin de la ressource. Les données sont publiées avec le chemin de la ressource. Par exemple, /content/restEndPoint. Pour ces requêtes de publication, les informations d’authentification de la requête d’envoi sont utilisées.
 
-Pour publier des données sur un serveur externe, indiquez une URL. Le format de l’URL est https://host:port/path_to_rest_end_point. Assurez-vous de configurer le chemin pour que la requête POST soit traitée anonymement.
+Pour publier des données sur un serveur externe, indiquez une URL. Le format de l’URL est :port/path_to_rest_end_point. Assurez-vous de configurer le chemin pour que la requête POST soit traitée anonymement.
 
 ![Mappage pour la transmission des valeurs de champs sous forme de paramètres de page de remerciement](assets/post-enabled-actionconfig.png)
 
@@ -174,7 +174,7 @@ Une fois la configuration réussie, utilisez l’action d’envoi [Appeler un fl
 
 >[!NOTE]
 >
-> La fonctionnalité Envoyer à Microsoft® Liste SharePoint a été introduite avec le pack de services 19 (6.5.19.0) d’AEM 6.5 Forms.
+> La fonctionnalité Envoyer à ® Liste SharePoint a été introduite avec le pack de services 19 (6.5.19.0) d’AEM 6.5 Forms.
 
 L’action d’envoi **[!UICONTROL Envoyer à SharePoint]** connecte un formulaire adaptatif à un stockage Microsoft® SharePoint. Vous pouvez envoyer le fichier de données de formulaire, les pièces jointes ou le document d’enregistrement au stockage Microsoft® SharePoint connecté.
 
@@ -210,7 +210,7 @@ Pour connecter AEM Forms à votre liste Microsoft® SharePoint :
 
 Vous pouvez utiliser la configuration de liste SharePoint créée dans un formulaire adaptatif pour enregistrer des données ou un document d’enregistrement généré dans une liste SharePoint. Suivez les étapes ci-dessous pour utiliser une configuration de stockage de listes SharePoint dans un formulaire adaptatif :
 
-1. [Créer un modèle de données de formulaire à l’aide de Microsoft](/help/forms/using/create-form-data-model.md)
+1. [Création d’un modèle de données de formulaire à l’aide de la configuration de liste ® SharePoint](/help/forms/using/create-form-data-model.md)
 1. [Configurer le modèle de données de formulaire pour récupérer et envoyer des données](/help/forms/using/work-with-form-data-model.md#configure-services)
 1. [Créez un formulaire adaptatif](/help/forms/using/create-adaptive-form.md).
 1. [Configurer l’action de soumission à l’aide d’un modèle de données de formulaire](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
@@ -236,7 +236,7 @@ En règle générale, dans n’importe quel système de capture de données en l
 
 La fonction de revalidation côté serveur permet également d’exécuter les validations fournies par un auteur ou une autrice de formulaires adaptatifs lors de la conception d’un formulaire adaptatif sur le serveur. Elle empêche toute erreur lors des envois de données et toute violation des règles de fonctionnement représentées en termes de validations de formulaire.
 
-### Quels éléments valider sur le serveur ?  {#what-to-validate-on-server-br}
+### Quels éléments valider sur le serveur ? {#what-to-validate-on-server-br}
 
 Toutes les validations de champ prêtes à l’emploi d’un formulaire adaptatif qui sont réexécutées sur le serveur sont les suivantes :
 

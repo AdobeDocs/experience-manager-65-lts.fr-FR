@@ -10,7 +10,7 @@ role: User, Developer
 exl-id: 2f7caa43-213e-4cd2-bb02-6b18c3efb81c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '337'
 ht-degree: 100%
 
 ---
@@ -99,9 +99,9 @@ public interface DraftDataService {
 >
 >La valeur minimale pour la longueur du champ d’ID du brouillon est de 26 caractères. Adobe recommande de définir la longueur de l’ID du brouillon sur 26 caractères ou plus.
 
-## Service Submission Data  {#submission-data-service}
+## Service Submission Data {#submission-data-service}
 
-Pour personnaliser le stockage des données utilisateur pour les envois, vous devez implémenter toutes les méthodes de l’interface `SubmitDataService`.  L’exemple de code suivant décrit les méthodes et les arguments.
+Pour personnaliser le stockage des données utilisateur pour les envois, vous devez implémenter toutes les méthodes de l’interface `SubmitDataService`. L’exemple de code suivant décrit les méthodes et les arguments.
 
 ```java
 /**

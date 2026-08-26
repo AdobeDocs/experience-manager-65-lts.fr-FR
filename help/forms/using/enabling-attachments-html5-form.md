@@ -12,7 +12,7 @@ exl-id: dcc82582-0637-44ce-a2b4-68077cbc2200
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -27,7 +27,7 @@ Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec d
    | multiSelect | vrai ou faux (vrai par défaut) |
    | fileSizeLimit | Nombre en Mo (2 Mo par défaut). Par exemple, 5. |
    | buttonText | Texte des boutons de la fenêtre pop-up (« Joindre » par défaut). |
-   | d’accepter ; | liste séparée par des virgules des types de fichiers à accepter (« audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf » par défaut). |
+   | d’accepter ; | liste séparée par des virgules des types de fichiers à accepter (« audio/&ast;, video/&ast;, image/&ast;, text/&ast;, .pdf » par défaut). |
 
    Par exemple :
 
@@ -50,7 +50,7 @@ Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec d
 
    >[!NOTE]
    >
-   >Pour afficher l’aperçu d’une pièce jointe, cliquez sur le nom de la pièce jointe. 
+   >Pour afficher l’aperçu d’une pièce jointe, cliquez sur le nom de la pièce jointe.
 
    >[!NOTE]
    >
