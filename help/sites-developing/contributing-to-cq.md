@@ -11,8 +11,8 @@ role: Developer
 exl-id: 1197dc8e-7fbe-4f74-942b-3aa9fafc07ac
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2642'
-ht-degree: 100%
+source-wordcount: '2738'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ Au plus haut niveau, vous devez maîtriser les concepts suivants :
 * JavaScript Object Notation (JSON)
 * le modèle d’objet de document
 * les interactions avec ou sans état
-* les [Uniform Resource Identifiers (URI)](https://www.ietf.org/rfc/rfc2396.txt)
+* [Identifiants de ressources uniformes](https://www.ietf.org/rfc/rfc2396.txt)
 * les cookies de navigateur
 * et d’autres concepts de développement web modernes
 
@@ -148,7 +148,7 @@ Avant de lire la spécification JavaDoc ou JCR elle-même, vous pouvez consulter
 
 **Multi-Site Manager (MSM)** - La fonctionnalité MSM d’AEM aide les clients à gérer le contenu multilingue et multinational pour uniformiser leur branding centralisé avec du contenu localisé.
 
-**OSGi** : OSGi est la technologie d’exécution orientée services qui constitue la base du développement Java™ modulaire dans AEM. C’est un framework qui fournit non seulement un environnement de chargement de classes hautement dynamique (et sécurisé) pour les ressources de code (appelés bundles), mais aussi un contrôle complet de la visibilité et du cycle de vie des différents services exposés par des bundles. Un registre de services fournit un modèle de coopération pour les bundles qui tient compte de la dynamique du cycle de vie (et des exigences de version). OSGi résout de nombreux problèmes que les serveurs d’applications étaient censés résoudre, mais de manière légère et très dynamique, ce qui permet, par exemple, de déployer à chaud des services (rendant le nouveau code immédiatement disponible sans redémarrer le serveur).
+**OSGi** : OSGi est la technologie d’exécution orientée services qui constitue la base du développement Java™ modulaire dans AEM. Il s’agit d’un framework qui fournit non seulement un environnement d’exécution et de chargement de classes très dynamique (et sécurisé) pour les ressources de code (appelées bundles), mais aussi un contrôle total sur la visibilité et le cycle de vie des différents services exposés par ces bundles. Un registre de services fournit un modèle de coopération pour les bundles qui tient compte de la dynamique du cycle de vie (et des exigences de version). OSGi résout de nombreux problèmes que les serveurs d’applications étaient censés résoudre, mais de manière légère et très dynamique, ce qui permet, par exemple, de déployer à chaud des services (rendant le nouveau code immédiatement disponible sans redémarrer le serveur).
 
 **Parsys, système de paragraphes** - Le système de paragraphe (parsys) est un composant composé qui permet aux auteurs d’ajouter des composants de différents types à une page et qui contient tous les autres composants de paragraphe. Chaque type de paragraphe est représenté en tant que composant. Le système de paragraphes lui-même est également un composant, qui contient les autres composants de paragraphe.
 
@@ -166,7 +166,7 @@ De nombreuses options de démarrage (telles que le numéro de port actif et le f
 java -jar <quickstartfilename>.jar -help
 ```
 
-**Agents de réplication** : les agents de réplication sont au cœur d’AEM et forment le mécanisme utilisé pour Publier (activer) le contenu d’un auteur ou d’une autrice dans un environnement de publication, vider le contenu du cache du Dispatcher, renvoyer le contenu généré par l’utilisateur ou l’utilisatrice (par exemple, la saisie de formulaire) depuis l’environnement de publication vers l’environnement de création.
+**Agents de réplication** : les agents de réplication sont au cœur d’AEM et forment le mécanisme utilisé pour Publier (activer) du contenu depuis une instance de création vers un environnement de publication, vider le contenu du cache du Dispatcher, renvoyer le contenu généré par l’utilisateur ou l’utilisatrice (par exemple, la saisie de formulaire) depuis l’environnement de publication vers l’environnement de création.
 
 **Génération de modèles automatique** : grâce à la génération de modèles automatique, vous pouvez créer un formulaire (que l’on désigne sous le nom de modèle automatique) dont les champs représentent la structure souhaitée pour vos pages, puis l’utiliser afin de créer aisément des pages sur la base de cette structure.
 
@@ -178,6 +178,6 @@ java -jar <quickstartfilename>.jar -help
 
 **Stockage Tar (TarMK)** - TarMK est le système de persistance par défaut dans AEM. Bien qu’AEM puisse être configuré pour utiliser un autre système de persistance (tel que MongoDB), TarMK présente certains avantages en ce sens qu’il est optimisé pour les utilisations classiques de JCR (donc rapide), utilise un format de données standard et peut être sauvegardé rapidement et facilement.
 
-**Modèle** - Dans AEM, un modèle spécifie un type de page spécialisé. Il définit la structure d’une page (tout en spécifiant généralement une image miniature et diverses propriétés). Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les coordonnées.
+**Modèle** - Dans AEM, un modèle spécifie un type de page spécialisé. Il définit la structure d’une page (tout en spécifiant généralement une image miniature et diverses propriétés). Par exemple, vous pouvez avoir des modèles distincts pour les pages produits, les plans de site et les coordonnées.
 
 **Workflow** - Le système de Workflow AEM permet la création de processus automatisés associés à des pages ou des ressources.

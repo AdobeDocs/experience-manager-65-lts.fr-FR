@@ -12,7 +12,7 @@ role: Admin
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '928'
 ht-degree: 90%
 
 ---
@@ -62,7 +62,7 @@ Vérifiez si c’est le cas en vous rendant sur /etc/replication/agents.author.h
 
 Il est parfois utile de définir tous les journaux de réplication pour qu’ils soient ajoutés dans un fichier journal distinct au niveau DEBUG. Pour ce faire :
 
-1. Accédez à https://host:port/system/console/configMgr et connectez-vous en tant qu’administrateur.
+1. Accédez à :port/system/console/configMgr et connectez-vous en tant qu’administrateur.
 1. Recherchez la configuration de l’enregistreur de journalisation Apache Sling et créez une instance en cliquant sur le bouton **+** à droite de la configuration d’usine. Cela crée un nouvel enregistreur de journal.
 1. Définissez la configuration comme suit :
 
@@ -76,7 +76,7 @@ Il est parfois utile de définir tous les journaux de réplication pour qu’ils
 
 Parfois, il peut être judicieux de suspendre la file d’attente de réplication afin de réduire la charge sur le système de création, sans la désactiver. Actuellement, cela n’est possible qu’en configurant temporairement un port non valide. À partir de la version 5.4, vous pouvez voir un bouton de pause dans la file d’attente de l’agent de réplication, qui présente certaines limites.
 
-1. L’état n’est pas conservé, ce qui signifie que, si vous redémarrez un serveur ou que le lot de réplication est recyclé, il revient à l’état en cours d’exécution.
+1. L’état n’est pas conservé, ce qui signifie que si vous redémarrez un serveur ou si le bundle de réplication est recyclé, il revient à l’état d’exécution
 1. La pause est inactive pendant une période plus courte (1 heure après l’absence totale d’activité avec réplication par d’autres threads) et non pendant une période plus longue. Parce qu’il existe une fonctionnalité dans sling qui permet d’éviter les threads inactifs. Vérifiez essentiellement si un thread de file d’attente de tâches a été inutilisé pendant une plus longue période, dans ce cas, cela déclenche les cycles de nettoyage. En raison du cycle de nettoyage, le thread est arrêté et le paramètre en pause est donc perdu. Comme les tâches sont conservées, il lance un nouveau thread pour traiter la file d’attente qui ne contient pas les détails de la configuration suspendue. En raison de cette file d’attente, l’état devient un état d’exécution.
 
 ## Les autorisations de page ne sont pas répliquées lors de l’activation de l’utilisateur ou l’utilisatrice. {#page-permissions-are-not-replicated-on-user-activation}
