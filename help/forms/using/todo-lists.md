@@ -12,7 +12,7 @@ role: User, Developer
 exl-id: 0e4b5758-3da5-4ca5-8553-161f923661aa
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4024'
+source-wordcount: '4125'
 ht-degree: 100%
 
 ---
@@ -45,10 +45,10 @@ Lors de l’ouverture et de l’utilisation d’une tâche, les outils disponibl
 
 * **Révision multi-utilisateurs** : vous recevez une tâche en même temps que d’autres utilisateurs. Vous devez, ainsi que les autres utilisateurs, fournir des informations, réviser le contenu ou les deux. Les outils suivants peuvent être disponibles avec ce type de tâche :
 
-   * Affichage des instructions pour la tâche
-   * Affichage du statut d’exécution de toutes les personnes auxquelles la tâche est affectée
-   * Affichage des commentaires de toutes les personnes auxquelles la tâche est affectée
-   * Ajout personnel de commentaires à la tâche
+  * Affichage des instructions pour la tâche
+  * Affichage du statut d’exécution de toutes les personnes auxquelles la tâche est affectée
+  * Affichage des commentaires de toutes les personnes auxquelles la tâche est affectée
+  * Ajout personnel de commentaires à la tâche
 
 Voici d’autres outils qui peuvent être disponibles avec les tâches ci-dessus :
 

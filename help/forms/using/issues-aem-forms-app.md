@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: e63c1dc2-9843-47ca-8f3c-c49720659aa0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 100%
+source-wordcount: '683'
+ht-degree: 96%
 
 ---
 
@@ -64,7 +64,7 @@ Lorsque l’application AEM Forms est connectée à une ancienne version du ser
 
 Exécutez les étapes suivantes afin de résoudre ce problème :
 
-1. Dans l’instance d’auteur, accédez à **Adobe Experience Manager > Outils > Formulaires > Configurer le service hors ligne de l’application Workspace > Configurer maintenant**.
+1. Dans l’instance de création, accédez à **Adobe Experience Manager > Outils > Formulaires > Configurer le service hors ligne de l’application Workspace > Configurer maintenant**.
 1. Dans la page **Service hors ligne de l’application Workspace**, cliquez sur **Cache de ressource manuel**.
 
    URL : https://&lt;server>:&lt;port>/libs/fd/workspace-offline/content/config.html
@@ -99,7 +99,7 @@ Le message d’erreur s’affiche lorsque vous sélectionnez l’option **Géné
 
 **Résolution :** ouvrez le fichier **Scripts Gradle** > **gradle-wrapper.properties** et modifiez la propriété **distributionUrl**.
 
-Par exemple, la console d’Android Studio recommande de rétrograder la version de Gradle vers la version 3.5. Modifiez la version dans **distributionUrl** du fichier **gradle-wrapper.properties**.
+Par exemple, la console d’Android Studio recommande de rétrograder la version de Gradle vers la version 3.5. Modifiez la version dans le fichier **distributionUrl** of **gradle-wrapper.properties**.
 
 Sélectionnez à nouveau **Générer** > **Générer APK** pour résoudre l’erreur et générer le fichier .apk.
 

@@ -23,8 +23,8 @@ Les formulaires sont téléchargés sur votre application et sont disponibles ho
 
 Pour synchroniser votre formulaire dans l’application AEM Forms :
 
-1. Dans l’instance d’auteur, sélectionnez un formulaire, puis cliquez sur **Afficher les propriétés**. 
-1. Dans la page des propriétés, cliquez sur **Avancé.** 
+1. Dans l’instance de création, sélectionnez un formulaire, puis cliquez sur **Afficher les propriétés**.
+1. Dans la page des propriétés, cliquez sur **Avancé.**
 1. Dans la section Avancé, activez l’option : **Synchroniser avec l’application AEM Forms** et sélectionnez **Enregistrer**.
 
 Pour synchroniser plusieurs formulaires, dans l’instance de création, sélectionnez plusieurs formulaires dans le gestionnaire de formulaires et sélectionnez **Synchroniser avec l’application AEM Forms**. Lorsque le formulaire est publié, l’application AEM Forms peut se connecter au serveur de publication et récupérer les formulaires.
