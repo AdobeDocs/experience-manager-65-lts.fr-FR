@@ -10,7 +10,7 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 exl-id: 2938a1c6-c8fc-420a-8fad-bb39e5a7936b
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '2131'
 ht-degree: 98%
@@ -82,7 +82,7 @@ AEM Forms Workspace correspond aux fonctionnalités de Flex Workspace (obsol�
 
 >[!NOTE]
 >
->L’espace de travail Flex est obsolète pour la version d’AEM Forms.
+>Flex Workspace est obsolète pour la version d’AEM Forms.
 
 Il permet la gestion des tâches sur les clients sans Flash Player ni Adobe Reader. Il facilite le rendu des formulaires HTML, en plus des formulaires PDF et des formulaires Flex.
 
@@ -96,7 +96,7 @@ Pour sauvegarder la base de données en temps réel, vous devez utiliser le mode
 
 >[!NOTE]
 >
->Remarque : Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs et utilisatrices de concevoir, de gérer, de surveiller et d’optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[&#x200B; Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
+>Remarque : Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs et utilisatrices de concevoir, de gérer, de surveiller et d’optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 

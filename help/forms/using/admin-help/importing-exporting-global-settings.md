@@ -10,7 +10,7 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 exl-id: f5b45667-87df-4069-8f08-2b6daf4bad1e
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '1219'
 ht-degree: 94%
@@ -27,7 +27,7 @@ Vous pouvez importer et exporter des définitions de modèles de recherche et de
 
 >[!NOTE]
 >
->L’espace de travail Flex est obsolète pour la version d’AEM Forms.
+>Flex Workspace est obsolète pour la version d’AEM Forms.
 
 Il vous est possible, par exemple, de passer d’un environnement de développement à un environnement de production en exportant les définitions de modèles de recherche et les paramètres globaux d’un environnement et en les important dans l’autre.
 
@@ -71,7 +71,7 @@ Vous pouvez modifier le fichier de paramètres globaux ; toutefois, les seuls p
 
 >[!NOTE]
 >
->L’espace de travail Flex est obsolète pour la version d’AEM Forms.
+>Flex Workspace est obsolète pour la version d’AEM Forms.
 
 Le fichier de paramètres globaux de Workspace inclut les paramètres suivants :
 
