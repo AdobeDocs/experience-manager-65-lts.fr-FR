@@ -10,10 +10,10 @@ role: User, Developer
 feature: Adaptive Forms
 hide: true
 exl-id: c68c602f-fa93-4e3d-9a8c-b61c3ab53000
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '2503'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -79,7 +79,7 @@ Les rôles par défaut supplémentaires suivants peuvent également être inclus
 
 **Administrateur d’espace de travail AEM Forms :** peut afficher et modifier les paramètres de la page Espace de travail dans la console d’administration.
 
-***Remarque ** : Flex Workspace est obsolète pour la version d’AEM Forms.*
+***remarque &#x200B;**: le Workspace Flex est obsolète pour la version d’AEM forms.*
 
 **Utilisateur Workspace :** peut se connecter à l’application Workspace destinée aux utilisateurs finaux.
 
@@ -97,7 +97,7 @@ Les rôles par défaut supplémentaires suivants peuvent également être inclus
 
 >[!NOTE]
 >
->L’espace de travail Flex est obsolète pour la version d’AEM Forms.
+>Flex Workspace est obsolète pour la version d’AEM Forms.
 
 ## Créer un rôle {#create-a-role}
 
