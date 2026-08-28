@@ -9,14 +9,20 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
 exl-id: befc6b96-517b-4ca3-8007-2aa0fd6ed2cb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9c1795a90f0cd80dcf886477620a5330c5e3fbbf
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 100%
+source-wordcount: '1611'
+ht-degree: 95%
 
 ---
 
 # Analytics avec le framework de service cloud {#analyticsusingcloudframework}
+
+>[!CAUTION]
+>
+>Le tableau de bord Analytics pour AEM Forms est obsolète. Vous ne pouvez plus afficher les rapports d’analyse dans AEM Forms. Pour afficher vos données Forms Analytics, utilisez l’interface utilisateur d’Adobe Analytics.
+>
+>En outre, l’API [Adobe Analytics 1.4 a atteint sa fin de vie](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). Par conséquent, les configurations Adobe Analytics qui utilisent des informations d’identification d’utilisateur (nom d’utilisateur et mot de passe) ne sont plus prises en charge.
 
 AEM Forms s’intègre à Analytics, ce qui permet la capture et le suivi des mesures de performances des formulaires et des documents que vous avez publiés. L’analyse de ces mesures contribue à une prise de décisions éclairée fondée sur les données, eu égard aux modifications requises pour concevoir des formulaires ou des documents plus faciles à utiliser.
 
@@ -30,7 +36,7 @@ Vous pouvez également effectuer des analyses à l’aide d’Adobe Launch. Pour
 
 ## Présentation {#overview}
 
-Vous pouvez utiliser Adobe Analytics pour identifier les schémas et les problèmes d’interaction auxquels sont confrontés les utilisateurs lorsqu’ils utilisent des formulaires adaptatifs, des formulaires HTML5 et des communications interactives. D’emblée, Adobe Analytics permet d’effectuer le suivi et d’enregistrer les informations sur les paramètres suivants :
+Vous pouvez utiliser Adobe Analytics pour identifier les schémas et les problèmes d’interaction rencontrés lors de l’utilisation de formulaires adaptatifs, de formulaires HTML5 et de communications interactives. D’emblée, Adobe Analytics permet d’effectuer le suivi et d’enregistrer les informations sur les paramètres suivants :
 
 * **Durée moyenne de remplissage** : temps moyen passé au remplissage du formulaire.
 * **Rendus** : nombre de fois qu’un formulaire est ouvert.
@@ -110,7 +116,7 @@ Procédez comme suit pour créer une suite de rapports.
 
 La configuration du service cloud rassemble les informations sur votre compte Adobe Analytics. Elle permet à Adobe Experience Manager (AEM) de se connecter à Adobe Analytics. Créez une configuration distincte pour chaque compte Analytics que vous utilisez.
 
-1. Connectez-vous à votre instance d’auteur en tant qu’administrateur AEM.
+1. Connectez-vous à votre instance de création en tant qu’administrateur ou administratrice AEM.
 1. Dans le coin supérieur gauche, cliquez sur **Adobe Experience Manager** > **Outils** ![icône en forme de marteau](/help/forms/using/assets/tools.png) > **Services cloud** > **Services cloud hérités**.
 1. Recherchez l’icône **Adobe Analytics**. Cliquez sur **Afficher les configurations**, puis sur **[+]** pour ajouter une nouvelle configuration.
 
@@ -167,7 +173,7 @@ Un framework Adobe Analytics est un ensemble de mappages entre les variables Ado
 
    * **Expression cron de synchronisation des rapports d&#39;analyse** : spécifiez l’expression cron pour récupérer les rapports d’Adobe Analytics. La valeur par défaut est 0 0 2 ? &#42; &#42;.
 
-   * **Délai de rapport d’extraction :** spécifiez la durée, en secondes, à attendre pour que le serveur réponde au rapport d’analyse. La valeur par défaut est de 120 secondes.
+   * **Délai d’expiration de rapport d’extraction :** spécifiez la durée, en secondes, à attendre pour que le serveur réponde au rapport d’analyse. La valeur par défaut est de 120 secondes.
 
    >[!NOTE]
    >
