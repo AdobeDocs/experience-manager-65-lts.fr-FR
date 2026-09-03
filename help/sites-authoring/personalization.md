@@ -5,12 +5,13 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
 exl-id: da8a1341-55a9-46bb-b78d-ced79e22e87e
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 23fa46e24f25f6aa889bc209b6742773d4535cc6
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 97%
+source-wordcount: '570'
+ht-degree: 82%
 
 ---
+
 
 # Personnalisation et ciblage de contenu {#personalization}
 
@@ -18,9 +19,13 @@ ht-degree: 97%
 
 AEM propose un ensemble d’outils permettant de créer du contenu ciblé et de présenter des expériences personnalisées.
 
+>[!NOTE]
+>
+>Le mode Ciblage et le composant AEM Targeting classique utilisent l’intégration d’AEM Target basée sur ContextHub. Les pages qui reposent exclusivement sur AEP Web SDK n’afficheront donc pas le rendu du composant Ciblage AEM classique. [Pour plus d’informations, consultez la documentation destinée aux développeurs.](/help/sites-developing/target.md)
+
 ## Mode Ciblage {#targeting-mode}
 
-[Créez du contenu ciblé à l’aide du mode Ciblage d’AEM. &#x200B;](/help/sites-authoring/content-targeting-touch.md) Le mode Ciblage et le composant Cible fournissent des outils permettant de créer du contenu pour les expériences de vos activités de marketing.
+[Créez du contenu ciblé à l’aide du mode Ciblage d’AEM. ](/help/sites-authoring/content-targeting-touch.md) Le mode Ciblage et le composant Cible fournissent des outils permettant de créer du contenu pour les expériences de vos activités de marketing.
 
 ## Activités {#activities}
 
@@ -30,7 +35,7 @@ Par exemple, le catalogue de produits We.Retail inclut des teasers qui attirent 
 
 Les activités identifient également le [moteur de ciblage](/help/sites-authoring/personalization.md#targeting-engine) que vos pages utilisent.
 
-Utilisez la [console Activités](/help/sites-authoring/activitylib.md) pour créer et gérer les activités de vos marques. Vous pouvez également créer des activités tout en [créant du contenu ciblé](/help/sites-authoring/content-targeting-touch.md).
+Utilisez la [console Activités](/help/sites-authoring/activitylib.md) pour créer et gérer les activités de vos marques. Vous pouvez également créer des activités à mesure que vous [créez du contenu ciblé.](/help/sites-authoring/content-targeting-touch.md)
 
 ## Expériences {#experiences}
 
@@ -63,6 +68,6 @@ AEM fournit un moteur de ciblage intégré qui traite les requêtes de page et d
 Avec le moteur de ciblage Adobe Target, les informations recueillies suite aux visites de page font l’objet d’un suivi dans Adobe Target.
 
 * Avec ce moteur de ciblage, vous utilisez les segments que vous importez à partir d’Adobe Target pour définir les audiences de vos expériences.
-* Les activités qui utilisent le moteur Adobe Target sont [synchronisées avec Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
+* Les activités qui utilisent le moteur Adobe Target sont [synchronisées avec Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
 
-Vous pouvez utiliser ce moteur lorsque vous avez [intégré Adobe Target](/help/sites-administering/opt-in.md).
+Vous pouvez utiliser ce moteur lorsque vous avez [intégré à Adobe Target.](/help/sites-administering/opt-in.md)
