@@ -10,14 +10,15 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
 exl-id: 650ba9be-6546-46dc-b4ab-ea0b97abff40
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: d49de63985f537da3e6b92dac5233c104b1ccdfe
 workflow-type: tm+mt
-source-wordcount: '5284'
-ht-degree: 99%
+source-wordcount: '5374'
+ht-degree: 93%
 
 ---
 
-# Création de contenu ciblé en mode Ciblage{#authoring-targeted-content-using-targeting-mode}
+
+# Création de contenu ciblé en mode Ciblage {#authoring-targeted-content-using-targeting-mode}
 
 Créez du contenu ciblé à l’aide du mode Ciblage d’AEM. Le mode Ciblage et le composant cible fournissent des outils pour créer du contenu pour les expériences :
 
@@ -30,13 +31,13 @@ Créez du contenu ciblé à l’aide du mode Ciblage d’AEM. Le mode Ciblage et
 * Simulez l’expérience client.
 * Pour plus de personnalisation, configurez le composant cible.
 
-Vous pouvez utiliser AEM ou Adobe Target comme moteur de ciblage (vous devez disposer d’un compte Adobe Target valide pour utiliser Adobe Target). Si vous utilisez Adobe Target, vous devez d’abord configurer l’intégration. Reportez-vous à [Instructions pour l’intégration à Adobe Target](/help/sites-administering/target.md).
+Vous pouvez utiliser AEM ou Adobe Target comme moteur de ciblage (vous devez disposer d’un compte Adobe Target valide pour utiliser Adobe Target). Si vous utilisez Adobe Target, vous devez d’abord configurer l’intégration. Voir [Instructions pour l’intégration à Adobe Target.](/help/sites-administering/target.md)
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
-Les activités et les expériences qui s’affichent en mode Ciblage se répercutent dans la [console Activités](/help/sites-authoring/activitylib.md) :
+Les activités et les expériences qui s’affichent en mode Cible se répercutent dans la [console Activités](/help/sites-authoring/activitylib.md) :
 
-* Les modifications que vous apportez aux activités et aux expériences à l’aide du mode de ciblage sont répercutées dans la console Activités.
+* Les modifications que vous apportez aux activités et aux expériences à l’aide du mode Ciblage sont répercutées dans la console Activités.
 * Les modifications effectuées dans la console Activités sont répercutées en mode Ciblage.
 
 >[!NOTE]
@@ -50,6 +51,10 @@ Les activités et les expériences qui s’affichent en mode Ciblage se répercu
 >[!NOTE]
 >
 >Lors du ciblage, la combinaison de la marque et de l’activité est conservée au niveau de l’utilisateur, et non au niveau du canal.
+
+>[!NOTE]
+>
+>Le mode Ciblage et le composant AEM Targeting classique utilisent l’intégration d’AEM Target basée sur ContextHub. Les pages qui reposent exclusivement sur AEP Web SDK n’afficheront donc pas le rendu du composant Ciblage AEM classique. [Pour plus d’informations, consultez la documentation destinée aux développeurs.](/help/sites-developing/target.md)
 
 ## Passage en mode Ciblage {#switching-to-targeting-mode}
 
@@ -74,7 +79,7 @@ Vous pouvez également créer et gérer des activités Adobe Target à partir d
 
 En outre, vous pouvez gérer les objectifs et les mesures pour toutes les activités Adobe Target et vos audiences Adobe Target. La création de rapports d’activité d’Adobe Target, y compris la conversion des gagnants pour les tests AB, est également incluse.
 
-Lorsque vous ajoutez une activité, elle apparaît également dans la [console Activités](/help/sites-authoring/activitylib.md).
+Lorsque vous ajoutez une activité, elle apparaît également dans la console [Activités](/help/sites-authoring/activitylib.md).
 
 Pour ajouter une activité :
 
@@ -82,7 +87,7 @@ Pour ajouter une activité :
 
    >[!NOTE]
    >
-   >Adobe vous recommande de [créer des marques dans la console Activités](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
+   >Adobe vous recommande de [créer des marques par le biais de la console activités](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
    >
    >
    >Si vous créez une marque en utilisant un autre procédé, assurez-vous que le nœud `/campaigns/<brand>/master` existe pour éviter qu’une erreur ne se produise lorsque vous tenterez de créer une activité.
@@ -139,7 +144,7 @@ L’étape Créer du ciblage du contenu implique la création d’expériences. 
 
 ### Affichage des offres d’expérience en mode Ciblage {#seeing-experience-offers-in-targeting-mode}
 
-Après avoir [lancé le processus de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings), sélectionnez une expérience pour afficher les offres fournies pour cette expérience. Lorsque vous sélectionnez une expérience, les composants ciblés sur la page changent pour afficher l’offre pour cette expérience.
+Après avoir [lancé le processus de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) sélectionnez une expérience pour afficher les offres fournies pour cette expérience. Lorsque vous sélectionnez une expérience, les composants ciblés sur la page changent pour afficher l’offre pour cette expérience.
 
 >[!CAUTION]
 >
@@ -177,7 +182,7 @@ Vous pouvez enregistrer des offres personnalisées dans une bibliothèque d’of
 
 ### Ajout et suppression d’expériences à l’aide du mode Ciblage {#adding-and-removing-experiences-using-targeting-mode}
 
-À l’aide de l’étape Créer du [processus de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings), vous pouvez ajouter et supprimer des expériences. En outre, vous pouvez dupliquer une expérience et aussi la renommer.
+Grâce à l’étape Créer du [processus de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) vous pouvez ajouter et supprimer des expériences. En outre, vous pouvez dupliquer une expérience et aussi la renommer.
 
 #### Ajout d’expériences à l’aide du mode Ciblage {#adding-experiences-using-targeting-mode}
 
@@ -224,19 +229,19 @@ Pour copier des expériences à l’aide du mode Ciblage :
 
 Ciblez un composant pour créer des offres pour les expériences. Les composants ciblés fournissent le contenu utilisé comme offres pour les expériences.
 
-* [Ciblez un composant existant](/help/sites-authoring/content-targeting-touch.md#creating-a-default-offer-by-targeting-an-existing-component). Le contenu devient l’offre de l’expérience par défaut.
-* [Ajoutez un composant cible](/help/sites-authoring/content-targeting-touch.md#creating-an-offer-by-adding-a-target-component), puis ajoutez du contenu au composant.
+* [Cibler un composant existant.](/help/sites-authoring/content-targeting-touch.md#creating-a-default-offer-by-targeting-an-existing-component) Le contenu devient l’offre de l’expérience par défaut.
+* [Ajoutez un composant cible](/help/sites-authoring/content-targeting-touch.md#creating-an-offer-by-adding-a-target-component) puis ajoutez du contenu au composant.
 
 Une fois qu’un composant est ciblé, vous pouvez ajouter des offres pour chaque expérience :
 
-* [Ajoutez des offres personnalisées](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer).
-* [Ajoutez des offres à partir d’une bibliothèque](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
+* [Ajoutez des offres personnalisées.](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer)
+* [Ajoutez des offres à partir d’une bibliothèque.](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)
 
 Les outils suivants sont disponibles pour utiliser des offres :
 
-* [Ajout d’une offre personnalisée à une bibliothèque d’offres](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library).
-* [Conversion d’une offre de bibliothèque en offre personnalisée](/help/sites-authoring/content-targeting-touch.md#converting-a-library-offer-to-a-custom-library).
-* [Ouvrez une offre de bibliothèque et modifiez son contenu](/help/sites-authoring/content-targeting-touch.md#editing-a-library-offer).
+* [Ajouter une offre personnalisée à une bibliothèque d’offres.](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library)
+* [Convertissez une offre de bibliothèque en offre personnalisée.](/help/sites-authoring/content-targeting-touch.md#converting-a-library-offer-to-a-custom-library)
+* [Ouvrez une offre de bibliothèque et modifiez le contenu.](/help/sites-authoring/content-targeting-touch.md#editing-a-library-offer)
 
 #### Création d’une offre par défaut à l’aide d’un composant Ciblage existant {#creating-a-default-offer-by-targeting-an-existing-component}
 
@@ -244,7 +249,7 @@ Ciblez un composant sur la page pour l’utiliser comme offre pour l’expérien
 
 Lorsque vous ciblez un composant, seul ce composant peut être utilisé dans l’offre. Vous ne pouvez pas supprimer le composant de l’offre ni ajouter d’autres composants à celle-ci.
 
-Effectuez la procédure suivante après [avoir lancé le processus de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings).
+Effectuez la procédure suivante après [démarrage du processus de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings).
 
 1. Cliquez sur le composant à cibler. La barre d’outils du composant s’affiche, comme dans l’exemple suivant.
 
@@ -254,7 +259,7 @@ Effectuez la procédure suivante après [avoir lancé le processus de ciblage](/
 
    ![Cible](do-not-localize/chlimage_1.png)
 
-   Le contenu du composant est l’offre de l’expérience par défaut. Lorsqu’un composant est ciblé, son nœud par défaut est répliqué pour chaque expérience. Cela est nécessaire afin de modifier le nœud de contenu adéquat lors d’une création spécifique à une expérience. Pour ces expériences autres que l’expérience par défaut, [ajoutez une offre personnalisée](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) ou [une offre de bibliothèque](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
+   Le contenu du composant est l’offre de l’expérience par défaut. Lorsqu’un composant est ciblé, son nœud par défaut est répliqué pour chaque expérience. Cela est nécessaire afin de modifier le nœud de contenu adéquat lors d’une création spécifique à une expérience. Pour ces expériences non par défaut, ajoutez [une offre personnalisée](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) ou [ajoutez une offre de bibliothèque.](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)
 
 #### Création d’une offre en ajoutant un composant cible {#creating-an-offer-by-adding-a-target-component}
 
@@ -291,11 +296,10 @@ Si vous devez modifier du contenu ciblé, vous devez cliquer sur **Commencer le 
 
    >[!NOTE]
    >
-   >S’il est défini par l’équipe d’administration, vous pouvez avoir besoin de définir explicitement l’emplacement.
+   >S’il est défini par l’administrateur, vous pouvez avoir besoin de définir explicitement l’emplacement.
    >
    >
-   >Les administrateurs et administratrices peuvent décider si la définition de cette configuration est requise à l’adresse **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**.
-   >
+   >Les administrateurs peuvent déterminer si la définition de cette configuration est nécessaire en consultant `https://<host>:<port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet`
    >
    >Pour obliger les utilisateurs à saisir un emplacement, cochez la case **Forcer à indiquer l’emplacement**.
 
@@ -303,13 +307,13 @@ Si vous devez modifier du contenu ciblé, vous devez cliquer sur **Commencer le 
 1. Créez l’offre :
 
    * Pour l’expérience par défaut, faites glisser les composants vers la zone ciblée et modifiez les propriétés du composant comme vous le faites habituellement pour créer le contenu de l’offre.
-   * Pour les expériences autres que l’expérience par défaut, [ajoutez une offre personnalisée](#adding-a-custom-offer) ou [ajoutez une offre de bibliothèque](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
+   * Pour les expériences autres que celles par défaut, ajoutez [&#x200B; une offre personnalisée &#x200B;](#adding-a-custom-offer) ou [&#x200B; une offre de bibliothèque](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
 
 #### Ajout d’une offre personnalisée {#adding-a-custom-offer}
 
 Créez une offre en créant le contenu d’un composant ciblé en mode Ciblage. Lorsque vous créez une offre personnalisée, elle est utilisée comme offre pour une expérience unique.
 
-Si vous décidez que l’offre peut être utilisée pour d’autres expériences, vous pouvez créer une offre personnalisée et l’[ajouter à la bibliothèque](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library). Pour plus d’informations sur l’utilisation de la console Offres pour créer une offre réutilisable, reportez-vous à la section [Ajout d’une offre à une bibliothèque d’offres](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library).
+Si vous décidez que l’offre peut être utilisée pour d’autres expériences, vous pouvez créer une offre personnalisée et l’[ajouter à la bibliothèque.](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library) Pour plus d’informations sur l’utilisation de la console Offres pour créer une offre réutilisable, voir [Ajouter une offre à une bibliothèque des offres](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library).
 
 1. Sélectionnez l’expérience à laquelle vous ajoutez l’offre.
 1. Pour afficher le menu du composant, cliquez ou appuyez sur le composant ciblé auquel vous ajoutez l’offre.
@@ -367,7 +371,7 @@ Vous ne pouvez pas ajouter d’offres de bibliothèque à l’expérience par d�
 
 Ajoutez une offre personnalisée à la [bibliothèque d’offres](/help/sites-authoring/offerlib.md) lorsque vous souhaitez la réutiliser comme offre pour plusieurs expériences. Vous pouvez ajouter des offres à la bibliothèque de la marque actuelle que vous ciblez.
 
-Pour plus d’informations sur l’utilisation de la console Offres pour créer une offre réutilisable, reportez-vous à la section [Ajout d’une offre à une bibliothèque d’offres](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library).
+Pour plus d’informations sur l’utilisation de la console Offres pour créer une offre réutilisable, voir [Ajouter une offre à une bibliothèque des offres](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library).
 
 1. Sélectionnez l’expérience pour afficher l’offre personnalisée.
 1. Cliquez sur l’offre personnalisée pour afficher le menu d’offre, puis cliquez sur l’icône **Enregistrer l’offre dans la bibliothèque des offres**.
@@ -381,7 +385,7 @@ Pour plus d’informations sur l’utilisation de la console Offres pour créer 
 Convertissez une offre de bibliothèque en offre personnalisée pour modifier l’offre en fonction de l’expérience actuelle et sans modifier l’offre dans d’autres expériences.
 
 1. Sélectionnez l’expérience pour afficher l’offre de bibliothèque.
-1. Cliquez sur l’offre de bibliothèque pour afficher le menu d’offre, puis cliquez sur l’icône Convertir en offre intégrée.
+1. Cliquez sur l’offre de bibliothèque pour afficher le menu des offres, puis cliquez sur l’icône **Convertir en offre intégrée**.
 
    ![Convertir en offre intégrée.](do-not-localize/chlimage_1-5.png)
 
@@ -390,7 +394,7 @@ Convertissez une offre de bibliothèque en offre personnalisée pour modifier l�
 Ouvrez une offre de bibliothèque à partir d’une expérience en mode Ciblé pour modifier l’offre. Les modifications que vous apportez apparaissent dans toutes les expériences qui utilisent l’offre.
 
 1. Sélectionnez l’expérience pour afficher l’offre de bibliothèque.
-1. Convertissez l’offre de bibliothèque en offre locale/personnalisée. Reportez-vous à la section [Conversion d’une offre de bibliothèque en bibliothèque personnalisée](#converting-a-library-offer-to-a-custom-library).
+1. Convertissez l’offre de bibliothèque en offre locale/personnalisée. Voir [&#x200B; Conversion d’une offre de bibliothèque en bibliothèque personnalisée &#x200B;](#converting-a-library-offer-to-a-custom-library).
 1. Modifiez le contenu de l’offre.
 
 1. Réenregistrez-la dans la bibliothèque. Reportez-vous à la section [Ajout d’une offre personnalisée à une bibliothèque](#adding-a-custom-offer-to-a-library).
@@ -399,7 +403,7 @@ Ouvrez une offre de bibliothèque à partir d’une expérience en mode Ciblé p
 
 L’étape Cibler du [processus de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implique le mappage des audiences avec les expériences que vous avez utilisées à l’étape Créer. La page cible affiche les audiences ciblés par chaque expérience. Vous pouvez spécifier ou modifier l’audience de chaque expérience. Si vous utilisez Adobe Target, vous pouvez également créer des tests A/B qui vous permettent de cibler un pourcentage du trafic pour une audience sur une expérience particulière.
 
-### Si vous utilisez le ciblage d’AEM ou d’Adobe Target (ciblage d’expériences)… {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### Si vous utilisez le ciblage d’AEM ou d’Adobe Target (ciblage d’expériences) {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 Les audiences s’affichent dans la partie gauche du diagramme de mappage, tandis que les expériences s’affichent dans la partie droite.
 
@@ -407,7 +411,7 @@ Les audiences s’affichent dans la partie gauche du diagramme de mappage, tandi
 
 Définissez une audience à l’aide d’un segment. La configuration du cloud de la page détermine les segments à votre disposition. Lorsque la page n’est pas associée à une configuration cloud Adobe Target, les segments AEM sont disponibles pour définir des audiences. Lorsque la page est associée à une configuration cloud Adobe Target, vous utilisez des segments Target.
 
-Pour plus d’informations sur les moteurs de ciblage, consultez [Moteur de ciblage](/help/sites-authoring/personalization.md#targeting-engine).
+Pour plus d’informations sur les moteurs de ciblage, voir [Moteur de ciblage](/help/sites-authoring/personalization.md#targeting-engine).
 
 N’utilisez pas plus d’une expérience pour une audience. Un symbole d’avertissement s’affiche en regard d’une expérience lorsqu’elle est mappée à une audience mappée à une autre expérience.
 
@@ -421,9 +425,9 @@ Procédez comme suit pour associer une expérience à une audience lors de l’u
 1. (Facultatif) Cliquez sur **Modifier**, puis saisissez un mot-clé pour rechercher le segment souhaité.
 1. Dans la liste d’audiences, sélectionnez l’audience et cliquez sur **OK**.
 
-### Si vous utilisez des tests A/B (Adobe Target)… {#if-you-are-using-a-b-testing-adobe-target}
+### Si vous utilisez des tests A/B (Adobe Target) {#if-you-are-using-a-b-testing-adobe-target}
 
-Si vous avez une activité de test A/B, les audiences se trouvent à votre gauche, le pourcentage de vue de chaque expérience au milieu et les expériences à droite.
+Si vous avez une activité de test AB, les audiences se trouvent à votre gauche, le pourcentage de vue de chaque expérience au milieu et les expériences à droite.
 
 Vous pouvez modifier les pourcentages, à condition que leur somme reste égale à 100 %. Une audience peut être utilisée par plusieurs expériences dans les tests A/B.
 
@@ -575,7 +579,7 @@ Pour configurer des objectifs et des paramètres en cas d’utilisation d’Adob
 
    Si vous devez supprimer tous les champs, cliquez sur le bouton de sélection dans le coin supérieur droit et sélectionnez **Effacer tous les champs**.
 
-   Toutes les mesures comportent également des paramètres avancés que vous pouvez définir. Sélectionnez **Paramètres avancés** pour y accéder. Reportez-vous à la définition de la comptabilisation des mesures de succès dans le tableau précédent et à la [Documentation d’Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=fr).
+   Toutes les mesures comportent également des paramètres avancés que vous pouvez définir. Sélectionnez **Paramètres avancés** pour y accéder. Consultez la définition de la manière dont les mesures de succès sont comptabilisées dans le tableau précédent et consultez la [documentation d’Adobe Target.](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=fr)
 
    >[!NOTE]
    >
@@ -607,10 +611,10 @@ Simulez l’expérience d’un visiteur ou d’une visiteuse afin de vérifier q
 Les critères suivants déterminent le contenu qui s’affiche lors de la simulation de l’expérience d’un visiteur ou d’une visiteuse :
 
 * Les données du magasin de sessions de l’utilisateur ou de l’utilisatrice (via ContextHub).
-* Les [activités activées](/help/sites-authoring/activitylib.md).
-* Les [règles qui définissent les segments](/help/sites-administering/campaign-segmentation.md).
+* Les [activités qui sont activées.](/help/sites-authoring/activitylib.md)
+* Les [règles qui définissent les segments.](/help/sites-administering/campaign-segmentation.md)
 * Le contenu des expériences dans les composants Target.
-* La [configuration du moteur de ciblage](/help/sites-authoring/activitylib.md).
+* La [configuration du moteur de ciblage.](/help/sites-authoring/activitylib.md)
 
 Si du contenu inattendu s’affiche sur la page lors du chargement d’un profil, vérifiez la configuration de chaque élément de cette liste.
 
@@ -691,7 +695,7 @@ Si vous sélectionnez Adobe Target comme moteur :
   </tr>
   <tr>
    <td><strong>Inclure les segments résolus</strong></td>
-   <td><p>Si vous cochez cette case, tous les segments résolus dans l’appel de mbox et les paramètres configurés dans la page et dans le framework sont inclus.</p> <p>Cela ne fonctionne que dans les situations où vous utilisez une API XML, pour synchronisez les segments AEM. Si des segments dans AEM ne sont pas gérés par Adobe Target (comme les segments de script), cette option vous permet de résoudre le segment dans AEM et d’envoyer à Adobe Target des informations indiquant que le segment est actif.</p> </td>
+   <td><p>Si vous cochez cette case, tous les segments résolus dans l’appel de mbox et les paramètres configurés dans la page et dans l’infrastructure sont inclus.</p> <p>Cela ne fonctionne que dans les situations où vous utilisez une API XML, pour synchronisez les segments AEM. Si des segments dans AEM ne sont pas gérés par Adobe Target (comme les segments de script), cette option vous permet de résoudre le segment dans AEM et d’envoyer à Adobe Target des informations indiquant que le segment est actif.</p> </td>
   </tr>
   <tr>
    <td><strong>Paramètres contextuels hérités</strong></td>
@@ -710,7 +714,7 @@ Si vous sélectionnez Adobe Target comme moteur :
 
 >[!NOTE]
 >
->Lorsque vous sélectionnez un composant et le rendez ciblable, AEM remplace également le composant et injecte un composant Adobe Target. (Le composant Adobe Target est non seulement utilisé lorsque vous l’ajoutez manuellement à la page, mais également lorsque vous ciblez un composant existant.)
+>Lorsque vous sélectionnez un composant et le rendez ciblable, AEM remplace également le composant et injecte un composant Adobe Target. Le composant Adobe Target est non seulement utilisé lorsque vous l’ajoutez manuellement à la page, mais également lorsque vous ciblez un composant existant.
 
 Si vous sélectionnez ClientContext (côté client) comme moteur :
 

@@ -10,10 +10,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8b3d8d0f-10f7-4736-881d-8f1f21c69182
-source-git-commit: a037dc7cbb13abfeb8a7289baded50d3d788cbf6
+source-git-commit: 76bd0f170b06a3f930d504b680342c954daae460
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 80%
+source-wordcount: '1382'
+ht-degree: 70%
 
 ---
 
@@ -25,7 +25,7 @@ Après la [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md), 
 
 * [Vérification des journaux pour la réussite de la mise à niveau](#verify-logs-for-upgrade-success)
 
-* [Vérification des lots OSGi](#verify-osgi-bundles)
+* [Vérification des bundles OSGi](#verify-osgi-bundles)
 
 * [Vérifier la version d’Oak](#verify-oak-version)
 
@@ -36,6 +36,8 @@ Après la [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md), 
 * [Activation des agents de réplication](#enable-replication-agents)
 
 * [Activation des tâches planifiées personnalisées](#enable-custom-scheduled-jobs)
+
+* [Réinstallation ou vérification des modules complémentaires](#reinstall-or-verify-add-ons)
 
 * [Exécution du plan de test](#execute-test-plan)
 
@@ -59,13 +61,13 @@ Pour cela, les modifications ont été apportées à la façon dont les journaux
 
 Le fichier error.log doit être soigneusement examiné pendant et après le démarrage d’AEM à l’aide du fichier jar de la version cible. Les avertissements et erreurs doivent être examinés. En général, il est préférable de rechercher les problèmes au début du journal. Les erreurs qui se produisent plus tard dans le journal peuvent en fait être des effets secondaires d’une cause racine repérée plus tôt dans le fichier. En cas d’erreurs et d’avertissements répétés, reportez-vous à la section ci-dessous pour [Analyser les problèmes liés à la mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade).
 
-### Vérification des lots OSGi {#verify-osgi-bundles}
+### Vérification des bundles OSGi {#verify-osgi-bundles}
 
-Accédez à la console OSGi `/system/console/bundles` et vérifiez si des lots n’ont pas démarré. Si des lots sont installés, consultez le fichier `error.log` pour identifier le problème racine.
+Accédez à la console OSGi `/system/console/bundles` et vérifiez si des bundles n’ont pas démarré. Si des bundles sont installés, consultez le fichier `error.log` pour identifier le problème racine.
 
 ### Vérifier la version d’Oak {#verify-oak-version}
 
-Après la mise à niveau, vous devriez voir que la version d’Oak a été mise à jour vers **1.68.x**. Pour vérifier la version d’Oak, accédez à la console OSGi et examinez la version associée aux lots Oak : Oak Core, Oak Commons, Oak Segment Tar.
+Après la mise à niveau, vous devriez voir que la version d’Oak a été mise à jour vers **1.68.x**. Pour vérifier la version d’Oak, accédez à la console OSGi et examinez la version associée aux bundles Oak : Oak Core, Oak Commons, Oak Segment Tar.
 
 ### Validation initiale des pages {#initial-validation-of-pages}
 
@@ -93,6 +95,19 @@ Une fois que l’environnement de publication a été entièrement mis à niveau
 
 À ce stade, toutes les tâches planifiées faisant partie de la base de code peuvent être activées.
 
+### Réinstallation ou vérification des modules complémentaires {#reinstall-or-verify-add-ons}
+
+>[!IMPORTANT]
+>
+>L’installation d’un pack de services LTS AEM 6.5 est techniquement une mise à niveau [sur place](/help/sites-deploying/in-place-upgrade.md) complète (le fichier jar de démarrage rapide d’AEM est entièrement remplacé avant l’application de la mise à jour). Par conséquent, les tâches de nettoyage standard avant la mise à niveau qui s’exécutent lors de toute mise à niveau sur place s’exécutent désormais également lors de l’application d’un pack de services.
+
+L’une de ces tâches supprime les dossiers `install` obsolètes (`install` et variantes de mode d’exécution telles que `install.author` ou `install.publish`) qui se trouvent n’importe où sous `/libs`, afin d’empêcher la réinstallation des lots et des configurations obsolètes. Si votre solution repose sur un module complémentaire qui conserve ses propres lots ou configurations OSGi dans un dossier de `install` de ce type sous `/libs`, ce dossier peut être supprimé dans le cadre de l’application d’un pack de services, même si cela n’a pas été observé lors des mises à niveau du pack de services dans le passé.
+
+Après avoir appliqué un pack de services :
+
+* Vérifiez que tous les modules complémentaires précédemment installés sont toujours présents et que leurs lots et configurations OSGi sont actifs. Recherchez `/system/console/bundles` lots qui n’ont pas démarré.
+* Si le contenu d’un module complémentaire est manquant, réinstallez le package de contenu du module complémentaire pour le restaurer.
+
 ### Exécution du plan de test {#execute-test-plan}
 
 Exécutez le plan de test détaillé comme défini dans [Mise à niveau du code et des personnalisations dans la section **Procédure de test**](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure).
@@ -101,23 +116,23 @@ Exécutez le plan de test détaillé comme défini dans [Mise à niveau du code 
 
 Cette section présente certains scénarios de problèmes auxquels vous pourriez être confronté lors de la procédure de mise à niveau vers AEM 6.5 LTS.
 
-### Échec de la mise à jour des packages et des lots  {#packages-and-bundles-fail-to-update}
+### Échec de la mise à jour des packages et des bundles  {#packages-and-bundles-fail-to-update}
 
-Si l’installation des packages échoue pendant la mise à niveau, les lots qu’ils contiennent ne seront pas mis à jour non plus. Cette catégorie de problèmes est due à une mauvaise configuration du magasin de données. Ils apparaissent également sous la forme de messages **ERROR** (erreur) et **WARN** (avertissement) dans error.log. Étant donné que dans la plupart de ces cas, la connexion par défaut peut ne pas fonctionner, vous pouvez utiliser CRXDE directement pour inspecter et trouver les problèmes de configuration.
+Si l’installation des packages échoue pendant la mise à niveau, les bundles qu’ils contiennent ne seront pas mis à jour non plus. Cette catégorie de problèmes est due à une mauvaise configuration du magasin de données. Ils apparaissent également sous la forme de messages **ERROR** (erreur) et **WARN** (avertissement) dans error.log. Étant donné que dans la plupart de ces cas, la connexion par défaut peut ne pas fonctionner, vous pouvez utiliser CRXDE directement pour inspecter et trouver les problèmes de configuration.
 
 ### La mise à niveau n’a pas été exécutée. {#the-upgrade-did-not-run}
 
 Avant de commencer les étapes de préparation, veillez à exécuter d&#39;abord l&#39;instance **source** en l&#39;exécutant avec la commande `java -jar aem-quickstart.jar`. Cela est nécessaire pour s’assurer que le fichier quickstart.properties est généré correctement. S’il est manquant, la mise à niveau ne fonctionnera pas. Vous pouvez également vérifier si le fichier est présent en regardant sous `crx-quickstart/conf` dans le dossier d’installation de l’instance source. En outre, lors du démarrage d’AEM pour lancer la mise à niveau, celle-ci doit être exécutée avec la commande `java -jar <aem-quickstart-6.5-LTS.jar>`. Le démarrage à partir d’un script de démarrage ne démarre pas AEM en mode de mise à niveau.
 
-### Certains lots AEM ne passent pas à l’état actif. {#some-aem-bundles-are-not-switching-to-the-active-state}
+### Certains bundles AEM ne passent pas à l’état actif. {#some-aem-bundles-are-not-switching-to-the-active-state}
 
-Si des lots ne démarrent pas, recherchez des dépendances insatisfaites.
+Si des bundles ne démarrent pas, recherchez des dépendances insatisfaites.
 
-Si ce problème est présent mais qu’il est dû à un échec de l’installation du package qui a entraîné la non-mise à niveau des lots, ils seront considérés comme incompatibles pour la nouvelle version. Pour plus d’informations sur la manière de résoudre ce problème, voir **Échec de la mise à jour des packages et des lots** ci-dessus.
+Si ce problème survient à la suite d’un échec d’installation de package ayant empêché la mise à niveau des bundles, ces derniers seront considérés comme incompatibles avec la nouvelle version. Pour plus d’informations sur la manière de résoudre ce problème, voir **Échec de la mise à jour des packages et des bundles** ci-dessus.
 
 Il est également recommandé de comparer la liste des lots d’une instance LTS AEM 6.5 neuve avec celle de l’instance mise à niveau afin de détecter les lots qui n’ont pas été mis à niveau. Cela permettra de réduire le champ des recherches dans le fichier `error.log`.
 
-### Les lots personnalisés ne passent pas à l’état actif {#custom-bundles-not-switching-to-the-active-state}
+### Les bundles personnalisés ne passent pas à l’état actif {#custom-bundles-not-switching-to-the-active-state}
 
 Si vos lots personnalisés ne passent pas à l’état actif, il est probable qu’une partie du code ne procède pas à l’importation de l’API modifiée. Cela entraîne le plus souvent des dépendances non satisfaites.
 
@@ -125,7 +140,7 @@ Il est également préférable de vérifier si la modification à l’origine du
 
 ### Analyse des journaux error.log et upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
-Dans la plupart des cas, les journaux doivent être consultés afin d’y chercher des erreurs pour détecter la cause d’un problème. Toutefois, pour les mises à niveau, il est également nécessaire de surveiller les problèmes de dépendance, car les anciens lots peuvent ne pas être mis à niveau correctement.
+Dans la plupart des cas, les journaux doivent être consultés afin d’y chercher des erreurs pour détecter la cause d’un problème. Toutefois, pour les mises à niveau, il est également nécessaire de surveiller les problèmes de dépendance, car les anciens bundles peuvent ne pas être mis à niveau correctement.
 
 Pour ce faire, la meilleure méthode consiste à élaguer le fichier error.log en supprimant tous les messages qui ne sont pas liés au problème auquel vous êtes confronté. Vous pouvez le faire à l’aide d’un outil comme grep, en utilisant la méthode suivante :
 

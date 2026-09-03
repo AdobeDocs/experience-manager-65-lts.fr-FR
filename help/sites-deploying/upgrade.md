@@ -10,10 +10,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ebc34847-dc3d-41ed-b0d6-f004c3debcd9
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+source-git-commit: 76bd0f170b06a3f930d504b680342c954daae460
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 27%
+source-wordcount: '282'
+ht-degree: 24%
 
 ---
 
@@ -25,6 +25,10 @@ ht-degree: 27%
 >[!NOTE]
 >
 >D’un point de vue technique, le processus de mise à niveau d’AEM 6.5 LTS vers AEM 6.5 LTS Service Packs est conçu pour être une mise à niveau statique transparente [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md). Ce processus ne nécessite généralement pas de modifications du code de la part des clients, sauf indication contraire dans les notes de mise à jour.
+
+>[!IMPORTANT]
+>
+>Comme l’installation d’un pack de services exécute les mêmes tâches de nettoyage avant la mise à niveau que toute autre mise à niveau statique, les modules complémentaires qui installent leur propre contenu sous `/libs` peuvent devoir être réinstallés par la suite. Voir [Réinstaller ou vérifier les modules complémentaires](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#reinstall-or-verify-add-ons).
 
 Cette section couvre la mise à niveau d’une installation AEM vers AEM 6.5 LTS :
 
