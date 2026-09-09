@@ -10,10 +10,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
-source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
+source-git-commit: c93d78653e192d041830a84ea24fe5d3edde29e0
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 80%
+source-wordcount: '1332'
+ht-degree: 69%
 
 ---
 
@@ -24,6 +24,7 @@ Avant de commencer la mise à niveau, il est important d’effectuer ces tâches
 * [Définitions d’index](#index-definitions)
 * [Vérification de la disponibilité de l’espace disque nécessaire](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#ensure-sufficient-disk-space)
 * [Sauvegarde complète d’AEM](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#fully-back-up-aem)
+* [Recherchez les sauvegardes obsolètes avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#check-stale-pre-upgrade-backups)
 * [Génération du fichier quickstart.properties](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
 * [Configuration de la purge du workflow et du journal d’audit](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
 * [Installation, configuration et exécution des tâches précédant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
@@ -37,7 +38,7 @@ Avant de commencer la mise à niveau, il est important d’effectuer ces tâches
 
 ## Définitions d’index {#index-definitions}
 
-Assurez-vous d’avoir installé les définitions d’index requises publiées avec le dernier pack de services AEM 6.5. (Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/release-notes/release-notes) consultez les notes de mise à jour du pack de services AEM 6.5 ).
+Assurez-vous d’avoir installé les définitions d’index requises publiées avec le dernier pack de services AEM 6.5. (Pour plus d’informations](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/release-notes/release-notes) consultez les notes de mise à jour du pack de services AEM 6.5 [).
 
 ## Vérification de la disponibilité de l’espace disque nécessaire {#ensure-sufficient-disk-space}
 
@@ -46,6 +47,18 @@ Lors de l’exécution de la mise à niveau, assurez-vous que l’espace disque 
 ## Sauvegarde complète d’AEM {#fully-back-up-aem}
 
 AEM doit être entièrement sauvegardé avant le début de la mise à niveau. Veillez à sauvegarder votre référentiel, l’installation de l’application, le magasin de données et les instances Mongo, le cas échéant. Pour plus d’informations sur la sauvegarde et la restauration d’une instance AEM, reportez-vous à la section [Sauvegarde et restauration](/help/sites-administering/backup-and-restore.md).
+
+## Recherchez les sauvegardes obsolètes avant la mise à niveau {#check-stale-pre-upgrade-backups}
+
+Avant une mise à niveau, AEM sauvegarde certains chemins (tels que `/etc/tags`) sous `/var/upgrade/PreUpgradeBackup/<timestamp>`, puis les restaure une fois la mise à niveau terminée. Chaque nœud de sauvegarde possède une propriété de statut de fusion : `INIT` signifie que la sauvegarde a été créée, mais n’a jamais été fusionnée à nouveau, tandis que `COMPLETED` signifie que la fusion s’est terminée avec succès.
+
+Si une sauvegarde d’une mise à niveau précédente (par exemple, de la version 6.4 à la version 6.5) reste à l’état `INIT`, la dernière mise à niveau (de la version 6.5 à la version 6.5 LTS) restaure cette ancienne sauvegarde non fusionnée. Cela peut réintroduire silencieusement un contenu obsolète ou obsolète qui ne correspond plus à l’état actuel du référentiel, ce qui entraîne des problèmes inattendus une fois la mise à niveau terminée.
+
+Pour éviter cela, avant de commencer la mise à niveau :
+
+1. À l’aide de CRXDE Lite (`/crx/de/index.jsp`), recherchez dans l’instance source tout nœud préexistant sous `/var/upgrade/PreUpgradeBackup/`.
+2. Examinez la propriété de statut de fusion de chaque nœud de sauvegarde trouvé.
+3. Si un nœud possède le statut `INIT` d’une mise à niveau précédente, passez en revue son contenu et nettoyez-le (supprimez-le ou fusionnez-le explicitement) avant de continuer. Cela permet de s’assurer que la mise à niveau crée une sauvegarde récente et précise au lieu de restaurer silencieusement des données obsolètes.
 
 ## Générer le fichier quickstart.properties {#generate-quickstart-properties}
 
