@@ -151,7 +151,7 @@ Commencez avec le magasin de référence Venia en clonant le [référentiel Git]
 
 Pour connecter votre projet au système Commerce, AEM doit être configuré avec le point d’entrée GraphQL de votre système Commerce.
 
-Un projet généré par l’[archétype de projet ](https://github.com/adobe/aem-project-archetype) ou le [magasin de référence AEM Venia](https://github.com/adobe/aem-cif-guides-venia), incluent déjà une configuration par défaut qui doit être ajustée.
+Un projet généré par l’[archétype de projet &#x200B;](https://github.com/adobe/aem-project-archetype) ou le [magasin de référence AEM Venia](https://github.com/adobe/aem-cif-guides-venia), incluent déjà une configuration par défaut qui doit être ajustée.
 
 Remplacez la valeur de l’`url` dans `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` avec le point d’entrée GraphQL de votre système Commerce utilisé par le projet.
 
