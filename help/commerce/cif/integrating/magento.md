@@ -8,8 +8,8 @@ role: Admin, Developer
 exl-id: cecd9591-bff4-4b4e-a3fd-4ab4278a0b81
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '402'
+ht-degree: 80%
 
 ---
 
@@ -19,7 +19,7 @@ Experience Manager et Adobe Commerce sont intégrés de manière transparente 
 
 >[!NOTE]
 >
->La version minimale de l’API GraphQL prise en charge est la version 2.3.5. Certaines fonctionnalités ne sont prises en charge que dans les versions plus récentes ou uniquement dans l’édition Adobe Commerce.
+>La version minimale de l’API GraphQL prise en charge est la version 2.3.5. Certaines fonctionnalités ne sont prises en charge que dans les versions plus récentes ou uniquement dans l’édition Adobe Commerce.
 
 ## Aperçu de l’architecture {#overview}
 
@@ -28,7 +28,7 @@ L’architecture globale est la suivante :
 ![Aperçu de l’architecture du CIF](../assets/AEM_Magento_Architecture.png)
 
 CIF prend en charge les modèles de communication côté serveur et côté client.
-Les appels d’API côté serveur sont implémentés à l’aide du [client GraphQL](https://github.com/adobe/commerce-cif-graphql-client) générique intégré, associé à un [jeu de modèles de données générés](https://github.com/adobe/commerce-cif-magento-graphql) pour le schéma GraphQL de Commerce. De plus, toute requête GraphQL ou mutation au format GQL peut être utilisée.
+Les appels d’API côté serveur sont implémentés à l’aide du client GraphQL [générique intégré](https://github.com/adobe/commerce-cif-graphql-client) associé à un [ensemble de modèles de données générés](https://github.com/adobe/commerce-cif-magento-graphql) pour le schéma GraphQL de Commerce. De plus, toute requête GraphQL ou mutation au format GQL peut être utilisée.
 
 Pour les composants côté client, qui sont créés à l’aide de [React](https://reactjs.org/), le [client Apollo](https://www.apollographql.com/docs/react/) est utilisé.
 
@@ -38,7 +38,7 @@ Pour les composants côté client, qui sont créés à l’aide de [React](https
 
 Les [composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components) suivent des modèles de conception et des bonnes pratiques très similaires à ceux des [composants principaux AEM WCM](https://github.com/adobe/aem-core-wcm-components).
 
-La logique commerciale et la communication d’arrière-plan avec Adobe Commerce pour les composants principaux AEM CIF sont mises en œuvre dans les modèles Sling. Au cas où il est nécessaire de personnaliser cette logique pour répondre aux exigences spécifiques du projet, le modèle de délégation des modèles Sling peut être utilisé.
+La logique métier et la communication d’arrière-plan avec Adobe Commerce pour les composants principaux AEM CIF sont mises en œuvre dans les modèles Sling. Au cas où il est nécessaire de personnaliser cette logique pour répondre aux exigences spécifiques du projet, le modèle de délégation des modèles Sling peut être utilisé.
 
 >[!TIP]
 >

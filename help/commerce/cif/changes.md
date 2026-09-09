@@ -7,8 +7,8 @@ role: Admin, Developer
 exl-id: aced89a0-dec1-49fe-afbc-3ddf1318b900
 source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 99%
+source-wordcount: '339'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ Ce document met en évidence les différences importantes entre le module compl�
 
 ## Installation et mises à jour
 
-Le package complémentaire AEM CIF peut être installé et mis à jour grâce au gestionnaire de packages AEM.
+Le package complémentaire AEM CIF peut être installé et mis à jour grâce au gestionnaire de modules AEM.
 
 **Versions CIF précédentes**
 
@@ -36,7 +36,7 @@ Le point d’entrée est configuré via la console OSGi.
 
 ## Déploiement du projet CIF Venia
 
-Le projet disponible dans les [Guides AEM GitHub - Projet CIF Venia](https://github.com/adobe/aem-cif-guides-venia) et déploiement effectué via le gestionnaire de packages AEM.
+Le projet disponible dans les [Guides AEM GitHub - Projet CIF Venia](https://github.com/adobe/aem-cif-guides-venia) et déploiement effectué via le gestionnaire de modules AEM.
 
 **Versions CIF précédentes**
 
