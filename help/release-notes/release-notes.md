@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 79f3d3211a79ce62242273df0cdecd24cd8900cf
+source-git-commit: aa819778006a3acb0d02772156c2af820ed353bb
 workflow-type: tm+mt
-source-wordcount: '6705'
-ht-degree: 26%
+source-wordcount: '7575'
+ht-degree: 23%
 
 ---
 
@@ -262,7 +262,7 @@ L’historique des promotions Launch affiche désormais du texte localisé dans 
 
 
 
-#### MSM - Live Copies{#sites-msm-live-copies-65-lts-sp3}
+#### MSM - Copies dynamiques{#sites-msm-live-copies-65-lts-sp3}
 
 * Les dossiers de Live Copy de fragments de contenu conservent désormais cq:rolloutConfigs lorsque les auteurs enregistrent des propriétés inchangées. Les auteurs peuvent ensuite mettre à jour les paramètres de déploiement sans perdre la configuration existante. (SITES-43729) CRITIQUE
 
@@ -301,9 +301,57 @@ L’historique des promotions Launch affiche désormais du texte localisé dans 
 
 
 
-<!--
 ### [!DNL Forms]{#forms-65-lts-sp3}
--->
+
+>[!NOTE]
+>
+> Le pack de services 3 (SP3) LTS AEM Forms 6.5 pour les déploiements OSGi est désormais disponible. Elle comprend des correctifs de bugs, des améliorations de sécurité et des améliorations. **Le Service Pack 3 (SP3) AEM Forms 6.5 LTS pour les déploiements JEE sera publié ultérieurement.**
+
+#### Améliorations {#forms-enhancements-65-lts-sp3}
+
+* FORMS-24360 : ajout de la prise en charge de PDF Generator (PDFG) pour Microsoft Office 2024.
+* FORMS-24949 : ajout de la prise en charge de l’agent Forms Builder sur AEM Forms 6.5 LTS. Cette opération rétropore les API HTTP Forms Manager et les API HTTP Form Generative AI (GenAI) requises par l’agent.
+* FORMS-25180 : ajout de la valeur `daysUntilSigningDeadline` à l’interface utilisateur d’AEM Forms afin que les auteurs puissent indiquer aux destinataires le nombre de jours restants avant une échéance de signature Adobe Sign.
+* FORMS-25182 : PDF Generator (PDFG) prend désormais en charge les conversions de documents multithread lorsqu’il est configuré avec un seul compte utilisateur.
+
+#### Problèmes résolus {#forms-fixed-issues-65-lts-sp3}
+
+* FORMS-23726 : l’application d’un schéma XML dans les propriétés de Forms adaptatif a échoué en raison d’un conflit de bibliothèque `xsom`. La sélection de schémas fonctionne désormais.
+* FORMS-24296 : le champ Pièce jointe des composants de base a accepté les types de fichiers non autorisés (par exemple, `.xsd`) au moment du chargement et les a rejetés uniquement lors de l’envoi, contrairement aux autres types bloqués. Les types non autorisés sont désormais bloqués au moment du chargement.
+* FORMS-24603 : dans les lettres Correspondence Management, les fragments de texte contenant une condition ont perdu leurs sauts de ligne lors de l’enregistrement en tant que brouillon. Les brouillons conservent désormais les sauts de ligne d’origine.
+* FORMS-24783 : les pièces jointes ont été supprimées à l’étape `assignTask` dans les workflows Forms basés sur l’initiative Open Services Gateway (OSGi). Les pièces jointes sont désormais conservées par l’affectation de tâche.
+* FORMS-24877 : l’icône de calendrier du sélecteur de date n’exposait aucun libellé accessible lorsqu’un modèle d’affichage était appliqué. Le lecteur d’écran NVDA a donc annoncé seulement « cliquable ». L’icône fournit désormais un libellé descriptif.
+* FORMS-24913 : les workflows AEM Forms ont été bloqués après l’étape Adobe Sign, car le statut de la signature n’a jamais été renvoyé. Les workflows se poursuivent désormais une fois la signature terminée.
+* FORMS-25033 : le composant Signature tactile a été ignoré dans l’ordre de tabulation du clavier, ce qui a créé une barrière d’accessibilité pour les utilisateurs utilisant uniquement le clavier. La navigation à l’aide de l’onglet atteint désormais le champ .
+* FORMS-25045 : le rendu des traductions en chinois traditionnel (Hong Kong) ayant été arrêté après une mise à niveau, les formulaires sont revenus à la langue par défaut. Le texte localisé s’affiche désormais correctement.
+* FORMS-25170 : les `addInstance()` appelants n’affichaient pas les panneaux ajoutés dynamiquement lorsque le nombre d’instances de départ était de 0. Les panneaux ajoutés s’affichent désormais immédiatement.
+* FORMS-25225 : la revalidation côté serveur a supprimé les traductions de champ qui se trouvaient en dehors des fragments dans le Forms adaptatif, rétablissant les libellés dans la langue de base. Ces traductions sont maintenant conservées.
+* FORMS-25233 : lors des déploiements de l’initiative Open Services Gateway (OSGi), le service Assembler a assemblé un fichier XDP principal avec son fragment immédiat, mais n’a pas résolu les références de fragments imbriqués telles que les en-têtes, les pieds de page et les sous-formulaires réutilisables, ils étaient donc absents de la sortie assemblée. Les fragments imbriqués sont maintenant résolus.
+* FORMS-25289 : le service de rendu Forms a renvoyé une sortie différente pour la même entrée dans les packs de services, ce qui a eu une incidence sur les lettres de Correspondence Management. Le rendu de la sortie est désormais cohérent.
+* FORMS-25290 : les lettres enregistrées de Correspondence Management ont perdu des espaces et ont montré un « x » erré à certains endroits lors de leur réouverture. Le contenu de la lettre enregistrée reste maintenant intact.
+* FORMS-25346 : après une mise à niveau du pack de services, les lettres de communications interactives (IC) ont gelé sur une double flèche de chargement et les lettres qui ont chargé ont perdu de l’espacement dans l’aperçu. Le chargement et l’espacement fonctionnent désormais correctement.
+* FORMS-25431 : l’assistant Créer un fragment de formulaire envoyait une requête réseau à chaque frappe dans le champ du titre. Les appels redondants ont été supprimés.
+* FORMS-25645 : échec de la création d’un fragment de formulaire adaptatif basé sur les composants principaux à partir d’un schéma JSON chargé en ligne avec « ALC-FMG-700-009 Invalid Form Model has been specified ». Les schémas JSON intégrés sont désormais acceptés.
+* FORMS-25646 : un fragment de formulaire adaptatif basé sur les composants principaux et créé à partir d’un schéma JSON affichait un panneau Sources de données vide dans l’éditeur. Le panneau répertorie désormais les sources de données de schéma.
+* FORMS-25674 : l’interface utilisateur de l’agent de communications interactives (IC) s’est ouverte sur une page vierge. Les agents ne pouvaient donc pas afficher le contenu IC. L’interface utilisateur de l’agent effectue désormais le rendu.
+* FORMS-25686 : le fait de changer d’option de type de schéma dans l’assistant Créer un fragment de formulaire adaptatif n’effaçait pas le statut de l’option précédente, ce qui entraîne une incohérence du schéma. L’assistant réinitialise maintenant l’option inactive .
+* FORMS-25757 : l’application d’un thème n’a pas mis à jour la bibliothèque cliente de base, de sorte que les modifications du thème semblent n’avoir aucun effet. Les thèmes mettent désormais à jour la bibliothèque cliente de base.
+* FORMS-25825 : le menu hamburger mobile ne répondait pas aux touches, ce qui rendait la navigation inutilisable sur les appareils mobiles. Le menu s’ouvre désormais comme prévu.
+* FORMS-26333 : l’action Publier disparaissait après la dépublication d’un formulaire, ce qui bloquait la republication. La publication est désormais disponible après la dépublication.
+* FORMS-26763 : dans Designer, la mise en forme en gras des liens hypertexte dans un objet de texte statique a été perdue après toute modification du texte. Le formatage en gras survit désormais aux modifications.
+* FORMS-26817 : le fait de cliquer sur Réinitialiser sur un formulaire adaptatif efface l’image configurée par l’auteur dans le composant Image et laisse une image endommagée, tandis que d’autres champs sont correctement réinitialisés. La commande Réinitialiser conserve désormais l’image configurée.
+* FORMS-26852 : dans l’interface utilisateur de l’agent, un champ date/heure affichait la date un jour plus tôt que la valeur stockée. Le champ affiche désormais la date correcte.
+
+#### Problèmes connus {#forms-known-issues-65-lts-sp3}
+
+Aucun problème connu n’a été signalé pour cette version.
+
+#### Correctifs de sécurité {#forms-security-fixes-65-lts-sp3}
+
+Cette version résout les vulnérabilités de sécurité dans AEM Forms, notamment plusieurs correctifs XSS (cross-site scripting), un correctif SSRF (server side request forgery), un correctif XXE (XML external entity) et des mises à jour de bibliothèques tierces.
+
+<!-- TODO: Add security bulletin link. Open question, pending information from Sunny Marwaha. -->
+
 
 
 
@@ -396,7 +444,6 @@ Les projets de traduction conservent désormais un statut précis au fur et à m
 * La boîte de dialogue Variable de processus affiche désormais les commandes correctes pour les variables de modèle de données de formulaire, JSON, XML et de document. Les auteurs ne voient plus les balises HTML brutes lorsqu’ils créent ces variables non primitives. (GRANITE-67915)
 
 
-
 ## À propos d’[!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
 La plateforme d’[!DNL Adobe Experience Manager] 6.5 LTS repose sur les versions mises à jour de l’architecture OSGi (Apache Sling et Apache Felix), ainsi que sur le référentiel de contenu Java™ : Apache Jackrabbit Oak 1.68.x.
@@ -413,7 +460,7 @@ Eclipse Jetty 11.0.x est utilisé comme moteur de servlet pour Quickstart.
 
 UberJar pour AEM 6.5 LTS SP3 utilise la version 6.6.3 d’AEM 6.5 LTS UberJar. Vous pouvez récupérer les artefacts UberJar correspondants à partir du référentiel central Maven. Contrairement à AEM 6.5, AEM 6.5 LTS sépare les API publiques et les API obsolètes en deux artefacts différents.
 
-Pour compiler par rapport aux API publiques, utilisez ce qui suit :
+Pour compiler par rapport aux API publiques, utilisez ce qui suit :
 
 ```xml
 <dependency>
@@ -425,7 +472,7 @@ Pour compiler par rapport aux API publiques, utilisez ce qui suit :
 </dependency>
 ```
 
-Si votre code dépend également d’API obsolètes, ajoutez ce qui suit :
+Si votre code dépend également d’API obsolètes, ajoutez ce qui suit :
 
 ```xml
 <dependency>
@@ -475,7 +522,7 @@ Le SP2 pour AEM 6.5 LTS est fourni sous la forme d’un fichier JAR de démarrag
 
 * Exécutez la mise à niveau dans des environnements inférieurs/de test avant la production.
 * Effectuez une sauvegarde complète et restaurable (référentiel et magasins de données externes) avant de commencer.
-* Consultez les conseils sur la mise à niveau statique d’Adobe et les exigences techniques (Java 17/21 recommandé pour LTS).
+* Vérifiez les recommandations d’Adobe pour la mise à niveau sur place et les exigences techniques (Java 17/21 recommandé pour les versions LTS).
 
 >[!NOTE]
 >
@@ -520,7 +567,7 @@ Pour garantir la transparence et permettre une planification adéquate, Adobe su
 
 * L’obsolescence est d’abord annoncée. Les fonctionnalités obsolètes restent disponibles, mais ne sont plus améliorées.
 * La suppression n’intervient pas avant la prochaine version majeure. Le calendrier de suppression prévu est communiqué séparément.
-* Un cycle de publication minimum est fourni pour que les clients puissent effectuer la transition vers des alternatives prises en charge avant la suppression d’une fonctionnalité.
+* Un cycle de publication de version minimum est prévu pour permettre aux clients et clientes de passer à des alternatives prises en charge avant la suppression d’une fonctionnalité.
 
 ### Fonctionnalités obsolètes {#deprecated-features}
 
@@ -568,7 +615,7 @@ Cette section répertorie les fonctionnalités qui ont été supprimées dans AE
 
 ### AEM Forms
 
-* Dans Configuration Manager, l’initialisation de la base de données échoue pendant Bootstrap dans le mode personnalisé clé en main LTS JEE d’AEM Forms 6.5 lorsqu’aucun module ou uniquement des composants limités sont sélectionnés. L’échec est dû à une dépendance manquante (xalan-2.7.2.jar), ce qui entraînait une erreur. L’ajout du fichier JAR à Adobe-livecycle-jboss.ear\lib résout le problème. (FORMS-24690)
+* Dans Configuration Manager, l’initialisation de la base de données échoue pendant Bootstrap dans le modèle personnalisé clé en main d’AEM Forms 6.5 LTS JEE lorsqu’aucun module ou uniquement des composants limités sont sélectionnés. L’échec est dû à une dépendance manquante (xalan-2.7.2.jar), ce qui entraînait une erreur. L’ajout du fichier JAR à Adobe-livecycle-jboss.ear\lib résout le problème. (FORMS-24690)
 * Sur les déploiements du pack de services 2 LTS de Forms JEE s’exécutant sur WebSphere® Liberty Profile, la fonctionnalité de messagerie échoue. Lors de l’utilisation des fonctionnalités de messagerie, le serveur consigne une erreur : `Could not convert socket to TLS`. (FORMS-24692)
 * Sur Forms JEE LTS s’exécutant sur JBoss®, la fonctionnalité liée aux e-mails échoue. Lors de l’utilisation des fonctionnalités de messagerie, le serveur consigne une erreur : `Error IMAPProvider not a subtype`. Pour résoudre ce problème, installez le correctif à partir de [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-core-jboss.ear). (FORMS-24892)
 
@@ -602,7 +649,7 @@ Ce problème affecte le développement et l’administration de bundles OSGi qui
 
 À compter d’AEM 6.5 LTS SP2, les fichiers JSON utilisés dans les bundles `Sling-Initial-Content` n’acceptent plus les commentaires (`//` ou `/* */`). Les versions précédentes d’AEM acceptaient les commentaires car le fournisseur de `javax.json` était indulgent à ce sujet. AEM 6.5 LTS SP2 a mis à niveau `org.apache.sling.jcr.contentloader` vers la version 2.6.0, qui a basculé l’analyseur JSON sur `jakarta.json`. Bien que la [spécification JSON (RFC 8259)](https://datatracker.ietf.org/doc/html/rfc8259) ne définisse pas de syntaxe pour les commentaires, les versions antérieures d’AEM les ont acceptés en raison de la clémence du fournisseur de `javax.json`. Le fournisseur de `jakarta.json` ne propose pas cette extension.
 
-L’échec n’est pas signalé : les nœuds de contenu ne parviennent pas à se charger lors de l’activation du bundle sans qu’aucune erreur ne soit visible pour le programme d’installation. Si du contenu est manquant de manière inattendue après la mise à niveau vers SP2, vérifiez les journaux du programme d’installation OSGi pour détecter les erreurs d’analyse JSON. Pour identifier les bundles affectés, recherchez `//` ou `/* */` dans les fichiers JSON répertoriés sous les en-têtes de manifeste `Sling-Initial-Content`.
+L’échec n’est pas signalé : les nœuds de contenu ne parviennent pas à se charger lors de l’activation du bundle, sans qu’aucune erreur ne soit visible pour le programme d’installation. Si du contenu est manquant de manière inattendue après la mise à niveau vers SP2, vérifiez les journaux du programme d’installation OSGi pour détecter les erreurs d’analyse JSON. Pour identifier les bundles affectés, recherchez `//` ou `/* */` dans les fichiers JSON répertoriés sous les en-têtes de manifeste `Sling-Initial-Content`.
 
 >[!CAUTION]
 >
@@ -643,8 +690,8 @@ Lors de l’activation de la fonction SSL uniquement dans les déploiements AEM,
 **Impact**
 
 * Échec des contrôles d’intégrité avec les codes de réponse HTTP 400.
-* Trafic rompu entre les instances Dispatcher et AEM.
-* Contenu diffusé incorrectement via Dispatcher.
+* Trafic interrompu entre les instances Dispatcher et AEM.
+* Le contenu ne peut pas être correctement diffusé via Dispatcher.
 * Échecs de connexion lors de l’utilisation de HTTPS avec des adresses IP dans la configuration Dispatcher.
 * Erreurs HTTP 400 « SNI non valide » lors de la connexion via HTTPS + IP.
 
@@ -667,7 +714,7 @@ Les fichiers zip suivants contiennent les documents texte qui répertorient les 
 
 ## Sites web à accès limité{#restricted-sites}
 
-Ces sites Web sont disponibles uniquement pour les clients. Si vous êtes client et avez besoin d’un accès, contactez votre responsable de compte Adobe.
+Ces sites Web sont disponibles uniquement pour les clients. Si vous êtes client et avez besoin d’un accès, contactez votre gestionnaire de compte Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/)
 * [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
