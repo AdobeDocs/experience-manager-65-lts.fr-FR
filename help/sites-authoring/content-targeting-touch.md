@@ -14,9 +14,7 @@ source-git-commit: d49de63985f537da3e6b92dac5233c104b1ccdfe
 workflow-type: tm+mt
 source-wordcount: '5374'
 ht-degree: 93%
-
 ---
-
 
 # Création de contenu ciblé en mode Ciblage {#authoring-targeted-content-using-targeting-mode}
 
@@ -732,7 +730,7 @@ Si vous sélectionnez ClientContext (côté client) comme moteur :
     <ul>
      <li><strong>Première</strong> : expérience la plus haute dans la liste, telle qu’elle a été classée dans la campagne.</li>
      <li><strong>Aléatoire</strong> : n’importe quelle expérience est utilisée.</li>
-     <li><strong>Score Clickstream</strong> : les résultats des balises et des balises associées suivis dans le contexte du client sont utilisés. Les taux de fréquence d’accès aux balises définis sur la page de teaser sont comparés.</li>
+     <li><strong>Score Clickstream</strong> : les balises et les hits de balises associés suivis dans le contexte du client sont utilisés. Les taux de hits des balises définies sur la page de teaser sont comparés.</li>
     </ul> </td>
   </tr>
  </tbody>
