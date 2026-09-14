@@ -14,9 +14,7 @@ source-git-commit: d49de63985f537da3e6b92dac5233c104b1ccdfe
 workflow-type: tm+mt
 source-wordcount: '5374'
 ht-degree: 93%
-
 ---
-
 
 # Création de contenu ciblé en mode Ciblage {#authoring-targeted-content-using-targeting-mode}
 
@@ -307,7 +305,7 @@ Si vous devez modifier du contenu ciblé, vous devez cliquer sur **Commencer le 
 1. Créez l’offre :
 
    * Pour l’expérience par défaut, faites glisser les composants vers la zone ciblée et modifiez les propriétés du composant comme vous le faites habituellement pour créer le contenu de l’offre.
-   * Pour les expériences autres que celles par défaut, ajoutez [&#x200B; une offre personnalisée &#x200B;](#adding-a-custom-offer) ou [&#x200B; une offre de bibliothèque](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
+   * Pour les expériences autres que celles par défaut, ajoutez [ une offre personnalisée ](#adding-a-custom-offer) ou [ une offre de bibliothèque](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
 
 #### Ajout d’une offre personnalisée {#adding-a-custom-offer}
 
@@ -394,7 +392,7 @@ Convertissez une offre de bibliothèque en offre personnalisée pour modifier l�
 Ouvrez une offre de bibliothèque à partir d’une expérience en mode Ciblé pour modifier l’offre. Les modifications que vous apportez apparaissent dans toutes les expériences qui utilisent l’offre.
 
 1. Sélectionnez l’expérience pour afficher l’offre de bibliothèque.
-1. Convertissez l’offre de bibliothèque en offre locale/personnalisée. Voir [&#x200B; Conversion d’une offre de bibliothèque en bibliothèque personnalisée &#x200B;](#converting-a-library-offer-to-a-custom-library).
+1. Convertissez l’offre de bibliothèque en offre locale/personnalisée. Voir [ Conversion d’une offre de bibliothèque en bibliothèque personnalisée ](#converting-a-library-offer-to-a-custom-library).
 1. Modifiez le contenu de l’offre.
 
 1. Réenregistrez-la dans la bibliothèque. Reportez-vous à la section [Ajout d’une offre personnalisée à une bibliothèque](#adding-a-custom-offer-to-a-library).
@@ -732,7 +730,7 @@ Si vous sélectionnez ClientContext (côté client) comme moteur :
     <ul>
      <li><strong>Première</strong> : expérience la plus haute dans la liste, telle qu’elle a été classée dans la campagne.</li>
      <li><strong>Aléatoire</strong> : n’importe quelle expérience est utilisée.</li>
-     <li><strong>Score Clickstream</strong> : les résultats des balises et des balises associées suivis dans le contexte du client sont utilisés. Les taux de fréquence d’accès aux balises définis sur la page de teaser sont comparés.</li>
+     <li><strong>Score Clickstream</strong> : les balises et les hits de balises associés suivis dans le contexte du client sont utilisés. Les taux de hits des balises définies sur la page de teaser sont comparés.</li>
     </ul> </td>
   </tr>
  </tbody>
