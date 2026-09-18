@@ -549,8 +549,8 @@ Si la mise à niveau échoue et ne peut pas être résolue :
 ## Documentation connexe
 
 - [Guide de migration de JBoss EAP 8](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0/html/migration_guide/)
-- [Guide de mise à niveau vers Adobe Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html)
-- [Installation des packs de services d’AEM](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
+- [Guide de mise à niveau vers Adobe Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=fr)
+- [Installation des packs de services d’AEM](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=fr)
 
 ## Informations sur le document
 
