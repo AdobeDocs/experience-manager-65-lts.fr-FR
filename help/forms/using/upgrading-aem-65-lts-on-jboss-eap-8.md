@@ -21,7 +21,7 @@ Ce guide fournit des instructions détaillées pour mettre à niveau une install
 >
 >Il s’agit d’une procédure de mise à niveau critique. Commencez toujours par effectuer cette mise à niveau dans un environnement hors production et conservez des sauvegardes complètes.
 >
-> ** CONDITIONS PRÉALABLES : ** une sauvegarde complète du système et un plan de restauration documenté sont obligatoires avant de continuer.
+> **&#x200B; CONDITIONS PRÉALABLES : &#x200B;** une sauvegarde complète du système et un plan de restauration documenté sont obligatoires avant de continuer.
 
 ## Conditions requises avant la mise à niveau
 
@@ -41,7 +41,7 @@ Ce guide fournit des instructions détaillées pour mettre à niveau une install
 Avant de commencer la mise à niveau, vérifiez les points suivants :
 
 1. **Distribution de JBoss EAP 8.0**\
-   Télécharger depuis : [](https://developers.redhat.com/products/eap/download)
+   Télécharger depuis : [&#128279;](https://developers.redhat.com/products/eap/download)
 
 2. **Programme d’installation du JDK 21**\
    Télécharger Oracle JDK 21 ou OpenJDK 21 pour Windows (64 bits)
