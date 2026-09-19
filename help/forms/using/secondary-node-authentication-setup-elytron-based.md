@@ -4,14 +4,12 @@ description: JBoss EAP 8 utilise Elytron pour permettre une communication et un 
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: f093f39fb535209297940cff13a99c7631812152
+exl-id: 212aa75c-7f2a-4140-8051-77643065e429
+source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '474'
 ht-degree: 5%
-
 ---
-
-
 # Configuration de l’authentification de nœud Secondaire (basée sur Elytron)
 
 ## Configurer L’Authentification De Nœud Secondaire À L’Aide D’Elytron
@@ -48,7 +46,7 @@ Pour arrêter JBoss en cours d’exécution :
 * **Option 1 : Configuration Rapide À L’Aide Du Magasin D’Informations D’Identification Par Défaut**
 Recommandé pour les environnements inférieurs et les tests.
 
-* **Option 2 : configuration personnalisée de la boutique d’informations d’identification**
+* **Option 2 : Configuration De La Boutique D’Informations D’Identification Personnalisées**
 Recommandé pour les environnements de production et sécurisés.
 
 ## Option 1 : Configuration Rapide À L’Aide Du Magasin D’Informations D’Identification Par Défaut
@@ -229,4 +227,3 @@ Confirmez la réussite de l’enregistrement en utilisant les journaux de contr�
 * L’**option 2** renforce la sécurité en utilisant un mot de passe de magasin d’informations d’identification personnalisé.
 * La configuration doit être effectuée **sur des nœuds secondaires uniquement**.
 * La configuration du nœud de Principal est réutilisée automatiquement dans le domaine.
-
