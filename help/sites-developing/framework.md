@@ -12,11 +12,9 @@ role: Developer
 exl-id: 5d1c2c73-c457-49dc-b519-eba5ad9d5722
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1624'
-ht-degree: 98%
-
+source-wordcount: '1641'
+ht-degree: 99%
 ---
-
 # Framework de balisage AEM {#aem-tagging-framework}
 
 Le balisage permet de catégoriser et d’organiser le contenu. Les balises peuvent être classées par un espace de noms et par une taxonomie. Pour obtenir des informations détaillées sur l’utilisation des balises :
@@ -125,8 +123,8 @@ Refuser les autorisations de lecture sur certains espaces de noms et balises dé
 Une pratique habituelle est la suivante :
 
 * Accorder au groupe/rôle `tag-administrators` l’accès en écriture à tous les espaces de noms (add/modify sous `/content/cq:tags`). Ce groupe est fourni en standard avec AEM.
-* Accorder aux utilisateurs/auteurs l’accès en lecture à tous les espaces de noms qu’ils doivent être autorisés à lire (presque tous).
-* Accorder aux utilisateurs et utilisatrices/auteurs et autrices l’accès en écriture aux espaces de noms dont ils doivent être en mesure de définir librement les balises (add_node sous `/content/cq:tags/some_namespace`).
+* Accorder aux profils d’utilisation/de création l’accès en lecture à tous les espaces de noms qu’ils doivent être autorisés à lire (presque tous).
+* Accorder aux profils d’utilisation/de création l’accès en écriture aux espaces de noms dont ils doivent être en mesure de définir librement les balises (add_node sous `/content/cq:tags/some_namespace`).
 
 ## Contenu pouvant être balisé : mixin cq:Taggable {#taggable-content-cq-taggable-mixin}
 
@@ -177,14 +175,14 @@ Vous trouverez, ci-après, la description des effets dans le référentiel lors 
 
 * Lorsqu’une balise A est déplacée ou fusionnée dans une balise B sous `/content/cq:tags` :
 
-   * La balise A n’est pas supprimée et reçoit une propriété `cq:movedTo`.
-   * La balise B est créée (dans le cas d’un déplacement) et reçoit une propriété `cq:backlinks`.
+  * La balise A n’est pas supprimée et reçoit une propriété `cq:movedTo`.
+  * La balise B est créée (dans le cas d’un déplacement) et reçoit une propriété `cq:backlinks`.
 
 * `cq:movedTo` pointe vers la balise B.
 
-   * Cette propriété signifie que la balise A a été déplacée ou fusionnée dans la balise B. Le déplacement de la balise B va mettre à jour cette propriété en conséquence. La balise A est donc masquée et elle n’est conservée dans le référentiel que pour résoudre les ID de balise situés dans les nœuds de contenu pointant vers la balise A. Tag Garbage Collector supprime des balises telles que la balise A dès que plus aucun nœud de contenu ne pointe vers elles.
+  * Cette propriété signifie que la balise A a été déplacée ou fusionnée dans la balise B. Le déplacement de la balise B va mettre à jour cette propriété en conséquence. La balise A est donc masquée et elle n’est conservée dans le référentiel que pour résoudre les ID de balise situés dans les nœuds de contenu pointant vers la balise A. Tag Garbage Collector supprime des balises telles que la balise A dès que plus aucun nœud de contenu ne pointe vers elles.
 
-   * Une valeur spéciale pour la propriété `cq:movedTo` est `nirvana`. Elle est appliquée lorsque la balise est supprimée. Cependant, elle ne peut pas être supprimée du référentiel, car des sous-balises avec une propriété `cq:movedTo` doivent être conservées.
+  * Une valeur spéciale pour la propriété `cq:movedTo` est `nirvana`. Elle est appliquée lorsque la balise est supprimée. Cependant, elle ne peut pas être supprimée du référentiel, car des sous-balises avec une propriété `cq:movedTo` doivent être conservées.
 
   >[!NOTE]
   >
@@ -204,13 +202,13 @@ Vous trouverez, ci-après, la description des effets dans le référentiel lors 
 
 * La lecture d’une propriété `cq:tags` d’un nœud de contenu implique la résolution suivante :
 
-   1. S’il n’existe aucune correspondance sous `/content/cq:tags`, aucune balise n’est renvoyée.
+  1. S’il n’existe aucune correspondance sous `/content/cq:tags`, aucune balise n’est renvoyée.
 
-   1. Si la propriété `cq:movedTo` est définie pour la balise, l’ID de balise référencé est suivi.
+  1. Si la propriété `cq:movedTo` est définie pour la balise, l’ID de balise référencé est suivi.
 
-      * Cette étape est répétée aussi longtemps que la balise suivie contient la propriété `cq:movedTo`.
+     * Cette étape est répétée aussi longtemps que la balise suivie contient la propriété `cq:movedTo`.
 
-   1. Si la balise suivie n’est pas associée à une propriété `cq:movedTo`, elle est lue.
+  1. Si la balise suivie n’est pas associée à une propriété `cq:movedTo`, elle est lue.
 
 * Pour publier la modification lorsqu’une balise a été déplacée ou fusionnée, le nœud `cq:Tag` et tous ses liens retours doivent être répliqués. Cette opération est réalisée automatiquement lorsque la balise est activée dans la console d’administration des balises.
 
@@ -224,4 +222,4 @@ Vous trouverez, ci-après, la description des effets dans le référentiel lors 
 
 Depuis Adobe Experience Manager 6.4, les balises sont stockées sous `/content/cq:tags` tandis que les versions précédentes stockaient des balises sous `/etc/tags`.
 
-Lors de la mise à niveau d’un système AEM d’une version antérieure à la version 6.4, les balises doivent être migrées vers `/content/cq:tags`.
+Lorsque vous mettez à niveau un système AEM à partir d’une version antérieure à 6.4, les balises doivent être migrées vers `/content/cq:tags`.
