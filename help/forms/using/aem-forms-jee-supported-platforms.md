@@ -9,13 +9,11 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: c532abc558084ee9b58e618b0fc16677f4c5b6a4
+source-git-commit: a4f151470c6042bfaaa3d8f4a3260074f007a4d9
 workflow-type: tm+mt
-source-wordcount: '2860'
-ht-degree: 87%
-
+source-wordcount: '2949'
+ht-degree: 88%
 ---
-
 
 # Plateformes prises en charge pour AEM Forms on JEE {#supported-platforms-for-aem-forms-on-jee}
 
@@ -23,7 +21,7 @@ ht-degree: 87%
 
 Le serveur AEM Forms on JEE peut être installé sur toute combinaison de systèmes d’exploitation, de serveurs d’applications, de bases de données, de pilotes de base de données, de JDK, de serveurs LDAP et de serveurs de messagerie électronique pris en charge.
 
-Ce document répertorie les plateformes client et serveur prises en charge pour AEM Forms on JEE. Adobe fournit plusieurs niveaux de prise en charge pour les configurations recommandées par Adobe et pour d’autres configurations. Ce document dresse également la liste des autres logiciels et versions pris en charge, des exceptions, des définitions de correctif et des règles de prise en charge des correctifs logiciels de fournisseurs tiers.
+Ce document répertorie les plateformes client et serveur prises en charge pour AEM Forms on JEE. Adobe fournit plusieurs niveaux de prise en charge pour les configurations recommandées par Adobe et pour d’autres configurations. Ce document dresse également la liste des autres logiciels et versions pris en charge, des exceptions, des définitions de correctif et de la politique de prise en charge des correctifs logiciels de fournisseurs tiers.
 
 >[!NOTE]
 >
@@ -50,7 +48,7 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 
 ### Configurations recommandées {#recommendedconfigurations}
 
-Adobe recommande ces configurations et fournit une prise en charge totale ou restreinte en tant que partie intégrante du contrat de maintenance logicielles standard :
+Adobe recommande ces configurations et fournit une prise en charge totale ou restreinte en tant que partie intégrante du contrat de maintenance logiciel standard :
 
 <table>
  <tbody>
@@ -77,13 +75,13 @@ Adobe recommande ces configurations et fournit une prise en charge totale ou res
 
 | Niveau de prise en charge | Description |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| E : Fonctionnement supposé | Il est prévu que la configuration fonctionne normalement et nous n’avons reçu aucun rapport faisant état de problèmes. |
+| E : Fonctionne comme prévu | Il est prévu que la configuration fonctionne normalement et nous n’avons reçu aucun rapport faisant état de problèmes. |
 | Z : non pris en charge | La configuration n’est pas prise en charge. Adobe ne fait aucune déclaration indiquant si la configuration fonctionne et ne la prend pas en charge. |
 
 >[!NOTE]
 >
->Pour aider les clients AEM Forms à réduire le coût de possession, à simplifier l’architecture de déploiement et à moderniser la pile de développement, la plateforme d’entreprise Adobe Experience Manager délaisse les déploiements sur serveur d’applications au profit de déploiements OSGi autonomes. Adobe continue à prendre en charge la pile AEM Forms JEE avec une matrice réduite de composants d’infrastructure.
->Pour les nouvelles installations, il est recommandé, dans la mesure du possible, de déployer AEM Forms sur la pile OSGi moderne afin d’utiliser les dernières innovations en matière de Responsive Adaptive Forms pour les communications mobiles et interactives multicanaux, ainsi que les intégrations de données principales utilisant le modèle de données de formulaire.
+>Pour aider les clients d’AEM Forms à réduire le coût de possession, à simplifier l’architecture de déploiement et à moderniser la pile de développement, la plateforme d’entreprise Adobe Experience Manager délaisse les déploiements sur serveur d’applications au profit de déploiements OSGi autonomes. Adobe continue de prendre en charge la pile AEM Forms JEE avec une matrice réduite de composants d’infrastructure.
+>Pour les nouvelles installations, il est recommandé, dans la mesure du possible, de déployer AEM Forms sur la pile OSGi moderne afin d’utiliser les dernières innovations en matière de formulaires adaptatifs réactifs pour les communications mobiles et interactives multicanaux, ainsi que des intégrations de données backend utilisant le modèle de données de formulaire.
 
 ### Machines virtuelles Java™ (JVM) {#java-virtual-machines-jvm}
 
@@ -168,8 +166,8 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
 
 - MongoDB est un logiciel tiers non inclus dans le package de licence d’AEM. Pour plus d’informations, voir la [Politique de licence de MongoDB](https://www.mongodb.org/about/licensing/).
 - Pour tirer pleinement parti de votre déploiement AEM, Adobe conseille d’utiliser la version MongoDB Enterprise sous licence afin de bénéficier d’une assistance professionnelle.
-- Vous obtiendrez auprès de l’équipe d’assistance clientèle d’Adobe une aide adaptée aux problèmes admissibles relatifs à l’utilisation de MongoDB avec AEM. Pour plus d’informations, consultez la page [MongoDB pour Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
-- Le système de fichiers comprend le stockage de bloc compatible avec POSIX. Cela inclut la technologie de stockage réseau. Gardez à l’esprit que les performances du système de fichiers peuvent varier et avoir une incidence sur les performances globales. Il est recommandé de charger l’AEM de test en combinaison avec le système de fichiers réseau/distant.
+- L’équipe d’Assistance Clientèle Adobe aide à résoudre les problèmes admissibles liés à l’utilisation de MongoDB avec AEM. Pour plus d’informations, consultez la page [MongoDB pour Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+- Le système de fichiers comprend le stockage de bloc compatible avec POSIX. Cela inclut la technologie de stockage réseau. Gardez à l’esprit que les performances du système de fichiers peuvent varier et avoir une incidence sur les performances globales. Il est recommandé d’effectuer un test de charge d’AEM avec le système de fichiers réseau/distant.
 - Seul le moteur de stockage WiredTiger de MongoDB est pris en charge.
 - La fragmentation MongoDB n’est pas pris en charge dans AEM.
 - Le module Document Security n’utilise pas le référentiel de contenu. Cela signifie que si vous utilisez uniquement Document Security et que vous ne prévoyez pas d’utiliser HTML Workspace, HTML5 Forms ou des formulaires adaptatifs, n’installez pas le référentiel de contenu.
@@ -225,7 +223,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
 
 >[!NOTE]
 >
->WebSphere® Liberty Profile (WLP) est pris en charge uniquement avec Oracle Database et IBM® Sumeru JDK 21.
+>WebSphere® Liberty Profile (WLP) est pris en charge uniquement avec Oracle Database ou Microsoft® SQL Server et IBM® Sumeru JDK 21.
 
 ### Systèmes d’exploitation de serveur {#server-operating-systems}
 
@@ -284,11 +282,11 @@ Vous pouvez exécuter AEM Forms on JEE sur un ordinateur physique ou un environ
 
 ### Exceptions aux plateformes de serveur prises en charge {#exceptions-to-supported-server-platforms}
 
-Tenez compte des exceptions suivantes lorsque vous choisissez la plateforme de configuration d’AEM Forms on JEE.
+Tenez compte des exceptions suivantes lorsque vous choisissez une plateforme pour configurer votre serveur AEM Forms on JEE.
 
 1. Le référentiel CRX prend en charge la persistance de type TarMK et MongoDB.
 1. AEM Forms on JEE ne prend pas en charge le contrôle d’accès basé sur les rôles (RBAC) JBoss®.
-1. AEM Forms on JEE prend en charge WebSphere® Liberty Profile (WLP) uniquement avec Oracle Database et IBM® Sumeru JDK 21.
+1. AEM Forms on JEE prend en charge WebSphere® Liberty Profile (WLP) uniquement avec Oracle Database ou Microsoft® SQL Server et IBM® Sumeru JDK 21.
 
 <!--
 1. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312) 
@@ -302,7 +300,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
 - AEM Forms on JEE prend en charge des plateformes en fonction de la prise en charge offerte par les fournisseurs tiers. Certaines combinaisons peuvent ne pas être autorisées par les fournisseurs tiers. Par exemple, de nombreux fournisseurs n’ont pas certifié leurs serveurs d’applications avec Oracle. Par conséquent, AEM Forms on JEE ne prend pas non plus en charge ces combinaisons. Pour vous assurer de choisir les versions prises en charge des logiciels, vérifiez également le tableau de prise en charge des fournisseurs tiers.
 - AEM Forms on JEE ne prend pas en charge TarMK Cold Standby.
 - AEM Forms on JEE ne prend pas en charge la mise en cluster verticale.
-- AEM Forms on JEE ne prend pas en charge la base de données MySQL sur un environnement organisé en clusters.
+- AEM Forms on JEE ne prend pas en charge la base de données MySQL dans un environnement en cluster.
 
 ### Serveurs LDAP (facultatifs) {#ldap-servers-optional}
 
@@ -422,7 +420,7 @@ Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visi
 Les sous-systèmes suivants d’AEM Forms ne sont pas conformes à la section [508](https://www.section508.gov/) :
 
 - Interface utilisateur de création des formulaires adaptatifs
-- Interface utilisateur de création de Forms Manager
+- Interface d’utilisation de création Forms Manager
 - Interface de création de Correspondence Management
 - Interface utilisateur d’administration (interface utilisateur de la console d’administration)
 
@@ -472,7 +470,7 @@ Les sous-systèmes suivants d’AEM Forms ne sont pas conformes à la section [
    <th><p><strong>Définitions de correctif prises en charge</strong></p> </th>
   </tr>
   <tr>
-   <td>Acrobat 2020 (Suivi classique)</td>
+   <td>Acrobat 2020 (Classic track)</td>
    <td>Version 20.004.30006 ou ultérieure<br /> </td>
   </tr>
 
@@ -508,7 +506,7 @@ Les sous-systèmes suivants d’AEM Forms ne sont pas conformes à la section [
  </tbody>
 </table>
 
-- Espace disque pour l’installation : 1,7 Go pour Workbench uniquement, 2,7 Go sur un seul lecteur pour une installation complète de Workbench, Designer et des exemples d’assemblage, 400 Mo pour installer les répertoires temporaires (200 Mo dans le répertoire utilisateur temporaire et 200 Mo dans le répertoire temporaire Windows). si l’ensemble de ces emplacements se trouve sur un seul disque, vous devez allouer un total de 1,5 Go lors de l’installation. Les fichiers copiés dans les répertoires temporaires sont supprimés à la fin de l’installation.
+- Espace disque pour l’installation : 1,7 Go pour Workbench uniquement, 2,7 Go sur un seul lecteur pour une installation complète de Workbench, Designer et des exemples d’assemblage, 400 Mo pour installer les répertoires temporaires (200 Mo dans le répertoire utilisateur temporaire et 200 Mo dans le répertoire temporaire Windows). Si l’ensemble de ces emplacements se trouve sur un seul disque, vous devez allouer un total de 1,5 Go lors de l’installation. Les fichiers copiés dans les répertoires temporaires sont supprimés à la fin de l’installation.
 
 - Mémoire pour l’exécution de Workbench : 2 Go de mémoire vive.
 - Configuration matérielle requise : processeur Intel® Pentium® 4 ou AMD® équivalent, processeur cadencé à 1 GHz.
@@ -518,11 +516,11 @@ Les sous-systèmes suivants d’AEM Forms ne sont pas conformes à la section [
 
 ### Concepteur {#designer}
 
-- Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft Windows 10 ou Windows® 11
+- Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 ou Windows® 11
 - Processeur d’1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
-- Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
-- Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
-- Mémoire graphique – 128 Mo de GPU (256 Mo recommandé)
+- Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
+- Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
+- Mémoire graphique : 128 Mo de GPU (256 Mo recommandés).
 - 2,35 Go d’espace disponible sur le disque dur
 - Résolution d’écran de 1 024 x 768 pixels ou plus
 - Accélération matérielle de la vidéo (facultatif)
@@ -553,7 +551,7 @@ Les sous-systèmes suivants d’AEM Forms ne sont pas conformes à la section [
   </tr>
   <tr>
    <td>Mozilla Firefox ESR</td>
-   <td>E : Fonctionnement supposé</td>
+   <td>E : Fonctionne comme prévu</td>
    <td> Toutes les mises à jour</td>
   </tr>
   <tr>
@@ -575,9 +573,9 @@ Les sous-systèmes suivants d’AEM Forms ne sont pas conformes à la section [
 >
 >- Safari est pris en charge uniquement sous Macintosh OS X.
 >- Workspace prend en charge Safari 5.1 sous Macintosh OS X 10.6 et 10.7 avec Acrobat DC ou versions ultérieures.
->- Administration Console n’est pas prise en charge sur Safari.
+>- La console d’administration n’est pas prise en charge sur Safari.
 >- Correspondence Management ne prend pas en charge Windows® Internet Explorer 9.0 pour les formulaires AEM 6.1.
->- Le portail Formulaires prend en charge le logiciel de lecteur d’écran JAWS 14.0 sur Internet Explorer 11 pour une meilleure accessibilité.
+>- Le Portail Formulaires prend en charge le logiciel de lecteur d’écran JAWS 14.0 sur Internet Explorer 11 pour l’accessibilité.
 
 #### Clients mobiles {#mobile-clients}
 
@@ -622,15 +620,15 @@ L’application AEM Forms est disponible sur les plateformes suivantes :
 | Google Android™ | Android™ 5.1 et versions ultérieures. L’application AEM Forms est certifiée sur les tablettes Samsung Galaxy de 7 et 10 pouces, ainsi que sur les smartphones les plus populaires. |
 | Microsoft® Windows | Appareils Microsoft® Surface, tablettes, ordinateurs portables et ordinateurs de bureau exécutant le système d’exploitation Microsoft® Windows 10. |
 
-### Extension d’Adobe Document Security for Microsoft® Office {#adobe-rights-management-extension-for-microsoft-office}
+### Adobe Document Security Extension for Microsoft® Office {#adobe-rights-management-extension-for-microsoft-office}
 
 Cliquez [ici](https://www.adobe.com/fr/products/livecycle/rightsmanagement/extension/downloads.html) afin de voir la configuration requise par Adobe Document Security Extension for Microsoft® Office.
 
-### Exceptions de prise en charge de clients {#exceptions-to-client-support}
+### Exceptions de prise en charge client {#exceptions-to-client-support}
 
 AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs de correctifs en plus des versions majeures et mineures spécifiées du logiciel pris en charge. Toutefois, la mise à jour à la version majeure ou mineure suivante n’est pas prise en charge sauf indication contraire.
 
-## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
+## Politique de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
 La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation d’[AEM Forms 65 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/forms/getting-started/introduction-aem-forms) .
 
@@ -671,7 +669,10 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 -->
 
 
-<!--## Revision History {#revision-history}-->
+## Historique des révisions {#revision-history}
+
+- 6.5 LTS SP3 (septembre 2026)
+  - **Ajout de la prise en charge** : WebSphere® Liberty Profile (WLP) est désormais pris en charge avec Microsoft® SQL Server, en plus de la base de données Oracle.
 
 <!--
 
