@@ -1,19 +1,21 @@
 ---
-title: Correctifs Adobe Experience Manager Forms 6.5 LTS SP1
-description: Fournit des informations sur la manière de télécharger et d’installer un correctif pour AEM Forms 6.5 LTS.
+title: Correctifs LTS Adobe Experience Manager Forms 6.5
+description: Fournit des informations sur la manière de télécharger et d’installer un correctif pour AEM Forms 6.5 LTS. Pour AEM 6.5 (non-LTS), consultez l’article sur les correctifs Forms d’AEM 6.5 .
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: e485100f-3e16-4fd4-a8ce-af771d765dd1
-source-git-commit: 0ce01150bd74eeea7edb6c6127003e1aefda97a9
+source-git-commit: 989d83cfc56f7a7d4e2aea5a7ac1ca444d505859
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1137'
 ht-degree: 11%
 ---
 # Correctifs LTS Adobe Experience Manager Forms 6.5{#aem-form-hotfix}
 
 Cet article répertorie les correctifs critiques implémentés pour résoudre les problèmes connus, améliorer la stabilité du système et améliorer les performances globales d’AEM Forms 6.5 LTS.
 
+
+Cet article s’applique à AEM Forms 6.5 LTS. Pour les déploiements d’AEM 6.5 (non-LTS), consultez [Correctifs Adobe Experience Manager Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/release-notes/aem-forms-hotfix).
 
 >[!NOTE]
 >
@@ -79,6 +81,7 @@ Cet article répertorie les correctifs critiques implémentés pour résoudre le
     <li><b>FORMS-26733, FORMS-26734</b> Mise à jour d’Apache Log4j vers la version 2.25.5.</li>
     <li>Ce correctif comprend également des correctifs de sécurité.</li>
     </ul>
+    <p><strong>Build:</strong> AEMForms-6.6.0-0008</p>
     </td>
   </tr>
   <tr>
