@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: a4f151470c6042bfaaa3d8f4a3260074f007a4d9
+source-git-commit: 2a5cba7da93b1915126223a7de2f9fc8198e5f08
 workflow-type: tm+mt
-source-wordcount: '7674'
+source-wordcount: '7586'
 ht-degree: 21%
 ---
 
@@ -633,8 +633,6 @@ Cette section répertorie les fonctionnalités qui ont été supprimées dans AE
 ### AEM Forms
 
 * Dans Configuration Manager, l’initialisation de la base de données échoue pendant Bootstrap dans le modèle personnalisé clé en main d’AEM Forms 6.5 LTS JEE lorsqu’aucun module ou uniquement des composants limités sont sélectionnés. L’échec est dû à une dépendance manquante (xalan-2.7.2.jar), ce qui entraînait une erreur. L’ajout du fichier JAR à Adobe-livecycle-jboss.ear\lib résout le problème. (FORMS-24690)
-* Sur les déploiements du pack de services 2 LTS de Forms JEE s’exécutant sur WebSphere® Liberty Profile, la fonctionnalité de messagerie échoue. Lors de l’utilisation des fonctionnalités de messagerie, le serveur consigne une erreur : `Could not convert socket to TLS`. (FORMS-24692)
-* Sur Forms JEE LTS s’exécutant sur JBoss®, la fonctionnalité liée aux e-mails échoue. Lors de l’utilisation des fonctionnalités de messagerie, le serveur consigne une erreur : `Error IMAPProvider not a subtype`. Pour résoudre ce problème, installez le correctif à partir de [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-core-jboss.ear). (FORMS-24892)
 
 ### Les commentaires JSON ne sont plus pris en charge dans Sling-Initial-Content (SP2) {#json-comments-no-longer-supported-in-sling-initial-content}
 
