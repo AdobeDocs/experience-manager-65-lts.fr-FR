@@ -10,11 +10,9 @@ role: User, Developer
 exl-id: 12d27b12-5093-4513-919a-b70f189020d2
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 100%
-
+source-wordcount: '1208'
+ht-degree: 94%
 ---
-
 # Raccourcis clavier AEM Forms {#aem-forms-keyboard-shortcuts}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une approche plus ancienne de la création de formulaires adaptatifs à l’aide de composants de base. </span>
@@ -44,7 +42,7 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 
 >[!NOTE]
 >
->Les raccourcis marqués d’un « &amp;ast; » fonctionnent à la fois avec les touches Ctrl et Commande sous macOS.
+>Les raccourcis marqués d’un &#39;&amp;ast;&#39; fonctionnent à la fois avec les touches Ctrl et Commande dans macOS.
 
 >[!NOTE]
 >
@@ -66,7 +64,7 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 
 >[!NOTE]
 >
->Les raccourcis marqués d’un « &amp;ast; » fonctionnent à la fois avec les touches Ctrl et Commande sous macOS.
+>Les raccourcis marqués d’un &#39;&amp;ast;&#39; fonctionnent à la fois avec les touches Ctrl et Commande dans macOS.
 
 ## Explorateur de contenu  {#contentbrowser}
 

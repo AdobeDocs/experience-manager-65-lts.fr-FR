@@ -10,11 +10,9 @@ role: User, Developer
 exl-id: fbddbd62-2f21-4eb6-8926-90647846ee8b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '554'
 ht-degree: 100%
-
 ---
-
 # Association de réviseurs d’envoi à un formulaire {#associating-submission-reviewers-with-a-form}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
@@ -33,7 +31,7 @@ Pour associer un groupe de réviseurs et réviseuses à un formulaire, modifiez 
 
 Pour modifier le schéma de métadonnées :
 
-1. En mode création, sous Experience Manager, cliquez sur **Outils** > **Ressources** > **Schémas de métadonnées**.
+1. En mode de création, sous Experience Manager, cliquez sur **Outils** > **Ressources** > **Schémas de métadonnées**.
 1. Dans la page Formulaires du schéma, accédez à **Formulaires** > **Formulaires créés dans AEM.**
 
    L’URL de la page est la suivante :
@@ -70,7 +68,7 @@ Pour associer des groupes d’utilisateurs et d’utilisatrices à un formulaire
 1. Dans la fenêtre Propriétés du formulaire, cliquez sur **Modifier** puis sur **AVANCÉ**.
 1. Saisissez le groupe dans le champ de groupe de réviseurs d’envoi, puis cliquez sur **Terminé**.
 
-   Le champ de groupe de réviseurs d’envoi s’affiche avec le nom spécifié dans le schéma modifié de métadonnées des formulaires adaptatifs.
+   Le champ de groupe de réviseurs d’envoi s’affiche avec le nom spécifié dans le schéma de métadonnées modifié des formulaires adaptatifs.
 
 >[!NOTE]
 >

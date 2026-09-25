@@ -7,11 +7,9 @@ role: Developer
 exl-id: eac6c640-1c00-4fd9-9858-50fa2a0ea1ef
 source-git-commit: fa066f9b822f1d5883e79610b239b13224a62fe0
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '253'
 ht-degree: 100%
-
 ---
-
 # Prise en main du développement d’AEM Sites – Tutoriel WKND{#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## Vue d’ensemble {#overview}
@@ -30,7 +28,7 @@ L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un dévelo
 
 La mise en œuvre du tutoriel utilise de nombreuses fonctionnalités puissantes d’AEM. Le site est implémenté à l’aide des éléments suivants :
 
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=fr)
 * [Modèles Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [IU tactile](/help/sites-developing/touch-ui-concepts.md)
 * [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)

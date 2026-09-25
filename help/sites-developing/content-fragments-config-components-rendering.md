@@ -11,11 +11,9 @@ role: Developer
 exl-id: 4ed9232f-0e31-43bb-9f7d-3b351557288f
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '475'
 ht-degree: 100%
-
 ---
-
 # Fragments de contenu – Configuration des composants pour le rendu{#content-fragments-configuring-components-for-rendering}
 
 Il existe plusieurs [services avancés](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) liés au rendu des fragments de contenu. Pour l’utilisation de ces services, les types de ressources de ces composants doivent être connus de la structure de fragments de contenu.

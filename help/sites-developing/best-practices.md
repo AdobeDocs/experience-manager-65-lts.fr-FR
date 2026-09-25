@@ -11,11 +11,9 @@ role: Developer
 exl-id: fc2aa62a-3fc4-491d-aff5-74896998d7d6
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 100%
-
+source-wordcount: '441'
+ht-degree: 93%
 ---
-
 # Bonnes pratiques{#best-practices}
 
 ## Bonnes pratiques pour les développeurs et développeuses - Prise en main {#best-practices-for-developers-getting-started}
@@ -31,7 +29,7 @@ Avant de commencer votre projet de développement AEM, passez en revue ces bonne
 * [Les pièges du codage](/help/sites-developing/code-pitfalls.md)
 * [Interaction JCR](/help/sites-developing/jcr-integration.md)
 * [Bundles OSGi](/help/sites-developing/osgi-bundles.md)
-* [Bonnes pratiques relatives aux API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=fr)
+* [Bonnes pratiques relatives aux API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=fr)
 
 ### Informations supplémentaires sur les bonnes pratiques {#additional-best-practices-information}
 
@@ -79,7 +77,7 @@ La gestion et la création du contenu de votre site web comportent les bonnes pr
 
 ## Outillage/HTL {#tooling-htl}
 
-Le langage de modèle HTML (HTL) est un nouveau système de modèle HTML, introduit avec AEM 6.0. Il remplace JSP et ESP en tant que système de modèle préféré d’AEM.
+Le langage de modèle HTML (HTL) est un nouveau système de modèle HTML, introduit avec AEM 6.0. Il remplace JSP et ESP en tant que système de création de modèles préféré d’AEM.
 
 |  |  |  |
 |---|---|---|
@@ -88,5 +86,5 @@ Le langage de modèle HTML (HTL) est un nouveau système de modèle HTML, introd
 
 >[!NOTE]
 >
->Le didacticiel en plusieurs parties peut être intéressant pour la configuration d’un nouveau projet AEM, en détaillant les principaux composants, les modèles modifiables, les bibliothèques clientes et le développement de composants :
->>[Prise en main du développement AEM Sites – Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)
+>Le tutoriel en plusieurs parties peut être intéressant pour la configuration d’un nouveau projet AEM, en détaillant les composants principaux, les modèles modifiables, les bibliothèques clientes et le développement de composants :
+>[Prise en main du développement AEM Sites – Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)

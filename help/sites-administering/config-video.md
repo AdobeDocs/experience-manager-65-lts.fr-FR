@@ -11,16 +11,14 @@ role: Admin
 exl-id: 0eac1568-cddb-4d26-b04c-78a2681cf44a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 99%
-
+source-wordcount: '534'
+ht-degree: 98%
 ---
-
 # Configurer le composant vidéo {#configure-the-video-component}
 
 Le [composant vidéo](/help/sites-authoring/default-components-foundation.md#video) vous permet de placer une ressource vidéo prédéfinie et prête à l’emploi sur une page.
 
-Pour qu’un transcodage correct se produise, un administrateur installe FFmpeg séparément. Consultez [Installation de FFmpeg et configuration d’AEM](#install-ffmpeg). De même, les administrateurs [configurent vos profils vidéo](#configure-video-profiles) pour les utiliser avec les éléments HTML5.
+Pour qu’un transcodage correct se produise, un administrateur installe FFmpeg séparément. Consultez [Installation de FFmpeg et configuration d’AEM](#install-ffmpeg). De même, les administrateurs et administratrices [configurent vos profils vidéo](#configure-video-profiles) pour les utiliser avec les éléments HTML5.
 
 >[!CAUTION]
 >
@@ -68,7 +66,7 @@ Pour **configurer AEM**, procédez comme suit :
 >
 >Ces étapes ne sont nécessaires que si une personnalisation ultérieure des codecs est requise.
 
-1. Ouvrez [!UICONTROL CRXDE Lite] dans un navigateur Web. Accédez à [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
+1. Ouvrez [!UICONTROL CRXDE Lite] dans un navigateur Web. Accédez à [](http://localhost:4502/crx/de).
 2. Sélectionnez le nœud `/libs/settings/dam/video/format_aac/jcr:content` et vérifiez que les propriétés du nœud sont les suivantes :
 
    * `audioCodec` est `aac`.

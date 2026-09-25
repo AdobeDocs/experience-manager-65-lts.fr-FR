@@ -7,11 +7,9 @@ role: User, Developer
 exl-id: d4d66576-98ec-4050-9368-c69f6767d31e
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1190'
 ht-degree: 98%
-
 ---
-
 # Utilisation du mode Mise en page pour redimensionner les composants {#use-layout-mode-to-resize-components}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
@@ -39,7 +37,7 @@ Sélectionnez **Disposition** dans la liste déroulante qui apparaît en haut de
 
 ## Redimensionnement des composants {#resize-components}
 
-1. En mode Disposition, sélectionnez le composant à redimensionner.  Les points bleus s’affichent au début et à la fin de la grille réactive.
+1. En mode Disposition, sélectionnez le composant à redimensionner. Les points bleus s’affichent au début et à la fin de la grille réactive.
 1. Faites glisser les points bleus pour définir la position du composant dans la grille réactive.
 
    ![Redimensionnement en mode Mise en page](assets/layout_mode_resize_new_updated1.png)

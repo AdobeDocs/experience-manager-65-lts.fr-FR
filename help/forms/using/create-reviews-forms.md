@@ -11,11 +11,9 @@ role: Admin, User, Developer
 exl-id: 4937e968-30d2-4852-97d3-e8955bd422e6
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '739'
 ht-degree: 97%
-
 ---
-
 # Création et gestion des révisions de formulaires{#creating-and-managing-reviews-to-forms}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
@@ -24,7 +22,7 @@ ht-degree: 97%
 
 Cette documentation s’applique à **AEM 6.5 LTS Forms**.
 
-Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html?lang=fr).
+Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html).
 
 ## Révision {#review}
 
@@ -90,7 +88,7 @@ Cette section décrit ce qui se produit lorsqu’une révision est créée ou co
 
 ### Actions survenant lorsqu’une révision est modifiée {#actions-that-occur-when-a-review-is-modified}
 
-Cette section décrit ce qui se produit lorsque **vous modifiez ou mettez fin à une révision** :
+Cette section décrit ce qui se produit lors de la **mise à jour/fin de la révision** :
 
 1. Si la description de la révision est modifiée, la tâche correspondante des réviseurs/réviseuses et de l’initiateur ou l’initiatrice de la révision est mise à jour.
 1. Si l’échéance de la révision est modifiée, la nouvelle date est appliquée à la tâche correspondante pour les réviseurs et les réviseuses.

@@ -11,11 +11,9 @@ role: Developer
 exl-id: 625affd0-0e1a-4db8-812f-b6ce70cfe035
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1453'
+source-wordcount: '1478'
 ht-degree: 98%
-
 ---
-
 # Développement et extension des workflows{#developing-and-extending-workflows}
 
 AEM fournit plusieurs outils et ressources pour créer des modèles de workflow, développer des étapes de workflow et interagir par programme avec les workflows.
@@ -68,7 +66,7 @@ Chaque étape exécute une tâche discrète. Il existe différents types d’ét
 * Participant (utilisateur/groupe) : ces étapes génèrent un élément de travail et l’attribuent à un utilisateur ou une utilisatrice ou à un groupe. Un utilisateur doit terminer l’élément de travail pour progresser dans le workflow.
 * Processus (script, appel de méthode Java™) : ces étapes sont exécutées automatiquement par le système. Un script ECMA ou une classe Java™ implémente l’étape. Les services peuvent être développés pour écouter les événements de workflow spéciaux et exécuter des tâches en fonction de la logique commerciale.
 * Conteneur (sous-workflow) : ce type d’étape lance un autre modèle de workflow.
-* Division/jointure OU : utilisez la logique pour décider quelle étape exécuter ensuite dans le workflow.
+* Jointure/Division OU : utilisez la logique pour décider quelle étape exécuter ensuite dans le workflow.
 * Jointure/division ET : permet l’exécution simultanée de plusieurs étapes.
 
 Toutes les étapes partagent les propriétés suivantes : alertes `Autoadvance` et `Timeout` (scriptable).

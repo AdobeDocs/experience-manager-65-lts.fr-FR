@@ -8,11 +8,9 @@ role: Admin
 exl-id: 5511817e-dcf8-463d-8e62-cbbef64ad162
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2816'
+source-wordcount: '2975'
 ht-degree: 98%
-
 ---
-
 # Configuration de l’éditeur de texte enrichi {#configure-the-rich-text-editor}
 
 L’éditeur de texte enrichi (RTE) met à la disposition des créateurs et créatrices de nombreuses fonctionnalités pour modifier leur contenu textuel. Les icônes, les boîtes de dialogue de sélection, la barre d’outils et les menus apportent une expérience WYSIWYG de la modification des textes.
@@ -88,8 +86,8 @@ Cette fonctionnalité est mise à disposition par le biais d’une série de mod
 
 * Propriété `features` :
 
-   * utilisée afin d’activer ou désactiver une fonctionnalité de base pour ce module externe ;
-   * configurable selon une procédure normalisée.
+  * utilisée afin d’activer ou désactiver une fonctionnalité de base pour ce module externe ;
+  * configurable selon une procédure normalisée.
 
 * Le cas échéant, des propriétés et options supplémentaires nécessitant une configuration spécialisée.
 
@@ -147,7 +145,7 @@ Configurez les propriétés suivantes qui s’appliquent uniquement au mode de m
 
 * `useFixedInlineToolbar` : définissez cette propriété booléenne définie sur le nœud de l’éditeur de texte enrichi (une avec sling:resourceType= `cq/gui/components/authoring/dialog/richtext`) sur `True` pour que la barre d’outils de l’éditeur de texte enrichi soit fixe au lieu de flottante.
 
-   Lorsque cette propriété est définie sur true, la modification en texte démarre par défaut sur l’événement « foundation-contentloaded ».
+  Lorsque cette propriété est définie sur true, la modification en texte démarre par défaut sur l’événement « foundation-contentloaded ».
 
   Pour éviter cette situation, définissez la propriété `customStart` sur `True` et déclenchez l’événement « rte-start » pour commencer la modification avec l’éditeur de texte enrichi. Lorsque cette propriété est définie sur true, le comportement par défaut (l’éditeur de texte enrichi démarre en cas de clic) ne fonctionne pas.
 
@@ -178,7 +176,7 @@ Pour obtenir des configurations détaillées des plug-ins d’éditeur de texte 
 >
 >Le [composant textuel des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=fr#the-text-component-and-the-rich-text-editor) permet aux éditeurs de modèle de configurer de nombreux modules externes de l’éditeur de texte enrichi en tant que politiques de contenu dans une interface utilisateur graphique, rendant ainsi inutile toute configuration technique. Les politiques de contenu peuvent fonctionner avec les configurations d’interface utilisateur de l’éditeur de texte enrichi décrites dans ce document.
 >
->Pour plus d’informations, consultez la section [Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et politiques de contenu](/help/sites-administering/rich-text-editor.md) de ce document, ainsi que la rubrique [Créer des modèles de page](/help/sites-authoring/templates.md) et la [Documentation destinée aux développeurs et développeuses de composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr).
+>Pour plus d’informations, consultez la section [Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et politiques de contenu](/help/sites-administering/rich-text-editor.md) de ce document, ainsi que la rubrique [Créer des modèles de page](/help/sites-authoring/templates.md) et la [Documentation relative au développement des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr).
 
 >[!NOTE]
 >
@@ -325,8 +323,8 @@ En particulier, pour afficher les plug-ins et les options connexes disponibles 
 * Le composant [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) fournit un champ de formulaire pour la modification des informations de texte stylisé (texte enrichi). Pour connaître l’ensemble des paramètres disponibles pour le formulaire de texte enrichi, rendez-vous dans les options de configuration.
 * Le composant RichText fournit un large éventail de fonctionnalités grâce aux modules externes répertoriés sous [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Pour chaque module externe :
 
-   * consultez les fonctions pour plus d’informations sur les fonctionnalités qui peuvent être activées (ou désactivées) ;
-   * consultez les options de configuration pour connaître tous les paramètres de configuration disponibles pour le plug-in approprié.
+  * consultez les fonctions pour plus d’informations sur les fonctionnalités qui peuvent être activées (ou désactivées) ;
+  * consultez les options de configuration pour connaître tous les paramètres de configuration disponibles pour le plug-in approprié.
 
 * Vous y retrouverez également plus d’informations sur les règles HTML pour les liens.
 

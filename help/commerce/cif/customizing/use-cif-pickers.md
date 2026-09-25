@@ -11,11 +11,9 @@ role: Admin, Developer
 exl-id: 25442753-8309-452b-881a-d33ab159d5b2
 source-git-commit: d571dc696e42bae873cd58f2e7f321bd3002f42e
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '632'
 ht-degree: 98%
-
 ---
-
 # Sélecteurs de création dans Content &amp; Commerce AEM {#cif-pickers}
 
 La création dans Content &amp; Commerce AEM fournit un ensemble d’outils de création pour aider les auteurs et spécialistes marketing AEM à travailler efficacement avec les données et les catalogues de produits commerciaux. Le sélecteur de produits et le sélecteur de catégories font partie du module complémentaire CIF et sont utilisés par les composants principaux CIF. Les projets peuvent utiliser ces sélecteurs dans n’importe quelle boîte de dialogue de composant pour sélectionner des produits ou des catégories.
@@ -48,8 +46,6 @@ En outre, les propriétés de champ de boîte de dialogue standard telles que `n
 >[!CAUTION]
 >
 >Le composant `cifproductfield` nécessite la bibliothèque cliente `cif.shell.picker` Pour ajouter une bibliothèque cliente à une boîte de dialogue, vous pouvez utiliser la propriété extraClientlibs.
->&#x200B;
-
 >[!CAUTION]
 >
 >À compter de la version 2.0.0 des composants principaux CIF, la prise en charge de `id` a été supprimée et remplacée par `uid`. Adobe recommande d’utiliser `sku` ou `slug` comme identifiant de produit. Adobe continue à prendre en charge `id` uniquement pour les projets utilisant les composants principaux CIF version 1.x.
@@ -80,8 +76,6 @@ En outre, les propriétés de champ de boîte de dialogue standard telles que `n
 >[!CAUTION]
 >
 >Comme le composant `cifproductfield`, le composant `cifcategoryfield` nécessite également la bibliothèque clif `cif.shell.picker` Pour ajouter une bibliothèque cliente à une boîte de dialogue, vous pouvez utiliser la propriété `extraClientlibs`. Consultez la section [Personnalisation des boîtes de dialogue](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=fr#customizing-dialogs) dans la documentation sur les composants principaux AEM.
->&#x200B;
-
 >[!CAUTION]
 >
 >À compter de la version 2.0.0 des composants principaux CIF, la prise en charge de `id` a été supprimée et remplacée par `uid`. Adobe recommande d’utiliser `uid` ou `urlPath` comme identifiant de catégorie. Adobe continue à prendre en charge `id` et `idAndUrlPath` uniquement pour les projets utilisant les composants principaux CIF version 1.x.

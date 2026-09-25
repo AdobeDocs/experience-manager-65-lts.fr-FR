@@ -10,11 +10,9 @@ role: User, Developer
 exl-id: bc3cf42f-9107-4960-bef5-49d1dde4fbb5
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 100%
-
+source-wordcount: '444'
+ht-degree: 95%
 ---
-
 # Création d’une aide contextuelle pour les champs de formulaire{#authoring-in-context-help-for-form-fields}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
@@ -56,7 +54,7 @@ Vous pouvez utiliser le champ Description longue pour saisir un texte long ou in
 
 ![Ajout de contenu multimédia enrichi comme aide contextuelle pour les champs de formulaire](assets/long-descriptions.png)
 
-L’ajout d’une description longue affiche une icône **?** en regard du champ. Un clic sur l’icône affiche le contenu ajouté à la section Description longue.
+L&#39;ajout d&#39;une description longue affiche un **?** en regard du champ. Un clic sur l’icône affiche le contenu ajouté à la section Description longue.
 
 ![Exemple d’aide contextuelle sous forme de contenu multimédia enrichi](assets/photoshop.png)
 
@@ -66,6 +64,6 @@ Outre l’aide contextuelle pour les champs de formulaire, vous pouvez spécifie
 
 ![Ajout d’une aide contextuelle pour un panneau de formulaire](assets/panel-level-help.png)
 
-L’ajout d’une aide pour un panneau affiche une icône **?** en regard de la description du panneau. Un clic sur l’icône affiche le contenu ajouté dans la section Contenu de l’aide du panneau Modifier.
+Ajouter de l’aide pour le panneau affiche un **?** en regard de la description du panneau. Un clic sur l’icône affiche le contenu ajouté dans la section Contenu de l’aide du panneau Modifier.
 
 ![Exemple d’aide contextuelle au niveau d’un panneau](assets/photoshop-1.png)
