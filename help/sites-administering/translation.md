@@ -8,14 +8,12 @@ role: Admin
 exl-id: bda2f261-a755-40b9-bd4d-c783f7f7a4b9
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '257'
 ht-degree: 100%
-
 ---
-
 # Traduction de contenu pour les sites multilingues {#translating-content-for-multilingual-sites}
 
-Automatisez la traduction du contenu des pages, des ressources et du contenu créé par les utilisateurs pour créer et tenir à jour des sites web multilingues. Pour automatiser les workflows de traduction, vous intégrez des fournisseurs de services de traduction à AEM et vous créez des projets pour traduire le contenu dans plusieurs langues. AEM prend en charge les workflows de traduction humaine et automatique.
+Automatisez la traduction du contenu des pages, des ressources et du contenu créé par les utilisateurs pour créer et tenir à jour des sites web multilingues. Pour automatiser les processus de traduction, vous intégrez des fournisseurs de services de traduction à AEM et vous créez des projets pour traduire le contenu dans plusieurs langues. AEM prend en charge les workflows de traduction humaine et automatique.
 
 * Traduction humaine : le contenu est envoyé à votre fournisseur de traduction et traduit par des traducteurs professionnels. Une fois la traduction terminée, le contenu traduit est renvoyé et importé dans AEM. Lorsque votre fournisseur de traduction est intégré à AEM, le contenu est automatiquement transféré entre AEM et le fournisseur de traduction.
 * Traduction automatique : le service de traduction automatique traduit immédiatement votre contenu.
@@ -33,7 +31,7 @@ Si votre fournisseur de services de traduction ne fournit pas de connecteur pour
 
 >[!NOTE]
 >
->Votre utilisateur ou utilisatrice doit être membre du groupe projects-administrators pour utiliser les fonctionnalités de copie de langue.
+>L’utilisateur ou l’utilisatrice doit être membre du groupe projects-administrators pour utiliser les fonctionnalités de copie linguistique.
 
 ## Bonnes pratiques {#best-practices}
 
