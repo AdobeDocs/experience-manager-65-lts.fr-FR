@@ -8,11 +8,9 @@ solution: Experience Manager, Experience Manager Forms
 exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1947'
-ht-degree: 98%
-
+source-wordcount: '2092'
+ht-degree: 95%
 ---
-
 # Créer ou personnaliser un thème de formulaire adaptatif {#introduction-to-theme}
 
 ## Application {#applies-to}
@@ -30,13 +28,13 @@ Dans AEM Forms 6.5, un thème est une bibliothèque cliente AEM utilisée pour
 
 L’environnement AEM 6.5 fournit les thèmes répertoriés ci-dessous pour les formulaires adaptatifs basés sur les composants principaux :
 
-* [Thème Canevas](https://github.com/adobe/aem-forms-theme-canvas)
+* [Thème de la zone de travail](https://github.com/adobe/aem-forms-theme-canvas)
 * [Thème WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Thème EASEL](https://github.com/adobe/aem-forms-theme-easel)
 * [Thème FSI](https://github.com/adobe/aem-forms-theme-fsi)
-* [Thème santé](https://github.com/adobe/aem-forms-theme-healthcare)
+* [Thème Healthcare](https://github.com/adobe/aem-forms-theme-healthcare)
 * [Thème public](https://github.com/adobe/aem-forms-theme-public)
-* [Thème fabrication](https://github.com/adobe/aem-forms-theme-manufacturing)
+* [Thème de fabrication](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 ## Comprendre la structure des thèmes {#understanding-structure-of-theme}
 
@@ -56,11 +54,11 @@ Un thème est un package qui englobe le fichier CSS, les fichiers JavaScript et
 
 AEM Forms 6.5 fournit les thèmes répertoriés ci-dessous pour les formulaires adaptatifs basés sur les composants principaux.
 
-* [Thème Canevas](https://github.com/adobe/aem-forms-theme-canvas)
+* [Thème de la zone de travail](https://github.com/adobe/aem-forms-theme-canvas)
 * [Thème WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Thème EASEL](https://github.com/adobe/aem-forms-theme-easel)
 * [Thème public](https://github.com/adobe/aem-forms-theme-public)
-* [Thème fabrication](https://github.com/adobe/aem-forms-theme-manufacturing)
+* [Thème de fabrication](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 Vous pouvez [personnaliser n’importe lequel de ces thèmes pour créer un thème](#customize-a-theme-core-components).
 
@@ -77,7 +75,7 @@ La personnalisation d’un thème fait référence au processus de modification 
 
 * [Activation des composants principaux des formulaires adaptatifs pour votre environnement.](/help/forms/using/enable-adaptive-forms-core-components.md)
 
-* Installation de la dernière version d’[Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven est un outil d’automatisation de création couramment utilisé dans les projets Java™. L’installation de la dernière version vous garantit les dépendances nécessaires à la personnalisation du thème.
+* Installez la dernière version d’[Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven est un outil d’automatisation de création couramment utilisé dans les projets Java™. L’installation de la dernière version vous garantit les dépendances nécessaires à la personnalisation du thème.
 
 * Découvrez comment créer une [bibliothèque cliente dans Adobe Experience Manager](/help/sites-developing/clientlibs.md). AEM fournit des bibliothèques clientes qui vous permettent de stocker le code côté client dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client ou à la cliente.
 
@@ -109,13 +107,13 @@ La création ou la personnalisation d’un thème est un processus à plusieurs 
 
 Les exemples fournis dans le document sont basés sur le thème **Zone de travail**, mais vous pouvez cloner n’importe quel thème et le personnaliser en suivant les mêmes instructions. Ces instructions s’appliquent à n’importe quel thème, ce qui vous permet de modifier des thèmes en fonction de vos besoins spécifiques.
 
-#### 1. Cloner le référentiel Git du thème {#clone-git-repo-of-theme}
+#### &#x200B;1. Cloner le référentiel Git du thème {#clone-git-repo-of-theme}
 
 Pour cloner un thème pour les formulaires adaptatifs basés sur les composants principaux, choisissez l’un des thèmes suivants :
 
-* [Thème Zone de travail](https://github.com/adobe/aem-forms-theme-canvas)
+* [Thème de la zone de travail](https://github.com/adobe/aem-forms-theme-canvas)
 * [Thème WKND](https://github.com/adobe/aem-forms-theme-wknd)
-* [Thème CHEVALET](https://github.com/adobe/aem-forms-theme-easel)
+* [Thème EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
 Suivez les instructions suivantes pour cloner un thème :
 
@@ -139,7 +137,7 @@ Suivez les instructions suivantes pour cloner un thème :
 
 Une fois la commande exécutée correctement, vous disposez d’une copie locale du thème sur votre ordinateur dans le dossier `aem-forms-theme-canvas`.
 
-#### 2 . Personnaliser le thème {#customize-the-theme}
+#### &#x200B;2. Personnaliser le thème {#customize-the-theme}
 
 Vous avez la possibilité de personnaliser des composants individuels ou d’effectuer des modifications au niveau du thème à l’aide des variables globales d’un thème. La modification des variables globales a un effet en cascade sur tous les composants individuels. Vous pouvez, par exemple, utiliser des variables globales pour modifier la couleur de bordure de tous les composants d’un formulaire adaptatif ou appliquer une couleur de fond accrocheuse aux boutons d’appel à l’action. Vous pouvez :
 
@@ -264,7 +262,7 @@ An Adaptive Form with the selected theme is created.
 The selected theme is applied to the Adaptive Form. 
 -->
 
-#### &#x200B;5. Déployer un thème sur votre environnement de production {#deploy-theme}
+#### &#x200B;5. Déploiement d’un thème dans votre environnement de production {#deploy-theme}
 
 Une fois que vous avez testé le thème sur votre environnement de développement local, vous pouvez continuer à le déployer sur vos environnements de production, y compris les instances de création et de publication. Pour déployer le thème sur vos environnements de production, procédez comme suit :
 

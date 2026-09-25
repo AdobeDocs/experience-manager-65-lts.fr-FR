@@ -10,11 +10,9 @@ role: Admin, User, Developer
 exl-id: 12f99159-d252-44a5-8daa-938640360445
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1547'
-ht-degree: 97%
-
+source-wordcount: '1629'
+ht-degree: 96%
 ---
-
 # Didacticiel : créer un modèle de données de formulaire {#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
@@ -25,7 +23,7 @@ Ce tutoriel fait partie de la série [Création de votre premier formulaire adap
 
 Le module d’intégration de données AEM [!DNL Forms] vous permet de créer un modèle de données de formulaire à partir de sources de données principales disparates, telles que le profil utilisateur AEM, les services web RESTful, les services web basés sur SOAP, les services OData et les bases de données relationnelles. Vous pouvez configurer des objets et des services de modèle de données dans un modèle de données de formulaire et les associer à un formulaire adaptatif. Les champs de formulaire adaptatif sont liés aux propriétés de l’objet de modèle de données. Les services vous permettent de préremplir le formulaire adaptatif et d’écrire les données de formulaire soumises dans l’objet de modèle de données.
 
-Pour plus d’informations sur l’intégration des données de formulaire et sur le modèle de données du formulaire, voir [Intégration de données AEM Forms](../../forms/using/data-integration.md).
+Pour plus d’informations sur l’intégration des données de formulaire et sur le modèle de données de formulaire, voir [Intégration de données AEM Forms](../../forms/using/data-integration.md).
 
 Ce tutoriel vous décrit étape par étape le processus de préparation, création, configuration et association d’un modèle de données de formulaire avec un formulaire adaptatif. À la fin de ce didacticiel, vous serez capable de :
 
@@ -56,8 +54,8 @@ Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
 
 1. Installez le pilote JDBC pour la base de données [!DNL MySQL] en tant que bundle OSGi :
 
-   1. Téléchargez le [!DNL MySQL]lot OSGi du pilote JDBC à partir de `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
-   1. Connectez-vous à l’instance d’auteur AEM [!DNL Forms] en tant qu’administrateur et accédez aux bundles de la console web d’AEM. L’URL par défaut est [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
+   1. Téléchargez le [!DNL MySQL]bundle OSGi du pilote JDBC à partir de `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
+   1. Connectez-vous à l’instance de création AEM [!DNL Forms] en tant qu’administrateur ou administratrice et accédez aux bundles de la console web d’AEM. L’URL par défaut est [&#128279;](https://localhost:4502/system/console/bundles).
 
    1. Sélectionnez **[!UICONTROL Installer/Mettre à jour]**. Une boîte de dialogue [!UICONTROL Charger/installer les bundles] s’affiche.
 
@@ -83,7 +81,7 @@ Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
 
       >[!NOTE]
       >
-      >AEM Forms ne prend pas en charge l’authentification NT pour [!DNL MySQL]. Accédez à la console web AEM à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) et recherchez « Apache Sling Connection Pooled Datasource ». Pour la propriété « URI de connexion JDBC », définissez la valeur de « integratedSecurity » sur False et utilisez le nom d’utilisateur et le mot de passe créés pour vous connecter à la base de données [!DNL MySQL].
+      >AEM Forms ne prend pas en charge l’authentification NT pour [!DNL MySQL]. Accédez à la console web AEM à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) puis recherchez « Apache Sling Connection Pooled Datasource ». Pour la propriété « URI de connexion JDBC », définissez la valeur de « integratedSecurity » sur False et utilisez le nom d’utilisateur et le mot de passe créés pour vous connecter à la base de données [!DNL MySQL].
 
       * **Test lors de l’emprunt :** activez l’option **[!UICONTROL Test lors de l’emprunt.]**
       * **Test lors du renvoi :** activez l’option **[!UICONTROL Test lors du renvoi.]**
@@ -120,7 +118,7 @@ La configuration du modèle de données de formulaire implique :
 
 Pour configurer un modèle de données de formulaire, procédez comme suit :
 
-1. Dans l’instance d’auteur AEM, accédez à **[!UICONTROL Formulaires]** > **[!UICONTROL Intégrations de données]**. L’URL par défaut est [https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
+1. Dans l’instance de création AEM, accédez à **[!UICONTROL Formulaires]** > **[!UICONTROL Intégrations de données]**. L’URL par défaut est [&#128279;](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
 1. Le modèle de données de formulaire **customer-shipping-billing-details** que vous avez créé précédemment est répertorié ici. Ouvrez-le en mode d’édition.
 
    La source de données sélectionnée **WeRetailMySQL** est configuré dans le modèle de données de formulaire.
@@ -131,17 +129,17 @@ Pour configurer un modèle de données de formulaire, procédez comme suit :
 
    * **Objets de modèle de données**:
 
-      * id
-      * name
-      * shippingAddress
-      * city
-      * state
-      * zipcode
+     * id
+     * name
+     * shippingAddress
+     * city
+     * state
+     * zipcode
 
    * **Services :**
 
-      * get
-      * mise à jour
+     * get
+     * mise à jour
 
    Sélectionnez **Ajouter la sélection** pour ajouter des objets et des services de modèle de données sélectionnés au modèle de données de formulaire.
 
@@ -214,7 +212,7 @@ Pour configurer un modèle de données de formulaire, procédez comme suit :
 
       ![shiiping-address-update](assets/shiiping-address-update.png)
 
-L’objet du modèle de données et les services contenus dans le modèle de données de formulaire sont configurés. Vous pouvez maintenant tester le modèle de données de formulaire.
+L’objet de modèle de données et les services contenus dans le modèle de données de formulaire sont configurés. Vous pouvez maintenant tester le modèle de données de formulaire.
 
 ## Étape 4 : Tester le modèle de données de formulaire {#test-fdm}
 

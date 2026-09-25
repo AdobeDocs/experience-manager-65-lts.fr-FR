@@ -8,11 +8,9 @@ role: Admin
 exl-id: b89e2899-35b9-4105-bfa5-ca21dc6f4e14
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1289'
 ht-degree: 97%
-
 ---
-
 # Configuration de la structure d’intégration de traduction{#configuring-the-translation-integration-framework}
 
 Le framework d’intégration de traduction s’intègre à des services de traduction tiers pour orchestrer la traduction du contenu d’AEM.

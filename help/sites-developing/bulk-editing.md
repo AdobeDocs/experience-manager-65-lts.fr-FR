@@ -11,11 +11,9 @@ role: Developer
 exl-id: 7ba0a378-0b52-40bd-8dab-32490594558e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '419'
 ht-degree: 100%
-
 ---
-
 # Configurer votre page pour la modification en bloc des propriétés de page {#configuring-your-page-for-bulk-editing-of-page-properties}
 
 La [modification en masse des propriétés de page](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) permet de modifier les propriétés de plusieurs pages à la fois.
@@ -62,7 +60,7 @@ Les champs sont activés sur le composant de page (*pas* sur le modèle) :
 
    >[!NOTE]
    >
-   >Cet exemple suppose que les composants de base ont été installés sur l’instance, ce qui est le cas si l’instance est exécutée avec un exemple de contenu We.Retail. Pour en savoir plus, consultez la [documentation relative aux composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
+   >Cet exemple suppose que les composants principaux ont été installés sur l’instance, ce qui est le cas si l’instance est exécutée avec un exemple de contenu We.Retail. Pour en savoir plus, consultez la [documentation relative aux composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
 
 1. Accédez au champ requis dans la définition de `cq:dialog`.
 1. Définissez la propriété suivante sur le nœud de champ :

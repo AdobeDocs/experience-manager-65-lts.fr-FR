@@ -9,11 +9,9 @@ role: Developer
 exl-id: 3eba062c-b95c-4ab5-9814-6948c3e2a7d0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 88%
-
+source-wordcount: '95'
+ht-degree: 90%
 ---
-
 # Outils de modernisation d’AEM {#modernization-tools}
 
 [Les outils de modernisation d’AEM permettent de convertir facilement les éléments suivants :](https://opensource.adobe.com/aem-modernize-tools/)

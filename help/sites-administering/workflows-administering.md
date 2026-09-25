@@ -11,11 +11,9 @@ role: Admin
 exl-id: c86f66b3-6471-4fb6-81d6-3c0a4dcbe200
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 97%
-
+source-wordcount: '1015'
+ht-degree: 95%
 ---
-
 # Administration d’instances de workflow{#administering-workflow-instances}
 
 La console de workflows fournit plusieurs outils permettant d’administrer les instances de workflow pour vérifier qu’elles s’exécutent comme prévu.
@@ -33,7 +31,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 * **Échecs** : affichez l’historique des workflows terminés avec des erreurs
 * **Attribution automatique** : configurez l’attribution automatique des workflows aux modèles
 
-## Suivi du statut des instances de workflow {#monitoring-the-status-of-workflow-instances}
+## Su du statut des instances de workflow {#monitoring-the-status-of-workflow-instances}
 
 1. Avec la navigation, sélectionnez **Outils**, puis **Workflows**.
 1. Sélectionnez **Instances** pour afficher la liste des instances de workflow en cours.
@@ -96,10 +94,10 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 Lorsqu’un workflow échoue, AEM fournit la console **Échecs** pour vous permettre d’enquêter et de prendre les mesures appropriées une fois la cause d’origine résolue :
 
 * **Détails de l’échec**
-Ouvre une fenêtre pour afficher **Message d’échec**, **Étape**, et **Pile des échecs**.
+Ouvre une fenêtre pour afficher les **Message d’échec**, **Étape** et **Pile des échecs**.
 
 * **Ouvrir l’historique**
-Affiche des détails sur l’historique des workflows.
+Affiche les détails de l’historique du workflow.
 
 * **Relancer l’étape** : exécute à nouveau l’instance du composant de l’étape de script. Utilisez la commande Relancer l’étape après avoir corrigé la cause de l’erreur initiale. Par exemple, relancez l’étape après avoir corrigé un bogue dans le script que l’étape de processus exécute.
 * **Arrêter** : arrêtez le workflow si l’erreur a provoqué une situation irrémédiable pour celui-ci. Par exemple, le workflow peut se baser sur des conditions environnementales comme des informations figurant dans le référentiel qui ne sont plus valides pour l’instance de workflow.

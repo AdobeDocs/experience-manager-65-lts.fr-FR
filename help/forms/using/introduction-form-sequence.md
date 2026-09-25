@@ -11,11 +11,9 @@ role: User, Developer
 exl-id: 5455facf-ed09-4266-a43a-61eef3ecc33e
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '633'
 ht-degree: 96%
-
 ---
-
 # Présentation de la séquence de formulaires à plusieurs étapes{#introduction-to-multi-step-form-sequence}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une approche plus ancienne de la création de formulaires adaptatifs à l’aide de composants de base. </span>
@@ -47,8 +45,8 @@ Supposons que vous deviez créer une séquence pour les étapes de remplissage, 
 
    * **Signer électroniquement** : contient le composant **Sign** qui peut être utilisé dans un formulaire adaptatif XFA. Ce panneau fournit les services de signature suivants :
 
-      * Services Adobe Document Cloud eSign
-      * Signature tactile
+     * Services Adobe Document Cloud eSign
+     * Signature tactile
 
    * **Confirmation** : contient le composant **Résumé** qui affiche un message de conformation d’envoi du formulaire lorsqu’un utilisateur l’a signé et a atteint l’étape de confirmation (Résumé) dans la séquence. Les auteurs peuvent configurer le texte du composant de Résumé, afficher un message de remerciement et un lien vers le PDF généré, etc.
 

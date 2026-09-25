@@ -10,11 +10,9 @@ role: User, Developer
 exl-id: dba191d6-4fe9-40e7-a995-00f0c3fd335d
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 93%
-
+source-wordcount: '351'
+ht-degree: 94%
 ---
-
 # Configuration d’une page de redirection{#configuring-redirect-page}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
@@ -31,7 +29,7 @@ Pour chaque formulaire, les auteurs peuvent configurer une page vers laquelle le
 
 1. Dans la barre latérale, cliquez sur **Envoi**.
 
-1. Indiquez L’URL de la page de redirection sous Page de remerciement dans la section Envoyer. 
+1. Indiquez L’URL de la page de redirection sous Page de remerciement dans la section Envoyer.
 1. Sous Action Envoyer, vous pouvez éventuellement configurer le paramètre à transmettre à la page de redirection pour l’action Envoyer vers le point d’entrée REST.
 
 ![Configuration de la page de redirection](assets/thank-you-setting-1.png)
@@ -46,4 +44,4 @@ Les auteurs et autrices de formulaires peuvent utiliser les paramètres suivants
 
 * **Workflow Envoyer aux formulaires** : les paramètres de sortie renvoyés à partir du workflow des formulaires sont transmis.
 
-* **Envoyer vers le point d’entrée REST** : les paramètres ajoutés pour la correspondance entre le champ et le paramètre sont transmis. Les paramètres `status` et `owner` ne sont pas transmis à cette action d’envoi. Pour en savoir plus, consultez [Configuration de l’action d’envoi Envoyer vers le point d’entrée REST](../../forms/using/configuring-submit-actions.md). 
+* **Envoyer vers le point d’entrée REST** : les paramètres ajoutés pour la correspondance entre le champ et le paramètre sont transmis. Les paramètres `status` et `owner` ne sont pas transmis à cette action d’envoi. Pour en savoir plus, consultez [Configuration de l’action d’envoi Envoyer vers le point d’entrée REST](../../forms/using/configuring-submit-actions.md).

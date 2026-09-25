@@ -11,18 +11,16 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 674e6e03-0c34-4dbb-b0b2-d8f1e65547d7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '672'
 ht-degree: 100%
-
 ---
-
 # Obtenir des documents XDP et PDF dans AEM Forms{#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## Présentation {#overview}
 
 Vous pouvez importer vos formulaires, de votre système de fichiers local vers le référentiel CRX, en les chargeant dans AEM Forms. L’opération de chargement est prise en charge pour les types de ressources suivants :
 
-* Modèles de formulaire (formulaires XFA)
+* Modèles de formulaires (formulaires XFA)
 * Formulaires PDF
 * Document (documents PDF plats)
 
@@ -66,7 +64,7 @@ Le serveur AEM Forms permet d’exécuter du code JavaScript. Un code JavaScri
 
 Le mode protégé est activé par défaut. Si nécessaire, vous pouvez désactiver le mode protégé :
 
-1. Connectez-vous à la console Web AEM en tant qu’administrateur. L’URL est la suivante : https://&#39;[serveur]:[port]&#39;/system/console/configMgr
+1. Connectez-vous à la console web AEM en tant qu’administrateur ou administratrice. L’URL est la suivante : https://&#39;[serveur]:[port]&#39;/system/console/configMgr
 1. Ouvrez Configurations de Mobile Forms pour modification.
 1. Désélectionnez l’option Mode protégé et cliquez sur **Enregistrer**. Le mode Protégé est désactivé.
 

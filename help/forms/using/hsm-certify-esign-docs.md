@@ -11,11 +11,9 @@ role: Admin, User, Developer
 exl-id: 20bd6c24-ac9d-4f8d-b5c0-9b7935d4bdf8
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '699'
 ht-degree: 100%
-
 ---
-
 # Utiliser HSM pour signer ou certifier des documents numériquement {#use-hsm-to-digitally-sign-or-certify-documents}
 
 Les modules de sécurité matérielle (HSM) et e-tokens sont des modules informatiques dédiés, sécurisés et résistants aux modifications, conçus pour gérer, traiter et stocker en toute sécurité des clés numériques. Ces modules sont directement associés à un ordinateur ou à un serveur réseau.
@@ -26,7 +24,7 @@ Adobe Experience Manager Forms peut utiliser les informations d&#39;identificati
 1. [Créez un alias pour le module HSM ou etoken dans la console web AEM](#configuredeviceinaemconsole).
 1. [Utilisez les API du service DocAssurance pour signer ou certifier les documents avec des clés numériques stockées sur le module](#programatically).
 
-## Avant de configurer les modules HSM ou etoken avec AEM Forms  {#configurehsmetoken}
+## Avant de configurer les modules HSM ou etoken avec AEM Forms {#configurehsmetoken}
 
 * Installez le [module complémentaire AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
 * Installez et configurez le logiciel client de HSM ou etoken sur le même ordinateur que le serveur AEM. Le logiciel client est nécessaire pour communiquer avec les modules HSM et e-token.
@@ -35,7 +33,7 @@ Adobe Experience Manager Forms peut utiliser les informations d&#39;identificati
 
 Par défaut, le service DocAssurance n’est pas activé. Effectuez les étapes suivantes pour activer le service :
 
-1. Arrêtez l’instance auteur de votre environnement AEM Forms. 
+1. Arrêtez l’instance de création de votre environnement AEM Forms.
 
 1. Ouvrez le fichier [AEM_root]\crx-quickstart\conf\sling.properties pour le modifier.
 
@@ -95,7 +93,7 @@ Perform the following steps to setup certificates:
 -->
 
 
-## Création d’un alias pour l’appareil  {#configuredeviceinaemconsole}
+## Création d’un alias pour l’appareil {#configuredeviceinaemconsole}
 
 L&#39;alias contient l&#39;ensemble des paramètres dont a besoin un module HSM ou etoken. Suivez les instructions ci-dessous pour créer un alias pour les informations d&#39;identification de chaque module HSM ou etoken qu&#39;utilisent eSign ou les signatures numériques :
 
@@ -116,7 +114,7 @@ L&#39;alias contient l&#39;ensemble des paramètres dont a besoin un module HSM 
 
    Cliquez sur **Enregistrer**. Le module de sécurité matérielle est configuré pour AEM Forms. Désormais, vous pouvez utiliser le module de sécurité matérielle avec AEM Forms pour signer ou certifier des documents.
 
-## Utiliser les API du service DocAssurance pour signer ou certifier un document avec des clés numériques stockées sur le module {#programatically}
+## Utiliser les API du service DocAssurance pour signer ou certifier un document avec des clés numériques stockées sur le module  {#programatically}
 
 L’exemple de code suivant utilise un module HSM ou e-token pour signer ou certifier un document.
 

@@ -8,11 +8,9 @@ role: Admin
 exl-id: c6e00da5-804f-46cf-b7a9-52e667574394
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 99%
-
+source-wordcount: '328'
+ht-degree: 98%
 ---
-
 # Créer une racine de langue à l’aide de l’interface utilisateur classique{#creating-a-language-root-using-the-classic-ui}
 
 La procédure ci-dessous utilise l’interface utilisateur classique pour créer la racine de langue d’un site. Pour plus d’informations, consultez [Création d’une racine de langue](/help/sites-administering/tc-prep.md#creating-a-language-root).
@@ -31,11 +29,11 @@ La procédure ci-dessous utilise l’interface utilisateur classique pour créer
    ![newpagefr](assets/newpagefr.png)
 
 1. Dans la console Sites web, dans l’arborescence des sites web, sélectionnez la page racine du site.
-1. Dans le menu Outils, sélectionnez Copie de langue.
+1. Dans le menu Outils, sélectionnez Copie linguistique.
 
    ![toolslanguagecopy](assets/toolslanguagecopy.png)
 
-   La boîte de dialogue Copie de la langue affiche un tableau des versions linguistiques et des pages web disponibles. Un x dans une colonne de langue signifie que la page est disponible dans cette langue.
+   La boîte de dialogue Copie linguistique affiche un tableau des versions linguistiques et des pages web disponibles. Un x dans une colonne de langue signifie que la page est disponible dans cette langue.
 
    ![languagecopydialog](assets/languagecopydialog.png)
 
@@ -45,7 +43,7 @@ La procédure ci-dessous utilise l’interface utilisateur classique pour créer
 
    ![languagecopydilogdropdown](assets/languagecopydilogdropdown.png)
 
-   | Type de copie de langue | Description |
+   | Type de copie linguistique | Description |
    |---|---|
    | auto | Utilise le comportement des pages parentes. |
    | ignore | Ne crée pas de copie de cette page et de ses enfants. |

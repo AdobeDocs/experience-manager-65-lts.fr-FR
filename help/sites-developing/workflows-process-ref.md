@@ -11,11 +11,9 @@ role: Developer
 exl-id: 20fd27e2-0eb7-4fab-a56a-f83816947579
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1078'
 ht-degree: 98%
-
 ---
-
 # Référence sur les processus de workflow{#workflow-process-reference}
 
 AEM fournit plusieurs étapes de processus qui peuvent être utilisées pour créer des modèles de workflow. Des étapes de processus personnalisées peuvent également être ajoutées pour les tâches qui ne sont pas couvertes par les étapes intégrées (voir [Création de modèles de workflow](/help/sites-developing/workflows-models.md)).

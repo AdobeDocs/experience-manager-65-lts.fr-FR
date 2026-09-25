@@ -9,11 +9,9 @@ role: Admin, Developer
 exl-id: 708a4ab2-ca66-445d-8d69-bcf12fd5158a
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1849'
-ht-degree: 98%
-
+source-wordcount: '1940'
+ht-degree: 97%
 ---
-
 # Créer et utiliser des fragments de formulaires adaptatifs dans un formulaire adaptatif en fonction des composants principaux {#adaptive-form-fragments}
 
 ## Application {#applies-to}
@@ -159,11 +157,11 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adap
    <td><p>Télécharge le fragment sélectionné.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Aperçu</p> </td>
+   <td><p>Prévisualisation</p> </td>
    <td><p>Fournit des options de prévisualisation du fragment en HTML ou un aperçu personnalisé en fusionnant les données d’un fichier XML avec le fragment. Pour plus d’informations, voir <a>Aperçu d’un formulaire</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Démarrage de la révision/Gestion de la révision</p> </td>
+   <td><p>Démarrer la révision/Gérer la révision</p> </td>
    <td><p>Permet de lancer et de gérer la révision du fragment sélectionné. Pour plus d’informations, voir <a>Créer et gérer des révisions</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>

@@ -11,11 +11,9 @@ role: User, Developer
 exl-id: 7da165ac-2039-4ac8-810d-fbe6f771453a
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2381'
-ht-degree: 99%
-
+source-wordcount: '2463'
+ht-degree: 98%
 ---
-
 # Fragments de formulaire adaptatif{#adaptive-form-fragments}
 
 ## Application {#applies-to}
@@ -107,7 +105,7 @@ En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire 
    * **Modèle de formulaire** : selon le modèle de formulaire pour le formulaire adaptatif, ce champ affiche le **schéma XML**,**modèle de formulaire** ou **aucun**. Ce champ n’est pas modifiable.
 
    * **Racine du modèle de fragment** : s’affiche uniquement dans les formulaires adaptatifs XSD. Cette action spécifie la racine du modèle de fragment. Vous pouvez choisir **/** ou le type complexe de schéma XSD dans la liste déroulante. Vous ne pouvez réutiliser le fragment dans un autre formulaire adaptatif que si vous avez sélectionné le type complexe sous forme de fragment racine du modèle.
-Si vous choisissez **/** comme racine du modèle de fragment, l’arborescence complète de schéma XSD depuis la racine est visible dans l’onglet de modèle de données de formulaire adaptatif. Pour une racine de modèle de fragment de type complexe, seuls les descendants du type complexe sélectionné sont visibles dans l’onglet du modèle de données de formulaire adaptatif. Si vous créez un fragment et choisissez un type complexe comme **Racine du modèle de fragment**, vous pouvez l’utiliser partout où ce type complexe est utilisé, que ce soit dans le même formulaire ou dans plusieurs formulaires.
+     Si vous choisissez **/** comme racine du modèle de fragment, l’arborescence complète de schéma XSD depuis la racine est visible dans l’onglet de modèle de données de formulaire adaptatif. Pour une racine de modèle de fragment de type complexe, seuls les descendants du type complexe sélectionné sont visibles dans l’onglet du modèle de données de formulaire adaptatif. Si vous créez un fragment et choisissez un type complexe comme **Racine du modèle de fragment**, vous pouvez l’utiliser partout où ce type complexe est utilisé, que ce soit dans le même formulaire ou dans plusieurs formulaires.
 
    * **Référence de schéma XSD** : s’affiche uniquement dans les formulaires adaptatifs XSD. Il indique l’emplacement du schéma XML.
 
@@ -228,11 +226,11 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adap
    <td><p>Télécharge le fragment sélectionné.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Aperçu</p> </td>
+   <td><p>Prévisualisation</p> </td>
    <td><p>Fournit des options de prévisualisation du fragment en HTML ou un aperçu personnalisé en fusionnant les données d’un fichier XML avec le fragment. Pour plus d’informations, voir <a href="/help/forms/using/previewing-forms.md" target="_blank">Aperçu d’un formulaire</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Démarrage de la révision/Gestion de la révision</p> </td>
+   <td><p>Démarrer la révision/Gérer la révision</p> </td>
    <td><p>Permet de lancer et de gérer la révision du fragment sélectionné. Pour plus d’informations, voir <a href="../../forms/using/create-reviews-forms.md" target="_blank">Créer et gérer des révisions</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>

@@ -11,11 +11,9 @@ role: Developer
 exl-id: a3595673-8d43-4ef2-a00e-ec8aa8d9cb55
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 99%
-
+source-wordcount: '464'
+ht-degree: 96%
 ---
-
 # Personnaliser la console de bienvenue (IU classique){#customizing-the-welcome-console-classic-ui}
 
 >[!CAUTION]
@@ -120,11 +118,11 @@ Trois sections sont proposées par défaut (elles sont légèrement espacées) 
    <td><code>/libs/cq/core/content/welcome/docs/docs</code></td>
   </tr>
   <tr>
-   <td> Références pour les développeurs</td>
+   <td> Ressources de développement</td>
    <td><code>/libs/cq/core/content/welcome/docs/dev</code></td>
   </tr>
   <tr>
-   <td><strong>Fonctions</strong></td>
+   <td><strong>Fonctionnalités</strong></td>
    <td> </td>
   </tr>
   <tr>
@@ -148,7 +146,7 @@ Trois sections sont proposées par défaut (elles sont légèrement espacées) 
    <td><code>/libs/cq/core/content/welcome/features/backup</code></td>
   </tr>
   <tr>
-   <td> Console Web<br /> </td>
+   <td> Console web<br /> </td>
    <td><code>/libs/cq/core/content/welcome/features/config</code></td>
   </tr>
   <tr>
