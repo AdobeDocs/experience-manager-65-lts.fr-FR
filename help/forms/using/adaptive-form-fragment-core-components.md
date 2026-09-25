@@ -9,11 +9,9 @@ role: Admin, Developer
 exl-id: 708a4ab2-ca66-445d-8d69-bcf12fd5158a
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1849'
-ht-degree: 98%
-
+source-wordcount: '1940'
+ht-degree: 97%
 ---
-
 # Créer et utiliser des fragments de formulaires adaptatifs dans un formulaire adaptatif en fonction des composants principaux {#adaptive-form-fragments}
 
 ## Application {#applies-to}
@@ -32,7 +30,7 @@ Vous pouvez ajouter un fragment plusieurs fois à un document et utiliser les pr
 
 >[!NOTE]
 >
-> Vous pouvez facilement personnaliser votre expérience de fragment pour les personnes qui utilisent la [boîte de dialogue de configuration et la boîte de dialogue de conception d’un composant Fragment de formulaire](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
+> Vous pouvez facilement personnaliser votre expérience de fragment pour les personnes qui utilisent la [boîte de dialogue de configuration et la boîte de dialogue de conception d’un composant Fragment de formulaire](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
 
 
 ## Créer un fragment de formulaire {#create-a-fragment}
@@ -159,11 +157,11 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adap
    <td><p>Télécharge le fragment sélectionné.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Aperçu</p> </td>
+   <td><p>Prévisualisation</p> </td>
    <td><p>Fournit des options de prévisualisation du fragment en HTML ou un aperçu personnalisé en fusionnant les données d’un fichier XML avec le fragment. Pour plus d’informations, voir <a>Aperçu d’un formulaire</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Démarrage de la révision/Gestion de la révision</p> </td>
+   <td><p>Démarrer la révision/Gérer la révision</p> </td>
    <td><p>Permet de lancer et de gérer la révision du fragment sélectionné. Pour plus d’informations, voir <a>Créer et gérer des révisions</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>

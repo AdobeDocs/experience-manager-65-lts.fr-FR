@@ -11,11 +11,9 @@ role: Admin
 exl-id: efeda84f-e04f-4cbd-898c-4754dc29e008
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
-
+source-wordcount: '710'
+ht-degree: 96%
 ---
-
 # Configurer la commande Annuler pour la modification des pages{#configuring-undo-for-page-editing}
 
 Le [service OSGI](/help/sites-deploying/configuring-osgi.md) de **configuration de l’annulation de la gestion de contenu Web Day CQ** (`com.day.cq.wcm.undo.UndoConfigService`) expose plusieurs propriétés qui contrôlent le comportement des commandes d’annulation et de restauration pour la modification des pages.
@@ -47,103 +45,103 @@ La liste suivante répertorie les propriétés affichées dans la console web, s
 * **Activer**
 ( `cq.wcm.undo.enabled`)
 
-   * **Description** : détermine si les auteurs de page peuvent annuler et rétablir les modifications.
-   * **Valeur par défaut** : `Selected`
-   * **Type** : `Boolean`
+  * **Description** : détermine si les auteurs de page peuvent annuler et rétablir les modifications.
+  * **Valeur par défaut** : `Selected`
+  * **Type** : `Boolean`
 
-* **Chemin d’accès**
+* **Chemin**
 ( `cq.wcm.undo.path`)
 
-   * **Description :** chemin d’accès du référentiel pour conserver les données d’annulation binaires. Lorsque les auteurs modifient les données binaires telles que les images, la version originale des données est conservée ici. Lorsque des modifications apportées à des données binaires sont annulées, ces données d’annulation binaires sont restaurées sur la page.
-   * **Valeur par défaut** : `/var/undo`
-   * **Type** : `String`
+  * **Description :** chemin d’accès du référentiel pour conserver les données d’annulation binaires. Lorsque les auteurs modifient les données binaires telles que les images, la version originale des données est conservée ici. Lorsque des modifications apportées à des données binaires sont annulées, ces données d’annulation binaires sont restaurées sur la page.
+  * **Valeur par défaut** : `/var/undo`
+  * **Type** : `String`
 
   >[!NOTE]
   >
   >Par défaut, seuls les administrateurs peuvent accéder au nœud `/var/undo`. Les auteurs et autrices ne peuvent effectuer des opérations d’annulation et de restauration sur du contenu binaire qu’après avoir reçu les autorisations d’accès aux données d’annulation binaires.
 
-* **Min. validity**
+* **Min. validité**
 ( `cq.wcm.undo.validity`)
 
-   * **Description** : durée de stockage minimal des données d’annulation binaires, en heures. Après cette période, les données binaires peuvent être supprimées, pour préserver l’espace disque.
-   * **Valeur par défaut** : `10`
-   * **Type** : `Integer`
+  * **Description** : durée de stockage minimal des données d’annulation binaires, en heures. Après cette période, les données binaires peuvent être supprimées, pour préserver l’espace disque.
+  * **Valeur par défaut** : `10`
+  * **Type** : `Integer`
 
 * **Étapes**
 ( `cq.wcm.undo.steps`)
 
-   * **Description** : nombre maximal d’actions de page stockées dans l’historique d’annulation.
-   * **Valeur par défaut** : `20`
-   * **Type** : `Integer`
+  * **Description** : nombre maximal d’actions de page stockées dans l’historique d’annulation.
+  * **Valeur par défaut** : `20`
+  * **Type** : `Integer`
 
 * **Persistance**
 ( `cq.wcm.undo.persistence`)
 
-   * **Description** : classe qui conserve l’historique d’annulation. Deux classes de persistance sont disponibles :
+  * **Description** : classe qui conserve l’historique d’annulation. Deux classes de persistance sont disponibles :
 
-      * `CQ.undo.persistence.WindowNamePersistence` : conserve l’historique à l’aide de la propriété window.name.
-      * `CQ.undo.persistence.CookiePersistance` : conserve l’historique à l’aide de cookies.
+    * `CQ.undo.persistence.WindowNamePersistence` : conserve l’historique à l’aide de la propriété window.name.
+    * `CQ.undo.persistence.CookiePersistance` : conserve l’historique à l’aide de cookies.
 
-   * **Valeur par défaut** : `CQ.undo.persistence.WindowNamePersistence`
-   * **Type** : `String`
+  * **Valeur par défaut** : `CQ.undo.persistence.WindowNamePersistence`
+  * **Type** : `String`
 
 * **Mode de persistance**
 ( `cq.wcm.undo.persistence.mode`)
 
-   * **Description** : détermine à quel moment l’historique d’annulation est conservé. Sélectionnez cette option pour conserver un historique d’annulation après chaque modification de page. Désactivez cette option pour que l’historique persiste uniquement lorsqu’une page se recharge (par exemple, lorsque l’utilisateur ou l’utilisatrice accède à une autre page).
+  * **Description** : détermine à quel moment l’historique d’annulation est conservé. Sélectionnez cette option pour conserver un historique d’annulation après chaque modification de page. Désactivez cette option pour que l’historique persiste uniquement lorsqu’une page se recharge (par exemple, lorsque l’utilisateur ou l’utilisatrice accède à une autre page).
 
-     La conservation de l’historique d’annulation utilise les ressources du navigateur Web. Si le navigateur de vos utilisateurs réagit lentement aux modifications de la page, essayez de conserver l’historique d’annulation lors du rechargement de la page.
+    La conservation de l’historique d’annulation utilise les ressources du navigateur Web. Si le navigateur de vos utilisateurs réagit lentement aux modifications de la page, essayez de conserver l’historique d’annulation lors du rechargement de la page.
 
-   * **Valeur par défaut** : `Selected`
-   * **Type** : `Boolean`
+  * **Valeur par défaut** : `Selected`
+  * **Type** : `Boolean`
 
-* **Mode de marquage**
+* **Mode Marqueur**
 ( `cq.wcm.undo.markermode`)
 
-   * **Description** : spécifie l’indice visuel à utiliser pour indiquer quels paragraphes sont affectés lorsqu’une opération d’annulation ou de restauration se produit. Les valeurs suivantes sont valides :
+  * **Description** : spécifie l’indice visuel à utiliser pour indiquer quels paragraphes sont affectés lorsqu’une opération d’annulation ou de restauration se produit. Les valeurs suivantes sont valides :
 
-      * flash : l’indicateur de sélection des paragraphes clignote temporairement.
-      * select : le paragraphe est sélectionné.
+    * flash : l’indicateur de sélection des paragraphes clignote temporairement.
+    * select : le paragraphe est sélectionné.
 
-   * **Valeur par défaut** : `flash`
-   * **Type** : `String`
+  * **Valeur par défaut** : `flash`
+  * **Type** : `String`
 
 * **Bons composants**
 ( `cq.wcm.undo.whitelist`)
 
-   * **Description** : liste des composants qui doivent être affectés par les opérations d’annulation et de restauration. Ajoutez les chemins d’accès de composant à cette liste lorsqu’ils fonctionnent correctement avec les commandes d’annulation/de restauration. Ajoutez un astérisque (&amp;ast;) pour spécifier un groupe de composants :
+  * **Description** : liste des composants qui doivent être affectés par les opérations d’annulation et de restauration. Ajoutez les chemins d’accès de composant à cette liste lorsqu’ils fonctionnent correctement avec les commandes d’annulation/de restauration. Ajoutez un astérisque (&amp;ast;) pour spécifier un groupe de composants :
 
-      * La valeur suivante spécifie le composant de texte de base :
+    * La valeur suivante spécifie le composant de texte de base :
 
-        `foundation/components/text`
+      `foundation/components/text`
 
-      * La valeur suivante spécifie tous les composants de base :
+    * La valeur suivante spécifie tous les composants de base :
 
-        `foundation/components/*`
+      `foundation/components/*`
 
-   * Lorsqu’une commande d’annulation ou de restauration est émise sur un composant qui ne figure pas dans cette liste, un message s’affiche indiquant que la commande peut s’avérer non fiable.
+  * Lorsqu’une commande d’annulation ou de restauration est émise sur un composant qui ne figure pas dans cette liste, un message s’affiche indiquant que la commande peut s’avérer non fiable.
 
-   * **Valeur par défaut** : la propriété est renseignée avec de nombreux composants que fournit AEM.
-   * **Type** : `String[]`
+  * **Valeur par défaut** : la propriété est renseignée avec de nombreux composants que fournit AEM.
+  * **Type** : `String[]`
 
 * **Mauvais composants**
 ( `cq.wcm.undo.blacklist`)
 
-   * **Description** : liste des composants et/ou des opérations de composant ne devant pas être affectés par les commandes d’annulation/de restauration. Ajoutez les composants et les opérations de composant qui ne fonctionnent pas correctement avec la commande d’annulation :
+  * **Description** : liste des composants et/ou des opérations de composant ne devant pas être affectés par les commandes d’annulation/de restauration. Ajoutez les composants et les opérations de composant qui ne fonctionnent pas correctement avec la commande d’annulation :
 
-      * Ajoutez un chemin d’accès de composant lorsque vous souhaitez qu’aucune opération du composant ne soit présente dans l’historique d’annulation, par exemple, `collab/forum/components/post`.
-      * Ajoutez un deux-points (:) et une opération au chemin d’accès lorsque vous souhaitez que cette opération spécifique soit omise de l’historique d’annulation (les autres opérations fonctionneront correctement). Par exemple : `collab/forum/components/post:insertParagraph.`.
+    * Ajoutez un chemin d’accès de composant lorsque vous souhaitez qu’aucune opération du composant ne soit présente dans l’historique d’annulation, par exemple, `collab/forum/components/post`.
+    * Ajoutez un deux-points (:) et une opération au chemin d’accès lorsque vous souhaitez que cette opération spécifique soit omise de l’historique d’annulation (les autres opérations fonctionneront correctement). Par exemple : `collab/forum/components/post:insertParagraph.`.
 
   >[!NOTE]
   >
   >Lorsqu’une opération figure dans cette liste, elle est toujours ajoutée à l’historique d’annulation. Les utilisateurs et utilisatrices ne peuvent pas annuler des opérations antérieures à une opération de **Mauvais composant** dans l’historique d’annulation.
 
-   * Voici les noms d’opérations courants :
+  * Voici les noms d’opérations courants :
 
-      * `insertParagraph` : le composant est ajouté à la page.
-      * `removeParagraph` : le composant est supprimé.
-      * `moveParagraph` : le paragraphe est déplacé vers un autre emplacement.
-      * `updateParagraph` : les propriétés du paragraphe sont modifiées.
+    * `insertParagraph` : le composant est ajouté à la page.
+    * `removeParagraph` : le composant est supprimé.
+    * `moveParagraph` : le paragraphe est déplacé vers un autre emplacement.
+    * `updateParagraph` : les propriétés du paragraphe sont modifiées.
 
-   * **Valeur par défaut** : la propriété est renseignée avec plusieurs opérations de composant.
-   * **Type** : `String[]`
+  * **Valeur par défaut** : la propriété est renseignée avec plusieurs opérations de composant.
+  * **Type** : `String[]`

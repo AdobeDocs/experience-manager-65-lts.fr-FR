@@ -11,12 +11,10 @@ role: Admin
 exl-id: ee438c55-88cd-4f55-873e-16376b36fa7b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '864'
 ht-degree: 94%
-
 ---
-
-# Gestionnaire d’authentification SAML 2.0 {#saml-authentication-handler}
+# Gestionnaire d’authentification SAML 2.0{#saml-authentication-handler}
 
 AEM est livré avec un gestionnaire d’authentification [SAML](https://saml.xml.org/saml-specifications). Ce gestionnaire prend en charge le protocole de demande d’authentification [SAML](https://saml.xml.org/saml-specifications) 2.0 (profil Web-SSO) à l’aide de la liaison `HTTP POST`.
 
@@ -68,7 +66,7 @@ La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 >[!NOTE]
 >
 >Cet emplacement est utilisé uniquement si le cookie `request-path` n’est pas défini. Si vous demandez une page sous le chemin configuré sans jeton de connexion valide, le chemin demandé est stocké dans un cookie
->&#x200B;>et le navigateur sera redirigé vers cet emplacement après une authentification réussie.
+>et le navigateur sera redirigé vers cet emplacement après une authentification réussie.
 
 **Attribut ID de l’utilisateur** Nom de l’attribut contenant l’ID utilisateur utilisé pour authentifier et créer l’utilisateur dans le référentiel CRX.
 
@@ -107,7 +105,7 @@ Les assertions SAML sont signées et peuvent éventuellement être chiffrées. P
 >
 >Les étapes ci-dessous sont obligatoires, sinon l’exception suivante sera générée : `com.adobe.granite.keystore.KeyStoreNotInitialisedException: Uninitialised system trust store`.
 
-1. Accédez à : [http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html)
+1. Accédez à : [](http://localhost:4502/libs/granite/security/content/useradmin.html)
 1. Modifiez l’utilisateur `authentication-service`.
 1. Créez un KeyStore en cliquant sur **Créer le KeyStore** sous **Paramètres du compte**.
 
@@ -133,7 +131,7 @@ Les assertions SAML sont signées et peuvent éventuellement être chiffrées. P
 
 Vous pouvez configurer un journal afin de déboguer tous les problèmes pouvant résulter d’une mauvaise configuration de SAML. Vous pouvez le faire en procédant comme suit :
 
-1. Accédez à la console web à l’adresse *http://localhost:4502/system/console/configMgr*
+1. Accédez à la console web à l’adresse **
 1. Recherchez l’entrée nommée **Configuration du journal de connexion Sling Apache** et cliquez dessus.
 1. Créez un journal avec la configuration suivante :
 

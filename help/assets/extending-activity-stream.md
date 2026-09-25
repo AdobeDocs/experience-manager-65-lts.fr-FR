@@ -1,6 +1,6 @@
 ---
-title: Intégration d’ [!DNL Assets]  au flux d’activité
-description: Décrit les fonctionnalités d’enregistrement d’ [!DNL Experience Manager]  ainsi que la procédure de configuration d’AEM pour enregistrer des événements spécifiques.
+title: Intégration d’[!DNL Assets] avec flux d’activité
+description: Décrit les fonctionnalités d’enregistrement de [!DNL Experience Manager] et comment les configurer pour enregistrer des événements spécifiques.
 contentOwner: AG
 role: Developer
 feature: Asset Management
@@ -8,11 +8,9 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 44604607-e49d-469c-a6f1-dedbcd657d65
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 99%
-
+source-wordcount: '258'
+ht-degree: 88%
 ---
-
 # Intégration d’[!DNL Assets] avec flux d’activité {#integrating-assets-with-activity-stream}
 
 Les utilisateurs et utilisatrices [!DNL Adobe Experience Manager Assets] effectuent de nombreuses opérations, telles que la création, le chargement et la suppression de ressources. Ces actions peuvent être enregistrées de manière à fournir un historique de toutes les actions réalisées par un utilisateur ou une utilisatrice. Cette section décrit les fonctionnalités d’enregistrement d’[!DNL Experience Manager] ainsi que la procédure de configuration d’[!DNL Experience Manager] pour enregistrer des événements spécifiques.

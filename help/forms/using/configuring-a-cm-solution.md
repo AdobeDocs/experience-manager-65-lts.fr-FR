@@ -10,11 +10,9 @@ role: Admin, User, Developer
 exl-id: da668935-9d16-49e1-8e7a-772fc4040c1d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '307'
 ht-degree: 100%
-
 ---
-
 # Configuration de la solution Correspondence Management {#configuring-a-correspondence-management-solution}
 
 ## Définition de l’URL de l’instance de création pour VersionRestoreManagerImpl {#defining-author-instance-url-for-versionrestoremanagerimpl}
@@ -23,7 +21,7 @@ Procédez aux étapes suivantes pour définir une URL d’instance de création 
 
 1. Accédez à *https://:&lt;PublishHost>:&lt;PublishPort>/lc/system/console/configMgr*. Connectez-vous avec les informations d’identification d’utilisateur de la console de gestion OSGi. Les informations d’identification d’administrateur par défaut sont/admin.
 1. Recherchez l’icône **[!UICONTROL Modifier]** située en regard du paramètre **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]** et cliquez dessus.
-1. Dans le champ **[!UICONTROL URL d’auteur VersionRestoreManager]**, spécifiez l’URL de l’instance d’auteur VersionRestoreManager.
+1. Dans le champ **[!UICONTROL URL de création VersionRestoreManager]**, spécifiez l’URL de l’instance de création VersionRestoreManager.
 
    **Chaîne d’URL** :
 
@@ -31,7 +29,7 @@ Procédez aux étapes suivantes pour définir une URL d’instance de création 
 
    >[!NOTE]
    >
-   >S’il existe plusieurs instances d’auteur (en cluster) derrière un équilibreur de charge, spécifiez l’URL de l’équilibreur de charge dans le champ **[!UICONTROL URL d’auteur VersionRestoreManager]**.
+   >S’il existe plusieurs instances de création (en cluster) derrière un équilibreur de charge, spécifiez l’URL de l’équilibreur de charge dans le champ **[!UICONTROL URL de création VersionRestoreManager]**.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 

@@ -12,11 +12,9 @@ role: Admin
 exl-id: 4f7e1794-af5a-45a2-8dc6-80029c47caeb
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 94%
-
+source-wordcount: '289'
+ht-degree: 93%
 ---
-
 # Intégration à Adobe Analytics{#integrating-with-adobe-analytics}
 
 L’intégration d’Adobe Analytics et d’AEM vous permet de suivre votre activité de pages Web :
@@ -53,11 +51,11 @@ Voir :
 
 >[!NOTE]
 >
->Si vous utilisez Adobe Analytics avec une configuration de proxy personnalisée, vous devez [configurer deux lots OSGi](/help/sites-deploying/configuring-osgi.md) (par exemple, avec la console web) requis pour les configurations de proxy **Apache HTTP Client**. Les deux lots sont requis, car certaines fonctionnalités d’AEM utilisent les API 3.x, tandis que d’autres utilisent les API 4.x. Configurer :
+>Si vous utilisez Adobe Analytics avec une configuration de proxy personnalisée, vous devez [configurer deux bundles OSGi](/help/sites-deploying/configuring-osgi.md) (par exemple, avec la console web) requis pour les configurations de proxy **Apache HTTP Client**. Les deux lots sont requis, car certaines fonctionnalités d’AEM utilisent les API 3.x, tandis que d’autres utilisent les API 4.x. Configurer :
 >
 >* **Day Commons HTTP Client 3.1** pour configurer l’API 3.x ;
->  &#x200B;>  par exemple, [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>  par exemple, [](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >
 >* **Apache HTTP Components Proxy Configuration** pour configurer l’API 4.x ;
->  &#x200B;>  par exemple, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>  par exemple, [](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >

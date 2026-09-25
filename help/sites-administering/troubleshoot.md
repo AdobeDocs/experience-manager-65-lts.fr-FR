@@ -12,11 +12,9 @@ role: Admin
 exl-id: 802130c3-9cb8-46b7-98c2-fd9e83d18ec3
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '497'
 ht-degree: 100%
-
 ---
-
 # Dépannage d’Adobe Experience Manager {#troubleshooting-aem}
 
 La section suivante traite de certains problèmes susceptibles d’être rencontrés lorsque vous utilisez AEM (Adobe Experience Manager), ainsi que des suggestions pour les résoudre.
@@ -108,13 +106,13 @@ Pour commencer à analyser les sessions non fermées, consultez l’article de l
 
 ### Utiliser la console web Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 
-Le statut des lots OSGi peut également être un signe précurseur de problèmes potentiels.
+Le statut des bundles OSGi peut également être un signe précurseur de problèmes potentiels.
 
 1. Ouvez la **console web AEM**, par exemple, à l’adresse `https://localhost:4502/system/console/`.
-1. Sélectionnez **Lots** dans l’onglet **OSGI**.
+1. Sélectionnez **Bundles** dans l’onglet **OSGI**.
 1. Vérifier :
 
-   * le statut des lots. Si le statut est Inactif ou Non satisfait, essayez d’arrêter et de redémarrer le lot. Si le problème persiste, essayez une autre méthode.
-   * Si l’un des lots possède des dépendances manquantes. Ces détails sont visibles en cliquant sur le nom du lot, qui consiste en un lien (l’exemple suivant ne présente aucun problème) :
+   * le statut des bundles. Si le statut est Inactif ou Non satisfait, essayez d’arrêter et de redémarrer le bundle. Si le problème persiste, essayez une autre méthode.
+   * Si l’un des bundles possède des dépendances manquantes. Ces détails sont visibles en cliquant sur le nom du lot, qui consiste en un lien (l’exemple suivant ne présente aucun problème) :
 
 ![screen_shot_2012-02-13at44706pm](assets/screen_shot_2012-02-13at44706pm.png)

@@ -12,11 +12,9 @@ role: Admin, User, Developer
 exl-id: 73e4cd72-0479-4b3c-82d2-653cded590b9
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '614'
 ht-degree: 100%
-
 ---
-
 # Propriétés de configuration des communications interactives{#interactive-communications-configuration-properties}
 
 Les communications interactives incluent les propriétés qui sont configurées automatiquement après l’installation du package du [module complémentaire AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md). Les auteurs de la communication interactive peuvent modifier ces propriétés de configuration par défaut en utilisant la page de **configuration de la console web d’Adobe Experience Manager**.

@@ -12,11 +12,9 @@ role: Admin, User, Developer
 exl-id: 1b38cc53-027c-4b3b-bda1-24c0049113aa
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 100%
-
+source-wordcount: '844'
+ht-degree: 94%
 ---
-
 # Débogage des formulaires HTML5 {#debugging-html-forms}
 
 Ce document comprend plusieurs scénarios de résolution des problèmes. Pour chaque scénario, certaines étapes sont fournies pour résoudre le problème. Procédez comme suit et, si le problème persiste, configurez l’enregistreur pour obtenir et parcourir les journaux et rechercher les erreurs/avertissements. Pour plus d’informations sur la journalisation des formulaires HTML5, voir [Génération de journaux pour les formulaires HTML5](/help/forms/using/enable-logs.md).
@@ -45,7 +43,7 @@ Vérifiez les paramètres suivants :
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>Chemin d’accès absolu au fichier de données fusionné avec le modèle.<br /> Remarque : le chemin définit le chemin d’accès absolu au fichier de données.</td>
+   <td>Chemin d’accès absolu au fichier de données fusionné avec le modèle.<br /> Remarque : le chemin d’accès définit le chemin d’accès absolu du fichier de données.</td>
   </tr>
   <tr>
    <td>data</td>
@@ -62,9 +60,9 @@ Vérifiez les paramètres suivants :
    * adobe-lc-forms-content-pkg-&lt;version>.zip
    * adobe-lc-forms-runtime-pkg-&lt;version>.zip
 
-1. Connectez-vous à CQ Web Console (Console Felix) à l’adresse https://&lt;server>:&lt;port>/system/console/bundles.
+1. Connectez-vous à la console web CQ (Console Felix) à l’adresse https://&lt;server>:&lt;port>/system/console/bundles.
 
-    Assurez-vous que l’état des bundles suivants est « actif » :
+   Assurez-vous que l’état des bundles suivants est « actif » :
 
    * scala-lang.bundle [osgi]
 
@@ -105,7 +103,7 @@ Vérifiez les paramètres suivants :
 
 ### Problème : erreur inattendue rencontrée {#problem-unexpected-error-encountered}
 
-1. Dans l’URL du formulaire, ajoutez un paramètre de demande debugClientLibs et définissez sa valeur sur true (par exemple : https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path>&amp;template=&lt;name of xdp file>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true).
+1. Dans l’URL du formulaire, ajoutez un paramètre de requête debugClientLibs et définissez sa valeur sur true (par exemple : https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path>&amp;template=&lt;name of xdp file>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true).
 1. Dans le navigateur de bureau tel que Chrome, accédez à Outils de développement > Console.
 1. Ouvrez les journaux pour identifier le type d’erreur. Pour plus d’informations sur les journaux, consultez [journaux des formulaires HTML5](/help/forms/using/enable-logs.md).
 1. Accédez à Outils de développement > Console. Utilisez la trace de la pile pour localiser le code qui déclenche l’erreur. Déboguez l’erreur pour résoudre le problème.
@@ -153,8 +151,8 @@ Vérifiez les paramètres suivants :
 
    Cela est probablement dû au fait qu’un ou plusieurs paramètres de l’URL sont incorrects.
 
-   Vérifiez les paramètres suivants : 
-texte de l’étape
+   Vérifiez les paramètres suivants :
+   Texte de l’étape
 
 <table>
  <tbody>
@@ -172,7 +170,7 @@ texte de l’étape
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>Chemin d’accès absolu au fichier de données fusionné avec le modèle.<br /> Remarque : le chemin définit le chemin d’accès absolu au fichier de données.</td>
+   <td>Chemin d’accès absolu au fichier de données fusionné avec le modèle.<br /> Remarque : le chemin d’accès définit le chemin d’accès absolu du fichier de données.</td>
   </tr>
   <tr>
    <td>data</td>

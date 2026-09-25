@@ -11,11 +11,9 @@ role: Admin
 exl-id: f33950b1-6164-4e02-b666-50af84647852
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '783'
 ht-degree: 100%
-
 ---
-
 # Prise en charge des jetons encapsulés{#encapsulated-token-support}
 
 ## Présentation {#introduction}
@@ -70,11 +68,11 @@ Lors de la configuration du jeton encapsulé, vous devez prendre en compte quelq
 Pour répliquer la clé sur plusieurs instances, procédez comme suit :
 
 1. Accédez à l’instance AEM, généralement une instance de création, et qui contient le matériel des clés à copier.
-1. Localisez le lot `com.adobe.granite.crypto.file` dans le système de fichiers local. Par exemple, sous ce chemin d’accès :
+1. Recherchez le bundle `com.adobe.granite.crypto.file` dans le système de fichiers local. Par exemple, sous ce chemin d’accès :
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25`
 
-   Le fichier `bundle.info` à l’intérieur de chaque dossier identifie le nom du lot.
+   Le fichier `bundle.info` à l’intérieur de chaque dossier identifie le nom du bundle.
 
 1. Accédez au dossier des données. Par exemple :
 

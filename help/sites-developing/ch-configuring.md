@@ -11,11 +11,9 @@ role: Developer
 exl-id: 00dfc10f-6cdf-4c79-b11e-85c801425858
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1751'
 ht-degree: 100%
-
 ---
-
 # Configuration de ContextHub {#configuring-contexthub}
 
 ContextHub est un framework permettant de stocker, manipuler et présenter des données contextuelles. Pour plus de détails sur ContextHub, reportez-vous à la [documentation destinée au développement](/help/sites-developing/contexthub.md). ContextHub remplace [ClientContext](/help/sites-administering/client-context.md) dans l’interface utilisateur tactile.
@@ -45,12 +43,12 @@ or
 
 Configurez le service Adobe Granite ContextHub OSGi pour afficher ou masquer l’[IU ContextHub](/help/sites-authoring/ch-previewing.md) sur vos pages. Le PID de ce service est `com.adobe.granite.contexthub.impl.ContextHubImpl.`
 
-Pour configurer le service, vous pouvez utiliser la [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou un [nœud JCR du référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) :
+Pour configurer le service, vous pouvez utiliser la [console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou un [nœud JCR du référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) :
 
 * **Console web :** pour afficher l’IU, sélectionnez la propriété Afficher l’IU. Pour masquer l’interface utilisateur, désélectionnez la propriété Masquer l’interface utilisateur.
 * **Nœud JCR :** pour afficher l’IU, définissez la propriété booléenne `com.adobe.granite.contexthub.show_ui` sur `true`. Pour masquer l’IU, définissez la propriété sur `false`.
 
-Si l’IU ContextHub est activée, elle s’affiche uniquement sur les pages sur les instances de création AEM. L’interface utilisateur n’apparaît pas sur les pages des instances de publication.
+Si l’UI ContextHub est activée, elle s’affiche uniquement sur les pages des instances de création AEM. L’interface utilisateur n’apparaît pas sur les pages des instances de publication.
 
 ## Ajout des modes et des modules d’IU ContextHub {#adding-contexthub-ui-modes-and-modules}
 

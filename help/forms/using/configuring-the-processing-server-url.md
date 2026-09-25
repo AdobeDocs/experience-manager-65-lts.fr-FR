@@ -11,26 +11,24 @@ feature: Adaptive Forms
 exl-id: 8ad3afd6-e1c6-4f21-bb0f-4d97ef50710e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 89%
-
+source-wordcount: '242'
+ht-degree: 88%
 ---
-
 # Configuration des paramètres AEM DS{#configuring-aem-ds-settings}
 
 Cet article décrit comment configurer le **Service de paramètres AEM DS**. Ce paramètre peut être utilisé dans plusieurs scénarios, par exemple :
 
 * Dans Correspondence Management
 
-   * Pour configurer AEM Forms Workflow
-   * Lors de l’utilisation du portail Formulaires pour l’enregistrement à distance des brouillons/envois
+  * Pour configurer AEM Forms Workflow
+  * Lors de l’utilisation du portail Formulaires pour l’enregistrement à distance des brouillons/envois
 
 * Dans les formulaires adaptatifs, par exemple lorsqu’un formulaire adaptatif est envoyé à partir de l’instance de publication
 
 Vous trouverez ci-dessous les étapes de configuration des **[!UICONTROL Paramètres AEM DS]** :
 
 1. Ouvrez Configuration Manager sur l’instance de publication à l’aide de l’URL :\
-   *https://localhost:port/system/console/configMgr*.
+   *:port/system/console/configMgr*.
 
    ![Configuration de la console web AEM](assets/web_configuration_console_new.png)
 
