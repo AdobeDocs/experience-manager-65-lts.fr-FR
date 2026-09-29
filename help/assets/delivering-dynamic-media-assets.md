@@ -5,13 +5,29 @@ role: User, Admin
 feature: Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: b91173b4-f1d1-4aad-97d2-782bc8aeaeab
-source-git-commit: 47b82956b41c3f78bed5ae220c7e993ce29e0385
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 100%
-
+source-wordcount: '314'
+ht-degree: 92%
 ---
-
 # Diffusion de ressources Dynamic Media{#delivering-dynamic-media-assets}
 
 La diffusion des ressources Dynamic Media (vidéos et images) dépend de la mise en œuvre de votre site web.
@@ -21,9 +37,9 @@ Avec Dynamic Media, vous disposez de plusieurs options :
 * Si votre site web est hébergé sur Adobe Experience Manager, vous souhaiterez ajouter les ressources Dynamic Media directement à votre page.
 * Si votre site web n’est pas hébergé par Experience Manager, les possibilités suivantes s’offrent à vous :
 
-   * Incorporation de votre vidéo ou image sur votre site Web.
-   * Liez des URL à votre application web. Utilisez la liaison lorsque vous souhaitez présenter un lecteur vidéo dans une fenêtre pop-up ou modale.
-   * Si votre site est réactif, vous pouvez [diffuser des images optimisées](/help/assets/responsive-site.md).
+  * Incorporation de votre vidéo ou image sur votre site Web.
+  * Liez des URL à votre application web. Utilisez la liaison lorsque vous souhaitez diffuser un lecteur vidéo dans une fenêtre pop-up ou modale.
+  * Si votre site est réactif, vous pouvez [diffuser des images optimisées](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >
