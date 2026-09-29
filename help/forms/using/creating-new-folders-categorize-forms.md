@@ -1,6 +1,6 @@
 ---
 title: Créer des dossiers pour classer les formulaires
-description: Utilisez des dossiers pour organiser vos modèles de formulaire, PDF, ressources et formulaires adaptatifs.
+description: Utilisez des dossiers pour organiser vos modèles de formulaires, PDF, ressources et formulaires adaptatifs.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
@@ -8,16 +8,30 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: cc84c92b-d1a3-4314-a079-7dcbf013712a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '387'
 ht-degree: 100%
-
 ---
-
 # Créer des dossiers pour classer les formulaires {#create-new-folders-to-categorize-forms}
 
-Vous pouvez mieux organiser vos ressources à l’aide de dossiers. Dans la mesure où AEM Forms prend en charge plusieurs types de ressources (modèles de formulaire, fichiers PDF, documents, ressources et formulaires adaptatifs) avec différentes métadonnées, vous pouvez utiliser des dossiers pour classer vos formulaires selon les critères de votre choix.
+Vous pouvez mieux organiser vos ressources à l’aide de dossiers. Dans la mesure où AEM Forms prend en charge plusieurs types de ressources (modèles de formulaires, fichiers PDF, documents, ressources et formulaires adaptatifs) avec différentes métadonnées, vous pouvez utiliser des dossiers pour classer vos formulaires selon les critères de votre choix.
 
 AEM Forms vous permet de modifier le titre d’un dossier. Le titre est différent de celui du nœud sous lequel le dossier est stocké dans le référentiel. Il est conservé sous forme de métadonnées pour le dossier. Si vous modifiez le titre d’un dossier, le chemin d’accès à toute ressource contenue dans celui-ci n’est pas affecté.
 

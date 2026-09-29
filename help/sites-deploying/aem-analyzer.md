@@ -6,13 +6,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
-source-git-commit: 6b846e456466492f4be2c1e5a1f6b3913ae4dab4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2071'
+source-wordcount: '2098'
 ht-degree: 22%
-
 ---
-
 # Évaluation de la complexité de la mise à niveau à l’aide d’AEM Analyzer {#assessing-the-upgrade-complexity-with-the-aem-analyzer}
 
 ## Vue d’ensemble {#overview}
@@ -88,10 +97,10 @@ Le format du rapport est le suivant :
 
 * **Report Overview** : informations sur le rapport lui-même qui incluent les informations suivantes :
 
-   * **Heure du rapport** : date à laquelle le contenu du rapport a été généré et rendu disponible pour la première fois
-   * **Délai d’expiration** : délai d’expiration du cache du contenu du rapport
-   * **Période de génération** : durée pendant laquelle le rapport a été généré
-   * **Nombre de résultats** : nombre total de résultats inclus dans le rapport
+  * **Heure du rapport** : date à laquelle le contenu du rapport a été généré et rendu disponible pour la première fois
+  * **Délai d’expiration** : délai d’expiration du cache du contenu du rapport
+  * **Période de génération** : durée pendant laquelle le rapport a été généré
+  * **Nombre de résultats** : nombre total de résultats inclus dans le rapport
 
 * **Présentation du système** : informations sur le système AEM sur lequel Analyzer a été exécuté
 * **Finding Categories** : différentes sections traitant chacune d’un ou plusieurs résultats pour une même catégorie. Chaque section comprend les éléments suivants : nom de la catégorie, sous-types, nombre et importance des résultats, résumé, lien vers la documentation de la catégorie et informations relatives à chaque résultat.
@@ -102,7 +111,7 @@ Le format du rapport est le suivant :
 
 >[!NOTE]
 >
->Pour en savoir plus sur chaque catégorie de résultat, consultez [Catégories du détecteur de motifs](https://experienceleague.adobe.com/fr/docs/experience-manager-pattern-detection/table-of-contents/aso).
+>Pour en savoir plus sur chaque catégorie de résultat, consultez [Catégories du détecteur de motifs](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso).
 
 Pour comprendre les niveaux d’importance, suivez le tableau ci-dessous :
 
@@ -232,5 +241,5 @@ Le délai d’expiration restant pour le rapport AEM Analyzer s’affiche sur le
 
 ### Problèmes connus {#known-issues}
 
-* Parfois, l’opération de suppression peut afficher la notification : *« Certains chemins n’ont pas été supprimés avec succès. Vérifiez les journaux et réessayez.* ». Cependant, si les chemins d’accès ont été réellement supprimés, vous pouvez ignorer ce message en toute sécurité
-* De même, l’opération du package peut échouer avec l’erreur : *« Erreur lors de l’exécution de l’opération souhaitée, vérifiez les journaux et réessayez.* ». Cela est probablement dû à l’expiration de la session. Dans ce cas, il est recommandé de réessayer l’opération pour résoudre le problème.
+* Parfois, l’opération de suppression peut afficher la notification : *« Certains chemins n’ont pas été supprimés avec succès, vérifiez les journaux et réessayez.* ». Cependant, si les chemins d’accès ont été réellement supprimés, vous pouvez ignorer ce message en toute sécurité
+* De même, l’opération du package peut échouer avec l’erreur *« Erreur lors de l’exécution de l’opération souhaitée, vérifiez les journaux et réessayez* ». Cela est probablement dû à l’expiration de la session. Dans ce cas, il est recommandé de réessayer l’opération pour résoudre le problème.

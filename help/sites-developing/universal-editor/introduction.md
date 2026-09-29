@@ -4,13 +4,19 @@ description: Découvrez la flexibilité de l’éditeur universel et comment il 
 feature: Developing
 role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
-source-git-commit: 49922325d3cc993d551683fac1effe9fc9590880
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1320'
 ht-degree: 46%
-
 ---
-
 # À propos de l’éditeur universel {#universal-editor}
 
 Découvrez la flexibilité de l’éditeur universel et comment il peut vous aider à alimenter vos expériences découplées à l’aide d’AEM 6.5 LTS.
@@ -39,10 +45,10 @@ L’éditeur universel est un service qui fonctionne en tandem avec AEM pour cr�
 Les éléments suivants prennent en charge l’éditeur universel :
 
 * AEM 6.5 LTS GA
-   * L’hébergement on-premise et Adobe Managed Services (AMS)* sont pris en charge.
+  * L’hébergement on-premise et Adobe Managed Services (AMS)* sont pris en charge.
 * [AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
-   * L’hébergement On-Premise et AMS* sont pris en charge.
-* [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (version `2023.8.13099` ou ultérieure)
+  * L’hébergement On-Premise et AMS* sont pris en charge.
+* [](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (version `2023.8.13099` ou ultérieure)
 
 Ce document se concentre sur la prise en charge LTS d’AEM 6.5 de l’éditeur universel. Pour utiliser l’éditeur universel avec AEM 6.5 LTS, vous avez besoin des éléments suivants :
 
@@ -129,11 +135,11 @@ Les variables suivantes sont disponibles pour définir vos mappages dans l’`Un
 Exemples de mappages :
 
 * Ouvrez toutes les pages présentes dans `/content/foo` dans l’instance de création AEM :
-   * `/content/foo:${author}${path}.html?login-token=${token}`
-   * Résultats à l’ouverture de la `https://localhost:4502/content/foo/x.html?login-token=<token>`
+  * `/content/foo:${author}${path}.html?login-token=${token}`
+  * Résultats à l’ouverture de la `https://localhost:4502/content/foo/x.html?login-token=<token>`
 * Ouvrez toutes les pages présentes dans `/content/bar` sur un serveur NextJS distant, en fournissant toutes les variables comme informations.
-   * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
-   * Résultats à l’ouverture de la `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
+  * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+  * Résultats à l’ouverture de la `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
 
 ### Configuration du service d’éditeur universel {#set-up-ue}
 

@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 23fab14d-3658-4fd3-88c1-fc71f1ac0400
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1949'
 ht-degree: 89%
-
 ---
-
 # Configuration des calendriers professionnels {#configuring-business-calendars}
 
 Les *calendriers professionnels* définissent les jours ouvrés et non ouvrés (par exemple, jours fériés, week-ends et jours de fermeture) de votre entreprise. Lors de l’utilisation de calendriers professionnels, AEM Forms ignore les jours non ouvrés lors de certains calculs de date. Dans Workbench, vous pouvez indiquer s’il faut utiliser des calendriers professionnels pour les événements associés à l’utilisateur ou l’utilisatrice, tels que les rappels, les échéances et les transmissions de tâches, ou pour les actions non associées aux utilisateurs et utilisatrices, telles que les événements de retardateur et le service d’attente.
@@ -25,7 +40,7 @@ Par exemple, un rappel de tâche est configuré pour se produire trois jours ouv
 
 >[!NOTE]
 >
->Lors du calcul des dates et heures à l’aide de calendriers professionnels, AEM Forms utilise la date et l’heure du serveur sur lequel il s’exécute et ne s’adapte pas à la différence entre les fuseaux horaires. Par exemple, si un rappel de tâche est planifié pour se produire à 10 :00 sur un serveur exécuté à Londres, mais que l’utilisateur recevant le rappel se trouve à New York, il recevra le rappel à 5 :00 heure locale.
+>Lors du calcul des dates et heures à l’aide de calendriers professionnels, AEM Forms utilise la date et l’heure du serveur sur lequel il s’exécute et ne s’adapte pas à la différence entre les fuseaux horaires. Par exemple, si un rappel de tâche est planifié à 10 h sur un serveur exécuté à Londres, mais que l’utilisateur ou l’utilisatrice qui reçoit le rappel se trouve à New York, il ou elle le recevra à 5 h, heure locale.
 
 ## Utiliser le calendrier professionnel par défaut {#using-the-default-business-calendar}
 
@@ -78,7 +93,7 @@ Si votre organisation comprend différents groupes d’utilisateurs et utilisatr
 
    Si vous sélectionnez cette option, un événement qui se produit avant la plage horaire définie est déplacé au début de la plage horaire et un événement qui se produit après est déplacé à l’heure de début du prochain jour ouvré.
 
-   Supposons, par exemple, qu’une tâche soit affectée un mardi à 2:00 heures et que le rappel de cette tâche soit défini sur deux jours ouvrables. Sans les heures de bureau, le rappel se produirait à 2:00 le jeudi. Si les heures de bureau sont définies de 8 :00 à 17 :00, le rappel est envoyé à 8 :00 le jeudi. Sans les heures de bureau, si un événement de rappel a été créé à 18 :00 le mardi, le rappel se produit après les heures de bureau le jeudi. Les heures d’ouverture étant définies de 8 :00 à 17 :00, le rappel se produirait le vendredi à 8 :00.
+   Supposons, par exemple, qu’une tâche soit affectée à un utilisateur à 02 h 00 un mardi et que le rappel de cette tâche soit défini sur deux jours ouvrables. Sans les heures de bureau, le rappel se produirait à 02h00 jeudi. Si les heures de bureau sont définies de 8 h à 17 h, le rappel est envoyé à 8 h le jeudi. Sans les heures de bureau, si un événement de rappel a été créé à 18h00 le mardi, le rappel se produit après les heures de bureau le jeudi. Les heures d’ouverture étant définies de 8 h à 17 h, le rappel se produit à 8 h le vendredi.
 
 1. Dans le calendrier de gauche, double-cliquez sur un autre jour non ouvré, comme congés. Vous ne pouvez pas sélectionner de jours sur des périodes antérieures. Les jours non ouvrés sélectionnés apparaissent dans une liste sur la droite et la date s’affiche deux fois sur une seule ligne. Sélectionnez la date sur la gauche pour pouvoir taper le nom ou la description du jour non ouvré.
 

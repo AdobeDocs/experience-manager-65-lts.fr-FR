@@ -9,13 +9,29 @@ feature: Context Hub,Developing,Personalization
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: db4a4a1a-e014-4865-ab8c-d8a5aaefd93a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: db974db1-cf49-4452-872e-5a56c5f1d391
+    internal-label: Context Hub
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3106'
+source-wordcount: '3125'
 ht-degree: 100%
-
 ---
-
 # API JavaScript pour Client Context{#client-context-javascript-api}
 
 ## CQ_Analytics.ClientContextMgr {#cq-analytics-clientcontextmgr}
@@ -66,8 +82,8 @@ Enregistre une fonction de rappel appelée lors de l’initialisation d’un mag
 Par exemple, un magasin de sessions est basé sur un objet JSON et récupéré via une requête JSON. Les scénarios d’initialisation suivants sont possibles :
 
 * La requête est terminée, les données sont récupérées et chargées dans le magasin. Dans ce cas, l’initialisation se produit une seule fois.
-* La requête échoue (expiration du délai). Dans ce cas, l’initialisation n’a pas lieu et le magasin ne contient aucune donnée.
-* Le magasin est pré-rempli avec des valeurs par défaut (propriétés init), mais la demande échoue (expiration du délai). Il n’y a qu’une seule initialisation avec des valeurs par défaut.
+* La requête échoue (délai d’expiration dépassé). Dans ce cas, l’initialisation n’a pas lieu et le magasin ne contient aucune donnée.
+* Le magasin est pré-rempli avec des valeurs par défaut (propriétés init), mais la demande échoue (délai d’expiration dépassé). Il n’y a qu’une seule initialisation avec des valeurs par défaut.
 * Le magasin est prérempli.
 
 Lorsque le délai est défini sur `true` ou sur une valeur en millisecondes, la méthode attend avant d’appeler la méthode de rappel. Si un autre événement d’initialisation est déclenché avant le dépassement du délai, il attend que le délai soit dépassé sans événement d’initialisation. Cela permet d’attendre le déclenchement d’un second événement d’initialisation et d’appeler la fonction de rappel dans le cas le plus optimisé.
@@ -97,7 +113,7 @@ Aucune valeur renvoyée.
 
 ## CQ_Analytics.JSONPStore {#cq-analytics-jsonpstore}
 
-Un magasin de session non conservé qui contient des données JSON. Les données sont extraites d’un service JSONP externe. Utilisez la méthode `getInstance` ou `getRegisteredInstance` pour créer une instance de cette classe.
+Un magasin de session non conservé qui contient des données JSON. Les données sont récupérées d’un service JSONP externe. Utilisez la méthode `getInstance` ou `getRegisteredInstance` pour créer une instance de cette classe.
 
 Étend CQ_Analytics.JSONStore.
 

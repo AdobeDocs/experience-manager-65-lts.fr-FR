@@ -11,13 +11,27 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 8670d700-6ccd-4809-b719-8580d6fb2cf8
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2074'
 ht-degree: 100%
-
 ---
-
 
 # Développement de SPA pour AEM{#developing-spas-for-aem}
 
@@ -119,7 +133,7 @@ Respectez les étapes suivantes pour préparer l’utilisation de votre SPA exis
 
    Les composants AEM définissent la boîte de dialogue et la sortie JSON.
 
-## Instructions destinées à l’équipe de développement front-end {#instructions-for-front-end-developers}
+## Instructions destinées aux développeurs front-end {#instructions-for-front-end-developers}
 
 Pour demander à un développeur ou à une développeuse front-end de créer une SPA pour AEM, la principale tâche consiste à convenir des composants et de leurs modèles JSON.
 
@@ -192,8 +206,8 @@ L’architecture générale d’AEM, y compris les environnements de développem
 
   C’est là que la source de l’application SPA et la source du composant sont extraites.
 
-   * Le générateur clientlib NPM crée une bibliothèque cliente à partir du projet de SPA.
-   * Cette bibliothèque est utilisée par Maven et déployée par le module Maven Build avec le composant sur l’instance de création AEM.
+  * Le générateur clientlib NPM crée une bibliothèque cliente à partir du projet de SPA.
+  * Cette bibliothèque est utilisée par Maven et déployée par le module Maven Build avec le composant sur l’instance de création AEM.
 
 * **Auteur AEM**
 
@@ -201,11 +215,11 @@ L’architecture générale d’AEM, y compris les environnements de développem
 
   Lorsqu’une SPA est modifiée à l’aide de l’éditeur de SPA sur l’environnement de création :
 
-   1. La SPA demande le code HTML externe.
-   1. Le fichier CSS est chargé.
-   1. Le JavaScript de la SPA est chargé.
-   1. Lorsque la SPA est exécutée, le fichier JSON est demandé, ce qui permet à l’application de créer le DOM de la page, y compris les attributs `cq-data`.
-   1. Ces attributs `cq-data` permettent à l’éditeur de charger des informations de pages supplémentaires afin qu’il connaisse les configurations d’édition disponibles pour les composants.
+  1. La SPA demande le code HTML externe.
+  1. Le fichier CSS est chargé.
+  1. Le JavaScript de la SPA est chargé.
+  1. Lorsque la SPA est exécutée, le fichier JSON est demandé, ce qui permet à l’application de créer le DOM de la page, y compris les attributs `cq-data`.
+  1. Ces attributs `cq-data` permettent à l’éditeur de charger des informations de pages supplémentaires afin qu’il connaisse les configurations d’édition disponibles pour les composants.
 
 * **Publication AEM**
 
@@ -215,8 +229,8 @@ L’architecture générale d’AEM, y compris les environnements de développem
 
   Le Dispatcher sert de calque de mise en cache d’AEM pour les visiteurs et visiteuses du site.
 
-   * Les requêtes sont traitées de la même manière que sur l’instance de création AEM. Il n’y a toutefois aucune demande d’informations sur la page, car seul l’éditeur ou l’éditrice en a besoin.
-   * Les codes JavaScript, CSS, JSON et HTML sont mis en cache afin d’optimiser la page pour une diffusion rapide.
+  * Les requêtes sont traitées de la même manière que sur l’instance de création AEM. Il n’y a toutefois aucune demande d’informations sur la page, car seul l’éditeur ou l’éditrice en a besoin.
+  * Les codes JavaScript, CSS, JSON et HTML sont mis en cache afin d’optimiser la page pour une diffusion rapide.
 
 >[!NOTE]
 >

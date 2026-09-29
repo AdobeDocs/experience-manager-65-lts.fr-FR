@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 5e0e7d8e-4da2-4304-ac21-7500ca2ba9c6
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 100%
-
+source-wordcount: '636'
+ht-degree: 92%
 ---
-
 # Annotations lors de la modification d’une page{#annotations-when-editing-a-page}
 
 L’ajout de contenu aux pages de votre site web est souvent l’objet de discussions avant la publication réelle. Pour vous aider dans cette tâche, de nombreux composants directement liés au contenu (par opposition à la disposition, par exemple) vous permettent d’ajouter une annotation.
@@ -103,13 +116,13 @@ Le mode Annotation vous permet de créer, modifier, déplacer ou supprimer des a
 
    * Cliquez sur la marque de texte pour ouvrir l’annotation. Une fois ouverte, vous pouvez afficher tout le texte, apporter des modifications ou supprimer l’annotation.
 
-      * Les esquisses ne peuvent pas être supprimées indépendamment de l’annotation.
+     * Les esquisses ne peuvent pas être supprimées indépendamment de l’annotation.
 
    * Repositionner la marque de texte.
    * Cliquez sur un trait de l’esquisse pour la sélectionner et la faire glisser dans la position de votre choix.
    * Déplacer ou copier un composant.
 
-      * Toutes les annotations qui lui sont associées, ainsi que leurs esquisses, sont également déplacées ou copiées, mais leur position par rapport au paragraphe demeure inchangée.
+     * Toutes les annotations qui lui sont associées, ainsi que leurs esquisses, sont également déplacées ou copiées, mais leur position par rapport au paragraphe demeure inchangée.
 
 1. Pour quitter le mode Annotation et revenir au mode précédent, cliquez sur l’icône Annoter (symbole x) à droite de la barre d’outils supérieure.
 
@@ -119,6 +132,6 @@ Le mode Annotation vous permet de créer, modifier, déplacer ou supprimer des a
 
 ### Indicateur d’annotations {#annotation-indicator}
 
-Les annotations n’apparaissent pas en mode d’édition, mais le badge en haut à droite de la barre d’outils indique le nombre d’annotations figurant sur la page active. Le badge remplace l’icône Annotations par défaut ; il fonctionne comme un lien rapide pour activer/désactiver le mode Annotation :
+Les annotations n’apparaissent pas en mode d’édition, mais le badge en haut à droite de la barre d’outils indique le nombre d’annotations qui existent pour la page active. Le badge remplace l’icône Annotations par défaut, mais fonctionne toujours comme un lien rapide qui bascule vers/depuis le mode Annotation :
 
 ![Indicateur d’annotations](assets/chlimage_1-242.png)

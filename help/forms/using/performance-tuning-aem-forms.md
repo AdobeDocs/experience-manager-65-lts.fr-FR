@@ -9,13 +9,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 4009c85e-cb8a-4bed-a6ff-7c76fe78a47f
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 99%
-
+source-wordcount: '810'
+ht-degree: 100%
 ---
-
 # Optimisation des performances du serveur AEM Forms{#performance-tuning-of-aem-forms-server}
 
 Cet article décrit les stratégies et bonnes pratiques à implémenter pour réduire les congestionnements et optimiser les performances de votre déploiement d’AEM Forms.
@@ -96,7 +110,7 @@ Apache peut communiquer avec CRX à l’aide du protocole HTTP. Les configuratio
    >Pour Linux®, le répertoire `APACHE_HOME` par défaut est `/etc/httpd/`.
 
 1. Configurez le proxy sur le port 4502 de crx.
-Ajoutez la configuration suivante dans `APACHE_HOME/conf/httpd.conf` fichier de configuration .
+Ajoutez la configuration suivante dans le fichier de configuration `APACHE_HOME/conf/httpd.conf`.
 
    ```shell
    ProxyPass / https://<server>:4502/
@@ -149,9 +163,9 @@ Pour améliorer les performances, vous pouvez configurer le logiciel antivirus p
 
 * Répertoire d’installation d’AEM. S’il n’est pas possible d’exclure le répertoire complet, excluez les fichiers suivants :
 
-   * [Répertoire d’installation d’AEM]\crx-repository\temp
-   * [Répertoire d’installation d’AEM]\crx-repository\repository
-   * [Répertoire d’installation d’AEM]\crx-repository\launchpad
+  * [Répertoire d’installation d’AEM]\crx-repository\temp
+  * [Répertoire d’installation d’AEM]\crx-repository\repository
+  * [Répertoire d’installation d’AEM]\crx-repository\launchpad
 
 <!--
 

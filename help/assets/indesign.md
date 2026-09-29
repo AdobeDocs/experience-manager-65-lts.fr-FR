@@ -1,17 +1,29 @@
 ---
-title: Intégration d’ [!DNL Assets]  à  [!DNL InDesign Server]
-description: Découvrez comment intégrer  [!DNL Adobe Experience Manager Assets]  à  [!DNL Adobe InDesign Server].
+title: Intégration d’[!DNL Assets] à [!DNL InDesign Server]
+description: Découvrez comment intégrer [!DNL Adobe Experience Manager Assets] à [!DNL Adobe InDesign Server].
 role: Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: f0db5ec6-45ea-418e-ae5f-e6e307a40a38
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1587'
 ht-degree: 97%
-
 ---
-
 # Intégration d’[!DNL Adobe Experience Manager Assets] à [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] utilise :
@@ -20,11 +32,11 @@ ht-degree: 97%
 * Le programme de traitement du proxy définit et gère une tâche spécifique.
 Il peut couvrir une grande variété de tâches ; par exemple l’utilisation d’[!DNL InDesign Server] pour traiter les fichiers.
 
-Pour charger intégralement des fichiers créés avec [!DNL Adobe InDesign] vers [!DNL Experience Manager Assets], un proxy est utilisé. Cette méthode utilise un programme de traitement du proxy pour communiquer avec [!DNL Adobe InDesign Server], qui exécute des [scripts](https://helpx.adobe.com/fr/indesign/using/scripting.html) afin d’extraire des métadonnées et de générer divers rendus pour [!DNL Experience Manager Assets]. Le programme de traitement du proxy permet une communication bidirectionnelle entre [!DNL InDesign Server] et les instances [!DNL Experience Manager] dans une configuration cloud.
+Pour charger intégralement des fichiers créés avec [!DNL Adobe InDesign] vers [!DNL Experience Manager Assets], un proxy est utilisé. Cette méthode utilise un programme de traitement du proxy pour communiquer avec [!DNL Adobe InDesign Server], qui exécute des [scripts](https://helpx.adobe.com/indesign/using/scripting.html) afin d’extraire des métadonnées et de générer divers rendus pour [!DNL Experience Manager Assets]. Le programme de traitement du proxy permet une communication bidirectionnelle entre [!DNL InDesign Server] et les instances [!DNL Experience Manager] dans une configuration cloud.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] est proposé sous la forme de deux offres distinctes. L’application de bureau [Adobe InDesign](https://www.adobe.com/fr/products/indesign.html) utilisée pour concevoir des dispositions pour la distribution papier et numérique. [Adobe InDesign Server](https://www.adobe.com/fr/products/indesignserver.html) vous permet de créer des documents de façon automatisée, et par programmation, sur la base de vos dispositions créées avec [!DNL InDesign]. Il fonctionne comme un service offrant une interface à son moteur [ExtendScript](https://helpx.adobe.com/fr/indesign/using/scripting.html).Les scripts sont écrits en [!DNL ExtendScript], un langage similaire à [!DNL JavaScript].
+>[!DNL Adobe InDesign] est proposé sous la forme de deux offres distinctes. L’application de bureau [Adobe InDesign](https://www.adobe.com/fr/products/indesign.html) utilisée pour concevoir des dispositions pour la distribution papier et numérique. [Adobe InDesign Server](https://www.adobe.com/fr/products/indesignserver.html) vous permet de créer des documents de façon automatisée, et par programmation, sur la base de vos dispositions créées avec [!DNL InDesign]. Il fonctionne comme un service offrant une interface à son moteur [ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html).Les scripts sont écrits en [!DNL ExtendScript], un langage similaire à [!DNL JavaScript].
 
 ## Fonctionnement de l’extraction {#how-the-extraction-works}
 
@@ -41,9 +53,9 @@ Ce script de commande permet d’effectuer les opérations suivantes :
    * Récupérer le fichier INDD.
    * Exécuter les commandes [!DNL InDesign Server] :
 
-      * La structure, le texte et tous les fichiers multimédias sont extraits.
-      * Des rendus PDF et JPG sont générés.
-      * Des rendus HTML et IDML sont générés.
+     * La structure, le texte et tous les fichiers multimédias sont extraits.
+     * Des rendus PDF et JPG sont générés.
+     * Des rendus HTML et IDML sont générés.
 
    * Republier les fichiers résultants dans [!DNL Experience Manager Assets].
 
@@ -136,7 +148,7 @@ Pour la personnaliser, vous pouvez modifier l’onglet **[!UICONTROL Arguments]*
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
 * **Gestionnaire d’extraction de page** : dans la liste déroulante, sélectionnez le gestionnaire que vous souhaitez utiliser. Un gestionnaire d’extraction fonctionne sur un rendu spécifique, sélectionné par un `RenditionPicker` associé (voir l’API `ExtractionHandler`). Dans une installation standard [!DNL Experience Manager], les éléments suivants sont disponibles :
-   * Gestionnaire d’extraction d’exportation IDML : fonctionne sur le rendu `IDML` généré lors de l’étape MediaExtract.
+  * Gestionnaire d’extraction d’exportation IDML : fonctionne sur le rendu `IDML` généré lors de l’étape MediaExtract.
 
 * **Nom de la page** : indique le nom que vous souhaitez attribuer à la page résultante. Si vous laissez le champ vide, le nom est « page » (ou une variante si « page » existe déjà).
 
@@ -163,7 +175,7 @@ Pour la personnaliser, vous pouvez modifier l’onglet **[!UICONTROL Arguments]*
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
    * Pool **IDS**
-Point(s) d’entrée SOAP à utiliser pour communiquer avec le [!DNL InDesign Server]. Vous pouvez ajouter, supprimer ou trier les éléments au besoin.
+     Point(s) d’entrée SOAP à utiliser pour communiquer avec le [!DNL InDesign Server]. Vous pouvez ajouter, supprimer ou trier les éléments au besoin.
 
 1. Cliquez sur OK pour enregistrer.
 

@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
 exl-id: bd75453e-8d3f-466e-b573-653eb68429cf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1139'
 ht-degree: 100%
-
 ---
-
 # Configurer la segmentation {#configuring-segmentation}
 
 >[!NOTE]
@@ -72,7 +83,7 @@ Les caractéristiques de segment suivantes sont disponibles et prêtes à l’em
    <td>Définit une plage d’adresses IP que le visiteur peut avoir.<br /> </td>
   </tr>
   <tr>
-   <td> Accès à la page<br /> </td>
+   <td> Hits de page<br /> </td>
    <td>Fréquence à laquelle la page a été demandée. <br /> </td>
   </tr>
   <tr>
@@ -108,7 +119,7 @@ Les caractéristiques de segment suivantes sont disponibles et prêtes à l’em
 
 Vous pouvez combiner ces caractéristiques avec les opérateurs booléens OU et ET (voir la rubrique [Création d’un nouveau segment](#creating-a-new-segment)) afin de définir le scénario exact pour sélectionner ce segment.
 
-Lorsque l’intégralité de l’instruction est vraie, alors ce segment a été résolu. S’il existe plusieurs segments applicables, le facteur **[Boost](/help/sites-administering/campaign-segmentation.md#boost-factor)** est également utilisé. 
+Lorsque l’intégralité de l’instruction est vraie, alors ce segment a été résolu. S’il existe plusieurs segments applicables, le facteur **[Boost](/help/sites-administering/campaign-segmentation.md#boost-factor)** est également utilisé.
 
 >[!CAUTION]
 >
@@ -171,7 +182,7 @@ Une fois le segment défini, les résultats potentiels peuvent être testés ave
 
 1. En fonction des caractéristiques définies, les données disponibles pour la page en cours peuvent ou non correspondre à la définition de segment. Le statut de la correspondance s’affiche sous la définition.
 
-Par exemple, une seule définition de segment peut être fonction de l’âge et du sexe de l’utilisateur. Le chargement d’un profil spécifique indique que le segment a été résolu avec succès :
+Par exemple, une seule définition de segment peut être fonction de l’âge et du genre de l’utilisateur ou de l’utilisatrice. Le chargement d’un profil spécifique indique que le segment a été résolu avec succès :
 
 ![Utilisation de la fenêtre Contexte client pour tester une opération de segmentation ET](assets/screen_shot_2012-02-02at105926am.png)
 

@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin,Developer
 exl-id: fe603779-7763-4cb9-b95a-34e4b78d72db
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 100%
-
 ---
-
 # En savoir plus sur la création de modèles de fragment de contenu dans AEM {#architect-headless-content-fragment-models}
 
 ## Un peu d’histoire… {#story-so-far}
@@ -117,22 +133,22 @@ Maintenant que vous en savez plus sur les bases, l’étape suivante consiste à
 
 * [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
 
-   * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
+  * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [Définition de votre modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
+    * [Définition de votre modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
 
-      * [Activation ou désactivation d’un modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+    * [Activation ou désactivation d’un modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [Autorisation de modèles de fragments de contenu dans votre dossier de ressources](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+    * [Autorisation de modèles de fragments de contenu dans votre dossier de ressources](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [Suppression d’un modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+    * [Suppression d’un modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
 
-      * [Publication d’un modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+    * [Publication d’un modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
-      * [Dépublication d’un modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+    * [Dépublication d’un modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
 
-      * [Modèles de fragment de contenu (publiés) verrouillés](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+    * [Modèles de fragment de contenu (publiés) verrouillés](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * Guides de prise en main
 
-   * [Guide de démarrage rapide sur la création de modèles de fragments de contenu découplé](/help/sites-developing/headless/getting-started/create-content-model.md)
+  * [Guide de démarrage rapide sur la création de modèles de fragments de contenu découplé](/help/sites-developing/headless/getting-started/create-content-model.md)

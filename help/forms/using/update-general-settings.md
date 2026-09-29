@@ -9,13 +9,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 735e4c4a-6580-4698-a1bf-75c4b1e47b5b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '392'
 ht-degree: 100%
-
 ---
-
 # Mettre à jour les paramètres généraux{#updating-general-settings}
 
 Les paramètres généraux de l’application AEM Forms vous permettent de définir des paramètres tels que la récupération des pièces jointes, le mode hors ligne, l’écran d’accueil, la catégorie par défaut et la fréquence d’enregistrement automatique.
@@ -48,11 +62,11 @@ Vous pouvez apporter les modifications suivantes aux paramètres de votre applic
 * **Extraire les pièces jointes de la tâche** : spécifie le téléchargement ou non des pièces jointes associées lors du téléchargement d’une tâche sur votre application.
 * **Mode hors ligne** : activer ou désactiver le service hors ligne de l’application AEM Forms. Pour plus d’informations, consultez [Travailler en mode hors ligne](/help/forms/using/work-offline-mode.md).
 * **Écran d’accueil** : définir l’emplacement de départ ([écran d’accueil](../../forms/using/home-screen.md)) de l’application.
- Options disponibles :
+Options disponibles :
 
-   * Formulaires
-   * Tâches
-   * Favoris
+  * Formulaires
+  * Tâches
+  * Favoris
 
 * **Catégorie par défaut** : permet de sélectionner la catégorie de formulaires à afficher dans l’écran d’accueil. Lorsque vous sélectionnez Tous, vous pouvez voir tous les formulaires dans l’écran d’accueil. Les catégories sont renseignées en fonction des formulaires chargés dans l’application. Les formulaires sont disponibles dans l’application en fonction des paramètres spécifiés dans le serveur AEM Forms.
 

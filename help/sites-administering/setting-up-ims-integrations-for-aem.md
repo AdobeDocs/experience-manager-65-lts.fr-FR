@@ -4,13 +4,25 @@ description: Découvrir comment configurer des intégrations IMS pour AEM
 feature: Security
 role: Admin
 exl-id: 05ba39fc-4b53-43c0-9a9f-7da3293b1ca2
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 95%
-
+source-wordcount: '441'
+ht-degree: 90%
 ---
-
 # Configurer des intégrations IMS pour AEM {#setting-up-ims-integrations-for-aem}
 
 
@@ -24,13 +36,13 @@ Les intégrations utilisent une intégration IMS configurée avec S2S OAuth.
 
 * Une fois que vous avez créé ce qui suit :
 
-   * [Les informations d’identification dans la Developer Console](#credentials-in-the-developer-console)
+  * [Les informations d’identification dans la Developer Console](#credentials-in-the-developer-console)
 
 * Vous pouvez ensuite effectuer ce qui suit :
 
-   * Créer une (nouvelle) [configuration OAuth](#creating-oauth-configuration)
+  * Créer une (nouvelle) [configuration OAuth](#creating-oauth-configuration)
 
-   * [Migrer une configuration JWT existante vers une configuration OAuth](#migrating-existing-JWT-configuration-to-oauth)
+  * [Migrer une configuration JWT existante vers une configuration OAuth](#migrating-existing-JWT-configuration-to-oauth)
 
 >[!CAUTION]
 >
@@ -46,15 +58,15 @@ Pour plus de détails sur la façon d’effectuer cette configuration, consultez
 
 * Vue d’ensemble :
 
-   * [Authentification de serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
+  * [Authentification de serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
 
 * Créer de nouvelles informations d’identification OAuth :
 
-   * [Guide de mise en œuvre des informations d’identification OAuth de serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
+  * [Guide de mise en œuvre des informations d’identification de serveur à serveur OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
 * Migrer des informations d’identification JWT existantes vers des informations d’identification OAuth :
 
-   * [Migrer des informations d’identification du compte de service (JWT) vers les informations d’identification OAuth de serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
+  * [Migration des informations d’identification du compte de service (JWT) vers les informations d’identification OAuth de serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
 
 Par exemple :
 

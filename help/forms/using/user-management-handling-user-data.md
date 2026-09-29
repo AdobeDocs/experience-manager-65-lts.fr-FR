@@ -7,13 +7,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 3f673798-7557-4cba-96b5-2f326e7e73a9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '913'
 ht-degree: 100%
-
 ---
-
 # User Management Forms | Gestion des données utilisateur {#forms-user-management-handling-user-data}
 
 User Management est un composant d’AEM Forms JEE qui permet de créer, de gérer et d’autoriser les utilisateurs et utilisatrices d’AEM Forms à accéder à AEM Forms. User Management utilise des domaines en tant qu’annuaires pour obtenir des informations sur les utilisateurs et utilisatrices. Les types de domaine suivants sont pris en charge :
@@ -174,7 +188,7 @@ Les utilisateurs et les utilisatrices de Forms JEE disposent de leurs données 
 
 #### Accès aux données utilisateur {#access-user-data}
 
-Pour afficher un utilisateur créé dans le référentiel AEM, connectez-vous à `https://'[server]:[port]'/lc/useradmin` à l’aide des informations d’identification de l’administrateur AEM. Notez que les valeurs `server` et `port` indiquées dans l’URL sont celles de l’instance d’auteur AEM. Ici, vous pouvez rechercher des utilisateurs et des utilisatrices avec leur nom d’utilisateur ou d’utilisatrice. Double-cliquez sur un utilisateur ou une utilisatrice pour afficher des informations telles que les propriétés, les autorisations et les groupes de l’utilisateur ou de l’utilisatrice. La propriété `Path` d’un utilisateur indique le chemin d’accès au nœud d’utilisateur créé dans le référentiel AEM.
+Pour afficher un utilisateur créé dans le référentiel AEM, connectez-vous à `https://'[server]:[port]'/lc/useradmin` à l’aide des informations d’identification de l’administrateur AEM. Notez que les valeurs `server` et `port` indiquées dans l’URL sont celles de l’instance de création AEM. Ici, vous pouvez rechercher des utilisateurs et des utilisatrices avec leur nom d’utilisateur ou d’utilisatrice. Double-cliquez sur un utilisateur ou une utilisatrice pour afficher des informations telles que les propriétés, les autorisations et les groupes de l’utilisateur ou de l’utilisatrice. La propriété `Path` d’un utilisateur indique le chemin d’accès au nœud d’utilisateur créé dans le référentiel AEM.
 
 #### Suppression de données utilisateur {#delete-aem}
 

@@ -1,18 +1,31 @@
 ---
-title: Présentation d’ [!DNL Adobe Experience Manager Assets]
+title: Introduction à [!DNL Adobe Experience Manager Assets]
 description: Créez, gérez, traitez et distribuez des ressources numériques dans Experience Manager. Ces guides décrivent les bonnes pratiques, les fonctionnalités d’accessibilité et la manière d’utiliser les ressources AEM 6.5 LTS.
 hide: true
 feature: Asset Management
 role: Leader,Developer,User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 2f2eb576-4924-4314-b348-c4b290a57fe3
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 100%
-
 ---
-
 # A propos d’[!DNL Adobe Experience Manager Assets] en tant que solution de gestion des ressources numériques (DAM) {#administering-assets}
 
 | Version | Lien de l’article |
@@ -66,9 +79,9 @@ Lorsque vous utilisez des ressources numériques dans [!DNL Experience Manager],
 
 * **Métadonnées** : les ressources [!DNL Assets] ont des métadonnées ; par exemple, l’auteur ou l’autrice, la date d’expiration et les informations DRM (Digital Rights Management). Les métadonnées sont sous contrôle d’accès. [!DNL Assets] prend en charge les schémas de métadonnées communs suivants :
 
-   * Dublin Core : auteur ou autrice, description, date, objet, etc.
-   * IPTC : comprenant l’événement, le modèle, l’emplacement, etc.
-   * Gestion de contenu web : notamment les propriétés de page, l’[!UICONTROL Heure d’activation] et l’[!UICONTROL Heure de désactivation], etc.
+  * Dublin Core : auteur ou autrice, description, date, objet, etc.
+  * IPTC : comprenant l’événement, le modèle, l’emplacement, etc.
+  * Gestion de contenu web : notamment les propriétés de page, l’[!UICONTROL Heure d’activation] et l’[!UICONTROL Heure de désactivation], etc.
 
 * **Balisage** : les ressources [!DNL Assets] peuvent être balisées et classifiées. Consultez [Organisation des ressources](/help/assets/organize-assets.md).
 

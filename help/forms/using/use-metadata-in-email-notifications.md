@@ -7,13 +7,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 64d4ef01-ee33-4c8b-977f-0c9b31755820
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '899'
 ht-degree: 96%
-
 ---
-
 # Utilisation de métadonnées dans une notification électronique {#use-metadata-in-an-email-notification}
 
 Vous pouvez utiliser l’étape Affecter une tâche pour créer et affecter des tâches à un utilisateur ou une utilisatrice ou à un groupe. Lorsqu’une tâche est affectée à un utilisateur, une utilisatrice ou un groupe, une notification est envoyée par e-mail à la personne définie ou à chaque membre du groupe défini. Une [notification par e-mail](../../forms/using/use-custom-email-template-assign-task-step.md) classique contient le lien de la tâche affectée et des informations relatives à la tâche.
@@ -249,4 +265,4 @@ Pour créer un bundle OSGi avec une interface Java, ajoutez les fichiers jar [SD
 
 1. Chargez le bundle sur un serveur AEM Forms. Vous pouvez utiliser le gestionnaire de modules AEM pour importer le bundle dans le serveur AEM Forms.
 
-Une fois le bundle importé, vous pouvez sélectionner les métadonnées dans l’étape Affecter une tâche et les utiliser dans un modèle de courrier électronique.
+Une fois le bundle importé, vous pouvez sélectionner les métadonnées dans l’étape Affecter une tâche et les utiliser dans un modèle d’e-mail.

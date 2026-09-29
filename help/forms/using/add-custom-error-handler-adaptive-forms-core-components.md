@@ -8,13 +8,27 @@ feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User
 exl-id: de6f259f-87d9-4862-a20e-3825be15dd6e
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2232'
-ht-degree: 94%
-
+source-wordcount: '2417'
+ht-degree: 97%
 ---
-
 # Gestionnaires d’erreurs dans les Formulaires adaptatifs (composants principaux) {#error-handlers-in-adaptive-form}
 
 ## Application {#applies-to}
@@ -49,7 +63,7 @@ Les gestionnaires d’erreurs sont utilisés à diverses fins. Certaines des uti
 ## Format de réponse échec/erreur {#failure-response-format}
 
 Un formulaire adaptatif affiche les erreurs au niveau du champ si les messages d’erreur de validation du serveur sont au format standard suivant.
-Le code ci-dessous illustre la structure de réponse d’échec existante :
+Le code ci-dessous illustre la structure de réponse d’échec existante :
 
 ```javascript
    {
@@ -101,19 +115,19 @@ Avec les améliorations des fonctionnalités et les mises à jour ultérieures d
 
 Où :
 * `type (required)` spécifie le type d’échec. Il peut s’agir de l’une des valeurs suivantes :
-   * `SERVER_SIDE_VALIDATION` indique un échec en raison de la validation côté serveur.
-   * `FORM_SUBMISSION` indique un échec lors de l’envoi du formulaire.
-   * `SERVICE_INVOCATION` indique un échec lors de l’appel de service tiers.
-   * `FAILURE` indique un échec général.
-   * `VALIDATION_ERROR` indique un échec en raison d’une erreur de validation.
+  * `SERVER_SIDE_VALIDATION` indique un échec en raison de la validation côté serveur.
+  * `FORM_SUBMISSION` indique un échec lors de l’envoi du formulaire.
+  * `SERVICE_INVOCATION` indique un échec lors de l’appel de service tiers.
+  * `FAILURE` indique un échec général.
+  * `VALIDATION_ERROR` indique un échec en raison d’une erreur de validation.
 
 * `title (optional)` fournit un titre ou une brève description de l’échec.
 * `detail (optional)` fournit des détails supplémentaires sur l’échec, si nécessaire.
 * `instance (optional)` représente une instance ou un identifiant associé à l’échec et permet de suivre ou d’identifier l’occurrence spécifique de l’échec.
 * `validationErrors (required)` contient des informations sur les erreurs de validation. Les champs suivants sont inclus :
-   * `fieldname` mentionne le fieldname qualifié des champs qui n’ont pas rempli les critères de validation.
-   * `dataRef` représente le chemin JSON ou XPath des champs qui ont échoué à la validation.
-   * `details` contiennent le message d’erreur de validation avec le champ erroné.
+  * `fieldname` mentionne le fieldname qualifié des champs qui n’ont pas rempli les critères de validation.
+  * `dataRef` représente le chemin JSON ou XPath des champs qui ont échoué à la validation.
+  * `details` contiennent le message d’erreur de validation avec le champ erroné.
 * `originCode (optional)` est un champ ajouté par AEM, qui contient le code d’état http renvoyé par le service externe.
 * `originMessage (optional)` est un champ ajouté par AEM, qui contient les données d’erreur brutes renvoyées par le service externe.
 
@@ -191,8 +205,8 @@ L’éditeur de règles vous permet d’effectuer les opérations suivantes :
 
 ### Ajouter la fonction de gestionnaire d’erreurs par défaut {#add-default-errror-handler}
 
-Un gestionnaire d’erreurs par défaut est pris en charge pour afficher les messages d’erreur sur les champs si la réponse d’erreur se trouve dans le schéma standard ou dans l’échec de validation côté serveur.
-Pour comprendre comment utiliser un gestionnaire d’erreurs par défaut à l’aide de l’action [Invoquer le service](/help/forms/using/rule-editor.md#invoke) de l’éditeur de règles, prenez un exemple de formulaire adaptatif simple avec deux champs, **ID de animal domestique** et **Nom de animal domestique** et utilisez un gestionnaire d’erreurs par défaut au niveau du champ **ID de animal domestique** pour vérifier diverses erreurs renvoyées par le point d’entrée REST configuré pour appeler un service externe, par exemple `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Pour ajouter un gestionnaire d’erreurs par défaut à l’aide de l’action Invoke Service de l’éditeur de règles, procédez comme suit :
+Un gestionnaire d’erreurs par défaut est pris en charge pour afficher les messages d’erreur sur les champs si la réponse d’erreur se trouve dans le schéma standard ou dans un échec de validation côté serveur.
+Pour comprendre comment créer et utiliser un gestionnaire d’erreurs par défaut à l’aide de l’action [Appeler un service de l’éditeur de règles](/help/forms/using/rule-editor.md#invoke), prenons un exemple de formulaire adaptatif simple à deux champs, **Identifiant de l’animal domestique** et **Nom de l’animal domestique** et utilisons un gestionnaire d’erreurs standard sur le champ **Identifiant de l’animal domestique** pour vérifier les différentes erreurs renvoyées par le point d’entrée REST configuré pour appeler un service externe, par exemple, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Pour ajouter un gestionnaire d’erreur par défaut à l’aide de l’action Appeler un service de l’éditeur de règles, procéder comme suit :
 
 1. Ouvrez un formulaire adaptatif en mode création, sélectionnez un composant de formulaire et sélectionnez **[!UICONTROL Éditeur de règles]** pour ouvrir ce dernier.
 1. Sélectionnez **[!UICONTROL Créer]**.
@@ -250,7 +264,7 @@ Pour créer une fonction d’erreur personnalisée, procédez comme suit :
 1. Créez un fichier JavaScript appelé `functions.js` sous le dossier `js`.
 1. Créez un fichier appelé `js.txt` sous le dossier `clientlibs`.
 1. Enregistrez vos modifications.
-La structure de dossiers créée ressemble à ceci :
+La structure de dossiers créée ressemble à ce qui suit :
 
    ![Structure de dossier de bibliothèque cliente créée](/help/forms/using/assets/customclientlibrary_folderstructure.png)
 1. Double-cliquez sur le fichier `functions.js` pour ouvrir l’éditeur. Le fichier comprend le code du gestionnaire d’erreurs personnalisé.

@@ -7,13 +7,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 45178816afbda13ee9117a0b13dcb8a9218992da
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 94%
-
+source-wordcount: '1586'
+ht-degree: 93%
 ---
-
 # Installer une instance autonome personnalisée{#custom-standalone-install}
 
 Cette section décrit les options disponibles lors de l’installation d’une instance AEM autonome. Vous pouvez également lire [Éléments de stockage](/help/sites-deploying/storage-elements-in-aem-6.md) pour plus d’informations sur le choix du type de stockage principal après l’installation d’AEM 6.
@@ -71,13 +83,13 @@ Les **modes d’exécution** vous permettent d’ajuster votre instance d’AEM 
 Par défaut, le dossier `crx-quickstart/install` est surveillé pour les fichiers.
 Ce dossier n’existe pas, mais peut être simplement créé au moment de l’exécution.
 
-En présence d’un lot, la configuration ou le module de contenu est placé dans ce répertoire. Il est automatiquement sélectionné et installé. S’il est supprimé, il est désinstallé.
-Il s’agit d’une autre méthode pour placer des lots, des modules de contenu ou des configurations dans le référentiel.
+En présence d’un bundle, la configuration ou le module de contenu est placé dans ce répertoire. Il est automatiquement sélectionné et installé. S’il est supprimé, il est désinstallé.
+Il s’agit d’une autre méthode pour placer des bundles, des modules de contenu ou des configurations dans le référentiel.
 
 Cela est particulièrement intéressant pour plusieurs cas d’utilisation :
 
 * Au cours du développement, il peut être plus facile de placer un élément dans le système de fichiers.
-* Si un problème se produit, la console web et le référentiel ne sont pas accessibles. Vous pouvez ainsi placer des lots supplémentaires dans ce répertoire et ils doivent être installés.
+* Si un problème se produit, la console web et le référentiel ne sont pas accessibles. Vous pouvez ainsi placer des bundles supplémentaires dans ce répertoire et ils doivent être installés.
 * Vous pouvez créer le dossier `crx-quickstart/install` avant le lancement du démarrage rapide et vous pouvez y placer des packages supplémentaires.
 
 ## Installation et démarrage d’Adobe Experience Manager en tant que service Windows {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
@@ -330,7 +342,7 @@ Bien qu’il existe de nombreuses possibilités de configuration de la gestion d
 Une fois la gestion de contenu AEM démarrée, vous pouvez également accéder aux éléments suivants :
 
 * [CRXDE Lite](#accessing-crxde-lite) - utilisé pour accéder au référentiel et le gérer
-* [Console web](#accessing-the-web-console) - utilisée pour gérer ou configurer les lots OSGi (également appelés Console OSGi)
+* [Console web](#accessing-the-web-console) : utilisée pour gérer ou configurer les bundles OSGi (également appelés Console OSGi)
 
 ### Accès à CRXDE Lite {#accessing-crxde-lite}
 

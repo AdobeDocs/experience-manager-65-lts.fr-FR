@@ -5,13 +5,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 2a5d9026-49bc-4766-bcbe-38d834c14f72
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 17%
-
+source-wordcount: '511'
+ht-degree: 18%
 ---
-
 # Procédure de mise à niveau pour les installations de serveur d’applications (WLP) {#upgrade-steps-for-application-server-installations-wlp}
 
 >[!NOTE]
@@ -22,7 +31,7 @@ ht-degree: 17%
 
 Avant d’exécuter votre mise à niveau, plusieurs étapes doivent être réalisées. Voir [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) et [Tâches de maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) pour plus d’informations. Assurez-vous également que votre système répond à la [configuration requise pour AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md).
 
-Cochez [&#x200B; Planification de la mise à niveau &#x200B;](/help/sites-deploying/upgrade-planning.md) et comment l’[AEM Analyzer](/help/sites-deploying/aem-analyzer.md) peut vous aider à estimer la complexité de la mise à niveau d’AEM.
+Cochez [ Planification de la mise à niveau ](/help/sites-deploying/upgrade-planning.md) et comment l’[AEM Analyzer](/help/sites-deploying/aem-analyzer.md) peut vous aider à estimer la complexité de la mise à niveau d’AEM.
 
 ### Conditions préalables à la migration {#migration-prerequisites}
 
@@ -94,7 +103,7 @@ Cochez [&#x200B; Planification de la mise à niveau &#x200B;](/help/sites-deploy
 
    1. Arrêtez l’instance AEM en exécutant `<path-to-wlp-directory>/bin/server stop server_name`
    1. Appliquez vos modifications de `sling.properties` personnalisées au fichier `sling.properties` nouvellement généré (en vous référant au fichier de sauvegarde créé à l’étape 5)
-   1. Démarrez l’instance AEM. Vous pouvez le faire généralement en exécutant : `<path-to-wlp-directory>/bin/server start server_name`
+   1. Démarrez l’instance AEM. Vous pouvez le faire généralement en exécutant : `<path-to-wlp-directory>/bin/server start server_name`
 
 ## Déployer le base de code mise à niveau {#deploy-upgraded-codebase}
 

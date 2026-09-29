@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6b9b8d8c-8cd5-4c21-9b75-acd74d00354a
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 98%
-
+source-wordcount: '570'
+ht-degree: 85%
 ---
-
 # Configuration de Cloud Services{#cloud-service-configurations}
 
 Les configurations sont conçues pour fournir la logique et la structure de stockage des configurations de service.
@@ -49,8 +58,8 @@ Pour fournir une configuration pour les nouveaux services, procédez comme suit�
 
 * Sous :
 
-   * Modèle de configuration
-   * Composant de configuration
+  * Modèle de configuration
+  * Composant de configuration
 
 Le modèle et le composant doivent hériter du `sling:resourceSuperType` du modèle de base :
 
@@ -175,10 +184,10 @@ La propriété est alors automatiquement chiffrée (en utilisant le service `Cry
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Chemin d’accès de référence à un composant à inclure automatiquement dans la page.<br /> Ceci est utilisé pour des fonctionnalités supplémentaires et des inclusions JS.<br /> Cela inclut le composant sur la page où<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> est inclus (normalement avant la variable <code>body</code>).<br /> Dans le cas d’Adobe Analytics et d’Adobe Target, nous utilisons ceci pour insérer des fonctionnalités supplémentaires, telles que des appels JavaScript, afin de suivre le comportement des visiteurs et visiteuses.</td>
+   <td>Chemin d’accès de référence à un composant à inclure automatiquement dans la page.<br /> Il est utilisé pour des fonctionnalités supplémentaires et des inclusions JS.<br /> Cela inclut le composant sur la page où <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> est inclus (normalement avant la balise <code>body</code>).<br /> Dans le cas des versions d’Adobe Analytics et d’Adobe Target, nous utilisons ceci pour inclure des fonctionnalités supplémentaires, telles que les appels JavaScript pour suivre le comportement des visiteurs.</td>
   </tr>
   <tr>
-   <td>description</td>
+   <td>Description</td>
    <td>Brève description du service.<br /> </td>
   </tr>
   <tr>

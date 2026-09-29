@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 743645c5-b4c9-45ff-a130-0bf72aa6e6f2
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4923'
-ht-degree: 95%
-
+source-wordcount: '5032'
+ht-degree: 94%
 ---
-
 # Créer un site web complet (JSP){#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
@@ -95,7 +104,7 @@ Exemple de fichier static.css et d’images
 
 [Obtenir le fichier](assets/mywebsite.zip)
 
-1. Sur la page d’accueil d’AEM, cliquez sur **Outils**. ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html))
+1. Sur la page d’accueil d’AEM, cliquez sur **Outils**. ([](https://localhost:4502/libs/cq/core/content/welcome.html))
 
    ![chlimage_1-27](assets/chlimage_1-27.png)
 
@@ -103,7 +112,7 @@ Exemple de fichier static.css et d’images
 
 1. Si l’élément mywebsite n’apparaît pas dans le tableau, actualisez l’arborescence ou le tableau.
 
-1. [À l’aide de WebDAV](/help/sites-administering/webdav-access.md) accédez à l’URL à l’adresse https://localhost:4502 puis copiez l’exemple de fichier `static.css` et `images` dossier depuis le fichier mywebsite.zip téléchargé dans le dossier `/etc/designs/mywebsite`.
+1. [À l’aide de WebDAV](/help/sites-administering/webdav-access.md) accédez à l’URL https://localhost:4502, puis copiez l’exemple de fichier `static.css` et `images` dossier depuis le fichier mywebsite.zip téléchargé dans le dossier `/etc/designs/mywebsite`.
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
@@ -140,7 +149,7 @@ Un modèle définit le contenu par défaut d’une nouvelle page. Les sites web 
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-   La valeur de la propriété de chemin autorisée est une *expression régulière.* Les pages dont le chemin d’accès correspond à cette expression peuvent utiliser le modèle. Dans ce cas, l’expression régulière correspond au chemin du dossier **/content** et à toutes ses sous-pages.
+   La valeur de la propriété de chemin autorisée est une *expression régulière*. Les pages dont le chemin d’accès correspond à cette expression peuvent utiliser le modèle. Dans ce cas, l’expression régulière correspond au chemin du dossier **/content** et à toutes ses sous-pages.
 
    Lorsqu’un auteur crée une page sous /content, le modèle **contentpage** apparaît dans la liste des modèles pouvant être utilisés.
 
@@ -266,7 +275,7 @@ Dans cette section, vous allez créer les pages suivantes qui utilisent toutes l
 
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
-1. Dans un nouvel onglet ou une nouvelle fenêtre de navigateur web, ouvrez [https://localhost:4502/content/mywebsite/en/products.html](https://localhost:4502/content/mywebsite/en/products.html) pour afficher la page Produits :
+1. Dans un nouvel onglet ou une nouvelle fenêtre de navigateur web, ouvrez [](https://localhost:4502/content/mywebsite/en/products.html) pour afficher la page Produits :
 
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
@@ -716,8 +725,8 @@ Pour créer le composant listchildren, procédez comme suit :
 1. Dans la boîte de dialogue, entrez les valeurs de propriété ci-dessous et cliquez ensuite sur Suivant :
 
    * Libellé : listchildren.
-   * Titre : My Listchildren Component.
-   * Description : This is My Listchildren Component.
+   * Titre : Mon composant Listchildren
+   * Description : Il s’agit de mon composant Listchildren
 
 1. Continuez à cliquer sur Suivant jusqu’à ce que le panneau Enfants autorisés s’affiche, puis cliquez sur OK.
 
@@ -1214,7 +1223,7 @@ Dans cette section, ajoutez l’icône qui apparaîtra à côté du composant Im
 
 Dans cette section, vous allez afficher la page **Produits** et ajouter votre composant Image au système de paragraphes.
 
-1. Dans votre navigateur, rechargez la page **Products**. 
+1. Dans votre navigateur, rechargez la page **Products**.
 1. Dans le sidekick, cliquez sur l’icône du **mode de conception**.
 1. Cliquez sur le bouton Modifier pour modifier la boîte de dialogue de conception de paragraphe.
 1. Dans la boîte de dialogue, vous trouverez une liste de **Composants autorisés**. Accédez à **MyWebsite**, sélectionnez **Mon composant Image** et cliquez sur **OK.**
@@ -1289,7 +1298,7 @@ Lorsque vous avez terminé, la zone de saisie de la recherche doit se présenter
 1. Copiez les nœuds suivants et collez-les dans le nœud apps/mywebsite/components/search :
 
    * `/libs/foundation/components/search/dialog`
-   * &grave;&grave; `/libs/foundation/components/search/i18n`
+   * `` `/libs/foundation/components/search/i18n`
 
    * `/libs/foundation/components/search/icon.png`
 

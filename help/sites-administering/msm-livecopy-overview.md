@@ -9,22 +9,34 @@ feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ddd50c64-0f17-4638-a57e-17ededaca27b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 100%
-
 ---
-
 # Console Aperçu de Live Copy{#live-copy-overview-console}
 
 La **vue d’ensemble de Live Copy** vous permet :
 
 * d’afficher ou de gérer l’héritage sur un site :
 
-   * d’afficher l’arborescence de plan directeur de la structure de Live Copy correspondante, ainsi que le statut d’héritage ;
-   * modifier le statut d’héritage ; par exemple, suspendre, reprendre ;
-   * d’afficher les propriétés de plan directeur et de Live Copy ;
+  * d’afficher l’arborescence de plan directeur de la structure de Live Copy correspondante, ainsi que le statut d’héritage ;
+  * modifier le statut d’héritage ; par exemple, suspendre, reprendre ;
+  * d’afficher les propriétés de plan directeur et de Live Copy ;
 
 * d’exécuter des actions de déploiement
 
@@ -79,11 +91,11 @@ Lorsque vous sélectionnez une page de plan directeur, les actions suivantes son
 
 * Modifier
 
-   * Ouvrez la page de plan directeur pour la modifier.
+  * Ouvrez la page de plan directeur pour la modifier.
 
 * [Déploiement](/help/sites-administering/msm.md#rollout-and-synchronize)
 
-   * Effectuez un déploiement pour envoyer les modifications de la source vers la Live Copy.
+  * Effectuez un déploiement pour envoyer les modifications de la source vers la Live Copy.
 
 ### Actions pour une page de Live Copy {#actions-for-a-live-copy-page}
 
@@ -93,31 +105,31 @@ Lorsque vous sélectionnez une page de Live Copy, les actions suivantes sont di
 
 * Modifier
 
-   * Ouvrez la page de la Live Copy pour la modifier.
+  * Ouvrez la page de la Live Copy pour la modifier.
 
 * [Statut de la relation](#relationship-status)
 
-   * Affichez des informations sur le statut et l’héritage.
+  * Affichez des informations sur le statut et l’héritage.
 
 * [Synchronisation](/help/sites-administering/msm.md#rollout-and-synchronize)
 
-   * Synchronisez une Live Copy pour extraire des modifications de la source vers la Live Copy.
+  * Synchronisez une Live Copy pour extraire des modifications de la source vers la Live Copy.
 
 * [Réinitialisation](/help/sites-administering/msm-livecopy.md#resetting-a-live-copy-page)
 
-   * Réinitialisez une page de Live Copy pour supprimer toutes les annulations d’héritage et restaurer la page au même état que la page source.
+  * Réinitialisez une page de Live Copy pour supprimer toutes les annulations d’héritage et restaurer la page au même état que la page source.
 
 * [Suspension](/help/sites-administering/msm.md#suspending-and-cancelling-inheritance-and-synchronization)
 
-   * Désactivez temporairement les relations en direct entre une Live Copy et sa page de plan directeur.
+  * Désactivez temporairement les relations en direct entre une Live Copy et sa page de plan directeur.
 
 * [Reprise](/help/sites-administering/msm-livecopy.md#resuming-inheritance-for-a-page)
 
-   * La reprise vous permet de rétablir une relation suspendue.
+  * La reprise vous permet de rétablir une relation suspendue.
 
 * [Désolidariser](/help/sites-administering/msm.md#detaching-a-live-copy)
 
-   * Supprime de façon permanente la relation en direct entre une Live Copy et sa page de plan directeur.
+  * Supprime de façon permanente la relation en direct entre une Live Copy et sa page de plan directeur.
 
 ## Statut de la relation {#relationship-status}
 

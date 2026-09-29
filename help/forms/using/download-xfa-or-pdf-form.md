@@ -8,20 +8,34 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: eafb1a93-8ee5-4420-830b-aee234988393
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 100%
-
 ---
-
 # Télécharger un modèle de formulaire XFA ou PDF {#download-an-xfa-or-a-pdf-form-template}
 
 L’opération de téléchargement, comme son nom l’indique, vous permet d’exporter des formulaires du référentiel vers le système local. Associée à l’opération de chargement, cette opération vous permet de migrer vos formulaires d’un référentiel vers un autre.
 
 Dans AEM Forms, l’opération de téléchargement est prise en charge pour les types de ressource suivants :
 
-* Modèles de formulaire (formulaires XFA)
+* Modèles de formulaires (formulaires XFA)
 * Formulaires PDF
 * Documents (fichiers PDF plats)
 
@@ -53,4 +67,4 @@ Outre ces ressources, vous pouvez télécharger le type `Resource` de ressources
 
 * Vous pouvez charger le fichier ZIP vers n’importe quel autre emplacement du même référentiel ou d’un autre référentiel.
 * La hiérarchie des ressources d’un dossier est conservée pendant l’opération de chargement.
-* Toute modification des métadonnées apportée aux ressources téléchargées avant le téléchargement est répercutée lors du transfert. 
+* Toute modification des métadonnées apportée aux ressources téléchargées avant le téléchargement est répercutée lors du transfert.

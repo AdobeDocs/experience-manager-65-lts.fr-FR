@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: b60b198e-1683-4970-b9b4-f1d0178e00e1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2207'
 ht-degree: 97%
-
 ---
-
 # Concepts de l’interface utilisateur tactile d’Adobe Experience Manager{#concepts-of-the-aem-touch-enabled-ui}
 
 Adobe Experience Manager (AEM) dispose d’une interface d’utilisation tactile en [responsive design](/help/sites-authoring/responsive-layout.md) pour l’environnement de création conçue pour fonctionner sur les appareils tactiles et de bureau.
@@ -28,24 +37,24 @@ Adobe Experience Manager (AEM) dispose d’une interface d’utilisation tactile
 L’interface utilisateur tactile se compose des éléments suivants :
 
 * L’en-tête de la suite qui :
-   * affiche le logo,
-   * fournit un lien vers la navigation globale,
-   * fournit le lien vers d’autres actions génériques, comme Rechercher, Aide, Solutions Experience Cloud, Notifications et Paramètres utilisateur.
+  * affiche le logo,
+  * fournit un lien vers la navigation globale,
+  * fournit le lien vers d’autres actions génériques, comme Rechercher, Aide, Solutions Experience Cloud, Notifications et Paramètres utilisateur.
 * Le rail de gauche (affiché lorsque cela s’avère nécessaire et pouvant être masqué) qui peut afficher les options suivantes :
-   * Chronologie
-   * Références
-   * Filtres
+  * Chronologie
+  * Références
+  * Filtres
 * En-tête de navigation, qui est à nouveau contextuel et peut afficher les éléments suivants :
-   * La console en cours d’utilisation et/ou la position au sein de cette console
-   * Sélection pour le rail gauche.
-   * Chemin de navigation
-   * Accès aux actions **Créer** appropriées
-   * Afficher les sélections
+  * La console en cours d’utilisation et/ou la position au sein de cette console
+  * Sélection pour le rail gauche.
+  * Chemin de navigation
+  * Accès aux actions **Créer** appropriées
+  * Afficher les sélections
 * La zone de contenu qui :
-   * répertorie les éléments de contenu (qu’il s’agisse de pages, de ressources, de messages de forum, etc.) ;
-   * peut être formatée comme demandé, par exemple, colonne, carte ou liste ;
-   * utilise la technologie responsive design (l’affichage est redimensionné automatiquement en fonction de la taille de l’appareil et/ou de la fenêtre) ;
-   * utilise le défilement infini (plus de pagination, tous les éléments sont répertoriés sur une seule fenêtre).
+  * répertorie les éléments de contenu (qu’il s’agisse de pages, de ressources, de messages de forum, etc.) ;
+  * peut être formatée comme demandé, par exemple, colonne, carte ou liste ;
+  * utilise la technologie responsive design (l’affichage est redimensionné automatiquement en fonction de la taille de l’appareil et/ou de la fenêtre) ;
+  * utilise le défilement infini (plus de pagination, tous les éléments sont répertoriés sur une seule fenêtre).
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -241,14 +250,14 @@ Lors de la mise à niveau du code ExtJS pour utiliser l’IU Granite, la liste s
 | `pathfield, paragraphreference` | `granite/ui/components/foundation/form/pathbrowser` |
 | `selection` | `granite/ui/components/foundation/form/select` |
 | `sizefield` | `cq/gui/components/authoring/dialog/sizefield` |
-| `tags` | `granite/ui/components/foundation/form/autocomplete`&#x200B;`cq/gui/components/common/datasources/tags` |
+| `tags` | `granite/ui/components/foundation/form/autocomplete``cq/gui/components/common/datasources/tags` |
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
 | **Type de nœud** | **Type de ressource de l’IU Granite** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
-| `cq:TabPanel` | `granite/ui/components/foundation/container`&#x200B;`granite/ui/components/foundation/layouts/tabs` |
+| `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs` |
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
 ### Composants d’administration de l’IU Granite {#granite-ui-administration-components}

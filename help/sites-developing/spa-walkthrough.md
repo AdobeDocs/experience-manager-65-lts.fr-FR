@@ -1,6 +1,6 @@
 ---
-title: Introduction et présentation des applications monopage (SPA)
-description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
+title: Introduction et guide pas à pas des applications monopage (SPA)
+description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une application SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 topic-tags: spa
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
@@ -8,19 +8,33 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: aceec3ac-abdf-4ae2-b197-f58cb7faea5f
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1925'
-ht-degree: 100%
-
+source-wordcount: '1983'
+ht-degree: 99%
 ---
-
 
 # Introduction et présentation des applications monopage (SPA) {#spa-introduction-and-walkthrough}
 
 Les applications monopage (SPA) peuvent améliorer considérablement l’expérience des sites web. Les développeurs et développeuses souhaitent pouvoir créer des sites avec des frameworks SPA. Les auteurs et autrices, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de tels frameworks.
 
-L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cet article décrit l’utilisation d’une SPA élémentaire à des fins de création et indique comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
+L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cet article décrit l’utilisation d’une application SPA élémentaire à des fins de création et indique comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 
 {{ue-over-spa}}
 
@@ -28,21 +42,21 @@ L’éditeur de SPA constitue une solution complète pour la prise en charge des
 
 ### Objectif de l’article {#article-objective}
 
-Cet article présente les concepts de base des SPA, puis passe en revue l’éditeur de SPA en utilisant une SPA simple pour démontrer les fonctions de base de modification de contenu. Il détaille ensuite la construction de la page et indique comment la SPA est liée à l’éditeur de SPA AEM et interagit avec lui.
+Cet article présente les concepts de base des SPA, puis passe en revue l’éditeur de SPA en utilisant une application SPA simple pour démontrer les fonctions de base de modification de contenu. Il détaille ensuite la construction de la page et indique comment l’application SPA est liée à l’éditeur de SPA AEM et interagit avec lui.
 
 L’objectif de cette introduction et de cette présentation est de montrer aux développeurs AEM pourquoi les SPA sont pertinentes, comment elles fonctionnent, comment elles sont gérées par l’éditeur de SPA AEM et en quoi elles diffèrent d’une application AEM standard.
 
 ## Conditions requises {#requirements}
 
-La présentation repose sur les fonctionnalités AEM standard et l’exemple d’application de projet SPA WKND. Pour suivre cette présentation, vous devez disposer des éléments suivants.
+La présentation repose sur la fonctionnalité standard d’AEM et l’exemple d’application de projet SPA WKND. Pour suivre cette présentation, vous devez disposer des éléments suivants.
 
 * [Version 6.5.4 ou ultérieure d’AEM](/help/release-notes/release-notes.md)
-   * Vous devez disposer des droits d’administration sur le système.
+  * Vous devez disposer des droits d’administration sur le système.
 * [Exemple d’application de projet WKND SPA disponible sur GitHub](https://github.com/adobe/aem-guides-wknd-spa)
-   * Téléchargez la [dernière version de l’application React.](https://github.com/adobe/aem-guides-wknd-spa/releases) Son nom sera similaire à `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
-   * Téléchargez les [exemples d’images les plus récents](https://github.com/adobe/aem-guides-wknd-spa/releases) pour l’application. Son nom sera similaire à `wknd-spa-sample-images-X.Y.Z.zip`.
-   * [Utilisez le gestionnaire de modules](/help/sites-administering/package-manager.md) pour installer les packages comme vous le feriez pour tout autre package dans AEM.
-   * L’application n’a pas besoin d’être installée à l’aide de Maven pour cette présentation.
+  * Téléchargez la [dernière version de l’application React.](https://github.com/adobe/aem-guides-wknd-spa/releases) Son nom sera similaire à `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
+  * Téléchargez les [exemples d’images les plus récents](https://github.com/adobe/aem-guides-wknd-spa/releases) pour l’application. Son nom sera similaire à `wknd-spa-sample-images-X.Y.Z.zip`.
+  * [Utilisez le gestionnaire de modules](/help/sites-administering/package-manager.md) pour installer les packages comme vous le feriez pour tout autre package dans AEM.
+  * L’application n’a pas besoin d’être installée à l’aide de Maven pour cette présentation.
 
 >[!CAUTION]
 >
@@ -58,7 +72,7 @@ Cela limite la nécessité d’actualiser la page et offre à l’utilisateur un
 
 L’éditeur de SPA d’AEM permet aux développeurs et aux développeuses front-end de créer des SPA qui peuvent être intégrées à un site AEM, ce qui permet aux créateurs et créatrices de contenu de modifier le contenu de SPA aussi facilement qu’un autre contenu AEM.
 
-### Pourquoi une SPA ?  {#why-a-spa}
+### Pourquoi une SPA ? {#why-a-spa}
 
 Plus rapide, fluide et ressemblant davantage à une application native, une SPA, de par son fonctionnement, offre une expérience très attrayante, non seulement pour le visiteur de la page web, mais aussi pour les spécialistes du marketing et les développeurs.
 
@@ -83,7 +97,7 @@ Plus rapide, fluide et ressemblant davantage à une application native, une SPA,
 
 L’idée principale sous-jacente à une SPA est que les appels à un serveur et la dépendance envers un serveur sont réduits pour minimiser les retards liés aux appels du serveur, de sorte que la SPA s’approche de la réactivité d’une application native.
 
-Sur une page web séquentielle traditionnelle, seules les données nécessaires à la page immédiate sont chargées. Cela signifie que lorsque vous passez à une autre page, le serveur est appelé pour que les ressources supplémentaires soient mises à disposition. Des appels supplémentaires peuvent s’avérer nécessaires lorsque le visiteur interagit avec les éléments de la page. Ces appels multiples peuvent donner une impression de retard ou de lenteur, car la page doit rattraper les requêtes du visiteur.
+Sur une page web séquentielle traditionnelle, seules les données nécessaires à la page immédiate sont chargées. Cela signifie que lorsque le visiteur ou la visiteuse passe à une autre page, le serveur est appelé pour que les ressources supplémentaires soient mises à disposition. Des appels supplémentaires peuvent s’avérer nécessaires lorsque le visiteur interagit avec les éléments de la page. Ces appels multiples peuvent donner une impression de retard ou de lenteur, car la page doit rattraper les requêtes du visiteur.
 
 ![screen_shot_2018-08-20at140449](assets/screen_shot_2018-08-20at140449.png)
 
@@ -95,7 +109,7 @@ Parce que le rendu est effectué côté client, les éléments de la page réagi
 >
 >Pour plus d’informations sur le fonctionnement des SPA dans AEM, reportez-vous à l’article [Prise en main des SPA dans AEM](/help/sites-developing/spa-getting-started-react.md).
 >
->Pour observer de plus près la conception, l’architecture et le workflow technique de l’éditeur de SPA, consultez l’article [Aperçu de l’éditeur de SPA](/help/sites-developing/spa-overview.md). 
+>Pour observer de plus près la conception, l’architecture et le workflow technique de l’éditeur de SPA, consultez l’article [Aperçu de l’éditeur de SPA](/help/sites-developing/spa-overview.md).
 
 ## Expérience de modification de contenu avec une SPA {#content-editing-experience-with-spa}
 
@@ -157,7 +171,7 @@ Expérimenter le comportement d’une SPA pour l’utilisateur final puis inspec
 
    ![Étape 3](assets/spa-walkthrough-step-1-3.png)
 
-   Le trafic est très faible, car vous passez d’une page à l’autre dans l’application. La page n’est pas rechargée et seules les nouvelles images sont demandées.
+   Le trafic est très faible, car vous passez d’une page à l’autre dans l’application. La page n’est pas rechargée et seules les nouvelles images sont chargées.
 
    La SPA gère le contenu et le routage entièrement du côté client.
 

@@ -9,13 +9,21 @@ thumbnail: 39476.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
-source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 55%
-
 ---
-
 # Développement d’AEM Commerce {#develop}
 
 Le développement de projets AEM Commerce basés sur Commerce integration framework (CIF) pour AEM suit les mêmes règles et bonnes pratiques que les autres projets AEM. Passez en revue les éléments suivants :
@@ -31,7 +39,7 @@ Un environnement de développement local est recommandé pour travailler avec de
 
 >[!NOTE]
 >
->Les instructions suivantes vous aident à configurer un environnement de développement AEM local pour AEM Commerce à l’aide de CIF avec le focus pour AEM 6.5 (LTS). Si vous utilisez AEM as a Cloud Service, reportez-vous à la documentation [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#).
+>Les instructions suivantes vous aident à configurer un environnement de développement AEM local pour AEM Commerce à l’aide de CIF avec le focus pour AEM 6.5 (LTS). Si vous utilisez AEM as a Cloud Service, reportez-vous à la documentation [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#).
 
 Le module complémentaire AEM Commerce pour AEM, connu sous le nom de module complémentaire CIF, est également disponible pour le développement local et est fourni sous la forme d’un package AEM. Il peut être téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) en tant que pack de fonctionnalités.
 
@@ -151,7 +159,7 @@ Commencez avec le magasin de référence Venia en clonant le [référentiel Git]
 
 Pour connecter votre projet au système Commerce, AEM doit être configuré avec le point d’entrée GraphQL de votre système Commerce.
 
-Un projet généré par l’[archétype de projet &#x200B;](https://github.com/adobe/aem-project-archetype) ou le [magasin de référence AEM Venia](https://github.com/adobe/aem-cif-guides-venia), incluent déjà une configuration par défaut qui doit être ajustée.
+Un projet généré par l’[archétype de projet ](https://github.com/adobe/aem-project-archetype) ou le [magasin de référence AEM Venia](https://github.com/adobe/aem-cif-guides-venia), incluent déjà une configuration par défaut qui doit être ajustée.
 
 Remplacez la valeur de l’`url` dans `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` avec le point d’entrée GraphQL de votre système Commerce utilisé par le projet.
 

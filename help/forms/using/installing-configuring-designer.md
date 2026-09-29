@@ -5,13 +5,28 @@ role: Admin, User, Developer
 feature: Forms Designer,Designer
 solution: Experience Manager, Experience Manager Forms
 exl-id: 526bbc59-62c3-4e6d-a938-e368d07fe6b0
-source-git-commit: eb6f6b994fdd3b2b01e77700d2deb7bd2830ac8f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 1af3c3d4-88d7-5e0f-813c-eb70824bfcdd
+    internal-label: Forms Designer
+  - id: 794033c1-20ea-55a4-a8a6-b1107e12deb0
+    internal-label: Designer
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 65%
-
+source-wordcount: '946'
+ht-degree: 64%
 ---
-
 # Installation et configuration de Designer{#installing-and-configuring-designer}
 
 ## Prérequis {#pre-requisites}
@@ -89,8 +104,8 @@ Il existe deux cas lors de la mise à jour de la dernière version d’AEM Form
 Si vous utilisez un programme d’installation autonome pour AEM Forms Designer, procédez comme suit :
 
 1. Avant l’installation d’**AEM Forms Designer 6.5.16.0**, les utilisateurs et les utilisatrices doivent désinstaller toutes les versions précédentes.
-1. Téléchargez et installez [AEM Forms Designer 6.5.15.0](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) à partir de la page Versions d’AEM Forms.
-1. Après une installation réussie d’**AEM Forms Designer 6.5.15.0**, téléchargez et installez [AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) en double-cliquant sur le fichier d’installation téléchargé.
+1. Téléchargez et installez [AEM Forms Designer 6.5.15.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) à partir de la page Versions d’AEM Forms.
+1. Après une installation réussie d’**AEM Forms Designer 6.5.15.0**, téléchargez et installez [AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) en double-cliquant sur le fichier d’installation téléchargé.
 
 +++
 
@@ -98,7 +113,7 @@ Si vous utilisez un programme d’installation autonome pour AEM Forms Designe
 
 Si vous utilisez un programme d’installation autonome pour AEM Forms Designer, procédez comme suit :
 
-1. Téléchargez la dernière version d’AEM Forms Designer à partir du [Portail de distribution logicielle](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#).
+1. Téléchargez la dernière version d’AEM Forms Designer à partir du [Portail de distribution logicielle](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#).
 1. Installez la dernière version d’AEM Forms Designer en double-cliquant sur le fichier d’installation téléchargé.
 
 +++
@@ -106,19 +121,19 @@ Si vous utilisez un programme d’installation autonome pour AEM Forms Designe
 ## Questions fréquentes {#fandq}
 
 * **Un utilisateur peut-il directement mettre à niveau ou installer Designer 64 bits ?**
-   * Oui, les utilisateurs peuvent directement mettre à niveau ou installer Designer 64 bits. Pour effectuer la mise à niveau, installez le programme d’installation complet de Designer [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) et appliquez-y la version de correctif Designer suivante.
+  * Oui, les utilisateurs peuvent directement mettre à niveau ou installer Designer 64 bits. Pour effectuer la mise à niveau, installez le programme d’installation complet de Designer [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) et appliquez-y la version de correctif Designer suivante.
 
-     >[!NOTE]
-     > Avant d’effectuer la mise à niveau vers Designer 64 bits, commencez par désinstaller Designer 32 bits s’il existe.
+    >[!NOTE]
+    > Avant d’effectuer la mise à niveau vers Designer 64 bits, commencez par désinstaller Designer 32 bits s’il existe.
 
 * **Est-il possible pour les utilisateurs et utilisatrices de conserver les deux versions 32 et 64 bits installées sur leur système ?**
-   * Nombre Une installation 32 bits et 64 bits ne fonctionne pas sur le même ordinateur. L’utilisateur peut disposer d’un Designer 32 bits ou d’un Designer 64 bits.
+  * Non. Une installation 32 bits et 64 bits ne fonctionne pas sur le même ordinateur. L’utilisateur peut disposer d’un Designer 32 bits ou d’un Designer 64 bits.
 
 * **Comment vérifier si un utilisateur utilise Designer 64 bits ou Designer 32 bits ?**
-   * Il y a deux façons de vérifier la version de Forms Designer :
+  * Il y a deux façons de vérifier la version de Forms Designer :
 
-      1. Ouvrez Designer.
-      1. Cliquez sur **Aide** > **À propos de Designer** pour afficher les informations de version et de fréquence de Designer.
+    1. Ouvrez Designer.
+    1. Cliquez sur **Aide** > **À propos de Designer** pour afficher les informations de version et de fréquence de Designer.
 Par exemple, la chaîne de version se termine par **64 bits** comme illustré dans l’exemple suivant :
-         `6.5.21.20240522.1.161 | 64 bit`
-      1. Ouvrez Designer. Dans le coin supérieur gauche, une icône d’image de marque contenant des informations 64 bits avec le nom du produit s’affiche.
+       `6.5.21.20240522.1.161 | 64 bit`
+    1. Ouvrez Designer. Dans le coin supérieur gauche, une icône d’image de marque contenant des informations 64 bits avec le nom du produit s’affiche.

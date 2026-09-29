@@ -8,13 +8,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
-source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3848'
-ht-degree: 97%
-
+source-wordcount: '3906'
+ht-degree: 96%
 ---
-
 # Créer une correspondance{#create-correspondence}
 
 ## Création de correspondance dans l’interface utilisateur de création de correspondance {#create-correspondence-in-the-create-correspondence-user-interface}
@@ -57,7 +70,7 @@ Sélectionnez la lettre à prévisualiser en procédant comme suit :
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur le basculement entre le mode de rendu HTML et PDF de la prévisualisation de lettre, voir [Modifier le mode de rendu de lettre](#changerenditionmode). Pour plus d’informations sur la prise en charge de PDF dans Correspondence Management et AEM, voir [Discontinuation des plug-ins du navigateur NPAPI et son impact](https://helpx.adobe.com/fr/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+   >Pour plus d’informations sur le basculement entre le mode de rendu HTML et PDF de la prévisualisation de lettre, voir [Modifier le mode de rendu de lettre](#changerenditionmode). Pour plus d’informations sur la prise en charge de PDF dans Correspondence Management et AEM, voir [Discontinuation des plug-ins du navigateur NPAPI et son impact](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 ### Saisir des données {#enterdata}
 
@@ -358,7 +371,7 @@ Vous trouverez ci-dessous les avantages et les fonctionnalités disponibles dans
 * **Mettre en surbrillance le contenu modifiable dans une lettre** : dans l’interface utilisateur Création de correspondance, vous pouvez sélectionner Mettre en surbrillance le contenu modifiable pour mettre en surbrillance tout le contenu modifiable de la lettre en gris. Pour plus d’informations, consultez [Gestion du contenu](#managecontent).
 
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
-`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`  **Avantages de l’aperçu PDF**
+`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>` **Avantages de l’aperçu PDF**
 
 * **Saut de page** : dans l’aperçu au format PDF, vous pouvez afficher précisément comment les sauts de page dans la lettre affectent sa sortie.
 * **Aperçu final** : dans l’aperçu au format PDF, vous pouvez afficher le formatage et l’aspect exacts de la lettre telle qu’elle apparaîtra à sa sortie.
@@ -371,7 +384,7 @@ Pour plus d’informations sur la prise en charge des scripts dans des formulair
 
 Par défaut, l’interface utilisateur Création de correspondance utilise des formulaires HTML ou des formulaires mobiles pour rendre l’aperçu d’une lettre. L’aperçu des formulaires mobiles n’a aucun problème de rendu dans un navigateur, car il utilise le module externe natif du navigateur et ne requiert aucun module externe supplémentaire. Vous pouvez changer le mode de prévisualisation d’une lettre en PDF. Toutefois, les contraintes de navigateur peuvent créer des problèmes pour les différentes fonctionnalités de l’aperçu au format PDF interactif de la lettre.
 
-Pour plus d’informations sur la compatibilité des navigateurs avec la prévisualisation de lettre, référez-vous à [Discontinuation des plug-ins du navigateur NPAPI et son impact](https://helpx.adobe.com/fr/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+Pour plus d’informations sur la compatibilité des navigateurs avec la prévisualisation de lettre, référez-vous à [Discontinuation des plug-ins du navigateur NPAPI et son impact](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 Pour changer le mode d’aperçu de la lettre, effectuez les étapes suivantes :
 

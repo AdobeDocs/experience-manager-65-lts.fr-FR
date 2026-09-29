@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 14f006f8-8751-4713-ba5a-590ce479fbb4
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 98%
-
 ---
-
 # Configurer les fournisseurs d’authentification {#configuring-authentication-providers}
 
 >[!NOTE]
@@ -72,7 +87,7 @@ Pour utiliser un autre serveur LDAP pour effectuer l’authentification, sélect
 
 **Anonyme :** aucun nom d’utilisateur ni mot de passe requis.
 
-**Utilisateur :** authentification requise. Dans le champ Nom, indiquez le nom de l’enregistrement utilisateur qui peut accéder à l’annuaire. Il est généralement conseillé d’entrer le nom distinctif complet (ND) du compte d’utilisateur, par exemple : cn=Jane Doe, ou=user, dc=can, dc=com. Dans le champ Mot de passe, saisissez le mot de passe associé. Ces paramètres sont requis lorsque vous sélectionnez Utilisateur comme option de liaison.
+**Utilisateur :** authentification requise. Dans le champ Nom, indiquez le nom de l’enregistrement utilisateur qui peut accéder à l’annuaire. Il est généralement conseillé d’entrer le nom distinctif complet (DN) du compte d’utilisateur, par exemple : cn=Jane Doe, ou=user, dc=can, dc=com. Dans le champ Mot de passe, saisissez le mot de passe associé. Ces paramètres sont requis lorsque vous sélectionnez Utilisateur comme option de liaison.
 
 **Récupérer les noms uniques de base :** (facultatif) permet de récupérer les noms uniques de base et de les afficher dans la liste déroulante. Ce paramètre est utile lorsque vous avez plusieurs DN de base et que vous devez sélectionner une valeur.
 
@@ -160,7 +175,7 @@ Sans approvisionnement juste à temps, lorsqu’une personne est authentifiée a
 1. Pour créer un domaine, cliquez sur Nouveau domaine d’entreprise ou Nouveau domaine hybride. Pour modifier un domaine existant, cliquez sur son nom.
 1. Sélectionnez Activer l’approvisionnement juste à temps.
 
-   ***Remarque &#x200B;** : si la case à cocher correspondant à Activer l’approvisionnement juste à temps n’apparaît pas, cliquez sur Accueil > Paramètres > User Management > Configuration > Attributs système avancés, puis sur Recharger.*
+   ***Remarque ** : si la case à cocher correspondant à Activer l’approvisionnement juste à temps n’apparaît pas, cliquez sur Accueil > Paramètres > User Management > Configuration > Attributs système avancés, puis sur Recharger.*
 
 1. Ajoutez des fournisseurs d’authentification. Lors de l’ajout de fournisseurs d’authentification, dans l’écran Nouvelle authentification, sélectionnez un créateur d’identités et un fournisseur d’affectation enregistrés. (Voir [Configuration des fournisseurs d’authentification](configuring-authentication-providers.md#configuring-authentication-providers).)
 1. Enregistrez le domaine.

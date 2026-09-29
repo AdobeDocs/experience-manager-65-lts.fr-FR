@@ -9,14 +9,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 7d975fe3-9444-4337-ba32-98a8cc2e03f3
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 100%
-
 ---
-
 # Créer et gérer les ensembles de politiques {#creating-and-managing-policy-sets}
 
 >[!NOTE]
@@ -71,11 +83,11 @@ Lorsque vous créez un ensemble de politiques, vous pouvez utiliser le bouton Pr
    * Cochez la case correspondant à l’utilisateur, à l’utilisatrice ou au groupe à ajouter, puis cliquez sur Suivant.
    * Sélectionnez les autorisations du coordinateur ou de la coordinatrice d’ensembles de politiques, puis cliquez sur Ajouter. Les autorisations suivantes peuvent être définies :
 
-      * Affichage des événements
-      * Gérer les documents (révoquer et rétablir l’accès aux documents et changer de politiques sur les documents)
-      * Gérer les politiques (création, modification et suppression de politiques)
-      * Gérer les éditeurs et éditrices (ajout et suppression d’éditeurs ou d’éditrices)
-      * Déléguer (ajout et suppression de coordinateurs ou de coordinatrices d’ensembles de politiques)
+     * Affichage des événements
+     * Gérer les documents (révoquer et rétablir l’accès aux documents et changer de politiques sur les documents)
+     * Gérer les politiques (création, modification et suppression de politiques)
+     * Gérer les éditeurs et éditrices (ajout et suppression d’éditeurs ou d’éditrices)
+     * Déléguer (ajout et suppression de coordinateurs ou de coordinatrices d’ensembles de politiques)
 
 1. Répétez l’étape 5 pour ajouter d’autres coordinateurs ou coordinatrices d’ensembles de politiques.
 1. Vérifiez les paramètres du coordinateur ou de la coordinatrice de jeux de politiques, puis cliquez sur Suivant.

@@ -9,13 +9,25 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: a1f4823f-4861-4e99-88cd-4a686abe3f64
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3107'
 ht-degree: 100%
-
 ---
-
 # Administration des utilisateurs, des utilisatrices, des groupes et des droits d’accès{#user-group-and-access-rights-administration}
 
 Plusieurs thèmes sont associés à l’activation de l’accès à un référentiel CRX :
@@ -70,22 +82,22 @@ CRX utilise deux concepts clés lors de l’évaluation des droits d’accès :
 
 * Un **principal de sécurité** est une entité qui transfère des droits d’accès. Les entités incluent :
 
-   * Un compte d’utilisateur
-   * Un compte de groupe
+  * Un compte d’utilisateur
+  * Un compte de groupe
 
-     Si un compte utilisateur appartient à un ou à plusieurs groupes, il est également associé à chacun de ces principaux du groupe.
+    Si un compte utilisateur appartient à un ou à plusieurs groupes, il est également associé à chacun de ces principaux du groupe.
 
 * Un **objet** est utilisé pour représenter la source de la demande.
 
   Il est utilisé pour centraliser les droits d’accès applicables pour cette demande. Ceux-ci proviennent de :
 
-   * le principal de sécurité de l’utilisateur ;
+  * le principal de sécurité de l’utilisateur ;
 
-     Les droits affectés directement au compte d’utilisateur
+    Les droits affectés directement au compte d’utilisateur
 
-   * tous les principaux de sécurité des groupes associés à cet utilisateur.
+  * tous les principaux de sécurité des groupes associés à cet utilisateur.
 
-     Tous les droits sont affectés aux groupes auxquels appartient l’utilisateur ou l’utilisatrice.
+    Tous les droits sont affectés aux groupes auxquels appartient l’utilisateur ou l’utilisatrice.
 
   Le résultat est ensuite utilisé pour autoriser ou refuser l’accès à la ressource demandée.
 
@@ -124,8 +136,8 @@ Les droits d’accès dans CRX sont évalués comme suit :
 
 * Les entités d’utilisateur ou d’utilisatrice ont toujours la priorité sur les entités de groupe, indépendamment de :
 
-   * leur ordre dans la liste de contrôle d’accès ;
-   * leur position dans la hiérarchie des nœuds.
+  * leur ordre dans la liste de contrôle d’accès ;
+  * leur position dans la hiérarchie des nœuds.
 
 * Pour un principal donné, il existe (au plus) 1 entrée de refus et 1 entrée d’autorisation sur un nœud donné. La mise en œuvre efface toujours les entrées redondantes et s’assure que les mêmes autorisations ne figurent pas à la fois dans les entrées d’autorisation et de refus.
 

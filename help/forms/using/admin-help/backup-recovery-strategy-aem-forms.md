@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 2f34b48a-0b95-4994-ac4f-616620a5b211
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 93%
-
 ---
-
 # Stratégie de sauvegarde et de récupération d’AEM forms{#backup-and-recovery-strategy-for-aem-forms}
 
 Si votre implémentation AEM Forms stocke les données personnalisées supplémentaires dans une base de données différente, vous devez mettre en place une stratégie de sauvegarde pour ces données et veiller à ce qu’elles soient synchronisées avec les données AEM Forms. En outre, l’application doit être conçue de manière à pouvoir faire face à un scénario où les bases de données supplémentaires se désynchronisent. Il est vivement recommandé d’effectuer toute opération de base de données dans le contexte d’une transaction afin de maintenir un état cohérent.
@@ -45,9 +60,9 @@ La base de données sert à stocker les artefacts de formulaire, les configurati
 
 * Le mode **Sauvegarde instantanée** indique que le système AEM Forms est en mode de sauvegarde indéfini ou pendant un nombre défini de minutes, après quoi le mode de sauvegarde est désactivé. Pour entrer ou quitter le mode de sauvegarde instantanée, vous pouvez utiliser l’une des options suivantes. Après un scénario de récupération, le mode de sauvegarde instantanée ne doit pas être activé.
 
-   * Utilisez la page Paramètres de sauvegarde dans la console d’administration. Pour passer en mode instantané, cochez la case Fonctionner en mode de sauvegarde sécurisé. Décochez la case pour quitter le mode instantané.
-   * Utilisez le script LCBackupMode (voir [Sauvegarde de la base de données, du GDS et des répertoires racines de stockage de contenu](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Pour quitter le mode de sauvegarde instantané, définissez le paramètre `continuousCoverage` sur `false` ou utilisez l’option `leaveContinuousCoverage` dans l’argument du script.
-   * Utilisez l’API de sauvegarde/récupération fournie. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
+  * Utilisez la page Paramètres de sauvegarde dans la console d’administration. Pour passer en mode instantané, cochez la case Fonctionner en mode de sauvegarde sécurisé. Décochez la case pour quitter le mode instantané.
+  * Utilisez le script LCBackupMode (voir [Sauvegarde de la base de données, du GDS et des répertoires racines de stockage de contenu](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Pour quitter le mode de sauvegarde instantané, définissez le paramètre `continuousCoverage` sur `false` ou utilisez l’option `leaveContinuousCoverage` dans l’argument du script.
+  * Utilisez l’API de sauvegarde/récupération fournie. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
 
 * Le mode **Sauvegarde en continu** indique que le système est toujours en mode de sauvegarde et qu’une nouvelle session en mode de sauvegarde est initiée à la fin de la session précédente. Aucun délai d’expiration n’est associé au mode de sauvegarde en continu. Lorsque le script LCBackupMode ou les API sont appelés pour quitter le mode de sauvegarde en continu, une nouvelle session du mode de sauvegarde en continu démarre. Ce mode est utile pour la prise en charge des sauvegardes en continu tout en permettant le nettoyage des documents anciens et inutiles du répertoire GDS. Le mode de sauvegarde en continu n’est pas pris en charge via la page Sauvegarde et récupération. Après un scénario de récupération, le mode de sauvegarde en continu reste activé. Vous pouvez quitter le mode de sauvegarde en continu (mode de sauvegarde restauration) en utilisant le script LCBackupMode avec l’option `leaveContinuousCoverage`.
 

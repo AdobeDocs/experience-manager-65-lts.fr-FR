@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader,User
 exl-id: 6faf8e4f-ca2a-4d68-a354-fb0aa6c2644b
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 97%
-
 ---
-
 # Préparation d’Adobe Experience Manager pour les règlements sur la protection et la confidentialité des données {#aem-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
@@ -60,19 +76,19 @@ Pour Adobe Experience Manager :
 
 * Les instances, ainsi que les applications qui s’y exécutent, sont détenues et exploitées par les clients et clientes.
 
-   * Le client ou la cliente gère les rôles légaux, notamment les entités commerciales et les fournisseurs de services, le contrôleur de données et le responsable du traitement des données, entre autres.
+  * Le client ou la cliente gère les rôles légaux, notamment les entités commerciales et les fournisseurs de services, le contrôleur de données et le responsable du traitement des données, entre autres.
 
-   * Adobe Experience Platform Privacy Service ne fait pas partie du workflow d’AEM, comme illustré dans le diagramme ci-dessous.
+  * Adobe Experience Platform Privacy Service ne fait pas partie du workflow d’AEM, comme illustré dans le diagramme ci-dessous.
 
 * AEM comprend la documentation et les procédures permettant à l’administrateur de confidentialité du client et/ou à l’administrateur AEM d’exécuter les demandes d’accès à des informations personnelles, le cas échéant, manuellement, ou par le biais d’API.
 
 * Aucun nouveau service ou interface utilisateur n’a été ajouté.
 
-   * Au lieu de cela, les procédures et les API sont documentées pour une utilisation par les interfaces utilisateur/portails du client qui gèrent les demandes relatives à la réglementation de la confidentialité.
+  * Au lieu de cela, les procédures et les API sont documentées pour une utilisation par les interfaces utilisateur/portails du client qui gèrent les demandes relatives à la réglementation de la confidentialité.
 
 * AEM n’inclut aucun outil prêt à l’emploi pour prendre en charge le workflow des demandes d’accès à des informations personnelles.
 
-   * Adobe fournit une documentation et des procédures à l’administrateur ou l’administratrice de confidentialité du client ou de la cliente et/ou à l’administrateur ou l’administratrice AEM, leur permettant d’exécuter manuellement les demandes liées aux règlements de confidentialité.
+  * Adobe fournit une documentation et des procédures à l’administrateur ou l’administratrice de confidentialité du client ou de la cliente et/ou à l’administrateur ou l’administratrice AEM, leur permettant d’exécuter manuellement les demandes liées aux règlements de confidentialité.
 
 Adobe fournit des procédures pour le traitement des demandes d’accès à des informations personnelles liées à l’accès, à la suppression et au droit d’opposition pour Adobe Experience Manager. Dans certains cas, des API peuvent être appelées à partir d’un portail développé par le client ou la cliente ou de scripts pour faciliter l’automatisation.
 

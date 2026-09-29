@@ -10,18 +10,32 @@ role: User, Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: 64468f78-2dc1-4e42-a8c6-3cb81bca0e05
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3000'
-ht-degree: 100%
-
+source-wordcount: '3028'
+ht-degree: 96%
 ---
-
 # Configuration de la publication sélective au niveau des dossiers dans Dynamic Media {#selective-publish-configure-folder}
 
 Vous pouvez choisir de publier ou de dépublier des ressources dans Adobe Experience Manager ou Dynamic Media au niveau du dossier. Pour ce faire, vous devez utiliser **[!UICONTROL Gérer la publication]** ou **[!UICONTROL Publication rapide]** au lieu de vous fier uniquement à la **[!UICONTROL configuration de Dynamic Media]** dont les paramètres sont globaux pour tous les dossiers de votre instance Dynamic Media.
 
-Par exemple, avec la publication sélective, vous pouvez travailler sur des ressources pour des produits qui ne sont pas encore en ligne. Dans ce cas, une équipe marketing peut accéder à des images de recadrage intelligent et à des rendus dynamiques synchronisés dans Dynamic Media afin de pouvoir créer du matériel promotionnel, le tout sans avoir à publier ces ressources dans Dynamic Media pour une diffusion globale.
+Par exemple, avec la publication sélective, vous pouvez travailler sur des ressources pour des produits qui ne sont pas encore en ligne. Dans ce cas, une équipe marketing peut accéder à des images de recadrage intelligent et à des rendus dynamiques synchronisés dans Dynamic Media. Ils peuvent créer du matériel promotionnel, le tout sans avoir à publier ces ressources dans Dynamic Media pour une diffusion globale.
 
 >[!IMPORTANT]
 >
@@ -147,7 +161,7 @@ Reportez-vous à [Créer une configuration Dynamic Media](#configuring-dynamic-
    | Action | Description |
    | --- | --- |
    | **[!UICONTROL Dépublier]** (à partir d’Experience Manager) | Sélectionnez cette option si vous souhaitez dépublier des ressources sur Experience Manager. |
-   | **[!UICONTROL Dépublier à partir de Dynamic Media]** | Sélectionnez cette option pour dépublier des ressources à partir de Dynamic Media.<br>Cette option n’est disponible que si l’option **[!UICONTROL Mode de publication Dynamic Media]** est définie sur **[!UICONTROL Publication sélective]** dans les propriétés du dossier. |
+   | **[!UICONTROL Dépublier à partir de Dynamic Media]** | Sélectionnez cette option si vous souhaitez dépublier des ressources sur Dynamic Media.<br>Cette option est disponible uniquement si **[!UICONTROL Mode de publication Dynamic Media]** est défini sur **[!UICONTROL Publication sélective]** dans les propriétés du dossier. |
 
 1. Sous **[!UICONTROL Planning]**, définissez le calendrier de la désactivation.
 
@@ -188,8 +202,8 @@ Vous pouvez utiliser la fonction **[!UICONTROL Publication rapide]** dans les ca
    | Option Publication rapide | Effets |
    | --- | --- |
    | Publier dans Experience Manager | Publie immédiatement les ressources sélectionnées dans Experience Manager. |
-   | Publier sur Brand Portal | Publie immédiatement les ressources sélectionnées dans **[!UICONTROL Brand Portal]**.<br>Cette option n’est disponible que si votre instance Experience Manager Assets dispose déjà de **[!UICONTROL Brand Portal]** configuré. |
-   | Publier vers Dynamic Media | Publie immédiatement les ressources sélectionnées dans Dynamic Media.<br>Une ressource doit être synchronisée dans Dynamic Media. Si nécessaire, assurez-vous que le **[!UICONTROL mode de synchronisation]** dans les propriétés d’un dossier est déjà défini sur **[!UICONTROL Synchroniser avec Dynamic Media tout le contenu de cette sous-arborescence de dossier]**. |
+   | Publier sur Brand Portal | Publie immédiatement les ressources sélectionnées dans ****.<br>Cette option n’est disponible que si votre instance Experience Manager Assets dispose déjà de **[!UICONTROL Brand Portal]** configurée. |
+   | Publier vers Dynamic Media | Publie immédiatement les ressources sélectionnées dans Dynamic Media.<br>Une ressource doit être synchronisée dans Dynamic Media. Si nécessaire, assurez-vous que le **[!UICONTROL mode de synchronisation]** dans les propriétés d’un dossier est déjà défini sur **[!UICONTROL Synchroniser avec Dynamic Media tout le contenu de cette sous-arborescence de dossier]**. |
 
 1. Sélectionnez **[!UICONTROL OK]**, puis **[!UICONTROL Fermer]**.
 

@@ -5,13 +5,27 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
 exl-id: bd80a4c5-4b65-43db-af4e-f43849c796be
-source-git-commit: db44ebd29ea80c3b95e385ace5156d028f4de122
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '988'
 ht-degree: 100%
-
 ---
-
 # Opérations de développement d’entreprise (DevOps){#enterprise-devops}
 
 Les opérations de développement (DevOps) couvrent les processus, les méthodes et les communications requis pour :
@@ -59,7 +73,7 @@ Selon l’échelle de votre système, l’environnement de développement peut c
 
 Cet environnement est utilisé par l’équipe d’assurance qualité afin de [tester](/help/sites-developing/test-plan.md) entièrement votre nouveau système, autant sur sa conception que ses fonctions. Il doit comporter des environnements de création et de publication, avec du contenu approprié, et fournir tous les services nécessaires pour activer une suite complète de tests.
 
-### Évaluation  {#staging}
+### Évaluation {#staging}
 
 L’environnement d’évaluation doit être un miroir de l’environnement de production : configuration, code et contenu :
 
@@ -67,7 +81,7 @@ L’environnement d’évaluation doit être un miroir de l’environnement de p
 * Il peut être utilisé pour les tests finaux (conception, fonctionnalités et interfaces) avant le déploiement dans les environnements de production.
 * Bien qu’il ne soit pas toujours possible que l’environnement d’évaluation soit identique à l’environnement de production, il doit être aussi proche que possible pour activer les tests de performance et de charge.
 
-### Production : création et publication  {#production-author-and-publish}
+### Production : création et publication {#production-author-and-publish}
 
 L’environnement de production est constitué des environnements requis pour [créer et publier](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) votre mise en œuvre.
 
@@ -102,7 +116,7 @@ Un environnement de publication se trouve dans la « zone démilitarisée » (
 
 L’environnement de publication génère votre contenu dynamiquement en temps réel et le contenu peut être personnalisé pour chaque personne.
 
-## Mouvement de code  {#code-movement}
+## Mouvement de code {#code-movement}
 
 Propagez toujours le code du bas vers le haut :
 

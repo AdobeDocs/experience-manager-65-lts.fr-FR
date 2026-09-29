@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Developer,Leader
 exl-id: e6542ba9-1182-4b81-b251-537747b89e4c
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6926'
-ht-degree: 100%
-
+source-wordcount: '7022'
+ht-degree: 99%
 ---
-
 # Glossaire{#glossary}
 
 Ce glossaire répertorie (par ordre alphabétique) les détails de tous les documents livrables de la [liste de contrôle de projet](/help/managing/best-practices-checklist.md).
@@ -104,8 +120,8 @@ Assurez-vous que les membres de votre équipe ont reçu une formation approprié
 
 * au moins un développeur en chef certifié AEM ;
 * au moins un architecte certifié AEM ;
-* au moins 75 % de vos développeurs certifiés AEM ;
-Cela permet aux développeurs certifiés de jouer le rôle de mentors auprès des développeurs juniors, ainsi que de garantir la transparence et le partage des connaissances.
+* au moins 75 % de vos développeurs certifiés AEM ;
+cela permet aux développeurs certifiés de jouer le rôle de mentors auprès des développeurs juniors et assure le partage des connaissances et la transparence
 
 ### Diagramme d’architecture {#architecture-diagram}
 
@@ -202,8 +218,8 @@ Les KPI d’entreprise définissent des valeurs mesurables qui montrent l’effi
 
 Un document des exigences de l’entreprise décrit la solution commerciale pour un projet, fournissant une spécification claire des attentes et des besoins commerciaux de la clientèle. Il fait également la distinction entre la solution commerciale et la solution technique.
 
-Lors de l’examen de la solution d’entreprise, le document des exigences de l’entreprise doit répondre à la question suivante :
-« Que souhaite faire l’entreprise ? »
+Lors de l’examen de la solution d’entreprise, la BRD doit répondre à la question suivante :
+« Que veut faire l&#39;entreprise ? »
 
 ### Validation par l’entreprise de tout ajustement requis pour la solution ou l’architecture identifié et aligné par rapport aux attentes en matière de ROI et de KPI {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -353,10 +369,10 @@ Toutes les personnalisations et/ou les correctifs appliqués doivent être docum
 * AEM peut être grandement personnalisé en fonction des besoins de l’entreprise. Toutes les personnalisations qui peuvent affecter la mise à niveau doivent être entièrement documentées. Par exemple, toutes les modifications majeures de l’interface utilisateur (IU) AEM.
 * Toutes les mises à jour requises pour la solution actuelle doivent être entièrement documentées. Cela peut inclure :
 
-   * des packs de correctifs cumulatifs (CFP) ;
-   * des service packs (SP) ;
-   * des correctifs ;
-   * des mises à niveau.
+  * des packs de correctifs cumulatifs (CFP) ;
+  * des service packs (SP) ;
+  * des correctifs ;
+  * des mises à niveau.
 
 ### Rapport de test d’acceptation utilisateur quotidien {#daily-user-acceptance-test-report}
 
@@ -1232,7 +1248,7 @@ Identifiez et vérifiez les risques techniques potentiels. Les risques technique
 
 La spécification technique couvre (entre autres informations) les éléments suivants :
 
-* interfaces 
+* interfaces
 * configurations
 * API
 * les services qui prennent en charge les exigences de la solution ;

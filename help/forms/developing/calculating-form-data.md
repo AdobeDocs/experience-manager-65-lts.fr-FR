@@ -10,14 +10,29 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 071a6ccb-8204-4cbc-a39b-143da52c16f7
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1870'
 ht-degree: 96%
-
 ---
-
 # Calcul de données de formulaire {#calculating-form-data}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -128,7 +143,7 @@ Après avoir vérifié que l’état de traitement associé à un formulaire env
 [Calcul des données de formulaire à l’aide de l’API Java](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
 [Calcul des données de formulaire à l’aide de l’API de service web](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
 [Définition des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
-Démarrages rapides de l’API du service Forms [&#128279;](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+Démarrages rapides de l’API du service Forms [](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 [Rendu de PDF forms interactive](/help/forms/developing/rendering-interactive-pdf-forms.md)
 [Création d’applications web qui effectuent le rendu de Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -150,10 +165,10 @@ Calculer les données de formulaire à l’aide de l’API Forms (Java) :
    * Pour récupérer des données de formulaire contenant un script de calcul, créez un objet `com.adobe.idp.Document` à l’aide de son constructeur et en appelant la méthode `getInputStream` de l’objet `javax.servlet.http.HttpServletResponse` à partir du constructeur.
    * Appelez la méthode `processFormSubmission` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-      * Objet `com.adobe.idp.Document` contenant les données de formulaire.
-      * Une valeur de chaîne qui indique les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Indiquez le type de contenu à gérer en spécifiant une ou plusieurs valeurs pour la variable d’environnement `CONTENT_TYPE`. Par exemple, pour gérer les données XML et PDF, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
-      * Une valeur de chaîne qui spécifie la valeur de l’en-tête `HTTP_USER_AGENT`, par exemple, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Un objet `RenderOptionsSpec` qui stocke les options d’exécution.
+     * Objet `com.adobe.idp.Document` contenant les données de formulaire.
+     * Une valeur de chaîne qui indique les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Indiquez le type de contenu à gérer en spécifiant une ou plusieurs valeurs pour la variable d’environnement `CONTENT_TYPE`. Par exemple, pour gérer les données XML et PDF, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
+     * Une valeur de chaîne qui spécifie la valeur de l’en-tête `HTTP_USER_AGENT`, par exemple, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+     * Un objet `RenderOptionsSpec` qui stocke les options d’exécution.
 
      La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
 
@@ -180,7 +195,7 @@ Calculez les données du formulaire en utilisant l’API Forms (Web Service) :
 1. Inclure les fichiers du projet
 
    * Créez des classes proxy Java qui utilisent le service WSDL de Forms.
-   * Incluez les classes proxy Java dans le chemin d’accès de classe.
+   * Incluez les classes proxy Java dans votre classpath.
 
 1. Créer un objet API Forms client
 
@@ -197,17 +212,17 @@ Calculez les données du formulaire en utilisant l’API Forms (Web Service) :
    * Créez un objet `RenderOptionsSpec` en utilisant son constructeur. Définissez la valeur des paramètres régionaux en appelant la méthode `setLocale` de l’objet `RenderOptionsSpec` et en transmettant une valeur de chaîne qui la spécifie.
    * Appelez la méthode `processFormSubmission` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-      * Objet `BLOB` contenant les données de formulaire.
-      * Valeur de chaîne spécifiant les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Par exemple, vous pouvez spécifier la valeur de chaîne suivante : `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`.
-      * Valeur de chaîne spécifiant la valeur de l’en-tête `HTTP_USER_AGENT`, par exemple `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Un objet `RenderOptionsSpec` qui stocke les options d’exécution. Pour plus d’informations, .
-      * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
-      * Un objet `javax.xml.rpc.holders.StringHolder` vide qui est renseigné par la méthode.
-      * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
-      * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
-      * Un objet `javax.xml.rpc.holders.ShortHolder` vide qui est renseigné par la méthode.
-      * Un objet `MyArrayOf_xsd_anyTypeHolder` vide qui est renseigné par la méthode. Ce paramètre est utilisé pour stocker les pièces jointes envoyées avec le formulaire.
-      * Un objet `FormsResultHolder` vide qui est renseigné par la méthode avec le formulaire envoyé.
+     * Objet `BLOB` contenant les données de formulaire.
+     * Valeur de chaîne spécifiant les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Par exemple, vous pouvez spécifier la valeur de chaîne suivante : `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`.
+     * Valeur de chaîne spécifiant la valeur de l’en-tête `HTTP_USER_AGENT`, par exemple `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+     * Un objet `RenderOptionsSpec` qui stocke les options d’exécution. Pour plus d’informations, .
+     * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
+     * Un objet `javax.xml.rpc.holders.StringHolder` vide qui est renseigné par la méthode.
+     * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
+     * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
+     * Un objet `javax.xml.rpc.holders.ShortHolder` vide qui est renseigné par la méthode.
+     * Un objet `MyArrayOf_xsd_anyTypeHolder` vide qui est renseigné par la méthode. Ce paramètre est utilisé pour stocker les pièces jointes envoyées avec le formulaire.
+     * Un objet `FormsResultHolder` vide qui est renseigné par la méthode avec le formulaire envoyé.
 
      La méthode `processFormSubmission` renseigne le paramètre `FormsResultHolder` avec les résultats de l’envoi du formulaire. La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
 

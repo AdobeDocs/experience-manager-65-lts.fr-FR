@@ -5,13 +5,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 92f4946d-1f49-4286-a51e-84b2a46a6b8a
-source-git-commit: f69262246bafca44f88ff15a4c86125f5335507e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '612'
 ht-degree: 97%
-
 ---
-
 # Création d’une page de destination efficace pour une newsletter{#creating-an-effective-newsletter-landing-page}
 
 Une page de destination efficace pour newsletter vous permet d’obtenir plus de personnes inscrites à votre newsletter (ou à toute autre campagne de marketing par e-mail). Vous pouvez utiliser les informations que vous collectez à partir des abonnements à vos newsletters pour obtenir des prospects.
@@ -30,7 +41,7 @@ Pour créer une page de destination efficace pour une newsletter, vous devez eff
 
 ## Créer une liste pour la newsletter {#creating-a-list-for-the-newsletter}
 
-Créez une liste, par exemple, **Newsletter Geometrixx**, dans MCM pour la newsletter à laquelle les utilisateurs et les utilisatrices doivent s’abonner. La création de listes est décrite dans la section [Création de listes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists). 
+Créez une liste, par exemple, **Newsletter Geometrixx**, dans MCM pour la newsletter à laquelle les utilisateurs et les utilisatrices doivent s’abonner. La création de listes est décrite dans la section [Création de listes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
 
 Voici un exemple de liste :
 

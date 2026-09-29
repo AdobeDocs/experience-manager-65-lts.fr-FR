@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
 exl-id: 47e73efa-997d-44d9-bb41-6f550eac137a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 99%
-
 ---
-
 # Création d’applications monopages avec AEM {#create-spa}
 
 Dans cette suite facultative du [Parcours de développement découplé AEM](overview.md), découvrez comment AEM peut combiner une diffusion découplée avec des fonctionnalités CMS full stack traditionnelles et comment créer des SPA modifiables à l’aide du framework de l’éditeur de SPA d’AEM et comment intégrer des SPA externes afin d’utiliser les fonctionnalités d’édition, le cas échéant.
@@ -22,9 +38,9 @@ Dans cette suite facultative du [Parcours de développement découplé AEM](over
 
 * La différence entre la diffusion de contenu couplé et découplé
 * Les fonctionnalités découplées AEM
-* Comment organiser un projet découplé AEM
-* Comment créer du contenu découplé dans AEM
-* Comment récupérer et mettre à jour du contenu découplé dans AEM
+* Comment organiser un projet découplé AEM.
+* Comment créer du contenu découplé dans AEM.
+* Comment récupérer et mettre à jour du contenu découplé dans AEM.
 * La mise en ligne d’un projet découplé AEM
 
 Désormais, soit vous avez mis en ligne votre premier projet découplé AEM, soit vous disposez de toutes les connaissances nécessaires pour le faire. Félicitations !

@@ -9,14 +9,28 @@ feature: PDF Generator,Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: fee34d9e-6606-40c1-bbbe-e7975ad90a22
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 88%
-
 ---
-
 # Configuration des paramètres de sécurité{#configuring-security-settings}
 
 Vous pouvez limiter l’accès aux documents PDF en définissant des mots de passe et en limitant certaines fonctionnalités, telles que l’impression et la modification. Lorsqu’un document PDF comporte des fonctionnalités restreintes, les outils et les éléments de menu associés à ces fonctionnalités sont grisés. Vous pouvez utiliser d’autres méthodes pour créer des documents sécurisés, tels que le chiffrement ou la certification. Un paramètre de sécurité contient le mot de passe et des options spécifiques à utiliser pour certaines conversions de PDF.

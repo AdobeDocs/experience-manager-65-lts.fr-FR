@@ -10,13 +10,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 07048aa7-5f38-4810-9ef2-ce6892f9b9b6
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3015'
-ht-degree: 100%
-
+source-wordcount: '3030'
+ht-degree: 98%
 ---
-
 # Modification du contenu de la page{#editing-page-content}
 
 Une fois la page créée (une nouvelle page ou dans le cadre d’un lancement ou d’une Live Copy), vous pouvez modifier le contenu pour effectuer toute mise à jour dont vous avez besoin.
@@ -269,9 +282,9 @@ Les actions disponibles sont affichées comme il convient ; ces actions ne peuv
 
   Le composant est collé du presse-papiers dans la page. L’original est conservé ou non, selon la fonction que vous avez utilisée (Couper ou Coller).
 
-   * Vous pouvez coller les composants sur la même page ou sur une autre.
-   * L’élément collé est collé au-dessus de l’élément pour lequel vous avez sélectionné l’action de collage.
-   * L’action de collage ne s’affiche que si du contenu se trouve dans le presse-papiers.
+  * Vous pouvez coller les composants sur la même page ou sur une autre.
+  * L’élément collé est collé au-dessus de l’élément pour lequel vous avez sélectionné l’action de collage.
+  * L’action de collage ne s’affiche que si du contenu se trouve dans le presse-papiers.
 
   ![Coller](assets/screen_shot_2018-03-22at113553.png)
 
@@ -426,7 +439,7 @@ Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, vous po
 
 * **Live Copy**
 
-  La barre d’outils du composant, si celui-ci est situé sur une page qui fait partie d’une Live Copy ou d’un lancement (basé sur une Live Copy). Par exemple :
+  La barre d’outils du composant, si celui-ci se trouve sur une page qui fait partie d’une Live Copy ou d’un lancement (basé sur une Live Copy). Par exemple :
 
   ![Live Copy](assets/screen_shot_2018-03-22at134339.png)
 
@@ -469,9 +482,9 @@ Par exemple :
 
 ## Ajout d’annotations {#adding-annotations}
 
-Les [Annotations](/help/sites-authoring/annotations.md) permettent aux réviseurs et aux autres créateurs de fournir des commentaires sur votre contenu. Elles sont souvent utilisées à des fins de révision et de validation.
+[Annotations](/help/sites-authoring/annotations.md) permettent aux réviseurs et aux autres auteurs de réagir sur votre contenu. Ils sont souvent utilisés à des fins de révision et de validation.
 
-## Aperçu des pages {#previewing-pages}
+## Prévisualiser des pages {#previewing-pages}
 
 Deux options sont disponibles pour prévisualiser une page :
 
@@ -514,15 +527,15 @@ Une page peut être verrouillée à partir de :
 
 * La console **Sites**
 
-   1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-   1. Sélectionnez l’icône de verrou.
+  1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+  1. Sélectionnez l’icône de verrou.
 
   ![Icône de cadenas](assets/screen_shot_2018-03-22at134928.png)
 
 * **Éditeur de page**
 
-   1. Pour ouvrir le menu, sélectionnez l’icône **Informations sur la page**.
-   1. Sélectionnez l’option **Verrouiller la page**.
+  1. Pour ouvrir le menu, sélectionnez l’icône **Informations sur la page**.
+  1. Sélectionnez l’option **Verrouiller la page**.
 
 Une fois la page verrouillée, les informations d’affichage de la console sont mises à jour et, lors de la modification, le symbole d’un verrou s’affiche dans la barre d’outils.
 

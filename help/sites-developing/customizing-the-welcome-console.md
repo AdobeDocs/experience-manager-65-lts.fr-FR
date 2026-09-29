@@ -9,7 +9,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: a3595673-8d43-4ef2-a00e-ec8aa8d9cb55
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 96%
@@ -186,7 +197,7 @@ Consultez [Section de sécurité](/help/sites-administering/security.md) pour pl
 
 ### Mécanisme de sélection de liens {#link-selection-mechanism}
 
-L’outil `/libs/cq/core/components/welcome/welcome.jsp`ConsoleUtil[&#x200B; est utilisé dans &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ConsoleUtil.html). Il exécute une requête sur les nœuds qui possèdent la propriété :
+L’outil `/libs/cq/core/components/welcome/welcome.jsp`ConsoleUtil[ est utilisé dans ](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ConsoleUtil.html). Il exécute une requête sur les nœuds qui possèdent la propriété :
 
 * `jcr:mixinTypes` avec la valeur : `cq:Console`
 

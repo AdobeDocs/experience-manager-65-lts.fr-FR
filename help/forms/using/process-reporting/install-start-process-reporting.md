@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e64a3b6f-7248-4426-9f13-f703eab3632d
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1774'
 ht-degree: 99%
-
 ---
-
 # Prise en main de Process Reporting{#getting-started-with-process-reporting}
 
 Process Reporting permet aux personnes qui utilisent AEM Forms de demander des informations sur des processus AEM Forms actuellement définis dans le cadre de la mise en œuvre d’AEM Forms. Toutefois, Process Reporting n’accède pas directement aux données à partir du référentiel AEM Forms. Les données sont d’abord publiées dans le référentiel Process Reporting selon un calendrier (*par les services ProcessDataPublisher et ProcessDataStorage*). Les rapports et requêtes de Process Reporting sont ensuite générés à partir des données Process Reporting publiées dans le référentiel. Process Reporting est installé dans le cadre du module Forms Workflow.
@@ -45,7 +60,7 @@ Les services Process Reporting publient les données de la base de données AEM 
 
 Cette opération peut nécessiter de nombreuses ressources et avoir un impact sur les performances des serveurs AEM Forms. Il est recommandé de planifier cette opération en dehors des créneaux horaires chargés de votre serveur AEM Forms.
 
-Par défaut, la publication des données est planifiée tous les jours à 02:00.
+Par défaut, la publication des données est planifiée tous les jours à 02h00.
 
 Pour modifier le planning de publication, procédez comme suit :
 
@@ -78,7 +93,7 @@ Pour modifier le planning de publication, procédez comme suit :
 
    Dans la zone d’arguments JVM génériques, ajoutez l’argument `-Dreporting.publisher.cron = <expression>.`.
 
-   **Exemples** : l’expression cron suivante entraîne la publication par Process Reporting de données d’AEM Forms dans le référentiel de Process Reporting toutes les 5 heures :
+   **Exemple** : l’expression cron suivante entraîne la publication par Process Reporting de données d’AEM Forms dans le référentiel de Process Reporting toutes les 5 heures :
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 

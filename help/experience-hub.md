@@ -7,20 +7,40 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin,Developer,User
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
+  - id: f551224f-631f-46f8-b8fc-67744f995ba0
+    internal-label: Onboarding
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 100%
-
 ---
-
 # À propos d’Experience Hub {#aem-experience-hub}
 
 Experience Hub offre un point de départ centralisé pour la gestion du contenu, des ressources et des sites dans Adobe Experience Manager. Conçu pour offrir une expérience personnalisée, Experience Hub vous permet de naviguer de manière fluide à travers l’écosystème AEM en fonction de vos rôles et objectifs. Véritable guide, elle vous fournit des informations clés et vous recommande des actions pour vous aider à atteindre vos objectifs de manière efficace. Avec une interface claire et centrée sur les utilisateurs et les utilisatrices, la page d’accueil d’Experience Hub facilite un accès rapide aux outils essentiels et offre une expérience efficace et rationalisée pour utiliser toutes les fonctionnalités d’AEM.
 
 Regardez une présentation rapide du nouvel espace de travail AEM Experience Hub (2 minutes, 39 secondes).
 
->[!VIDEO](https://video.tv.adobe.com/v/3475194/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.

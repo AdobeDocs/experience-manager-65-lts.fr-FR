@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 8bb1dd68-51ec-4458-9ff8-bfe6fb0b67fd
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1037'
 ht-degree: 97%
-
 ---
-
 # Synchroniser des annuaires {#synchronizing-directories}
 
 >[!NOTE]
@@ -41,7 +56,7 @@ Vous pouvez également indiquer s’il convient d’envoyer des informations rel
 
 >[!NOTE]
 >
->Remarque : Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs et utilisatrices de concevoir, de gérer, de surveiller et d’optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[&#x200B; Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
+>Remarque : Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs et utilisatrices de concevoir, de gérer, de surveiller et d’optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
 
 ## Activation de la synchronisation différentielle d’annuaires {#enable-delta-directory-synchronization}
 
@@ -76,7 +91,7 @@ Vous pouvez configurer User Management de manière à ce qu’il vérifie pério
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Configurer les attributs système avancés.
 1. Sous Expression cron d’achèvement de synchronisation, saisissez une expression cron qui représente l’intervalle auquel User Management tente de relancer les synchronisations ayant échoué. L’utilisation de l’expression cron est basée sur le système de planification des tâches open source Quartz, version 1.4.0.
 
-   La valeur par défaut est 0 0/13 &ast; ? &ast; , ce qui signifie que la vérification a lieu toutes les 13 minutes.
+   La valeur par défaut est 0 0/13 &amp;ast; ? &amp;ast; , ce qui signifie que la vérification a lieu toutes les 13 minutes.
 
 ## Synchronisation manuelle des annuaires {#manually-synchronize-directories}
 
@@ -92,7 +107,7 @@ Vous pouvez configurer User Management de manière à ce qu’il vérifie pério
 1. Planifiez la synchronisation :
 
    * Pour activer une synchronisation automatique quotidienne, sélectionnez Se produit sous Planificateur. Sélectionnez Quotidiennement dans la liste, puis saisissez l’heure au format 24 heures dans la zone correspondante. Lorsque vous enregistrez vos paramètres, cette valeur est convertie en une expression cron qui s’affiche dans la zone Expression Cron.
-   * Pour planifier la synchronisation un jour donné de la semaine ou du mois, ou au cours d’un mois donné, sélectionnez Expression Cron et saisissez l’expression appropriée dans la zone. Par exemple, effectuez une synchronisation à 1:30 du matin le dernier vendredi du mois.
+   * Pour planifier la synchronisation un jour donné de la semaine ou du mois, ou au cours d’un mois donné, sélectionnez Expression Cron et saisissez l’expression appropriée dans la zone. Par exemple, effectuez une synchronisation à 1 h 30 du matin le dernier vendredi du mois.
 
 L’utilisation de l’expression cron est basée sur le système de planification des tâches open source Quartz, version 1.4.0.
 

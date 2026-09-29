@@ -1,17 +1,30 @@
 ---
-title: Accessibilité des fonctionnalités et des interfaces  [!DNL Adobe Experience Manager Assets]
-description: Découvrez comment les fonctionnalités d’accessibilité d [!DNL Adobe Experience Manager] 6.5 LTS [!DNL Assets] aident les utilisateurs présentant un handicap.
+title: Accessibilité des fonctionnalités et des interfaces de [!DNL Adobe Experience Manager Assets]
+description: Découvrez comment les fonctionnalités d’accessibilité d’[!DNL Adobe Experience Manager] 6.5 LTS [!DNL Assets] aider les utilisateurs en situation de handicap.
 feature: Asset Management
 role: User,Developer,Leader
 solution: Experience Manager, Experience Manager Assets
 exl-id: f9540bfb-1c4f-41f0-9caa-ef9265225648
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1933'
-ht-degree: 57%
-
+source-wordcount: '1935'
+ht-degree: 56%
 ---
-
 <!--
 Possible topics to cover in this article are below.
 
@@ -170,7 +183,7 @@ De nombreuses tâches de gestion des ressources, telles que les opérations CRUD
 Pour les opérations de métadonnées généralement effectuées par des rôles, tels que les spécialistes marketing et les administrateurs, les fonctionnalités suivantes améliorent l’accessibilité :
 
 * L’option [!UICONTROL Enregistrer et fermer] de la page Ressource [!UICONTROL Propriétés] est désormais accessible à l’aide du clavier.
-* Les lecteurs d’écran annoncent les options permettant de supprimer les balises sélectionnées dans l’onglet [!UICONTROL &#x200B; De base &#x200B;] de la ressource [!UICONTROL Propriétés].
+* Les lecteurs d’écran annoncent les options permettant de supprimer les balises sélectionnées dans l’onglet [!UICONTROL  De base ] de la ressource [!UICONTROL Propriétés].
 * Les utilisateurs peuvent utiliser la boîte de dialogue pop-up du sélecteur de date à l’aide du clavier. L’élément d’interface utilisateur du sélecteur de date permet de définir les heures d’activation et les heures de désactivation, puis de sélectionner une date.
 * La fonctionnalité glisser à l’aide du clavier fonctionne correctement dans l’[!UICONTROL Éditeur de schéma de métadonnées] en mode de navigation du lecteur d’écran.
 * Un utilisateur peut utiliser le clavier pour déplacer la sélection vers le champ **Ajouter un utilisateur ou un groupe**.
@@ -205,9 +218,9 @@ Lors du partage de ressources, les fonctionnalités suivantes améliorent l’ac
 
 * Dans la boîte de dialogue Partage de liens, lorsque vous naviguez en mode de navigation, les lecteurs d’écran :
 
-   * N’indique pas les informations du tableau lorsque la boîte de dialogue est chargée.
-   * Accédez à toutes les suggestions répertoriées.
-   * Indique les suggestions affichées pour les champs Ajouter l’adresse électronique et Rechercher.
+  * N’indique pas les informations du tableau lorsque la boîte de dialogue est chargée.
+  * Accédez à toutes les suggestions répertoriées.
+  * Indique les suggestions affichées pour les champs Ajouter l’adresse électronique et Rechercher.
 
 ## Documentation accessible {#accessible-docs}
 
@@ -226,5 +239,5 @@ Pour fournir des commentaires, poser des questions et demander des amélioration
 >
 >* [Fonctionnalités d’accessibilité d’ [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 >* [Notes de mise à jour des améliorations apportées à chaque version de service pack](/help/release-notes/release-notes.md).
->* Conseils en matière d’accessibilité d’[[!DNL Adobe Experience Manager] &#x200B;](/help/managing/web-accessibility.md)
+>* Conseils en matière d’accessibilité d’[[!DNL Adobe Experience Manager] ](/help/managing/web-accessibility.md)
 >* [Rapports de conformité (ACR) et liste VPAT (Modèle volontaire d’accessibilité des produits) pour les solutions d’Adobe](https://www.adobe.com/accessibility/compliance.html).

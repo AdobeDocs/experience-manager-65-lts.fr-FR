@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 9a29bdbf-0f5d-4656-bd65-a63fd804c9e7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 96%
-
+source-wordcount: '293'
+ht-degree: 95%
 ---
-
 # Modification de lancements{#editing-launches}
 
 ## Modification de pages de lancement {#editing-launch-pages}
@@ -39,15 +48,15 @@ Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez
 
 Après avoir créé un lancement, vous pouvez en modifier le nom et la date. Vous pouvez également spécifier une image à associer au lancement.
 
-1. Ouvrez la page d’administration des lancements ([http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)).
+1. Ouvrez la page d’administration des lancements ([](http://localhost:4502/libs/launches/content/admin.html)).
 
 1. Sélectionnez le lancement requis, puis cliquez sur **Modifier** pour ouvrir la boîte de dialogue :
 
    * Dans l’onglet **Général**, vous pouvez modifier les éléments suivants :
 
-      * **Titre**
-      * **Date de mise en service** : équivaut à la date de lancement.
-      * **Prêt pour l’exploitation**
+     * **Titre**
+     * **Date de mise en service** : équivaut à la date de lancement.
+     * **Prêt pour l’exploitation**
 
      Voir [Lancements - Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events) pour plus d’informations sur l’objectif et l’interaction de ces champs.
 

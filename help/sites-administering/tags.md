@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 6659ca39-f297-40b9-88e2-d942aa653e9b
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 98%
-
+source-wordcount: '1771'
+ht-degree: 94%
 ---
-
 # Administration des balises {#administering-tags}
 
 Les balises sont une méthode rapide et facile pour classer le contenu dans un site Web. Elles peuvent être considérées comme des mots-clés ou des libellés (métadonnées) qui permettent de trouver plus rapidement le contenu suite à une recherche.
@@ -34,22 +43,22 @@ Voici quelques-unes des fonctionnalités des balises dans AEM :
 * La principale restriction pour les balises nouvellement créées est qu’elles doivent être uniques dans un espace de noms spécifique.
 * Le titre d’une balise ne doit pas inclure de caractères de séparation de chemin de balise (ils ne s’afficheront pas s’ils sont présents).
 
-   * Deux-points `:` : délimite la balise de l’espace de noms.
-   * Barre oblique `/` : délimite les balises secondaires.
+  * Deux-points `:` : délimite la balise de l’espace de noms.
+  * Barre oblique `/` : délimite les balises secondaires.
 
 * Des balises peuvent être appliquées par les créateurs et les visiteurs du site. Quel que soit leur créateur ou créatrice, toutes les formes de balises peuvent être sélectionnées, lors de l’affectation d’une page ou lors d’une recherche.
 * Les membres du groupe « tags-administrators » et les membres disposant de droits d’accès en modification à `/content/cq:tags` peuvent créer des balises et modifier leur taxonomie.
 
-   * Une balise contenant des balises enfants est appelée balise conteneur.
-   * Une balise qui n’est pas une balise conteneur est appelée balise terminale.
-   * Un espace de noms de balise est une balise terminale ou conteneur.
+  * Une balise contenant des balises enfants est appelée balise conteneur.
+  * Une balise qui n’est pas une balise conteneur est appelée balise terminale.
+  * Un espace de noms de balise est une balise terminale ou conteneur.
 
 * Les balises sont utilisées par le [composant Rechercher](https://helpx.adobe.com/fr/experience-manager/core-components/using/quick-search.html) pour faciliter la recherche de contenu.
 * Les balises sont également utilisées par le [composant Teaser](https://helpx.adobe.com/fr/experience-manager/core-components/using/teaser.html), qui surveille le nuage de balises d’un utilisateur pour fournir du contenu ciblé.
 * Si le balisage est un aspect important de votre contenu :
 
-   * assurez-vous de regrouper les balises avec les pages qui les utilisent ;
-   * assurez-vous que les [autorisations de balise](#setting-tag-permissions) permettent l’accès en lecture.
+  * assurez-vous de regrouper les balises avec les pages qui les utilisent ;
+  * assurez-vous que les [autorisations de balise](#setting-tag-permissions) permettent l’accès en lecture.
 
 ## Console Balisage {#tagging-console}
 
@@ -63,9 +72,9 @@ Pour accéder à la console Balisage, procédez comme suit :
 * connectez-vous avec des droits d’administration ;
 * depuis la navigation globale :
 
-   * sélectionnez **`Tools`**
-   * sélectionnez **`General`**
-   * sélectionnez **`Tagging`**
+  * sélectionnez **`Tools`**
+  * sélectionnez **`General`**
+  * sélectionnez **`Tagging`**
 
 ![managing_tags_usingthetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsolea.png)
 
@@ -80,7 +89,7 @@ L’espace de noms est lui-même une balise et ne comporte pas forcément de bal
 * **Titre**
   *(Obligatoire)* Titre affiché pour la l’espace de noms.
 
-* **Nom**
+* **Name**
   *(facultatif)* Nom de l’espace de noms. Si aucun nom n’est spécifié, un nom de nœud valide est créé à partir du titre. Voir [ID de balise](/help/sites-developing/framework.md#tagid).
 
 * **Description**
@@ -153,8 +162,8 @@ Lorsqu’un espace de noms ou une autre balise est sélectionné (en sélectionn
 * **Titre**
 *(obligatoire)* Titre affiché pour la balise.
 
-* **Nom**
-*(facultatif)* Nom de la balise. Si aucun nom n’est spécifié, un nom de nœud valide est créé à partir du titre. Voir [ID de balise](/help/sites-developing/framework.md#tagid).
+* **Name**
+*(facultatif)* Nom de la balise. Si aucun nom n’est spécifié, un nom de nœud valide est créé à partir du champ Title. Voir [ID de balise](/help/sites-developing/framework.md#tagid).
 
 * **Description**
 *(facultatif)* Description de la balise.
@@ -194,7 +203,7 @@ Lorsqu’un espace de noms ou une autre balise est sélectionné, le fait de sé
 Accédez au nouveau chemin d’accès où déplacer la balise.
 
 * **Renommer en**
-Affiche d’abord le `name` actuel de la balise. Vous pouvez saisir un nouveau `name`.
+Affiche d’abord la `name` actuelle de la balise. Vous pouvez saisir un nouveau `name`.
 
 * Sélectionnez **Enregistrer**.
 
@@ -212,7 +221,7 @@ Lorsqu’un espace de noms ou une autre balise est sélectionné, si vous sélec
   *(lecture seule)* Chemin d’accès à la balise sélectionnée à fusionner dans une autre balise.
 
 * **Fusionner dans**
-Accédez au chemin d’accès de la balise où effectuer la fusion.
+Accédez au chemin d’accès de la balise dans laquelle effectuer la fusion.
 
 >[!NOTE]
 >
@@ -246,30 +255,30 @@ Les autorisations de balises sont [« sécurisées (par défaut) »](/help/sit
 
 * dans l’instance de création
 
-   * connectez-vous avec des droits d’administration ;
-   * accédez à la [console de sécurité](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
+  * connectez-vous avec des droits d’administration ;
+  * accédez à la [console de sécurité](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
-      * par exemple, accédez à http://localhost:4502/useradmin
+    * par exemple, accédez à http://localhost:4502/useradmin .
 
-   * dans le volet de gauche, sélectionnez le groupe (ou l’utilisateur ou l’utilisatrice) pour lequel l’[autorisation de lecture](/help/sites-administering/security.md#permissions) doit être accordée
-   * Dans le volet de droite, localisez le **chemin d’accès** à l’espace de noms de balises,
+  * dans le volet de gauche, sélectionnez le groupe (ou l’utilisateur ou l’utilisatrice) pour lequel l’[autorisation de lecture](/help/sites-administering/security.md#permissions) doit être accordée
+  * Dans le volet de droite, localisez le **chemin d’accès** à l’espace de noms de balises,
 
-      * par exemple, `/content/cq:tags/mycommunity`
+    * par exemple, `/content/cq:tags/mycommunity`
 
-   * Activez la `checkbox` dans la colonne **Lecture**.
-   * Sélectionnez **Enregistrer**
+  * Activez la `checkbox` dans la colonne **Lecture**.
+  * Sélectionnez **Enregistrer**
 
 ![chlimage_1-204](assets/chlimage_1-204.png)
 
 * assurez-vous que toutes les instances de publication disposent des mêmes autorisations
 
-   * une approche consiste à [créer un package](/help/sites-administering/package-manager.md#package-manager) de l’espace de noms sur l’instance de création
+  * une approche consiste à [créer un package](/help/sites-administering/package-manager.md#package-manager) de l’espace de noms sur l’instance de création
 
-      * Dans l’onglet `Advanced`, pour `AC Handling` sélectionnez `Overwrite`.
+    * Dans l’onglet `Advanced`, pour `AC Handling` sélectionnez `Overwrite`.
 
-   * Répliquez le package.
+  * Répliquez le package.
 
-      * Sélectionnez `Replicate` dans le gestionnaire de modules.
+    * Sélectionnez `Replicate` dans le gestionnaire de modules.
 
 ## Gestion des balises dans différentes langues {#managing-tags-in-different-languages}
 

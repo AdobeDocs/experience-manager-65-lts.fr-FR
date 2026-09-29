@@ -6,13 +6,27 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 37a403c3-666c-46f3-84be-c622baeeccbc
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 99%
-
+source-wordcount: '316'
+ht-degree: 94%
 ---
-
 
 # Immersion dans les SPA{#spa-deep-dives}
 
@@ -24,4 +38,4 @@ Le SDK de l’éditeur de SPA AEM a été présenté dans une série de sessions
 
 * **[Éditeur de SPA AEM](https://experienceleague.adobe.com/fr/docs/events/experience-manager-gems-recordings/gems2018/aem-spa-editor)** – Aperçu de l’éditeur de SPA pour les débutants. Si vous débutez avec les SPA dans AEM, commencez ici.
 * **[Séance approfondie sur le SDK de l’éditeur d’application monopage – Partie 1 – React](https://experienceleague.adobe.com/fr/docs/events/experience-manager-gems-recordings/gems2018/spa-editor-sdk-deep-dive-react)** – Séance approfondie sur le développement d’applications monopages pouvant être créées à l’aide de l’éditeur de pages AEM. Considérations et recommandations sur la structure des projets, examen de toutes les couches qui composent l’architecture d’un projet, rôle des composants AEM et SPA, structure et champs JSON clés de l’objet de modèle, et plus encore !
-* **[Séance approfondie sur le SDK de l’éditeur d’application monopage – Partie 2 – Angular](https://experienceleague.adobe.com/fr/docs/events/experience-manager-gems-recordings/gems2018/spa-editor-sdk-deep-dive-angular)** – Séance approfondie sur le développement d’applications monopages pouvant être créées à l’aide de l’éditeur de pages AEM. Considérations et recommandations sur la structure des projets, examen de toutes les couches qui composent l’architecture d’un projet, rôle des composants AEM et SPA, structure et champs JSON clés de l’objet de modèle, et plus encore !
+* **[Séance approfondie sur le SDK de l’éditeur d’application monopage – Partie 2 – Angular](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2018/spa-editor-sdk-deep-dive-angular)** – Séance approfondie sur le développement d’applications monopages pouvant être créées à l’aide de l’éditeur de pages AEM. Considérations et recommandations sur la structure des projets, examen de toutes les couches qui composent l’architecture d’un projet, rôle des composants AEM et SPA, structure et champs JSON clés de l’objet de modèle, et plus encore !

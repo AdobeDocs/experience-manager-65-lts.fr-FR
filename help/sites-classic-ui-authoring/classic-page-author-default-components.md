@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 1976047c-661a-4398-8dd8-c71cd05d53be
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 100%
-
+source-wordcount: '200'
+ht-degree: 93%
 ---
-
 # Composants{#components}
 
 Adobe Experience Manager (AEM) est fourni avec tout un éventail de composants prêts à l’emploi qui offrent des fonctionnalités complètes aux personnes créant des sites web. Ils sont disponibles lors de la [modification d’une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) et sont regroupés par domaine fonctionnel principal (appelé groupe de composants) pour faciliter le filtrage.
@@ -25,11 +34,11 @@ Adobe Experience Manager (AEM) est fourni avec tout un éventail de composants
 >
 >Cette section ne traite que des composants prêts à l’emploi disponibles dans une installation d’AEM standard.
 >
->En fonction de votre instance, vous disposez peut-être de composants personnalisés développés explicitement pour vos besoins. Ces composants peuvent même avoir le même nom que certains composants traités ici.
+>Selon votre instance, vous disposez peut-être de composants personnalisés développés explicitement pour vos besoins. Ces composants personnalisés peuvent même avoir le même nom que certains des composants décrits ici.
 
 ## Composants – Principaux domaines {#components-major-areas}
 
-Vous trouverez dans les pages suivantes des liens rapides vers certains des principaux domaines de gestion du contenu (des liens vers d’autres domaines sont disponibles sur la page d’aperçu ci-dessus) :
+Vous trouverez dans les pages suivantes des liens rapides vers certains des principaux domaines de gestion de contenu (des liens vers d’autres domaines sont disponibles sur la page d’aperçu ci-dessus) :
 
 * [Composants pour la création de pages](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 

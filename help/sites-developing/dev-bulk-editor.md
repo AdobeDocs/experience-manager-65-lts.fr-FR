@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3ce50030-86c7-4291-98fa-0cc9cb63f45c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1840'
 ht-degree: 98%
-
 ---
-
 # Développer l’éditeur en bloc{#developing-the-bulk-editor}
 
 Cette section décrit le développement de l’outil d’éditeur en bloc et l’extension du composant Liste de produits, basé sur l’éditeur en bloc.
@@ -549,7 +558,7 @@ Et le flux JSON est renvoyé comme suit :
 }
 ```
 
-Chaque accès correspond à un nœud et à ses propriétés, et s’affiche sous la forme d’une ligne dans la grille.
+Chaque hit correspond à un nœud et à ses propriétés, et s’affiche sous la forme d’une ligne dans la grille.
 
 Vous pouvez étendre le servlet Query de sorte à renvoyer un modèle d’héritage complexe ou à renvoyer des nœuds stockés dans un emplacement logique spécifique. Le servlet Query peut être utilisé pour effectuer n’importe quel type de calcul complexe. La grille peut ensuite afficher les lignes qui sont un agrégat de plusieurs nœuds dans le référentiel. La modification et l’enregistrement de ces lignes doivent dans ce cas être gérés par le servlet d’enregistrement.
 

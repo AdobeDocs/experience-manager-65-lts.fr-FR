@@ -11,13 +11,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3540'
 ht-degree: 98%
-
 ---
-
 # Développer des composants AEM{#developing-aem-components}
 
 Les composants AEM servent à stocker, mettre en forme et générer le rendu du contenu diffusé dans vos pages Web.
@@ -88,7 +97,7 @@ Le mécanisme permettant de séparer la logique de l’aspect aide à définir c
 
 ### Utilisation de Java {#using-java}
 
-[L’Use-API Java HTL permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr) Cela vous permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
+[L’Use-API Java HTL permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr) Cela vous permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
 
 ### Utiliser JavaScript {#using-javascript}
 
@@ -314,7 +323,7 @@ Pour consulter des exemples, voir :
 
 La boîte de dialogue Conception est utilisée lorsqu’un composant possède des détails de conception modifiables en [mode Conception](/help/sites-authoring/default-components-designmode.md).
 
-La définition est très similaire à celle d’une boîte de dialogue[&#x200B; servant à modifier le contenu](#creating-a-new-dialog), à la différence qu’elle est définie comme un nœud :
+La définition est très similaire à celle d’une boîte de dialogue[ servant à modifier le contenu](#creating-a-new-dialog), à la différence qu’elle est définie comme un nœud :
 
 * Nom du nœud : `cq:design_dialog`
 * Type : `nt:unstructured`
@@ -358,7 +367,7 @@ Pour ce faire, procédez comme suit :
 
 ## Configuration d’un système de paragraphes de manière à faire glisser une ressource pour créer une instance de composant {#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance}
 
-AEM offre la possibilité de configurer un système de paragraphes sur votre page afin qu’une[&#x200B; instance de votre nouveau composant soit automatiquement créée lorsqu’un utilisateur ou une utilisatrice fait glisser une ressource (appropriée) sur une instance de cette page](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui) (au lieu d’avoir toujours à faire glisser un composant vide sur la page).
+AEM offre la possibilité de configurer un système de paragraphes sur votre page afin qu’une[ instance de votre nouveau composant soit automatiquement créée lorsqu’un utilisateur ou une utilisatrice fait glisser une ressource (appropriée) sur une instance de cette page](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui) (au lieu d’avoir toujours à faire glisser un composant vide sur la page).
 
 Ce comportement, et la relation ressource-à-composant requise, peuvent être configurés :
 

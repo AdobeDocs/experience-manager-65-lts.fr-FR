@@ -6,13 +6,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 636f7b61-549e-45c7-ab21-94bb90db2b22
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 90%
-
+source-wordcount: '1765'
+ht-degree: 92%
 ---
-
 # Migration de ressources et de documents AEM Forms{#migrate-aem-forms-assets-and-documents}
 
 L’utilitaire de migration convertit les [ressources Forms adaptatives](../../forms/using/introduction-forms-authoring.md), [configurations cloud](/help/sites-developing/extending-cloud-config.md) et [ressources Correspondence Management](/help/forms/using/cm-overview.md) du format utilisé dans les versions antérieures au format utilisé dans Adobe Experience Manager (AEM) 6.5 LTS Forms. L’exécution de l’utilitaire de migration engendre la migration des éléments suivants :
@@ -57,7 +71,7 @@ Pour les ressources de Correspondence Management :
 * L’état Prêt à publier est déprécié depuis AEM 6.1 Forms, de sorte que tous les actifs à l’état Prêt à publier passent à l’état Modifié.
 * L’interface utilisateur étant mise à jour dans AEM Forms 6.3, les étapes d’exécution des personnalisations sont également différentes. Rétablissez la personnalisation si vous migrez depuis une version antérieure à 6.3.
 * Les fragments de mise en page sont déplacés de `/content/apps/cm/layouts/fragmentlayouts/1001` à `/content/apps/cm/modules/fragmentlayouts`. La référence au dictionnaire de données dans les ressources affiche le chemin d’accès du dictionnaire de données au lieu de son nom.
-* Les espaces de tabulation utilisés pour l’alignement dans les modules de texte doivent être réajustés. <!--For more information, see [Correspondence Management - Using tab spacing for arranging text](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html)-->.
+* Les éventuels espaces de tabulation utilisés pour l’alignement dans les modules de texte doivent être réajustés. <!--For more information, see [Correspondence Management - Using tab spacing for arranging text](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html)-->.
 * Les configurations d’Asset Composer sont remplacées par celles de Correspondence Management.
 * Les ressources sont déplacées dans des dossiers portant des noms tels que Texte existant et Liste existante.
 
@@ -90,11 +104,11 @@ Lorsque vous exécutez l’utilitaire de migration pour la première fois, un jo
 
    * Pour migrer les **ressources**, sélectionnez Migration des ressources d’AEM Forms et dans l’écran suivant, sélectionnez **Lancer la migration**. Les éléments suivants sont migrés :
 
-      * Formulaires adaptatifs
-      * Fragments de document
-      * Thèmes
-      * Lettres
-      * Dictionnaires de données
+     * Formulaires adaptatifs
+     * Fragments de document
+     * Thèmes
+     * Lettres
+     * Dictionnaires de données
 
    >[!NOTE]
    >
@@ -102,12 +116,12 @@ Lorsque vous exécutez l’utilitaire de migration pour la première fois, un jo
 
    * Pour migrer les composants personnalisés des formulaires adaptatifs, sélectionnez **Migration des composants personnalisés des formulaires adaptatifs**. Sur la page Migration des composants personnalisés, sélectionnez **Démarrer la migration**. Les éléments suivants sont migrés :
 
-      * Composants personnalisés écrits pour les formulaires adaptatifs
-      * Superpositions de composants, le cas échéant.
+     * Composants personnalisés écrits pour les formulaires adaptatifs
+     * Superpositions de composants, le cas échéant.
 
    * Pour migrer les modèles de formulaires adaptatifs, sélectionnez **Migration des modèles de formulaires adaptatifs**. Sur la page Migration des composants personnalisés, sélectionnez **Démarrer la migration**. Les éléments suivants sont migrés :
 
-      * Les modèles de formulaire adaptatif créés sous `/apps` ou `/conf` à l’aide de l’éditeur de modèles AEM.
+     * Les modèles de formulaires adaptatifs créés sous `/apps` ou `/conf` à l’aide de l’éditeur de modèles AEM.
 
    * Migrez les services de configuration cloud d’AEM Forms pour exploiter le nouveau paradigme de service cloud contextuel comprenant l’interface utilisateur tactile (sous `/conf`). Lorsque vous migrez les services de configuration cloud d’AEM Forms, les services cloud dans `/etc` sont déplacés vers `/conf`. Si aucune de vos personnalisations de services cloud ne dépendent de chemins d’accès existants (`/etc`), Adobe recommande d’exécuter l’utilitaire de migration après la mise à niveau vers la version 6.5 et d’utiliser l’interface utilisateur tactile de la configuration cloud pour tout travail ultérieur. Si vous disposez déjà de personnalisations de services cloud, continuez à utiliser l’interface utilisateur classique dans la configuration mise à niveau jusqu’à ce que les personnalisations soient mises à jour et concordent avec les chemins migrés (`/conf`), puis exécutez l’utilitaire de migration.
 
@@ -115,23 +129,23 @@ Lorsque vous exécutez l’utilitaire de migration pour la première fois, un jo
 
    * Services cloud du modèle de données de formulaire
 
-      * Chemin d’accès source : `/etc/cloudservices/fdm`.
-      * Chemin d’accès cible : `/conf/global/settings/cloudconfigs/fdm`.
+     * Chemin d’accès source : `/etc/cloudservices/fdm`.
+     * Chemin d’accès cible : `/conf/global/settings/cloudconfigs/fdm`.
 
    * Recaptcha
 
-      * Chemin d’accès source : `/etc/cloudservices/recaptcha`.
-      * Chemin d’accès cible : `/conf/global/settings/cloudconfigs/recaptcha`.
+     * Chemin d’accès source : `/etc/cloudservices/recaptcha`.
+     * Chemin d’accès cible : `/conf/global/settings/cloudconfigs/recaptcha`.
 
    * Adobe Sign
 
-      * Chemin d’accès source : `/etc/cloudservices/echosign`.
-      * Chemin d’accès cible : `/conf/global/settings/cloudconfigs/echosign`.
+     * Chemin d’accès source : `/etc/cloudservices/echosign`.
+     * Chemin d’accès cible : `/conf/global/settings/cloudconfigs/echosign`.
 
    * Services cloud typekit
 
-      * Chemin d’accès source : `/etc/cloudservices/typekit`.
-      * Chemin d’accès cible : `/conf/global/settings/cloudconfigs/typekit`.
+     * Chemin d’accès source : `/etc/cloudservices/typekit`.
+     * Chemin d’accès cible : `/conf/global/settings/cloudconfigs/typekit`.
 
    La fenêtre du navigateur affiche les éléments suivants pendant le processus de migration :
 
@@ -151,15 +165,15 @@ Ces composants peuvent être migrés en les ouvrant dans l’éditeur de règles
 
 * Pour migrer les règles et les scripts (ce n’est pas nécessaire si vous effectuez une mise à niveau à partir de la version 6.3) dans les composants personnalisés, sélectionnez Migration des composants personnalisés des formulaires adaptatifs. Sur l’écran suivant, sélectionnez Démarrer la migration. Les éléments suivants sont migrés :
 
-   * Règles et scripts créés à l’aide de éditeur de règles (6.1 FP1 et versions ultérieures)
+  * Règles et scripts créés à l’aide de éditeur de règles (6.1 FP1 et versions ultérieures)
 
-   * Scripts créés à l’aide de l’onglet Script dans l’interface utilisateur de la version 6.1 et versions antérieures
+  * Scripts créés à l’aide de l’onglet Script dans l’interface utilisateur de la version 6.1 et versions antérieures
 
 * Pour migrer les modèles (ce n’est pas nécessaire si vous effectuez une mise à niveau à partir de la version 6.3 ou 6.4), sélectionnez Migration de modèles de formulaires adaptatifs. Sur l’écran suivant, sélectionnez Démarrer la migration. Les éléments suivants sont migrés :
 
-   * Anciens modèles : les modèles de formulaires adaptatifs créés sous /apps en utilisant AEM 6.1 Forms ou une version antérieure. Ceci inclut les scripts qui ont été définis dans les composants du modèle.
+  * Anciens modèles : les modèles de formulaires adaptatifs créés sous /apps en utilisant AEM 6.1 Forms ou une version antérieure. Ceci inclut les scripts qui ont été définis dans les composants du modèle.
 
-   * Nouveaux modèles : les modèles de formulaires adaptatifs créés en utilisant l’éditeur de modèles sous `/conf`. Cela inclut la migration des règles et des scripts créés à l’aide de l’éditeur de règles.
+  * Nouveaux modèles : les modèles de formulaires adaptatifs créés en utilisant l’éditeur de modèles sous `/conf`. Cela inclut la migration des règles et des scripts créés à l’aide de l’éditeur de règles.
 
 ### Tâches de maintenance après l’exécution de l’utilitaire de migration {#housekeepingtasks}
 
@@ -174,4 +188,4 @@ Après avoir exécuté l’utilitaire de migration, effectuez les tâches de mai
 
 1. Publiez toutes les ressources qui ont été publiées dans le système précédent avant la migration. L’utilitaire de migration met à jour les ressources uniquement dans l’instance de création. Pour mettre à jour les ressources dans les instances de publication, vous devez les publier.
 
-1. Dans les versions 6.4 et 6.5 d’AEM Forms, certains des droits des groupes d’utilisateurs et d’utilisatrices de formulaires sont modifiés. Si vous souhaitez que vos utilisateurs et utilisatrices puissent charger des fichiers XDP et des formulaires adaptatifs contenant des scripts ou utiliser un éditeur de code, vous devez les ajouter au groupe forms-power-users. De même, le groupe template-authors ne peut plus utiliser l’éditeur de code dans l’éditeur de règles. Pour que les utilisateurs puissent utiliser un éditeur de code, ajoutez-les au groupe af-template-script-writers.
+1. Dans les versions 6.4 et 6.5 d’AEM Forms, certains des droits des groupes d’utilisateurs et d’utilisatrices de formulaires sont modifiés. Si vous souhaitez que vos utilisateurs et utilisatrices puissent charger des fichiers XDP et des formulaires adaptatifs contenant des scripts ou utiliser un éditeur de code, vous devez les ajouter au groupe forms-power-users. De même, le groupe template-authors ne peut plus utiliser l’éditeur de code dans l’éditeur de règles. Pour que les utilisateurs et utilisatrices puissent utiliser un éditeur de code, ajoutez-les au groupe af-template-script-writers.

@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
 exl-id: e024c456-1d50-4ff2-bfb6-aca1cca31632
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1763'
 ht-degree: 100%
-
 ---
-
 # Configuration de la segmentation avec ContextHub{#configuring-segmentation-with-contexthub}
 
 >[!NOTE]
@@ -243,8 +254,8 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 1. Indiquez un **titre** et un **nom** pour votre dossier.
    * Le **titre** doit être descriptif.
    * Le **Nom** devient le nom du nœud dans le référentiel.
-      * Il sera généré automatiquement en fonction du titre et adapté selon les [conventions d’appellation AEM.](/help/sites-developing/naming-conventions.md)
-      * Il peut être adapté si nécessaire.
+     * Il sera généré automatiquement en fonction du titre et adapté selon les [conventions d’appellation AEM.](/help/sites-developing/naming-conventions.md)
+     * Il peut être adapté si nécessaire.
 
    ![Créer un dossier](assets/contexthub-create-folder.png)
 
@@ -308,7 +319,7 @@ Une fois le segment défini, les résultats potentiels peuvent être testés ave
 1. Sélectionnez une personne qui correspond au segment que vous avez créé.
 1. ContextHub résout les segments applicables pour la persona sélectionnée.
 
-Par exemple, notre définition de segment simple pour identifier les utilisateurs dans notre classe d’âges principale est une définition de segment simple basée sur l’âge et le sexe de l’utilisateur. Le chargement d’une personne spécifique correspondant à ces critères indique si ce segment a été résolu avec succès :
+Par exemple, notre définition de segment simple pour identifier les utilisateurs dans notre classe d’âges principale est une définition de segment simple basée sur l’âge et le genre de l’utilisateur ou de l’utilisatrice. Le chargement d’une personne spécifique correspondant à ces critères indique si ce segment a été résolu avec succès :
 
 ![screen_shot_2012-02-02at105926am](assets/screen_shot_2012-02-02at105926am.png)
 

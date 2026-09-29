@@ -11,13 +11,27 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: b179ca99-c9c6-435a-b000-c7f3fd15cd53
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1626'
-ht-degree: 100%
-
+source-wordcount: '1653'
+ht-degree: 98%
 ---
-
 
 # Présentation de l’éditeur de SPA{#spa-editor-overview}
 
@@ -53,7 +67,7 @@ Si le composant de page SPA hérite du composant principal de la page, deux opti
 * Si le modèle est modifiable, ajoutez-le à la politique de page.
 * Vous pouvez également ajouter les catégories via `customfooterlibs.html`.
 
-Pour chaque ressource du modèle exporté, la SPA mappe un composant réel chargé d’effectuer le
+Pour chaque ressource du modèle exporté, la SPA mappe un composant réel qui effectue la
 rendu. Le modèle, représenté sous la forme JSON, est ensuite rendu à l’aide des mappages de composants dans un conteneur.
 ![screen_shot_2018-08-20at144152](assets/screen_shot_2018-08-20at144152.png)
 

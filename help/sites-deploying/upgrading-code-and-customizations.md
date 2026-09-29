@@ -11,13 +11,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: c1935b95d4e9e8e3773f2ff9825c759f97738304
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 48%
-
+source-wordcount: '1104'
+ht-degree: 49%
 ---
-
 # Mettre à jour le code et les personnalisations{#upgrading-code-and-customizations}
 
 Lors de la planification d’une mise à niveau, les aspects suivants d’une mise en œuvre doivent être étudiés et abordés.
@@ -43,7 +52,7 @@ Tout le code et toutes les configurations nécessaires pour votre mise en oeuvre
 
 ### Mise à jour de la version AEM Uber Jar {#update-the-aem-uber-jar-version}
 
-AEM Uber jar inclut toutes les API d’AEM en tant que dépendance unique dans le fichier `pom.xml` de votre projet Maven. Il est toujours recommandé d’inclure Uber Jar en tant que dépendance unique au lieu d’inclure les dépendances d’API d’AEM individuelles. Lors de la mise à niveau de la base de code, modifiez la version d’Uber Jar afin qu’elle pointe vers la version 6.5 LTS d’AEM. Mettez à jour toutes les API ou méthodes obsolètes afin qu’elles soient compatibles avec la version cible d’AEM. Recompilez la base de code sur la nouvelle version d’Uber Jar.
+AEM Uber jar inclut toutes les API d’AEM en tant que dépendance unique dans le fichier `pom.xml` de votre projet Maven. Il est toujours recommandé d’inclure Uber Jar en tant que dépendance unique au lieu d’inclure les dépendances d’API d’AEM individuelles. Lors de la mise à niveau de la base de code, modifiez la version d’Uber Jar afin qu’elle pointe vers la version 6.5 LTS d’AEM. Mettez à jour les API ou méthodes obsolètes afin qu’elles soient compatibles avec la version cible d’AEM. Recompilez la base de code par rapport à la nouvelle version du fichier Uber Jar.
 
 ```
 <dependency>
@@ -130,7 +139,7 @@ Vous trouverez ci-dessous les zones critiques de toute implémentation d’AEM q
   </tr>
   <tr>
    <td>Authentification, sécurité et autorisations</td>
-   <td>Tous les mécanismes d’authentification tels que LDAP/SAML doivent être validés.<br /> Les autorisations et les groupes doivent être testés sur les niveaux de création et de publication.<br />.</td>
+   <td>Tous les mécanismes d’authentification tels que LDAP/SAML doivent être validés.<br /> Les autorisations et les groupes doivent être testés aux niveaux Auteur et Publication<br />.</td>
   </tr>
   <tr>
    <td>Requêtes</td>

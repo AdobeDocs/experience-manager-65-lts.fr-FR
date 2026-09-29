@@ -5,13 +5,25 @@ feature: Content Fragments,GraphQL API
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: 9a953caa-47d3-4e06-a27d-2a0c3fc72597
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1577'
-ht-degree: 99%
-
+source-wordcount: '1576'
+ht-degree: 98%
 ---
-
 # Apprendre à utiliser GraphQL avec AEM – Exemples de contenu et de requêtes {#learn-graphql-with-aem-sample-content-queries}
 
 Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
@@ -142,7 +154,7 @@ Cet exemple de requête renvoie tous les `types` pour tous les schémas disponib
 
 ### Exemple de requête - Toutes les informations sur toutes les villes {#sample-all-information-all-cities}
 
-Pour récupérer toutes les informations sur toutes les villes, vous pouvez utiliser la requête de base :
+Pour récupérer toutes les informations sur toutes les villes, vous pouvez utiliser la requête de base :
 **Exemple de requête**
 
 ```graphql
@@ -1245,11 +1257,11 @@ Cette requête interroge :
 Cet exemple de requête interroge :
 
 * à la recherche d’un fragment de contenu unique de type `article` avec un chemin spécifique ;
-   * parmi ce chemin d’accès, tous les formats de contenu :
-      * HTML
-      * Texte (Markdown)
-      * Texte brut
-      * JSON
+  * parmi ce chemin d’accès, tous les formats de contenu :
+    * HTML
+    * Texte (Markdown)
+    * Texte brut
+    * JSON
 
 **Exemple de requête**
 
@@ -1275,7 +1287,7 @@ Cet exemple de requête interroge :
 Cet exemple de requête interroge :
 
 * à la recherche d’un seul fragment de contenu ;
-   * les détails du modèle de fragment de contenu sous-jacent.
+  * les détails du modèle de fragment de contenu sous-jacent.
 
 **Exemple de requête**
 
@@ -1299,7 +1311,7 @@ Cet exemple de requête interroge :
 Cette requête interroge :
 
 * à la recherche d’un fragment de contenu unique de type `article` avec un chemin spécifique ;
-   * parmi ce chemin d’accès, le chemin d’accès et l’auteur du fragment référencé (imbriqué).
+  * parmi ce chemin d’accès, le chemin d’accès et l’auteur du fragment référencé (imbriqué).
 
 >[!NOTE]
 >
@@ -1329,7 +1341,7 @@ Cette requête interroge :
 Cette requête interroge :
 
 * à la recherche de différents fragments de contenu de type `bookmark` ;
-   * avec des références de fragments à d’autres fragments du type de modèle spécifique `Article`.
+  * avec des références de fragments à d’autres fragments du type de modèle spécifique `Article`.
 
 >[!NOTE]
 >
@@ -1353,7 +1365,7 @@ Cette requête interroge :
 Cette requête interroge :
 
 * à la recherche de différents fragments de contenu de type `bookmark` ;
-   * avec des références de fragments à d’autres fragments de types de modèles spécifiques `Article` et `Adventure`.
+  * avec des références de fragments à d’autres fragments de types de modèles spécifiques `Article` et `Adventure`.
 
 >[!NOTE]
 >
@@ -1388,7 +1400,7 @@ Cette requête possède deux versions :
 Ces requêtes interrogent :
 
 * à la recherche de différents fragments de contenu de type `bookmark` ;
-   * avec des références de contenu à d’autres fragments.
+  * avec des références de contenu à d’autres fragments.
 
 #### Exemple de requête pour plusieurs fragments de contenu avec des références prérécupérées {#sample-wknd-multiple-fragments-prefetched-references}
 
@@ -1470,7 +1482,7 @@ La requête suivante renvoie toutes les `attachments`, un champ spécifique (sou
 Cette requête interroge :
 
 * à la recherche d’un fragment de contenu unique de type `bookmark` avec un chemin spécifique ;
-   * à l’intérieur de cela, les références intégrées RTE.
+  * à l’intérieur de cela, les références intégrées RTE.
 
 >[!NOTE]
 >
@@ -1516,7 +1528,7 @@ Cette requête interroge :
 Cette requête interroge :
 
 * à la recherche d’un fragment de contenu unique de type `article` avec un chemin spécifique ;
-   * à l’intérieur de ce chemin d’accès, les données sont liées à la variation : `variation1`.
+  * à l’intérieur de ce chemin d’accès, les données sont liées à la variation : `variation1`.
 
 **Exemple de requête**
 
@@ -1655,9 +1667,9 @@ Les exemples de requêtes sont basés sur la structure suivante, qui utilise :
 
 Pour les exemples de requêtes, utilisez les modèles de contenu suivants et leurs relations mutuelles (références ->) :
 
-* [Entreprise](#model-company)
+* [Société](#model-company)
 -> [Personne](#model-person)
--> [Distinction](#model-award)
+    -> [Récompense](#model-award)
 
 * [Ville](#model-city)
 

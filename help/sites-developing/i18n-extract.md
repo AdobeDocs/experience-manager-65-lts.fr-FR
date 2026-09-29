@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d6aa0ff8-01b8-48ef-93f3-59edb9cd50bd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
-
+source-wordcount: '482'
+ht-degree: 96%
 ---
-
 # Extraire des chaînes pour la traduction{#extracting-strings-for-translating}
 
 Utilisez xgettext-maven-plugin pour extraire du code source des chaînes qui doivent être traduites. Le plug-in Maven extrait les chaînes dans un fichier XLIFF que vous envoyez pour traduction. Les chaînes sont extraites à partir des emplacements suivants :
@@ -69,7 +78,7 @@ La partie modèle d’une règle est utilisée pour faire correspondre les noms 
 | &amp;ast; | Indique un fichier ordinaire sur le système de fichiers. |
 | aucune | L’absence de préfixe, ou un motif commençant par un nom de dossier ou de fichier, indique un fichier ordinaire sur le système de fichiers. |
 
-Lorsqu’il est utilisé dans un motif, le caractère / indique un sous-répertoire et le caractère &amp;ast; correspond à tous les éléments. Le tableau suivant répertorie plusieurs exemples de règles.
+Lorsqu’il est utilisé dans un motif, le caractère / indique un sous-répertoire et le caractère &amp;ast; correspond à tous les éléments. Le tableau suivant répertorie plusieurs exemples de règles.
 
 <table>
  <tbody>

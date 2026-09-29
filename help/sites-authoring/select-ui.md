@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 508f9dfb-1a4e-45bd-acdd-48cc910bdd0f
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 96%
-
+source-wordcount: '721'
+ht-degree: 84%
 ---
-
 # Choix de votre interface d’utilisation{#selecting-your-ui}
 
 L’interface utilisateur tactile de Adobe Experience Manager (AEM) est l’interface utilisateur standard. Cependant, il peut arriver que l’utilisateur ou l’utilisatrice souhaite passer à l’[interface utilisateur classique](/help/sites-classic-ui-authoring/classicui.md). Il existe plusieurs options pour ce faire.
@@ -19,13 +32,13 @@ L’interface utilisateur tactile de Adobe Experience Manager (AEM) est l’inte
 Il existe différents emplacements où vous pouvez définir l’interface utilisateur à utiliser :
 
 * [Configuration de l’interface utilisateur par défaut pour votre instance](#configuring-the-default-ui-for-your-instance)
-Cette option définit l’interface utilisateur par défaut à afficher lors de la connexion de l’utilisateur ou l’utilisatrice. L’utilisateur ou l’utilisatrice peut être en mesure d’ignorer ce paramètre et de sélectionner une autre interface utilisateur pour son compte ou la session en cours.
+Cette option définit l’interface utilisateur par défaut à afficher lors de la connexion de l’utilisateur. L’utilisateur ou l’utilisatrice peut être en mesure d’ignorer ce paramètre et de sélectionner une autre interface utilisateur pour son compte ou la session en cours.
 
-* [Définition de l’IU de création classique pour votre compte](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account) 
-Détermine l’interface utilisée par défaut lors de la modification des pages. Cependant, l’utilisateur ou l’utilisatrice peut ignorer ce paramètre et sélectionner une autre interface pour le compte ou la session en cours.
+* [Définition de la création dans l’interface utilisateur classique pour votre compte](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account)
+Définit l’interface utilisateur par défaut lors de la modification des pages, bien que l’utilisateur puisse la remplacer et sélectionner une autre interface utilisateur pour le compte ou la session en cours.
 
-* [Activation de l’IU classique pour la session en cours](#switching-to-classic-ui-for-the-current-session)
-Active l’IU classique pour la session en cours.
+* [Passage à l’IU classique pour la session en cours](#switching-to-classic-ui-for-the-current-session)
+Passe à l’IU classique de la session en cours.
 
 * Dans le cas de la [création de pages, le système effectue certains remplacements dans la relation avec l’interface utilisateur](#ui-overrides-for-the-editor).
 
@@ -74,7 +87,7 @@ Ainsi, si l’IU optimisée pour les écrans tactiles est activée sur un ordina
 
 * **URL**
 
-  Pour accéder à l’IU classique, utilisez l’URL de l’écran d’accueil à l’adresse `welcome.html`. Par exemple :
+  Pour accéder à l’IU classique, utilisez l’URL de l’écran d’accueil à l’adresse `welcome.html`. Par exemple :
 
   `https://localhost:4502/welcome.html`
 
@@ -103,21 +116,21 @@ Les paramètres définis par un utilisateur ou une utilisatrice, ou un administr
 
 * Lors de la création de pages :
 
-   * le recours à l’éditeur classique est forcé lors de l’accès à la page à l’aide de `cf#` dans l’URL. Par exemple :
-     `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
+  * le recours à l’éditeur classique est forcé lors de l’accès à la page à l’aide de `cf#` dans l’URL. Par exemple :
+    `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * Le recours à l’éditeur tactile est forcé lors de l’utilisation de `/editor.html` dans l’URL ou lors de l’utilisation d’un appareil tactile. Par exemple :
-     `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
+  * Le recours à l’éditeur tactile est forcé lors de l’utilisation de `/editor.html` dans l’URL ou lors de l’utilisation d’un appareil tactile. Par exemple :
+    `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Tout recours forcé à un certain éditeur est temporaire et valide uniquement pour la session en cours.
 
-   * Un jeu de cookies est défini selon qu’il s’agit de l’IU optimisée pour les écrans tactiles (`editor.html`) ou classique (`cf#`).
+  * Un jeu de cookies est défini selon qu’il s’agit de l’IU optimisée pour les écrans tactiles (`editor.html`) ou classique (`cf#`).
 
 * Lors de l’ouverture de pages par `siteadmin`, des vérifications sont effectuées pour contrôler l’existence des éléments suivants :
 
-   * Présence du cookie
-   * Préférence utilisateur
-   * En l’absence de tels paramètres, l’IU définie par défaut dans la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) du service **Mode d’IU de création de la gestion de contenu web** (service `AuthoringUIMode`) est utilisée.
+  * Présence du cookie
+  * Préférence utilisateur
+  * En l’absence de tels paramètres, l’IU définie par défaut dans la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) du service **Mode d’IU de création de la gestion de contenu web** (service `AuthoringUIMode`) est utilisée.
 
 >[!NOTE]
 >

@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 4d4c96ea-b7dd-49b9-86b5-2507e7518ba4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 99%
-
+source-wordcount: '905'
+ht-degree: 94%
 ---
-
 # Console Balisage de l’interface utilisateur (IU) classique{#classic-ui-tagging-console}
 
 Cette section concerne la console de balisage de l’interface utilisateur classique.
@@ -30,7 +39,7 @@ Pour accéder à la console de balisage de l’interface utilisateur classique 
 * en mode de création
 * connectez-vous avec des droits d’administration ;
 * accédez à la console
-par exemple, [https://localhost:4502/tagging](https://localhost:4502/tagging)
+par exemple, [](https://localhost:4502/tagging)
 
 ![Fenêtre de la console classique](assets/managing_tags_usingthetagasministrationconsole.png)
 
@@ -49,18 +58,19 @@ par exemple, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 1. Dans les deux cas, saisissez :
 
    * **Titre**
-(*obligatoire*) Titre de la balise affiché. Même s’il est possible d’utiliser n’importe quel caractère, il est recommandé de ne pas utiliser ces caractères spéciaux :
+     (*Obligatoire*) Titre affiché pour la balise. Tout caractère peut être saisi,
+     il est recommandé de ne pas utiliser les caractères spéciaux suivants :
 
-      * `colon (:)` - Délimiteur d’espace de noms
-      * `forward slash (/)` - Délimiteur de sous-balises
+     * `colon (:)` - Délimiteur d’espace de noms
+     * `forward slash (/)` - Délimiteur de sous-balises
 
      Si vous saisissez ces caractères, ils ne s’affichent pas.
 
    * **Name**
-(*obligatoire*) Nom du nœud de la balise.
+     (*Obligatoire*) Nom du nœud pour la balise .
 
    * **Description**
-(*facultatif*) Description de la balise.
+     (*Facultatif*) Description de la balise.
 
    * Sélectionnez **Créer**.
 
@@ -113,7 +123,7 @@ La boîte de dialogue **Déplacer la balise** se présente de la manière suivan
 
 ## Fusion de balises {#merging-tags}
 
-Il est également possible de recourir à la fusion de balises lorsqu’une taxonomie comporte des doublons. Lorsque la balise A est fusionnée dans la balise B, toutes les pages balisées avec la balise A sont balisées avec la balise B et la balise A n’est alors plus disponible pour les auteurs et les autrices.
+Il est également possible de recourir à la fusion de balises lorsqu’une taxonomie comporte des doublons. Lorsque la balise A est fusionnée dans la balise B, toutes les pages balisées avec la balise A sont balisées avec la balise B et la balise A n’est alors plus disponible pour les créateurs et les créatrices.
 
 Pour fusionner une balise dans une autre balise :
 

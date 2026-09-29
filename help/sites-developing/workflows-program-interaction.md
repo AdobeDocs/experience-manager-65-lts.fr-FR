@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7e14471e-8bb5-4cce-9175-3bbff9d803a9
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2035'
+source-wordcount: '2047'
 ht-degree: 80%
-
 ---
-
 # Interagir avec les workflows par programmation{#interacting-with-workflows-programmatically}
 
 Lorsque vous [personnalisez et optimisez vos workflows](/help/sites-developing/workflows-customizing-extending.md) vous pouvez accéder aux objets de workflow :
@@ -409,8 +418,8 @@ Pour modifier le **Titre du workflow** affiché dans l’onglet **Instances** de
 
 * avec les paramètres suivants :
 
-   * `action` : sa valeur doit être `UPDATE`.
-   * `workflowTitle` : titre du workflow
+  * `action` : sa valeur doit être `UPDATE`.
+  * `workflowTitle` : titre du workflow
 
 #### Modification du titre du workflow - REST à l’aide de cURL {#how-to-change-the-workflow-title-rest-using-curl}
 
@@ -491,8 +500,8 @@ Lors de la création d’un modèle :
 
 * L’éditeur de modèle de workflow exige que les modèles utilisent une structure de nœud spécifique sous `/var/workflow/models`. Le nœud parent du modèle doit être de type `cq:Page` avec un nœud `jcr:content` présentant les valeurs de propriété suivantes :
 
-   * `sling:resourceType`: `cq/workflow/components/pages/model`
-   * `cq:template`: `/libs/cq/workflow/templates/model`
+  * `sling:resourceType`: `cq/workflow/components/pages/model`
+  * `cq:template`: `/libs/cq/workflow/templates/model`
 
   Lorsque vous créez un modèle, vous devez d’abord créer ce nœud `cq:Page` et utiliser son nœud `jcr:content` comme parent du nœud de modèle.
 

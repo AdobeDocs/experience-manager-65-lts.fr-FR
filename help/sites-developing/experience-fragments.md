@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: bc621086-8128-4836-a580-dca99f61c439
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1779'
 ht-degree: 63%
-
 ---
-
 # Fragments d’expérience {#experience-fragments}
 
 ## Principes élémentaires {#the-basics}
@@ -64,11 +73,11 @@ Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts su
 Le rendu HTML est généré à l’aide des pipelines `Sling Rewriter`. Le pipeline est défini au niveau du chemin `/libs/experience-fragments/config/rewriter/experiencefragments`. Le transformateur HTML prend en charge les options suivantes :
 
 * `allowedCssClasses`
-   * Une expression RegEx correspondant aux classes CSS qui doivent être conservées dans le rendu final.
-   * Utile si le client souhaite supprimer certaines classes CSS spécifiques
+  * Une expression RegEx correspondant aux classes CSS qui doivent être conservées dans le rendu final.
+  * Utile si le client souhaite supprimer certaines classes CSS spécifiques
 * `allowedTags`
-   * Une liste des balises HTML autorisées dans le rendu final.
-   * Par défaut, le système autorise les balises suivantes sans configuration : html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, `noscript`, div, link et script.
+  * Une liste des balises HTML autorisées dans le rendu final.
+  * Par défaut, le système autorise les balises suivantes sans configuration : html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, `noscript`, div, link et script.
 
 Il est recommandé de configurer le module de réécriture à l’aide d’un recouvrement. Voir [Recouvrements](/help/sites-developing/overlays.md)
 
@@ -86,12 +95,12 @@ Les propriétés suivantes doivent être utilisées :
 
 * Pour extraire l’image :
 
-   * `fileReference`
-   * `fileName`
+  * `fileReference`
+  * `fileName`
 
 * Pour extraire le texte :
 
-   * `text`
+  * `text`
 
 Seuls les composants qui utilisent cette convention sont pris en compte.
 
@@ -114,7 +123,7 @@ Pour créer un modèle de fragment d’expérience détecté par l’assistant *
 
    1. Et le nom du modèle doit commencer par :
       `experience-fragments`
-Permet aux utilisateurs de créer des fragments d’expérience dans `/content/experience-fragments`, car la propriété `cq:allowedTemplates` de ce dossier inclut tous les modèles dont le nom commence par `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
+      Permet aux utilisateurs de créer des fragments d’expérience dans `/content/experience-fragments`, car la propriété `cq:allowedTemplates` de ce dossier inclut tous les modèles dont le nom commence par `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
 
 1. Les [modèles autorisés](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder) peuvent être configurés dans la console des fragments d’expérience.
 <!--
@@ -254,7 +263,7 @@ Pour que le service fonctionne, trois méthodes doivent à présent être implé
 * ` [shouldRewrite](#shouldrewrite)`
 * ` [rewriteLink](#rewritelink)`
 
-   * `rewriteLinkExample2`
+  * `rewriteLinkExample2`
 
 * ` [getPriority](#priorities-getpriority)`
 

@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
 exl-id: 96e44da3-da89-4671-a4fb-19ce1b9a38c4
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 100%
-
 ---
-
 # Compatibilité ascendante dans AEM 6.5{#backward-compatibility-in-aem}
 
 ## du commerce électronique {#overview}
@@ -21,7 +30,7 @@ Dans Adobe Experience Manager (AEM) 6.5, toutes les fonctionnalités ont été 
 
 Dans la majorité des cas, les utilisateurs et utilisatrices qui utilisent AEM 6.3 ne doivent pas changer le code ni les personnalisations lorsqu’ils effectuent la mise à niveau. Pour les utilisateurs et utilisatrices d’AEM 6.1 et 6.2, aucun autre changement significatif n’est à signaler lors d’une mise à niveau vers la version 6.3.
 
-Dans le cas d&#39;exceptions où les fonctionnalités n’ont pas pu rester rétrocompatibles, les problèmes liés à la non rétrocompatibilité avec les lots et le contenu peuvent être atténués. Pour ce faire, installez un package de compatibilité pour la version 6.4 (voir la procédure de configuration ci-dessous pour plus d’informations sur les modalités de téléchargement). Ce package de compatibilité aide habituellement à restaurer la compatibilité pour les applications conformes à AEM 6.4.
+Pour les cas exceptionnels où la rétrocompatibilité des fonctionnalités n’a pas pu être maintenue, les problèmes de rétrocompatibilité liés aux bundles et au contenu peuvent être atténués. Pour ce faire, installez un package de compatibilité pour la version 6.4 (voir la procédure de configuration ci-dessous pour plus d’informations sur les modalités de téléchargement). Ce package de compatibilité aide habituellement à restaurer la compatibilité pour les applications conformes à AEM 6.4.
 
 Le package de compatibilité vous permet d’exécuter AEM en mode de compatibilité et de différer le développement personnalisé conformément aux nouvelles fonctionnalités d’AEM :
 

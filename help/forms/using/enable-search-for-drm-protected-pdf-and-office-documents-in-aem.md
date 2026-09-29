@@ -6,13 +6,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5e9d3f3c-8fc4-4d01-9f1e-62d3c29ab9e5
-source-git-commit: cd6caaf9de907488db14df2a6396fa60efa2d42c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 98%
-
+source-wordcount: '672'
+ht-degree: 97%
 ---
-
 # Activer AEM pour rechercher des documents PDF protégés par la sécurité documentaire et des documents Microsoft Office{#enable-aem-to-search-document-security-protected-pdf-and-microsoft-office-documents}
 
 Adobe Experience Manager fournit une interface utilisateur pour rechercher et localiser diverses ressources stockées dans AEM. La recherche native est capable de rechercher et de localiser des ressources AEM et d’effectuer une recherche de texte dans divers formats de document couramment utilisés tels que les fichiers en texte brut, les documents Microsoft Office et les documents PDF. Vous pouvez également étendre la recherche native de sorte à ce qu’elle effectue une recherche de texte intégral dans des documents PDF protégés DRM et des documents Microsoft Office.
@@ -22,8 +35,8 @@ Effectuez les étapes suivantes pour permettre à AEM d’effectuer des recherc
 ## Avant de commencer {#before-you-start}
 
 * Installez et configurez AEM Forms Document Security.
-* Ajoutez le package sun.util.calendar à la liste blanche de la **Configuration du pare-feu de désérialisation.** La configuration est répertoriée à l’adresse `https://'[server]:[port]'/system/console/configMgr`.
-* Vérifiez que tous les bundles AEM sont en cours d’utilisation. Les lots sont répertoriés à l’adresse `https://'[server]:[port]'/system/console/bundles`. Si tous les lots ne sont pas actifs, patientez, puis vérifiez leur statut après quelques minutes.
+* Ajoutez le package sun.util.calendar à la place sur la liste autorisée de données **Configuration du pare-feu de désérialisation.**. La configuration est répertoriée à l’adresse `https://'[server]:[port]'/system/console/configMgr`.
+* Vérifiez que tous les bundles AEM sont en cours d’utilisation. Les bundles sont répertoriés à l’adresse `https://'[server]:[port]'/system/console/bundles`. Si tous les bundles ne sont pas actifs, patientez, puis vérifiez leur statut après quelques minutes.
 
 ## Établir une connexion sécurisée dans le workflow AEM Forms (AEM Forms on JEE) {#establish-a-secure-connection-within-aem-forms-workflow-aem-forms-on-jee}
 
@@ -46,7 +59,7 @@ Une connexion sécurisée permet un flux d’informations harmonieux entre AEM 
 
 ### Configurer le bundle de SDK client AEM Forms à l’aide de l’authentification mutuelle {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
 
-1. Activez l’authentification mutuelle pour AEM Forms sur JEE.
+1. Activez l’authentification mutuelle pour AEM Forms on JEE.
 1. Ouvrez le gestionnaire de configuration AEM et connectez-vous en tant qu’administrateur ou administratrice. L’URL par défaut est https://&lt;Nomserveur>:&lt;port>/lc/system/console/configMgr.
 1. Recherchez et ouvrez le bundle SDK client AEM Forms. Spécifiez la valeur des propriétés suivantes :
 

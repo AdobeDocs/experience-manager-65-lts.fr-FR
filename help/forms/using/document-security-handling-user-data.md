@@ -7,13 +7,29 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: c619a3b8-cd06-4f5d-af20-67f3a4bfcdce
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 100%
-
 ---
-
 # Document Security | Gestion des données utilisateur {#document-security-handling-user-data}
 
 AEM Forms Document Security vous permet de créer, de stocker et d’appliquer facilement des paramètres de sécurité prédéfinis à vos documents. Cela garantit que seuls les utilisateurs et utilisatrices autorisés peuvent utiliser les documents. Vous pouvez protéger les documents à l’aide de politiques. Une politique recense des informations telles que les paramètres de confidentialité et la liste des personnes autorisées. Vous pouvez appliquer une politique à un ou plusieurs documents et autoriser les utilisateurs et utilisatrices ajoutés dans le composant User Management d’AEM Forms JEE.

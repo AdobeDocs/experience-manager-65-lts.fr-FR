@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 027e086f-0883-45de-9531-b8119c99b118
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
-
+source-wordcount: '500'
+ht-degree: 98%
 ---
-
 # Personnaliser les vues des propriétés de la page{#customizing-views-of-page-properties}
 
 Chaque page comporte un ensemble de [propriétés](/help/sites-authoring/editing-page-properties.md) qui peuvent être affichées et modifiées par les utilisateurs et utilisatrices ; certaines sont requises lors de la création de la page (mode de création), d’autres peuvent être affichées et modifiées ultérieurement (mode d’édition). Ces propriétés de page sont définies et mises à la disposition des utilisateurs dans la boîte de dialogue (`cq:dialog`) du composant de page approprié.
@@ -34,13 +43,13 @@ Les champs doivent être configurés spécifiquement si une modification est req
 
 * Propriété de page qui doit être disponible en mode de création (assistant **Créer une page**, par exemple) :
 
-   * Nom : `cq:showOnCreate`
-   * Type : `Boolean`
+  * Nom : `cq:showOnCreate`
+  * Type : `Boolean`
 
 * Propriété de page qui doit être disponible en mode d’édition (par exemple, l’option **Afficher**/**Modifier** les **Propriétés**) :
 
-   * Nom : `cq:hideOnEdit`
-   * Type : `Boolean`
+  * Nom : `cq:hideOnEdit`
+  * Type : `Boolean`
 
 Reportez-vous, par exemple, aux paramètres des champs regroupés sous l’onglet **Autres titres et description** de l’onglet **De base** du composant Page de base. Ils sont visibles dans l’assistant **Créer une page**, étant donné que `cq:showOnCreate` a été défini sur `true` :
 
@@ -112,4 +121,4 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-authoring-extension-page-dialog sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).
+* [Ouvrez le projet aem-authoring-extension-page-dialog sur GitHub .](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)

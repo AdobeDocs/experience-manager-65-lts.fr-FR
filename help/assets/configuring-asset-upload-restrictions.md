@@ -6,13 +6,29 @@ role: Developer,Admin
 feature: Asset Management,Upload
 solution: Experience Manager, Experience Manager Assets
 exl-id: c29cc43b-4930-4c70-bc1f-d50951801b7f
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: cda65036-5305-4f01-89da-9b3506ae8c50
+    internal-label: Administration
+subfeature_v2:
+  - id: f1dc0c96-022d-4003-afbe-47bd40173c4a
+    internal-label: Upload assets
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '193'
 ht-degree: 100%
-
 ---
-
 # Configuration des restrictions de chargement des ressources {#configuring-asset-upload-restrictions}
 
 Vous pouvez configurer [!DNL Adobe Experience Manager Assets] de sorte à limiter le type de ressources que les utilisateurs peuvent charger. Cela permet d’éviter les chargements accidentels de fichiers à un format indésirable ou malveillants. Le service `Day CQ DAM Asset Upload Restriction` permet de contrôler le type de fichiers que les utilisateurs peuvent charger. Par défaut, [!DNL Assets] permet aux utilisateurs de charger des ressources quel que soit leur type MIME. Cependant, vous pouvez configurer le service pour empêcher les utilisateurs de charger des fichiers disposant de types MIME spécifiques.

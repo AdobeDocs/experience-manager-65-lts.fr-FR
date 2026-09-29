@@ -7,13 +7,31 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
 exl-id: 3a7b80b1-4b3e-400c-8753-c4453c0d79b3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 99%
-
+source-wordcount: '2301'
+ht-degree: 94%
 ---
-
 # Installer Workbench {#install-workbench}
 
 Ce document fournit des instructions d’installation et de configuration dʼAEM Forms Workbench. Le programme d’installation installe également Forms Designer.
@@ -77,10 +95,10 @@ Cette section décrit la configuration matérielle et logicielle requise et les 
 ### Configuration matérielle et logicielle minimale {#minimum-hardware-software-requirements}
 
 **Workbench**
-La configuration minimale recommandée est la suivante :
-Espace disque pour l’installation :
+La configuration minimale recommandée est la suivante :
+Espace disque pour l’installation :
 * 680 Mo pour Workbench seul.
-* 2.15 Go sur un seul disque pour une installation complète de Workbench , Designer et des exemples.
+* 2,15 Go sur un seul disque pour une installation complète de Workbench , Designer et des exemples.
 * 400 Mo pour les répertoires d’installation temporaires (200 Mo dans le répertoire utilisateur temporaire et 200 Mo dans le répertoire temporaire de Windows).
 
 >[!NOTE]
@@ -115,9 +133,9 @@ Le tableau ci-dessous contient une liste complète des scénarios possibles d’
   </tr>
   <tr>
    <td><p>Acrobat Pro ou Acrobat Pro Extended (inclut Designer)</p> </td>
-   <td><p>Aucune.<br /> 
+   <td><p>Aucun.<br /> 
 L’installation de Workbench détecte une instance de Designer sur votre ordinateur qui a été installée avec Acrobat Pro ou Acrobat Pro Extended.<br />
-Différentes versions de Designer peuvent coexister sur le même système (par exemple, Designer 6.4.x pour Workbench 6.4 et Designer 6.5.0.x pour Workbench 6.5). Il n’est pas nécessaire de désinstaller la version de Designer installée avec Acrobat 10 Pro, Acrobat 10 Pro Extended ou versions supérieures.
+Différentes versions de Designer peuvent coexister sur le même système, par exemple Designer 6.4.x pour Workbench 6.4 et Designer 6.5.0.x pour Workbench 6.5. Il n’est pas nécessaire de désinstaller la version de Designer installée avec Acrobat 10 Pro, Acrobat 10 Pro Extended ou une version ultérieure.
 <br /></p> </td>
   </tr>
   <tr>
@@ -133,7 +151,7 @@ Différentes versions de Designer peuvent coexister sur le même système (par e
 1. Dans la liste Programmes actuellement installés, sélectionnez **Adobe Designer**.
 1. Cliquez sur **Désinstaller**, puis sur **Oui**.
 
-## Installer Workbench {#installing-workbench}
+## Installation de Workbench {#installing-workbench}
 
 Ce chapitre décrit la procédure d’installation de Workbench.
 
@@ -179,7 +197,7 @@ Avant d’installer Workbench, vérifiez que votre environnement inclut les logi
 
 ## Processus de mise à niveau {#upgrading-processes}
 
-Les processus AEM Forms sur JEE peuvent être mis à niveau vers les applications AEM Forms à l’aide de l’Assistant de mise à niveau. Pour plus d’informations, consultez la documentation sur la Mise à niveau des artefacts hérités dans l’aide de Workbench.
+Les processus AEM Forms sur JEE peuvent être mis à niveau vers les applications AEM Forms à l’aide de l’Assistant de mise à niveau. Pour plus d’informations, consultez la documentation sur la mise à niveau des artefacts hérités dans l’aide de Workbench.
 
 ### Configuration d’un serveur et connexion à ce serveur {#configuring-and-logging-server}
 
@@ -199,7 +217,7 @@ Pour connecter Workbench au serveur AEM Forms via HTTPS, assurez-vous que l’a
 
 >[!NOTE]
 >
->[Workbench_EMPLACEMENT] représente le répertoire où vous avez installé Workbench. L’emplacement par défaut est C:\Program Files (x86)\Adobe Experience Manager Forms Workbench.
+>[Workbench_HOME] représente le répertoire où vous avez installé Workbench. L’emplacement par défaut est C:\Program Files (x86)\Adobe Experience Manager Forms Workbench.
 
 Assurez-vous de vous connecter à HTTPS en utilisant le nom spécifié dans le certificat. Ce nom est généralement le nom d’hôte complet.
 
@@ -210,11 +228,11 @@ Assurez-vous de vous connecter à HTTPS en utilisant le nom spécifié dans le c
    >
    >Pour exporter le certificat, ouvrez un navigateur web et connectez-vous à la console d’administration. Installez le certificat dans le navigateur, puis exportez-le depuis le navigateur vers un emplacement de stockage temporaire (ou directement vers le répertoire [Workbench_HOME]/workbench/jre/lib/security).
 
-1. Copiez le certificat dans le répertoire [Workbench_EMPLACEMENT]/workbench/jre/lib/security.
+1. Copiez le certificat dans le répertoire [Workbench_HOME]/workbench/jre/lib/security.
 
-1. Ouvrez une fenêtre d’invite de commande, accédez à [Workbench_EMPLACEMENT]/workbench/jre/bin, puis tapez la commande suivante :
+1. Ouvrez une fenêtre d’invite de commande, accédez à [Workbench_HOME]/workbench/jre/bin, puis tapez la commande suivante :
    `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`
-Où :
+   Où :
    * `changeit` est le mot de passe par défaut du stockage des clés cacerts.
    * certname est le certificat sélectionné à l’étape 1.
    * example est l’alias que vous avez choisi pour le certificat. Cette valeur peut être changée.
@@ -258,10 +276,10 @@ Pour les documents non passivés dans lesquels le nom de fichier et la racine de
 * Pour les modèles d’entrée non passivés, la mise en cache dépend de la racine de contenu et du nom de fichier à partir desquels le document a été généré.
 Le même cache est utilisé uniquement pour les requêtes présentant la même racine de contenu et le même nom de fichier de modèle.
 Les bonnes pratiques suivantes garantissent que le cache ne grandit pas sans fin lorsque des modèles générés dynamiquement sont transmis au service Forms :
-   * supprimez l’UUID ou transmettez le même UUID dans tous les modèles générés dynamiquement ;
-   * générez le document à partir des octets du modèle ou du même nom de fichier sur le disque.
+  * supprimez l’UUID ou transmettez le même UUID dans tous les modèles générés dynamiquement ;
+  * générez le document à partir des octets du modèle ou du même nom de fichier sur le disque.
 
-### Désinstaller Workbench {#uninstalling-workbench}
+### Désinstallation de Workbench {#uninstalling-workbench}
 
 Utilisez la fonction d’ajout ou de suppression de programmes du Panneau de configuration pour lancer le programme de désinstallation. Les applications Workbench et Designer ont des programmes de désinstallation distincts.
 

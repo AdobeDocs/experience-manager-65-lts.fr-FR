@@ -9,20 +9,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 62b6d299-f44e-4af3-b5e1-b0e92ca0598a
-source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '604'
 ht-degree: 50%
-
 ---
-
 # Tester les composants principaux dans We.Retail{#trying-out-core-components-in-we-retail}
 
 Les composants principaux sont des composants modernes et flexibles qui offrent une extensibilité facile et permettent une intégration simple à vos projets. Les composants principaux ont été créés selon plusieurs principes de conception majeurs tels que HTL, la convivialité prête à l’emploi, la configurabilité, le contrôle de version et l’extensibilité. Le site `We.Retail` repose sur des composants principaux.
 
 ## Faites un essai {#trying-it-out}
 
-1. Démarrez Adobe Experience Manager (AEM) avec l’exemple de contenu `We.Retail` et ouvrez la [&#x200B; Console des composants &#x200B;](/help/sites-authoring/default-components-console.md).
+1. Démarrez Adobe Experience Manager (AEM) avec l’exemple de contenu `We.Retail` et ouvrez la [ Console des composants ](/help/sites-authoring/default-components-console.md).
 
    **Navigation globale > Outils > Composants**
 
@@ -57,7 +66,7 @@ Les composants principaux sont des composants modernes et flexibles qui offrent 
 
 1. Sur la page de remerciement, sélectionnez le composant de texte et, dans le menu de modification du composant, cliquez sur l’icône Annuler l’héritage.
 
-   [`We.Retail` dispose d’une structure de site globalisée](/help/sites-developing/we-retail-globalized-site-structure.md) où le contenu est transmis du site de langue principale aux [&#x200B; Live Copies par le biais d’un mécanisme appelé héritage](/help/sites-administering/msm.md). Pour cette raison, l’héritage doit être annulé pour permettre à l’utilisateur de modifier manuellement le texte.
+   [`We.Retail` dispose d’une structure de site globalisée](/help/sites-developing/we-retail-globalized-site-structure.md) où le contenu est transmis du site de langue principale aux [ Live Copies par le biais d’un mécanisme appelé héritage](/help/sites-administering/msm.md). Pour cette raison, l’héritage doit être annulé pour permettre à l’utilisateur de modifier manuellement le texte.
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
@@ -86,10 +95,10 @@ Les composants principaux sont des composants modernes et flexibles qui offrent 
 
 ## Voir également {#further-information}
 
-Pour plus d’informations sur les composants principaux, consultez le guide de création [Composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/introduction) pour obtenir un aperçu des fonctionnalités. Consultez le guide [Développement des composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/overview) pour obtenir une présentation technique.
+Pour plus d’informations sur les composants principaux, consultez le guide de création [Composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/introduction) pour obtenir un aperçu des fonctionnalités. Consultez le guide [Développement des composants principaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) pour obtenir une présentation technique.
 
 
 
-Pour plus d’informations sur les composants principaux, consultez le document de création [Composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/introduction) pour obtenir un aperçu des fonctionnalités des composants principaux, et le document destiné aux développeurs [Développement des composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/overview) pour obtenir des détails techniques.
+Pour plus d’informations sur les composants principaux, consultez le document de création [Composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/introduction) pour obtenir un aperçu des fonctionnalités des composants principaux, et le document destiné aux développeurs [Développement des composants principaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) pour obtenir des détails techniques.
 
 Vous pouvez également vous renseigner sur les [modèles modifiables](/help/sites-developing/we-retail-editable-templates.md). Voir le document de création [Création de modèles de page](/help/sites-authoring/templates.md) ou la page de document de développement [Modèles - Modifiables](/help/sites-developing/page-templates-editable.md) pour obtenir des détails complets sur les modèles modifiables.

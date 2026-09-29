@@ -5,13 +5,21 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: e8f2a771-b2e3-4f3e-85a0-480f783fc313
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2662'
+source-wordcount: '2667'
 ht-degree: 95%
-
 ---
-
 # Personnaliser les composants principaux CIF d’Adobe Experience Manager {#customize-cif-components}
 
 Le [projet CIF Venia](https://github.com/adobe/aem-cif-guides-venia) est une base de code de référence pour l’utilisation des [composants principaux CIF](https://github.com/adobe/aem-core-cif-components). Dans ce tutoriel, vous allez étendre davantage le composant [Teaser de produit](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) pour afficher un attribut personnalisé d’Adobe Commerce. Vous allez également en apprendre davantage sur l’intégration de GraphQL entre Adobe Experience Manager (AEM) et Adobe Commerce, et sur les hooks d’extension fournis par les composants principaux CIF.
@@ -395,7 +403,7 @@ Dans ce cas, vous devez générer une bannière au-dessus du teaser pour indique
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. Ouvrez une nouvelle fenêtre de navigateur et accédez à AEM et à la **console OSGi** > **Statut** > **Modèles Sling** : [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels).
+1. Ouvrez une nouvelle fenêtre de navigateur et accédez à AEM et à la **console OSGi** > **Statut** > **Modèles Sling** : [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
 
 1. Recherchez `MyProductTeaserImpl` ; une ligne semblable à la suivante devrait apparaître :
 

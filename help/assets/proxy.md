@@ -1,18 +1,32 @@
 ---
 title: Développement de proxy [!DNL Assets]
-description: Un proxy est une instance  [!DNL Experience Manager]  qui utilise des programmes de travail par proxy pour le traitement des tâches. Découvrez comment configurer un proxy  [!DNL Experience Manager] , les opérations prises en charge et les composants de proxy, ainsi que comment développer un programme de travail par proxy personnalisé.
+description: Un proxy est une instance [!DNL Experience Manager] qui utilise des programmes de travail par proxy pour le traitement des tâches. Découvrez comment configurer un proxy [!DNL Experience Manager], les opérations prises en charge et les composants de proxy, ainsi que comment développer un programme de travail par proxy personnalisé.
 contentOwner: AG
 role: Admin,Developer
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
 exl-id: 8de16e9d-40b6-49d2-9e6b-1aba13137d78
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+subfeature_v2:
+  - id: cf4d26de-6586-4a7a-8ccb-6e8a29ee21ea
+    internal-label: Proxy workers
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 98%
-
+source-wordcount: '856'
+ht-degree: 95%
 ---
-
 # Développement de proxy [!DNL Assets] {#assets-proxy-development}
 
 [!DNL Adobe Experience Manager Assets] utilise un proxy pour distribuer le traitement de certaines tâches.
@@ -145,13 +159,13 @@ Pour configurer votre propre programme de travail de proxy personnalisé, vous d
 
 * Configurer et mettre en œuvre (à l’aide des événements Sling) :
 
-   * une rubrique de tâche personnalisée ;
-   * un gestionnaire d’événements personnalisé
+  * une rubrique de tâche personnalisée ;
+  * un gestionnaire d’événements personnalisé
 
 * Utilisez ensuite l’API JobService pour :
 
-   * distribuer votre tâche personnalisée au proxy ;
-   * gérer votre tâche
+  * distribuer votre tâche personnalisée au proxy ;
+  * gérer votre tâche
 
 * Si vous souhaitez utiliser le proxy d’un workflow, vous devez mettre en œuvre une étape externe personnalisée à l’aide de l’API WorkflowExternalProcess et de l’API JobService.
 

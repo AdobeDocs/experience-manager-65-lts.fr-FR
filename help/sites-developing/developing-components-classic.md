@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d44e6ea8-b4e5-4ed7-a6d0-de1da2709e18
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2339'
+source-wordcount: '2446'
 ht-degree: 99%
-
 ---
-
 # Développer des composants Adobe Experience Manager (AEM) (IU classique){#developing-aem-components-classic-ui}
 
 L’IU classique utilise ExtJS pour créer des widgets qui donnent l’aspect des composants. En raison de la nature de ces widgets, il existe des différences entre la manière dont les composants interagissent avec l’IU classique et l’[IU tactile](/help/sites-developing/developing-components.md).
@@ -63,20 +72,20 @@ Résumé :
 
 * `<cq:defineObjects />`
 
-   * `slingRequest` – Objet Requête enveloppé (`SlingHttpServletRequest`)
-   * `slingResponse` – Objet Réponse enveloppé (`SlingHttpServletResponse`)
-   * `resource` – Objet Ressource Sling (`slingRequest.getResource();`)
-   * `resourceResolver` – Objet Résolveur de ressources Sling (`slingRequest.getResoucreResolver();`)
-   * `currentNode`– Nœud JCR résolu pour la requête
-   * `log` – Enregistreur par défaut ().
-   * `sling` – Assistant de script Sling
-   * `properties` – Propriétés de la ressource gérée (`resource.adaptTo(ValueMap.class);`)
-   * `pageProperties` – Propriétés de la page de la ressource gérée
-   * `pageManager` – Gestionnaire de pages permettant d’accéder aux pages de contenu AEM (`resourceResolver.adaptTo(PageManager.class);`)
-   * `component` : objet du composant AEM en cours
-   * `designer` : objet Designer permettant de récupérer des informations de conception (`resourceResolver.adaptTo(Designer.class);`)
-   * `currentDesign` – Conception de la ressource gérée
-   * `currentStyle` – Style de la ressource gérée
+  * `slingRequest` – Objet Requête enveloppé (`SlingHttpServletRequest`)
+  * `slingResponse` – Objet Réponse enveloppé (`SlingHttpServletResponse`)
+  * `resource` – Objet Ressource Sling (`slingRequest.getResource();`)
+  * `resourceResolver` – Objet Résolveur de ressources Sling (`slingRequest.getResoucreResolver();`)
+  * `currentNode`– Nœud JCR résolu pour la requête
+  * `log` – Enregistreur par défaut ().
+  * `sling` – Assistant de script Sling
+  * `properties` – Propriétés de la ressource gérée (`resource.adaptTo(ValueMap.class);`)
+  * `pageProperties` – Propriétés de la page de la ressource gérée
+  * `pageManager` – Gestionnaire de pages permettant d’accéder aux pages de contenu AEM (`resourceResolver.adaptTo(PageManager.class);`)
+  * `component` : objet du composant AEM en cours
+  * `designer` : objet Designer permettant de récupérer des informations de conception (`resourceResolver.adaptTo(Designer.class);`)
+  * `currentDesign` – Conception de la ressource gérée
+  * `currentStyle` – Style de la ressource gérée
 
 ### Accès au contenu {#accessing-content}
 
@@ -164,8 +173,8 @@ Pour développer de nouveaux composants pour AEM à partir d’un composant exis
 
    * ajout d’un champ dans la boîte de dialogue
 
-      * `cq:dialog` : boîte de dialogue pour l’interface utilisateur tactile
-      * `dialog` : boîte de dialogue pour l’interface utilisateur classique
+     * `cq:dialog` : boîte de dialogue pour l’interface utilisateur tactile
+     * `dialog` : boîte de dialogue pour l’interface utilisateur classique
 
    * Remplacer le fichier `.jsp` (lui donner le nom du nouveau composant) ou
    * Retravailler complètement le composant, si vous le souhaitez
@@ -278,16 +287,16 @@ Pour créer le composant, nous utilisons le composant textimage standard que nou
 
    * Nom du composant
 
-      * Définissez `jcr:description` sur `Text Image Component (Extended)`.
-      * Définissez `jcr:title` sur `Text Image (Extended)`.
+     * Définissez `jcr:description` sur `Text Image Component (Extended)`.
+     * Définissez `jcr:title` sur `Text Image (Extended)`.
 
    * Groupe où le composant est répertorié dans le sidekick (laisser tel quel)
 
-      * Conservez la définition de `componentGroup` sur `General`.
+     * Conservez la définition de `componentGroup` sur `General`.
 
    * Composant parent pour le nouveau composant (le composant textimage standard)
 
-      * Définissez `sling:resourceSuperType` sur `foundation/components/textimage`.
+     * Définissez `sling:resourceSuperType` sur `foundation/components/textimage`.
 
    Après cette étape, le nœud de composant ressemble à ceci :
 
@@ -305,24 +314,24 @@ Pour créer le composant, nous utilisons le composant textimage standard que nou
 
    * Pour les deux premiers onglets (tab1 et tab2) :
 
-      * Modifiez xtype en cqinclude (pour hériter du composant standard).
-      * Ajoutez une propriété path avec les valeurs `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` et `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`, respectivement.
-      * Supprimez toutes les autres propriétés ou sous-nœuds.
+     * Modifiez xtype en cqinclude (pour hériter du composant standard).
+     * Ajoutez une propriété path avec les valeurs `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` et `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`, respectivement.
+     * Supprimez toutes les autres propriétés ou sous-nœuds.
 
    * Pour tab3 :
 
-      * Ne modifiez pas les propriétés et les sous-nœuds.
-      * Ajoutez une définition de champ à `tab3/items`, la position du nœud de type `cq:Widget`.
-      * Définissez les propriétés suivantes (du type String) pour le nouveau nœud `tab3/items/position` :
+     * Ne modifiez pas les propriétés et les sous-nœuds.
+     * Ajoutez une définition de champ à `tab3/items`, la position du nœud de type `cq:Widget`.
+     * Définissez les propriétés suivantes (du type String) pour le nouveau nœud `tab3/items/position` :
 
-         * `name`: `./imagePosition`
-         * `xtype`: `selection`
-         * `fieldLabel`: `Image Position`
-         * `type`: `select`
+       * `name`: `./imagePosition`
+       * `xtype`: `selection`
+       * `fieldLabel`: `Image Position`
+       * `type`: `select`
 
-      * Ajoutez un sous-nœud `position/options` de type `cq:WidgetCollection` pour représenter les deux options de positionnement d’images. En dessous, créez deux nœuds, o1 et o2, de type `nt:unstructured`.
-      * Pour le nœud `position/options/o1`, définissez les propriétés : `text` sur `Left` et `value` sur `left.`
-      * Pour le nœud `position/options/o2`, définissez les propriétés : `text` sur `Right` et `value` sur `right`.
+     * Ajoutez un sous-nœud `position/options` de type `cq:WidgetCollection` pour représenter les deux options de positionnement d’images. En dessous, créez deux nœuds, o1 et o2, de type `nt:unstructured`.
+     * Pour le nœud `position/options/o1`, définissez les propriétés : `text` sur `Left` et `value` sur `left.`
+     * Pour le nœud `position/options/o2`, définissez les propriétés : `text` sur `Right` et `value` sur `right`.
 
    * Supprimez tab4.
 

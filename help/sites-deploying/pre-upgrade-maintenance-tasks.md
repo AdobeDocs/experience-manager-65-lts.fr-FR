@@ -10,13 +10,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
-source-git-commit: c93d78653e192d041830a84ea24fe5d3edde29e0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1332'
 ht-degree: 69%
-
 ---
-
 # Tâches de maintenance avant la mise à niveau{#pre-upgrade-maintenance-tasks}
 
 Avant de commencer la mise à niveau, il est important d’effectuer ces tâches de maintenance pour vous assurer que le système est prêt et peut être restauré en cas de problème :
@@ -38,7 +47,7 @@ Avant de commencer la mise à niveau, il est important d’effectuer ces tâches
 
 ## Définitions d’index {#index-definitions}
 
-Assurez-vous d’avoir installé les définitions d’index requises publiées avec le dernier pack de services AEM 6.5. (Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/release-notes/release-notes) consultez les notes de mise à jour du pack de services AEM 6.5 ).
+Assurez-vous d’avoir installé les définitions d’index requises publiées avec le dernier pack de services AEM 6.5. (Pour plus d’informations](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/release-notes/release-notes) consultez les notes de mise à jour du pack de services AEM 6.5 [).
 
 ## Vérification de la disponibilité de l’espace disque nécessaire {#ensure-sufficient-disk-space}
 

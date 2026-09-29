@@ -5,17 +5,33 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: e485100f-3e16-4fd4-a8ce-af771d765dd1
-source-git-commit: 989d83cfc56f7a7d4e2aea5a7ac1ca444d505859
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1137'
-ht-degree: 11%
+ht-degree: 13%
 ---
 # Correctifs LTS Adobe Experience Manager Forms 6.5{#aem-form-hotfix}
 
 Cet article répertorie les correctifs critiques implémentés pour résoudre les problèmes connus, améliorer la stabilité du système et améliorer les performances globales d’AEM Forms 6.5 LTS.
 
 
-Cet article s’applique à AEM Forms 6.5 LTS. Pour les déploiements d’AEM 6.5 (non-LTS), consultez [Correctifs Adobe Experience Manager Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/release-notes/aem-forms-hotfix).
+Cet article s’applique à AEM Forms 6.5 LTS. Pour les déploiements d’AEM 6.5 (non-LTS), consultez [Correctifs Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix).
 
 >[!NOTE]
 >
@@ -62,7 +78,7 @@ Cet article s’applique à AEM Forms 6.5 LTS. Pour les déploiements d’AEM 6.
     <li>Patientez jusqu’à ce que le journal se dépose et que le lot s’affiche comme <strong>Actif</strong>.</li>
     </ol>
     <p><strong>Étape 3 : mettre à jour le programme d’installation d’AEM Forms Workbench</strong></p>
-    <p>Vous devez effectuer une mise à jour vers le dernier programme d’installation d’AEM Forms Workbench. Téléchargez-le à partir du <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/fd/workbench/6-5-0-20260902-1-45/Workbench_DVD.zip">programme d’installation d’AEM Forms Workbench</a>.</p>
+    <p>Vous devez effectuer une mise à jour vers le dernier programme d’installation d’AEM Forms Workbench. Téléchargez-le à partir du <a href="https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/fd/workbench/6-5-0-20260902-1-45/Workbench_DVD.zip">programme d’installation d’AEM Forms Workbench</a>.</p>
     <p><strong>Étape 4 : mettre à jour les fichiers de bibliothèque cliente (développeurs)</strong></p>
     <p>Ce correctif comprend une mise à jour majeure de la <code>adobe-livecycle-client.jar</code> de bibliothèque cliente SDK (voir <a href="/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files">Inclure des fichiers de bibliothèque Java AEM Forms</a>). Si votre projet utilise ce fichier JAR, mettez à jour <code>adobe-livecycle-client.jar</code> dans le chemin d’accès aux classes de votre projet après avoir installé le correctif. La dernière version est disponible à l’adresse <code>&lt;AEM_Forms_Installation_dir&gt;\sdk\client-libs\common\adobe-livecycle-client.jar</code>.</p>
     <p>Le correctif est cumulatif. Vous pouvez donc l’appliquer au pack de services 2 LTS d’AEM Forms 6.5 ou à un pack de services antérieur sans installer le pack de services 2 au préalable.</p>
@@ -90,7 +106,7 @@ Cet article s’applique à AEM Forms 6.5 LTS. Pour les déploiements d’AEM 6.
     <td>
     <ul>
     <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-correctif-on-add-on/adobe-aemfd-win-pkg-6.1.176-RHF-002.zip">Correctif2 pour le pack de services 6.5 LTS d’AEM sous Windows</a></li>
-    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]correctif-sur-modulecomplémentaire/adobe-aemfd-linux-pkg-6.1.176-RHF-002.zip">Hotfix2 pour AEM Service Pack 6.5 LTS sous Linux</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]correctif-sur-module complémentaire/adobe-aemfd-linux-pkg-6.1.176-RHF-002.zip">Hotfix2 pour AEM Service Pack 6.5 LTS sous Linux</a></li>
      <li>MacOS - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-osx-pkg-6.1.176-RHF-002.zip">correctif2 pour AEM Service Pack 6.5 LTS sur MacOS</a></li>
     <td>
     <ul>

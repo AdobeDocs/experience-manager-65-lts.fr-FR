@@ -9,13 +9,29 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
 exl-id: b41e5e15-eb7f-4404-82a0-2ba034694577
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 100%
-
+ht-degree: 88%
 ---
-
 # Configurer le planificateur de synchronisation {#configuring-the-synchronization-scheduler}
 
 Par défaut, le planificateur de synchronisation s’exécute toutes les 3 minutes pour synchroniser toutes les ressources modifiées et mises à jour dans le référentiel via LiveCycle Workbench 11. Les applications contenant des formulaires ou des ressources sont visibles dans l’interface utilisateur d’AEM Forms une fois le processus de synchronisation terminé.
@@ -26,7 +42,7 @@ Effectuez les étapes suivantes pour modifier l’intervalle du planificateur de
 
 1. Connectez-vous à AEM Configuration Manager. L’URL de Configuration Manager est la suivante : `https://'[server]:[port]'/lc/system/console/configMgr`.
 
-1. Recherchez et ouvrez le lot **FormsManagerConfiguration**.
+1. Recherchez et ouvrez le bundle **FormsManagerConfiguration**.
 
 1. Choisissez une nouvelle valeur pour l’option de fréquence du **planificateur de synchronisation**.
 
@@ -52,7 +68,7 @@ Vous pouvez utiliser l’option **Synchroniser les ressources à partir du réf�
 
 Vous pouvez créer de nouvelles applications dans le concepteur de workflow (LiveCycle Workbench).
 
-Si une application que vous venez de créer et un dossier se trouvant sous /content/dam/formsanddocuments portent le même nom, une erreur « *Une ressource portant le même nom que l’application existe déjà au niveau racine.* » est consignée.
+Si une application que vous venez de créer et un dossier se trouvant sous /content/dam/formsanddocuments portent le même nom, une erreur « *Une ressource portant le même nom que cette application existe déjà au niveau racine.* » s’affiche. est consignée.
 
 Pour résoudre le conflit, renommez l’application puis synchronisez manuellement les actifs.
 

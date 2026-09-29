@@ -8,13 +8,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 23be6248-1013-488e-91e6-ac1f6fb7da50
-source-git-commit: c714e51f0c0368988ce552969747ab5fce5c186f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 48%
-
+source-wordcount: '816'
+ht-degree: 42%
 ---
-
 # Propriétés de configuration de Correspondence Management {#correspondence-management-configuration-properties}
 
 Pour configurer ces propriétés, ouvrez l’URL suivante dans un navigateur : `https://<server>:<port>/<contextPath>/system/console/configMgr` et sélectionnez **Configurations de Correspondence Management**.
@@ -152,13 +165,13 @@ Correspondence Management possède les propriétés de configuration suivantes 
   <tr>
    <td><p>Formats d’affichage des données</p> </td>
    <td><p>Indique un format d’affichage spécifique aux paramètres régionaux pour les données.</p> </td>
-   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator= ; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
+   <td><p>locale=fr_FR ; dateFormat=dd-MM-yyyy ; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE ; dateFormat=dd-MM-yyyy ; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR ; dateFormat=dd-MM-yyyy ; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP ; dateFormat=dd-MM-yyyy ; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
    <td><p>--</p> </td>
   </tr>
   <tr>
    <td><p>Format de modification des données</p> </td>
    <td><p>Format de modification des données. Utilisé lors de l’écriture de données sous forme de chaîne ou de l’analyse de données de chaîne.</p> </td>
-   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
+   <td><p>locale=fr_FR ; dateFormat=dd-MM-yyyy ; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
    <td>--<p> </p> </td>
   </tr>
   <tr>
@@ -270,7 +283,7 @@ Correspondence Management possède les propriétés de configuration suivantes 
    <td><p>true/false</p> <p> </p> </td>
   </tr>
   <tr>
-   <td>Dossier temp </td>
+   <td>Dossier temp</td>
    <td>Emplacement du dossier temporaire.</td>
    <td>acm.tpmFolder</td>
    <td> </td>

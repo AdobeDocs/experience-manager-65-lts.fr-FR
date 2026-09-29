@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 03890f75-bfbc-4f73-85ae-07e991728115
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1135'
 ht-degree: 100%
-
 ---
-
 # Publier un e-mail sur des services de messagerie{#publishing-an-email-to-email-service-providers}
 
 Vous pouvez diffuser des newsletters sur des services de messagerie, tels qu’ExactTarget et Silverpop Engage. Ce document décrit comment configurer AEM pour publier une newsletter sur ces services de messagerie.
@@ -27,7 +38,7 @@ Vous pouvez diffuser des newsletters sur des services de messagerie, tels qu’E
 Pour publier votre e-mail auprès du fournisseur de services de messagerie, vous devez effectuer les étapes suivantes :
 
 1. Créez un e-mail.
-1. Appliquez la configuration du service de messagerie à cet e-mail. 
+1. Appliquez la configuration du service de messagerie à cet e-mail.
 1. Publiez l&#39;e-mail.
 
 >[!NOTE]
@@ -145,7 +156,7 @@ Les e-mails/newsletters peuvent être publiés sur votre service de messagerie e
 1. Avant de publier un e-mail, vérifiez que vous avez appliqué la configuration correcte à celui-ci.
 1. Cliquez sur **Publier**. Vous accédez alors à la fenêtre **Publier la newsletter dans le fournisseur de service d’e-mail**.
 1. Renseignez le champ **Nom de la newsletter** L&#39;e-mail et la newsletter sont publiés sur le fournisseur de services de messagerie avec ce nom. Si aucun nom n’est indiqué, l’e-mail est publié avec le nom de la page de la newsletter défini dans AEM.
-1. Cliquez sur **Publier**. 
+1. Cliquez sur **Publier**.
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 

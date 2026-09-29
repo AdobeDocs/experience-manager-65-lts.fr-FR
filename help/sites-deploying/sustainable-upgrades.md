@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
 exl-id: 5a93918b-3b5f-49e0-9283-86776f9d8fb4
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 92%
-
 ---
-
 # Mises à niveau possibles{#sustainable-upgrades}
 
 ## Framework de personnalisation {#customization-framework}
@@ -25,13 +34,13 @@ Il existe deux composants du framework de personnalisation : la **surface de l�
 
 #### Surface de l’API {#api-surface}
 
-Dans les versions précédentes d’Adobe Experience Manager (AEM), de nombreuses API étaient exposées via le Jar Uber. Certaines de ces API n’étaient pas destinées à être utilisées par les clientes et clients, mais étaient exposées pour prendre en charge la fonctionnalité AEM dans les lots. À l’avenir, les API Java™ seront accompagnées de la mention publique ou privée pour indiquer aux clientes et clients les API qui peuvent être utilisées en toute sécurité dans le contexte des mises à niveau. Voici d’autres observations :
+Dans les versions précédentes d’Adobe Experience Manager (AEM), de nombreuses API étaient exposées via le Jar Uber. Certaines de ces API n’étaient pas destinées à être utilisées par les clientes et clients, mais étaient exposées pour prendre en charge la fonctionnalité AEM dans les bundles. À l’avenir, les API Java™ seront accompagnées de la mention publique ou privée pour indiquer aux clientes et clients les API qui peuvent être utilisées en toute sécurité dans le contexte des mises à niveau. Voici d’autres observations :
 
-* Les API Java™ accompagnées de la mention `Public` peuvent être utilisées et référencées par des lots d’implémentation personnalisés.
+* Les API Java™ accompagnées de la mention `Public` peuvent être utilisées et référencées par des bundles d’implémentation personnalisés.
 
 * Les API publiques sont rétrocompatibles avec l’installation d’un package de compatibilité.
 * Le package de compatibilité contient un JAR Uber de compatibilité pour garantir la rétrocompatibilité.
-* Les API Java™ accompagnées de la mention `Private` sont destinées aux seuls lots internes AEM. Elles ne peuvent pas être utilisées par des lots personnalisés.
+* Les API Java™ accompagnées de la mention `Private` sont destinées aux seuls bundles internes AEM. Elles ne peuvent pas être utilisées par des bundles personnalisés.
 
 >[!NOTE]
 >
@@ -85,7 +94,7 @@ Les mixins appliqués dans CRXDE Lite affichent en grisé les nœuds de contenu
 
 AEM 6.5 est fourni avec un contrôle d’intégrité permettant d’informer les clientes et clients si du contenu référencé ou recouvert serait utilisé d’une manière non conforme à la classification du contenu.
 
-La **Vérification de l’accès au contenu Sling/Granite** est un nouveau contrôle d’intégrité qui surveille le référentiel afin de détecter si du code client accède, de manière non autorisée, à des nœuds protégés dans AEM.
+La **Vérification de l’accès au contenu Sling/Granite** est un nouve  d’intégrité qui surveille le référentiel afin de détecter si du code client accède, de manière non autorisée, à des nœuds protégés dans AEM.
 
 Cela analyse le dossier **/apps** et prend généralement plusieurs secondes.
 

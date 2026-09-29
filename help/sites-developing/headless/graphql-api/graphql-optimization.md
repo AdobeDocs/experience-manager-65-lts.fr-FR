@@ -5,13 +5,39 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Developer
 exl-id: c2beb0fa-ff6c-4e42-842d-6a73311f4740
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 99%
-
+source-wordcount: '1995'
+ht-degree: 97%
 ---
-
 # Optimisation des requêtes GraphQL {#optimizing-graphql-queries}
 
 >[!NOTE]
@@ -146,7 +172,7 @@ AEM propose deux méthodes d’optimisation des requêtes GraphQL :
 * [Le filtrage hybride.](#use-aem-graphql-hybrid-filtering)
 * La [pagination](#use-aem-graphql-pagination).
 
-   * Le [tri](#use-graphql-sorting) n’est pas directement lié à l’optimisation, mais est lié à la pagination.
+  * Le [tri](#use-graphql-sorting) n’est pas directement lié à l’optimisation, mais est lié à la pagination.
 
 Chaque approche comporte ses propres cas d’utilisation et ses propres limites. Cette section fournit des informations sur le filtrage hybride et la pagination, ainsi que sur certaines des [bonnes pratiques](#best-practices) à appliquer pour l’optimisation des requêtes GraphQL.
 
@@ -185,7 +211,7 @@ GraphQL dans AEM prend en charge deux types de pagination :
 
 * [pagination basée sur les limites/décalages](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
 Il est utilisé pour les requêtes de liste qui se terminent par `List`, par exemple `articleList`.
-Pour l’utiliser, vous devez indiquer la position du premier élément à renvoyer (la `offset`) et le nombre d’éléments à renvoyer (la `limit` ou la taille de page).
+Pour l’utiliser, vous devez indiquer la position du premier élément à renvoyer (le `offset`) et le nombre d’éléments à renvoyer (la variable `limit`, ou la taille de la page).
 
 * [pagination basée sur le curseur](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (représentée par `first` et `after`)
 Cette action fournit un identifiant unique pour chaque élément, également appelé curseur.

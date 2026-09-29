@@ -5,14 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 5670fede-4567-445e-8eeb-84349405db0e
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 98%
-
 ---
-
 # Rapports personnalisés dans Process Reporting{#custom-reports-in-process-reporting}
 
 Vous pouvez utiliser l’interface REST de QueryBuilder ou créer un service OSGi à l’aide de l’API QueryBuilder pour créer un rapport personnalisé.
@@ -33,7 +48,7 @@ L’interface REST de CRX QueryBuilder offre la fonctionnalité QueryBuilder de
 1. Accédez à l’URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Créez une requête basée sur la structure du nœud de stockage et les propriétés de nœud de Process Reporting.
 
-   Vous pouvez définir des paramètres facultatifs pour spécifier le décalage, la limite, les accès et les propriétés. Vous pouvez coder en dur les arguments pour les rapports statiques et récupérer les paramètres de l’interface utilisateur pour les rapports dynamiques.
+   Vous pouvez définir des paramètres facultatifs pour spécifier le décalage, la limite, les hits et les propriétés. Vous pouvez coder en dur les arguments pour les rapports statiques et récupérer les paramètres de l’interface utilisateur pour les rapports dynamiques.
 
    Pour récupérer tous les noms de processus, la requête doit être :
 
@@ -132,9 +147,9 @@ Avant de créer un service à l’aide de l’API Query Builder, vous devez [cr
                        out.write(row.toString().getBytes());
    ```
 
-1. Utilisez l’élément `org.apache.felix maven-bundle-plugin` pour créer un groupement OSGi pour le servlet.
+1. Utilisez l’élément `org.apache.felix maven-bundle-plugin` pour créer un bundle OSGi pour le servlet.
 
-1. Déployez le groupement sur le serveur CRX.
+1. Déployez le bundle sur le serveur CRX.
 
 ### Exemple de service {#service-example}
 
@@ -639,7 +654,7 @@ Les conditions préalables à la création d’une interface utilisateur distinc
    * **description** : spécifie la description d’une ligne du rapport. Vous pouvez laisser le champ de description vide.
    * **icon** : indique l’image qui représente le rapport de manière graphique. Vous pouvez laisser le champ d’icône vide.
 
-   ![Propriétés du nœud &#x200B;](assets/node_properties_new.png)
+   ![Propriétés du nœud ](assets/node_properties_new.png)
 
    Propriétés du nœud
 

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7fd478a6-ddc6-4c7f-b09b-e4de6ec0e897
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1091'
 ht-degree: 100%
-
 ---
-
 # Développement sur AEM – Conseils et bonnes pratiques{#aem-development-guidelines-and-best-practices}
 
 ## Consignes relatives à l’utilisation des modèles et des composants {#guidelines-for-using-templates-and-components}
@@ -63,21 +72,21 @@ Par exemple :
 
   Cette procédure suppose de superposer une définition de composant :
 
-   * Créez un dossier de composants dans `/apps/<website-name>/components/<MyComponent>` en copiant un composant existant :
+  * Créez un dossier de composants dans `/apps/<website-name>/components/<MyComponent>` en copiant un composant existant :
 
-      * Par exemple, pour personnaliser le composant Texte, copiez :
+    * Par exemple, pour personnaliser le composant Texte, copiez :
 
-         * de `/libs/foundation/components/text`
-         * vers `/apps/myProject/components/text`
+      * de `/libs/foundation/components/text`
+      * vers `/apps/myProject/components/text`
 
 * [Personnalisation des pages affichées par le gestionnaire d’erreurs](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
   Ce cas implique le recouvrement d’un servlet :
 
-   * Dans le référentiel, copiez un ou plusieurs scripts par défaut :
+  * Dans le référentiel, copiez un ou plusieurs scripts par défaut :
 
-      * de `/libs/sling/servlet/errorhandler/`
-      * vers `/apps/sling/servlet/errorhandler/`
+    * de `/libs/sling/servlet/errorhandler/`
+    * vers `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >

@@ -5,13 +5,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 338ea82e-c248-4118-9d42-e268d6396e65
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2116'
 ht-degree: 100%
-
 ---
-
 # Concepts de configuration de base{#basic-configuration-concepts}
 
 Adobe Experience Manager (AEM) est installé avec les paramètres par défaut, ce qui le rend prêt à l’emploi. Cependant, vous pouvez configurer AEM selon vos besoins.
@@ -26,7 +35,7 @@ Selon la configuration spécifique, ces modifications peuvent être effectuées 
 
 * **Console Web Adobe CQ**
 
-  Il s’agit d’un emplacement standard pour la configuration des lots et services OSGi.
+  Il s’agit d’un emplacement standard pour la configuration des bundles et services OSGi.
 
   Consultez [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour avoir plus de détails et connaître les pratiques recommandées.
 
@@ -158,9 +167,9 @@ Pour plus d’informations, consultez [Réplication](/help/sites-deploying/repli
 
 ### Paramètres de configuration OSGi {#osgi-configuration-settings}
 
-L’[OSGi](https://www.osgi.org/) est un élément fondamental de la pile technologique d’AEM. Il est utilisé pour contrôler les lots composites d’AEM et leur configuration.
+L’[OSGi](https://www.osgi.org/) est un élément fondamental de la pile technologique d’AEM. Il est utilisé pour contrôler les bundles composites d’AEM et leur configuration.
 
-Pour obtenir la liste des différents lots pertinents pour la mise en œuvre du projet (répertoriés en fonction du lot), consultez [Paramètres de configuration OSGi](/help/sites-deploying/osgi-configuration-settings.md). Les paramètres répertoriés ne doivent pas tous être ajustés, certains sont mentionnés pour vous aider à comprendre comment fonctionne AEM.
+Pour obtenir la liste des différents bundles pertinents pour la mise en œuvre du projet (répertoriés en fonction du bundle), consultez [Paramètres de configuration OSGi](/help/sites-deploying/osgi-configuration-settings.md). Les paramètres répertoriés ne doivent pas tous être ajustés, certains sont mentionnés pour vous aider à comprendre comment fonctionne AEM.
 
 Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Consultez la section [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
 
@@ -174,7 +183,7 @@ Pour la gestion des utilisateurs et utilisatrices dans AEM (y compris l’attrib
 
 ### Configurer le Dispatcher {#configuring-the-dispatcher}
 
-Dispatcher est un outil d’Adobe Experience Manager pour la mise en cache ou l’équilibrage de charge, ou les deux. Il peut être utilisé avec un serveur web de niveau entreprise.
+Dispatcher est un outil d’Adobe Experience Manager pour la mise en cache ou l’équilibrage de charge, ou les deux. Il peut être utilisé avec un serveur web d’entreprise.
 
 Consultez [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) pour plus de détails, notamment la [Configuration de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr) pour plus informations sur la configuration.
 
@@ -250,7 +259,7 @@ Pour éviter de telles exceptions, procédez comme suit :
 
    Ce contrôle dépend de la plateforme sur laquelle votre instance est en cours d’exécution. Des utilitaires tels qu’lsof (UNIX®) ou Process Explorer (Windows) peuvent être utilisés.
 
-   Cette valeur doit être contrôlée au cours du développement et du test de façon à :
+   Cette valeur doit être  au cours du développement et du test de façon à :
 
    * confirmer que les fichiers sont fermés selon les besoins ;
    * pour déterminer la valeur maximale nécessaire (selon diverses circonstances)
@@ -299,11 +308,11 @@ Les impressions de page s’affichent dans la colonne **Impressions** de la cons
 
 * Sur l’instance de publication :
 
-   * [Statistiques de page de gestionnaire de contenu Web Day CQ](/help/sites-deploying/osgi-configuration-settings.md)
+  * [Statistiques de page de gestionnaire de contenu Web Day CQ](/help/sites-deploying/osgi-configuration-settings.md)
 
 * Sur l’instance de création :
 
-   * [Adobe Page Impressions Tracker](/help/sites-deploying/osgi-configuration-settings.md)
+  * [Adobe Page Impressions Tracker](/help/sites-deploying/osgi-configuration-settings.md)
 
 >[!CAUTION]
 >

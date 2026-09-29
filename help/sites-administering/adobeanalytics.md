@@ -10,7 +10,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 4f7e1794-af5a-45a2-8dc6-80029c47caeb
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 93%
@@ -54,8 +65,8 @@ Voir :
 >Si vous utilisez Adobe Analytics avec une configuration de proxy personnalisée, vous devez [configurer deux bundles OSGi](/help/sites-deploying/configuring-osgi.md) (par exemple, avec la console web) requis pour les configurations de proxy **Apache HTTP Client**. Les deux lots sont requis, car certaines fonctionnalités d’AEM utilisent les API 3.x, tandis que d’autres utilisent les API 4.x. Configurer :
 >
 >* **Day Commons HTTP Client 3.1** pour configurer l’API 3.x ;
->  par exemple, [&#128279;](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>  par exemple, [](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >
 >* **Apache HTTP Components Proxy Configuration** pour configurer l’API 4.x ;
->  par exemple, [&#128279;](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>  par exemple, [](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >

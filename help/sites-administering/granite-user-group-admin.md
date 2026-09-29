@@ -9,13 +9,25 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ba02f9d4-5286-41d6-995c-307d6e13431b
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 99%
-
+source-wordcount: '956'
+ht-degree: 98%
 ---
-
 # Opérations Granite - Administration des utilisateurs et des groupes{#granite-operations-user-and-group-administration}
 
 Granite intègre l’implémentation du référentiel CRX de la spécification API JCR. Elle dispose de sa propre administration d’utilisateurs et utilisatrices et de groupes.
@@ -34,9 +46,9 @@ Choisir soit **Utilisateurs** soit **Groupes** dans la console Outils ouvre la c
 
   Les listes de la console **Utilisateurs** :
 
-   * le nom d’utilisateur ou d’utilisatrice
-   * l’identifiant de connexion de l’utilisateur (nom de compte)
-   * tout titre attribué au compte
+  * le nom d’utilisateur ou d’utilisatrice
+  * l’identifiant de connexion de l’utilisateur (nom de compte)
+  * tout titre attribué au compte
 
 * [Administration des groupes](#group-administration)
 
@@ -44,9 +56,9 @@ Choisir soit **Utilisateurs** soit **Groupes** dans la console Outils ouvre la c
 
   Les listes de la console **Groupes** :
 
-   * le nom du groupe
-   * la description du groupe
-   * le nombre d’utilisateurs et utilisatrices/de groupes dans le groupe
+  * le nom du groupe
+  * la description du groupe
+  * le nombre d’utilisateurs et utilisatrices/de groupes dans le groupe
 
 ## Administration des utilisateurs {#user-administration}
 
@@ -90,8 +102,8 @@ Choisir soit **Utilisateurs** soit **Groupes** dans la console Outils ouvre la c
    * **À propos**
    * **Paramètres du compte**
 
-      * **Statut**
-Vous pouvez marquer le compte comme **actif** ou **inactif**.
+     * **Statut**
+       Vous pouvez marquer le compte comme étant **actif** ou **inactif**.
 
    * **Photo**
 

@@ -5,13 +5,28 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
 exl-id: 2680e967-ec04-4ae6-b379-f1f0e7c6606b
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 100%
-
 ---
-
 # Participation aux workflows{#participating-in-workflows}
 
 Les workflows incluent généralement des étapes qui nécessitent qu’une personne effectue une activité sur une page ou une ressource. Le workflow sélectionne un utilisateur, une utilisatrice ou un groupe pour exécuter l’activité et affecte une tâche à cette personne ou à ce groupe. L’utilisateur ou l’utilisatrice reçoit une notification et peut ensuite prendre la mesure appropriée :
@@ -37,12 +52,12 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
 
 * Lorsque vous utilisez l’éditeur de page, la barre d’état affiche :
 
-   * Le nom du ou des workflows appliqués à la page. Par exemple, Requête d’activation.
-   * Toute action disponible pour l’utilisateur actuel ou l’utilisatrice actuelle à l’étape du workflow en cours. Par exemple, Terminer, Déléguer, Afficher les détails.
-   * Le nombre de workflows auxquels la page est soumise. Vous pouvez effectuer les actions suivantes :
+  * Le nom du ou des workflows appliqués à la page. Par exemple, Requête d’activation.
+  * Toute action disponible pour l’utilisateur actuel ou l’utilisatrice actuelle à l’étape du workflow en cours. Par exemple, Terminer, Déléguer, Afficher les détails.
+  * Le nombre de workflows auxquels la page est soumise. Vous pouvez effectuer les actions suivantes :
 
-      * utiliser les flèches gauche/droite pour parcourir les informations sur le statut des différents workflows ;
-      * cliquer sur le nombre pour ouvrir la liste déroulante de tous les workflows applicables, puis sélectionner le workflow que vous souhaitez afficher dans la barre de statut.
+    * utiliser les flèches gauche/droite pour parcourir les informations sur le statut des différents workflows ;
+    * cliquer sur le nombre pour ouvrir la liste déroulante de tous les workflows applicables, puis sélectionner le workflow que vous souhaitez afficher dans la barre de statut.
 
   ![wf-59](assets/wf-59.png)
 

@@ -8,13 +8,33 @@ solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 exl-id: 1b6c09f7-6f89-4fe9-8217-bf1a301bf9cb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 100%
-
+source-wordcount: '2168'
+ht-degree: 92%
 ---
-
 # Description de l’objet JSON de l’espace de travail AEM Forms {#aem-forms-workspace-json-object-description}
 
 Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-dessous.
@@ -193,7 +213,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci
   <tr>
    <td>priority<br /> </td>
    <td>F</td>
-   <td>Contient la priorité de la tâche.<br /> 1 = priorité la plus élevée<br /> 2 = priorité élevée<br /> 3 = priorité normale<br /> 4 = faible priorité<br /> 5 = priorité la plus faible<br /> </td>
+   <td>Contient la priorité de la tâche.<br /> 1 = Priorité la plus élevée <br /> 2 = Priorité élevée <br /> 3 = Priorité normale <br /> 4 = Priorité faible <br /> 5 = Priorité la plus faible<br /> </td>
   </tr>
   <tr>
    <td>processInstanceId</td>
@@ -238,7 +258,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci
   <tr>
    <td>status<br /> </td>
    <td>F</td>
-   <td>1 = Créé (la tâche est créée à partir du point de départ.)<br /> 2 = Créé et enregistré (la tâche est créée à partir du point de départ et enregistrée.)<br /> 3 = Affecté (la tâche est affectée à l’utilisateur ou l’utilisatrice une fois le processus démarré.)<br /> 4 = Affecté et enregistré (la tâche est affectée et enregistrée.)<br /> 100 = Terminé (la tâche est terminée.)<br /> 101 = Date limite (la tâche a atteint la date limite.)<br /> 102 = Terminé<br /> </td>
+   <td>1 = Créé (la tâche est créée à partir du point de départ)<br /> 2 = Créé et enregistré (la tâche est créée à partir du point de départ et enregistrée.)<br /> 3 = Affecté (la tâche est affectée à l’utilisateur une fois le processus démarré.)<br /> 4 = Affecté et enregistré (la tâche est affectée et enregistrée) <br /> 100 = Terminé (la tâche est terminée.)<br /> 101 = Échéance (la tâche a atteint l’échéance)<br /> 102 = Interrompu<br /> </td>
   </tr>
   <tr>
    <td>stepName<br /> </td>
@@ -412,7 +432,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci
   <tr>
    <td>type</td>
    <td>F</td>
-   <td>Contient le type de file d’attente.<br />0 - File d’attente de l’utilisateur ou de l’utilisatrice.<br /> 1. File d’attente partagée.<br /> 2. File d’attente de groupe.<br type="_moz" /> </td>
+   <td>Contient le type de la file d’attente.<br /> 0 - File d’attente de l’utilisateur.<br /> 1. File d’attente partagée.<br /> 2. File d’attente du groupe.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>query</td>
@@ -488,7 +508,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci
 
 1. Instance de processus
 
-   Une instance de processus est créée lorsqu’un processus est appelé via un espace de travail ou un workbench.
+   Une instance de processus est créée lorsqu’un processus est appelé via un espace de travail ou un atelier.
 
 <table>
  <tbody>
@@ -523,7 +543,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci
    <td>Identifiant de l’instance de processus.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>processInstanceStatus<br type="_moz" /> </td>
+   <td>processusInstanceStatus<br type="_moz" /> </td>
    <td>F</td>
    <td>0 = initié<br /> 1 = en cours d’exécution<br /> 2 = terminé<br /> 3 = en cours d’achèvement <br /> 4 = interrompu<br /> 5 = en cours d’interruption<br /> 6 = suspendu<br /> 7 = en cours de suspension <br /> 8 = en cours d’annulation de la suspension<br type="_moz" /> </td>
   </tr>
@@ -606,7 +626,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci
   <tr>
    <td>assignmentType<br type="_moz" /> </td>
    <td>F</td>
-   <td>0 = affectation initiale<br /> 1 = Transférer (la tâche a été transférée à la propriétaire ou au propriétaire actuel de la tâche.)<br /> 2 = Renvoyé (la tâche a été renvoyée à la propriétaire ou au propriétaire actuel de la tâche par la ou le propriétaire précédent de la tâche.)<br /> 3 = Réclamé (la tâche a été réclamée par la ou le propriétaire actuel de la tâche.)<br /> 4 = Réaffectation (la tâche a été affectée à la propriétaire ou au propriétaire actuel de la tâche après réaffectation.)<br /> 5 = Administrateur ou administratrice attribué (la tâche a été attribuée par l’administrateur ou l’administratrice à la propriétaire ou au propriétaire actuel de la tâche.)<br /> 6 = Consulté (la tâche a été consultée par la ou le propriétaire actuel de la tâche.)<br type="_moz" /> </td>
+   <td>0 = Affectation initiale <br /> 1 = Transfert (la tâche a été transférée au propriétaire actuel de la tâche.)<br /> 2 = Renvoyé (la tâche a été renvoyée au propriétaire actuel de la tâche par le propriétaire précédent de la tâche.)<br /> 3 = Demandé (la tâche a été demandée par le propriétaire actuel de la tâche.)<br /> 4 = Escalade (la tâche a été affectée au propriétaire actuel de la tâche après l’escalade)<br /> 5 = Administrateur affecté (la tâche a été affectée par l'administrateur au propriétaire actuel de la tâche.)<br /> 6 = Consulté ( la tâche a été consultée par son propriétaire actuel.)<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>assignmentUpdateTime<br type="_moz" /> </td>
@@ -808,7 +828,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci
   <tr>
    <td>isOutOfOffice<br type="_moz" /> </td>
    <td>F</td>
-   <td>True si la personne est absente du bureau.<br type="_moz" /> </td>
+   <td>True si l’utilisateur ou l’utilisatrice n’est pas au bureau.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>lastName<br type="_moz" /> </td>

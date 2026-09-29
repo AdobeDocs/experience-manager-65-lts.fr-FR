@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d918ddf2-aa70-4742-97d5-24a2c51f578a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1190'
 ht-degree: 98%
-
 ---
-
 # Outil de serveur proxy (proxy.jar){#proxy-server-tool-proxy-jar}
 
 Le serveur proxy joue le rôle d’un serveur intermédiaire qui relaie les demandes entre un client et un serveur. Il effectue le suivi de toutes les interactions client/serveur et crée un journal de l’ensemble de la communication TCP. Vous pouvez ainsi surveiller exactement ce qui se passe, sans avoir à accéder au serveur principal.
@@ -143,7 +152,7 @@ Examinez un modèle simple qui génère le code suivant lorsque cela est demand�
 </html>
 ```
 
-Si AEM s’exécute sur localhost:4303, démarrez le serveur proxy comme suit :
+Si AEM est exécuté sur localhost:4303, démarrez le serveur proxy comme suit :
 
 ```xml
 java -jar proxy.jar localhost 4303 4444 -logfile test.log

@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 879f11eb-0d47-43a7-9a64-53cefd851cf4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 100%
-
+source-wordcount: '244'
+ht-degree: 96%
 ---
-
 # Développer des composants AEM – Exemples de code{#developing-aem-components-code-samples}
 
 Cette section fournit quelques exemples sur la façon de créer vos propres composants pour AEM.
@@ -42,7 +51,7 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-authoring-dialog-fields-customization project sur GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
+* [Ouvrez le projet aem-authoring-dialog-fields-customization project sur GitHub .](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
 * Téléchargez le projet sous la forme de [fichier ZIP](https://codeload.github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/zip/refs/heads/master).
 
 >[!NOTE]

@@ -9,13 +9,27 @@ feature: Viewers
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 37e0d7de-0f7b-475f-b508-3dd150008fee
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d17d085a-e808-49dd-b9a6-85a996b999bd
+    internal-label: Viewers
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 100%
-
+source-wordcount: '1279'
+ht-degree: 95%
 ---
-
 # Créer des pop-ups personnalisés à l’aide de l’aperçu rapide {#using-quickviews-to-create-custom-pop-ups}
 
 L’aperçu rapide par défaut est utilisé dans les expériences e-commerce où un pop-up s’affiche avec des informations sur le produit afin de générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les pop-ups. Selon la visionneuse, cette fonctionnalité permet aux utilisateurs de sélectionner sur une zone réactive, une image miniature ou une zone cliquable pour afficher des informations ou du contenu connexe.
@@ -83,7 +97,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
    Le lecteur utilise un gestionnaire appelé `QuickViewActive`.
 
    **Exemple**
-Supposons que vous utilisiez le code intégré suivant dans votre page web pour une image interactive :
+   Supposons que vous utilisiez le code d’intégration suivant dans votre page web pour une image interactive :
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -113,7 +127,8 @@ Supposons que vous utilisiez le code intégré suivant dans votre page web pour 
 
    Le gestionnaire `quickViewActivate` contrôle les aperçus rapides dans la visionneuse. Le gestionnaire contient les appels de la liste de variables et de fonctions utilisables avec l’aperçu rapide. Le code intégré fournit une correspondance pour l’ensemble de variables de SKU dans l’aperçu rapide, ainsi qu’un exemple d’appel de fonction `loadQuickView`.
 
-   **Correspondance de variables** Mappez les variables utilisables dans votre page web avec la valeur de SKU et les variables génériques dans l’aperçu rapide :
+   **Mappage de variables**
+   Mappez les variables utilisables dans votre page web à la valeur de SKU et aux variables génériques contenues dans l’aperçu rapide :
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -128,7 +143,8 @@ Supposons que vous utilisiez le code intégré suivant dans votre page web pour 
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **Appel de fonction** Le gestionnaire nécessite également un appel de fonction pour que l’aperçu rapide fonctionne. La fonction est supposée être accessible par votre page hôte. Le code intégré fournit un exemple d’appel de fonction :
+   **Appel de fonction**
+   Le gestionnaire nécessite également un appel de fonction pour que l’aperçu rapide fonctionne. La fonction est supposée être accessible par votre page hôte. Le code intégré fournit un exemple d’appel de fonction :
 
    `loadQuickView(sku)`
 
@@ -145,7 +161,7 @@ Supposons que vous utilisiez le code intégré suivant dans votre page web pour 
    * Supprimez les commentaires de la section setHandlers du code intégré.
    * Mappez toutes les variables supplémentaires contenues dans l’aperçu rapide.
 
-      * Mettez à jour l’appel `loadQuickView(sku,*var1*,*var2*)` si vous ajoutez des variables supplémentaires.
+     * Mettez à jour l’appel `loadQuickView(sku,*var1*,*var2*)` si vous ajoutez des variables supplémentaires.
 
    * Créez une fonction `loadQuickView` () simple sur la page, à l’extérieur de la visionneuse.
 
@@ -259,7 +275,7 @@ Supposons que vous utilisiez le code intégré suivant dans votre page web pour 
    `*viewerInstance.*init()`
 
    **Exemple**
-Cet exemple utilise la visionneuse d’images interactives.
+   Cet exemple utilise la visionneuse d’images interactives.
 
    `s7interactiveimageviewer.init()`
 

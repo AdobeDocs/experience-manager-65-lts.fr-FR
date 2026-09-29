@@ -4,16 +4,33 @@ description: Actions et fonctionnalités des processus AEM sur OSGi et des proce
 contentOwner: khsingh
 solution: Experience Manager, Experience Manager Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 feature: Adaptive Forms,AEM Forms on OSGi
 role: User, Developer
 exl-id: d0f54236-5dc2-4c64-87c5-85e5e85e8cf7
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 100%
-
 ---
-
 # Actions et fonctionnalités des processus AEM sur OSGi et des processus AEM Forms JEE {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
 ## Boîte de réception AEM et espace de travail HTML {#aem-inbox-and-html-workspace}
@@ -424,12 +441,12 @@ La table suivante répertorie les fonctionnalités de la boîte de réception AE
   <tr>
    <td><p>Délégation de tâches</p> </td>
    <td><p>Pris en charge</p> </td>
-   <td><p>Non pris en charge</p> </td>
+   <td><p>Pas de prise en charge</p> </td>
   </tr>
   <tr>
    <td><p>Suivi de l’historique des tâches et du récapitulatif des tâches</p> </td>
    <td><p>Pris en charge</p> </td>
-   <td><p>Non pris en charge</p> </td>
+   <td><p>Pas de prise en charge</p> </td>
   </tr>
   <tr>
    <td><p>Ajout de pièces jointes au niveau de la tâche</p> </td>
@@ -449,7 +466,7 @@ La table suivante répertorie les fonctionnalités de la boîte de réception AE
   <tr>
    <td><p>Affichage de la vue de calendrier</p> </td>
    <td><p>Pris en charge</p> </td>
-   <td><p>Non pris en charge</p> </td>
+   <td><p>Pas de prise en charge</p> </td>
   </tr>
   <tr>
    <td><p>Ajout de commentaires</p> </td>

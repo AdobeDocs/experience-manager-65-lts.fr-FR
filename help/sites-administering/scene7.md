@@ -9,7 +9,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 9f879ab6-6806-4e94-836c-0a7813940914
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5545'
 ht-degree: 99%
@@ -26,7 +37,7 @@ Pour plus d’informations sur l’utilisation de tous les composants Dynamic M
 >
 >* La plateforme de la visionneuse DHTML de Dynamic Media Classic a officiellement atteint sa fin de vie le 31 janvier 2014. Pour plus d’informations, consultez la [FAQ sur la fin de vie de la visionneuse DHTML](../sites-administering/dhtml-viewer-endoflifefaqs.md).
 >* Avant de configurer Dynamic Media Classic pour qu’il fonctionne avec Experience Manager, consultez les [Bonnes pratiques](#best-practices-for-integrating-scene-with-aem) pour intégrer Dynamic Media Classic à Experience Manager.
->* Si vous utilisez Dynamic Media Classic avec une configuration de proxy personnalisée, vous devez paramétrer les deux configurations de proxy client HTTP, car certaines fonctionnalités d’Experience Manager utilisent les API 3.x et d’autres les API 4.x. Les versions 3.x sont configurées avec [&#128279;](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) et 4.x avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator).
+>* Si vous utilisez Dynamic Media Classic avec une configuration de proxy personnalisée, vous devez paramétrer les deux configurations de proxy client HTTP, car certaines fonctionnalités d’Experience Manager utilisent les API 3.x et d’autres les API 4.x. Les versions 3.x sont configurées avec [](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) et 4.x avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator).
 >
 
 ## Intégration d’Experience Manager à Dynamic Media Classic par rapport à Dynamic Media {#aem-scene-integration-versus-dynamic-media}
@@ -358,7 +369,7 @@ Activation du listener de gestion des ressources numériques Dynamic Media Cla
 
 Lorsqu’une instance Experience Manager est configurée pour traiter le codage vidéo via Dynamic Media Classic, par défaut, les tâches de chargement sont soumises à un délai d’expiration de 35 minutes. Pour pouvoir effectuer les tâches de codage vidéo potentiellement plus longues, vous pouvez configurer ce paramètre.
 
-1. Accédez à **&#x200B;**.
+1. Accédez à ****.
 
    ![chlimage_1-300](assets/chlimage_1-300.png)
 

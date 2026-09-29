@@ -9,14 +9,29 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e56b22b9-3f4f-46d1-9885-a7e58b47f42d
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 93%
-
+source-wordcount: '1016'
+ht-degree: 94%
 ---
-
 # Démarrage rapide (SOAP) pour l’API Java™ Assembler Service {#assembler-service-java-api-quickstart-soap}
 
 Le démarrage rapide (SOAP) de l’API Java est disponible pour le service Assembler.
@@ -1191,8 +1206,8 @@ L’exemple de code Java suivant crée dynamiquement un document DDX qui désass
 * `createDDX` : crée un objet `org.w3c.dom.Document` qui représente le document DDX envoyé au service Assembler. Cette méthode définie par l’utilisateur renvoie l’objet `org.w3c.dom.Document`.
 * `convertDDX` : convertit un objet `org.w3c.dom.Document` en un objet `com.adobe.idp.Document`. Cette méthode accepte un objet `org.w3c.dom.Document` en tant que paramètre d’entrée et renvoie un objet `com.adobe.idp.Document`.
 
-  Ces deux méthodes sont invoquées dans ce démarrage rapide. (Voir [&#x200B; Création dynamique de documents DDX](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).)
-«
+  Ces deux méthodes sont invoquées dans ce démarrage rapide. (Voir [ Création dynamique de documents DDX](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).)
+  ``
 
 ```java
 /*

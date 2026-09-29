@@ -8,13 +8,29 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 532f5e23-876d-477c-a8ab-94b6ae1656df
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1914'
 ht-degree: 100%
-
 ---
-
 # Didacticiel : Créer une communication interactive {#tutorial-create-interactive-communication}
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
@@ -31,7 +47,7 @@ Ce tutoriel vous guide tout au long des étapes de création de communications i
 * Créer une communication interactive pour le canal web
 * Créer des communications interactives d’impression et web avec l’impression en tant qu’option principale
 
-## Créer des communications interactives pour l’impression et le web sans synchronisation {#create-interactive-communications-for-print-and-web-with-no-synchronization}
+## Créer des communications interactives pour l’impression et le Web sans synchronisation {#create-interactive-communications-for-print-and-web-with-no-synchronization}
 
 ### Créer une communication interactive pour le canal d’impression {#create-interactive-communication-for-print-channel}
 
@@ -47,7 +63,7 @@ Voici la liste des ressources qui ont déjà été créées dans ce tutoriel et 
 
 **Images :** PayNow et ValueAddedServices
 
-1. Connectez-vous à l’instance d’auteur AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
+1. Connectez-vous à l’instance de création AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 1. Sélectionnez **Créer** puis sélectionnez **Communication interactive**. L’assistant **Créer une communication interactive** s’affiche.
 1. Spécifiez **create_first_ic** dans les champs **Titre** et **Nom**. Sélectionnez **FDM_Create_First_IC** comme modèle de données de formulaire puis sélectionnez **Suivant**.
 1. Dans l’assistant **Canaux** :
@@ -78,14 +94,14 @@ Voici la liste des ressources qui ont déjà été créées dans ce tutoriel et 
 
    1. Attribuez un nom au graphique.
    1. Sélectionnez **Diagramme circulaire** dans la liste déroulante **Type de graphique**.
-   1. Sélectionnez la propriété **calltype** à partir du type d’objet du modèle de données **Calls** dans la section **Axe X**. Sélectionnez ![done_icon](assets/done_icon.png).
+   1. Sélectionnez la propriété **calltype** à partir du type d’objet de modèle de données **calls** dans la section **Axe X**. Sélectionnez ![done_icon](assets/done_icon.png).
    1. Sélectionnez **Fréquence** dans la liste déroulante **Fonctions**.
-   1. Sélectionnez la propriété **calltype** à partir du type d’objet du modèle de données **Appels** dans la section **Axe Y**. Sélectionnez ![done_icon](assets/done_icon.png).
+   1. Sélectionnez la propriété **calltype** à partir du type d’objet de modèle de données **calls** dans la section **Axe Y**. Sélectionnez ![done_icon](assets/done_icon.png).
    1. Sélectionnez ![done_icon](assets/done_icon.png) pour enregistrer les propriétés du graphique.
 
 1. Accédez à l’onglet **Actifs** et appliquez le filtre pour afficher uniquement les fragments de mise en page dans le volet gauche. Faites glisser le fragment de mise en page **table_lf** dans la zone cible **Appels détaillés**.
 1. Sélectionnez le champ de texte dans la colonne **Date** et sélectionnez ![configure_icon](assets/configure_icon.png) (Configurer).
-1. Sélectionnez **Objet du modèle de données** dans la liste déroulante **Type de liaison** et sélectionnez **calls** > **calldate**. Sélectionnez deux fois ![done_icon](assets/done_icon.png) pour enregistrer les propriétés.
+1. Sélectionnez **Objet de modèle de données** dans la liste déroulante **Type de liaison** et sélectionnez **calls** > **calldate**. Sélectionnez deux fois ![done_icon](assets/done_icon.png) pour enregistrer les propriétés.
 
    De même, créez une liaison avec **calltime**, **callnumber**, **callduration** et **callcharges** pour les champs texte dans les colonnes **Heure**, **Numéro**, **Durée** et **Frais**.
 
@@ -110,7 +126,7 @@ Voici la liste des ressources qui ont déjà été créées dans ce tutoriel et 
 
 **Images :** PayNowWeb et ValueAddedServicesWeb
 
-1. Connectez-vous à l’instance d’auteur AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
+1. Connectez-vous à l’instance de création AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 1. Sélectionnez **Créer** puis sélectionnez **Communication interactive**. L’assistant **Créer une communication interactive** s’affiche.
 1. Spécifiez **create_first_ic** dans les champs **Titre** et **Nom**. Sélectionnez **FDM_Create_First_IC** comme modèle de données de formulaire puis sélectionnez **Suivant**.
 1. Dans l’assistant **Canaux** :
@@ -141,11 +157,11 @@ Voici la liste des ressources qui ont déjà été créées dans ce tutoriel et 
    1. Attribuez un nom au graphique.
    1. Sélectionnez **Diagramme circulaire** dans la liste déroulante **Type de graphique**.
 
-   1. Sélectionnez la propriété **calltype** à partir du type d’objet du modèle de données **Calls** dans la section **Axe X**. Sélectionnez ![done_icon](assets/done_icon.png).
+   1. Sélectionnez la propriété **calltype** à partir du type d’objet de modèle de données **calls** dans la section **Axe X**. Sélectionnez ![done_icon](assets/done_icon.png).
 
    1. Sélectionnez **Fréquence** dans la liste déroulante **Fonctions**.
 
-   1. Sélectionnez la propriété **calltype** à partir du type d’objet du modèle de données **Appels** dans la section **Axe Y**. Sélectionnez ![done_icon](assets/done_icon.png).
+   1. Sélectionnez la propriété **calltype** à partir du type d’objet de modèle de données **calls** dans la section **Axe Y**. Sélectionnez ![done_icon](assets/done_icon.png).
 
    1. Sélectionnez ![done_icon](assets/done_icon.png) pour enregistrer les propriétés du graphique.
 
@@ -196,13 +212,13 @@ Voici la liste des ressources qui ont déjà été créées dans ce tutoriel et 
 
    Répétez les étapes 13 à 17 pour ajouter un bouton **S’abonner** à la zone cible des **services à valeur ajoutée** et ajouter l’image **ValueAddedServicesWeb**.
 
-## Créer des communications interactives pour l’impression et le web avec synchronisation automatique {#create-interactive-communications-for-print-and-web-with-auto-synchronization}
+## Créer des communications interactives pour l’impression et le Web avec synchronisation automatique {#create-interactive-communications-for-print-and-web-with-auto-synchronization}
 
 Vous pouvez également créer une communication interactive en activant la synchronisation automatique entre les canaux d’impression et web. Pour activer la synchronisation automatique, sélectionnez l’option Impression comme gabarit lors de la création de la communication interactive. Sélectionner l’option Impression comme gabarit garantit que le contenu, l’héritage et la liaison de données du canal web sont dérivés du canal d’impression. Elle garantit également que les modifications apportées au canal d’impression sont répercutées dans le canal web.
 
 Pour dériver le contenu du canal web à l’aide du canal d’impression, procédez comme suit :
 
-1. Connectez-vous à l’instance d’auteur AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
+1. Connectez-vous à l’instance de création AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 1. Sélectionnez **Créer** puis sélectionnez **Communication interactive**. L’assistant **Créer une communication interactive** s’affiche.
 1. Spécifiez **create_first_ic** dans les champs **Titre** et **Nom**. Sélectionnez **FDM_Create_First_IC** comme modèle de données de formulaire puis sélectionnez **Suivant**.
 1. Dans l’assistant **Canaux** :

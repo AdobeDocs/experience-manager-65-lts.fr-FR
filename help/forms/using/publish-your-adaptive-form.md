@@ -8,13 +8,29 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: de5cc19f-f3dc-42d5-877d-c15bd00487d7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 95%
-
+source-wordcount: '998'
+ht-degree: 94%
 ---
-
 # Tutoriel : publier votre formulaire adaptatif {#tutorial-publish-your-adaptive-form}
 
 ![hero-image](do-not-localize/13-publish-your-adaptive-form-small.png)
@@ -41,7 +57,8 @@ Lorsque le formulaire adaptatif est publié comme une page AEM, la page web enti
 1. Connectez-vous à lʼinstance dʼauteur AEM [!DNL Forms] et recherchez le formulaire adaptatif shipping-address-add-update-form dans l’interface utilisateur dʼAEM [!DNL Forms].
    `https://localhost:4502/aem/forms.html/content/dam/formsanddocuments`
 1. Sélectionnez le formulaire adaptatif shipping-address-add-update-form et sélectionnez **[!UICONTROL Publier]**. Une boîte de dialogue contenant les ressources liées au formulaire adaptatif s’affiche. Sélectionnez **[!UICONTROL Publier]**. Le formulaire adaptatif est publié et une boîte de dialogue de réussite s’affiche.
-1. Ouvrez le formulaire sur l’instance de publication. Le formulaire peut être complété et envoyé par l’utilisateur final.   `https://localhost:4503/content/forms/af/shipping-address-add-update-form.html`
+1. Ouvrez le formulaire sur l’instance de publication. Le formulaire peut être complété et envoyé par l’utilisateur final.
+   `https://localhost:4503/content/forms/af/shipping-address-add-update-form.html`
 
 ## Incorporez le formulaire adaptatif dans une page AEM Sites {#embed-the-adaptive-form-in-an-aem-sites-page}
 
@@ -49,9 +66,9 @@ AEM [!DNL Forms] permet aux développeurs de formulaires d’incorporer facileme
 
 AEM [!DNL Forms] fournit un composant, le conteneur AEM [!DNL Forms], pour incorporer un formulaire adaptatif à une page AEM [!DNL Sites]. Par défaut, le composant n’est pas visible dans le conteneur AEM [!DNL Sites]. Pour activer le composant Conteneur AEM [!DNL Forms] et incorporer le formulaire adaptatif dans une page AEM [!DNL Sites], procédez comme suit :
 
-1. Créez et ouvrez une page dans le site We.Retail pour la modifier. Par exemple, [https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). Le formulaire adaptatif est incorporé à la page du [!DNL Sites].
+1. Créez et ouvrez une page dans le site We.Retail pour la modifier. Par exemple, [](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). Le formulaire adaptatif est incorporé à la page du [!DNL Sites].
 
-   Vous pouvez également incorporer le formulaire adaptatif dans une page du [!DNL Site's] We.Retail existante. Par exemple, la page À NOTRE SUJET [https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html). Cela vous permet de créer une page plus rapidement. Les étapes ci-dessous utilisent la page nouvellement créée.
+   Vous pouvez également incorporer le formulaire adaptatif dans une page du [!DNL Site's] We.Retail existante. Par exemple, la page À NOTRE SUJET [](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html). Cela vous permet de créer une page plus rapidement. Les étapes ci-dessous utilisent la page nouvellement créée.
 
    Le site We.Retail est présent nativement dans AEM. Si vous nʼavez pas installé le site We.Retail, consultez la section [Implémentation de référence de We.Retail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) pour installer le site.
 

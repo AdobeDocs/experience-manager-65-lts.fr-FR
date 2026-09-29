@@ -2,7 +2,12 @@
 title: Mise à niveau d’AEM 6.5 LTS sur JBoss EAP 8 (Windows)
 description: Ce guide fournit des instructions détaillées pour mettre à niveau une installation LTS Adobe Experience Manager (AEM) 6.5 existante de JBoss EAP 7.4 vers JBoss EAP 8 sous Windows, à l’aide du JDK 21.
 exl-id: 23389613-0d9f-4e0b-b133-c8e598dd9cc9
-source-git-commit: d713aac72e764849d53e8feb98ed85b89f27a44d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1430'
 ht-degree: 3%
@@ -21,7 +26,7 @@ Ce guide fournit des instructions détaillées pour mettre à niveau une install
 >
 >Il s’agit d’une procédure de mise à niveau critique. Commencez toujours par effectuer cette mise à niveau dans un environnement hors production et conservez des sauvegardes complètes.
 >
-> **&#x200B; CONDITIONS PRÉALABLES : &#x200B;** une sauvegarde complète du système et un plan de restauration documenté sont obligatoires avant de continuer.
+> ** CONDITIONS PRÉALABLES : ** une sauvegarde complète du système et un plan de restauration documenté sont obligatoires avant de continuer.
 
 ## Conditions requises avant la mise à niveau
 
@@ -41,7 +46,7 @@ Ce guide fournit des instructions détaillées pour mettre à niveau une install
 Avant de commencer la mise à niveau, vérifiez les points suivants :
 
 1. **Distribution de JBoss EAP 8.0**\
-   Télécharger depuis : [&#128279;](https://developers.redhat.com/products/eap/download)
+   Télécharger depuis : [](https://developers.redhat.com/products/eap/download)
 
 2. **Programme d’installation du JDK 21**\
    Télécharger Oracle JDK 21 ou OpenJDK 21 pour Windows (64 bits)
@@ -549,8 +554,8 @@ Si la mise à niveau échoue et ne peut pas être résolue :
 ## Documentation connexe
 
 - [Guide de migration de JBoss EAP 8](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0/html/migration_guide/)
-- [Guide de mise à niveau vers Adobe Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=fr)
-- [Installation des packs de services d’AEM](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=fr)
+- [Guide de mise à niveau vers Adobe Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html)
+- [Installation des packs de services d’AEM](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
 
 ## Informations sur le document
 

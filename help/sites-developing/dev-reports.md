@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5298'
 ht-degree: 94%
-
 ---
-
 # Élaborer des rapports {#developing-reports}
 
 Adobe Experience Manager (AEM) fournit une sélection de [rapports standard](/help/sites-administering/reporting.md), basés majoritairement sur une structure de création de rapports.
@@ -753,7 +762,7 @@ Lorsqu’il est trouvé, le motif spécifié (qui est défini en tant qu’expre
 
 * [formateurs de type de données](#preprocessing-data-type-formatters)
 
-  Convertissent une valeur numérique en chaîne relative ; par exemple, la valeur &grave;&grave; représentant un décalage horaire de 1 heure sera résolue dans une chaîne telle que `1:24PM (1 hour ago)`.
+  Convertissent une valeur numérique en chaîne relative ; par exemple, la valeur `` représentant un décalage horaire de 1 heure sera résolue dans une chaîne telle que `1:24PM (1 hour ago)`.
 
 Par exemple :
 
@@ -988,7 +997,7 @@ N:defaults
 
 * `aggregate`
 
-  Les valeurs `aggregate` valides sont les mêmes que pour `type` sous `aggregates` (voir [Définitions spécifiques à la colonne (définitions - filtres / agrégats) &#x200B;](#column-specific-definitions)).
+  Les valeurs `aggregate` valides sont les mêmes que pour `type` sous `aggregates` (voir [Définitions spécifiques à la colonne (définitions - filtres / agrégats) ](#column-specific-definitions)).
 
 ### Événements et actions {#events-and-actions}
 

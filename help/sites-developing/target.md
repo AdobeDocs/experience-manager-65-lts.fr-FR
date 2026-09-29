@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 722c8052-6b1e-4b52-a332-b549f4a6bc05
-source-git-commit: 6360a0573f3683ad491c5e9edad5d34840f98ebb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 54%
-
 ---
-
 
 # Développer des composants pour du contenu ciblé {#developing-for-targeted-content}
 
@@ -211,7 +220,7 @@ Par exemple, si vous souhaitez utiliser le service [Marketing Cloud ID](https://
 >
 >Si une mbox personnalisée est définie dans une configuration Target, vous devez disposer d’un accès en lecture à `/etc/cloudservices` sur les serveurs de publication. Sans cet accès, le chargement de fichiers `mbox.js` sur le site Web de publication génère une erreur 404.
 
-1. Accédez à la page **Outils** de CQ et sélectionnez ensuite **Services cloud**. ([&#128279;](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Accédez à la page **Outils** de CQ et sélectionnez ensuite **Services cloud**. ([](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 1. Dans l’arborescence, sélectionnez Adobe Target, puis, dans la liste des configurations, double-cliquez sur votre configuration Target.
 1. Sur la page de configuration, cliquez sur Modifier.
 1. Pour la propriété mbox.js personnalisée, cliquez sur Parcourir et sélectionnez le fichier.
@@ -331,7 +340,7 @@ Le script `target.jsp` accède aux propriétés de la page pour déterminer le m
 
 * Adobe Target : /`libs/cq/personalization/components/target/engine_tnt.jsp`
 * [Adobe Target avec AT.JS](/help/sites-administering/target.md) : `/libs/cq/personalization/components/target/engine_atjs.jsp`
-* [&#128279;](/help/sites-authoring/target-adobe-campaign.md) : `/libs/cq/personalization/components/target/engine_cq_campaign.jsp`
+* [](/help/sites-authoring/target-adobe-campaign.md) : `/libs/cq/personalization/components/target/engine_cq_campaign.jsp`
 * Règles côté client/ContextHub : `/libs/cq/personalization/components/target/engine_cq.jsp`
 
 ### Création de mBox {#the-creation-of-mboxes}
