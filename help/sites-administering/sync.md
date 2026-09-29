@@ -98,7 +98,7 @@ Une fois la synchronisation des utilisateurs et des utilisatrices activée, seul
   * connexion avec droits d’administrateur
   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-    * par exemple, [](https://localhost:4502/system/console/configMgr)
+    * par exemple, [&#128279;](https://localhost:4502/system/console/configMgr)
 
   * localisez `Apache Sling Distribution Agent - Sync Agents Factory`
 
@@ -121,7 +121,7 @@ L’utilisateur ou l’utilisatrice autorisé(e) intervient à l’étape 3 pou
   * connexion avec droits d’administrateur
   * accédez à la [console de sécurité](/help/sites-administering/security.md)
 
-    * par exemple, [](https://localhost:4503/useradmin)
+    * par exemple, [&#128279;](https://localhost:4503/useradmin)
 
   * créer un utilisateur ou une utilisatrice
 
@@ -143,7 +143,7 @@ L’utilisateur ou l’utilisatrice autorisé(e) intervient à l’étape 3 pou
 
 * accédez à CRXDE Lite
 
-  * par exemple, [](https://localhost:4503/crx/de)
+  * par exemple, [&#128279;](https://localhost:4503/crx/de)
 
 * sélectionnez le nœud `/home`
 * dans le volet de droite, sélectionnez l’onglet `Access Control`
@@ -175,7 +175,7 @@ Une fois qu’un utilisateur ou une utilisatrice autorisé(e), membre du groupe 
   * connexion avec droits d’administrateur
   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-    * par exemple, [](https://localhost:4502/system/console/configMgr)
+    * par exemple, [&#128279;](https://localhost:4502/system/console/configMgr)
 
   * localisez `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
   * pour ouvrir une configuration pour modification, sélectionnez la configuration existante (icône de crayon).
@@ -196,7 +196,7 @@ Une fois qu’un utilisateur ou une utilisatrice autorisé(e), membre du groupe 
   * connexion avec droits d’administrateur
   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-    * par exemple, [](https://localhost:4503/system/console/configMgr)
+    * par exemple, [&#128279;](https://localhost:4503/system/console/configMgr)
 
   * localisez `Apache Sling Distribution Agent - Queue Agents Factory`
 
@@ -219,7 +219,7 @@ Une fois qu’un utilisateur ou une utilisatrice autorisé(e), membre du groupe 
   * connexion avec droits d’administrateur
   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-    * par exemple, [](https://localhost:4503/system/console/configMgr)
+    * par exemple, [&#128279;](https://localhost:4503/system/console/configMgr)
 
   * localisez **`Adobe Social Sync - Diff Observer Factory`**
 
@@ -243,7 +243,7 @@ Par défaut, l’instance de création interroge les modifications toutes les 30
   * connexion avec droits d’administrateur
   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-    * par exemple, [](https://localhost:4502/system/console/configMgr)
+    * par exemple, [&#128279;](https://localhost:4502/system/console/configMgr)
 
   * localisez `Apache Sling Distribution Trigger - Scheduled Triggers Factory`
 
@@ -269,7 +269,7 @@ La configuration par défaut couvre une instance de publication unique. Puisque 
   * connexion avec droits d’administrateur
   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-    * par exemple, [](https://localhost:4502/system/console/configMgr)
+    * par exemple, [&#128279;](https://localhost:4502/system/console/configMgr)
 
   * localisez `Apache Sling Distribution Agent - Sync Agents Factory`
 
@@ -335,7 +335,7 @@ Pour que les mises à jour soient correctement synchronisées, il est nécessair
 * sur chaque instance de publication AEM
 * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-  * par exemple, [](https://localhost:4503/system/console/configMgr)
+  * par exemple, [&#128279;](https://localhost:4503/system/console/configMgr)
 
 * localisez `Apache Sling Distribution Packaging - Vault Package Builder Factory`
 

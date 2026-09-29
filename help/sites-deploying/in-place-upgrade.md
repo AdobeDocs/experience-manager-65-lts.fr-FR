@@ -175,7 +175,7 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 1. Supprimez les fichiers JAR sous `crx-quickstart/install` associés à une version antérieure du connecteur S3.
 
-1. Téléchargez la dernière version du connecteur S3 1.60.2 à partir de [](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) <!-- Alexandru: this is a stub link for now -->
+1. Téléchargez la dernière version du connecteur S3 1.60.2 à partir de [&#128279;](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) <!-- Alexandru: this is a stub link for now -->
 
 1. Extrayez le connecteur S3 (version 1.60.2) et copiez le contenu des dossiers suivants sous `crx-quickstart/install`, comme suit :
 

@@ -394,7 +394,7 @@ Ce package est préconfiguré pour se connecter à Adobe Analytics. Les étapes 
 
    ![We.Gov Adobe Analytics](assets/wegov_adobe_analytics.jpg)
 
-1. Sur la même page, cliquez sur « Framework Adobe Analytics We.Gov (Framework Analytics) » si vous souhaitez mettre à jour les configurations de framework (voir [ Activer la création AEM ](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) pour activer la création).
+1. Sur la même page, cliquez sur « Framework Adobe Analytics We.Gov (Framework Analytics) » si vous souhaitez mettre à jour les configurations de framework (voir [&#x200B; Activer la création AEM &#x200B;](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) pour activer la création).
 
 #### Localisation d’informations d’identification utilisateur Adobe Analytics {#analytics-locating-user-credentials}
 
@@ -638,7 +638,7 @@ Une fois la configuration définie, les utilisateurs peuvent la tester en charge
 
 1. Accédez au système AEM https://&lt;domain_name>:&lt;system_port>.
 
-1. Cliquez sur **** > **Forms et documents** > **AEM Forms We.gov Forms** > **AFC**.
+1. Cliquez sur **&#x200B;**&#x200B;> **Forms et documents** > **AEM Forms We.gov Forms** > **AFC**.
 
 1. Sélectionnez le PDF de demande d’inscription We.Gov.
 
