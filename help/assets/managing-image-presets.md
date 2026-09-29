@@ -418,7 +418,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
     </ul>
     <div>
       L’accentuation est décrite dans la section
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/sharpening_images.pdf">Accentuation des images</a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/sharpening_images.pdf?lang=fr">Accentuation des images</a>.
     </div> </td>
   </tr>
   <tr>
