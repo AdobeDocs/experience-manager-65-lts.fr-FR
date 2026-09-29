@@ -16,7 +16,7 @@ role_v2:
     internal-label: Developer
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 93%
@@ -69,8 +69,8 @@ Les auteurs et les autrices de formulaires peuvent comparer deux versions diffé
 La révision est un mécanisme qui permet à un ou plusieurs réviseurs ou réviseuses de commenter des formulaires. Tout utilisateur et toute utilisatrice d’un formulaire peut ajouter des commentaires sur un formulaire ou réviser un formulaire à l’aide de commentaires. Pour ajouter un commentaire sur un formulaire, sélectionnez un **[!UICONTROL Formulaire]** et ajoutez un **[!UICONTROL Commentaire]** au formulaire.
 
 >[!NOTE]
-> Lorsque vous utilisez des commentaires dans les composants principaux de formulaires adaptatifs comme décrit ci-dessus, la fonctionnalité de formulaire [ajouter des réviseurs et réviseuses aux formulaires](/help/forms/using/create-reviews-forms.md) est désactivée.
-
+>
+>Lorsque vous utilisez des commentaires dans les composants principaux de formulaires adaptatifs comme décrit ci-dessus, la fonctionnalité de formulaire [ajouter des réviseurs et réviseuses aux formulaires](/help/forms/using/create-reviews-forms.md) est désactivée.
 
 ![Ajouter des commentaires sur un formulaire](assets/form-comments.png)
 

@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 96%
@@ -61,13 +61,11 @@ Vous pouvez sélectionner l’icône **Configurer** ![configurer](assets/configu
 
 * Lorsque le rapport d’aspect de la zone de travail de signature tactile est supérieur à 1, les informations de géolocalisation sont ajoutées au côté droit de la zone de travail de signature tactile.
 
-![Bas de la signature tactile](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
+  ![Bas de la signature tactile](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
 
-
->[!NOTE]
->
->Les signatures sont toujours enregistrées au format PNG.
->
+  >[!NOTE]
+  >
+  >Les signatures sont toujours enregistrées au format PNG.
 
 ## Configuration d’un formulaire adaptatif pour utiliser la signature tactile {#configure-an-adaptive-form-to-use-scribble-signature}
 

@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '8126'
 ht-degree: 95%
@@ -471,7 +471,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
    `localhost:4502/libs/granite/security/content/useradmin.html`
 1. Sur la page User Management, accédez à l’utilisateur `dynamic-media-replication`, puis sélectionnez-le pour l’ouvrir.
 1. Sélectionnez l’onglet **[!UICONTROL Keystore]**. Si le bouton **[!UICONTROL Créer KeyStore]** apparaît, il vous faut alors répéter les étapes décrites précédemment sous [Configuration de l’authentification](#setting-up-authentication).
-1. Si vous avez eu à répéter la configuration du KeyStore, vous devez répéter la [&#x200B; Configuration de l’agent de réplication](/help/assets/config-dynamic.md#configuring-the-replication-agent) également.
+1. Si vous avez eu à répéter la configuration du KeyStore, vous devez répéter la [ Configuration de l’agent de réplication](/help/assets/config-dynamic.md#configuring-the-replication-agent) également.
 
    Reconfigurez l’agent de réplication s7delivery.
    `localhost:4502/etc/replication/agents.author/s7delivery.html`
@@ -795,7 +795,7 @@ Ces étapes permettent de configurer l’instance de publication d’Experience�
 
 ### Personnalisation des filtres de ressources pour la réplication (facultatif) {#customizing-asset-filters-for-replication}
 
-1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils**&#x200B;[!UICONTROL &#x200B; > &#x200B;]&#x200B;**Général**&#x200B;[!UICONTROL &#x200B; > &#x200B;]&#x200B;**CRXDE Lite]**.
+1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils**[!UICONTROL  > ]**Général**[!UICONTROL  > ]**CRXDE Lite]**.
 1. Dans l’arborescence de gauche, accédez à `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` pour parcourir les filtres.
 
    ![chlimage_1-511](assets/chlimage_1-511.png)
@@ -970,248 +970,248 @@ Une fois que vous avez installé le pack de fonctionnalités, configurez les pro
 
    **Tableau des propriétés de corrections des couleurs**
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Propriété</strong></td>
-   <td><strong>Type</strong></td>
-   <td><strong>Valeur par défaut</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=fr">iccprofilergb</a></td>
-   <td>Chaîne</td>
-   <td>&lt;empty&gt;</td>
-   <td>Nom du profil colorimétrique RVB par défaut.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=fr">iccprofilecmyk</a></td>
-   <td>Chaîne</td>
-   <td>&lt;empty&gt;</td>
-   <td>Nom du profil colorimétrique CMJN par défaut.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=fr">iccprofilegray</a></td>
-   <td>Chaîne</td>
-   <td>&lt;empty&gt;</td>
-   <td>Nom du profil colorimétrique de niveaux de gris par défaut.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=fr">iccprofilesrcrgb</a></td>
-   <td>Chaîne</td>
-   <td>&lt;empty&gt;</td>
-   <td>Nom du profil colorimétrique RGB par défaut utilisé pour les images RGB qui n’ont pas de profil colorimétrique intégré.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=fr">iccprofilesrccmyk</a></td>
-   <td>Chaîne</td>
-   <td>&lt;empty&gt;</td>
-   <td>Nom du profil colorimétrique CMJN par défaut utilisé pour les images CMJN qui n’ont pas de profil colorimétrique incorporé.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=fr">iccprofilesrcgray</a></td>
-   <td>Chaîne</td>
-   <td>&lt;empty&gt;</td>
-   <td>Nom du profil colorimétrique de niveaux de gris par défaut utilisé pour les images CMJN qui n’ont pas de profil colorimétrique incorporé.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=fr">iccblackpointcompensation</a></td>
-   <td>Booléen</td>
-   <td>True</td>
-   <td>Indique si la compensation du point noir est effectuée lors de la correction des couleurs. Adobe recommande d’activer ce paramètre.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=fr">iccdither</a></td>
-   <td>Booléen</td>
-   <td>False</td>
-   <td>Indique si le tramage est effectué lors de la correction des couleurs.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=fr">iccrenderintent</a></td>
-   <td>Chaîne</td>
-   <td>relative</td>
-   <td><p>Indique le mode de rendu. Les valeurs possibles sont les suivantes : <strong>perception, relative, saturation, absolue. </strong><i></i>Adobe recommande <strong>relatif</strong><i></i> comme valeur par défaut.</p> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Propriété</strong></td>
+      <td><strong>Type</strong></td>
+      <td><strong>Valeur par défaut</strong></td>
+      <td><strong>Description</strong></td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=fr">iccprofilergb</a></td>
+      <td>Chaîne</td>
+      <td>&lt;empty&gt;</td>
+      <td>Nom du profil colorimétrique RVB par défaut.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=fr">iccprofilecmyk</a></td>
+      <td>Chaîne</td>
+      <td>&lt;empty&gt;</td>
+      <td>Nom du profil colorimétrique CMJN par défaut.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=fr">iccprofilegray</a></td>
+      <td>Chaîne</td>
+      <td>&lt;empty&gt;</td>
+      <td>Nom du profil colorimétrique de niveaux de gris par défaut.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=fr">iccprofilesrcrgb</a></td>
+      <td>Chaîne</td>
+      <td>&lt;empty&gt;</td>
+      <td>Nom du profil colorimétrique RGB par défaut utilisé pour les images RGB qui n’ont pas de profil colorimétrique intégré.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=fr">iccprofilesrccmyk</a></td>
+      <td>Chaîne</td>
+      <td>&lt;empty&gt;</td>
+      <td>Nom du profil colorimétrique CMJN par défaut utilisé pour les images CMJN qui n’ont pas de profil colorimétrique incorporé.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=fr">iccprofilesrcgray</a></td>
+      <td>Chaîne</td>
+      <td>&lt;empty&gt;</td>
+      <td>Nom du profil colorimétrique de niveaux de gris par défaut utilisé pour les images CMJN qui n’ont pas de profil colorimétrique incorporé.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=fr">iccblackpointcompensation</a></td>
+      <td>Booléen</td>
+      <td>True</td>
+      <td>Indique si la compensation du point noir est effectuée lors de la correction des couleurs. Adobe recommande d’activer ce paramètre.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=fr">iccdither</a></td>
+      <td>Booléen</td>
+      <td>False</td>
+      <td>Indique si le tramage est effectué lors de la correction des couleurs.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=fr">iccrenderintent</a></td>
+      <td>Chaîne</td>
+      <td>relative</td>
+      <td><p>Indique le mode de rendu. Les valeurs possibles sont les suivantes : <strong>perception, relative, saturation, absolue. </strong><i></i>Adobe recommande <strong>relatif</strong><i></i> comme valeur par défaut.</p> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Les noms des propriétés sont sensibles à la casse et doivent être tous en minuscules.
+   >[!NOTE]
+   >
+   >Les noms des propriétés sont sensibles à la casse et doivent être tous en minuscules.
 
-**Tableau de profil colorimétrique**
+   **Tableau de profil colorimétrique**
 
-Les profils colorimétriques suivants sont installés :
+   Les profils colorimétriques suivants sont installés :
 
-<table>
- <tbody>
-  <tr>
-   <th><p>Nom</p> </th>
-   <th><p>Espace colorimétrique</p> </th>
-   <th><p>Description</p> </th>
-  </tr>
-  <tr>
-   <td>Adobe RGB</td>
-   <td>RVB</td>
-   <td>Adobe RGB (1998)</td>
-  </tr>
-  <tr>
-   <td>AppleRGB</td>
-   <td>RVB</td>
-   <td>Apple RGB</td>
-  </tr>
-  <tr>
-   <td>CIERGB</td>
-   <td>RVB</td>
-   <td>CIE RGB</td>
-  </tr>
-  <tr>
-   <td>CoatedFogra27</td>
-   <td>CMJN</td>
-   <td>Coated FOGRA27 (ISO 12647-2 :2004)</td>
-  </tr>
-  <tr>
-   <td>CoatedFogra39</td>
-   <td>CMJN</td>
-   <td>Coated FOGRA39 (ISO 12647-2 :2004)</td>
-  </tr>
-  <tr>
-   <td>CoatedGraCol</td>
-   <td>CMJN</td>
-   <td>Coated GRACoL 2006 (ISO 12647-2 :2004)</td>
-  </tr>
-  <tr>
-   <td>ColorMatchRGB</td>
-   <td>RVB</td>
-   <td>RGB ColorMatch</td>
-  </tr>
-  <tr>
-   <td>EuropeISOCoated</td>
-   <td>CMJN</td>
-   <td>Europe ISO Coated FOGRA27</td>
-  </tr>
-  <tr>
-   <td>EuroscaleCoated</td>
-   <td>CMJN</td>
-   <td>Euro scale Coated v2</td>
-  </tr>
-  <tr>
-   <td>EuroscaleUncoated</td>
-   <td>CMJN</td>
-   <td>Euro scale Uncoated v2</td>
-  </tr>
-  <tr>
-   <td>JapanColorCoated</td>
-   <td>CMJN</td>
-   <td>Japan Color 2001 Coated</td>
-  </tr>
-  <tr>
-   <td>JapanColorNewspaper</td>
-   <td>CMJN</td>
-   <td>Japan Color 2002 Newspaper</td>
-  </tr>
-  <tr>
-   <td>JapanColorUncoated</td>
-   <td>CMJN</td>
-   <td>Japan Color 2001 Uncoated</td>
-  </tr>
-  <tr>
-   <td>JapanColorWebCoated</td>
-   <td>CMJN</td>
-   <td>Japan Color 2003 Web Coated</td>
-  </tr>
-  <tr>
-   <td>JapanWebCoated</td>
-   <td>CMJN</td>
-   <td>Japan Web Coated (Ad)</td>
-  </tr>
-  <tr>
-   <td>NewsprintSNAP2007</td>
-   <td>CMJN</td>
-   <td>US Newsprint (SNAP 2007)</td>
-  </tr>
-  <tr>
-   <td>NTSC</td>
-   <td>RVB</td>
-   <td>NTSC (1953)</td>
-  </tr>
-  <tr>
-   <td>PAL</td>
-   <td>RVB</td>
-   <td>PAL/SECAM</td>
-  </tr>
-  <tr>
-   <td>ProPhoto</td>
-   <td>RVB</td>
-   <td>ProPhoto RGB</td>
-  </tr>
-  <tr>
-   <td>PS4Default</td>
-   <td>CMJN</td>
-   <td>Photoshop 4 Default CMYK</td>
-  </tr>
-  <tr>
-   <td>PS5Default</td>
-   <td>CMJN</td>
-   <td>Photoshop 5 Default CMYK</td>
-  </tr>
-  <tr>
-   <td>SheetfedCoated</td>
-   <td>CMJN</td>
-   <td>U.S. Sheetfed Coated v2</td>
-  </tr>
-  <tr>
-   <td>SheetfedUncoated</td>
-   <td>CMJN</td>
-   <td>U.S. Sheetfed Uncoated v2</td>
-  </tr>
-  <tr>
-   <td>SMPTE</td>
-   <td>RVB</td>
-   <td>SMPTE-C</td>
-  </tr>
-  <tr>
-   <td>sRVB</td>
-   <td>RVB</td>
-   <td>sRVB IEC61966-2.1</td>
-  </tr>
-  <tr>
-   <td>UncoatedFogra29</td>
-   <td>CMJN</td>
-   <td>Uncoated FOGRA29 (ISO 12647-2 :2004)</td>
-  </tr>
-  <tr>
-   <td>WebCoated</td>
-   <td>CMJN</td>
-   <td>U.S. Web Coated (SWOP) v2</td>
-  </tr>
-  <tr>
-   <td>WebCoatedFogra28</td>
-   <td>CMJN</td>
-   <td>Web Coated FOGRA28 (ISO 12647-2 :2004)</td>
-  </tr>
-  <tr>
-   <td>WebCoatedGrade3</td>
-   <td>CMJN</td>
-   <td>Web Coated SWOP 2006 Grade 3 Paper</td>
-  </tr>
-  <tr>
-   <td>WebCoatedGrade5</td>
-   <td>CMJN</td>
-   <td>Web Coated SWOP 2006 Grade 5 Paper</td>
-  </tr>
-  <tr>
-   <td>WebUncoated</td>
-   <td>CMJN</td>
-   <td>U.S. Web Uncoated v2</td>
-  </tr>
-  <tr>
-   <td>WideGamutRGB</td>
-   <td>RVB</td>
-   <td>Wide Gamut RGB</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <th><p>Nom</p> </th>
+      <th><p>Espace colorimétrique</p> </th>
+      <th><p>Description</p> </th>
+   </tr>
+   <tr>
+      <td>Adobe RGB</td>
+      <td>RVB</td>
+      <td>Adobe RGB (1998)</td>
+   </tr>
+   <tr>
+      <td>AppleRGB</td>
+      <td>RVB</td>
+      <td>Apple RGB</td>
+   </tr>
+   <tr>
+      <td>CIERGB</td>
+      <td>RVB</td>
+      <td>CIE RGB</td>
+   </tr>
+   <tr>
+      <td>CoatedFogra27</td>
+      <td>CMJN</td>
+      <td>Coated FOGRA27 (ISO 12647-2 :2004)</td>
+   </tr>
+   <tr>
+      <td>CoatedFogra39</td>
+      <td>CMJN</td>
+      <td>Coated FOGRA39 (ISO 12647-2 :2004)</td>
+   </tr>
+   <tr>
+      <td>CoatedGraCol</td>
+      <td>CMJN</td>
+      <td>Coated GRACoL 2006 (ISO 12647-2 :2004)</td>
+   </tr>
+   <tr>
+      <td>ColorMatchRGB</td>
+      <td>RVB</td>
+      <td>RGB ColorMatch</td>
+   </tr>
+   <tr>
+      <td>EuropeISOCoated</td>
+      <td>CMJN</td>
+      <td>Europe ISO Coated FOGRA27</td>
+   </tr>
+   <tr>
+      <td>EuroscaleCoated</td>
+      <td>CMJN</td>
+      <td>Euro scale Coated v2</td>
+   </tr>
+   <tr>
+      <td>EuroscaleUncoated</td>
+      <td>CMJN</td>
+      <td>Euro scale Uncoated v2</td>
+   </tr>
+   <tr>
+      <td>JapanColorCoated</td>
+      <td>CMJN</td>
+      <td>Japan Color 2001 Coated</td>
+   </tr>
+   <tr>
+      <td>JapanColorNewspaper</td>
+      <td>CMJN</td>
+      <td>Japan Color 2002 Newspaper</td>
+   </tr>
+   <tr>
+      <td>JapanColorUncoated</td>
+      <td>CMJN</td>
+      <td>Japan Color 2001 Uncoated</td>
+   </tr>
+   <tr>
+      <td>JapanColorWebCoated</td>
+      <td>CMJN</td>
+      <td>Japan Color 2003 Web Coated</td>
+   </tr>
+   <tr>
+      <td>JapanWebCoated</td>
+      <td>CMJN</td>
+      <td>Japan Web Coated (Ad)</td>
+   </tr>
+   <tr>
+      <td>NewsprintSNAP2007</td>
+      <td>CMJN</td>
+      <td>US Newsprint (SNAP 2007)</td>
+   </tr>
+   <tr>
+      <td>NTSC</td>
+      <td>RVB</td>
+      <td>NTSC (1953)</td>
+   </tr>
+   <tr>
+      <td>PAL</td>
+      <td>RVB</td>
+      <td>PAL/SECAM</td>
+   </tr>
+   <tr>
+      <td>ProPhoto</td>
+      <td>RVB</td>
+      <td>ProPhoto RGB</td>
+   </tr>
+   <tr>
+      <td>PS4Default</td>
+      <td>CMJN</td>
+      <td>Photoshop 4 Default CMYK</td>
+   </tr>
+   <tr>
+      <td>PS5Default</td>
+      <td>CMJN</td>
+      <td>Photoshop 5 Default CMYK</td>
+   </tr>
+   <tr>
+      <td>SheetfedCoated</td>
+      <td>CMJN</td>
+      <td>U.S. Sheetfed Coated v2</td>
+   </tr>
+   <tr>
+      <td>SheetfedUncoated</td>
+      <td>CMJN</td>
+      <td>U.S. Sheetfed Uncoated v2</td>
+   </tr>
+   <tr>
+      <td>SMPTE</td>
+      <td>RVB</td>
+      <td>SMPTE-C</td>
+   </tr>
+   <tr>
+      <td>sRVB</td>
+      <td>RVB</td>
+      <td>sRVB IEC61966-2.1</td>
+   </tr>
+   <tr>
+      <td>UncoatedFogra29</td>
+      <td>CMJN</td>
+      <td>Uncoated FOGRA29 (ISO 12647-2 :2004)</td>
+   </tr>
+   <tr>
+      <td>WebCoated</td>
+      <td>CMJN</td>
+      <td>U.S. Web Coated (SWOP) v2</td>
+   </tr>
+   <tr>
+      <td>WebCoatedFogra28</td>
+      <td>CMJN</td>
+      <td>Web Coated FOGRA28 (ISO 12647-2 :2004)</td>
+   </tr>
+   <tr>
+      <td>WebCoatedGrade3</td>
+      <td>CMJN</td>
+      <td>Web Coated SWOP 2006 Grade 3 Paper</td>
+   </tr>
+   <tr>
+      <td>WebCoatedGrade5</td>
+      <td>CMJN</td>
+      <td>Web Coated SWOP 2006 Grade 5 Paper</td>
+   </tr>
+   <tr>
+      <td>WebUncoated</td>
+      <td>CMJN</td>
+      <td>U.S. Web Uncoated v2</td>
+   </tr>
+   <tr>
+      <td>WideGamutRGB</td>
+      <td>RVB</td>
+      <td>Wide Gamut RGB</td>
+   </tr>
+   </tbody>
+   </table>
 
 1. Sélectionnez **[!UICONTROL Enregistrer tout]**.
 
@@ -1243,28 +1243,28 @@ Reportez-vous à la section [Diffusion de ressources Dynamic Media](/help/asset
   </tr>
   <tr>
    <td>Copier l’URL de la visionneuse</td>
-   <td><p>La boîte de dialogue Copier l’URL affiche une URL similaire à celle qui suit (l’URL est utilisée à des fins de démonstration uniquement) :</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&contentRoot=%2F</code></p> <p>où <code>PUBLISHNODE</code> désigne le nœud de publication standard d’Experience Manager et <code>IMAGESERVICEPUBLISHNODE</code> fait référence à l’URL du service d’images.</p> <p>Voir aussi <a href="/help/assets/delivering-dynamic-media-assets.md">Diffusion de ressources Dynamic Media</a>.</p> </td>
+   <td><p>La boîte de dialogue Copier l’URL affiche une URL similaire à celle qui suit (l’URL est utilisée à des fins de démonstration uniquement) :</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>où <code>PUBLISHNODE</code> désigne le nœud de publication standard d’Experience Manager et <code>IMAGESERVICEPUBLISHNODE</code> fait référence à l’URL du service d’images.</p> <p>Voir aussi <a href="/help/assets/delivering-dynamic-media-assets.md">Diffusion de ressources Dynamic Media</a>.</p> </td>
   </tr>
   <tr>
    <td>Copier le code intégré d’une visionneuse</td>
    <td><p>La boîte de dialogue Copier le code intégré affiche un fragment de code similaire à celui qui suit (le code est utilisé à des fins de démonstration uniquement) :</p> <p><code class="code">&lt;style type="text/css"&gt;
-       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
+       #s7basiczoom_div.s7basiczoomviewer{
        width:100%;
        height:auto;
-       &rbrace;
+       }
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
        "containerId" : "s7basiczoom_div",
-       "params" : &lbrace;
+       "params" : {
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
-       &rbrace;).init();
+       "asset" : "/content/dam/path/to/Image.jpg" }
+       }).init();
        &lt;/script&gt;</code></p> <p>où <code>PUBLISHNODE</code> désigne le nœud de publication standard d’Experience Manager et <code>IMAGESERVICEPUBLISHNODE</code> fait référence à l’URL du service d’images.</p> <p>Voir aussi <a href="/help/assets/delivering-dynamic-media-assets.md">Diffusion de ressources Dynamic Media</a>.</p> </td>
   </tr>
  </tbody>

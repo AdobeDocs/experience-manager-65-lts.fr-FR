@@ -19,7 +19,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1587'
 ht-degree: 97%
@@ -32,11 +32,11 @@ ht-degree: 97%
 * Le programme de traitement du proxy définit et gère une tâche spécifique.
 Il peut couvrir une grande variété de tâches ; par exemple l’utilisation d’[!DNL InDesign Server] pour traiter les fichiers.
 
-Pour charger intégralement des fichiers créés avec [!DNL Adobe InDesign] vers [!DNL Experience Manager Assets], un proxy est utilisé. Cette méthode utilise un programme de traitement du proxy pour communiquer avec [!DNL Adobe InDesign Server], qui exécute des [scripts](https://helpx.adobe.com/fr/indesign/using/scripting.html) afin d’extraire des métadonnées et de générer divers rendus pour [!DNL Experience Manager Assets]. Le programme de traitement du proxy permet une communication bidirectionnelle entre [!DNL InDesign Server] et les instances [!DNL Experience Manager] dans une configuration cloud.
+Pour charger intégralement des fichiers créés avec [!DNL Adobe InDesign] vers [!DNL Experience Manager Assets], un proxy est utilisé. Cette méthode utilise un programme de traitement du proxy pour communiquer avec [!DNL Adobe InDesign Server], qui exécute des [scripts](https://helpx.adobe.com/indesign/using/scripting.html) afin d’extraire des métadonnées et de générer divers rendus pour [!DNL Experience Manager Assets]. Le programme de traitement du proxy permet une communication bidirectionnelle entre [!DNL InDesign Server] et les instances [!DNL Experience Manager] dans une configuration cloud.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] est proposé sous la forme de deux offres distinctes. L’application de bureau [Adobe InDesign](https://www.adobe.com/fr/products/indesign.html) utilisée pour concevoir des dispositions pour la distribution papier et numérique. [Adobe InDesign Server](https://www.adobe.com/fr/products/indesignserver.html) vous permet de créer des documents de façon automatisée, et par programmation, sur la base de vos dispositions créées avec [!DNL InDesign]. Il fonctionne comme un service offrant une interface à son moteur [ExtendScript](https://helpx.adobe.com/fr/indesign/using/scripting.html).Les scripts sont écrits en [!DNL ExtendScript], un langage similaire à [!DNL JavaScript].
+>[!DNL Adobe InDesign] est proposé sous la forme de deux offres distinctes. L’application de bureau [Adobe InDesign](https://www.adobe.com/fr/products/indesign.html) utilisée pour concevoir des dispositions pour la distribution papier et numérique. [Adobe InDesign Server](https://www.adobe.com/fr/products/indesignserver.html) vous permet de créer des documents de façon automatisée, et par programmation, sur la base de vos dispositions créées avec [!DNL InDesign]. Il fonctionne comme un service offrant une interface à son moteur [ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html).Les scripts sont écrits en [!DNL ExtendScript], un langage similaire à [!DNL JavaScript].
 
 ## Fonctionnement de l’extraction {#how-the-extraction-works}
 
@@ -215,19 +215,19 @@ Pour configurer le nombre de traitements IDS parallèles :
 
    S’il existe plusieurs machines exécutant [!DNL InDesign Server], ajoutez les points d’entrée SOAP (nombre de processeurs par ordinateur -1) pour chaque ordinateur.
 
+   >[!NOTE]
+   >
+   >Lorsque vous travaillez avec un groupe de programmes de traitement, vous pouvez activer la liste bloquée des programmes de traitement IDS.
+   >
+   >Pour ce faire, cochez la case **[!UICONTROL enable.retry.name]** sous la configuration `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, ce qui déclenche de nouvelles tentatives pour les tâches IDS.
+   >
+   >En outre, sous la configuration `com.day.cq.dam.ids.impl.IDSPoolImpl.name`, définissez une valeur positive pour le paramètre `max.errors.to.blacklist`, qui détermine le nombre de tentatives pour une tâche avant qu’un IDS ne soit exclu de la liste des gestionnaires de tâches.
+   >
+   >Par défaut, le traitement IDS est revalidé après une durée en minutes configurable (`retry.interval.to.whitelist.name`). Si le programme de traitement est en ligne, il est retiré de la liste bloquée.
+
 <!-- 
 TBD: Make updates to configurations for allow and block list after product updates are done.
 -->
-
->[!NOTE]
->
->Lorsque vous travaillez avec un groupe de programmes de traitement, vous pouvez activer la liste bloquée des programmes de traitement IDS.
->
->Pour ce faire, cochez la case **[!UICONTROL enable.retry.name]** sous la configuration `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, ce qui déclenche de nouvelles tentatives pour les tâches IDS.
->
->En outre, sous la configuration `com.day.cq.dam.ids.impl.IDSPoolImpl.name`, définissez une valeur positive pour le paramètre `max.errors.to.blacklist`, qui détermine le nombre de tentatives pour une tâche avant qu’un IDS ne soit exclu de la liste des gestionnaires de tâches.
->
->Par défaut, le traitement IDS est revalidé après une durée en minutes configurable (`retry.interval.to.whitelist.name`). Si le programme de traitement est en ligne, il est retiré de la liste bloquée.
 
 ## Activation de la prise en charge pour [!DNL InDesign Server] 10.0 ou une version ultérieure {#enabling-support-for-indesign-server-or-later}
 

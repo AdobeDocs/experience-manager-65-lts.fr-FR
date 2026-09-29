@@ -30,7 +30,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '2168'
 ht-degree: 92%
@@ -43,49 +43,49 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci
 
    Les catégories sont présentes dans l’onglet Démarrer le processus de Workspace. Ces catégories sont utilisées pour classer les points de départ.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Propriété</strong></td>
-   <td><strong>Client uniquement</strong></td>
-   <td><strong>Commentaires</strong></td>
-  </tr>
-  <tr>
-   <td>name</td>
-   <td>F</td>
-   <td>Nom de la catégorie</td>
-  </tr>
-  <tr>
-   <td>id</td>
-   <td>F</td>
-   <td>ID de la catégorie<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>description<br type="_moz" /> </td>
-   <td>F</td>
-   <td>Description de la catégorie<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>parentOid<br type="_moz" /> </td>
-   <td>F</td>
-   <td>Contient l’OID de la catégorie parente<br type="_moz" />. </td>
-  </tr>
-  <tr>
-   <td>startPointsList<br type="_moz" /> </td>
-   <td>T</td>
-   <td>Contient la liste de tous les points de départ présents dans une catégorie.</td>
-  </tr>
-  <tr>
-   <td>categoryList</td>
-   <td>T</td>
-   <td>Contient la liste des catégories enfants directes d’une catégorie<br type="_moz" />. </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Propriété</strong></td>
+      <td><strong>Client uniquement</strong></td>
+      <td><strong>Commentaires</strong></td>
+   </tr>
+   <tr>
+      <td>name</td>
+      <td>F</td>
+      <td>Nom de la catégorie</td>
+   </tr>
+   <tr>
+      <td>id</td>
+      <td>F</td>
+      <td>ID de la catégorie<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>description<br type="_moz" /> </td>
+      <td>F</td>
+      <td>Description de la catégorie<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>parentOid<br type="_moz" /> </td>
+      <td>F</td>
+      <td>Contient l’OID de la catégorie parente<br type="_moz" />. </td>
+   </tr>
+   <tr>
+      <td>startPointsList<br type="_moz" /> </td>
+      <td>T</td>
+      <td>Contient la liste de tous les points de départ présents dans une catégorie.</td>
+   </tr>
+   <tr>
+      <td>categoryList</td>
+      <td>T</td>
+      <td>Contient la liste des catégories enfants directes d’une catégorie<br type="_moz" />. </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Tous les points de départ et favoris sont des catégories qui sont définies côté client. La catégorie Favoris contient tous les points de départ qui sont marqués par l’utilisateur comme favoris. La catégorie Tous les points de départ contient tous les points de départ.
+   >[!NOTE]
+   >
+   >Tous les points de départ et favoris sont des catégories qui sont définies côté client. La catégorie Favoris contient tous les points de départ qui sont marqués par l’utilisateur comme favoris. La catégorie Tous les points de départ contient tous les points de départ.
 
 1. Point de départ
 

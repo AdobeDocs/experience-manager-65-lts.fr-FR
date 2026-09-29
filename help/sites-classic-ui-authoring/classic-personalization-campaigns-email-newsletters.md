@@ -22,7 +22,7 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 100%
@@ -74,42 +74,42 @@ Le composant **Outils de messagerie électronique** pour ExactTarget permet d’
 
 1. Sélectionnez une option dans le menu **Options** :
 
-<table>
- <tbody>
-  <tr>
-   <td>Adresse postale physique (requise)</td>
-   <td>Ce composant insère l’adresse postale physique de votre organisation dans l’e-mail.</td>
-  </tr>
-  <tr>
-   <td>Centre de profils (requis)</td>
-   <td>Le centre de profils est une page web où les personnes abonnées peuvent saisir et gérer les informations personnelles que vous conservez à leur sujet.</td>
-  </tr>
-  <tr>
-   <td>Afficher l’e-mail sous forme d’une page web</td>
-   <td>Ce composant permet à l’utilisateur ou l’utilisatrice d’afficher l’e-mail sous la forme d’une page web.</td>
-  </tr>
-  <tr>
-   <td>Politique de confidentialité</td>
-   <td>Ce composant insère le lien vers votre politique de confidentialité dans l'e-mail.<br /> </td>
-  </tr>
-  <tr>
-   <td>Centre de désabonnement</td>
-   <td>Permet à l’utilisateur ou l’utilisatrice de se désabonner de votre liste de publipostage.</td>
-  </tr>
-  <tr>
-   <td>Centre d’abonnement</td>
-   <td>Un centre d’abonnement est une page Web dans laquelle les abonnés peuvent contrôler les messages qu’ils reçoivent de votre entreprise.</td>
-  </tr>
-  <tr>
-   <td>Suivre les ouvertures d’e-mail</td>
-   <td>Composant masqué qui vous permet d’utiliser la fonctionnalité de suivi d’ExactTarget.<br /> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>Adresse postale physique (requise)</td>
+      <td>Ce composant insère l’adresse postale physique de votre organisation dans l’e-mail.</td>
+   </tr>
+   <tr>
+      <td>Centre de profils (requis)</td>
+      <td>Le centre de profils est une page web où les personnes abonnées peuvent saisir et gérer les informations personnelles que vous conservez à leur sujet.</td>
+   </tr>
+   <tr>
+      <td>Afficher l’e-mail sous forme d’une page web</td>
+      <td>Ce composant permet à l’utilisateur ou l’utilisatrice d’afficher l’e-mail sous la forme d’une page web.</td>
+   </tr>
+   <tr>
+      <td>Politique de confidentialité</td>
+      <td>Ce composant insère le lien vers votre politique de confidentialité dans l'e-mail.<br /> </td>
+   </tr>
+   <tr>
+      <td>Centre de désabonnement</td>
+      <td>Permet à l’utilisateur ou l’utilisatrice de se désabonner de votre liste de publipostage.</td>
+   </tr>
+   <tr>
+      <td>Centre d’abonnement</td>
+      <td>Un centre d’abonnement est une page Web dans laquelle les abonnés peuvent contrôler les messages qu’ils reçoivent de votre entreprise.</td>
+   </tr>
+   <tr>
+      <td>Suivre les ouvertures d’e-mail</td>
+      <td>Composant masqué qui vous permet d’utiliser la fonctionnalité de suivi d’ExactTarget.<br /> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Des valeurs ne sont renseignées dans le menu déroulant **Options** que si la configuration d’ExactTarget est appliquée à l’e-mail. Consultez [Application de la configuration de service de messagerie aux paramètres d’e-mail](#applying-e-mail-service-configuration-to-e-mail-settings) pour plus d’informations.
+   >[!NOTE]
+   >
+   >Des valeurs ne sont renseignées dans le menu déroulant **Options** que si la configuration d’ExactTarget est appliquée à l’e-mail. Consultez [Application de la configuration de service de messagerie aux paramètres d’e-mail](#applying-e-mail-service-configuration-to-e-mail-settings) pour plus d’informations.
 
 1. Publiez l&#39;e-mail sur ExactTarget.
 
