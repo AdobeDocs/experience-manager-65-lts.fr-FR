@@ -24,10 +24,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
 workflow-type: tm+mt
-source-wordcount: '10681'
-ht-degree: 98%
+source-wordcount: '10769'
+ht-degree: 97%
 ---
 # Installer et configurer des services de document {#installing-and-configuring-document-services}
 
@@ -201,6 +201,10 @@ Si vous utilisez un système d’exploitation UNIX, installez les packages 32 b
   * ld-linux.so.2
   * libexpat.so.1
 
+* Sous Red Hat® Enterprise Linux® 9, la version 32 bits d’OpenOffice nécessite `libcrypt.so.1`, qui n’est pas installé par défaut. S’il est manquant, OpenOffice ne démarre pas avec le `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory` d’erreur et les conversions OpenOffice en PDF échouent. Installez le package `libxcrypt-compat` (32 bits) pour fournir la bibliothèque :
+
+  `sudo dnf install -y libxcrypt-compat.i686`
+
 ## Configurations de pré-installation {#preinstallationconfigurations}
 
 Les configurations répertoriées dans la section Configurations de pré-installation s’appliquent uniquement au service PDF Generator. Si vous ne configurez pas le service PDF Generator, vous pouvez ignorer la section de configuration pré‑installation.
@@ -228,7 +232,7 @@ Avant d’installer Acrobat, vérifiez ces exigences essentielles. Prérequis :
 * Familiarité avec [Adobe Admin Console](https://helpx.adobe.com/in/enterprise/admin-guide.html)
 * Compréhension de votre [architecture de déploiement AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
 * Privilèges d’administration sur Adobe Admin Console et le serveur exécutant AEM Forms.
-* Personne disposant d’un [accès d’administration](https://helpx.adobe.com/in/enterprise/using/admin-roles.html) à Adobe [Admin Console](https://adminconsole.adobe.com). En règle générale, votre entreprise dispose déjà d’un utilisateur ou d’une utilisatrice avec un accès d’administration. Vous pouvez regarder cette [vidéo d’instruction](https://www.youtube.com/watch?v=xO2T0I6SvsU&list=PLHRegP5ZOj7CpijZyD8pB9rIMJkvO6FnI&t=81s) pour savoir comment ajouter un administrateur ou une administratrice.
+* Personne disposant d’un [accès d’administration](https://helpx.adobe.com/in/enterprise/using/admin-roles.html) à Adobe [Admin Console](https://adminconsole.adobe.com). En règle générale, l’administration de votre entreprise dispose déjà d’un compte avec un accès d’administration. Vous pouvez regarder cette [vidéo d’instruction](https://www.youtube.com/watch?v=xO2T0I6SvsU&list=PLHRegP5ZOj7CpijZyD8pB9rIMJkvO6FnI&t=81s) pour savoir comment ajouter un administrateur ou une administratrice.
 * Compte d’utilisation doté du rôle [Administration de déploiement](https://helpx.adobe.com/in/enterprise/global-admin-console/manage-administrators.html) dans Adobe Admin Console. La même [vidéo d’instruction](https://www.youtube.com/watch?v=xO2T0I6SvsU&list=PLHRegP5ZOj7CpijZyD8pB9rIMJkvO6FnI&t=81s) montre comment ajouter un administrateur ou une administratrice de déploiement.
 * Privilèges d’administration locale sur la machine exécutant AEM Forms
 * Système d’exploitation Windows 64 bits
@@ -308,7 +312,7 @@ Ces étapes doivent être effectuées avec un accès d’*administration systèm
 
 1. Cliquez sur **Créer** pour créer le package.
 
-###### Étape 3 : accorder des autorisations de téléchargement à un utilisateur ou une utilisatrice
+###### Étape 3 : accorder des autorisations de téléchargement à une personne
 
 Il est recommandé de créer un compte de service dédié pour gérer les packages FRL. Si vous ne disposez pas déjà d’un compte dédié, vous pouvez suivre [cette vidéo d’instructions](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s) pour apprendre à ajouter une personne à votre organisation Adobe.
 
@@ -458,7 +462,7 @@ Ces étapes doivent être effectuées avec un accès d’*administration systèm
 
 1. Cliquez sur **Créer** pour créer le package.
 
-###### Étape 3 : accorder des autorisations de téléchargement à un utilisateur ou une utilisatrice
+###### Étape 3 : accorder des autorisations de téléchargement à une personne
 
 Il est recommandé de créer un compte de service dédié pour gérer les packages FRL. Si vous ne disposez pas déjà d’un compte dédié, vous pouvez suivre [cette vidéo d’instructions](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s) pour apprendre à ajouter une personne à votre organisation Adobe.
 
@@ -614,7 +618,7 @@ Ces étapes doivent être effectuées avec un accès d’*administration systèm
 
 1. Cliquez sur **Créer** pour créer le package.
 
-###### Étape 3 : accorder des autorisations de téléchargement à un utilisateur ou une utilisatrice
+###### Étape 3 : accorder des autorisations de téléchargement à une personne
 
 Il est recommandé de créer un compte de service dédié pour gérer les packages FRL. Si vous ne disposez pas déjà d’un compte dédié, vous pouvez suivre [cette vidéo d’instructions](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s) pour apprendre à ajouter une personne à votre organisation Adobe.
 
@@ -716,7 +720,7 @@ Après avoir désinstallé la version précédente, vous devez télécharger et 
 Une fois tous les processus terminés, effectuez un test d’action rapide pour confirmer que l’installation est valide :
 
 1. Utilisez le Bureau à distance (RDP) pour vous connecter au serveur et démarrer le serveur AEM Forms à l’aide des services.
-2. Une fois le serveur en cours d’exécution, ne fermez pas la fenêtre RDP. Au lieu de cela, déconnectez-vous en fermant la session de l’utilisateur, de sorte que la session se termine correctement pendant que le service continue à s’exécuter en arrière-plan.
+2. Une fois le serveur en cours d’exécution, ne fermez pas la fenêtre RDP. Au lieu de cela, déconnectez-vous en déconnectant la personne, de sorte que la session se termine correctement pendant que le service continue à s’exécuter en arrière-plan.
 
 ###### Étape 10 : tester le service PDF Generator
 
@@ -771,7 +775,7 @@ Ces étapes doivent être effectuées avec un accès d’*administration systèm
 
 1. Cliquez sur **Créer** pour créer le package.
 
-###### Étape 3 : accorder des autorisations de téléchargement à un utilisateur ou une utilisatrice
+###### Étape 3 : accorder des autorisations de téléchargement à une personne
 
 Il est recommandé de créer un compte de service dédié pour gérer les packages FRL. Si vous ne disposez pas déjà d’un compte dédié, vous pouvez suivre [cette vidéo d’instructions](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s) pour apprendre à ajouter une personne à votre organisation Adobe.
 
@@ -993,7 +997,7 @@ Le compte utilisateur utilisé pour démarrer le serveur d’applications doit a
 
 >[!NOTE]
 >
-> Comme indiqué ci-dessus, si le serveur AEM s’exécute en tant que service sous le compte système local (LSA), l’attribution explicite de ce privilège à un utilisateur ou une utilisatrice n’est pas nécessaire.
+> Comme indiqué ci-dessus, si le serveur AEM s’exécute en tant que service sous le compte système local (LSA), l’attribution explicite de ce privilège à une personne n’est pas nécessaire.
 
 ### (Windows uniquement) Activer le service PDF Generator pour les utilisateurs non-administrateurs {#enable-the-pdf-generator-service-for-non-administrators}
 
@@ -1359,7 +1363,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 **Microsoft® Windows**
 
-* Assurez-vous que la [version 32 bits prise en charge &#x200B;](/help/sites-deploying/technical-requirements.md) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
+* Assurez-vous que la [version 32 bits prise en charge ](/help/sites-deploying/technical-requirements.md) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
 * Assurez-vous qu’un utilisateur ou qu’une utilisatrice de PDF Generator est ajouté(e) à l’interface utilisateur de configuration du PDF.
 * Assurez-vous que l’utilisateur ou l’utilisatrice de PDF Generator est membre du groupe d’administrateurs et que le privilège [Remplacer un jeton de niveau processus](#grant-the-replace-a-process-level-token-privilege) est défini pour l’utilisateur ou l’utilisatrice.
 * Assurez-vous que l’utilisateur ou l’utilisatrice est configuré(e) dans l’interface utilisateur de PDF Generator et qu’il ou elle effectue les actions suivantes :
@@ -1377,6 +1381,10 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 * Créez une variable d’environnement `OpenOffice_PATH` et définissez-la pour qu’elle pointe vers l’installation OpenOffice définie dans la [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) ou le profil dt (arborescence des appareils).
 * En cas de problèmes lors de l’installation d’OpenOffice, assurez-vous que les [bibliothèques 32 bits](#extrarequirements) requises pour l’installation d’OpenOffice sont disponibles.
+
+* Sous Red Hat® Enterprise Linux® 9, la version 32 bits d’OpenOffice nécessite `libcrypt.so.1`, qui n’est pas installé par défaut. S’il est manquant, OpenOffice ne démarre pas avec le `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory` d’erreur et les conversions OpenOffice en PDF échouent. Installez le package `libxcrypt-compat` (32 bits) pour fournir la bibliothèque :
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 +++
 
@@ -1474,7 +1482,6 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
         adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=&lt;Absolute path to prov.xml>]
         
         ```
-
     
   * Sérialisez en volume le package (resérialisez l’installation existante à l’aide du fichier prov.xml et du nouveau numéro de série) : exécutez la commande suivante à partir du dossier d’installation PRTK en tant qu’administrateur ou administratrice pour sérialiser et activer les packages déployés sur les machines client :
 
@@ -1482,8 +1489,8 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
         adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
         
         ```
-
-    * Pour les installations à grande échelle, utilisez [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) pour supprimer les versions précédentes de Reader et Acrobat. Personnalisez le programme d’installation et déployez-le sur tous les ordinateurs de votre organisation.
+    
+* Pour les installations à grande échelle, utilisez [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) pour supprimer les versions précédentes de Reader et Acrobat. Personnalisez le programme d’installation et déployez-le sur tous les ordinateurs de votre organisation.
 
 +++
 
