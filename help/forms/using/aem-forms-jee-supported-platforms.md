@@ -27,10 +27,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
 workflow-type: tm+mt
-source-wordcount: '2949'
-ht-degree: 88%
+source-wordcount: '2993'
+ht-degree: 87%
 ---
 
 # Plateformes prises en charge pour AEM Forms on JEE {#supported-platforms-for-aem-forms-on-jee}
@@ -425,6 +425,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 >- Si une installation ® Office est désactivée ou n&#39;obtient pas de licence pour une raison quelconque, par exemple une installation sous licence en volume qui ne peut pas localiser un hôte KMS au cours d&#39;une période spécifiée, les conversions peuvent échouer jusqu&#39;à ce que l&#39;installation soit à nouveau sous licence et réactivée.
 >- PDF Generator ne prend pas en charge Microsoft® Office 365.
 >- Les conversions PDF Generator pour OpenOffice sont prises en charge sous Windows et Linux®.
+>- Sous Red Hat® Enterprise Linux® 9, la version 32 bits d’OpenOffice nécessite `libcrypt.so.1`, qui n’est pas installé par défaut. S’il est manquant, OpenOffice ne démarre pas avec le `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory` d’erreur et les conversions OpenOffice en PDF échouent. Installez le package `libxcrypt-compat` (32 bits) pour fournir la bibliothèque : `sudo dnf install -y libxcrypt-compat.i686`.
 >- Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont uniquement prises en charge sous Windows.
 >- PDF Generator ne prend pas en charge Microsoft® Windows 11.
 >- La prise en charge de ® Office 2021 Professional Plus est obsolète.
