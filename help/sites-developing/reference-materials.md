@@ -22,21 +22,21 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 79%
+source-wordcount: '331'
+ht-degree: 56%
 ---
 # Guides des API {#api-guides}
 
 Adobe Experience Manager (AEM) fournit plusieurs API pour développer des applications et étendre AEM. La liste suivante fournit la documentation pour les API prises en charge par AEM :
 
-* [API LTS Adobe AEM 6.5](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html)
-* [Documentation de l’API de l’IU (compatible avec les écrans tactiles) Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
-* [Guide de l’IU Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
-* [Documentation de l’API Widgets (interface utilisateur classique)](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
-* [Référence de l’API JavaScript de structure de test de l’interface utilisateur](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)
-* [Référence de l’API JavaScript principale de l’éditeur](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html?lang=fr)
+* [API LTS Adobe AEM 6.5](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html)
+* [Documentation de l’API de l’IU (compatible avec les écrans tactiles) Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/index.html)
+* [Guide de l’IU Coral](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/index.html)
+* [Documentation de l’API Widgets (interface utilisateur classique)](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)
+* [Référence de l’API JavaScript de structure de test de l’interface utilisateur](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html)
+* [Référence de l’API JavaScript principale de l’éditeur](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html)
 
 Références de l’API JavaScript de framework du SDK de l’éditeur d’application monopage AEM :
 
@@ -55,11 +55,11 @@ API de diffusion et de gestion de contenu AEM :
 
 * **Assets** : l’API HTTP Assets permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur des ressources, y compris des fichiers binaires, des métadonnées, des rendus et des commentaires. Voir [API HTTP AEM Assets](/help/assets/mac-api-assets.md)
 
-* **Fragments de contenu** (CF) : [prise en charge des CF dans l’API HTTP Assets](/help/assets/assets-api-content-fragments.md) et l’[API AEM Assets : fragments de contenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* **Fragments de contenu** (CF) : [prise en charge des CF dans l’API HTTP Assets](/help/assets/assets-api-content-fragments.md) et l’[API AEM Assets : fragments de contenu](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/assets-api-content-fragments/index.html)
 
 Les ressources externes suivantes sont proposées à titre de référence uniquement :
 
 * [API Apache Sling 11](https://sling.apache.org/apidocs/sling11/)
 * [API JACKRABBIT OAK](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)
-* [API Java Content Repository](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)
+* [API Java Content Repository](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html)
 * [API Apache Jackrabbit](https://jackrabbit.apache.org/api)

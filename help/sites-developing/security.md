@@ -21,9 +21,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '420'
 ht-degree: 96%
 ---
 # Sécurité{#security}
@@ -48,7 +48,7 @@ Il est important que vous adaptiez cette configuration à vos besoins en matièr
 
 >[!NOTE]
 >
->Adobe recommande vivement de toujours accéder à l’API de protection XSS en utilisant l’interface [XSSAPI fournie par AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/xss/XSSAPI.html).
+>Adobe recommande vivement de toujours accéder à l’API de protection XSS en utilisant l’interface [XSSAPI fournie par AEM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
 En outre, un pare-feu d’application web, tel que le [mod_security pour Apache](https://www.modsecurity.org), peut fournir un contrôle centralisé fiable sur la sécurité de l’environnement de déploiement, ainsi qu’une protection contre les attaques XSS qui n’étaient pas détectées précédemment.
 

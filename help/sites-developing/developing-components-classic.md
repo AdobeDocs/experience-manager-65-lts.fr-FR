@@ -21,10 +21,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2446'
-ht-degree: 99%
+source-wordcount: '2449'
+ht-degree: 97%
 ---
 # Développer des composants Adobe Experience Manager (AEM) (IU classique){#developing-aem-components-classic-ui}
 
@@ -101,7 +101,7 @@ Il existe trois méthodes pour accéder au contenu dans AEM WCM :
 
 * Par le biais de l’objet `currentPage` introduit dans `global.jsp` :
 
-  L’objet `currentPage` est une instance d’une page (voir [API AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)). La classe de page fournit plusieurs méthodes d’accès au contenu.
+  L’objet `currentPage` est une instance d’une page (voir [API AEM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)). La classe de page fournit plusieurs méthodes d’accès au contenu.
 
   Exemple : `String pageTitle = currentPage.getTitle();`
 
@@ -185,8 +185,8 @@ Pour développer de nouveaux composants pour AEM à partir d’un composant exis
    >
    >Un composant pour :
    >
-   >* l’interface utilisateur tactile utilise des composants [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) ;
-   >* l’interface utilisateur classique utilise des [Widgets ExtJS](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html).
+   >* l’interface utilisateur tactile utilise des composants [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) ;
+   >* l’interface utilisateur classique utilise des [Widgets ExtJS](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html).
 
    >[!NOTE]
    >

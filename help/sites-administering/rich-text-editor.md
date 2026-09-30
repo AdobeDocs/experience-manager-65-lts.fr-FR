@@ -17,10 +17,10 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2975'
-ht-degree: 98%
+source-wordcount: '2978'
+ht-degree: 97%
 ---
 # Configuration de l’éditeur de texte enrichi {#configure-the-rich-text-editor}
 
@@ -327,12 +327,12 @@ Sur une page, vous pouvez inclure la bibliothèque client (clientlib) d’édite
 
 ## Informations supplémentaires {#further-information}
 
-Pour plus d’informations sur la configuration de l’éditeur de texte enrichi, consultez la référence de l’[API Widget d’AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText).
+Pour plus d’informations sur la configuration de l’éditeur de texte enrichi, consultez la référence de l’[API Widget d’AEM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText).
 
 En particulier, pour afficher les plug-ins et les options connexes disponibles :
 
-* Le composant [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) fournit un champ de formulaire pour la modification des informations de texte stylisé (texte enrichi). Pour connaître l’ensemble des paramètres disponibles pour le formulaire de texte enrichi, rendez-vous dans les options de configuration.
-* Le composant RichText fournit un large éventail de fonctionnalités grâce aux modules externes répertoriés sous [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Pour chaque module externe :
+* Le composant [CQ.form.RichText](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText) fournit un champ de formulaire pour la modification des informations de texte stylisé (texte enrichi). Pour connaître l’ensemble des paramètres disponibles pour le formulaire de texte enrichi, rendez-vous dans les options de configuration.
+* Le composant RichText fournit un large éventail de fonctionnalités grâce aux modules externes répertoriés sous [CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Pour chaque module externe :
 
   * consultez les fonctions pour plus d’informations sur les fonctionnalités qui peuvent être activées (ou désactivées) ;
   * consultez les options de configuration pour connaître tous les paramètres de configuration disponibles pour le plug-in approprié.

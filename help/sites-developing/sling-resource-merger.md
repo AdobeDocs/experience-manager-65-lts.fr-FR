@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1262'
 ht-degree: 39%
 ---
 # Utilisation de Sling Resource Merger dans AEM{#using-the-sling-resource-merger-in-aem}
@@ -43,7 +43,7 @@ Sling Resource Merger combine les ressources de recouvrement et de remplacement 
 
 >[!CAUTION]
 >
->Sling Resource Merger et les méthodes connexes ne peuvent être utilisées qu’avec [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html). Cela signifie également qu’ils ne sont adaptés qu’à l’IU tactile standard ; les remplacements définis de cette manière, en particulier, ne s’appliquent qu’à la boîte de dialogue tactile d’un composant.
+>Sling Resource Merger et les méthodes connexes ne peuvent être utilisées qu’avec [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/index.html). Cela signifie également qu’ils ne sont adaptés qu’à l’IU tactile standard ; les remplacements définis de cette manière, en particulier, ne s’appliquent qu’à la boîte de dialogue tactile d’un composant.
 >
 >Pour remplacer d’autres zones (y compris d’autres parties d’un composant tactile ou de l’IU classique), copiez le nœud et la structure appropriés de l’original. Placez la copie à l’endroit où vous définissez la personnalisation.
 
@@ -221,7 +221,7 @@ Avec les fonctionnalités standard, ces cas d’utilisation vous permettent d’
      * type : `String[]`
      * value : liste des nœuds enfants (tels que définis dans `/libs`) à masquer/ignorer
 
-     Le caractère générique &ast; peut être utilisé pour masquer ou ignorer tous les nœuds enfants.
+     Le caractère générique &amp;ast; peut être utilisé pour masquer ou ignorer tous les nœuds enfants.
 
 * **Réorganiser les nœuds**
 

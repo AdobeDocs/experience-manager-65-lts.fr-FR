@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '5298'
+source-wordcount: '5300'
 ht-degree: 94%
 ---
 # Élaborer des rapports {#developing-reports}
@@ -116,7 +116,7 @@ Chaque colonne est une instance du [`columnbase`composant](#column-base-componen
 La requête :
 
 * est définie comme faisant partie du composant [`reportbase`](#report-base) ;
-* Est basée sur [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html).
+* Est basée sur [CQ QueryBuilder](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html).
 * Récupère les données utilisées comme base du rapport. Chaque ligne du jeu de résultats (tableau) est liée à un nœud, tel qu’il est renvoyé par la requête. Des informations spécifiques pour les [différentes colonnes](#column-base-component) sont ensuite extraites de ce jeu de données.
 
 * Se compose généralement des éléments suivants :
@@ -390,7 +390,7 @@ N:charting
 
 Chaque rapport peut comporter une boîte de dialogue de configuration, qui permet à l’utilisateur ou à l’utilisatrice de spécifier différents paramètres pour le rapport. Cette boîte de dialogue est accessible au moyen du bouton **Modifier** lorsque la page du rapport est ouverte.
 
-Il s’agit d’une [boîte de dialogue](/help/sites-developing/components-basics.md#dialogs) CQ standard qui peut être configurée comme telle (pour plus d’informations, voir [CQ.Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Dialog)).
+Il s’agit d’une [boîte de dialogue](/help/sites-developing/components-basics.md#dialogs) CQ standard qui peut être configurée comme telle (pour plus d’informations, voir [CQ.Dialog](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Dialog)).
 
 Voici un exemple de boîte de dialogue :
 
@@ -762,7 +762,7 @@ Lorsqu’il est trouvé, le motif spécifié (qui est défini en tant qu’expre
 
 * [formateurs de type de données](#preprocessing-data-type-formatters)
 
-  Convertissent une valeur numérique en chaîne relative ; par exemple, la valeur &grave;&grave; représentant un décalage horaire de 1 heure sera résolue dans une chaîne telle que `1:24PM (1 hour ago)`.
+  Convertissent une valeur numérique en chaîne relative ; par exemple, la valeur `` représentant un décalage horaire de 1 heure sera résolue dans une chaîne telle que `1:24PM (1 hour ago)`.
 
 Par exemple :
 
@@ -997,7 +997,7 @@ N:defaults
 
 * `aggregate`
 
-  Les valeurs `aggregate` valides sont les mêmes que pour `type` sous `aggregates` (voir [Définitions spécifiques à la colonne (définitions - filtres / agrégats) &#x200B;](#column-specific-definitions)).
+  Les valeurs `aggregate` valides sont les mêmes que pour `type` sous `aggregates` (voir [Définitions spécifiques à la colonne (définitions - filtres / agrégats) ](#column-specific-definitions)).
 
 ### Événements et actions {#events-and-actions}
 

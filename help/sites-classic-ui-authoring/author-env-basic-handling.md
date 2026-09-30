@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 86%
+source-wordcount: '1189'
+ht-degree: 85%
 ---
 # Manipulation de base{#basic-handling}
 
@@ -150,7 +150,7 @@ La console **Sites web** répertorie vos pages de contenu dans une arborescence 
 >dans :
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->Voir [SiteAdmin dans l’API Widget CQ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) pour plus d’informations.
+>Voir [SiteAdmin dans l’API Widget CQ](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) pour plus d’informations.
 
 ## Informations sur la page dans la console Sites web {#page-information-on-the-websites-console}
 

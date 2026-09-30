@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2654'
+source-wordcount: '2662'
 ht-degree: 92%
 ---
 # Étendre Multi Site Manager{#extending-the-multi-site-manager}
@@ -48,8 +48,8 @@ Cette page vous aide à optimiser les fonctionnalités de Multi Site Manager 
 
 La gestion multisite se compose des packages suivants :
 
-* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/package-summary.html)
-* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/commons/package-summary.html)
+* [com.day.cq.wcm.msm.api](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/msm/api/package-summary.html)
+* [com.day.cq.wcm.msm.commons](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/msm/commons/package-summary.html)
 
 Les principaux objets API MSM interagissent comme suit (voir également [Termes utilisés](/help/sites-administering/msm.md#terms-used)) :
 
@@ -108,8 +108,8 @@ Les principaux objets API MSM interagissent comme suit (voir également [Termes 
 
 Créez des actions de synchronisation personnalisées à utiliser avec vos configurations de déploiement. Créez une action de synchronisation lorsque les actions [installées](/help/sites-administering/msm-sync.md#installed-synchronization-actions) ne répondent pas aux exigences spécifiques de votre application. Pour ce faire, créez deux classes :
 
-* Une implémentation de l’interface [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) qui effectue l’action.
-* Un composant OSGI qui implémente l’interface [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) et crée des instances de votre classe `LiveAction`.
+* Une implémentation de l’interface [`com.day.cq.wcm.msm.api.LiveAction`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) qui effectue l’action.
+* Un composant OSGI qui implémente l’interface [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) et crée des instances de votre classe `LiveAction`.
 
 La `LiveActionFactory` crée des instances de la classe `LiveAction` pour une configuration donnée :
 
@@ -132,7 +132,7 @@ Utilisez le nœud de configuration `LiveAction` dans le référentiel pour stock
 
 Par exemple, une `LiveAction` doit stocker le nom de l’auteur du plan directeur. Une propriété du nœud de configuration inclut le nom de la propriété de la page plan directeur qui stocke les informations. Lorsqu’elle est exécutée, la `LiveAction` récupère le nom de la propriété à partir de la configuration, puis obtient la valeur de la propriété.
 
-Le paramètre de la méthode [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) est un objet `Resource`. Cet objet `Resource` représente le nœud `cq:LiveSyncAction` pour cette LiveAction dans la configuration du déploiement. Consultez [Création d’une configuration de déploiement](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Comme d’habitude, lorsque vous utilisez un nœud de configuration, vous devez l’adapter à un objet `ValueMap` :
+Le paramètre de la méthode [`LiveActionFactory.createAction`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) est un objet `Resource`. Cet objet `Resource` représente le nœud `cq:LiveSyncAction` pour cette LiveAction dans la configuration du déploiement. Consultez [Création d’une configuration de déploiement](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Comme d’habitude, lorsque vous utilisez un nœud de configuration, vous devez l’adapter à un objet `ValueMap` :
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -150,9 +150,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 Les objets suivants sont fournis en tant que paramètres de la méthode `execute` de l’objet `LiveAction` :
 
-* Un objet [`Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html) représentant la source de la Live Copy.
+* Un objet [`Resource`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html) représentant la source de la Live Copy.
 * Un objet `Resource` représentant la cible de la Live Copy.
-* L’objet [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) pour la Live Copy.
+* L’objet [`LiveRelationship`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) pour la Live Copy.
 * La valeur `autoSave` indique si votre `LiveAction` doit enregistrer les modifications apportées au référentiel.
 
 * La valeur reset indique le mode de réinitialisation du déploiement.
@@ -169,7 +169,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->Les arguments `Resource` peuvent être des objets `null` ou `Resources` qui ne s’adaptent pas aux objets `Node`, tels que les objets [`NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/NonExistingResource.html).
+>Les arguments `Resource` peuvent être des objets `null` ou `Resources` qui ne s’adaptent pas aux objets `Node`, tels que les objets [`NonExistingResource`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/api/resource/NonExistingResource.html).
 
 ## Créer une configuration de déploiement {#creating-a-new-rollout-configuration}
 
@@ -187,7 +187,7 @@ La nouvelle configuration de déploiement est alors disponible pour vous lors de
 ### Créer la configuration de déploiement {#create-the-rollout-configuration}
 
 1. Ouvrez CRXDE Lite, par exemple :
-   [&#128279;](http://localhost:4502/crx/de)
+   [](http://localhost:4502/crx/de)
 
 1. Accédez à :
    `/apps/msm/<your-project>/rolloutconfigs`
@@ -253,7 +253,7 @@ Suivez les procédures de cette section pour développer une `LiveActionFactory`
 
 1. [Créez le projet Maven](#create-the-maven-project) et importez-le dans Eclipse.
 1. [Ajoutez des dépendances](#add-dependencies-to-the-pom-file) au fichier POM.
-1. [Implémentez l’interface `LiveActionFactory` &#x200B;](#implement-liveactionfactory) et déployez le bundle OSGi.
+1. [Implémentez l’interface `LiveActionFactory` ](#implement-liveactionfactory) et déployez le bundle OSGi.
 1. [Créez la configuration de déploiement](#create-the-example-rollout-configuration).
 1. [Créez la Live Copy](#create-the-live-copy).
 
@@ -539,7 +539,7 @@ La classe `LiveActionFactory` suivante implémente une `LiveAction` qui enregist
 
    Le fichier AEM `error.log` doit indiquer que le bundle est démarré.
 
-   Par exemple, [&#128279;](https://localhost:4502/system/console/status-slinglogs).
+   Par exemple, [](https://localhost:4502/system/console/status-slinglogs).
 
    ```xml
    13.08.2013 14:34:55.450 *INFO* [OsgiInstallerImpl] com.adobe.example.msm.MyLiveActionFactory-bundle BundleEvent RESOLVED

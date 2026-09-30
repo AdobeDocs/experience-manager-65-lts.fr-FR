@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2351'
+source-wordcount: '2352'
 ht-degree: 91%
 ---
 # Synchronisation des utilisateurs{#user-synchronization}
@@ -45,7 +45,7 @@ Depuis AEM 6.1, lorsque la synchronisation des utilisateurs et des utilisatrice
 
 ## Distribution Sling {#sling-distribution}
 
-Les données utilisateur, avec leurs [ACL](/help/sites-administering/security.md), sont stockées dans le [cœur Oak](/help/sites-deploying/platform.md), la couche située en dessous du JCR Oak, et sont accessibles via l’[API Oak](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-summary.html). Du fait de mises à jour peu fréquentes, il est judicieux que les données utilisateur soient synchronisées avec d’autres instances de publication à l’aide de la [Distribution de contenu Sling](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md).
+Les données utilisateur, avec leurs [ACL](/help/sites-administering/security.md), sont stockées dans le [cœur Oak](/help/sites-deploying/platform.md), la couche située en dessous du JCR Oak, et sont accessibles via l’[API Oak](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-summary.html). Du fait de mises à jour peu fréquentes, il est judicieux que les données utilisateur soient synchronisées avec d’autres instances de publication à l’aide de la [Distribution de contenu Sling](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md).
 
 Les avantages de la synchronisation des utilisateurs à l’aide de la distribution Sling par rapport à la réplication traditionnelle sont les suivants :
 
@@ -98,7 +98,7 @@ Une fois la synchronisation des utilisateurs et des utilisatrices activée, seul
   * connexion avec droits d’administrateur
   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-    * par exemple, [&#128279;](https://localhost:4502/system/console/configMgr)
+    * par exemple, [](https://localhost:4502/system/console/configMgr)
 
   * localisez `Apache Sling Distribution Agent - Sync Agents Factory`
 
@@ -121,7 +121,7 @@ L’utilisateur ou l’utilisatrice autorisé(e) intervient à l’étape 3 pou
   * connexion avec droits d’administrateur
   * accédez à la [console de sécurité](/help/sites-administering/security.md)
 
-    * par exemple, [&#128279;](https://localhost:4503/useradmin)
+    * par exemple, [](https://localhost:4503/useradmin)
 
   * créer un utilisateur ou une utilisatrice
 
@@ -143,7 +143,7 @@ L’utilisateur ou l’utilisatrice autorisé(e) intervient à l’étape 3 pou
 
 * accédez à CRXDE Lite
 
-  * par exemple, [&#128279;](https://localhost:4503/crx/de)
+  * par exemple, [](https://localhost:4503/crx/de)
 
 * sélectionnez le nœud `/home`
 * dans le volet de droite, sélectionnez l’onglet `Access Control`
@@ -175,7 +175,7 @@ Une fois qu’un utilisateur ou une utilisatrice autorisé(e), membre du groupe 
   * connexion avec droits d’administrateur
   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-    * par exemple, [&#128279;](https://localhost:4502/system/console/configMgr)
+    * par exemple, [](https://localhost:4502/system/console/configMgr)
 
   * localisez `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
   * pour ouvrir une configuration pour modification, sélectionnez la configuration existante (icône de crayon).
@@ -196,7 +196,7 @@ Une fois qu’un utilisateur ou une utilisatrice autorisé(e), membre du groupe 
   * connexion avec droits d’administrateur
   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-    * par exemple, [&#128279;](https://localhost:4503/system/console/configMgr)
+    * par exemple, [](https://localhost:4503/system/console/configMgr)
 
   * localisez `Apache Sling Distribution Agent - Queue Agents Factory`
 
@@ -219,7 +219,7 @@ Une fois qu’un utilisateur ou une utilisatrice autorisé(e), membre du groupe 
   * connexion avec droits d’administrateur
   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-    * par exemple, [&#128279;](https://localhost:4503/system/console/configMgr)
+    * par exemple, [](https://localhost:4503/system/console/configMgr)
 
   * localisez **`Adobe Social Sync - Diff Observer Factory`**
 
@@ -243,7 +243,7 @@ Par défaut, l’instance de création interroge les modifications toutes les 30
   * connexion avec droits d’administrateur
   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-    * par exemple, [&#128279;](https://localhost:4502/system/console/configMgr)
+    * par exemple, [](https://localhost:4502/system/console/configMgr)
 
   * localisez `Apache Sling Distribution Trigger - Scheduled Triggers Factory`
 
@@ -269,7 +269,7 @@ La configuration par défaut couvre une instance de publication unique. Puisque 
   * connexion avec droits d’administrateur
   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-    * par exemple, [&#128279;](https://localhost:4502/system/console/configMgr)
+    * par exemple, [](https://localhost:4502/system/console/configMgr)
 
   * localisez `Apache Sling Distribution Agent - Sync Agents Factory`
 
@@ -335,7 +335,7 @@ Pour que les mises à jour soient correctement synchronisées, il est nécessair
 * sur chaque instance de publication AEM
 * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-  * par exemple, [&#128279;](https://localhost:4503/system/console/configMgr)
+  * par exemple, [](https://localhost:4503/system/console/configMgr)
 
 * localisez `Apache Sling Distribution Packaging - Vault Package Builder Factory`
 

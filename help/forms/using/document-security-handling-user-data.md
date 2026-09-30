@@ -25,10 +25,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 100%
+source-wordcount: '993'
+ht-degree: 92%
 ---
 # Document Security | Gestion des données utilisateur {#document-security-handling-user-data}
 
@@ -141,7 +141,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->Pour exporter des données à partir du tableau `EdcAuditEntity`, utilisez l’API [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) qui utilise [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) en tant que paramètre pour exporter les données de contrôle en fonction de `principalId`, `policyId` ou `licenseId`.
+>Pour exporter des données à partir du tableau `EdcAuditEntity`, utilisez l’API [EventManager.exportEvents](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) qui utilise [EventSearchFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) en tant que paramètre pour exporter les données de contrôle en fonction de `principalId`, `policyId` ou `licenseId`.
 
 Pour obtenir des informations complètes sur un utilisateur du système, vous devez accéder et exporter les données de la base de données User Management. Pour plus d’informations, reportez-vous à la section [Forms UserManagement : gérer les données utilisateur](/help/forms/using/user-management-handling-user-data.md).
 
@@ -166,7 +166,7 @@ Procédez comme suit pour supprimer les données Document Security d’un ident
 
    >[!NOTE]
    >
-   >Pour supprimer des données à partir du tableau `EdcAuditEntity`, utilisez l’API [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) qui utilise [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) en tant que paramètre pour supprimer les données de contrôle en fonction de `principalId`, `policyId` ou `licenseId`.
+   >Pour supprimer des données à partir du tableau `EdcAuditEntity`, utilisez l’API [EventManager.deleteEvents](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) qui utilise [EventSearchFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) en tant que paramètre pour supprimer les données de contrôle en fonction de `principalId`, `policyId` ou `licenseId`.
 
 1. Les fichiers XML de politique actifs et archivés sont stockés dans les tableaux de base de données `EdcPolicyXmlEntity` et `EdcPolicyArchiveEntity`, respectivement. Pour supprimer les données d’un utilisateur de ces tables, procédez comme suit :
 

@@ -9,18 +9,16 @@ feature: Developing,Tagging
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: c835a110-89cf-4857-9ee0-c0ad781a66ae
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 95%
-
+source-wordcount: '940'
+ht-degree: 88%
 ---
-
 # Créer le balisage dans une application AEM{#building-tagging-into-an-aem-application}
 
 Dans un contexte de programmation par balises ou d’extension de balises dans une application AEM personnalisée, ce document décrit l’utilisation de
 
-* [l’API de balisage](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/tagging/package-summary.html)
+* [API de balisage](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/tagging/package-summary.html)
 
 qui interagit avec le
 
@@ -33,7 +31,7 @@ Pour plus d’informations sur le balisage, consultez :
 
 ## Vue d’ensemble de l’API de balisage {#overview-of-the-tagging-api}
 
-L’implémentation du [cadre de balisage](/help/sites-developing/framework.md) dans AEM permet la gestion des balises et du contenu des balises à l’aide de l’API JCR. TagManager garantit que les balises saisies en tant que valeurs dans la propriété de tableau de chaîne de caractères `cq:tags` ne sont pas dupliquées, supprime les TagID pointant vers des balises non existantes et met à jour les TagID pour les balises déplacées ou fusionnées. TagManager utilise un écouteur d’observation JCR qui annule les modifications incorrectes. Les principales classes sont stockées dans le package [com.day.cq.tagging](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/tagging/package-summary.html) :
+L’implémentation du [cadre de balisage](/help/sites-developing/framework.md) dans AEM permet la gestion des balises et du contenu des balises à l’aide de l’API JCR. TagManager garantit que les balises saisies en tant que valeurs dans la propriété de tableau de chaîne de caractères `cq:tags` ne sont pas dupliquées, supprime les TagID pointant vers des balises non existantes et met à jour les TagID pour les balises déplacées ou fusionnées. TagManager utilise un écouteur d’observation JCR qui annule les modifications incorrectes. Les principales classes sont stockées dans le package [com.day.cq.tagging](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html?com/day/cq/tagging/package-summary.html) :
 
 * JcrTagManagerFactory - Renvoie une implémentation JCR d’un `TagManager`. C’est l’implémentation de référence de l’API de balisage.
 * `TagManager` – permet de résoudre et de créer des balises par chemins et noms.
@@ -156,29 +154,29 @@ Lorsque la balise **Animals** est ajoutée à la page **Products**, la valeur `s
 
 L’API côté serveur dispose de méthodes liées à `title` localisées :
 
-* [com.day.cq.tagging.Tag](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/tagging/Tag.html)
+* [com.day.cq.tagging.Tag](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html?com/day/cq/tagging/Tag.html)
 
-   * getLocalizedTitle(Locale locale)
-   * getLocalizedTitlePaths()
-   * getLocalizedTitles()
-   * getTitle(Locale locale)
-   * getTitlePath(Locale locale)
+  * getLocalizedTitle(Locale locale)
+  * getLocalizedTitlePaths()
+  * getLocalizedTitles()
+  * getTitle(Locale locale)
+  * getTitlePath(Locale locale)
 
-* [com.day.cq.tagging.TagManager](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/tagging/TagManager.html)
+* [com.day.cq.tagging.TagManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html?com/day/cq/tagging/TagManager.html)
 
-   * canCreateTagByTitle(String tagTitlePath, Locale locale)
-   * createTagByTitle(String tagTitlePath, Locale locale)
-   * resolveByTitle(String tagTitlePath, Locale locale)
+  * canCreateTagByTitle(String tagTitlePath, Locale locale)
+  * createTagByTitle(String tagTitlePath, Locale locale)
+  * resolveByTitle(String tagTitlePath, Locale locale)
 
 Dans AEM, la langue peut être identifiée à partir de la langue de la page ou de l’utilisateur :
 
 * pour récupérer la langue de la page dans un JSP :
 
-   * `currentPage.getLanguage(false)`
+  * `currentPage.getLanguage(false)`
 
 * pour récupérer la langue de l’utilisateur dans un JSP :
 
-   * `slingRequest.getLocale()`
+  * `slingRequest.getLocale()`
 
 Les `currentPage` et `slingRequest` sont disponibles dans un JSP via la balise [&lt;cq:definedObjects>](/help/sites-developing/taglib.md) .
 

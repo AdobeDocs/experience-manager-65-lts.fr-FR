@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 98%
+source-wordcount: '952'
+ht-degree: 97%
 ---
 # Obtention d’informations sur la page au format JSON{#obtaining-page-information-in-json-format}
 
@@ -563,7 +563,7 @@ Dans le cas des ressources qui utilisent votre composant de page d’application
 
 ### Exemple de mise en œuvre de PageInfoProvider {#example-pageinfoprovider-implementation}
 
-La classe Java suivante implémente [PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html) et renvoie l’URL publiée de la ressource de page active.
+La classe Java suivante implémente [PageInfoProvider](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html) et renvoie l’URL publiée de la ressource de page active.
 
 ```java
 package com.adobe.example;

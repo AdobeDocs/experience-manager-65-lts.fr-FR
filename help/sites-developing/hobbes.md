@@ -21,10 +21,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 99%
+source-wordcount: '790'
+ht-degree: 96%
 ---
 # Tester votre IU{#testing-your-ui}
 
@@ -39,7 +39,7 @@ Le framework de test AEM utilise Hobbes.js, une bibliothèque de tests développ
 
 >[!NOTE]
 >
->Reportez-vous à la [documentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) Hobbes.js pour obtenir plus de détails sur l’API.
+>Reportez-vous à la [documentation](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html) Hobbes.js pour obtenir plus de détails sur l’API.
 
 ## Structure des tests {#structure-of-tests}
 
@@ -112,9 +112,9 @@ Les suites de tests s’exécutent séquentiellement dans l’ordre dans lequel 
 
 La procédure suivante vous guide tout au long de la création et de l’exécution d’une suite de tests sur le [contenu We.Retail](/help/sites-developing/we-retail.md). Toutefois, vous pouvez facilement modifier le test pour utiliser une autre page web.
 
-Pour plus d’informations sur la création de vos propres suites de tests, reportez-vous à la documentation de l’API [Hobbes.js](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
+Pour plus d’informations sur la création de vos propres suites de tests, reportez-vous à la documentation de l’API [Hobbes.js](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html).
 
-1. Ouvrez CRXDE Lite. ([&#128279;](https://localhost:4502/crx/de))
+1. Ouvrez CRXDE Lite. ([](https://localhost:4502/crx/de))
 1. Cliquez avec le bouton droit de la souris sur le dossier `/etc/clientlibs`, puis cliquez sur **Créer > Créer un dossier**. Entrez `myTests` comme nom et cliquez sur **OK**.
 1. Cliquez avec le bouton droit sur le dossier `/etc/clientlibs/myTests` et cliquez sur **Créer > Créer un nœud**. Entrez les valeurs de propriété suivantes, puis cliquez sur **OK** :
 

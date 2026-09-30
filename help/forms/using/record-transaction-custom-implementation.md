@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 92%
+source-wordcount: '295'
+ht-degree: 87%
 ---
 # Enregistrer une transaction pour les implémentations personnalisées pour AEM Forms sur OSGi {#record-a-transaction-for-custom-implementations}
 
@@ -38,7 +38,7 @@ Pour consulter la documentation d’AEM as a Cloud Service, voir [AEM Forms sur 
 
 Utilisez l’API TransactionRecorder pour enregistrer automatiquement les actions qui ne sont pas automatiquement comptabilisées comme des transactions
 
-Vous pouvez utiliser du code personnalisé pour envoyer un formulaire PDF ou pour envoyer aux utilisateurs finaux et utilisatrices finales une URL d’aperçu de l’interface utilisateur de l’agent afin de prévisualiser une communication interactive. Vous pouvez également envoyer un formulaire à l’aide de méthodes personnalisées au lieu d’utiliser des méthodes d’envoi fournies avec AEM Forms. Toutes les actions mentionnées précédemment et les implémentations personnalisées des API AEM Forms ne sont pas comptabilisées comme des transactions. AEM Forms fournit une API, [TransactionRecorder](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html?lang=fr), pour enregistrer de telles actions en tant que transactions.
+Vous pouvez utiliser du code personnalisé pour envoyer un formulaire PDF ou pour envoyer aux utilisateurs finaux et utilisatrices finales une URL d’aperçu de l’interface utilisateur de l’agent afin de prévisualiser une communication interactive. Vous pouvez également envoyer un formulaire à l’aide de méthodes personnalisées au lieu d’utiliser des méthodes d’envoi fournies avec AEM Forms. Toutes les actions mentionnées précédemment et les implémentations personnalisées des API AEM Forms ne sont pas comptabilisées comme des transactions. AEM Forms fournit une API, [TransactionRecorder](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), pour enregistrer de telles actions en tant que transactions.
 
 Pour enregistrer une transaction, écrivez le [servlet sling standard](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=fr) et appelez le servlet d’un client pour enregistrer une transaction. Vous pouvez appeler le servlet à l’aide d’AJAX ou de toute autre méthode standard.
 

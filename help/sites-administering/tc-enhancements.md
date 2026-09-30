@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 95%
+source-wordcount: '688'
+ht-degree: 93%
 ---
 # Amélioration des traductions{#translation-enhancements}
 
@@ -91,7 +91,7 @@ AEM met à jour la traduction des chaînes existantes dans la mémoire de traduc
 Pour utiliser cette fonctionnalité :
 
 * Un TMS doit être configuré pour être utilisé avec AEM.
-* Le connecteur doit implémenter la méthode [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
+* Le connecteur doit implémenter la méthode [`storeTranslation`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
   * Le code de cette méthode détermine ce qui se passe avec la demande de mise à jour de la mémoire de traduction.
   * Le framework de traduction AEM renvoie les paires de valeurs de chaîne (traduction d’origine et mise à jour) au TMS via cette implémentation de méthode.
 

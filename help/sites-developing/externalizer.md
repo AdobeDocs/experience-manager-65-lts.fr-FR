@@ -21,10 +21,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 94%
+source-wordcount: '506'
+ht-degree: 93%
 ---
 # Externalisation d’URL{#externalizing-urls}
 
@@ -32,7 +32,7 @@ Dans Adobe Experience Manager (AEM), **Externalizer** est un service OSGi qui vo
 
 Une instance ne peut pas connaître son URL visible en externe si elle s’exécute derrière une couche Web et il arrive qu’un lien doive être créé en dehors d’une étendue de demande. Dès lors, ce service fournit un emplacement centralisé pour configurer ces URL externes et les générer.
 
-Cete page explique comment configurer le service **Externalizer** et comment l’utiliser. Pour plus d’informations, consultez la [documentation Java](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html).
+Cete page explique comment configurer le service **Externalizer** et comment l’utiliser. Pour plus d’informations, consultez la [documentation Java](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Configurer le service Externalizer {#configuring-the-externalizer-service}
 
@@ -137,4 +137,4 @@ Cette section illustre quelques exemples d’utilisation du service **Externaliz
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
-1. Vous trouverez d’autres exemples dans les [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html).
+1. Vous trouverez d’autres exemples dans les [Javadocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html).

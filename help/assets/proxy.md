@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '857'
 ht-degree: 95%
 ---
 # Développement de proxy [!DNL Assets] {#assets-proxy-development}
@@ -95,7 +95,7 @@ Un programme de travail par proxy est un processeur chargé de gérer une tâche
 
 ### API cliente {#client-api}
 
-[`JobService`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html) est disponible en tant que service OSGi qui prévoit des méthodes pour créer des tâches, supprimer des tâches et obtenir des résultats de ces tâches. La mise en œuvre par défaut de ce service (`JobServiceImpl`) utilise le client HTTP pour communiquer avec le servlet de proxy à distance.
+[`JobService`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html) est disponible en tant que service OSGi qui prévoit des méthodes pour créer des tâches, supprimer des tâches et obtenir des résultats de ces tâches. La mise en œuvre par défaut de ce service (`JobServiceImpl`) utilise le client HTTP pour communiquer avec le servlet de proxy à distance.
 
 Voici un exemple d’utilisation d’API :
 
@@ -122,10 +122,10 @@ Voici un exemple d’utilisation d’API :
 ### Configuration du service cloud {#cloud-service-configurations}
 
 <!--
-TBD: Cannot find com.day.cq.dam.api.proxy at https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
+TBD: Cannot find com.day.cq.dam.api.proxy at https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
 >[!NOTE]
 >
->Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
+>Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 -->
 
 Les configurations de proxy et de programme de travail de proxy sont disponibles via des configurations de services cloud et accessibles à partir de la console **Outils** d’[!DNL Assets], ou sous `/etc/cloudservices/proxy`. Chaque programme de travail de proxy doit ajouter un nœud sous `/etc/cloudservices/proxy` pour les détails de configuration spécifiques au programme de travail (par exemple, `/etc/cloudservices/proxy/workername`).

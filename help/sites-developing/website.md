@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '5032'
+source-wordcount: '5034'
 ht-degree: 94%
 ---
 # Créer un site web complet (JSP){#create-a-fully-featured-website-jsp}
@@ -104,7 +104,7 @@ Exemple de fichier static.css et d’images
 
 [Obtenir le fichier](assets/mywebsite.zip)
 
-1. Sur la page d’accueil d’AEM, cliquez sur **Outils**. ([&#128279;](https://localhost:4502/libs/cq/core/content/welcome.html))
+1. Sur la page d’accueil d’AEM, cliquez sur **Outils**. ([](https://localhost:4502/libs/cq/core/content/welcome.html))
 
    ![chlimage_1-27](assets/chlimage_1-27.png)
 
@@ -275,7 +275,7 @@ Dans cette section, vous allez créer les pages suivantes qui utilisent toutes l
 
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
-1. Dans un nouvel onglet ou une nouvelle fenêtre de navigateur web, ouvrez [&#128279;](https://localhost:4502/content/mywebsite/en/products.html) pour afficher la page Produits :
+1. Dans un nouvel onglet ou une nouvelle fenêtre de navigateur web, ouvrez [](https://localhost:4502/content/mywebsite/en/products.html) pour afficher la page Produits :
 
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
@@ -532,9 +532,9 @@ Dans le cadre de cet exercice, Sling fait correspondre ces URL au script /apps/m
 
 1. Copiez le code suivant dans `navimage.png.java.`Le code étend la classe AbstractImageServlet :
 
-   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) crée un objet ImageContext qui stocke les propriétés de la ressource active.
+   * [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) crée un objet ImageContext qui stocke les propriétés de la ressource active.
    * La page parente de la ressource est extraite de l’objet ImageContext. On obtient ensuite le titre et le sous-titre de la page.
-   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ImageHelper.html) sert à générer l’image à partir du fichier navimage_bg.jpg de la conception du site, du titre de la page et du sous-titre de la page.
+   * [ImageHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/ImageHelper.html) sert à générer l’image à partir du fichier navimage_bg.jpg de la conception du site, du titre de la page et du sous-titre de la page.
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -1298,7 +1298,7 @@ Lorsque vous avez terminé, la zone de saisie de la recherche doit se présenter
 1. Copiez les nœuds suivants et collez-les dans le nœud apps/mywebsite/components/search :
 
    * `/libs/foundation/components/search/dialog`
-   * &grave;&grave; `/libs/foundation/components/search/i18n`
+   * `` `/libs/foundation/components/search/i18n`
 
    * `/libs/foundation/components/search/icon.png`
 

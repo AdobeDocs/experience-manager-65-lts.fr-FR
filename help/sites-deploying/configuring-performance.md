@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '5215'
+source-wordcount: '5216'
 ht-degree: 98%
 ---
 # Optimiser les performances {#performance-optimization}
@@ -227,7 +227,7 @@ Le moteur de workflow utilise les files d’attente de tâches Apache Sling pou
 
 <!-- TODO: Change the reference to 6.5 LTS javadocs -->
 * File d’attente des workflows Granite : la plupart des étapes de workflow, telles que celles qui traitent les ressources de gestion des ressources numériques, utilisent le service File d’attente des workflows Granite.
-* File d’attente des tâches de processus externe des workflows Granite : ce service est utilisé pour les étapes de workflow spéciales et externes qui servent généralement à contacter un système externe et à interroger les résultats. Par exemple, le processus d’extraction de médias InDesign est implémenté en tant que processus externe. Le moteur de workflow utilise la file d’attente externe pour traiter l’interrogation. (Voir [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* File d’attente des tâches de processus externe des workflows Granite : ce service est utilisé pour les étapes de workflow spéciales et externes qui servent généralement à contacter un système externe et à interroger les résultats. Par exemple, le processus d’extraction de médias InDesign est implémenté en tant que processus externe. Le moteur de workflow utilise la file d’attente externe pour traiter l’interrogation. (Voir [com.day.cq.workflow.exec.WorkflowExternalProcess](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
 Configurez ces services pour limiter le nombre maximal de workflows en cours d’exécution.
 
@@ -237,7 +237,7 @@ Configurez ces services pour limiter le nombre maximal de workflows en cours d�
 
 #### Configuration dans le référentiel {#configuration-in-the-repo}
 
-Si vous configurez les services [à l’aide d’un nœud sling:OsgiConfig &#x200B;](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), vous devez trouver le PID des services existants, par exemple : org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Vous pouvez détecter le PID à l’aide de la console web.
+Si vous configurez les services [à l’aide d’un nœud sling:OsgiConfig ](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), vous devez trouver le PID des services existants, par exemple : org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Vous pouvez détecter le PID à l’aide de la console web.
 
 Configurez la propriété nommée `queue.maxparallel`.
 
@@ -434,7 +434,7 @@ Lors de la conception de ces tests, il faut se rappeler que tous les scénarios 
 
 | Scénario d’erreur | Type d’erreur | Nombre d’utilisateurs | T/s (attendu) | T/s (testé) | Description |
 |---|---|---|---|---|---|
-| Surcharge des composants de recherche | Recherche sur un caractère générique (astérisque) | 10 | 1 |  | Seul les &ast;&ast;&ast; sont recherchées. |
+| Surcharge des composants de recherche | Recherche sur un caractère générique (astérisque) | 10 | 1 |  | Seul les &amp;ast;&amp;ast;&amp;ast; sont recherchées. |
 |   | Mot de fin | 20 | 2 |  | Recherche d’un mot de fin. |
 |   | Chaîne vide | 10 | 1 |  | Recherche d’une chaîne vide. |
 |   | Caractères spéciaux | 10 | 1 |  | Recherche de caractères spéciaux. |
