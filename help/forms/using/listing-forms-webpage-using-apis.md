@@ -8,16 +8,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
 exl-id: 2cbbcbe8-be9e-4519-b224-07e99d06263d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '693'
 ht-degree: 100%
-
 ---
-
 # Afficher une liste des formulaires sur une page Web à l’aide d’API {#listing-forms-on-a-web-page-using-apis}
 
-AEM Forms fournit une API de recherche basée sur REST que les développeurs Web peuvent utiliser pour interroger et récupérer un jeu de formulaires qui répond à leurs critères de recherche. Vous pouvez utiliser des API pour effectuer des recherches dans des formulaires en fonction de divers filtres. L’objet de réponse contient des attributs et propriétés de formulaire, ainsi que des points d’entrée de rendu.
+AEM Forms fournit une API de recherche basée sur REST que les équipes de développement web peuvent utiliser pour interroger et récupérer un jeu de formulaires qui répond à leurs critères de recherche. Vous pouvez utiliser des API pour effectuer des recherches dans des formulaires en fonction de divers filtres. L’objet de réponse contient des attributs et propriétés de formulaire, ainsi que des points d’entrée de rendu.
 
 Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requête GET au serveur à l’adresse `https://'[server]:[port]'/libs/fd/fm/content/manage.json` avec les paramètres de requête décrits ci-dessous.
 
@@ -37,11 +50,11 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requêt
   </tr>
   <tr>
    <td>appPath<br /> </td>
-   <td><p>Spécifie le chemin d’accès à l’application pour rechercher des formulaires. Par défaut, l’attribut appPath recherche toutes les applications disponibles au niveau du nœud racine.<br /> </p> <p>Vous pouvez spécifier plusieurs chemins d’application dans une seule requête. Plusieurs chemins distincts avec une barre verticale (|).  </p> </td>
+   <td><p>Spécifie le chemin d’accès à l’application pour rechercher des formulaires. Par défaut, l’attribut appPath recherche toutes les applications disponibles au niveau du nœud racine.<br /> </p> <p>Vous pouvez spécifier plusieurs chemins d’application dans une seule requête. Plusieurs chemins distincts avec une barre verticale (|). </p> </td>
   </tr>
   <tr>
    <td>cutPoints<br /> </td>
-   <td><p>Indique les propriétés à récupérer avec les ressources. Vous pouvez utiliser l’astérisque (*) pour récupérer toutes les propriétés simultanément. Utilisez la barre verticale (|) pour indiquer plusieurs propriétés. </p> <p>Par exemple, <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Remarque</strong> : </p>
+   <td><p>Indique les propriétés à récupérer avec les ressources. Vous pouvez utiliser l’astérisque (*) pour récupérer toutes les propriétés simultanément. Utilisez la barre verticale (|) pour indiquer plusieurs propriétés. </p> <p>Par exemple : <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Remarque</strong> : </p>
     <ul>
      <li><em>Les propriétés telles que l’ID, le chemin et le nom sont toujours récupérées. </em></li>
      <li><em>Chaque ressource possède un ensemble de propriétés différent. Les propriétés telles que formUrl, pdfUrl et guideUrl ne dépendent pas de l’attribut cutPoints. Elles dépendent du type de ressource et sont récupérées en conséquence. </em></li>
@@ -70,7 +83,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requêt
   </tr>
   <tr>
    <td>statements</td>
-   <td><p>Indique la liste d’instructions. Les requêtes sont des exécutions sur la liste des instructions spécifiées au format JSON. </p> <p>Par exemple,</p> <p><code class="code">JSONArray statementArray=new JSONArray();
+   <td><p>Indique la liste d’instructions. Les requêtes sont des exécutions sur la liste des instructions spécifiées au format JSON. </p> <p>Par exemple :</p> <p><code class="code">JSONArray statementArray=new JSONArray();
        JSONObject statement=new JSONObject();
        statement.put("name", "title");
        statement.put("value", "SimpleSurveyAF");

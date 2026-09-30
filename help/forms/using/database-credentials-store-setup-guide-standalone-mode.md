@@ -5,13 +5,21 @@ solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 exl-id: f6e29287-a558-43ad-8465-ebf167c79c63
-source-git-commit: b4abf61e0d30396e78ecebf228114ad2bde30633
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '844'
 ht-degree: 2%
-
 ---
-
 # Guide De Configuration Du Magasin D’Informations D’Identification De Base De Données (Mode Autonome)
 
 ## Vue d’ensemble
@@ -44,11 +52,11 @@ Avant d’exécuter ces scripts, vérifiez les points suivants :
    - Les scripts utilisent des `embed-server` qui nécessitent l’arrêt du serveur
    - Si JBoss est en cours d’exécution, les scripts échouent
    - Vérifiez si JBoss est en cours d’exécution :
-      - Windows : rechercher `java.exe` processus dans le Gestionnaire des tâches
-      - Linux : `ps aux | grep jboss` ou `ps aux | grep java`
+     - Windows : rechercher `java.exe` processus dans le Gestionnaire des tâches
+     - Linux : `ps aux | grep jboss` ou `ps aux | grep java`
    - Arrêtez JBoss en cours d’exécution :
-      - Appuyez sur `Ctrl+C` dans le terminal où JBoss est en cours d’exécution.
-      - Ou arrêtez le processus manuellement
+     - Appuyez sur `Ctrl+C` dans le terminal où JBoss est en cours d’exécution.
+     - Ou arrêtez le processus manuellement
 
 2. **Le mot de passe de la base de données est prêt**
 
@@ -82,10 +90,10 @@ Téléchargez le script `create-elytron-cred-standalone.bat` à partir du [Porta
 - Crée un magasin d’informations d’identification à l’adresse : `JBOSS_HOME\standalone\configuration\cred-store.p12`
 - Modifie temporairement le fichier de configuration pour activer la création de la banque d’informations d’identification
 - Ajoute les alias suivants avec le mot de passe de votre base :
-   - `EncryptDBPassword`
-   - `EncryptDBPassword_IDP_DS`
-   - `EncryptDBPassword_EDC_DS`
-   - `EncryptDBPassword_AEM_DS`
+  - `EncryptDBPassword`
+  - `EncryptDBPassword_IDP_DS`
+  - `EncryptDBPassword_EDC_DS`
+  - `EncryptDBPassword_AEM_DS`
 - Restaure le fichier de configuration à son état d’origine
 - Vérifie que tous les alias ont été ajoutés avec succès.
 
@@ -107,10 +115,10 @@ Téléchargez le script `create-elytron-cred-standalone.sh` à partir du [Portai
 - Crée un magasin d’informations d’identification à l’adresse : `JBOSS_HOME/standalone/configuration/cred-store.p12`
 - Modifie temporairement le fichier de configuration pour activer la création de la banque d’informations d’identification
 - Ajoute les alias suivants avec le mot de passe de votre base :
-   - `EncryptDBPassword`
-   - `EncryptDBPassword_IDP_DS`
-   - `EncryptDBPassword_EDC_DS`
-   - `EncryptDBPassword_AEM_DS`
+  - `EncryptDBPassword`
+  - `EncryptDBPassword_IDP_DS`
+  - `EncryptDBPassword_EDC_DS`
+  - `EncryptDBPassword_AEM_DS`
 - Restaure le fichier de configuration à son état d’origine
 - Vérifie que tous les alias ont été ajoutés avec succès.
 
@@ -221,10 +229,10 @@ ERROR Unable to load credential store
 ERROR Unable to load credential store - Invalid password
 ```
 
-**Solution :**
+**Solution :**
 Vérifiez que le mot de passe dans `standalone.conf.bat` / `standalone.conf` (étape 2) correspond au mot de passe utilisé lors de la création de la banque d’informations d’identification (étape 1).
 
-**À Corriger:**
+**Pour Corriger :**
 Modifiez le `standalone.conf.bat` / `standalone.conf` et mettez à jour le mot de passe :
 
 ```
@@ -261,7 +269,7 @@ ERROR Failed to obtain connection
 ERROR: jboss-cli.bat is not found
 ```
 
-**Solution :**
+**Solution :**
 Vérifiez que le chemin d’accès JBOSS_HOME est correct et pointe vers le répertoire d’installation de JBoss.
 
 **Message d’erreur :**

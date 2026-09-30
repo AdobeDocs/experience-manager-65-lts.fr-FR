@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2fd45cb4-33e0-47b0-a4cc-4ae039b78e36
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 100%
-
+source-wordcount: '115'
+ht-degree: 57%
 ---
-
 # Raccourcis clavier pour les consoles{#keyboard-shortcuts-for-consoles}
 
 Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent à l’utilisation de consoles et d’autres à la [modification de pages](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
@@ -41,7 +50,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
   <tr>
    <td>Console</td>
    <td><strong><code>Shift-Double-Click</code></strong><br /> (sur la page requise)</td>
-   <td>Ouvrir la page dans une nouvelle fenêtre.<br /> <strong>Remarque</strong> : cela fonctionne si les <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Propriétés de l’utilisateur ou de l’utilisatrice</a> sont définies sur « Une seule fenêtre » ; si l’option « Fenêtres multiples » est définie, il s’agit du comportement par défaut.</td>
+   <td>Ouvrir la page dans une nouvelle fenêtre.<br /> <strong>Remarque :</strong> fonctionne si les <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Propriétés utilisateur</a> sont définies sur « Une seule fenêtre » ; si l’option « Fenêtres multiples » est définie, il s’agit du comportement par défaut.</td>
   </tr>
  </tbody>
 </table>

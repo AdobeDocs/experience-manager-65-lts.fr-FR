@@ -6,13 +6,29 @@ role: User, Admin
 feature: Asset Insights,Asset Reports
 solution: Experience Manager, Experience Manager Assets
 exl-id: 12f457e4-f5d7-47cb-b38a-9d63e7c19475
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a4e1c1f5-18fc-592e-bfc7-453ce6ae0030
+    internal-label: Asset Insights
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: c29e3a96-cd2b-4e21-b382-a8279aa04553
+    internal-label: Asset reports
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 100%
-
 ---
-
 # Utilisation du package de démonstration pour Assets Insights {#using-demo-package-for-asset-insights}
 
 À l’aide du package de démonstration, vous pouvez permettre à Adobe Asset Insights de capturer les données d’un exemple de page web et de générer des informations pour cette page.
@@ -22,11 +38,11 @@ ht-degree: 100%
 1. Configurez Assets Insights en suivant les instructions de la section [Configuration d’Assets Insights](configure-asset-insights.md).
 1. Téléchargez le package d’exemple Assets ci-dessous et installez-le à partir du gestionnaire de modules CRXDE.
 
-[Obtenir le fichier](assets/insightsdemo.zip)
+   [Obtenir le fichier](assets/insightsdemo.zip)
 
 1. Téléchargez le fichier ZIP contenant l’exemple de page web ci-dessous et extrayez-le sur votre système de fichiers local.
 
-[Obtenir le fichier](assets/demosite.zip)
+   [Obtenir le fichier](assets/demosite.zip)
 
 1. Cliquez sur la page web qui s’ouvre dans le navigateur web.
 

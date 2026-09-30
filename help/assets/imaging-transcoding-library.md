@@ -5,13 +5,29 @@ role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 solution: Experience Manager, Experience Manager Assets
 exl-id: fb24c331-55c3-4166-bd4f-c26cece902fc
-source-git-commit: 1dd093acdfa571dad9659270ddc6912ab3d5dba5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ee4c2482-9595-5bc0-b9be-c0c6f02eba50
+    internal-label: Asset Processing
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '1016'
 ht-degree: 99%
-
 ---
-
 # Bibliothèque de transcodage d’imagerie {#imaging-transcoding-library}
 
 La Bibliothèque de transcodage d’imagerie d’Adobe est une solution de traitement d’images propriétaire qui peut exécuter des fonctions essentielles de gestion des images, notamment :
@@ -71,15 +87,15 @@ Vous pouvez configurer les options suivantes pour le paramètre `-resize` :
 
 Pour configurer le traitement de la bibliothèque de transcodage d’imagerie, créez un fichier de configuration et mettez à jour le workflow pour l’exécuter.
 
-### Création d’un fichier de configuration pour le lot extrait {#create-conf-file}
+### Création d’un fichier de configuration pour le bundle extrait {#create-conf-file}
 
 Pour configurer la bibliothèque, créez un fichier CONF pour indiquer les bibliothèques en procédant comme suit. Vous avez besoin d’autorisations de type administrateur ou racine.
 
 1. Téléchargez le [package de la bibliothèque de transcodage d’imagerie dans la distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) et installez-le à l’aide du gestionnaire de modules. Le package est compatible avec [!DNL Experience Manager] 6.5 LTS.
 
-1. Pour connaître un ID de lot pour `com.day.cq.dam.cq-dam-switchengine`, connectez-vous à la console web, puis cliquez sur **[!UICONTROL OSGi]** > **[!UICONTROL Lots]**. Pour ouvrir la console des lots, vous pouvez également accéder à l’URL `https://[aem_server:[port]/system/console/bundles/`. Localisez le lot `com.day.cq.dam.cq-dam-switchengine` et son identifiant.
+1. Pour connaître un ID de bundle pour `com.day.cq.dam.cq-dam-switchengine`, connectez-vous à la console web, puis cliquez sur **[!UICONTROL OSGi]** > **[!UICONTROL Bundles]**. Pour ouvrir la console des bundles, vous pouvez également accéder à l’URL `https://[aem_server:[port]/system/console/bundles/`. Recherchez le bundle `com.day.cq.dam.cq-dam-switchengine` et son identifiant.
 
-1. Vérifiez que toutes les bibliothèques requises sont extraites en vérifiant le dossier à l’aide de la commande `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`, où le nom du dossier est construit à l’aide de l’ID de lot. Par exemple, la commande sera `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` si l’ID de lot est `588`.
+1. Vérifiez que toutes les bibliothèques requises sont extraites en vérifiant le dossier à l’aide de la commande `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`, où le nom du dossier est construit à l’aide de l’ID de bundle. Par exemple, la commande sera `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` si l’ID de bundle est `588`.
 
 1. Créez un fichier `SWitchEngineLibs.conf` pour créer un lien vers la bibliothèque.
 

@@ -10,19 +10,30 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 19ff5414-5798-4a89-afab-e0bad0f58b51
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 100%
-
+source-wordcount: '1802'
+ht-degree: 96%
 ---
-
 # Marketing par e-mail{#e-mail-marketing}
 
 >[!NOTE]
 >
 >Adobe ne prévoit pas de continuer à mettre à jour le suivi des ouvertures et rebonds des e-mails (non livrable) envoyé par le service SMTP AEM.
->>Il est conseillé d’utiliser [Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
+>Il est conseillé d’utiliser [Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
 
 Le marketing par e-mail (par exemple, les newsletters) est une partie importante de toute campagne marketing, car vous l’utilisez pour envoyer du contenu à vos prospects. Dans AEM, vous pouvez créer des newsletters à partir de contenu AEM existant et ajouter un nouveau contenu spécifique aux newsletters.
 
@@ -72,25 +83,25 @@ Ce document décrit les principes de base de la création de newsletters dans AE
    ![Boîte de dialogue Propriétés de la page](assets/mcm_newnewsletterdialog.png)
 
    * **Nom de l’expéditeur**
-Nom qui doit apparaître comme celui de l’expéditeur de la newsletter.
+     Nom qui doit apparaître comme celui de l’expéditeur de la newsletter.
 
-   * **Adresse de l’expéditeur**
-Adresse électronique qui doit apparaître comme celle de l’expéditeur de la newsletter.
+   * **Adresse d&#39;origine**
+     Adresse postale qui doit apparaître comme celle de l’expéditeur de la newsletter.
 
    * **Objet**
-Objet de la newsletter.
+     Objet de la newsletter.
 
    * **Répondre à**
-Adresse électronique pour le traitement des réponses à la newsletter envoyée.
+     Adresse électronique utilisée pour le traitement des réponses à la newsletter envoyée.
 
    * **Description**
-Description de la newsletter.
+     Description de la newsletter.
 
    * **Heure d’activation**
-Heure d’activation pour l’envoi de la newsletter.
+     Heure d’activation pour l’envoi de la newsletter.
 
    * **Liste des destinataires par défaut**
-Liste par défaut des destinataires qui doivent recevoir la newsletter.
+     Liste par défaut devant recevoir la newsletter.
 
    Elles peuvent être mises à jour ultérieurement à partir de la boîte de dialogue **Propriétés...**.
 
@@ -221,7 +232,7 @@ Pour tester les newsletters en ligne :
 >[!NOTE]
 >
 >Adobe ne prévoit pas de continuer à mettre à jour le suivi des ouvertures et rebonds des e-mails (non livrable) envoyé par le service SMTP AEM.
->>Nous recommandons d’utiliser [Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
+>Nous recommandons d’utiliser [Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
 
 Vous pouvez envoyer une newsletter à partir de la newsletter ou de la liste. Les deux procédures sont décrites.
 

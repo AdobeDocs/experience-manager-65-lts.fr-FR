@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: aea2daf6-c1e2-4e17-8c3f-6b25c693a45c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '544'
 ht-degree: 100%
-
 ---
-
 # Participation aux workflows{#participating-in-workflows}
 
 Les workflows incluent généralement des étapes qui nécessitent qu’une personne effectue une activité sur une page ou une ressource. Le workflow sélectionne un utilisateur, une utilisatrice ou un groupe pour exécuter l’activité et affecte une tâche à cette personne ou à ce groupe.
@@ -34,9 +43,9 @@ Vous pouvez effectuer les actions suivantes pour traiter un élément de travail
 
   Les utilisateurs et les utilisatrices pouvant faire l’objet d’une délégation dépendent de la personne à qui l’élément de travail a été affecté :
 
-   * Si l’élément de travail a été affecté à un groupe, les membres du groupe sont disponibles.
-   * Si l’élément de travail a été attribué à un groupe puis délégué à un utilisateur, les membres du groupe et le groupe sont disponibles.
-   * Si l’élément de travail a été attribué à un utilisateur unique, l’élément de travail ne peut pas être délégué.
+  * Si l’élément de travail a été affecté à un groupe, les membres du groupe sont disponibles.
+  * Si l’élément de travail a été attribué à un groupe puis délégué à un utilisateur, les membres du groupe et le groupe sont disponibles.
+  * Si l’élément de travail a été attribué à un utilisateur unique, l’élément de travail ne peut pas être délégué.
 
 * **Revenir en arrière**
 

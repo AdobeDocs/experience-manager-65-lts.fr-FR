@@ -5,13 +5,33 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin,Developer,User,Leader
 exl-id: a8d4c122-6de6-42da-a8ef-d3b93fd3d3ae
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 96%
-
 ---
-
 # En savoir plus sur l’utilisation de références dans les fragments de contenu {#author-headless-references}
 
 ## Un peu d’histoire… {#story-so-far}
@@ -27,10 +47,10 @@ Cet article s’appuie sur ces éléments afin que vous compreniez comment utili
 * **Audience** : Niveau avancé
 * **Objectif** : découvrez l’utilisation de références pour la création CMS découplée. Quels types de références sont disponibles et à quelles fins :
 
-   * Références du contenu
-   * Références de ressources/médias
-   * Références à un fragment
-   * Références ad hoc depuis un bloc de texte
+  * Références du contenu
+  * Références de ressources/médias
+  * Références à un fragment
+  * Références ad hoc depuis un bloc de texte
 
 ## Que sont les références {#what-are-references}
 
@@ -66,9 +86,9 @@ Cela semble assez simple, mais une entreprise compte à la fois un PDG et des em
 Et une personne peut recevoir une distinction (ou peut-être deux).
 
 * Mon entreprise – Société
-   * PDG – Personne
-   * Employé(s) – Personne
-      * Récompense(s) personnelle(s) – Distinction
+  * PDG – Personne
+  * Employé(s) – Personne
+    * Récompense(s) personnelle(s) – Distinction
 
 Voilà pour commencer. En fonction du niveau de complexité, une distinction peut être propre à une entreprise, ou le siège social d’une entreprise peut être situé dans une ville donnée.
 
@@ -111,22 +131,22 @@ Maintenant que vous en savez plus sur les références et la structure dans les 
 
 * [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
 
-   * [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)
+  * [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)
 
-      * [Application de la configuration à votre dossier de ressources](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+    * [Application de la configuration à votre dossier de ressources](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Création d’un fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+    * [Création d’un fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
 
-   * [Variations – Création de fragments de contenu](/help/assets/content-fragments/content-fragments-variations.md)
+  * [Variations – Création de fragments de contenu](/help/assets/content-fragments/content-fragments-variations.md)
 
-   * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
+  * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [Modèles de fragment de contenu – Types de données](/help/assets/content-fragments/content-fragments-models.md#data-types)
+    * [Modèles de fragment de contenu – Types de données](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-      * [Modèles de fragment de contenu – Propriétés](/help/assets/content-fragments/content-fragments-models.md#properties)
+    * [Modèles de fragment de contenu – Propriétés](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 * Guides de prise en main
-   * [Guide de démarrage rapide sur la création d’un dossier de ressources découplées](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+  * [Guide de démarrage rapide pour la création d’un dossier Ressources découplé](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [Parcours d’architecture de contenu découplé AEM](/help/journey-headless/architect/overview.md)
 

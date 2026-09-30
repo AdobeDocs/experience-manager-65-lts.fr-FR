@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 72293e17-bf29-4b3c-81b4-cd8372694a0d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1102'
 ht-degree: 97%
-
 ---
-
 # Résoudre les problèmes d’intégration{#troubleshooting-integration-issues}
 
 ## Conseils pratiques de dépannage {#general-troubleshooting-tips}
@@ -100,11 +109,11 @@ Pour résoudre ce problème, procédez comme suit :
 * Republiez les configurations trouvées dans `/etc/cloudservices/dynamictagmanagement`.
 * Vérifiez les listes de contrôle d’accès sur `/etc/cloudservices`. Les listes de contrôle d’accès (ACL) doivent être les suivantes :
 
-   * allow; jcr:read; webservice-support-servicelibfinder
-   * allow; jcr:read; everyone; `rep:glob:`&ast;`/defaults/`&ast;
-   * allow; jcr:read; everyone; `rep:glob:`&ast;`/defaults`
-   * allow; jcr:read; everyone; `rep:glob:`&ast;`/public/`&ast;
-   * allow; jcr:read; everyone; `rep:glob:`&ast;`/public`
+  * allow; jcr:read; webservice-support-servicelibfinder
+  * allow; jcr:read; everyone; `rep:glob:`&ast;`/defaults/`&ast;
+  * allow; jcr:read; everyone; `rep:glob:`&ast;`/defaults`
+  * allow; jcr:read; everyone; `rep:glob:`&ast;`/public/`&ast;
+  * allow; jcr:read; everyone; `rep:glob:`&ast;`/public`
 
 Pour plus d’informations sur la gestion des listes de contrôle d’accès, veuillez consulter la page [Administration et sécurité des utilisateurs et utilisatrices](/help/sites-administering/security.md#permissions-in-aem).
 

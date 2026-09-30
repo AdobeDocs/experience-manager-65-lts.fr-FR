@@ -6,13 +6,29 @@ role: Developer
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+  - id: c7140a77-10cf-4213-a7e9-f0d69c9fb56c
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+  - id: e5184d7e-fd36-480c-b5e5-d8161f2210ca
+    internal-label: Assets HTTP API
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 95%
-
 ---
-
 # Prise en charge des fragments de contenu dans l’API HTTP AEM Assets {#content-fragments-support-in-aem-assets-http-api}
 
 | Version | Lien de l’article |
@@ -76,9 +92,9 @@ L’API REST Assets offre un accès de type [REST](https://fr.wikipedia.org/wiki
 Elle utilise le point d’entrée `/api/assets` et requiert le chemin d’accès de la ressource pour y accéder (sans `/content/dam` qui précède).
 
 * Cela signifie que pour accéder à la ressource à l’adresse suivante :
-   * `/content/dam/path/to/asset`
+  * `/content/dam/path/to/asset`
 * Vous devez demander :
-   * `/api/assets/path/to/asset`
+  * `/api/assets/path/to/asset`
 
 Par exemple, pour accéder à `/content/dam/wknd/en/adventures/cycling-tuscany`, demandez `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
@@ -260,9 +276,9 @@ L’utilisation peut varier selon que vous utilisez un environnement d’auteur 
 * Il est vivement recommandé de lier la création à une instance de création ([et il n’existe actuellement aucun moyen de répliquer un fragment pour publier à l’aide de cette API](/help/assets/assets-api-content-fragments.md#limitations)).
 * La diffusion est possible à partir des deux, car AEM diffuse le contenu demandé au format JSON uniquement.
 
-   * Le stockage et la diffusion depuis une instance de création AEM doivent suffire pour les applications de bibliothèque de médias situées derrière le pare-feu.
+  * Le stockage et la diffusion depuis une instance de création AEM doivent suffire pour les applications de bibliothèque de médias situées derrière le pare-feu.
 
-   * Pour une diffusion web en direct, une instance de publication AEM est recommandée.
+  * Pour une diffusion web en direct, une instance de publication AEM est recommandée.
 
 >[!CAUTION]
 >
@@ -328,18 +344,18 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
 * **200** (OK)
 Affiché dans le scénario suivant :
 
-   * demande d’un fragment de contenu via `GET`
-   * mise à jour réussie d’un fragment de contenu via `PUT`
+  * demande d’un fragment de contenu via `GET`
+  * mise à jour réussie d’un fragment de contenu via `PUT`
 
 * **201** (Créé)
 Affiché dans le scénario suivant :
 
-   * création réussie d’un fragment de contenu via `POST`
+  * création réussie d’un fragment de contenu via `POST`
 
 * **404** (Introuvable)
 Affiché dans le scénario suivant :
 
-   * le fragment de contenu demandé n’existe pas
+  * le fragment de contenu demandé n’existe pas
 
 * **500** (Erreur interne du serveur)
 
@@ -352,28 +368,28 @@ Affiché dans le scénario suivant :
 
   L’exemple suivant répertorie les scénarios courants lorsque cet état d’erreur est renvoyé, ainsi que le message d’erreur (à espacement fixe) généré :
 
-   * Le dossier parent n’existe pas (lors de la création d’un fragment de contenu via `POST`)
-   * Aucun modèle de fragment de contenu n’est fourni (cq:model est manquant), ne peut pas être lu (en raison d’un chemin d’accès non valide ou d’un problème d’autorisation) ou il n’existe aucun modèle de fragment valide :
+  * Le dossier parent n’existe pas (lors de la création d’un fragment de contenu via `POST`)
+  * Aucun modèle de fragment de contenu n’est fourni (cq:model est manquant), ne peut pas être lu (en raison d’un chemin d’accès non valide ou d’un problème d’autorisation) ou il n’existe aucun modèle de fragment valide :
 
-      * `No content fragment model specified`
-      * `Cannot create a resource of given model '/foo/bar/qux'`
+    * `No content fragment model specified`
+    * `Cannot create a resource of given model '/foo/bar/qux'`
 
-   * Impossible de créer le fragment de contenu (problème d’autorisation potentiel) :
+  * Impossible de créer le fragment de contenu (problème d’autorisation potentiel) :
 
-      * `Could not create content fragment`
+    * `Could not create content fragment`
 
-   * Le titre et/ou la description n’ont pas pu être mis à jour :
+  * Le titre et/ou la description n’ont pas pu être mis à jour :
 
-      * `Could not set value on content fragment`
+    * `Could not set value on content fragment`
 
-   * Impossible de définir les métadonnées :
+  * Impossible de définir les métadonnées :
 
-      * `Could not set metadata on content fragment`
+    * `Could not set metadata on content fragment`
 
-   * Élément de contenu introuvable ou impossible à mettre à jour
+  * Élément de contenu introuvable ou impossible à mettre à jour
 
-      * `Could not update content element`
-      * `Could not update fragment data of element`
+    * `Could not update content element`
+    * `Could not update fragment data of element`
 
   Les messages d’erreur détaillés sont généralement renvoyés de la façon suivante :
 
@@ -397,7 +413,7 @@ Pour accéder aux références d’API détaillées :
 * [API Adobe Experience Manager Assets - Fragments de contenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [API HTTP Assets](/help/assets/mac-api-assets.md)
 
-   * [Fonctionnalités disponibles](/help/assets/mac-api-assets.md#assets)
+  * [Fonctionnalités disponibles](/help/assets/mac-api-assets.md#assets)
 
 ## Ressources supplémentaires {#additional-resources}
 

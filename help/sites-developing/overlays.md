@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d8fe6fb6-8ede-4fa7-95da-adee313bf768
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 94%
-
+source-wordcount: '625'
+ht-degree: 90%
 ---
-
 # Recouvrements{#overlays}
 
 Adobe Experience Manager (AEM), et auparavant CQ, applique depuis longtemps le principe des recouvrements pour vous permettre d’étendre et de personnaliser les [consoles](/help/sites-developing/customizing-consoles-touch.md) et d’autres fonctionnalités (par exemple, la [création de pages](/help/sites-developing/customizing-page-authoring-touch.md)).
@@ -28,32 +37,32 @@ Depuis AEM 6.0, des modifications ont été apportées à la manière dont les 
 
 * AEM 6.0 et versions ultérieures - pour les recouvrements liés à [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) (c’est-à-dire, l’IU optimisée pour les écrans tactiles)
 
-   * Méthode
+  * Méthode
 
-      * Recréez la structure `/libs` appropriée sous `/apps`.
+    * Recréez la structure `/libs` appropriée sous `/apps`.
 
-        Cela ne nécessite pas de copie à 1 :1, le [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) est utilisé pour effectuer des références croisées avec les définitions d’origine qui sont requises. Sling Resource Merger propose des services pour accéder à des ressources et les fusionner par le biais de mécanismes de différenciation (diff).
+      Cela ne nécessite pas de copie 1:1. Le [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) est utilisé pour effectuer des références croisées avec les définitions d’origine qui sont requises. Sling Resource Merger propose des services pour accéder à des ressources et les fusionner par le biais de mécanismes de différenciation (diff).
 
-      * Sous `/apps`, apportez vos éventuelles modifications.
+    * Sous `/apps`, apportez vos éventuelles modifications.
 
-   * Avantages
+  * Avantages
 
-      * Plus résistant aux modifications sous `/libs`.
-      * Vous ne devez redéfinir que ce qui est réellement nécessaire.
+    * Plus résistant aux modifications sous `/libs`.
+    * Vous ne devez redéfinir que ce qui est réellement nécessaire.
 
 * Recouvrements non liés à Granite et recouvrements avant AEM 6.0
 
-   * Méthode
+  * Méthode
 
-      * Copiez le contenu de `/libs` vers `/apps`.
+    * Copiez le contenu de `/libs` vers `/apps`.
 
-        Copiez la sous-branche entière, y compris les propriétés.
+      Copiez la sous-branche entière, y compris les propriétés.
 
-      * Sous `/apps`, apportez vos éventuelles modifications.
+    * Sous `/apps`, apportez vos éventuelles modifications.
 
-   * Inconvénients
+  * Inconvénients
 
-      * La modification d’un élément sous `/libs` n’entraînera pas la perte des changements effectués. Cependant, il se peut que vous deviez recréer certaines modifications affectant votre recouvrement sous `/apps`.
+    * La modification d’un élément sous `/libs` n’entraînera pas la perte des changements effectués. Cependant, il se peut que vous deviez recréer certaines modifications affectant votre recouvrement sous `/apps`.
 
 >[!CAUTION]
 >
@@ -63,12 +72,11 @@ Depuis AEM 6.0, des modifications ont été apportées à la manière dont les 
 
 Il est conseillé de recourir aux recouvrements pour de nombreuses modifications, par exemple, pour [configurer vos consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) ou [créer votre catégorie de sélection dans l’explorateur de ressources au niveau du panneau latéral](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (lors de la création de pages). Ils sont requis pour les raisons suivantes :
 
-* Vous ***ne devez pas* effectuer de modifications dans la `/libs`branche &#x200B;**.
-Les modifications que vous effectuez risquent d’être perdues, car cette branche est sensible aux modifications lorsque vous :
+* ***Ne pas effectuer* de modifications dans la branche `/libs`**&#x200B;Toutes les modifications que vous apportez risquent d’être perdues, car cette branche est sensible aux modifications lorsque vous :
 
-   * procédez à une mise à niveau sur votre instance
-   * appliquez un correctif
-   * installez un Pack de fonctionnalités
+  * procédez à une mise à niveau sur votre instance
+  * appliquez un correctif
+  * installez un Pack de fonctionnalités
 
 * Ils centralisent vos modifications dans un seul emplacement ; ils facilitent le suivi, la migration, la sauvegarde ou le débogage de vos modifications, suivant les besoins.
 
@@ -78,8 +86,8 @@ Dans le cas des recouvrements, la ressource diffusée est un regroupement des re
 
 * La ressource **Resolver Search Path**, telle qu’elle est définie dans la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) pour **Apache Sling Resource Resolver Factory**.
 
-   * L’ordre décroissant des chemins de recherche indique leurs priorités respectives.
-   * Dans une installation standard, les principales valeurs par défaut sont les suivantes : `/apps`, `/libs`. Par conséquent, le contenu de `/apps` a une priorité supérieure à celui de `/libs` (en d’autres termes, il le *recouvre*).
+  * L’ordre décroissant des chemins de recherche indique leurs priorités respectives.
+  * Dans une installation standard, les principales valeurs par défaut sont les suivantes : `/apps`, `/libs`. Par conséquent, le contenu de `/apps` a une priorité supérieure à celui de `/libs` (en d’autres termes, il le *recouvre*).
 
 * Deux utilisateurs du service ont besoin d’un accès JCR:READ à l’emplacement de stockage des scripts. Ces utilisateurs sont : components-search-service (utilisé par les composants de cache et d’accès com.day.cq.wcm.coreto) et sling-scripting (utilisé par org.apache.sling.servlets.resolver pour rechercher des servlets).
 * La configuration suivante doit également être définie en fonction de l’emplacement de stockage des scripts (dans cet exemple sous /etc, /libs ou /apps).

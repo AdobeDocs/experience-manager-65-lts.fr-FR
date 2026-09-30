@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 6bd234fb-28ad-405f-a018-bdf4fa412839
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 100%
-
 ---
-
 # Amélioration des performances du serveur d’applications{#enhancing-application-server-performance}
 
 Ce contenu décrit les paramètres facultatifs que vous pouvez configurer pour améliorer les performances de votre serveur d’applications AEM Forms.
@@ -111,7 +126,7 @@ Lorsque le contenu du document est intégré (c’est-à-dire inférieur à la t
 
    >[!NOTE]
    >
-   >La valeur de la propriété de la taille maximale de la ligne d’entrée du document doit être identique pour l’environnement AEM Forms sur JEE et pour le bundle AEM Forms sur OSGi, inclus dans l’environnement AEM Forms sur JEE. Cette procédure a mis à jour la valeur pour l’environnement AEM Forms on JEE uniquement et non pour le lot AEM Forms sur OSGi, y compris l’environnement AEM Forms on JEE.
+   >La valeur de la propriété Taille maximale par défaut de la ligne d’entrée du document doit être identique pour l’environnement AEM Forms sur JEE et pour le bundle AEM Forms sur OSGi inclus dans l’environnement AEM Forms sur JEE. Cette procédure n’a mis à jour la valeur que pour l’environnement AEM Forms sur JEE, et non pour le bundle OSGi d’AEM Forms inclus dans l’environnement AEM Forms sur JEE.
 
 1. Redémarrez le serveur d’applications avec la propriété système suivante :
 
@@ -119,7 +134,7 @@ Lorsque le contenu du document est intégré (c’est-à-dire inférieur à la t
 
    >[!NOTE]
    >
-   >La propriété système mentionnée ci-dessus remplace la valeur de la propriété Taille maximale de la ligne d’entrée du document définie pour l’environnement AEM Forms on JEE et pour le lot AEM Forms sur OSGi, y compris l’environnement AEM Forms on JEE.
+   >La propriété système mentionnée ci-dessus remplace la valeur de la propriété Taille maximale par défaut de la ligne d’entrée du document définie pour l’environnement AEM Forms sur JEE et pour le bundle AEM Forms sur OSGi inclus dans l’environnement AEM Forms on JEE.
 
 >[!NOTE]
 >

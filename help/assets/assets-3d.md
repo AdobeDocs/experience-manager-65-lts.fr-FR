@@ -9,13 +9,26 @@ feature: 3D Assets,Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: f27b595b-24eb-444c-a598-6f70c59ed8fc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: fa7b95c2-9969-5924-a7c7-8cde1e7a2e26
+    internal-label: 3D Assets
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2419'
 ht-degree: 98%
-
 ---
-
 # Utiliser des ressources 3D dans Dynamic Media {#working-with-three-d-assets-dm}
 
 Dynamic Media permet de charger, gérer, afficher et diffuser des ressources 3D sous la forme d’expériences immersives.
@@ -68,19 +81,19 @@ Consultez la [Configuration des services cloud Dynamic Media](/help/assets/conf
 
    * Organisation et recherche des ressources 3D
 
-      * [Organisation des ressources numériques](/help/assets/organize-assets.md#organize-digital-assets)
-      * [Recherche de ressources 3D](/help/assets/search-assets.md)
-      * [Utilisation de prédicats personnalisés pour filtrer les résultats de la recherche](/help/assets/search-assets.md#custompredicates)
+     * [Organisation des ressources numériques](/help/assets/organize-assets.md#organize-digital-assets)
+     * [Recherche de ressources 3D](/help/assets/search-assets.md)
+     * [Utilisation de prédicats personnalisés pour filtrer les résultats de la recherche](/help/assets/search-assets.md#custompredicates)
 
    * Affichage de ressources 3D
 
-      * [Affichage et interaction avec des ressources 3D](#viewing-three-d-assets)
-      * [Gestion des paramètres prédéfinis de la visionneuse Dimensionnel](/help/assets/managing-viewer-presets.md)
+     * [Affichage et interaction avec des ressources 3D](#viewing-three-d-assets)
+     * [Gestion des paramètres prédéfinis de la visionneuse Dimensionnel](/help/assets/managing-viewer-presets.md)
 
    * Utilisation des métadonnées des ressources 3D
 
-      * [Gestion des métadonnées des ressources numériques](/help/assets/metadata.md)
-      * [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+     * [Gestion des métadonnées des ressources numériques](/help/assets/metadata.md)
+     * [Schémas de métadonnées](/help/assets/metadata-schemas.md)
 
 1. **Publication de ressources 3D**
 
@@ -152,7 +165,7 @@ Voir aussi [Prévisualisation de ressources à l’aide de l’interface logicie
    * Supprimez `/editor.html` de l’URL de la page dans le navigateur.
 
    Ressource ![3D affichée dans le composant Média 3D](/help/assets/assets-dm/3d-asset-in-3d-media.png)
-Ressource 3D entièrement interactive affichée en mode **[!UICONTROL Aperçu]**.
+   Ressource 3D entièrement interactive affichée en mode **[!UICONTROL Aperçu]**.
 
 1. En mode **[!UICONTROL Aperçu]**, effectuez l’une des opérations suivantes :
 
@@ -171,7 +184,7 @@ Dynamic Media contient un composant Média 3D Dynamic Media que vous pouvez u
 
 * [Ajout du composant Média 3D au modèle de page](#adding-three-d-media-component-to-page-template)
 * [Ajout du composant Média 3D à une page web](#adding-the-three-d-media-component-to-a-web-page)
-   * [Facultatif - Configuration du composant Média 3D](#configuring-the-three-d-component)
+  * [Facultatif - Configuration du composant Média 3D](#configuring-the-three-d-component)
 * [Affectation d’une ressource 3D au composant Média 3D](#assigning-a-three-d-asset-to-the-component)
 
 ## Ajout du composant Média 3D au modèle de page {#adding-three-d-media-component-to-page-template}

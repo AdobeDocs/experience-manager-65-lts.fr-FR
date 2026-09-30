@@ -9,13 +9,28 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
 exl-id: eb19a269-8b3f-476b-b22b-8116dce70388
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 100%
-
+source-wordcount: '787'
+ht-degree: 96%
 ---
-
 # Utilisation des workflows de projet {#working-with-project-workflows}
 
 Les workflows de projet disponibles et prêts à l’emploi sont les suivants :
@@ -38,12 +53,12 @@ Selon le modèle de projet que vous sélectionnez, certains workflows sont dispo
 | Demander le lancement | x |  |  |  |
 | Demander une page de destination | x |  |  |  |
 | Demander un e-mail | x |  |  |  |
-| DAM Créer copie linguistique&amp;ast; |  |  |  | x |
-| DAM Créer et traduire copie linguistique&amp;ast; |  |  |  | x |
+| DAM Create Language Copy&ast; |  |  |  | x |
+| Création et traduction de la copie et de la traduction de la langue dans la gestion des ressources numériques |  |  |  | x |
 
 >[!NOTE]
 >
->&amp;ast; Ces workflows ne sont pas lancés via la mosaïque **Workflow** dans les projets. Reportez-vous à la section [Création de copies de langue pour les ressources](/help/sites-administering/tc-manage.md).
+>&ast; Ces workflows ne sont pas démarrés à partir de la mosaïque **Workflow** dans les projets. Reportez-vous à la section [Création de copies de langue pour les ressources](/help/sites-administering/tc-manage.md).
 
 Les étapes de démarrage et d’achèvement des workflows sont les mêmes, quel que soit le workflow choisi. Seules les étapes changent.
 

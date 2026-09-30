@@ -9,14 +9,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: ba02f9b1-209e-42f2-b1df-2ed64fc9fdbc
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1740'
 ht-degree: 96%
-
 ---
-
 # Activation de l’authentification unique dans AEM forms{#enabling-single-sign-on-in-aem-forms}
 
 >[!NOTE]
@@ -85,13 +102,13 @@ Vous pouvez également activer la fonction SSO à l’aide d’en-têtes HTTP. (
    * Ajoutez LDAP comme fournisseur d’authentification.
    * Ajoutez Kerberos comme fournisseur d’authentification. Fournissez les informations suivantes sur la page Nouvelle authentification ou Modifier l’authentification pour Kerberos :
 
-      * **Fournisseur d’authentification :** Kerberos
-      * **IP DNS :** l’adresse IP du serveur DNS qui exécute AEM forms. Vous pouvez déterminer cette adresse IP en exécutant `ipconfig/all` sur la ligne de commande.
-      * **Hôte KDC :** nom d’hôte complet ou adresse IP du serveur Active Directory utilisé pour l’authentification
-      * **Utilisateur du service :** nom principal de service (SPN) transmis à l’outil KtPass. Dans l’exemple précédent, l’utilisateur du service est `HTTP/lcserver.um.lc.com`.
-      * **Domaine d’administration du service :** nom de domaine pour Active Directory. Dans l’exemple précédent, le nom de domaine est `UM.LC.COM.`
-      * **Mot de passe du service :** mot de passe de l’utilisateur du service. Dans l’exemple précédent, le mot de passe du service est `password`.
-      * **Activer SPNEGO :** active l’utilisation de SPNEGO pour l’authentification unique (SSO). Sélectionnez cette option.
+     * **Fournisseur d’authentification :** Kerberos
+     * **IP DNS :** l’adresse IP du serveur DNS qui exécute AEM forms. Vous pouvez déterminer cette adresse IP en exécutant `ipconfig/all` sur la ligne de commande.
+     * **Hôte KDC :** nom d’hôte complet ou adresse IP du serveur Active Directory utilisé pour l’authentification
+     * **Utilisateur du service :** nom principal de service (SPN) transmis à l’outil KtPass. Dans l’exemple précédent, l’utilisateur du service est `HTTP/lcserver.um.lc.com`.
+     * **Domaine d’administration du service :** nom de domaine pour Active Directory. Dans l’exemple précédent, le nom de domaine est `UM.LC.COM.`
+     * **Mot de passe du service :** mot de passe de l’utilisateur du service. Dans l’exemple précédent, le mot de passe du service est `password`.
+     * **Activer SPNEGO :** active l’utilisation de SPNEGO pour l’authentification unique (SSO). Sélectionnez cette option.
 
 1. Configurez les paramètres du navigateur client SPNEGO. (Voir [Configuration des paramètres du navigateur client SPNEGO](enabling-single-sign-on-aem.md#configuring-spnego-client-browser-settings).)
 
@@ -156,7 +173,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 Pour que l’authentification SPNEGO fonctionne, l’ordinateur client doit faire partie du domaine dans lequel le compte d’utilisateur ou d’utilisatrice est créé. Vous devez également configurer le navigateur client pour autoriser l’authentification SPNEGO. De plus, le site qui nécessite une authentification SPNEGO doit être un site de confiance.
 
-Si vous accédez au serveur en utilisant le nom de l’ordinateur, par exemple :8080, aucun paramètre n’est requis pour Internet Explorer. Si vous saisissez une URL qui ne contient aucun point (« . »), Internet Explorer traite le site comme un site intranet local. Si vous utilisez un nom qualifié complet pour le site, celui-ci doit être ajouté en tant que site de confiance.
+Si vous accédez au serveur en utilisant le nom de l’ordinateur, par exemple https://lcserver:8080, aucun paramètre n’est requis pour Internet Explorer. Si vous saisissez une URL qui ne contient aucun point (« . »), Internet Explorer traite le site comme un site intranet local. Si vous utilisez un nom qualifié complet pour le site, celui-ci doit être ajouté en tant que site de confiance.
 
 **Configurer Internet Explorer 6.x**
 
@@ -187,7 +204,7 @@ Cliquez pour connaître les étapes permettant d’[attribuer des rôles aux uti
 
 1. Connectez-vous à votre environnement AEM Forms on JEE.
 1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs et utilisatrices > Gestion des domaines.
-1. Sélectionnez la configuration de votre domaine, par exemple LDAP, puis cliquez dessus. Tous les utilisateurs et groupes créés sont répertoriés dans le Répertoire. Si nécessaire, vous pouvez créer de nouveaux utilisateurs, utilisatrices ou groupes.
+1. Sélectionnez la configuration de votre domaine, par exemple LDAP, et cliquez dessus. Vous trouvez tous les utilisateurs et utilisatrices et les groupes créés dans le répertoire. Si nécessaire, vous pouvez créer de nouveaux utilisateurs et utilisatrices ou groupes.
    ![Page de gestion des domaines](/help/forms/using/assets/domain-mgmt-page.png)
 1. Cliquez sur Authentification. Dans la nouvelle page, sélectionnez un fournisseur d’authentification, tel que LDAP.
 1. Accédez à la page Gestion des domaines, sélectionnez LDAP, puis cliquez sur **Synchroniser maintenant** pour synchroniser le répertoire avec le schéma d’authentification que vous avez configuré pour l’accès AEM.

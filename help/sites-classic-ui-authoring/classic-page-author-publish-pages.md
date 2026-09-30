@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 20aea30b-9cfe-45c1-aa8d-08085f8e3e7d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 100%
-
+source-wordcount: '1032'
+ht-degree: 90%
 ---
-
 # Publier des pages{#publishing-pages}
 
 Une fois le contenu créé et révisé dans l’environnement de création, rendez-le disponible sur votre site web public (votre environnement de publication).
@@ -29,14 +38,14 @@ Vous pouvez publier/dépublier une page tout de suite ou à une date/heure post�
 >
 >Certains termes liés à la publication peuvent être déroutants :
 >
->* **Publier/dépublier**
->  >  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
+>* **Publier/Dépublier**
+>  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
 >
 >* **Activer/Désactiver**
->  >  Ces termes sont synonymes de publication/dépublication.
+>  Ces termes sont synonymes de publication/dépublication.
 >
 >* **Répliquer/Réplication**
->  >  Termes techniques indiquant le déplacement des données (contenu de la page, fichiers, code et commentaires de l’utilisateur, par exemple) d’un environnement à un autre ; lors de la publication ou de la réplication inverse des commentaires utilisateur, par exemple.
+>  Termes techniques indiquant le déplacement des données (contenu de la page, fichiers, code et commentaires de l’utilisateur, par exemple) d’un environnement à un autre ; lors de la publication ou de la réplication inverse des commentaires utilisateur, par exemple.
 >
 
 >[!NOTE]
@@ -115,7 +124,7 @@ Pour désactiver une page :
 Pour planifier l’activation à une heure ultérieure :
 
 1. Dans la console Sites web, accédez au menu **Activer** et sélectionnez ensuite **Activer plus tard**.
-1. Dans la boîte de dialogue qui s’ouvre, indiquez la date et l’heure d’activation, puis cliquez sur **OK**. Ceci crée une version de la page qui sera activée à l’heure spécifiée.
+1. Dans la boîte de dialogue qui s’ouvre alors, indiquez la date et l’heure d’activation, puis cliquez sur **OK**. Cela crée une version de la page qui est activée à l’heure spécifiée.
 
    ![screen_shot_2012-02-08at14751pm](assets/screen_shot_2012-02-08at14751pm.png)
 
@@ -159,7 +168,7 @@ Dans l’onglet **Sites web**, vous pouvez activer les pages individuelles. Lors
 
    ![screen_shot_2012-02-08at125033pm-1](assets/screen_shot_2012-02-08at125033pm-1.png)
 
-1. Entrez le **Chemin de début**. Ceci permet de spécifier le chemin d’accès à la racine de la section à activer (publier). Cette page, et toutes les pages sous-jacentes, sont prises en compte pour l’activation (ou utilisées dans le cadre de l’émulation si une Exécution d’essai est sélectionnée).
+1. Saisissez le **chemin de début**. Ceci permet de spécifier le chemin d’accès à la racine de la section à activer (publier). Cette page et toutes les pages sous sont prises en compte pour l’activation (ou utilisées dans l’émulation si une Exécution d’essai est sélectionnée).
 1. Activez les critères de sélection suivant vos besoins :
 
    * **Modifié uniquement** : active uniquement les pages qui ont été modifiées.
@@ -168,6 +177,6 @@ Dans l’onglet **Sites web**, vous pouvez activer les pages individuelles. Lors
 
 1. Sélectionnez l’action à effectuer :
 
-   1. Sélectionnez **Exécution d’essai** pour vérifier quelles pages *devraient* être activées. Il s’agit seulement d’une émulation, aucune page ne sera activée.
+   1. Sélectionnez **Exécution d’essai** si vous souhaitez vérifier quelles pages *seraient* activées. Il s’agit uniquement d’une émulation, aucune page ne sera activée.
 
    1. Sélectionnez **Activer** pour activer les pages.

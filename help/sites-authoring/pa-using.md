@@ -9,13 +9,28 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
 role: User,Admin,Developer
 exl-id: debcc73f-c2bb-4e3a-8ebf-c7590264d289
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '655'
 ht-degree: 98%
-
 ---
-
 # Affichage des données d’analyse de page{#seeing-page-analytics-data}
 
 Utilisez les données d’analyse de page pour évaluer l’efficacité du contenu de page.
@@ -137,23 +152,23 @@ La boîte de dialogue **Paramètres de l’Activity Map** propose plusieurs opt
 
 * Général
 
-   * Suite de rapports
-   * Nom de page
-   * Langue
-   * Recouvrements de libellés avec
-   * Taille de police du libellé
-   * Couleur de dégradé
-   * Couleur de bulle
-   * Couleur de dégradé basée sur
-   * Transparence de dégradé
+  * Suite de rapports
+  * Nom de page
+  * Langue
+  * Recouvrements de libellés avec
+  * Taille de police du libellé
+  * Couleur de dégradé
+  * Couleur de bulle
+  * Couleur de dégradé basée sur
+  * Transparence de dégradé
 
 * Standard
 
-   * Affichage (type et nombre de liens)
-   * Masquer les recouvrements pour les liens qui n’ont reçu aucune visite
+  * Affichage (type et nombre de liens)
+  * Masquer les recouvrements pour les liens qui n’ont reçu aucun hit
 
 * En direct
 
-   * Affichage en haut (gagnants ou perdants)
-   * Exclure le % inférieur
-   * Mise à jour automatique (données et période)
+  * Affichage en haut (gagnants ou perdants)
+  * Exclure le % inférieur
+  * Mise à jour automatique (données et période)

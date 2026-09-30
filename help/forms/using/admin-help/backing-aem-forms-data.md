@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: cbcb9301-48c9-4394-b8c0-766eed76101d
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 98%
-
 ---
-
 # Sauvegarde des données Adobe Experience Manager (AEM) Forms {#backing-up-the-aem-forms-data}
 
 <!-- back up is two words when used as a verb; backup is one word when used as an adjective or noun. -->
@@ -56,10 +71,10 @@ Outre ces vérifications, observez les recommandations ci-dessous relatives au p
 
   Considérez les points suivants lors de la sauvegarde des instances de création et de publication :
 
-   * Assurez-vous que la sauvegarde des instances de création et de publication est synchronisée pour démarrer simultanément. Bien que vous puissiez continuer à utiliser les instances de création et de publication lorsque la sauvegarde est en cours, il est recommandé de ne pas publier de ressource pendant la sauvegarde afin d’éviter des modifications non enregistrées. Patientez jusqu’à ce que la sauvegarde des instances de création et de publication soit terminée avant de publier de nouvelles ressources.
-   * La sauvegarde complète du nœud Création inclut la sauvegarde des données de Forms Manager et de l’espace de travail AEM Forms.
-   * Les développeurs et développeuses de Workbench peuvent continuer à travailler sur leurs processus localement. Il n’est pas nécessaire de déployer de nouveaux processus au cours de la phase de sauvegarde.
-   * La décision concernant la durée de chaque session de sauvegarde (en mode de sauvegarde restauration) doit être basée sur la durée totale nécessaire pour sauvegarder toutes les données dans AEM Forms (base de données, stockage global de données, référentiel AEM et toutes les autres données personnalisées supplémentaires).
+  * Assurez-vous que la sauvegarde des instances de création et de publication est synchronisée pour démarrer simultanément. Bien que vous puissiez continuer à utiliser les instances de création et de publication lorsque la sauvegarde est en cours, il est recommandé de ne pas publier de ressource pendant la sauvegarde afin d’éviter des modifications non enregistrées. Patientez jusqu’à ce que la sauvegarde des instances de création et de publication soit terminée avant de publier de nouvelles ressources.
+  * La sauvegarde complète du nœud Création inclut la sauvegarde des données de Forms Manager et de l’espace de travail AEM Forms.
+  * Les développeurs et développeuses de Workbench peuvent continuer à travailler sur leurs processus localement. Il n’est pas nécessaire de déployer de nouveaux processus au cours de la phase de sauvegarde.
+  * La décision concernant la durée de chaque session de sauvegarde (en mode de sauvegarde restauration) doit être basée sur la durée totale nécessaire pour sauvegarder toutes les données dans AEM Forms (base de données, stockage global de données, référentiel AEM et toutes les autres données personnalisées supplémentaires).
 
 Sauvegardez la base de données AEM Forms, y compris tous les journaux de transactions. Voir [Base de données AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
 

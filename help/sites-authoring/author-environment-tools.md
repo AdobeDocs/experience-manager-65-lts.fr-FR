@@ -10,13 +10,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 11ab6be0-ed61-4a4b-af82-d26eec982edd
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2223'
 ht-degree: 99%
-
 ---
-
 # Création – Environnement et outils{#authoring-the-environment-and-tools}
 
 L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu. Les outils fournis sont accessibles dans plusieurs consoles et éditeurs de page.
@@ -86,17 +99,17 @@ L’apparence et la gestion dépendent du type d’appareil utilisé :
 
   Les composants sont représentés par les éléments suivants :
 
-   * Nom du composant
-   * Groupe de composants (en gris)
-   * Icône ou abréviation
+  * Nom du composant
+  * Groupe de composants (en gris)
+  * Icône ou abréviation
 
-      * Les icônes des composants standard sont monochromes.
-      * Les abréviations correspondent toujours aux deux premiers caractères du nom du composant.
+    * Les icônes des composants standard sont monochromes.
+    * Les abréviations correspondent toujours aux deux premiers caractères du nom du composant.
 
   Dans la barre d’outils supérieure de l’explorateur de **composants**, vous pouvez effectuer les opérations suivantes :
 
-   * Filtrer les composants par nom
-   * Restreindre l’affichage à un groupe spécifique à l’aide de la liste déroulante.
+  * Filtrer les composants par nom
+  * Restreindre l’affichage à un groupe spécifique à l’aide de la liste déroulante.
 
   Pour obtenir une description plus détaillée du composant, vous pouvez cliquer sur l’icône d’informations à côté du composant dans le navigateur **Composants** (le cas échéant). Par exemple, pour le **conteneur de disposition** :
 
@@ -124,11 +137,11 @@ Pour ajouter une ressource à votre page, sélectionnez-la et faites-la glisser 
 
 * d’un composant existant du type approprié.
 
-   * Par exemple, vous pouvez faire glisser une ressource de type image sur un composant Image ;
+  * Par exemple, vous pouvez faire glisser une ressource de type image sur un composant Image ;
 
 * d’un [espace réservé](/help/sites-authoring/editing-content.md#component-placeholder) dans le système de paragraphes où créer un composant du type approprié :
 
-   * Par exemple, vous pouvez faire glisser une ressource de type image sur le système de paragraphes afin de créer un composant Image.
+  * Par exemple, vous pouvez faire glisser une ressource de type image sur le système de paragraphes afin de créer un composant Image.
 
 >[!NOTE]
 >
@@ -141,7 +154,7 @@ Dans la barre d’outils supérieure de l’explorateur de ressources, vous pouv
 * type de ressource (images, manuscrits, documents, vidéos, pages, paragraphes ou produits) ;
 * caractéristiques de ressources, telles que l’orientation (Portrait, Paysage, Carré) et le style (Couleur, Monochrome, Niveaux de gris).
 
-   * Disponible uniquement pour certains types de ressources.
+  * Disponible uniquement pour certains types de ressources.
 
 L’apparence et la gestion dépendent du type d’appareil utilisé :
 
@@ -238,7 +251,7 @@ Sélectionnez le type de référence approprié pour plus d’informations. Dans
 
 * **Liens entrants** fournit une liste des pages qui font référence à cette page, ainsi qu’un lien direct vers l’option **Modifier** pour l’une de ces pages lorsque vous sélectionnez un lien spécifique.
 
-   * Cette option permet uniquement d’afficher des liens statiques, et non des liens générés dynamiquement, par exemple, à partir du composant Liste.
+  * Cette option permet uniquement d’afficher des liens statiques, et non des liens générés dynamiquement, par exemple, à partir du composant Liste.
 
 * Les instances du contenu emprunté et prêté à l’aide du composant **Référence** vous permettent de naviguer jusqu’à la page de référence.
 

@@ -10,13 +10,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: 7f952e69-f219-4ade-a187-2a4cbc1600f3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
-
+source-wordcount: '777'
+ht-degree: 97%
 ---
-
 # Affichage principal de la gestion des autorisations{#principal-view-for-permissions-management}
 
 ## Présentation {#overview}
@@ -25,7 +37,7 @@ AEM 6.5 introduit la gestion des autorisations pour les utilisateurs et pour le
 
 ## Utilisation {#how-to-use}
 
-### Accès à l’interface utilisateur {#accessing-the-ui}
+### Accès à l’interface d’utilisation {#accessing-the-ui}
 
 La nouvelle gestion des autorisations basée sur l’interface utilisateur est accessible via la carte Autorisations sous Sécurité, comme illustré ci-dessous :
 
@@ -73,7 +85,7 @@ Vous pouvez ajouter des privilèges en effectuant une recherche à partir du cha
 >
 >Pour obtenir la liste complète des privilèges et descriptions, voir [Administration des utilisateurs et utilisatrices, des groupes et des droits d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![Recherche d’autorisations d’un chemin donné.](assets/image2019-3-21_0-5-47.png) ![Ajoutez une nouvelle entrée pour « dam-users », comme illustré par un chemin sélectionné dans des colonnes verticales.](assets/image2019-3-21_0-6-53.png)
+![Autorisation de recherche pour un chemin d’accès donné.](assets/image2019-3-21_0-5-47.png) ![Ajoutez une nouvelle entrée pour &#39;dam-users&#39; comme illustré par un chemin sélectionné dans des colonnes verticales.](assets/image2019-3-21_0-6-53.png)
 
 Une fois la liste des privilèges sélectionnée, l’utilisateur ou utilisatrice peut choisir le Type d’autorisation : Deny (Refuser) ou Allow (Autoriser), comme illustré ci-dessous.
 
@@ -121,7 +133,7 @@ Vous pouvez supprimer des entrées de contrôle d’accès pour supprimer l’en
 
 ![Supprimer les ACE](assets/image2019-3-21_0-53-19.png) ![Supprimer les ACE](assets/unspe.png)
 
-### Combinaisons de privilèges de l’interface utilisateur classique {#classic-ui-privilege-combinations}
+### Combinaisons de privilèges de l’interface d’utilisation classique {#classic-ui-privilege-combinations}
 
 La nouvelle interface utilisateur des autorisations utilise explicitement l’ensemble de base de privilèges au lieu de combinaisons prédéfinies qui ne reflètent pas vraiment les privilèges sous-jacents exacts qui ont été accordés.
 
@@ -130,7 +142,7 @@ Ceci entraînait une certaine confusion quant à la configuration exacte. Le tab
 <table>
  <tbody>
   <tr>
-   <th>Combinaisons de privilèges de l’interface utilisateur classique</th>
+   <th>Combinaisons de privilèges de l’interface d’utilisation classique</th>
    <th>Privilège de l’interface utilisateur Autorisations</th>
   </tr>
   <tr>

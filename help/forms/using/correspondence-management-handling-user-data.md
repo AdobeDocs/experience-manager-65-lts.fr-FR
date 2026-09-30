@@ -7,13 +7,29 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Form Data Model
 exl-id: 57385e88-9a3d-4d89-986b-9f254aa722ca
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '555'
 ht-degree: 100%
-
 ---
-
 # Correspondence Management | Gestion des données utilisateur {#correspondence-management-handling-user-data}
 
 AEM Forms Correspondence Management vous permet de créer, gérer et rationaliser les correspondances clientes sécurisées et personnalisées. Il fournit une interface utilisateur intuitive permettant aux utilisateurs et utilisatrices professionnels de créer des correspondances à l’aide de blocs de contenu et d’éléments multimédias pré-approuvés. Pour obtenir plus d’informations sur la création de correspondances, reportez-vous à la section [Créer une correspondance](/help/forms/using/create-correspondence.md).
@@ -80,6 +96,6 @@ Vous pouvez également accéder à l’instance de lettre dans le référentiel 
 Pour rechercher une instance de lettre contenant les données d’une personne spécifique, vous pouvez procéder des manières suivantes :
 
 * Utilisez les API Correspondence Management si le nom de l’instance de lettre ou la personne qui a enregistré le brouillon ou envoyé la correspondance est connue.
-* Utilisez l’option de recherche du référentiel AEM et saisissez des informations d’identification personnelles telles que l’identifiant ou le nom de l’adresse électronique pour trouver le nœud dans lequel l’information est stockée. 
+* Utilisez l’option de recherche du référentiel AEM et saisissez des informations d’identification personnelles telles que l’identifiant ou le nom de l’adresse électronique pour trouver le nœud dans lequel l’information est stockée.
 
 Pour supprimer définitivement des données utilisateur de correspondances sous forme de brouillon et envoyées dans les systèmes AEM, vous devez supprimer manuellement le nœud d’instance de lettre de toutes les instances AEM applicables.

@@ -8,13 +8,29 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
 exl-id: 79f0c1e7-6345-4cfb-8186-3ecca82cac44
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 100%
-
 ---
-
 # Personnalisation du suivi des événements de formulaire {#customizing-form-event-tracking}
 
 Les événements suivants sont immédiatement suivis dans un formulaire adaptatif activé pour l’analyse :
@@ -60,7 +76,7 @@ Les événements suivants sont immédiatement suivis dans un formulaire adaptati
  </tbody>
 </table>
 
-## Personnalisation du délai d’événement de visite de champ {#customizing-the-field-visit-event-timeout}
+## Personnalisation du délai d’expiration d’événement de visite de champ {#customizing-the-field-visit-event-timeout}
 
 Dans la configuration par défaut des formulaires AEM, si un utilisateur passe plus de 60 secondes sur un champ, un événement `fieldvisit` est déclenché et les détails du champ sont envoyés à Adobe Analytics. Vous pouvez personnaliser la ligne de base du suivi temporel des champs sous Configuration des rapports d’analyse AEM Forms dans la console de configuration AEM (/system/console/configMgr) afin d’augmenter ou de diminuer le délai d’expiration.
 

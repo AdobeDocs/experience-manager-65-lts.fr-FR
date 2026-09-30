@@ -5,13 +5,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
-source-git-commit: a0fe5bbfe93719641118521c6861bcb2cca76d60
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4940'
+source-wordcount: '4952'
 ht-degree: 94%
-
 ---
-
 # Composants Adobe Experience Manager (AEM) - Principes de base{#aem-components-the-basics}
 
 Lorsque vous commencez à développer de nouveaux composants, vous devez comprendre les principes de base de leur structure et de leur configuration.
@@ -27,22 +36,22 @@ Cette section décrit les concepts et les problèmes majeurs et sert d’introdu
 Avant de commencer à configurer ou coder votre composant, vous devez vous poser la question suivante :
 
 * De quoi avez-vous besoin exactement pour le nouveau composant ?
-   * Un cahier des charges clair facilitera toutes les étapes de développement, de test et de transfert. Vos besoins peuvent évoluer au fil du temps, mais le cahier des charges peut être mis à jour (bien que les modifications doivent également être documentées).
+  * Un cahier des charges clair facilitera toutes les étapes de développement, de test et de transfert. Vos besoins peuvent évoluer au fil du temps, mais le cahier des charges peut être mis à jour (bien que les modifications doivent également être documentées).
 * Devez-vous créer votre composant de toutes pièces ou pouvez-vous hériter des bases d’un composant existant ?
-   * Inutile de réinventer la roue.
-   * Dans AEM, plusieurs mécanismes permettent d’hériter et d’étendre les détails d’une définition d’un autre composant, y compris le remplacement, le recouvrement et [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md).
+  * Inutile de réinventer la roue.
+  * Dans AEM, plusieurs mécanismes permettent d’hériter et d’étendre les détails d’une définition d’un autre composant, y compris le remplacement, le recouvrement et [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md).
 * Votre composant a-t-il besoin d’une logique pour sélectionner/manipuler le contenu ?
-   * La logique doit rester distincte de la couche de l’interface utilisateur. HTL est conçu pour faciliter cette distinction.
+  * La logique doit rester distincte de la couche de l’interface utilisateur. HTL est conçu pour faciliter cette distinction.
 * Votre composant a-t-il besoin d’une mise en forme CSS ?
-   * La mise en forme CSS doit rester distincte des définitions de composants. Définissez des conventions pour nommer vos éléments HTML afin que vous puissiez les modifier via des fichiers CSS externes.
+  * La mise en forme CSS doit rester distincte des définitions de composants. Définissez des conventions pour nommer vos éléments HTML afin que vous puissiez les modifier via des fichiers CSS externes.
 * Quels sont les aspects de la sécurité à prendre en compte ?
-   * Consultez [Liste de contrôle de sécurité - Bonnes pratiques de développement](/help/sites-administering/security-checklist.md#development-best-practices) pour plus de détails.
+  * Consultez [Liste de contrôle de sécurité - Bonnes pratiques de développement](/help/sites-administering/security-checklist.md#development-best-practices) pour plus de détails.
 
 ### IU tactile ou classique {#touch-enabled-vs-classic-ui}
 
 Avant toute discussion sérieuse sur le développement de composants, vous devez savoir quelle interface utilisateur vos auteurs et autrices utilisent :
 
-* **Interface utilisateur optimisée pour les écrans tactiles**
+* **IU tactile**
   L’[interface utilisateur standard](/help/sites-developing/touch-ui-concepts.md) repose sur l’expérience utilisateur unifiée d’Adobe Experience Cloud, et utilise les technologies sous-jacentes de l’[IU Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) et de l’[IU Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **IU classique**
 Interface utilisateur basée sur la technologie ExtJS obsolète avec AEM 6.4.
@@ -101,16 +110,16 @@ Utilisez les outils suivants pour déplacer vos composants vers l’instance de 
 
 * Page :
 
-   * AEM comporte le composant *page* (`cq:Page`).
-   * Il s’agit d’un type spécifique de ressource important pour la gestion de contenu.
-      * Une page correspond à une page web contenant du contenu pour votre site Web.
+  * AEM comporte le composant *page* (`cq:Page`).
+  * Il s’agit d’un type spécifique de ressource important pour la gestion de contenu.
+    * Une page correspond à une page web contenant du contenu pour votre site Web.
 
 * Systèmes de paragraphes :
 
-   * Le système de paragraphe est un composeur majeur d’un site Web car il gère une liste de paragraphes. Il est utilisé pour contenir et structurer les composants individuels qui contiennent le contenu réel.
-   * Vous pouvez créer, déplacer, copier et supprimer des paragraphes dans le système de paragraphes.
-   * Vous pouvez également sélectionner les composants à utiliser dans un système de paragraphes spécifique.
-   * Il existe différents systèmes de paragraphes disponibles dans une instance standard (par exemple `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
+  * Le système de paragraphe est un composeur majeur d’un site Web car il gère une liste de paragraphes. Il est utilisé pour contenir et structurer les composants individuels qui contiennent le contenu réel.
+  * Vous pouvez créer, déplacer, copier et supprimer des paragraphes dans le système de paragraphes.
+  * Vous pouvez également sélectionner les composants à utiliser dans un système de paragraphes spécifique.
+  * Il existe différents systèmes de paragraphes disponibles dans une instance standard (par exemple `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
 
 ## Structure {#structure}
 
@@ -142,60 +151,60 @@ La définition d’un composant peut être décomposée comme suit :
 * Les composants AEM sont basés sur [Sling](https://sling.apache.org/documentation.html).
 * Les composants AEM se trouvent (généralement) sous :
 
-   * HTL : `/libs/wcm/foundation/components`
-   * JSP : `/libs/foundation/components`
+  * HTL : `/libs/wcm/foundation/components`
+  * JSP : `/libs/foundation/components`
 
 * Les composants spécifiques au projet/site sont (généralement) situés sous :
 
-   * `/apps/<myApp>/components`
+  * `/apps/<myApp>/components`
 
 * Les composants standard d’AEM sont définis comme `cq:Component` et possèdent les éléments clés suivants :
 
-   * Propriétés jcr :
+  * Propriétés jcr :
 
-     Liste de propriétés jcr. Celles-ci sont variables et certaines peuvent être facultatives si la structure de base d’un nœud de composant, ses propriétés et ses sous-nœuds sont définis par la définition `cq:Component`.
+    Liste de propriétés jcr. Celles-ci sont variables et certaines peuvent être facultatives si la structure de base d’un nœud de composant, ses propriétés et ses sous-nœuds sont définis par la définition `cq:Component`.
 
-   * Ressources :
+  * Ressources :
 
-     Elles définissent les éléments statiques utilisés par le composant.
+    Elles définissent les éléments statiques utilisés par le composant.
 
-   * Scripts :
+  * Scripts :
 
   Utilisés pour implémenter le comportement de l’instance résultante du composant.
 
 * **Nœud racine** :
 
-   * `<mycomponent> (cq:Component)` – Nœud de hiérarchie du composant.
+  * `<mycomponent> (cq:Component)` – Nœud de hiérarchie du composant.
 
 * **Propriétés vitales** :
 
-   * `jcr:title` - Titre du composant. Par exemple utilisé comme libellé lorsque le composant est répertorié dans le navigateur de composants ou le sidekick.
-   * `jcr:description` - Description du composant. Peut être utilisé comme indicateur de survol de la souris dans le navigateur de composants ou le sidekick.
-   * Interface utilisateur classique :
+  * `jcr:title` - Titre du composant. Par exemple utilisé comme libellé lorsque le composant est répertorié dans le navigateur de composants ou le sidekick.
+  * `jcr:description` - Description du composant. Peut être utilisé comme indicateur de survol de la souris dans le navigateur de composants ou le sidekick.
+  * Interface utilisateur classique :
 
-      * `icon.png` - Icône du composant.
-      * `thumbnail.png` - Vignette affichée si le composant est listé dans le système de paragraphe.
+    * `icon.png` - Icône du composant.
+    * `thumbnail.png` - Vignette affichée si le composant est listé dans le système de paragraphe.
 
-   * IU tactile
+  * IU tactile
 
-      * Voir la section [Icône de composant dans l’interface utilisateur tactile](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) pour plus d’informations.
+    * Voir la section [Icône de composant dans l’interface utilisateur tactile](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) pour plus d’informations.
 
 * **Nœuds enfants essentiels** :
 
-   * `cq:editConfig (cq:EditConfig)` - Définit les propriétés de modification du composant et permet au composant d’apparaître dans le navigateur de composants ou le sidekick.
+  * `cq:editConfig (cq:EditConfig)` - Définit les propriétés de modification du composant et permet au composant d’apparaître dans le navigateur de composants ou le sidekick.
 
-     Remarque : si le composant possède une boîte de dialogue, elle s’affiche automatiquement dans l’explorateur de composants ou dans Sidekick, même si le cq:editConfig n’existe pas.
+    Remarque : si le composant possède une boîte de dialogue, elle s’affiche automatiquement dans l’explorateur de composants ou dans Sidekick, même si le cq:editConfig n’existe pas.
 
-   * `cq:childEditConfig (cq:EditConfig)` – Contrôle les aspects de l’IU de création pour les composants enfants qui ne définissent pas leur propre `cq:editConfig`.
-   * Interface utilisateur optimisée pour les écrans tactiles :
+  * `cq:childEditConfig (cq:EditConfig)` – Contrôle les aspects de l’IU de création pour les composants enfants qui ne définissent pas leur propre `cq:editConfig`.
+  * Interface utilisateur optimisée pour les écrans tactiles :
 
-      * `cq:dialog` (`nt:unstructured`) - Boîte de dialogue pour ce composant. Définit l’interface permettant à l’utilisateur de configurer le composant et/ou de modifier le contenu.
-      * `cq:design_dialog` (`nt:unstructured`) - Modification de la conception du composant.
+    * `cq:dialog` (`nt:unstructured`) - Boîte de dialogue pour ce composant. Définit l’interface permettant à l’utilisateur de configurer le composant et/ou de modifier le contenu.
+    * `cq:design_dialog` (`nt:unstructured`) - Modification de la conception du composant.
 
-   * Interface utilisateur classique :
+  * Interface utilisateur classique :
 
-      * `dialog` (`cq:Dialog`) - Boîte de dialogue pour ce composant. Définit l’interface qui permet à l’utilisateur ou à l’utilisatrice de configurer le composant, de modifier le contenu ou les deux.
-      * `design_dialog` (`cq:Dialog`) - Modification de la conception du composant.
+    * `dialog` (`cq:Dialog`) - Boîte de dialogue pour ce composant. Définit l’interface qui permet à l’utilisateur ou à l’utilisatrice de configurer le composant, de modifier le contenu ou les deux.
+    * `design_dialog` (`cq:Dialog`) - Modification de la conception du composant.
 
 #### Icône de composant dans l’IU tactile {#component-icon-in-touch-ui}
 
@@ -206,12 +215,12 @@ L’icône ou l’abréviation du composant est définie via les propriétés JC
 1. `abbreviation` – Propriété de chaîne servant à personnaliser l’abréviation du nom du composant dans le navigateur de composants
    * L’abréviation devrait être limitée à deux caractères.
    * La fourniture d’une chaîne vide crée l’abréviation à partir des deux premiers caractères de la propriété `jcr:title`.
-      * Par exemple, « Im » pour « Image »
-      * Le titre localisé est utilisé pour créer l’abréviation.
+     * Par exemple, « Im » pour « Image »
+     * Le titre localisé est utilisé pour créer l’abréviation.
    * L’abréviation n’est traduite que si le composant possède une propriété `abbreviation_commentI18n`, qui est ensuite utilisée comme indice de traduction.
 1. `cq:icon.png` ou `cq:icon.svg` – Icône du composant, affichée dans le navigateur de composants
    * La taille des icônes des composants standard est de 20 x 20 pixels.
-      * Les icônes plus grandes sont réduites (côté client).
+     * Les icônes plus grandes sont réduites (côté client).
    * La couleur recommandée est rgb(112, 112, 112) > # 707070
    * L’arrière-plan des icônes de composants standard est transparent.
    * Seuls les fichiers `.png` et `.svg` sont pris en charge.
@@ -403,13 +412,13 @@ Les nœuds d’enfant d’un intérêt particulier sont les suivants :
 * `cq:editConfig` (`cq:EditConfig`) - Contrôle les aspects visuels. Par exemple, il peut définir l’apparence d’une barre ou d’un widget, ou peut ajouter des contrôles personnalisés.
 * `cq:childEditConfig` (`cq:EditConfig`) - Contrôle les aspects visuels des composants enfants qui n’ont pas leurs propres définitions.
 * Interface utilisateur optimisée pour les écrans tactiles :
-   * `cq:dialog` (`nt:unstructured`) - Définit la boîte de dialogue de modification du contenu de ce composant.
-   * `cq:design_dialog` (`nt:unstructured`) - Spécifie les options de modification de conception pour le composant.
+  * `cq:dialog` (`nt:unstructured`) - Définit la boîte de dialogue de modification du contenu de ce composant.
+  * `cq:design_dialog` (`nt:unstructured`) - Spécifie les options de modification de conception pour le composant.
 * Interface utilisateur classique :
-   * `dialog` (`cq:Dialog`) - Définit la boîte de dialogue de modification du contenu du composant (spécifique à l’IU classique).
-   * `design_dialog` (`cq:Dialog`) - Spécifie les options de modification de conception pour le composant.
-   * `icon.png` - Fichier graphique à utiliser comme icône pour le composant dans le sidekick
-   * `thumbnail.png` - Fichier graphique à utiliser comme miniature pour le composant en le faisant glisser depuis le sidekick
+  * `dialog` (`cq:Dialog`) - Définit la boîte de dialogue de modification du contenu du composant (spécifique à l’IU classique).
+  * `design_dialog` (`cq:Dialog`) - Spécifie les options de modification de conception pour le composant.
+  * `icon.png` - Fichier graphique à utiliser comme icône pour le composant dans le sidekick
+  * `thumbnail.png` - Fichier graphique à utiliser comme miniature pour le composant en le faisant glisser depuis le sidekick
 
 ### Boîtes de dialogue {#dialogs}
 
@@ -426,14 +435,14 @@ Les définitions de boîte de dialogue sont spécifiques à l’interface utilis
 >
 
 * Interface utilisateur optimisée pour les écrans tactiles
-   * Les nœuds `cq:dialog` (`nt:unstructured`) :
-      * définissent la boîte de dialogue pour la modification du contenu de ce composant ;
-      * sont spécifiques à l’interface utilisateur tactile ;
-      * sont définies à l’aide de composants de l’IU Granite ;
-      * ont une propriété `sling:resourceType`, comme structure de contenu Sling standard ;
-      * peuvent avoir une propriété `helpPath` pour définir la ressource d’aide contextuelle (chemin absolu ou relatif) accessible lorsque l’icône d’aide (l’icône `?`) est sélectionnée.
-         * Pour les composants prêts à l’emploi, il s’agit souvent d’une page dans la documentation.
-         * Si aucun `helpPath` n’est spécifié, l’URL par défaut (page de présentation de la documentation) est affichée.
+  * Les nœuds `cq:dialog` (`nt:unstructured`) :
+    * définissent la boîte de dialogue pour la modification du contenu de ce composant ;
+    * sont spécifiques à l’interface utilisateur tactile ;
+    * sont définies à l’aide de composants de l’IU Granite ;
+    * ont une propriété `sling:resourceType`, comme structure de contenu Sling standard ;
+    * peuvent avoir une propriété `helpPath` pour définir la ressource d’aide contextuelle (chemin absolu ou relatif) accessible lorsque l’icône d’aide (l’icône `?`) est sélectionnée.
+      * Pour les composants prêts à l’emploi, il s’agit souvent d’une page dans la documentation.
+      * Si aucun `helpPath` n’est spécifié, l’URL par défaut (page de présentation de la documentation) est affichée.
 
   ![chlimage_1-242](assets/chlimage_1-242.png)
 
@@ -442,14 +451,14 @@ Les définitions de boîte de dialogue sont spécifiques à l’interface utilis
   ![screen_shot_2012-02-13at60937pm](assets/screen_shot_2012-02-13at60937pm.png)
 
 * Interface utilisateur classique
-   * Les nœuds `dialog` (`cq:Dialog`) :
-      * définissent la boîte de dialogue pour la modification du contenu de ce composant ;
-      * sont spécifiques à l’IU classique ;
-      * sont définis à l’aide des widgets ExtJS ;
-      * possèdent une propriété `xtype` qui fait référence à ExtJS ;
-      * peuvent avoir une propriété `helpPath` pour définir la ressource d’aide contextuelle (chemin absolu ou relatif) accessible lorsque le bouton **Aide** est sélectionné.
-         * Pour les composants prêts à l’emploi, il s’agit souvent d’une page dans la documentation.
-         * Si aucun `helpPath` n’est spécifié, l’URL par défaut (page de présentation de la documentation) est affichée.
+  * Les nœuds `dialog` (`cq:Dialog`) :
+    * définissent la boîte de dialogue pour la modification du contenu de ce composant ;
+    * sont spécifiques à l’IU classique ;
+    * sont définis à l’aide des widgets ExtJS ;
+    * possèdent une propriété `xtype` qui fait référence à ExtJS ;
+    * peuvent avoir une propriété `helpPath` pour définir la ressource d’aide contextuelle (chemin absolu ou relatif) accessible lorsque le bouton **Aide** est sélectionné.
+      * Pour les composants prêts à l’emploi, il s’agit souvent d’une page dans la documentation.
+      * Si aucun `helpPath` n’est spécifié, l’URL par défaut (page de présentation de la documentation) est affichée.
 
   ![chlimage_1-243](assets/chlimage_1-243.png)
 
@@ -459,8 +468,8 @@ Les définitions de boîte de dialogue sont spécifiques à l’interface utilis
 
   Dans une boîte de dialogue classique :
 
-   * vous pouvez créer une boîte de dialogue définie en tant que `cq:Dialog` qui fournira un seul onglet (comme dans le composant text). Si vous avez besoin de plusieurs onglets, comme dans le composant textimage, la boîte de dialogue peut être définie comme `cq:TabPanel`.
-   * un `cq:WidgetCollection` (`items`) sert de base pour les champs de saisie (`cq:Widget`) ou d’autres onglets (`cq:Widget`). Cette hiérarchie peut être étendue.
+  * vous pouvez créer une boîte de dialogue définie en tant que `cq:Dialog` qui fournira un seul onglet (comme dans le composant text). Si vous avez besoin de plusieurs onglets, comme dans le composant textimage, la boîte de dialogue peut être définie comme `cq:TabPanel`.
+  * un `cq:WidgetCollection` (`items`) sert de base pour les champs de saisie (`cq:Widget`) ou d’autres onglets (`cq:Widget`). Cette hiérarchie peut être étendue.
 
 ### Boîtes de dialogue de conception {#design-dialogs}
 
@@ -505,8 +514,8 @@ En particulier, si vous vous intéressez au texte actuel d’un composant **Titr
 
 * la définition (pour les deux interfaces utilisateur) possède la propriété `name`= `./jcr:title`
 
-   * `/libs/foundation/components/title/cq:dialog/content/items/column/items/title`
-   * `/libs/foundation/components/title/dialog/items/title`
+  * `/libs/foundation/components/title/cq:dialog/content/items/column/items/title`
+  * `/libs/foundation/components/title/dialog/items/title`
 
 * dans le contenu, cela génère la propriété `jcr:title` qui stocke le contenu du créateur ou de la créatrice.
 
@@ -520,15 +529,15 @@ Les composants d’AEM sont soumis à trois hiérarchies différentes :
 
   Elle est utilisée pour étendre des composants à l’aide de la propriété `sling:resourceSuperType`. Cela permet au composant d’hériter d’attributs. Par exemple, un composant Texte hérite de divers attributs du composant standard.
 
-   * Scripts (résolus par Sling).
-   * Boîtes de dialogue.
-   * Descriptions (y compris les images miniatures et les icônes).
+  * Scripts (résolus par Sling).
+  * Boîtes de dialogue.
+  * Descriptions (y compris les images miniatures et les icônes).
 
 * **Hiérarchie des conteneurs**
 
   Cette option permet de renseigner les paramètres de configuration du composant enfant. Elle est généralement utilisée dans un scénario parsys.
 
-  Par exemple, les paramètres de configuration des boutons de la barre de modification, la disposition de jeux de contrôles (barres de modification, survol), la disposition des boîtes de dialogue (ancrée, flottante) peuvent être définis sur le composant parent.
+  Par exemple, les paramètres de configuration des boutons de la barre de modification, de la disposition de jeux de commandes (barres de modification, survol) et de la disposition des boîtes de dialogue (ancrée, flottante) peuvent être définis sur le composant parent et propagés aux composants enfants.
 
   Les paramètres de configuration (liés à la fonctionnalité de modification) dans `cq:editConfig` et `cq:childEditConfig` sont propagés.
 
@@ -548,27 +557,27 @@ Le comportement de modification d’un composant est configuré en ajoutant un n
 
 * [`cq:editConfig`Propriétés du nœud](#configuring-with-cq-editconfig-properties) :
 
-   * `cq:actions` (`String array`) : définit les actions pouvant être effectuées sur le composant.
-   * `cq:layout` (`String`) : définit la façon dont le composant est modifié dans l’interface utilisateur classique.
-   * `cq:dialogMode` (`String`) : définit le mode d’ouverture de la boîte de dialogue des composants dans l’IU classique.
+  * `cq:actions` (`String array`) : définit les actions pouvant être effectuées sur le composant.
+  * `cq:layout` (`String`) : définit la façon dont le composant est modifié dans l’interface utilisateur classique.
+  * `cq:dialogMode` (`String`) : définit le mode d’ouverture de la boîte de dialogue des composants dans l’IU classique.
 
-      * Dans l’IU tactile, les boîtes de dialogue flottent toujours en mode bureau et s’ouvrent automatiquement en mode plein écran sur mobile.
+    * Dans l’IU tactile, les boîtes de dialogue flottent toujours en mode bureau et s’ouvrent automatiquement en mode plein écran sur mobile.
 
-   * `cq:emptyText` (`String`) : définit le texte qui est affiché quand aucun contenu visuel n’est présent.
-   * `cq:inherit` (`Boolean`) : définit si les valeurs manquantes sont héritées du composant.
-   * `dialogLayout` (chaîne) : définit le mode d’ouverture de la boîte de dialogue.
+  * `cq:emptyText` (`String`) : définit le texte qui est affiché quand aucun contenu visuel n’est présent.
+  * `cq:inherit` (`Boolean`) : définit si les valeurs manquantes sont héritées du composant.
+  * `dialogLayout` (chaîne) : définit le mode d’ouverture de la boîte de dialogue.
 
 * Nœuds enfants [`cq:editConfig`](#configuring-with-cq-editconfig-child-nodes) :
 
-   * `cq:dropTargets` (type de nœud `nt:unstructured`) : définit une liste de cibles de dépôt pouvant accepter une ressource déposée à partir de l’outil de recherche de contenu.
+  * `cq:dropTargets` (type de nœud `nt:unstructured`) : définit une liste de cibles de dépôt pouvant accepter une ressource déposée à partir de l’outil de recherche de contenu.
 
-      * Les cibles de dépôt multiples sont uniquement disponibles dans l’IU classique.
-      * Dans l’IU tactile, une seule cible est autorisée.
+    * Les cibles de dépôt multiples sont uniquement disponibles dans l’IU classique.
+    * Dans l’IU tactile, une seule cible est autorisée.
 
-   * `cq:actionConfigs` (type de nœud `nt:unstructured`) : définit une liste de nouvelles actions ajoutées à la liste cq:actions.
-   * `cq:formParameters` (type de nœud `nt:unstructured`) : définit des paramètres supplémentaires qui sont ajoutés au formulaire de la boîte de dialogue.
-   * `cq:inplaceEditing` (type de nœud `cq:InplaceEditingConfig`) : définit une configuration de modification en place pour le composant.
-   * `cq:listeners` (type de nœud `cq:EditListenersConfig`) : définit ce qui se passe avant ou après une action sur le composant.
+  * `cq:actionConfigs` (type de nœud `nt:unstructured`) : définit une liste de nouvelles actions ajoutées à la liste cq:actions.
+  * `cq:formParameters` (type de nœud `nt:unstructured`) : définit des paramètres supplémentaires qui sont ajoutés au formulaire de la boîte de dialogue.
+  * `cq:inplaceEditing` (type de nœud `cq:InplaceEditingConfig`) : définit une configuration de modification en place pour le composant.
+  * `cq:listeners` (type de nœud `cq:EditListenersConfig`) : définit ce qui se passe avant ou après une action sur le composant.
 
 >[!NOTE]
 >
@@ -600,8 +609,8 @@ Il existe de nombreuses configurations dans le référentiel. Vous pouvez facile
 
 Les composants doivent toujours générer du code HTML visible par l’auteur ou l’autrice, même si le composant ne comporte aucun contenu, sans quoi il pourrait disparaître visuellement de l’interface de l’éditeur, ce qui le rend techniquement présent, mais invisible sur la page et dans l’éditeur. Dans ce cas, les auteurs et autrices ne pourraient pas sélectionner ce composant vide ni interagir avec lui.
 
-Pour cette raison, les composants doivent générer un espace réservé tant qu’ils ne génèrent aucune sortie visible lorsque la page est générée dans l’éditeur de page (lorsque le mode de gestion de contenu Web est `edit` ou `preview`).
-Voici un exemple type de balisage HTML pour un espace réservé :
+Pour cette raison, les composants doivent générer un espace réservé tant qu’ils n’affichent pas de sortie visible lorsque la page est rendue dans l’éditeur de page (lorsque le WCM est en mode `edit` ou `preview`).
+L’annotation HTML type d’un espace réservé est la suivante :
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
@@ -857,8 +866,8 @@ L’exemple de configuration suivant définit un nouveau bouton (avec un sépara
 
 * un séparateur, défini par le xtype `tbseparator` ;
 
-   * applicable uniquement dans l’IU classique.
-   * Cette définition est ignorée par l’IU tactile dans la mesure où les xtypes sont ignorés (et les séparateurs sont inutiles car la barre d’outils d’action est construite différemment dans l’IU tactile).
+  * applicable uniquement dans l’IU classique.
+  * Cette définition est ignorée par l’IU tactile dans la mesure où les xtypes sont ignorés (et les séparateurs sont inutiles car la barre d’outils d’action est construite différemment dans l’IU tactile).
 
 * un bouton nommé **Gérer les commentaires** qui exécute la fonction de gestionnaire `CQ_collab_forum_openCollabAdmin()`.
 

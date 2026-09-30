@@ -10,38 +10,48 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 19930920-ffa5-4cfc-a564-ae004320e143
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 100%
-
+source-wordcount: '229'
+ht-degree: 80%
 ---
-
 # Configuration de l’environnement du compte{#configuring-your-account-environment}
 
 Adobe Experience Manager (AEM) vous procure les outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 
 Les [paramètres du compte](#account-settings) et les [préférences utilisateur](#user-preferences) permettent de définir les options et préférences suivantes :
 
-* **Barre d’outils d’édition** Indiquez si vous souhaitez que la barre d’outils d’édition globale soit visible. Cette barre d’outils, qui s’affiche en haut de la fenêtre du navigateur, comprend des boutons **Copier**, **Couper**, **Coller**, **Supprimer** utilisables avec les composants de paragraphe sur cette page :
+* **Barre d’outils d’édition**
+Choisissez si vous souhaitez afficher la barre d’outils de modification globale. Cette barre d’outils, qui s’affiche en haut de la fenêtre du navigateur, comprend des boutons **Copier**, **Couper**, **Coller**, **Supprimer** utilisables avec les composants de paragraphe sur cette page :
 
-   * Afficher lorsque cela s’avère nécessaire (paramètre par défaut)
-   * Toujours afficher
-   * Garder masqué
+  * Afficher lorsque cela s’avère nécessaire (paramètre par défaut)
+  * Toujours afficher
+  * Garder masqué
 
-* **Emprunter l’identité de**
-La fonctionnalité [Emprunter l’identité de](/help/sites-administering/security.md#impersonating-another-user) permet à une personne de travailler au nom d’une autre.
+* **Se faire passer pour**
+La fonctionnalité [Se faire passer pour](/help/sites-administering/security.md#impersonating-another-user) permet à un utilisateur de travailler au nom d’un autre.
 
 * **Langue**
-Langue à utiliser dans l’interface utilisateur de l’environnement de création. Sélectionnez la langue requise dans la liste.
+Langue à utiliser pour l’interface utilisateur de l’environnement de création. Sélectionnez la langue désirée dans la liste.
 
 * **Gestion des fenêtres**
-Sélectionnez :
+Sélectionnez l’une des options suivantes :
 
-   * Fenêtres multiples (par défaut)
-Les pages s’ouvrent dans une nouvelle fenêtre.
-   * Une seule fenêtre
-Les pages s’ouvrent dans la fenêtre active.
+  * Fenêtres multiples (par défaut)
+    Les pages s’ouvrent dans une nouvelle fenêtre.
+  * Une seule fenêtre
+    Les pages s’ouvrent dans la fenêtre active.
 
 ## Paramètres du compte {#account-settings}
 

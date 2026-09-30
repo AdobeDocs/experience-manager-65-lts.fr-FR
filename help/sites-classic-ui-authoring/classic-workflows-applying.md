@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: d2c16908-18c2-4ab9-a1da-6fc072c94bf9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 99%
-
+source-wordcount: '255'
+ht-degree: 98%
 ---
-
 # Application de workflows aux pages{#applying-workflows-to-pages}
 
 Lorsque vous appliquez le workflow, vous spécifiez les informations suivantes :
@@ -25,8 +34,8 @@ Lorsque vous appliquez le workflow, vous spécifiez les informations suivantes 
   Vous pouvez appliquer n’importe quel workflow (auquel vous avez accès, selon les affectations réalisées par votre administrateur AEM).
 * Facultatif :
 
-   * Un commentaire qui fournit des informations sur la raison pour laquelle vous avez démarré le workflow.
-   * Un titre permettant d’identifier l’instance de workflow dans la boîte de réception d’un utilisateur ou d’une utilisatrice.
+  * Un commentaire qui fournit des informations sur la raison pour laquelle vous avez démarré le workflow.
+  * Un titre permettant d’identifier l’instance de workflow dans la boîte de réception d’un utilisateur ou d’une utilisatrice.
 
 >[!NOTE]
 >
@@ -42,7 +51,7 @@ La colonne **Statut** de la console **Sites web** indique si un workflow a ét�
 
 ### Démarrage d’un workflow à partir de la console Sites web {#starting-a-workflow-from-the-websites-console}
 
-1. Ouvrez la console Sites web. ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin))
+1. Ouvrez la console Sites web. ([&#128279;](http://localhost:4502/siteadmin))
 1. Dans l’arborescence Sites web, sélectionnez le parent de la page à laquelle vous souhaitez appliquer le workflow.
 1. Dans la liste de pages, sélectionnez la page, puis cliquez sur Workflow.
 1. Dans la boîte de dialogue Démarrer le workflow, sélectionnez le workflow à appliquer. Vous pouvez éventuellement saisir un commentaire et un titre. Cliquez ensuite sur Démarrer.

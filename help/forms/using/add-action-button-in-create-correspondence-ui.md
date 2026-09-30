@@ -9,13 +9,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1888'
+source-wordcount: '1901'
 ht-degree: 97%
-
 ---
-
 # Ajouter un bouton d’action personnalisé dans l’interface utilisateur de création de correspondance {#add-custom-action-button-in-create-correspondence-ui}
 
 ## Présentation {#overview}
@@ -162,7 +175,7 @@ Le fichier ACMExtensionsMessages.properties comprend des libellés et des messag
 
 #### Redémarrer le bundle du bloc de création Adobe Asset Composer {#restart-the-adobe-asset-composer-building-block-bundle}
 
-Après avoir effectué chaque modification côté serveur, redémarrez le bundle du bloc de création Adobe Asset Composer. Dans ce scénario, les fichiers acmExtensionsConfig.xml et ACMExtensionsMessages.properties côté serveur sont modifiés et, par conséquent, le lot du bloc de création Adobe Asset Composer nécessite un redémarrage.
+Après avoir effectué chaque modification côté serveur, redémarrez le bundle du bloc de création Adobe Asset Composer. Dans ce scénario, les fichiers acmExtensionsConfig.xml et ACMExtensionsMessages.properties côté serveur sont modifiés et, par conséquent, le bundle du bloc de création Adobe Asset Composer nécessite un redémarrage.
 
 >[!NOTE]
 >
@@ -170,7 +183,7 @@ Après avoir effectué chaque modification côté serveur, redémarrez le bundle
 
 1. Accédez à `https://[host]:'port'/system/console/bundles`. Le cas échéant, connectez-vous en tant qu’administrateur.
 
-1. Recherchez le lot du bloc de création Adobe Asset Composer. Redémarrez le lot : cliquez sur Arrêter, puis sur Démarrer.
+1. Recherchez le bundle du bloc de création Adobe Asset Composer. Redémarrez le bundle : cliquez sur Arrêter, puis sur Démarrer.
 
    ![Bloc de création Adobe Asset Composer](assets/6_assetcomposerbuildingblockbundle.png)
 

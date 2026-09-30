@@ -9,13 +9,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: fbe61ef4-1045-49f7-8280-4bc74288cbec
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 100%
-
+source-wordcount: '623'
+ht-degree: 98%
 ---
-
 # Personnalisation de l’éditeur de texte{#customize-text-editor}
 
 ## Présentation {#overview}
@@ -41,7 +54,7 @@ Pour personnaliser les polices en modifiant le fichier tbxeditor-config.xml, pro
 1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
 1. Créez un dossier appelé config dans le dossier des applications dont le chemin ou la structure sont semblables au dossier de configuration (situé dans libs/fd/cm/config) en suivant les étapes ci-dessous :
 
-   1. Faites un clic droit sur le dossier des éléments à l’emplacement suivant puis sélectionnez **Nœud de recouvrement** : 
+   1. Faites un clic droit sur le dossier des éléments à l’emplacement suivant puis sélectionnez **Nœud de recouvrement** :
 
       `/libs/fd/cm/config`
 
@@ -179,7 +192,7 @@ Lorsque vous accédez à une police dans l’éditeur de texte Correspondence Ma
 Pour plus d’informations sur l’installation des polices, consultez les articles suivants :
 
 * [Installation et désinstallation de polices sous Windows](https://windows.microsoft.com/fr-fr/windows-vista/install-or-uninstall-fonts)
-* [Principes de base sur Mac : livre des polices](https://support.apple.com/fr-fr/HT201749)
+* [Principes de base de Mac : livre des polices](https://support.apple.com/fr-fr/HT201749)
 
 ## Accéder à la personnalisation des polices {#access-font-customizations}
 

@@ -10,13 +10,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
-source-git-commit: 0fc8e7c27cbb9e24edea6d6a9f1f6e7051742b91
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5865'
 ht-degree: 95%
-
 ---
-
 # Surveillance et maintenance de votre instance Adobe Experience Manager{#monitoring-and-maintaining-your-aem-instance}
 
 Une fois vos instances AEM déployées, vous devez surveiller et maintenir leur fonctionnement, leurs performances et leur intégrité.
@@ -552,7 +561,7 @@ Vous trouverez ci-après une liste des problèmes de performances qui surviennen
 | Serveur |  |  |  |
 | Réseau | Faible usage du processeur sur les serveurs et les clients. | Supprimez tous les goulets d’étranglement réseau. | Améliorez/optimisez la configuration du cache client. |
 |   | La navigation locale sur le serveur est (relativement) rapide. | Augmentez la bande passante du réseau. | Réduisez le « poids » de vos pages web (par exemple, moins d’images, HTML optimisé). |
-| Serveur web | L’utilisation du processeur sur le serveur web est élevée. | Mettez vos serveurs web en cluster. | Réduisez les accès par page (visite). |
+| Serveur web | L’utilisation du processeur sur le serveur web est élevée. | Mettez vos serveurs web en cluster. | Réduisez les hits par page (visite). |
 |   |  | Utilisez un équilibreur de charge matériel. |  |
 | Application | L’utilisation du processeur du serveur est élevée. | Mettez en cluster vos instances AEM. | Recherchez et éliminez les problèmes de processeur et de mémoire (utilisez la révision du code et la sortie du minutage). |
 |   | Consommation de mémoire élevée. |  | Améliorez la mise en cache à tous les niveaux. |

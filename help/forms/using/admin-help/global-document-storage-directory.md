@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 9a93b8f9-33cb-4aec-81e0-a1146bba955a
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 100%
-
 ---
-
 # Répertoire de stockage global de documents{#global-document-storage-directory}
 
 Le répertoire de *stockage global de documents (GDS)* est un répertoire utilisé pour stocker les fichiers de longue durée utilisés dans un processus. Ces fichiers incluent des fichiers PDF, des politiques et des modèles de formulaires. Les fichiers de longue durée constituent un élément essentiel de l’état général de nombreux déploiements d’AEM Forms. Si une partie ou la totalité de ces documents est perdue ou corrompue, le serveur Forms peut devenir instable. Les documents d’entrée pour les appels de tâches asynchrones sont également stockés dans le répertoire GDS et doivent être disponibles pour traiter les requêtes. Il est important de prendre en compte la fiabilité du système de fichiers qui héberge le répertoire GDS. Utilisez la technologie RAID ou une autre technologie adaptée à vos besoins en matière de qualité et de niveau de service.
@@ -94,7 +109,7 @@ Vous pouvez modifier l’emplacement GDS dans la console d’administration une 
 
 ## À propos des fichiers de déploiement {#about-deployment-files}
 
-AEM Forms se compose de deux types de fichiers de déploiement, les conteneurs de services et les fichiers EAR Java 2 Platform, Enterprise Edition (J2EE). Les fichiers EAR sont constitués de lots d’applications J2EE standard qui contiennent les fonctionnalités de base d’AEM Forms. Les fichiers EAR spécifiques au serveur d’applications sont les suivants :
+AEM Forms se compose de deux types de fichiers de déploiement, les conteneurs de services et les fichiers EAR Java 2 Platform, Enterprise Edition (J2EE). Les fichiers EAR sont constitués de bundles d’applications J2EE standard qui contiennent les fonctionnalités de base d’AEM Forms. Les fichiers EAR spécifiques au serveur d’applications sont les suivants :
 
 * adobe-core-*[appserver]*.ear
 * adobe-core-*[appserver]*-*[OS]*.ear

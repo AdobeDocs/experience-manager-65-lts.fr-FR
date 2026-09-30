@@ -5,13 +5,22 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '692'
 ht-degree: 92%
-
 ---
-
 # Modes d’exécution{#run-modes}
 
 Les modes d’exécution vous permettent d’ajuster votre instance d’AEM à des fins spécifiques, par exemple pour la création ou la publication, le test, le développement, l’intranet et plus encore.
@@ -22,7 +31,7 @@ Vous pouvez :
 
   Un ensemble de paramètres de configuration de base est appliqué à tous les modes d’exécution, puis vous pouvez ajuster les ensembles ajoutés en fonction de l’objectif de votre environnement spécifique. Ils sont appliqués selon les besoins.
 
-* [Définition de lots supplémentaires à installer pour un mode spécifique](#defining-additional-bundles-to-be-installed-for-a-run-mode).
+* [Définition de bundles supplémentaires à installer pour un mode spécifique](#defining-additional-bundles-to-be-installed-for-a-run-mode).
 
 L’ensemble des paramètres et des définitions sont stockés dans le référentiel et activé en définissant le **mode d’exécution**.
 
@@ -89,21 +98,21 @@ Voir [Configuration d’OSGi dans le référentiel](/help/sites-deploying/config
 >
 >Pour les [Modes d’exécution d’installation](#installation-run-modes) (instance de création, par exemple), le mode d’exécution ne peut pas être modifié après l’installation. Toutefois, les modifications apportées aux propriétés de configuration individuelles prennent effet au redémarrage.
 
-## Définir des lots supplémentaires à installer pour un mode d’exécution {#defining-additional-bundles-to-be-installed-for-a-run-mode}
+## Définir des bundles supplémentaires à installer pour un mode d’exécution {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
-Vous pouvez également spécifier des lots supplémentaires qui doivent être installés pour un mode d’exécution spécifique. Pour ces définitions, les dossiers d’installation sont utilisés pour contenir les lots. Là aussi, le mode d’exécution est indiqué par un préfixe :
+Vous pouvez également spécifier des bundles supplémentaires qui doivent être installés pour un mode d’exécution spécifique. Pour ces définitions, les dossiers d’installation sont utilisés pour contenir les bundles. Là aussi, le mode d’exécution est indiqué par un préfixe :
 
 * `install.author`
 * `install.publish`
 
-Ces dossiers sont de type `nt:folder` et doivent contenir le lot approprié.
+Ces dossiers sont de type `nt:folder` et doivent contenir le bundle approprié.
 
 ## Démarrer CQ avec un mode d’exécution spécifique {#starting-cq-with-a-specific-run-mode}
 
 Si vous avez défini des configurations pour plusieurs modes d’exécution, vous devez définir celui qui doit être utilisé au démarrage. Il existe plusieurs méthodes pour spécifier le mode d’exécution à utiliser. L’ordre de résolution est le suivant :
 
 1. [propriétés du système (`-D`)](#using-a-system-property-in-the-start-script)
-1. [`sling.properties` approuvé](#using-the-sling-properties-file)
+1. [Fichier `sling.properties`](#using-the-sling-properties-file)
 1. [option `-r`](#using-the-r-option)
 1. [Détection du nom de fichier](#filename-detection-renaming-the-jar-file)
 

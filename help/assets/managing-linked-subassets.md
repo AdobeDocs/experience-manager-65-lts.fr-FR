@@ -1,18 +1,29 @@
 ---
 title: Gestion des ressources composites avec des références et plusieurs pages
-description: Découvrez comment créer des références à des ressources numériques dans  [!DNL Adobe InDesign], [!DNL Adobe Illustrator] et  [!DNL Adobe Photoshop]. Utilisez la fonction Visionneuse de page pour afficher les pages de sous-ressources individuelles de fichiers multi-pages, tels que les fichiers PDF, INDD, PPT, PPTX et AI.
+description: Découvrez comment créer des références à des ressources numériques dans [!DNL Adobe InDesign], [!DNL Adobe Illustrator] et [!DNL Adobe Photoshop]. Utilisez la fonction Visionneuse de page pour afficher les pages de sous-ressources individuelles de fichiers multi-pages, tels que les fichiers PDF, INDD, PPT, PPTX et AI.
 contentOwner: AG
 role: User, Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 077dfd55-0193-41ff-97c0-9f6be978cc9f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1382'
-ht-degree: 100%
-
+source-wordcount: '1473'
+ht-degree: 99%
 ---
-
 # Gestion des ressources composites et multi-pages {#managing-compound-assets}
 
 [!DNL Adobe Experience Manager Assets]peut déterminer si un fichier chargé contient des références à des ressources existant déjà dans le référentiel. Cette fonctionnalité est disponible uniquement pour les types de formats pris en charge. Si le fichier chargé contient des références à des ressources [!DNL Experience Manager], un lien bidirectionnel est créé entre les ressources chargées et celles référencées.
@@ -27,7 +38,7 @@ Les références sont résolues sur la base du chemin d’accès, du document et
 
 Vous pouvez référencer des ressources numériques existantes dans un fichier [!DNL Adobe Illustrator].
 
-1. À l’aide de l’application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr), récupérez les ressources numériques sur le système de fichiers local. Accédez à l’emplacement du système de fichier que vous souhaitez référencer.
+1. À l’aide de l’application de bureau [[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr), récupérez les ressources numériques sur le système de fichiers local. Accédez à l’emplacement du système de fichier que vous souhaitez référencer.
 1. Faites glisser la ressource du dossier local jusqu’au fichier [!DNL Illustrator].
 
 1. Enregistrez le fichier [!DNL Illustrator] sur le lecteur monté ou [chargez-le](/help/assets/manage-assets.md#uploading-assets) dans le référentiel [!DNL Experience Manager].
@@ -100,8 +111,8 @@ Pour générer les sous-ressources, effectuez l’une des opérations suivantes�
 * Nouvelles ressources : le workflow [!UICONTROL Ressources de mise à jour de gestion des ressources numériques] s’exécute sur toute nouvelle ressource chargée dans [!DNL Experience Manager]. Les sous-ressources sont générées automatiquement pour les nouvelles ressources multi-pages.
 * Ressources multi-pages existantes : exécutez manuellement le workflow [!UICONTROL Ressources de mise à jour de gestion des ressources numériques] en suivant l’une de ces étapes :
 
-   * Sélectionnez une ressource et cliquez sur [!UICONTROL Chronologie] pour ouvrir le panneau de gauche. Vous pouvez également utiliser le raccourci clavier `alt + 3`. Cliquez sur [!UICONTROL Démarrer le workflow], sélectionnez [!UICONTROL Ressource de mise à jour de gestion des ressources numériques], cliquez sur [!UICONTROL Démarrer], puis cliquez sur [!UICONTROL Continuer].
-   * Sélectionnez une ressource et cliquez sur [!UICONTROL Créer] > [!UICONTROL Workflow] dans la barre d’outils. Dans la boîte de dialogue contextuelle, sélectionnez le workflow [!UICONTROL Ressource de mise à jour de gestion des ressources numériques], cliquez sur [!UICONTROL Début], puis cliquez sur [!UICONTROL Continuer].
+  * Sélectionnez une ressource et cliquez sur [!UICONTROL Chronologie] pour ouvrir le panneau de gauche. Vous pouvez également utiliser le raccourci clavier `alt + 3`. Cliquez sur [!UICONTROL Démarrer le workflow], sélectionnez [!UICONTROL Ressource de mise à jour de gestion des ressources numériques], cliquez sur [!UICONTROL Démarrer], puis cliquez sur [!UICONTROL Continuer].
+  * Sélectionnez une ressource et cliquez sur [!UICONTROL Créer] > [!UICONTROL Workflow] dans la barre d’outils. Dans la boîte de dialogue contextuelle, sélectionnez le workflow [!UICONTROL Ressource de mise à jour de gestion des ressources numériques], cliquez sur [!UICONTROL Début], puis cliquez sur [!UICONTROL Continuer].
 
 Pour les documents Microsoft Word, exécutez le workflow **[!UICONTROL Analyse de gestion des ressources numériques de documents Word]**. Cela génère un composant `cq:Page` à partir du contenu du document Microsoft Word. Les images extraites du document sont référencées à partir du composant `cq:Page`. Elles sont extraites même si la génération des sous-ressources est désactivée.
 

@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
 exl-id: 9df608f8-cdd0-4820-aab1-eab9fd70f961
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 99%
-
 ---
-
 # Mettre à niveau les formulaires de recherche personnalisés{#upgrading-custom-search-forms}
 
 Dans AEM 6.2, l’emplacement de stockage des formulaires de recherche personnalisés dans le référentiel n’est plus le même. Lors de la mise à niveau, ils sont déplacés de leur emplacement dans la version 6.1 vers :
@@ -73,7 +82,7 @@ Dans AEM 6.1, le prédicat de texte intégral standard faisait partie du formul
  <tbody>
   <tr>
    <td>Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1</td>
-   <td>s.o.</td>
+   <td>n/a</td>
   </tr>
   <tr>
    <td><p>Type de ressource dans la version 6.1</p> </td>
@@ -156,13 +165,13 @@ Le statut de page a été remplacé par deux prédicats de propriétés d’opti
 * Supprimez le nœud `pagestatuspredicate`.
 * Copiez le nœud
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
-   * vers `/conf/global/settings/cq/search/facets/sites/jcr:content/items`.
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
+  * vers `/conf/global/settings/cq/search/facets/sites/jcr:content/items`.
 
-* Copiez le nœud
+* Copier le nœud
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
-   * vers `/conf/global/settings/cq/search/facets/sites/jcr:content/items`.
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
+  * vers `/conf/global/settings/cq/search/facets/sites/jcr:content/items`.
 
 * Assurez-vous de définir la propriété `listOrder` pour le nœud `analyticspredicate` sur « **8** ». Cela est nécessaire pour éviter les conflits.
 

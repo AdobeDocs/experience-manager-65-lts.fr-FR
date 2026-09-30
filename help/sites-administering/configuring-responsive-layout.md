@@ -7,13 +7,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 413f15c9-5b51-4d8d-8cf0-3e98608b9d9e
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1410'
 ht-degree: 95%
-
 ---
-
 # Configuration du conteneur et du mode de disposition{#configuring-layout-container-and-layout-mode}
 
 Découvrez comment configurer le conteneur et le mode de disposition.
@@ -34,17 +43,17 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
 
   Ce composant fournit un système de paragraphes/grille qui permet d’ajouter et de positionner des composants dans une grille réactive. Il peut être utilisé comme système de paragraphes (parsys) par défaut pour votre page et mis à la disposition des créateurs dans l’explorateur de composants.
 
-   * Le composant **Conteneur de dispositions** par défaut est défini sous :
+  * Le composant **Conteneur de dispositions** par défaut est défini sous :
 
-     /libs/wcm/foundation/components/responsivegrid
+    /libs/wcm/foundation/components/responsivegrid
 
-   * Vous pouvez définir des conteneurs de mise en page en tant que :
+  * Vous pouvez définir des conteneurs de mise en page en tant que :
 
-      * composant que l’utilisateur ou l’utilisatrice peut ajouter à une page ;
-      * système de paragraphes par défaut de la page ;
-      * les deux.
+    * composant que l’utilisateur ou l’utilisatrice peut ajouter à une page ;
+    * système de paragraphes par défaut de la page ;
+    * les deux.
 
-        Le conteneur de dispositions peut être utilisé de manière standard pour la page, tout en permettant à l’utilisateur d’y ajouter d’autres conteneurs de mises en page, par exemple, pour contrôler les colonnes.
+      Le conteneur de dispositions peut être utilisé de manière standard pour la page, tout en permettant à l’utilisateur d’y ajouter d’autres conteneurs de mises en page, par exemple, pour contrôler les colonnes.
 
 * **[Mode Mise en page](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
 Une fois que le conteneur de dispositions est positionné sur la page, vous pouvez utiliser le mode **Disposition** pour positionner le contenu dans la grille réactive.
@@ -82,13 +91,13 @@ Les [points d’arrêt](/help/sites-authoring/responsive-layout.md#selecting-a-d
 * sont utilisés en Responsive Design ;
 * peuvent être définis :
 
-   * dans le modèle de page, à partir duquel les paramètres sont copiés dans les pages créées avec ce modèle ;
-   * sur le nœud de page, à partir duquel les paramètres sont hérités par toutes les pages enfants.
+  * dans le modèle de page, à partir duquel les paramètres sont copiés dans les pages créées avec ce modèle ;
+  * sur le nœud de page, à partir duquel les paramètres sont hérités par toutes les pages enfants.
 
 * Définissez un titre et une largeur :
 
-   * le titre décrit le regroupement de périphériques génériques, avec orientation si nécessaire ; par exemple, téléphone, tablette, tablette paysage ;
-   * la largeur définit la largeur maximale en pixels pour ce groupe d’appareils générique. Par exemple, si la largeur du téléphone du point d’arrêt est de 768, elle correspond à la largeur maximale de la mise en page utilisée pour un appareil téléphonique ;
+  * le titre décrit le regroupement de périphériques génériques, avec orientation si nécessaire ; par exemple, téléphone, tablette, tablette paysage ;
+  * la largeur définit la largeur maximale en pixels pour ce groupe d’appareils générique. Par exemple, si la largeur du téléphone du point d’arrêt est de 768, elle correspond à la largeur maximale de la mise en page utilisée pour un appareil téléphonique ;
 
 * sont visibles en tant que marqueurs dans la partie supérieure de l’éditeur de page lorsque vous utilisez l’émulateur ;
 * sont hérités de la hiérarchie de nœuds parents et peuvent être remplacés à volonté.
@@ -233,11 +242,11 @@ Par exemple :
 
 * Avant :
 
-   * `width=100px`
+  * `width=100px`
 
 * Après :
 
-   * `max-width=100px`
+  * `max-width=100px`
 
 #### Redimensionnement et conformité d’images adaptatives {#resizing-and-adaptive-image-compliance}
 
@@ -297,11 +306,11 @@ Vous pouvez configurer le nombre de colonnes disponibles pour chaque instance sp
 
    * Nombre de colonnes disponibles :
 
-      * `columns="{String}8"`
+     * `columns="{String}8"`
 
    * Composants qui peuvent être ajoutés au composant actif :
 
-      * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+     * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
 
 ## Grilles réactives imbriquées {#nested-responsive-grids}
 

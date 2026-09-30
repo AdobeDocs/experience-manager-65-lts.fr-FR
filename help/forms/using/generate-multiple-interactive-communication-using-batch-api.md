@@ -9,13 +9,27 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 92bb4045-ed22-4cc3-9365-65cb39b3c82d
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 99%
-
+source-wordcount: '2267'
+ht-degree: 95%
 ---
-
 # Générer plusieurs communications interactives à l’aide de l’API Batch {#use-batch-api-to-generate-multiple-ic}
 
 Vous pouvez utiliser l’API Batch pour générer plusieurs communications interactives à partir d’un modèle. Le modèle consiste en une communication interactive sans données. L’API Batch combine des données avec un modèle pour créer une communication interactive. L’API est utile pour la production en masse de communications interactives. Par exemple, les factures de téléphone ou les relevés de cartes de crédit pour plusieurs clients.
@@ -95,7 +109,7 @@ Pour créer une communication interactive à partir d’enregistrements sauvegar
       |--- |--- |--- |
       | templatePath | Chaîne | Spécifiez le chemin dʼaccès du modèle de communication interactive à utiliser. Par exemple, `/content/dam/formsanddocuments/testsample/mediumic`. Il s’agit d’une propriété obligatoire. |
       | recordPath | Chaîne | La valeur du champ recordPath permet de définir le nom d’une communication interactive. Vous pouvez définir le chemin dʼaccès du champ d’un enregistrement comme valeur du champ recordPath. Par exemple, si vous spécifiez /employee/Id, la valeur du champ ID devient le nom de la communication interactive correspondante. La valeur par défaut est une valeur [UUID aléatoire](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
-      | usePrefillService | Booléen | Donnez la valeur False à cette propriété. Vous pouvez utiliser le paramètre usePrefillService pour préremplir la communication interactive avec des données récupérées à partir du service de préremplissage configuré pour la communication interactive correspondante. Lorsque usePrefillService est défini sur true, les données JSON en entrée (pour chaque enregistrement) sont traitées comme des arguments FDM. La valeur par défaut est false.  |
+      | usePrefillService | Booléen | Donnez la valeur False à cette propriété. Vous pouvez utiliser le paramètre usePrefillService pour préremplir la communication interactive avec des données récupérées à partir du service de préremplissage configuré pour la communication interactive correspondante. Lorsque usePrefillService est défini sur true, les données JSON en entrée (pour chaque enregistrement) sont traitées comme des arguments FDM. La valeur par défaut est false. |
       | batchType | Chaîne | Définissez la valeur sur PRINT, WEB ou WEB_AND_PRINT. La valeur par défaut est WEB_AND_PRINT. |
       | paramètres régionaux | Chaîne | Spécifiez les paramètres régionaux de la communication interactive de sortie. Le service prêt à l’emploi n’utilise pas l’option des paramètres régionaux, mais vous pouvez créer un service personnalisé pour générer des communications interactives localisées. La valeur par défaut est en_US. |
 
@@ -338,14 +352,14 @@ Lorsque vous définissez le batchType pour effectuer le rendu du canal web, l’
 `http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
 
 **Exemple**
-Si votre fichier JSON se trouve à l’emplacement `C:\batch\mergedJsonPath.json` et que vous utilisez le modèle de communication interactive ci-dessous : `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`.
+Si votre fichier JSON se trouve à l’emplacement `C:\batch\mergedJsonPath.json` et que vous utilisez le modèle de communication interactive ci-dessous : `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
-Alors, l’URL suivante sur le nœud de publication affiche le canal Web de la communication interactive
+Ensuite, l’URL suivante sur le nœud de publication affiche le canal web de la communication interactive
 `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
 
 Outre l’enregistrement des données sur le système de fichiers, vous pouvez stocker les fichiers JSON dans le référentiel CRX, le système de fichiers, le serveur Web ou vous pouvez accéder aux données via le service de préremplissage OSGI. Les syntaxes pour fusionner les données en utilisant les différents protocoles sont les suivantes :
 
-* **Protocole CRX**
+* Protocole **CRX**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
 
 * **Protocole de fichier**
@@ -356,9 +370,9 @@ Outre l’enregistrement des données sur le système de fichiers, vous pouvez s
 
   SERVICE_NAME fait référence au nom du service de préremplissage OSGI. Voir Création et exécution d’un service de préremplissage.
 
-  IDENTIFIER fait référence à toutes les métadonnées requises par le service de préremplissage OSGI pour récupérer les données de préremplissage. Un identifiant de la personne connectée est un exemple de métadonnées pouvant être utilisées.
+  IDENTIFIER fait référence à toutes les métadonnées requises par le service de préremplissage OSGI pour récupérer les données de préremplissage. Un identifiant à la personne connectée est un exemple de métadonnées qui pourraient être utilisées.
 
-* **Protocole HTTP**
+* Protocole **HTTP**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]

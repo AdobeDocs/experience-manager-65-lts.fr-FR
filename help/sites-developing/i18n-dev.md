@@ -1,6 +1,6 @@
 ---
 title: Internationaliser des chaînes d’interface utilisateur
-description: Les API Java™ et JavaScript vous permettent d’internationaliser des chaînes.
+description: Les API Java&trade; et JavaScript vous permettent d’internationaliser des chaînes
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: a18b1bc9-72a3-4836-a755-db586e56cf89
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 97%
-
+source-wordcount: '1091'
+ht-degree: 96%
 ---
-
 # Internationaliser des chaînes d’interface utilisateur {#internationalizing-ui-strings}
 
 Les API Java™ et JavaScript vous permettent d’internationaliser des chaînes dans les types de ressources suivants :
@@ -59,7 +68,7 @@ I18n i18n = new I18n(slingRequest);
 
 Le constructeur utilise l’objet `SlingHTTPRequest` pour récupérer le paramètre de langue de l’utilisateur.
 
-Pour utiliser les paramètres régionaux de la page afin de déterminer la langue, obtenez d’abord le ResourceBundle pour la langue de la page demandée :
+Pour utiliser les paramètres régionaux de la page afin de déterminer la langue, obtenez d’abord le ResourceBundle correspondant à la langue de la page demandée :
 
 ```java
 Locale pageLang = currentPage.getLanguage(false);
@@ -110,7 +119,7 @@ La classe `I18N` définit une méthode `get` statique qui s’avère utile lorsq
 * Utilisation de la préférence de langue de l’utilisateur : indiquez l’objet SlingHttpRequest comme premier paramètre.
 
   `I18n.get(slingHttpRequest, "Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
-* Utilisation de la langue de la page : indiquez ResourceBundle comme premier paramètre.
+* Utilisation de la langue de la page : indiquez le ResourceBundle comme premier paramètre.
 
   `I18n.get(resourceBundle,"Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
 
@@ -145,7 +154,7 @@ Les paramètres de la fonction sont différents de la méthode Java™ I18n.get�
 * Le deuxième paramètre est un tableau de valeurs à injecter dans le littéral de chaîne.
 * Le troisième paramètre est l’indicateur de localisation.
 
-L’exemple suivant utilise JavaScript pour localiser « Welcome back Administrator. » Vous avez 2 nouveaux messages dans votre boîte de réception ».  :
+L’exemple suivant utilise JavaScript pour localiser « Welcome back Administrator. » Vous avez 2 nouveaux messages dans votre boîte de réception ». :
 
 ```
 Granite.I18n.setLocale("fr");

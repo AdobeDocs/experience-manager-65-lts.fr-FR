@@ -7,13 +7,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: a9cbab12-62a6-4779-955f-2858166945e6
-source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2522'
 ht-degree: 95%
-
 ---
-
 # Présentation du site de référence We.Gov et We.Finance {#we-gov-reference-site-walkthrough}
 
 ## Prérequis {#pre-requisites}
@@ -24,22 +42,22 @@ Configurez le site de référence comme décrit dans la section [Installation et
 
 * AEM Forms
 
-   * Conversion de formulaires automatisée
-   * Création
-   * Modèles de données de formulaire/Sources de données
+  * Conversion de formulaires automatisée
+  * Création
+  * Modèles de données de formulaire/Sources de données
 
 * AEM Forms
 
-   * Capture de données
-   * (Facultatif) Intégration de données (MS® Dynamics)
-   * (Facultatif) Adobe Sign
+  * Capture de données
+  * (Facultatif) Intégration de données (MS® Dynamics)
+  * (Facultatif) Adobe Sign
 
 * Workflow
 * Notifications par e-mail
 * (Facultatif) Communications client
 
-   * Canal d’impression
-   * Canal web
+  * Canal d’impression
+  * Canal web
 
 * Adobe Analytics
 * Intégrations des sources de données
@@ -64,14 +82,14 @@ Les groupes suivants sont également inclus :
 
 * **Utilisateurs We.Gov Forms**
 
-   * George Lang (membre)
-   * Camila Santos (membre)
+  * George Lang (membre)
+  * Camila Santos (membre)
 
 * **Utilisateurs We.Gov**
 
-   * George Lang (membre)
-   * Camila Santos (membre)
-   * Aya Tan (membre)
+  * George Lang (membre)
+  * Camila Santos (membre)
+  * Aya Tan (membre)
 
 ### Légende des termes de présentation de démonstration {#demo-overview-terms-legend}
 
@@ -227,7 +245,7 @@ Aya doit consulter certains documents à la maison avant de pouvoir remplir la d
    1. **Marié** : afficher le panneau relatif au mariage
    1. **Divorcé.e** : afficher le panneau des proches parents
    1. **Veuf.ve** : afficher le panneau des proches parents
-   1. **Avez-vous des enfants ?** : bouton radio (Oui/Non) pour afficher le panneau des enfants à charge.
+   1. **Avez-vous des enfants ?** : bouton radio (Oui/Non) pour afficher le panneau des enfants à charge.
 
       1. Bouton (Ajouter/Supprimer) pour ajouter/supprimer plusieurs panneaux dépendants des enfants.
 

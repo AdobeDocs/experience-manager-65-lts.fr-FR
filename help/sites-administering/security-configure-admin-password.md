@@ -9,13 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: cab746a0-4f50-4a0b-8d3a-7140a710fbfa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '306'
 ht-degree: 100%
-
 ---
-
 # Configurer le mot de passe d’administration sur l’installation{#configure-the-admin-password-on-installation}
 
 ## Vue d’ensemble {#overview}
@@ -46,7 +58,7 @@ Une fois l’instance exécutée à partir de la ligne de commande, vous avez la
 
 >[!NOTE]
 >
->L’invite de modification du mot de passe d’administration s’affiche uniquement lors de l’installation d’une nouvelle instance AEM.
+>Le prompt de modification du mot de passe d’administration s’affiche uniquement lors de l’installation d’une nouvelle instance AEM.
 
 ## Utiliser l’indicateur -nointeractive {#using-the-nointeractive-flag}
 

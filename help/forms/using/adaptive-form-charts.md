@@ -7,13 +7,29 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 0860f059-d599-4f87-9611-e7fe1c6bc059
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1999'
+source-wordcount: '2045'
 ht-degree: 96%
-
 ---
-
 # Graphiques de formulaire adaptatif {#af-charts}
 
 ![Hero_Image](assets/charts_hero_image.jpg)
@@ -42,7 +58,7 @@ Par défaut, le composant de graphique est disponible dans la barre latérale d�
 
 >[!NOTE]
 > 
-> Avant de configurer le graphique, assurez-vous que la ligne du panneau ou du tableau pour lequel vous configurez le graphique est définie sur répétable. Vous pouvez spécifier les valeurs minimale et maximale pour la ligne de tableau ou le panneau répétable dans l&#39;onglet Paramètres de répétition de leur boîte de dialogue Modifier le composant. 
+> Avant de configurer le graphique, assurez-vous que la ligne du panneau ou du tableau pour lequel vous configurez le graphique est définie sur répétable. Vous pouvez spécifier les valeurs minimale et maximale pour la ligne de tableau ou le panneau répétable dans l&#39;onglet Paramètres de répétition de leur boîte de dialogue Modifier le composant.
 
 Pour configurer le graphique, cliquez sur le composant de graphique, puis sur ![Paramètres](cmppr1.png) pour ouvrir la boîte de dialogue Modifier le graphique. La boîte de dialogue comprend les onglets Titre et texte, Configuration, Options avancées et Style qui vous permettent de configurer le graphique.
 
@@ -152,7 +168,7 @@ Une fois que vous avez rédigé une fonction personnalisée, procédez comme sui
 1. Dans CRXDE Lite, créez un nœud nt:unstructured dans le dossier des applications avec les propriétés suivantes :
    * Définissez guideComponentType sur fd/af/reducer. (Obligatoire)
    * Définissez la valeur sur un nom complet de la fonction JavaScript personnalisée. (Obligatoire)
-   * Définissez jcr:description sur un nom significatif. Il apparaît dans la liste déroulante **Utiliser la fonction**. Par exemple, **Multiplier**. 
+   * Définissez jcr:description sur un nom significatif. Il apparaît dans la liste déroulante **Utiliser la fonction**. Par exemple, **Multiplier**.
    * Définissez qtip avec une brève description de la fonction. Elle s’affiche sous forme d’info-bulle lorsque le curseur est placé sur le nom de la fonction dans la liste déroulante Utiliser la fonction.
    * Cliquez sur **Enregistrer tout** pour enregistrer la configuration.
    * Cette fonctionnalité est désormais disponible dans le graphique.

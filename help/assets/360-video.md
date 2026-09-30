@@ -10,13 +10,27 @@ feature: 360 VR Video
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 17e45464-3de4-40a8-b102-ccc9eaba92a3
-source-git-commit: f27795b9acf834101d82937d9f9f142361816735
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: b1c2c8dc-d13a-43c3-9c5b-efc536a708ca
+    internal-label: 360 VR Video
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 90%
-
+source-wordcount: '1223'
+ht-degree: 92%
 ---
-
 # Vidéo 360/VR {#vr-video}
 
 Les vidéos 360 enregistrent une vue dans chaque direction au même moment. Elles sont tournées à l’aide d’une caméra omnidirectionnelle ou d’un ensemble de caméras. Lors de la lecture sur un écran plat, l’angle de vue est contrôlé par l’utilisateur ou l’utilisatrice ; la lecture sur les appareils mobiles utilise généralement les commandes gyroscopiques intégrées.
@@ -33,7 +47,7 @@ Voir également [Gestion des paramètres prédéfinis de visionneuse](/help/asse
 
 Sélectionnez [Station spatiale 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) pour ouvrir une fenêtre de navigateur et visionner une vidéo à 360 degrés. Pendant la lecture vidéo, faites glisser le pointeur de la souris vers un nouvel emplacement pour modifier l’angle de vue.
 
-![360-échantillon vidéo avec la Station spatiale internationale flottant dans l&#39;espace et la terre et le soleil derrière elle.](assets/6_5_360videoiss_simplified.png)
+![Un échantillon d’une vidéo 360 avec la Station spatiale internationale flottant dans l’espace et la terre et le soleil derrière elle.](assets/6_5_360videoiss_simplified.png)
 *Image vidéo de la Station spatiale 360*
 
 ## Vidéo 360/VR et Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
@@ -60,14 +74,14 @@ Les ressources vidéo 360 chargées dans Adobe Experience Manager sont consid
 
    * Idéalement, votre contenu vidéo 360 d’origine doit avoir l’une des résolutions suivantes :
 
-      * 1080p – 1920 x 1080, connu sous le nom de résolution Full HD ou FHD ou,
-      * 2160p – 3840 x 2160, connu sous le nom de résolution 4K, UHD ou Ultra HD. Cette résolution d’affichage importante est le plus souvent utilisée sur les téléviseurs et moniteurs d’ordinateur Premium. La résolution 2160p est souvent appelée « 4K », car la largeur est proche de 4 000 pixels. En d’autres termes, elle offre quatre fois plus de pixels que la résolution 1080p.
+     * 1080p – 1920 x 1080, connu sous le nom de résolution Full HD ou FHD ou,
+     * 2160p – 3840 x 2160, connu sous le nom de résolution 4K, UHD ou Ultra HD. Cette résolution d’affichage importante est le plus souvent utilisée sur les téléviseurs et moniteurs d’ordinateur Premium. La résolution 2160p est souvent appelée « 4K », car la largeur est proche de 4 000 pixels. En d’autres termes, elle offre quatre fois plus de pixels que la résolution 1080p.
 
    * [Créez un profil de vidéo adaptative personnalisé](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) avec des rendus de qualité supérieure. Par exemple, créez un profil de vidéo adaptative qui contient les trois paramètres suivants :
 
-      * Largeur=auto ; hauteur=720 ; bitrate=2500 Kbit/s
-      * Largeur=auto ; hauteur=1080 ; bitrate=5000 Kbit/s
-      * Largeur=auto ; hauteur=1440 ; bitrate=6600 Kbit/s
+     * Largeur=auto ; hauteur=720 ; bitrate=2500 Kbit/s
+     * Largeur=auto ; hauteur=1080 ; bitrate=5000 Kbit/s
+     * Largeur=auto ; hauteur=1440 ; bitrate=6600 Kbit/s
 
    * Traitez le contenu vidéo 360 dans un dossier destiné exclusivement aux ressources vidéo 360.
 
@@ -83,8 +97,8 @@ Par défaut, Experience Manager détecte la vidéo comme étant « 360 » si son
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-   * **Type de propriété** - Double
-   * **Valeur** - rapport d’aspect, 2.0 par défaut.
+  * **Type de propriété** - Double
+  * **Valeur** - rapport d’aspect, 2.0 par défaut.
 
 Une fois cette propriété définie, elle prend effet immédiatement sur les vidéos qui existent déjà ainsi que sur celle qui viennent d’être chargées.
 
@@ -100,9 +114,9 @@ Consultez également [Modification des paramètres prédéfinis de visionneuse](
 
 Lorsque vous êtes satisfait de la vidéo 360, vous pouvez la publier.
 
-Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
-Voir [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
-Voir [Ajout de Dynamic Media Assets aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Consultez [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
+Consultez [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
+Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 **Pour prévisualiser une vidéo 360 :**
 
@@ -127,7 +141,7 @@ Voir [Ajout de Dynamic Media Assets aux pages](/help/assets/adding-dynamic-media
 
      Une vidéo de réalité virtuelle (VR) est un contenu vidéo immersif accessible grâce à un casque de réalité virtuelle. À l’instar des vidéos ordinaires, vous créez une vidéo de réalité virtuelle au début, lorsqu’elle est en cours d’enregistrement ou capturée à l’aide de caméras à 360 degrés.
 
-   ![Capture d’écran d’un gros plan de la Station spatiale internationale flottant dans l’espace avec la terre et le soleil partiellement visibles en arrière-plan.](assets/6_5_360video-preview-video360vr.png)
+   ![&#x200B; Capture d’écran d’un gros plan de la Station spatiale internationale flottant dans l’espace avec la terre et le soleil partiellement visibles en arrière-plan](assets/6_5_360video-preview-video360vr.png)
    *Capture d’écran d’une vidéo 360 VR.*
 
 1. Dans le coin supérieur droit de la page, sélectionnez **[!UICONTROL Fermer]**.
@@ -136,7 +150,7 @@ Voir [Ajout de Dynamic Media Assets aux pages](/help/assets/adding-dynamic-media
 
 Publiez la vidéo 360 pour pouvoir l’utiliser. La publication d’une vidéo 360 active l’URL et le code intégré. Elle publie également la vidéo 360 sur le cloud Dynamic Media intégré au CDN pour un débit évolutif et performant.
 
-Consultez [&#x200B; Publication de ressources Dynamic Media &#x200B;](/help/assets/publishing-dynamicmedia-assets.md) pour plus d’informations sur la publication de vidéos 360.
-Voir aussi [Intégration de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
-Voir aussi [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
-Voir aussi [&#x200B; Ajout de ressources Dynamic Media aux pages &#x200B;](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Consultez [Publication de ressources Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) pour savoir comment publier des vidéos 360.
+Consultez également la section [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
+Voir aussi [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
+Consultez également [Ajout de ressources Dynamic Media à des pages](/help/assets/adding-dynamic-media-assets-to-pages.md).

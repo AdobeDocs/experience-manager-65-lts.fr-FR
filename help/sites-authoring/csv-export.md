@@ -10,13 +10,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: ccd2ad37-7708-4422-9724-145628f36afc
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '193'
 ht-degree: 100%
-
 ---
-
 # Exporter au format CSV{#export-to-csv}
 
 L’option **Créer une exportation CSV** vous permet d’exporter les informations relatives à vos pages vers un fichier CSV situé sur votre système local.
@@ -32,23 +45,23 @@ L’option **Créer une exportation CSV** vous permet d’exporter les informati
 L’assistant **Créer un export CSV** vous permet de sélectionner les éléments suivants :
 
 * Propriétés à exporter
-   * Métadonnées
-      * Nom
-      * Modifié
-      * Publié
-      * Modèle
-      * Workflow
-   * Traduction
-      * Traduit
-   * Analyses
-      * Pages vues
-      * Visiteurs uniques
-      * Temps sur la page
+  * Métadonnées
+    * Nom
+    * Modifié
+    * Publié
+    * Modèle
+    * Workflow
+  * Traduction
+    * Traduit
+  * Analyses
+    * Pages vues
+    * Visiteurs uniques
+    * Temps sur la page
 * Profondeur
-   * Chemin d’accès parent
-   * Enfants directs uniquement
-   * Niveaux supplémentaires d’enfants
-   * Niveaux
+  * Chemin d’accès parent
+  * Enfants directs uniquement
+  * Niveaux supplémentaires d’enfants
+  * Niveaux
 
 Vous pouvez ouvrir le fichier `export.csv` obtenu dans Excel (ou toute autre application compatible).
 

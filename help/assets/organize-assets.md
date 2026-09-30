@@ -7,13 +7,24 @@ feature: Asset Management,Search
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: cb7d28ce-c6bd-4760-b5fd-d0ecb3426844
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 92%
-
 ---
-
 # Organisez vos ressources numériques {#organize-digital-assets}
 
 | Version | Lien de l’article |
@@ -32,15 +43,15 @@ La méthode la plus simple pour organiser les ressources consiste à les enregis
 * En règle générale, votre référentiel de ressources numériques ne fait que croître. Il est donc important de formaliser l’utilisation des métadonnées, la structure des dossiers et l’attribution de noms aux fichiers au début du cycle de création de contenu.
 * Utilisez les dossiers uniquement pour imposer une structure de stockage cohérente pour vos ressources numériques. Cette cohérence consolide vos processus et vous aide à gérer vos ressources. Par exemple, les ressources placées dans les types de dossiers suivants peuvent vous aider à utiliser les [profils à utiliser pour le traitement des ressources](processing-profiles.md) :
 
-   * **Dossiers de développement** : contiennent les ressources numériques que vous utilisez actuellement.
-   * **Dossiers de clients** : contiennent des ressources numériques en fonction des clients ou des noms de projet.
-   * **Dossiers principaux** : contiennent les ressources numériques sources originales.
-   * **Dossiers de rendus** : contiennent les rendus et les copies des ressources numériques sources originales.
-   * **Dossiers de taille de fichier** : contiennent des ressources numériques en fonction des tailles de fichier petite, moyenne et volumineuse.
-   * **Dossiers intermédiaires** : contiennent les ressources numériques qui sont prêtes à être publiées sur votre site web.
-   * **Dossiers de type MIME** : contiennent des ressources numériques qui sont spécifiques à des types MIME tels que des images, des documents et des fichiers multimédias.
-   * **Dossiers d’archives** : contiennent les ressources numériques retirées.
-   * **Dossiers reposant sur une date** : contiennent des ressources numériques en fonction d’une date de création ou d’une date de dernière modification.
+  * **Dossiers de développement** : contiennent les ressources numériques que vous utilisez actuellement.
+  * **Dossiers de clients** : contiennent des ressources numériques en fonction des clients ou des noms de projet.
+  * **Dossiers principaux** : contiennent les ressources numériques sources originales.
+  * **Dossiers de rendus** : contiennent les rendus et les copies des ressources numériques sources originales.
+  * **Dossiers de taille de fichier** : contiennent des ressources numériques en fonction des tailles de fichier petite, moyenne et volumineuse.
+  * **Dossiers intermédiaires** : contiennent les ressources numériques qui sont prêtes à être publiées sur votre site web.
+  * **Dossiers de type MIME** : contiennent des ressources numériques qui sont spécifiques à des types MIME tels que des images, des documents et des fichiers multimédias.
+  * **Dossiers d’archives** : contiennent les ressources numériques retirées.
+  * **Dossiers reposant sur une date** : contiennent des ressources numériques en fonction d’une date de création ou d’une date de dernière modification.
 
 * Créez un répertoire de dossiers qui n’est pas susceptible de changer afin que les processus de personnalisation ou d’autonomisation puissent continuer à fonctionner. Par exemple, les profils de traitement affectés continuent à fonctionner.
 * Si une ressource est déjà publiée, vous devez utiliser [!DNL Experience Manager] pour la déplacer vers un autre dossier et la republier à partir du nouvel emplacement. L’emplacement de la ressource publiée d’origine est toujours disponible avec la ressource republiée. Toutefois, la version d’origine de la ressource publiée est *« perdue »* pour [!DNL Experience Manager] et elle ne peut pas être dépubliée. Il est donc recommandé de dépublier une ressource avant de la déplacer vers un autre dossier.

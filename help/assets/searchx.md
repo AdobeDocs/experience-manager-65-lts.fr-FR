@@ -1,18 +1,27 @@
 ---
 title: Extension des fonctionnalités de recherche
-description: Étendez les fonctionnalités de recherche d’ [!DNL Adobe Experience Manager Assets] au-delà des valeurs par défaut.
+description: Étendez les fonctionnalités de recherche d’[!DNL Adobe Experience Manager Assets] au-delà des valeurs par défaut.
 contentOwner: AG
 role: Developer
 feature: Search
 solution: Experience Manager, Experience Manager Assets
 exl-id: 92efe52b-8fa5-4006-bd68-2472b4ba04f6
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 92%
-
+source-wordcount: '827'
+ht-degree: 91%
 ---
-
 # Extension de la recherche de ressources {#extending-assets-search}
 
 Vous pouvez étendre les fonctionnalités de recherche d’[!DNL Adobe Experience Manager Assets]. Par défaut, [!DNL Experience Manager Assets] propose des recherches de ressources en s’appuyant sur les chaînes.

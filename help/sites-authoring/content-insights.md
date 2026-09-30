@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 10bf533d-c0a8-43ac-8dd5-d4fa501b8726
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 100%
-
 ---
-
 # Content Insight{#content-insight}
 
 Content Insight fournit des informations sur les performances des pages à l’aide de l’analyse web et des recommandations SEO. Utilisez Content Insight pour prendre des décisions sur la modification des pages ou pour découvrir comment les modifications précédentes ont modifié les performances. Pour chaque page que vous créez, vous pouvez ouvrir Content Insight afin d’analyser la page.
@@ -30,9 +43,9 @@ La page Content Insight comprend des rapports qui utilisent les données Adobe S
 
 * SiteCatalyst : des rapports pour les mesures suivantes sont disponibles :
 
-   * Pages vues
-   * Durée de consultation moyenne de la page
-   * Sources
+  * Pages vues
+  * Durée de consultation moyenne de la page
+  * Sources
 
 * Target : rapport sur l’activité de campagne pour laquelle votre page contient des offres.
 * BrightEdge : émet des rapports sur les fonctionnalités de la page qui améliorent sa visibilité pour les moteurs de recherche et recommande des fonctionnalités à implémenter.
@@ -62,8 +75,8 @@ Le rapport de vues comprend les fonctionnalités suivantes pour évaluer le traf
 * Nombre total de vues pour une page pendant la période de reporting.
 * Graphe montrant le nombre de vues sur la période de reporting :
 
-   * Nombre total de vues.
-   * Visiteurs ou visiteuses uniques.
+  * Nombre total de vues.
+  * Visiteurs ou visiteuses uniques.
 
 ![chlimage_1-312](assets/chlimage_1-312.png)
 

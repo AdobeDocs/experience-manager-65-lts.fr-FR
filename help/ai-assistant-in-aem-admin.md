@@ -5,28 +5,42 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin,Developer,User
 exl-id: e653d37f-5802-4b0f-a71b-539b33ad5ca5
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 100%
-
 ---
-
 # Configuration de l’assistant IA dans AEM {#aem-ai-asst-admin-setup}
 
 <!-- An Administrator must configure access, permissions, and settings before users in their organization can use the features in AI Assistant in AEM. -->
 
 <!-- badge: label="Beta" type="Positive" -->
 
-Pour utiliser l’assistant IA d’AEM (Adobe Experience Manager), l’autorisation d’accéder à la base de connaissance des produits par l’intermédiaire de l’assistant IA est obligatoire.Cette autorisation est activée par défaut.
+Pour utiliser l’assistant IA d’AEM (Adobe Experience Manager), l’autorisation d’accéder à la base de connaissance des produits par l’intermédiaire de l’assistant IA est obligatoire. Cette autorisation est activée par défaut.
 
-Si vous souhaitez contrôler qui peut accéder à la base de connaissance des produits, envoyez un e-mail à [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID.Adobe peut activer le contrôle d’accès au niveau de l’utilisateur ou de l’utilisatrice.Lorsqu’il est activé, votre administrateur ou administratrice peut accorder l’accès au niveau de l’utilisateur ou de l’utilisatrice en suivant les étapes décrites ci-dessous.
+Si vous souhaitez contrôler qui peut accéder à la base de connaissance des produits, envoyez un e-mail à [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) à partir de l’adresse e-mail associée à votre Adobe ID. Adobe peut activer le contrôle d’accès au niveau de l’utilisateur ou de l’utilisatrice. Lorsqu’il est activé, votre administrateur ou administratrice peut accorder l’accès au niveau de l’utilisateur ou de l’utilisatrice en suivant les étapes décrites ci-dessous.
 
-Si vous avez demandé un contrôle d’accès au niveau de l’utilisateur ou de l’utilisatrice, votre organisation doit s’inscrire par le biais d’Adobe Admin Console.Un administrateur ou une administratrice de produit crée (ou choisit) un groupe d’utilisateurs et d’utilisatrices et lui accorde la nouvelle autorisation « Assistant IA ».Toute personne ajoutée à ce groupe accède instantanément à l’assistant IA d’AEM.Si l’objectif est la disponibilité à l’échelle de l’entreprise, l’administrateur ou l’administratrice affecte simplement l’ensemble des utilisateurs et des utilisatrices à ce groupe.
+Si vous avez demandé un contrôle d’accès au niveau de l’utilisateur ou de l’utilisatrice, votre organisation doit s’inscrire par le biais d’Adobe Admin Console. Un administrateur ou une administratrice de produit crée (ou choisit) un groupe d’utilisateurs et d’utilisatrices et lui accorde la nouvelle autorisation « Assistant IA ». Toute personne ajoutée à ce groupe accède instantanément à l’assistant IA d’AEM. Si l’objectif est la disponibilité à l’échelle de l’entreprise, l’administrateur ou l’administratrice affecte simplement l’ensemble des utilisateurs et des utilisatrices à ce groupe.
 
-Du point de vue des membres du personnel, le processus est simple : identifiez l’administrateur ou l’administratrice de produit Adobe Experience Manager dans votre entreprise et demandez votre ajout au groupe d’utilisateurs et d’utilisatrices de l’IA.Une fois que vous apparaissez dans ce groupe, l’icône Assistant s’affiche automatiquement la prochaine fois que vous vous connectez.
+Du point de vue des membres du personnel, le processus est simple : identifiez l’administrateur ou l’administratrice de produit Adobe Experience Manager dans votre entreprise et demandez votre ajout au groupe d’utilisateurs et d’utilisatrices de l’IA. Une fois que vous apparaissez dans ce groupe, l’icône Assistant s’affiche automatiquement la prochaine fois que vous vous connectez.
 
-Les administrateurs et administratrices doivent garder à l’esprit une gouvernance Cloud Manager normale.Détenez des droits d’administration de produit dans Admin Console pour créer des profils, gérer des groupes d’utilisateurs et d’utilisatrices ou modifier des autorisations.Si les utilisateurs et utilisatrices ont également besoin de la fonctionnalité intégrée **Créer un ticket d’assistance** de l’assistant, ajoutez le rôle standard **Administration de l’assistance** (rôle Admin Console standard) aux mêmes personnes ou groupes.
+Les administrateurs et administratrices doivent garder à l’esprit une gouvernance Cloud Manager normale. Détenez des droits d’administration de produit dans Admin Console pour créer des profils, gérer des groupes d’utilisateurs et d’utilisatrices ou modifier des autorisations. Si les utilisateurs et utilisatrices ont également besoin de la fonctionnalité intégrée **Créer un ticket d’assistance** de l’assistant, ajoutez le rôle standard **Administration de l’assistance** (rôle Admin Console standard) aux mêmes personnes ou groupes.
 
 Le processus de configuration de l’assistant IA d’AEM comprend les étapes suivantes :
 

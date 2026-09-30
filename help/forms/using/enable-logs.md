@@ -10,13 +10,28 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 755966e5-6267-4633-bcad-05860a2eda6c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '644'
 ht-degree: 100%
-
 ---
-
 # Activer la journalisation des formulaires au format HTML5{#enable-logging-for-html-forms}
 
 Vous pouvez configurer l&#39;utilitaire de journal pour créer des journaux pour les formulaires HTML5. L’utilitaire de journal possède plusieurs niveaux, vous pouvez définir le niveau selon vos besoins. Les formulaires HTML5 possèdent des composants de serveur et de client. Vous pouvez configurer des journaux pour chaque composant.
@@ -169,9 +184,9 @@ Par exemple :
 >[!NOTE]
 >
 >Le niveau de journalisation par défaut de chaque catégorie de journalisation a (xfa), b (xfaView) et c (xfaPerf) est de 2 (ERROR). Par conséquent, pour la configuration de journal 2-b6, les niveaux de journalisation pour les différentes catégories sont les suivants :
->>a (xfa) : 2 (niveau par défaut ERROR)
->>b (xfaView) : 6 (TRACE spécifié par l’utilisateur)
->>a (xfaPerf) : 2 (niveau par défaut ERROR)
+>a (xfa) : 2 (niveau par défaut ERROR)
+>b (xfaView) : 6 (TRACE spécifié par l’utilisateur)
+>a (xfaPerf) : 2 (niveau par défaut ERROR)
 
 ### Activation de la journalisation à l’aide de Configuration Manager {#enabling-logging-using-configuration-manager}
 

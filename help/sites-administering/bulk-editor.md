@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 8028e74e-29df-4081-a567-5eb87ae362d4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 95%
-
+source-wordcount: '1174'
+ht-degree: 92%
 ---
-
 # Éditeur en bloc{#the-bulk-editor}
 
 L’éditeur en bloc permet une modification efficace lorsque le contexte visuel de la page n’est pas nécessaire, car il vous permet d’effectuer les opérations suivantes :
@@ -76,7 +85,7 @@ Pour utiliser l’éditeur en bloc afin de modifier plusieurs éléments simulta
   </tr>
   <tr>
    <td>Chemin racine</td>
-   <td>Indique le chemin racine que recherche l’éditeur en bloc.<br /> Par exemple, <code>/content/geometrixx/en</code>. L’éditeur en bloc effectue une recherche dans tous les nœuds enfants.</td>
+   <td>Indique le chemin racine que recherche l’éditeur en bloc<br />. Par exemple, <code>/content/geometrixx/en</code>. L’éditeur en bloc effectue une recherche dans tous les nœuds enfants.</td>
   </tr>
   <tr>
    <td>Paramètres de requête</td>
@@ -121,7 +130,7 @@ Pour l’exemple ci-dessus, toutes les pages qui correspondent aux critères de 
 * **path :** effectue une recherche uniquement sur les nœuds sous ce chemin d’accès. Si vous spécifiez plusieurs termes avec un préfixe de chemin d’accès, seul le dernier terme est pris en compte.
 * **type :** renvoie uniquement les nœuds du type déterminé. Cela inclut les types principal et mixin. Vous pouvez spécifier plusieurs types de nœuds séparés par des virgules. GQL renvoie les nœuds de l’un des types spécifiés.
 * **order :** organise le résultat en fonction des propriétés données. Vous pouvez spécifier plusieurs noms de propriétés séparés par des virgules. Pour contrôler le résultat dans l’ordre descendant, ajoutez simplement le préfixe « - » (moins) au nom de la propriété. Par exemple, order:-name. Si vous utilisez un signe « + » (plus), le résultat est renvoyé dans l’ordre ascendant, qui est également l’ordre par défaut.
-* **limit :** limite le nombre de résultats à l’aide d’un intervalle. Par exemple, limit:10..20. L’intervalle est basé sur zéro, le début est inclusif et la fin est exclusive. Vous pouvez également indiquer des limites ouvertes `interval:limit:10..` ou `limit:..20`.
+* **limit :** limite le nombre de résultats à l’aide d’un intervalle. Par exemple, limit:10..20. L’intervalle est basé sur zéro, le début est inclusif et la fin est exclusive. Vous pouvez également spécifier un `interval:limit:10..` ouvert ou `limit:..20`
 Si les points sont omis et qu’une seule valeur est spécifiée, GQL renvoie, au maximum, ce nombre de résultats. Par exemple, `limit:10` (renvoie les dix premiers résultats).
 
 ### Exportation de contenu {#exporting-content}

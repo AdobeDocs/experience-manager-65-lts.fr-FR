@@ -10,14 +10,24 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e3ef1435-d405-482f-9eb5-f9a64ff03322
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '732'
 ht-degree: 81%
-
 ---
-
 # Purge de version{#version-purging}
 
 Dans une installation standard, Adobe Experience Manager (AEM) crée une version d’une page ou d’un nœud lorsque vous activez une page après la mise à jour du contenu.
@@ -39,11 +49,11 @@ Cette option peut être configurée pour purger les anciennes versions lorsque d
 Il est utilisé dans le cadre de la surveillance et de la maintenance de votre référentiel.
 Il vous permet d’intervenir et de supprimer les anciennes versions d’un nœud ou d’une hiérarchie de nœuds, en fonction des paramètres suivants :
 
-   * Le nombre maximal de versions à conserver dans le référentiel.
-Une fois ce nombre dépassé, la version la plus ancienne est supprimée.
+  * Le nombre maximal de versions à conserver dans le référentiel.
+    Une fois ce nombre dépassé, la version la plus ancienne est supprimée.
 
-   * L’âge maximal des versions conservées dans le référentiel.
-Lorsque l’âge d’une version dépasse cette valeur, elle est purgée du référentiel.
+  * L’âge maximal des versions conservées dans le référentiel.
+    Lorsque l’âge d’une version dépasse cette valeur, elle est purgée du référentiel.
 
 * La [tâche de maintenance Purge de version](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer automatiquement les anciennes versions. Ainsi, cela réduit la nécessité d’utiliser manuellement les outils de purge de version.
 
@@ -96,34 +106,34 @@ Par exemple, lors de la définition du nombre maximal de versions à conserver E
 
 * Configuration :
 
-   * `maxNumberVersions` = 7
+  * `maxNumberVersions` = 7
 
-   * `maxAgeDays` = 30
+  * `maxAgeDays` = 30
 
 * Avec :
 
-   * Dix versions ont été créées au cours des 60 derniers jours.
-   * Trois de ces versions ont été créées au cours des 30 derniers jours.
+  * Dix versions ont été créées au cours des 60 derniers jours.
+  * Trois de ces versions ont été créées au cours des 30 derniers jours.
 
 * Cela signifie que :
 
-   * Les trois dernières versions sont conservées.
+  * Les trois dernières versions sont conservées.
 
 Par exemple, pour définir le nombre maximal ET minimal de versions à conserver ET définir la version la plus ancienne à conserver :
 
 * Configuration :
 
-   * `maxNumberVersions` = 3
-   * `maxAgeDays` = 30
-   * `minNumberVersions` = 3
+  * `maxNumberVersions` = 3
+  * `maxAgeDays` = 30
+  * `minNumberVersions` = 3
 
 * Avec :
 
-   * Cinq versions ont été créées il y a 60 jours.
+  * Cinq versions ont été créées il y a 60 jours.
 
 * Cela signifie que :
 
-   * Trois versions sont conservées.
+  * Trois versions sont conservées.
 
 ## Outil Purge de version {#purge-versions-tool}
 

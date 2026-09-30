@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1702'
-ht-degree: 99%
-
+source-wordcount: '1706'
+ht-degree: 98%
 ---
-
 
 # Publication de pages {#publishing-pages}
 
@@ -25,7 +38,7 @@ Vous pouvez publier/dépublier une page tout de suite ou à une date/heure post�
 >
 >Certains termes liés à la publication peuvent être déroutants :
 >
->* **Publier/dépublier**
+>* **Publier/Dépublier**
 >  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
 >
 >* **Activer/Désactiver**
@@ -62,9 +75,9 @@ Si vous modifiez une page, vous pouvez la publier directement à partir de l’�
    * La page sera publiée directement, s’il n’y a aucune référence à publier.
    * Si la page comporte des références à publier, celles-ci seront répertoriées dans l’assistant **Publier**, où vous pourrez accomplir ce qui suit :
 
-      * Spécifiez les ressources ou les balises à publier conjointement avec la page, puis utilisez **Publier** pour terminer l’opération.
+     * Spécifiez les ressources ou les balises à publier conjointement avec la page, puis utilisez **Publier** pour terminer l’opération.
 
-      * Sélectionnez **Annuler** pour abandonner l’opération.
+     * Sélectionnez **Annuler** pour abandonner l’opération.
 
    ![chlimage_1](assets/chlimage_1.png)
 

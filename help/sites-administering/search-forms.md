@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 68a4d4b2-91a3-4545-a491-2a1ec08ceec5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2078'
-ht-degree: 94%
-
+source-wordcount: '2082'
+ht-degree: 95%
 ---
-
 # Configuration des formulaires de recherche{#configuring-search-forms}
 
 Utilisez des **formulaires de recherche** pour personnaliser la sélection des prédicats de recherche utilisés dans les panneaux de recherche disponibles dans différents panneaux ou consoles AEM de l’environnement de création. La personnalisation de ces panneaux rend la fonctionnalité de recherche polyvalente selon vos besoins spécifiques.
@@ -26,9 +35,9 @@ Vous pouvez [configurer les formulaires de recherche](#configuring-your-search-f
 
 * **Outils**
 
-   * **Général**
+  * **Général**
 
-      * **Formulaires de recherche**
+    * **Formulaires de recherche**
 
 Lorsque vous accédez à cette console pour la première fois, vous pouvez constater que toutes les configurations comportent un symbole de cadenas. Cela signifie que la configuration appropriée est la configuration par défaut (prête à l’emploi) et qu’elle ne peut pas être supprimée. Une fois la configuration personnalisée, le verrou disparaît sauf si vous [supprimez votre configuration personnalisée](#deleting-a-configuration-to-reinstate-the-default). Dans ce cas, la valeur par défaut est rétablie (tout comme l’indicateur de cadenas).
 
@@ -331,10 +340,10 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
 
 >[!NOTE]
 >
->* Les prédicats de recherche courants sont définis dans :
+>* Les prédicats de recherche courants sont définis dans :
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->* Les prédicats de recherche liés uniquement à siteadmin (interface utilisateur classique) se trouvent sous :
+>* Les prédicats de recherche liés uniquement à siteadmin (IU classique) se trouvent sous :
 >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * Ils sont obsolètes et disponibles uniquement à des fins de rétrocompatibilité.
 >

@@ -10,13 +10,28 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e57d51de-9d98-4b20-8180-22fa81fad4fd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 94%
-
+source-wordcount: '2051'
+ht-degree: 96%
 ---
-
 # Architecture de HTML5 forms{#architecture-of-html-forms}
 
 ## Architecture {#architecture}
@@ -158,9 +173,9 @@ Le moteur de script client :
 1. génère un nouvel état JSON ;
 1. fusionne le nouvel état JSON sur le client lorsque la réponse est renvoyée.
 
-#### Lots des ressources de localisation {#localization-resource-bundles}
+#### Bundles des ressources de localisation {#localization-resource-bundles}
 
-Les formulaires HTML5 prennent en charge l’italien (it), l’espagnols (es), le portugais du Brésil (pt_BR), le chinois simplifié (zh_CN), le chinois traditionnel (zh_TW, prise en charge limitée uniquement), le coréen (ko_KR), l’anglais (en_US), le français (fr_FR), l’allemand (de_DE) et le japonais (ja). En fonction du jeu de paramètres régionaux reçus dans l’en-tête de requête, le lot de ressources correspondant est envoyé au client. Ce lot de ressources est ajouté au profil JSP sous la forme d’une bibliothèque cliente CQ sous le nom de catégorie **xfaforms.I18N**. Vous pouvez remplacer la logique du profil consistant à prendre les packages avec paramètres régionaux.
+Les formulaires HTML5 prennent en charge l’italien (it), l’espagnols (es), le portugais du Brésil (pt_BR), le chinois simplifié (zh_CN), le chinois traditionnel (zh_TW, prise en charge limitée uniquement), le coréen (ko_KR), l’anglais (en_US), le français (fr_FR), l’allemand (de_DE) et le japonais (ja). En fonction du jeu de paramètres régionaux reçus dans l’en-tête de requête, le bundle de ressources correspondant est envoyé au client. Ce bundle de ressources est ajouté au profil JSP sous la forme d’une bibliothèque cliente CQ sous le nom de catégorie **xfaforms.I18N**. Vous pouvez remplacer la logique du profil consistant à prendre les packages avec paramètres régionaux.
 
 ### Composants Sling (adobe-lc-forms-content-pkg.zip) {#sling-components-adobe-lc-forms-content-pkg-zip}
 
@@ -177,10 +192,10 @@ Le nœud de profil possède une propriété **sling:resourceSuperType** avec la 
 * **xfaforms.I18N.&lt;locale>** : cette bibliothèque contient des données localisées.
 * **xfaforms.profile** : cette bibliothèque contient l’implémentation pour les moteurs de script XFA et de mise en page.
 
-Ces bibliothèques sont modélisées en tant que bibliothèques clientes CQ qui tirent parti des fonctionnalités de concaténation, de réduction et de compression automatiques des bibliothèques JavaScript de la structure CQ.
+Ces bibliothèques sont modélisées sous la forme de bibliothèques clientes CQ qui tirent profit des fonctions de concaténation, de réduction et de compression automatiques des bibliothèques JavaScript de la structure CQ.
 Pour plus d’informations sur les bibliothèques clientes CQ, voir [Documentation sur les bibliothèques clientes CQ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
 
 Comme décrit ci-dessus, le rendu de profil JSP appelle le service de formulaires grâce à une inclusion sling. Ce JSP définit également diverses options de débogage en fonction de la configuration de l’administration ou des paramètres de requête.
 
-Les formulaires HTML5 permettent aux développeurs de créer un profil et un rendu de profil pour personnaliser l’aspect des formulaires. Par exemple, HTML forms permet aux développeurs d’intégrer des formulaires dans un panneau ou une section &lt;div> d’un portail HTML existant.
-Pour plus d’informations sur la création de profils personnalisés, voir [Création d’un profil personnalisé](/help/forms/using/custom-profile.md).
+HTML5 forms permet aux développeurs de créer un profil et un rendu du profil pour personnaliser l’aspect des formulaires. Par exemple, les formulaires HTML permettent aux équipes de développement d’intégrer des formulaires dans un panneau ou une section &lt;div> d’un portail HTML existant.
+Pour plus d’informations sur la création de profils personnalisés, reportez-vous à [Création d’un profil personnalisé](/help/forms/using/custom-profile.md).

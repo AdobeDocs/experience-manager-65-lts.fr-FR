@@ -10,13 +10,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
 exl-id: 18c32ec9-9f6d-4c6e-9790-dc911baa1d75
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1098'
 ht-degree: 97%
-
 ---
-
 # Créer des lancements{#creating-launches}
 
 Créez un lancement pour permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future. Lors de la création d’un lancement, vous devez spécifier un titre et la page source :
@@ -41,12 +59,12 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 
    * **Lancements** :
 
-      1. Sélectionnez **Créer un lancement** depuis la barre d’outils pour ouvrir l’assistant.
+     1. Sélectionnez **Créer un lancement** depuis la barre d’outils pour ouvrir l’assistant.
 
    * **Sites** :
 
-      1. Sélectionnez **Créer** dans la barre d’outils pour ouvrir la zone de sélection.
-      1. Dans cette zone, sélectionnez **Créer un lancement** pour ouvrir l’assistant.
+     1. Sélectionnez **Créer** dans la barre d’outils pour ouvrir la zone de sélection.
+     1. Dans cette zone, sélectionnez **Créer un lancement** pour ouvrir l’assistant.
 
    >[!NOTE]
    >
@@ -75,7 +93,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 
    * **Inclure les sous-pages** :
 
-      * Indiquez si vous souhaitez créer le lancement avec ou sans les pages enfants.  Par défaut, ces sous-pages sont intégrées.
+     * Indiquez si vous souhaitez créer le lancement avec ou sans les pages enfants.  Par défaut, ces sous-pages sont intégrées.
 
    Poursuivez en cliquant sur **Suivant**.
 
@@ -164,8 +182,8 @@ Vous pouvez supprimer un lancement à partir de la [console des lancements](/hel
 
 * Sélectionnez le lancement en appuyant ou cliquant sur la miniature.
 * La barre d’outils s’affiche. Sélectionnez Cloner.
-   * Le clone sera créé et affiché dans la console.
-   * Le **titre du lancement** indique qu’il s’agit d’un clone. Vous pouvez mettre à jour le titre en modifiant la [configuration de lancement](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration) (**Propriétés**).
+  * Le clone sera créé et affiché dans la console.
+  * Le **titre du lancement** indique qu’il s’agit d’un clone. Vous pouvez mettre à jour le titre en modifiant la [configuration de lancement](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration) (**Propriétés**).
 
 ## Suppression d’un lancement {#deleting-a-launch}
 

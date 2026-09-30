@@ -6,13 +6,25 @@ feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ab876224-22bd-4fd7-b609-bd5703715932
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 97%
-
+source-wordcount: '1136'
+ht-degree: 98%
 ---
-
 # Identification du contenu à traduire{#identifying-content-to-translate}
 
 Les règles de traduction identifient le contenu à traduire pour les pages, les composants et les ressources incluses ou exclues dans les projets de traduction. Lorsqu’une page ou une ressource est en cours de traduction, AEM extrait ce contenu afin qu’il puisse être envoyé au service de traduction.
@@ -59,13 +71,13 @@ Chacun de ces éléments `node` présente les caractéristiques suivantes :
 * L’attribut `path` contient le chemin d’accès au nœud racine de la branche à laquelle les règles s’appliquent.
 * Les éléments `property` enfants identifient les propriétés de nœud à traduire pour tous les types de ressources :
 
-   * L’attribut `name` contient le nom de la propriété.
-   * L’attribut `translate` facultatif est égal à `false` si la propriété n’est pas traduite. Par défaut, la valeur est `true`. Cet attribut est utile pour remplacer les règles précédentes.
+  * L’attribut `name` contient le nom de la propriété.
+  * L’attribut `translate` facultatif est égal à `false` si la propriété n’est pas traduite. Par défaut, la valeur est `true`. Cet attribut est utile pour remplacer les règles précédentes.
 
 * Les éléments `node` enfants identifient les propriétés de nœud à traduire pour certains types de ressources :
 
-   * L’attribut `resourceType` contient le chemin d’accès qui correspond au composant implémentant le type de ressource.
-   * Les éléments `property` enfants identifient la propriété node à traduire. Utilisez ce nœud de la même manière que les éléments `property` enfants pour les règles de nœud.
+  * L’attribut `resourceType` contient le chemin d’accès qui correspond au composant implémentant le type de ressource.
+  * Les éléments `property` enfants identifient la propriété node à traduire. Utilisez ce nœud de la même manière que les éléments `property` enfants pour les règles de nœud.
 
 La règle d’exemple suivante entraîne la traduction du contenu de toutes les propriétés `text` pour toutes les pages figurant sous le nœud `/content`. La règle est effective pour tout composant qui stocke le contenu dans une propriété `text` (par exemple, le composant Texte de base et le composant Image de base).
 
@@ -208,11 +220,11 @@ Le résultat dans le fichier xml ressemble à ce qui suit :
 
 Le fichier translation_rules.xml qui est installé avec AEM contient un ensemble par défaut de règles de traduction. Vous pouvez modifier le fichier pour prendre en charge les exigences de vos projets de traduction. Par exemple, vous pouvez ajouter des règles afin que le contenu de vos composants personnalisés soit traduit.
 
-Si vous modifiez le fichier translation_rules.xml, conservez une copie de sauvegarde dans un package de contenu. L’installation des service packs AEM ou la réinstallation de certains packages AEM peut remplacer le fichier translation_rules.xml actuel par la version originale. Pour restaurer vos règles dans ce cas, vous pouvez installer le package contenant votre copie de sauvegarde.
+Si vous modifiez le fichier translation_rules.xml, conservez une copie de sauvegarde dans un module de contenu. L’installation des service packs AEM ou la réinstallation de certains packages AEM peut remplacer le fichier translation_rules.xml actuel par la version originale. Pour restaurer vos règles dans ce cas, vous pouvez installer le package contenant votre copie de sauvegarde.
 
 >[!NOTE]
 >
->Après avoir créé le package de contenu, recréez-le chaque fois que vous modifiez le fichier.
+>Après avoir créé le module de contenu, recréez-le chaque fois que vous modifiez le fichier.
 
 ## Exemple de fichier de règles de traduction {#example-translation-rules-file}
 

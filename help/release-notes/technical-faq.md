@@ -5,13 +5,27 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
-source-git-commit: f994a8712a403083de1edc62579846ba99bd3afd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 59%
-
 ---
-
 # Questions techniques fréquentes sur AEM 6.5 LTS {#technical-faq}
 
 Cette page est destinée à répondre à des questions techniques fréquentes sur AEM 6.5 LTS.
@@ -20,7 +34,7 @@ Cette page est destinée à répondre à des questions techniques fréquentes su
 
 ### Le point d’entrée `/systemalive` n’est plus disponible dans AEM 6.5 LTS.
 
-Le lot de système prêt à l’emploi Felix, configuré pour fournir le point d’entrée `/systemalive`, a été abandonné et remplacé par les contrôles d’intégrité Apache Felix. Ce lot n’est plus inclus dans AEM 6.5 LTS.
+Le bundle Felix System Ready qui était configuré pour fournir le point d’entrée `/systemalive` est désormais obsolète et a été remplacé par Apache Felix Health Checks. Ce bundle n’est plus inclus dans AEM 6.5 LTS.
 
 Le nouveau point d’entrée du contrôle d’intégrité est disponible à l’adresse `/system/health` et est implémenté à l’aide des contrôles d’intégrité Apache Felix.
 

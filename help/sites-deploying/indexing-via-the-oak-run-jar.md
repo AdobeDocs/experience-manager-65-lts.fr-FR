@@ -8,13 +8,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: a6344463-7796-4ee3-8b2e-b3bfd2aec99a
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 96%
-
+source-wordcount: '985'
+ht-degree: 97%
 ---
-
 # Indexation par l’intermédiaire du fichier Jar d’Oak-run {#indexing-via-the-oak-run-jar}
 
 Oak-run prend en charge tous les cas d’utilisation d’indexation sur la ligne de commande sans avoir à opérer au niveau JMX. Les avantages de l’approche oak-run sont les suivants :
@@ -92,11 +101,11 @@ Exécutez ce processus uniquement sur une seule instance AEM du cluster.
 
 * **Observations relatives à Cold Standby (TarMK)**
 
-   * Il n’existe aucune considération spéciale pour les reprises à froid (Cold Standby). La synchronisation des instances Cold Standby change comme d’habitude.
+  * Il n’existe aucune considération spéciale pour les reprises à froid (Cold Standby). La synchronisation des instances Cold Standby change comme d’habitude.
 
 * **Fermes de publication AEM (les fermes de publication AEM doivent toujours être TarMK)**
 
-   * Dans le cas de fermes de publication, veuillez exécuter les étapes sur la totalité des publications OU sur une seule publication. Ensuite, clonez la configuration pour les autres publications (en prenant toutes les précautions habituelles lors du clonage d’instances AEM ; sling.id - doit ici pointer vers un élément).
+  * Dans le cas de fermes de publication, veuillez exécuter les étapes sur la totalité des publications OU sur une seule publication. Ensuite, clonez la configuration pour les autres publications (en prenant toutes les précautions habituelles lors du clonage d’instances AEM ; sling.id - doit ici pointer vers un élément).
 
 ### Réindexation en ligne pour TarMK {#onlinere-indexingfortarmk}
 
@@ -164,7 +173,7 @@ L’indexation hors bande réduit l’impact de l’indexation sur les instances
 >
 >ACS Ensure Index est un projet géré par la communauté, il n’est pas pris en charge par l’assistance Adobe.
 
-Celui-ci permet d’envoyer la définition d’index par le biais du package de contenu, ce qui entraîne une réindexation en définissant l’indicateur reindex sur `true`. Cela fonctionne avec des petites configurations pour lesquelles la réindexation prend peu de temps.
+Celui-ci permet d’envoyer la définition d’index par le biais du module de contenu, ce qui entraîne une réindexation en définissant l’indicateur de réindexation sur `true`. Cela fonctionne avec des petites configurations pour lesquelles la réindexation prend peu de temps.
 
 Pour plus d’informations, reportez-vous à [Documentation d’ACS Ensure Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html).
 

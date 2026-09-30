@@ -5,14 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: c04e0716-2aa2-420b-bbf5-74ffd1c28794
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 100%
-
 ---
-
 # Impossible d’obtenir un e-mail avec des pièces jointes pour les plateformes AEM Forms sur JEE{#unable-to-get-email-with-attachments}
 
 Le problème s’applique à la version suivante :
@@ -38,9 +53,9 @@ L’utilisateur ou l’utilisatrice ne peut pas effectuer d’opérations telles
 
 1. Téléchargez [javax.mail-1.5.6.redhat-1.jar](https://mvnrepository.com/artifact/com.sun.mail/javax.mail/1.5.6.redhat-1).
 
-1. Accédez à `http://<server name>:<port>/lc/system/console/bundles` et supprimez le lot portant le nom `JavaMail API (com.sun.mail.javax.mail) version 1.6.2`.
+1. Accédez à `http://<server name>:<port>/lc/system/console/bundles` et supprimez le bundle portant le nom `JavaMail API (com.sun.mail.javax.mail) version 1.6.2`.
 
-1. Installez `java.mail-1.5.jar` obtenu à l’étape 3. Cette étape redémarre les propriétés sling du déploiement JEE. Attendez que les lots installés sur `http://<server name>:<port>/lc/system/console/bundles` affichent le statut **Actif**.
+1. Installez `java.mail-1.5.jar` obtenu à l’étape 3. Cette étape redémarre les propriétés sling du déploiement JEE. Attendez que les bundles installés sur `http://<server name>:<port>/lc/system/console/bundles` affichent le statut **Actif**.
 
    >Si le statut est toujours **inactif**, redémarrez **JBoss®** à partir de la **console de services**.
 

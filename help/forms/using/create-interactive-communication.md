@@ -8,13 +8,27 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 6d24ce27-4653-4a70-97d0-e4299eceb32c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6132'
+source-wordcount: '6226'
 ht-degree: 99%
-
 ---
-
 # Créer une communication interactive{#create-an-interactive-communication}
 
 ## Présentation {#overview}
@@ -62,11 +76,11 @@ Les conditions préalables à la création d’une communication interactive son
    * **[!UICONTROL Modèle web de communication interactive]** : recherchez et sélectionnez le modèle web.
    * **[!UICONTROL Thème]** et **[!UICONTROL Sélectionner un thème]** : recherchez et sélectionnez le thème pour définir le style de canal web de la communication interactive. Pour plus d’informations, voir [Thèmes dans AEM Forms](/help/forms/using/themes.md).
 
-   * **[!UICONTROL Utiliser l’impression en tant que Principal pour le canal web]** : sélectionnez cette option pour créer le canal web en synchronisation avec le canal d’impression. L’utilisation du canal d’impression en tant que page principale pour le canal web garantit que le contenu et la liaison de données du canal web sont dérivés du canal d’impression et que les modifications apportées au canal d’impression sont répercutées sur le canal web lorsque vous sélectionnez Synchroniser. Les auteurs sont toutefois autorisés à interrompre l’héritage pour des composants spécifiques dans le canal web, selon les besoins. Pour plus d’informations, voir [Synchroniser le canal web avec le canal d’impression](../../forms/using/create-interactive-communication.md#synchronize).
-Si vous sélectionnez l’option **[!UICONTROL Utiliser l’impression en tant que Principal pour le canal web]**, vous pouvez sélectionner l’un des modes suivants pour générer le canal web :
+   * **[!UICONTROL Utiliser l’impression en tant que page principale pour le canal web]** : sélectionnez cette option pour créer le canal web en synchronisation avec le canal d’impression. L’utilisation du canal d’impression comme page principale du canal web garantit que le contenu et la liaison des données du canal web sont dérivés du canal d’impression et que les modifications apportées au canal d’impression sont répercutées sur le canal web lorsque vous appuyez sur Synchroniser. Les auteurs sont toutefois autorisés à interrompre l’héritage pour des composants spécifiques dans le canal web, selon les besoins. Pour plus d’informations, consultez [Synchroniser le canal web avec le canal d’impression](../../forms/using/create-interactive-communication.md#synchronize).
+     Si vous sélectionnez l’option **[!UICONTROL Utiliser Imprimer en tant que page principale pour le canal web]**, vous pouvez sélectionner l’un des modes suivants pour générer le canal web :
 
-      * **[!UICONTROL Disposition automatique]** : sélectionnez ce mode pour générer automatiquement des espaces réservés, du contenu et des liaisons de données pour le canal web à partir du canal d’impression.
-      * **[!UICONTROL Organisation manuelle]** : sélectionnez ce mode pour sélectionner manuellement et ajouter des éléments du canal d’impression au canal web à l’aide du contenu principal disponible dans l’onglet **[!UICONTROL Sources de données]**. Pour plus d’informations, voir [Sélectionner les éléments du canal d’impression pour créer le contenu du canal web](#selectprintchannelelements).
+     * **[!UICONTROL Disposition automatique]** : sélectionnez ce mode pour générer automatiquement des espaces réservés, du contenu et des liaisons de données pour le canal web à partir du canal d’impression.
+     * **[!UICONTROL Organisation manuelle]** : sélectionnez ce mode pour sélectionner manuellement et ajouter des éléments du canal d’impression au canal web à l’aide du contenu principal disponible dans l’onglet **[!UICONTROL Sources de données]**. Pour plus d’informations, voir [Sélectionner les éléments du canal d’impression pour créer le contenu du canal web](#selectprintchannelelements).
 
    Pour plus d’informations sur le canal d’impression et le canal web, consultez [Canal d’impression et canal web](/help/forms/using/web-channel-print-channel.md).
 
@@ -170,10 +184,10 @@ Sélectionnez le fragment de document, puis ![configure_icon](assets/configure_i
    * [Ajout et configuration de graphiques](/help/forms/using/chart-component-interactive-communications.md)
    * [Synchronisation du canal web avec le canal d’impression](../../forms/using/create-interactive-communication.md#synchronize)
 
-      * Synchronisation automatique
-      * Annuler l’héritage
-      * Réactiver l’héritage
-      * Synchroniser
+     * Synchronisation automatique
+     * Annuler l’héritage
+     * Réactiver l’héritage
+     * Synchroniser
 
    * [Pièces jointes et accès à la bibliothèque](../../forms/using/create-interactive-communication.md#attachmentslibrary)
    * [Propriétés du champ XDP/mise en page](../../forms/using/create-interactive-communication.md#xdplayoutfieldproperties)
@@ -242,8 +256,8 @@ Dans le canal d’impression, vous pouvez configurer les pièces jointes et l’
    * **[!UICONTROL Nombre max de pièces jointes autorisé]** : spécifiez le nombre maximum de pièces jointes autorisées avec la communication interactive.
    * **[!UICONTROL Fichiers à joindre]** : sélectionnez **[!UICONTROL Ajouter]** puis recherchez et sélectionnez les fichiers à joindre et spécifiez les éléments suivants :
 
-      * **[!UICONTROL Joindre ce fichier au document par défaut]** : vous pouvez modifier cette option si seule la pièce jointe n’est pas obligatoire.
-      * **[!UICONTROL Obligatoire :]** l’agent ne pourra pas supprimer la pièce jointe dans l’interface utilisateur de l’agent.
+     * **[!UICONTROL Joindre ce fichier au document par défaut]** : vous pouvez modifier cette option si seule la pièce jointe n’est pas obligatoire.
+     * **[!UICONTROL Obligatoire :]** l’agent ne pourra pas supprimer la pièce jointe dans l’interface utilisateur de l’agent.
 
    ![attachfiles](assets/attachfiles.png)
 
@@ -263,9 +277,9 @@ Dans le canal d’impression, vous pouvez configurer les pièces jointes et l’
    * **[!UICONTROL Titre]** : entrez un titre qui sera visible pour l’agent dans l’interface utilisateur de l’agent et dans l’arborescence du conteneur de documents.
    * **[!UICONTROL Type de liaison]** : sélectionnez l’un des types de liaison suivants pour le champ.
 
-      * Aucun : l’agent remplira la valeur de la propriété.
-      * Fragment de texte : si cette option est sélectionnée, vous pouvez rechercher et sélectionner un fragment de document texte dont le contenu est rendu dans le champ. Vous pouvez également faire glisser et déposer le fragment de document texte dans le nom du champ pour configurer la liaison entre eux. Le fragment de document texte ne doit contenir aucune variable.
-      * Objet de modèle de données : sélectionnez une propriété de modèle de données de formulaire dont la valeur est renseignée dans le champ. Vous pouvez également sélectionner l’onglet **Sources de données** et faire glisser et déposer la propriété dans le champ.
+     * Aucun : l’agent remplira la valeur de la propriété.
+     * Fragment de texte : si cette option est sélectionnée, vous pouvez rechercher et sélectionner un fragment de document texte dont le contenu est rendu dans le champ. Vous pouvez également faire glisser et déposer le fragment de document texte dans le nom du champ pour configurer la liaison entre eux. Le fragment de document texte ne doit contenir aucune variable.
+     * Objet de modèle de données : sélectionnez une propriété de modèle de données de formulaire dont la valeur est renseignée dans le champ. Vous pouvez également sélectionner l’onglet **Sources de données** et faire glisser et déposer la propriété dans le champ.
 
    * **[!UICONTROL Valeurs par défaut]** : la valeur par défaut veille à ce que le champ ne soit pas vide lorsqu’aucune valeur n’est fournie par l’objet de modèle de données ou le fragment de texte spécifié. Si aucun type de liaison de données n’est défini, la valeur par défaut est préremplie dans la zone.
    * **[!UICONTROL Modèle d’affichage]** : vous pouvez également définir un format d’affichage pour un champ. Sélectionnez l’une des options prédéfinies dans la liste déroulante **Type** pour appliquer un format d’affichage à un champ. Sélectionnez **Personnalisé** pour définir un modèle d’affichage qui n’est pas disponible dans la liste. Pour plus d’informations, voir [Modèles d’affichage de données](../../forms/using/create-interactive-communication.md#datadisplaypatterns).
@@ -346,8 +360,8 @@ Vous pouvez ajouter des tableaux dynamiques dans une communication interactive e
       * **[!UICONTROL Titre]** : entrez un titre qui sera visible dans l’éditeur de la communication interactive.
       * **[!UICONTROL Type de liaison]** : sélectionnez l’un des types de liaison suivants pour le champ.
 
-         * **[!UICONTROL Aucune]**
-         * **[!UICONTROL Objet de modèle de données]** : une valeur de propriété de modèle de données de formulaire est renseignée dans le champ. Vous pouvez également sélectionner l’onglet **Sources de données**, puis faire glisser et déposer la propriété dans le champ.
+        * **[!UICONTROL Aucune]**
+        * **[!UICONTROL Objet de modèle de données]** : une valeur de propriété de modèle de données de formulaire est renseignée dans le champ. Vous pouvez également sélectionner l’onglet **Sources de données**, puis faire glisser et déposer la propriété dans le champ.
 
       * **[!UICONTROL Objet de modèle de données]** : la propriété de modèle de données de formulaire dont la valeur est renseignée dans le champ.
       * **[!UICONTROL Valeur par défaut]** : la valeur par défaut veille à ce que le champ ne soit pas vide lorsqu’aucune valeur n’est fournie par l’objet de modèle de données spécifié. La valeur par défaut est préremplie dans le champ.

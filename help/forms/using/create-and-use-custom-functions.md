@@ -4,13 +4,23 @@ description: AEM Forms prend en charge les fonctions personnalisées qui permet
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
 exl-id: 40329e80-d794-4e43-8ed4-d88ce3c48751
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 99%
-
+source-wordcount: '1071'
+ht-degree: 95%
 ---
-
 # Fonctions personnalisées dans les formulaires adaptatifs
 
 ## Présentation
@@ -55,49 +65,49 @@ Assurez-vous que la fonction personnalisée que vous écrivez est accompagnée d
 
 Balises `jsdoc` prises en charge :
 
-* Syntaxe
-**Privé** : `@private`
+* **Privé**
+Syntaxe : `@private`
 Une fonction privée n’est pas incluse comme fonction personnalisée.
 
-* Syntaxe
-**Nom** : `@name funcName <Function Name>`
-Autrement,`,` vous pouvez utiliser : `@function funcName <Function Name>` **ou** `@func` `funcName <Function Name>`.
+* **Name**
+Syntaxe : `@name funcName <Function Name>`
+Vous pouvez également `,` utiliser : `@function funcName <Function Name>` **ou** `@func` `funcName <Function Name>`.
   `funcName` est le nom de la fonction (les espaces ne sont pas autorisés).
   `<Function Name>` est le nom d’affichage de la fonction.
 
-* Syntaxe
-**Membre** : `@memberof namespace`
+* **Member**
+Syntaxe : `@memberof namespace`
 Associe un espace de noms à la fonction.
 
-* Syntaxe
-**Paramètre** : `@param {type} name <Parameter Description>`
-Autrement, vous pouvez utiliser : `@argument` `{type} name <Parameter Description>` **ou** `@arg` `{type}` `name <Parameter Description>`.
+* **Paramètre**
+Syntaxe : `@param {type} name <Parameter Description>`
+Vous pouvez également utiliser : `@argument` `{type} name <Parameter Description>` **ou** `@arg` `{type}` `name <Parameter Description>`.
 Affiche les paramètres utilisés par la fonction. Une fonction peut comporter plusieurs balises de paramètre, une balise pour chaque paramètre dans l’ordre d’occurrence.
   `{type}` représente le type de paramètre. Les types de paramètre sont les suivants :
 
-   1. chaîne
-   2. nombre
-   3. booléen
-   4. portée
+  1. chaîne
+  2. nombre
+  3. booléen
+  4. portée
 
   La portée est utilisée pour les champs référents d’un formulaire adaptatif. Lorsqu’un formulaire utilise le chargement différé, vous pouvez utiliser `scope` pour accéder à ses champs. Vous pouvez accéder aux champs lorsque les champs sont chargés ou si les champs sont marqués comme généraux.
 
   Tous les autres types de paramètre sont classés en dessous de l’un des précédents. Ils sont tous pris en charge. Assurez-vous que vous sélectionnez l’un des types ci-dessus. Les types ne respectent pas la casse. Les espaces ne sont pas autorisés dans le paramètre `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
-* Syntaxe
-**Type de retour** : `@return {type}`
-Autrement, vous pouvez utiliser `@returns {type}`.
+* **Type de retour**
+Syntaxe : `@return {type}`
+Vous pouvez également utiliser `@returns {type}`.
 Ajoute des informations sur la fonction, telles que son objectif.
   {type} représente le type de retour de la fonction. Les types de valeur renvoyée autorisés sont les suivants :
 
-   1. chaîne
-   1. nombre
-   1. booléen
+  1. chaîne
+  1. nombre
+  1. booléen
 
-  Tous les autres types de retour sont classés en dessous de l’un des précédents. Ils sont tous pris en charge. Assurez-vous que vous sélectionnez l’un des types ci-dessus. Les types de retour ne respectent pas la casse.
+  Tous les autres types de retour sont classés dans l’une des catégories ci-dessus. Ils sont tous pris en charge. Assurez-vous que vous sélectionnez l’un des types ci-dessus. Les types de retour ne respectent pas la casse.
 
-* **Cette**
-syntaxe : `@this currentComponent`
+* **Ceci**
+Syntaxe : `@this currentComponent`
 
   Utilisez @this pour faire référence au composant Formulaire adaptatif à partir duquel la règle a été créée.
 

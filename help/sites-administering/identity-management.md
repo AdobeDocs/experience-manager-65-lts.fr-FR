@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 70a5429a-e805-49f6-9c2c-28720d9674ae
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 99%
-
+source-wordcount: '1219'
+ht-degree: 96%
 ---
-
 # Identity Management{#identity-management}
 
 Les visiteurs individuels de votre site web ne peuvent être identifiés que lorsque vous leur donnez la possibilité de se connecter. Vous pouvez leur permettre de se connecter pour différentes raisons :
@@ -89,7 +98,7 @@ En fonction du formulaire d’enregistrement, le visiteur peut avoir enregistré
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Pour afficher les détails de votre profil, cliquez sur **Mon profil** dans le coin supérieur droit d’une page ; par exemple, avec le compte `admin` :
+Pour afficher les détails de votre profil, cliquez sur **Mon profil** dans le coin supérieur droit d’une page ; par exemple, avec le compte `admin` :
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 Vous pouvez afficher un autre profil à l’aide du [contexte client](/help/sites-administering/client-context.md) (dans l’environnement de création et avec des autorisations suffisantes) :
@@ -230,8 +239,8 @@ Ce composant permet à l’utilisateur ou l’utilisatrice de saisir un nom dét
 
 ![Boîte de dialogue de nom détaillé.](assets/dc_profiles_detailedname.png)
 
-### Sexe du profil {#profile-gender}
+### Genre du profil {#profile-gender}
 
-Ce composant permet à l’utilisateur ou l’utilisatrice d’indiquer son sexe.
+Ce composant permet à l’utilisateur ou l’utilisatrice d’indiquer son genre.
 
 ![Sélecteur de genre.](assets/dc_profiles_gender.png)

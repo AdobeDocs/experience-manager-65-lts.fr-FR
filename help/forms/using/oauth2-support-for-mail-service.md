@@ -5,27 +5,42 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: a9790625-af8d-4416-b96f-4724a025260b
-source-git-commit: a053ca75d106025fcfeb63ac5ba3c95283861e7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 91%
-
+source-wordcount: '1047'
+ht-degree: 93%
 ---
-
 # Intégrer AEM Forms aux protocoles de serveur de messagerie Microsoft® Office 365 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
 Pour permettre aux entreprises de se conformer aux exigences en matière de messagerie sécurisée, AEM Forms propose la prise en charge OAuth 2.0 pour l’intégration aux protocoles de serveur de messagerie Microsoft® Office 365. Vous pouvez utiliser le service d’authentification OAuth 2.0 d’Azure Active Directory (Azure AD) pour vous connecter à différents protocoles tels que IMAP, POP ou SMTP et accéder aux données de messagerie des utilisateurs et utilisatrices d’Office 365. Vous trouverez ci-dessous des instructions étape par étape pour configurer les protocoles du serveur de messagerie Microsoft® Office 365 pour s’authentifier via le service OAuth 2.0 :
 
-1. Connectez-vous à [&#128279;](https://portal.azure.com/) recherchez **Azure Active Directory** dans la barre de recherche et cliquez sur le résultat.
-Vous pouvez également accéder directement à [&#128279;](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+1. Connectez-vous sur [https://portal.azure.com/](https://portal.azure.com/) et recherchez **Azure Active Directory** dans la barre de recherche et cliquez sur le résultat.
+Vous pouvez également accéder directement à [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 1. Cliquez sur **Ajouter** > **Enregistrement de l’application** > **Nouvel enregistrement**.
 
    ![Enregistrement de l’application](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
 1. Renseignez les informations selon vos besoins puis cliquez sur **Enregistrement**.
    ![Compte pris en charge](/help/forms/using/assets/azure_suuportedaccountype.png)
-Dans le cas ci-dessus, l’option **Comptes dans n’importe quel répertoire de l’entreprise (n’importe quel répertoire Azure AD - à plusieurs clients) et comptes Microsoft® personnels (par exemple, Skype, Xbox)** est sélectionnée.
+   Dans le cas ci-dessus, l’option **Comptes dans n’importe quel répertoire de l’entreprise (n’importe quel répertoire Azure AD - à plusieurs clients) et comptes Microsoft® personnels (par exemple, Skype, Xbox)** est sélectionnée.
 
    >[!NOTE]
    >

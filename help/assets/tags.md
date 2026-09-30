@@ -6,13 +6,29 @@ feature: Viewers
 role: User,Admin,Developer
 solution: Experience Manager, Experience Manager Assets
 exl-id: 3aea14f7-052d-4f23-b65d-e648623146e7
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d17d085a-e808-49dd-b9a6-85a996b999bd
+    internal-label: Viewers
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6920'
+source-wordcount: '6924'
 ht-degree: 99%
-
 ---
-
 # Intégration de visionneuses Dynamic Media à Adobe Analytics et Experience Platform Tags {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## En quoi consiste l’intégration des visionneuses Dynamic Media à Adobe Analytics et à Experience Platform Tags ? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
@@ -21,7 +37,7 @@ ht-degree: 99%
 
 L’extension *Visionneuses Dynamic Media* pour les Experience Platform Tags et les visionneuses Dynamic Media 5.13, permet aux clients Adobe Analytics et Experience Platform Tags d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration Experience Platform Tags.
 
-Cette intégration signifie que vous pouvez suivre l’utilisation des visionneuses Dynamic Media sur votre site web avec Adobe Analytics. Dans le même temps, vous pouvez utiliser les événements et les données exposés par les visiteurs et visiteuses avec toute autre extension de balises Experience Platform provenant d’Adobe ou d’un tiers.
+Cette intégration signifie que vous pouvez suivre l’utilisation des visionneuses Dynamic Media sur votre site web avec Adobe Analytics. Dans le même temps, vous pouvez utiliser les événements et les données exposés par les visionneuses avec toute autre extension de balises Experience Platform provenant d’Adobe ou d’un tiers.
 
 Pour en savoir plus sur les extensions d’Adobe ou les extensions tierces, voir [Extensions d’Adobe](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html?lang=fr) dans le Guide d’utilisation des balises Experience Platform.
 
@@ -79,7 +95,7 @@ Une règle dans Experience Platform Tags est une configuration agnostique déf
 * Les *conditions* (si) indiquent à Experience Platform Tags quelles restrictions supplémentaires autoriser ou non lors du déclenchement d’une règle.
 * Les *actions* (alors) indiquent à Experience Platform Tags ce qu’il faut faire lorsqu’une règle est déclenchée.
 
-Les options disponibles dans la section Événements, Conditions et Actions dépendent des extensions installées dans la propriété Experience Platform Tags. L’extension *Core* est préinstallée et prête à l’emploi dans n’importe quelle configuration. L’extension fournit plusieurs options pour les événements, telles que des actions de base au niveau du navigateur. Ces actions comprennent le changement de focus, les fonctions des touches et les envois de formulaire. Elle comprend également des options pour les conditions, telles que la valeur du cookie, le type de navigateur, etc. Pour les actions, seule l’option Code personnalisé est disponible.
+Les options disponibles dans la section Événements, Conditions et Actions dépendent des extensions installées dans la propriété Experience Platform Tags. L’extension *Core* est préinstallée et prête à l’emploi dans n’importe quelle configuration. L’extension fournit plusieurs options pour les événements, telles que des actions de base au niveau du navigateur. Ces actions comprennent le changement de focus, les pressions sur les touches et les envois de formulaire. Elle comprend également des options pour les conditions, telles que la valeur du cookie, le type de navigateur, etc. Pour les actions, seule l’option Code personnalisé est disponible.
 
 Pour le suivi d’Adobe Analytics, d’autres extensions doivent être installées, tel que décrit dans [Installation et configuration des extensions](#installing-and-setup-of-extensions). Plus précisément :
 
@@ -123,7 +139,7 @@ L’exemple de configuration suivant dans Experience Platform Tags montre comm
 
    ![image2019-4](assets/image2019-4.png)
 
-### À propos d’Adobe Analytics for Audio and Video {#about-adobe-analytics-for-audio-and-video}
+### À propos d’Adobe Analytics pour le son et la vidéo {#about-adobe-analytics-for-audio-and-video}
 
 Lorsqu’un compte Experience Cloud est abonné pour utiliser Adobe Analytics for Audio and Video, il suffit d’activer le suivi vidéo dans les paramètres d’extension *Visionneuses Dynamic Media*. Les mesures vidéo sont alors disponibles dans Adobe Analytics. Le suivi vidéo dépend de la présence de l’extension Adobe Media Analytics for Audio and Video.
 
@@ -135,7 +151,7 @@ Voir [Installation et configuration des extensions](#installing-and-setup-of-ext
 
 Comme indiqué dans [Cas d’utilisation de l’intégration](#use-cases-for-the-integration), il est possible d’effectuer le suivi des visionneuses Dynamic Media avec la nouvelle intégration d’Experience Platform Tags dans Experience Manager Sites et à l’aide du code intégré.
 
-### Suivi des visionneuses Dynamic Media dans Experience Manager Sites {#tracking-dynamic-media-viewers-in-aem-sites}
+### Suivez les visionneuses Dynamic Media dans Adobe Experience Manager Sites. {#tracking-dynamic-media-viewers-in-aem-sites}
 
 Pour effectuer le suivi des visionneuses Dynamic Media dans Experience Manager Sites, toutes les étapes répertoriées sous la section [Configurer tous les composants d’intégration](#configuring-all-the-integration-pieces) doivent être réalisées. Plus précisément, vous devez créer la configuration IMS et la configuration du cloud Experience Platform Tags.
 
@@ -182,7 +198,7 @@ L’extension Visionneuse Dynamic Media s’intègre automatiquement à la bibl
 
 De plus, il existe une option pour désactiver explicitement l’intégration d’Experience Platform Tags dans la visionneuse en spécifiant un paramètre `launch=0` dans la configuration de la visionneuse. La valeur par défaut de ce paramètre est `1`.
 
-### Configuration de l’extension Visionneuses Dynamic Media {#configuring-the-dynamic-media-viewers-extension}
+### Configuration de l’extension Visionneuse Dynamic Media {#configuring-the-dynamic-media-viewers-extension}
 
 La seule option de configuration de l’extension Visionneuses Dynamic Media est **[!UICONTROL Activer Adobe Media Analytics for Audio and Video]**.
 
@@ -192,7 +208,7 @@ Si vous activez cette option *sans* avoir installé Adobe Media Analytics for 
 
 ![image2019-7-22_12-4-23](assets/image2019-7-22_12-4-23.png)
 
-### À propos des éléments de données dans l’extension Visionneuses Dynamic Media {#about-data-elements-in-the-dynamic-media-viewers-extension}
+### À propos des éléments de données dans l’extension Visionneuse Dynamic Media {#about-data-elements-in-the-dynamic-media-viewers-extension}
 
 Le seul type d’élément de données fourni par l’extension Visionneuses Dynamic Media est **[!UICONTROL Événement de visionneuse]** dans la liste déroulante **[!UICONTROL Type d’élément de données]**.
 
@@ -220,26 +236,26 @@ La valeur exacte renvoyée par l’élément de données dépend du contexte. Si
 * L’élément de données **[!UICONTROL ZoomScale]** pointe sur l’événement **[!UICONTROL ZOOM]** et son argument « scale ».
 * Règle **[!UICONTROL TrackPan]** avec ce qui suit :
 
-   * Utilise l’événement **[!UICONTROL PAN]** de la visionneuse Dynamic Media comme déclencheur.
-   * Envoie la valeur de l’élément de données **[!UICONTROL ZoomScale]** à Adobe Analytics.
+  * Utilise l’événement **[!UICONTROL PAN]** de la visionneuse Dynamic Media comme déclencheur.
+  * Envoie la valeur de l’élément de données **[!UICONTROL ZoomScale]** à Adobe Analytics.
 
 * Règle **[!UICONTROL TrackKey]** avec ce qui suit :
 
-   * Utilise l’événement de pression de touche de l’extension Core d’Experience Platform Tags comme déclencheur.
-   * Envoie la valeur de l’élément de données **[!UICONTROL ZoomScale]** à Adobe Analytics.
+  * Utilise l’événement de pression de touche de l’extension Core d’Experience Platform Tags comme déclencheur.
+  * Envoie la valeur de l’élément de données **[!UICONTROL ZoomScale]** à Adobe Analytics.
 
-Supposons maintenant que l’utilisateur final charge la page web avec les deux visionneuses. Dans la *visionneuse1*, il effectue un zoom avant à une échelle de 50 % ; ensuite, dans la *visionneuse2*, il effectue un zoom avant à une échelle de 25 %. Dans la *visionneuse1*, il effectue un panoramique sur l’image et appuie sur une touche du clavier.
+Supposons maintenant que l’utilisateur final ou l’utilisatrice finale charge la page web avec les deux visionneuses. Dans la *visionneuse1*, il effectue un zoom avant à une échelle de 50 % ; ensuite, dans la *visionneuse2*, il effectue un zoom avant à une échelle de 25 %. Dans la *visionneuse1*, il effectue un panoramique sur l’image et appuie sur une touche du clavier.
 
 L’activité de l’utilisateur final génère les deux appels de suivi suivants vers Adobe Analytics :
 
 * Le premier appel se produit, car la règle **[!UICONTROL TrackPan]** est déclenchée lorsque l’utilisateur effectue un panoramique dans la *visionneuse1*. Cet appel envoie 50 % en tant que valeur de l’élément de données **[!UICONTROL ZoomScale]** car l’élément de données sait que la règle est déclenchée par la *visionneuse1* et récupère la valeur d’échelle correspondante.
 * Le second appel se produit, car la règle **[!UICONTROL TrackKey]** est déclenchée lorsque l’utilisateur appuie sur une touche du clavier. Cet appel envoie 25 % en tant que valeur de l’élément de données **[!UICONTROL ZoomScale]**, car la règle n’a pas été déclenchée par la visionneuse. L’élément de données renvoie donc la valeur la plus récente.
 
-L’exemple de configuration ci-dessus affecte également la durée de vie de la valeur de l’élément de données. La valeur de l’élément de données géré par la visionneuse Dynamic Media est stockée dans le code de bibliothèque Experience Platform Tags, même après la suppression de la visionneuse de la page web. Cette fonctionnalité signifie que si une règle est déclenchée par une extension de lecteur autre que Dynamic Media et qu’elle fait référence à des élément de données, l’élément de données renvoie la dernière valeur connue. Même si la visionneuse n’est plus présente sur la page web.
+L’exemple de configuration ci-dessus affecte également la durée de vie de la valeur de l’élément de données. La valeur de l’élément de données géré par la visionneuse Dynamic Media est stockée dans le code de bibliothèque Experience Platform Tags, même après la suppression de la visionneuse de la page web. Cette fonctionnalité signifie que si une règle est déclenchée par une extension de lecteur autre que Dynamic Media et qu’elle fait référence à des éléments de données, l’élément de données renvoie la dernière valeur connue. Même si la visionneuse n’est plus présente sur la page web.
 
 Dans tous les cas, les valeurs des éléments de données pilotées par les visionneuses Dynamic Media ne sont pas stockées sur le stockage local ou sur le serveur ; elles sont conservées uniquement dans la bibliothèque Experience Platform Tags côté client. Les valeurs de cet élément de données disparaissent lors du rechargement de la page web.
 
-En règle générale, l’éditeur d’éléments de données prend en charge la [sélection de la durée de stockage](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=fr#create-a-data-element). Toutefois, les éléments de données qui utilisent l’extension Visionneuses Dynamic Media ne prennent en charge que l’option de durée de stockage **[!UICONTROL Aucune]**. La définition d’une autre valeur est possible dans l’interface utilisateur, mais le comportement de l’élément de données n’est pas défini dans ce cas. L’extension gère elle-même la valeur de l’élément de données qui conserve la valeur de l’argument d’événement de visionneuse pendant tout le cycle de vie de la visionneuse.
+En règle générale, l’éditeur d’éléments de données prend en charge la [sélection de la durée de stockage](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=fr#create-a-data-element). Toutefois, les éléments de données qui utilisent l’extension Visionneuses Dynamic Media ne prennent en charge que l’option de durée de stockage **[!UICONTROL Aucune]**. La définition d’une autre valeur est possible dans l’interface d’utilisation, mais le comportement de l’élément de données n’est pas défini dans ce cas. L’extension gère elle-même la valeur de l’élément de données : l’élément de données qui conserve la valeur de l’argument d’événement de visionneuse pendant tout le cycle de vie de la visionneuse.
 
 ### À propos des règles dans l’extension Visionneuses Dynamic Media {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -264,7 +280,7 @@ La méthode la plus simple consiste à effectuer le processus en deux étapes :
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-Il est toutefois possible d’utiliser une autre approche et d’éviter la création d’un élément de données. Vous pouvez référencer directement un argument à partir d’un événement de visionneuse Dynamic Media. Entrez le nom complet de l’argument d’événement dans le champ d’entrée **[!UICONTROL valeur]** de l’affectation de variable Analytics. Veillez à entourer votre entrée par des signes de pourcentage (%). Par exemple,
+Il est toutefois possible d’utiliser une autre approche et d’éviter la création d’un élément de données. Vous pouvez référencer directement un argument à partir d’un événement de visionneuse Dynamic Media. Entrez le nom complet de l’argument d’événement dans le champ d’entrée **[!UICONTROL valeur]** de l’affectation de variable Analytics. Veillez à l’entourer de signes de pourcentage (%). Par exemple,
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -457,7 +473,7 @@ Consultez également le [Guide de mise en œuvre d’Analytics](https://experien
 
    ![2019-07-22_18-09-49](assets/2019-07-22_18-09-49.png)
 
-   Configurez maintenant les variables Adobe Analytics.
+   Définissez maintenant les variables Adobe Analytics.
 
 ### Configuration des variables Adobe Analytics {#setting-up-adobe-analytics-variables}
 
@@ -480,7 +496,7 @@ Consultez également le [Guide de mise en œuvre d’Analytics](https://experien
 
 1. Au bas de la liste des variables, sélectionnez **[!UICONTROL Enregistrer]**.
 
-### Configuration d’un rapport {#setting-up-a-report}
+### Configurer un rapport {#setting-up-a-report}
 
 1. En règle générale, la configuration d’un rapport dans Adobe Analytics dépend des besoins spécifiques au projet. La configuration détaillée des rapports dépasse donc le cadre de cette intégration.
 
@@ -594,14 +610,14 @@ Voir [Configuration de l’extension Visionneuses Dynamic Media](#configuring-t
 
 Pour apporter des modifications à la configuration d’Experience Platform Tags (y compris la configuration de la propriété, des extensions, des règles et des éléments de données), vous devez *publier* ces modifications. La publication dans Experience Platform Tags est effectuée à partir de l’onglet Publication sous la configuration des propriétés.
 
-Experience Platform Tags peut comporter plusieurs environnements de développement, un environnement d’évaluation et un environnement de production. Par défaut, la configuration cloud d’Experience Platform Tags dans Experience Manager pointe le nœud d’auteur Experience Manager vers l’environnement d’évaluation de Platform Tags. Le nœud de publication d’Experience Manager pointe vers l’environnement de production d’Experience Platform Tags. Cette disposition signifie qu’avec les paramètres par défaut d’Experience Manager, il est nécessaire de publier la bibliothèque Experience Platform Tags dans l’environnement d’évaluation. Cela vous permet de l’utiliser dans l’auteur Experience Manager. Vous pouvez ensuite la publier dans l’environnement de production afin de pouvoir l’utiliser dans l’instance de publication Experience Manager.
+Experience Platform Tags peut comporter plusieurs environnements de développement, un environnement d’évaluation et un environnement de production. Par défaut, la configuration cloud d’Experience Platform Tags dans Experience Manager pointe le nœud d’auteur Experience Manager vers l’environnement d’évaluation de Platform Tags. Le nœud de publication d’Experience Manager pointe vers l’environnement de production d’Experience Platform Tags. Cette disposition signifie qu’avec les paramètres par défaut d’Experience Manager, il est nécessaire de publier la bibliothèque Experience Platform Tags dans l’environnement d’évaluation. Cela vous permet de l’utiliser dans l’instance de création Experience Manager. Vous pouvez ensuite la publier dans l’environnement de production afin de pouvoir l’utiliser dans l’instance de publication Experience Manager.
 
 Consultez [Environnements](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=fr) pour plus d’informations sur les environnements Experience Platform Tags.
 
 La publication d’une bibliothèque implique les deux étapes suivantes :
 
 * Ajout et création d’une bibliothèque en incluant toutes les modifications nécessaires (nouvelles et mises à jour) dans la bibliothèque.
-* Déplacement de la bibliothèque vers les différents niveaux d’environnement (du développement à l’évaluation et à la production).
+* Déplacement de la bibliothèque vers les différents niveaux d’environnement (du développement à l’évaluation et à l’exploitation).
 
 #### Ajouter et créer une bibliothèque {#adding-and-building-a-new-library}
 
@@ -615,7 +631,7 @@ La publication d’une bibliothèque implique les deux étapes suivantes :
 
    *DynamicMediaViewersLib*
 
-   Dans la liste déroulante Environnement, sélectionnez le niveau Environment. Au départ, seul le niveau Développement est disponible pour la sélection. Près du coin inférieur gauche de la page, sélectionnez **[!UICONTROL Ajouter toutes les ressources modifiées]**.
+   Dans la liste déroulante Environnement, sélectionnez le niveau d’environnement. Au départ, seul le niveau Développement est disponible pour la sélection. Près du coin inférieur gauche de la page, sélectionnez **[!UICONTROL Ajouter toutes les ressources modifiées]**.
 
    ![image2019-7-15_14-49-41](assets/image2019-7-15_14-49-41.png)
 
@@ -755,12 +771,12 @@ La configuration d’Experience Manager comprend les deux importantes étapes s
    * **[!UICONTROL Serveur d’autorisation]** : revenez à la page Informations concernant l’intégration que vous avez ouverte précédemment. Sélectionnez l’onglet **[!UICONTROL JWT]**. Copiez le nom du serveur (sans le chemin d’accès), comme indiqué ci-dessous.
 
    Revenez à la page **[!UICONTROL Compte]**, puis collez le nom dans le champ correspondant.
-Par exemple, `https://ims-na1.adobelogin.com/`
-(le nom du serveur est donné à titre d’exemple uniquement)
+   Par exemple : `https://ims-na1.adobelogin.com/`
+   (le nom du serveur est donné à titre d’exemple uniquement)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
 
-   Page Informations concernant l’intégration – Onglet JWT
+   Page informations concernant l’intégration – onglet JWT
 
 1. **[!UICONTROL Clé API]** : revenez à la page Informations concernant l’intégration. Sélectionnez l’onglet **[!UICONTROL Aperçu]**, puis **[!UICONTROL Copier]** à droite du champ **[!UICONTROL Clé API (ID client)]**.
 
@@ -828,7 +844,7 @@ Par exemple, `https://ims-na1.adobelogin.com/`
 
    >[!NOTE]
    >
-   >Vérifiez que l’URI (Uniform Resource Identifier) de bibliothèque auto-renseigné n’est pas mal formé. Si nécessaire, corrigez-le de sorte qu’il soit relatif au protocole. C’est-à-dire qu’il commence par une double barre oblique.
+   >Vérifiez que l’URI (Identifiant uniforme de ressource) de bibliothèque auto-renseigné n’est pas mal formé. Si nécessaire, corrigez-le de sorte qu’il soit relatif au protocole. C’est-à-dire qu’il commence par une double barre oblique.
    >
    >
    >Par exemple : `//assets.adobetm.com/launch-xxxx`.

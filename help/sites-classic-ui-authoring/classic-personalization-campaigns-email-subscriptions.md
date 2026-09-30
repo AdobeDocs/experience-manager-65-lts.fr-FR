@@ -9,19 +9,30 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 1a11407d-7261-4f1a-bcb9-4c06b8277af4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 95%
-
+source-wordcount: '947'
+ht-degree: 96%
 ---
-
 # Gérer les abonnements{#managing-subscriptions}
 
 >[!NOTE]
 >
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (Gestion des prospects et des listes).
->&#x200B;>Nous vous recommandons d’utiliser [Adobe Campaign et son intégration AEM](/help/sites-administering/campaign.md).
+>Nous vous recommandons d’utiliser [Adobe Campaign et son intégration AEM](/help/sites-administering/campaign.md).
 
 Les utilisateurs peuvent être invités à s’abonner à des listes de publipostage de **fournisseurs de services de messagerie** à l’aide du composant **Formulaire** utilisé sur une page Web AEM. Pour préparer une page AEM avec un formulaire d’abonnement à des listes de diffusion d’un service de messagerie, appliquez la configuration de service correspondante à la page AEM que consultera l’abonné potentiel.
 
@@ -74,7 +85,7 @@ Pour que l’abonnement et le désabonnement au service de messagerie fonctionne
 1. Créez un package. Définissez le filtre en tant que `/etc/key`.
 1. Générez et téléchargez le package.
 1. Accédez au gestionnaire de modules sur l’instance de publication et chargez ce package.
-1. Accédez à la console de publication OSGi et redémarrez le lot nommé **Adobe Granite Crypto Support**.
+1. Accédez à la console de publication OSGi et redémarrez le bundle nommé **Adobe Granite Crypto Support**.
 
 ## Désabonner les utilisateurs et utilisatrices des listes {#unsubscribing-users-from-lists}
 

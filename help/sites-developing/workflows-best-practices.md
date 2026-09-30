@@ -5,13 +5,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: f7d67e71-3148-4b27-a61e-ff64d3bf9b72
-source-git-commit: 887d76effd8af7ff4d061fb15d5a3572b51af20c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1948'
 ht-degree: 84%
-
 ---
-
 # Bonnes pratiques en matière de workflow{#workflow-best-practices}
 
 Les workflows vous permettent d’automatiser les activités d’Adobe Experience Manager (AEM).
@@ -239,8 +248,8 @@ Enregistrer une session :
 * Dans un processus de workflow, si le `WorkflowSession` est utilisé pour modifier le référentiel, n’enregistrez pas explicitement la session ; le workflow s’en chargera une fois l’opération terminée.
 * `Session.Save` ne doit pas être appelé depuis l’intérieur d’une étape de workflow :
 
-   * Il est recommandé d’adapter la session JCR du workflow ; une `save` n’est donc pas nécessaire, car le moteur de workflow enregistre automatiquement la session une fois l’exécution du workflow terminée.
-   * Il n’est pas recommandé qu’une étape de processus crée sa propre session JCR.
+  * Il est recommandé d’adapter la session JCR du workflow ; une `save` n’est donc pas nécessaire, car le moteur de workflow enregistre automatiquement la session une fois l’exécution du workflow terminée.
+  * Il n’est pas recommandé qu’une étape de processus crée sa propre session JCR.
 
 * En éliminant les enregistrements inutiles, vous pouvez réduire le traitement et ainsi rendre les workflows plus efficaces.
 
@@ -303,7 +312,7 @@ Lors de la mise à niveau de votre instance :
 * assurez-vous que tous les modèles de workflow personnalisés ont été sauvegardés avant la mise à niveau d’une instance.
 * vérifiez qu’aucun de vos workflows personnalisés n’est stocké dans l’[&#x200B; emplacement](#locations) :
 
-   * `/libs/settings/workflow/models/projects`
+  * `/libs/settings/workflow/models/projects`
 
 ## Outils système {#system-tools}
 

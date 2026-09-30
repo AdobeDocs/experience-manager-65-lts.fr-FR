@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 084c59b1-1e72-475e-8ec9-2cbc6e695876
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 90%
-
+source-wordcount: '581'
+ht-degree: 89%
 ---
-
 # Gestion de l’accès aux workflows{#managing-access-to-workflows}
 
 Configurez les listes de contrôle d’accès en fonction des comptes d’utilisateurs et d’utilisatrices pour autoriser (ou désactiver) le démarrage des workflows et la participation à ceux-ci.
@@ -27,13 +36,13 @@ Des actions sur les workflows peuvent être entreprises dans les cas suivants :
 * Vous utilisez le compte `admin`.
 * Le compte a été affecté au groupe par défaut `workflow-users` :
 
-   * ce groupe contient tous les privilèges nécessaires pour que vos utilisateurs et utilisatrices puissent exécuter des actions de workflow.
-   * lorsque le compte se trouve dans ce groupe, il a uniquement accès aux workflows qu’il a initiés.
+  * ce groupe contient tous les privilèges nécessaires pour que vos utilisateurs et utilisatrices puissent exécuter des actions de workflow.
+  * lorsque le compte se trouve dans ce groupe, il a uniquement accès aux workflows qu’il a initiés.
 
 * Le compte a été affecté au groupe par défaut `workflow-administrators` :
 
-   * ce groupe contient tous les privilèges nécessaires pour que vos utilisateurs et utilisatrices privilégiés puissent surveiller et administrer les workflows.
-   * lorsque le compte se trouve dans ce groupe, il a accès à tous les workflows.
+  * ce groupe contient tous les privilèges nécessaires pour que vos utilisateurs et utilisatrices privilégiés puissent surveiller et administrer les workflows.
+  * lorsque le compte se trouve dans ce groupe, il a accès à tous les workflows.
 
 >[!NOTE]
 >

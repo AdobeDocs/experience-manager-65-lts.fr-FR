@@ -9,18 +9,33 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 48cb61d1-4f2f-43c4-bf19-0a6987916ea2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '236'
 ht-degree: 100%
-
 ---
-
 # Prise en main des formulaires HTML5 {#getting-started-with-html-forms}
 
 Les formulaires HTML5 proposent de nombreuses fonctionnalités compatibles avec les périphériques mobiles. Cela vous permet d’étendre vos solutions et workflows actuels aux tablettes ou smartphones disposant de navigateurs HTML5. Exemple de fonctionnalités disponibles :
 
-* **Rendu au format HTML5 des modèles de formulaire XFA :** outre les formulaires PDF standard, vous pouvez désormais générer vos formulaires XFA existants au format HTML5. Cette fonctionnalité vous aide à développer votre plateforme cliente sur les appareils mobiles (iPad d’Apple, tablettes Android, smartphones, etc.) qui prennent en charge le format HTML5 et ne prennent pas en charge les formulaires XFA sous Adobe Reader. Pour plus d’informations sur la fonctionnalité de rendu au format HTML5, voir [Introduction aux formulaires HTML5](/help/forms/using/introduction.md). 
+* **Rendu au format HTML5 des modèles de formulaires XFA :** outre les formulaires PDF standard, vous pouvez désormais générer vos formulaires XFA existants au format HTML5. Cette fonctionnalité vous aide à développer votre plateforme cliente sur les appareils mobiles (iPad d’Apple, tablettes Android, smartphones, etc.) qui prennent en charge le format HTML5 et ne prennent pas en charge les formulaires XFA sous Adobe Reader. Pour plus d’informations sur la fonctionnalité de rendu au format HTML5, voir [Introduction aux formulaires HTML5](/help/forms/using/introduction.md).
 
 * **Gestion des formulaires :** en outre, AEM comprend de nouvelles fonctionnalités pour simplifier le processus d’organisation et de gestion des formulaires. Vous pouvez activer, désactiver, publier, et prévisualiser des formulaires. Pour en savoir plus, reportez-vous à [Présentation de la gestion des formulaires](/help/forms/using/introduction-managing-forms.md).
 

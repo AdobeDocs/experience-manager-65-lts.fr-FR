@@ -10,13 +10,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3230'
-ht-degree: 96%
-
+source-wordcount: '3367'
+ht-degree: 97%
 ---
-
 # Réplication{#replication}
 
 Les agents de réplication sont essentiels pour Adobe Experience Manager (AEM) en tant que mécanisme pour :
@@ -70,7 +79,7 @@ Cette réplication est effectuée à partir de l’environnement de création pa
 
 * **Agent par défaut (publication)**
 Cet agent reproduit le contenu vers l’instance de publication par défaut.
-Les détails (configuration et journaux) sont accessibles à partir de la console Outils de l’environnement de création ; ou :
+Les détails (configuration et journaux) sont accessibles à partir de la console Outils de l’environnement de création ; ou :
   `http://localhost:4502/etc/replication/agents.author/publish.html`.
 
 >[!NOTE]
@@ -85,16 +94,16 @@ Les détails (configuration et journaux) sont accessibles à partir de la consol
 >* Agents sur l’instance de publication : réplication inverse (boîte d’envoi)
 >
 >Pour vérifier le statut de l’agent ou de la file d’attente, utilisez la console **Outils**.
->Voir [Surveillance de vos agents de réplication](#monitoring-your-replication-agents).
+>Consultez la section [Surveillance de vos agents de réplication](#monitoring-your-replication-agents).
 
 #### Réplication (création vers publication) {#replication-author-to-publish}
 
 1. Ouvrez la page d’assistance dans l’environnement de création.
-   **https://localhost:4502/content/site1/test.html** `<pi>`
+   **&#x200B;**&#x200B;`<pi>`
 1. Modifiez la page afin de pouvoir ajouter du nouveau texte.
 1. **Activez la page** pour pouvoir publier les modifications.
 1. Ouvrez la page d’assistance dans l’environnement de publication :
-   **https://localhost:4503/content/site1/test.html**
+   **&#x200B;**
 1. Vous pouvez désormais voir les modifications que vous avez apportées sur l’instance de création.
 
 
@@ -113,8 +122,8 @@ Utilisé pour effectuer une réplication de la publication vers l’auteur. La r
 
 * Agent Statique
 Il s’agit d’un « agent qui stocke une représentation statique d’un nœud dans le système de fichiers ».
-Par exemple, avec les paramètres par défaut, les pages de contenu et les ressources de gestion des ressources numériques sont stockées sous `/tmp`, sous HTML ou au format de ressource approprié. Voir les onglets `Settings` et `Rules` pour la configuration.
-Cette demande a été faite pour que lorsque la page est demandée directement depuis le serveur d’applications, le contenu soit visible. Il s’agit d’un agent spécialisé qui n’est (probablement) pas nécessaire pour la plupart des instances.
+Par exemple, avec les paramètres par défaut, les pages de contenu et les ressources DAM sont stockées sous `/tmp`, au format HTML ou au format de ressource approprié. Consultez les onglets `Settings` et `Rules` pour la configuration.
+Cette demande a été faite pour que lorsque la page est demandée directement depuis le serveur d’application, le contenu devienne visible. Il s’agit d’un agent spécialisé qui n’est (probablement) pas nécessaire pour la plupart des instances.
 
 ## Agents de réplication – Paramètres de configuration {#replication-agents-configuration-parameters}
 
@@ -136,16 +145,16 @@ Lors de la configuration d’un agent de réplication à partir de la console Ou
 
   Lorsque l’agent est **activé**, la file d’attente s’affiche comme suit :
 
-   * **Actif** lorsque des éléments sont en cours de traitement.
-   * **Inactif** lorsque la file d’attente est vide.
-   * **Bloqué** lorsque les éléments sont dans la file d’attente, mais ne peuvent pas être traités ; par exemple, lorsque la file d’attente de réception est désactivée.
+  * **Actif** lorsque des éléments sont en cours de traitement.
+  * **Inactif** lorsque la file d’attente est vide.
+  * **Bloqué** lorsque les éléments sont dans la file d’attente, mais ne peuvent pas être traités ; par exemple, lorsque la file d’attente de réception est désactivée.
 
 * **Type de sérialisation**
 
   Type de sérialisation
 
-   * **Par défaut** : définit si l’agent doit être automatiquement sélectionné.
-   * **Vidage du Dispatcher** : sélectionnez cette option si l’agent doit être utilisé pour vider le cache de Dispatcher.
+  * **Par défaut** : définit si l’agent doit être automatiquement sélectionné.
+  * **Vidage du Dispatcher** : sélectionnez cette option si l’agent doit être utilisé pour vider le cache de Dispatcher.
 
 * **Intervalle entre deux tentatives**
 
@@ -157,8 +166,8 @@ Lors de la configuration d’un agent de réplication à partir de la console Ou
 
   Selon l’environnement, l’agent utilise ce compte d’utilisateur pour :
 
-   * collecter et regrouper le contenu à partir de l’environnement de création ;
-   * créer et écrire le contenu dans l’environnement de publication.
+  * collecter et regrouper le contenu à partir de l’environnement de création ;
+  * créer et écrire le contenu dans l’environnement de publication.
 
   Laissez ce champ vide pour utiliser le compte d’utilisateur du système (compte défini dans le sling en tant qu’utilisateur administrateur, `admin` par défaut).
 
@@ -178,9 +187,9 @@ Lors de la configuration d’un agent de réplication à partir de la console Ou
 
   Indique le niveau de détail à utiliser pour les messages du journal.
 
-   * `Error` : seules les erreurs sont consignées.
-   * `Info` : les erreurs, les avertissements et autres messages informatifs y figureront.
-   * `Debug` : un haut niveau de détail est utilisé dans les messages, principalement à des fins de débogage.
+  * `Error` : seules les erreurs sont consignées.
+  * `Info` : les erreurs, les avertissements et autres messages informatifs y figureront.
+  * `Debug` : un haut niveau de détail est utilisé dans les messages, principalement à des fins de débogage.
 
   Valeur par défaut : `Info`
 
@@ -200,8 +209,8 @@ Lors de la configuration d’un agent de réplication à partir de la console Ou
 
   Par exemple :
 
-   * Un agent par défaut peut effectuer une réplication sur `https://localhost:4503/bin/receive`.
-   * Un agent Dispatcher Flush peut effectuer une réplication sur `https://localhost:8000/dispatcher/invalidate.cache`.
+  * Un agent par défaut peut effectuer une réplication sur `https://localhost:4503/bin/receive`.
+  * Un agent Dispatcher Flush peut effectuer une réplication sur `https://localhost:8000/dispatcher/invalidate.cache`.
 
   Le protocole spécifié ici (HTTP ou HTTPS) détermine la méthode de transfert.
 
@@ -279,21 +288,21 @@ Les paramètres suivants ne sont nécessaires que si un proxy est nécessaire :
 
   Pour un agent de vidange de Dispatcher, les trois entrées standard ne doivent pas avoir à être modifiées :
 
-   * `CQ-Action:{action}`
-   * `CQ-Handle:{path}`
-   * `CQ-Path:{path}`
+  * `CQ-Action:{action}`
+  * `CQ-Handle:{path}`
+  * `CQ-Path:{path}`
 
   Ils sont utilisés, le cas échéant, pour indiquer l’action à utiliser lors du vidage du descripteur ou du chemin. Les sous-paramètres sont dynamiques :
 
-   * `{action}` indique une action de réplication.
+  * `{action}` indique une action de réplication.
 
-   * `{path}` indique un chemin.
+  * `{path}` indique un chemin.
 
   Ils sont remplacés par le chemin/l’action correspondant à la requête et n’ont donc pas besoin d’être « codés en dur » :
 
   >[!NOTE]
   >
-  >Si vous avez installé AEM dans un contexte autre que le contexte recommandé par défaut, vous devez enregistrer le contexte dans les en-têtes HTTP. Par exemple :
+  >Si vous avez installé AEM dans un contexte autre que le contexte recommandé par défaut, vous devez enregistrer le contexte dans les en-têtes HTTP. Par exemple :
   >`CQ-Handle:/<*yourContext*>{path}`
 
 * **Fermer la connexion**
@@ -416,19 +425,19 @@ Pour configurer la réplication du contenu pour une instance de publication supp
 
    * Dans l’onglet **Paramètres** :
 
-      * Activez **Activé**.
-      * Saisissez une **Description**.
-      * Définissez l’**intervalle entre deux tentatives** sur `60000`.
+     * Activez **Activé**.
+     * Saisissez une **Description**.
+     * Définissez l’**intervalle entre deux tentatives** sur `60000`.
 
-      * Gardez le **type de sérialisation** par `Default`.
+     * Gardez le **type de sérialisation** par `Default`.
 
    * Dans l’onglet **Transfert** :
 
-      * Entrez l’URI requis pour la nouvelle instance de publication ; par exemple,
-        `https://localhost:4504/bin/receive`.
+     * Entrez l’URI requis pour la nouvelle instance de publication ; par exemple,
+       `https://localhost:4504/bin/receive`.
 
-      * Saisissez le compte d’utilisateur ou d’utilisatrice spécifique au site utilisé pour la réplication.
-      * Vous pouvez configurer d’autres paramètres selon vos besoins.
+     * Saisissez le compte d’utilisateur ou d’utilisatrice spécifique au site utilisé pour la réplication.
+     * Vous pouvez configurer d’autres paramètres selon vos besoins.
 
 1. Cliquez sur **OK**.
 
@@ -459,19 +468,19 @@ Les agents par défaut sont inclus dans l’installation. Toutefois, une configu
 
    * Dans l’onglet **Paramètres** :
 
-      * Activez **Activé**.
-      * Saisissez une **Description**.
-      * Gardez le **type de sérialisation** sur `Dispatcher Flush` ou définissez-le comme pour la création d’un agent.
+     * Activez **Activé**.
+     * Saisissez une **Description**.
+     * Gardez le **type de sérialisation** sur `Dispatcher Flush` ou définissez-le comme pour la création d’un agent.
 
-      * (Facultatif) Sélectionnez **Mise à jour des alias** pour activer les demandes d’invalidation de chemin alias ou de redirection vers le Dispatcher.
+     * (Facultatif) Sélectionnez **Mise à jour des alias** pour activer les demandes d’invalidation de chemin alias ou de redirection vers le Dispatcher.
 
    * Dans l’onglet **Transfert** :
 
-      * Entrez l’URI requis pour la nouvelle instance de publication ; par exemple,
-        `https://localhost:80/dispatcher/invalidate.cache`.
+     * Entrez l’URI requis pour la nouvelle instance de publication ; par exemple,
+       `https://localhost:80/dispatcher/invalidate.cache`.
 
-      * Saisissez le compte d’utilisateur ou d’utilisatrice spécifique au site utilisé pour la réplication.
-      * Vous pouvez configurer d’autres paramètres selon vos besoins.
+     * Saisissez le compte d’utilisateur ou d’utilisatrice spécifique au site utilisé pour la réplication.
+     * Vous pouvez configurer d’autres paramètres selon vos besoins.
 
    Pour les agents Dispatcher Flush, la propriété URI est utilisée uniquement si vous utilisez les entrées de l’hôte virtuel en fonction du chemin pour différencier les fermes. Vous utilisez ce champ pour cibler la ferme à invalider. Par exemple, la ferme de serveurs n°1 dispose d’un hôte virtuel de `www.mysite.com/path1/*` et la ferme de serveurs n°2 d’un hôte virtuel de `www.mysite.com/path2/*`. Vous pouvez utiliser l’URL `/path1/invalidate.cache` pour cibler la première ferme de serveurs et `/path2/invalidate.cache` pour cibler la seconde ferme de serveurs.
 

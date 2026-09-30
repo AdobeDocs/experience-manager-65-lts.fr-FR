@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e9b26de3-6e14-4187-8f25-6e56ee3092a7
-source-git-commit: 013c9155817811913963ca514f7a6369b338d487
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 97%
-
 ---
-
 # Migration vers l’interface utilisateur tactile{#migration-to-the-touch-ui}
 
 À compter de la version 6.0, Adobe Experience Manager (AEM) a introduit une nouvelle interface utilisateur appelée *IU optimisée pour les écrans tactiles* (également appelée simplement *IU tactile*). Elle respecte les directives concernant l’interface utilisateur d’Adobe Experience Cloud et plus généralement d’Adobe. Il s’agit dorénavant de l’interface utilisateur standard d’AEM, l’ancienne interface orientée bureau désormais appelée *IU classique*.
@@ -114,7 +123,7 @@ Les boîtes de dialogue constituent un élément majeur de la migration de vos c
 * [Migration à partir d’un composant classique](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
 * [Outils de modernisation d’AEM](/help/sites-developing/modernization-tools.md) - Pour vous aider à convertir les boîtes de dialogue de vos composants d’IU classique en IU tactile
 
-   * Il existe une couche de compatibilité dans l’IU tactile permettant d’ouvrir une boîte de dialogue d’IU classique dans un « wrapper d’IU tactile », mais cette fonctionnalité est limitée et n’est pas recommandée à long terme.
+  * Il existe une couche de compatibilité dans l’IU tactile permettant d’ouvrir une boîte de dialogue d’IU classique dans un « wrapper d’IU tactile », mais cette fonctionnalité est limitée et n’est pas recommandée à long terme.
 
 * [Personnalisation des champs de boîte de dialogue dans l’interface utilisateur tactile](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Création d’un composant de champ d’IU Granite](/help/sites-developing/granite-ui-component.md)

@@ -9,18 +9,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
-source-git-commit: 4087a6f44bd87e3f841feb09220a9ea34ec1dc1c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1800'
 ht-degree: 98%
-
 ---
-
 # Bonnes pratiques pour les tests de performance{#best-practices-for-performance-testing}
 
 ## Présentation {#introduction}
 
-Les tests de performance constituent une partie importante de tout déploiement d’AEM. Selon les besoins de la clientèle, les tests de performance peuvent être effectués sur les instances de publication, de création ou les deux.
+Les tests de performance constituent une partie importante de tout déploiement d’AEM. Selon les besoins de la clientèle, les tests de performances peuvent être effectués sur les instances de publication, de création ou les deux.
 
 Cette documentation présente les stratégies et méthodes globales d’exécution des tests de performance ainsi que certains des outils mis à disposition par Adobe pour faciliter le processus. Enfin, lisez une analyse des outils disponibles dans AEM 6 pour faciliter l’optimisation des performances, tant du point de vue de l’analyse du code que de la configuration du système.
 
@@ -63,8 +72,8 @@ De nombreux outils de test de performance sont proposés sur le marché. Lors de
 
 * Lors du test de sites web mobiles ou réactifs, un ensemble distinct d’outils doit être utilisé. Ils fonctionnent en limitant la bande passante du réseau, en simulant des connexions mobiles plus lentes comme la 3G ou EDGE. Parmi les outils les plus utilisés, on peut citer :
 
-   * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** : fournit une interface utilisateur facile à utiliser et fonctionne à un niveau relativement bas sur la pile de mise en réseau. Prend en charge OS X et iOS.
-   * [**Charles**](https://www.charlesproxy.com/) : application proxy de débogage Web qui, outre plusieurs autres utilisations, offre une fonction de limitation du réseau. Les versions fournies prennent en charge Windows, OS X et Linux®.
+  * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** : fournit une interface utilisateur facile à utiliser et fonctionne à un niveau relativement bas sur la pile de mise en réseau. Prend en charge OS X et iOS.
+  * [**Charles**](https://www.charlesproxy.com/) : application proxy de débogage Web qui, outre plusieurs autres utilisations, offre une fonction de limitation du réseau. Les versions fournies prennent en charge Windows, OS X et Linux®.
 
 #### Outils d’optimisation {#optimization-tools}
 
@@ -93,7 +102,7 @@ Reportez-vous au [site web des outils PageSpeed](https://developers.google.com/s
 
 ### Exécution de tests {#performing-tests}
 
-Pour réaliser des tests de performance dans l’environnement de création, il est nécessaire de simuler l’expérience des auteurs et autrices de production. En d’autres termes, les installations de création doivent contenir tous les composants, les lots OSGi, la personnalisation de l’interface utilisateur, les index personnalisés et tous les autres ajouts que vous avez mis en place pour les instances de création de production.
+Pour réaliser des tests de performance dans l’environnement de création, il est nécessaire de simuler l’expérience des auteurs et autrices de production. En d’autres termes, les installations de création doivent contenir tous les composants, les bundles OSGi, la personnalisation de l’interface d’utilisation, les index personnalisés et tous les autres ajouts que vous avez mis en place pour les instances de création de production.
 
 De nombreuses structures d’automatisation disponibles sont conçues pour les tests de performance et de charge. Des scripts personnalisés peuvent être enregistrés dans ces outils, puis exécutés pour simuler un nombre maximal d’auteurs effectuant simultanément des activités similaires de création et d’activation de contenu. Il est recommandé d’utiliser l’outil Tough Day pour simuler des activités telles que le chargement de milliers de ressources ou l’activation d’un grand nombre de pages.
 
@@ -107,7 +116,7 @@ Sur les systèmes disposant de serveurs principaux MongoDB, AEM fournit plusieur
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DConsolidated+Cache+statistics%2Ctype%3DConsolidatedCacheStats`
 
-Pour le cache nommé **Document-Diff**, le taux d’accès doit être supérieur à `.90`. Si le taux d’accès se retrouve en dessous de 90 %, il est probable que vous deviez modifier la configuration `DocumentNodeStoreService`. La prise en charge du produit Adobe peut recommander des paramètres optimaux pour votre environnement.
+Pour le cache nommé **Document-Diff**, le taux de hits doit être supérieur à `.90`. Si le taux de hits se retrouve en dessous de 90 %, il est probable que vous deviez modifier la configuration `DocumentNodeStoreService`. La prise en charge du produit Adobe peut recommander des paramètres optimaux pour votre environnement.
 
 * MBean **Oak Repository Statistics**. Il est accessible directement depuis :
 
@@ -145,7 +154,7 @@ Après l’exécution des tests de performance sur l’instance de création, to
 * Surveillez les ressources matérielles du système telles que l’utilisation de la mémoire et de l’UC, les E/S de disque ou les E/S réseau. Ces ressources sont souvent à l’origine de goulots d’étranglement au niveau des performances.
 * Optimisez l’architecture des pages et la manière dont elles sont traitées afin de minimiser l’utilisation des paramètres d’URL pour permettre une mise en cache aussi complète que possible.
 * Consultez la documentation [Optimisation des performances](/help/sites-deploying/configuring-performance.md).
-* Si des problèmes surviennent lors de la modification de certaines pages ou certains composants sur les instances de création, utilisez le mode Développeur de l’IU tactile pour inspecter la page en question. Vous obtenez ainsi une répartition de chaque zone de contenu de la page et leur temps de chargement.
+* Si des problèmes surviennent lors de la modification de certaines pages ou certains composants sur les instances de création, utilisez le mode Développeur de l’UI tactile pour inspecter la page en question. Vous obtenez ainsi une répartition de chaque zone de contenu de la page et leur temps de chargement.
 * Minimisez tous les JS et CSS du site.
 * Éliminez les CSS et JS intégrés des composants. Ils doivent être inclus et minimisés avec les bibliothèques côté client afin de minimiser le nombre de requêtes requises pour effectuer le rendu de la page.
 * Pour examiner les requêtes du serveur et identifier celles qui prennent le plus de temps, utilisez les outils du navigateur tels que l’onglet Réseau de Chrome.

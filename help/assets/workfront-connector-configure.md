@@ -1,18 +1,27 @@
 ---
-title: Configuration de  [!DNL Workfront for Experience Manager enhanced connector]
-description: Configuration de  [!DNL Workfront for Experience Manager enhanced connector]
+title: Configuration de [!DNL Workfront for Experience Manager enhanced connector]
+description: Configuration de [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: 810be820-b577-4035-9fda-3d919361c58c
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: a1f87682-0525-5459-aa06-3560bb4c3b2a
+    internal-label: Workfront Integrations and Apps
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1735'
 ht-degree: 89%
-
 ---
-
 # Configuration de [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 | Version | Lien de l’article |
@@ -123,23 +132,23 @@ Cette étape du workflow permet à l’utilisateur de mapper une propriété à 
 
 * Le `workfront-field` peut être
 
-   * Un champ de formulaire personnalisé identifié par le préfixe `DE:`.
-   * Un champ modifiable identifié par son nom. Les noms des champs se trouvent dans l’[[!DNL Workfront] explorateur d’API](https://experience.workfront.com/s/api-explorer).
+  * Un champ de formulaire personnalisé identifié par le préfixe `DE:`.
+  * Un champ modifiable identifié par son nom. Les noms des champs se trouvent dans l’[[!DNL Workfront] explorateur d’API](https://experience.workfront.com/s/api-explorer).
 
 * Le `aem-mapped-property` peut être :
 
-   * Une valeur littérale. Ils doivent être entourés de guillemets.
-   * Une propriété AEM. Cette référence doit être relative à la payload du workflow.
-   * Une valeur nommée. Ils doivent être entourés de crochets.
-   * Une concaténation des 3 éléments ci-dessus. Spécifiez-la à l’aide de `{+}`.
-   * Modification des 3 éléments ci-dessus en entourant la valeur avec `{replace(<value>,"old-char","new-char")}`.
+  * Une valeur littérale. Ils doivent être entourés de guillemets.
+  * Une propriété AEM. Cette référence doit être relative à la payload du workflow.
+  * Une valeur nommée. Ils doivent être entourés de crochets.
+  * Une concaténation des 3 éléments ci-dessus. Spécifiez-la à l’aide de `{+}`.
+  * Modification des 3 éléments ci-dessus en entourant la valeur avec `{replace(<value>,"old-char","new-char")}`.
 
 * Voici quelques exemples :
 
-   * `status="INP"`
-   * `DE:Asset Type=jcr:content/metadata/assetType`
-   * `DE:Path={path}`
-   * `URL="https://my-aem-author/assets.html"{+}{path}`
+  * `status="INP"`
+  * `DE:Asset Type=jcr:content/metadata/assetType`
+  * `DE:Path={path}`
+  * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![Configurer la propriété de mappage](/help/assets/assets/wf-map-property-config.png)
 

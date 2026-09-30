@@ -10,13 +10,24 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9d49d64b-fe90-4da6-a2db-19a69d1dc12c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '422'
 ht-degree: 100%
-
 ---
-
 # Installation du pack de fonctionnalités 18912 pour la migration de ressources en bloc{#installing-feature-pack-for-bulk-asset-migration}
 
 L’installation du pack de fonctionnalités 18912 est *facultative*.
@@ -39,7 +50,7 @@ Consultez également la section [Configuration de Dynamic Media en mode Scene7]
 1. Dans les champs **[!UICONTROL ID]** et **[!UICONTROL Mot de passe]** , saisissez un nom d’utilisateur ou d’utilisatrice et un mot de passe, par exemple : **Utilisateur FTP**. Ce nom apparaît dans la chronologie en tant qu’utilisateur ou utilisatrice ayant créé la ressource. Lorsqu’une ressource est chargée à partir du FTP, elle est considérée comme créée lorsqu’elle est chargée sur le serveur FTP et envoyée vers Experience Manager.
 1. Contactez l’[assistance clientèle Adobe pour Experience Manager](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support) pour demander l’accès au pack de fonctionnalités 18912 pour le téléchargement. Vous aurez peut-être besoin des informations suivantes lorsque vous contactez l’assistance :
 
-   * L’adresse IP du serveur de l’instance d’auteur, y compris le numéro de port (4502 par défaut)
+   * L’adresse IP du serveur de l’instance de création, y compris le numéro de port (4502 par défaut)
    * Le nom d’utilisateur et le mot de passe du service Experience Manager de l’étape précédente
 
 1. L’assistance clientèle d’Adobe pour Experience Manager vous fournit les informations d’identification au FTP et l’accès au pack de fonctionnalités 18912.

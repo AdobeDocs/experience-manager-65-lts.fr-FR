@@ -10,42 +10,53 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: cf510635-6cbf-4f2b-b289-7ad31978c608
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2194'
-ht-degree: 100%
-
+source-wordcount: '2219'
+ht-degree: 99%
 ---
-
 # Configurer votre campagne{#setting-up-your-campaign}
 
 La configuration d’une nouvelle campagne comprend les étapes (génériques) suivantes :
 
 1. [Créer une marque](#creating-a-new-brand) pour organiser vos campagnes.
-1. Le cas échéant, vous pouvez[ définir les propriétés de votre nouvelle marque](#defining-the-properties-for-your-new-brand).
+1. Le cas échéant, vous pouvez[&#x200B; définir les propriétés de votre nouvelle marque](#defining-the-properties-for-your-new-brand).
 1. [Créer une campagne](#creating-a-new-campaign) pour organiser des expériences, par exemple des pages teaser ou une newsletter.
-1. Le cas échéant, vous pouvez[ définir les propriétés de votre nouvelle campagne](#defining-the-properties-for-your-new-campaign).
+1. Le cas échéant, vous pouvez[&#x200B; définir les propriétés de votre nouvelle campagne](#defining-the-properties-for-your-new-campaign).
 
-Ensuite, selon le type d’expériences que vous créez, vous devez[ créer une expérience](#creating-a-new-experience). Les détails de l’expérience et les actions qui suivent sa création dépendent du type d’expérience que vous souhaitez créer :
+Ensuite, selon le type d’expériences que vous créez, vous devez[&#x200B; créer une expérience](#creating-a-new-experience). Les détails de l’expérience et les actions qui suivent sa création dépendent du type d’expérience que vous souhaitez créer :
 
 * Pour la création d’un teaser :
 
-   1. [Créez une expérience de teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
-   1. [Ajoutez du contenu à votre teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
-   1. [Créez un Touchpoint pour votre teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (ajoutez votre teaser à une page de contenu).
+  1. [Créez une expérience de teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
+  1. [Ajoutez du contenu à votre teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
+  1. [Créez un Touchpoint pour votre teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (ajoutez votre teaser à une page de contenu).
 
 * Pour la création d’une newsletter :
 
-   1. [Créez une expérience de newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
-   1. [Ajoutez du contenu aux diapositives.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
-   1. [Personnalisez la newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   1. [Créez une page de destination convaincante pour une newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
-   1. [Envoyez la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) aux personnes abonnées ou aux prospects.
+  1. [Créez une expérience de newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
+  1. [Ajoutez du contenu aux diapositives.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+  1. [Personnalisez la newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
+  1. [Créez une page de destination convaincante pour une newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+  1. [Envoyez la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) aux personnes abonnées ou aux prospects.
 
 * Pour la création d’une offre Adobe Target (anciennement Test&amp;Target) :
 
-   1. [Créez une expérience d’offre Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
-   1. [Intégrez-la à Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
+  1. [Créez une expérience d’offre Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
+  1. [Intégrez-la à Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
 >
@@ -122,19 +133,19 @@ Maintenant que vous avez configuré le schéma de base de votre expérience, vou
 
 * [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) :
 
-   * [Connectez la page de teaser aux segments de visiteurs.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
-   * [Créez un Touchpoint pour votre teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (ajoutez votre teaser à une page de contenu).
+  * [Connectez la page de teaser aux segments de visiteurs.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
+  * [Créez un Touchpoint pour votre teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (ajoutez votre teaser à une page de contenu).
 
 * [Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) :
 
-   * [Ajoutez du contenu aux diapositives.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
-   * [Personnalisez la newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   * [Envoyez la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) aux personnes abonnées ou aux prospects.
-   * [Créez une page de destination attrayante pour une newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+  * [Ajoutez du contenu aux diapositives.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+  * [Personnalisez la newsletter.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
+  * [Envoyez la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) aux personnes abonnées ou aux prospects.
+  * [Créez une page de destination attrayante pour une newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
 
 * [Offre Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers) :
 
-   * [Intégrez-la à Adobe Target](/help/sites-administering/target.md)
+  * [Intégrez-la à Adobe Target](/help/sites-administering/target.md)
 
 ### Ajout d’un nouveau point de contact {#adding-a-new-touchpoint}
 
@@ -153,7 +164,7 @@ Si vous disposez d’expériences existantes, vous pouvez ajouter un point de co
 >[!NOTE]
 >
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (gestion des prospects).
->>Il est conseillé d’utiliser [Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
+>Il est conseillé d’utiliser [Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
 
 Dans AEM MCM, vous pouvez organiser et ajouter des prospects en les saisissant manuellement ou en important une liste séparée par des virgules. par exemple, une liste de diffusion. Pour générer des prospects, il existe d’autres méthodes comme les abonnements aux newsletters ou aux communautés (s’ils sont configurés de la sorte, ils peuvent déclencher un workflow pour renseigner les prospects).
 
@@ -301,7 +312,7 @@ Pour supprimer des prospects existants dans le MCM, cochez la case en regard du
 >[!NOTE]
 >
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (gestion des listes).
->>Il est recommandé d’utiliser [Adobe Campaign et l’intégration dans AEM](/help/sites-administering/campaign.md).
+>Il est recommandé d’utiliser [Adobe Campaign et l’intégration dans AEM](/help/sites-administering/campaign.md).
 
 Les listes vous permettent d’organiser vos prospects en groupes. Avec les listes, vous pouvez cibler vos campagnes marketing sur un groupe de personnes sélectionné. Vous pouvez par exemple envoyer une newsletter ciblée à une liste. Les listes sont visibles dans le MCM, soit dans le tableau de bord, soit en cliquant sur **Listes**. Tous deux vous fournissent le nom de la liste et le nombre de membres.
 
@@ -365,7 +376,7 @@ Pour fusionner des listes existantes :
 
    ![screen_shot_2012-02-21at10259pm](assets/screen_shot_2012-02-21at10259pm.png)
 
-   La liste que vous avez fusionnée devrait augmenter d’un membre. Pour vérifier que votre liste a été fusionnée, sélectionnez la liste que vous avez fusionnée et, dans le menu **Outils**, sélectionnez **Afficher les prospects**.
+   La liste que vous avez fusionnée devrait augmenter d’un membre. Pour vérifier que votre liste a été fusionnée, sélectionnez la liste que vous avez fusionnée et, dans le menu **Outils**, sélectionnez **Afficher les leads**.
 
 1. Répétez l’étape jusqu’à fusionner toutes les listes souhaitées.
 
@@ -373,7 +384,7 @@ Pour fusionner des listes existantes :
 
 >[!NOTE]
 >
->Supprimer une liste fusionnée de son abonnement revient à supprimer un prospect d’une liste. Ouvrez l’onglet **Listes**, sélectionnez la liste qui contient la liste fusionnée et supprimez l’abonnement en cliquant sur le cercle rouge à côté de la liste.
+>Supprimer une liste fusionnée de son abonnement revient à supprimer un lead d’une liste. Ouvrez l’onglet **Listes**, sélectionnez la liste qui contient la liste fusionnée et supprimez l’abonnement en cliquant sur le cercle rouge à côté de la liste.
 
 ### Afficher des prospects dans des listes {#viewing-leads-in-lists}
 

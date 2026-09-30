@@ -5,13 +5,39 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 exl-id: f34344c3-c527-45b7-9a0c-fdfa4e8eb7e5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 99%
-
 ---
-
 # Accès à votre contenu grâce aux API de diffusion AEM {#access-your-content}
 
 Dans cette partie du [Parcours de développement découplé AEM](overview.md), vous pouvez apprendre à utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu et le transmettre à votre application (diffusion découplée).
@@ -29,9 +55,9 @@ Cet article s’appuie sur ces principes de base afin que vous compreniez commen
 
 * **Audience**: débutant
 * **Objectif** : apprendre comment accéder au contenu de vos fragments de contenu à l’aide des requêtes GraphQL d’AEM :
-   * Présentation de GraphQL et de l’API AEM GraphQL.
-   * Découvrir les détails de l’API AEM GraphQL.
-   * Regardez quelques exemples de requêtes pour voir comment les choses fonctionnent dans la pratique.
+  * Présentation de GraphQL et de l’API AEM GraphQL.
+  * Découvrir les détails de l’API AEM GraphQL.
+  * Regardez quelques exemples de requêtes pour voir comment les choses fonctionnent dans la pratique.
 
 ## Vous souhaitez accéder à votre contenu ? {#so-youd-like-to-access-your-content}
 
@@ -87,7 +113,7 @@ L’API AEM GraphQL est une version personnalisée de la spécification standard
 Les fragments de contenu sont utilisés, car le contenu est structuré selon des modèles de ce type de fragment. Elle répond ainsi à une des exigences de base de GraphQL.
 
 * Un modèle de fragment de contenu est constitué d’un ou de plusieurs champs.
-   * Chaque champ est défini sur un type de données.
+  * Chaque champ est défini sur un type de données.
 * Les modèles de fragment de contenu sont utilisés pour générer les schémas GraphQL AEM correspondants.
 
 Pour vraiment accéder à GraphQL pour AEM (et à son contenu), un point d’entrée est utilisé pour fournir le chemin d’accès.
@@ -138,7 +164,7 @@ La **référence à un fragment** :
 * fait référence à un autre fragment, en fonction d’un modèle de fragment de contenu spécifique ;
 * permet de créer, puis de récupérer, des données structurées.
 
-   * Lorsqu’elle est définie comme **référence à sources multiples**, plusieurs sous-fragments peuvent être référencés (récupérés) par le fragment principal.
+  * Lorsqu’elle est définie comme **référence à sources multiples**, plusieurs sous-fragments peuvent être référencés (récupérés) par le fragment principal.
 
 ### Prévisualisation JSON {#json-preview}
 
@@ -245,23 +271,23 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Avant de commencer à lancer des requêtes sur votre contenu, suivez les étapes suivantes :
 
 * Activez votre point d’entrée ;
-   * Utilisez Outils -> Ressources -> GraphQL.
-   * [Activation de votre point d’entrée GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
+  * Utilisez Outils -> Ressources -> GraphQL.
+  * [Activation de votre point d’entrée GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
 
 * Accédez à GraphiQL (si nécessaire).
-   * [Interface d’AEM GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)
+  * [Interface d’AEM GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)
 
 ### Exemple de structure {#sample-structure}
 
 Pour utiliser l’API AEM GraphQL dans une requête, nous pouvons utiliser les deux structures de modèle de fragment de contenu très basiques :
 
 * Société
-   * Nom – Texte
-   * PDG (Personne) – Référence du fragment
-   * Employés (personnes) – Références du fragment
+  * Nom – Texte
+  * PDG (Personne) – Référence du fragment
+  * Employés (personnes) – Références du fragment
 * Personne
-   * Nom – Texte
-   * Prénom – Texte
+  * Nom – Texte
+  * Prénom – Texte
 
 Comme vous pouvez le voir, les champs PDG et Employés font référence aux fragments de personne.
 
@@ -361,22 +387,22 @@ Maintenant que vous avez appris à accéder à votre contenu en mode découplé 
 ## Ressources supplémentaires {#additional-resources}
 
 * [GraphQL.org](https://graphql.org)
-   * [Schémas](https://graphql.org/learn/schema/)
-   * [Variables](https://graphql.org/learn/queries/#variables)
-   * [Bibliothèques Java GraphQL](https://graphql.org/code/#java)
+  * [Schémas](https://graphql.org/learn/schema/)
+  * [Variables](https://graphql.org/learn/queries/#variables)
+  * [Bibliothèques Java GraphQL](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
 * [Apprendre à utiliser GraphQL avec AEM ;](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
-   * [Activation de votre point d’entrée GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
-   * [Installation de l’interface AEM GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface)
+  * [Activation de votre point d’entrée GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
+  * [Installation de l’interface AEM GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface)
 * [L’exemple de structure de fragment de contenu ;](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
-   * [Exemple de requête – Un fragment de ville unique et spécifique](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
-   * [Exemple de requête pour des métadonnées – Liste des métadonnées pour les distinctions intitulées GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
-   * [Exemple de requête – Toutes les villes avec une variante nommée](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation)
+  * [Exemple de requête – Un fragment de ville unique et spécifique](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
+  * [Exemple de requête pour des métadonnées – Liste des métadonnées pour les distinctions intitulées GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
+  * [Exemple de requête – Toutes les villes avec une variante nommée](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation)
 * [Activation de la fonctionnalité de fragments de contenu dans l’explorateur de configurations](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
 * [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
-   * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
-   * [Sortie JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
+  * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
+  * [Sortie JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [Comprendre le partage des ressources cross-origin (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=fr#understand-cross-origin-resource-sharing-(cors))
 * [Prise en main d’AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) – Une courte série de tutoriels vidéo qui donne un aperçu de l’utilisation des fonctionnalités d’AEM découplé, notamment la modélisation de contenu et GraphQL.
 

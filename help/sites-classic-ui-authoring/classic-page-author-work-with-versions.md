@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 7ea1b7d4-6e07-4ad4-9bac-ff2214b8f47e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 96%
-
 ---
-
 # Utilisation des versions de page{#working-with-page-versions}
 
 Le contrôle de version permet de créer un « instantané » d’une page à un moment donné. Avec le contrôle de version, vous pouvez effectuer les opérations suivantes :
@@ -169,7 +178,9 @@ Si vous souhaitez afficher la frise chronologique du document :
 
 1. Pour naviguer dans la frise chronologique du document, procédez par glisser-déplacer.
 
-   * Toutes les lignes indiquent les versions publiées.Une nouvelle ligne commence lorsqu’une page est activée. Une nouvelle couleur apparaît chaque fois que le document est modifié.Dans l’exemple ci-dessous, la ligne rouge indique que la page a été modifiée au cours de la période correspondant à la version verte initiale. La ligne jaune indique que la page a été modifiée pendant la version rouge, etc.
+   * Toutes les lignes indiquent les versions publiées.
+     Une nouvelle ligne commence lorsqu’une page est activée. Une nouvelle couleur apparaît chaque fois que le document est modifié.
+     Dans l’exemple ci-dessous, la ligne rouge indique que la page a été modifiée au cours de la période correspondant à la version verte initiale. La ligne jaune indique que la page a été modifiée pendant la version rouge, etc.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
