@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '4952'
+source-wordcount: '4955'
 ht-degree: 94%
 ---
 # Composants Adobe Experience Manager (AEM) - Principes de base{#aem-components-the-basics}
@@ -210,7 +210,7 @@ La définition d’un composant peut être décomposée comme suit :
 
 L’icône ou l’abréviation du composant est définie via les propriétés JCR du composant lorsque le composant est créé par le développeur. Ces propriétés sont évaluées dans l’ordre suivant, la première propriété valide trouvée étant utilisée.
 
-1. `cq:icon` – Propriété de chaîne pointant vers une icône standard dans la [bibliothèque de l’IU Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html) à afficher dans le navigateur de composants
+1. `cq:icon` – Propriété de chaîne pointant vers une icône standard dans la [bibliothèque de l’IU Coral](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/Coral.Icon.html) à afficher dans le navigateur de composants
    * Utilisez la valeur de l’attribut HTML de l’icône Coral.
 1. `abbreviation` – Propriété de chaîne servant à personnaliser l’abréviation du nom du composant dans le navigateur de composants
    * L’abréviation devrait être limitée à deux caractères.
@@ -1042,7 +1042,7 @@ L’exemple suivant est équivalent à la configuration `REFRESH_INSERTED` :
 
 >[!NOTE]
 >
->En ce qui concerne l’IU classique, pour voir quels paramètres peuvent être utilisés dans les gestionnaires, reportez-vous aux sections des événements `before<action>` et `after<action>` de la documentation sur les widgets [`CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) et [`CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover).
+>En ce qui concerne l’IU classique, pour voir quels paramètres peuvent être utilisés dans les gestionnaires, reportez-vous aux sections des événements `before<action>` et `after<action>` de la documentation sur les widgets [`CQ.wcm.EditBar`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) et [`CQ.wcm.EditRollover`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover).
 
 Avec la configuration suivante, la page est actualisée après la suppression, la modification, l’insertion ou le déplacement du composant :
 

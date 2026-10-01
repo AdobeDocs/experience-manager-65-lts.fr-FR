@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3611'
+source-wordcount: '3619'
 ht-degree: 94%
 ---
 # Extension des fonctionnalités de workflows{#extending-workflow-functionality}
@@ -85,9 +85,9 @@ Le composant `/libs/cq/workflow/components/model/step` est l’ancêtre commun l
 
 Les objets suivants sont disponibles (en fonction du type d’étape) dans les scripts ECMA :
 
-* [WorkItem](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkItem.html) workItem
-* [WorkflowSession](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/WorkflowSession.html) workflowSession
-* [WorkflowData](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowData.html) workflowData
+* [WorkItem](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkItem.html) workItem
+* [WorkflowSession](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/workflow/WorkflowSession.html) workflowSession
+* [WorkflowData](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowData.html) workflowData
 * `args` : tableau contenant les arguments du processus.
 
 * `sling` : pour accéder à d’autres services osgi.
@@ -266,7 +266,7 @@ Sous le nœud `cq:Component`, ajoutez un nœud `cq:EditConfig`. En dessous, ajou
 
 Vous pouvez utiliser les métadonnées de processus pour conserver les informations requises pendant la durée de vie du processus et entre les étapes. Les étapes d’un workflow sont généralement nécessaires pour conserver les données en vue d’une utilisation ultérieure ou pour récupérer les données persistantes des étapes précédentes.
 
-Les métadonnées de processus sont stockées dans un objet [`MetaDataMap`](#metadatamaps). L’API Java fournit la méthode [`Workflow.getWorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html) pour renvoyer un objet [`WorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) qui fournit l’objet `MetaDataMap` approprié. Cet objet `WorkflowData` `MetaDataMap` est disponible pour le service OSGi ou le script ECMA d’un composant d’étape.
+Les métadonnées de processus sont stockées dans un objet [`MetaDataMap`](#metadatamaps). L’API Java fournit la méthode [`Workflow.getWorkflowData`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html) pour renvoyer un objet [`WorkflowData`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) qui fournit l’objet `MetaDataMap` approprié. Cet objet `WorkflowData` `MetaDataMap` est disponible pour le service OSGi ou le script ECMA d’un composant d’étape.
 
 #### Java {#java}
 
@@ -671,8 +671,8 @@ function getParticipant() {
 >
 >Les étapes de processus de workflow suivantes acceptent les packages de workflow pour l’activation de pages en bloc :
 >
->* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
->* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
+>* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
+>* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
 >
 
 Vous pouvez développer des étapes de workflow qui obtiennent et traitent les ressources de package. Les membres suivants du package `com.day.cq.workflow.collection` donnent accès aux packages de workflow :
@@ -841,7 +841,7 @@ Pour commencer facilement à créer votre propre étape personnalisée, copiez u
 
    * `cq:icon`
 
-     Permet de spécifier une [icône Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html) pour l’étape.
+     Permet de spécifier une [icône Coral](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/Coral.Icon.html) pour l’étape.
 
    * `componentGroup`
 

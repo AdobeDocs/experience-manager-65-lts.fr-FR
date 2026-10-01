@@ -25,9 +25,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '820'
 ht-degree: 94%
 ---
 # Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
@@ -68,7 +68,7 @@ Il mappe une contrainte de recherche de plus haut niveau (par exemple « largeu
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’`PredicateEvaluator` et le package `com.day.cq.search`, voir la [documentation Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/search/package-summary.html).
+>Pour plus d’informations sur l’`PredicateEvaluator` et le package `com.day.cq.search`, voir la [documentation Java™](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ### Mise en œuvre d’un évaluateur de prédicat personnalisé pour les métadonnées de réplication {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -153,7 +153,7 @@ Le projet `cq-search` contient la classe abstraite `AbstractPredicateEvaluator`.
 
 >[!NOTE]
 >
->La procédure suivante explique comment créer une expression `Xpath` afin de filtrer des données. Une autre option consisterait à mettre en œuvre la méthode `includes` qui sélectionne les données sur la base de la ligne. Pour plus d’informations, voir la [documentation Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29).
+>La procédure suivante explique comment créer une expression `Xpath` afin de filtrer des données. Une autre option consisterait à mettre en œuvre la méthode `includes` qui sélectionne les données sur la base de la ligne. Pour plus d’informations, voir la [documentation Java™](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29).
 
 1. Créez une classe Java™ qui étend `com.day.cq.search.eval.AbstractPredicateEvaluator`.
 1. Annotez votre classe avec un `@Component` tel que suit :

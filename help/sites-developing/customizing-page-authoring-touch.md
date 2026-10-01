@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 94%
+source-wordcount: '1472'
+ht-degree: 90%
 ---
 # Personnaliser la création de pages{#customizing-page-authoring}
 
@@ -46,7 +46,7 @@ Adobe Experience Manager (AEM) fournit divers mécanismes pour vous permettre
 
 >[!NOTE]
 >
->Pour plus d’informations, voir [Jeu de documentation JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html?lang=fr).
+>Pour plus d’informations, voir [Jeu de documentation JS](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html).
 
 Il est possible de les utiliser de différentes manières pour étendre la fonctionnalité de création de pages dans votre instance AEM. Une sélection est abordée ci-dessous (à un niveau élevé).
 
@@ -56,7 +56,7 @@ Il est possible de les utiliser de différentes manières pour étendre la fonct
 >
 >* Utiliser et créer des [clientlibs](/help/sites-developing/clientlibs.md).
 >* Utiliser et créer des [recouvrements](/help/sites-developing/overlays.md).
->* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Structure de l’interface utilisateur tactile d’AEM](/help/sites-developing/touch-ui-structure.md) pour plus d’informations sur les zones structurelles utilisées pour la création de pages.
 >
 
@@ -116,9 +116,9 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 Lors de la création de pages, l’utilisateur ou l’utilisatrice doit souvent effectuer une sélection parmi des ressources (par exemple, des pages, des composants et des ressources). Cela peut prendre la forme d’une liste, par exemple, à partir de laquelle l’auteur ou l’autrice doit choisir un élément.
 
-Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en œuvre sous la forme d’un prédicat personnalisé. Par exemple, si le composant [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) est utilisé pour permettre à l’utilisateur de sélectionner le chemin d’accès à une ressource spécifique, les chemins d’accès présentés peuvent être filtrés comme suit :
+Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en œuvre sous la forme d’un prédicat personnalisé. Par exemple, si le composant [`pathbrowser`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) est utilisé pour permettre à l’utilisateur de sélectionner le chemin d’accès à une ressource spécifique, les chemins d’accès présentés peuvent être filtrés comme suit :
 
-* Mettez en œuvre le prédicat personnalisé en implémentant l’interface [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/predicate/package-summary.html).
+* Mettez en œuvre le prédicat personnalisé en implémentant l’interface [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/predicate/package-summary.html).
 * Spécifiez un nom pour le prédicat et faites-y référence lors de l’utilisation de `pathbrowser`.
 
 Pour plus d’informations sur la création d’un prédicat personnalisé, voir [Mettre en œuvre un évaluateur de prédicat personnalisé pour Query Builder.](/help/sites-developing/implementing-custom-predicate-evaluator.md).

@@ -1,5 +1,5 @@
 ---
-title: API Query Builder
+title: API Query Builder
 description: La fonctionnalité du Query Builder de partage de ressources est exposée via une API Java&trade; et une API REST.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,22 +11,20 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: a87c571e-7afb-42e7-836c-170dcfb0d03b
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2350'
+source-wordcount: '2365'
 ht-degree: 88%
-
 ---
-
 # API Query Builder{#query-builder-api}
 
 La fonctionnalité du [générateur de requêtes de partage de ressources](/help/assets/assets-finder-editor.md) est exposée via une API Java™ et une API REST. Cette section décrit ces API.
 
-Le générateur de requêtes côté serveur ([`QueryBuilder`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html)) accepte une description de requête, crée et exécute une requête XPath, peut filtrer le jeu de résultats et, si vous le souhaitez, extrait également des facettes.
+Le générateur de requêtes côté serveur ([`QueryBuilder`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html)) accepte une description de requête, crée et exécute une requête XPath, peut filtrer le jeu de résultats et, si vous le souhaitez, extrait également des facettes.
 
-La description de requête correspond simplement à un ensemble de prédicats ([`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/Predicate.html)). Par exemple, un prédicat de texte intégral correspond à la fonction `jcr:contains()` dans XPath.
+La description de requête correspond simplement à un ensemble de prédicats ([`Predicate`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/Predicate.html)). Par exemple, un prédicat de texte intégral correspond à la fonction `jcr:contains()` dans XPath.
 
-Pour chaque type de prédicat, il existe un composant Évaluateur ([`PredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) qui sait comment en effectuer la gestion pour XPath, pour le filtrage et pour l’extraction de facettes. Il est facile de créer des évaluateurs personnalisés, qui sont connectés via l’exécution du composant OSGi.
+Pour chaque type de prédicat, il existe un composant Évaluateur ([`PredicateEvaluator`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) qui sait comment en effectuer la gestion pour XPath, pour le filtrage et pour l’extraction de facettes. Il est facile de créer des évaluateurs personnalisés, qui sont connectés via l’exécution du composant OSGi.
 
 L’API REST permet d’accéder aux mêmes fonctionnalités via HTTP avec les réponses envoyées dans JSON.
 
@@ -50,7 +48,7 @@ Pour le servlet JSON `QueryBuilder`, chaque exemple comprend un lien vers votre 
 
 >[!CAUTION]
 >
->Par défaut, le servlet JSON du générateur de requêtes affiche un maximum de dix accès.
+>Par défaut, le servlet JSON du générateur de requêtes affiche un maximum de dix hits.
 >
 >L’ajout du paramètre suivant permet au servlet d’afficher tous les résultats de la requête :
 >
@@ -62,7 +60,7 @@ Pour le servlet JSON `QueryBuilder`, chaque exemple comprend un lien vers votre 
 
 ### Renvoi de tous les résultats {#returning-all-results}
 
-La requête suivante **renvoie dix résultats** (plus précisément, un maximum de dix résultats), mais vous informe du **Nombre d’accès** disponibles :
+La requête suivante **renvoie dix résultats** (plus précisément, un maximum de dix résultats), mais vous informe du **Nombre de hits** disponibles :
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&orderby=path`
 
@@ -132,19 +130,19 @@ Elle renvoie un nombre correspondant à la limite par défaut de 10 résultats 
 
 ### Mise en œuvre de la pagination {#implementing-pagination}
 
-Par défaut, Query Builder fournit également le nombre d’accès. En fonction de la taille du résultat, cela peut prendre un certain temps, car déterminer le nombre exact implique de vérifier le contrôle d’accès de chaque résultat. Le total est principalement utilisé pour implémenter la pagination pour l’interface utilisateur de la personne utilisatrice finale. Comme la détermination du nombre exact peut être lente, nous recommandons d’utiliser la fonction guessTotal pour mettre en œuvre la pagination.
+Par défaut, Query Builder fournit également le nombre de hits. En fonction de la taille du résultat, cela peut prendre un certain temps, car déterminer le nombre exact implique de vérifier le contrôle d’accès de chaque résultat. Le total est principalement utilisé pour implémenter la pagination pour l’interface utilisateur de la personne utilisatrice finale. Comme la détermination du nombre exact peut être lente, nous recommandons d’utiliser la fonction guessTotal pour mettre en œuvre la pagination.
 
 Par exemple, l’interface utilisateur peut adapter l’approche suivante :
 
-* Obtenez et affichez le nombre exact d’accès totaux ([SearchResult.getTotalMatches()](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) ou le total dans la réponse querybuilder.json) qui est inférieur ou égal à 100 ;
+* Obtenez et affichez le nombre exact de hits totaux ([SearchResult.getTotalMatches()](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) ou le total dans la réponse querybuilder.json) qui est inférieur ou égal à 100 ;
 * Définissez `guessTotal` sur 100 tout en effectuant l’appel vers Query Builder.
 
 * La réponse peut générer le résultat suivant :
 
-  * `total=43`, `more=false` – Indique que le nombre total d’accès est de 43. L’interface utilisateur peut afficher jusqu’à dix résultats dans le cadre de la première page et fournir la pagination pour les trois pages suivantes. Vous pouvez également utiliser cette implémentation pour afficher un texte descriptif tel que **« 43 résultats trouvés »**.
-  * `total=100`, `more=true` – Indique que le nombre total d’accès est supérieur à 100 et que le nombre exact est inconnu. L’interface utilisateur peut afficher jusqu’à dix résultats dans le cadre de la première page et fournir la pagination pour les dix pages suivantes. Vous pouvez également utiliser cette fonctionnalité pour afficher un texte tel que **« Plus de 100 résultats trouvés »**. Lorsque l’utilisateur accède aux pages suivantes, les appels effectués vers Query Builder augmentent la limite de `guessTotal`, ainsi que celle des paramètres `offset` et `limit`.
+  * `total=43`, `more=false` – Indique que le nombre total de hits est de 43. L’interface utilisateur peut afficher jusqu’à dix résultats dans le cadre de la première page et fournir la pagination pour les trois pages suivantes. Vous pouvez également utiliser cette implémentation pour afficher un texte descriptif tel que **« 43 résultats trouvés »**.
+  * `total=100`, `more=true` – Indique que le nombre total de hits est supérieur à 100 et que le nombre exact est inconnu. L’interface utilisateur peut afficher jusqu’à dix résultats dans le cadre de la première page et fournir la pagination pour les dix pages suivantes. Vous pouvez également utiliser cette fonctionnalité pour afficher un texte tel que **« Plus de 100 résultats trouvés »**. Lorsque l’utilisateur accède aux pages suivantes, les appels effectués vers Query Builder augmentent la limite de `guessTotal`, ainsi que celle des paramètres `offset` et `limit`.
 
-Il est conseillé d’utiliser `guessTotal` lorsque l’interface utilisateur doit appliquer un défilement infini, afin d’empêcher le Query Builder de déterminer le nombre exact d’accès.
+Il est conseillé d’utiliser `guessTotal` lorsque l’interface utilisateur doit appliquer un défilement infini, afin d’empêcher le Query Builder de déterminer le nombre exact de hits.
 
 ### Recherche et classement des fichiers JAR, en commençant par le plus récent {#find-jar-files-and-order-them-newest-first}
 
@@ -360,9 +358,9 @@ p.nodedepth=5
 
 Pour plus de prédicats, consultez la [page de référence des prédicats de Query Builder](/help/sites-developing/querybuilder-predicate-reference.md).
 
-Vous pouvez également consulter le [JavaDoc relatif aux `PredicateEvaluator`classes](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). La Javadoc de ces classes contient la liste des propriétés que vous pouvez utiliser.
+Vous pouvez également consulter le [JavaDoc relatif aux `PredicateEvaluator`classes](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). La Javadoc de ces classes contient la liste des propriétés que vous pouvez utiliser.
 
-Le préfixe du nom de classe (par exemple, « `similar` » dans [`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)), est la *propriété principale* de la classe. Cette propriété est également le nom du prédicat à utiliser dans la requête (en minuscules).
+Le préfixe du nom de classe (par exemple, « `similar` » dans [`SimilarityPredicateEvaluator`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)), est la *propriété principale* de la classe. Cette propriété est également le nom du prédicat à utiliser dans la requête (en minuscules).
 
 Pour ces propriétés principales, vous pouvez raccourcir la requête et utiliser `similar=/content/en` au lieu de la variante complète « `similar.similar=/content/en` ». La forme complète doit être utilisée pour toutes les propriétés non principales d’une classe.
 
@@ -438,13 +436,13 @@ Les requêtes peuvent être stockées dans le référentiel de manière à pouvo
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-Si vous utilisez la méthode [`QueryBuilder#storeQuery`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html#storequerycomdaycqsearchqueryjavalangstringbooleanjavaxjcrsession), la `Query` donnée est stockée dans le référentiel sous la forme d’un fichier ou d’une propriété suivant la valeur de l’argument `createFile`. L’exemple suivant illustre l’enregistrement d’une `Query` sous `/mypath/getfiles` en tant que fichier :
+Si vous utilisez la méthode [`QueryBuilder#storeQuery`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html#storequerycomdaycqsearchqueryjavalangstringbooleanjavaxjcrsession), la `Query` donnée est stockée dans le référentiel sous la forme d’un fichier ou d’une propriété suivant la valeur de l’argument `createFile`. L’exemple suivant illustre l’enregistrement d’une `Query` sous `/mypath/getfiles` en tant que fichier :
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
-Toutes les requêtes stockées précédemment peuvent être chargées à partir du référentiel en utilisant la méthode [`QueryBuilder#loadQuery`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html#loadqueryjavalangstringjavaxjcrsession) :
+Toutes les requêtes stockées précédemment peuvent être chargées à partir du référentiel en utilisant la méthode [`QueryBuilder#loadQuery`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html#loadqueryjavalangstringjavaxjcrsession) :
 
 ```java
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
@@ -567,10 +565,10 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **Description** |
 |---|---|
-| [com.day.cq.search](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/package-summary.html) | QueryBuilder de base et l’API Query |
-| [com.day.cq.search.result](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/result/package-summary.html) | API Result |
-| [com.day.cq.search.facets](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/facets/package-summary.html) | Facettes |
-| [com.day.cq.search.facets.buckets](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Intervalles (contenus dans les facettes) |
-| [com.day.cq.search.eval](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/package-summary.html) | Évaluateurs de prédicats |
-| [com.day.cq.search.facets.extractors](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Extracteurs de facettes (pour les évaluateurs) |
-| [com.day.cq.search.writer](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/writer/package-summary.html) | Auteur d’accès JSON Result pour le servlet Query Builder (/bin/querybuilder.json) |
+| [com.day.cq.search](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/package-summary.html) | QueryBuilder de base et l’API Query |
+| [com.day.cq.search.result](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/result/package-summary.html) | API Result |
+| [com.day.cq.search.facets](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/facets/package-summary.html) | Facettes |
+| [com.day.cq.search.facets.buckets](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Intervalles (contenus dans les facettes) |
+| [com.day.cq.search.eval](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/eval/package-summary.html) | Évaluateurs de prédicats |
+| [com.day.cq.search.facets.extractors](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Extracteurs de facettes (pour les évaluateurs) |
+| [com.day.cq.search.writer](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/writer/package-summary.html) | Générateur de hits de résultats JSON pour le servlet QueryBuilder (/bin/querybuilder.json) |

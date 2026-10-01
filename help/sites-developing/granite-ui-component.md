@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 100%
+source-wordcount: '550'
+ht-degree: 93%
 ---
 # Créer un composant de champ d’IU Granite{#creating-a-new-granite-ui-field-component}
 
@@ -37,7 +37,7 @@ L’IU Granite fournit toute une gamme de composants conçus pour être utilisé
 
 >[!NOTE]
 >
->Pour plus d’informations sur les champs, reportez-vous à la [documentation sur l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Pour plus d’informations sur les champs, reportez-vous à la [documentation sur l’interface utilisateur Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Utilisez le framework de base de l’interface utilisateur de Granite pour développer et/ou étendre les composants Granite. Il comporte deux éléments :
 
@@ -59,7 +59,7 @@ Le composant d’IU Granite générique `field` se compose de deux fichiers d�
 * `init.jsp` : gère le traitement générique ; le balisage et la description, et fournit la valeur de formulaire dont vous avez besoin lors du rendu du champ.
 * `render.jsp` : il s’agit de l’emplacement où le rendu du champ est effectué, il doit être remplacé pour votre champ personnalisé ; il est inclus par `init.jsp`.
 
-Voir [Documentation de l’interface utilisateur Granite - Champ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) pour plus d’informations.
+Voir [Documentation de l’interface utilisateur Granite - Champ](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) pour plus d’informations.
 
 Pour consulter des exemples, voir :
 

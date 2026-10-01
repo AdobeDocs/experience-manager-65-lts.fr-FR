@@ -24,10 +24,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '6780'
-ht-degree: 97%
+source-wordcount: '6781'
+ht-degree: 96%
 ---
 # Groupes d’utilisateurs fermés dans AEM{#closed-user-groups-in-aem}
 
@@ -217,7 +217,7 @@ La page associée au chemin de connexion peut être placée à l’intérieur ou
 
 ### Gérer les politiques CUG {#managing-cug-policies}
 
-Le nouveau type de politiques de contrôle d’accès destiné à limiter l’accès en lecture pour un CUG est géré à l’aide de l’API de gestion du contrôle d’accès JCR et suit les mécanismes décrits par la [Spécification JCR 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+Le nouveau type de politiques de contrôle d’accès destiné à limiter l’accès en lecture pour un CUG est géré à l’aide de l’API de gestion du contrôle d’accès JCR et suit les mécanismes décrits par la [Spécification JCR 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html).
 
 #### Définir une nouvelle politique CUG {#set-a-new-cug-policy}
 

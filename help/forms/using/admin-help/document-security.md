@@ -20,10 +20,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3286'
-ht-degree: 100%
+source-wordcount: '3287'
+ht-degree: 99%
 ---
 # À propos de Document Security {#about-document-security}
 
@@ -73,7 +73,7 @@ Divers types d’utilisateurs et utilisatrices recourent à Document Security p
 
 * L’administrateur ou administratrice système ou un informaticien ou une informaticienne installe et configure Document Security. Cette personne peut également être chargée de la configuration des paramètres généraux du serveur, des pages Web, des politiques et des documents.
 
-  Ces options peuvent notamment inclure l’URL de base de Document Security, les notifications pour réaliser un audit et de confidentialité, les notifications d’enregistrement des personnes invitées et les périodes de bail hors ligne par défaut.
+  Ces options peuvent notamment inclure l’URL de base de Document Security, les notifications de contrôle et de confidentialité, les notifications d’enregistrement des personnes invitées et les périodes de bail hors ligne par défaut.
 
 * Les administrateurs et administratrices de Document Security créent des politiques et des ensembles de politiques, et gèrent les documents protégés par une politique pour les utilisateurs et utilisatrices, selon les besoins. Ils et elles créent également des comptes d’utilisateur ou utilisatrice invité et surveillent les événements concernant le système, les documents, les utilisateurs et utilisatrices, les politiques, les ensembles de politiques, ainsi que les événements personnalisés. Ils et elles peuvent également être responsables de la configuration des paramètres généraux du serveur, des pages Web et des politiques, avec un administrateur ou une administratrice système.
 
@@ -217,7 +217,7 @@ Si vous enregistrez une copie d’un document protégé par une politique à l�
 
 Les *ensembles de politiques* regroupent plusieurs politiques ayant une finalité commune. Ces ensembles de politiques sont ensuite rendus accessibles à un sous-ensemble d’utilisateurs et utilisatrices du système.
 
-Chaque ensemble de politiques peut être associé à un ou plusieurs coordinateurs et coordinatrices d’ensembles de politiques. Le coordinateur ou la coordinatrice d’ensembles de politiques est un administrateur ou une administratrice, ou un utilisateur ou une utilisatrice possédant des autorisations supplémentaires. Au sein de l’organisation, *le coordinateur ou la coordinatrice d’ensembles de politiques* est généralement la personne la plus à même de créer des politiques dans un ensemble donné.
+Chaque ensemble de politiques peut être associé à un ou plusieurs coordinateurs et coordinatrices d’ensembles de politiques. Le coordinateur ou la coordinatrice d’ensembles de politiques est un administrateur ou une administratrice, ou une personne possédant des autorisations supplémentaires. Au sein de l’organisation, *le coordinateur ou la coordinatrice d’ensembles de politiques* est généralement la personne la plus à même de créer des politiques dans un ensemble donné.
 
 Les coordinateurs et coordinatrices d’ensembles de politiques peuvent effectuer les tâches suivantes :
 
@@ -283,4 +283,4 @@ Ajoutez des groupes dʼutilisateurs aux politiques au lieu dʼutilisateurs indiv
 
   >[!NOTE]
   >
-  >Vous pouvez utiliser lʼAPI [getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) pour récupérer, au maximum, 1 000 noms d’ensembles de politiques. En interne, l’API récupère un maximum de 1 000 politiques pour lesquelles l’entité qui appelle l’API dispose de l’autorisation d’éditeur de document, puis crée et renvoie une liste de noms d’ensembles de politiques uniques associés aux politiques récupérées. Par exemple, lorsque l’API récupère 1 000 politiques et que les politiques récupérées sont associées à 200 ensembles de politiques au total, l’API renvoie uniquement 200 noms d’ensembles de politiques.
+  >Vous pouvez utiliser lʼAPI [getAllPolicysetnames()](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) pour récupérer, au maximum, 1 000 noms d’ensembles de politiques. En interne, l’API récupère un maximum de 1 000 politiques pour lesquelles l’entité qui appelle l’API dispose de l’autorisation d’éditeur de document, puis crée et renvoie une liste de noms d’ensembles de politiques uniques associés aux politiques récupérées. Par exemple, lorsque l’API récupère 1 000 politiques et que les politiques récupérées sont associées à 200 ensembles de politiques au total, l’API renvoie uniquement 200 noms d’ensembles de politiques.

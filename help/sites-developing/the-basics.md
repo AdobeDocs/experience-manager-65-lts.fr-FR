@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3373'
-ht-degree: 94%
+source-wordcount: '3379'
+ht-degree: 93%
 ---
 # Concepts de base d’AEM {#aem-core-concepts}
 
@@ -49,11 +49,11 @@ Il est également recommandé de lire et de suivre les [Recommandations et bonne
 
 ## Java™ Content Repository {#java-content-repository}
 
-La norme Java™ Content Repository (JCR), [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), spécifie un moyen, indépendant du fournisseur et de l’implémentation, d’accéder au contenu d’un référentiel de contenu à un niveau granulaire et de manière bidirectionnelle.
+La norme Java™ Content Repository (JCR), [JSR 283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html), spécifie un moyen, indépendant du fournisseur et de l’implémentation, d’accéder au contenu d’un référentiel de contenu à un niveau granulaire et de manière bidirectionnelle.
 
 La spécification est gérée par Adobe Research (Suisse) AG.
 
-Le package [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&ast; est utilisé pour l’accès direct et la manipulation du contenu du référentiel.
+Le package [JCR API 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&ast; est utilisé pour l’accès direct et la manipulation du contenu du référentiel.
 
 ## Experience Server (CRX) et Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -345,7 +345,7 @@ Les éléments suivants présentent un intérêt pour le développement :
 
 **Élément** Un élément est un nœud ou une propriété.
 
-Pour plus d’informations sur la manipulation des objets Élément, reportez-vous aux [documents Java™](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) de l’interface javax.jcr.Item.
+Pour plus d’informations sur la manipulation des objets Élément, reportez-vous aux [documents Java™](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) de l’interface javax.jcr.Item.
 
 **Nœud (et leurs propriétés)** Les nœuds et leurs propriétés sont définis dans la spécification JCR API 2.0 (JSR 283). Ils stockent le contenu, les définitions d’objets, les scripts de rendu ainsi que d’autres données.
 
@@ -361,7 +361,7 @@ Par exemple, pour obtenir les propriétés du nœud actif, vous pouvez utiliser 
 
 currentNode étant l’objet du nœud actif.
 
-Pour plus d’informations sur la manipulation d’objets de nœud, voir [documents Java™](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
+Pour plus d’informations sur la manipulation d’objets de nœud, voir [documents Java™](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 **Widget** Dans AEM, toutes les entrées utilisateur sont gérées par des widgets. Ils sont souvent utilisés pour contrôler la modification d’un élément de contenu.
 
@@ -400,7 +400,7 @@ Par exemple, pour obtenir le nom de la page active, vous pouvez utiliser le code
 
 S`tring pageName = currentPage.getName();`
 
-currentPage étant l’objet de la page active. Pour plus d’informations sur la manipulation des objets Page, voir les [documents Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html).
+currentPage étant l’objet de la page active. Pour plus d’informations sur la manipulation des objets Page, voir les [documents Java™](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Gestionnaire de pages** Le gestionnaire de pages est une interface qui fournit des méthodes pour les opérations au niveau de la page.
 
@@ -408,7 +408,7 @@ Par exemple, pour obtenir la page contenant une ressource, vous pouvez utiliser 
 
 Page myPage = pageManager.getContainerPage(myResource);
 
-pageManager étant l’objet de gestionnaire de pages et myResource un objet de ressource. Pour plus d’informations sur les méthodes fournies par le gestionnaire de pages, reportez-vous aux [documents Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html).
+pageManager étant l’objet de gestionnaire de pages et myResource un objet de ressource. Pour plus d’informations sur les méthodes fournies par le gestionnaire de pages, reportez-vous aux [documents Java™](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Structure dans le référentiel {#structure-within-the-repository}
 

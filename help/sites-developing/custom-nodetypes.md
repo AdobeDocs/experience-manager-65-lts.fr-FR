@@ -20,16 +20,16 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1739'
 ht-degree: 82%
 ---
 # Types de nœuds personnalisés{#custom-node-types}
 
 Adobe Experience Manager (AEM) étant basé sur Sling et utilisant un référentiel JCR, les types de nœuds proposés par les deux sont disponibles pour une utilisation avec les éléments suivants :
 
-* [Types de nœuds JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [Types de nœuds JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Types de nœuds Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 En plus de ces types de nœuds, AEM propose une gamme de types de nœuds personnalisés.

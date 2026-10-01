@@ -33,9 +33,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1110'
 ht-degree: 96%
 ---
 # Comment mettre à jour votre contenu à l’aide des API AEM Assets {#update-your-content}
@@ -283,7 +283,7 @@ L’utilisation peut varier selon que vous utilisez un environnement d’auteur 
 
 >[!NOTE]
 >
->Pour plus d’informations, voir la Référence d’API. En particulier, [API Adobe Experience Manager Assets – Fragments de contenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
+>Pour plus d’informations, voir la Référence d’API. En particulier, [API Adobe Experience Manager Assets – Fragments de contenu](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/assets-api-content-fragments/index.html).
 
 ### Lecture/Diffusion {#read-delivery}
 
@@ -353,7 +353,7 @@ Poursuivez votre parcours dans AEM découplé en consultant le document [Comment
 * [API HTTP Assets](/help/assets/mac-api-assets.md)
 * [API REST de fragments de contenu](/help/assets/assets-api-content-fragments.md)
   * [Référence d’API](/help/assets/assets-api-content-fragments.md#api-reference)
-* [API Adobe Experience Manager Assets - Fragments de contenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [API Adobe Experience Manager Assets - Fragments de contenu](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/assets-api-content-fragments/index.html)
 * [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
 * [Composants principaux d’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 * [CORS/AEM expliqué](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)

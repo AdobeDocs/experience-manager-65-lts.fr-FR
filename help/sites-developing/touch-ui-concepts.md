@@ -21,10 +21,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2207'
-ht-degree: 97%
+source-wordcount: '2209'
+ht-degree: 96%
 ---
 # Concepts de l’interface utilisateur tactile d’Adobe Experience Manager{#concepts-of-the-aem-touch-enabled-ui}
 
@@ -205,7 +205,7 @@ Il est aussi intéressant d’examiner les différences entre l’IU Granite et 
 
 ### Composants de base de l’IU Granite {#granite-ui-foundation-components}
 
-Les [composants de base de l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) fournissent les éléments de base nécessaires à la création de n’importe quelle interface utilisateur. Ils comprennent entre autres les éléments suivants :
+Les [composants de base de l’interface utilisateur Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) fournissent les éléments de base nécessaires à la création de n’importe quelle interface utilisateur. Ils comprennent entre autres les éléments suivants :
 
 * Bouton
 * Lien hypertexte
@@ -262,7 +262,7 @@ Lors de la mise à niveau du code ExtJS pour utiliser l’IU Granite, la liste s
 
 ### Composants d’administration de l’IU Granite {#granite-ui-administration-components}
 
-Les [composants d’administration de l’IU Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) dépendent des composants de base pour fournir les éléments génériques que toute application d’administration peut implémenter. Il peut s’agir, entre autres :
+Les [composants d’administration de l’IU Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) dépendent des composants de base pour fournir les éléments génériques que toute application d’administration peut implémenter. Il peut s’agir, entre autres :
 
 * Barre de navigation globale
 * Rail (squelette)

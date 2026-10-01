@@ -24,9 +24,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1903'
 ht-degree: 97%
 ---
 # Ajouter un bouton d’action personnalisé dans l’interface utilisateur de création de correspondance {#add-custom-action-button-in-create-correspondence-ui}
@@ -437,11 +437,11 @@ Pour plus d’informations, voir [Connexion d’AEM Forms à Adobe LiveCycle](
    >
    >À chaque modification apportée au côté serveur, redémarrez le serveur LiveCycle.
 
-   Le fichier DSCSample.jar utilise l’API renderLetter. Pour plus d’informations sur l’API renderLetter, voir [Interface LetterRenderService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
+   Le fichier DSCSample.jar utilise l’API renderLetter. Pour plus d’informations sur l’API renderLetter, voir [Interface LetterRenderService](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Importer DSC vers LiveCycle {#import-dsc-to-livecyle}
 
-Le fichier DSCSample.jar utilise l’API renderLetter pour effectuer le rendu d’une lettre sous forme d’octets PDF à partir des données XML fournies par DSC en tant qu’entrée. Pour plus d’informations sur l’API renderLetter et les autres API, consultez [Service de rendu de lettre](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
+Le fichier DSCSample.jar utilise l’API renderLetter pour effectuer le rendu d’une lettre sous forme d’octets PDF à partir des données XML fournies par DSC en tant qu’entrée. Pour plus d’informations sur l’API renderLetter et les autres API, consultez [Service de rendu de lettre](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Démarrez Workbench et connectez-vous.
 1. Sélectionnez **Fenêtre > Afficher les vues > Composants**. La vue Composants est ajoutée à Workbench ES2.

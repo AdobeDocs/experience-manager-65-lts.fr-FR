@@ -25,9 +25,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2268'
 ht-degree: 95%
 ---
 # Générer plusieurs communications interactives à l’aide de l’API Batch {#use-batch-api-to-generate-multiple-ic}
@@ -185,7 +185,7 @@ Vous combinez des données (enregistrements) enregistrées dans une source de do
 
 ## Appeler l’API par lot à l’aide de requêtes REST
 
-Vous pouvez appeler [l’API par lot](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html) par le biais de requêtes REST (Representational State Transfer). Cela vous permet de fournir un point d’entrée REST aux autres utilisateurs et utilisatrices pour accéder à l’API et de configurer vos propres méthodes de traitement, de stockage et de personnalisation de la communication interactive. Vous pouvez développer votre propre servlet Java personnalisé pour déployer l’API sur votre instance AEM.
+Vous pouvez appeler [l’API par lot](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html) par le biais de requêtes REST (Representational State Transfer). Cela vous permet de fournir un point d’entrée REST aux autres utilisateurs et utilisatrices pour accéder à l’API et de configurer vos propres méthodes de traitement, de stockage et de personnalisation de la communication interactive. Vous pouvez développer votre propre servlet Java personnalisé pour déployer l’API sur votre instance AEM.
 
 Avant de déployer le servlet Java, vérifiez que vous disposez d’une communication interactive et que les fichiers de données correspondants sont prêts. Effectuez les étapes suivantes pour créer et déployer le servlet Java™ :
 
