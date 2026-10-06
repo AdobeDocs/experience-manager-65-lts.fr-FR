@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 100%
+source-wordcount: '214'
+ht-degree: 73%
 ---
 # Se connecter à l’application Adobe Experience Manager Forms{#logging-in-to-aem-forms-app}
+
+>[!NOTE]
+>
+>Les versions Android et iOS de l’application AEM Forms ont été interrompues. L’application Android a été dépubliée à partir de Google Play en septembre 2026 et l’application iOS a été supprimée d’Apple App Store.
+>Ces applications ne peuvent plus être installées. Pour obtenir de l’aide sur l’application Android, contactez [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Lorsque vous démarrez votre application Adobe Experience Manager (AEM) Forms, vous devez d’abord fournir vos informations de connexion et une URL de serveur AEM Forms.
 
@@ -39,12 +44,12 @@ Lorsque vous démarrez votre application Adobe Experience Manager (AEM) Form
 1. Sélectionnez l’icône de l’application AEM Forms de votre appareil mobile.
 1. Pour vous connecter à l’application, saisissez un nom d’utilisateur, un mot de passe et l’URL du serveur AEM Forms.
 
-   >[!NOTE]
-   >
-   >L’application mobile met en cache toutes les URL de serveur AEM Forms que vous saisissez.
-   >
-   >    * Pour afficher la liste des URL de serveur, cliquez sur la flèche de liste située dans le coin droit de la zone de texte URL du serveur.
-   >    * Sélectionnez une URL de serveur AEM Forms à laquelle vous souhaitez vous connecter via l’application.
+>[!NOTE]
+>
+>L’application mobile met en cache toutes les URL de serveur AEM Forms que vous saisissez.
+>
+>    * Pour afficher la liste des URL de serveur, cliquez sur la flèche de liste située dans le coin droit de la zone de texte URL du serveur.
+>    * Sélectionnez une URL de serveur AEM Forms à laquelle vous souhaitez vous connecter via l’application.
 
 Lorsque vous vous connectez à l’application, vous êtes dirigé vers l’[**écran** d’accueil](../../forms/using/home-screen.md).
 

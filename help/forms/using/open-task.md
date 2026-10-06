@@ -24,12 +24,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 2b710c6ef8d291a42b4a7658bf84f5e764422d5c
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 100%
+source-wordcount: '339'
+ht-degree: 83%
 ---
 # Ouvrir une tâche {#opening-a-task}
+
+>[!NOTE]
+>
+>Les versions Android et iOS de l’application AEM Forms ont été interrompues. L’application Android a été dépubliée à partir de Google Play en septembre 2026 et l’application iOS a été supprimée d’Apple App Store.
+>Ces applications ne peuvent plus être installées. Pour obtenir de l’aide sur l’application Android, contactez [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Si l’application Adobe Experience Manager (AEM) Forms se synchronise avec un serveur AEM Forms, vous pouvez travailler sur des tâches qui vous sont assignées. Les tâches sont des étapes du workflow défini dans le Workbench ou dans l’éditeur de workflow AEM.
 

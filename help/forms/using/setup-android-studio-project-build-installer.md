@@ -8,14 +8,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 425c6194-0b87-4b01-a013-f620755072b3
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 92%
-
+source-wordcount: '646'
+ht-degree: 84%
 ---
-
 # Configuration du projet Android™ Studio et génération de l’application Android™ {#set-up-the-android-studio-project-and-build-the-android-app}
+
+>[!NOTE]
+>
+>Les versions Android et iOS de l’application AEM Forms ont été interrompues. L’application Android a été dépubliée à partir de Google Play en septembre 2026 et l’application iOS a été supprimée d’Apple App Store.
+>Ces applications ne peuvent plus être installées. Pour obtenir de l’aide sur l’application Android, contactez [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Cet article est destiné à la création de l’application AEM Forms 6.3.1.1 et versions ultérieures. Pour créer une application à partir du code source de l’application AEM Forms 6.3, voir [Configurer le projet Eclipse et créer l’application Android™](/help/forms/using/setup-eclipse-project-build-installer.md).
 
@@ -52,9 +55,9 @@ L’image suivante affiche la structure du répertoire du dossier `android` dans
 
    **Pour les utilisateurs et utilisatrices de Windows®** : `%HOMEPATH%\Projects`
 
-   >[!NOTE]
-   >
-   >Pour Windows®, il est recommandé de conserver le projet Android™ dans le lecteur système.
+>[!NOTE]
+>
+>Pour Windows®, il est recommandé de conserver le projet Android™ dans le lecteur système.
 
 1. Extrayez l’archive dans le répertoire suivant :
 
@@ -62,9 +65,9 @@ L’image suivante affiche la structure du répertoire du dossier `android` dans
 
    **Pour les utilisateurs et utilisatrices de Windows®** : `%HOMEPATH%\Projects\[your-project]`
 
-   >[!NOTE]
-   >
-   >Il est recommandé de conserver le projet Android extrait dans le lecteur système avant d’importer le projet dans Android™ Studio.
+>[!NOTE]
+>
+>Il est recommandé de conserver le projet Android extrait dans le lecteur système avant d’importer le projet dans Android™ Studio.
 
 1. Lancez Android™ Studio.
 
