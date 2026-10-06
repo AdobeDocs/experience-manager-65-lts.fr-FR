@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 100%
+source-wordcount: '371'
+ht-degree: 84%
 ---
 # Personnalisation de mouvement {#gesture-customization}
+
+>[!NOTE]
+>
+>Les versions Android et iOS de l’application AEM Forms ont été interrompues. L’application Android a été dépubliée à partir de Google Play en septembre 2026 et l’application iOS a été supprimée d’Apple App Store.
+>Ces applications ne peuvent plus être installées. Pour obtenir de l’aide sur l’application Android, contactez [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Vous pouvez personnaliser les mouvements de l’application AEM Forms pour interagir différemment avec l’application. Par exemple, vous pouvez ajouter de nouveaux mouvements pour ouvrir/fermer une tâche ou un point de départ.
 
@@ -50,9 +55,9 @@ Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir u
    * Dans Eclipse, accédez au dossier **assets > www > wsmobile > js > runtime > views**.
    * Dans Visual Studio, accédez au dossier **MWSWindows > www > wsmobile > js > runtime > views**.
 
-   >[!NOTE]
-   >
-   >Le fichier task.js contient la vue Backbone associée à chaque tâche ou point de départ, tel que répertorié dans les listes de tâches ou de points de départ.
+>[!NOTE]
+>
+>Le fichier task.js contient la vue Backbone associée à chaque tâche ou point de départ, tel que répertorié dans les listes de tâches ou de points de départ.
 
 1. Dans le fichier `task.js`, recherchez la propriété événements de la vue.
 

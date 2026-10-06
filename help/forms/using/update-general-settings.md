@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 100%
+source-wordcount: '449'
+ht-degree: 87%
 ---
 # Mettre à jour les paramètres généraux{#updating-general-settings}
+
+>[!NOTE]
+>
+>Les versions Android et iOS de l’application AEM Forms ont été interrompues. L’application Android a été dépubliée à partir de Google Play en septembre 2026 et l’application iOS a été supprimée d’Apple App Store.
+>Ces applications ne peuvent plus être installées. Pour obtenir de l’aide sur l’application Android, contactez [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Les paramètres généraux de l’application AEM Forms vous permettent de définir des paramètres tels que la récupération des pièces jointes, le mode hors ligne, l’écran d’accueil, la catégorie par défaut et la fréquence d’enregistrement automatique.
 
@@ -51,9 +56,9 @@ Dans l’onglet Général, modifiez les pièces jointes de téléchargement, le 
 
    Écran Paramètres généraux
 
-   >[!NOTE]
-   >
-   >Les options peuvent s’afficher différemment selon l’appareil mobile.
+>[!NOTE]
+>
+>Les options peuvent s’afficher différemment selon l’appareil mobile.
 
 ### Paramètres généraux {#general-settings}
 
