@@ -701,7 +701,7 @@ Download the index package [cq-dam-cfm-indices](https://experience.adobe.com/#/d
 
 -->
 
-###
+&#x200B;###
 
 ### Échec de connexion à Dispatcher avec la fonction SSL uniquement (corrigé dans AEM 6.5 LTS SP1 et versions ultérieures){#ssl-only-feature}
 
