@@ -7,9 +7,9 @@ user-guide-description: Utilisez la documentation LTS de Adobe Experience Manage
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: 4df5a9888532afd86562678a76c35841ac5634b8
+source-git-commit: 8781bd3762ec04424802d899d3517754e0c81fc5
 workflow-type: tm+mt
-source-wordcount: '7804'
+source-wordcount: '7799'
 ht-degree: 67%
 ---
 # Documentation LTS de Adobe Experience Manager 6.5 {#content}
@@ -1111,7 +1111,6 @@ ht-degree: 67%
 + IA dans AEM {#ai-in-aem}
   + [Vue d’ensemble](/help/ai-in-aem/overview.md)
   + Assistant IA {#ai-assistant}
-    + [Configuration de l’assistant IA dans AEM](/help/ai-assistant-in-aem-admin.md)
     + [À propos de l’assistant IA dans AEM](/help/ai-assistant-in-aem.md)
 + Content and Commerce {#commerce}
   + [Présentation et vue d’ensemble](/help/commerce/cif/introduction.md)
