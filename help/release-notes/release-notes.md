@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 60fd1764a1b2a6440d306d21a8a84a8f9d879811
+source-git-commit: 7fb04d7017fa8f6183508cf4f880077eb533c057
 workflow-type: tm+mt
-source-wordcount: '7432'
+source-wordcount: '7577'
 ht-degree: 21%
 ---
 
@@ -604,7 +604,7 @@ Pour garantir la transparence et permettre une planification adéquate, Adobe su
 
 ### Fonctionnalités obsolètes {#deprecated-features}
 
-Cette section répertorie les fonctionnalités qu’Adobe a abandonnées dans AEM 6.5 LTS. En règle générale, Adobe rend les fonctionnalités obsolètes avant de les supprimer dans une version ultérieure et fournit une alternative.
+Cette section répertorie les fonctionnalités qu’Adobe a dépréciées dans AEM 6.5 LTS. En règle générale, Adobe déprécie les fonctionnalités avant de les supprimer dans une version ultérieure et fournit une alternative.
 
 Il est conseillé aux clients de vérifier s’ils utilisent la fonctionnalité dans leur déploiement actuel. Planifiez la modification de votre implémentation afin d’utiliser l’alternative fournie.
 
@@ -674,34 +674,31 @@ If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier 
 >Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
 -->
 
+AEM 6.5 LTS SP3 met à niveau le lot `jackson`. Cette modification affecte les déploiements qui utilisent le connecteur de traduction GlobalLink.
 
-
-<!--
-AEM 6.5 LTS SP3 upgrades the `jackson` bundle. This change affects deployments that use the GlobalLink translation connector.
-
-If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.0, upgrade the bundle to a compatible version. Version 3.4.0 or later works with the upgraded `jackson` bundle in SP3.
+Si vous utilisez le lot `gs4tr-globallink-adaptors-aem.core` dans une version antérieure à la version 3.4.0, mettez à niveau le lot vers une version compatible. La version 3.4.0 ou une version ultérieure fonctionne avec le lot `jackson` mis à niveau dans le SP3.
 
 >[!NOTE]
 >
-> Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.0 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
+> Mettez à niveau le lot `gs4tr-globallink-adaptors-aem.core` vers la version 3.4.0 ou une version ultérieure avant ou pendant la mise à jour du SP3 afin d’éviter des problèmes de compatibilité avec le connecteur GlobalLink.
 
 
-### Install required Oak indexes for Sites Headless APIs{#site-headless-api}
+### Installez les index Oak requis pour les API Sites en mode découplé{#site-headless-api}
 
-Some APIs that moved to Sites Headless require additional Oak indexes for full functionality. 
+Certaines API déplacées vers Sites en mode découplé nécessitent des index Oak supplémentaires pour une fonctionnalité complète.
 
-To use the following features, install the `cq-dam-cfm-indices` package:
+Pour utiliser les fonctionnalités suivantes, installez le package `cq-dam-cfm-indices` :
 
-* List Content Fragment Models
-* List Content Fragments
-* Search API
+* Lister les modèles de fragment de contenu
+* Répertorier les fragments de contenu
+* API de recherche
 * Workflows
 
-Download the index package [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) from the Adobe Software Distribution portal. 
+Téléchargez le package d’index [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) à partir du portail de distribution logicielle Adobe.
 
 -->
 
-&#x200B;###
+###
 
 ### Échec de connexion à Dispatcher avec la fonction SSL uniquement (corrigé dans AEM 6.5 LTS SP1 et versions ultérieures){#ssl-only-feature}
 
