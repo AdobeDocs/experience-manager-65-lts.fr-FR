@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fb04d7017fa8f6183508cf4f880077eb533c057
+source-git-commit: 168e33d380dcef163d43d6d10dc21c840c55e96c
 workflow-type: tm+mt
-source-wordcount: '7577'
+source-wordcount: '7799'
 ht-degree: 21%
 ---
 
@@ -41,7 +41,9 @@ ht-degree: 21%
 
 <!-- UPDATE ABOVE FOR EACH NEW RELEASE -->
 
-<!-- **Mandatory Hotfix** – To avoid SNFE (SegmentNotFoundException) issues with offline compaction when installing SP2, install the hotfix described in [Known issues – Repository corruption during online compaction](#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146). -->
+>[!IMPORTANT]
+>
+> **Correctif obligatoire** - Pour éviter des problèmes SNFE (SegmentNotFoundException) lors de la compression en ligne sur l’instance de secours, installez le correctif décrit dans [Problèmes connus - Corruption du référentiel lors de la compression en ligne](#repository-corruption-during-online-compaction-granite-73045).
 
 ## Éléments compris dans [!DNL Adobe Experience Manager] 6.5 LTS, SP3 {#what-is-new}
 
@@ -646,6 +648,20 @@ Cette section répertorie les fonctionnalités qui ont été supprimées dans AE
 
 ## Problèmes connus {#known-issues}
 
+### Corruption du référentiel lors de la compression en ligne sur une instance de secours (GRANITE-73045) {#repository-corruption-during-online-compaction-granite-73045}
+
+Les utilisateurs peuvent rencontrer une corruption du référentiel lors du compactage en ligne si l’instance s’exécutait précédemment en tant que TarMK Cold Standby et a été ultérieurement promue en instance principale. Une erreur de type `SegmentNotFoundException` (SNFE) peut se produire dans ce scénario et peut entraîner une corruption du référentiel.
+
+Pour résoudre ce problème, installez le correctif à partir de la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip). Comme le correctif comprend un bundle `oak-segment-tar` de bas niveau, l’instance redémarre après l’installation.
+
+Planifiez le temps d’arrêt de l’instance lors de son application. Pour la compression hors ligne, utilisez le fichier jar [`oak-run` correspondant](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar) également disponible sur la Distribution logicielle.
+
+>[!NOTE]
+>
+> * Pour toutes les opérations `oak-run`, utilisez le fichier jar [`oak-run` 2.4.1-B002](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar).
+>
+> * Démarrez AEM en définissant la propriété système `oak.segment.cleanup.skipDanglingFutureReclaim=true`.
+
 ### AEM Forms
 
 * Dans Configuration Manager, l’initialisation de la base de données échoue pendant Bootstrap dans le modèle personnalisé clé en main d’AEM Forms 6.5 LTS JEE lorsqu’aucun module ou uniquement des composants limités sont sélectionnés. L’échec est dû à une dépendance manquante (xalan-2.7.2.jar), ce qui entraînait une erreur. L’ajout du fichier JAR à Adobe-livecycle-jboss.ear\lib résout le problème. (FORMS-24690)
@@ -698,7 +714,7 @@ Téléchargez le package d’index [cq-dam-cfm-indices](https://experience.adobe
 
 -->
 
-&#x200B;###
+###
 
 ### Échec de connexion à Dispatcher avec la fonction SSL uniquement (corrigé dans AEM 6.5 LTS SP1 et versions ultérieures){#ssl-only-feature}
 
