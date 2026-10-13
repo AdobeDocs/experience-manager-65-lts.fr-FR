@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 168e33d380dcef163d43d6d10dc21c840c55e96c
+source-git-commit: 0eb20f3494bb75de7adf27745ddfb13d024af59c
 workflow-type: tm+mt
-source-wordcount: '7799'
+source-wordcount: '7882'
 ht-degree: 21%
 ---
 
@@ -382,6 +382,23 @@ Pour installer AEM Forms 6.5 LTS SP3 sous JEE, procédez comme suit :
 #### Problèmes connus {#forms-known-issues-65-lts-sp3}
 
 * Sur **AEM Forms on JEE 6.5 LTS SP3**, la conversion de **fichiers PostScript (PS), EPS et PRN en PDF** échoue. Le processus natif `PsToPdfSvc` peut s’arrêter de manière inattendue, ce qui entraîne l’échec de la tâche de conversion avec des erreurs telles que `ALC-PDG-003-011` et `ALC-PDG-001-028`. Contactez le service clientèle d’Adobe pour obtenir de l’aide. (FORMS-28152)
+
+Sous AEM Forms sur JEE, les extensions Reader ne fonctionnent pas sur la plateforme WebSphere® Liberty Profile (WLP). Le fichier EAR inclus avec le LTS SP3 ne contient pas les bibliothèques requises Bouncy Castle sur son chemin de classe.
+
+**Solution**
+
+1. Accédez à `<AEM Forms JEE installation>\Adobe_Experience_Manager_Forms\configurationManager\export`.
+1. Ouvrez `adobe-livecycle-websphere.ear\adobe-dscf.jar\META-INF\MANIFEST.MF` et ajoutez ces entrées à l’élément `Class-Path` :
+
+   ```
+   bcmail-jdk18on-1.84.jar bcprov-jdk18on-1.84.jar bcpkix-jdk18on-1.84.jar bcutil-jdk18on-1.84.jar
+   ```
+
+1. Redéployez le fichier EAR modifié sur le dossier WebSphere® Liberty Profile `dropins` :
+   1. Arrêtez le serveur WebSphere® Liberty Profile et supprimez les `adobe-livecycle-websphere.ear` de `<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`.
+   1. Supprimez le répertoire `adobe-livecycle-websphere.ear` de `<WebSphere Liberty Profile install location>\usr\servers\<server-name>\apps\expanded\`.
+   1. Copiez le fichier EAR modifié de l’étape 2 dans `<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`.
+   1. Démarrez le serveur WebSphere® Liberty Profile.
 
 #### Correctifs de sécurité {#forms-security-fixes-65-lts-sp3}
 
