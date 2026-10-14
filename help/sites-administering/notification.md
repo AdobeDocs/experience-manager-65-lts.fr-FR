@@ -32,7 +32,7 @@ AEM envoie des notifications par e-mail aux utilisateurs et utilisatrices qui :
 * Ont souscrit à des événements de page, par exemple une modification ou une réplication. La section [Boîte de réception de notifications](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) décrit comment s’abonner à ces événements.
 
 * Ont souscrit aux événements de forum.
-* Doivent effectuer une opération dans un workflow. La section [Étape de participant](/help/sites-developing/workflows-step-ref.md#participant-step) décrit comment déclencher une notification par e-mail dans un workflow.
+* Doivent effectuer une étape dans un workflow. La section [Étape de participant](/help/sites-developing/workflows-step-ref.md#participant-step) décrit comment déclencher une notification par e-mail dans un workflow.
 
 Conditions préalables :
 
