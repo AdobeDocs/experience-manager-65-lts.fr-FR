@@ -860,7 +860,7 @@ Voir [Diffuser du contenu statique (sans image)](https://experienceleague.adobe.
 
 ## Ajout de marques de chapitre à la vidéo {#adding-chapter-markers-to-video}
 
-Vous pouvez faciliter la lecture et la consultation de vos vidéos les plus longues en ajoutant des marques de chapitre aux vidéos uniques ou aux ensembles de vidéos adaptatives. Lorsqu’un utilisateur ou une utilisatrice lit la vidéo, il peut cliquer sur les marqueurs de chapitre dans la chronologie de la vidéo (également appelée barre de défilement de la vidéo) pour accéder facilement à son point d’intérêt. Il peut également accéder immédiatement à de nouveaux contenus, à des démonstrations et à des tutoriels.
+Vous pouvez faciliter la lecture et la consultation de vos vidéos les plus longues en ajoutant des marques de chapitre aux vidéos uniques ou aux ensembles de vidéos adaptatives. Lorsqu’une personne lit la vidéo, elle peut cliquer sur les marqueurs de chapitre dans la chronologie de la vidéo (également appelée défilement vidéo) pour accéder facilement à son point ciblé. Il peut également accéder immédiatement à de nouveaux contenus, à des démonstrations et à des tutoriels.
 
 >[!NOTE]
 >
@@ -892,7 +892,7 @@ Chapter 4
 Cost-efficient access to rapidly evolving technology.
 ```
 
-Dans l’exemple ci-dessus, le `Chapter 1` est l’identifiant de repère et il est facultatif. La période de repère `00:00:000 --> 01:04:364` indique l’heure de début et l’heure de fin du chapitre au format `00:00:000`. Les trois derniers chiffres sont les millisecondes et peuvent être laissés sur `000`, selon vos préférences. Le titre du chapitre de `The bicycle store behind it all` est la description réelle du contenu du chapitre. L’identifiant du repère, l’heure de début du repère, ainsi que le titre du chapitre s’affichent tous dans une fenêtre pop-up du lecteur vidéo lorsqu’un utilisateur u une utilisatrice pointe la souris sur un point de repère visuel dans la chronologie de la vidéo.
+Dans l’exemple ci-dessus, le `Chapter 1` est l’identifiant de repère et il est facultatif. La période de repère `00:00:000 --> 01:04:364` indique l’heure de début et l’heure de fin du chapitre au format `00:00:000`. Les trois derniers chiffres sont les millisecondes et peuvent être laissés sur `000`, selon vos préférences. Le titre du chapitre de `The bicycle store behind it all` est la description réelle du contenu du chapitre. L’identifiant du repère, l’heure de début du repère, ainsi que le titre du chapitre s’affichent tous dans une fenêtre contextuelle du lecteur vidéo lorsque vous pointez la souris sur un point de repère visuel dans la chronologie de la vidéo.
 
 Étant donné que vous utilisez une visionneuse de vidéos HTML5, assurez-vous que le fichier de chapitres que vous créez est conforme à la norme WebVTT (Web Video Text Tracks). L’extension de nom de fichier de chapitres est `.vtt`. D’autres informations sur la norme de sous-titrage WebVTT sont disponibles.
 
