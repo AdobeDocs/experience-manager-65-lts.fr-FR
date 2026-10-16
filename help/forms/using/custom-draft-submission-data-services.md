@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 100%
@@ -41,7 +41,7 @@ Par défaut, AEM Forms stocke les données utilisateur associées aux brouillons
 
 Cependant, les composants du Portail Formulaires AEM fournissent des services de données qui vous permettent de personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Vous pouvez, par exemple, stocker les données dans un magasin de données implémenté au sein de votre organisation.
 
-Pour personnaliser le stockage des données utilisateur, vous devez implémenter les services de [données de brouillon](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) et de [données d’envoi](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p).
+Pour personnaliser le stockage des données utilisateur, vous devez implémenter les services de [données de brouillon](/help/forms/using/custom-draft-submission-data-services.md#draft-data-service) et de [données d’envoi](/help/forms/using/custom-draft-submission-data-services.md#submission-data-service).
 
 ## Conditions préalables requises {#prerequisites}
 

@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 95%
@@ -45,8 +45,8 @@ Cet article décrit comment les auteurs et autrices de formulaires peuvent ajout
 
 Vous pouvez spécifier une aide contextuelle à l’aide des options suivantes dans la section Contenu de l’aide de l’onglet Propriétés de la barre latérale.
 
-* [Description courte](../../forms/using/authoring-in-field-help.md#p-short-description-p)
-* [Description longue](../../forms/using/authoring-in-field-help.md#p-long-description-p)
+* [Description courte](../../forms/using/authoring-in-field-help.md#short-description)
+* [Description longue](../../forms/using/authoring-in-field-help.md#long-description)
 
 ![Aide contextuelle pour les champs de formulaire](assets/descriptions.png)
 
@@ -56,7 +56,7 @@ Vous pouvez spécifier une aide contextuelle à l’aide des options suivantes d
 
 ### Description courte {#short-description}
 
-Le champ Description courte permet de fournir des conseils courts et rapides pour le remplissage d’un champ de formulaire. Le texte saisi dans le champ Description courte s’affiche sous forme d’info-bulle lorsque le pointeur de la souris est placé sur le champ.
+Le champ Description courte permet de fournir des conseils courts et rapides pour le remplissage d’un champ de formulaire. Le texte saisi dans le champ Description courte s’affiche sous forme d’infobulle lorsque le pointeur de la souris est placé sur le champ.
 
 ![Description courte pour l’ajout d’une aide contextuelle pour des champs de formulaire](assets/tooltip.png)
 
@@ -68,7 +68,7 @@ Le champ Description courte permet de fournir des conseils courts et rapides pou
 
 ### Description longue {#long-description}
 
-Vous pouvez utiliser le champ Description longue pour saisir un texte long ou incorporer du contenu multimédia enrichi, dont des vidéos, pour apporter une aide contextuelle. Par exemple, l’illustration ci-dessous montre comment incorporer une vidéo pour apporter une aide contextuelle.
+Vous pouvez utiliser le champ Description longue pour saisir un texte long ou incorporer du contenu multimédia, dont des vidéos, pour apporter une aide contextuelle. Par exemple, l’illustration ci-dessous montre comment incorporer une vidéo pour apporter une aide contextuelle.
 
 ![Ajout de contenu multimédia enrichi comme aide contextuelle pour les champs de formulaire](assets/long-descriptions.png)
 

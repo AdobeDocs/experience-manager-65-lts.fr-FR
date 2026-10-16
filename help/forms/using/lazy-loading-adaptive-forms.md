@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 92%
@@ -59,7 +59,7 @@ Vous ne pouvez configurer que des fragments de formulaire adaptatif pour le char
 * **Identification et marquage des valeurs globales**
 Les transactions basées sur Forms impliquent des éléments dynamiques pour capturer les données pertinentes des utilisateurs et les traiter afin de simplifier l’expérience de remplissage. Par exemple, votre formulaire contient le champ A dans le fragment X dont la valeur détermine la validité du champ B dans un autre fragment. Dans ce cas, si le fragment X est marqué pour un chargement différé, la valeur du champ A doit être disponible pour valider le champ B, même si le fragment X n’est pas chargé. Pour obtenir ce résultat, vous pouvez marquer le champ A comme étant global, ce qui permet de s’assurer que sa valeur est disponible pour la validation du champ B lorsque le fragment X n’est pas chargé.
 
-  Pour plus d’informations sur la façon de créer une valeur de champ global, voir [Configuration du chargement différé](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
+  Pour plus d’informations sur la façon de créer une valeur de champ global, voir [Configuration du chargement différé](../../forms/using/lazy-loading-adaptive-forms.md#configuring-lazy-loading).
 
 * **Écrire des règles pour contrôler la visibilité des champs**
 Forms inclut certains champs et sections qui ne s’appliquent pas à tous les utilisateurs et dans tous les cas. Les équipes de création et de développement utilisent la visibilité ou les règles afficher-masquer pour contrôler leur visibilité en fonction des entrées de l’utilisateur ou de l’utilisatrice. Par exemple, le champ Adresse du bureau n’est pas affiché pour les utilisateurs ou utilisatrices qui saisissent Sans emploi dans le champ Emploi. Pour plus d’informations sur les règles d’écriture, voir [Utilisation de l’éditeur de règles](../../forms/using/rule-editor.md).

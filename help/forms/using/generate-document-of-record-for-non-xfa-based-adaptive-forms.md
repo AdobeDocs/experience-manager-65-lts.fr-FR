@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4354'
 ht-degree: 96%
@@ -351,7 +351,7 @@ Selon si vous sélectionnez un modèle par défaut ou un modèle personnalisé, 
 
   Si le modèle XDP personnalisé que vous sélectionnez comprend plusieurs gabarits, les propriétés de ces pages apparaissent dans la section **[!UICONTROL contenu]** de l’onglet **[!UICONTROL Document d’enregistrement]**.
 
-  ![Propriétés du gabarit de page &#x200B;](assets/master-page-properties.png)
+  ![Propriétés du gabarit de page ](assets/master-page-properties.png)
 
   Les propriétés du gabarit de page comprennent l’image du logo, le texte de l’en-tête, le titre du formulaire, l’étiquette de la clause de non-responsabilité et le texte de la clause de non-responsabilité. Vous pouvez appliquer les propriétés du formulaire adaptatif ou du modèle XDP au document de référence. AEM Forms applique par défaut les propriétés des modèles au document de référence. Vous pouvez également définir des valeurs personnalisées pour les propriétés du gabarit de page. Pour plus d’informations sur la façon d’appliquer plusieurs gabarits de pages dans un document d’enregistrement, voir [Appliquer plusieurs gabarits à un document d’enregistrement](#apply-multiple-master-pages-dor).
 
@@ -433,7 +433,7 @@ Pour plus d’informations sur la manière d’appliquer des sauts de page et d�
   * **Couleur d’accentuation :** vous pouvez prédéfinir la couleur du modèle du [!UICONTROL document d’enregistrement].
   * **Famille de polices :** sélectionnez le type de police pour les textes du [!UICONTROL document d’enregistrement].
   * **Inclure les champs non liés dans le document d’enregistrement :** la définition de la propriété inclut les champs non liés du schéma basé sur le formulaire adaptatif dans le [!UICONTROL document d’enregistrement]. Par défaut, le paramètre est true.
-  * **Exclure les champs du document d’enregistrement s’ils sont masqués :** activez cette propriété pour exclure les champs masqués du [!UICONTROL document d’enregistrement] lors de l’envoi du formulaire. Lorsque vous activez [Revalider sur le serveur](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), le serveur recalcule les champs masqués avant de les exclure du [!UICONTROL document d’enregistrement].
+  * **Exclure les champs du document d’enregistrement s’ils sont masqués :** activez cette propriété pour exclure les champs masqués du [!UICONTROL document d’enregistrement] lors de l’envoi du formulaire. Lorsque vous activez [Revalider sur le serveur](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form), le serveur recalcule les champs masqués avant de les exclure du [!UICONTROL document d’enregistrement].
 * **[!UICONTROL PROPRIÉTÉS DES CHAMPS DE FORMULAIRE]**
   * Si vous cochez l’option **Pour les composants Case à cocher et Bouton radio, afficher uniquement les valeurs sélectionnées**, elle génère une sortie de document d’enregistrement avec uniquement les valeurs sélectionnées.
   * Vous pouvez sélectionner Séparateur pour plusieurs valeurs sélectionnées ou vous pouvez choisir tout autre type de séparateur.

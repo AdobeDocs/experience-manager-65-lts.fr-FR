@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 100%
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 ## Présentation {#introduction}
 
-Vous pouvez créer un formulaire adaptatif basé sur un modèle de formulaire XFA (fichier `*.XDP`). Cette réutilisation vous permet de conserver vos investissements dans les formulaires XFA existants. Pour plus d’informations sur l’utilisation d’un modèle de formulaire XFA pour créer un formulaire adaptatif, consultez la section [Créer un formulaire adaptatif basé sur un modèle](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
+Vous pouvez créer un formulaire adaptatif basé sur un modèle de formulaire XFA (fichier `*.XDP`). Cette réutilisation vous permet de conserver vos investissements dans les formulaires XFA existants. Pour plus d’informations sur l’utilisation d’un modèle de formulaire XFA pour créer un formulaire adaptatif, consultez la section [Créer un formulaire adaptatif basé sur un modèle](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template).
 
 Vous pouvez réutiliser des champs du fichier XDP dans votre formulaire adaptatif. Ces champs sont appelés champs liés. Les propriétés des champs liés (comme les scripts, les libellés et le format d’affichage) sont copiées à partir du fichier XDP. Vous pouvez également choisir de remplacer la valeur de certaines de ces propriétés.
 
@@ -55,11 +55,11 @@ Pour utiliser les informations fournies dans cet article, il est recommandé de 
 
 * XFA (XML Forms Architecture)
 
-Pour utiliser les ressources fournies pour l’exemple de cet article, téléchargez l’exemple de package, comme expliqué dans la section suivante, voir [Exemple de package](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-sample-package-p).
+Pour utiliser les ressources fournies pour l’exemple de cet article, téléchargez l’exemple de package, comme expliqué dans la section suivante, voir [Exemple de package](../../forms/using/synchronizing-adaptive-forms-xfa.md#sample-package).
 
 ## Exemple de package {#sample-package}
 
-Cet article utilise un exemple pour montrer comment synchroniser le formulaire adaptatif avec un modèle de formulaire XFA mis à jour. Les ressources utilisées dans l’exemple sont disponibles dans un package qui peut être téléchargé à partir de la section [Téléchargements](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-downloads-p) de cet article.
+Cet article utilise un exemple pour montrer comment synchroniser le formulaire adaptatif avec un modèle de formulaire XFA mis à jour. Les ressources utilisées dans l’exemple sont disponibles dans un package qui peut être téléchargé à partir de la section [Téléchargements](../../forms/using/synchronizing-adaptive-forms-xfa.md#downloads) de cet article.
 
 Une fois le package chargé, vous pouvez afficher ces ressources dans l’interface utilisateur AEM Forms.
 
@@ -74,7 +74,7 @@ Le package contient les ressources suivantes :
 ### Ajout de contenu au formulaire adaptatif {#add-content-to-adaptive-form-br}
 
 1. Accédez à https://&lt;serveur>:&lt;port>/aem/forms.html. Entrez vos informations d’identification si nécessaire.
-1. Ouvrez le fichier sample-af-xfa pour le modifier en mode création.
+1. Ouvrez sample-af-xfa pour le modifier en mode création.
 1. Dans l’explorateur de contenu de la barre latérale, sélectionnez l’onglet Objets de modèle de données. Faites glisser les champs NumericField1 et TextField1 sur le formulaire adaptatif.
 1. Remplacez le titre de NumericField1 de **Numeric Field** par **AF Numeric Field.**
 
@@ -122,7 +122,7 @@ Pour mettre à jour les propriétés dans l’exemple de formulaire adaptatif, c
 
 >[!NOTE]
 >
->Le libellé AF Numeric Field n’a pas été modifié, car vous avez remplacé cette propriété dans la boîte de dialogue des propriétés du composant, comme décrit dans la section [Ajouter du contenu aux formulaires adaptatifs](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p).
+>Le libellé AF Numeric Field n’a pas été modifié, car vous avez remplacé cette propriété dans la boîte de dialogue des propriétés du composant, comme décrit dans la section [Ajouter du contenu aux formulaires adaptatifs](../../forms/using/synchronizing-adaptive-forms-xfa.md#add-content-to-adaptive-form-br).
 
 ### Ajout de nouveaux champs du fichier XDP au formulaire adaptatif   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 

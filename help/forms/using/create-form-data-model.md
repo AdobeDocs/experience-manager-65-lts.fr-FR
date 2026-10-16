@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 96%
@@ -70,7 +70,7 @@ Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
 1. Installez le pilote JDBC pour la base de données [!DNL MySQL] en tant que bundle OSGi :
 
    1. Téléchargez le [!DNL MySQL]bundle OSGi du pilote JDBC à partir de `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
-   1. Connectez-vous à l’instance de création AEM [!DNL Forms] en tant qu’administrateur ou administratrice et accédez aux bundles de la console web d’AEM. L’URL par défaut est [&#128279;](https://localhost:4502/system/console/bundles).
+   1. Connectez-vous à l’instance de création AEM [!DNL Forms] en tant qu’administrateur ou administratrice et accédez aux bundles de la console web d’AEM. L’URL par défaut est [](https://localhost:4502/system/console/bundles).
 
    1. Sélectionnez **[!UICONTROL Installer/Mettre à jour]**. Une boîte de dialogue [!UICONTROL Charger/installer les bundles] s’affiche.
 
@@ -133,7 +133,7 @@ La configuration du modèle de données de formulaire implique :
 
 Pour configurer un modèle de données de formulaire, procédez comme suit :
 
-1. Dans l’instance de création AEM, accédez à **[!UICONTROL Formulaires]** > **[!UICONTROL Intégrations de données]**. L’URL par défaut est [&#128279;](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
+1. Dans l’instance de création AEM, accédez à **[!UICONTROL Formulaires]** > **[!UICONTROL Intégrations de données]**. L’URL par défaut est [](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
 1. Le modèle de données de formulaire **customer-shipping-billing-details** que vous avez créé précédemment est répertorié ici. Ouvrez-le en mode d’édition.
 
    La source de données sélectionnée **WeRetailMySQL** est configuré dans le modèle de données de formulaire.
@@ -256,4 +256,4 @@ Procédez comme suit pour effectuer le test :
 
 >[!NOTE]
 >
-> Vous pouvez créer et utiliser la configuration de la liste SharePoint en utilisant le modèle de données de formulaire dans un formulaire adaptatif pour enregistrer des données ou un document d’enregistrement généré dans une liste SharePoint. Voir [Connecter un formulaire adaptatif à une liste SharePoint Microsoft®](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration) pour obtenir des instructions détaillées.
+> Vous pouvez créer et utiliser la configuration de la liste SharePoint en utilisant le modèle de données de formulaire dans un formulaire adaptatif pour enregistrer des données ou un document d’enregistrement généré dans une liste SharePoint. Voir [Connecter un formulaire adaptatif à une liste SharePoint Microsoft®](/help/forms/using/configuring-submit-actions.md#connect-af-sharepoint-list) pour obtenir des instructions détaillées.

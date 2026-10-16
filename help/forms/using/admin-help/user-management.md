@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 100%
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 La gestion des utilisateurs et utilisatrices vous permet d’activer l’authentification unique (SSO) entre les modules d’AEM Forms et les applications protégées par Netegrity SiteMinder à l’aide du langage SAML. Lorsque la fonction SSO est implémentée, les pages d’ouverture de session utilisateur d’AEM forms ne sont plus obligatoires et ne s’affichent pas si l’utilisateur est déjà authentifié via le portail d’entreprise.
 
-Pour plus d’informations sur l’amélioration des performances de synchronisation de base de données et d’annuaire pour DB2, voir [Base de données IBM DB2 : exécution de commandes pour une maintenance régulière](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
+Pour plus d’informations sur l’amélioration des performances de synchronisation de base de données et d’annuaire pour DB2, voir [Base de données IBM DB2 : exécution de commandes pour une maintenance régulière](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db-database-running-commands-for-regular-maintenance).
 
 ## Configuration de la gestion des utilisateurs et utilisatrices pour un serveur LDAP compatible SSL {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 
@@ -63,10 +63,10 @@ La liste des utilisateurs, des utilisatrices et des groupes est visible par la p
 Après avoir installé et configuré votre environnement d’AEM Forms avec Document Security, configurez tous les domaines appropriés dans la gestion des utilisateurs et utilisatrices.
 
 1. Dans la console d’administration, cliquez sur Services > Document Security > Politiques, puis sur l’onglet Ensembles de politiques.
-1. Sélectionnez ensemble de politiques global, puis cliquez sur l’onglet Utilisateurs, utilisatrices et groupes visibles.
-1. Cliquez sur Ajouter un ou des domaine(s) et ajoutez des domaines existants selon les besoins.
+1. Sélectionnez l’ensemble de politiques global, puis cliquez sur l’onglet Utilisateurs, utilisatrices et groupes visibles.
+1. Cliquez sur Ajouter un ou plusieurs domaines et ajoutez des domaines existants selon les besoins.
 1. Accédez à Services > Document Security > Configuration > Mes politiques, puis cliquez sur l’onglet Utilisateurs, utilisatrices et groupes visibles.
-1. Cliquez sur Ajouter un ou des domaine(s) et ajoutez des domaines existants selon les besoins.
+1. Cliquez sur Ajouter un ou plusieurs domaines et ajoutez des domaines existants selon les besoins.
 
 ## Restrictions de la personne administratrice {#administrator-user-restrictions}
 

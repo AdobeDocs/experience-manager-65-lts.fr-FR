@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 100%
@@ -68,7 +68,7 @@ L’action Envoyer un e-mail permet à un auteur d’envoyer automatiquement un 
 
    Indiquez l’objet et le corps du message dans les champs respectifs **[!UICONTROL Objet]** et **[!UICONTROL Modèle d’e-mail]**.
 
-   Vous pouvez également spécifier des espaces réservés aux variables dans les champs. Dans ce cas, les valeurs des champs sont traitées lorsque le formulaire est envoyé par un utilisateur ou une utilisatrice finale. Pour plus d’informations, consultez [Utilisation des noms de champ de formulaire adaptatif pour créer dynamiquement le contenu d’un e-mail](../../forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
+   Vous pouvez également spécifier des espaces réservés aux variables dans les champs. Dans ce cas, les valeurs des champs sont traitées lorsque le formulaire est envoyé par un utilisateur ou une utilisatrice finale. Pour plus d’informations, consultez [Utilisation des noms de champ de formulaire adaptatif pour créer dynamiquement le contenu d’un e-mail](../../forms/using/form-submission-receipt-via-email.md#using-adaptive-form-field-names-to-dynamically-create-email-content).
 
    Cochez la case **[!UICONTROL Inclure les pièces jointes]** si le formulaire contient des pièces jointes que vous souhaitez joindre à l’e-mail.
 

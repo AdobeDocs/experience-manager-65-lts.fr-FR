@@ -24,7 +24,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 100%
@@ -58,6 +58,6 @@ Si vous supprimez une ressource de l’instance de création, elle est égalemen
 
 Dans AEM Forms, un modèle de formulaire XFA peut être référencé par un formulaire adaptatif ou un autre modèle de formulaire XFA. Un modèle peut également faire référence à une ressource ou à un autre modèle XFA.
 
-Il n’est pas conseillé de supprimer un formulaire XFA qui est référencé par un formulaire adaptatif, car cela peut endommager le formulaire adaptatif. Lorsqu’un formulaire adaptatif fait référence à un formulaire XFA, leurs champs sont liés. Après la suppression du formulaire XFA, le formulaire adaptatif ne peut pas synchroniser ses champs avec les champs XFA et affiche un message d’erreur pour ces champs. Pour plus d’informations sur l’impact de la suppression d’un formulaire XFA référencé et sur les formulaires adaptatifs erronés, reportez-vous à la section [Mise à jour des formulaires XFA référencés](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p).
+Il n’est pas conseillé de supprimer un formulaire XFA qui est référencé par un formulaire adaptatif, car cela peut endommager le formulaire adaptatif. Lorsqu’un formulaire adaptatif fait référence à un formulaire XFA, leurs champs sont liés. Après la suppression du formulaire XFA, le formulaire adaptatif ne peut pas synchroniser ses champs avec les champs XFA et affiche un message d’erreur pour ces champs. Pour plus d’informations sur l’impact de la suppression d’un formulaire XFA référencé et sur les formulaires adaptatifs erronés, reportez-vous à la section [Mise à jour des formulaires XFA référencés](/help/forms/using/get-xdp-pdf-documents-aem.md#updating-referenced-xfa-forms).
 
 Pour supprimer un tel formulaire XFA, mettez à jour le formulaire adaptatif et supprimez les liaisons avec les champs XFA.

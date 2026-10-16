@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3758'
 ht-degree: 100%
@@ -288,7 +288,7 @@ Vous pouvez utiliser les étapes Affecter une tâche et Envoyer un e-mail des wo
 
 ### Purge des instances de processus {#purge-workflow-instances}
 
-Réduire le nombre d’instances de workflow améliore les performances du moteur de workflow. Vous pouvez donc purger régulièrement les instances de workflow terminées ou en cours d’exécution du référentiel. Pour plus d’informations, consultez [Purge régulière des instances de workflow](/help/sites-administering/workflows-administering.md#regular).
+Réduire le nombre d’instances de workflow améliore les performances du moteur de workflow. Vous pouvez donc purger régulièrement les instances de workflow terminées ou en cours d’exécution du référentiel. Pour plus d’informations, consultez [Purge régulière des instances de workflow](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ## Paramétrer les données sensibles aux variables de workflow et les stocker dans des magasins de données externes {#externalize-wf-variables}
 

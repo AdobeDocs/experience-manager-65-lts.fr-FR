@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 99%
@@ -44,7 +44,7 @@ Cet article décrit les étapes à suivre pour activer la publication des donné
 
 Si vous utilisez actuellement Forms Workflow, la base de données AEM Forms peut contenir une grande quantité de données.
 
-Les services de publication Process Reporting publient toutes les données d’AEM Forms actuellement disponibles dans la base de données. Par conséquent, si la base de données contient des données héritées pour lesquelles vous ne souhaitez pas exécuter de rapports et de requêtes, toutes ces données seront également publiées dans le référentiel, même si elles ne sont pas requises pour la création de rapports. Il est recommandé de purger ces données avant d’exécuter les services pour publier les données dans le référentiel de Process Reporting. Vous améliorez ainsi les performances du service de publication et du service qui interroge les données pour la création de rapports.
+Les services de publication Process Reporting publient toutes les données d’AEM Forms actuellement disponibles dans la base de données. Cela implique que si la base de données contient des données héritées pour lesquelles vous ne souhaitez pas exécuter de rapports et de requêtes, toutes ces données seront également publiées dans le référentiel, même si elles ne sont pas requises pour la création de rapports. Il est recommandé de purger ces données avant d’exécuter les services pour publier les données dans le référentiel de Process Reporting. Vous améliorez ainsi les performances du service de publication et du service qui interroge les données pour la création de rapports.
 
 Pour plus d’informations sur la purge des données de processus AEM Forms, voir [Purger les données de processus](/help/forms/using/admin-help/purging-process-data.md).
 
@@ -150,7 +150,7 @@ Vous pouvez utiliser la console d’administration pour configurer l’emplaceme
 
 ### Service ReportConfiguration {#reportconfiguration-service}
 
-Le service ReportConfiguration est utilisé par Process Reporting pour configurer son service de requête.
+Le service ReportConfiguration est utilisé par Process Reporting pour configurer le service de requête de création de rapports sur les processus.
 
 #### Pour configurer le service ReportingConfiguration {#to-configure-the-reportingconfiguration-service}
 
@@ -175,7 +175,7 @@ Le service ReportConfiguration est utilisé par Process Reporting pour configure
    >Il s’agit du même emplacement que celui spécifié dans l’option **Dossier racine** de la configuration ProcessDataStorage.
    >
    >
-   >Si vous mettez à jour l’option de dossier racine dans la configuration ProcessDataStorage, vous devez mettre à jour l’emplacement du chemin de stockage CRX dans le service ReportConfiguration.
+   >Si vous mettez à jour l’option Dossier racine dans la configuration ProcessDataStorage, vous devez mettre à jour l’emplacement du chemin de stockage CRX dans le service ReportConfiguration.
 
 1. Cliquez sur **Enregistrer** et fermez **CQ Configuration Manager**.
 
@@ -205,9 +205,9 @@ Vous pouvez également utiliser cette option pour désactiver la publication des
 
 **Intervalle de lot (sec.)**
 
-Chaque fois que le service ProcessDataPublisher s’exécute, il divise d’abord le temps depuis la dernière exécution du service par l’intervalle de lot. Le service traite ensuite séparément chaque intervalle de données d’AEM Forms afin de contrôler la taille des données que l’éditeur traite de bout en bout au cours de chaque exécution (lot) au cours d’un cycle.
+Chaque fois que le service ProcessDataPublisher s’exécute, il divise d’abord le temps depuis la dernière exécution du service par l’intervalle de lot. Le service traite ensuite séparément chaque intervalle de données d’AEM Forms afin de contrôler la taille des données que le service de publication traite de bout en bout au cours de chaque exécution (lot) au cours d’un cycle.
 
-Par exemple, si l’éditeur s’exécute tous les jours, au lieu de traiter l’ensemble des données pendant un jour au cours d’une seule exécution, il divise par défaut le traitement en 24 lots d’une heure chacun.
+Par exemple, si le service de publication s’exécute tous les jours, au lieu de traiter l’ensemble des données pendant un jour au cours d’une seule exécution, il divise par défaut le traitement en 24 lots d’une heure chacun.
 
 `Default`: `3600`
 
@@ -229,7 +229,7 @@ L’environnement AEM Forms contient les données du moment où l’environnemen
 
 Par défaut, le service ProcessDataPublisher importe toutes les données de la base de données AEM Forms.
 
-En fonction de vos besoins de création de rapports, si vous prévoyez d’exécuter des rapports et des requêtes sur des données postérieures à une certaine date et heure, il est recommandé de spécifier la date et l’heure. Le service de publication publie alors les données à partir de cette heure.
+En fonction de vos besoins de création de rapports, si vous prévoyez d’exécuter des rapports et des requêtes sur des données postérieures à une certaine date et heure, il est recommandé de spécifier la date et l’heure. Le service de publication publie alors la date à partir de cette heure.
 
 `Default`: `01-01-1970 00:00:00`
 
@@ -239,15 +239,15 @@ En fonction de vos besoins de création de rapports, si vous prévoyez d’exéc
 
 L’interface utilisateur de Process Reporting est basée sur un navigateur.
 
-Une fois que vous avez configuré Process Reporting, vous pouvez commencer à l’utiliser à l’emplacement suivant de votre installation AEM Forms :
+Une fois que vous avez configuré la création de rapports sur les processus, vous pouvez commencer à l’utiliser à l’emplacement suivant de votre installation AEM Forms :
 
 `https://<server>:<port>/lc/pr`
 
-### Se connecter à Process Reporting {#log-in-to-process-reporting}
+### Se connecter à la création de rapports sur les processus {#log-in-to-process-reporting}
 
-Lorsque vous accédez à l’URL Process Reporting (https://&lt;server>:&lt;port>/lc/pr), l’écran de connexion s’affiche.
+Lorsque vous accédez à l’URL de création de rapports sur les processus (https://&lt;server>:&lt;port>/lc/pr), l’écran de connexion s’affiche.
 
-Pour vous connecter au module Process Reporting, saisissez vos informations d’identification.
+Pour vous connecter au module de création de rapports sur les processus, saisissez vos informations d’identification.
 
 >[!NOTE]
 >
@@ -289,7 +289,7 @@ Cliquez sur le titre à tout moment pour revenir à l’écran d’accueil.
 
 L’heure de la dernière mise à jour affiche la date et l’heure auxquelles les mises à jour de données ont été transmises au référentiel Process Reporting.
 
-Pour plus d’informations sur le service de publication de données et sur la planification de ce service, voir [Planification de la publication des données de processus](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) dans l’article Prise en main de Process Reporting.
+Pour plus d’informations sur le service de publication de données et sur la planification de ce service, voir [Planification de la publication des données de processus](/help/forms/using/process-reporting/install-start-process-reporting.md#schedule-process-data-publishing) dans l’article Prise en main de Process Reporting.
 
 **Utilisateur Process Reporting :** le nom d’utilisateur connecté s’affiche à la droite de l’heure de la dernière mise à jour.
 

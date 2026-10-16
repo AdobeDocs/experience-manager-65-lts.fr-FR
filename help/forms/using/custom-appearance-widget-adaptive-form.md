@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 98%
@@ -146,9 +146,9 @@ Une fois le modèle de projet créé, effectuez les modifications suivantes, sel
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> <code class="code">&lbrace;
+   <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      &rbrace;</code><br /> Cet exemple montre que <code>blur</code> est un événement HTML et <code>XFA_EXIT_EVENT</code> est l’événement XFA correspondant. </td>
+      }</code><br /> Cet exemple montre que <code>blur</code> est un événement HTML et <code>XFA_EXIT_EVENT</code> est l’événement XFA correspondant. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
@@ -179,7 +179,7 @@ Une fois le modèle de projet créé, effectuez les modifications suivantes, sel
    * La méthode `getEventMap` mappe les événements déclenchés par le widget avec les événements requis par le modèle de formulaire adaptatif. La valeur par défaut mappe les événements HTML standard du widget par défaut et doit être mise à jour si un événement alternatif est déclenché.
    * La `showDisplayValue` et la `showValue` appliquent la clause d’affichage et de modification de l’image et peuvent être remplacées pour obtenir un autre comportement.
 
-   * La méthode `getCommitValue` est appelée par le cadre des formulaires adaptatifs lorsque l’événement `commit` se produit. En règle générale, il s’agit de l’événement de sortie, à l’exception des éléments de liste déroulante, de bouton radio et de case à cocher où il s’affiche en cas de modification). Pour plus d’informations, voir [Expressions de formulaires adaptatifs](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
+   * La méthode `getCommitValue` est appelée par le cadre des formulaires adaptatifs lorsque l’événement `commit` se produit. En règle générale, il s’agit de l’événement de sortie, à l’exception des éléments de liste déroulante, de bouton radio et de case à cocher où il s’affiche en cas de modification). Pour plus d’informations, voir [Expressions de formulaires adaptatifs](../../forms/using/adaptive-form-expressions.md#value-commit-script).
 
    * Le fichier modèle fournit un exemple d’implémentation pour diverses méthodes. Supprimez les méthodes qui ne doivent pas être étendues.
 

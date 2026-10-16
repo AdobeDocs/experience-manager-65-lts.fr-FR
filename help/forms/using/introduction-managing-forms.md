@@ -25,7 +25,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 97%
@@ -84,7 +84,7 @@ Le panneau Formulaires et documents propose également des options pour effectue
 
 ### Thèmes  {#themes}
 
-Un thème contient des détails de style pour les composants et les panneaux. Les thèmes ont une identité indépendante. Ainsi, vous pouvez réutiliser un thème sur plusieurs formulaires adaptatifs. Vous pouvez spécifier des styles pour un composant ou modifier les propriétés CSS pour différents composants utilisés dans vos formulaires. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Vous pouvez enregistrer les personnalisations dans un thème et les déplacer sur les composants de votre formulaire sous la forme d&#39;un paramètre prédéfini. Lorsque vous appliquez un thème à votre formulaire, le style spécifié se reflète sur des composants correspondants de votre formulaire. Avec AEM 6.2 [!DNL Forms], vous pouvez créer des thèmes et les appliquer à vos formulaires.
+Un thème contient des détails de style pour les composants et les panneaux. Les thèmes ont une identité indépendante. Ainsi, vous pouvez réutiliser un thème sur plusieurs formulaires adaptatifs. Vous pouvez spécifier des styles pour un composant ou modifier les propriétés CSS pour différents composants utilisés dans vos formulaires. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence et la taille. Vous pouvez enregistrer les personnalisations dans un thème et les appliquer aux composants de votre formulaire sous la forme d’un paramètre prédéfini. Lorsque vous appliquez un thème à votre formulaire, le style spécifié s’applique aux composants correspondants de votre formulaire. Avec AEM 6.2 [!DNL Forms], vous pouvez créer des thèmes et les appliquer à vos formulaires.
 
 Pour plus d’informations sur la création et l’utilisation des thèmes, voir [Thèmes dans AEM Forms](../../forms/using/themes.md).
 
@@ -114,8 +114,8 @@ Le panneau d’outils AEM contient des outils pour divers composants. Pour accé
   ![Outils AEM Forms](assets/aem_forms_tools_new.png)
 
 * **Configurer PDF Generator** : un administrateur ou une administratrice peut configurer les paramètres PDF AEM [!DNL Forms], ajouter des comptes d’utilisateurs, et importer ou exporter la configuration dans PDF Generator.
-* **Publier les actifs de gestion de correspondance :** AEM [!DNL Forms] permet de publier l’ensemble des lettres, des fragments de document et des dictionnaires de données et les dépendances associées d’une instance de création simultanément. Les éléments publiés comportent tous les éléments de Correspondence Management et dépendances connexes. Pour plus d’informations, voir [Publier et dépublier des formulaires et des documents](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
-* **Exporter les actifs de gestion de correspondance :** vous pouvez télécharger tous les actifs Correspondence Management et les dépendances connexes sous la forme d’un package depuis une instance AEM [!DNL Forms] Pour la procédure détaillée, voir [Importation et exportation des actifs dans AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
+* **Publier les actifs de gestion de correspondance :** AEM [!DNL Forms] permet de publier l’ensemble des lettres, des fragments de document et des dictionnaires de données et les dépendances associées d’une instance de création simultanément. Les éléments publiés comportent tous les éléments de Correspondence Management et dépendances connexes. Pour plus d’informations, voir [Publier et dépublier des formulaires et des documents](../../forms/using/publishing-unpublishing-forms.md#publish-all-the-correspondence-management-assets).
+* **Exporter les actifs de gestion de correspondance :** vous pouvez télécharger tous les actifs Correspondence Management et les dépendances connexes sous la forme d’un package depuis une instance AEM [!DNL Forms] Pour la procédure détaillée, voir [Importation et exportation des actifs dans AEM Forms](../../forms/using/import-export-forms-templates.md#import-and-export-assets-in-correspondence-management)
 
 ## Éléments courants de l’interface utilisateur {#commonelements}
 

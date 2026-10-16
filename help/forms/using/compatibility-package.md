@@ -21,7 +21,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 59%
@@ -32,7 +32,7 @@ ht-degree: 59%
 
 La communication interactive est l’approche par défaut et recommandée pour créer des communications client dans AEM Forms 6.5 LTS. Pour continuer à utiliser les lettres dans AEM Forms 6.5 LTS, vous devez installer le dernier [package de compatibilité AEMFD](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
-Le package de compatibilité AEMFD vous permet également d’[utiliser les ressources AEM Forms 6.5.22.0, 6.4, 6.3 et 6.2 suivantes sur AEM Forms 6.5 LTS](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+Le package de compatibilité AEMFD vous permet également d’[utiliser les ressources AEM Forms 6.5.22.0, 6.4, 6.3 et 6.2 suivantes sur AEM Forms 6.5 LTS](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms-6.5.lts)
 
 * Fragments de document
 * Lettres

@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 97%
@@ -59,7 +59,7 @@ Avant de commencer à installer et à configurer les fonctionnalités de communi
 * Le chemin d’installation de l’instance AEM ne contient pas d’espaces.
 * Une instance AEM est en cours d’exécution. Dans la terminologie AEM, une « instance » est une copie d’AEM s’exécutant sur un serveur en mode de création ou de publication. Vous avez besoin d’au moins une instance d’AEM (création ou traitement) pour exécuter les fonctionnalités de communication interactive et de gestion des correspondances d’AEM Forms :
 
-  * **Création** : instance AEM utilisée pour créer, télécharger et modifier du contenu et assurer l’administration du site web. Une fois que le contenu est publié, il est répliqué sur l’instance de publication.
+  * **Création** : instance AEM utilisée pour créer, télécharger et modifier du contenu et assurer l’administration du site web. Une fois que le contenu est prêt à être mis en ligne, il est répliqué sur l’instance de publication.
   * **Traitement :** une instance de [création AEM renforcée](/help/forms/using/hardening-securing-aem-forms-environment.md). Vous pouvez configurer une instance de création et renforcer sa sécurité après avoir effectué l’installation.
 
   * **Publication** : une instance AEM qui diffuse le contenu publié au public sur Internet ou sur un réseau interne.
@@ -104,7 +104,7 @@ Avant de commencer à installer et à configurer les fonctionnalités de communi
 
 Le module complémentaire AEM Forms est une application déployée sur AEM. Le package contient la communication interactive AEM Forms, la gestion des correspondances et d’autres fonctionnalités. Suivez les étapes ci-après pour installer le package du module complémentaire :
 
-1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
+1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à Software Distribution.
 1. Sélectionnez **[!UICONTROL Adobe Experience Manager]** situé dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.
@@ -151,7 +151,7 @@ Pour déléguer le démarrage des bibliothèques, procédez comme suit sur toute
 
 Pour autoriser le package, procédez comme suit sur toutes les instances dʼauteur et de publication :
 
-1. Ouvrez AEM Configuration Manager dans une fenêtre de navigateur. L’URL par défaut est https://&#39;[server]:[port]&#39;/system/console/configMgr.
+1. Ouvrez AEM Configuration Manager dans une fenêtre du navigateur. L’URL par défaut est https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Recherchez et ouvrez la **configuration du pare-feu de désérialisation**.
 1. Ajoutez le package **sun.util.calendar** au champ **Placer sur la liste autorisée**. Cliquez sur Enregistrer.
 1. Répétez les étapes 1 à 3 sur toutes les instances de création et de publication.
@@ -173,7 +173,7 @@ Le package de compatibilité AEMFD vous permet d’utiliser les ressources suiva
 
 Le Dispatcher est l’outil de mise en cache et d’équilibrage de charge d’Adobe Experience Manager, qui peut être utilisé conjointement avec un serveur web d’entreprise. Si vous utilisez [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr), effectuez les configurations suivantes pour AEM Forms :
 
-1. Configurez l’accès à AEM Forms:
+1. Configurez l’accès à AEM Forms :
 
    Ouvrez le fichier dispatcher.any en mode d’édition. Accédez à la section des filtres et ajoutez le filtre suivant à la section des filtres :
 
@@ -189,7 +189,7 @@ Le Dispatcher est l’outil de mise en cache et d’équilibrage de charge d’A
 
 Vos clients et clientes pourraient abandonner une communication interactive si l’expérience qu’elle offre n’est pas captivante. En plus d’être frustrante pour les clients et les clientes, cette situation augmente également le volume et le coût de l’assistance pour votre entreprise. Il est essentiel et difficile d’identifier et de fournir l’expérience client appropriée qui augmente le taux de conversion. AEM Forms est la solution à ce problème.
 
-AEM Forms s’intègre à Adobe Target, une solution Adobe Experience Cloud, pour offrir des expériences client personnalisées et attrayantes sur plusieurs canaux numériques. Pour utiliser Adobe Target avec une communication interactive, [intégrez Adobe Target à AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
+AEM Forms s’intègre à Adobe Target, une solution Adobe Experience Cloud, pour offrir des expériences client personnalisées et attrayantes sur plusieurs canaux numériques. Pour utiliser Adobe Target avec une communication interactive, [intégrez Adobe Target à AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#set-up-and-integrate-target-in-aem-forms).
 
 #### Configurer la communication SSL pour le modèle de données de formulaire  {#configure-ssl-communcation-for-form-data-model}
 

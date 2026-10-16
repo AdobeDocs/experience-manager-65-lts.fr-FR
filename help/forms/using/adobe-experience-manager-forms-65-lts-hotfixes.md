@@ -21,7 +21,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 13%
@@ -31,7 +31,7 @@ ht-degree: 13%
 Cet article répertorie les correctifs critiques implémentés pour résoudre les problèmes connus, améliorer la stabilité du système et améliorer les performances globales d’AEM Forms 6.5 LTS.
 
 
-Cet article s’applique à AEM Forms 6.5 LTS. Pour les déploiements d’AEM 6.5 (non-LTS), consultez [Correctifs Adobe Experience Manager Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/release-notes/aem-forms-hotfix).
+Cet article s’applique à AEM Forms 6.5 LTS. Pour les déploiements d’AEM 6.5 (non-LTS), consultez [Correctifs Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix).
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ Cet article s’applique à AEM Forms 6.5 LTS. Pour les déploiements d’AEM 6.
     <td>
     <ul>
     <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-correctif-on-add-on/adobe-aemfd-win-pkg-6.1.176-RHF-002.zip">Correctif2 pour le pack de services 6.5 LTS d’AEM sous Windows</a></li>
-    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]correctif-sur-modulecomplémentaire/adobe-aemfd-linux-pkg-6.1.176-RHF-002.zip">Hotfix2 pour AEM Service Pack 6.5 LTS sous Linux</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]correctif-sur-module complémentaire/adobe-aemfd-linux-pkg-6.1.176-RHF-002.zip">Hotfix2 pour AEM Service Pack 6.5 LTS sous Linux</a></li>
      <li>MacOS - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-osx-pkg-6.1.176-RHF-002.zip">correctif2 pour AEM Service Pack 6.5 LTS sur MacOS</a></li>
     <td>
     <ul>
@@ -125,7 +125,7 @@ Cet article s’applique à AEM Forms 6.5 LTS. Pour les déploiements d’AEM 6.
 
 Effectuez les étapes suivantes pour télécharger et installer le correctif :
 
-1. Téléchargez le [correctif](#hotfix-for-adaptive-forms) à partir du lien Distribution logicielle.
+1. Téléchargez le [correctif](#hotfix-for-aem-forms) à partir du lien Distribution logicielle.
 1. Procédez à l’extraction du fichier d’archive Hotfix pour obtenir un package Experience Manager (.zip) et des fichiers de bundle (.jar).
 1. Chargez et installez le package (.zip) via le [gestionnaire de modules](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#accessing).
 1. Ouvrez les bundles Configuration Manager `https://server:host/system/console/bundles`, chargez et installez le bundle (.jar). Le correctif est installé.

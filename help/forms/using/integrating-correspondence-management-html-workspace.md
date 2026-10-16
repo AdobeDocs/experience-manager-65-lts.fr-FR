@@ -30,7 +30,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 97%
@@ -121,7 +121,7 @@ Suivez les étapes ci-dessous pour créer une tâche afin d’effectuer le rendu
    ```
 
    [Obtenir le fichier](assets/dscsample.zip)
-   Télécharger DSC : un exemple de DSC est disponible dans le fichier DSCSample.zip joint ci-dessus. Téléchargez et décompressez le fichier DSCSample.zip. Avant d’utiliser le service DSC, vous devez le configurer. Voir [Configurer le service DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)
+   Télécharger DSC : un exemple de DSC est disponible dans le fichier DSCSample.zip joint ci-dessus. Téléchargez et décompressez le fichier DSCSample.zip. Avant d’utiliser le service DSC, vous devez le configurer. Voir [Configurer le service DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#configure-the-dsc-service)
 
    Dans la boîte de dialogue Définir l’activité, sélectionnez l’activité appropriée tel que getLetterInstanceInfo et cliquez sur **OK**.
 

@@ -16,7 +16,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '5707'
 ht-degree: 99%
@@ -102,11 +102,11 @@ Pour plus d’informations, voir [Création d’un formulaire adaptatif](/help/f
   * Pour personnaliser la disposition des composants de formulaire adaptatif prêts à l’emploi dans /libs, [créez des composants de disposition personnalisés](/help/forms/using/custom-layout-components-forms.md) en plus des [dispositions par défaut](/help/forms/using/layout-capabilities-adaptive-forms.md).
   * Intégrez les interactivités personnalisées en créant des widgets ou des apparences personnalisés. Il n’est pas recommandé de modifier les composants par défaut. Pour plus d’informations, consultez [Structure de l’apparence](/help/forms/using/introduction-widgets.md).
 
-* Pour connaître les recommandations relatives à la gestion des données d’identification personnelle, reportez-vous à la section [Gestion des informations d’identification personnelle.](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p)
+* Pour connaître les recommandations relatives à la gestion des données d’identification personnelle, reportez-vous à la section [Gestion des informations d’identification personnelle.](/help/forms/using/adaptive-forms-best-practices.md#handling-personally-identifiable-information)
 
 ### Création de modèles de formulaires
 
-Vous pouvez créer un formulaire adaptatif à l’aide des modèles de formulaires activés dans **Explorateur de configurations**. Pour activer les modèles de formulaire, reportez-vous à [Création d’un modèle de formulaire adaptatif](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
+Vous pouvez créer un formulaire adaptatif à l’aide des modèles de formulaires activés dans **Explorateur de configurations**. Pour activer les modèles de formulaire, reportez-vous à [Création d’un modèle de formulaire adaptatif](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
 
 Vous pouvez également charger les modèles de formulaires à partir des packages de formulaires adaptatifs créés sur une autre machine de création. Les modèles de formulaires sont disponibles en installant les [packages aemforms-references-*](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Nous recommandons de suivre les bonnes pratiques suivantes :
 
@@ -288,7 +288,7 @@ Pour plus d’informations, voir [Plug-in AEM pour Chrome - Formulaire adaptati
 
 Des validations côté serveur sont nécessaires pour empêcher toute tentative de contournement des validations sur le client et tout compromis possible des envois de données et des règles métier. Les validations côté serveur sont exécutées sur le serveur en chargeant la bibliothèque cliente requise.
 
-* Incluez des fonctions dans une bibliothèque cliente pour valider les expressions dans les formulaires adaptatifs et spécifiez la bibliothèque cliente dans la boîte de dialogue du conteneur de formulaires adaptatifs. Pour plus d’informations, voir [Revalidation côté serveur](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p).
+* Incluez des fonctions dans une bibliothèque cliente pour valider les expressions dans les formulaires adaptatifs et spécifiez la bibliothèque cliente dans la boîte de dialogue du conteneur de formulaires adaptatifs. Pour plus d’informations, voir [Revalidation côté serveur](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form).
 * La validation côté serveur permet de valider le modèle de formulaire. Il est recommandé de créer une bibliothèque cliente séparée pour les validations et de ne pas la mélanger à d’autres éléments. Par exemple, ne placez pas le style HTML et la manipulation DOM dans la même bibliothèque cliente.
 
 ### Traduction des formulaires adaptatifs {#localizing-adaptive-forms}
@@ -373,11 +373,11 @@ L’un des principaux défis pour les entreprises est de savoir comment gérer l
 
 L’éditeur de règles d’AEM Forms fournit une interface visuelle pour la création et la gestion des règles, ce qui réduit la nécessité d’un codage étendu. Il peut s’avérer particulièrement utile pour les utilisateurs et utilisatrices professionnels ou les personnes concevant des formulaires qui ne possèdent pas des compétences de programmation avancées, mais qui doivent définir et gérer des règles commerciales dans les formulaires. Nous examinons ici quelques cas d’utilisation où l’éditeur de règles vous permet ce qui suit :
 
-* &#x200B;<!-- Allows you --> Définir des règles commerciales pour vos formulaires sans avoir besoin d’une programmation étendue.
-* &#x200B;<!-- Use the Rule Editor when you need --> Implémenter une logique conditionnelle dans vos formulaires. Cela inclut l’affichage ou le masquage des éléments de formulaire, la modification des valeurs de champ selon certaines conditions ou la modification dynamique du comportement de vos formulaires.
-* &#x200B;<!--When you want --> Pour appliquer des règles de validation de données aux envois de formulaire, l’éditeur de règles peut être utilisé pour définir des conditions de validation.
-* &#x200B;<!-- When you need --> Pour intégrer vos formulaires à des sources de données externes (FDM) ou des services, l’éditeur de règles vous permet de définir des règles pour la récupération, l’affichage ou la manipulation des données lors des interactions avec les formulaires.
-* &#x200B;<!-- If you want -->Pour créer des formulaires dynamiques et interactifs qui répondent aux actions de l’utilisateur ou de l’utilisatrice, l’éditeur de règles vous permet de définir des règles qui régissent le comportement des éléments de formulaire en temps réel.
+* <!-- Allows you --> Définir des règles commerciales pour vos formulaires sans avoir besoin d’une programmation étendue.
+* <!-- Use the Rule Editor when you need --> Implémenter une logique conditionnelle dans vos formulaires. Cela inclut l’affichage ou le masquage des éléments de formulaire, la modification des valeurs de champ selon certaines conditions ou la modification dynamique du comportement de vos formulaires.
+* <!--When you want --> Pour appliquer des règles de validation de données aux envois de formulaire, l’éditeur de règles peut être utilisé pour définir des conditions de validation.
+* <!-- When you need --> Pour intégrer vos formulaires à des sources de données externes (FDM) ou des services, l’éditeur de règles vous permet de définir des règles pour la récupération, l’affichage ou la manipulation des données lors des interactions avec les formulaires.
+* <!-- If you want -->Pour créer des formulaires dynamiques et interactifs qui répondent aux actions de l’utilisateur ou de l’utilisatrice, l’éditeur de règles vous permet de définir des règles qui régissent le comportement des éléments de formulaire en temps réel.
 
 L’éditeur de règles est disponible pour les composants de base et les composants principaux d’Adobe Experience Manager Forms.
 
