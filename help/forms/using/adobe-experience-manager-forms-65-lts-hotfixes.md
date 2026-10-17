@@ -21,7 +21,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 13%
@@ -125,7 +125,7 @@ Cet article s’applique à AEM Forms 6.5 LTS. Pour les déploiements d’AEM 6.
 
 Effectuez les étapes suivantes pour télécharger et installer le correctif :
 
-1. Téléchargez le [correctif](#hotfix-for-adaptive-forms) à partir du lien Distribution logicielle.
+1. Téléchargez le [correctif](#hotfix-for-aem-forms) à partir du lien Distribution logicielle.
 1. Procédez à l’extraction du fichier d’archive Hotfix pour obtenir un package Experience Manager (.zip) et des fichiers de bundle (.jar).
 1. Chargez et installez le package (.zip) via le [gestionnaire de modules](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#accessing).
 1. Ouvrez les bundles Configuration Manager `https://server:host/system/console/bundles`, chargez et installez le bundle (.jar). Le correctif est installé.

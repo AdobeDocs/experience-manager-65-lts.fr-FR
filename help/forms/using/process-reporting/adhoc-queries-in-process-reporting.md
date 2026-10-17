@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1650'
 ht-degree: 100%
@@ -36,13 +36,13 @@ ht-degree: 100%
 
 ## Requêtes ad hoc dans Process Reporting {#ad-hoc-queries-in-process-reporting-1}
 
-Grâce aux requêtes ad hoc dans Process Reporting, vous pouvez créer des requêtes personnalisées que vous pouvez utiliser pour rechercher les détails des processus et des tâches des instances de processus AEM Forms définies dans votre environnement AEM Forms.
+Grâce aux requêtes ad hoc dans la création de rapports sur les processus, vous pouvez créer des requêtes personnalisées que vous pouvez utiliser pour rechercher les détails des processus et des tâches des instances de processus AEM Forms définies dans votre environnement AEM Forms.
 
 En outre, les requêtes ad hoc peuvent être définies à l’aide de filtres de propriétés de processus et de tâches. Ces filtres peuvent ensuite être enregistrés et utilisés pour exécuter les rapports ultérieurement.
 
-[**Recherche de processus**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-search-p) : recherchez des instances de processus avec un filtre de recherche défini par l’utilisateur en fonction des attributs de processus.
+[**Recherche de processus**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#process-task-search) : recherchez des instances de processus avec un filtre de recherche défini par l’utilisateur en fonction des attributs de processus.
 
-[**Détails du processus**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-details-p) : affichez les détails d’une instance de processus en spécifiant l’identifiant de processus.
+[**Détails du processus**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#process-task-details) : affichez les détails d’une instance de processus en spécifiant l’identifiant de processus.
 
 **Recherche de tâches** : recherchez des instances de tâche avec un filtre de recherche défini par l’utilisateur en fonction des attributs de tâche.
 
@@ -52,9 +52,9 @@ En outre, les requêtes ad hoc peuvent être définies à l’aide de filtres de
 
 Les étapes que vous suivez pour créer des filtres et exécuter des requêtes pour les détails de processus sont les mêmes que pour les tâches.
 
-Par conséquent, les interfaces utilisateur de la recherche de processus et de la recherche de tâches ne diffèrent qu’au niveau des champs que vous pouvez rechercher et des champs renvoyés dans les résultats de recherche. Cela est simplement dû au fait que, alors que de nombreux champs sont identiques, certains sont spécifiques aux processus et d’autres sont spécifiques aux tâches.
+Par conséquent, les interfaces d&#39;utilisation de la recherche de processus et de la recherche de tâches ne diffèrent qu’au niveau des champs selon lesquels vous pouvez effectuer une recherche et des champs renvoyés dans les résultats de recherche. Cela est simplement dû au fait que, alors que de nombreux champs sont identiques, certains sont spécifiques aux processus et d’autres sont spécifiques aux tâches.
 
-Cet article détaille les descriptions des sections de recherche de processus/tâches et de détails de processus/tâches. Toutes les différences spécifiques sont indiquées de manière spécifique aux emplacements appropriés.
+Cet article détaille les descriptions des sections de recherche de processus/tâches et de détails de processus/tâches. Aux endroits appropriés, toutes les différences spécifiques seront signalées.
 
 ## Recherche de processus/tâches {#process-task-search}
 
@@ -192,7 +192,7 @@ Vous pouvez afficher les détails d’un processus/d’une tâche AEM Forms spé
 
 1. Exécutez une recherche de processus/tâche. Pour plus d’informations, consultez la section [Pour exécuter une requête de processus](#to-execute-a-search-query).
 
-   Notez que les ID de processus affichés dans les résultats de la recherche sont liés.
+   Notez que les ID de processus affichés dans les résultats de la recherche sont des liens hypertexte.
 
    ![process_id_list](assets/process_id_list.png)
 

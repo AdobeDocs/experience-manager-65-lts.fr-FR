@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2481'
 ht-degree: 100%
@@ -136,7 +136,7 @@ Pour partager des ressources, telles que des dictionnaires de données, des lett
 
 Utilisez cette option pour télécharger toutes les ressources de Correspondence Management et les dépendances connexes sous la forme d’un package à partir d’une instance AEM Forms.
 
-Par exemple, si Correspondence Management comporte une lettre qui utilise une image et du texte, le package téléchargé contient également l’image et le texte associés à la lettre. Toutes les propriétés de métadonnées (propriétés personnalisées incluses) associées à la ressource sont également téléchargées. Une fois que vous avez téléchargé le package (.cmp), vous pouvez [importer le package vers une autre instance d’AEM Forms](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
+Par exemple, si Correspondence Management comporte une lettre qui utilise une image et du texte, le package téléchargé contient également l’image et le texte associés à la lettre. Toutes les propriétés de métadonnées (propriétés personnalisées incluses) associées à la ressource sont également téléchargées. Une fois que vous avez téléchargé le package (.cmp), vous pouvez [importer le package vers une autre instance d’AEM Forms](../../forms/using/import-export-forms-templates.md#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management).
 
 Pour télécharger toutes les ressources de Correspondence Management et les dépendances connexes sous la forme d’un package, procédez comme suit :
 
@@ -161,7 +161,7 @@ Pour télécharger toutes les ressources de Correspondence Management et les dé
 
 1. Sélectionnez le lien **Télécharger le package exporté** pour télécharger le fichier de package.
 
-   Pour ajouter des ressources du package à une autre instance de Correspondence Management, [importez le package vers une instance AEM Forms](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
+   Pour ajouter des ressources du package à une autre instance de Correspondence Management, [importez le package vers une instance AEM Forms](../../forms/using/import-export-forms-templates.md#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management).
 
 ### Importer des fragments de document, des lettres et/ou des dictionnaires de données dans Correspondence Management {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 

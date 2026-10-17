@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6814'
 ht-degree: 98%
@@ -69,7 +69,7 @@ Une règle est une combinaison d’actions et de conditions. Dans l’éditeur d
 
 L’éditeur de règles fournit un ensemble de types de règle prédéfinis, tels que Lorsque, Afficher, Masquer, Activer, Désactiver, Définir la valeur de et Valider pour vous aider à créer des règles. Chaque type de règle vous permet de définir des conditions et des actions dans une règle. Le document décrit de façon plus détaillée chaque type de règle.
 
-Une règle suit généralement l’un des concepts suivants :
+Une règle suit généralement l’une des structures suivantes :
 
 **Condition-action** Dans ce concept, une règle définit d’abord une condition suivie d’une action à déclencher. Le concept est comparable à l’instruction if-then des langages de programmation.
 
@@ -89,9 +89,9 @@ Pour plus d’informations sur les types de règles disponibles dans l’éditeu
 
 Même si vous pouvez obtenir la plupart des cas d’utilisation avec n’importe quel concept de règle, voici quelques recommandations pour sélectionner un concept plutôt qu’un autre. Pour plus d’informations sur les règles disponibles dans l’éditeur de règles, reportez-vous à la section [Types de règles disponibles dans l’éditeur de règles](#available-rule-types-in-rule-editor).
 
-* Lors de la création d’une règle, réfléchissez d’abord au contexte de l’objet pour lequel vous la créez. Supposons que vous souhaitiez masquer ou afficher le champ B en fonction de la valeur spécifiée par un utilisateur ou une utilisatrice dans le champ A. Dans ce cas, vous évaluez une condition sur le champ A, et selon la valeur qu’elle renvoie, vous déclenchez une action sur le champ B.
+* Lors de la création d’une règle, une règle générale consiste à réfléchir au contexte de l’objet pour lequel vous la créez. Supposons que vous souhaitiez masquer ou afficher le champ B en fonction de la valeur spécifiée par un utilisateur ou une utilisatrice dans le champ A. Dans ce cas, vous évaluez une condition sur le champ A, et selon la valeur qu’elle renvoie, vous déclenchez une action sur le champ B.
 
-  Par conséquent, si vous créez une règle pour le champ B (l’objet pour lequel vous évaluez une condition), utilisez le concept de condition-action ou le type de règle Lorsque. De même, utilisez le concept d’action-condition ou le type de règle Afficher ou Masquer pour le champ A.
+  Par conséquent, si vous créez une règle pour le champ B (l’objet pour lequel vous évaluez une condition), utilisez la structure condition-action ou le type de règle When. De même, utilisez le concept d’action-condition ou le type de règle Afficher ou Masquer pour le champ A.
 
 * Parfois, vous devez effectuer plusieurs actions en fonction d’une condition. Dans pareils cas, il est recommandé d’utiliser le concept de condition-action. Dans ce concept, vous pouvez évaluer une condition une fois et spécifier plusieurs instructions d’action.
 
@@ -215,7 +215,7 @@ La figure ci-dessous présente un exemple d’ajout dynamique de cases à cocher
 
 **Supprimer une instance** : supprime une instance de la ligne de panneau ou de tableau répétable spécifiée.
 
-**Accéder à** : permet d’accéder à d’autres communications interactives, d’autres formulaires adaptatifs, d’autres ressources, comme des images ou des fragments de document ou une URL externe. Pour plus d’informations, voir [Ajouter un bouton à la communication interactive](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
+**Accéder à** : permet d’accéder à d’autres communications interactives, d’autres formulaires adaptatifs, d’autres ressources, comme des images ou des fragments de document ou une URL externe. Pour plus d’informations, voir [Ajouter un bouton à la communication interactive](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel).
 
 ### Définir la valeur de {#set-value-of}
 
@@ -375,9 +375,9 @@ Pour ouvrir l’interface d’utilisation de l’éditeur de règles :
 
    ![create-rules](assets/create-rules.png)
 
-   Toutes les règles existantes pour les objets de formulaire sélectionnés sont répertoriées dans cet écran. Pour plus d’informations sur la gestion des règles existantes, voir [Gestion des règles](#manage-rules).
+   Toutes les règles existantes pour les objets de formulaire sélectionnés sont répertoriées dans cette vue. Pour plus d’informations sur la gestion des règles existantes, voir [Gestion des règles](#manage-rules).
 
-1. Sélectionnez **[!UICONTROL Créer]** pour créer une règle. L’éditeur visuel de l’interface utilisateur de l’éditeur de règles s’affiche par défaut la première fois que vous lancez l’éditeur de règles.
+1. Sélectionnez **[!UICONTROL Créer]** pour créer une règle. L’éditeur visuel de l’interface d&#39;utilisation de l’éditeur de règles s’affiche par défaut la première fois que vous ouvrez l’éditeur de règles.
 
    ![Interface utilisateur de l’éditeur de règles](assets/rule-editor-ui.png)
 
@@ -474,7 +474,7 @@ Effectuez les étapes suivantes pour créer les règles :
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4.png)
 
-   Vous avez défini la condition comme `When Marital Status is equal to Married`. Définissez ensuite l’action à effectuer si cette condition est True.
+   Vous avez défini la condition comme `When Marital Status is equal to Married`. Définissez ensuite l’action à effectuer si cette condition est vraie.
 
 1. Dans l’instruction Alors, sélectionnez **[!UICONTROL Afficher]** dans le menu déroulant **[!UICONTROL Sélectionner une action]**.
 
@@ -508,7 +508,7 @@ Effectuez les étapes suivantes pour créer les règles :
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. Choisissez **[!UICONTROL Sélectionner l’option]** et sélectionnez **[!UICONTROL Expression mathématique]**. Un champ permettant de saisir l’expression mathématique s’ouvre.
+1. Choisissez **[!UICONTROL Sélectionner l’option]** et sélectionnez **[!UICONTROL Expression mathématique]**. Un champ permettant de saisir une expression mathématique s’ouvre.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -534,7 +534,7 @@ Effectuez les étapes suivantes pour créer les règles :
    >
    >Vous pouvez créer des expressions complexes à l’aide de composants, fonctions, expressions mathématiques et valeurs de propriété dans le champ Sélectionner une option.
 
-   Créez ensuite une condition qui, lorsqu’elle renvoie True, permet que l’expression s’exécute.
+   Créez ensuite une condition qui, lorsqu’elle renvoie True, exécute l’expression.
 
 1. Sélectionnez **Ajouter une condition** pour ajouter une instruction Lorsque.
 
@@ -619,9 +619,9 @@ Affiche les paramètres utilisés par la fonction. Une fonction peut comporter p
   1. booléen
   1. portée
 
-  La portée est utilisée pour les champs référents d’un formulaire adaptatif. Lorsqu’un formulaire utilise le chargement différé, vous pouvez utiliser `scope` pour accéder à ses champs. Vous pouvez accéder aux champs lorsque les champs sont chargés ou si les champs sont marqués comme généraux.
+  La portée est utilisée pour faire référence aux champs d’un formulaire adaptatif. Lorsqu’un formulaire utilise le chargement différé, vous pouvez utiliser `scope` pour accéder à ses champs. Vous pouvez accéder aux champs lorsque les champs sont chargés ou si les champs sont marqués comme généraux.
 
-  Tous les autres types de paramètre sont classés en dessous de l’un des précédents. Ils sont tous pris en charge. Assurez-vous que vous sélectionnez l’un des types ci-dessus. Les types ne respectent pas la casse. Les espaces ne sont pas autorisés dans le paramètre `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
+  Tous les autres types de paramètre sont classés dans l’une des catégories ci-dessus. Ils sont tous pris en charge. Assurez-vous que vous sélectionnez l’un des types ci-dessus. Les types ne sont pas sensibles à la casse. Les espaces ne sont pas autorisés dans le paramètre `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
 * **Type de retour**
 Syntaxe : `@return {type}`
@@ -795,7 +795,7 @@ Pour copier-coller des règles, procédez comme suit :
 
    >[!NOTE]
    >
-   >Vous pouvez coller une règle dans un autre objet de formulaire uniquement si cet objet de formulaire prend en charge les événement de la règle copiée. Par exemple, un bouton prend en charge l’événement Cliquer. Vous pouvez coller une règle avec un événement Cliquer sur un bouton mais pas dans une case à cocher.
+   >Vous pouvez coller une règle dans un autre objet de formulaire uniquement si cet objet de formulaire prend en charge les évènements de la règle copiée. Par exemple, un bouton prend en charge l’évènement de clic. Vous pouvez coller une règle avec un événement Cliquer sur un bouton mais pas dans une case à cocher.
 
 1. Sélectionnez **Terminé** pour enregistrer la règle.
 

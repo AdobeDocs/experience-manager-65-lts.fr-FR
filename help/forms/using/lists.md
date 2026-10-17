@@ -20,7 +20,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6929'
 ht-degree: 98%
@@ -65,7 +65,7 @@ La solution Correspondence Management prend en charge deux types d’éléments
 
    Le vérificateur orthographique par défaut de votre navigateur vérifie l’orthographe dans l’éditeur de texte. Pour gérer les vérifications d’orthographe et de grammaire, vous pouvez modifier les paramètres du vérificateur orthographique de votre navigateur ou installer des plug-ins/modules complémentaires externes de navigateur pour vérifier l’orthographe et la grammaire.
 
-   Vous pouvez également utiliser les nombreux raccourcis clavier dans l’éditeur de texte pour gérer, modifier et mettre en forme le texte. Pour plus d’informations sur les raccourcis clavier de [l’Éditeur de texte](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) dans les Raccourcis clavier de Correspondence Management.
+   Vous pouvez également utiliser les nombreux raccourcis clavier dans l’éditeur de texte pour gérer, modifier et mettre en forme le texte. Pour plus d’informations sur les raccourcis clavier de [l’Éditeur de texte](/help/forms/using/keyboard-shortcuts.md#formatting) dans les Raccourcis clavier de Correspondence Management.
 
 1. Un éditeur de texte s’ouvre. Entrez le texte. Utilisez la barre d’outils située en haut de la page pour mettre en forme le texte, les conditions d’insertion, le lien et les sauts de page.
 
@@ -501,7 +501,7 @@ Cet exemple montre comment créer un tableau dynamique et statique, lier le tabl
 
    Sélectionnez ensuite le DD et exportez les données d’exemple. Le fichier XML que vous obtenez contient les données des personnes employées et trois instances pour Nominee_details (par défaut, 3 instances sont téléchargées. Vous pouvez en ajouter ou en supprimer selon vos besoins). Mettez à jour les valeurs, puis importez les données de test dans le DD. Le fichier CMP est le package et contient le dictionnaire de données. Importez donc le dictionnaire de données dans Correspondence Management.
 
-   Pour plus d’informations sur l’utilisation du dictionnaire de données et des données de test, voir [Dictionnaire de données](/help/forms/using/data-dictionary.md#p-working-with-test-data-p).
+   Pour plus d’informations sur l’utilisation du dictionnaire de données et des données de test, voir [Dictionnaire de données](/help/forms/using/data-dictionary.md#working-with-test-data).
 
    ![Structure du dictionnaire de données](assets/dd.jpeg)
 

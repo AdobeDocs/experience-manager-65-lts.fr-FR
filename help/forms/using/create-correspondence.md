@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3906'
 ht-degree: 96%
@@ -49,7 +49,7 @@ Sélectionnez la lettre à prévisualiser en procédant comme suit :
 
    >[!NOTE]
    >
-   >Si un élément de données n’est pas associé à la lettre, l’aperçu de la lettre s’ouvre. Sinon, si la lettre est basée sur un dictionnaire de données, Correspondence Management affiche les options de prévisualisation et de personnalisation dans le menu Prévisualisation et vous pouvez sélectionner l’une des deux options. Vous pouvez également associer des données de test à un dictionnaire de données. Lorsque le [dictionnaire de données est associé à des données de test](../../forms/using/data-dictionary.md#p-working-with-test-data-p), en sélectionnant l’option de prévisualisation, l’écran d’aperçu classique s’ouvre avec les données de test renseignées.
+   >Si un élément de données n’est pas associé à la lettre, l’aperçu de la lettre s’ouvre. Sinon, si la lettre est basée sur un dictionnaire de données, Correspondence Management affiche les options de prévisualisation et de personnalisation dans le menu Prévisualisation et vous pouvez sélectionner l’une des deux options. Vous pouvez également associer des données de test à un dictionnaire de données. Lorsque le [dictionnaire de données est associé à des données de test](../../forms/using/data-dictionary.md#working-with-test-data), en sélectionnant l’option de prévisualisation, l’écran d’aperçu classique s’ouvre avec les données de test renseignées.
 
 1. Pour être en mesure de rendre une correspondance lors de la prévisualisation, vous devez être un administrateur ou un membre de l’un des groupes suivants :
 
@@ -58,7 +58,7 @@ Sélectionnez la lettre à prévisualiser en procédant comme suit :
 
    Si vous ne disposez pas des autorisations requises, contactez votre administrateur pour obtenir des droits d’accès appropriés. Pour plus d’informations sur la création et l’ajout des utilisateurs aux groupes, voir [Ajouter des utilisateurs ou des groupes à un groupe](/help/sites-administering/security.md). Si vous tentez de rendre une correspondance sans avoir les autorisations appropriées, la page d’erreur 404 s’affiche.
 
-1. Si vous avez sélectionné **Aperçu** > **Personnalisation**, une boîte de dialogue s’ouvre. Dans la boîte de dialogue, sélectionnez un fichier de données, correspondant au dictionnaire de données, avec lequel prévisualiser la lettre puis sélectionnez **Aperçu**. Un fichier de données est créé à partir d’un dictionnaire de données pour une lettre particulière. Pour plus d’informations sur le fichier de données, consultez la section [Dictionnaire de données](../../forms/using/data-dictionary.md#p-working-with-test-data-p).
+1. Si vous avez sélectionné **Aperçu** > **Personnalisation**, une boîte de dialogue s’ouvre. Dans la boîte de dialogue, sélectionnez un fichier de données, correspondant au dictionnaire de données, avec lequel prévisualiser la lettre puis sélectionnez **Aperçu**. Un fichier de données est créé à partir d’un dictionnaire de données pour une lettre particulière. Pour plus d’informations sur le fichier de données, consultez la section [Dictionnaire de données](../../forms/using/data-dictionary.md#working-with-test-data).
 
    ![Aperçu de la lettre](assets/8_previewcustomdatafile.png)
 
@@ -254,7 +254,7 @@ Vous pouvez effectuer des modifications relatives à la disposition et au conten
 
    ![Saut de page explicite](assets/8_pagebreak.png)
 
-1. Pour enregistrer la lettre en tant que brouillon et poursuivre sa rédaction plus tard, sélectionnez Enregistrer en tant que brouillon. Pour utiliser cette option, votre lettre doit être [publiée](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Pour plus d’informations, consultez la section Instance Brouillon sous [Enregistrement de brouillons et envoi d’instances de lettre](#savingdrafts).
+1. Pour enregistrer la lettre en tant que brouillon et poursuivre sa rédaction plus tard, sélectionnez Enregistrer en tant que brouillon. Pour utiliser cette option, votre lettre doit être [publiée](../../forms/using/publishing-unpublishing-forms.md#publish-an-asset). Pour plus d’informations, consultez la section Instance Brouillon sous [Enregistrement de brouillons et envoi d’instances de lettre](#savingdrafts).
 
    ![saveasdraft](assets/saveasdraft.png)
 
@@ -284,7 +284,7 @@ Lorsqu’une lettre est générée dans l’interface utilisateur Création de c
 
 Il existe deux types d’instances de lettre pouvant être enregistrées : instance Brouillon ou instance Envoyer.
 
-* **Instance Brouillon** : l’instance Brouillon capture l’état actuel de la lettre que vous prévisualisez. Pour enregistrer une instance Brouillon, assurez-vous d’abord que la lettre et toutes les ressources auxquelles la lettre fait référence sont à l’état Publié. Pour plus d’informations sur la publication d’une lettre, voir [Publication d’une ressource](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Vous devez publier une lettre avant de pouvoir l’enregistrer en tant que brouillon. En effet, lorsque vous publiez une lettre, vous créez une version de la lettre, de ses ressources dépendantes et de données à ce stade. La version publiée d’une lettre ne peut pas être modifiée par vous, un autre utilisateur ou une autre utilisatrice. Elle peut être restaurée ultérieurement sans aucune incompatibilité inattendue à partir de la version publiée. Vous pouvez retourner à cette instance plus tard et reprendre où vous en étiez.
+* **Instance Brouillon** : l’instance Brouillon capture l’état actuel de la lettre que vous prévisualisez. Pour enregistrer une instance Brouillon, assurez-vous d’abord que la lettre et toutes les ressources auxquelles la lettre fait référence sont à l’état Publié. Pour plus d’informations sur la publication d’une lettre, voir [Publication d’une ressource](../../forms/using/publishing-unpublishing-forms.md#publish-an-asset). Vous devez publier une lettre avant de pouvoir l’enregistrer en tant que brouillon. En effet, lorsque vous publiez une lettre, vous créez une version de la lettre, de ses ressources dépendantes et de données à ce stade. La version publiée d’une lettre ne peut pas être modifiée par vous, un autre utilisateur ou une autre utilisatrice. Elle peut être restaurée ultérieurement sans aucune incompatibilité inattendue à partir de la version publiée. Vous pouvez retourner à cette instance plus tard et reprendre où vous en étiez.
 
 * **Instance Envoyer** : l’instance Envoyer capture l’état de la lettre envoyée. L’instance Envoyer stocke l’état PDF de l’instance de lettre après son post-traitement ainsi que les données saisies par l’utilisateur dans l’interface utilisateur Création de correspondance.
 

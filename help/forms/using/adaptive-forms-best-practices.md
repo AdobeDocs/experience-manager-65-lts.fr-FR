@@ -16,7 +16,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '5707'
 ht-degree: 99%
@@ -102,7 +102,7 @@ Pour plus d’informations, voir [Création d’un formulaire adaptatif](/help/f
   * Pour personnaliser la disposition des composants de formulaire adaptatif prêts à l’emploi dans /libs, [créez des composants de disposition personnalisés](/help/forms/using/custom-layout-components-forms.md) en plus des [dispositions par défaut](/help/forms/using/layout-capabilities-adaptive-forms.md).
   * Intégrez les interactivités personnalisées en créant des widgets ou des apparences personnalisés. Il n’est pas recommandé de modifier les composants par défaut. Pour plus d’informations, consultez [Structure de l’apparence](/help/forms/using/introduction-widgets.md).
 
-* Pour connaître les recommandations relatives à la gestion des données d’identification personnelle, reportez-vous à la section [Gestion des informations d’identification personnelle.](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p)
+* Pour connaître les recommandations relatives à la gestion des données d’identification personnelle, reportez-vous à la section [Gestion des informations d’identification personnelle.](/help/forms/using/adaptive-forms-best-practices.md#handling-personally-identifiable-information)
 
 ### Création de modèles de formulaires
 
@@ -288,7 +288,7 @@ Pour plus d’informations, voir [Plug-in AEM pour Chrome - Formulaire adaptati
 
 Des validations côté serveur sont nécessaires pour empêcher toute tentative de contournement des validations sur le client et tout compromis possible des envois de données et des règles métier. Les validations côté serveur sont exécutées sur le serveur en chargeant la bibliothèque cliente requise.
 
-* Incluez des fonctions dans une bibliothèque cliente pour valider les expressions dans les formulaires adaptatifs et spécifiez la bibliothèque cliente dans la boîte de dialogue du conteneur de formulaires adaptatifs. Pour plus d’informations, voir [Revalidation côté serveur](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p).
+* Incluez des fonctions dans une bibliothèque cliente pour valider les expressions dans les formulaires adaptatifs et spécifiez la bibliothèque cliente dans la boîte de dialogue du conteneur de formulaires adaptatifs. Pour plus d’informations, voir [Revalidation côté serveur](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form).
 * La validation côté serveur permet de valider le modèle de formulaire. Il est recommandé de créer une bibliothèque cliente séparée pour les validations et de ne pas la mélanger à d’autres éléments. Par exemple, ne placez pas le style HTML et la manipulation DOM dans la même bibliothèque cliente.
 
 ### Traduction des formulaires adaptatifs {#localizing-adaptive-forms}

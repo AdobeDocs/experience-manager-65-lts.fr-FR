@@ -22,7 +22,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 92%
@@ -181,7 +181,7 @@ Après avoir exécuté l’utilitaire de migration, effectuez les tâches de mai
 
 1. Assurez-vous que la version XFA des dispositions et des dispositions de fragments est 3.3 ou une version ultérieure. L’utilisation des dispositions et des dispositions de fragments d’une version plus ancienne peut provoquer des problèmes de rendu de la lettre. Pour mettre à jour une version de XFA plus ancienne vers la version la plus récente, suivez la procédure suivante :
 
-   1. [Téléchargez XFA sous la forme d’un fichier zip](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) depuis l’interface utilisateur de Forms.
+   1. [Téléchargez XFA sous la forme d’un fichier zip](../../forms/using/import-export-forms-templates.md#import-and-export-assets-in-correspondence-management) depuis l’interface utilisateur de Forms.
    1. Extrayez le fichier.
    1. Ouvrez le fichier XFA dans la dernière version de Designer et enregistrez-le. La version de XFA est mise à jour vers la dernière version.
    1. Téléchargez le fichier XFA dans l’interface utilisateur de Forms.

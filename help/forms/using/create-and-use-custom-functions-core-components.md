@@ -1,7 +1,7 @@
 ---
 title: Création et ajout de fonctions personnalisées dans un formulaire adaptatif
 description: AEM Forms prend en charge les fonctions personnalisées qui permettent aux utilisateurs et utilisatrices de créer et d’utiliser leurs propres fonctions dans l’éditeur de règles.
-keywords: Ajoutez une fonction personnalisée, utilisez une fonction personnalisée, créez une fonction personnalisée, utilisez une fonction personnalisée dans l’éditeur de règles.
+keywords: Ajouter une fonction personnalisée, utiliser une fonction personnalisée, créer une fonction personnalisée, utiliser une fonction personnalisée dans l’éditeur de règles.
 content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
@@ -18,7 +18,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3533'
 ht-degree: 98%
@@ -28,8 +28,8 @@ ht-degree: 98%
 Cet article décrit la création de fonctions personnalisées avec le dernier composant principal de formulaire adaptatif, qui comporte les dernières fonctionnalités, telles que les suivantes :
 
 * Fonction de mise en cache des fonctions personnalisées
-* Prise en charge des objets de champ et d’objet de portée globale pour les fonctions personnalisées
-* Prise en charge des fonctionnalités JavaScript modernes telles que les fonctions let et arrow (prise en charge d’ES10)
+* Prise en charge de l’objet de portée globale et des objets de champ pour les fonctions personnalisées
+* Prise en charge des fonctionnalités JavaScript modernes telles que let et les fonctions fléchées (prise en charge d’ES10)
 
 Veillez à définir la [dernière version de formulaire](https://github.com/adobe/aem-core-forms-components/tree/release/650) sur votre environnement de composant principal AEM Forms pour utiliser les dernières fonctionnalités des fonctions personnalisées. </span>
 
@@ -86,7 +86,7 @@ Le **paramètre** est une liste d’arguments utilisés par des fonctions person
 
   * Chaîne : représente une seule valeur de chaîne.
   * Nombre : représente une seule valeur numérique.
-  * Booléen : représente une seule valeur booléenne (true ou false).
+  * Booléen : représente une seule valeur booléenne (vrai ou faux).
   * Chaîne[] : représente un tableau de valeurs de chaîne.
   * Nombre[] : représente un tableau de valeurs numériques.
   * Booléen[] : représente un tableau de valeurs booléennes.
@@ -94,7 +94,7 @@ Le **paramètre** est une liste d’arguments utilisés par des fonctions person
   * Date[] : représente un tableau de valeurs de date.
   * array : représente un tableau générique contenant des valeurs de différents types.
   * object : représente l’objet de formulaire transmis à une fonction personnalisée au lieu de transmettre directement sa valeur.
-  * scope : représente l’objet globals, qui contient des variables en lecture seule telles que des instances de formulaire, des instances de champ cible et des méthodes permettant d’effectuer des modifications dans les fonctions personnalisées. Il est déclaré comme dernier paramètre dans les annotations JavaScript et n’est pas visible par l’éditeur de règles d’un formulaire adaptatif. Le paramètre scope accède à l’objet du formulaire ou du composant pour déclencher la règle ou l’événement requis pour le traitement du formulaire. Pour plus d’informations sur l’objet Globals et comment l’utiliser, [cliquez ici](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects).
+  * scope : représente l’objet globals, qui contient des variables en lecture seule telles que des instances de formulaire, des instances de champ cible et des méthodes permettant d’effectuer des modifications dans les fonctions personnalisées. Il est déclaré comme dernier paramètre dans les annotations JavaScript et n’est pas visible dans l’éditeur de règles d’un formulaire adaptatif. Le paramètre scope accède à l’objet du formulaire ou du composant pour déclencher la règle ou l’événement requis pour le traitement du formulaire. Pour plus d’informations sur l’objet Globals et comment l’utiliser, [cliquez ici](/help/forms/using/create-and-use-custom-functions-core-components.md#support-field-and-global-objects).
 
 Le type de paramètre ne **respecte pas la casse** et les espaces ne sont pas autorisés dans le nom du paramètre.
 
@@ -167,7 +167,7 @@ Le type de retour spécifie le type de valeur que la fonction personnalisée ren
   `{type}` représente le type de retour de la fonction. Les types de retour autorisés sont les suivants :
 * Chaîne : représente une seule valeur de chaîne.
 * Nombre : représente une seule valeur numérique.
-* Booléen : représente une seule valeur booléenne (true ou false).
+* Booléen : représente une seule valeur booléenne (vrai ou faux).
 * Chaîne[] : représente un tableau de valeurs de chaîne.
 * Nombre[] : représente un tableau de valeurs numériques.
 * Booléen[] : représente un tableau de valeurs booléennes.
@@ -287,7 +287,7 @@ var c = {
 
 Pour répertorier les fonctions personnalisées dans l’éditeur de règles, vous pouvez utiliser l’un des formats suivants :
 
-### Instruction de fonction avec ou sans commentaires jsdoc
+### Déclaration de fonction avec ou sans commentaires jsdoc
 
 Vous pouvez créer une fonction personnalisée avec ou sans commentaires jsdoc.
 
@@ -301,9 +301,9 @@ Vous pouvez créer une fonction personnalisée avec ou sans commentaires jsdoc.
 Si l’utilisateur ou l’utilisatrice n’ajoute aucune annotation JavaScript à la fonction personnalisée, elle est répertoriée dans l’éditeur de règles par son nom de fonction. Toutefois, il est recommandé d’inclure des annotations JavaScript pour améliorer la lisibilité des fonctions personnalisées.
 
 
-### Fonction arrow avec annotations ou commentaire JavaScript obligatoires
+### Fonction fléchée avec annotations ou commentaire JavaScript obligatoires
 
-Vous pouvez créer une fonction personnalisée à l’aide d’une syntaxe de fonction arrow :
+Vous pouvez créer une fonction personnalisée à l’aide d’une syntaxe de fonction fléchée :
 
 ```javascript
     /**
@@ -461,7 +461,7 @@ Ajoutez ce qui suit au dossier de bibliothèque cliente ajouté :
 
 ## Créer et déployer des fonctions personnalisées via CRXDE{#create-add-custom-function}
 
-Si vous utilisez le dernier module complémentaire AEM Forms et Forms, vous pouvez créer une fonction personnalisée via CRXDE pour utiliser les dernières mises à jour des fonctions personnalisées. Pour cela, procédez comme suit :
+Si vous utilisez les dernières versions d’AEM Forms et du module complémentaire Forms, vous pouvez créer une fonction personnalisée via CRXDE pour utiliser les dernières mises à jour des fonctions personnalisées. Pour cela, procédez comme suit :
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
 
@@ -543,7 +543,7 @@ Vous pouvez maintenant créer une règle pour utiliser des fonctions personnalis
 
 ![Ajout de la bibliothèque cliente de fonctions personnalisées](/help/forms/using//assets/calculateage-customfunction.png)
 
-Maintenant, apprenons comment configurer et utiliser une fonction personnalisée à l’aide du [service d’appel de l’éditeur de règles dans AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke).
+Maintenant, apprenons comment configurer et utiliser une fonction personnalisée à l’aide du [service d’appel de l’éditeur de règles dans AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke).
 
 ## Utiliser une fonction personnalisée dans un formulaire adaptatif {#use-custom-functions}
 
@@ -593,7 +593,7 @@ Les fonctions personnalisées asynchrones n’apparaissent pas dans la liste de 
 
 >[!NOTE]
 >
-> L’avantage de l’appel de fonctions asynchrones dans les fonctions personnalisées est que les fonctions asynchrones permettent l’exécution simultanée de plusieurs tâches, avec le résultat de chaque fonction utilisée dans les fonctions personnalisées.
+> L’avantage de l’appel de fonctions asynchrones dans les fonctions personnalisées est que les fonctions asynchrones permettent l’exécution simultanée de plusieurs tâches, le résultat de chaque fonction étant utilisé dans les fonctions personnalisées.
 
 Consultez le code ci-dessous pour découvrir comment nous pouvons appeler des fonctions asynchrones à l’aide de fonctions personnalisées :
 
@@ -989,7 +989,7 @@ Les formulaires adaptatifs implémentent la mise en cache pour les fonctions per
 
 ![Fonction personnalisée avec prise en charge du cache](/help/forms/using/assets/custom-function-cache-error.png)
 
-Si les fonctions personnalisées sont modifiées, la mise en cache est invalidée et elle est analysée.
+Si les fonctions personnalisées sont modifiées, la mise en cache est invalidée et les fonctions sont analysées.
 
 ## Résolution des problèmes {#troubleshooting}
 

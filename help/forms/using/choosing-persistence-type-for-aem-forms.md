@@ -25,7 +25,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 96%
@@ -71,7 +71,7 @@ Le tableau suivant répertorie tous les types de persistance pris en charge avec
  </tbody>
 </table>
 
-TarMK est conçu pour les performances, tandis que MongoMK et RDBMK sont conçus pour l’évolutivité. Adobe recommande vivement d’utiliser TarMK comme technologie de persistance par défaut pour tous les scénarios de déploiement AEM Forms, pour les instances de création et de publication, sauf dans les cas d’utilisation décrits dans la section [Choisir Mongo ou un micronoyau de base de données relationnelle plutôt que TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
+TarMK est conçu pour les performances, tandis que MongoMK et RDBMK sont conçus pour l’évolutivité. Adobe recommande vivement d’utiliser TarMK comme technologie de persistance par défaut pour tous les scénarios de déploiement AEM Forms, pour les instances de création et de publication, sauf dans les cas d’utilisation décrits dans la section [Choisir Mongo ou un micronoyau de base de données relationnelle plutôt que TarMK](#choosing-mongo-or-a-relational-database-microkernel-over-tarmk).
 
 Pour obtenir la liste des micro-noyaux pris en charge, voir [Exigences techniques d’AEM Forms sur OSGi](/help/sites-deploying/technical-requirements.md) <!--or [AEM Forms on JEE supported platform combinations](/help/forms/using/aem-forms-jee-supported-platforms.md) articles-->.
 

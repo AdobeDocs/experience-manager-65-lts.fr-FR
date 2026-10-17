@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 96%
@@ -148,7 +148,7 @@ Les fonctions suivantes sont disponibles par défaut avec le composant de graphi
 
 ### Fonctions personnalisées {#custom-functions}
 
-Outre l’utilisation des fonctions par défaut dans les graphiques, vous pouvez créer des [fonctions personnalisées](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions) en JavaScript et les rendre disponibles dans la liste des fonctions du composant de graphique.
+Outre l’utilisation des fonctions par défaut dans les graphiques, vous pouvez créer des [fonctions personnalisées](/help/forms/using/rule-editor.md#custom-functions) en JavaScript et les rendre disponibles dans la liste des fonctions du composant de graphique.
 
 Une fonction prend un tableau ou des valeurs et un nom de catégorie comme entrées et renvoie une valeur. Par exemple :
 

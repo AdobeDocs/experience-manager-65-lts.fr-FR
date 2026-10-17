@@ -22,7 +22,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 99%
@@ -244,7 +244,7 @@ Vous devez d’abord avoir les éléments suivants correctement configurés pour
 * Autres XDP ([fragment de mise en page](document-fragments.md#document-fragments)) qui constituent des parties de la lettre. Les XDP\mises en page sont créés dans [Designer](https://www.adobe.com/go/learn_aemforms_designer_65_fr).
 * Le [dictionnaire de données](/help/forms/using/data-dictionary.md) approprié (facultatif).
 * Les [modules de données](/help/forms/using/document-fragments.md) à utiliser dans la correspondance.
-* [Les données de test](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) correspondent au fichier XML contenant les données de test. Des données de test sont requises si vous utilisez un dictionnaire de données.
+* [Les données de test](/help/forms/using/data-dictionary.md#working-with-test-data) correspondent au fichier XML contenant les données de test. Des données de test sont requises si vous utilisez un dictionnaire de données.
 
 ## Création d&#39;un modèle de lettre {#create-a-letter-template}
 
@@ -275,7 +275,7 @@ Vous devez d’abord avoir les éléments suivants correctement configurés pour
 
    ![Message d’avertissement : lettre créée avec succès](assets/createcorrespondencecreated.png)
 
-   **Suivant** : lorsque vous sélectionnez **Ouvrir**, Correspondence Management affiche une représentation de la disposition répertoriant tous les composants présents dans la disposition (XDP). Poursuivez en insérant les [Modules de données et fragments de disposition et configuration](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
+   **Suivant** : lorsque vous sélectionnez **Ouvrir**, Correspondence Management affiche une représentation de la disposition répertoriant tous les composants présents dans la disposition (XDP). Poursuivez en insérant les [Modules de données et fragments de disposition et configuration](/help/forms/using/create-letter.md#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them).
 
 ### Insérez des modules de données et des fragments de disposition dans une lettre puis configurez-les. {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 

@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2816'
 ht-degree: 99%
@@ -80,7 +80,7 @@ Pour créer un jeu de formulaires, procédez ainsi :
 
    * Ordre des formulaires : faites glisser les formulaires pour les réorganiser. L’ordre des formulaires définit l’ordre dans lequel les formulaires se présentent à l’utilisateur final dans l’application AEM Forms et le rendu autonome.
    * Identifiant de formulaire : indique une identité unique pour les formulaires à utiliser dans les expressions d’éligibilité.
-   * Racine des données : pour chaque formulaire du jeu de formulaires, l’auteur ou l’autrice peut configurer XPATH où les données d’un formulaire donné sont situées dans les données XML envoyées. Par défaut, la valeur est /. Si tous les formulaires du jeu de formulaires sont liés à un schéma et partagent le même schéma XML, vous pouvez modifier cette valeur. Il est recommandé que chaque champ du formulaire ait la liaison de données appropriée spécifiée dans le XDP. Si deux champs de deux formulaires différents partagent la liaison de données commune, le champ du deuxième formulaire affiche les valeurs préremplies du premier formulaire. Ne liez pas deux sous-formulaires avec le même contenu interne au même nœud XML. Pour plus d’informations sur la structure XML du jeu de formulaires, voir [Préremplissage XML du jeu de formulaires](../../forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
+   * Racine des données : pour chaque formulaire du jeu de formulaires, l’auteur ou l’autrice peut configurer XPATH où les données d’un formulaire donné sont situées dans les données XML envoyées. Par défaut, la valeur est /. Si tous les formulaires du jeu de formulaires sont liés à un schéma et partagent le même schéma XML, vous pouvez modifier cette valeur. Il est recommandé que chaque champ du formulaire ait la liaison de données appropriée spécifiée dans le XDP. Si deux champs de deux formulaires différents partagent la liaison de données commune, le champ du deuxième formulaire affiche les valeurs préremplies du premier formulaire. Ne liez pas deux sous-formulaires avec le même contenu interne au même nœud XML. Pour plus d’informations sur la structure XML du jeu de formulaires, voir [Préremplissage XML du jeu de formulaires](../../forms/using/formset-in-aem-forms.md#prefill-xml-for-form-set).
    * Expression d’éligibilité : spécifie une expression JavaScript qui évalue une valeur booléenne et indique si un formulaire du jeu de formulaires est éligible au remplissage. Si la valeur est « faux », il n’est pas demandé à l’utilisateur ou à l’utilisatrice de remplir le formulaire, qui n’est même pas affiché. En règle générale, l’expression est basée sur les valeurs des champs qui sont collectées avant ce formulaire. Les expressions contiennent également des appels à l’API du jeu de formulaires fs.valueOf pour extraire les valeurs renseignées par l’utilisateur ou l’utilisatrice dans un champ d’un formulaire du jeu de formulaires :
 
    *fs.valueOf(&lt;Form Identifier>, &lt;fieldSom expression>) > &lt;value>*

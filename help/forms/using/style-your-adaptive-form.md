@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2193'
 ht-degree: 96%
@@ -83,7 +83,7 @@ L’éditeur de formulaires adaptatifs fournit plusieurs thèmes prêts à l’e
 
 ## Étape 2 : mettre à jour votre formulaire adaptatif {#step-update-your-adaptive-form}
 
-La conception présentée ci-dessus nécessite des modifications du texte et du logo de l’espace réservé de votre formulaire adaptatif existant.
+La conception présentée ci-dessus nécessite des modifications du texte d’espace réservé et du logo de votre formulaire adaptatif existant.
 
 **Pour mettre à jour votre formulaire adaptatif :**
 
@@ -104,17 +104,17 @@ La conception présentée ci-dessus nécessite des modifications du texte et du 
    1. Cliquez sur le champ identifiant de client et sur Propriétés ![cmppr](assets/cmppr.png).
    1. Copiez le contenu du champ **[!UICONTROL Titre]** dans le champ **[!UICONTROL Texte d’espace réservé]**.
    1. Supprimez le contenu du champ **[!UICONTROL Titre]** et cliquez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
-   1. Répétez les trois étapes précédentes pour toutes les zones de texte, la zone numérique et le champ d’adresse électronique du formulaire.
+   1. Répétez les trois étapes précédentes pour toutes les zones de texte, la zone numérique et le champ e-mail du formulaire.
 
       ![updated-adaptive-form](assets/updated-adaptive-form.png)
 
 ## Étape 3 : créer un thème personnalisé pour votre formulaire adaptatif {#step-create-a-custom-theme-for-your-adaptive-form}
 
-Vous pouvez utiliser un [éditeur de thèmes](/help/forms/using/themes.md) pour créer des thèmes personnalisés. L’éditeur de thèmes est un éditeur WYSIWYG très puissant. Il s’agit d’une méthode visuelle permettant d’appliquer un style CSS à divers composants d’un formulaire adaptatif. Il fournit des commandes plus précises aux composants de style et aux panneaux d’un formulaire adaptatif.
+Vous pouvez utiliser un [éditeur de thèmes](/help/forms/using/themes.md) pour créer des thèmes personnalisés. L’éditeur de thèmes est un éditeur WYSIWYG très puissant. Il s’agit d’une méthode visuelle permettant d’appliquer un style CSS à divers composants d’un formulaire adaptatif. Il offre des commandes plus précises pour styliser les composants et les panneaux d’un formulaire adaptatif.
 
 Un thème est une entité distincte au même titre que les formulaires adaptatifs. Il contient des styles (CSS) pour les composants et les panneaux d’un formulaire adaptatif. Ces styles incluent des propriétés CSS telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié est appliqué aux composants correspondants d’un formulaire adaptatif.
 
-Dans ce tutoriel, vous allez appliquer un style aux en-têtes et aux pieds de page, aux composants texte et numériques, aux composants de pièces jointes et aux boutons. Commençons par créer un thème :
+Dans ce tutoriel, vous allez appliquer un style aux en-têtes et aux pieds de page, aux composants texte et numériques, au composant de pièce jointe et aux boutons. Commençons par créer un thème :
 
 ### Création d’un thème {#create-a-theme}
 
@@ -126,7 +126,7 @@ Dans ce tutoriel, vous allez appliquer un style aux en-têtes et aux pieds de pa
 
 1. Sélectionnez **[!UICONTROL Créer]**. Un thème est créé et une boîte de dialogue permettant d’ouvrir le formulaire à modifier s’affiche. Cliquez sur **[!UICONTROL Ouvrir]** pour ouvrir le thème créé dans un nouvel onglet. Le thème s’ouvre dans l’éditeur de thèmes. Pour le style, l’éditeur de thèmes utilise un formulaire adaptatif prêt à l’emploi fourni avec AEM [!DNL Forms].
 
-   Pour plus d’informations sur l’utilisation de l’interface utilisateur de l’éditeur de thèmes, voir [À propos de l’éditeur de thèmes](/help/forms/using/themes.md#aboutthethemeeditor).
+   Pour plus d’informations sur l’utilisation de l’interface utilisateur de l’éditeur de thèmes, voir [À propos de l’éditeur de thèmes](/help/forms/using/themes.md#about-the-theme-editor).
 
 1. Sélectionnez **[!UICONTROL Options du thème]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configurer]**. Dans le champ **[!UICONTROL Prévisualisation du formulaire]**, sélectionnez le formulaire adaptatif **shipping-address-add-update-form**, sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), puis **[!UICONTROL Enregistrer]**. L’éditeur de thème est maintenant configuré pour utiliser votre propre formulaire adaptatif au lieu du formulaire adaptatif par défaut. Sélectionnez **[!UICONTROL Annuler]** pour revenir à l’éditeur de thèmes.
 
@@ -441,7 +441,7 @@ Certains styles s’appliquent uniquement à un composant spécifique. Un style 
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Arrière-plan</td> 
+      <td>Contexte</td> 
       <td>Couleur d’arrière-plan</td> 
       <td>F6921E</td> 
      </tr> 
@@ -483,7 +483,7 @@ Vous pouvez utiliser différentes polices pour concevoir un formulaire adaptatif
    ![ajouter une bibliothèque de polices](assets/add-a-font-window.png)
 
 1. Sélectionner **Clic** pour créer le projet.
-1. Copiez le code intégré et l’URL à partir de l’écran.
+1. Copiez le code intégré et l’URL affichés à l’écran.
 
    ![code intégré et URL](assets/font-add-url.png)
 
@@ -502,7 +502,7 @@ Vous pouvez utiliser différentes polices pour concevoir un formulaire adaptatif
 >
 > Pour utiliser les polices personnalisées ajoutées dans un formulaire adaptatif, assurez-vous que le nom de la bibliothèque cliente de la **[!UICONTROL Catégorie de bibliothèque cliente]** s’aligne sur le nom spécifié dans l’option Catégories du dossier clientlib.
 
-Les polices incluses sont désormais accessibles au formulaire adaptatif par le biais de la bibliothèque cliente de polices personnalisées suivante.
+Les polices incluses sont désormais accessibles au formulaire adaptatif par le biais de la Bibliothèque cliente de polices personnalisées suivante.
 
 <!--
 >[!NOTE]

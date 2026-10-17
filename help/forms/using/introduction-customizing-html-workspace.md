@@ -32,7 +32,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 100%
@@ -148,11 +148,11 @@ Les étapes de niveau supérieur pour la personnalisation CSS sont les suivante
 * Ajoutez des éléments de style dans ce fichier CSS. Voir Description des styles CSS pour plus d’informations.
 * Mettez ses références à jour dans `html.jsp`.
 
-Pour connaître les étapes exactes permettant d’effectuer ces personnalisations, voir la [Procédure générique de personnalisation de l’espace de travail AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md). Le fichier CSS fourni avec l’espace de travail AEM Forms se trouve sous /libs/ws/css/. Pour les personnalisations CSS, utilisez la commande [Ship Package](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Vous trouverez des exemples spécifiques de personnalisations CSS dans les rubriques d’aide fournies à la fin de cet article.
+Pour connaître les étapes exactes permettant d’effectuer ces personnalisations, voir la [Procédure générique de personnalisation de l’espace de travail AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md). Le fichier CSS fourni avec l’espace de travail AEM Forms se trouve sous /libs/ws/css/. Pour les personnalisations CSS, utilisez la commande [Ship Package](../../forms/using/introduction-customizing-html-workspace.md#crx-package). Vous trouverez des exemples spécifiques de personnalisations CSS dans les rubriques d’aide fournies à la fin de cet article.
 
 #### Image {#image}
 
-Vous pouvez personnaliser l’espace de travail AEM Forms pour ajouter des avatars d’utilisateurs ou pour ajouter le logo de votre entreprise. Pour ces personnalisations, utilisez la commande [Ship Package](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
+Vous pouvez personnaliser l’espace de travail AEM Forms pour ajouter des avatars d’utilisateurs ou pour ajouter le logo de votre entreprise. Pour ces personnalisations, utilisez la commande [Ship Package](../../forms/using/introduction-customizing-html-workspace.md#crx-package).
 
 Les étapes de niveau supérieur pour la personnalisation des images sont les suivantes :
 
@@ -173,7 +173,7 @@ Les étapes de niveau supérieur pour les personnalisations du modèle HTML son
 * Ajoutez de nouveaux modèles dans un dossier défini par l’utilisateur ou l’utilisatrice.
 * Effectuez les mises à jour appropriées vers les fichiers copiés, par exemple, le chemin d’accès du nouveau modèle.
 
-Vous trouverez des exemples spécifiques de ces personnalisations dans les rubriques d’aide fournies à la fin de cet article. Choisissez entre [Ship Package](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) et [Dev Package](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), selon le modèle à personnaliser.
+Vous trouverez des exemples spécifiques de ces personnalisations dans les rubriques d’aide fournies à la fin de cet article. Choisissez entre [Ship Package](../../forms/using/introduction-customizing-html-workspace.md#crx-package) et [Dev Package](../../forms/using/introduction-customizing-html-workspace.md#crx-package), selon le modèle à personnaliser.
 
 ### Modifications sémantiques {#semantic-changes}
 
@@ -202,7 +202,7 @@ Le package contient le code source de l’espace de travail AEM Forms. Le packag
 
 Il est principalement destiné aux personnalisations, car il permet de générer les éléments suivants :
 
-* Packages CRX pour les profils Ship, Debug et Dev (mentionnés ci-dessous dans [Packages CRX](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)).
+* Packages CRX pour les profils Ship, Debug et Dev (mentionnés ci-dessous dans [Packages CRX](../../forms/using/introduction-customizing-html-workspace.md#crx-package)).
 * Version minimisée du code personnalisé (pour les modifications sémantiques).
 
 #### Contenu WS {#ws-content}
