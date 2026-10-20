@@ -57,7 +57,7 @@ Pour connecter **[!DNL AEM Forms]** à **[!DNL Adobe Acrobat Sign]**, configurez
 
 Vous avez besoin des éléments suivants pour intégrer [!DNL Adobe Sign] à AEM :[!DNL Forms]
 
-* Un compte de développeur [Adobe Sign actif.](https://www.adobe.com/acrobat/business/developer-form.html)
+* Un compte de développeur [Adobe Sign actif.](https://www.adobe.com/fr/acrobat/business/developer-form.html)
 * Un serveur AEM [SSL](/help/sites-administering/ssl-by-default.md).[!DNL Forms]
 * Une [application API Adobe Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * Les informations d’identification (ID client et clé secrète client) de l’application API [!DNL Adobe Sign].
