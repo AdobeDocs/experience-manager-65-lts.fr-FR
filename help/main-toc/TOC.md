@@ -7,10 +7,10 @@ user-guide-description: Utilisez la documentation LTS de Adobe Experience Manage
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: a895c5e5cb2a4e21d7460d598bd260a5292ed2ad
+source-git-commit: 82ad777feafc14635e26f445a1be6001a2b82672
 workflow-type: tm+mt
-source-wordcount: '7801'
-ht-degree: 67%
+source-wordcount: '7809'
+ht-degree: 66%
 ---
 # Documentation LTS de Adobe Experience Manager 6.5 {#content}
 
@@ -462,7 +462,8 @@ ht-degree: 67%
     + [Installation et configuration de Designer](/help/forms/using/installing-configuring-designer.md)
     + Configurer AEM Forms {#configure-aem-forms}
       + [Optimiser les performances du serveur AEM Forms](/help/forms/using/performance-tuning-aem-forms.md)
-      + [Configurer le cache de formulaires adaptatifs](/help/forms/using/configure-adaptive-forms-cache.md)
+      + [Créer un index personnalisé pour les références de formulaire adaptatif](/help/forms/using/create-custom-index-for-adaptive-forms-references.md)
+      + [Configurer le cache des formulaires adaptatifs](/help/forms/using/configure-adaptive-forms-cache.md)
       + [Configuration des paramètres AEM DS](/help/forms/using/configuring-the-processing-server-url.md)
       + [Configuration du planificateur de synchronisation](/help/forms/using/configure-synchronization-scheduler.md)
       + [Configuration du connecteur pour Microsoft SharePoint](https://help.adobe.com/fr/AEMForms/6.1/SharePointConfig/index.html)
