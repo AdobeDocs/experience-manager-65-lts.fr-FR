@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a09b87b0103e007d357b8901233ae890998a307d
+source-git-commit: 7c3cc17781a4f5ca68ed738e76063a75c18beaeb
 workflow-type: tm+mt
-source-wordcount: '7815'
+source-wordcount: '7886'
 ht-degree: 21%
 ---
 
@@ -383,6 +383,8 @@ Pour installer AEM Forms 6.5 LTS SP3 sous JEE, procédez comme suit :
 
 * Sur **AEM Forms on JEE 6.5 LTS SP3**, la conversion de **fichiers PostScript (PS), EPS et PRN en PDF** échoue. Le processus natif `PsToPdfSvc` peut s’arrêter de manière inattendue, ce qui entraîne l’échec de la tâche de conversion avec des erreurs telles que `ALC-PDG-003-011` et `ALC-PDG-001-028`. Contactez le service clientèle d’Adobe pour obtenir de l’aide. (FORMS-28152)
 
+* Sur **AEM Forms on JEE 6.5 LTS SP3**, lorsqu’un PDF signé numériquement est joint à une tâche dans AEM Forms JEE Workspace, le chargement reste bloqué en statut de chargement ou échoue avec une erreur « Fichier non valide ». Par conséquent, les pièces jointes signées de PDF plus volumineuses ne peuvent pas être ajoutées à la tâche. Ce problème est corrigé dans une version ultérieure. Pour obtenir un correctif sur la version actuelle, contactez l’assistance Adobe. (FORMS-28517)
+
 Sous AEM Forms sur JEE, les extensions Reader ne fonctionnent pas sur la plateforme WebSphere® Liberty Profile (WLP). Le fichier EAR inclus avec le LTS SP3 ne contient pas les bibliothèques requises Bouncy Castle sur son chemin de classe.
 
 **Solution**
@@ -710,7 +712,7 @@ Téléchargez le package d’index [cq-dam-cfm-indices](https://experience.adobe
 
 -->
 
-&#x200B;###
+###
 
 ### Échec de connexion à Dispatcher avec la fonction SSL uniquement (corrigé dans AEM 6.5 LTS SP1 et versions ultérieures){#ssl-only-feature}
 
