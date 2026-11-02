@@ -33,8 +33,8 @@ ht-degree: 3%
 AEM Forms Designer est une application de bureau permettant la création et la gestion de formulaires adaptatifs PDF et XFA dans Adobe Experience Manager Forms. Utilisez les ressources ci-dessous pour commencer, explorer des exemples et référencer les fonctionnalités de script de Designer pour cette version 6.5 LTS.
 
 * [Utilisation de Designer](https://www.adobe.com/go/learn_aemforms_designer_65_lts) - Présentation de l’espace de travail Designer et des concepts de base de la création.
-* [Tutoriels de démarrage rapide de Designer ](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_lts) - tutoriels détaillés sur la prise en main de Designer.
-* [Exemples Designer ](https://www.adobe.com/go/learn_aemforms_designer_samples_65_lts) - exemples de formulaires téléchargeables que vous pouvez ouvrir et adapter dans Designer.
-* [Principes de base des scripts de ](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_lts) - présentation des scripts dans les formulaires Designer.
-* [Référence de script Designer ](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_lts) - Référence complète pour les objets et méthodes de script dans Designer.
-* [Référence de Designer FormCalc ](https://www.adobe.com/go/learn_aemforms_formCalc_65_lts) - référence complète pour FormCalc, langage de calcul intégré de Designer.
+* [Tutoriels de démarrage rapide de Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_lts) - tutoriels détaillés sur la prise en main de Designer.
+* [Exemples Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_samples_65_lts) - exemples de formulaires téléchargeables que vous pouvez ouvrir et adapter dans Designer.
+* [Principes de base des scripts de &#x200B;](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_lts) - présentation des scripts dans les formulaires Designer.
+* [Référence de script Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_lts) - Référence complète pour les objets et méthodes de script dans Designer.
+* [Référence de Designer FormCalc &#x200B;](https://www.adobe.com/go/learn_aemforms_formCalc_65_lts) - référence complète pour FormCalc, langage de calcul intégré de Designer.
