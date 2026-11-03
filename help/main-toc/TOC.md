@@ -7,10 +7,10 @@ user-guide-description: Utilisez la documentation LTS de Adobe Experience Manage
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: 82ad777feafc14635e26f445a1be6001a2b82672
+source-git-commit: bac5d173f2b6c822f2aa59a6647b5cb127788d2d
 workflow-type: tm+mt
-source-wordcount: '7809'
-ht-degree: 66%
+source-wordcount: '7768'
+ht-degree: 67%
 ---
 # Documentation LTS de Adobe Experience Manager 6.5 {#content}
 
@@ -773,12 +773,6 @@ ht-degree: 66%
     + [Protection d’un document au nom d’un autre utilisateur](/help/forms/using/protect-document-on-behalf-of-another-user.md)
   + Forms Designer {#use-forms-designer}
     + [Aide de Forms Designer](/help/forms/using/forms-designer-help.md)
-    + [Utilisation de Designer](https://www.adobe.com/go/learn_aemforms_designer_65_fr)
-    + [Tutoriels de démarrage rapide de Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_fr)
-    + [Exemples Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65_fr)
-    + [Principes de base des scripts de Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_fr)
-    + [Référence des scripts Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_fr)
-    + [Référence de Designer FormCalc](https://www.adobe.com/go/learn_aemforms_formCalc_65_fr)
     + [Utilisation de la signature manuscrite dans les formulaires HTML5](/help/forms/using/scribble-signature.md)
     + [Modifiier le contenu de la page zéro avec Designer](/help/forms/using/changing-page-zero-content-designer.md)
     + Bonnes pratiques en matière d’accessibilité {#accessibility-best-practices}
