@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: dc085d8f240ae633d82c0b03e8e30ccb82a92008
+source-git-commit: 5bc7e1ae18a7ee667241c2c82b55d3f32e71ce41
 workflow-type: tm+mt
-source-wordcount: '7820'
+source-wordcount: '7863'
 ht-degree: 20%
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 20%
 |---|---|
 | Version | Service Pack 3 (SP3) <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Type | Mise à jour du pack de services |
-| Date | 20 août 2026 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Date | 20 Août 2026 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack-lts/cq-quickstart-6.6.3.jar) |
 
 
@@ -44,7 +44,7 @@ ht-degree: 20%
 
 >[!IMPORTANT]
 >
-> **Correctif obligatoire** - Pour éviter des problèmes SNFE (SegmentNotFoundException) lors de la compression en ligne sur l’instance de secours, installez le correctif décrit dans [Problèmes connus - Corruption du référentiel lors de la compression en ligne](#repository-corruption-during-online-compaction-on-standby).
+> **Correctif obligatoire** - Pour éviter des problèmes SNFE (SegmentNotFoundException) lors du compactage en ligne sur l’instance de secours, installez le correctif décrit dans [Problèmes connus - Corruption du référentiel lors du compactage en ligne](#repository-corruption-during-online-compaction-on-standby).
 
 ## Éléments compris dans [!DNL Adobe Experience Manager] 6.5 LTS, SP3 {#what-is-new}
 
@@ -54,17 +54,17 @@ ht-degree: 20%
 
 ### Présentation des problèmes résolus {#fixed-issues-overview}
 
-[!DNL Adobe Experience Manager] 6.5 LTS, SP3 résout les problèmes liés à [!DNL Sites] et [!DNL Experience Manager Foundation]. Ces correctifs améliorent l’accessibilité, la fiabilité de création, la diffusion de contenu découplé, la gestion multisite et la stabilité de la plateforme. Les sections qui suivent énumèrent chaque correctif avec son numéro de référence.
+[!DNL Adobe Experience Manager] 6.5 LTS, SP3 résout les problèmes dans [!DNL Sites] et [!DNL Experience Manager Foundation]. Ces correctifs améliorent l’accessibilité, la fiabilité de création, la diffusion de contenu découplé, la gestion multisite et la stabilité de la plateforme. Les sections qui suivent énumèrent chaque correctif avec son numéro de référence.
 
-La plupart des modifications s’appliquent aux [!DNL Sites] :
+La plupart des modifications s&#39;appliquent à [!DNL Sites] :
 
 * Les améliorations de l’accessibilité représentent le groupe le plus important. Les mises à jour améliorent la navigation au clavier, les commentaires du lecteur d’écran, la gestion du focus, le balisage sémantique, le contraste du texte et le dimensionnement de la cible tactile dans l’éditeur de page, le rail latéral Assets, les filtres et les interfaces de création associées.
-* Les correctifs d’[!DNL Content Fragments] couvrent l’éditeur de fragments, l’éditeur de modèles, l’API REST et l’API GraphQL. Les mises à jour corrigent la localisation, la validation des champs, le comportement de modification et la gestion des réponses.
+* Les correctifs dans [!DNL Content Fragments] s’étendent à l’éditeur de fragments, à l’éditeur de modèles, à l’API REST et à l’API GraphQL. Les mises à jour corrigent la localisation, la validation des champs, le comportement de modification et la gestion des réponses.
 * Les correctifs de Live Copies MSM permettent aux auteurs de déployer les modifications de manière fiable à partir des pages de plan directeur et de conserver la configuration de déploiement existante.
 * La prise en charge de Crosswalk est disponible sur Adobe Managed Services, y compris les lots, les utilisateurs système et la configuration requis.
 * D’autres correctifs portent sur les interfaces admin et classiques, les composants principaux, la console des composants, l’intégration de Campaign, les fragments d’expérience et les lancements.
 
-Les modifications restantes s’appliquent aux [!DNL Experience Manager Foundation] :
+Les modifications restantes s’appliquent à [!DNL Experience Manager Foundation] :
 
 * Les mises à jour de localisation traduisent le texte auparavant uniquement en anglais dans les rapports d’intégrité, la console des opérations et plusieurs interfaces de création.
 * Les correctifs de stabilité restaurent le point d’entrée de surveillance de l’intégrité, maintiennent le service de messagerie en cours d’exécution après des erreurs de configuration intermittentes, et corrigent la variable de workflow et la modification du package de workflow.
@@ -118,10 +118,10 @@ Pour obtenir la liste complète, voir [Correction de problèmes dans 6.5 LTS, Se
 * La navigation au clavier ignore désormais les commandes masquées dans la barre d’outils Démographie réduite. Les utilisateurs peuvent se déplacer dans la Prévisualisation de la mise en page sans rencontrer d’options de barre d’outils indisponibles. (SITES-25304)
 * Les libellés de texte de la barre d’outils Démographie répondent désormais aux exigences de contraste minimales lors de la prévisualisation de la mise en page. Les utilisateurs peuvent lire plus clairement des libellés tels que Recommandé en arrière-plan de la barre d’outils. (SITES-25307)
 * La barre d’outils Démographie affiche désormais les indicateurs de focus du bouton avec un contraste suffisant. Les utilisateurs peuvent identifier le Commerce actif, le persona ou la commande Appareil lors de la navigation au clavier. (SITES-25308)
-* La barre d’outils Modifier la disposition utilise un indicateur de sélection groupé pour le sélecteur d’appareils. La composition comprend les commandes **Sélectionner l’appareil** et **Rotation de l’appareil** associées au comportement prévu de la barre d’outils. (SITES-25283)
+* La barre d’outils Modifier la disposition utilise un indicateur de sélection groupé pour le sélecteur d’appareils. La composition comprend les commandes **Sélectionner l’appareil** et **Faire pivoter l’appareil** associées dans le cadre du comportement prévu de la barre d’outils. (SITES-25283)
 * La barre d’outils Modifier la mise en page ne tronque plus le libellé **iPhone 8 Plus** lorsque les utilisateurs sélectionnent un autre appareil. Le nom complet de l’appareil reste visible dans tous les états du bouton. (SITES-25284)
 * L’option Modifier la disposition fournit désormais un contexte de mesure aux lecteurs d’écran. Les utilisateurs entendent une étiquette descriptive et le format de mesure au lieu d’une série de nombres inexpliqués. (SITES-25287)
-* La barre d’outils Modifier la disposition met désormais en surbrillance le bouton **Bureau** lorsque l’affichage du bureau est actif. L’indicateur visuel efface la sélection actuelle de l’appareil. (SITES-25290)
+* La barre d’outils Modifier la disposition met désormais en surbrillance le bouton **Bureau** lorsque la vue Bureau est active. L’indicateur visuel efface la sélection actuelle de l’appareil. (SITES-25290)
 * Le focus au clavier reste désormais visible sur le bouton d’échantillon pour toutes les couleurs disponibles. L’ajout d’un espacement empêche l’indicateur de focus de se fondre dans la nuance sélectionnée. (SITES-25253)
 * Les lecteurs d’écran identifient désormais correctement le champ Date de distorsion du temps. Le champ ne fournit plus de commentaires trompeurs suggérant qu’il ouvre une boîte de dialogue. (SITES-25263)
 * Le libellé du bouton Annotation répond désormais aux exigences de contraste minimales dans ses états par défaut et de survol. Les utilisateurs peuvent lire le libellé clairement sur l’arrière-plan du bouton. (SITES-25267)
@@ -134,7 +134,7 @@ Pour obtenir la liste complète, voir [Correction de problèmes dans 6.5 LTS, Se
 * Les boutons Infos utilisent désormais des icônes plus grandes dans le panneau Composants . Les utilisateurs peuvent localiser et reconnaître plus facilement chaque commande. (SITES-25217)
 * Les titres des composants restent désormais visibles lorsque les utilisateurs augmentent l’espacement du texte. Les titres longs s’encapsulent au lieu de tronquer ou de chevaucher le contenu voisin. (SITES-25219)
 * Le bouton Rail latéral Assets **Modifier** indique désormais qu’il ouvre un nouvel onglet du navigateur. Les repères visuels et les lecteurs d’écran préparent les utilisateurs avant la navigation. (SITES-25220)
-* Le mode Annotation place désormais le focus au clavier sur la barre d’outils d’annotation lorsque celle-ci s’ouvre. Les utilisateurs d’un clavier ou d’un lecteur d’écran peuvent se déplacer parmi les commandes dans une séquence logique sans revenir en arrière à partir du bouton **Fermer**. (SITES-24996)
+* Le mode Annotation place désormais le focus au clavier sur la barre d’outils d’annotation lorsque celle-ci s’ouvre. Les utilisateurs du clavier et du lecteur d&#39;écran peuvent se déplacer parmi les commandes dans une séquence logique sans revenir en arrière à partir du bouton **Fermer**. (SITES-24996)
 * Les boutons Sélectionner pour les champs Chemin d’accès et Balises n’utilisent plus d’icône de case à cocher. L&#39;icône mise à jour indique que le contrôle ouvre une boîte de dialogue de sélection au lieu de changer un état coché. (SITES-25210)
 * Le champ Filtre du panneau Composants du rail latéral comporte désormais un libellé accessible valide. Les lecteurs d’écran annoncent l’objectif du champ au lieu de s’appuyer sur une icône ou un texte d’espace réservé. (SITES-25212)
 * Le rail latéral d’Assets masque désormais les miniatures décoratives des lecteurs d’écran. Les utilisateurs n’entendent plus deux fois le nom de la ressource lorsqu’ils naviguent dans la grille de la ressource. (SITES-25213)
@@ -177,7 +177,7 @@ Pour obtenir la liste complète, voir [Correction de problèmes dans 6.5 LTS, Se
 #### Interface d’utilisation d’administration{#sites-adminui-65-lts-sp3}
 
 * AEM permet désormais aux membres du groupe Administrateur de déverrouiller des pages et d’emprunter l’identité d’utilisateurs. Les membres du groupe peuvent effectuer les deux tâches administratives via leur accès existant. (SITES-14732)
-* La vue Administration d’Assets met désormais à jour une carte de ressource une fois que les auteurs ont sélectionné **Rétablir cette version** dans le journal. La miniature affiche immédiatement la version restaurée et n’affiche plus de contenu d’aperçu obsolète. (SITES-46590)
+* La vue Administration d’Assets met désormais à jour une carte de ressource après que les auteurs ont sélectionné **Rétablir cette version** dans le journal. La miniature affiche immédiatement la version restaurée et n’affiche plus de contenu d’aperçu obsolète. (SITES-46590)
 
 
 #### Interface d’utilisation classique{#sites-classicui-65-lts-sp3}
@@ -192,7 +192,7 @@ La console Assets répond désormais lorsque les utilisateurs appliquent des fil
 
 #### [!DNL Content Fragments] - Admin{#sites-admin-65-lts-sp3}
 
-* La page Assets localise désormais l’info-bulle d’un fragment de contenu verrouillé. Les utilisateurs voient le libellé traduit **Extrait par** lorsqu’ils survolent l’indicateur de verrouillage. (SITES-42531) MAJEUR
+* La page Assets localise désormais l’info-bulle d’un fragment de contenu verrouillé. Les utilisateurs voient le libellé **Extrait par** traduit lorsqu’ils survolent l’indicateur de verrouillage. (SITES-42531) MAJEUR
 
 * AEM localise le message de validation Nom non valide fourni lors de la création du fragment de contenu. Les caractères de titre non pris en charge ne déclenchent plus de texte en anglais dans les interfaces non anglaises. (SITES-19796)
 * AEM traduit la chaîne Modèles de fragment de contenu lors de la création de fragments de contenu. L’interface d’Assets n’affiche plus le texte anglais de ce libellé dans les environnements localisés. (SITES-22336)
@@ -201,7 +201,7 @@ La console Assets répond désormais lorsque les utilisateurs appliquent des fil
 * AEM traduit la chaîne principale dans la boîte de dialogue de téléchargement des fragments de contenu. La section Eléments correspond à la langue de l’interface active. (SITES-42534)
 
 
-#### [!DNL Content Fragments] - Éditeur de fragments{#sites-fragments-editor-65-lts-sp3}
+#### [!DNL Content Fragments] - Éditeur De Fragments{#sites-fragments-editor-65-lts-sp3}
 
 * L’éditeur de fragment de contenu positionne désormais correctement les menus déroulants de l’éditeur de texte enrichi. Chaque menu reste aligné avec son contrôle de barre d&#39;outils et garde visibles les contrôles de mise en forme à proximité. (SITES-44005) CRITIQUE
 
@@ -229,7 +229,7 @@ La console Assets répond désormais lorsque les utilisateurs appliquent des fil
 
 * La console Modèles de fragment de contenu affiche désormais les miniatures chargées pour les configurations dont le nom contient des caractères localisés. Les auteurs ne perdent plus les aperçus des miniatures lorsque les noms de configuration utilisent du texte non anglais. (SITES-39242) MAJEUR
 
-* L’éditeur de modèle de fragment de contenu affiche du texte localisé **Libellé du champ** dès que les auteurs ajoutent un composant à la zone de travail. Les auteurs n’ont plus besoin d’enregistrer et de rouvrir le modèle pour voir la traduction. (SITES-45383)
+* L’éditeur de modèle de fragment de contenu affiche le texte localisé **Libellé du champ** dès que les auteurs ajoutent un composant à la zone de travail. Les auteurs n’ont plus besoin d’enregistrer et de rouvrir le modèle pour voir la traduction. (SITES-45383)
 * L’éditeur de modèle de fragment de contenu localise le message de validation affiché lorsque les auteurs sélectionnent un type de modèle non valide pour un composant composite. Le message correspond désormais au paramètre régional actif au lieu de s’afficher uniquement en anglais. (SITES-41117)
 * L’éditeur de modèle de fragment de contenu localise tout le texte de la boîte de dialogue Le modèle est verrouillé . La boîte de dialogue ne mélange plus les étiquettes de bouton et les instructions en anglais avec le texte d’interface traduit. (SITES-28592)
 
@@ -259,7 +259,7 @@ L’outil de recherche de contenu répertorie désormais les ressources dont les
 
 #### Intégration de campagne{#sites-campaign-integration-65-lts-sp3}
 
-Le Content Servlet Campaign conserve désormais le type de contenu de réponse JSON lors des requêtes de contenu. Cette modification arrête les entrées de journal `WARN` et `ERROR` qui se sont produites à plusieurs reprises après une mise à niveau à partir d’AEM 6.5.24. (SITES-46902) MAJEUR
+Le Content Servlet Campaign conserve désormais le type de contenu de réponse JSON lors des requêtes de contenu. Cette modification arrête les entrées de journal `WARN` et `ERROR` répétées qui se sont produites après une mise à niveau d’AEM 6.5.24. (SITES-46902) MAJEUR
 
 
 #### Fragments d’expérience{#sites-experiencefragments-65-lts-sp3}
@@ -296,7 +296,7 @@ L’historique des promotions Launch affiche désormais du texte localisé dans 
 
 * Faire défiler le menu Style ne supprime plus la mise en surbrillance du style sélectionné. Les auteurs peuvent confirmer leur sélection en cours tout en examinant les autres options disponibles. (SITES-30874) MAJEUR
 
-* Le bouton Lien de l’éditeur de texte enrichi s’ouvre désormais lorsque les auteurs accèdent à AEM via HTTP. La création d’un lien ne déclenche plus d’erreur de `crypto.randomUUID`. (SITES-39467)
+* Le bouton Lien de l’éditeur de texte enrichi s’ouvre désormais lorsque les auteurs accèdent à AEM via HTTP. La création du lien ne déclenche plus d&#39;erreur `crypto.randomUUID`. (SITES-39467)
 * Les auteurs peuvent désormais copier et coller les composants de fragment de contenu configurés dans des conteneurs de disposition vides. Le composant collé conserve sa référence de fragment de contenu d’origine et n’affiche plus l’erreur *Choisir une variation d’expérience*. (SITES-41586)
 * L’éditeur d’image honore désormais les proportions de recadrage personnalisées lors de la modification en ligne hybride. Chaque cible de dépôt d’image utilise sa propre configuration. Par conséquent, les sélections de recadrage s’appliquent correctement en dehors du mode plein écran. (SITES-45771)
 
@@ -328,17 +328,17 @@ L’historique des promotions Launch affiche désormais du texte localisé dans 
 
 * Ajout de la prise en charge de PDF Generator (PDFG) pour Microsoft Office 2024. Cela s’applique aux déploiements OSGi et JEE. (FORMS-24360)
 * Ajout de la prise en charge de l’agent Forms Builder sur AEM Forms 6.5 LTS. Cette opération rétropore les API HTTP Forms Manager et les API HTTP Form Generative AI (GenAI) requises par l’agent. (FORMS-24949)
-* Ajout de la valeur `daysUntilSigningDeadline` à l’interface utilisateur d’AEM Forms, afin que les auteurs puissent indiquer aux destinataires le nombre de jours restants avant une date limite de signature Adobe Sign. (FORMS-25180)
+* Ajout de la valeur `daysUntilSigningDeadline` à l’interface utilisateur d’AEM Forms afin que les auteurs puissent montrer aux destinataires le nombre de jours restants avant une date limite de signature Adobe Sign. (FORMS-25180)
 * PDF Generator (PDFG) prend désormais en charge les conversions de documents multithread lorsqu’il est configuré avec un seul compte utilisateur. Cela s’applique aux déploiements OSGi et JEE. (FORMS-25182, FORMS-25181)
 * Ajout d’un attribut **Description du profil utilisateur** pour les filigranes dynamiques dans AEM Forms Document Security, afin que les filigranes puissent inclure la description du profil de l’utilisateur. (FORMS-27595)
 * WebSphere® Liberty Profile (WLP) prend désormais en charge Microsoft® SQL Server, en plus de la base de données Oracle.
 
 #### Problèmes résolus {#forms-fixed-issues-65-lts-sp3}
 
-* L’application d’un schéma XML dans les propriétés de Forms adaptatif a échoué en raison d’un conflit de bibliothèque `xsom`. La sélection de schémas fonctionne désormais. (FORMS-23726)
-* Le champ Pièce jointe des composants de base acceptait les types de fichiers non autorisés (par exemple, `.xsd`) au moment du chargement et les rejetait uniquement lors de l’envoi, contrairement aux autres types bloqués. Les types non autorisés sont désormais bloqués au moment du chargement. (FORMS-24296)
+* L&#39;application d&#39;un schéma XML dans les propriétés du Forms adaptatif a échoué en raison d&#39;un conflit de bibliothèque `xsom`. La sélection de schémas fonctionne désormais. (FORMS-23726)
+* Le champ Pièce jointe des composants de base a accepté les types de fichiers non autorisés (par exemple, `.xsd`) au moment du chargement et les a rejetés uniquement lors de l’envoi, contrairement aux autres types bloqués. Les types non autorisés sont désormais bloqués au moment du chargement. (FORMS-24296)
 * Dans les lettres de Correspondence Management, les fragments de texte qui contenaient une condition ont perdu leurs sauts de ligne lorsqu’ils ont été enregistrés en tant que brouillon. Les brouillons conservent désormais les sauts de ligne d’origine. (FORMS-24603)
-* Les pièces jointes ont été supprimées de l’étape `assignTask` dans les workflows Forms basés sur l’initiative Open Services Gateway (OSGi). Les pièces jointes sont désormais conservées par l’affectation de tâche. (FORMS-24783)
+* Les pièces jointes ont été ignorées de l’étape `assignTask` dans les workflows Forms basés sur l’initiative Open Services Gateway (OSGi). Les pièces jointes sont désormais conservées par l’affectation de tâche. (FORMS-24783)
 * L’icône de calendrier du sélecteur de date n’exposait aucun libellé accessible lorsqu’un modèle d’affichage était appliqué. Le lecteur d’écran NVDA a donc annoncé seulement « cliquable ». L’icône fournit désormais un libellé descriptif. (FORMS-24877)
 * Les workflows AEM Forms se sont bloqués après l’étape Adobe Sign car le statut de la signature n’a jamais été renvoyé. Les workflows se poursuivent désormais une fois la signature terminée. (FORMS-24913)
 * Le composant Signature tactile a été ignoré dans l’ordre de tabulation du clavier, ce qui a créé une barrière d’accessibilité pour les utilisateurs utilisant uniquement le clavier. La navigation à l’aide de l’onglet atteint désormais le champ . (FORMS-25033)
@@ -364,25 +364,27 @@ L’historique des promotions Launch affiche désormais du texte localisé dans 
 
 Les problèmes suivants ont été corrigés pour AEM Forms on JEE dans le pack de services 3 d’ 6.5 LTS :
 
-* Dans AEM Forms on JEE, les `submitForm()` d’appel PDF forms basés sur XFA n’affichaient pas le résultat de l’envoi dans Acrobat Reader ou Acrobat lorsque le script appelait `closeDoc()`. Le résultat de l’envoi s’affiche désormais correctement. (FORMS-27585)
+* Sur AEM Forms on JEE, l’appel PDF forms XFA `submitForm()` n’a pas pu afficher le résultat de l’envoi dans Acrobat Reader ou Acrobat lorsque le script a appelé `closeDoc()`. Le résultat de l’envoi s’affiche désormais correctement. (FORMS-27585)
 * Sur AEM Forms on JEE, l’enregistrement des certificats de clé privée du module de sécurité matérielle (HSM) a échoué avec un `IllegalAccessError` sous Java 21 lors du test de la connectivité HSM dans la console d’administration. L’enregistrement du certificat de clé privée HSM fonctionne désormais. (FORMS-25998)
-* Sur AEM Forms on JEE, le chargement d’un WSDL à l’étape Invoquer le service web a échoué avec une `SAXException` (« Fin de fichier prématurée »). Les WSDL se chargent désormais correctement. (FORMS-24993)
+* Sur AEM Forms on JEE, le chargement d’un WSDL à l’étape Invoquer le service web a échoué avec un `SAXException` (« Fin de fichier prématurée »). Les WSDL se chargent désormais correctement. (FORMS-24993)
 * Sur AEM Forms on JEE (JBoss), l’application web des extensions Reader a renvoyé « Erreur lors du traitement de la demande » après une nouvelle installation en raison d’un URI de bibliothèque de balises JSTL hérité. L’application web des extensions Reader se charge maintenant. (FORMS-24518)
-* Sur AEM Forms on JEE, PDF Generator ne convertissait pas les fichiers Excel (`.xlsx`) lorsque le mode Utilisateur unique était activé, et les conversions étaient bloquées indéfiniment. Les conversions Excel sont désormais terminées en mode utilisateur unique. (FORMS-27495)
-* Sur AEM Forms on JEE, la connexion à `/lc` en tant qu’administrateur a échoué en raison du point d’authentification SOAP SDK (`/sdk`). La connexion de l’administrateur réussit désormais. (FORMS-27098)
+* Sur AEM Forms on JEE, PDF Generator ne convertissait pas les fichiers Excel (`.xlsx`) lorsque le mode Utilisateur unique était activé et les conversions étaient bloquées indéfiniment. Les conversions Excel sont désormais terminées en mode utilisateur unique. (FORMS-27495)
+* Sur AEM Forms on JEE, la connexion à `/lc` en tant qu’administrateur a échoué en raison de la porte d’authentification de SOAP SDK (`/sdk`). La connexion de l’administrateur réussit désormais. (FORMS-27098)
 * Sur AEM Forms on JEE, PDF Generator intègre un correctif du moteur de conversion mis à jour pour améliorer la fiabilité des conversions. (FORMS-25869)
 
-**Installer AEM Forms 6.5 LTS SP3 sous JEE**
+**Installer AEM Forms 6.5 LTS SP3 sur JEE**
 
 Pour installer AEM Forms 6.5 LTS SP3 sous JEE, procédez comme suit :
 
-1. Installez le pack de services à l’aide du programme d’installation JEE d’AEM Forms 6.5 LTS SP3 pour votre serveur d’applications (téléchargez-le à partir de [versions d’AEM Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)) et suivez les procédures d’installation standard d’AEM Forms sur JEE.
+1. Installez le pack de services à l’aide du programme d’installation JEE d’AEM Forms 6.5 LTS SP3 pour votre serveur d’applications (téléchargez-le à partir des [versions d’AEM Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)) et suivez les procédures d’installation standard d’AEM Forms sur JEE.
 1. Effectuez la mise à jour vers le dernier programme d’installation d’AEM Forms Workbench (disponible à partir de la même page [Versions d’AEM Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)).
-1. Si votre projet utilise la bibliothèque cliente SDK `adobe-livecycle-client.jar`, mettez-la à jour dans le chemin d’accès aux classes de votre projet. La dernière version est disponible à l’adresse `<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`.
+1. Si votre projet utilise la bibliothèque cliente SDK `adobe-livecycle-client.jar`, mettez-la à jour dans le chemin d’accès aux classes de votre projet. La dernière version est disponible à l&#39;adresse `<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`.
 
 #### Problèmes connus {#forms-known-issues-65-lts-sp3}
 
-* Sur **AEM Forms on JEE 6.5 LTS SP3**, la conversion de **fichiers PostScript (PS), EPS et PRN en PDF** échoue. Le processus natif `PsToPdfSvc` peut s’arrêter de manière inattendue, ce qui entraîne l’échec de la tâche de conversion avec des erreurs telles que `ALC-PDG-003-011` et `ALC-PDG-001-028`. Contactez le service clientèle d’Adobe pour obtenir de l’aide. (FORMS-28152)
+* Sur **AEM Forms 6.5 LTS SP3 sous JEE et OSGi sous Windows**, PDF Generator (PDFG) se bloque lors de l’exportation d’un document PDF existant vers un autre format de fichier pris en charge. L’opération d’exportation ne se termine pas et le fichier de sortie converti n’est pas renvoyé. (FORMS-29849)
+
+* Sur **AEM Forms on JEE 6.5 LTS SP3**, la conversion de **fichiers PostScript (PS), EPS et PRN en PDF** échoue. Le processus natif `PsToPdfSvc` peut se terminer de manière inattendue, ce qui entraîne l’échec de la tâche de conversion avec des erreurs telles que `ALC-PDG-003-011` et `ALC-PDG-001-028`. Contactez le service clientèle d’Adobe pour obtenir de l’aide. (FORMS-28152)
 
 * Sur **AEM Forms on JEE 6.5 LTS SP3**, le chargement d’un PDF signé numériquement vers une tâche dans AEM Forms JEE Workspace échoue ou se bloque. Par conséquent, les pièces jointes signées de PDF plus volumineuses ne peuvent pas être ajoutées à la tâche. Ce problème est corrigé dans une version ultérieure. Pour obtenir un correctif sur la version actuelle, contactez l’assistance Adobe. (FORMS-28517)
 
@@ -398,8 +400,8 @@ Sous AEM Forms sur JEE, les extensions Reader ne fonctionnent pas sur la platefo
    ```
 
 1. Redéployez le fichier EAR modifié sur le dossier WebSphere® Liberty Profile `dropins`
-   1. Arrêtez le serveur WebSphere® Liberty Profile et supprimez les `adobe-livecycle-websphere.ear` de `<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`.
-   1. Supprimez le répertoire `adobe-livecycle-websphere.ear` de `<WebSphere Liberty Profile install location>\usr\servers\<server-name>\apps\expanded\`.
+   1. Arrêtez le serveur WebSphere® Liberty Profile et supprimez `adobe-livecycle-websphere.ear` de `<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`.
+   1. Supprimer le répertoire `adobe-livecycle-websphere.ear` de `<WebSphere Liberty Profile install location>\usr\servers\<server-name>\apps\expanded\`.
    1. Copiez le fichier EAR modifié de l’étape 2 dans `<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`.
    1. Démarrez le serveur WebSphere® Liberty Profile.
 
@@ -456,7 +458,7 @@ Le point d’entrée `/system/health/systemalive.json` reste désormais disponib
 
 #### Plateforme{#foundation-platform-65-lts-sp3}
 
-La liste autorisée expression-option HTL par défaut reconnaît désormais `decorationTagName` et `cssClassName`. Le rendu de la grille réactive standard ne remplit plus les `error.log` avec des avertissements répétés d’option inconnue. (GRANITE-67152)
+La liste autorisée expression-option HTL par défaut reconnaît désormais `decorationTagName` et `cssClassName`. Le rendu de la grille réactive standard ne remplit plus `error.log` d&#39;avertissements répétés d&#39;option inconnue. (GRANITE-67152)
 
 <!--
 #### Projects{#foundation-projects-65-lts-sp3}
@@ -587,10 +589,10 @@ Pour connaître les exigences de configuration, consultez les [instructions d’
 
 >[!NOTE]
 >
-> Si vous effectuez directement une mise à niveau vers LTS SP3 à partir d&#39;anciens SP 6.5, suivez les instructions données pour 6.5 à 6.5 LTS GA [mise à niveau](/help/sites-deploying/upgrade.md).
+> Si vous effectuez directement une mise à niveau vers LTS SP3 à partir d&#39;anciens SP 6.5, suivez les instructions données pour 6.5 à 6.5 LTS GA [upgrade](/help/sites-deploying/upgrade.md).
 
 
-Pour obtenir des instructions détaillées, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md), car la même documentation s’applique aux mises à jour du pack de services LTS.
+Pour obtenir des instructions détaillées, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md), car la même documentation s&#39;applique aux mises à jour du pack de services LTS.
 
 >[!NOTE]
 >
@@ -672,9 +674,9 @@ La compression en ligne peut corrompre le référentiel JCR avec un `SegmentNotF
 
 **Résolution**
 
-1. Installez le [correctif](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip) à partir de la distribution logicielle. Il comprend un lot de `oak-segment-tar` de bas niveau, de sorte que l’instance redémarre après l’installation (en prévoyant un temps d’arrêt).
+1. Installez le [correctif](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip) à partir de la distribution logicielle. Il comprend un lot `oak-segment-tar` de bas niveau, de sorte que l’instance redémarre après l’installation (prévoyez un temps d’arrêt).
 1. Définissez la propriété système `oak.segment.cleanup.skipDanglingFutureReclaim=true` lorsque vous démarrez AEM. Cet indicateur est requis au démarrage d’AEM et non lors de l’exécution du compactage hors ligne.
-1. Pour toute opération `oak-run`, utilisez le fichier jar [`oak-run` 2.4.1-B002 correspondant](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar) dans la distribution logicielle.
+1. Pour toute opération `oak-run`, utilisez le fichier jar [`oak-run` 2.4.1-B002 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar) correspondant de la distribution logicielle.
 
 ### AEM Forms
 
@@ -690,7 +692,7 @@ L’échec n’est pas signalé : les nœuds de contenu ne parviennent pas à s
 
 >[!CAUTION]
 >
-> Pour éviter les échecs de chargement de contenu après la mise à niveau vers AEM 6.5 LTS SP2, supprimez tous les commentaires des fichiers JSON dans les lots `Sling-Initial-Content`.
+> Pour éviter les échecs de chargement de contenu après la mise à niveau vers AEM 6.5 LTS SP2, supprimez tous les commentaires des fichiers JSON dans vos lots `Sling-Initial-Content`.
 
 ### Installez les index Oak requis pour les API Sites en mode découplé{#site-headless-api}
 
@@ -706,7 +708,7 @@ Pour utiliser les fonctionnalités suivantes, installez le package `cq-dam-cfm-i
 Téléchargez le package d’index [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) à partir du portail de distribution logicielle Adobe.
 
 
-&#x200B;###
+###
 
 ### Échec de connexion à Dispatcher avec la fonction SSL uniquement (corrigé dans AEM 6.5 LTS SP1 et versions ultérieures){#ssl-only-feature}
 
