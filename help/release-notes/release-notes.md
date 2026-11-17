@@ -676,7 +676,7 @@ La compression en ligne peut corrompre le référentiel JCR avec un `SegmentNotF
 
 1. Installez le [correctif](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip) à partir de la distribution logicielle. Il comprend un lot `oak-segment-tar` de bas niveau, de sorte que l’instance redémarre après l’installation (prévoyez un temps d’arrêt).
 1. Définissez la propriété système `oak.segment.cleanup.skipDanglingFutureReclaim=true` lorsque vous démarrez AEM. Cet indicateur est requis au démarrage d’AEM et non lors de l’exécution du compactage hors ligne.
-1. Pour toute opération `oak-run`, utilisez le fichier jar [`oak-run` 2.4.1-B002 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar) correspondant de la distribution logicielle.
+1. Pour toute opération `oak-run`, utilisez le fichier jar [`oak-run` 2.4.1-B002 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar) correspondant de la distribution logicielle.
 
 ### AEM Forms
 
@@ -708,7 +708,7 @@ Pour utiliser les fonctionnalités suivantes, installez le package `cq-dam-cfm-i
 Téléchargez le package d’index [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) à partir du portail de distribution logicielle Adobe.
 
 
-###
+&#x200B;###
 
 ### Échec de connexion à Dispatcher avec la fonction SSL uniquement (corrigé dans AEM 6.5 LTS SP1 et versions ultérieures){#ssl-only-feature}
 
